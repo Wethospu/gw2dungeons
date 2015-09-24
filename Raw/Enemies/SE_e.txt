@@ -80,7 +80,7 @@ animation=raises hands
 additional=only used at close targets
 effect=low-range aura
 subeffect=damage:0
-subeffect=buff:"Enfeebling_Aura"
+subeffect=buff:Enfeebling_Aura:0:1:-
 #note=visually bugged: effect follows Noko!
 #note=keep distance
 #note=stay at melee-range to trigger (long cast-time)
@@ -620,7 +620,7 @@ subeffect=crippled:1
 attack=Gravity Distortion (1)
 animation=moves staff behind back, kneels, gets up and raises hands in air|1|shoots a black ball
 effect=homing projectile
-subeffect=buff:"Gravity_Distortion":8
+subeffect=buff:Gravity_Distortion:8:1:-
 #note=block or evade
 #note=precasting stability prevents the effect
 
@@ -1701,7 +1701,7 @@ subeffect=damage:0
 
 attack=Breath of Flame
 effect=ranged
-subeffect=buff:Breath_of_Flame
+subeffect=buff:Breath_of_Flame:0:1:-
 
 attack="Breath of Flame"
 effect=aura

@@ -156,12 +156,19 @@ function chooseCorrectTab() {
 
 function applyEncounterSettings() {
     chooseCorrectTab();
-    //// Set global modifiers to the body.
     // Whether to show icons.
     if (getSetting("icon"))
-        $('body').addClass('withicon');
-    else
-        $('body').removeClass('withicon');
+	{
+		$('.icon').each(function () {
+			$(this).css('background-image', 'url(media/img/' + $(this).attr('title') + '.png)');
+		});
+	}
+	else
+	{
+		$('.icon').each(function () {
+			$(this).removeClass('icon');
+		});
+	}
 }
 
 function applyEnemySettings(updateMain) {

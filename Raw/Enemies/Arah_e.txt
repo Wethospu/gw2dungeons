@@ -434,14 +434,14 @@ attack=Abomination Swipe
 animation=swings right arm|2.5
 cooldown=0
 effect=slow melee
-subeffect=damage:0|buff:"Frenzy":60
+subeffect=damage:0|buff:Frenzy:60
 #note=move out of way
 #note=don't use minions/clones to prevent "Frenzy"-stacks
 
 attack=Abomination Slam
 animation=glows and jumps|1.5
 effect=slow melee
-subeffect=damage:3202|buff:"Frenzy":60
+subeffect=damage:3202|buff:Frenzy:60
 #note=move out of way
 #note=don't use minions/clones to prevent "Frenzy"-stacks
 
@@ -695,7 +695,7 @@ cooldown=20
 animation=swings rifle overhead|0.5
 additional=used at melee range
 effect=cone
-subeffect=buff:"Orrian_Explosives":5
+subeffect=buff:Orrian_Explosives:5:1:-
 
 attack="Orrian Explosives"
 effect=debuff
@@ -1169,7 +1169,7 @@ effect=short dash
 attack=Roar (1)
 additional=cannot be blocked or evaded
 effect=ranged
-subeffect="Grenth's Mark" (30 s) after 4 seconds
+subeffect=buff:Grenth's_Mark:30:1:corruption after 4 seconds
 
 attack=Grenth's Mark (2)
 animation=life-steal effect and sound
@@ -1597,7 +1597,7 @@ cooldown=15
 animation=waves hand in a big circle with green effect|2.5
 additional=cannot be blocked. Prioritizes players.
 effect=ranged
-subeffect=buff:"Green_Cloud":6
+subeffect=buff:Green_Cloud:6:1:-
 #note=evade when hand is up to avoid getting infected (if he is facing towards you)
 #note=does not work on players in downed state
 
@@ -1860,7 +1860,7 @@ attack=Point Blank Shot
 animation=aims with bow|0.5
 cooldown=12
 effect=piercing projectile
-subeffect=damage:623|knockback:1.5|buff:"Bubble":5
+subeffect=damage:623|knockback:1.5|buff:Bubble:5:projectile_reflection
 #note=Try to predict
 
 attack="Bubble"
@@ -1930,7 +1930,7 @@ attack=Berserk (3)
 cooldown=48
 animation=raises both arms|1
 effect=buff
-subeffect=buff:"Berserk":20
+subeffect=buff:Berserk:20
 
 attack="Berserk"
 animation=red effect

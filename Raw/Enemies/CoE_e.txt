@@ -2986,7 +2986,7 @@ animation=swings right arm|2.5
 cooldown=0
 effect=slow melee
 subeffect=damage:0
-subeffect=buff:"Frenzy":60
+subeffect=buff:Frenzy:60
 #note=move out of way
 #note=don't use minions/clones to prevent "Frenzy"-stacks
 
@@ -2995,7 +2995,7 @@ animation=glows and jumps|1.5
 effect=slow melee
 subeffect=damage:0
 subeffect=knockback:2
-subeffect=buff:"Frenzy":60
+subeffect=buff:Frenzy":60
 #note=move out of way
 #note=don't use minions/clones to prevent "Frenzy"-stacks
 
@@ -3070,7 +3070,7 @@ effect=short dash
 attack=Roar (1)
 additional=can't be blocked or evaded
 effect=ranged
-subeffect=buff:Grenth's_Mark:30 after 4 seconds
+subeffect=buff:Grenth's_Mark:30:1:corruption after 4 seconds
 
 attack=Grenth's Mark (2)
 animation=life-steal effect and sound

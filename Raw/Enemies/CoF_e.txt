@@ -273,7 +273,7 @@ attack=lasts 30 seconds
 
 attack=healing
 effect=aura
-subeffect=buff:Regeneration per tick (stacks 25 times)
+subeffect=buff:Soothing_Mist per tick (stacks 25 times)
 
 ##################################################################
 

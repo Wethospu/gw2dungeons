@@ -412,13 +412,13 @@ subeffect=6 enemy=text:Icebrood|Icebrood_Mauler:normal|Icebrood_Seer:normal|Iceb
 
 attack=Shielding
 effect=at start
-subeffect=60? buff:"Shield of Jormag"
+subeffect=buff:Shield_of_Jormag:0:60:aegis
 effect=at 75%
-subeffect=30 buff:"Shield of Jormag"
+subeffect=buff:Shield_of_Jormag:0:30:aegis
 effect=at 50%
-subeffect=45 buff:"Shield of Jormag"
+subeffect=buff:Shield_of_Jormag:0:45:aegis
 effect=at 25%
-subeffect=60 buff:"Shield of Jormag"
+subeffect=buff:Shield_of_Jormag:0:60:aegis
 
 attack="Shield of Jormag"
 effect=buff

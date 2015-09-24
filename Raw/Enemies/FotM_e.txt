@@ -303,7 +303,7 @@ Spins around in 15 s.
 attack=Wall Beam
 additional=can't be blocked or evaded
 effect=On hit (5 hits per second)
-subeffect=damage:2413|stun:1|agony:3|buff:"block":4
+subeffect=damage:2413|stun:1|agony:3|buff:block:4
 #note=Easy to get hit multiple times
 #note=If you get in bad spot dodge or use mobility to try get through fast
 
@@ -324,11 +324,11 @@ Spins around in 30 s.
 attack=Wall Beam
 additional=can't be blocked or evaded
 effect=On hit (5 hits per second)
-subeffect=damage:2413|stun:1|agony:3|buff:"Boost":8|might:8:3
+subeffect=damage:2413|stun:1|agony:3|buff:lighting_boost:8|might:8:3
 #note=Buffs a enemy=Golem:elite to 25 might in one second
 #note=If you get in bad spot dodge or use mobility to try get through fast
 
-attack="Boost"
+attack="Lightning Boost"
 effect=buff
 subeffect=Enables Lightning Shot
 
@@ -2127,7 +2127,7 @@ effect=Evade
 effect=area field
 subeffect=burning:568:1| when passin through
 effect=with ticking AoE
-subeffect=buff:"shielding":2| every 2 seconds
+subeffect=buff:Shielding:2:1:fire_shield| every 2 seconds
 
 attack=Jetpack Pound (2)
 animation=Rises to air, laughs and drops to the ground|5|a fiery ring
@@ -2305,17 +2305,17 @@ attack=Strike (1)
 animation=swings sword from right overhead|0.4
 cooldown=0
 effect=melee
-subeffect=damage:1598|buff:"Frostbite":15
+subeffect=damage:1598|buff:Frostbite:15
 
 attack=Strike (2)
 animation=waits and swings sword from right|1.4
 effect=melee
-subeffect=damage:2079|buff:"Frostbite":15
+subeffect=damage:2079|buff:Frostbite:15
 
 attack=Strike (3)
 animation=waits and thrusts sword forward|1.7
 effect=melee
-subeffect=damage:3245|buff:"Frostbite":15:2
+subeffect=damage:3245|buff:Frostbite:15:2
 #note=deals about same damage as previous hits so don't tank it
 #note=block/evade
 
@@ -2324,7 +2324,7 @@ cooldown=14
 animation=lowers sword, leans back and leans forward|0.5|sprays ice
 additional=able to rotate
 effect=10 cones in 4.5 s
-subeffect=damage:1664|buff:"Frostbite":15| per hit (|damage:16640|)
+subeffect=damage:1664|buff:Frostbite:15| per hit (|damage:16640|)
 #note=evade back to direct away from your party
 #note=usually targets the same player
 
@@ -3081,7 +3081,7 @@ type=plant
 
 attack=buff
 effect=channeled ranged (hits every 5 s)
-subeffect=might:5|buff:"Sun Spirit's Essence"
+subeffect=might:5|buff:Sun_Spirit's_Essence:5:sun_spirit
 
 attack="Sun Spirit's Essence"
 effect=buff
@@ -3099,7 +3099,7 @@ type=plant
 
 attack=buff
 effect=channeled ranged (hits every 5 s)
-subeffect=fury:5|buff:"Frost Spirit's Essence"
+subeffect=fury:5|buff:Frost_Spirit's_Essence:frost_spirit
 
 attack="Frost  Spirit's Essence"
 animation=white projectiles
@@ -3118,7 +3118,7 @@ type=plant
 
 attack=buff
 effect=channeled ranged (hits every 5 s)
-subeffect=retaliation:137:5|buff:"storm Spirit's Essence"
+subeffect=retaliation:137:5|buff:Storm_Spirit's_Essence:storm_spirit
 
 attack="Storm Spirit's Essence"
 animation=lightning circle
@@ -3604,7 +3604,7 @@ attack=Cosmic Instability
 #image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-ball.jpg
 additional=activates when below 50%
 effect=huge aura
-subeffect=buff:"Cosmic_Instability":6| every 30 seconds
+subeffect=buff:Cosmic_Instability:6| every 30 seconds
 #note=hits every player
 
 attack="Cosmic Instability"
@@ -3626,7 +3626,7 @@ type=ooze
 attack=Slimey Smash
 cooldown=0
 effect=melee
-subeffect=damage:1842|buff:"Corrode_Armor":8
+subeffect=damage:1842|buff:Corrode_Armor:8
 
 attack=Acid Rain
 #image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-5_thumb.jpg
@@ -3634,7 +3634,7 @@ cooldown=26
 animation=waves head and looks stupid|0.5|shoots green balls
 additional=can't be blocked
 effect=multiple projectiles with small AoEs in 8 s
-subeffect=damage:1167|agony:1|buff:"Corrode_Weapon":3|poison:516:3
+subeffect=damage:1167|agony:1|buff:Corrode_Weapon:3|poison:516:3
 
 attack=Jump
 cooldown=22
@@ -3656,8 +3656,8 @@ attack=Shield Form
 cooldown=59
 #image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-4_thumb.jpg
 animation=looks stupid and spins|0.5|keeps looking stupid
-effect=block for 10 s
-subeffect=buff:"Overload"| for every block
+effect=buff:block:10
+subeffect=buff:Overload for every block
 
 attack="Overload"
 effect=buff
@@ -3721,7 +3721,7 @@ Path=Thauma
 
 attack=Repulsor Bolt
 effect=projectile
-subeffect=damage:7754|launch:2.4|buff:"overheating":10
+subeffect=damage:7754|launch:2.4|buff:overheating:10
 
 attack="Overheating"
 effect=debuff
@@ -5584,7 +5584,7 @@ attack=Rush (1)
 cooldown=24
 animation=instant||runs forward sword behind back
 effect=PBAoE
-subeffect=buff:"Swiftness":10
+subeffect=buff:Swiftness:10:1:swiftness_buff
 effect=dash
 #note=be ready to block/evade
 

@@ -343,6 +343,7 @@ example:
 	effect=vulnerability:5:2
 	effect=burning:10
 	effect=launch:2.3
+	effect=buff:block:1:1:-
 	
 Actual effects have different syntax based on their type.
 Normal damage: damage:"raw amount"
@@ -351,11 +352,14 @@ Armor-ignoring damage: constant:"amount"
 Percentile damage: percent:"amount"
 Conditions/boons: "name":"duration":"stacks"
 Agony: agony:"duration":"stacks"
-Buff (not boons): buff:"name":"duration":"stacks"
+Buff (not boons): buff:"name":"duration":"stacks":"custom icon"
 
 When getting damage values try to get the maximum damage. Convert the damage by multiplying with your armor value and any other damage modifiers (like WvW, multiply by 1 + Defender/100). WvW bonus is currently slightly bugged so all values (except 1%) are actually 1%-unit less (5% becomes 4% and so on).
-When getting condition values keep in mind that you get reduced damage from partial ticks. Damage for conditions is calculated from enemy's condition damage attribute.
-Similarly healing power is used for regeneration and power for retaliation.
+
+By default buffs use same icon as their name. If you want to use another icon write its to the custom icon. If you don't want to use any icon write - to the custom icon. New icons can be added to Raw\Other\media\img\.
+At the moment you also have to add an entry to gw2dungeons.css found in Raw\Other\media\. Scroll to bottom of the file and add your icon there in the right location (alphabetically).
+
+
 
 ==== Copy ====
 You can copy data of previously introduced enemy (within same dungeon). Category and path are optional. Use them to clarify selection if there are enemies with same name.

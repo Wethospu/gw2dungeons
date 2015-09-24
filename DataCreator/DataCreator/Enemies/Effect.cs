@@ -163,24 +163,24 @@ namespace DataCreator.Enemies
         }
         if (effectType == EffectType.Buff)
         {
-          icon = "";
           buff = effectData[0];
+          icon = buff;
           if (effectData.Length > 1)
-            icon = effectData[1];
+            duration = Helper.ParseD(effectData[1]);
           if (effectData.Length > 2)
-            duration = Helper.ParseD(effectData[2]);
+            stacks = Helper.ParseI(effectData[2]);
           if (effectData.Length > 3)
-            stacks = Helper.ParseI(effectData[3]);
+            icon = effectData[3];
         }
         AddTagsFromEffectType(effectType, baseEnemy);
         // Syntax: <span class="TAGValue">VALUE</span>
         var replace = new StringBuilder();
-        replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
         if (effectType == EffectType.Damage || effectType == EffectType.DamageFixed || effectType == EffectType.DamagePercent)
         {
           icon = "damage";
           stacks = 0;
           // Put both total and damage per hit. / 2015-09-08 / Wethospu
+          replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
           replace.Append(amount * hitCount).Append("</span> damage");
           if (hitCount > 1)
           {
@@ -196,31 +196,32 @@ namespace DataCreator.Enemies
           if (hitCount > 1)
           {
             replace.Append(HitLengthStr(hitLength)).Append(" (<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
-            replace.Append(amount).Append("</span> healing per hit)");
+            replace.Append(amount).Append(" healing per hit)");
           }
         }
         else if (effectType == EffectType.BoonEffect || effectType == EffectType.ConditionEffect || effectType == EffectType.Buff)
         {
           // Put both total and per hit. / 2015-09-08 / Wethospu
           // Note: No overstacking handling. / 2015-09-08 / Wethospu
-          replace.Append(duration * hitCount).Append("</span> second");
+          replace.Append(duration * hitCount).Append(" second");
           if (duration * hitCount != 1.0)
             replace.Append("s");
           if (hitCount > 1)
           {
-            replace.Append(HitLengthStr(hitLength)).Append(" (<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
-            replace.Append(duration).Append("</span> second");
+            replace.Append(HitLengthStr(hitLength)).Append(" (");
+            replace.Append(duration).Append(" second");
             if (duration != 1.0)
               replace.Append("s");
             replace.Append(" per hit)");
           }
           // Add the buff name (people probably won't recognize all icons). / 2015-09-23 / Wethospu
           if (effectType == EffectType.Buff)
-            replace.Append(" (").Append(buff).Append(")");
+            replace.Append(" (").Append(buff.Replace('_', ' ')).Append(")");
         }
         else if (effectType == EffectType.Agony)
         {
           // Damage value based on hitcount, character and fractal scale. / 2015-09-08 / Wethospu
+          replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
           replace.Append(duration * hitCount).Append("</span> damage").Append(HitLengthStr(duration + hitLength));
           if (hitCount > 1)
           {
@@ -237,21 +238,20 @@ namespace DataCreator.Enemies
             suffix = "healing";
           if (category.Equals("retaliation"))
             suffix = "damage per hit";
-
-          replace.Append(amount * duration * stacks * hitCount).Append("</span> ").Append(suffix).Append(HitLengthStr(duration + hitLength));
+          replace.Append(amount * duration * stacks * hitCount).Append(" ").Append(suffix).Append(HitLengthStr(duration + hitLength));
           if (hitCount > 1)
           {
-            replace.Append(" (<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
-            replace.Append(amount * duration * stacks).Append("</span> ").Append(suffix).Append(HitLengthStr(duration)).Append(" per hit)");
+            replace.Append(" (");
+            replace.Append(amount * duration * stacks).Append(" ").Append(suffix).Append(HitLengthStr(duration)).Append(" per hit)");
           }
           if (category.Equals("confusion"))
           {
             suffix = "damage per skill usage";
-            replace.Append(amountSecondary * stacks * hitCount).Append("</span> ").Append(suffix).Append(HitLengthStr(duration + hitLength));
+            replace.Append(amountSecondary * stacks * hitCount).Append(" ").Append(suffix).Append(HitLengthStr(duration + hitLength));
             if (hitCount > 1)
             {
-              replace.Append(" (<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
-              replace.Append(amountSecondary * stacks).Append("</span> ").Append(suffix).Append(HitLengthStr(duration)).Append(" per hit)");
+              replace.Append(" (");
+              replace.Append(amountSecondary * stacks).Append(" ").Append(suffix).Append(HitLengthStr(duration)).Append(" per hit)");
             }
           }
         }
@@ -262,8 +262,8 @@ namespace DataCreator.Enemies
             replace.Append("s");
           if (hitCount > 1)
           {
-            replace.Append(HitLengthStr(hitLength)).Append(" (<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
-            replace.Append(duration).Append("</span> second");
+            replace.Append(HitLengthStr(hitLength)).Append(" (");
+            replace.Append(duration).Append(" second");
             if (duration != 1.0)
               replace.Append("s");
             replace.Append(" per hit)");
@@ -279,10 +279,10 @@ namespace DataCreator.Enemies
         // Get the first subeffect type to display an icon. / 2015-09-09 / Wethospu
         if (firstType.Equals(""))
         {
-          if (icon.Equals("") && effectType == EffectType.Buff)
+          if (icon.Equals("-") && effectType == EffectType.Buff)
             startIcon = "Buff";
           else
-            startIcon = "<span class=" + Constants.IconClass + " title=\"" + icon + "\"></span>";
+            startIcon = "<span class=" + Constants.IconClass + " title=\"" + icon.ToLower() + "\"></span>";
           firstType = category;
           firstStacks = stacks * hitCount;
         }
@@ -402,22 +402,14 @@ namespace DataCreator.Enemies
     {
       if (type == EffectType.Agony)
         return "agonyValue";
-      if (type == EffectType.BoonDamage || type == EffectType.BoonEffect)
-        return "normalValue";
-      if (type == EffectType.Buff)
-        return "normalValue";
       if (type == EffectType.ConditionDamage || type == EffectType.ConditionEffect)
         return "conditionValue";
-      if (type == EffectType.Control)
-        return "normalValue";
       if (type == EffectType.Damage)
         return "damageValue";
       if (type == EffectType.DamageFixed)
         return "fixedValue";
       if (type == EffectType.DamagePercent)
         return "percentValue";
-      if (type == EffectType.Healing)
-        return "normalValue";
       if (type == EffectType.None)
         return "";
       Helper.ShowWarningMessage("Internal error. Effect type not implemented.");

@@ -565,7 +565,10 @@ additional=Can't be blocked or evaded
 effect=cone
 subeffect=fear:3
 subeffect=weakness:6
-subeffect=buff:"Troll_regeneration" (15 stacks over 14 seconds)
+effect=self
+count=15
+length=14
+subeffect=buff:Troll_regeneration:15:1:soothing_mist
 #note=stun break
 
 attack="Troll regeneration"
@@ -1836,7 +1839,7 @@ animation=big red circle and hands through ground|1
 effect=PBAoE
 subeffect=damage:219420
 subeffect=launch:3.3
-subeffect=buff:"Evasion":5 if hits any players
+subeffect=buff:evade:5 if hits any players
 #note=Don't get hit or it will spend lots of time evading.
 #note=Run out of area and dodge out if needed.
 

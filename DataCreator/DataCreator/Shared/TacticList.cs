@@ -160,7 +160,7 @@ namespace DataCreator.Shared
         // Build navigation. / 2015-06-28 / Wethospu
         htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<ul class=\"nav nav-tabs\">").Append(Constants.LineEnding);
         foreach (var tactic in Tactics.Where(tactic => Constants.AvailableTips.Contains(tactic.Name)))
-          htmlBuilder.Append(Gw2Helper.AddTab(indent + 2)).Append("<li><a href=\"#t").Append(index).Append(Helper.Simplify(tactic.Name)).Append("\" data-toggle=\"tab\">").Append("<img class=\"professionIcon\" src=\"media/img/tip_" + Helper.Simplify(tactic.Name) + ".png\">").Append("</a></li>").Append(Constants.LineEnding);
+          htmlBuilder.Append(Gw2Helper.AddTab(indent + 2)).Append("<li><a href=\"#t").Append(index).Append(Helper.Simplify(tactic.Name)).Append("\" data-toggle=\"tab\">").Append("<img class=\"professionIcon\" src=\"media/img/" + Helper.Simplify(tactic.Name) + ".png\">").Append("</a></li>").Append(Constants.LineEnding);
         htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("</ul>").Append(Constants.LineEnding);
 
         // End of navigation. / 2015-06-28 / Wethospu
