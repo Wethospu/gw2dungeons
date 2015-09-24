@@ -1,0 +1,2650 @@
+potion=undead|main
+# stunners only use this. Probably tested. Wethospu.
+# TODO: ID 10888, Orrian Gorilla has 0.75 toughness (but also 1.0).
+# TODO: ID 10629, Undead Shark has 0.7 toughness (but also 1.0).
+# TODO: ID 10755 Giant has 0.8 toughness (but also 1.0).
+potion=inquest|none
+
+##################################################################
+###                 Explorables - normal enemies               ###
+##################################################################
+
+name=Orrian Farmer
+alt=Orrian Farmers
+path=Arah1|Arah2|Arah3|Arah4
+category=normal
+health=15774
+type=undead
+
+attack=Claw
+cooldown=3
+animation=swings right arm|0.5
+effect=melee
+subeffect=damage:600
+effect=randomly
+subeffect=poison:695:5
+
+attack=Frenzy
+cooldown=16
+animation=crouches and shouts|0.25|brown effect
+effect=buff (8 s)
+subeffect=deal 50% more damage and cooldowns get reduced to 50%
+
+attack=Kick
+cooldown=24
+animation=jumps and kicks|0.25
+effect=melee
+subeffect=damage:600|poison:695:5
+
+##################################################################
+
+copy=Orrian Farmer
+name=Orrian Servant
+alt=Orrian Servants
+
+copy=Orrian Farmer
+name=Orrian Villager
+alt=Orrian Villagers
+
+# Same enemy: CoE Risen Thrall.
+
+copy=Orrian Farmer
+name=Risen Thrall
+image=http://wiki.guildwars2.com/images/9/9a/Risen_Thrall.jpg
+alt=Risen Thralls
+
+##################################################################
+
+name=Orrian Wizard
+path=Arah1|Arah2|Arah3|Arah4
+category=normal
+health=15774
+type=undead
+
+attack=Necrotic Grasp
+cooldown=0
+effect=projectile
+subeffect=damage:0
+
+attack=Buff
+effect=PBAoE
+subeffect=might:5:3|fury:10
+
+attack=Dark Halting
+effect=???
+subeffect=damage:0|crippled:5
+
+##################################################################
+
+name=Risen Elementalist
+alt=Risen Elementalists|Elementalist|Elementalists
+image=http://wiki.guildwars2.com/images/b/b8/Elite_Risen_Elementalist.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Vapor Blades
+cooldown=1.5
+image=http://giant.gfycat.com/FelineEminentArcticwolf.gif
+animation=swings right arm|0.75|shoots 7 rings
+effect=7 returning and piercing projectiles in a cone
+subeffect=damage:2308|vulnerability:3:3| per hit (|damage:32312|)
+#note=extreme damage at close range
+#note=reflecting is extremely effective
+
+attack=Cone of Corruption
+image=http://giant.gfycat.com/CloseEcstaticJunebug.gif
+animation=leans back and kneels forward|0.4|sprays blue mist
+cooldown=10
+additional=able to rotate
+effect=5 cones in 2 s
+subeffect=damage:1939|chilled:8| per hit (|damage:15512|)
+
+attack=Self Buff
+cooldown=15
+image=http://fat.gfycat.com/PleasedGraciousAllensbigearedbat.gif
+animation=moves weird|0.5
+effect=PBAoE
+subeffect=regeneration:2200:10|protection:10
+
+##################################################################
+
+name=Risen Hunter
+alt=Risen Hunters|Hunter|Hunters
+path=Arah1|Arah2|Arah3|Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Throw Axe
+animation=swings right arm|0.25|throws an axe
+cooldown=1.5
+effect=bouncing projectile (5 hits)
+subeffect=damage:3464| per hit (|damage:10392|)
+#note=reflecting is extremely effective
+#note=extremely dangerous when it bounces between two targets
+#note=sidestep at range to avoid
+
+attack=Call of the Wild
+animation=blows warhorn|0.3
+cooldown=9
+effect=PBAoE
+subeffect=stability:9|might:9:3|regeneration:1980:9
+effect=summons
+subeffect=enemy=Orrian_Eagle:normal
+#note=if you want to use CC, use it before this is used
+
+##################################################################
+
+name=Orrian Eagle
+alt=Orrian Eagles
+image=http://wiki.guildwars2.com/images/8/87/Risen_Eagle.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=normal
+health=15774
+toughness=0.5
+type=undead
+
+attack=Claw
+animation=dives towards target|0.25
+cooldown=1.75
+effect=medium-range single target
+subeffect=damage:1327
+
+attack=Swoop
+animation=glows
+effect=melee
+subeffect=damage:1875, evades
+
+##################################################################
+
+name=Risen Illusionist
+alt=Risen Illusionists|Illusionist|Illusionists
+image=http://wiki.guildwars2.com/images/7/73/Elite_Risen_Illusionist.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Chaos Beam
+cooldown=4.5
+image=http://giant.gfycat.com/GoodnaturedLegitimateEmperorshrimp.gif
+animation=purple beam|0.5
+effect=10 ranged hits in 1.5 s
+subeffect=damage:517|vulnerability:4| per hit (|damage:5375|)
+#note=keep controlled
+
+attack=Chaos Storm
+image=http://giant.gfycat.com/RepulsiveFairArieltoucan.gif
+animation=turns right and raises left arm|0.25
+cooldown=13
+effect=ticking AoE (6 hits in 5 s)
+subeffect=damage:4737|random Condition (|weakness|poison:376:2|chilled:1|stun:1|) and random Boon(|retaliation:0:3|swiftness:3|aegis:3|) per tick (|damage:28422|)
+#note=capable of wiping entire party, evading is a top priority
+#note=try to predict and evade
+#note=keep controlled
+
+##################################################################
+
+name=Risen Mage
+alt=Risen Mages|Mage|Mages
+image=http://wiki.guildwars2.com/images/9/94/Elite_Risen_Mage.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Water Bolt
+image=http://giant.gfycat.com/FrighteningTangibleBufflehead.gif
+animation=swings left arm from right|0.75
+cooldown=3
+effect=projectile
+subeffect=damage:4366
+#note=sidestep, block/evade or tank
+
+attack=Corrupted Geyser
+image=http://giant.gfycat.com/AromaticBreakableBaiji.gif
+cooldown=9
+animation=bends backwards, crouches and raises left arm|1
+effect=7 ticking AoEs (6 hits in 5 s)
+subeffect=damage:2141|regeneration:1100:5| per tick (|damage:12846|)
+#note=AoEs may overlap resulting in extreme damage
+#note=block/evade first tick
+
+attack=Wave of Corruption
+image=http://giant.gfycat.com/SlightImpoliteAllensbigearedbat.gif
+cooldown=10
+animation=rises up in air spinning and smashes ground with staff|1
+effect=PBAoE
+subeffect=damage:5209|Launch:2.8| and cures 1 condition
+
+##################################################################
+# Same enemy: CoE Risen Devastator
+
+name=Risen Devastator
+alt=Risen Devastators|Devastator|Devastators
+path=Arah3|Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Swing (1)
+cooldown=6
+animation=raises arms overhead with greatsword and swings|0.35
+effect=melee
+subeffect=damage:4311|bleeding:2580:30
+
+attack=Slice (2)
+cooldown=6
+animation=waits and swings greatsword from right|1.75
+effect=melee
+subeffect=damage:4305|bleeding:2580:30
+
+attack=Brutal Strike (3)
+cooldown=6
+animation=waits, holds greatsword behind back and thrusts forward|2
+effect=melee
+subeffect=damage:7995|bleeding:2580:30
+
+attack=Bladetrail
+cooldown=7
+animation=raises arms overhead without greatsword|0.75|throws a greatsword
+additional=can't be evaded
+effect=returning projectile
+subeffect=damage:4339|crippled:8
+
+attack=Uppercut
+animation=points greatsword towards ground and hits up|0.3
+effect=melee
+subeffect=damage:5983|launch:2.3
+
+##################################################################
+
+name=Orrian Warrior
+alt=Warrior
+path=Arah1|Arah2|Arah3|Arah4
+category=champion
+health=630960
+type=undead
+
+attack=Swing
+cooldown=6
+animation=raises arms overhead with greatsword and swings|0.35
+effect=melee
+subeffect=damage:4558|bleeding:2580:30
+
+attack=Bladetrail
+cooldown=7
+animation=raises arms overhead without greatsword|0.75|throws a greatsword
+additional=can't be evaded
+effect=returning projectile
+subeffect=damage:4470|crippled:8
+
+attack=Uppercut
+animation=points greatsword towards ground and hits up|0.3
+effect=melee
+subeffect=damage:7000|launch:2.3
+
+##################################################################
+
+name=Vile Ooze
+alt=Vile Oozes|Ooze|Oozes
+image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
+path=Arah1|Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Ooze Multi
+image=http://giant.gfycat.com/FrigidLeanFrillneckedlizard.gif
+cooldown=0
+additional=hits 4 times
+effect=channeled melee
+subeffect=damage:0|weakness:10|crippled:10|poison:0:10|vulnerability:10:3| per hit
+#note=do not stand in front of them
+
+attack=Split
+image=http://giant.gfycat.com/FeminineSaltyAmericanavocet.gif
+animation=melts and throws 2 brown balls
+additional=used at 20% health. Can't be blocked
+effect=2 ballistic projectiles
+subeffect=enemy=Lesser_Ooze:normal per hit
+effect=self destruct
+#note=Needs a target so if you stealth entire party it can't be used.
+#note=Mesmer can absorb them with untraited wardens
+#note=enemy=Lesser_Oozes:normal try to combine back to a Vile Ooze. Attack brown spots to damage them before they even appear
+#note=Use an interrupt at ~20% health and focus down quickly
+#note=With weak party, focus one Vile Ooze at time to prevent respawns
+
+##################################################################
+
+name=Lesser Ooze
+alt=Lesser Oozes
+image=http://wiki.guildwars2.com/images/3/3c/Lesser_Ooze.jpg
+path=Arah1|Arah4
+category=normal
+health=15774
+type=undead
+
+##################################################################
+
+name=Lesser Ooze (Fighting)
+alt=Lesser Oozes (Fighting)
+image=http://wiki.guildwars2.com/images/3/3c/Lesser_Ooze.jpg
+path=Arah1|Arah4
+category=normal
+health=16232
+level=81
+type=undead
+
+attack=Ooze Multi
+cooldown=0
+effect=melee
+subeffect=damage:0|crippled:10|
+
+##################################################################
+
+name=Orrian Guard Turret
+alt=Orrian Guard Turrets|Turrets
+image=http://wiki.guildwars2.com/images/b/b6/Orrian_Guard_Turret.jpg
+path=Arah1|Arah2|Arah3|Arah4
+health=14940
+category=structure
+
+attack=Machine Gun Fire
+image=http://giant.gfycat.com/CavernousShadyCatfish.gif
+cooldown=0.25
+effect=fast projectile
+subeffect=damage:581|blind:2
+#note=zig zag at range or use anti projectiles
+##################################################################
+
+name=Undead Spider Hatchling
+alt=Undead Spider Hatchlings
+image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=normal
+health=15774
+type=undead
+
+attack=Bite
+image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
+animation=withdraws and bites|0.75
+cooldown=2.5
+effect=Melee
+subeffect=damage:1419|crippled:6|poison:936:6
+
+##################################################################
+
+name=Orrian Spider
+alt=Orrian Spiders|Spider|Spiders
+image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=normal
+health=15774
+type=undead
+
+attack=Bite
+image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
+animation=withdraws and bites|0.75
+cooldown=2.5
+effect=melee
+subeffect=damage:0|crippled:6|poison:1128:6
+
+##################################################################
+
+name=Orrian Spider (Tunnel)
+alt=Orrian Spiders (Tunnel)|Spider (Tunnel)|Spiders (Tunnel)
+image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
+path=Arah2
+category=elite
+health=157296
+type=undead
+
+attack=Bite
+image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
+animation=withdraws and bites|0.75
+cooldown=3
+effect=big PBAoE
+subeffect=damage:4302|crippled:5
+
+###########################################################
+
+name=Undead Abomination
+path=Arah2
+image=http://wiki.guildwars2.com/images/b/bf/Risen_Abomination.jpg
+category=veteran
+health=63096
+type=undead
+
+attack=immune to crippled, chilled, immobilized and Control-skills
+
+attack=defrenzy
+effect=when fails to hit 4 times
+subeffect=stun:3| and lose all "Frenzy"-stacks
+
+attack="Frenzy"
+additional=caps at 25
+effect=buff
+subeffect=attack faster and deal more damage
+#note=avoid giving it stacks or it becomes very hard to deal with
+
+attack=Abomination Swipe
+animation=swings right arm|2.5
+cooldown=0
+effect=slow melee
+subeffect=damage:0|buff:"Frenzy":60
+#note=move out of way
+#note=don't use minions/clones to prevent "Frenzy"-stacks
+
+attack=Abomination Slam
+animation=glows and jumps|1.5
+effect=slow melee
+subeffect=damage:3202|buff:"Frenzy":60
+#note=move out of way
+#note=don't use minions/clones to prevent "Frenzy"-stacks
+
+attack=Charge
+animation=bends forward and glows purple|1
+additional=only used at distant targets
+effect=piercing dash with PBAoE (~4 hits in 2.5 s)
+subeffect=damage:0|knockback:1| per hit (extreme damage)
+#note=move out of way, evade if needed
+
+##################################################################
+
+copy=Orrian Spider|normal
+name=Orrian Spider
+alt=Orrian Spiders|Spider|Spiders
+category=elite
+health=157296
+
+attack=Bite
+image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
+animation=withdraws and bites|0.75
+cooldown=2.5
+effect=melee
+subeffect=damage:4197|crippled:6|poison:1128:6
+
+##################################################################
+
+name=Orrian Drake
+alt=Orrian Drakes|Drake|Drakes
+image=http://wiki.guildwars2.com/images/5/53/Orrian_Drake.jpg
+path=Arah1|Arah2|Arah4
+category=normal
+health=15774
+type=undead
+
+attack=Bite
+animation=swings head|0.25
+cooldown=2
+effect=melee
+subeffect=damage:3950
+#note=does not attempt to get on range so you can stay at max melee range
+
+attack=Poison Cloud
+image=http://giant.gfycat.com/AdmirableHeavenlyFrilledlizard.gif
+animation=leans back and glows and then opens mouth|1.25
+cooldown=4
+effect=few projectiles (cone) with ticking AoE (10 ticks)
+subeffect=damage:385|poison:1504:8| per tick
+#note=stay at melee range to prevent getting hit
+
+##################################################################
+
+copy=Orrian Drake|normal
+name=Orrian Drake
+alt=Orrian Drakes|Drake|Drakes
+image=http://wiki.guildwars2.com/images/5/53/Orrian_Drake.jpg
+category=elite
+health=157296
+
+##################################################################
+
+name=Tar
+alt=Tars
+path=Arah1
+category=normal
+health=15774
+type=elemental
+
+attack=Spit
+cooldown=0
+effect=projectile
+subeffect=damage:0
+
+##################################################################
+# Same enemy: CoE Risen Berserke4.
+
+name=Risen Berserker
+alt=Risen Berserkers|Berserker|Berserkers
+path=Arah1|Arah2|Arah3
+category=elite
+health=157296
+type=undead
+
+attack=Low armor
+
+attack=Axe Swing (1)
+cooldown=4
+animation=swings right axe|0.1
+additional=finishes whole chain whether hits or not
+effect=melee
+subeffect=damage:611|might:5|fury:5
+
+attack=Axe Slice (2)
+animation=swings right axe|0.6
+additional=can't rotate
+effect=2 melee hits in 0.5 s
+subeffect=damage:822|might:5|fury:5| per hit
+
+attack=Brutal Strike (3)
+animation=holds right axe over head|0.75
+additional=can't rotate
+effect=3 melee hits in 1.2 s
+subeffect=damage:1250|might:5|fury:5| per hit
+#note=move behind back
+
+attack=Whirling Axe
+cooldown=25
+additional=can't move
+effect=15 small PBAoEs in 3 s
+subeffect=damage:783| per hit (|damage:11745|)
+#note=do not tank it and try to interrupt
+
+attack=Berserk
+additional=activates when hit below 85% health
+effect=buff
+# ~15% (20% listed on wiki)
+subeffect=deal 20% more damage
+
+##################################################################
+
+copy=Risen Berserker|elite|Arah2
+name=Dominated Berserker
+alt=Dominated Berserkers
+
+##################################################################
+
+name=Undead Abomination
+alt=Undead Abominations|Abomination|Abominations
+image=http://wiki.guildwars2.com/images/b/bf/Risen_Abomination.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=elite
+health=166496
+level=82
+type=undead
+
+attack=Abomination Swipe
+animation=steps back and swings club from right|2
+cooldown=6
+effect=melee
+subeffect=damage:4749
+
+attack=Abomination Slam
+animation=glows and swings club over head|1.5
+# Changed from 10 to 19. - Wethospu
+cooldown=19
+effect=PBAoE
+subeffect=damage:7216|launch:2.3
+
+attack=Charge
+cooldown=60
+animation=purple glow, puts left hand on ground and waves club|1|charged head forward
+additional=Only used at distant targets
+effect=dash with PBAoE (5 hits in 1 s)
+subeffect=damage:7654|knockback:1.5| per hit
+#note=either interrupt or use movement impaired conditions
+
+##################################################################
+
+name=Locust Swarm
+alt=Locust Swarms|Locust|Locusts
+path=Arah1|Arah2|Arah3|Arah4
+category=elite
+health=24974
+level=82
+type=undead
+
+attack=Bug Bite
+animation=stays still|0.75
+cooldown=2
+effect=melee
+subeffect=damage:4272
+#note=keep moving to avoid this attack
+
+##################################################################
+# Similar enemy: Arah3 Risen Defiler.
+# Similar enemy: CoE Risen Defiler.
+
+name=Risen Defiler
+alt=Risen Defilers|Defiler|Defilers
+image=http://wiki.guildwars2.com/images/d/da/Dominated_Defiler.jpg
+path=Arah2
+category=elite
+health=157296
+toughness=1.2
+type=undead
+
+tactic=normal
+Alternates between Throw Anchor and Smash.
+
+attack=Crippled
+
+attack=Noxious Aura
+effect=aura (hits every 3 s)
+subeffect=poison:5280:3| per hit
+#note=extreme damage per second, remove as fast as possible
+
+attack=Throw Anchor (1)
+cooldown=7
+animation=pulls scythe behind back and spins|0.9|throws 5 black anchors
+effect=~5 projectiles (cone)
+subeffect=damage:3500| per hit
+#note=block/evade, move at range or jump over
+
+attack=Pull (2)
+additional=seems to work very inconsistently (about 10% of the time)
+effect=projectile
+subeffect=pull
+effect=on itself
+subeffect=damage:0|pull
+
+attack=Smash
+cooldown=6
+animation=holds anchor behind back and swings over head|0.6
+effect=melee
+subeffect=damage:3442
+
+##################################################################
+
+copy=Risen Defiler|elite|Arah2
+name=Dominated Defiler
+alt=Dominated Defilers
+
+##################################################################
+
+name=Risen Deadeye
+alt=Risen Deadeyes|Deadeye|Deadeyes
+path=Arah2
+category=elite
+health=78648
+type=undead
+
+attack=Kick
+cooldown=4.5
+animation=raises leg and kicks|0.25
+effect=melee
+subeffect=damage:1378|knockback:1.5
+
+attack=Kill Shot
+cooldown=8
+animation=glows, kneels and aims with debuff and laser on target|1.6
+additional=cannot be blocked. Only used at distant targets.
+effect=fast piercing projectile
+subeffect=damage:4822| - |damage:65229| (based on distance) and |knockback:1.5
+#note=evade it based on debuff icon
+#note=stay in melee range to prevent huge bonus damage
+#note=do not stand in beam or behind targeted player
+#note=interrupt or use blind
+
+attack=Plant
+cooldown=20
+animation=swings rifle overhead|0.5
+additional=used at melee range
+effect=cone
+subeffect=buff:"Orrian_Explosives":5
+
+attack="Orrian Explosives"
+effect=debuff
+effect=end effect (PBAoE)
+subeffect=damage:14047|knockdown:1.5
+#note=evade or block based on debuff icon
+
+##################################################################
+
+copy=Risen Deadeye|elite|Arah2
+name=Dominated Deadeye
+alt=Dominated Deadeyes
+
+##################################################################
+
+name=Suspicious Pot
+alt=Suspicious Pots|Fire Barrels
+path=Arah2
+category=structure
+
+attack=Flamestrike
+effect=aura (hits every 1 s)
+subeffect=damage:3875|burning:1968:6| per hit
+
+##################################################################
+
+name=Risen Sentinel
+alt=Risen Sentinels|Sentinel|Sentinels
+path=Arah2|Arah3
+category=elite
+health=157296
+type=undead
+
+attack=Sword of Wrath (1)
+animation=swings mace from right|0.3
+cooldown=0
+effect=melee
+subeffect=damage:1182
+
+attack=Sword Arc (2)
+animation=swings mace from left|0.7
+effect=melee
+subeffect=damage:1342
+
+attack=Sword Wave (3)
+animation=holds mace behind back and thrusts forward|1.5
+additional=usually misses at melee range
+effect=melee
+subeffect=damage:1487
+
+attack=Shield Bash
+animation=turns left|0.25|dashes shield forward
+cooldown=17
+additional=Leap finisher.
+effect=dash
+subeffect=damage:690|stun:2
+
+attack=Fiery Block
+cooldown=19
+animation=instant|0|hides behind shield
+effect=blocks all attacks for 3 s
+subeffect=burning:810:1| when blocks and reflects projectiles
+
+attack=Banner of Strength
+cooldown=32
+animation=holds mace behind back with blue glow|0.5
+additional=cannot be blocked or evaded. Light field.
+effect=teleports to target
+effect=summons a banner
+subeffect=Increased Power and Condition Damage
+effect=area field
+subeffect=knockback| when passing through. Reflects projectiles (also while inside).
+#note=use stability or invulnerability to get out
+
+attack=Berserk
+additional=activates when hit below 885% health
+effect=buff
+# ~15% (20% listed on wiki)
+subeffect=deal 20% more damage
+
+##################################################################
+
+copy=Risen Sentinel
+name=Dominated Sentinel
+alt=Dominated Sentinels
+
+##################################################################
+
+name=Flying Raptor
+image=http://wiki.guildwars2.com/images/f/f3/Flying_Raptor.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=legendary
+type=no type
+
+attack=???
+effect=???
+subeffect=???
+
+##################################################################
+
+name=Corpse Mine
+alt=Corpse Mines
+image=http://wiki.guildwars2.com/images/5/5b/Corpse_Mine.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=structure
+
+attack=Plot
+image=http://giant.gfycat.com/FakeGenerousCarpenterant.gif
+additional=triggered on touch
+effect=PBAoE
+subeffect=percent:90
+effect=self destruct
+
+##################################################################
+
+name=Unknown (Land Mine)
+alt=Land Mine|Land Mines
+path=Arah2
+category=structure
+
+attack=cannot be targeted (melee works fine)
+#note=much easier to just walk over
+
+attack=Detonate
+animation=blows (~3 s)
+effect=PBAoE
+subeffect=damage:19731|burning:1300:5|knockback:1.5|, self-destructs
+#note=keep moving to avoid the attack, do not run behind anyone
+
+##################################################################
+
+name=Unknown (Water Mine)
+alt=Water Mine|Water Mines
+path=Arah2
+category=structure
+
+attack=Detonate
+effect=PBAoE
+subeffect=damage:6637|crippled:5|, self-destructs
+
+##################################################################
+
+name=Magma Turret
+alt=Magma Turrets
+path=Arah2
+category=structure
+
+attack=Invulnerable
+
+attack=Magma Orb
+effect=projectile
+subeffect=damage:774
+
+##################################################################
+
+name=Net Turret
+alt=Net Turrets
+path=Arah2
+category=structure
+
+attack=cannot be targeted
+#note=melee and untargeted attacks can still destroy it
+
+attack=Net
+animation=smoke
+effect=projectile
+subeffect=immobilized:1
+#note=evade bit after smoke effect (weird timing)
+
+##################################################################
+
+name=Risen Shark
+alt=Risen Sharks|Shark|Sharks
+image=http://wiki.guildwars2.com/images/c/c5/Risen_Bull_Shark.jpg
+path=Arah2
+category=normal
+health=15774
+type=undead
+
+attack=Bite
+cooldown=0
+effect=melee
+subeffect=damage:0 and random Condition (|bleeding:0:8|poison:0:8|weakness:8|)
+
+attack=Charge
+effect=dash with PBAoE (5 hits in 1 s)
+subeffect=damage:0|bleeding:0:10|knockback| per hit
+#note=use stability or evade forward
+
+##################################################################
+
+name=Risen Shark
+alt=Risen Sharks|Shark|Sharks
+image=http://wiki.guildwars2.com/images/c/c5/Risen_Bull_Shark.jpg
+path=Arah4
+category=elite
+type=undead
+
+attack=Bite
+cooldown=0
+effect=melee
+subeffect=damage:0 and random Condition (|bleeding:0:8|poison:0:8|weakness:8|)
+
+attack=Charge
+effect=dash with PBAoE (5 hits in 1 s)
+subeffect=damage:0|bleeding:0:10|knockback| per hit
+#note=use stability or evade forward
+
+##################################################################
+
+name=Inquest Technician
+alt=Inquest Technicians|Technician|Technicians
+image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
+path=Arah2
+category=elite
+health=157296
+# Verified
+type=inquest
+
+attack=Subvert
+cooldown=17
+animation=raises gun and shoots electricity|1|keeps shooting electricity
+effect=16 ranged hits in 9 s
+subeffect=percent:2.5|stun:1| and "Subvert" (5 s) per hit
+#note=interrupt to help party members
+#note=use stability to counter it
+#note=not very dangerous ability by itself but makes you very vulnerable
+
+attack="Subvert"
+effect=buff
+subeffect=regenerate health
+
+##################################################################
+
+name=Inquest Handler
+alt=Inquest Handlers|Handler|Handlers
+path=Arah2
+category=normal
+health=7887
+# Verified.
+type=inquest
+
+attack=Tranquilizer Dart
+cooldown=8
+animation=raises gun|0.5|shoots a blue dart
+effect=projectile
+subeffect=damage:1280|crippled:6
+
+attack=Blunderbuss
+cooldown=13
+animation=raises gun|0.3|yellow explosion
+effect=short-range projectile
+subeffect=damage:2870|bleeding:296:4:1
+effect=at closer range
+subeffect=damage:3558|bleeding:592:4:2
+effect=at even closer range
+subeffect=damage:3861|bleeding:888:4:3
+effect=at melee range
+subeffect=damage:4820|bleeding:1184:4:4
+
+##################################################################
+
+name=Alphard (Clone)
+alt=Alphard (Clones)
+image=http://wiki.guildwars2.com/images/4/43/Risen_Prince_Nekandezzar.jpg
+path=Arah2
+category=normal
+health=15774
+type=undead
+
+attack=Vital Shot
+animation=aims with right pistol|0.3
+cooldown=1
+effect=projectile
+subeffect=damage:272|bleeding:296:4
+#note=tank, block/evade, use an anti projectiles skill or break line of sight
+
+attack=Unload
+cooldown=19
+animation=points towards with both guns|0.3
+effect=8 projectiles in 1.5 s
+subeffect=damage:272| per hit (|damage:2176|)
+#note=block/evade, use an anti projectiles skill or break line of sight
+
+
+##################################################################
+
+name=Plague Carrier Abomination
+alt=Plague Carrier Abominations|Plague Carrier|Plague Carriers
+image=http://wiki.guildwars2.com/images/4/41/Bloated_Creeper.jpg
+path=Arah2
+category=elite
+health=1572960
+type=undead
+
+attack=Explode
+animation=puts arms on face, glows and lowers arms|1.75|brown explosion
+effect=PBAoE
+subeffect=damage:9007|knockdown:3|poison:1440:8|vulnerability:8|weakness:8|crippled:8
+effect=summons
+subeffect=10 enemy=Risen_Grubs:normal, self-destructs
+#note=you can blind Carrier
+#note=if you go down, rally on enemy=Risen_Grub:normal
+
+##################################################################
+# Similar enemy: Arah2 Risen Defiler.
+# Same enemy: CoE Risen Defiler.
+
+name=Risen Defiler
+alt=Risen Defilers|Defiler|Defilers
+image=http://wiki.guildwars2.com/images/d/de/Risen_Putrifier.jpg
+path=Arah3
+category=elite
+health=157296
+toughness=1.2
+type=undead
+
+tactic=normal
+Alternates between Throw Anchor and Smash.
+
+attack=Crippled
+
+attack=Throw Anchor (1)
+cooldown=7
+animation=pulls scythe behind back and spins|0.9|throws 5 black anchors
+effect=~5 projectiles (cone)
+subeffect=damage:3500| per hit
+#note=block/evade, move at range or jump over
+
+attack=Pull (2)
+additional=seems to work very inconsistently (about 10% of the time)
+effect=projectile
+subeffect=pull
+effect=on itself
+subeffect=damage:0|pull
+
+attack=Smash
+cooldown=6
+animation=holds anchor behind back and swings over head|0.6
+effect=melee
+subeffect=damage:3442
+
+##################################################################
+
+name=Risen Hand
+alt=Risen Hands|Hand|Hands
+path=Arah3|Arah4
+category=structure
+health=14940
+
+attack=Kill to rally
+
+attack=Throw Boulder
+animation=instant|0|hand swings (after rock)
+effect=projectile
+subeffect=damage:1550|knockdown:3
+
+##################################################################
+
+name=Rotten Mouth
+alt=Rotten Mouths|Mouth|Mouths
+path=Arah3|Arah4
+category=structure
+
+attack=Invulnerable
+
+attack=Putrid Blast
+effect=projectile with small ticking AoE
+subeffect=damage:1160|poison:324:4| per hit
+
+##################################################################
+
+name=Orrian Gorilla
+alt=Orrian Gorillas|Gorilla|Gorillas
+image=http://wiki.guildwars2.com/images/d/d4/Risen_Gorilla.jpg
+path=Arah3|Arah4
+category=normal
+health=15774
+type=undead
+
+attack=Smash
+cooldown=2.5
+animation=raises left/right arm and smashes|0.15
+effect=melee
+subeffect=damage:1445
+
+attack=Massive Smash (1)
+cooldown=10
+animation=swings left arm from right|0.6
+effect=melee
+subeffect=damage:1335|knockdown:7
+#note=try to evade, do not stun break too quickly
+
+attack=Thump (2)
+animation=smashes ground with left arm|0.3
+effect=quick melee
+subeffect=damage:502|knockdown:7
+
+attack=Roar (1)
+cooldown=20
+animation=glows and roars|1.5
+additional=cannot be blocked or evaded
+effect=3 PBAoEs in 3 s
+subeffect=weakness:5| per hit
+
+attack=Shockwave (2)
+animation=swings right arm|1
+effect=melee
+subeffect=damage:1461
+
+##################################################################
+# Same enemy: CoE Orrian Gorilla
+
+name=Orrian Gorilla
+alt=Orrian Gorillas|Gorilla|Gorillas
+image=http://wiki.guildwars2.com/images/d/d4/Risen_Gorilla.jpg
+path=Arah1|Arah3|Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Smash
+cooldown=2.5
+animation=raises left/right arm and smashes|0.15
+effect=melee
+subeffect=damage:4088
+
+attack=Massive Smash (1)
+cooldown=10
+animation=swings left arm from right|0.6
+effect=melee
+subeffect=damage:4033|knockdown:7
+#note=try to evade, do not stun break too quickly
+
+attack=Thump (2)
+effect=quick melee
+subeffect=damage:1505|knockdown:7
+
+attack=Roar (1)
+cooldown=20
+animation=glows and roars|1.5
+additional=cannot be blocked or evaded
+effect=3 PBAoEs in 3 s
+subeffect=weakness:5| per hit
+
+attack=Shockwave (2)
+animation=swings right arm|1
+effect=melee
+subeffect=damage:4129
+
+##################################################################
+# Same enemy: CoE Risen Wraith (Drain)
+
+name=Risen Wraith (Drain)
+alt=Risen Wraiths (Drain)
+image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
+path=Arah3|Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Vampiric Touch
+animation=swings right arm
+effect=Melee
+subeffect=damage:0
+
+attack=Teleport
+animation=raises hands, turns transparent
+effect=short dash
+
+attack=Roar (1)
+additional=cannot be blocked or evaded
+effect=ranged
+subeffect="Grenth's Mark" (30 s) after 4 seconds
+
+attack=Grenth's Mark (2)
+animation=life-steal effect and sound
+effect=30 ranged hits in 30 s
+subeffect=damage:0| per hit
+#note=continuous damage adds up on screen (does not get stronger)
+
+attack="Grenth's Mark"
+additional=cannot be blocked or evaded
+effect=debuff
+effect=end effect
+subeffect=target may get downed if Wraith is alive
+#note=works very inconsistently
+
+##################################################################
+
+name=Undead Tendril
+alt=Undead Tendrils|Tendril|Tendrils
+path=Arah3
+category=structure
+health=14940
+
+attack=Kill to rally
+
+attack=Slash
+effect=slow melee
+subeffect=damage:0|poison:0:25|bleeding:0:15
+#note=try to keep some distance
+
+##################################################################
+# Same enemy: CoES Risen enemy=Grub:Normal
+
+name=Risen Grub
+alt=Risen Grubs|Grub|Grubs
+image=http://wiki.guildwars2.com/images/1/19/Risen_Grub.jpg
+path=Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Undead Grub Spit
+cooldown=0
+animation=holds head back
+effect=slow projectile
+subeffect=damage:0
+#note=zig zag at range
+
+attack=Slime Spray
+animation=holds head back bit longer
+additional=only used at close targets
+effect=3 low-range projectiles with ticking AOE (6 hits in 4 s)
+subeffect=damage:0| per hit (lethal damage)
+#note=be very careful at melee range
+
+##################################################################
+# Same enemy: CoE2 Risen Grub.
+
+name=Risen Grub
+alt=Risen Grubs
+image=http://wiki.guildwars2.com/images/1/19/Risen_Grub.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=normal
+health=15774
+type=undead
+
+attack=Undead Grub Spit
+cooldown=0
+effect=slow projectile
+subeffect=damage:294
+
+##################################################################
+# Same enemy: CoE Undead Wraith.
+
+name=Risen Wraith (Corruptor)
+alt=Risen Wraiths (Corruptor)
+image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
+path=Arah3|Arah4
+category=elite
+health=157296
+type=undead
+
+attack=slash
+effect=melee
+subeffect=damage:0| and Corruption (25 s)
+
+attack=Life Drain
+animation=spins around|3.5
+effect=high-range PBAoE
+subeffect=damage:0|healing| and Corruption
+
+attack=Warp
+additional=only used at distant targets
+effect=teleport
+
+attack="Corruption"
+effect=debuff
+subeffect=increase damage taken from attacks and other effects
+effect=5 stacks
+subeffect=stun:1.5
+effect=10 stacks
+subeffect=stun:1.5| and take about twice as much damage
+effect=25 stacks
+subeffect=summon enemy=Risen_Wraith_(Drain):elite
+
+##################################################################
+
+name=Undead Wraith
+path=Arah4
+image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
+category=elite
+type=undead
+
+##################################################################
+
+name=Orrian Spectral Ghostblade
+alt=Orrian Spectral Ghostblades|Ghostblade|Ghostblades
+path=Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Leap
+effect=leap
+subeffect=damage:0|crippled:5
+
+attack=Pull (1)
+effect=delayed PBAoE
+subeffect=damage:0|pull
+
+attack=Spin (2)
+additional=channeled
+effect=multiple PBAoEs
+subeffect=damage:0| per hit (very high damage)
+effect=end effect
+subeffect=launch:3
+
+##################################################################
+
+name=Orrian Spectral Archer
+alt=Orrian Spectral Archers|Archer|Archers
+path=Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Trick Arrow
+cooldown=0
+effect=bouncing projectile
+subeffect=damage:0| per hit
+
+attack=Pin Down
+cooldown=12
+effect=projectile
+subeffect=damage:0|immobilized
+
+attack=Pinning Barrage
+cooldown=25
+additional=channeled
+effect=aoe
+subeffect=damage:0|crippled:1| per hit
+
+##################################################################
+
+name=Orrian Spectral Flamecaster
+alt=Orrian Spectral Flamecasters|Flamecaster|Flamecasters
+path=Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Spin
+effect=multiple projectiles (360 degrees) in 2.5 s
+subeffect=damage:0|burning| per hit (medium damage)
+effect=end effect
+subeffect=vulnerability:4.5|launch:4.5
+
+##################################################################
+
+name=Orrian Spectral Guard
+alt=Orrian Spectral Guards|Guard|Guards
+image=http://wiki.guildwars2.com/images/1/16/Orrian_Spectral_Guard.jpg
+path=Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Swing
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Bash
+effect=melee
+subeffect=damage:0|stun:2|
+
+##################################################################
+
+name=Orrian Spectral Juggernaut
+alt=Orrian Spectral Juggernauts|Juggernaut|Juggernauts
+image=http://wiki.guildwars2.com/images/8/89/Orrian_Spectral_Juggernaut.jpg
+path=Arah4
+category=elite
+health=157296
+type=undead
+
+attack=Spectral Hammer Attack
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Stagger
+effect=melee
+subeffect=damage:0|
+
+##################################################################
+###                    Explorables - bosses                    ###
+##################################################################
+
+name=Ancient Ooze
+alt=Ooze
+image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
+Path=Arah1
+category=legendary
+health=1376340
+type=undead
+
+attack=Bounce (moving)
+cooldown=8
+image=http://giant.gfycat.com/GoodSoulfulFoxhound.gif
+animation=glows|1|starts bouncing
+additional=only used at distant targets
+effect=dash with PBAoE (3 hits in 2 s)
+subeffect=damage:0|launch:3.5| per hit
+#note=If you are ranged, keep it slowed down and stay at distance
+#note=If you are melee, keep chasing and dodge at opposite direction Ooze is moving
+
+attack=Bounce (still)
+image=http://giant.gfycat.com/EssentialVapidHamadryas.gif
+cooldown=10
+animation=glows|1|starts bouncing
+additional=only used at close targets
+effect=6 PBAoEs in 4 s
+subeffect=damage:0|launch:3.5| per hit
+#note=If you are ranged, relax
+#note=If you are melee, dodge back and get in fast to prevent Ooze from using other skill
+
+attack=Split
+image=http://giant.gfycat.com/ThesePointlessHypsilophodon.gif
+additional=used at 25%. Can't be blocked
+effect=2 ballistic projectiles
+subeffect=enemy=Vile_Oozes:champion per hit
+effect=self destructs
+subeffect=leaves enemy=Blood_of_the_Ancient
+#note=Needs a target so if you stealth entire party it can't be used.
+
+##################################################################
+
+name=Blood of the Ancient
+image=http://wiki.guildwars2.com/images/0/08/Blood_of_the_Ancient.jpg
+path=Arah1
+category=bundle
+
+attack=Slows down
+#note=Use dodges and teleports to move faster
+
+attack=Summons enemy=Vile_Oozes:elite
+#note=Try to move fast
+#note=Use stealth to prevent aggro
+
+##################################################################
+
+name=Vile Ooze
+alt=Vile Oozes|Ooze|Oozes
+image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
+path=Arah1
+category=champion
+health=630960
+type=undead
+
+attack=Reflects projectiles
+
+attack=Ooze Multi
+cooldown=3
+image=http://giant.gfycat.com/HealthyInexperiencedAchillestang.gif
+additional=channeled
+effect=multiple ballistic projectiles (360 degrees) with small AoE
+subeffect=damage:0| per tick
+
+##################################################################
+
+name=Crystalline Entity
+alt=Crystalline Entities|The Entities
+Path=Arah1
+image=http://wiki.guildwars2.com/images/f/fa/Champion_Crystalline_Entity.jpg
+type=undead
+category=champion
+health=630960
+
+attack=Immune to Conditions and Vulnerable to "Green Light"
+
+attack=Jab
+image=http://giant.gfycat.com/EvergreenMarriedCoqui.gif
+cooldown=0
+effect=melee
+subeffect=damage:0
+#note=keep moving in circles to avoid most of the attacks
+
+##################################################################
+
+name=Orrian Spider
+alt=Orrian Spiders|Spider|Spiders
+image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
+path=Arah1|Arah2|Arah3|Arah4
+category=champion
+health=630960
+type=undead
+
+Attack=Alternates between its two attacks
+#note=keep in mind which attack was used first
+
+Attack=Venom Spray
+cooldown=6
+image=http://giant.gfycat.com/RingedPossibleCony.gif
+animation=glows and leans back|1.5
+effect=3 cones in 0.6 s
+subeffect=damage:2208|poison:1300:5| per hit. Grants "Predator swiftness" if hits.
+#note=side step to avoid
+#note=get hit to make Malrona vulnerable, do not remove poison
+#note=Her poison stacks with other sources of poison.
+
+attack=Venom Blast
+image=http://giant.gfycat.com/DimCommonArgentinehornedfrog.gif
+cooldown=6
+animation=glows and leans back|1.25
+additional=can't be blocked
+effect=5 projectiles (cone) with AoE
+subeffect=damage:9406| per hit
+#note=stay behind spider if not targeted
+#note=evade 1-2 times (melee user has to react based on animation)
+
+attack="Predator swiftness"
+effect=buff
+subeffect=moves faster but takes a lot more damage (~5 x) from poisoned players
+
+##################################################################
+
+name=Orrian Drake
+alt=Drake
+path=Arah1|Arah2|Arah4
+image=http://wiki.guildwars2.com/images/5/5a/Champion_Orrian_Drake.jpg
+category=champion
+health=630960
+type=undead
+
+attack=Bite
+image=http://fat.gfycat.com/FalseFlatAmericancrayfish.gif
+animation=swings head from right|0.25
+cooldown=3
+effect=melee
+subeffect=damage:4642
+
+attack=Bite
+image=http://fat.gfycat.com/NextTightIcelandgull.gif
+animation=swings head from left|0.25
+cooldown=3
+effect=melee
+subeffect=damage:4642
+
+attack=Insect Swarm
+cooldown=20
+image=http://giant.gfycat.com/HastyInformalBittern.gif
+animation=leans back and glows|1.75
+effect=5 bouncing and homing projectiles (3 hits each one) in 3.75 seconds
+#subeffect=damage:0|poison:0:10| and after first bounce |damage:0|poison:0:10|crippled:10|vulnerability:10:1|weakness:10|
+subeffect=damage:3753|poison:1720:10| per hit
+#note=reflections work extremely well
+
+##################################################################
+
+name=Shoggroth
+Path=Arah1
+image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
+category=legendary
+health=1456840
+type=elemental
+
+attack=Tar spit (if not burning)
+effect=multiple area fields
+subeffect="Covered in tar" (60 s) when passed through
+effect=summons
+subeffect=multiple enemy=Tars:normal
+#note=Keep it burning to prevent.
+
+attack=Tar spit (if burning)
+effect=multiple ticking AoEs
+subeffect=damage:0|burning| per tick
+
+##################################################################
+
+name=Giganticus Lupicus
+alt=Lupicus
+image=http://wiki.guildwars2.com/images/f/ff/Giganticus_Lupicus_%28NPC%29.jpg
+Path=Arah1|Arah2|Arah3|Arah4
+category=legendary
+type=undead
+health=1456840
+level=82
+toughness=1.5
+
+attack=Immune to blind and crippled. 100% resistance to control skills.
+#note=you can interrupt it with wiki=Sigil_of_Paralyzation|Sigil_of_Paralyzation
+
+attack=Mighty Kick
+image=http://i.imgur.com/OLZFceF.gif
+animation=leans a bit on left and kicks with left foot|0.75
+cooldown=8
+effect=melee
+subeffect=damage:14681|launch:3.3
+#note=block/evade, you may have to predict with slow connection
+#note=Usually used between every other attack
+
+attack=Infection
+image=http://i.imgur.com/o66R5AX.gif
+cooldown=15
+animation=waves hand in a big circle with green effect|2.5
+additional=cannot be blocked. Prioritizes players.
+effect=ranged
+subeffect=buff:"Green_Cloud":6
+#note=evade when hand is up to avoid getting infected (if he is facing towards you)
+#note=does not work on players in downed state
+
+attack="Green cloud"
+effect=debuff
+subeffect=knockdown:3| and summon a enemy=Grub:normal when expires
+#note=focus enemy=Grub:normal down
+
+attack=Eat
+animation=raises both arms|0.5|grabs an enemy=Grub:normal
+additional=stacks 25 times
+effect=melee
+subeffect=Take 2% less damage and do more damage (10 hours) per stack
+#note=Up to 50% less damage
+
+attack=Roar
+image=http://i.imgur.com/uY1LA3s.gif
+cooldown=15
+animation=looks up and roars forward|2
+effect=summons
+subeffect=0-4 enemy=Locust_Swarms:elite
+
+attack=Phase 2
+animation=turns invulnerable|5
+additional=used at 75% health
+effect=ranged
+subeffect=buff:"Green_Cloud":6| on closest target (doesn't prioritize players)
+#note=does not work on players in downed state
+
+##################################################################
+
+name=Giganticus Lupicus (Phase 2)
+alt=Lupicus (Phase 2)
+image=http://wiki.guildwars2.com/images/f/ff/Giganticus_Lupicus_%28NPC%29.jpg
+Path=Arah1|Arah2|Arah3|Arah4
+category=legendary
+type=undead
+health=1456840
+level=82
+toughness=1.5
+
+attack=Immune to blind and crippled. 100% resistance to control skills.
+#note=you can interrupt it with wiki=Sigil_of_Paralyzation|Sigil_of_Paralyzation
+
+attack=Eat
+animation=raises both arms|0.5|grabs a enemy=Grub:normal
+additional=stacks 25 times
+effect=melee
+subeffect=Take 2% less damage and do more damage (10 hours) per stack
+#note=Up to 50% less damage
+
+attack=Lupine Blast
+image=http://i.imgur.com/EPWX7vF.gif
+cooldown=2
+animation=raises left hand|0.5|shoots a green ball
+effect=projectile with small AoE
+subeffect=damage:9792|poison:532:2
+#note=block/evade
+#note=keep sidestepping in one direction and change direction when it shoots
+
+attack=Lupine Blast
+cooldown=6
+animation=leans toward, raises right arm and then leans back|2|becomes a green cloud
+additional=only used at distant targets. Sometimes uses Lupine Blast mid-dash.
+effect=dash with PBAoE at end
+subeffect=damage:9339|knockdown:3
+#note=evade, block or use a mobility skill
+#note=Usually uses mighty Blow next to finish off the target
+
+attack=Vicious Slash
+image=http://i.imgur.com/6o26zs1.gif
+animation=turns right and swings right arm|1
+effect=melee
+subeffect=damage:18484|launch:3.3
+effect=melee
+subeffect=bleeding:12030:30:3
+#note=hits twice, second hit inflicts bleeding
+#note=evade or block (single block still makes you bleed)
+
+attack=Frenzied Blast
+image=http://i.imgur.com/uDYhcMA.gif
+cooldown=16
+animation=Puts hands on its chest and leans bit forward|1.25
+additional=Scales based on amount of targets.
+effect=3 waves of multiple ballistic projectiles (360 degrees) with small AoE in 2.75 s
+subeffect=damage:10120| per hit
+#note=with more than 3 players every circle does not get drawn and you may get hit out of the circles
+#note=at long range circles disappear before projectile arrives
+#note=hits almost immediately at melee range
+#note=can be outranged by running to the other side of the arena
+#note=evade twice or use immunity or area anti projectile skills
+#note=may use Lupine Blast very quickly after this
+
+attack=Phase 3
+image=http://i.imgur.com/y60cIru.gif
+animation=turns invulnerable
+additional=used at 50% health
+effect=multiple ballistic projectiles (360 degrees) with small AoE (Frenzied Blast)
+subeffect=damage:9088
+effect=multiple ballistic projectiles (360 degrees) with small AoE (Mighty Blast)
+subeffect=damage:5341
+
+##################################################################
+
+name=Giganticus Lupicus (Phase 3)
+alt=Lupicus (Phase 3)
+image=http://wiki.guildwars2.com/images/f/ff/Giganticus_Lupicus_%28NPC%29.jpg
+Path=Arah1|Arah2|Arah3|Arah4
+category=legendary
+type=undead
+health=1456840
+level=82
+toughness=1.5
+
+attack=Immune to blind and crippled. 100% resistance to control skills.
+#note=you can interrupt it with wiki=Sigil_of_Paralyzation|Sigil_of_Paralyzation
+
+attack=Lupine Blast
+image=http://i.imgur.com/EPWX7vF.gif
+cooldown=2
+animation=turns bit left/right and shoots from left/right hand|0.5|shoots a green ball
+effect=projectile with small AoE
+subeffect=damage:0|poison:0:5
+#note=block/evade
+#note=keep sidestepping to one direction and change direction when he shoots
+
+attack=Life Drain (1)
+image=http://i.imgur.com/ouLI3xA.gif
+cooldown=18
+animation=Raises its arm and start rising to air|1.5|big red circle
+effect=Channeled
+#description=Can't move during the attack.
+effect=PBAoE
+#description=8 hits in 3 s (2 hits every 1 s).
+subeffect=damage:15424 (damage:1928 per hit)
+subeffect=healing
+#note=try to get out as fast as possible
+#note=time your evades
+#note=single blocks are ineffective because attack hits twice every second
+
+attack=Life Drain (2)
+animation=lands on ground|2.25
+effect=PBAoE
+subeffect=damage:2159|knockback:1.5
+
+attack=Life Drink
+image=http://i.imgur.com/Bxr7cMh.gif
+cooldown=15
+animation=Moves right arm to very left and starts pointing at you|1.25
+effect=4 ranged hits in 1.5 s (1 hit every 0.5 s)
+subeffect=damage:16637 (damage:4159 per hit)
+subeffect=healing
+#note=evade twice (needs proper timing to not get hit)
+
+attack=Frenzied Blast
+image=http://i.imgur.com/Jd17SJI.gif
+cooldown=6
+animation=Shakes both hands pointed at you and leans bit forward|0.5|shoots multiple small green balls
+effect=~10 projectiles in 2.25 s with small AoE
+#description=~10 hits in 2.25 s. Used in melee range.
+subeffect=damage:30010 (damage:3001 per hit)
+#note=use area anti projectiles skills, immunity or evade 1-2 times
+
+attack=Necrid Trap
+image=http://i.imgur.com/Azyha0a.gif
+cooldown=5
+animation=Leans bit forward and raises both arms|0.9|green dome
+effect=Used at close targets except when stacking. Tracks movement except at melee range.
+effect=AoE with 5 hits
+subeffect=damage:29051 (damage:5810 per hit)
+effect=Area field
+subeffect=knockback:0 when passing through (prevents escape)
+
+#note=try to stay near him to prevent him using it
+#note=use stability, immunity or teleport to get out of it
+#note=if trapped and without a way to escape, try to block or evade inside it
+
+attack=Lupine Death
+image=http://i.imgur.com/jcAkRpw.gif
+additional=used upon dying
+effect=multiple ballistic projectiles with small AoE (360 degrees)
+subeffect=damage:0| per hit
+
+##################################################################
+
+name=Korga the mighty
+alt=Korga
+image=http://wiki.guildwars2.com/images/d/d4/Risen_Gorilla.jpg
+path=Arah1
+category=legendary
+health=1497440
+type=undead
+
+attack=Charge
+cooldown=0
+effect=piercing dash
+subeffect=damage|launch
+
+attack=Resurrect
+effect=PBAoE
+subeffect=resurrect nearby allies
+
+attack=Thump
+effect=PBAOE
+subeffect=damage
+
+##################################################################
+
+name=Jotun Stargazer
+alt=Jotun
+image=http://wiki.guildwars2.com/images/8/81/Jotun_ghost.jpg
+path=Arah1
+category=legendary
+health=1497440
+type=ghost
+
+attack=Homing projectile
+cooldown=0
+effect=homing projectile
+subeffect=percent:100
+#note=reflect back to deal tons of damage
+
+attack=Lava Font
+animation=raises hand/staff
+effect=ticking AoE (6 s)
+subeffect=damage:0|burning| per tick (extreme damage)
+#note=first tick happens immediately
+#note=keep moving, evade if needed
+
+attack=Flame Wall
+effect=Shrinking area field
+subeffect=percent:100| when passing through
+#note=if someone needs to get in get close to revive fast
+
+##################################################################
+
+name=Operative Belka
+alt=Belka
+image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
+path=Arah2
+category=legendary
+health=688170
+type=undead
+
+attack=Immobilized (does not move and can't be moved) and immune to Control
+
+attack=Fan of Fire
+cooldown=1.75
+animation=aims with bow|0.5
+effect=3 medium range piercing projectiles (cone)
+subeffect=damage:261|burning:1176:2| per hit
+
+attack=Teleport
+animation=instant||lightning effect
+cooldown=20
+effect=ranged
+subeffect=teleport to "random" predefined location
+
+attack=Point Blank Shot
+animation=aims with bow|0.5
+cooldown=12
+effect=piercing projectile
+subeffect=damage:623|knockback:1.5|buff:"Bubble":5
+#note=Try to predict
+
+attack="Bubble"
+animation=yellow bubble
+effect=buff
+subeffect=Reflect projectiles
+
+attack=Pulsing Orb
+cooldown=4
+animation=aims bit higher than normally|0.5
+additional=only used at distant targets
+effect=slow ballistic ranged with AoE
+subeffect=damage:26280|blind
+#note=May overlap/get mixed with enemy=Suspicious_Pots:structure. Dodge if unsure.
+#note=Attack tracks movement but red circle does not so pay attention.
+#note=Fast movement towards Belka may cause it to hit at very close range
+
+##################################################################
+
+name=Berserker Abomination
+alt=Abomination
+image=http://wiki.guildwars2.com/images/b/bf/Risen_Abomination.jpg
+path=Arah2
+category=legendary
+health=963438
+# Verified.
+type=undead
+
+attack=Abomination Swipe
+animation=swings club from right|1.75
+cooldown=4
+effect=cone
+subeffect=damage:6401
+#note=run behind its back
+
+attack=Throw Boulder
+animation=holds right arm on stomach and then swings right arm|1|throws a boulder
+cooldown=12
+additional=only used at distant targets
+effect=projectile
+subeffect=damage:13180|knockdown:2
+#note=Very unreliable hit box so block/evade.
+
+attack=Stomp
+cooldown=17
+animation=crouches and jumps|1|rock effect
+effect=big PBAoE
+subeffect=damage:6649|launch:2.3
+#note=block/evade
+#note=Rarely the damage happens at start of the animation. This should only happen once.
+
+attack=Frenzied (1)
+animation=looks idle and then pulls club behind back and raises left hand|2.25
+effect=small PBAoE
+subeffect=damage:6619
+#note=If you interrupt this he will use it again in few seconds.
+
+attack=Push (2)
+animation=smashes ground with left arm|1
+additional=can't be blocked or evaded
+effect=ranged
+subeffect=knockback:1.5
+#note=Dodging stops movement from Knockback (may push you to corpses, etc)
+#note=If you interrupt this it will go on full cooldown.
+
+attack=Berserk (3)
+cooldown=48
+animation=raises both arms|1
+effect=buff
+subeffect=buff:"Berserk":20
+
+attack="Berserk"
+animation=red effect
+effect=buff
+subeffect=deal 100% more damage and take no damage from attacks
+effect=small aura (hits every 3 seconds)
+subeffect=burning:9204:3
+#note=Use a Tranquilizer to remove.
+#note=His current animation gets interrupted when this wears off but attack still continues so pay attention
+
+attack=Berserk
+additional=activates when hit below 85% health
+effect=buff
+# ~15% (20% listed on wiki)
+subeffect=deal 20% more damage
+
+##################################################################
+
+name=Alphard, Serpent of the Waves
+alt=Alphard
+image=http://wiki.guildwars2.com/images/4/43/Risen_Prince_Nekandezzar.jpg
+path=Arah2
+category=legendary
+health=1376340
+type=undead
+
+attack=Resistant to condition (base duration reduced by 95%)
+
+attack=Vital Shot
+animation=aims with right pistol|0.3
+cooldown=1
+effect=projectile
+subeffect=damage:1212|bleeding:360:4
+#note=tank, use an anti projectiles skill or break line of sight
+
+attack=Unload
+cooldown=19
+animation=points towards with both guns|0.3
+effect=8 projectiles in 1.5 s
+subeffect=damage:1212| per hit (|damage:9696|)
+#note=evade, block, use anti projectiles or break line of sight
+
+attack=Throw Anchor (1)
+cooldown=11
+animation=moves arms to the right behind back and spins a circle to left|1|shoots brown lines
+effect=projectile at every target
+subeffect=damage:123|pull:1.5
+#note=evade, block or use AoE anti projectiles
+
+attack=Big Ol' Bomb (2)
+animation=crouches and touched ground|0.75|plants a barrel with red circle
+additional=only used if Anchor hits at least one target
+effect=delayed (3 s) PBAoE
+subeffect=damage:25382|launch
+#note=get out of range or evade
+#note=be careful with single blocks (it may get used on normal shot)
+
+attack=Teleport (1)
+cooldown=40
+animation=lightning flash|1
+effect=teleports to the middle of the arena
+
+attack=Daggerstorm (2)
+#animation=when "Lightning Icon" expires.
+additional=cannot be blocked
+effect=buff (~5 s)
+subeffect=reflects projectiles
+effect=~35 bouncing projectiles (360 degrees) in ~10 s
+subeffect=damage:19731| per hit
+#note=hide behind barricades
+#note=projectiles might bounce on your summons and pets
+
+attack=Summon
+additional=used at 75%/50%/20% health
+effect=summons
+subeffect=6 enemy=Clones:normal
+#note=ignore or kill
+#note=rally on them if needed
+
+attack=Berserk
+additional=activates at 75% health
+effect=buff
+# ~15% (20% listed on wiki)
+subeffect=deal 20% more damage
+
+##################################################################
+
+name=Operative Brie
+alt=Brie
+image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
+path=Arah2
+category=legendary
+health=1376340
+type=undead
+
+attack=Chain Lightning
+animation=swings left arm from right with blue effect|0.75|shoots a small lightning
+cooldown=3
+effect=bouncing and homing projectile
+subeffect=damage:1296| per hit
+
+attack=Turbo Laser
+cooldown=8
+animation=glows purple|1.25
+additional=seems to hit through walls
+effect=ranged
+subeffect=damage:11736|burning:588:1
+#note=side step
+#note=single-blocks also work
+
+attack=Orb of Wrath
+cooldown=9
+animation=spins scepter over head with blue effect and summons a ball|1|sends the ball towards the target
+additional=only used at distant targets
+effect=slow and homing projectile
+subeffect=damage:7932
+#note=block or evade through
+
+attack=Fire Storm
+cooldown=22
+animation=roars and raises arm|1.5|multiple red circles
+effect=multiple delayed (3 s) ticking AoEs (5 hits in 4 s) over time
+subeffect=damage:1151|confusion:286:3| per hit
+effect=first hit
+subeffect=damage:8637|confusion:286:3
+#note=stay out of red circles
+
+##################################################################
+
+name=Wraithlord's Crusher
+alt=Crusher
+path=Arah3
+category=legendary
+health=1087940
+toughness=0.7
+type=undead
+
+attack=Mighty Smash
+cooldown=6
+animation=holds hammer behind back and swings overhead|2.25
+effect=short melee
+subeffect=No effect but uses a block.
+effect=long range cone
+subeffect=damage:68242
+#note=get behind his back
+#note=block/evade
+#note=single blocks do not work in close range
+
+attack=Healing Signet
+cooldown=22
+animation=crouches, glows blue and raises right hand in the air|2
+effect=signet
+subeffect=healing
+#note=doesn't seem to have much effect
+
+attack=Revive Shout
+effect=PBAoE
+subeffect=resurrects nearby allies. Resurrected allies die when Crusher dies
+
+attack=Plague Shout
+cooldown=30
+animation=instant|0|white bubble
+additional=cannot be blocked or evaded
+effect=PBAoE
+subeffect=crippled:10|immobilized:10|vulnerability:10| (only if Crusher has that specific Condition)
+
+##################################################################
+
+name=Wraithlord's Hunter
+alt=Hunter
+path=Arah3
+category=champion
+health=495600
+toughness=0.7
+type=undead
+
+attack=Bouncing Shot
+animation=raises bow|0.5
+cooldown=3
+effect=bouncing projectile (hits 3 times)
+subeffect=damage:468|crippled:3| per hit
+effect=last hit
+subeffect=damage:468|immobilized:7
+
+attack=Binding Shot
+cooldown=14
+animation=glows and aims|1.75
+effect=slow projectile
+subeffect=damage:848|immobilized:4
+#note=keep moving to make it miss
+#note=block/evade
+
+attack=Evasive Trap
+cooldown=11
+animation=instant|0|dodges backwards
+additional=May interrupt his attacks. Used at close targets.
+effect=evade backwards
+effect=trap at end location
+subeffect=damage:2113|immobilized:5|bleeding:1300:5:3
+#note=if Hunter is not targetted, he does not use it
+#note=some skills (like wiki=Riposte|counters) make him use even if not targetted
+#note=he always evades on time
+
+attack=Poison Cloud
+cooldown=15
+animation=glows and aims|1.75|shoots a green ball
+additional=targeted at Crusher
+effect=ranged with ticking AoE (9 hits 8 s)
+subeffect=damage:834|poison:348:2| per hit (|damage:7506|)
+#note=stops using this attack if dies and gets resurrected
+
+##################################################################
+
+name=Giant
+alt=Giants
+image=http://wiki.guildwars2.com/images/1/13/Nageling_Giant.jpg
+path=Arah3|Arah4
+category=champion
+health=630960
+type=undead
+
+attack=Giant Stomp
+cooldown=7
+animation=raises arms and right foot and steps forward smashing ground|1.25
+effect=PBAoE
+subeffect=damage:15409|crippled:10
+effect=small PBAoE
+subeffect=launch:4.3
+#note=attack consists of two hits so a single block will only block the first part
+
+attack=Throw Boulder
+cooldown=16
+animation=grabs a boulder from ground|2.5
+effect=projectile with small AoE
+subeffect=damage:15622|knockdown:2
+
+attack=Roar (1)
+cooldown=20
+animation=raises arms and roars|1.25
+additional=cannot be blocked or evaded
+effect=PBAoE
+subeffect=weakness:10
+
+attack=Roar (2)
+animation=keeps roaring|1.25
+additional=cannot be blocked or evaded
+effect=PBAoE
+subeffect=Fear:2
+
+attack=Giant Stomp (1)
+cooldown=48
+animation=moves right foot back, raises arms and left foot and then smashes ground with left foot|1.5
+effect=projectile
+subeffect=damage:6930|crippled:10
+
+attack=Giant Stomp (2)
+animation=raises left foot and steps forward smashing ground|0.8
+effect=projectile
+subeffect=damage:6930|knockback:1.5
+
+attack=Giant Stomp (3)
+animation=raises right hand in air and smashes ground|1.6
+effect=projectile
+subeffect=damage:6930| and ???
+
+##################################################################
+
+name=Giant
+alt=Giants
+image=http://wiki.guildwars2.com/images/1/13/Nageling_Giant.jpg
+path=Arah4
+category=elite
+type=undead
+
+# Uses values from champion.
+
+attack=Giant Stomp
+cooldown=7
+animation=raises arms and right foot and steps forward smashing ground|1.25
+effect=PBAoE
+subeffect=damage:15409|crippled:10
+effect=small PBAoE
+subeffect=launch:4.3
+#note=attack consists of two hits so a single block will only block the first part
+
+attack=Throw Boulder
+cooldown=16
+animation=grabs a boulder from ground|2.5
+effect=projectile with small AoE
+subeffect=damage:15622|knockdown:2
+
+attack=Roar (1)
+cooldown=20
+animation=raises arms and roars|1.25
+additional=cannot be blocked or evaded
+effect=PBAoE
+subeffect=weakness:10
+
+attack=Roar (2)
+animation=keeps roaring|1.25
+additional=cannot be blocked or evaded
+effect=PBAoE
+subeffect=Fear:2
+
+attack=Giant Stomp (1)
+cooldown=48
+animation=moves right foot back, raises arms and left foot and then smashes ground with left foot|1.5
+effect=projectile
+subeffect=damage:6930|crippled:10
+
+attack=Giant Stomp (2)
+animation=raises left foot and steps forward smashing ground|0.8
+effect=projectile
+subeffect=damage:6930|knockback:1.5
+
+attack=Giant Stomp (3)
+animation=raises right hand in air and smashes ground|1.6
+effect=projectile
+subeffect=damage:6930| and ???
+
+##################################################################
+
+name=Wraithlord's Mage Crusher
+alt=Mage Crusher
+image=http://wiki.guildwars2.com/images/6/69/Wraithlord%27s_Mage_Crusher.jpg
+path=Arah3
+category=legendary
+health=1376340
+type=undead
+
+attack=Fetid Blast
+cooldown=2.5
+animation=swings left arm to right|0.3|throws a green ball
+effect=slow projectile with AoE
+subeffect=damage:6503|poison:1880:10
+#note=at high range, you can just keep moving in zig zag patter to avoid
+#note=at close range use an anti projectiles skill, evade or block
+
+attack=Fetid Mark
+cooldown=8
+animation=glows and crouches|5
+effect=multiple triggered AoEs around the area
+subeffect=no initial effect
+#note=no threat while casting this
+
+attack=Trigger
+cooldown=22
+animation=rises in air spinning with green effect|2.25
+effect=explodes every Fetid Mark
+subeffect=damage:11466|knockdown:3| per hit
+#note=run out of marks or evade
+
+attack=Life Siphon
+cooldown=42
+animation=points staff towards target|0.3|lifesteal sound
+additional=Used after 75%. 1200 range
+effect=16 ranged hits in 6 s
+subeffect=damage:1374|healing| per hit (|damage:21984|)
+#note=break line of sight, get out of range or keep evading
+#note=try to interrupt
+
+##################################################################
+
+name=Wraithlord
+path=Arah3
+image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
+category=legendary
+health=1376340
+type=undead
+
+attack="Corruption"
+effect=debuff
+subeffect=increase damage taken from attacks and other effects
+#note=stand in light to get rid of the debuff
+effect=5 stacks
+subeffect=stun:1.5
+effect=10 stacks
+subeffect=stun:1.5| and take about twice as much damage
+effect=25 stacks
+subeffect=summon Risen Wraith enemy=(Drain):elite
+
+attack=Slash
+cooldown=0
+animation=swings left arm
+effect=melee
+subeffect=damage:0|bleeding:1410:15|poison:4700:25
+#note=try to block or evade
+
+attack=Corruption
+additional=channeled
+effect=~15 cones in ~7 s
+subeffect=damage:0|and "Corruption" per hit
+#note=evade quickly to avoid first few hits
+#note=spray animation is wrong, look at the direction of Wraithlord's mouth
+
+attack=Grasping Dead (1)
+animation=pulls right arm behind back
+additional=only used at distant targets
+effect=AoE
+subeffect=damage:0|immobilized:3
+#note=try to block or evade
+
+attack=Lupine Blast (1, 2)
+additional=only used at distant targets
+effect=dash with end effect
+effect=PBAoE
+subeffect=no effect (lose single-block though)
+effect=PBAoE
+subeffect=damage:0|immobilized| and "Corruption (5 stacks)
+#note=single blocks will not work because of "fake" hit
+
+attack=Summon
+effect=summons
+subeffect=enemy=Undead_Tendrils:structure
+#note=avoid them and rally from if needed
+
+##################################################################
+
+name=Undead Knight
+alt=Knight
+image=http://wiki.guildwars2.com/images/b/bd/Risen_Knight.jpg
+path=Arah4
+category=champion
+health=630960
+type=undead
+
+attack=Slash
+cooldown=0
+effect=melee
+subeffect=damage:0|bleeding:258:3
+#note=hits twice
+
+attack=Wing Buffet
+animation=Raises in air
+effect=PBAoE
+subeffect=damage:0|launch:2.3|
+
+##################################################################
+
+name=Kaisar, High Priest of Balthazar
+alt=Kaisar
+image=http://wiki.guildwars2.com/images/0/06/Risen_Priest_of_Balthazar.jpg
+path=Arah4
+category=legendary
+health=1376340
+type=undead
+
+attack=Whirling Fire
+animation=spins
+additional=cannot change direction. Used on close targets
+effect=slow dash with multiple PBAoEs
+subeffect=damage:0| per hit (very high damage)
+#note=evade through because he does not change direction
+
+attack=Fire AoE
+effect=multiple ticking AoEs on area
+subeffect=damage:0|burning| per tick
+
+##################################################################
+
+name=Hound of Balthazar
+alt=Hounds of Balthazar
+path=Arah4
+category=elite
+type=undead
+
+##################################################################
+
+name=Vahid, High Priest of Melandru
+alt=Vahid
+image=http://wiki.guildwars2.com/images/a/a2/Legendary_Risen_Priest_of_Melandru.jpg
+path=Arah4
+category=legendary
+health=1376340
+type=undead
+
+attack=cannot be moved
+
+attack=Launch
+animation=two explosions
+effect=PBAoE
+subeffect=damage:0|launch
+#note=block/evade when you see second explosion
+
+attack=Summon
+effect=summons a enemy=Tree:normal
+effect=AoE
+subeffect=damage
+#note=ignore
+
+##################################################################
+
+name=Tree
+alt=Trees
+path=Arah4
+category=normal
+type=plant
+
+attack=Binding Roots
+effect=debuff
+subeffect=Immobilized
+#note=Can be destroyed
+
+##################################################################
+
+name=Farnaz, High Priestess of Lyssa
+alt=Farnaz
+image=http://wiki.guildwars2.com/images/6/6b/Risen_Priestess_of_Lyssa.jpg
+path=Arah4
+category=legendary
+health=1376340
+type=undead
+
+attack=Winds of Chaos
+effect=bouncing projectile
+subeffect=damage:0| and random condition
+#note=you can break line of sight behind statue
+
+attack=Morph
+animation=purple glow
+effect=ranged
+subeffect=turn target into a Moa
+#note=try to evade
+
+attack=Summon clones
+effect=summons
+subeffect=5 enemy=text:clones|Farnaz,_High_Priestess_of_Lyssa_(clone):legendary
+
+attack=Shatter
+effect=Shatter
+subeffect=Confusion:0:0:5| per clone
+#note=quickly use partywide condition removal
+#note=disable autoattack and stop attacking
+
+attack=Summon Illusion
+effect=summons illusion based on target profession?
+
+##################################################################
+
+name=Farnaz, High Priestess of Lyssa (clone)
+path=Arah4
+category=legendary
+type=undead
+
+##################################################################
+
+name=Ghasem, High Priest of Grenth
+alt=Ghasem
+path=Arah4
+category=legendary
+health=1376340
+type=undead
+
+attack=Invulnerability
+#note=cannot be attacked directly
+
+attack=Reflects projectiles and blowouts nearby enemies
+#note=might make summons using projectiles kill themselves
+
+##################################################################
+
+name=Simin, High Priestess of Dwayna
+alt=Simin
+image=http://wiki.guildwars2.com/images/1/14/Risen_Priestess_of_Dwayna.jpg
+path=Arah4
+category=legendary
+health=1376340
+type=undead
+
+attack=Chain Lightning
+effect=bouncing (3 hits) projectile
+subeffect=damage:0| per hit
+
+attack=Dark Pact
+effect=ranged
+subeffect=damage:0| and "Dead Eyed Stare" (if not already)
+
+attack=Storm
+effect=multiple ticking AoEs
+subeffect=random damage (medium to very high) per tick
+
+attack=Cloak
+effect=self-buff
+subeffect=gets invisible and start healing
+#note=she is invulnerable while being invisible
+#note=clears all conditions she is suffering from
+
+attack="Dead Eyed Stare"
+animation=purple icon
+effect=debuff
+subeffect=slower movement and skill recharge (10 s). "Petrified" when ends
+#note=use stability to counter it
+
+attack="Petrified"
+animation=green icon
+effect=debuff
+subeffect=Unbreakable stun (20 s). "Petrified" when it ends
+#note=stability prevents effect but not debuff (will reapply)
+#note=can be cured with "Tears of Dwayna"
+#note=bug: if "Dead Eyed Stare" ends while "Petrified" you can just attack to break effect
+
+##################################################################
+
+name=Bloodstone Shard
+alt=Shard
+image=http://wiki.guildwars2.com/images/9/96/Bloodstone_Shard.jpg
+path=Arah4
+category=legendary
+health=1376340
+type=undead
+
+attack=Fire AoE
+effect=multiple ticking AoEs on area
+subeffect=damage:0|burning| per tick
+
+attack=Summon
+effect=summons a enemy=Tree:normal
+effect=AoE
+subeffect=damage
+#note=ignore
+
+attack=Summon Illusion
+effect=summons illusion based on target profession?
+
+attack=Summon Risen Wraith
+effect=summons enemy=Risen_Wraith_(Drain):elite
+
+attack=Dark Pact
+effect=ranged
+subeffect=damage:0| and "Dead Eyed Stare" (if not already)
+
+attack="Dead Eyed Stare"
+animation=purple icon
+effect=debuff
+subeffect=slower movement and skill recharge (10 s). "Petrified" when ends
+#note=use stability to counter it
+
+attack="Petrified"
+animation=green icon
+effect=debuff
+subeffect=Unbreakable stun (20 s). "Petrified" when it ends
+#note=stability prevents effect but not debuff (will reapply)
+#note=can be cured with "Tears of Dwayna"
+#note=bug: if "Dead Eyed Stare" ends while "Petrified" you can just attack to break effect
+
+##################################################################
+
+name=Corrupted Light
+path=Arah3|Arah4
+category=bundle
+
+attack="Corruption"
+effect=buff (every second)
+subeffect=percent:15
+
+##################################################################
+
+name=Spark
+alt=Sparks
+path=Arah4
+category=normal
+type=no type
+
+attack=Invulnerable
+
+##################################################################
+
+name=Orrian Air Tower
+alt=Orrian Air Towers
+path=Arah4
+category=structure
+
+##################################################################
+# NPCs                                                           #
+##################################################################
+
+Name=Odgen Stonehealer
+Category=ally
+image=http://wiki.guildwars2.com/images/e/e3/Ogden_Stonehealer.jpg
+Path=Arah1|Arah2|Arah3|Arah4
+
+##################################################################
+
+Name=Varra Skylark
+Category=ally
+image=http://wiki.guildwars2.com/images/5/5c/Varra_Skylark.jpg
+Path=Arah1
+
+##################################################################
+
+Name=Scholar Yissa
+Category=ally
+image=http://wiki.guildwars2.com/images/7/71/Scholar_Yissa.jpg
+Path=Arah2
+
+##################################################################
+
+Name=Warden Illyra
+Category=ally
+image=http://wiki.guildwars2.com/images/5/50/Warden_Illyra.jpg
+Path=Arah3
+
+##################################################################
+
+Name=Randall Greyston
+Category=ally
+image=http://wiki.guildwars2.com/images/8/8e/Randall_Greyston.jpg
+Path=Arah4
+
+##################################################################
+
+Name=Reflecting Crystal
+Category=bundle
+image=http://wiki.guildwars2.com/images/d/d2/Reflecting_Crystal.jpg
+Path=Arah1|Arah2|Arah3|Arah4
+
+

@@ -1,0 +1,593 @@
+init=CoES|Crucible of Eternity|Story|Story
+init=CoE1|Crucible of Eternity|Escape with the submarine (path&nbsp;1)|Path 1
+init=CoE2|Crucible of Eternity|Escape using the experimental teleporter (path&nbsp;2)|Path 2
+init=CoE3|Crucible of Eternity|Escape through the front door (path&nbsp;3)|Path 3
+
+
+path=CoES
+name=Crucible of Eternity Story: Stop Kudu
+tactic=normal
+Level: 78.
+Reward: 0.73g.
+Average length: 40 minutes.
+Difficulty: Medium.
+Enemies: Inquest and Outlaw.
+Time: Day.
+Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty if you want to be optimal.
+youtube=dfu2rhXp50c|Cutscenes.
+Current record: record=26.
+
+name=Crucible Access Platform
+tactic=normal
+If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=Toil_for_the_Coil. Alternatively you can leave party and try relogging until you get to another instance.
+Talk with enemy=zojja:ally to begin. enemy=Logan_Thackeray:ally and enemy=Rytlock_Brimstone:ally will join you.
+tactic=exploit
+You can enter the dungeon even when it's closed by link=http://i.imgur.com/WFHQDlI.gif|a_little_jump.
+
+name=Security Checkpoint
+tactic=normal
+There are 2 enemy=Gunners:elite|Gunners:elite:77 and 2 enemy=Insurgents:elite|Insurgents:elite:77. Once you get closer the enemy=Proximity_Alarm_Device:structure, which you must kill to progress, becomes vulnerable.
+Focus it down to open the door and stop enemies from respawning. Kill any remaining enemies.
+tactic=skip
+Focus it down to open the door. Run through.
+tactic=exploit
+Once enemy=Proximity_Alarm_Device:structure gets vulnerable immediately run back. Then use high range attacks to safely destroy it without aggro.
+
+name=Independent Research Sector
+tactic=ranged|melee
+The room has a enemy=Head_Scientist:champion|Head_Scientist:champion:77, a enemy=Mark_K_Assault_Golem:elite:77 and a enemy=Mark_K_Battle_Golem:elite:77.
+Focus first the Assault golem and then Battle golem. Keep dodging and try break line of sight when you see it glowing.
+tactic=ranged
+Stay at range to avoid his melee attack. Be ready to dodge if he leaps towards you. Use cripple or chill to kite him if needed.
+Occasionally he gets Magnetic Aura to reflect projectiles. Pay attention and stop attacking or use attacks which are not reflectable.
+tactic=melee
+He does decent damage at melee. Try to dodge and block his attacks.
+Occasionally he gets Magnetic Aura to reflect projectiles. Pay attention and rely on melee hits while it's up.
+tactic=exploit
+If you have trouble you can separate the enemies. Dash of enemy=Mark_K_Battle_Golem:elite:77 and leap of enemy=Head_Scientist:champion:78|Head_Scientist:champion:77 can be used to get them over their reset range. This causes them to be still but they will still attack. They also start instantly regenerating if you exit melee range.
+Run through the room to about middle of the next small room. Try survive there a while until the Battle Golem and / or the Scientist reaches you. Then run to end of room which should cause enemy=Mark_K_Assault_Golem:elite:77 to reset. You can further split the Battle Golem and the Scientist by standing near one of them.
+
+name=Subject Preparation Vault: Subversion Room
+tactic=normal
+3 enemy=Subversion_Specialists:elite|Subversion_Specialists:elite:77 attack an enemy=captive:ally. Start attacking immediately and try to burst one or two down before the captive dies.
+If the captive dies, the specialists will start attacking you. Their beam stunlocks for a long time so use stability and interrupts.
+
+name=Subject Preparation Vault: Holding Room
+tactic=normal
+Kill stuff.
+
+name=Golemetric Diagnostics
+tactic=normal
+Don't rush in when the door opens because it has lots of enemies. Most of them are initially passive / away but will wake up / appear when enemies are killed. There are 4 different groups. The second group will wake up when the first group is killed, the third will wake up when the second is killed, and finally the fourth will wake up when the third is killed.
+The first group has a enemy=Magnetizer:elite:79|Magnetizer:elite, a enemy=Mark_J_Assault_Golem:elite:79|J-A_Golem:elite, and a enemy=Mark_J_Battle_Golem:elite:79|J-B_Golem:elite. The second group has 2 enemy=Gunners:elite:79|Gunners:elite, a enemy=Mark_K_Assault_Golem:elite:79|K-A_Golem:elite and a enemy=Mark_K_Battle_Golem:elite:79|K-B_Golem:elite.
+The third group has 2 enemy=Mega_Blasters:Elite:79|Mega_blasters:elite, a enemy=Mark_P_Support_Golem:elite:79|P-S_Golem:elite and a enemy=Mark_P_Battle_Golem:elite:79|P-B_Golem:elite. The last group has a enemy=Mark_XXX_Juggernaut:elite:79|Juggernaut:elite, a enemy=Mark_J_Assault_Golem:elite:79|J-A_Golem:elite and a enemy=Mark_J_Battle_Golem:elite:79|J-B_Golem:elite.
+Pull enemies away from the room and kill them outside. This prevents next group attacking you which allows you to regenerate before fighting them.
+tactic=exploit
+If you have trouble you can separate enemy=Mark_K_Battle_Golem:elite:79|K-B_Golem:elite from its group. Its dash can be used to get it over reset range. This causes it to be still but it will still attack. It will start instantly regenerating if you exit melee range.
+Run back until enemies stop following. Wait until Battle Golem reaches you and then kill it.
+
+name=Magimechanic Upgrade Depot
+tactic=normal
+One group with 2 enemy=Insurgents:elite:79 and a enemy=Golemaestro:elite:79.
+Focus Insurgents. While Golemaestro can do lots of damage its attack almost never hits you (no idea why). Also the golem summoned by her is pretty harmless.
+
+name=Ambiatory Preparation Facility
+tactic=normal
+You need to keep enemy=zojja:ally alive until she finishes with hacking. The further hacking goes, the more enemy groups wake up.
+First group wakes up at 5% and consists of a enemy=Mark_J_Battle_Golem:elite:79, a enemy=Mark_I_Golem:normal:79|I_Golem:normal and a enemy=Mark_II_Golem:normal:79|II_Golem:normal. Second group wakes up at 20% and consists of a enemy=Mark_K_Battle_Golem:elite:79, a enemy=Mega_blaster:elite:79, a enemy=Mark_I_Golem:normal:79|I_Golem:normal and a enemy=Mark_II_Golem:normal:79|II_Golem:normal.
+Third group wakes up at 35% and consists of 2 enemy=Mark_P_Battle_Golems:elite:79, a enemy=Mark_P_Support_Golem:elite:79, a enemy=Mark_J_Battle_Golem:elite:79 and a enemy=Golemaestro:elite:79. Fourth group wakes up at 50% and consists of a enemy=Mark_K_Assault_Golem:elite:79 and a enemy=Mark_J_Battle_Golem:elite:79. Once hacking reaches 100% all enemies disappear.
+With lots of damage you can kill every group before the next one wakes up. Focus on elite enemies while using area attacks on normal ones.
+With less damage you need to rely on kiting. Just run around the middle pillar with mobility and survivability. You can also run on sides but enemies may lose aggro. To reduce pressure, try to kill normal enemies when they wake up.
+
+name=Essence Purification Zone
+tactic=normal|skip
+The first group has 2 enemy=Mega_Blasters:elite:79 a enemy=Gunner:elite:79. Second group has a enemy=Technologist:champion:79, an enemy=Insurgent:elite:79 and a enemy=Magnetizer:elite:79.
+Kite Blasters around stairs to destroy their projectiles.
+Focus Insurgent and Magnetizer to reduce pressure.
+tactic=skip
+Run through everything. enemy=Magnetizers:elite:79 may pull you so take stability as a back up. At end of the corridor a new waypoint will activate so it doesn't matter if enemies follow as you can just wipe.
+
+name=Arcanic Reactor
+tactic=normal
+You need the protective shield of enemy=Mr._Sparkles:ally to survive the radiation. Outside of the shield you will die in several seconds. Talk with enemy=zojja:ally to begin.
+Pick up enemy=Resonatic_Defrequencyizenator:bundle to destroy enemy=Resonance_Cascade_Fields:normal. If fields hit Mr._Sparkles he will take a lot of damage. Once his health gets too low he will stop moving and start repairing himself. Any fields hitting him will interrupt the process. However, there is no pressure because he can't be killed.
+If fields hit you, you only get briefly stunned so you don't have be afraid of them. You can kill multiple fields with one shot by moving and spinning around.
+
+name=Eternity's Focus
+tactic=normal
+Destroy enemy=Kudu's_Power_Suit:legendary, enemy=Kudu:legendary and enemy=Kudu's_Monster:legendary to finish the dungeon.
+
+name=enemy=Kudu's_Power_Suit:legendary
+tactic=ranged|melee
+Unlike most enemies, Power Suit is considered as an outlaw so if you want to be optimal then use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying and wiki=Superior_Sigil_of_Justice|Sigil_of_Justice for extra damage and damage reduction.
+tactic=ranged
+Stay at range to avoid his extremely damaging melee attack. Use crippled, chilled and immobilized to keep him away.
+tactic=melee
+Pay attention to your positioning. His melee attack will one shot you but can be easily avoided by moving behind his back. If unsure dodge away from him. If you get hit you have to use a stun break and dodge away immediately.
+tactic=melee|ranged
+When he spins he will shoot multiple ballistic projectiles around the area. Each will create an area field when hitting the ground. Moving out of field causes stun while moving inside causes daze. One of the projectiles will be directly aimed at you.
+If a projectile is absorbed either by tanking, blocking or reflecting then no field is created. Every player should try to absorb at least one projectile to reduce amount of area fields. Stand still and use a block if available (without block you get briefly stunned). Alternatively you can pull him to corridor and move behind a corner.
+Take 1 - 2 stun breaks as a back up if Kudu is close when you are stunned. Consider taking stability to easily escape any area fields. However, Kudu can be kited inside a field if needed.
+tactic=exploit
+Pull him all way through the corridor until he stops moving and then use ranged attacks to safely kill him.
+
+name=enemy=Kudu:legendary
+tactic=ranged|melee
+He doesn't regenerate health even if you wipe which allows you to eventually kill him even if you have lots of trouble.
+His fast ranged attack one shots most players. However, it has a cast time of 2.5 seconds which gives you time to dodge it. Blocks or reflects won't work so try to learn the timing fast so you can survive reliably. If you pull him to corridor you can move behind a corner to break line of sight. Pillars in the middle offer no protection.
+tactic=ranged
+Stay at range to avoid lots of melee damage when he teleports and shoots ballistic projectiles. Move away if you see any projectiles coming your way.
+tactic=melee
+Melee is risky because he deals lots damage when he teleports. Consider taking a ranged weapon as a backup unless you have lots of survivability or can see the small and quick animation.
+tactic=ranged|melee
+Focus on reviving downed players. Stand behind NPCs and let them tank shots if needed.
+tactic=warrior
+Use wiki=Call_to_Arms for area Vigor.
+
+name=enemy=Kudu's_Monster:legendary
+tactic=ranged|melee
+Unlike most enemies, Monster doesn't have an enemy type so if you want to be optimal then replace any inquest slaying buffs and sigils.
+Like an elementalist, Monster is attuned to an attunement at all times. Possible attunements are corruption, crystal, ice and fire. Current attunement is indicated by particle effects on Monster (brown for corruption, purple for crystal, blue for ice and flames for fire).
+Monster has same animations and attacks regardless of the attunement. However, the actual effect of attacks is based on the attunement.
+tactic=ranged
+| Most attacks hit very hard at close so stay at medium range or above.
+tactic=melee
+| Most attacks hit very hard at melee range which makes melee risky unless you know what you are doing. Consider taking a ranged backup if needed.
+tactic=ranged
+At high range you don't really have to care about his Roar which only affects melee range. But with corruption attunement he will summon enemy=Risen_Grubs:normal which you should focus down if you have area attacks.
+His single stomp will be harmless while attuned to ice. With fire attunement it causes ticking AoEs around the area so move out of them quick. With corruption attunement it causes enemy=Tendrils:structure to spawn. You don't really have to care about them as long as you either move a bit or kill close ones.
+However, pay attention when he is attuned to crystal. His single stomp will put an enemy=Imprisonment_Crystal:structure on a player disabling him for 30 seconds unless destroyed. Focus these down immediately if someone gets caught. You can only avoid it with precasting stability or teleporting out.
+His multi stomp is only dangerous when attuned to ice or fice. With ice it will create multiple delayed AoEs so be ready to move out of them. With fire he will shoot multiple projectiles in a cone. Try to sidestep between two projectiles but don't hesitate to dodge if needed.
+Melee players are at much higher risk so try to support them with vigor, protection, condition removal, heals and revival.
+tactic=melee
+His weakest attack is roar. It will cause some weakness, vulnerability, chilled or burning depending on the attunement. In all cases quickly move behind his back to avoid long durations of chilled and burning. With corruption attunement it will also summon enemy=Risen_Grubs:normal which you should take out with cleave or area attacks.
+His single stomp will cause some damage so try to block or evade regardless of attunement. With corruption attunement it will spawn enemy=Tendrils:structure which you should destroy only if they are close. With fire attunement it will spawn ticking AoEs so be ready to move out of them. With crystal it will put an enemy=Imprisonment_Crystal:structure on a player disabling him for 30 seconds unless destroyed. Focus these down immediately if someone gets caught. You can only avoid it with precasting stability or teleporting out.
+His multi stomp varies based on attunement. Corruption and ice attunements will cause lots of damage so you need to be able to block or evade three times or you get downed. Ice also causes delayed AoEs around the area so be ready to move out of them at the same time. With crystal attunement he will deal lots of damage but not enough to one shot you. With fire attunement the attack won't hit at all on melee range so you don't have to do anything.
+Consider taking at least one stun break as some attacks also have a control effect. Take also stability if you suspect he will crystallize you and you can't rely on your team.
+tactic=ranged|melee
+Revive people as fast as possible (especially melee ones) as some easily avoidable attacks deal lots of damage. Remember to rally from Tendrils or Grubs if possible.
+
+###############################################################################################################
+
+path=CoE1
+name=Crucible of Eternity Path 1: Escape with the submarine
+tactic=normal
+Level: 80.
+Reward: 1.81g + 60 tokens.
+Average length: 19 minutes.
+Difficulty: Medium.
+Enemies: Undead, Icebrood, Inquest and Sons of Svanir.
+Time: Night.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+youtube=dUS5vSiOHJ8|Video_guide (Banter Bill).
+Current record: record=27.
+
+path=CoE2
+Name=Crucible of Eternity Path 2: Use teleporter
+tactic=normal
+Level: 80.
+Reward: 1.81g + 60 tokens.
+Average length: 20 minutes.
+Difficulty: Medium.
+Enemies: Undead, Icebrood, Inquest and Nightmare Court.
+Time: Night.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+youtube=Dm955moa-jk|Video_guide (Banter Bill).
+Current record: record=28.
+
+path=CoE3
+name=Crucible of Eternity Path 3: Go through the front door
+tactic=normal
+Level: 80.
+Reward: 1.81g + 60 tokens.
+Average length: 20 minutes.
+Difficulty: Medium.
+Enemies: Undead, Icebrood, Inquest and Destroyer.
+Time: Night.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+youtube=vO-rQoUhlec|Video_guide (Banter Bill).
+Current record: record=29.
+
+path=CoE1|CoE2|CoE3
+name=Start
+tactic=normal
+If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=Toil_for_the_Coil. Alternatively you can leave the party and try relogging until you get to another instance.
+There are 2 enemy=Icebrood_Elementals:elite and 1 enemy=Icebrood_Colossus:elite at the start. Afterwards there are 2 enemy=Icebrood_Wolves:elite and 1 enemy=Icebrood_Goliath:elite.
+Pull first enemies behind the corner (e.g. near where the repair station is), and then kill the next group of enemies.
+The third group has an enemy=Icebrood_Wolf:champion and a enemy=Icebrood_Wolf:elite. The champion has very high damaging PBAoEs which usually instantly down everyone at close range. You can just run through dodging and skip it.
+If the NPC dies during her way to you can just go and resurrect her.
+tactic=coordinated
+One coordinated tactic is to to run through the entire room, aggroing all of the enemies. Then pull them around a corner near where the Champion is. Assign one player to get aggro on the champion, and bait out both extreme damage leap attacks.
+
+Another coordited tactic is the party stacks swiftness on Spire, and then the Thief stealths her through. This only works if all party members maintain a sufficient distance from Spire, so she does not engage the enemies as she passes them.
+tactic=mesmer
+Use wiki=Feedback at first group to protect your team and deal massive damage (Freeze Row from Elementals).
+tactic=guardian
+Use wiki=Binding_Blade to pull enemies together.
+tactic=guardian
+Use wiki=Wall_of_Reflection to protect your team and deal massive damage (Freeze Row from Elementals).
+tactic=guardian
+Use wiki="Stand_Your_Ground!" when skipping or fighting Wolves.
+tactic=exploit
+You can enter the dungeon even when it's closed by link=http://i.imgur.com/WFHQDlI.gif|a_little_jump.
+
+###############################################################################################################
+
+path=CoE1
+name=enemy=Subject_Alpha_(First):legendary
+tactic=ranged|melee
+Alpha is fighting an enemy=Assistant, a enemy=Grenadier and an enemy=Assassin. Inquest die very fast and spawn a enemy=Thrall upon death. Alpha alternates between Earth and Fire attacks.
+Earth attack shoots a line towards the primary target. Check who is getting attacked and stay away from them. If you are the target then avoid directing it at other players.
+tactic=ranged
+| Dodge when you see something coming towards you.
+tactic=melee
+| Learn the animation to dodge properly or stay inside him (disable melee assist) to avoid it.
+tactic=ranged
+Fire attack causes delayed AoE at distant targets which deal massive damage. Stay mobile and just move out of any red circles. Dodge if you get in a bad spot.
+tactic=melee
+Fire attack causes some damage and burning at close targets. You can easily tank couple of hits but try to learn the animation so you can block or dodge it if needed. Stay out of any red circles to avoid massive damage.
+tactic=ranged|melee
+Avoid downing at all costs. Reviving is hard because AoEs kill quickly. Run away and get out of combat if needed.
+At 75% he will summon 4 enemy=Risen_Thralls:normal and at 50% he will escape. Use area skills to take down Thralls.
+tactic=guardian
+Use wiki=Banish to knock Alpha to wall if no one else can do it.
+tactic=engineer
+You can use wiki=Toss_Elixir_R as a failsafe if you expect people to go down.
+tactic=engineer
+Use wiki=Healing_Turret to remove burning and for area healing.
+tactic=guardian
+Use wiki="Stand_Your_Ground!", wiki="Retreat!" and wiki="Hold_the_Line!" with wiki=Pure_of_Voice to remove burning immediately. Use Virtue_of_Courage to block burning.
+tactic=mesmer
+Use wiki=Into_the_Void to pull Alpha to wall.
+tactic=ranged|melee|coordinated
+tactic=thief
+Use wiki=Pistol_Whip to evade attacks while dealing damage.
+tactic=warrior
+You can use wiki=Battle_Standard if you expect people to go down.
+
+path=CoE2
+name=enemy=Subject_Alpha_(First):legendary
+tactic=ranged|melee
+Alpha is fighting an enemy=Assistant, a enemy=Grenadier and an enemy=Assassin. Inquest die very fast and spawn a enemy=Thrall upon death. Alpha alternates between Ice and Fire attacks.
+Ice attack causes delayed AoE at every target. Every AoE has an inner and an outer circle. Most players get AoE which has a safe zone at the inner circle and a danger zone at the outer circle. The primary target gets a reversed version which is indicated by a blue mist (difficult to see).
+tactic=ranged
+As long as you are away from everyone else (or circles align) you can just stand still (or move a bit if you are the primary target).
+tactic=melee
+Stack with other melee players to make your circles align. If the primary target is not with you then you can just stand still. If he is then you have to block or dodge his AoE (you get hit only once when standing at middle).
+tactic=melee|ranged
+| More likely circles will mix and match because everyone runs around so learn to dodge it (count to 3, etc).
+tactic=ranged
+Fire attack causes delayed AoE at distant targets which deal massive damage. Stay mobile and just move out of any red circles. Dodge if you get in a bad spot.
+tactic=melee
+Fire attack causes some damage and burning at close targets. You can easily tank couple of hits but try to learn the animation so you can block or dodge it if needed. Stay out of any red circles to avoid massive damage.
+tactic=ranged|melee
+Avoid downing at all costs. Reviving is hard because AoEs kill quickly. Run away and get out of combat if needed.
+At 75% he will summon 4 enemy=Risen_Thralls:normal and at 50% he will escape. Use area skills to take down Thralls.
+tactic=coordinated
+Push Alpha to corner and stack. Dodge towards wall or block the Ice attack (hits once when stacking).
+tactic=guardian
+Use wiki=Banish to knock Alpha to wall if no one else can do it.
+tactic=engineer
+You can use wiki=Toss_Elixir_R as a failsafe if you expect people to go down.
+tactic=engineer
+Use wiki=Healing_Turret to remove burning and for area healing.
+tactic=guardian
+Use Virtue_of_Courage and wiki="Retreat!" to block Ice attack.
+tactic=guardian
+Use wiki="Stand_Your_Ground!", wiki="Retreat!" and wiki="Hold_the_Line!" with wiki=Pure_of_Voice to remove burning immediately.
+tactic=mesmer
+Use wiki=Into_the_Void to pull Alpha to wall.
+tactic=ranged|melee|coordinated
+tactic=thief
+Use wiki=Pistol_Whip to evade attacks while dealing damage.
+tactic=warrior
+You can use wiki=Battle_Standard if you expect people to go down.
+
+path=CoE3
+name=enemy=Subject_Alpha_(First):legendary
+tactic=melee|ranged
+Alpha is fighting an enemy=Assistant, a enemy=Grenadier and an enemy=Assassin. Inquest die very fast and spawn a enemy=Thrall upon death. Alpha alternates between Ice and Earth attacks.
+Ice attack causes delayed AoE at every target. Every AoE has an inner and an outer circle. Most players get AoE which has a safe zone at the inner circle and a danger zone at the outer circle. The primary target gets a reversed version which is indicated by a blue mist (difficult to see).
+tactic=ranged
+As long as you are away from everyone else (or circles align) you can just stand still (or move a bit if you are the primary target).
+tactic=melee
+Stack with other melee players to make your circles align. If the primary target is not with you then you can just stand still. If he is then you have to block or dodge his AoE (you get hit only once when standing at middle).
+tactic=melee|ranged
+| More likely circles will mix and match because everyone runs around so learn to dodge it (count to 3, etc).
+Earth attack shoots a line towards the primary target. Check who is getting attacked and stay away from them. If you are the target then avoid directing it at other players.
+tactic=ranged
+| Dodge when you see something coming towards you.
+tactic=melee
+| Learn the animation to dodge properly or stay inside him (disable melee assist) to avoid it.
+Avoid downing at all costs. Reviving is hard because AoEs kill quickly. Run away and get out of combat if needed.
+At 75% he will summon 4 enemy=Risen_Thralls:normal and at 50% he will escape. Use AoE skills to take down Thralls.
+tactic=coordinated
+Push Alpha to corner and stack inside him (disable melee assist) to completely avoid Earth attack. Dodge towards wall or block the Ice attack (hits once when stacking).
+tactic=guardian
+Use wiki=Banish to knock Alpha to wall if no one else can do it.
+tactic=engineer
+You can use wiki=Toss_Elixir_R as a failsafe if you expect people to go down.
+tactic=guardian
+Use Virtue_of_Courage|(Profession) and wiki="Retreat!"|"(Utility) to block Ice attack.
+tactic=mesmer
+Use wiki=Into_the_Void to pull Alpha to wall.
+tactic=ranged|melee|coordinated
+tactic=thief
+Use wiki=Pistol_Whip to evade attacks while dealing damage.
+tactic=warrior
+You can use wiki=Battle_Standard if you expect people to go down.
+
+###############################################################################################################
+
+path=CoE1|CoE2|CoE3
+name=Golems
+image=http://i.imgur.com/i2E4Umv.jpg
+tactic=normal
+When you get close 5 different elite Golems wake up. enemy=Mark_K_Assault_Golem:elite, enemy=Mark_J_Assault_Golem:elite, enemy=Mark_K_Battle_Golem:elite, enemy=Mark_P_Support_Golem:elite, enemy=Mark_XXX_Juggernaut:elite.
+You should pull and get behind corner for better cleave/area attack damage.
+tactic=coordinated
+Skip these enemies with stealth.
+tactic=guardian
+Use wiki=Binding_Blade to pull golems faster.
+
+name=Laser Field
+image=http://i.imgur.com/DqZVVCY.jpg
+image=http://i.imgur.com/gh2zNAn.jpg
+tactic=mesmer
+Use wiki=Blink at end to skip some parts.
+tactic=elementalist
+Use wiki=Lightning_Flash to skip some parts.
+tactic=normal
+To shut down the laser field you must use 5 consoles at the same time. 2 consoles are at the beginning while 3 are at the end.
+Instead of rushing in, look how lasers work. There are two moving parts and you need to stay between them while jumping over static parts to get through. Remove armor to avoid repairing if you mess up a lot. Avoid using area Swiftness because it will mess up other players. You can try jumping backwards or sideways to have a shorter jump.
+Once consoles are manned you need to sync activating. Either count down ("on 1...", "3", "2", "1!") or just say "go".
+tactic=coordinated
+Stack stealth and coordinate panel activation. Allows you to skip the golems, but only if you are quick about it.
+tactic=optional
+Use swiftness and jump over two lasers. For show off!
+tactic=exploit
+As long as you hug either wall moving parts won't hit you which makes it very easy to get through.
+One player can activate two consoles at the end of laser field. Stand between them while activating.
+
+name=enemy=Mark_T-B34RC3:legendary
+tactic=normal
+4 Turrets in the area constantly give him protection, regeneration, retaliation, or remove a Condition. You should keep protection down. If someone has problems with retaliation he can destroy it.
+His most dangerous attack when he glows purple and shoots 3 purple projectiles (usually at ranged or even the NPC). Each knocks you down and does high damage. Interrupt, keep dodging, zig zag at range or run inside him.
+Melee players need to watch out when he glows and starts spinning. Simply move behind his back to avoid it.
+His normal attacks either cause a Firewall or a static field. Field does high damage but you can prevent it by blocking the projectile.
+tactic=coordinated
+Push or pull the Mark T-B34RC3 between the Protection and Retaliation turrets, so they can be cleaved with ease.
+tactic=engineer
+Use wiki=Bomb_Kit with wiki=Forceful_Explosives to hit two turrets and Mark at media=coe_bomb_diagram.png|the_same_time.
+tactic=mesmer
+Start with untraited wiki=Phantasmal_Warden to absorb projectiles from turrets to prevent boons.
+tactic=mesmer
+Use wiki=Phantasmal_Disenchanter to remove boons.
+tactic=guardian
+Use wiki=Shield_of_the_Avenger to absorb projectile from turrets to prevent boons.
+tactic=guardian
+Use wiki=Wall_of_Reflection to protect the team.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" when he is about to spin.
+tactic=thief
+Use wiki=Smoke_Screen to absorb projectiles from turrets to prevent boons.
+tactic=thief
+Use wiki=Larcenous_Strike to steal boons.
+tactic=thief
+You can use wiki=Headshot|(Offhand Pistol) to manage defiance stacks.
+tactic=necromancer
+Use wiki=Charge_(necromancer_skill)|Charge_(Flesh_Golem) to deal lots of damage to turrets (focus protection).
+
+###############################################################################################################
+
+path=CoE1
+name=Security Room
+image=http://i.imgur.com/Q68jDH4.jpg
+tactic=engineer
+Use wiki=Bomb_Kit with wiki=Forceful_Explosives at console to kill every nearby Bomb.
+tactic=normal
+The goal is to hack the console 5 times. Lots of enemy=Mark_S_Bomb_Golems:normal constantly respawn and they need to killed before they explode at hackers.
+Whenever you hack a wave 3 elite Golems wake-up. Hacking is close to impossible while they are alive so kill them first.
+Bring cleave/area attacks to destroy Bomb Golems quick.
+
+Most groups will use the 1-4 tactic. First do one wave normally and kill elite golems. Then 4 players start hacking at the same time while one protects (needs high damage). Then just run away and ignore all elite Golems.
+tactic=coordinated
+Do 5-0 either via stealth, or via various skill activations that will kill the golems or keep them away while you are channeling (e.g. tornado form, firestorm, shield of wrath, power spike, fear me, etc.).
+tactic=thief
+With 1-4 tactic you can use wiki=Trick_Shot and wiki=Dagger_Storm to easily defend hackers.
+tactic=elementalist
+Use wiki=Arcane_Wave to kill Bombs while hacking (especially if trying 5-0).
+tactic=consumable
+You can use wiki=Fire_Elemental_Powder to help with killing Bombs (especially if trying 5-0).
+
+name=enemy=Subject_Alpha_(Second):legendary
+tactic=normal
+First you have to decided whether you want to save or kill Inquest. Saving allows you to instantly take 25% of Alphas health away but you need to kill all elite enemies.
+If Alpha gives you trouble you should save the Inquest. However, killing them is much faster and easier once you know what you are doing.
+Mostly same as in first encounter. He also summons enemy=Undead_Tendrils:structure and turns players into a crystal. Rally from Tendrils and free players from crystals by destroying it.
+At 25% he will escape.
+tactic=guardian
+When stacking use wiki="Stand_Your_Ground!", wiki="Retreat!" and wiki="Hold_the_Line!" with wiki=Pure_of_Voice or Soldier-runes to remove burning immediately. Use wiki=Virtue_of_Courage to block burning.
+tactic=thief
+Use untargeted wiki=Steal to get out of crystals with 5 second cooldown.
+tactic=thief
+Use wiki=Pistol_Whip to evade attacks while dealing damage.
+tactic=necromancer
+Use wiki=Doom to fear Alpha to a corner.
+tactic=bug
+Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
+
+name=enemy=Bjarl_the_Rampager:legendary
+tactic=normal
+Easy to kill as long as you don't stand in AoEs and move back when he holds his sword back.
+Idea is to stand in front of pillars, make him charge and dodge away. When he hits a pillar he will lose his protecting shield which gives you a short period to damage him. He will only charge if you are far enough so take mobility skills to get some distance if needed.
+He doesn't have defiance so you can freely control him. This gives more time to attack him because he can't use shield while disabled.
+If he just stands still his target is too far away. Everyone should move closer until he moves again.
+tactic=coordinated
+Chain CC Bjarl so that you only need to strip his defensive buff once.
+tactic=thief
+With Sword/Dagger and wiki=Superior_Sigil_of_Paralyzation|Sigil_of_Paralyzation you can keep Bjarl permanently dazed so he can't get his shield back.
+
+name=enemy=Subject_Alpha_(Third):legendary
+tactic=normal
+Mostly same as in the second encounter. He also occasionally summons enemy=Black_Essences:normal. If Essences reach him he gets healed a bit. Summoning triggers only once at specific health levels. This means that it doesn't matter too much if Essences reach him and that after wiping he will be slightly easier to kill.
+tactic=guardian
+When stacking use wiki="Stand_Your_Ground!", wiki="Retreat!" and wiki="Hold_the_Line!" with wiki=Pure_of_Voice or Soldier-runes to remove burning immediately. Use wiki=Virtue_of_Courage to block burning.
+tactic=thief
+Use wiki=Lotus_Strike or traited Steal to poison Alpha when he sends Essences.
+tactic=thief
+Use untargeted wiki=Steal to get out of crystals with 5 second cooldown.
+tactic=thief
+Use wiki=Pistol_Whip to evade attacks while dealing damage.
+tactic=necromancer
+Use wiki=Doom to fear Alpha to a corner.
+tactic=bug
+Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
+If enemy=Spire gets stuck you have to wait a while until you get the end reward.
+
+###############################################################################################################
+
+path=CoE2|CoE3
+name=Blasting the Door
+tactic=normal
+You have to protect gun while it charges. Spread over and destroy incoming enemy=Mark_S_Bomb_Golems:normal.
+At 22% 2 enemy=text:golems|Mark_J_Assault_Golem:elite|Mark_K_Assault_Golem:elite|Mark_K_Battle_Golem:elite appear.
+At 66% dead elite Golems respawn.
+tactic=skip
+Once the door explodes start moving immediately. Turn left and wait there until enemy=Undead_Abomination:champion and 2 enemy=Risen_Defilers:elite get out of the way.
+tactic=thief
+Take wiki=Shadow_Refuge and stealth people if they are too slow to get out of Abomination's way.
+
+name=Stairs
+tactic=thief
+Use wiki=Trick_Shot to tag for loot.
+tactic=normal
+Once door explodes enemy=Undead_Abomination:champion and 2 enemy=Risen_Defilers:elite walk in. Focus Defilers first while kiting Abomination.
+Abomination gains "Frenzy"-stack whenever he hits something. This causes him to attack faster and stronger which quickly gets out of control. Don't use pets/minions/clones and try avoid all attacks. Get out of the way when he charges to avoid getting downed.
+tactic=skip
+Once the door explodes start moving immediately. Turn left and wait there until enemy=Undead_Abomination:champion and 2 enemy=Risen_Defilers:elite get out of the way.
+tactic=normal|skip
+At stairs there are 2 enemy=Plague_Carrier_Abominations:elite and ~20 enemy=Risen_Thralls:normal. They are fast to kill and give decent loot. Dodge Carriers self-destruct explosion. At top of the stairs are 3 enemy=Risen_Berserkers:elite and enemy=Undead_Wraith:elite.
+tactic=skip
+| You should kill them to not mess up with the next Alpha fight.
+
+###############################################################################################################
+
+path=CoE2
+name=enemy=Subject_Alpha_(Second):legendary
+tactic=normal
+Mostly same as in first encounter. He also summons enemy=Undead_Tendrils:structure and turns players into a crystal. Rally from Tendrils and free players from crystals by destroying it.
+At 25% he will escape.
+tactic=guardian
+When stacking use wiki="Stand_Your_Ground!", wiki="Retreat!" and wiki="Hold_the_Line!" with wiki=Pure_of_Voice or Soldier-runes to remove burning immediately. Use wiki=Virtue_of_Courage to block burning.
+tactic=necromancer
+Use wiki=Doom to fear Alpha to a corner.
+tactic=bug
+Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
+
+
+name=Way to Evolved Husk
+tactic=normal
+First room has just 3 enemy=Volatile_Blossoms:structure. Destroy if they are on the way.
+Second room has 8 enemy=Volatile_Blossoms:structure, 3 enemy=Nightmare_Hounds:elite, enemy=Nightmare_Husk:elite and enemy=Flametouched_Husk:elite. They are often skipped so be ready to run with a stun break.
+If you want to kill them then pull them away from Blossoms. Enemies have lots of control so have stun breaks.
+
+name=enemy=Evolved_Husk:legendary
+tactic=engineer
+You can use wiki=Flamethrower and Flame_Turret to tag Husk through his protective branches.
+tactic=normal
+Idea is to use Subversion Rifles to direct respawning enemy=Unstable_Bomb_Golems:normal at Husk. There are multiple enemy=Volatile_Blossoms:structure on area which you should clear first.
+Golems spawn on platforms at each corner. The most important thing is to not aggro them. Once they get aggroed it is very hard to explode them at Husk. To reduce risks you should just kill them if that happens. Luckily it is very easy to not aggro them. All you have to do is stand between platforms away from Golems.
+With 4 spawning spots only 4 players should use the Rifle. Each should just Subvert his own Golem because multiple people Subverting may mess it up. Patiently wait for your Golem to spawn and run bit forward. If you start Subverting as soon as it spawns effect may end before it reaches Husk.
+Lots of enemy=Razorthorn_Patches:structure appear on area. They will destroy Golems on hit. However, 90% of them won't cause any issues because they either spawn away from Golems or Golem just runs around it.
+Last player should just stand away from Golems and use ranged to attack Husk. He should also destroy any problematic Patches so other people don't have to drop their Rifles. On average he probably has to destroy 2 Patches.
+Husk casts ticking AoE so just move a bit. His protective shield gets removed by Bombs. Everyone should do some damage with their weapons to him so they can loot his body.
+tactic=guardian
+Use 3 shouts with wiki=Pure_of_Voice or Soldier-runes to remove conditions from the team.
+tactic=guardian
+Use aegis when reviving people.
+tactic=coordinated
+It's possible to melee the Husk so long as you have sufficient access to CC to stop him from doing anything. Most commonly, this is done primarily via Sanctuary or Power Block, along with other CC once those run out.
+
+name=enemy=Subject_Alpha_(Third):legendary
+tactic=normal
+Mostly same as in the second encounter. He also occasionally summons enemy=Black_Essences:normal. If Essences reach him he gets healed a bit. Summoning triggers only once at specific health levels. This means that it doesn't matter too much if Essences reach him and that after wiping he will be slightly easier to kill.
+tactic=guardian
+When stacking use wiki="Stand_Your_Ground!", wiki="Retreat!" and wiki="Hold_the_Line!" with wiki=Pure_of_Voice or Soldier-runes to remove burning immediately. Use wiki=Virtue_of_Courage to block burning.
+tactic=thief
+Use wiki=Lotus_Strike or traited Steal to poison Alpha when he sends Essences.
+tactic=thief
+Use untargeted wiki=Steal to get out of crystals with only 5 seconds of cooldown.
+tactic=thief
+Use wiki=Pistol_Whip to evade attacks while dealing damage.
+tactic=necromancer
+Use wiki=Doom to fear Alpha to a corner.
+tactic=bug
+Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
+If enemy=Spire gets stuck you have to wait a while until you get the end reward.
+
+###############################################################################################################
+
+path=CoE3
+name=enemy=Subject_Alpha_(Second):legendary
+tactic=normal
+Mostly same as in first encounter. He also summons enemy=Undead_Tendrils:structure and turns players into a crystal. Rally from Tendrils and free players from crystals by destroying it.
+At 25% he will escape.
+tactic=thief
+Use untargeted wiki=Steal to get out of crystals with only 5 seconds of cooldown.
+tactic=necromancer
+Use wiki=Doom to fear Alpha to a corner.
+tactic=bug
+Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
+
+name=Way to Evolved Destroyer
+tactic=normal
+First you will face lots of enemy=Destroyer_Crabs:normal. Kill them for loot.
+Once door explodes some elite Destroyers run to you. On next room there are enemy=Destroyer_Crab:champion and some enemy=Destroyer_Crabs:normal.
+Enemies are often skipped. Crab is quite dangerous to kill because his ticking AoE hits fast and hard. Dodge immediately if you are on red circle.
+tactic=thief
+Use wiki=Trick_Shot and wiki=Cluster_Bomb to tag for loot.
+
+name=enemy=Evolved_Destroyer:legendary
+tactic=guardian
+Use wiki=Virtue_of_Courage and wiki="Retreat!" to block Dragon's Tooth to kill him faster.
+tactic=thief
+Use Daggers, Assassin's Signet, Signet of Agility, Ambush Trap and Thieves Guild for maximum damage. Precast Guild when running down and then cast Trap on the Destroyer.
+tactic=ranged|melee
+Take a look at the area before doing anything. Notice location of Destroyer, cooling guns, red platforms and stairs. Observe pattern of delayed AoEs on the platforms. Remember that lava hurts. Take a stun break and an immunity to save yourself if you happen to get launched to the lava. Remember to keep jumping while in lava to significantly reduce damage taken.
+He is protected by a shield which makes him invulnerable and launches anyone touching it. It can be removed by using the three cooling guns around the room. To make this harder, Destroyer periodically uses a delayed AoE on one player who will take lots of damage and get launched if he gets hit.
+Shield can be taken down by spamming cooling guns but instead you should synchronize it. This guarantees that you only have to fire once which allows you to move towards and attack Destroyer sooner. Decide who does the countdown and when the countdown ends. For example you can say "I will do '3..2..1..go!' and everyone knows to use their turret at 'go!'.
+Unfortunately his delayed AoEs can mess it up. To counter this, don't stand directly on the gun but on side of it. This allows you move to the other side and still use the gun even if you get targeted. However, you are still vulnerable to his AoE while activating the gun (takes few seconds). To counter this, countdown should start right after Destroyer has used his delayed AoE.
+tactic=ranged
+With 1200 range you can attack Destroyer from stairs without putting yourself in danger. This is especially useful if you have trouble with jump. However, this helps team less so consider switching to a melee tactic. If you wish to range volunteer as a gun user and inform your team why you are staying up.
+tactic=engineer
+You can drop Mortar to allow people attack from above.
+tactic=melee|ranged
+3 players split around the area and take their own gun. 2 remaining players can either stay at guns as a backup or get ready to move down. Once everyone is ready, someone starts countdown and guns fire about at the same time. Check if all guns are firing. If they do, immediately start moving towards Destroyer.
+tactic=melee
+To reach Destroyer you have to jump on three platforms. Delayed AoE appears periodically on each them. Pay attention because getting hit does lots of damage and launches you to lava which will most likely get you defeated. Don't go near Destroyer until the shield has fully disappear or you just get launched to lava. Waiting on platforms is risky so consider waiting at top until shield has almost expired (look at event window).
+Once the shield is down, you have 25 seconds to attack him so bring as much as burst as you can. Destroyer only uses the same delayed AoE so you don't need any defenses against him as long as you stay mobile. He will have a fire shield but it's nothing to worry about.
+When the shield starts blinking you have 5 seconds left. Attack few times and get back. Simplest way is to go straight towards stairs through lava. Remember to keep jumping while on lava to reduce damage taken. Consider jumping on the first platform to skip most of the lava. Alternatively you can use platforms to get back which is faster but more risky.
+tactic=melee|ranged
+Resurrect anyone who got defeated and repeat above steps until Destroyer is dead.
+tactic=skip
+If you aren't using the guns you can skip the running back part and permanently stay down. There is a solid ground around Destroyer between lava and his shield. It's bit hard to tell which parts are safe so take 2 stun breaks and immunities while practising.
+His delayed AoEs can be hard to avoid because you can't move much. Take a block or a non-moving evade with a short cooldown if possible.
+tactic=coordinated
+Synchronize usage of cooling guns. Shield comes back in 25 seconds so immediately go down and burst him down. Keep attacking even when shield starts blinking unless he has more than 20% health.
+
+name=enemy=Subject_Alpha_(Third):legendary
+tactic=normal
+Keep in mind that the door behind is active at all times. Getting too close will kick you out of the instance which may make you lose all end rewards. To prevent this, pull Alpha down stairs.
+Mostly same as in the second encounter. He also occasionally summons enemy=Black_Essences:normal. If Essences reach him he gets healed a bit. Summoning triggers only once at specific health levels. This means that it doesn't matter too much if Essences reach him and that after wiping he will be slightly easier to kill.
+tactic=thief
+Use wiki=Lotus_Strike or traited Steal to poison Alpha when he sends Essences.
+tactic=thief
+Use untargeted wiki=Steal to get out of crystals with only 5 seconds of cooldown.
+tactic=thief
+Use wiki=Pistol_Whip to evade attacks while dealing damage.
+tactic=necromancer
+Use wiki=Doom to fear Alpha to a corner.
+tactic=bug
+Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
+If enemy=Spire gets stuck you have to wait a while until you get the end reward.

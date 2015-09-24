@@ -1,0 +1,15 @@
+Fractal scaling: At scale 1 and scale 9, max damage was roughly same so no noticable effect.
+
+Level scaling: Higher level enemies have more armor.
+
+
+
+WvW bonus:
+Formula is damage/(armor * (1 + WvW)).
+
+Converted damage with 5 WvW to damage with 3 WvW. Different was <1 in all values when comparing to real hits.
+With formula damage/(armor / (1 - WvW)) damage was > 1 in some cases.
+
+
+Comparing values with different wvw bonus resulted in wvw bonus being 1% smaller than indicated (like 5% is actually 4%).
+With corrected values, total armor values ceils up!

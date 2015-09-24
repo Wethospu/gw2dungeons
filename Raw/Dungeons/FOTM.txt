@@ -1,0 +1,1922 @@
+init=Insta|Fractals of the Mists|Instabilities|Insta
+init=Aether|Fractals of the Mists|Aetherblade|Aether
+init=Aqua|Fractals of the Mists|Aquatic Ruins (Krait)|Aquatic
+init=Cliff|Fractals of the Mists|Cliffside (Colossus)|Cliff
+init=Furn|Fractals of the Mists|Molten Furnace (Weapontest)|Molten
+init=Mai|Fractals of the Mists|Captain Mai Trin|Mai Trin
+init=Molten|Fractals of the Mists|Molten Boss|Molten Boss
+init=Snow|Fractals of the Mists|Snowblind (Svanir)|Snow
+init=Solid|Fractals of the Mists|Solid Ocean (Jade Maw)|Solid
+init=Swamp|Fractals of the Mists|Swampland|Swamp
+init=Thauma|Fractals of the Mists|Thaumanova Reactor|Reactor
+init=Uncat|Fractals of the Mists|Uncategorized (Asura/Harpy)|Uncategorized
+init=Under|Fractals of the Mists|Underground Facility (Dredge)|Underground
+init=Urban|Fractals of the Mists|Urban Battlegrounds (Ascalon/Charr)|Urban
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic
+
+###########################################################
+
+path=Insta
+name=General info
+tactic=normal
+Instabilities start from scale 31 and each scale has a different instability (except 40 and 50).
+They aren't really ordered by difficulty while some scales are much harder than others. This means you can skip harder ones if you have someone who can open higher scales.
+
+name=Scale 31: Mist Stalker
+tactic=normal
+enemy=Mossman_(stalk):legendary occasionally appears and attacks for several seconds. May cause deaths but generally harmless.
+
+name=Scale 32: Impaired Immunity
+tactic=normal
+Conditions last longer on players. Barely any effect.
+
+name=Scale 33: Outflanked
+tactic=normal
+You take much more damage when getting hit from behind or sides. AoE seems to always to get buffed which makes some attacks very lethal.
+
+name=Scale 34: Fleeting Precision
+tactic=normal
+25% less critical chance. Reduces damage so stuff takes bit longer.
+
+name=Scale 35: Stormy Weather
+tactic=normal
+Someone gets hit randomly by a enemy=Lightning:trap. Barely any effect.
+
+name=Scale 36: Losing Control
+tactic=normal
+Stun duration reduced by 66%. daze duration reduced by ~90%. Knockbacks, knockdowns and launches (?) unaffected. Barely any effect so usually farmed.
+
+name=Scale 37: Keep Them in Line
+tactic=normal
+Enemies gain random boons when not attacked for a while. Only real effect is on Mai Trin because she will heal up during cannon barrage so the fight lasts longer.
+
+name=Scale 38: Ill and Chill
+tactic=normal
+Poison, Chill and confusion dealt to enemies become regeneration, protection and fury instead. This may cause some issues if you rely on those conditions. Obviously do what you can to not inflict them.
+
+name=Scale 39: Last Laugh
+tactic=normal
+Enemies killed by players will explode after 1 second causing nearby players (and NPCs) to lose 15% of their maximum health and get launched for 3.3 seconds. This can't be blocked or evaded.
+Stay mobile to back off whenever something dies or use stability. This can be really tough on some encounters like dual Seals on Cliffside.
+
+name=Scale 40: Agonizing Expedition
+tactic=normal
+Every 10 seconds all players in combat get 3 seconds of agony. This is basically a gear check. Unless you have 55 AR and lose 1% per tick you will melt really fast.
+
+name=Scale 41: Playing Favorites
+tactic=normal
+Untargeted enemies take half damage. Makes thrash fights take bit longer. Also make sure you target stuff!
+
+name=Scale 42: Lethargic
+tactic=normal
+Normal endurance regeneration reduced by ~85%. Use Vigor to get back to normal rate. If you don't have access to Vigor, use other endurance regeneration boosts like wiki=Orrian_Truffle|Orrian_Truffles.
+tactic=warrior
+Use wiki=Call_to_Arms for AoE Vigor.
+# Not very consistent results!
+
+name=Scale 43: Bloodlust
+tactic=normal
+Whenever you hit something you get an invisible stack and lose 0.1% of your maximum health per stack. Stacks reset when you kill something or stay out of combat for a while. Respawning enemies don't count which makes this really tough in some cases (Cliffside, Dredge). Some rapidly hitting skills can't be used at all.
+I personally suggest skipping this unless you play for the challenge.
+
+name=Scale 44: Overextended
+tactic=normal
+Lose 3 % of your maximum health whenever you deal a critical hit. With decent critical chance you will take plenty of damage and some rapidly hitting skills can't be used at all. You should have a condition specced player for safe damage.
+I personally suggest skipping this unless you play for the challenge.
+
+name=Scale 45: Frosty
+tactic=normal
+Every 30 seconds couple of enemy=text:ticking_AoEs|Frosty:trap appear around you. Barely any effect.
+
+name=Scale 46: Social Awkwardness
+tactic=normal
+More allies you have near, less healing you get. With whole party near you get barely any healing so don't rely on healing skills, utilities or gear. Remember to move away from everyone before using your healing skill.
+This also affects downed players. Two or more players trying to revive someone will get him killed.
+
+name=Scale 47: Antielitism
+tactic=normal
+Using your elite skill instantly defeats you which breaks armor. Just unbind your elite skill button.
+
+name=Scale 48: Tainted Renewal
+tactic=normal
+Regeneration, protection and Vigor become poison, vulnerability and weakness on players. Obviously don't use skills  or traits with these effects.
+
+name=Scale 49: Stamina
+tactic=normal
+Deal less damage based on your endurance. Missing 20 endurance reduces damage by 20%. Missing 40 endurance reduces damage by 40%. Missing 60 endurance reduces damage by 60%. Missing 80 endurance reduces damage by 80%.
+Keep your endurance above half to avoid getting bigger reductions. Use vigor to fill endurance faster and rely on other active defenses. This instability is often used for daily runs because of its easy difficulty.
+
+name=Scale 50 Agonizing Expedition
+tactic=normal
+Every 10 seconds all players in combat get 3 seconds of agony. This is basically a gear check. Unless you have 70 AR and lose 1% per tick you will melt really fast.
+Keep in mind that currently there is no way to progress so getting required resist and doing this is pointless.
+
+###########################################################
+
+path=Aether
+name=Aetherblade
+tactic=normal
+Enemies: Aetherblade and some Inquest.
+Time: Day.
+Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies for extra damage and damage reduction. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
+youtube=ZaO3Uzz62GM|Video_guide [KING].
+Current record: record=35.
+
+name=Water tunnel
+tactic=normal
+The tunnel is filled with mines. They explode on touch defeating you instantly. Try to avoid most of them but you can double dodge towards one to destroy it.The tunnel is filled with mines which explode on touch and instantly defeat you. You should attempt to avoid most of the mines, however you can dodge (or more safely, double dodge) through them. If you are stealthed, the mines will not explode as you pass them.
+After the tunnel wait for your team before proceeding. There are 2 enemy=Thugs:elite and 2 enemy=Swashbucklers:veteran which will aggro from far away. You may stack behind a nearby boulder on left to group them up. In a coordinated group, you can run at the mobs and group them together using Binding Blades or Into The Void. The Thug's Battle Standard deals lots of damage.
+tactic=warrior
+wiki=Defiant_Stance or wiki=Endure_Pain won't help against the mines.
+tactic=elementalist
+Use wiki=Glyph_of_Storms to keep Thugs blinded.
+tactic=warrior
+Use wiki=Tremor to help CC the mobs.
+tactic=guardian
+Use wiki=Ring_of_Warding or wiki=Line_of_Warding if stacking to CC the mobs.
+tactic=guardian
+Use wiki=Binding_Blade to group the mobs together if not stacking, or as an additional CC on the mobs if stacking.
+tactic=guardian
+Use wiki=Wall_of_Reflection to defend against projectiles.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" or wiki=Hallowed_Ground to grant Stability so your group can avoid being CCed.
+tactic=guardian
+You can try to provide Aegis or Blinds when you see Thugs about to drop Battle Standard or about to use Smash (2).
+tactic=thief
+Provide stealth for your team so they can safely pass the mines without worrying.
+tactic=thief
+Use wiki=Black_Powder and/or wiki=Smokescreen to keep mobs blinded.
+tactic=engineer
+Use wiki=Smoke_Bomb_(engineer_skill) to help blast stealth for the mines, and/or to blind foes.
+tactic=mesmer
+Use wiki=Into_the_Void to group mobs together.
+tactic=elementalist
+You can use wiki=Magnetic_Shield_(elementalist_skill) on  wiki=Magnetic_Shield_(environmental_weapon) to pull the mobs together if not stacking.
+tactic=coordinated
+Use stealth to pass the mines. Run straight at the mobs and fight them on the spot.
+
+name=Laser Squares
+#One console at scale 10!
+tactic=normal
+Before the traps there are 2 enemy=Strikers:elite and 2 enemy=Technicians:veteran. You may stack behind rocks to group them up.
+After the enemies you see a bridge filled with glowing enemy=squares:trap. You will get killed if you walk on them while they are charged. Traps turn off periodically and different ones light up. This follows media=aether_trapfloor.png|a_pattern so memorize where the safe spots are. Quickly move to the next spot when the traps turn off.
+Use swiftness, teleports and mobility skills to move faster. With some practice you can skip some safe spots. At the beginning you can climb up on nearby boxes and use a leap or a normal jump to move over some of the traps. You can also use damage immunity or invulnerability skills to walk over charged traps.
+At the end of the bridge there is an enemy=Extinguisher:elite. He chills which may get you killed on last few traps. In his room there are 1-4 consoles which can be used to disable the traps, depending on fractal level. Using a console immobilizes you for 5.5 s but with teleports and condition removal you can activate multiple consoles. Then simply proceed and kill another enemy=Extinguisher:elite.
+tactic=warrior
+Use wiki=Defiant_Stance and wiki=Endure_Pain, wiki=Rush and wiki=Bull's_Charge to just run through.
+tactic=warrior
+Use wiki=Berserker_Stance to activate consoles without getting immobilized.
+tactic=elementalist
+Use wiki=Lightning_Flash to blink over the floor or to activate multiple consoles. You can easily activate all consoles with wiki=Obsidian_Flesh.
+tactic=elementalist
+Use wiki=Glyph_of_Storms to keep Thugs blinded.
+tactic=warrior
+Use wiki=Tremor to help CC the mobs.
+tactic=guardian
+Use wiki=Ring_of_Warding or wiki=Line_of_Warding if stacking to CC the mobs.
+tactic=guardian
+Use wiki=Binding_Blade to group the mobs together if not stacking, or as an additional CC on the mobs if stacking.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" or wiki=Hallowed_Ground to grant Stability so your group can avoid being CCed.
+tactic=thief
+Use wiki=Black_Powder and/or wiki=Smokescreen to keep mobs blinded.
+tactic=engineer
+Use wiki=Smoke_Bomb_(engineer_skill) to help blind foes.
+tactic=mesmer
+Use wiki=Into_the_Void to group mobs together.
+Use wiki=Mantra_of_Concentration to grant stability to allies.
+tactic=elementalist
+You can use wiki=Magnetic_Shield_(elementalist_skill) on  wiki=Magnetic_Shield_(environmental_weapon) to pull the mobs together if not stacking.
+tactic=coordinated
+Group the mobs up using wiki=Binding_Blade or wiki=Into_the_Void.
+While still fighting the mobs, send ahead one party member who can use movement skills and invulnerability skills to pass the traps and then turn them off using condition immunity, teleports, and/or condition clears.
+tactic=optional
+Dance in front of a hologram to do the first part of an achievement.
+
+name=Spinning Lasers
+#One console at scale 10!
+tactic=normal
+Area is filled with enemy=Spinning_Lasers:trap. Use swiftness and try to get through without getting hit. If you get in bad spot then try to dodge through (you may still get hit). Stability will prevent the stun when the walls hit you, and invulnerability skills will prevent any effect.
+At the end of the room there are 1-4 consoles (activating immobilizes for 5.5 s), depending on the fractal level. You either need enough players or condition removal / teleports to use multiple consoles (equip before going in because hard to get out of combat).
+tactic=warrior
+Use wiki=Defiant_Stance, wiki=Balanced_Stance and mobility to run through the room.
+tactic=warrior
+Use wiki=Berserker_Stance to activate consoles without getting immobilized.
+tactic=exploit|coordinated
+Instead of fighting enemies one player can blink through the floor to skip the traps and turn them off. See the profession section for recommended skills.
+tactic=bug
+Do not turn off all the panels before the spinning lasers activate, as this can cause the fractal to bug and the spinning lasers to remain active.
+In some cases, this bug can be worked around by getting all players to the exit to the room (leading to the gate event), and using resurrection skills to revive Ellen thus allowing her to eventually reach the other side. In other cases, the breach the gate event will not activate no matter what you do, or you are able to "finish" the path but will not receive a fractal transit prompt upon completion.
+tactic=thief
+Use wiki=Infiltrator's_Arrow to teleport through the floor and to activate consoles with help of wiki=Signet_of_Agility.
+tactic=elementalist
+Use wiki=Lightning_Flash to blink over the floor or to activate multiple consoles. You can easily activate all consoles with wiki=Obsidian_Flesh.
+tactic=optional
+Once the traps are disabled, dance in front of a hologram to finish the achievement.
+
+name=Breach the gate
+tactic=normal
+You have to keep killing enemies until gates open while avoiding powerful shots from enemy=Cannons:trap. Stay at left side or behind wooden structure to group enemies up and prevent getting hit by Cannons.
+There are multiple enemy waves which consist of 0-2 enemy=text:enemies|Grenadier:normal|Taskmaster:normal|Swashbuckler:normal and 2 enemy=text:enemies|Thug:veteran|Taskmaster:veteran|Swashbuckler:veteran|Grenadier:veteran. Final wave also has a enemy=Thug:elite.
+Once the gates are breached last enemy group comes with 2 enemy=Thumpers:veteran and 3 enemy=text:enemies|Grenadier:normal|Taskmaster:normal|Swashbuckler:normal.
+tactic=elementalist
+You can use wiki=Magnetic_Shield_(elementalist_skill) on  wiki=Magnetic_Shield_(environmental_weapon) to pull mobs that don't quickly LoS.
+tactic=guardian
+Use wiki=Binding_Blade to pull mobs that don't quickly LoS.
+tactic=ranger
+Use wiki=Path_of_Scars to pull mobs that don't quickly LoS.
+tactic=engineer
+Use wiki=Magnet to pull mobs that don't quickly LoS.
+tactic=mesmer
+Use wiki=Into_the_Void to pull mobs that don't quickly LoS.
+tactic=coordinated
+Every other group spawns 2 enemy=text:enemies|Thug:veteran|Taskmaster:veteran|Swashbuckler:veteran|Grenadier:veteran at an angle that makes them hard to group. Pull them into the corner to kill them.
+tactic=exploit
+Stop killing any enemies when the gate opens. If you leave enemies alive the dungeon gets stuck in a good way which prevents final room from resetting. Just run through the enemies and get inside the final room.
+
+name=Final room
+tactic=normal
+Initially there are enemy=Frizz:champion, a enemy=Thumper:veteran and an enemy=Inquest_Assassin:veteran in the room. Killing the Assassin causes an enemy=Inquest_Assistant:veteran to spawn. Similarly killing the Thumper causes an Inquest_Grenadier to spawn. When Frizz reaches 75% he will turn invulnerable and teleport to the middle. After about 5 seconds the first enemy=Aetherblade_Golem:elite will wake up and two enemy=small_lasers:trap will start spinning. If struggling, try to avoid hitting Frizz until the other enemies have been cleared as this makes the start bit easier allowing you to burst first Golem down.
+If the lasers hit you, you take lots of damage, become stunned, and are inflicted with agony. If the lasers are about to reach you jump on a box and then jump over the lasers (Warning: Golems may pull you!). If the laser hits a Golem they block all attacks for 4 seconds. Once the first Golem dies 2 enemy=big_lasers:trap activate and two more Golems wake up. You can't jump over the big lasers but they are slow enough so you can outrun them. If the big lasers hit a Golem it will get a strong lightning attack with blind and confusion.
+Once those 2 Golems are dead, 2 final Golems activate and both lasers small and large lasers will power up. This may be a very difficult section because the Golems are hard to kill when laser are hitting them almost constantly. and it is very easy to die during this section. Focus on surviving, moving, and dodging Golem's pull attack. Eventually you will get a window of opportunity to deal some damage.
+Keep angular velocity in your mind. Lasers move slower near middle and faster near edges. You will take less damage near edges because lasers stay less time on you.
+Note that most teams with a Guardian will stack as described in the "Coordinated" section for the part with the Golems.
+tactic=coordinated
+Stack behind media=aether_laser_stack.jpg|dark_grey_things on the walls to pull enemies close when Frizz disappears. With enough agony resistance, offensive capabilities and area stability you can stay at the stack spot all the time. The golems will run to you and you can just take them down. Most PUG groups with a Guardian will employ this strategy.
+Highly coordinated groups may fight on top of Frizz instead of stacking behind a box. Additionally, highly coordinated groups typically stack on top of the set of boxes located to the left (as would be seen when one enters the room). In order to make the top of the box stack spot more efficient, golems are often pulled in using skills.
+tactic=exploit
+Don't kill all enemies during the previous gate encounter. If any enemies are alive the final room won't reset and you don't have to kill any of the enemies again.
+tactic=warrior
+Use wiki=Signet_of_Might to make some of your attacks unblockable.
+tactic=guardian
+Use wiki=Binding_Blade to group the mobs together or to pull mobs in.
+tactic=guardian
+Use wiki="Stand_Your_Ground!", wiki=Hallowed_Ground, and wiki=Indomitable_Courage to grant Stability so your group can avoid being CCed.
+tactic=guardian
+Use wiki=Wall_of_Reflection to defend against projectiles.
+tactic=mesmer
+Use wiki=Into_the_Void to group mobs together or to pull mobs in.
+Use wiki=Mantra_of_Concentration to grant stability to allies.
+tactic=engineer
+Use wiki=Magnet to pull mobs that don't quickly LoS.
+tactic=engineer
+Because wiki=Acid_Bomb is unblockable, it can be extremely useful here.
+tactic=engineer
+Use wiki=Toss_Elixir_U to grant projectile defense. If you get lucky and get a Smokescreen, you will also blind the mobs because the blind is unblockable.
+tactic=thief
+Use wiki=Smoke_Screen to blind mobs and provide projectile defense.
+Use wiki=Needle_Trap to reduce pressure if your team is struggling.
+tactic=elementalist
+You can use wiki=Magnetic_Shield_(elementalist_skill) on  wiki=Magnetic_Shield_(environmental_weapon) to pull mobs in.
+tactic=elementalist
+You can ues wiki=Shocking_Aura to reduce the pressure on your team, as it will stun golems when they strike you.
+tactic=elementalist
+Make use of any unblockable skills on your weapon set as-needed.
+
+###########################################################
+
+path=Aqua
+name=Aquatic Ruins
+tactic=normal
+This fractal has a mix of Krait and Jellyfish. If you want to be optimal use wiki=Powerful_Potion_of_Krait_Slaying|Potion_of_Krait_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies at the start against the Krait. However use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom against the boss. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
+Remember that your wiki=Agony_Resistance will drop up to 15 points from a lack of helmet or land weapons.
+youtube=qcSFQaJdHVU|Video_guide [KING].
+Current record (Dolphin): record=36.
+Current record (Ruins): record=37.
+
+name=Save the villagers
+tactic=normal
+You need to kill 3 groups of Krait and interact with cages to rescue enemy=villagers.
+Stack behind a statue to corner the krait and give you a wall for rush-type abilities.
+The first group has only enemy=Nimross:normal. The second group also has enemy=Krait_Hypnosis:normal with their dangerous poison-cloud attack. The last group has Veterans.
+After the villagers are saved, the path will split and you will either have to go through Darkness or survive as a Dolphin.
+tactic=warrior
+Use wiki=Tsunami_Slash into a statue to deal high damage.
+tactic=mesmer
+Use wiki=Vortex to pull Krait together and wiki=Feigned_Surge into a statue to deal high damage.
+tactic=elementalist
+Use wiki=Tidal_Wave into a statue to deal high damage.
+
+name=1) Darkness
+tactic=normal
+Staying in darkness quickly kills you. Carry a link=http://wiki.guildwars2.com/images/0/01/Luminous_Plant.jpg|Luminous_Plant to protect you and nearby players.
+The plant doesn't last very long so start moving once you pick it up. You can drop a plant early to pick up a new one and refresh your timer.
+Once someone reaches Jellyfish Beast you get a new checkpoint so you can just die if you can't get through.
+tactic=skip
+After the descent take a left between the stalactites and stalagmites and cross through the center of the room.
+Have one person run through solo and the rest of the party res at the checkpoint.
+
+name=2) Dolphin
+tactic=normal
+Unequip your all armor (including Breather) to prevent repair costs. Armor has no effect and you die pretty easily. Buffs will stay after transformation so stack swiftness and aegis before starting.
+The area is filled with Krait (most hidden) which can easily kill a lone Dolphin. Surviving is easier if you go as a group (wait for slower people when possible).
+Your first skill scans the area and reveals hidden Krait so spam it as much as possible.
+Your second skill summons a clone which you should use to distract Krait (use the skill again to make your clone stop and start "distracting").
+Your third skill gives you a slight speed boost but it isn't that useful.
+Your fourth skill resurrects all nearby players which is extremely strong when in a group. Use it as soon as someone dies.
+Use your dodges wisely. You need to dodge twice to prevent sink from the Krait.
+Once someone reaches Jellyfish Beast you get a new checkpoint so you can just die if you can't get through, but don't ressurect before you get the checkpoint or your party will have to wait for you to die again.
+tactic=coordinated
+Stack swiftness and aegis before entering. Hug the bottom right through the whole run. Stick together and ressurect whenever someone goes down.
+tactic=normal|coordinated
+tactic=warrior
+Use a banner so all your party members can use wiki=Inspire.
+
+name=enemy=Jellyfish_Beast:legendary
+tactic=normal|coordinated
+Lure the beast to the electrified cages for extra damage.
+tactic=coordinated
+Designate one player to pick a cage and have the rest of the party follow him.
+tactic=normal
+The boss summons enemy=Jellyfishes:normal. Kite them while killing the beast. Tag them to rally if downed.
+After 75% the boss starts using its agony attack. He pulls the target inside of him, gets 5 stacks of might every second, and applies agony on the target. Interrupting is the only way to avoid the agony attack. Try get rid of his defiance stacks (or use sink and float which ignore defiance).
+If you get pulled inside of the boss, start spamming skill 1 to get out. Start using skill 1 as fast possible to reduce time the boss is resistant to damage.
+tactic=alternative
+Full melee the boss while ignoring cages.
+tactic=normal|coordinated|alternative
+tactic=warrior
+Use wiki=Balanced_Stance to attack him during his spin.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" to protect your team from his electric spin.
+tactic=guardian
+Use Aegis against normal melee.
+tactic=guardian
+Use wiki=Weight_of_Justice (trait with Two-Handed Mastery) to interrupt agony attack.
+tactic=necromancer
+Use wiki=Sinking_Tomb to interrupt agony attack.
+tactic=necromancer
+Remember to corrupt his 25 might stacks after using agony attack.
+tactic=thief
+Use wiki=Basilisk_Venom to interrupt agony attack.
+tactic=mesmer
+Use wiki=Arcane_Thievery to steal 25 might and wiki=Signet_of_Inspiration to give them to your team (unless your team interrupts agony attack most of the time).
+tactic=mesmer
+Use wiki=Illusion_of_Drowning to interrupt agony attack.
+tactic=elementalist
+Use wiki=Air_Bubble and wiki=Rock_Anchor to interrupt agony attack.
+
+###########################################################
+
+path=Cliff
+name=Cliffside
+tactic=normal
+The fractal is full of Outlaws so use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying for extra damage and damage reduction, or wiki=Skale_Venom_(consumable) for weakness if your party is low on blinds. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils. If you want to be optimal use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
+youtube=gYhTcr_KByo|Video_guide [KING].
+Current record: record=38.
+tactic=warrior
+Pay extra attention to banner placement when stacking so that people can easily pick the hammer instead of your banners.
+
+name=enemy=Archdiviner_(Start):legendary
+tactic=melee
+All his attacks do lots of damage which makes melee very risky unless you know his animations. Try to stay at max melee range to prevent him from using melee attacks. If he does you have to block or dodge very quickly. Ideally, you should stay to the front of him if you are targeted (which may include backpedaling), and stay behind him if you are not being targeted.
+tactic=ranged
+All his attacks do lots of damage so pay attention. Try to learn animations for his special attacks and be ready to dodge. Keep some distance to avoid his melee attacks.
+tactic=melee|ranged
+He often initiates by channeling delayed AoEs near one player. Run away from other players if you think you are targeted. Try avoid them but they won't be a threat, other than stripping Aegis, unless you lack agony resistance. Remember to keep attacking him if you are in a good spot.
+His first special attack is a leap with AoE damage. He may turn in mid-air if targeted player moves. If you are being targeted avoid turning him towards others players (dodge directly away from him or use a block). If you are close to his target just block or dodge even if he isn't facing you.
+His second special attack is a spin which consists of two components - six projectiles evenly distributed around him (reflectable, with the ideal reflect placement in the center of the Archdiviner's hitbox) and an invisible AoE around his target. It's best to just dodge or use an invulnerability skill since single use blocks (Aegis) will only absorb one part of the attack.
+tactic=melee
+After 50% he will start using Backbreaker which also inflicts agony. Stay at max melee range so he won't use it. Backbreaker is quite slow so just block or dodge if you see a different animation.
+tactic=ranged|melee
+When he dies he will drop a Cultist Hammer which you need to proceed.
+tactic=coordinated
+In an organized group, you can use Earth Elementals or a Guardian (who has some Knight's gear equipped, thus giving them higher toughness than the rest of the party) to take aggro, thus allowing the rest of the team to safely melee the boss from behind.
+tactic=mesmer
+Use wiki=Feedback when Archdiviner is about to spin to protect your party and deal lots of damage.
+tactic=guardian
+Use wiki=Wall_of_Reflection when Archdiviner is about to spin to protect close players and deal some damage. You can deal lots of damage if you place the Wall of Reflection in the center of his hitbox.
+tactic=guardian
+Use wiki="Retreat!" and wiki=Virtue_of_Courage to protect yourself and team mates from his attacks.
+tactic=thief
+Use wiki=Signet_of_Agility to give extra dodges to team mates.
+tactic=elementalist
+Use an Earth Elemental from wiki=Glyph_of_Elementals to hold boss aggro and allow your team some relative safety from his melee attacks.
+
+name=Cultist Hammer
+tactic=normal
+The Hammer is needed to damage and destroy enemy=Seals:structure. The death of an enemy you have recently attacked charges skill 4 of the hammer. Skill 4 is used to hit seals. Skill 1 should be used for attacking while skill 3 should be used at ~26 stacks to counter stun. Skill 2 shouldn't be used at all.
+Picking up the Hammer deals 30% damage and some conditions based on wiki=Hammer_Corruption. Wielding the Hammer generates Corruption which gives conditions every 10 stacks, stuns at 30 stacks and downs at 40 stacks.
+You need teamwork to move the Hammer efficiently. Pay attention to the player carrying it because the Hammer has to be dropped before 40 stacks. If you don't have any Corruption be ready to pick the Hammer up because without conditions you will quickly heal up. Use area swiftness and mobility skills to move faster while wielding the hammer.
+Also pay attention to who has the hammer, corruption stacks, and health when assaulting Seals. Picking up the Hammer during a fight is risky because you lose lots of health and may die before being able to hit a Seal. If you have full health and little Corruption it's your job to pick it up. Also make sure to help and protect the player with the Hammer, since it does poor damage and makes surviving harder.
+The biggest priority is to not die with the Hammer. If you fall off the map the Hammer may disappear and everyone has to wipe to make it appear. If you die during a fight the Hammer will be on your body which makes it very hard to be picked up. Also people may accidentally pick it up when trying to revive you,  so pay attention to your stacks and don't pick it up if you can't make it.
+tactic=exploit
+The wiki=Hammer_Corruption stacks last just long enough to get to 40 stacks. If you need to carry the hammer though you're at high stacks drop it for a few seconds then pick it up again. The old stacks will disappear while the new ones are applied and the number will stay fixed.
+Warning: This will give you very little time to react once your time is about to run out again, and does a lot of damage when you pick it up a second time. Consider bringing condition removal.
+tactic=bug
+If you use a skill that grants you other skills (such as an engineer kit) while wielding the hammer, it may disappear entirely and not reappear during a death reset. Similarly, using consumables which grant you additional skills may have the same effect.
+
+name=Way to first enemy=Seal:structure set / Ankle Seals
+tactic=normal
+Just run through the enemies. They won't follow you to the first seal.
+tactic=fight
+There are multiple enemy=Spike_Traps:trap on the way. Pay attention to the ground and dodge/jump on suspicious parts (until you learn actual trap locations).
+On levels 1-9 you will have an easy route with no enemies. On level 10 and above you will have some veteran enemies. Either way, take it slowly enough to avoid falling.
+
+name=First enemy=Seal:structure set / Ankle Seals
+tactic=normal
+Initially there are 4 enemy=Novices_(Dagger):normal. There's no point trying to kill them fast because you need to charge the Hammer (more will spawn though). Try to only kill the Novice that the person with the hammer is attacking, while avoiding damaging the others.
+When they are dead enemy=Novice_(Dagger):veteran and 2 enemy=Novices_(Dagger):normal spawn.
+When they are dead enemy=Novice_(Dagger):veteran and enemy=Novice_(Dagger):normal spawn. They keep respawning when both are dead.
+Destroy both Seals to proceed. Charge the hammer and hit them on front with skill 4. Remember to take the hammer with you.
+
+name=Way to second enemy=Seal:structure / Chest Seal
+tactic=normal
+There are more enemy=Spike_Traps:trap on the way, and on the walls there will be heads blowing air. Getting hit by the gusts of air will cause a launch effect, which will likely lead to your death.
+Don't rush in (especially if you are carrying the Hammer). Pay attention to walls and wait for air gusts to go off. Also you can use stability or dodge through. Single blocks are usually effective, however they are not 100% effective as you can be moving slow enough, at the wrong angle, or with unlucky timing and catch two pulses of the air gust from one head and then be launched.
+tactic=mesmer
+Use wiki=Blink to get up and skip whole thing.
+tactic=elementalist
+Use wiki=Lightning_Flash to get up and skip whole thing.
+tactic=thief
+Use wiki=Infiltrator's_Arrow to get up and skip whole thing.
+tactic=guardian
+Use wiki="Stand_Your_Ground!"|"Stand_Your_Ground!"_(Utility) and Aegis to protect everyone.
+tactic=necromancer
+Use wiki=Necrotic_Traversal to skip some of it (straight line).
+
+name=Second enemy=seal:structure / Chest Seal
+tactic=normal
+On the second Seal there are ticking AoEs which deal damage and inflict burning. Don't stand in fire. There are safe-spots between AoEs where you can stack.
+Initially there are 3 enemy=Novices_(Dagger):veteran and 2 enemy=Novices_(Shortbow):normal. When they are dead 2 enemy=Novices_(Dagger):veteran, 5 enemy=Novices_(Dagger):normal and enemy=Novice_(Shortbow):normal start respawning.
+Try to make each kill yield a hammer charge in order to avoid fighting against constantly respawning enemies. Of course survivability comes first so kill enemies to reduce pressure if needed.
+tactic=struggling
+If your team is struggling, you can run or ideally stealth past the seal and stack behind the brazier on the far side. From there, enemies can be strategically pulled in order to gain hammer charges. Since the first group of enemies is often the hardest, you should consider stacking near the seal after they are defeated, as this will speed up the encounter considerably.
+tactic=warrior
+wiki=Endure_Pain is useful for hit&run when your team is struggling.
+tactic=mesmer
+wiki=Portal and wiki=Mass_Invisibility are useful for hit&run when your team is struggling.
+Use: wiki=Temporal_Curtain (traited) , wiki=Illusionary_Warden and wiki=Feedback against Novices with Shortbow. You can also use Temporal Curtain to pull enemies in.
+tactic=necromancer
+wiki=Spectral_Walk is useful for hit&run when your team is struggling.
+tactic=necromancer
+Use Spectral Grasp to pull an enemy.
+tactic=guardian
+Use wiki=Binding_Blade to pull enemies.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against Novices with Shortbow.
+tactic=thief
+wiki=Scorpion_Wire can pull enemies that are not immediately coming to your team when stacked.
+wiki=Smoke_Screen can provide blinds asgainst melee enemies, and projectile defense against ranged enemies.
+wiki=Shadowstep is useful for hit&run when your team is struggling.
+
+name=Way to third enemy=Seal:structure set / Arm Seals
+tactic=normal
+Walk carefully on the wooden platforms (especially with the Hammer).
+
+name=Third enemy=Seal:structure set / Arm Seals
+tactic=normal
+There are two Seals. Hitting a Seal makes it become invulnerable and the other one vulnerable so you have alternate between them.
+Initially both seals have 2 enemy=Chanters:normal. When they die, enemy=Chanter:veteran and 5 enemy=Chanters:normal will start respawning. All Chanters will heal the Seal while they are not attacking.
+At lower levels it doesn't matter much what you do. You can for example do a 2-1-2 split where one guy runs between the seals while others kill (keep cycling the roles).
+When it gets harder, the common tactic is to leave one Chanter alive at one Seal and charge the Hammer at the corridor near other Seal. With just one chanter alive at the one seal, the healing will be minimal, and it will be very easy for a single player to run to that seal and hit it with the hammer.
+Don't fight in the open. Stay behind a corner while one player goes to pull to make them all come at you. Keep pulling enemies all the time to prevent healing. Try keep one target low for when the player with the Hammer gets back for quick charge.
+Remember to support the Hammer guy if there are many enemies. If necessary, go along with the hammer carrier to get aggro and from the enemies.
+Once one Seal is destroyed the other should be quick to finish. You don't have to carry the Hammer after this section is complete.
+Always make sure your team is on the same page with regards to strategy before starting the arm seals. Serious errors here, such as killing both starting chanters on both sides, can make this event nearly impossible to complete for even the most organized teams on higher levels.
+A simple procedure for the normal strategy is as follows. The first seal players encounter (called the left seal in-game, although it is on the right arm of the colossus) will be called the "near" seal, and the second seal players encounter (called the right seal in-game, although it is on the left arm of the colossus) will be called the "far" seal.
+Strategy:
+1. Kill chanter at the near seal. Hit the near seal.
+2. Kill chanter at the far seal. Hit the far seal.
+3. Kill another chanter at the far seal. Run to hit the near seal.
+4. Stack at the far seal hallway stack spot. Continuously pull chanters that spawn at the far seal and kill them.
+5. Alternate hitting seals. The near seal will die first.
+tactic=coordinated
+A coordinated without a thief, necromancer, or mesmer will generally use the following strategy:
+Strategy:
+1. Kill chanter at the near seal. Hit the near seal.
+2. Kill chanter at the far seal. Hit the far seal.
+3. Kill chanter at the near seal. Hit the near seal again.
+4. Move to the near seal hallway stack spot. Continuously pull chanters that spawn at the near seal and kill them.
+5. Alternate hitting seals. The far seal will die first. After which, continue to focus on the near seal.
+6. If the lone chanter from the far seal follows you to the stack spot, your team needs to immediately move around the corner to break LoS and lose its aggro. Do not kill this chanter.
+A coordinated group with a necromancer or a thief will generally use the following strategy:
+Strategy:
+1. Kill chanter at the near seal. Hit the near seal.
+2. Kill chanter at the far seal. Hit the far seal. Thief/Necro drops Shadow Trap/Flesh Wurm out of the way of the remaining chanter.
+3. Kill chanter at the near seal. Put up reflects and pull mobs in (fight in the open). Drop hammer for Thief/Necro to pick up; Thief/Necro picks up hammer.
+4. Thief/Necro gets a charge, activates Destroy Shadow Trap/Necrotic Transversal, and hits far seal. Team holds a chanter or two at low health; team may need to retreat to the near seal hallway stack spot.
+5. Thief/Necro returns to near seal as quickly as possible, gets a charge, and hits the seal.
+6. Run to the other side.
+7. Kill the chanter and hit the far seal. If executed too slowly, you may need to drop reflects and hit the seal an additional time.
+A coordinated group with a mesmer will generally use the following strategy:
+Strategy:
+1. Kill chanter at the near seal. Hit the near seal.
+2. Kill chanter at the far seal. Hit the far seal.
+3. Kill chanter at the near seal. Put up reflects and pull mobs in (fight in the open). Drop hammer for Mesmer to pick up; Mesmer picks up hammer.
+4. Mesmer gets a charge, drops portal, enters portal, and hits far seal. Team holds a chanter or two at low health.
+5. Mesmer returns to near seal, gets a charge, and hits the seal.
+6. Team spasms interact in case the portal is still open. If done properly, the portal should still be open. Otherwise, run to the other side.
+7. Kill the chanter and hit the far seal.
+tactic=warrior
+At high levels use wiki=Defiant_Stance or wiki=Endure_Pain when doing hit&run.
+tactic=mesmer
+Use wiki=Mass_Invisibility or/and wiki=Veil for hit&run.
+Use wiki=Portal for hit&run or organized tactics.
+tactic=necromancer
+At high levels use wiki=Spectral_Walk and wiki=Summon_Flesh_Wurm for hit&run or organized tactics.
+tactic=guardian
+Use wiki=Line_of_Warding or wiki=Ring_of_Warding when hiding behind corner (needs good placement).
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect against projectiles, especially with coordinated tactics.
+tactic=engineer
+Use wiki=Smoke_Bomb to blind when hiding behind the corner.
+tactic=necromancer
+Use wiki=Well_of_Darkness to blind when hiding behind the corner.
+tactic=thief
+wiki=Black_Powder and wiki=Smoke_Screen can be used to almost nullify damage output of chanters if you pull them behind the corner.
+wiki=Shadow_Trap and wiki=Shadowstep are useful for hit&run or coordinated tactics.
+
+name=Way to Archdiviner
+tactic=normal
+There are small explosions on the platforms. Proceed slowly and wait for explosions to go off before going in.
+Avoid changing utility just for this so you don't have to wait for cooldown.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" to protect everyone.
+
+name=Archdiviner
+tactic=normal
+At the start both enemy=Archdiviner_(Phase_1):legendary and Seal are invulnerable. You should pull 4 enemy=Chanters:normal behind one of the platform with torches (near the boss) and kill them without much trouble. After that just walk close Archdiviner to get stunned and to wake him up.
+During the first phase he will use wells just like the first archdiviner. His only other attack in this phase is just basic melee with high damage and Knockback (again melee players should try to stay at max melee-range as well as behind his back if not targeted).
+At 75% Archdiviner will drop his Hammer, get invulnerability and become permanently stunned. The Seal goes vulnerable and 4 enemy=Chanters:normal spawn around the seal. After some time, 4 enemy=Fanatics:normal start to respawn.
+At lower levels, enemies disappear when you hit the Seal so just focus one enemy and hit the Seal. At higher levels, enemies stay so try to kill as many as possible before hitting the Seal (if you are slow and Fanatics start to spawn then hit Seal immediately, otherwise you might get overrun).
+For easier killing you can stack behind one of the platforms or pull the chanters to the middle with wiki=Binding_Blade or wiki=Into_the_Void.
+When the Seal is hit it gets invulnerability, Archdiviner wakes up, the Hammer disappears and you get unavoidable and unbreakable stun. Archdiviner starts attacking while you are stunned if no-one is near him, so have someone stand in melee range of him.
+At 50% same thing happens as at 75%. However, next time he wakes up you will be facing enemy=Archdiviner_(Phase_2):legendary.
+He won't be using wells any more but the melee auto-attack stays the same.
+At this point, he points at one person which shortly after teleports him to a enemy=Cage:structure and summons 2 enemy=Bone_Fiends:normal. Destroy the cage to get out and try cleave/AoE Bone Fiends.
+His most dangerous attack is when he sends 3 pulling projectiles. After that he reflects projectiles (Protection-icon) and casts huge while flash which causes agony. Stop using projectiles and dodge the agony attack.
+On top of this, he starts to use Backbreaker similarly to the first fight.
+At 25% the same thing happens. At 0% the same thing happens except you have to hit the seal twice.
+tactic=coordinated
+Whenever the seal is damaged, Archdiviner gets stunned based on nearby players (about 240 range) and amount of players in the instance with formula 2 * nearby players * players in instance. So in a full group, each player generates 10 stuns. This can be used to control defiant on Archdiviner. You always want to have at least one player near him so he also gets stunned.
+With 0-1 defiant stacks, have 3 players near him. With 2-3 defiant stacks, have 2 players near him. With 4-5 defiant stacks, have 1 player near him.
+In an organized group, you can use Earth Elementals or a Guardian (who has some Knight's gear equipped, thus giving them higher toughness than the rest of the party) to take aggro, thus allowing the rest of the team to safely melee the boss from behind.
+When beginning the encounter, the use of group stability along with someone running to the archdiviner will prevent any stun from occurring. If you don't want to use group stability, someone can teleport to the archdiviner, thus stunning him at the same time as the whole party is stunned.
+tactic=exploit
+You can leave a player outside of the room and the boss won't reset if you wipe.
+If you are only player alive after 50% you can get out of combat. When he puts you into a cage wait until he loses aggro and then quickly break the cage and run back to the entrance. If you are fast enough only Bone Fiends will follow you. Kill them and your team can resurrect at the checkpoint (Archdiviner or Seal won't reset).
+tactic=optional
+At the end use /bow at the Colossus when the Colossus link=http://i.imgur.com/8DmBbCk.png|bows at you to get an achievement.
+tactic=mesmer
+Use wiki=Temporal_Curtain to pull chanters together.
+Use wiki=Feedback to provide projectile defense against chanters.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger in phase 2 and versus chanter spawns to protect yourself and team mates from projectile attacks.
+tactic=guardian
+Use wiki="Retreat!" and wiki=Virtue_of_Courage to protect yourself and team mates from his attacks.
+Use wiki=Binding_Blade to pull chanters together.
+tactic=thief
+Use wiki=Signet_of_Agility to give extra dodges to team mates.
+tactic=elementalist
+Use an Earth Elemental from wiki=Glyph_of_Elementals to hold boss aggro and allow your team some relative safety from his melee attacks.
+
+#########################################################################
+
+path=Furn
+name=Molten Furnace
+tactic=normal
+The fractal has mostly Molten so use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies for extra damage and damage reduction. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils. If you want to be optimal use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying and wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Frailty against the end boss.
+youtube=QjJMBIXvftQ|Video_guide [KING].
+Current record: record=39.
+
+name=Start
+tactic=normal
+A group of 2 enemy=Molten_Oscillators:veteran, a enemy=Molten_Resonator:veteran and a enemy=Molten_Stalker:veteran appear from a portal. When one of them dies a enemy=Molten_Brawler:elite appears. Kill all to proceed. You may stack near cliff.Although it is not necessary, you can line of sight the enemies behind a nearby cliff.
+tactic=coordinated
+Fight the mobs where they spawn. You can use Binding Blades or Into The Void to pull them together, although it is not necessary to use either skill to group them. See bug section.
+tactic=bug
+Don't kill any enemies until the progress bar appears on the corner. If you do, the bar won't fill and progress will be blocked.
+Additionally, progress will be blocked if you kill the initial enemies too slowly, pull them too far away and/or NPCs are dead (not sure which one). Don't try any fancy things.
+tactic=mesmer
+Use wiki=Temporal_Curtain to pull the mobs together.
+tactic=guardian
+Use wiki=Binding_Blade to pull the mobs together.
+Use wiki=Ring_of_Warding or wiki=Line_of_Warding if stacking to CC the mobs as they run in. This is generally as unnecessary as stacking in the first place, but can be useful for struggling groups.
+
+name=Tunnel
+tactic=normal
+The tunnel has 5 pockets, with each pocket containing a random group of 3 enemies. Wait until the drill reveals the pockets, kill the enemies, and then plug the geyser with a boulder.
+The first pocket has 3 Veterans. The second and third pockets have a Elite and 2 Veterans. The fourth and fifth pockets have 2 Elites and a Veteran. Possible enemies are enemy=Tunnel_Enemies:trap.
+After tunnel there is a large group of Molten enemies. 2 enemy=Bladestorms:veteran, 2 enemy=Axe_Fiends:veteran, 2 enemy=Disaggregators:veteran and a enemy=Smoke_Shaman:veteran. At lower levels Fiends are replaced with a enemy=Shadowblade:veteran. Most groups run to the right, past the enemies, and stack behind a rock near the steam wall in order to LoS the mobs.
+tactic=coordinated
+If there is a Guardian in the party, they can use the Staff autoattack to tag mobs while still in the tunnel. Stack might before reaching the pockets, and quickly burst the mobs down. Alternatively, you can pull most of the mobs together using Binding Blades or Into The Void, or in some of the rooms, use inbuilt LoS spots.
+The Molten enemies can be fought by running straight to them and fighting on top of them, so long as your party has high DPS and sufficient access to blinds and stability.
+tactic=bug
+Boulders may reset if you spend too much time on this section, especially if your party wipes. If you for some reason can't progress to steam traps go check the geysers. Similarly, if your party wipes you may want to check the geysers as you run past them to avoid having to run back.
+tactic=mesmer
+Use wiki=Temporal_Curtain to pull mobs together.
+Use wiki=Feedback to provide projectile defense.
+Use wiki=Mantra_of_Concentration to provide stability to your group.
+tactic=guardian
+Use wiki=Binding_Blade to pull mobs together.
+Use wiki=Wall_of_Reflection to provide projectile defese.
+Use wiki=Wave_of_Wrath to attack mobs in pockets from the tunnel, pulling them to pocket entrances to burst down (coordinated).
+Use wiki="Stand_Your_Ground!" and wiki=Indomitable_Courage to provide stability to your group. wiki=Hallowed_Ground is useful against the large trash pack.
+Use wiki=Ring_of_Warding if LoSing the large trash pack, to give your team some extra time to freely DPS.
+tactic=thief
+Use wiki=Smoke_Screen to blind dangerous enemies and provide projectile defenses.
+tactic=elementalist
+Use wiki=Sandstorm to blind dangerous enemies.
+
+name=Steam traps
+tactic=normal
+Wait for enemy=Steam:trap to go off and run past quickly. Don't try any fancy shortcuts or you risk the fractal getting stuck. Don't mind enemy=Fire_Lobs:trap jumping from the lava because they barely do any damage.
+tactic=coordinated
+Stack swiftness on the NPCs during their long dialog stop. Additionally, it is possible to abuse their pathing via some clever leaps that risk bugging out the fractal if done improperly.
+tactic=bug
+Make sure Frostbite, Braham and Rox are alive and with you before proceeding. Otherwise the fractal may get stuck and you have to restart. If anyone of them is missing go search for them or wipe.
+
+name=Weapon testing
+tactic=normal
+While in the area you have Stressed debuff which deals and heals 1 damage every few seconds. This prevents getting out-of-combat regeneration and switching traits, weapons and skills.
+During this section you must pass three separate tests, which alternate between burn phases. Each test occurs in a non-repeating random order. Either crushers activate at corners and send shockwaves around the area, fire tornadoes appear at side and move over the area or lots of Fireballs get shot on the area. Shockwaves can easily be avoid by just jumping but you can also dodge. Tornadoes can be avoided by movement, standing opposite side of Core, reflecting them or just dodging through. Fireballs can be avoided with mobility, dodges and area anti projectile skills.
+After the first test 4 enemy=Molten_Shamans:veteran aappear at the sides (they respawn if killed). You must damage  the Core to 75% to proceed, at which point the enemies disappear.
+After the second test a enemy=Molten_Protector:veteran appears at the middle of the room, on the the side of the Core nearest to the entrance to the room. The protector respawns if killed. Damage the Core to 50% to proceed, at which point the protector disappears. Use control skills to move the protector away from the core to start damaging it immediately.
+After the third test all previous enemies appear. Damage the Core to 25% to proceed, at which point all enemies again disappear.
+At which point there is a final test phase, where all the previous test elements are simultaneously combined. Destroy the Core to proceed.
+tactic=engineer
+If your team has trouble surviving the weapon test use wiki=Healing_Turret and wiki=Supply_Crate with trait wiki=Fortified_Turrets to reflect tornadoes and fireballs.
+tactic=coordinated|exploit
+Stack near the core on the exit-side and use reflects and projectile absorption to tank defend against the fireball/cannon trap as well as, optionally, the fire tornado trap.
+tactic=bug
+The event may not start if Frostbite, Braham or Rox is missing. Ensure they are alive and with you before entering the room.
+tactic=elementalist
+Use wiki=Conjure_Frost_Bow to do extreme damage to the power core.
+Use wiki=Conjure_Lightning_Hammer to knock back the molten protector.
+Use wiki=Swirling_Winds or wiki=Ring_of_Earth or wiki=Magnetic_Aura or wiki=Magnetic_Wave to provide projectile defense against mobs, the cannon trap, and the fire tornado trap.
+tactic=thief
+Use wiki=Smoke_Screen to provide projectile defense against mobs, the cannon trap, and the fire tornado trap.
+Use wiki=Scorpion_Wire to pull the protector far away from the core.
+tactic=guardian
+Use Wall_of_Reflection and/or Shield_of_the_Avenger and/or wiki=Sanctuary to provide projectile defense against mobs, the cannon trap, and the fire tornado trap.
+Use wiki=Banish to knock the protector away from the core.
+
+name=enemy=Weapons_Test_Engineer
+tactic=melee
+Stay mobile and keep circling to automatically avoid his powerful melee attack. Use a stun break and dodge if you get hit to prevent an equally powerful second hit.
+When he channels a fire on the ground be ready to dodge at the right moment. If you think you will die move away so you can dodge easier.
+Try to keep an eye on the ground to avoid shockwaves from Crushers. stability is really helpful because there are lots of action. Projectile defense is also useful.
+tactic=ranged
+Try to stay between two enemy=Crushers:structure so you can jump over both waves when needed. Keep side stepping to avoid most attacks.
+If you see fiery tornadoes coming your way just dodge.
+tactic=coordinated
+Use stability (party wide if possible) to prevent numerous Control effects. Stack at melee but stay mobile to avoid his powerful melee hit. Be ready to dodge when he channels fire on the ground. Projectile defense and Aegis can reduce your need to react to certain mechanics.
+
+#########################################################################
+
+path=Mai
+name=Captain Mai Trin
+tactic=normal
+The fractal is full of Aetherblade so use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies for extra damage and damage reduction. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
+Needs plenty of coordination.
+youtube=iQozEONbKxY|Video_guide [KING].
+Current record: record=40.
+
+name=Start
+tactic=normal
+A group of enemy=Inquest_Technician:champion, enemy=Swashbuckler:elite, enemy=Striker:normal, enemy=Grenadier:normal, enemy=Thug:normal, enemy=Technician:normal and 2 enemy=Golemites:normal.
+Stack on corner and kill enemies. Champion has a stunning shield so party wide stability helps with killing.
+tactic=coordinated
+You can run at the enemies and fight directly on top of them. Party wide stability is useful.
+tactic=exploit
+Let Ellen die and resurrect her. This will allow you to character select, log back into the same character, and be resurrected be Ellen after loading back in. You can then run along the path towards where you enter Mai Trin's arena, staying to the right instead of entering, and continuing until you reach a wooden gate. Once at the gate, turn around and run down the hill. You will be teleported into Main Trin's arena.
+
+name=enemy=Mai_Trin:legendary
+tactic=normal
+Once you enter the area you will be inflicted with unavoidable agony. Venturing too close to the arena walls may cause you to be inflicted with agony again. Mai is protected by a shield which reduces the damage she takes as well as reducing her susceptibility to conditions (at high stacks, she is immune to conditions, at lower stacks, conditions have a reduced duration). To remove the shield she has to stand on electric fields shot by Horrik. Horrik shouldn't be targeted at all, as if you kill him her shield stacks will reset and Horrik will simply respawn. Horrik also shoots fire fields which should be avoided if possible.
+Mai stacks lots of bleeding in melee so take plenty of condition removal (party wide if stacking). When you do not have aggro, try to be behind Mai so that you are not susceptible to her melee cleave.
+Occasionally she will equip her pistol and aim at the furthest player (you can usually predict who will get targeted). She will shoot a homing bullet which causes her to teleport the target and deal massive damage. The only way to avoid is by blocking or reflecting the shot. If you don't have anything ready don't be the furthest player. If you are about to get hit without protection dodge away or use a mobility skill to prevent some of the damage.
+She will also shoot close range energy bolts at each player. These can't be blocked so dodge when you see her kneel. One bolt won't deal much damage but if you are close to her you may get hit multiple times.
+The key to beat Mai is to control her position. Everyone should stay relatively close each other so electric fields appear close. Then just keep Mai in there until her shield goes down. At 6 stacks you can start attacking her, although you will do the most damage when she has 3 or less stacks.
+Every 25%, Mai and Horrik disappear and cannons start shooting at every player and pet. Split up so your circles won't overlap and stay calm; only move if needed. If you are stuck just dodge through an AoE. Stealth can be used to prevent getting shot at, although one player stealthing means other players will be targeted more by the cannons.
+If someone gets defeated they can be resurrected during the fight because one person can easily kite Mai. Revivers should keep an eye on Mai to react when she equips her pistol.
+tactic=coordinated
+The lightning field from Horrik occurs every three shots. Be mindful of positioning to ensure Mai makes it into every shot. Get her to a low amount of stacks as quickly as possible (generally 2-3), CC her, and then burst her down.
+If there is a thief in the party, one player can solo kite Mai to get her stacks down, while the other players perma-stealth on the other side of the arena. When stacks are low, those players can stack might and quickly burst Mai down. One player can solo-kite during the cannon phase, using ~75% of the arena to run in, while the rest of the team stealths near the wall on the far side of the arena.
+tactic=exploit
+If you have trouble killing her one person may just stay outside. If people revive fast after wiping she won't heal up at all allowing you to eventually kill her. The exploit method described in the "Start" section is most commonly used, however. It is also possible to get back in by switching to a character that has not entered this Mai Trin fractal instance before, and then running to the wooden door and back down the hill.
+You can stealth the entire party during the cannon phase, but only for the duration of 1 traited Shadow Refuge (or less). Otherwise, Mai Trin will begin to reset.
+tactic=bug
+Mai may not teleport back after a cannon phase. This can be fixed by killing Horrik. However Mai can't walk any more after this.
+During the cannon phase, there are numerous bugs. The time from a red circle being drawn to the time you will receive damage is inconsistent. The red circles do not accurately indicate where you will receive damage. You can be "headshot" by the cannon projectiles (both during cannon phase, and by Horrik), meaning you will get hit because they collide with you, even if you are not in a red circle. The camera during the cannon phase can, especially in certain spots, be prone to going into the ceiling; be ready to quickly zoom in so you can see what is happening if this occurs.
+Sometimes Mai Trin stops doing any animations for certain players. Her arms remain fixed. This is fixable for those players by logging out and back in (using the exploit to re-enter the arena), or sometimes fixable by CCing Mai Trin.
+Sometimes, Mai Trin's teleporting shot sends her to the far side of the arena, instead of to the player she targeted.
+Do not use any consumable items such as Hylek Potions while entering Mai Trin's arena, or before she turns hostile. This can cause Mai to never turn hostile.
+tactic=warrior
+Use offhand sword to give yourself the ability to block.
+tactic=guardian
+Give Aegis to your team when she uses her teleporting shot, if you think the target can't block it, or it is unclear who the target is.
+Use wiki=Purging_Flames and wiki=Absolute_Resolution to clear conditions on allies.
+tactic=mesmer
+Use wiki=Mantra_of_Resolve to clear conditions on allies.
+You can easily stand at range and block all of Mai Trin's teleporting shots by using Scepter.
+tactic=elementalist
+Use wiki=Swirling_Winds to block Mai Trin's teleporting shot.
+Use wiki=Deep_Freeze when Mai has low shield stacks to very safely DPS her.
+tactic=thief
+Use wiki=Signet_of_Agility to give your party extra dodges.
+Use wiki=Smoke_Screen to block the teleporting shot and to blast for stealth if needed.
+Use wiki=Shadow_Refuge to stealth downed allies if needed.
+tactic=engineer
+Use wiki=Tool_Kit to give yourself a block, and also give yourself the ability to pull Mai into lightning fields if your group is uncoordinated.
+
+#########################################################################
+
+path=Molten
+name=Molten Boss
+tactic=normal
+The fractal is full of Molten so use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies for extra damage and damage reduction. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
+Quite tough boss fight. Bosses deal lots of damage and reviving is dangerous.
+youtube=QjJMBIXvftQ|Video_guide [KING].
+Current record: record=41.
+
+name=enemy=Molten_Effigy:champion
+tactic=normal
+At around 60% a group of an enemy=Axe_Fiend:veteran, a enemy=Disaggregator:veteran, an enemy=Igniter:veteran and a enemy=Reverberant:veteran appear behind you. With enough damage you can kill Effigy before enemies become a threat. Alternative one player can go kite them until Effigy has been killed.
+tactic=coordinated
+The Effigy's firestorm attack can be interrupted (albeit not by knockbacks, pulls, knockdowns, or launches), which allows the team to safely melee. Projectile defense can be used against the fireball attack.
+Use Binding Blades or Into The Void to group additional enemies together.
+tactic=warrior
+Use wiki=Pommel_Bash to interrupt the Firestorm.
+tactic=ranger
+Use wiki=Hilt_Bash to interrupt the Firestorm.
+tactic=thief
+Use wiki=Headshot to interrupt the Firestorm.
+Use wiki=Smoke_Screen to provide projectile defense.
+tactic=mesmer
+Use wiki=Magic_Bullet or wiki=Power_Lock to interrupt the Firestorm.
+Use wiki=Illusionary_Warden or wiki=Temporal_Curtain (traited) or wiki=Feedback to provide projectile defense.
+Use wiki=Temporal_Curtain to group the adds together.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to provide projectile defense.
+Use wiki=Binding_Blade to group the adds together.
+tactic=elementalist
+Use wiki=Swirling_Winds to provide projectile defnese.
+tactic=asura
+Use wiki=Technobabble to interrupt the Firestorm.
+
+name=End Fight
+tactic=normal
+You have to fight both the enemy=Molten_Berserker:legendary and the enemy=Molten_Firestorm:legendary at the same time. You should decide which target to kill first. When one dies the other one will fully heal up so you can't kill both at the same time. It is standard practice to kill the Berserker first, and kill the Firestorm second.
+Damaging one of them to 75%, 50% or 25% will enrage the other causing more dangerous attacks. Hitting the enraged target 50 times removes the enrage. You should decide whether to completely ignore enrage or wear it down together (if you split then enrage will be reapplied fast). It is standard practice to focus the Berserker, and ignore enrage on the Firestorm.
+Focusing the Firestorm makes the Berserker to do more AoEs which can be devastating if your team fails to avoid them. Remember to stay mobile and keep distance. Focusing the Berserker makes the Firestorm shoot more rapidly and as well as causes bigger AoEs (probably easier to avoid).
+Never try to pull them away from the arena because killing them separated will get you stuck (they may follow NPCs). Also stay away from the bridges because you will constantly get agony if you are too near to them.
+tactic=bug
+Every AoE effect from Firestorm may not get drawn. Stay alert if you suddenly take damage and move a bit.
+
+name=enemy=Molten_Berserker:legendary
+tactic=normal
+His normal melee hits won't do much damage but they will knock you down if he is enraged. Occasionally he teleports to a distant target so stay prepared.
+His most dangerous attack is his shockwave which is a growing PBAoE. Normal white ones can be jumped over but you have to evade blue ones. Never run along the wave or you will die in a second. Waves won't reach high range (~1200) so stay back if you think you will get hit. At start he will do only one shockwave but later when he gets enraged he will do 2-4 depending on Firestorm's health.
+When Firestorm dies his attacks no longer knock down. Instead he occasionally raises to air while being invulnerable. When he lands he releases fiery shockwave with extreme damage. Jump if you think you can do it reliably, otherwise dodge or out-range. Also rocks keep falling from the roof. Try stay away from red circles and use a stun break if you get knocked down in a bad spot.
+tactic=coordinated
+Stack at the spawn of the Berserker (in melee), have whoever Bhram is on stay back prior to the cutscene to prevent Bram CCing the Berserker, stack might after the cutscene, and burst the Berserker down. Projectile defense to protect against the Firestorm's attacks is very useful. If there is a Guardian, they should use Aegis for the third hit of the autoattack chain, as it is the most damaging. You can damage the berserker immediately after the cutscene ends.
+tactic=mesmer
+Use wiki=Illusionary_Warden or wiki=Temporal_Curtain (traited) or wiki=Feedback to provide projectile defense.
+Use wiki=Time_Warp to help burn this boss down faster.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to provide projectile defense.
+Use wiki="Feel_My_Wrath!" to help burn this boss down faster.
+Try to provide an Aegis on the third hit of the autoattack chain from this boss.
+tactic=elementalist
+Use wiki=Conjure_Frost_Bow to do extreme damage to this boss, as well as CC the boss for a long period of time.
+Use wiki=Swirling_Winds to provide projectile defense.
+tactic=engineer
+Use wiki=Toss_Elixir_U to provide projectile defense.
+
+name=enemy=Molten_Firestorm:legendary
+tactic=normal
+Stay mobile so you don't stand in his ticking AoEs. Dodge if you see something flying towards you or if you end up in AoE. When he is enraged his AoEs are bigger and some of his projectile launch.
+When Berserker dies he will fill outer area with vortex which prevents entering. Basically it significantly reduces the area which makes avoiding AoEs bit harder. Firestorm probably stands inside it preventing melee hits so consider a ranged weapon.
+tactic=coordinated
+Use projectile defense to protect against the Firestorm's attacks. If the Firestorm is too far into the vortex to be attacked in melee, either pull it back into the arena or have the entire party move to the opposite side of the arena and the firestorm will jump back in.
+tactic=mesmer
+Use wiki=Illusionary_Warden or wiki=Temporal_Curtain (traited) or wiki=Feedback to provide projectile defense.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to provide projectile defense.
+tactic=elementalist
+Use wiki=Conjure_Frost_Bow to do extreme damage to this boss, as well as CC the boss for a long period of time.
+Use wiki=Swirling_Winds to provide projectile defense.
+tactic=engineer
+Use wiki=Toss_Elixir_U to provide projectile defense.
+
+#########################################################################
+
+path=Snow
+name=Snowblind
+tactic=normal
+Enemies: Elementals and Sons of Svanir.
+Time: Night.
+Use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying or/and wiki=Powerful_Potion_of_Sons_of_Svanir_Slaying|Potion_of_Sons_of_Svanir_Slaying for extra damage and damage reduction. Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force for damage sigils. If you want to be optimal use wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying or/and wiki=Superior_Sigil_of_Wrath|Sigil_of_Wrath instead of Force.
+youtube=UO1-C1EwAgY|Video_guide by [KING].
+Current record: record=42.
+
+name=Start
+tactic=normal|skip
+As soon as you spawn you start getting stacks of Frostbite. It deals some damage every second per stack and becomes quite deadly at a high number of stacks. Staying near a heat source removes all stacks and grants a short immunity against being inflicted with additional Frostbite stacks.
+tactic=normal
+Run along the road and use wiki=Stab_(Rusty_Old_Torch) to lit up bonfires. Be careful to not fall down.
+tactic=skip
+The safest way to get down fast is to follow the road to right and then fall down when it turns left.
+The fastest way to get down is to just move forward from the beginning and get down using a structure made of wooden planks. It takes some practice so you should practice it alone.
+tactic=optional
+To complete the achievement "If We Only Had Marshmallows" remember to lit up every bonfire.
+tactic=warrior
+Use wiki=Death_from_Above to improve your chances with the fastest way.
+tactic=guardian
+Use wiki=Protector's_Impact to improve your chances with the fastest way.
+tactic=elementalist
+Use wiki=Arcane_Abatement to improve your chances with the fastest way.
+tactic=engineer
+Use wiki=Explosive_Descent to improve your chances with the fastest way.
+tactic=ranger
+Use wiki=Soften_the_Fall to improve your chances with the fastest way.
+tactic=thief
+Use wiki=Descent_of_Shadows to improve your chances with the fastest way.
+tactic=mesmer
+Use wiki=Descent_into_Madness to improve your chances with the fastest way.
+tactic=necromancer
+Use wiki=Toxic_Landing to improve your chances with the fastest way.
+
+name=Ice Wall
+tactic=normal|skip
+At the bottom there are 6 bonfires next to each other which you have to keep lit to melt the nearby ice wall. Fires only stay up for 10 seconds and you need to light them up 4 times (if done normally) to melt the wall. As soon as you get there 2 enemy=Sons_of_Svanir_(Axe):veteran and 4 enemy=Sons_of_Svanir_(Greatsword):veteran start respawning.
+tactic=normal
+At lower levels (see Skip for harder levels) you can simply keep killing enemies while keeping the fires up. Once the wall melts, kill remaining enemies and proceed. Enemies will keep respawning so don't stay there too long.
+tactic=normal|skip
+Camp fires will remove Frostbite when you enter their range even when not lit. You can use this to get out of combat to allow people respawn or to change skills and traits. Keep in mind that the immunity won't automatically reapply in the area so if you want to stay there longer you have to manually re-enter the area. Don't get too close so you don't aggro enemies.
+Keep this in mind while fighting enemy=Elemental_Source:structure if you are getting overrun by enemy=Ice_Elementals:veteran.
+tactic=coordinated
+1-2 players can keep the enemies busy while rest of the team spams wiki=Stab_(Rusty_Old_Torch) on the bonfires. Repeatedly stabbing the fires speeds up progress, as does having high might when stabbing the fires (pre-stack before you start stabbing them), as does quickness.
+Alternatively a thief can stealth the entire team, although this is generally slower than the above method.
+tactic=guardian
+Use wiki=Line_of_Warding at front of enemies when they spawn. Tag them with Staff. Use wiki=Ring_of_Warding and wiki=Zealot's_Embrace and keep kiting them while others keep fire up.
+tactic=guardian
+Use wiki=Wall_of_Reflection to protect team.
+tactic=mesmer
+Use wiki=Feedback to protect your team.
+tactic=mesmer
+Use wiki=Temporal_Curtain and wiki=Illusionary_Wave to control enemies.
+tactic=necromancer
+Use wiki=Spectral_Wall, wiki=Well_of_Darkness, wiki=Plague and wiki=Reaper's_Mark to control and blind enemies.
+tactic=necromancer
+Use wiki=Grasping_Dead, wiki=Unholy_Feast, wiki=Chilblains and/or wiki=Tainted_Shackles to slow down enemies.
+tactic=skip
+The easiest way is to use hit and run tactic. Go in with defensive skills, light up fires and run far away so the enemies stop following. Other people can help and pull enemies away first. Once the wall melts just leave dead players behind and proceed until enemies stop following. When they stop following you should run back to the bonfires.
+tactic=warrior
+Use wiki=Defiant_Stance and wiki=Endure_Pain to tank hits while litting up fires.
+tactic=warrior
+Use wiki="Fear_Me!" for long control to protect you and your team.
+tactic=thief
+Use wiki=Smoke_Screen with wiki=Cluster_Bomb and wiki=Shadow_Refuge to easily solo it while stealthed.
+
+name=enemy=Elemental_Source:structure
+tactic=normal
+Stick together and try to stay near the entrance. There will be lots of pressure so you need to support each other and revive people fast. Consider marking the spot on the minimap. Keep in mind that Source won't reset so you can at any time run back to the previous area with bonfires or even wipe.
+There are 5 bonfires scattered around the area which stay lit for 10 seconds. On top of helping with Frostbite they also draw aggro from Source. Try to keep one lit at all times.
+The Source won't deal much damage on its own. Its basic projectile attack launches while its area attack cripples and launches at the end. The Source can stunlock you for a while so take at least one stun break or better yet bring party-wide stability.
+At 75%, 50% and 25% health the Source will cause a snowstorm which reduces visibility, teleports ~2 players away and summons 5 enemy=Ice_Elementals:veteran around the area. This is the hardest part of the fight so ensure you have no Frostbite before it happens.
+The most important thing is to avoid aggroing every Ice Elemental. Look at your position on the minimap, move on sides of the area and meet near the entrance. Focus on surviving and stick together until the snowstorm ends. Try to light up the fire as soon as possible although you can survive the whole duration without it under optimal conditions.
+Once the situation is clear you should focus down Ice Elementals. You can run back to the tent to pull them closer, or you can group them using Binding Blades or Into The Void. They hit quite hard so stay out of red circles and dodge their all attacks. Anti projectile skills are useful against their basic projectile attack.
+When Source dies the blizzard ends and you no longer gain Frostbite stacks. However current stacks won't disappear so remember to visit a bonfire before proceeding.
+tactic=coordinated
+Coordinated groups have two different strategies which can be employed.
+The first strategy is to suicide rush the first 50% of the source, stacking might before going in, and after the snowstorm continuing to kill the source. After everyone wipes (after the second snowstorm), the party repeats this strategy.
+The second strategy is to do things as per the normal strategy for the first 50%, and then go all-in for the last 50% (the same as is done in the first strategy).
+tactic=exploit
+A Necromancer can use Epidemic to inflict the swirler with conditions, and eventually kill it. This may not be an exploit; the hitbox for the source was shifted (along with every other structure hitbox in the entire game, to some degree) in a patch. Prior to this patch, the source could be killed in many different ways, which may have been an exploit or may have been intended.
+tactic=optional
+To complete the achievement "If We Only Had Marshmallows" remember to lit up every bonfire after Source is destroyed.
+tactic=mesmer
+Use Focus with wiki=Warden's_Feedback. Use wiki=Temporal_Curtain to pull Elementals together or as a projectile reflection.
+tactic=guardian
+Use wiki=Binding_Blade to pull Elementals together. Use wiki=Wall_of_Reflection against their basic attack.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" and wiki=Hallowed_Ground to protect team from Sources attacks.
+tactic=necromancer
+wiki=Lich_Form is really good to destroy Elementals fast.
+tactic=necromancer
+Use wiki=Spectral_Walk right before getting teleported to get instantly back.
+tactic=mesmer
+Use wiki=Portal right before getting teleported to get instantly back.
+tactic=mesmer
+Use wiki=Mantra_of_Concentration to prevent control (especially useful when reviving).
+tactic=thief
+Use wiki=Smoke_Screen to block projectiles and also to blind other attacks.
+tactic=elementalist
+wiki=Firestorm and wiki=Ice_Storm do massive damage to Source.
+tactic=warrior
+wiki=Healing_Signet is very useful to counter Frostbite.
+
+name=Forest
+tactic=fight|skip
+The forest contains 6 enemy patrols totaling 8 enemy=Wolves:veteran, 4 enemy=Sons_of_Svanir_(Greatsword):veteran, 2 enemy=Sons_of_Svanir_(Axe):veteran, 2 enemy=Sons_of_Svanir_(Bow):veteran, a enemy=Son_of_Svanir_(Hammer):veteran and a enemy=Son_of_Svanir_(Staff):veteran.
+tactic=fight
+At lower levels you can kill them for loot but they are often skipped though so be ready. Enemies move a lot so be ready to fight multiple patrol at the same time.
+tactic=skip
+Use mobility skills and condition removal to get through the forest. In a more coordinated group, you can also use stealth. Pay attention to your surroundings because enemies move a lot. If you die wait until someone gets to the end so you can resurrect at the checkpoint.
+tactic=fight|skip
+| Run into the cave and wait at the totem for rest of your team. The way gets blocked when someone engages the boss in the next room. You can use the totem to get in.
+It's possible to get stuck when the way gets blocked so one player should enter while rest of the team uses the totem to get in.
+
+name=enemy=Shaman_Lornarr_Dragonseeker:legendary
+tactic=ranged|melee
+His attacks inflict Frostbite stacks but they only last 15 seconds. At 10 stacks you get turned into an enemy=Ice:structure but lose all the stacks. If you get 8-9 stacks consider reaching 10 stacks on purpose to prevent lots of damage.
+His most dangerous attack is Icy Breath which deals lots of damage and Frostbite in 10 cones. At all times be ready to dodge straight away from him if you get targeted. If you panic and run around you may get everyone killed.
+tactic=melee
+| If someone else gets targeted try to stay behind Lornarr's back so you don't get hit.
+tactic=ranged
+At all times keep some distance so you don't get hit by his basic melee hits.
+tactic=melee
+He also has a 3-hit melee chain. All hits inflict Frosbite and the third attack hits pretty hard. Stay behind his back if someone else has the aggro. If you have the aggro try to kite him at max melee range.
+tactic=ranged|melee
+Occasionally he kneels and turns into an ice shard. This causes Ice Spikes appear around the area and allows him to heal so focus it down fast. Ice Spikes hit after 2 seconds so you can just walk out of any red circles. Each Spike deals extreme damage and agony.
+Every 50 seconds Lornarr teleports away to the cliff above which prevents you from attacking him. He casts multiple waves of Ice Spikes on the area. They appear first on the middle and then on the sides so move accordingly. They are quite easy to avoid as long as you keep your head cool. If you get in a bad spot just dodge or use a mobility skill.
+After waves end you have a few seconds before Lornarr appears again. Use this time to heal, apply buffs and stack might.
+If Lornarr dies to conditions while away use AoE looting to loot his corpse.
+tactic=exploit
+Not fully sure whether and how this works. Feel free to report if you have any success.
+You need a mesmer with wiki=Portal. Team doesn't go in but instead jump onto the flag and then on the cliff on left. The mesmer places a portal where the team is standing, goes in solo and waits until Lornarr teleports up. Right before he comes back the mesmer places the portal end end and teleports back in time.
+If done properly Lornarr should teleport to the team and just stand still without attacking. Lornarr may wake up and teleport back down. If that happens the mesmer just places another portal and repeats above.
+Success of this may be based on portal placement and timing. Also team may be able to go attack him normally at start if everyone takes the portal. Also Lornarr may reset if mesmer doesn't get down fast enough.
+tactic=guardian
+You can drop wiki=Purging_Flames before the boss teleports back down so your team can stack might.
+tactic=guardian
+Provide Aegis against the autoattacks of the boss.
+tactic=mesmer
+Each Ice Spike count as a skill usage so try to apply lots of confusion before he teleports away.
+tactic=mesmer
+Ice Spikes won't hit clones so you can summon wiki=Phantasmal_Duelist on corners for 100% uptime.
+tactic=elementalist
+You can keep damaging him with wiki=Dragon's_Tooth even when he is away.
+
+#########################################################################
+
+path=Solid
+name=Solid Ocean
+tactic=normal
+The fractal has no standard enemy type so you can use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom. However, the Colossi are elementals, so you may want to use an Elemental Slaying potion instead. Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force for damage sigils.
+Very easy with sufficient agony Resist.
+youtube=zG-oTjatPfQ|Video_guide [KING].
+Current record: record=43.
+
+name=Way to boss
+tactic=normal
+You will face enemy=Irukandjis:veteran, enemy=Giant_Irukandjis:veteran and enemy=Jade_Shards:veteran.
+tactic=normal
+| Sometimes killed at lower levels because of good loot.
+tactic=normal|skip
+Take one stun break to prevent nasty situations.
+tactic=skip
+If someone falls down he will teleport back downed. Monsters will very likely finish him/her so go help him/her up to prevent unnecessary delay.
+
+name=Awakening
+image=http://i.imgur.com/QuxhBdH.jpg
+tactic=normal
+To wake up Jade Maw you have to kill 2 enemy=Jade_Maw_Tentacles:veteran. Area is filled with respawning enemy=Irukandjis:veteran and enemy=Giant_Irukandjis:veteran.
+At lower levels you can kill Irukandji but your focus should be on Tentacles. Tentacles alternate between slap and spin. You can just sidestep slap but spin has to be blocked/dodged. Animations are easy to recognize but dodge if unsure.
+When Tentacles are killed, all Irukandjis disappear (except on level 50, where they only disappear once all the Colossi are dead), enemy=Jade_Maw:legendary wakes up, you get 10 seconds of agony and lots of Tentacles appear.
+At level 50 people kill further Tentacle, gather up on front-left corner, kill aggroed Irukandji, prepare for agony (full health, healing/reviving skills ready) and then use ranged to kill final Tentacle.
+Front-left area is a good spot to stay because you will be safe from Tentacles.
+tactic=coordinated
+Melee both tentacles. Coordinate the use of projectile defense at each tentacle (due to Irukandji), and interrupt/blind against each tentacle.
+tactic=exploit
+By sticking to left-side and jumping you can get behind all enemies and safely use ranged to destroy further Tentacle.
+If no one can survive agony you can use 99% trick. One player gets defeated, people resurrect him up to 99%. Once agony hits everyone quickly gets him up, he won't get agony and can get other people up.
+
+name=enemy=Jade_Maw:legendary
+image=http://i.imgur.com/QuxhBdH.jpg
+tactic=normal
+Stick together. It is easy to get downed if you fail to absorb or evade Maws laser attack. It is also hard to revive people middle of Tentacles.
+Maw will occasionally mark a target with a skull. When it disappears evade to avoid getting downed. To attack Maw, you need to hold a Crystal, absorb its laser attack and throw it back. Avoid using clones/minions because they get targeted and slow down the fight.
+To get crystals, you have to kill enemy=Jade_Maw_Tentacles:veteran or enemy=Jade_Colossi:veteran. Colossi reflect projectiles and they can knockdown at melee-range (try to predict and dodge).
+Unused Crystals will disappear after a while, you can grab and drop them to reset the timer.
+Crystals can absorb unlimited amount of attacks so don't throw it away if you need to revive someone.
+When you have killed all Colossi (keep an eye at the progress bar to prepare properly), the Maw becomes enemy=Enraged:legendary. Again you get 10 seconds of agony and Tentacles appear (this time they respawn though).
+Now Maw will attack much more often which allows you to kill it faster.
+When Maw is at ~10% all Tentacles will disappear and leave a Crystal. Maws final attack will hit entire area defeating any player who doesn't have a Crystal. Make sure you have a Crystal ready.
+Don't leave after looting the first chest (unless you are certain you won't get daily chest). It takes some time but every day you will get one special chest at each tier.
+tactic=coordinated
+Melee everything by coordinating blocks, blinds, interrupts, and projectile defense (if at level 50).
+tactic=coordinated|exploit
+The Jade Maw can be life leeched. This can be accomplished via a sigil of leeching, vampiric aura (very slow), or via combining a dark field with projectile finishers. All of these methods can be combined.
+tactic=guardian
+Use blinds (wiki=Leap_of_Faith, wiki=Flashing_Blade, traited Virtue of Justice) or Aegis to protect team from Tentacles spin.
+tactic=guardian
+Use wiki=Wall_of_Reflection and/or wiki=Shield_of_the_Avenger to proect your team from the Irukandji's projectile attacks.
+tactic=mesmer
+Use wiki=Mantra_of_Distraction to interrupt Tentacles spin.
+tactic=necromancer
+Use wiki=Doom to interrupt Tentacles spin.
+tactic=necromancer
+Use wells that are Dark fields in combination with projectile finishers to life leech the Jade Maw.
+tactic=thief
+Use Sword/Pistol in unorganized groups or on swap from Dagger/Pistol. wiki=Pistol_Whip allows you to evade laser. wiki=Shadow_Return can be used to quickly get Crystal. wiki=Black_Powder can keep enemies blinded.
+tactic=thief
+wiki=Shadow_Refuge is a Dark field, and can be used in combination with projectile finishers to life leech the Jade Maw.
+tactic=elementalist
+wiki=Lightning_Hammer blinds tentacles frequently enough to be completely invulnerable. Just remember that if you kill a tentacle during his attack he will remove all conditions and might kill you.
+tactic=warrior
+wiki=Defiant_Stance works against Maw's laser healing you to full health.
+
+#########################################################################
+
+path=Swamp
+name=Swampland
+tactic=normal
+Enemies: No type.
+Time: Night.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom. Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force for damage sigils.
+youtube=eb47RZU_F28|Video_guide [KING].
+Current record (Bloomhunger): record=44.
+Current record (Mossman): record=45.
+
+name=Start
+image=http://webmup.com/a69a4/vid.webm
+image=http://webmup.com/fcab0/vid.webm
+tactic=normal
+Whole starting area is filled with all kind of traps crippling, immobilizing or knocking you down. There are also 10 passages which will open and close randomly. At all times 3 of them will be closed. Closed ones rotate every 50 seconds. Mossman may also appear for 20 seconds at some spots.
+Walk to marked spot on map to release 3 wisps. They will get randomly put to 6 pre-defined locations on the map. Once someone grabs one, you have 33 seconds to bring them all back. When carrying a wisp, some passages will always close when you get near (scales with level). To counter this, you can jump over walls at many points (only way to reliably do it). Remember to drop off from walls instead of jumping to prevent getting in combat.
+If anyone drops his/her wisp (weapon swap, downed or transformation) or the timer runs out then every wisp will disappear and get placed at new locations. This can be abused by dropping them until you get favorable locations). To maximise your time you should coordinate the start. Wait until there is someone near every wisp and then either just say "go!" or count "3, 2, 1, go!".
+If you are running the wisp you should stack swiftness and use mobility skills. Also take condition removal, stability and stun breaks if you get hit by traps. Remaining 2 players should be supporting others. Give them swiftness, clear conditions and control following enemies.
+Try to memorize location of the traps. Jump over tripwires while avoiding beartraps and red circles. There are lots of ways to jump over walls even if entrances get blocked. This is something you can and should practice alone.
+tactic=warrior
+Use wiki=Mending for extra condition removal.
+tactic=warrior
+Use wiki=Balanced_Stance while running if you expect to hit a trap.
+tactic=mesmer
+Use wiki=Portal for group wide mobility.
+tactic=mesmer
+Use wiki=Mantra_of_Resolve or wiki=Mantra_of_Recovery (if Mender's Purity-trait) to remove conditions.
+tactic=mesmer
+Use wiki=Mantra_of_Concentration for stability and stun breaks.
+tactic=guardian
+Use wiki="Stand_Your_Ground!", wiki="Save_Yourselves!" and wiki="Retreat!" with Pure of Voice-trait or Soldier-runes for swiftness, stun breaks and condition removal.
+tactic=necromancer
+Use wiki=Spectral_Walk / wiki=Summon_Flesh_Wurm to skip most of the obstacles.
+tactic=necromancer
+Use wiki=Well_of_Power (works on caster even when not standing inside) and wiki=Consume_Conditions to clear conditions.
+tactic=thief
+Use wiki=Shadowstep and wiki=Steal on a critter (to not get in combat) when running a Wisp.
+tactic=thief
+Set a wiki=Shadow_Trap and use it to teleport back after grabbing the wisp.
+tactic=guardian
+Use wiki=Judge's_Intervention on a critter (to not get in combat) when running a Wisp.
+tactic=engineer
+Use wiki=Super_Speed and wiki=Rocket_Boots for mobility.
+tactic=north-west
+media=swamp_1.jpg|Map. The wisp is guarded by enemy=Skelks:normal. Stand on any nearby rock while waiting so they can't reach you. You should jump over trees because otherwise you may have to run a very long way.
+Practice the first jump couple of times (tell your team wait a bit if needed). After the jump just run forward and pay attention to the ground as there are multiple traps. If the next passage is open just go through. If not, stay calm and jump over. Don't try to run around because other nearby passages will just close before you.
+tactic=north
+media=swamp_2.jpg|Map. Once you pick the wisp you get attacked by 20 enemy=Marsh_Mosquitos_(weak):normal. They won't deal much damage but if they hit you will get in combat which slows you down.
+If the closest passage is closed you should jump over it. Practice couple of times if needed. Alternatively you can ask your team to wait (keep in mind that passages change every 50 seconds). Mossman will probably spawn after the passage. If he does and the next one is closed you should run around (either way is fine) unless you have practiced the jump. After the second passage either turn right or jump over the wall (passages will close).
+Alternatively you can immediately turn to right and just follow same way as with media=swamp_1.jpg|the_north-west_wisp.
+tactic=north-east
+media=swamp_3.jpg|Map. Be careful when approaching the wisp as there are multiple traps on the ground. Once you pick it up, binding roots will appear on you every 6 seconds. Keep moving at all times to not get caught (especially during jumps). If you get hit you get will constantly immobilized and may have to use multiple condition removals to get out (you can't attack roots with the wisp).
+The closest passage will close when you get near (practice jumping). Alternatively you can just turn right and use the next passage. After that just run forward. If that passage is closed turn right to jump over the wall near the next passage.
+tactic=west
+media=swamp_4.jpg|Map. Be careful when approaching the wisp as there are multiple traps on the ground. There is one trap directly beneath the wisp. Wait few seconds for it to go off if needed. Be ready to remove conditions if you get hit.
+Just run south and jump over the wall if needed (plenty of time so no rush).
+tactic=east
+media=swamp_5.jpg|Map. The wisp is guarded by a enemy=Marsh_Drake:champion so either stay back or run to a rock at back wall. Once you grab the wisp, about 12 enemy=Marsh_Drake_Hatchlings:normal appear. Just ignore them and keep moving. If the passage is closed then just keep going and jump over the wall near the next passage.
+tactic=south-east
+media=swamp_6.jpg|Map. Be careful when approaching the wisp as there are multiple spider eggs on the ground. When touched they break and 2-3 enemy=Spider_Hatchlings:normal appear. If you break lots of them you will get killed. You can safely get through if you jump on rocks. You can also wait bit further way and rush in once the countdown starts.
+Once you grab the wisp, 7 enemy=Spiders:normal appear. Just ignore them and keep moving. It doesn't really matter if you break eggs at this point (but you can jump on the rocks!). If both the first and the second passage are closed then just keep going and jump over the wall near the next passage.
+
+
+name=1) enemy=The_Mossman:legendary
+tactic=normal
+He aggros immediately when you land from the water. If you get back and try to attack him in the water invulnerable enemy=Skelk:normal appear. However, if you pull him far enough out in the water tunnel, the skelk will not be there.
+Mossman is a very dangerous enemy because of his stealth and high damage attacks. The most important thing is to remember to rally from enemy=Wolves:normal.
+His normal melee attack does lots of damage and has high range. The high range causes him to often kill unaware secondary targets. Keep him crippled and/or chilled and kite at least at max melee range to prevent him from using it.
+His ranged attack bounces few times and causes agony (you may get double agony). If you get hit you can easily get other people killed so do what you can to counter it (block, dodge, anti projectile skills).
+Once in a while he stealths which makes his attacks hard to avoid because you can't see him or his animations. Keep looking at mini-map to get some idea about his location. He also summons a Wolf.
+In a less coordinated group, the most important thing is to not kill the Wolf. There's a high chance that someone will become downed, and that Wolf could be used to rally off of. Everyone should tag Wolves with low damage attacks if possible (don't kill it). In a more coordinated group that is relying on Aegis or other blocks to mitigate some of Mossman's attacks, you should seek to kill wolves quickly, so they do not eat blocks.
+There are two ways to end his stealth. Wait until it expires or get hit. If you keep kiting and waiting until it expires he will spend lots of time stealthed. It's safer but makes the fight last longer.
+If you can afford it get hit. Mossman always attempts to focus one target (the person he is following and trying to melee). If he is following you, tag the Wolf, stand still and let him hit you. Even if you get downed you can kill the Wolf to rally. Pets/clones can also be used to do this to some extent.
+After 75% he will start to throw his axe which also inflicts agony. Then he will spawn 2 Wolves, start chasing his primary target, teleport to him when close enough and do his lethal dual melee attack. The Melee attack again has huge range, so dodge away from him to avoid him from turning and potentially killing other players.
+He literally won't do any other attacks when chasing his target, which allows other players to attack him freely. However after ~10 seconds he will stealth which makes it much harder to avoid his lethal attack. Also it will cause him to be stealthed pretty much all the time because he still has his normal stealth.
+After 25% he may transform (rare) to different enemy=animal_forms:legendary with very dangerous leaps and melee attacks. He won't stealth or use ranged attacks though.
+tactic=coordinated
+Stack might and stealth before getting aggro, and then fight directly on top of Mossman. Chain anti-projectile skills and CC, make use of Aegis if you have it, and stay behind Mossman unless he is aggroed on you. In a coordinated group, Mossman's aggro can be manipulated by a combination of first hit and higher toughness than the rest of the group; it's ideal to let a Guardian or an Earth Elemental take the aggro.
+tactic=low man
+Mossman has a maximum number of wolves that he can spawn, and the wolves have a limited aggro radius. As such, it is possible to spawn out all of the wolves on one side of the arena, die, and then fight Mossman on the other side of the arena without any wolves being spawned. Because it takes a lot of time to spawn the wolves, this method is only helpful if you are looking for a speed kill (timed from first hit until death), or don't think you can defeat Mossman along with the adds he spawns.
+tactic=exploit
+A player who is out of combat can prevent Mossman from resetting while everyone else resurrects at a checkpoint (don't attack him and keep avoiding his attacks). This is useful when only 2 players are alive (thus allowing one to get back to the water).
+It is possible to pull Mossman into the water. Unlike the version of Mossman from the Mist Stalker instability (level 31), the Mossman in the Swamp fractal does not use underwater skills. This effectively permanently disables the boss. Because this method results in exceedingly slow kill times, it is generally only used by groups incapable of fighting Mossman normally.
+tactic=bug
+Sometimes, Mossman's stealth does not expire based on its time limit as it should, and you must take a hit in order to have it expire. This can be extremely problematic in solo/duo situations.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to negate agony projectile. Use wiki="Retreat!" and Virtue of Courage to keep Aegis up.
+tactic=thief
+Use wiki=Smoke_Screen to block his projectiles.
+tactic=thief
+In unorganized groups, you can use sword/pistol to greatly increase your survivability via wiki=Pistol_Whip .
+tactic=elementalist
+Use an Earth Elemental to partially take his aggro, giving your team some additional safety.
+tactic=elementalist
+Use wiki=Swirling_Winds to block projectiles.
+tactic=necromancer
+Use marks around the area when he stealths to see him more easily.
+tactic=mesmer
+Use wiki=Feedback and wiki=Temporal_Curtain (traited) to reflect projectiles.
+
+
+name=2) enemy=Bloomhunger:legendary
+tactic=normal
+Much easier than Mossman. All attacks can be easily avoided. He summons spirits but you usually don't have to care about them. If retaliation causes too much damage then kill enemy=Storm_Spirit:normal.
+His normal attack shoots 3 projectiles. Each will leave a poison cloud unless blocked or absorbed/reflected by an antiprojectile skill. Poison clouds quickly stack up at melee-range so prevent them from appearing.
+When he smashes ground he will shoot 6 projectiles around him. They deal high damage and cause Binding Roots (attack to destroy). Melee players can stay inside Bloomhunger and they won't get hit.
+His most dangerous attack is when he shakes leaves and shoots multiple ballistic projectiles. Landing spots get marked with red rings so stay out of them and dodge if needed. Each hit deals high damage and agony.
+tactic=coordinated
+Chain anti-projectile skills and assign a player to kill the Storm Spirit as soon as it spawns.
+tactic=normal|coordinated
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to reflect and negate all his attacks. Use wiki="Retreat!" and Virtue of Courage to keep Aegis up if people are out of anti projectile skills.
+tactic=mesmer
+Use wiki=Feedback to reflect all his attacks.
+tactic=mesmer
+Use wiki=Temporal_Curtain (traited) to reflect some of his attacks.
+Use wiki=Illusionary_Warden to block or reflect his attacks.
+tactic=necromancer
+Use wiki=Well_of_Power to remove conditions (if you team gets hit a lot).
+tactic=elementalist
+wiki=Swirling_Winds can absorb all of his attacks.
+tactic=exploit
+You can easily get out of combat if you just run away. Once you are out of combat, immediately run back and re-engage to prevent Bloomhunger from resetting. This works even when you are the only remaining person, allowing others to resurrect at a checkpoint and rejoin the fight.
+
+#########################################################################
+
+path=Thauma
+name=Thaumanova Reactor
+tactic=normal
+Enemies: Mix of enemies.
+Time: Day.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
+youtube=n4m2sEZ5x4M|Video_guide [KING].
+Current record: record=46.
+
+name=Start
+tactic=normal
+You have to wait a bit at the start until the detonator becomes interactable. Activate it to blow up the wall.
+Immediately after the wall a enemy=portal opens with a enemy=flame_legion_blademaster:veteran, a enemy=nightmare_hound:veteran and an enemy=icebrood_wolf:veteran.
+tactic=fight
+| Kill them and then look around to get some idea of the map layout. The water at the bottom is toxic and deals lots of damage. If you want to move through the water keep jumping to reduce damage taken. The most efficient path to the next objective is to run over the water to the center floor area, and then either blink up, or run up the stairs located to the left and then move to the center area of the upper-floor.
+tactic=skip
+| Ignore them and run straight through to the toxic water while jumping to reduce damage taken. Stealth is an excellent way to get past the mobs without any hassles. The most efficient path to the next objective is to run over the water to the center floor area, and then either blink up, or run up the stairs located to the left and then move to the center area of the upper-floor.
+tactic=bug
+At some point the whole party may crash to the desktop. This will make you lose the instance unless someone keeps the error report window open until others get back.
+Keep in mind that some groups may kick you after they reconnect because they are impatient. Don't wait for too long!
+
+# south place filled with: enemy=mark_i_golem:normal
+
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-2_thumb.jpg|
+name=Main room
+tactic=normal|skip
+The main area is filled with lots of different enemies. enemy=Nightmare_Hounds and enemy=Icebrood_Wolves patrol around the area. At specific points a enemy=portal appears with some enemies. Look at the map for the spots to avoid getting caught off guard.
+Portals occasionally pull someone in which may make you fall down. Remember to keep jumping on toxic water. Try to walk on already cleared places so you don't get ambushed by portals.
+Possible enemies are enemy=flame_legion_igniters, enemy=flame_legion_blademasters, enemy=bandit_riflemen, enemy=bandit_scouts, enemy=aatxes:veteran, enemy=dredge_mining_suits, enemy=dredge_disaggregators, enemy=ascalonian_cultists, enemy=ascalonian_captains and enemy=ascalonian_archers.
+At the center are of the upper floor there are 2 enemy=skritt_bottle_lobbers and 2 enemy=skritt_gear_lobbers. They have to be killed to proceed.
+tactic=normal
+Stick together so you don't get overrun. It doesn't matter which way you go because all ways lead to the middle platform. The most efficient path to the next objective is to run over the water to the center floor area, and then either blink up, or run up the stairs located to the left and then move to the center area of the upper-floor. However, some groups prefer to go up the right set of stairs as you come out of the broken-wall, even though it is slower, has more mobs and portals, and has no upside other than not having to cross the toxic water.
+tactic=skip
+The most efficient path to the next objective is to run over the water to the center floor area, and then either blink up, or run up the stairs located to the left and then move to the center area of the upper-floor. Use stealth to avoid aggroing enemy groups. With a good group you can run straight to the skritt and clear any following enemies. With weaker groups consider killing necessary enemy groups to avoid getting overrun.
+tactic=mesmer
+Use wiki=blink to teleport up through the platform and then use wiki=portal to get your group up (like in [KING] video).
+tactic=thief
+Use wiki=Infiltrator's_Arrow or wiki=Shadowstep to teleport to the platform.
+tactic=elementalist
+Use wiki=Lightning_Flash to teleport to the platform.
+tactic=guardian
+Use wiki=Merciful_Intervention to teleport to the platform if an ally has already teleported up.
+
+name=Disabling the colliders
+tactic=normal
+To proceed you have to disable the colliders. There are 4 rooms around the main area. Each of them has a console which can be used to disable one collider. At scale 1-39 you only have to disable 3 colliders so you can skip one room.
+The rooms can be done in any order but you may want to go to the dormitories first because researches may die if you are too slow. If this happens at scale 1-39 you can't complete the room and have to do a harder one. At scale 40 and above you can complete the room even if researches die.
+Superheated room should can be skipped or done last because you can bring cooling rods from other rooms to make it easier. However, if a player in your group knows how to solo this room without any cooling rods, there is no reason to skip it. It's also possible to split up because all rooms don't benefit from 5 players.
+Keep in mind that untriggered enemy=portals will still appear so move together or be ready to skip the enemies. Check map for the room locations. Suggested order for a less coordinated group is Ooze Room, Dormitories, Turret Room and Superheated room.
+tactic=coordinated
+Split up. It is possible to low-man all of the objectives. The superheated room can be soloed without any cooling rods by many classes. The turret room can be duoed by any classes or soloed by a thief, mesmer, or necromancer. The dormitories can easily be soloed by any class, especially an elementalist. Subject 6 can be very easily low-manned by immobilizing it before it reaches its trigger point, or easily low-manned by fighting it normally so long as your party has sufficient DPS.
+For anything other than a highly coordinated group, it's recommended the whole team does Subject 6 first, and then splits as needed. Highly coordinated groups may 4-man or 3-man Subject 6, while other players split off to accomplish other objectives.
+
+name=Ooze room
+tactic=melee|ranged
+Wait a bit until enemy=Subject_6 appears. You need to kill it so you can activate link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-6_thumb.jpg|the_console and get a cooling rod.
+Most importantly focus down any blue enemy=Repair_Oozes because Subject 6 gets healed a lot if they reach him. They appear at sides of the room when you deal damage to Subject 6. Also immediately stop attacking when Subject 6 link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-4_thumb.jpg|starts_blocking. If you hit him 20 times he will explode dealing extreme damage on a huge area. Keep an eye on the stack counter and be ready to dodge twice if your group doesn't stop attacking.
+Some of his attacks inflict special debuffs which either reduce damage dealt or increase damage taken. The effects seem to be quite minor and won't last long so you shouldn't have to worry about them. If they feel like a problem then use a condition removal.
+tactic=melee
+To survive melee you need enough agony resist. His most dangerous attack, link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-5_thumb.jpg|Acid_Rain, shoots lots of unblockable projectiles around the area. At close range it's very hard to avoid them all so you will very likely get multiple agony stacks. Even with agony resist it deals some damage so keep an eye on your health.
+His basic melee attack deals low damage so you don't have to care about it. However be ready to dodge twice or move away when he glows. He will jump multiple times in a row dealing lots of area damage.
+tactic=ranged
+Playing at range is extremely easy because Subject 6 has only one ranged attack, link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-5_thumb.jpg|Acid_Rain, which shoots lots of unblockable projectiles around the area. If you have enough agony resist you can just ignore the whole attack. If not then focus on dodging.
+tactic=coordinated
+Burst enemy=Subject_6:champion down before enemy=Repair_Oozes:normal reach him. Keep his defiance down so you can interrupt his blocking with unblockable control skills. If lots of Oozes get near use area control to keep them away.
+To move him away from Repair Oozes and give you bit more time you can pull him towards the entrance and then use a control pull to move him bit further.
+tactic=struggling
+It is possible to pull the ooze nearly into the corridor that leads into the room. This increases the distance the repair oozes need to travel, making the encounter somewhat easier for teams with low DPS.
+tactic=exploit
+Immobilize or otherwise chain-CC Subject 6 before he reaches his trigger point. He does not perform any attacks before reaching the trigger point.
+tactic=optional
+Talk to your group if you want to complete the "Subject 6 Deep-Sixer" achievement. You have to give him 19 Overload stacks when he is blocking by hitting him exactly 19 times. Ask your group's help to reach 15 stacks and then tell them you will handle the rest. Keep an eye on the stack counter so you don't go over.
+You should get the achievement if Subject 6 reaches 19 stacks without exploding during the fight. It shouldn't matter whether he explodes before or after that (needs verification).
+tactic=warrior
+With wiki=Signet_of_Might you can use control to interrupt his blocking. Inform your team so they understand to keep defiance stacks down.
+tactic=warrior
+You can use wiki=Flurry and wiki=Throw_Bolas to immobilize the Ooze before it has reached its trigger point.
+tactic=guardian
+You can use wiki=Chains_of_Light and/or wiki=Zealot's_Embrace and/or wiki=Signet_of_Wrath to immobilize the Ooze before it has reached its trigger point.
+tactic=engineer
+You can use wiki=Supply_Crate and wiki=Net_Turret along with wiki=Net_Shot to immobilize the Ooze before it has reached its trigger point.
+tactic=thief
+You can use wiki=Needle_Trap and wiki=Devourer_Venom and wiki=Infiltrator's_Strike to immobilize the Ooze before it has reached its trigger point.
+tactic=ranger
+You can use wiki=Entangle to immobilize the Ooze before it has reached its trigger point.
+tactic=human
+You can use wiki=Avatar_of_Melandru to use wiki=Entangle in order to immobilize the Ooze before it has reached its trigger point.
+
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-15_thumb.jpg|
+name=Researcher Dormitories
+tactic=normal
+You need to save some researches from 2 enemy=Aatxes:normal and 2 enemy=Aatxes:veteran. Destroy and kill stuff. Saving the researchers will help with killing the end boss by providing you a damage boost. You only need to kill the doors and the portals to complete this event, you do not need to kill any of the mobs.
+Once you get to the console, activate it and move on.
+tactic=coordinated
+When splitting this room can be with 1-2 players.
+tactic=bug
+On some levels, the door to the console is open by default. Pressing it allows you to easily finish this room, although you still need to save the researchers if you want the damage boost against the final boss.
+
+name=Turret room
+tactic=warrior
+Use wiki=Berserker_Stance to activate consoles without getting immobilized.
+tactic=normal
+Turret room is a maze filled with turrets. Their shots knock you down and deal lots of damage. You can grab a wiki=Safety_Shield at the entrance to counter them. However shots can easily be avoided by moving cautiously and dodging. There are also some enemy=Golems running around which can be killed when at a safe spot.
+There are total of 4 consoles. One is at left side and one player has to use it to shortly open second console on right side. Another player has to go to this second console and use it to open 2 main consoles at the end of the room. Using a console immobilizes so you either need two players, a conditional removal or a teleport.
+tactic=coordinated
+When splitting this can be done with 2 players of any class. The first player goes to left side and helps the other player get to the right side. Then the other player helps the first player get to the main consoles. Use a condition removal or a teleport to activate both consoles.
+This room can be soloed by a Necromancer, Thief, or Mesmer. However, Thieves and Necromancers may need to kill some golems in order to solo the room.
+tactic=bug
+Using an exit teleporter may make your character invisible. Relogging or briefly entering the superheated room fixes this.
+
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-17.jpg|
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-18_thumb.jpg|
+#
+name=Superheated room
+tactic=normal
+Whole room is filled with an environmental effect which slows you down, inflicts agony and deals lots of damage. Cooling rods can be used to reduce these effects but are not necessary. They can be placed on left and right sides of the room. The first one is easy and quick to put in so consider doing that.
+While in the room your weapon skills get replaced by wiki=Meltdown. Use the first skill repeatedly to increase your speed. Other skills won't do anything useful so don't use them. Mobility skills from weapons can still be used right before the entrance for a small advantage. Additionally, skills such as transforms or bundles which replace your skills will still work.
+Before going in prepare as much as possible because getting to the end is difficult. Equip mobility, healing and immunity skills and stack swiftness and vigor. Dodging makes you move faster so dodge whenever possible.
+At the end there is a safe area with two consoles. Activating a console immobilizes so you either need two players, a conditional removal, or a teleport.
+If your group struggles then have one player focus on running and rest of the team focus on area healing. If you are a healer change traits and utilities to maximise your healing capability. Run together and focus on keeping the main runner up.
+tactic=coordinated
+When splitting you can do this with only one player. With most classes you can do this room without any rods.
+tactic=exploit
+Stand in middle of the consoles to activate them both at the same time.
+tactic=bug
+Using an exit teleporter may make your character invisible. Relogging or briefly entering the superheated room fixes this. Similarly, entering and exiting the superheated room may make your character invisible, which can only be fixed by relogging.
+tactic=warrior
+You can solo the room with one cooling rod. You will get downed near end but you are able to stay alive until skills recharge. Use wiki=Vengeance and activate consoles.
+tactic=warrior
+Use wiki=Bull's_Charge and either wiki=Signet_of_Rage or wiki=Rampage (also boosts health) for mobility.
+tactic=warrior
+Use wiki=Berserker_Stance to activate consoles without getting immobilized.
+tactic=warrior
+Use wiki=Defiant_Stance to tank and heal a lot.
+tactic=thief
+You can use a combination of wiki=Infiltrator's_Arrow, wiki=Shadowstep, and wiki=Shadow_Trap to easily reach the other side without any cooling rods.
+
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-12_thumb.jpg|
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-attacks_thumb.jpg|
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-ball.jpg|
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-laser-beam_thumb.jpg|
+name=enemy=Anomaly
+tactic=melee|ranged
+Once all colliders are disabled go back to the middle where you killed the skritt. Wait until Scarlet finishes her monologue and then activate the nearby console to get teleported up.
+Anomaly does barely any damage on her own. Instead she temporarily destroys platforms to make you fall down. Platforms don't get destroyed instantly. To give you some time to escape platforms flash for few seconds before disappearing. Focus on surviving because if you fall down you will get instantly defeated without any way for a resurrection.
+tactic=melee
+Consider taking a ranged weapon swap because disappearing platforms may make attacking impossible. Also keep in mind that you can't enter that platform where Anomaly is standing.
+tactic=melee|ranged
+Her two basic attacks won't make platforms disappears. Her projectile attack does low damage but cripples briefly. Keep this in mind because a cripple in wrong moment can get you killed. She also makes white orbs appear which deal high damage and agony after 2 seconds. Just stay away from them.
+Her other attacks will cause platforms to disappear. It's important to recognize them so you know when to stay away from others. Most notable is the white Beam which causes platforms disappear below the target. She also puts debuffs on targets which is marked by a bomb icon. "Bomb" explodes after 4 seconds dealing low damage and making nearby platforms disappear so it's quite harmless.
+Occasionally she uses Cosmic Barrage and starts spinning causing multiple white orbs appear over the area. After 2.5 seconds they explode making nearby platforms disappear and dealing damage and agony. As usually, move away from them.
+tactic=melee
+| At end of her spin she will knock back nearby targets. Either move away from her or to a position where you can safely get knocked back.
+tactic=melee|ranged
+After losing 50% health she puts a 6 second debuff, Cosmic Instability, on each player every 30 seconds. This debuff causes platforms below to disappear and can easily be recognized by everyone flashing. Move together if possible to reduce amount of platforms disappearing.
+tactic=coordinated
+Stack at melee range. Either move together when someone gets targeted or have the targeted player back away and kite.
+tactic=exploit
+The Safety Shields from the turret room can be used to block the Flux Bomb attack, and also possibly the Cosmic Instability attack.
+Having a player stay down and then teleport up once Cosmic Instability begins to occur can, with proper timing, cause the floor to remain solid.
+tactic=bug
+At end you may not get prompt for the next level. There is no known fix.
+
+#########################################################################
+
+path=Uncat
+name=Uncategorized
+tactic=normal
+The fractal has Inquest (golems) at bosses so use so use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying when you get to enemy=Old_Tom:legendary. If you want to be optimal use oils or wiki=Skale_Venom_(consumable)|Skale_Venom at the start. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils. If you want to be optimal use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty when fighting golems.
+The start is really annoying with invulnerable harpies and last fight may be tough without enough anti projectiles.
+youtube=noCqa2bxPVk|Video_guide [KING].
+Current record: record=47.
+
+name=enemy=Harpy_Hunters:veteran
+image=http://a.pomf.se/rmlcbz.webm
+tactic=normal
+You need to jump on platforms while killing or stealthing past harpies. Anti projectiles skills are extremely effective. At lower levels or with long-lasting stealth you can just run through them. There are several spots where your party can stop to re-stack stealth, providing you are still stealthed while you are stacking additional stealth.
+On level 10 and above they shoot a glowing ball which launches anyone within its target area to their likely death. You should have access to a stability or immunity skill, a multiple block, or an in-place evade in order to deal with this attack. Jump-dodging to another platform, or simply moving to another platform early enough can also be effective.
+Focus on keeping and getting people back alive. If someone falls and gets downed/defeated then regroup and get them up.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect your team.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" or wiki=Virtue_of_Courage against glowing balls if no other protection.
+tactic=thief
+Use wiki=Smoke_Screen and stack stealth with wiki=Cluster_Bomb. Skip harpies and use wiki=Shadow_Refuge when stealth is about to run out.
+tactic=mesmer
+Use wiki=Feedback and Focus with wiki=Warden's_Feedback for good anti projectile coverage.
+tactic=mesmer
+Use wiki=Mirror and wiki=Mantra_of_Concentration if you can't rely on your team.
+tactic=necromancer
+Use wiki=Flesh_Golem. Harpies have trouble hitting it.
+tactic=elementalist
+Use wiki=Swirling_Winds for protection against harpies.
+
+name=Holding Area
+tactic=normal
+Break the enemy=Power_Generator:structure to free the enemy=Rabbit:champion, enemy=Bandit_Saboteur:veteran, enemy=Flame_Legion_Fire_Shaman:champion and enemy=Ettin:champion.
+The rabbit has the lowest health so focus it first. Its special attack kills any target so burst it down fast. It doesn't matter if you get downed because you can easily rally from it.
+The next squishiest target is the saboteur so focus her next. She throws poison at ranged targets which you can just ignore. At melee range she will either evade an attack and leave a red circle or put down a barrel. Both explode shortly after being placed, causing launch or a condition. Pay attention and move out of the area. Use control to keep her disabled.
+Next, kill the Fire Shaman. He cycles between high-damaging ticking AoEs and short-range projectiles. Pay attention and move out of red circles if needed. Projectiles can be avoided by circling him, dodging or staying at range. If you are at range he may dash which deals very high damage at the end of the dash, and may grant him a fire shield if he dashes through his own AoE. Either dodge or run away from him if he dashes. One good melee-player can easily handle him. Just move out of the circles and keep circling.
+The Ettin is quite tough to kill and has very annoying reach on his melee attack. You literally have to stand right behind it to avoid the attack; if unsure then dodge because it deals high damage. Whenever it glows you want to get out of melee-range. When club is above head he does some projectiles at melee-range. When club is behind back he will do a very large PBAoE.
+Ettin also has a ranged attack which is used when he holds club behind back but without glow. He also breaks stuns, but only does so once every 60 seconds.
+tactic=coordinated
+Most coordinated groups designate a player to kite the Ettin around. The aggro of the Ettin can be manipulated by having higher toughness than other party members, as well as getting the first few hits in. A Guardian is an excellent choice for this role. Depending on the experience of the person kiting, and the experience of other party members, you may want to assign a player to get the aggro of the bandit and fire shaman at the start as well, to ensure they do not aggro to whoever is kiting the ettin. The aggro of the bandit and fire shaman is mostly based on who is currently hitting them.
+Highly coordinated groups may want to kill both the Ettin and the Shaman with cleave. These groups will generally use an Earth Elemental to manage aggro.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against the Shaman. Try predict the Ettin's attacks to reflect his projectiles.
+tactic=guardian
+Use wiki=Indomitable_Courage to counter the Bandit's bombs.
+tactic=guardian
+Use wiki="Retreat!" for the additional Aegis.
+tactic=thief
+Use wiki=Smoke_Screen to protect your team (especially against the Shaman). You may have to predict because of cast time.
+tactic=mesmer
+You can reflect damage done by Ettin's smaller PBAoE and his shockwave. Make sure to trait wiki=Temporal_Curtain aginst the Shaman.
+tactic=elementalist
+An Earth Elemental from wiki=Glyph_of_Elementals is excellent at holding aggro of the Ettin and Shaman.
+
+name=Pulsing Orbs
+image=http://a.pomf.se/anpont.webm
+image=http://a.pomf.se/emmdbc.webm
+image=http://a.pomf.se/erckxm.webm
+image=http://a.pomf.se/hwiuyi.webm
+tactic=normal
+First kill or skip 1-3 enemy=Harpy_Hunters:veteran.
+On the next set of stairs there are 4 beacons at the top. Each randomly shoots a projectile down the stairs. If you get hit you take damage (1-2 hits kill you), once you become downed you get teleported to start of the stairs.
+You can easily avoid most of them by just moving left and right. You can dodge through them too but you should save one evade for the end. Near the top it's really hard to react fast enough so just dodge. You can also use long lasting blocks, immunities or projectile defense.
+If you have trouble you can use the slope on the left side as a media=uncat_pulsing_safe.jpg|safespot (especially useful near the end).
+After stairs there are 3 consoles. You need to activate them all within ~5 seconds to disable beacons. Activating a console prevents movement for ~5 seconds. You can still move and activate other consoles with blinks and shadowsteps. However, don't waste utility skill cooldowns if there are people nearby to help deactivating the consoles.
+tactic=elementalist
+wiki=Magnetic_Wave, wiki=Obsidian_Flesh, wiki=Mist_Form and wiki=Arcane_Shield, they all grant short invulnerability to those projectiles.
+tactic=guardian
+You can use wiki=Shield_of_Wrath and wiki=Shelter for additional blocks.
+tactic=guardian
+You can place wiki=Wall_of_Reflection at the very top of the stairs to prevent any projectiles from going down. Be careful, as if you place it too early, the reflected projectiles will go back up the stairs, and make things much harder for your team.
+tactic=thief
+You can run up a bit and use wiki=Dagger_Storm to allow whole party get safely through.
+tactic=bug
+There is a checkpoint at top of the stairs. Fractal will get stuck if you kill enemy=Old_Tom before triggering it. Checkpoint can be bypassed by blinking over it so have at least one player run normally.
+
+Name=enemy=Old_Tom:legendary
+tactic=ranged|melee
+Don't aggro Tom until everyone is ready and you have done the necessary preparations. Once the combat starts, poison gas will fill the room which will kill everyone quickly. You can activate a console behind Tom to ventilate the gas. Ventilation lasts 30 seconds.
+At level 10 and above you have to power up side batteries in order to activate the console. Batteries can be powered up by bringing a "Tear of Dwayna" to them. When they run out you have to refill them before being able to use the console again.
+Stay at sides of the room to avoid aggroing Tom. Power up batteries and gather several tears in front of both batteries. This allows you to quickly refill them. DO NOT touch the main console before starting the combat and getting hit by poison or it won't have any effect.
+Also decide who uses the console and who fills left or right battery. Ranged players are more suitable for this but melee players can do it as well. In any event, be ready to improvise as players may get downed.
+Most of the time Tom will be spinning which shoots unblockable projectiles in all directions. Try to stay behind other players so you won't get hit. If not possible, stay at high range to reduce amount of projectiles hitting you.
+tactic=ranged
+| Try to stay behind other players so you won't get hit. If not possible, stay at high range to reduce amount of projectiles hitting you.
+tactic=melee
+| Try to stay behind other players or pets so you won't get hit. You can also stay inside Tom to prevent getting hit. It needs precise positioning or you will take lots of damage so consider taking a backup immunity skill.
+tactic=ranged|melee
+When Tom stops he may use two different attacks. If he points his arm he will shoot a pulling projectile. Otherwise he will shoot a bouncing projectile. Dodge/block at both cases.
+tactic=melee
+| If you are standing inside him don't dodge or you have to position yourself again.
+tactic=ranged|melee
+When poison gas fills the room either finish off Tom or power up batteries and use the console.
+tactic=elementalist
+wiki=Earth_Elemental from wiki=Glyph_of_Elementals is very tanky and survives a long time. You can stay behind it.
+tactic=guardian
+Use wiki=Wall_of_Reflection against the few projectile attacks that Old Tom uses.
+tactic=warrior
+Use wiki=Defiant_Stance to tank poison and Tom for very good healing. Also useful when trying to get inside him.
+tactic=coordinated
+For coordinated groups with middling DPS, don't bother gathering extra tears. Power up the batteries, aggro Tom and activate the console, then burst tom down.
+For coordinated groups with high DPS, stack behind an Earth Elemental, a bear pet, or a necromancer that is prepared to tank his spin.
+
+name=enemy=Harpy_Hunters:veteran
+image=http://a.pomf.se/tctiik.webm
+tactic=normal
+Again more harpies. Use same tactics as at the start.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect your team.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" or wiki=Virtue_of_Courage against glowing balls if no other protection.
+tactic=thief
+Kill first few harpiers and then Use wiki=Smoke_Screen and stack stealth with wiki=Cluster_Bomb. Skip harpies and use wiki=Shadow_Refuge when stealth is about to run out.
+tactic=mesmer
+Use wiki=Feedback and Focus with wiki=Warden's_Feedback for good anti projectile coverage.
+tactic=mesmer
+Use wiki=Mirror and wiki=Mantra_of_Concentration if you can't rely on your team.
+tactic=necromancer
+Use wiki=Flesh_Golem. Harpies have trouble hitting it.
+tactic=elementalist
+Use wiki=Swirling_Winds for protection against harpies.
+
+name=enemy=Raving_Asura:legendary
+tactic=normal
+The fight gets very easy with lots of anti projectile skills. The Asura constantly shoots 3 homing projectiles, and each projectile inflicts agony. If you have to dodge, dodge in towards the Asura to break the other projectiles.
+Four golems will activate. First, they will activate one-by-one, and once all have been defeated individually they will all activate simultaneously.
+First you have to kill enemy=Snuggles:veteran. He either spins and shoots rockets at everyone or throws an area field which stuns when passing through.
+Then you have to kill enemy=Mr._Mittens:veteran. He does decent damage with melee attacks. Dodge when he starts spinning to prevent getting pulled.
+The next one is enemy=Professor_Mew:veteran. He mostly spins and debuffs people. If you stand near people with different buffs you will take some damage each second. At higher levels, if your team lacks sustain or DPS, try to interrupt his spin to avoid getting debuffed. He also has a melee attack.
+And lastly enemy=Baron_von_Scrufflebutt:veteran. He is actually fairly dangerous with unblockable projectiles. His normal attack shoots 2 rockets at few people. At end of spinning he will shoot 2 rockets at everyone. Use Control skills and dodge.
+Once Scrufflebutt is dead all the golems activate. Focus Scrufflebutt. Mittens is then the most dangerous, however killing him gives 66% damage reduction to all golems. If he doesn't feel like a threat then leave him last. Kill Snuggles and then Mew (killing gives golems regeneration). It can be very beneficial to group to golems up, either while they have activated individually, and/or when they activate together.
+tactic=exploit
+One player (with high toughness) may aggro and pull Asura away. You can easily kite it around a nearby column with just swiftness. Pull him back before your team kills last golem or it may reset.
+Any golems killed after they all wake up get scaled back to level 1 making them extremely easy to kill.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against Asura's agony.
+tactic=guardian
+Use wiki=Binding_Blade to pull golems (especially when all activate).
+tactic=guardian
+Grant Stability when all golems activate to prevent your team from possibly getting CCed.
+tactic=mesmer
+Use wiki=Temporal_Curtain to pull golems (especially when all activate).
+tactic=mesmer
+Use wiki=Feedback and Focus with wiki=Warden's_Feedback for good anti projectile coverage.
+tactic=necromancer
+Use wiki=Spectral_Grasp to pull a golem.
+tactic=thief
+Use wiki=Scorpion_Wire to pull a golem.
+tactic=thief
+Use wiki=Smoke_Screen on top of the golems to blind them and provide anti projectile.
+tactic=elementalist
+Use wiki=Swirling_Winds for protection against projectiles.
+
+#######################################################################################
+
+path=Under
+name=Underground Facility
+tactic=normal
+The fractal is full of Dredge so use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils. If you get the enemy=Rampaging_Ice_Elemental:legendary at end you can use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying. If you want to be optimal use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow or wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Force.
+youtube=ALGpASCQMz4|Video_guide [KING].
+Current record (Bombs): record=48.
+Current record (Turret): record=49.
+
+name=Start
+tactic=normal
+Clear all the enemies in your way so you don't have to worry about them, especially if you wipe multiple times. The enemies inside the cages respawn so don't bother clearing them.
+At start you face couple of normal and veteran enemies. Once they are cleared discuss roles (explained on next section). The third cage is quite brutal so ensure that you have the strongest players there.
+tactic=skip
+Only do this if your party knows what they are doing, or doesn't mind repeatedly wiping while they figure things out. See the coordinated subsection under the Locked Gates section.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" against daze.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against enemies until the final boss.
+tactic=guardian
+Use wiki=Line_of_Warding and wiki=Ring_of_Warding when hiding behind corners.
+tactic=guardian
+Use wiki=Binding_Blade if you need to group up enemies.
+tactic=thief
+Sword/Dagger and Bountiful Theft-trait are really good for stealing long boons from Dredge.
+tactic=mesmer
+Use wiki=Arcane_Thievery to steal long boons and wiki=Signet_of_Inspiration to share them with your whole team.
+tactic=mesmer
+Use wiki=Feedback against the enemies until the final boss.
+
+name=Locked Gates
+tactic=normal
+There are 3 cages, each separated from each other by one locked gate (thus there are 2 total gates). To open the gates someone must stand on a pressure plate. The plate in the first cage opens the first gate. The plate in the second cage opens the first and the second gates. The two plates in the final cage, when pressed both are depressed, open the first and the second gates, as well as open the gate for a console which you need to hack for 10 seconds to open the final gate and progress in the fractal. All plates must remain depressed for their effects to remain active; if a player steps off, the effect of that plate will immediately end.
+One player runs to the first cage to open the gate. Once the gate opens, the other players can run in and that one player can come back to wait. Killing all nearby enemies will make this part easier.
+Then one player runs to the second cage to activate the switch. When the gates open the 3 players who are in between the first and second gates should wait until the 4th player, who opened the first gate, catches up with them before proceeding into the drill room. However at low difficulty scales the 3 players can just enter on their own. Once those 4 players are in the drill room (the third cage), the last player must lose aggro either with stealth or by jumping down so he won't pull enemies to the drill room. The last player should go wait at the second gate, and enter the drill room when the door opens.
+The rest of the players should enter the drill room carefully to avoid aggroing everything. Clear at least half of the enemies as that will significantly increase your chances of success (ignore any Veterans as they have champion-level health, and thus take way too much time to kill). Two players must stand on the plates for a long time, which is difficult because these players are not able to dodge since dodging would require them to move off of the plate. Enemies will respawn eventually.
+The two remaining players go to the console at the back of the room. While one player hacks, the other must protect him as getting hit will interrupt the hack process. At about 75% hack progress a veteran enemy appears. The non-hacking non-panel player must attack it immediately to get aggro and be ready to interrupt if needed. Then he should go interrupt other enemies to help people on the plates. This player can run around the drill room in a circle, trying to tag all the enemies and keep them off the person on the console (most important), and also try to keep them off the people on the switches (less important).
+Take defensive utilities if you stand on a plate. Also take mobility if you go to the first or the second gate. Use stealth or invulnerability while hacking. Take control skills when protecting people.
+tactic=coordinated
+There are several different ways that coordinated teams can approach this, based on their team composition and level of comfort with the situation.
+The first strategy can be accomplished by any party that has a thief, and does not require an extreme amount of coordination. It goes as follows.
+Stack stealth and swiftness at the start then the entire party drops down and runs up the ramp to the first switch. Kill the patrolling mobs, and the first player runs to the switch. Thief drops SR or the party blasts stealth, and the party moves through the first gate. Kill both groups of mobs inside the gated area. Stack stealth for the Thief, who will blink up to the second switch and then return via Shadow Trap. Players in the drill room go to kite and switches, Thief goes to panel once they are in the room.
+The second strategy is a variation of the first, and requires both a Thief and a Mesmer. It works exactly the same way, however the Mesmer drops a portal entrance on the first ramp (before the party goes to move through the first gate), and then drops the portal exit between the first and second gates to allow the player who went to the first switch to rejoin the team with greater ease, as well as rejoin before a player reaches the second switch.
+The final strategy, the suicide strategy, requires a highly coordinated group with a Thief and ideally one other party member who has access to a blink skill. It goes as follows.
+Stack stealth and swiftness at the start. One party member runs to the first switch. Everyone else stays put, and re-stacks stealth when the first party member is about halfway to the switch. The party member on the first switch should stay alive long enough to let everyone through the gate, and then promptly suicide.
+Once inside the first gate, the party should re-stealth and a non-thief player with a blink should blink to the second switch. If no non-thief player with a blink is present, the thief can use Shadow Trap to return.
+Inside the drill room, two party members get on the switches immediately, and the Thief gets on the panel, throwing down SR on themselves. Everyone except the Thief should die after the door opens.
+tactic=warrior
+Use wiki=Defiant_Stance, wiki=Shield_Stance and wiki=Endure_Pain when standing on a plate.
+tactic=warrior
+Use wiki=Savage_Leap, wiki=Rush and wiki=Bull's_Charge to quickly get in and out of a cage. Don't run against fences or you may fall down.
+tactic=warrior
+Use wiki="Fear_Me!", wiki=Stomp and wiki=Tremor when protecting people.
+tactic=thief
+Use wiki=Shadow_Refuge at the console to keep you stealthed most of the time.
+tactic=necromancer
+Use wiki=Spectral_Walk before going to a pressure plate to quickly get out.
+tactic=mesmer
+Use wiki=Portal to get everyone through on the first and the second gate. Put portal entrance between gate and plate. Run back to gate, wait for it to open and get in. Put another portal entrance when the guy running gets near the first entrance.
+
+
+name=Next part
+tactic=normal
+Once hacking is done everyone should just run forward through the exit. Regroup and kill enemy=Dredge_Mining_Suit:veteran and some normal-Dredge. Then you have to go either left or right (random).
+tactic=coordinated
+Stealth past the dredge.
+If you executed the suicide strategy, wait until your Thief tells you to respawn, and then quickly stealth.
+
+name=1) Turrets
+tactic=normal
+Pick up a laser rifle near the left wall and get through without getting hit by the turrets. Turrets shoot in a pattern so take a while to observe them. When carrying a rifle you lose all your Endurance so you won't be able to dodge. Additionally, using a Portal or any teleports drops the rifle.
+If you get hit, the rifle will break and can't be used. If you get through, wait for 2 other players because you need 3 rifles to deal any damage to the door. If you attack alone then your rifle just gets wasted. You need about 5 successful attempts to destroy the door.
+Whenever the door gets hit some Dredge spawn. Kill them and go get a new rifle. Ideally, only two players need to kill the dredge, and the rest can go get additional rifles.
+
+name=2) Bombing
+tactic=normal
+Clear the enemy group of ~4 Veterans and ~4 Normals.
+You need to deliver 9 bombs to the door in order to destroy it. The door is guarded by Turrets which will quickly destroy anyone who becomes revealed.
+Stand on Concealing Dust until you get over 1 minute of stealth. Then pick up a bomb and move to the door. Don't use Portal or teleports because they make you drop the bomb. Avoid Security Contractors as they will reveal you if you get close and then Turrets will kill you. More Contractors appear after delivering bombs.
+Once you have 9 bombs at the door, use the detonator nearby and blow it up!.
+Once using the detonator you will be revealed, and need to kill the dredge trash. You can run into the next room and LoS them on the left, or you can simply stand at the detonator and fight them there. Fighting at the detonator is more efficient, although it is slightly more difficult if you cannot pull them together.
+tactic=exploit
+Although specifically what causes it is unclear, if you spam the interact function to pick up the bombs, and then spam it again to place the bombs, you can sometimes deliver multiple bombs with just a single bomb that you are holding. In many cases, this allows you to drop of all 9 bombs.
+
+name=enemy=Rabsovich:champion
+tactic=normal
+He is with a dredge cart that causes additional Dredge to occasionally spawn. Just focus on Rabsovich while using cleave/AoE to take down normal Dredge.
+Rabsovich has two attacks, which are his ranged attack (shockwave), and typical melee attack though he uses the later attack rarely. The former attacl can't be blocked or reflected so you have to dodge. Keep an eye on him and look when he pulls his arm behind back. If he is facing you prepare to dodge forward/backward (never side to not direct it at other players).
+His melee hit does some damage but you can easily stay at least at max melee-range. Occasionally he hides behind shield and blocks all attacks; when he does this, just stop attacking. He also self-heals (weird sound effect) and summons a enemy=Dredge_Disaggregator:veteran. The heal can be interrupted, sometimes even through defiance although interrupting through defiance is unreliable.
+tactic=exploit
+If you have trouble you can try pulling Rabsovich away from the dredge cart.
+tactic=thief
+Use wiki=Larcenous_Strike to steal long boons.
+
+name=Way to the final boss
+tactic=skip
+Once the door opens you will see either Dredge or Ice Elementals. The last boss will be same type as the enemies you see. Run or stealth past these mobs, then turn left so you won't aggro the boss until the party is ready.
+
+
+name=The Final Boss
+tactic=ranged
+Both bosses normally take very little damage. You have to pour lava on them to make them "Superheated" which allows you to damage them. It also makes their strong self-healing easily interruptable (any attack which connects with the boss will interrupt the heal while they have the debuff).
+One player should be on lava-duty. Their job is to activate the lever when boss is below the lava. The rest of the players should pull the boss to the spot and keep him there while dealing damage to the boss. Immobilize is useful to keep the boss in place so that the lava will definitely hit the boss.
+When ranging, you want to pull boss to next bucket before "Superheated" wears out. As such, avoid slowing the boss down with unnecessary cripple, chill, immobilize, or CC. When primarily ranging, ~5 seconds of melee burst is possible right after lava has been poured, although this may force you to deal with the mechanics the boss has during this period of time.
+The most common tactic is to run around the map and use all the bucket spots. It is also possible to alternate between two bucket spots. It is important your team is clear on what strategy you are going to employ.
+If someone becomes defeated one player should run out of combat, and then return to resurrect the dead player. The rest of the team should keep going in order to keep boss "Superheated".
+Should "Superheated" not be maintained, launches and knockbacks are able to interrupt the heal even with defiance stacks present. However, there is no reason to unnecessarily add defiant stacks to the boss. It is often a good idea to keep defiant off of the boss, so they can be CCed or interrupted if necessary.
+tactic=melee
+Like the ranged strategy, you want to keep the bosses superheated. You may need to move the boss between several bucket spots to maintain the debuff, however you can melee on the way to the new bucket spot as there is a decent amount of leeway between one pour and the next time you need to pour.
+In order to melee, you will need to know the mechanics of the boss, as well as be able to react to the mechanics. Melee is much faster than ranged, providing your party does not wipe multiple times.
+Be prepared to interrupt the heal in the event that "Superheated" runs out.
+tactic=coordinated
+Pull the boss to a bucket spot and burst him down. The boss should be dead in under 30 seconds, no matter what fractal level you are playing on.
+tactic=thief
+Take wiki=Basilisk_Venom along with offhand pistol for wiki=Headshot to manage defiance and interrupt the heal.
+tactic=guardian
+Use wiki=Chains_of_Light or wiki=Signet_of_Wrath to keep it under lava.
+tactic=warrior
+Use wiki=Throw_Bolas to keep it under lava.
+tactic=thief
+You can use wiki=Infiltrator's_Arrow or wiki=Shadowstep to get up to the console (doesn't work on South West for some reason).
+tactic=thief
+Use wiki=Needle_Trap to easily keep boss under lava.
+
+name=1) enemy=Rampaging_Ice_Elemental:legendary
+tactic=normal
+Easier than the Powersuit. This boss has well telegraphed and easily avoidable attacks.
+At melee he uses two different attacks. The first attack is a fist smash. When the fist hits the ground, a large AoE circle appears. The circle is bigger than it appears. You can simply step out of this attack, or dodge out of it if you are slow to react. The other attack is a stomp, which leaves a V-shaped frost pattern on the ground radiating outwards from the location of the stomp. Again, you can simply walk out of this attack, or you can dodge if you are slow to react.
+His only dangerous attack is when he jumps and puts multiple delayed AoEs (which inflict Agony). Usually it's easy to avoid but you may get into a bad spot. Just keep your head cool and dodge at right time.
+When he kneels he summons 3 enemy=Ice_Elementals_(Melee):veteran and heals. Kite Elementals and keep him "Superheated" to interrupt healing. Dealing with the adds is the hardest part of this fight.
+tactic=thief
+Use the stolen Ice Shard Stab/Throw Gunk to chill/crippled it under the lava.
+tactic=guardian
+Take wiki=Indomitable_Courage and wiki=Hallowed_Ground and wiki="Stand_Your_Ground!" to provide stability to your team.
+tactic=guardian
+Take wiki="Save_Yourselves!" as a personal stunbreak.
+
+name=2) enemy=Dredge_Powersuit:legendary
+tactic=normal
+Harder than the Ice Elemental due to a variety of attacks which require proper reaction from the player, with some of the attacks requiring a somewhat fast reaction time.
+His melee hit hits twice and hits hard; this is easily his most dangerous attack. It has a large range and radius, so remember to dodge even if you think you are out of range, or think you are behind the back of the boss. At close range he may also jump which shoots short range projectiles around him. The Jump is not really dangerous but you should still try to avoid being struck.
+When he raises both arms he will shoot 2 waves of bombs. They don't always draw a circle, so pay attention to where they land. Try run out of their area and dodge only if needed. Don't dodge during first wave because you may dodge right into a bomb! Bombs can be reflected or absorbed but they won't deal any damage to the Powersuit. Bombs will 1-shot a player, however they will not deal any damage to a downed player.
+His final attack is when he gains stability and glows. He will smash ground and send 3 shockwaves which hit the whole room. Each hit deals agony and moderate damage. You can avoid any damage with two dodges if you have good timing, however one dodge is usually sufficient to mitigate enough damage from the attack. Use blocks or immunity if needed.
+When he sits he will heal. Keep him "Superheated".
+tactic=mesmer
+Use wiki=Feedback to protect your team from bombs.
+tactic=elementalist
+wiki=Arcane_Shield, wiki=Obsidian_Flesh and wiki=Mist_Form is excellent against agony attack.
+tactic=guardian
+Use wiki=Wall_of_Reflection for defense against the bombs or the jump attack.
+tactic=thief
+Take wiki=Withdraw for extra evade to avoid agony attack.
+
+#######################################################################################
+
+path=Urban
+name=Urban Battleground
+tactic=normal
+Enemies: No type.
+Time: Day.
+Use use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
+youtube=nNGYS5oMaOI|Video_guide [KING].
+Current record: record=50.
+tactic=guardian
+Use wiki=Line_of_Warding or wiki=Ring_of_Warding when hiding behind corners.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against ranged attacks.
+
+name=Enemies
+tactic=normal
+enemy=Monks should be the top priority to focus because they give lots of might to all foes around them. Their basic attack also deals high damage, so keep them blinded and controlled.
+enemy=Mages are very dangerous and can wipe your entire group unless you know how to counter them. Their most dangerous melee attack, Flame Burst, has a distinct "whoosh" sound. Stay alert when you are close to them and dodge when you hear that sound. When pulling them you should break line sight before your ranged attack hits them, so you don't give them a chance to cast Firestorm at your stacking location.
+enemy=Warriors deal high damage but attack somewhat slowly, so keep them blinded in order to mitigate their damage. When engaging them be ready to dodge if they Rush towards you to avoid extremely high damage.
+enemy=Cultists attack quickly so blinds are not very useful, although they do not hurt. Cultists do not deal much damage, and thus should be low on your priority scale.
+enemy=Ascalonian_Archers_(Female) deal high damage but use only projectiles so use antiprojectile skills against them.
+Other enemies such as enemy=Fighters, enemy=Healers, enemy=Assassins, enemy=Enchanters or enemy=Archers_(Condition) are low threat so leave them for last.
+
+name=Start
+tactic=normal
+You spawn in a tent as a charr so don't be surprised if you look different. You have a group of powerful charr NPCs with you. They are pretty dumb but are very tanky and deal lots of damage so you need to babysit them through. They usually only attack when you do but sometimes engage on their own. After engaged they fight to the death.
+The starting area contains lots of enemies from which 2 enemy=Cultists_(Respawn):veteran, 2 enemy=Mages_(Respawn):veteran and 2 enemy=Warriors_(Respawn):veteran respawn when killed. If NPCs get in the fight they will either die or take a long time to kill the enemies so keep NPCs away from the enemies.
+Most groups will immediately turn left and hug the wall until they reach the gate. Turning right is also possible but easier to mess up. Either way, follow your team and don't split up or you risk losing the NPCs.
+Before you attack any enemy groups make sure all players and NPCs are with you. If enemies are near the gate pull them away. Try to get NPCs hit so they aggro on the enemies. This can be done easily by pulling enemies behind a corner.
+tactic=coordinated
+If you plan to stealth through the town turn right because you will lose the NPCs anyway. Stack behind a rock near the gate. Attack a enemy=ballista:structure to aggro the enemy group with enemy=monks:veteran. Keep them blinded and burst them down.
+tactic=optional
+To get the achievement "Out of Cluck" you have to kill every chicken. This requires either lots of unnecessary killing or running around which will slow your team down. Make sure your team is ok with what you are doing. It's unsure which chickens count so better kill them all.
+The best way to get the achievement is to specifically create a team for it. Since Urban Battleground is a tier 1 fractal you can keep rerolling until you get it. On scale 1 you can even solo it quite easily with help of NPCs but additional players make it faster.
+tactic=bug
+NPCs may not appear at any point. Proceed normally since they may appear later.
+
+name=enemy=Siegemaster_Dulfy:champion
+tactic=normal
+At the enemy=gate:structure focus the 3 enemy=burning_Oils:structure at the top. They put ticking AoEs at an unexpectedly far range so don't be fooled by their weak look. Once they are destroyed attack the gate and Dulfy. Make sure NPCs also attack her. Ignore the enemy=Ballistas:structure because Dulfy will just repair them.
+Once Dulfy dies destroy any remaining siege weapons and focus the gate down.
+tactic=exploit
+You can jump over the wall and kill Dulfy and the gate from behind. At the beginning take turn right and jump on the walls. Move towards 3 enemy=Burning_Oils:structure and use a leap to jump over them. Stand on top of them while destroying them. Once destroyed they push you over the wall.
+tactic=coordinated
+Focus 3 the enemy=burning_Oils:structure with ranged attacks and then burst down Dulfy and the gate.
+
+name=After the first gate
+tactic=normal
+There are randomly placed blockades around the town which is filled with enemy groups. If the way is blocked there is no point killing the enemies so scout the area and only kills enemies when necessary.
+To utilize NPCs properly you should attempt to pull every enemy group behind a corner. Hitting an enemy causes NPCs to engage and they will usually get enemy aggro. If not, they will take lots of damage from NPCs while running towards you.
+When you reach a smaller gate you should ignore the enemies, focus down the gate in a few seconds, go in and stack behind a corner. This allows you to ignore the enemy=burning_Oil:structure on the top. However lots of groups will start ranging the Burning Oil so be prepared.
+tactic=coordinated
+Stealth past all of the enemies as well as the ballistae. When you reach a gate to the courtyard, quickly burst it down (without killing the oil), and then stack on the other side of the gate and kill the mobs which guard the gate. For the longest path, the mobs will not follow and you will not need to stack on the other side.
+tactic=thief
+Use blinds to protect your team (especially when pulling behind corner).
+tactic=necromancer
+Use wiki=Plague for mass-blind.
+tactic=elementalist
+Use wiki=Glyph_of_Storms in earth attunement and wiki=Lightning_Hammer for mass blinds.
+
+name=Courtyard
+tactic=normal
+The area is filled with 4 enemy groups and on middle there are multiple enemy=Ballistas_(Rapid):structure and enemy=Arrow_Carts_(Strong):structure. Enemy groups contains either enemy=Ascalonian_Mage:veteran, enemy=Ascalonian_Monks:veteran, enemy=Ascalonian_Archers_(Female):veteran or enemy=Ascalonian_Cultists:veteran. Additionally each group has ~3 enemy=Ascalonian_Warriors:veteran with them.
+To capture the area you have kill the enemy groups. Keep in mind that the area gets captured even with siege weapons so remember to destroy them too. There is a white statue and a tree in the area which can be used to your advantage. They give cover against Ballistas and Arrow Carts and can be used to pull enemies close to you or even split them up.
+Ballistas have a very long range so stay near back wall while getting behind the cover. If NPCs get hit they may engage on their own. One player should get close to the cover while rest wait behind him with NPCs. If everyone is near the cover NPCs will engage pulled enemies before they reach the cover and very likely engage Ballistas after.
+If done properly enemies should safely get behind the cover. At this point rest of the team should come in fast to clear them out. If everyone stays in the cover you won't get hit by Ballistas or Arrow Carts and NPCs should stay with you. If NPCs run off after enemies go help them. If not, run to the other side without aggroing enemies and repeat the pull.
+If NPCs end up dead you have two choices. Either everyone dies and they revive with you or you try to revive them one by one. Dying is usually much faster and simpler as you can just unequip your gear and go die. But if there aren't lots of enemies nearby you can try reviving them. Just keep in mind that often they just charge to the enemies and get killed really quick.
+When all enemies are dead quickly focus down remaining siege weapons before the area gets captured.
+tactic=exploit
+If you have trouble killing the enemies you can just pull them out of the area. Split up and pull enemies back while wearing defensive skills.
+tactic=coordinated
+If you skipped the town you won't have any NPCs. Use the normal tactic but after clearing a side move to the other side without aggroing anything. Once enemies are cleared focus down siege weapons with help of stability.
+tactic=warrior
+wiki=Battle_Standard is extremely strong because you can resurrect 5 NPCs.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" when pulling to counter Ballistas.
+tactic=thief
+Use blinds to protect your team (especially when pulling behind corner).
+tactic=necromancer
+Use wiki=Plague for mass-blind.
+tactic=elementalist
+Use wiki=Glyph_of_Storms in earth attunement and wiki=Lightning_Hammer for mass blinds.
+
+name=The ritual
+tactic=normal
+Once the area is captured a Flame Legion Shaman appears. You need to protect him from 6 groups of a enemy=Ascalonian_Cultist:veteran and 2 enemy=Ascalonian_Monks:veteran while he does his ritual. Revive any dead NPCs fast before enemies appear. If Shaman dies your team wipes and you have to retry.
+Attack groups before they reach Shaman so they don't damage him. Bring lots of damage to kill a group before next one arrives.
+tactic=exploit
+If you know you will have trouble with the ritual, for example when soloing, don't destroy every enemy=Ballista_(Rapid):structure. Run back so they target Shaman and knock him back away from the middle. You should ideally leave the Ballista that is nearest to where the shaman runs up alive; if you live this Ballista alive and fail the event multiple times (resurrecting the shaman after each failure), you will not need to deal with any other enemy groups. If you leave another Ballista alive, you may need to deal with only a single enemy group. You can also achieve the same effect as in the ideal case if you do not kill any of the siege, however, this will make things more difficult when it comes time to fight Captain Ashym.
+
+name=enemy=Captain_Ashym:legendary
+tactic=ranged
+At the beginning get close to him so NPCs attack him and then back off.
+He starts with a enemy=Sword_and_Shield:legendary. He only has melee attacks so you can safely range him. Keep in mind that he occasionally blocks all attacks so time your burst attacks.
+tactic=melee
+Unless in a somewhat coordinated group, take a ranged weapon on swap. When Ashym reaches 25% health you can get whole team killed if you melee him, as he may switch to his Fiery Greatsword. Also after he reaches 75% health you may have trouble meleeing him unless you are aware of his mechanics.
+He starts with a enemy=Sword_and_Shield:legendary. NPCs will absorb most of his attacks so you can melee him safely. Keep in mind that he occasionally blocks all attacks so time your burst attacks.
+tactic=ranged|melee
+He will keep re-summoning an enemy=Ascalonian_Squire:veteran throughout the fight. There is no point killing him because he will be summoned pretty fast again. Stay mobile and run away from him while attacking Ashym.
+tactic=ranged
+At 75% health Ashym swaps to a enemy=Staff:legendary. As long as you stay mobile at high range he won't be a threat. You will automatically move out of any red circles or rectangles before they can deal any real damage. Just be ready to dodge when you see a fire blast to avoid the incoming bigger fire blast.
+At 25 health he will shout "We will never surrender!". As long as everything stays at distance nothing changes. But if someone is at melee range he may switch to a enemy=Fiery_Greatsword:legendary.
+tactic=melee
+At 75% health Ashym swaps to a enemy=Staff:legendary. His most dangerous attack is Meteor Shower which causes meteors to fall on a huge area. Even one hit will deal lots of damage so you generally can't stay on the area. This may prevent you from using melee attacks at all for the duration of the AoE.
+He also has another attack named Meteor Shower but it causes two PBAoE blasts instead. At melee range you have to dodge both, which requires good timing to evade with only one dodge, however is easy to evade using two dodges. Single blocks can be used on one part of the attack. Getting hit will do lots of damage and agony so learn the casting animation fast. His final attack Firewall is a ticking AoE with low damage so just walk out of it.
+At 25% health he will shout "We will never surrender!". At this point you should go full ranged if Ashym is not CCed. If his current target is on melee range he will instantly switch to a enemy=Fiery_Greatsword:legendary.
+tactic=ranged|melee
+| In that case he becomes extremely lethal and probably kills your entire team. You may have a small chance if NPCs are alive.
+tactic=coordinated
+Full melee is only possible with huge amount of damage. wiki=Deep_Freeze Ashym at 25% health and burst him down.
+tactic=warrior
+Use wiki=Battle_Standard to revive NPCs and players if needed.
+tactic=thief
+Use wiki=Smoke_Screen to provide projectile defense against FGS-Ashym.
+tactic=thief
+Use wiki=Signet_of_Agility to provide extra dodges to your team.
+tactic=guardian
+Use wiki=Wall_of_Reflection to provide projectile defense against FGS-Ashym.
+tactic=guardian
+Take wiki="Retreat!" for an extra Aegis.
+tactic=mesmer
+Take wiki=Feedback and/or trait wiki=Temporal_Curtain to provide projectile defense against FGS-Ashym.
+
+#######################################################################################
+
+path=Volc
+name=Volcanic
+tactic=normal
+Enemies: Grawls, Demons and Elementals.
+Time: Night.
+Use wiki=Powerful_Potion_of_Grawl_Slaying|Potion_of_Grawl_Slaying at start and either wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying or wiki=Powerful_Potion_of_Demon_Slaying|Potion_of_Demon_Slaying at end for extra damage and damage reduction. Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force for damage sigils. If you want to be optimal use wiki=Superior_Sigil_of_Grawl_Slaying|Sigil_of_Grawl_Slaying, wiki=Superior_Sigil_of_Demon_Slaying|Sigil_of_Demon_Slaying or wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Force.
+youtube=q041QdWMrMk|Video_guide [KING].
+Current record: record=51.
+
+name=Start
+tactic=normal
+The starting area is filled with enemy=Grawl_Berserkers:normal, enemy=Grawl_Raiders:normal and enemy=Grawl_Shamans:normal. To proceed you need to kill enough enemies to fill the progress bar. When enough initial enemies are killed more enemies spawn.
+Don't engage the whole group. Instead jump up to the rock formation on your right side. The rock will give you cover and allow pulling grawl in small numbers. One player should use long range attacks to pull grawl while other players wait.
+Pulling is dangerous because enemy=Shamans:normal can pull and immobilize you, enemy=Raiders:normal plant immobilizing traps, and random rockfalls knock you down. The puller should have a way to remove a immobilization and break a stun to prevent getting killed. Both rockfalls and pulls can be dodged but you need good reflexes.
+Once the progress bar is filled remaining grawl will start running away. You can try killing them for more loot but watch out for the boulders.
+#######################################
+tactic=guardian
+Use wiki=Line_of_Warding or wiki=Ring_of_Warding when hiding behind corner.
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against ranged attacks.
+Use wiki="Stand_Your_Ground!" or wiki=Hallowed_Ground to negate pulls or rockfalls.
+tactic=coordinated
+Less coordinated groups can stack behind the cage on the left, and pull waves of grawl inward. To make this work, your party must have access to stability, blind, and projectile defense, in addition to decent DPS.
+More coordinated groups can stack on the rock pillar that is essentially between the cage and ledge spots (but much closer to the ledge spot than the cage spot). You need everything the cage spot requires, but you also need to be able to pay attention to where the grawl are and move slightly around the pillar to ensure they all LoS properly, or you need to pull uncooperative grawl in with Binding Blades or Into The Void.
+
+name=Boulders
+tactic=normal
+Burning boulders roll down the path while leaving fiery trails behind them. Touching a boulder will instantly down you and unless your team can revive you fast the next boulder will defeat you. Try to avoid the fiery trail to stay out of combat so you move faster. Use mobility skills and swiftness to move faster and use dodges if you get in a bad spot.
+Boulders will break at a certain point. If in a less coordinated group, wait for rest of the team bit after that point so you don't trigger the next event. Use condition removal to clear any long duration burning from your team.
+
+name=Breaking the Bubble
+image=media=volc_throne.jpg
+tactic=normal
+You need to throw eight "Infused Stones" at the bubble around the enemy=Shaman:champion to break it. Stones will appear on rockfalls. Either wait until the rockfall ends or dodge in to grab the stone. enemy=Grawl_Shamans:veteran constantly spawn on the other side of the area. They attempt to reach any of the 4 villagers near the ledge in order to push them over the side. If they succeed in pushing over all of the villagers, your team will wipe and you have to try again. If you manage to save every villager you will get a bonus chest.
+The shamans won't attack you so bring lots of damage and control skills. The whole team should focus on killing and slowing shamans down with conditions and control. When stones appear anyone can throw them at the bubble. When throwing stones stay at middle of the area to prevent hitting the sides of the throne.
+When the bubble breaks all remaining shamans will attack you. Run to the back of the area and kill remaining shamans. Wait until you get out of combat to heal up and change skills, or engage the champion immediately depending on group preference.
+tactic=coordinated
+Kill shamans together. Focus on breaking the bubble because shamans won't be a threat with good damage. When the bubble breaks focus down remaining shamans and engage the boss immediately.
+tactic=exploit
+If you have severe problems (like when soloing) you can unequip armor and use melee attacks to push enemy=Shaman:champion to the middle of the area. You will wipe several times while doing this but throwing stones is much easier when the boss is closer.
+It's possible to regain a Stone right after throwing it by gaining different skill bar instantly without any animation. For example switching a weapon from inventory should work allowing you to destroy the bubble really fast. However you have to stay out of combat.
+Trick also works with kits, even when in combat. Using Death Shroud may also work, even when in combat.
+#######################################
+tactic=ranger
+Keep your pet on leash so it doesn't attack Shaman and push it behind the throne.
+tactic=elementalist
+Use wiki=Signet_of_Earth and wiki=Signet_of_Water to slow shamans down.
+wiki=Conjure_Lightning_Hammer|Lightning_Hammer_(utility) offers a launch and a stun field.
+tactic=engineer
+Use wiki=Magnet to pull shamans) back.
+tactic=guardian
+Use wiki=Banish_ to knock shamans to the wall. Keep them in place with wiki=Zealot's_Embrace or wiki=Ring_of_Warding.
+Use active wiki=Signet_of_Wrath or wiki=Bane_Signet if your group lacks control.
+tactic=thief
+Use wiki=Scorpion_Wire to pull shamans back.
+tactic=necromancer
+Use wiki=Spectral_Grasp to pull shamans back.
+tactic=warrior
+wiki=Throw_Bolas for immobilize.
+
+name=enemy=Grawl_Shaman:champion
+tactic=ranged|melee
+His melee attack, Bash, is his most dangerous attack. On top of dealing lots of damage it will also give him a short projectile reflection.
+tactic=ranged
+| Keep some distance and watch out for the reflection if you have inexperienced melee players in the team.
+tactic=melee
+| Stay at max melee range and never dodge through him to prevent him from using it.
+tactic=melee|ranged
+His basic projectile attack, Fireball, deals decent damage especially if your team is stacked. Take area anti projectile skills to protect your team against it.
+tactic=melee
+| Without them try to spread a bit to avoid taking unnecessary hits. Use blocks to prevent area effects from appearing.
+tactic=ranged
+| Without them keep some distance so you can easily dodge incoming Fireballs.
+tactic=melee|ranged
+Occasionally he throws a totem which gives him fury and protection. If you see him with those buffs call it as a target so your team can focus it down fast. Ignoring the totem will keep protection up permanently which slows down the kill.
+On scale 10 and above he also uses Churning Earth which is a PBAoE with extreme damage.
+tactic=ranged
+| It has a short radius so you don't have to worry about it as long as you keep your distance.
+tactic=melee
+| It has a long cast time so you can easily walk out of it. However learn to dodge it based on the animation so you can keep attacking few more seconds. Keep in mind that while Shaman is casting he cripples around him which removes single-block effects like Aegis. However, with excellent timing and low latency, Aegis can be applied to the high damage component of Churning Earth.
+tactic=ranged|melee
+At 75% health (every 25%?) he gets his bubble back and delayed AoEs with high damage appear all around the area. You should spend this time reviving and healing up. If everything is ok, throw a Stone at him to break it.
+tactic=coordinated
+Stack at max melee range and chain anti projectile skills so you don't have to care about his Bash or Fireballs. Keep attacking during Chunning Earth and dodge when the white dust ring reaches the Shaman. Focus down the totem as soon as it appears.
+tactic=necromancer
+Use Axe/Focus to keep protection down if your team won't focus the totem.
+tactic=guardian
+Use wiki=Wall_of_Reflection against ranged attacks.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" to negate rockfalls.
+tactic=thief
+Use wiki=Smoke_Screen to protect your team.
+tactic=mesmer
+Use wiki=Feedback and traited wiki=Temporal_Curtain and wiki=Phantasmal_Warden to protect your team and do some damage.
+
+name=To Imbued Shaman
+tactic=normal
+Run through enemy=Vampire_Bats:veteran. Don't fall down. Wait for your team on the bridge right before enemy=Imbued_Shaman.
+tactic=skip
+Use media=volc_skip.jpg|a_shortcut. Go to bit right from where Shaman jumped down. Use swiftness and jump down to the ledge below. Then jump towards the corner on next ledge. If you are too far away from the corner you will slip, fall down and die. If you get there safely then just run to the island while jumping to prevent most damage. You can use leaps or teleports for slight boost.
+This takes some practice and you will most likely die few times before you learn it. Once mastered, you can get down extremely fast and reliably.
+tactic=optional
+To complete the "The Floor Is Lava. Don't Step In It" achievement be extra careful. If you fall down even once it's over.
+
+name=enemy=Imbued_Shaman:legendary
+tactic=ranged|melee
+It has a long cast time so you can easily walk out of it. However learn to dodge it based on the animation so you can keep attacking few more seconds. Keep in mind that while Shaman is casting he cripples around him which removes single-block effects like Aegis. However, with excellent timing and low latency, Aegis can be applied to the high damage component of Churning Earth.
+tactic=melee
+Melee is very dangerous because most players in uncoordinated groups will stay at range and leave you without support. One mistake may get you defeated because people are afraid to come revive you. You have to stay alert at all times because Imbued Shaman has melee only skills which will be only used against you. With that said, a skilled player can melee the Imbued Shaman even if the rest of the team is ranging.
+tactic=ranged|melee
+His basic projectile attack, Flaming Arrow, deals lots of damage, as well as inflicts agony and burning. If you get hit consider backing away so you don't die near him. The animation is quite hard to see so stay at range and dodge when something flies towards you. Arrows can also be avoided with strafing but it's unreliable without lots of practice.
+tactic=ranged
+| The animation is quite hard to see so stay at range and dodge when something flies towards you. Arrow can also be avoided with strafing but it's unreliable without lots of practice.
+tactic=melee
+| Stay behind him at all times. If he turns towards you he will very likely shoot you so be ready to dodge or block. The animation is very small so it's hard to rely on it.
+It's important to learn animations for his two melee only attacks, Wing Buffet and Dive. Dive is extremely dangerous as it's fast and creates multiple area effects with bugged hitboxes. If you are too slow even dodging may not save you. Consider using special skills against this attack. Wing Buffet is slower and creates a red circle in advance so you can just walk out of it or dodge.
+Making the Imbued Shaman use Wing Buffet helps your team because the long casting time means 1-2 less arrows. However Dive makes him evade so it doesn't help at all. Wing Buffet is generally used before Dive so a hybrid melee/range tactic can be very effective, as it will be faster and somewhat easier than full ranged and easier than full melee, although it will not be as fast as full melee. If using a hybrid melee/range tactic, once Wing Buffet is used back off for ~15 seconds.
+tactic=ranged
+The Imbued Shaman has melee only attacks so don't be surprised if he does different moves when someone melees him. You generally don't have to worry about these attacks but stay alert if you have to go near him.
+tactic=ranged|melee
+Imbued Shaman casts peridiocally a ticking AoE, Firestorm, which deals lots of damage if you stay on it. Stay mobile at all times so you only get hit once or twice before moving out of it. Dodge if you have low health or full endurance. It's often used at the same target so stay away from others if you are the target. It has no cast time so it can be freely used while using other attacks. Try to learn its recharge so you can dodge right before it gets used.
+The real difficulty starts when Imbued Shaman reaches 75%, 50%, and 25% health. This gives him a bubble which blocks attacks until 40 skills have been used on him. He stops attacking and starts slowly moving towards a random villager who cries in fear. If he reaches his target he will heal ~20% of his maximum health which means he can't be killed unless you can break the bubble on time. Additionally 10-30 enemy=Lava_Elementals:normal spawn which can easily wipe the entire team.
+The goal is to kill as many elementals as possible while breaking the bubble on time. Chain area reflections and absorptions to defend your team against the elementals and to make them kill themselves. Use cleave and area attacks on the Imbued Shaman to reduce stacks and to kill elementals. You can use unblockable attacks to slow him down which buys you more time. If he is far away from his target don't break the bubble until most elementals have been killed. Once the bubble breaks he enrages for several seconds and deals more damage. If most elementals are alive this will get you killed.
+Keep in mind that multi-hitting skills only remove one bubble stack so if you need to break the bubble fast use quick single skills. Also don't enter the bubble phase until your team is in a good shape. Keep the Shaman's health bit above the limit until the whole team is alive with most of their health and skills recharged. Remember to save your reflections for the bubble phase and don't waste them against arrows unless absolutely needed.
+Try to keep the Shaman in the middle of the area so you have time to break the bubble regardless of his choice. However if you have trouble breaking the bubble on time pull him to one corner and hope you get lucky.
+tactic=coordinated
+Coordinated groups will full melee the shaman. When a bubble phase approaches, they will have a standard order for reflects, they will have a player or players assigned to ensure the shaman is chilled, crippled, or immobilized, and they will attempt to group the elementals together to cleave them down more rapidly. Coordinated groups often frequently blind the elementals, to further reduce their potential threat level. Coordinated groups will not trigger a new bubble phase unless all group members have the important skills up, which need to be up to ensure the next bubble phase goes smoothly and without any issues.
+tactic=coordinated|exploit
+The bubble phase has a cooldown. If you keep the Imbued Shaman chilled and do a huge amount of damage you can skip bubble phases.
+tactic=optional
+To complete the "The Floor Is Lava. Don't Step In It" achievement be extra careful. Lava pools in middle of the area also count and they may harm you even when not lit. Play safe and stay out of them at all times. Use ranged attacks instead of melee.
+If you have trouble getting this and have a friendly party you can ask them if you can stay out of the fight. However most teams will struggle with this fight so doing this may result you getting kicked.
+tactic=exploit
+It can be possible to get out of combat during the encounter, providing the shaman is far enough away from you. This can be used to allow dead players to resurrect.
+When stripping bubble stacks, the skill does not need to connect with the shaman. Instead, the skill can connect with any target (i.e. the shaman OR the elementals), so long as the shaman remains selected.
+tactic=bug
+The floor may repeatedly set you on fire even though you are moving and not standing in the lava. This occurs randomly, and there is no fix other than to hope it eventually stops. This "mechanic" often adds considerable random difficulty to the encounter.
+The lava pits may be active even when their animation suggests they are inactive. There is no reliable way to tell when they are active.
+The lava pits may remain permanently active. When this occurs, the lava pit animation may continue to cycle on/off, or it may be permanently off despite the lava pit being active.
+The Dive attack from the Shaman is very unreliable with respect to use of evades, multiple blocks, and invulnerability skills. If you do not react early enough in the animation, you can sometimes still be hit through all of these effects, even though no damage occurs until you are, for example, in the middle of a dodge frame. For evades, this behaves very similar to a "fumble" dodge. You will sometimes get a message suggesting that you did evade/block the attack on your screen, or you were invulnerable to the attack, even though you were hit with the damage.
+The AoEs created by the Dive attack are unreliable, and are often not in the place their indicator suggests they are. Be careful, and if you receive damage from them, move.
+tactic=warrior
+Use wiki=Signet_of_Might with wiki=Throw_Bolas or wiki=Pin_Down to slow down Shaman. You can usually use it twice.
+tactic=mesmer
+wiki=Feedback is excellent against Elementals.
+tactic=mesmer
+Use wiki=Null_Field to remove immobilized from the team.
+tactic=mesmer
+wiki=Temporal_Curtain can be used to cripple Shaman during the bubble phase.
+tactic=elementalist
+wiki=Swirling_Winds is very effective against Elementals. But only use it after reflections.
+tactic=elementalist
+wiki=Ice_Storm|(Frost Bow), Fiery Greatsword and wiki=Lightning_Hammer are all very effect at killing Elementals.
+tactic=elementalist
+wiki=Frozen_Ground can Chill Shaman for some time during the bubble phase.
+tactic=guardian
+When Elementals appear use wiki=Shield_of_the_Avenger. Use wiki=Wall_of_Reflection when it ends or if Shield would break immediately (AoE).
+tactic=guardian
+Use wiki=Binding_Blade to pull Elementals together.
+tactic=thief
+wiki=Dagger_Storm is excellent against Elementals.
+tactic=thief
+wiki=Double_Strike is really good for breaking bubble because it stays on first skill of the chain and hits really fast.
+tactic=thief
+Take Shortbow if you believe you have to kite around the area when people resurrect someone.
+tactic=thief
+Use wiki=Smoke_Screen to protect your team (save for Elementals unless you have people with bigger anti projectile skills).
+tactic=thief
+wiki=Needle_Trap and wiki=Tripwire deal movement impairment condition and are unblockable. Use them to slow down Shaman during bubble phase.
+tactic=necromancer
+With unblockable Marks you can Chill or even Fear (if he doesn't have defiance stacks) Shaman during bubble phase. Also you can spread Conditions from elementals to Shaman or from Shaman to elementals with wiki=Epidemic.
+tactic=ranger
+Use wiki=Entangle right before he enters bubble. Vines can't be blocked and will keep him still a long time.
+tactic=ranger
+wiki=Frost_Trap and wiki=Spike_Trap deal movement impairment condition and are unblockable. Use them to slow down Shaman during bubble phase.
+tactic=engineer
+wiki=Toss_Elixir_U can be used for projectile protection.

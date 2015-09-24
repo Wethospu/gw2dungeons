@@ -1,0 +1,72 @@
+<script type="text/javascript">
+	"use strict";
+	var login = "";
+	var password = "";
+	var database = "";
+	$(document).ready(function() {
+		loadSettings(false, false);
+		loadPage();
+	
+		$('form').bind('submit', function(event) {
+        	var form = this;
+
+       		event.preventDefault();
+        	event.stopPropagation();
+		
+			if (form.submitted)
+				return;
+
+			var type = "login";
+
+			var request = $.ajax({
+				url: 'interface_exec.php',
+				type: 'POST',
+				data: "type=" + type + "&username=" + $("#username").val() + "&password=" + $("#password").val() + "&database=" + $("#database").val()
+			});
+
+			// Callback handler that will be called on success
+			request.done(function (data){
+					data = JSON.parse(data);
+					$("#messages").html(data.message);
+					if (data.success) {
+						form.submit(); //invoke the save password in browser
+						login = $("#username").val();
+						password = $("#password").val();
+						database = $("#database").val();
+						$("#tab_login").html("");
+						$("#login-frame").html("");
+						$("#page").load("pages/interface2.htm");
+						$("#logout").html("<a href=\"./Interface\">Log out</a> from " + database + ".");
+					}
+				});
+
+			// Callback handler that will be called on failure
+			request.fail(function (data){
+				data = JSON.parse(data);
+				$("#messages").html(data.message);
+			});
+    });
+});
+</script>
+<div id="logout"></div>
+<br>
+<div id="messages">Welcome!</div>
+<br>
+<div id="tab_login">
+<form action="pages/login.htm" autocomplete="on" target="login-frame">
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text" value="" autocomplete="on" />
+    <label for="password">Password</label>
+	<input id="password" name="password" type="password" value="" autocomplete="on" />
+    <input type="submit" name="doLogin" value="Login" />
+    <br>
+    <label for="database">Database</label>
+    <select id="database">
+        <option value="RecordDB">Records</option>
+		<option value="TestDB">Test</option>
+	 </select>
+</form>
+</div>
+<iframe id="login-frame" name="login-frame" style="width:0;height:0;max-height:0;display:none;"></iframe>
+<div id="page"></div>
+

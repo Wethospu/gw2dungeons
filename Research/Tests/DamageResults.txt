@@ -1,0 +1,12 @@
+Final damage gets floored down. Tested in PvP.
+
+
+
+Fotm:
+
+ascalon 1:
+volley: 76
+ballista: 706
+oil: 2280
+
+Damage: Structures / Drake: NO SCALING -> enemies without health scaling don't have damage scaling

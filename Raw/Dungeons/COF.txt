@@ -1,0 +1,417 @@
+init=CoFS|Citadel of Flame|Story|Story
+init=CoF1|Citadel of Flame|Help Ferrah (path&nbsp;1)|Path 1
+init=CoF2|Citadel of Flame|Help Magg (path&nbsp;2)|Path 2
+init=CoF3|Citadel of Flame|Help Rhiannon (path&nbsp;3)|Path 3
+
+path=CoFS
+tactic=normal
+name=Citadel of Flame Story: Assault the Flame Legion Citadel
+Level: 70.
+Reward: 0.73g.
+Average length: 40 minutes.
+Difficulty: Easy.
+Enemies: Flame Legion.
+Time: Night.
+Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force if you want to be optimal.
+youtube=AS3MTBPLh4o|Cutscenes.
+Current record: record=18.
+
+name=Start
+tactic=normal
+If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=The_Battle_for_the_Flame_Citadel_and_Senecus_Castrum. Alternatively you can leave party and try relogging until you get to another instance.
+After the gate don't rush in. There are actually 3 different groups that you can pull one by one.
+Then you can either go left or right (you need to kill a champion at both locations). Kill enemies along the way.
+
+name=enemy=Rozgar_the_Forge:champion
+tactic=melee|ranged
+He starts with Greatsword, at 75% switches to Hammer, at 50% switches to Axe and at 25% switches to Dagger. 2 different invulnerable weapons will be hostile at each phase which do the same attacks as Rozgar.
+tactic=ranged
+At start stay at distance because his spinning dash can easily kill you. At high distance you have more time to react and dodge. If there are any melee players you should avoid using slowdowns so as not to make it harder for them.
+tactic=melee
+At the start play very defensively because his spinning dash can easily kill you (especially if people slow him down). If you are at low health then back off and wait until he has spinned. Then go burst him for a few seconds.
+tactic=melee|ranged
+When he switches to Hammer stay mobile. He is only dangerous if you let him finish his attack chain. Use this phase to regenerate your team. Resurrect dead people and get your health up.
+tactic=melee|ranged
+With Axe he will shoot lots of projectiles which can easily stack long burning. With full health you should easily be able to burst him before you die. Remove burning when he switches to daggers.
+At last phase he will stealth, teleport and spin around. Keep moving to avoid most of it and use condition removal if you get lots of bleeding. Call him when he shows up so everyone can target him quickly.
+tactic=exploit
+If you pull Rozgar far enough he will reset and start walking slowly back. However you can still attack him which makes Greatsword-phase extremely easy.
+
+name=enemy=Bolok_Firebringer:champion
+tactic=normal
+He has just one attack but it deals lots of damage. He throws Firewalls which can't be blocked.
+Stay mobile, if you stand on one spot you will melt in seconds. Don't be afraid to move around if you get surrounded by flames.
+At 75%/50%/20% health he will summon some normal enemies which can easily be killed.
+
+name=Flame Legion Effigies
+tactic=fight
+There are some inert enemy=Flame_Legion_Effigies:veteran and some enemies. They slowly wake up so pull enemies back.
+tactic=skip
+Because enemy=Flame_Legion_Effigies:veteran wake up so slowly, it is much faster to just run through everything.
+
+name=Second waypoint
+tactic=normal
+After several seconds ~10 enemy=Fiery_Jellies:normal will appear at the waypoint. Most likely you will skip them without even knowing. However, if you ever need to use that waypoint be ready to dodge and remove immobilize.
+You get ambushed from behind when you attack the group on bridge.
+tactic=skip
+To avoid pulling enemies to enemy=Hierophant_Improaster:champion you either have to move very fast or use stealth.
+
+name=enemy=Hierophant_Improaster:champion
+tactic=normal|skip
+He only summons enemy=Fire_imps:normal. Kill them with cleave/AoE before they explode.
+At the next bridge you will get ambushed again.
+tactic=skip
+| Just run through them.
+
+name=enemy=Flame_Legion_Effigy:champion
+tactic=normal
+Effigy has a huge aura which applies burning. Equip sustainability if you can. If you get close to dying run out of area and remove burning.
+When the Effigy bends forward and raises arms it will cast a Firestorm. Dodge out to prevent most of the damage. Its normal projectile attack won't do much damage but can be enough to wear you down.
+Try stay close to Acolytes so you can quickly focus them when their shield goes down. They will heal the Effigy fast while vulnerable.
+tactic=warrior
+Equip wiki=Healing_Signet to counter burning.
+
+name=Way to Gaheron Baelfire
+tactic=normal|skip
+Some enemies on the way.
+tactic=normal
+tactic=skip
+| Just run through.
+
+name=enemy=Gaheron_Baelfire:legendary
+tactic=normal
+Throw Molten Hearts at Gaheron to deal damage. Logan's Forcefield will break incoming Boulders and they will leave a Molten Heart. Use mobility skills to move faster.
+Red circles will launch you after few seconds so stay out of them. Take 1 stun break as a fail safe if you are about to get smashed by a Boulder.
+There's no rush to kill him so focus on resurrecting dead people.
+Every 25% Gaheron will turn vulnerable for a while and get new skills. Go hit him for some free damage.
+After 75% he starts spawning Magma Walls. Either destroy, wait for Boulders to destroy them or just jump around (dangerous but fast). Don't panic if you get caught between walls, just watch out for Boulders!
+After 25% he will occasionally knockdown people on the area so have 1 stun break.
+tactic=exploit
+Gaheron isn't really invulnerable. You just can't target him. You can still deal damage to him at all times.
+
+###################################################################################################################
+
+path=CoF1
+name=Citadel of Flame Path 1: Destroy the superweapon
+tactic=normal
+Level: 75.
+Reward: 1.31 g + 60 tokens.
+Average length: 9 minutes.
+Difficulty: Easy.
+Enemies: Flame Legion.
+Time: Night.
+Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force if you want to be optimal.
+youtube=1b8bKS-Sikc|Video_guide (Banter Bill).
+Current record: record=19.
+
+name=Start
+image=https://i.imgur.com/LWyum24.jpg
+tactic=normal
+If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=The_Battle_for_the_Flame_Citadel_and_Senecus_Castrum. Alternatively you can leave party and try relogging until you get to another instance.
+Talk to Explorer Mallon to start the dungeon.
+Run to Soldier Ista Fuseclaw to choose a path. After the path is chosen, you will have to run Crusader Ferrah and Scholar Magg up to the gate.
+Use swiftness on Crusader Ferrah and Scholar Magg to speed up the run.
+tactic=skip
+Immediately end the cutscene while running to Soldier Ista Fuseclaw, quickly talk to Crusader Ferrah before other members end their cutscenes.
+Talk to Soldier Ista Fuseclaw but don't choose a path just yet. Run all the way to the gate then select path 1. This will make Crusader Ferrah teleport up, skipping the run.
+
+name=Gate
+tactic=normal
+After the gate you will face 2 enemy=Flame_Legion_Turrets:structure and 2 enemy=Godforged_Fanatics:elite. Turrets cast fireballs which can be dodged or reflected.
+tactic=mesmer
+Into the Void at one end of the turret to gather the Fanatics together so aoes can hit both Fanatics and turrets.
+tactic=guardian
+Wall of Reflection will help to protect the team from turrets.
+tactic=thief
+Smoke screen will negate damage from turrets and blinds negate damage from Fanatics.
+tactic=bug
+If you kill the initial enemies really fast (less than 9 seconds), Ferrah won't do her dialogue and the enemy=Slave_Driver won't activate.
+
+name=enemy=Slave_Driver:champion
+tactic=normal
+Nearby enemy=Flame_Legion_Effigy:veteran wakes up after 10 seconds and keeps respawning if killed. Just focus on the Slave Driver.
+It is recommended for the group to stack might before the fight, and use the highest burst damage available to quickly kill the Slave Driver.
+He isn't very dangerous but does some damage at melee-range so you can kite him around while dodging fireballs thrown by the Effigy.
+
+name=Bridge
+tactic=normal
+Before the bridge there are enemy=Flame_Legion_Stalker:elite and enemy=Godforged_Fanatic:elite. On the bridge there are enemy=Blacklan_Firetooth:elite and 2 enemy=Flame_Legion_Stalkers:elite. After the bridge there are 2 enemy=Flame_Legion_Turrets:structure and 2 enemy=Godforged_Flamecallers:elite.
+All of the enemies are often skipped (poor rewards). Dodge at Flame Turrets to avoid most of the damage.
+tactic=optional
+If you want to experience secret boss event you should jump down using link=http://wiki.guildwars2.com/images/c/cd/Walkthrough-CoF-P1-Drop-down-to-Ooze.jpg|ledges. You will end up in a canyon filled with enemy=Red_Oozes:elite. Go uphill until you reach enemy=King_Ooze:champion and enemy=Queen_Ooze:champion.
+The King glows and then bounces 3 times causing lots of damage and a launch making him more much more dangerous. Focus him down while blocking/evading his bounces. Don't stand near any ledges so you don't fall down.  Once he reaches 50% he will disappear. Then proceed to kill Queen who immobilizes and does some AoE damage. Once they both are dead they reappear as enemy=United_Ooze:legendary.
+The United Ooze has the same attacks as King and Queen and he also spawns normal Oozes.
+
+name=Saving the engineer, Acolytes
+tactic=normal
+The goal is to kill the four respawning (40 s) enemy=Flame_Legion_Acolytes:normal for a total of 10 until the timer (very long) runs out. There are six respawning enemy=text:Flame_Legion|Flame_Legion_Bladestorm:elite|Flame_Legion_Shadowblade:elite|Godforged_Hellstorm:elite|Godforged_Smokelord:elite|Flame_Legion_Stalker:elite|Godforged_Flamecaller:elite and some normals.
+Focus Acolytes. Run away from enemies while waiting for respawn. You can either run to the back behind braziers or to the right. Few enemies may follow but shouldn't be too hard to manage.
+Immediately spike Acolytes down when they respawn and run back to safe spots. Repeat until 10 acolytes have been slain.
+tactic=warrior
+Use Eviscerate to one-hit an Acolyte if you are using a high damage build.
+tactic=mesmer
+In a high damage build, use Phantasmal Swordsman and Blurred Frenzy. After the phantasm has hit the acolyte, shatter.
+tactic=guardian
+If using Greatsword in a high damage build, use Symbol of Wrath followed by Whirling Wrath. If using one hand weapons, Shield of Wrath or Zealot's Fire will provide high burst.
+tactic=thief
+Cloak and Dagger then Backstab to burst Acolyte.
+tactic=ranger
+Using Hunter's Call then Path of Scars should kill an Acolyte at range using a high damage build.
+tactic=necromancer
+A physical damage build should use put down a Well of Suffering followed by Reaper's Touch to burst down an acolyte.
+tactic=elementalist
+Arcane wave, arcane blast and arcane power with combination of Scepter fire skills will guarantee a quick kill.
+tactic=engineer
+Jump shot followed by Grenade Barrage will burst down an acolyte in a high damage build.
+
+name=Flaming Boulders
+image=https://i.imgur.com/7k0ZOqb.jpg
+image=http://i.imgur.com/ISTMHuG.jpg
+tactic=normal
+You need to get 3 flames past Boulders and put them on pedestals (be quick they won't last long).
+Don't mindlessly rush in. Look for a good moment and dodge if needed (a bit risky but better than dying).
+tactic=mesmer
+Use Blink to get past Boulders before they even appear and Portal your team over them.
+tactic=thief
+You can solo this part with wiki=Shadow_Trap, wiki=Shadowstep and wiki=Steal as seen on this youtube=ImpySgFsExk|video.
+Use Shadow Trap at the start, deliver a flame and then destroy the trap to teleport to the start. Take another one, use Shadowstep to teleport over boulders, deliver the flame and again teleport back to the start. Pick the last flame, use Steal on a boulder and quickly activate the last pedestal.
+
+name=Gate and four braziers
+image=https://i.imgur.com/Ir8zaHT.jpg
+image=https://i.imgur.com/HykK5cN.jpg
+tactic=normal
+4 players need to stand close to braziers to open the gate and make enemy=Gate_Lock:structure vulnerable. Last player (with good DPS) destroys the Lock which is guarded by 1 enemy=Godforged_Hellstorm:elite.
+While each brazier is activated, few Normal Flame Legion enemies constantly respawn. They are very easy to deal with as long as you can do damage.
+tactic=elementalist
+Ice Storm (Frost Bow) is extremely effective against Lock.
+tactic=thief
+To quickly destroy the Lock use wiki=Steal to jump in then wiki=Haste, wiki=Cloak_and_Dagger, wiki=Backstab, some normal hits and finish with wiki=Heartseeker.
+tactic=necromancer
+Flesh Golem's charge is very effective against the Lock.
+
+name=enemy=Searing_Effigy:legendary
+image=https://i.imgur.com/VmZ8B3w.jpg
+tactic=normal
+Very easy to kill as long as you stay close (he has a powerful ranged attack).
+He summons Searing Crystal which give him regeneration. You can use poison if you have easy access to it but keep in mind that Crystals won't make much difference so don't try to hunt them down. However, the crystals can be used to rally.
+The Effigy will cast a large aoe that inflicts a long burn on you. Dodge after counting 1,2 when you see the circle appear to avoid damage.
+He will summon a fire storm when he only raises his hand. Avoid these circles when they spawn to not get launched (dodge or use stability if needed).
+When he raise his right arm and smashes the ground he will shoot purple projectiles which knocks you down. Flame Burst can be reflected or absorbed. Keep stun breakers or stability if you make a mistake.
+Do not tank his flamethrower attack, side step to avoid damage.
+tactic=mesmer
+Feedback when he raises his hand to reflect back the damage. This may take practice as animation may seem similar to fire storm. Other projectile reflection such as Phantasmal Warden or Into the Void will work too.
+tactic=guardian
+Wall of reflection will reflect Flame Bursts. Try to keep aegis up on teammates to negate damage.
+
+###################################################################################################################
+
+path=CoF2
+name=Citadel of Flame Path 2: Prevent the resurrection of Gaheron
+tactic=normal
+Level: 75.
+Reward: 1.31 g + 60 tokens.
+Average length: 17 minutes.
+Difficulty: Easy.
+Enemies: Flame Legion.
+Time: Night.
+Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force if you want to be optimal.
+youtube=CaS1P8RXvV8|Video_guide (Banter Bill).
+Current record: record=20.
+
+name=Start
+image=https://i.imgur.com/LWyum24.jpg
+tactic=normal
+If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=The_Battle_for_the_Flame_Citadel_and_Senecus_Castrum. Alternatively you can leave party and try relogging until you get to another instance.
+After first gate you will face 3 enemy=Godforged_Hellstorms:elite.
+Then you have to search cells until a enemy=Devourer_Burrow:structure appears. It constantly summons enemy=Carrion_Devourers:elite, enemy=Lashtail_Devourers:elite and enemy=Whiptail_Devourers:elite (up to 5).
+Then you have to search bit more until lots of enemy=Devourer_Egg_Nests:structure appear. They constantly summons enemy=Carrion_Devourers:normal, enemy=Lashtail_Devourers:normal and enemy=Whiptail_Devourers:normal (up to 5).
+Lashtails aren't very dangerous. They can immobilize you if you tank their whole rapid attack so move around. Whiptails are ranged and do poison. Carrions are dangerous with their multiple knockdowns so have a stun break.
+Then you have to kill 3 enemy=Godforged_Fanatics:elite. Once they are dead use chains in that room to open a gate.
+
+name=enemy=Prison_Warden:champion
+tactic=normal
+He has only melee attacks and is easy to kill. Try to predict and dodge his Kick.
+He summons Devourers based at his health. Try to AoE/cleave them while focusing Warden. When he is below he will summon enemy=Siege_Devourer:elite. Be ready to dodge if you see red circles.
+Once he is dead, run back.
+
+name=Defusing the Bomb
+tactic=normal
+You need to bring every bomb to Magg before the timer runs out. Bring mobility skills.
+One player should wait at Magg while others get near the farthest ones. Once people are ready, that one player talks to Magg and everyone starts bringing the bombs.
+Don't bother with killing any enemies.
+Near Magg on right you can climb up the wall to reach upper area faster. However, it's not really needed and takes some practice so you may actually be a burden to your team if you try it and do not have it mastered.
+Once you finish don't forget to loot the chest. Lead Magg to ore and wait a bit until he does his stuff.
+tactic=thief
+Use Infiltrator's Arrow (Shortbow), Infiltrator's Strike (Sword) and Shadow Trap for mobility and to teleport up on ledges.
+
+name=Crossing the Lava field
+tactic=normal
+Talk to Magg to get an Extinguisher. You can use it to extinguish flames which would otherwise deal lots of damage (and kill Magg).
+~2 players should use Extinguishers while other people buff with swiftness and condition-removal.
+Once you a through run forward as much as you can to lose enemies and make Magg teleport at you. When Magg is happy use "Shrine of Sacrifice" waypoint.
+tactic=warrior
+If Magg gets stuck and dies on lava use wiki=Battle_Standard to get him up.
+tactic=bug
+Magg may not interact with the magma stone. If this happens move around the area.
+When using the waypoint trick Magg teleports to the waypoint instead of the player at the magma stone. To prevent this make sure people are clearly in the explosive room before they waypoint.
+
+name=Bombing the Gate
+tactic=normal
+First clear the two enemy=Smokelords. They deal lots of damage so they are often killed one by one. If you want to separate them either pull one behind a corner or use a pull skill. Then talk to Magg to start the event when everyone is ready.
+During the event you need to defend Magg from enemy=Assassins. They spawn roughly every 10 seconds at other side of the room and start moving slowly towards Magg. They are transparent, similar to a stealth effect on allies, and have one stack of stability. They are easy to kill but you can call them as a target if needed.
+Lots of normal Flame Legion enemies respawn around the room which creates lots of pressure. Stay mobile to reduce damage from melee enemies and focus on killing ranged enemies. If you get downed target low health enemies to rally.
+tactic=warrior
+Take wiki=Defiant_Stance to counter high damage from Smokelords. Avoid using it to swap wiki=Healing_Signet for the event.
+tactic=thief
+Use wiki=Scorpion_Wire to separate Smokelords.
+
+name=enemy=Stone:structure
+tactic=normal
+The Stone is invulnerable while any of the 4 enemy=Acolytes:normal are alive. There is also an invulnerable Gaheron who will attack players.
+To maximize vulnerability period you should sync kill the Acolytes. Each player goes near one Acolyte while last one is playing with Gaheron. Say "ready" or "r" when you are ready to kill. Whenever everyone is ready kill your targets and start focusing the Stone.
+Eventually Acolytes respawn so you have to kill them again (either sync or just kill, it won't make big difference as long as people don't chase the same targets). Repeat until the Stone is destroyed.
+tactic=elementalist
+Meteor Shower (Staff) and Ice Storm (Frost Bow) are extremely effective against Stone.
+tactic=bug
+It may be hard to hit Stone on melee range. Try to stand on a bit higher ground. Untargeting Stone and hitting air next to it may help too.
+
+###################################################################################################################
+
+path=CoF3
+name=Citadel of Flame Path 3: Kill the new Tribune
+tactic=normal
+Level: 75.
+Reward: 1.31 g + 60 tokens.
+Average length: 24 minutes.
+Difficulty: Medium.
+Enemies: Flame Legion.
+Time: Night.
+Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force if you want to be optimal.
+youtube=D5YT8VwPsOU|Video_guide (Banter Bill).
+Current record: record=21.
+
+name=Start
+image=https://i.imgur.com/LWyum24.jpg
+tactic=normal
+If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=The_Battle_for_the_Flame_Citadel_and_Senecus_Castrum. Alternatively you can leave party and try relogging until you get to another instance.
+Talk to NPC.
+
+name=Torches
+tactic=thief
+Equip Shadow Refuge and use it if you think enemies will respawn during the activation.
+tactic=normal
+All normal enemies respawn so avoid aggroing them if possible. When you get close to 2 enemy=Flame_Legion_Turrets:structure and 2 enemy=Godforged_Flamecallers:elite they will put up a protective shield.
+To disable it, you must light all 3 torches at the same time. Activating a torch takes a few seconds and taking damage interrupts so you have to clear enemies first, use stealth, or use a projectile defense skill as all the enemies only have projectile attacks. Enemies respawn so you need to synchronise both killing/stealth/projectile defense and activating.
+The player with the best damage/utility and player skill should be alone at his torch while rest of the players split up equally. Don't aggro enemies until everyone is ready.
+Attack the groups at the same time (someone says "go"). Once you are done and waiting at the torch, say "ready" (or "r"). When everyone is ready someone says "go" or just starts activating (others see it on top-right corner and can activate theirs).
+2 remaining players should protect activators in case something goes wrong. If you fail to get it done then try to analyse what went wrong and keep trying.
+tactic=coordinated
+Enemy respawn timers are quite long so you don't really have to sync it if people know what they are doing.
+tactic=optional
+If you want to experience secret boss event you should jump down using link=http://wiki.guildwars2.com/images/c/cd/Walkthrough-CoF-P1-Drop-down-to-Ooze.jpg|ledges. You will end up in a canyon filled with enemy=Red_Oozes:elite. Go uphill until you reach enemy=King_Ooze:champion and enemy=Queen_Ooze:champion.
+The King glows and then bounces 3 times causing lots of damage and a launch making him more much more dangerous. Focus him down while blocking/evading his bounces. Don't stand near any ledges so you don't fall down.  Once he reaches 50% he will disappear. Then proceed to kill Queen who immobilizes and does some AoE damage. Once they both are dead they reappear as enemy=United_Ooze:legendary.
+The United Ooze has the same attacks as King and Queen and he also spawns normal Oozes.
+
+name=Bridge
+tactic=normal|skip
+There are 2 enemy=Flame_Legion_Turrets:structure and 2 enemy=Godforged_Flamecallers:elite right after shield (which you approached earlier). Afterwards there are enemy=Godforged_Fanatic:elite and 2 enemy=Flame_Legion_Stalkers:elite.
+tactic=skip
+| Just run past both groups.
+tactic=normal|skip
+On the bridge there are enemy=Siege_Commander:champion and lots of normal enemies. Focus normal enemies to make the Commander fall back.
+tactic=normal
+After that wait for Mortars to clear huge group (the group isn't dangerous but Mortars will kill you). Destroy 4 enemy=Flame_Legion_Turrets:structure after the bridge.
+tactic=skip
+When he falls back run through remaining enemies and 4 enemy=Flame_Turrets:structure quickly so friendly Mortars won't kill you. Run to the back wall so you can kill the Commander without getting shot by the Turrets.
+
+name=enemy=Siege_Commander:champion
+tactic=ranged|melee
+Focus normal enemies first (if any were able to escape). Watch out for his buffs. You can easily kill yourself due to his retaliation. Take boon removal to strip it.
+tactic=ranged
+Keep some distance so you won't get by his melee range attack. Take party wide condition removal to remove burning from melee players (also use it if someone gets multiple stacks of bleeding).
+tactic=melee
+He occasionally jumps back and shoots with flamethrower for burning. Try to predict it to dodge and use condition removal if you get hit.
+
+name=The Great Hall
+tactic=normal
+You will face 5 waves of elite enemies. Remember to run away to get out-of-combat regeneration if needed.
+Initially there are enemy=Flame_Legion_Shadowblade:elite, enemy=Godforged_Hellstorm:elite, 2 enemy=Flame_Legion_Bladestorms:normal and enemy=Flame_Legion_Bladestorm_(Hammer):normal.
+Once enemies are cleared and you have capped the room first the wave spawns. If at any point they capture it back initial enemies respawn while all remaining enemies stay which can leave you with lots of enemies to deal with.
+The next wave always spawns when there are only 2 enemies left. Try to kill the last 3 enemies at the same time (keep calling target with the highest health). If you manage to kill them all at about same time, everyone will get out of combat and heal up.
+1st wave: 2 enemy=Godforged_Fanatics:elite, 2 enemy=Flame_Legion_Stalkers:normal and enemy=Flame_Legion_Bladestorm_(Hammer):normal. Only two Elites, so try to focus them first down.
+2nd wave: enemy=Flame_Legion_Fire_Shaman:elite and 3 enemy=Flame_Legion_Bladestorms:elite. Focus Shaman while kiting Bladestorms.
+3rd wave: 4 enemy=Godforged_Flamecallers:elite.
+4th wave: enemy=Godforged_Smokelord:elite and 3 enemy=Flame_Legion_Shadowblades:elite.
+5th wave: 2 enemy=Godforged_Hellstorms:elite and 2 enemy=Flame_Legion_Stalkers:elite.
+
+name=Corridor of Bombs
+tactic=normal
+You need to get through the corridor of bombs. They light and go off every 4.75 seconds. If you are close to one while it is lit, it will explode after 1 second, instantly downing you if you are hit.
+Go naked to avoid possibly having to repair, and grab mobility skills. Wait for the bombs to go off before going in. There are some permanently lit bombs on the sides, so just change side to avoid them. If you get surrounded by bombs wait ~0.2 seconds and dodge back.
+After the corridor, 3 enemy=Flame_Legion_Turrets:structure start immediately shooting at you from the ledge. You can use ranged to destroy them, although it's more efficient to just run past them.
+tactic=optional
+If you want challenge do it without any mobility skills or buffs. Even better if you use Halloween Tonic to cripple yourself.
+tactic=coordinated
+Simply stealth through.
+
+name=enemy=Gaheron's_Pet_Drake:champion
+tactic=normal|skip
+At the entrance there are 2 enemy=Godforged_Hellstorms:elite and bit after them 3 enemy=Flame_Legion_Turrets:structure (unless you destroyed them earlier).
+tactic=skip
+| Just run forward even past the Drake to lose aggro from the Hellstorms. Then go back to the room where the Drake came from. There you can kill it without getting attacked by any Turrets.
+tactic=normal|skip
+Drake is extremely easy to kill (even solo) as long as you keep kiting. Killing it spawns a waypoint which allows people skip the corridor. If people have issues with bombs, you should consider killing the Drake alone or with anyone else that makes it.
+
+name=enemy=Tribune_Burntclaw:legendary
+tactic=melee|ranged
+He is very easy to kill as long as you know what to do. The most dangerous thing is when you get hit by long immobilize. Then he hits you with his hammer which launches you into the lava. Most of your health already gone you will quickly get downed and then defeated in the lava.
+You should have 2-3 ways to counter the immobilize (unless you can dodge it). Either remove it, block his melee attack or use some kind of immunity.
+He also throws Hammers but it's not dangerous unless you stand near the edge. Another dangerous thing is when he turns invulnerable and goes into the middle. He will cause circle which progressively increases in size. It launches you so you may get hit multiple times and even end up in tre lava. Just stay cool and dodge through it.
+You should try to keep Tribune Burntclaw as close to middle as possible. If you pull him away he will spend most of his time invulnerable walking back to middle. Additionally, if he is in the middle it is less likely a launch will cause you to end up in the lava.
+tactic=ranged
+Keep some distance to give you more time to dodge his projectiles.
+tactic=melee
+Try to stay at max melee range and behind his back. If he is targeting you then try to direct his attacks away from other players.
+tactic=melee|ranged
+| Use slowdowns to assist with kiting. If you are kiting then remember to circle around the middle to reduce the time he spends invulnerable.
+tactic=melee|ranged
+His projectiles either apply long immobilized or a short knockback. If you get immobilized there is a risk of getting hit by his melee and getting launched to the lava.
+tactic=ranged
+| Dodge everythin he throws at you. Take at least one counter
+tactic=melee
+Try to learn the animations and try to dodge them (especially immobilize). It is quite difficult so take 2-3 counters
+tactic=melee|ranged
+| (either condition removal to remove immobilized or block/evade/immunity to tank melee hit).
+After 75% he will occasionally turn invulnerable, walk to the middle and send a shockwave. Just dodge through it. Just don't stand near the edge so you won't get knocked into the lava if you fail to dodge it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,920 @@
+<script type="text/javascript">
+	"use strict";
+	
+	var paths;
+	var players;
+	var groups;
+	var characters;
+	var gameBuilds;
+	
+	$(document).ready(function() {
+		loadSettings(false, false);
+		loadPage();	
+		
+		$(function() {
+			$("#game-build-date").datepicker({dateFormat: "yyyy-mm-dd"});
+		});
+	
+		$(function() {
+			$("#record-date").datepicker({dateFormat: "yyyy-mm-dd"});
+		});
+		
+		$('#record-instance').change(function () {
+            updatePathSelect($(this).val(), paths);
+        });
+		$('#record-date').change(updateGameBuild);
+
+		exec("readData", "");
+	});
+		
+	function addgroup() {
+		var website = encodeURIComponent($("#group-website").val());
+		exec("addGroup", "&name=" + $("#group.name").val() + "&tag=" + $("#group-tag").val() + "&website=" + website);
+	}
+
+	function deletegroup()	{
+		exec("deleteGroup", "&id=" + $("#group-id").val());
+	}
+
+	function editgroup() {
+		var website = encodeURIComponent($("#group-website").val());
+		exec("editGroup", "&name=" + $("#group.name").val() + "&tag=" + $("#group-tag").val() + "&website=" + website + "&id=" + $("#group-id").val());
+	}
+
+	function addPlayer() {
+		var groups = [];
+		for (var i = 1; i < 6; i++) {
+			// Only different groups.
+			var group = $("#player-group" + i).val();
+			if (group > 0 && groups.indexOf(group) == -1)
+				groups.push(group);
+		}
+		groups = groups.join("|");
+		exec("addPlayer", "&name=" + $("#player-name").val() + "&account=" + $("#player-account").val() + "&groups=" + groups);
+	}
+
+	function deletePlayer() {
+		exec("deletePlayer", "&id=" + $("#player-id").val());
+	}
+
+	function editPlayer() {
+		var groups = [];
+		for (var i = 1; i < 6; i++) {
+			// Only different groups.
+			var group = $("#player-group" + i).val();
+			if (group > 0 && groups.indexOf(group) == -1)
+				groups.push(group);
+		}
+		groups = groups.join("|");
+		exec("editPlayer", "&name=" + $("#player-name").val() + "&account=" + $("#player-account").val() + "&groups=" + groups + "&id=" + $("#player-id").val());
+	}
+
+	function addCharacter() {
+		exec("addCharacter", "&name=" + $("#character-name").val() + "&player=" + $("#character-player").val() + "&profession=" + $("#character-profession").val());
+	}
+
+	function deleteCharacter()	{
+		exec("deleteCharacter", "&id=" + $("#character-id").val());
+	}
+
+	function editCharacter() {
+		exec("editCharacter", "&name=" + $("#character-name").val() + "&player=" + $("#character-player").val() + "&profession=" + $("#character-profession").val() +"&id=" + $("#character-id").val());
+	}
+	
+	function addRecord() {
+		var date = dateToSQL($("#record-date").val());
+		if (date == "") {
+			$("#messages").html("Incorrect date format.");
+			return;
+		}
+		var characters = [];
+		var videos = [];
+		var groups = [];
+		for (var i = 1; i < 6; i++) {
+			characters.push($("#record-character" + i).val());
+			videos.push($("#record-video" + i).val());
+			groups.push($("#record-group" + i).val());
+		}
+		characters = characters.join("|");
+		videos = encodeURIComponent(videos.join("|"));
+		groups = groups.join("|");
+		var topicLink = encodeURIComponent($("#record-topic-link").val());
+		if (!checkGameBuild()) {
+			$("#messages").html("Error with game builds. Record not added. Fix game builds manually if needed.");
+			return;
+		}
+		exec("addRecord", "&time=" + buildTime() + "&date=" + date + "&path=" + $("#record-path").val() + "&validity=" + $("#record-validity").val()
+			  + "&topiclink=" + topicLink + "&category=" + $("#record-category").val() + "&groups=" + groups
+			  + "&characters=" + characters + "&videos=" + videos);
+	}
+
+	function deleteRecord()	{
+		exec("deleteRecord", "&id=" + $("#record-id").val());
+	}
+
+	function editRecord() {
+		var date = $("#record-date").val();
+		if (date != "")
+		{
+			date = dateToSQL(date);
+			if (date == "")
+			{
+				$("#messages").html("Incorrect date format.");
+				return;
+			}
+		}
+		var topicLink = encodeURIComponent($("#record-topic-link").val());
+		if (!checkGameBuild()) {
+			$("#messages").html("Error with game builds. Record not edited. Fix game builds manually if needed.");
+			return;
+		}
+		exec("editRecord", "&time=" + buildTime() + "&date=" + date + "&path=" + $("#record-path").val() + "&validity=" + $("#record-validity").val()
+			 + "&topiclink=" + topicLink + "&category=" + $("#record-category").val() + "&id=" + $("#record-id").val());
+			 
+		var characters = [];
+		var videos = [];
+		var groups = [];
+		for (var i = 1; i < 6; i++) {
+			characters.push($("#record-character" + i).val());
+			videos.push($("#record-video" + i).val());
+			groups.push($("#record-group" + i).val());
+		}
+		characters = characters.join("|");
+		videos = encodeURIComponent(videos.join("|"));
+		groups = groups.join("|");
+		exec("editCharactersRecord", "&characters=" + characters + "&videos=" + videos + "&groups=" + groups  + "&id=" + $("#record-id").val());
+	}
+
+	function addGameBuild() {
+		var date = dateToSQL($("#game-build-date").val());
+		if (date == 0) {
+			$("#messages").html("Incorrect date format.");
+			return;
+		}
+		exec("addGameBuild", "&date=" + date + "&build=" + $("#game-build-build").val());
+	}
+
+	function deleteGameBuild() {
+		exec("deleteGameBuild", "&id=" + $("#game-build-id").val());
+	}
+
+	function editGameBuild() {
+		var date = $("#game-build-date").val();
+		if (date != "")
+		{
+			date = dateToSQL(date);
+			if (date == "")
+			{
+				$("#messages").html("Incorrect date format.");
+				return;
+			}
+		}
+		exec("editGameBuild", "&date=" + date + "&build=" + $("#game-build-build").val() + "&id=" + $("#game-build-id").val());
+	}
+
+	function checkGameBuild() {
+		// Update game build if needed.
+		var build = $("#record-game-build").val();
+		if (build =="")
+			return;
+		var date1 = dateToSQL($("#record-date").val());
+		if (date1 == "")
+			return;
+		// Find the game build.
+		for (var i = 0; i < gameBuilds.length; i++) {
+			// Find
+			if (gameBuilds[i].build > build)
+				continue;
+			// Error check: Date shouldn't be after next game build.
+			// Note: Equal date is ok.
+			if (i > 0 && isDateLessThan(gameBuilds[i - 1].date, date1) == 1)
+				return false;
+			// Error check: Date shouldn't be before previous game build.
+			// Note: Equal date is ok.
+			if (gameBuilds[i].build != build) {
+				if (isDateLessThan(date1, gameBuilds[i].date) == 1)
+					return false;
+				break;
+			}
+			else {
+				if (i < gameBuilds.length && isDateLessThan(date1, gameBuilds[i + 1].date) == 1)
+					return false;
+			}
+			// Check if game build date needs updating.
+			if (isDateLessThan(date1, gameBuilds[i].date) == 1)
+				exec("editGameBuild", "&date=" + date1 + "&build=" + build + "&id=" + gameBuilds[i].ID);
+
+			return true;
+		}
+		// If not found then add a new.
+		exec("addGameBuild", "&date=" + date1 + "&build=" + build);
+		return true;
+	}
+
+	function checkGameBuildIntegrity() {
+		// Ensure that game build data is valid.
+		var date = "2050/01/01";
+		for (var i = 0; i < gameBuilds.length; i++) {
+			// Note: Equal date is ok.
+			if (isDateLessThan(date, gameBuilds[i].date) == 1) {
+				$("#messages").html("Warning: Game build " + gameBuilds[i].ID + " is not consistent. Fix!");
+				return;
+			}
+			date = gameBuilds[i].date;
+		}
+	}
+
+	function buildTime() {
+		var hours = Number($("#record-hour").val());
+		var minutes = Number($("#record-minute").val());
+		var seconds = Number($("#record-second").val());
+		var millis = 1000 * (seconds + 60 * minutes + 3600 * hours);
+		if (millis == 0)
+			return "";
+		return millis;
+	}
+
+	function exec(type, params)	{
+		var request = $.ajax({
+			url: "interface_exec.php",
+			type: "post",
+			data: "type=" + type + "&username=" + login + "&password=" + password + "&database=" + database + params
+		});
+
+		// Callback handler that will be called on success
+		request.done(function (data){
+			data = JSON.parse(data);
+			$("#messages").html(data.message);
+			if (data.success)
+			{
+				if (type == "readData" || type == "addGroup" || type == "deleteGroup" || type == "editGroup")
+				{
+					groups = data.groups;
+					updateGroupTable(data.groups);
+					updateGroupSelect(data.groups);
+				}
+				if (type == "readData" || type == "addPlayer" || type == "deletePlayer" || type == "editPlayer" || type == "editGroup")
+				{
+					players = data.players;
+					updatePlayerTable(data.players);
+				}
+				if (type == "readData" || type == "addPlayer" || type == "deletePlayer" || type == "editPlayer")
+				{
+					players = data.players;
+					updatePlayerSelect(data.players);
+				}
+				if (type == "readData" || type == "addCharacter" || type == "deleteCharacter" || type == "editCharacter" || type == "editPlayer")
+				{
+					characters = data.characters;
+					updateCharacterTable(data.characters);
+				}
+				if (type == "readData" || type == "addGameBuild" || type == "deleteGameBuild" || type == "editGameBuild")
+				{
+					gameBuilds = data.gameBuilds;
+					updateGameBuildTable(data.gameBuilds);
+					checkGameBuildIntegrity();
+				}
+				if (type == "readData" || type == "addCharacter" || type == "deleteCharacter" || type == "editCharacter")
+				{
+					characters = data.characters;
+					updateCharacterSelect(data.characters);
+				}
+				if (type == "readData" || type == "addRecord" || type == "deleteRecord" || type == "editRecord" || type == "editCharacter")
+				{
+					updateRecordTable(data.records);
+				}
+				if (type == "readData")
+				{
+					updateProfessionSelect(data.professions);
+					updateInstanceSelect(data.instances);
+					updateCategorySelect(data.categories);
+					// Store to variables because path select updates based on instance select selection.
+					paths = data.paths;
+					updatePathSelect($('#record-instance').val(), data.paths);
+				}
+					
+			}
+		});
+
+		// Callback handler that will be called on failure
+		request.fail(function (data){
+			data = JSON.parse(data);
+			$("#messages").html(data.message);
+		});
+	}
+
+	function updateGroupTable(groups) {
+		var content = "<table class=\"table table-striped clickable\"><thead><tr>";
+		content += "<td>Name</td>";
+		content += "<td>Tag</td>";
+		content += "<td>Website</td>";
+		content += "<td>ID</td>";
+		content += "</tr></thead><tbody>";
+		$.each(groups, function() {
+			content += "<tr>";
+			content += "<td>" + this.name + "</td>";
+			content += "<td>" + this.tag + "</td>";
+			content += "<td>" + this.website + "</td>";
+			content += "<td>" + this.ID + "</td>";
+			content += "</tr>";
+		});
+		content += "</tbody></table>";
+		$("#group-table").html(content);
+		$('#group-table .table > tbody > tr').click(function() {
+			updateGroupControls($(this).html());
+		});
+	}
+	
+	function updateGroupControls(data) {
+		// Remove first <td> and last </td>.
+		data = data.substring(4, data.length - 5);
+		// Split to pieces.
+		data = data.split("</td><td>");
+		if (data.length != 4) {
+			console.log("Internal error.")
+			console.log(data)
+			return;
+		}
+		$("#group.name").val(data[0]);
+		$("#group-tag").val(data[1]);
+		$("#group-website").val(data[2]);
+		$("#group-id").val(data[3]);
+	}
+
+	function updatePlayerTable(players) {
+		var content = "<table class=\"table table-striped clickable\"><thead><tr>";
+		content += "<td>Name</td>";
+		content += "<td>Account</td>";
+		content += "<td>Groups</td>";
+		content += "<td>Characters</td>";
+		content += "<td>ID</td>";
+		content += "</tr></thead><tbody>";
+		$.each(players, function() {
+			content += "<tr>";
+			content += "<td>" + this.name + "</td>";
+			content += "<td>" + this.account + "</td>";
+			content += "<td>" + this.groups.join(", ") + "</td>";
+			content += "<td>" + this.characters.join(", ") + "</td>";
+			content += "<td>" + this.ID + "</td>";
+			content += "</tr>";
+		});
+		content += "</tbody></table>";
+		$("#player-table").html(content);
+		$('#player-table .table > tbody > tr').click(function() {
+			updatePlayerControls($(this).html());
+		});
+	}
+	
+	function updatePlayerControls(data) {
+		// Remove first <td> and last </td>.
+		data = data.substring(4, data.length - 5);
+		// Split to pieces.
+		data = data.split("</td><td>");
+		if (data.length != 5) {
+			console.log("Internal error.")
+			console.log(data)
+			return;
+		}
+		$("#player-name").val(data[0]);
+		$("#player-account").val(data[1]);
+		// Split groups.
+		var groups = data[2].split(", ");
+		// Update groups.
+		for (var i = 0; i < 5; i++) {
+			var group = "None";
+			if (groups.length > i && groups[i].length > 0)
+				group = groups[i];
+			$("#player-group" + (i + 1) + " option").each(function() {
+				if($(this).text() == group) {
+					$(this).attr('selected', 'selected');           
+				}                 
+			});
+		}
+		$("#player-id").val(data[4]);
+	}
+	
+	function updateCharacterTable(characters) {
+		var content = "<table class=\"table table-striped clickable\"><thead><tr>";
+		content += "<td>Name</td>";
+		content += "<td>Player</td>";
+		content += "<td>Account</td>";
+		content += "<td>Profession</td>";
+		content += "<td>ID</td>";
+		content += "</tr></thead><tbody>";
+		$.each(characters, function() {
+			content += "<tr>";
+			content += "<td>" + this.name + "</td>";
+			content += "<td>" + this.player + "</td>";
+			content += "<td>" + this.account + "</td>";
+			content += "<td>" + this.profession + "</td>";
+			content += "<td>" + this.ID + "</td>";
+			content += "</tr>";
+		});
+		content += "</tbody></table>";
+		$("#character-table").html(content);
+		$('#character-table .table > tbody > tr').click(function() {
+			updateCharacterControls($(this).html());
+		});
+	}
+	
+	function updateCharacterControls(data) {
+		// Remove first <td> and last </td>.
+		data = data.substring(4, data.length - 5);
+		// Split to pieces.
+		data = data.split("</td><td>");
+		if (data.length != 5) {
+			console.log("Internal error.")
+			console.log(data)
+			return;
+		}
+		$("#character-name").val(data[0]);	
+		$("#character-player option").each(function() {
+			if($(this).text() == data[1]) {
+				$(this).attr('selected', 'selected');            
+			}                        
+		});
+		// data[2] has player account which is not needed.
+		$("#character-profession option").each(function() {
+			if($(this).text() == data[3]) {
+				$(this).attr('selected', 'selected');           
+			}                        
+		});
+		$("#character-id").val(data[4]);
+	}
+	
+	function updateRecordTable(records) {
+		var content = "<table class=\"table table-striped clickable\"><thead><tr>";
+		content += "<td>Instance</td>";
+		content += "<td>Path</td>";
+		content += "<td>Date</td>";
+		content += "<td>Time</td>";
+		content += "<td>Validity</td>";
+		content += "<td>Topic link</td>";
+		content += "<td>Category</td>";
+		content += "<td>Groups</td>";
+		content += "<td>Character 1</td>";
+		content += "<td>Character 2</td>";
+		content += "<td>Character 3</td>";
+		content += "<td>Character 4</td>";
+		content += "<td>Character 5</td>";
+		content += "<td>Video 1</td>";
+		content += "<td>Video 2</td>";
+		content += "<td>Video 3</td>";
+		content += "<td>Video 4</td>";
+		content += "<td>Video 5</td>";
+		content += "<td>ID</td>";
+		content += "</tr></thead><tbody>";
+		$.each(records, function() {
+			content += "<tr>";
+			content += "<td>" + this.instance + "</td>";
+			content += "<td>" + this.path + "</td>";
+			content += "<td>" + SQLToDate(this.date) + "</td>";
+			content += "<td>" + buildTimeStr(this.time, null) + "</td>";
+			content += "<td>" + this.validity + "</td>";
+			content += "<td>" + this.topiclink + "</td>";
+			content += "<td>" + this.category + "</td>";
+			// Get group tags.
+			var tags = [];
+			$.each(this.groups, function() {
+				tags.push(this.tag);
+
+			});
+			content += "<td>" + tags.join(', ') + "</td>";
+			content += "<td>" + this.character1 + "</td>";
+			content += "<td>" + this.character2 + "</td>";
+			content += "<td>" + this.character3 + "</td>";
+			content += "<td>" + this.character4 + "</td>";
+			content += "<td>" + this.character5 + "</td>";
+			content += "<td>" + this.video1 + "</td>";
+			content += "<td>" + this.video2 + "</td>";
+			content += "<td>" + this.video3 + "</td>";
+			content += "<td>" + this.video4 + "</td>";
+			content += "<td>" + this.video5 + "</td>";
+			content += "<td>" + this.ID + "</td>";
+			content += "</tr>";
+		});
+		content += "</tbody></table>";
+		$("#record-table").html(content);
+		$('#record-table .table > tbody > tr').click(function() {
+			updateRecordControls($(this).html());
+		});
+	}
+	
+	function updateRecordControls(data) {
+		// Remove first <td> and last </td>.
+		data = data.substring(4, data.length - 5);
+		// Split to pieces.
+		data = data.split("</td><td>");
+		if (data.length != 19) {
+			console.log("Internal error.")
+			console.log(data)
+			return;
+		}
+		$("#record-instance option").each(function() {
+			if($(this).text() == data[0]) {
+				$(this).attr('selected', 'selected').change();            
+			}                        
+		});
+		$("#record-path option").each(function() {
+			if($(this).text() == data[1]) {
+				$(this).attr('selected', 'selected');           
+			}                        
+		});
+		$("#record-date").val(data[2]).change();
+		// Reset time.
+		$("#record-hours").val("");
+		$("#record-minutes").val("");
+		$("#record-seconds").val("");
+		// Split time value to pieces.
+		var time = data[3].split("&nbsp;");
+		for (var i = 1; i < time.length; i+= 2) {
+			if (time[i] == "h")
+				$("#record-hour").val(time[i - 1]);
+			if (time[i] == "m")
+				$("#record-minute").val(time[i - 1]);
+			if (time[i] == "s")
+				$("#record-second").val(time[i - 1]);
+		}
+		$("#record-validity").val(data[4]);
+		$("#record-topic-link").val(data[5]);
+		$("#record-category").val(data[6]);
+		// Split groups.
+		var groups = data[7].split(", ");
+		// Update groups.
+		for (var i = 0; i < 5; i++) {
+			var group = "None";
+			if (groups.length > i && groups[i].length > 0)
+				group = groups[i];
+			$("#record-group" + (i + 1) + " option").each(function() {
+				if($(this).text().indexOf(group) > -1) {
+					$(this).attr('selected', 'selected');           
+				}                        
+			});
+		}
+		// Update characters.
+		for (var i = 0; i < 5; i++) {
+			var character = data[8 + i];
+			if (character == "")
+				character = "None";
+			$("#record-character" + (i + 1) + " option").each(function() {
+				if($(this).text() == character) {
+					$(this).attr('selected', 'selected');           
+				}                        
+			});
+		}
+		// Update videos.
+		for (var i = 0; i < 5; i++) {
+			$("#record-video" + (i + 1)).val(data[13 + i]);
+		}
+		$("#record-id").val(data[18]);
+	}
+	
+	function updateGameBuildTable(gameBuilds) {
+		var content = "<table class=\"table table-striped clickable\"><thead><tr>";
+		content += "<td>Date</td>";
+		content += "<td>Build</td>";
+		content += "<td>ID</td>";
+		content += "</tr></thead><tbody>";
+		$.each(gameBuilds, function() {
+			content += "<tr>";
+			content += "<td>" + SQLToDate(this.date) + "</td>";
+			content += "<td>" + this.build + "</td>";
+			content += "<td>" + this.ID + "</td>";
+			content += "</tr>";
+		});
+		content += "</tbody></table>";
+		$("#game-build-table").html(content);
+		$('#game-build-table .table > tbody > tr').click(function() {
+			updateGameBuildControls($(this).html());
+		});
+	}
+	
+	function updateGameBuildControls(data) {
+		// Remove first <td> and last </td>.
+		data = data.substring(4, data.length - 5);
+		// Split to pieces.
+		data = data.split("</td><td>");
+		if (data.length != 3) {
+			console.log("Internal error.")
+			console.log(data)
+			return;
+		}
+		$("#game-build-date").val(data[0]);
+		$("#game-build-build").val(data[1]);
+		$("#game-build-id").val(data[2]);
+	}
+
+	
+	function updateGroupSelect(groups) {
+		// Get previous values.
+		// Empty value to ensure proper indexing.
+		var valuesP = [0];
+		var valuesR = [0];
+		for (var i = 1; i < 6; i++) {
+			valuesP.push($("#player-group" + i).val());
+			valuesR.push($("#record-group" + i).val());
+		}
+		var content = '<option value="0">None</option>';
+		$.each(groups, function() {
+			content += '<option value="' + this.ID + '">' + this.name + " " + this.tag + '</option>';
+		});
+		for (var i = 1; i < 6; i++) {
+			$("#player-group" + i).html(content);
+			// Remember old value.
+			if (valuesP[i])
+				$("#player-group" + i).val(valuesP[i]);
+			$("#record-group" + i).html(content);
+			if (valuesR[i])
+				$("#record-group" + i).val(valuesR[i]);
+		}
+	}
+	
+	function updatePlayerSelect(players) {
+		var value = $("#character-player").val();
+		var content = "";
+		$.each(players, function() {
+			content += "<option value=\"" + this.ID + "\">" + this.name + "</option>";
+		});
+		$("#character-player").html(content);
+		if (value)
+			$("#character-player").val(value);
+	}
+	
+	function updateProfessionSelect(professions) {
+		var content = "";
+		$.each(professions, function() {
+			content += "<option value=\"" + this.ID + "\">" + this.name + "</option>";
+		});
+		$("#character-profession").html(content);
+	}
+	
+	function updateCharacterSelect(characters) {
+		// Empty value to ensure proper indexing.
+		var values = [0];
+		for (var i = 1; i < 6; i++) {
+			values.push($("#record-character" + i).val());
+		}
+		var content = "<option value=\"0\">None</option>";
+		$.each(characters, function() {
+			content += "<option value=\"" + this.ID + "\">" + this.name + "</option>";
+		});
+		for (var i = 1; i < 6; i++) {
+			$("#record-character" + i).html(content);
+			if (values[i])
+				$("#record-character" + i).val(values[i]);
+		}
+	}
+	
+	function updateInstanceSelect(instances) {
+		var content = "";
+		$.each(instances, function() {
+			content += "<option value=\"" + this.ID + "\">" + this.name + "</option>";
+		});
+		$("#record-instance").html(content);
+	}
+	
+	function updateCategorySelect(categories) {
+		var content = "";
+		$.each(categories, function() {
+			content += "<option value=\"" + this.ID + "\">" + this.name + "</option>";
+		});
+		$("#record-category").html(content);
+	}
+	
+	function updatePathSelect(instanceID, paths) {
+		var content = "";
+		$.each(paths, function() {
+			if (this.instance != instanceID)
+				return;
+			content += "<option value=\"" + this.ID + "\">" + this.name + "</option>";
+		});
+		$("#record-path").html(content);
+	}
+
+	function updateGameBuild() {
+		var date1 = dateToSQL($("#record-date").val());
+		// Find best matching game build.
+		// These are ordered so loop until date matches.
+		var i = 0;
+		for (; i < gameBuilds.length; i++) {
+			// Find date with equal or less.
+			if (isDateLessThan(gameBuilds[i].date, date1) >= 0)
+				break;
+		}
+		$("#record-game-build").val(gameBuilds[i].build);
+	}
+	
+</script>
+<div>
+    <ul class="nav nav-tabs">
+		<li class="active"><a href="#tab-instructions" data-toggle="tab">Instructions</a></li>
+        <li><a href="#tab-record" data-toggle="tab">Records</a></li>
+		<li><a href="#tab-group" data-toggle="tab">Groups</a></li>
+		<li><a href="#tab-player" data-toggle="tab">Players</a></li>
+		<li><a href="#tab-character" data-toggle="tab">Characters</a></li>
+		<li><a href="#tab-game-build" data-toggle="tab">Game builds</a></li>
+    </ul>
+
+<div class="tab-content">
+<div class="tab-pane active" id="tab-instructions">
+	Welcome approver.
+	<br>
+	Your role is simple:
+	<br>
+	1) Check official dungeon forums few times a week. Every record should be approved or rejected within a week.
+	<br>
+	2) When approving, either make your decision fast or reserve the topic by posting on it.
+	<br>
+	3) Add approved records through this site.
+	<br>
+	4) Ask a second or a third opinion from your fellow approvers if you have any doubts.
+	<br>
+	5) Contact me if you have any trouble or worries.
+	<br>
+	<br>
+	Additionally there are few things you need to be aware of the interface:
+	<br>
+	1) Dates use year/month/day format.
+	<br>
+	2) Don't delete any old records!
+	<br>
+	3) Clicking on rows copies the information to textboxes and dropdowns. Use this when editing records!
+	<br>
+	4) Interface automatically suggest a game build when you choose the date for a record. Make sure the value is correct.
+	<br>
+	5) If a record is done by a single guild you don't have to select a guild for each player.
+	<br>
+	6) Topic link is link to record attempt topic. If it is in dungeon forums you can use a short link as seen in some records.
+	<br>
+	7) Similarly you can use short links for youtube videos. This means only putting the youtube video ID as seen in some records.
+	<br>
+	8) Old records miss lots of information. Feel free to use "Unknown Warrior", etc. whenever needed.
+	<br>
+	9) If you have any doubts test your stuff on test database.
+	<br>
+	10) If something is not working do a hard refresh (ctrl + F5) and if that doesn't help then clear the cache (F12 and right click refresh button on Chrome).
+	<br><br>
+</div>
+<div class="tab-pane" id="tab-record">
+	<label for="record-instance">Instance :</label>
+	<select id="record-instance">
+	</select>
+	<label for="record-path">Path :</label>
+	<select id="record-path">
+	</select>
+	<label for="record-date">Date :</label>
+	<input id="record-date" type="text">
+	<label for="record-game-build">Game build :</label>
+	<input id="record-game-build" type="text">
+	<br>
+	<label for="record-hour">Hours :</label>
+	<input id="record-hour" type="text">
+	<label for="record-minute">Minutes :</label>
+	<input id="record-minute" type="text">
+	<label for="record-second">Seconds :</label>
+	<input id="record-second" type="text">
+	<br>
+	<label for="record-topic-link">Topic link :</label>
+	<input id="record-topic-link" type="text">
+	<label for="record-validity">Valid for current build :</label>
+	<select id="record-validity">
+		<option value="1">Valid</option>
+		<option value="0">All time</option>
+	</select>
+	<label for="record-category">Rule set :</label>
+	<select id="record-category">
+	</select>
+	<br>
+	<label for="record-character1">Character 1 :</label>
+	<select class="record-character" id="record-character1">
+	</select>
+	<label for="record-character2">Character 2 :</label>
+	<select class="record-character" id="record-character2">
+	</select>
+	<label for="record-character3">Character 3 :</label>
+	<select class="record-character" id="record-character3">
+	</select>
+	<label for="record-character4">Character 4 :</label>
+	<select class="record-character" id="record-character4">
+	</select>
+	<label for="record-character5">Character 5 :</label>
+	<select class="record-character" id="record-character5">
+	</select>
+	<br>
+	<label for="record-video1">Video link 1 :</label>
+	<input id="record-video1" type="text">
+	<label for="record-video2">Video link 2 :</label>
+	<input id="record-video2" type="text">
+	<label for="record-video3">Video link 3 :</label>
+	<input id="record-video3" type="text">
+	<label for="record-video4">Video link 4 :</label>
+	<input id="record-video4" type="text">
+	<label for="record-video5">Video link 5 :</label>
+	<input id="record-video5" type="text">
+	<br>
+	<label for="record-group1">Group 1 :</label>
+	<select id="record-group1">
+	</select>
+	<label for="record-group2">Group 2 :</label>
+	<select id="record-group2">
+	</select>
+	<label for="record-group3">Group 3 :</label>
+	<select id="record-group3">
+	</select>
+	<label for="record-group4">Group 4 :</label>
+	<select id="record-group4">
+	</select>
+	<label for="record-group5">Group 5 :</label>
+	<select id="record-group5">
+	</select>
+	<br>
+	<button type="button" onclick="addRecord()">Add</button>
+	<br>
+	<button type="button" onclick="deleteRecord()">Delete</button>
+	<button type="button" onclick="editRecord()">Edit</button>
+	<label for="record-id">ID :</label>
+	<input id="record-id" type="text">
+	<br>
+	<div style="overflow:auto;height:600px;" id="record-table"></div>
+</div>
+<div class="tab-pane" id="tab-group">
+	<label for="group.name">Name :</label>
+	<input id="group.name" type="text">
+	<label for="group-tag">Tag :</label>
+	<input id="group-tag" type="text">
+	<label for="group-website">Website :</label>
+	<input id="group-website" type="text">
+	<button type="button" onclick="addgroup()">Add</button>
+	<br>
+	<button type="button" onclick="deletegroup()">Delete</button>
+	<button type="button" onclick="editgroup()">Edit</button>
+	<label for="group-id">ID :</label>
+	<input id="group-id" type="text">
+	<br>
+	<div style="overflow:auto;height:600px;" id="group-table"></div>
+</div>
+<div class="tab-pane" id="tab-player">
+	<label for="player-name">Name :</label>
+	<input id="player-name" type="text">
+	<label for="player-account">Account :</label>
+	<input id="player-account" type="text">
+	<br>
+	<label for="player-group1">Group 1 :</label>
+	<select id="player-group1">
+	</select>
+	<label for="player-group2">Group 2 :</label>
+	<select id="player-group2">
+	</select>
+	<label for="player-group3">Group 3 :</label>
+	<select id="player-group3">
+	</select>
+	<label for="player-group4">Group 4 :</label>
+	<select id="player-group4">
+	</select>
+	<label for="player-group5">Group 5 :</label>
+	<select id="player-group5">
+	</select>
+	<br>
+	<button type="button" onclick="addPlayer()">Add</button>
+	<br>
+	<button type="button" onclick="deletePlayer()">Delete</button>
+	<button type="button" onclick="editPlayer()">Edit</button>
+	<label for="player-id">ID :</label>
+	<input id="player-id" type="text">
+	<br>
+	<div style="overflow:auto;height:600px;" id="player-table"></div>
+</div>
+<div class="tab-pane" id="tab-character">
+	<label for="character-name">Name :</label>
+	<input id="character-name" type="text">
+	<label for="character-player">Player :</label>
+	<select id="character-player">
+	</select>
+	<label for="character-profession">Profession :</label>
+	<select id="character-profession">
+	</select>
+	<button type="button" onclick="addCharacter()">Add</button>
+	<br>
+	<button type="button" onclick="deleteCharacter()">Delete</button>
+	<button type="button" onclick="editCharacter()">Edit</button>
+	<label for="character-id">ID :</label>
+	<input id="character-id" type="text">
+	<br>
+	<div style="overflow:auto;height:600px;" id="character-table"></div>
+</div>
+<div class="tab-pane" id="tab-game-build">
+	<label for="game-build-date">Date :</label>
+	<input id="game-build-date" type="text">
+	<label for="game-build-build">Game build :</label>
+	<input id="game-build-build" type="text">
+	<button type="button" onclick="addGameBuild()">Add</button>
+	<br>
+	<button type="button" onclick="deleteGameBuild()">Delete</button>
+	<button type="button" onclick="editGameBuild()">Edit</button>
+	<label for="game-build-id">ID :</label>
+	<input id="game-build-id" type="text">
+	<br>
+	<div style="overflow:auto;height:600px;" id="game-build-table"></div>
+</div>
+</div>
+</div>

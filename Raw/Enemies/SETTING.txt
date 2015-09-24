@@ -1,0 +1,39 @@
+potion=undead|main
+
+Name=Example
+Category=legendary
+Path=SETTING
+type=undead
+scaling=legendary|0
+armor=2600
+health=1000000
+
+Attack=Charged Backbreaker
+Animation=Holds hammer behind back
+cooldown=5
+effect=Melee
+subeffect=Damage:1000|poison:10:3|bleeding:700:10:5
+#note=Simply move a bit
+
+Attack=Agony
+effect=1 second
+subeffect=agony:1
+
+Attack=Agony
+effect=3 seconds
+subeffect=agony:3
+
+Attack=Agony
+effect=9 seconds
+subeffect=agony:9
+
+
+
+Name=Example 2
+Category=veteran
+Path=SETTING
+type=undead
+scaling=normal|0
+armor=2300
+health=100000
+

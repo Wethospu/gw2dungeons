@@ -1,0 +1,89 @@
+<script type="text/javascript">
+	"use strict";
+	$(document).ready(function() {
+		loadSettings(false, false);
+		loadPage();
+		generateSubNavigation(["Records", "Rules", "Guilds", "Players"], ["Records", "Rules", "Guilds", "Players"]);
+		$("#ruleset").change(function () {
+			loadRules($(this).val());
+		});
+		// To ensure rules are on date, rule entries should be downloaded from database.
+		exec("readRulesets", "");
+	});
+
+	function loadRules(ruleset) {
+		$.get("pages/Rules/restricted_" + ruleset + ".txt",function(data){
+			$("#tab-restricted").html(data);
+		});
+		$.get("pages/Rules/submit_" + ruleset + ".txt",function(data){
+			data = data.replace(/\n/g, "<br>")
+			$("#tab-submit").html(data);
+		});
+		$.get("pages/Rules/solo_" + ruleset + ".txt",function(data){
+			$("#tab-solo").html(data);
+		});
+	}
+
+	function exec(type, params)	{
+		var request = $.ajax({
+			url: "interface_exec.php",
+			type: "post",
+			data: "type=" + type + params
+		});
+
+		// Callback handler that will be called on success
+		request.done(function (data){
+			data = JSON.parse(data);
+			$("#messages").html(data.message);
+			if (data.success)
+			{
+				if (type == "readRulesets")
+				{
+					updateRuleSelect(data.rulesets);
+					loadRules($("#ruleset").val());
+				}
+			}
+		});
+
+		// Callback handler that will be called on failure
+		request.fail(function (data){
+			data = JSON.parse(data);
+			$("#messages").html(data.message);
+		});
+	}
+
+	function updateRuleSelect(rulesets) {
+		// Create the listview.
+		var content = "";
+		$.each(rulesets, function() {
+			// Force 3 digit formatting.
+			if (this.ruleset.length == 1)
+				this.ruleset = "00" + this.ruleset;
+			if (this.ruleset.length == 2)
+				this.ruleset = "0" + this.ruleset;
+			content += "<option value=\"" + this.ruleset + "\">" + this.date + "</option>";
+		});
+		$("#ruleset").html(content);
+	}
+
+</script>
+<label for="ruleset">Rule set :</label>
+<select id="ruleset">
+</select>
+<br>
+<div>
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#tab-restricted" data-toggle="tab">Dungeon/Fractal Records Ruleset</a></li>
+		<li><a href="#tab-solo" data-toggle="tab">Solo / Duo</a></li>
+		<li><a href="#tab-submit" data-toggle="tab">Submit a record</a></li>
+	</ul>
+<div class="tab-content">
+	<div class="tab-pane active" id="tab-restricted">
+	</div>
+	<div class="tab-pane" id="tab-solo">
+	</div>
+	<div class="tab-pane" id="tab-submit">
+	</div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>

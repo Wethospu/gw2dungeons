@@ -1,0 +1,726 @@
+/* Fixes some stuff. */
+html, body {
+    height:100%;
+	font-size: 100%;
+}
+nav:after,
+ul:after {
+    height:0;
+    line-height:0;
+}
+
+/* Tune what can be selected to allow better copypasting. */
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+p, p *, h1, h1 *, h2, h2 *, td, td * {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+}
+
+.encounter-main .tab-content{
+	margin-top: 5px;
+}
+
+.nav-tabs  a {
+	color: black;
+	text-decoration: none;
+}
+.nav-tabs a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+.clickable {
+	cursor: pointer;
+}
+.tracker {
+	float: right;
+	display: none;
+}
+.icon-button {
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 1px 1px 1px 1px;
+}
+
+.icon-button > span {
+	top: 2px;
+}
+
+/* Position side ad correctly. */
+.side-ad {
+    color:#222;
+    font-size:1.1em;
+    margin: 0;
+    padding:0;
+	top: 122px;
+	width: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+	position: fixed;
+	/* Makes ad attach to top bar. */
+	margin-top: -20px;
+}
+
+#left-ad {
+  left: 0;
+}
+
+#right-ad {
+  right: 0;
+}
+
+/* default page content */
+#screen {
+    color:#222;
+    font-size:1.1em;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+/* Make overlay bigger. */
+/* Rough estimate for a good size. Needs lots of tweaking to fit all screens optimally. */
+.modal-dialog {
+	width: 85%;
+}
+
+.profession-icon{
+    height:1em;
+    width:1em;
+}
+
+.dungeon-list {
+    padding-left:0;
+    list-style:none;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.dungeon-list:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.dungeon-list > li {
+    display:inline-block;
+    height: auto;
+    margin-bottom: 1.65em;
+    margin-left: 3%;
+    vertical-align:top;
+    width:250px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dungeon-image {
+    height:125px;
+    opacity:0.75;
+    width:250px;
+}
+.dungeon-list li:hover img {
+    opacity:1.0;
+}
+
+
+.settings ul {
+	list-style-type: none;
+}
+
+.enemy-button {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Enemy details: */
+.enemy {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.enemy-media {
+	vertical-align: top;
+}
+
+.enemy-info {
+	vertical-align: top;
+	width: 100%;
+	font-size: 1.1em;
+}
+
+.enemy-info .tab-content {
+	max-width: 900px;
+}
+
+.enemy-name {
+    font-size: 2em;
+    font-weight: bold;
+	margin-right: 0.5em;
+}
+
+.enemy-attack {
+	font-size: 1em;
+    text-indent: 0px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.enemy-attack-name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.enemy-attack-effect {
+    font-size: 1em;
+    margin-top: 10px;
+    margin: 0;
+}
+
+    .enemy-attack-effect p {
+		font-size: 1.1em;
+        margin: 0;
+        text-indent: 20px;
+    }
+	.enemy-attack-effect ul {
+        list-style-type: none;
+    } 
+}
+
+p.note {
+    font-size: smaller;
+}
+
+.encounter {
+}
+
+.encounter-left, .encounter-right {
+	vertical-align: top;
+	width: 50%;
+	text-align: center;
+	padding-top: 35px;
+}
+
+.encounter-left div, .encounter-right div {
+	padding-bottom: 10px;
+}
+
+.encounter-main {
+	vertical-align: top;
+	max-width: 900px;
+	min-width: 900px;
+	padding-bottom: 50px;
+}
+
+.strategies h3 {
+    display:none;
+}
+.strategies > div {
+    display:none;
+}
+.strategies > div.active {
+    display: block;
+}
+
+.table-striped>thead>tr>td,
+.table-striped>thead>tr>th {
+    background-color: #e5e5e5;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: whitesmoke;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+    background-color: white;
+}
+
+.filter-text {
+    height: 20px;
+    margin: 0;
+}
+
+/* Without ads, 200px can be saved. */
+@media screen and (min-width: 1200px) {
+	.encounter-left {
+		min-width: 250px;
+	}
+	.encounter-right {
+		min-width: 250px;
+	}
+	#left-ad, #right-ad {
+		width: 0;
+	}
+	.records #screen, .rules #screen, .search #screen {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.error #left-ad, .error #right-ad ,
+	.about #left-ad, .about #right-ad, 
+	.settings #left-ad, .settings #right-ad {
+		width: 160px;
+	}
+	.error #screen, .about #screen, .settings #screen {
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+}
+
+/* With a smaller thumbs, 100px can be saved */
+@media screen and (min-width: 1400px) {
+	.encounter-right {
+		min-width: 150px;
+	}
+	.guide #right-ad {
+		width: 160px;
+	}	
+}
+
+/* With a smaller ad, 200 px can be saved. */
+@media screen and (min-width: 1500px) {
+	.encounter-left {
+		min-width: 350px;
+	}
+	.error #left-ad, .error #right-ad ,
+	.about #left-ad, .about #right-ad,
+	.search #left-ad, .search #right-ad,
+	.settings #left-ad, .settings #right-ad {
+		width: 300px;
+	}
+	.error #screen, .about #screen, .settings #screen, .seatch #screen {
+		margin-left: 400px;
+		margin-right: 400px;
+	}
+}
+
+/* With a smaller ad, 200 px can be saved. */
+@media screen and (min-width: 1525px) {
+	.home #left-ad, .home #right-ad,
+	.records #left-ad, .records #right-ad ,
+	.search #left-ad, .search #right-ad,
+	.rules #left-ad, .rules #right-ad {
+		width: 160px;
+	}
+	.home #screen, .records #screen, .rules #screen, .search #screen  {
+		margin-left: 160px;
+		margin-right: 160px;
+	}
+}
+
+/* To fit everything at least 900 + 2 * 400 = 1700 px is needed. */
+@media screen and (min-width: 1700px) {
+	.encounter-right {
+		min-width: 350px;
+	}
+	.guide #right-ad {
+		width: 300px;
+	}
+	.error #screen, .about #screen, .settings #screen, .search #screen  {
+		margin-left: 500px;
+		margin-right: 500px;
+	}
+}
+
+
+.home header {
+    display: none;
+}
+
+/* sortable list */
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ol.sortable li.placeholder {
+  position: relative;
+}
+ol.sortable li.placeholder:before {
+  position: absolute;
+}
+
+.sortable {
+    list-style-type: decimal;
+    padding-left: 2em;
+}
+.sortable li {
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.in-line h1 {
+    display: inline;
+}
+.in-line h2 {
+    display: inline;
+}
+.in-line p {
+    display: inline;
+}
+
+/* js doesn't work, don't break too much stuff */
+.no-js .strategies h3 {
+    display:block;
+}
+.no-js .strategies > div {
+    display:block;
+}
+ins{background:#fff}
+
+
+/* Enemy color data: */
+/*                   */
+h2.legendary {
+    color: purple;
+}
+
+h2.champion {
+    color: #5C5917;
+}
+
+h2.elite {
+    color: #848484;
+}
+
+h2.veteran {
+    color: brown;
+}
+
+h2.normal {
+    color: black;
+}
+
+h2.skill {
+    color: black;
+}
+
+h2.structure {
+    color: red;
+}
+
+h2.trap {
+    color: red;
+}
+
+h2.ally {
+    color: green;
+}
+
+
+span.structure {
+    color: red;
+}
+span.trap {
+    color: red;
+}
+span.normal {
+    color: rgb(5, 5, 5);
+}
+span.skill {
+    color: rgb(5, 5, 5);
+}
+span.veteran {
+    color: rgb(205, 127, 50);
+}
+span.elite {
+    color: rgb(90, 90, 90);
+}
+span.champion {
+    color: #5C5917;
+}
+span.legendary {
+    color: rgb(128, 0, 128);
+}
+span.ally {
+    color: green;
+}
+div.structure {
+    background-color : rgb(255, 150, 150);
+    border-color: red;
+}
+div.trap {
+    background-color: rgb(255, 150, 150);
+    border-color: red
+}
+div.normal {
+    background-color: rgb(245, 245, 245);
+    border-color: rgb(5, 5, 5);
+}
+div.skill {
+    background-color: rgb(245, 245, 245);
+    border-color: rgb(5, 5, 5);
+}
+div.veteran {
+    background-color: #cda67f;
+    border-color: rgb(205, 127, 50);
+}
+div.elite {
+    background-color: #e2e4e6;
+    border-color: rgb(191, 193, 194);
+}
+div.champion {
+    background-color: #ffeb80;
+    border-color: rgb(255, 215, 0);
+}
+div.legendary {
+    background-color: #bf8fbf;
+    border-color: rgb(128, 0, 128);
+}
+
+div.ally {
+    background-color: #82F584;
+    border-color: green;
+}
+
+/* Location and size of icons: */
+
+.withicon .icon {
+    display: inline-block;
+    height: 20px;
+    text-indent: -9999px;
+    width: 20px;
+	vertical-align: text-top;
+}
+.withicon .icon[title=aegis] {
+    background-image:url(img/aegis.png);
+}
+.withicon .icon[title=agony] {
+    background-image:url(img/agony.png);
+}
+.withicon .icon[title=armor] {
+    background-image:url(img/armor.png);
+}
+.withicon .icon[title=asura] {
+    background-image:url(img/asura.png);
+}
+.withicon .icon[title=berserk] {
+    background-image:url(img/berserk.png);
+}
+.withicon .icon[title=bleeding] {
+    background-image:url(img/bleeding.png);
+}
+.withicon .icon[title=blind] {
+    background-image:url(img/blind.png);
+}
+.withicon .icon[title=burning] {
+    background-image:url(img/burning.png);
+}
+.withicon .icon[title=chaos_aura] {
+    background-image:url(img/chaos_aura.png);
+}
+.withicon .icon[title=charr] {
+    background-image:url(img/charr.png);
+}
+.withicon .icon[title=chilled] {
+    background-image:url(img/chilled.png);
+}
+.withicon .icon[title=combo] {
+    background-image:url(img/combo.png);
+}
+.withicon .icon[title=confusion] {
+    background-image:url(img/confusion.png);
+}
+.withicon .icon[title=consumable] {
+    background-image:url(img/consumable.png);
+}
+.withicon .icon[title=cooldown] {
+    background-image:url(img/cooldown.png);
+}
+.withicon .icon[title=crippled] {
+    background-image:url(img/crippled.png);
+}
+.withicon .icon[title=damage] {
+    background-image:url(img/damage.png);
+}
+.withicon .icon[title=daze] {
+    background-image:url(img/daze.png);
+}
+.withicon .icon[title=defiance] {
+    background-image:url(img/defiance.png);
+}
+.withicon .icon[title=determined] {
+    background-image:url(img/determined.png);
+}
+.withicon .icon[title=elementalist] {
+    background-image:url(img/elementalist.png);
+}
+.withicon .icon[title=engineer] {
+    background-image:url(img/engineer.png);
+}
+.withicon .icon[title=fire_aura] {
+    background-image:url(img/fire_aura.png);
+}
+.withicon .icon[title=fear] {
+    background-image:url(img/fear.png);
+}
+.withicon .icon[title=float] {
+    background-image:url(img/float.png);
+}
+.withicon .icon[title=fury] {
+    background-image:url(img/fury.png);
+}
+.withicon .icon[title=frost_aura] {
+    background-image:url(img/frost_aura.png);
+}
+.withicon .icon[title=guardian] {
+    background-image:url(img/guardian.png);
+}
+.withicon .icon[title=healing] {
+    background-image:url(img/healing.png);
+}
+.withicon .icon[title=health] {
+    background-image:url(img/health.png);
+}
+.withicon .icon[title=human] {
+    background-image:url(img/human.png);
+}
+.withicon .icon[title=immobilized] {
+    background-image:url(img/immobilized.png);
+}
+.withicon .icon[title=instability] {
+    background-image:url(img/instability.png);
+}
+.withicon .icon[title=invulnerability] {
+    background-image:url(img/invulnerability.png);
+}
+.withicon .icon[title=knockback] {
+    background-image:url(img/knockback.png);
+}
+.withicon .icon[title=knockdown] {
+    background-image:url(img/knockdown.png);
+}
+.withicon .icon[title=launch] {
+    background-image:url(img/launch.png);
+}
+.withicon .icon[title=lava] {
+    background-image:url(img/lava.png);
+}
+.withicon .icon[title=light_aura] {
+    background-image:url(img/light_aura.png);
+}
+.withicon .icon[title=magnetic_aura] {
+    background-image:url(img/magnetic_aura.png);
+}
+.withicon .icon[title=mesmer] {
+    background-image:url(img/mesmer.png);
+}
+.withicon .icon[title=might] {
+    background-image:url(img/might.png);
+}
+.withicon .icon[title=necromancer] {
+    background-image:url(img/necromancer.png);
+}
+.withicon .icon[title=norn] {
+    background-image:url(img/norn.png);
+}
+.withicon .icon[title=ooze_pheromone] {
+    background-image:url(img/ooze_pheromone.png);
+}
+.withicon .icon[title=petrified] {
+    background-image:url(img/petrified.png);
+}
+.withicon .icon[title=poison] {
+    background-image:url(img/poison.png);
+}
+.withicon .icon[title=polymorph] {
+    background-image:url(img/polymorph.png);
+}
+.withicon .icon[title=protection] {
+    background-image:url(img/protection.png);
+}
+.withicon .icon[title=pull] {
+    background-image:url(img/pull.png);
+}
+.withicon .icon[title=quickness] {
+    background-image:url(img/quickness.png);
+}
+.withicon .icon[title=ranger] {
+    background-image:url(img/ranger.png);
+}
+.withicon .icon[title=regeneration] {
+    background-image:url(img/regeneration.png);
+}
+.withicon .icon[title=revenant] {
+    background-image:url(img/revenant.png);
+}
+.withicon .icon[title=resistance] {
+    background-image:url(img/resistance.png);
+}
+.withicon .icon[title=retaliation] {
+    background-image:url(img/retaliation.png);
+}
+.withicon .icon[title=shock_aura] {
+    background-image:url(img/shock_aura.png);
+}
+.withicon .icon[title=sink] {
+    background-image:url(img/sink.png);
+}
+.withicon .icon[title=slow] {
+    background-image:url(img/slow.png);
+}
+.withicon .icon[title=soothing_mist] {
+    background-image:url(img/soothing_mist.png);
+}
+.withicon .icon[title=stability] {
+    background-image:url(img/stability.png);
+}
+.withicon .icon[title=stealth] {
+    background-image:url(img/stealth.png);
+}
+.withicon .icon[title=stun] {
+    background-image:url(img/stun.png);
+}
+.withicon .icon[title=stunbreak] {
+    background-image:url(img/stunbreak.png);
+}
+.withicon .icon[title=swiftness] {
+    background-image:url(img/swiftness.png);
+}
+.withicon .icon[title=sylvari] {
+    background-image:url(img/sylvari.png);
+}
+.withicon .icon[title=taunt] {
+    background-image:url(img/taunt.png);
+}
+.withicon .icon[title=thief] {
+    background-image:url(img/thief.png);
+}
+.withicon .icon[title=torment] {
+    background-image:url(img/torment.png);
+}
+.withicon .icon[title=unshakable] {
+    background-image:url(img/unshakable.png);
+}
+.withicon .icon[title=warrior] {
+    background-image:url(img/warrior.png);
+}
+.withicon .icon[title=weakness] {
+    background-image:url(img/weakness.png);
+}
+.withicon .icon[title=vigor] {
+    background-image:url(img/vigor.png);
+}
+.withicon .icon[title=vulnerability] {
+    background-image:url(img/vulnerability.png);
+}
+

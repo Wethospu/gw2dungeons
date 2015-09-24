@@ -1,0 +1,281 @@
+<script type="text/javascript">
+	"use strict";
+    $(document).ready(function () {
+		loadSettings(true, true);
+		loadPage();
+        saveSetting("settingsVisited", true);
+        // Add default-values as placeholders.
+        $("#armor-setting").attr("placeholder", placeholders.armor);
+        $("#health-setting").attr("placeholder", placeholders.health);
+        $("#level-setting").attr("placeholder", placeholders.level);
+        $("#agony-setting").attr("placeholder", placeholders.resist);
+        $("#fractal-setting").attr("placeholder", placeholders.fractal);
+        $("#defense-multiplier-setting").attr("placeholder", placeholders.wvwdefense);
+        $("#health-multiplier-setting").attr("placeholder", placeholders.wvwhealth);
+        $("#search-amount-setting").attr("placeholder", placeholders.searchamount);
+        // Put values (needed done like this because of placeholders).
+        $("#armor-setting").attr("value", settings.armor);
+        $("#health-setting").attr("value", settings.health);
+        $("#level-setting").attr("value", settings.level);
+        $("#class-setting").val(getSetting("profession"));
+        $("#agony-setting").attr("value", settings.resist);
+        $("#fractal-setting").attr("value", settings.fractal);
+        $("#defense-multiplier-setting").attr("value", settings.wvwdefense);
+        $("#health-multiplier-setting").attr("value", settings.wvwhealth);
+		updatePlaceholderValues();
+		
+        // Get value for every checkbox.
+        $('input[type="checkbox"]').each(function () {
+            var name = $(this).attr("data-setting");
+            $(this).attr("checked", getSetting(name));
+        });
+        // And drop down.
+        $('.dropdown').each(function () {
+            var name = $(this).attr("data-setting");
+            $(this).val(getSetting(name));
+        });
+		// And input.
+        $('input[name="number"]').each(function () {
+            var name = $(this).attr("data-setting");
+            $(this).val(getSetting(name));
+        });
+
+        // Add functionality to settings.
+        $('input[name="number"]').keyup(function (e) {
+            if (/\D/g.test(this.value)) {
+                // Filter non-digits from input value.
+                this.value = this.value.replace(/\D/g, '');
+            }
+            var name = $(this).attr("data-setting");
+            var value = (Number)($(this).val());
+            if (value == 0)
+                value = null;
+            saveSetting(name, value);
+        });
+        $('.dropdown').change(function () {
+            var name = $(this).attr("data-setting");
+            var value = $(this).val();
+            saveSetting(name, value);
+            if ($(this).attr("id") == "ad-setting")
+                loadAds();
+        });
+
+        $('input[type="checkbox"]').click(function () {
+            var name = $(this).attr("data-setting");
+            var isChecked = this.checked;
+            saveSetting(name, isChecked);
+        });
+
+        //// Initialize sortable lists. / 2015-06-28 / Wethospu
+        // Add elements from settings with a sanity check. / 2015-06-28 / Wethospu
+        var tactics = new Array();
+        for (var i = 0; i < settings.tactics.length; i++) {
+            // Filter out old/wrong tactics. / 2015-06-28 / Wethospu
+            if (validTactics.indexOf(settings.tactics[i]) < 0)
+                continue;
+			// Ensure there is no overlap. / 2015-06-28 / Wethospu
+            if (tactics.indexOf(settings.tactics[i]) < 0)
+                tactics.push(settings.tactics[i]);
+        }
+		// Add any new tactics. / 2015-06-28 / Wethospu
+        $.extend(tactics, validTactics);
+        for (var i = 0; i < tactics.length; i++) {
+            $("#tactic-setting").append('<li>' + tactics[i][0].toUpperCase() + tactics[i].substr(1) + '</li>');
+        }
+		// Same for tips. / 2015-06-28 / Wethospu
+		var tips = new Array();
+        for (var i = 0; i < settings.tips.length; i++) {
+            // Filter out old/wrong tactics.
+            if (validTips.indexOf(settings.tips[i]) < 0)
+                continue;
+            if (tips.indexOf(settings.tips[i]) < 0)
+                tips.push(settings.tips[i]);
+        }
+        $.extend(tips, validTips);
+		
+        for (var i = 0; i < tips.length; i++) {
+            $("#tip-setting").append('<li>' + tips[i][0].toUpperCase() + tips[i].substr(1) + '</li>');
+        }
+        var adjustment;
+
+        $("ol.sortable").sortable({
+            group: 'simple_with_animation',
+            pullPlaceholder: false,
+            // animation on drop
+            onDrop: function (item, targetContainer, _super) {
+                var clonedItem = $('<li/>').css({ height: 0 })
+                item.before(clonedItem)
+                clonedItem.animate({ 'height': item.height() })
+
+                item.animate(clonedItem.position(), function () {
+                    clonedItem.detach()
+                    _super(item)
+                })
+                // Save items. Only works for one list so needs some magic with multiple lists.
+                var tactics = new Array();
+                $("#tactic-setting li").each(function () {
+                    // For some reason empty one gets added.
+                    if ($(this).text() == "")
+                        return;
+                    tactics.push($(this).text().toLowerCase());
+                });
+                saveSetting("tactics", tactics);
+				// Just save both lists (crude but simple). / 2015-06-28 / Wethospu
+				var tips = new Array();
+                $("#tip-setting li").each(function () {
+                    // For some reason empty one gets added.
+                    if ($(this).text() == "")
+                        return;
+                    tips.push($(this).text().toLowerCase());
+                });
+                saveSetting("tips", tips);
+            },
+
+            // set item relative to cursor position
+            onDragStart: function ($item, container, _super) {
+                var offset = $item.offset(),
+                pointer = container.rootGroup.pointer;
+
+                adjustment = {
+                    left: pointer.left - offset.left,
+                    top: pointer.top - offset.top
+                };
+
+                _super($item, container);
+            },
+            onDrag: function ($item, position) {
+                $item.css({
+                    left: position.left - adjustment.left,
+                    top: position.top - adjustment.top
+                });
+            }
+        });
+        // End of sortable code.
+    });
+</script>
+<div>
+    <form class="forms forms-columnar">
+        <h1 class="forms-section">Character Settings</h1>
+        <p>
+            <label for="class-setting">Class</label>
+            <select class="dropdown" id="class-setting" data-setting="profession">
+				<option value="elementalist">Elementalist</option>
+                <option value="engineer">Engineer</option>
+                <option value="guardian">Guardian</option>
+				<option value="mesmer">Mesmer</option>
+                <option value="necromancer">Necromancer</option>
+                <option value="ranger">Ranger</option>
+				<option value="revenant">Revenant</option>
+                <option value="thief">Thief</option>
+				<option value="warrior">Warrior</option>
+            </select>
+        </p>
+        <p>
+            <label for="level-setting">Level</label>
+            <input type="text" name="number" id="level-setting" data-setting="level">
+        </p>
+        <p>
+            <label for="health-setting">Health</label>
+            <input type="text" name="number" id="health-setting" data-setting="health">
+        </p>
+        <p>
+            <label for="armor-setting">Armor</label>
+            <input type="text" name="number" id="armor-setting" data-setting="armor">
+        </p>
+        <p>
+            <label for="agony-setting">Agony Resistance</label>
+            <input type="text" name="number" id="agony-setting" data-setting="resist">
+        </p>
+        <p>
+            <label for="fractal-setting">Fractal Level</label>
+            <input type="text" name="number" id="fractal-setting" data-setting="fractal">
+        </p>
+        <p>
+            <label for="potion-usage-setting">Slaying potion usage</label>
+            <select class="dropdown" id="potion-usage-setting" data-setting="potionUsage">
+                <option value="none">No usage</option>
+                <option value="main">Only used on main types</option>
+                <option value="all">Used on all types</option>
+            </select>
+        </p>
+        <p>
+            <label for="potion-strength-setting">Slaying potion type</label>
+            <select class="dropdown" id="potion-strength-setting" data-setting="potionStrength">
+                <option value="10">Powerful (10%)</option>
+                <option value="8">Potent (8%)</option>
+                <option value="6">Strong (6%)</option>
+                <option value="4">Normal(4%)</option>
+                <option value="0">None (0%)</option>
+            </select>
+        </p>
+        <p class="forms-inline">
+            <label for="defense-multiplier-setting">Defence boost</label>
+            <input type="text" name="number" id="defense-multiplier-setting" data-setting="defenseMultiplier"><span class="input-append">%</span><br>
+            <span class="forms-desc">WvW and others.</span>
+        </p>
+        <p class="forms-inline">
+            <label for="health-multiplier-setting">Health boost</label>
+            <input type="text" name="number" id="health-multiplier-setting" data-setting="healthMultiplier"><span class="input-append">%</span><br>
+            <span class="forms-desc">WvW and others.</span>
+        </p>
+        <h1 class="forms-section">Look and feel</h1>
+        <p>
+            <label for="damage-setting">Damage as</label>
+            <select class="dropdown" id="damage-setting" data-setting="damage">
+                <option value="damage">number</option>
+                <option value="percent">percent</option>
+                <option value="both">both number and percent</option>
+            </select>
+            <span class="forms-desc">Character settings must be set for percents to be accurate.</span>
+        </p>
+        <p class="forms-inline">
+            <label for="tab-amount-setting">Amount of maximum tabs</label>
+            <input type="text" name="number" id="tab-amount-setting" data-setting="tabAmount">
+        </p>
+        <ul class="forms-list">
+            <li>
+                <input type="checkbox" id="image-setting" data-setting="icon">
+                <label for="image-setting">Shows effects as icons</label>
+            </li>
+        </ul>
+        <ul class="forms-list">
+            <li>
+                <input type="checkbox" id="simplify-health-setting" data-setting="simplifyHealth">
+                <label for="simplify-health-setting">Simplify enemy health</label>
+            </li>
+        </ul>
+        <ul class="forms-list">
+            <li>
+                <input type="checkbox" id="simplify-armor-setting" data-setting="simplifyArmor">
+                <label for="simplify-armor-setting">Simplify enemy armor</label>
+            </li>
+        </ul>
+		<ul class="forms-list">
+            <li>
+                <input type="checkbox" id="comments-setting" data-setting="comments">
+                <label for="comments-setting">Show comments at bottom</label>
+            </li>
+        </ul>
+        <p>
+            <label for="ad-setting">Advertisements</label>
+            <select class="dropdown" id="ad-setting" data-setting="adSetting">
+                <option value="big">Show big ads</option>
+                <option value="small">Show small ads</option>
+                <option value="off">Show none</option>
+            </select>
+            <span class="forms-desc">For extra supporting, please consider donating.</span>
+        </p>
+        <h1 class="forms-section">Tactic preferences</h1>
+        <span class="forms-desc">Highest tactic in the list below will be displayed first.
+        <br>
+            Drag and drop to change the order.</span>
+        <ol id="tactic-setting" class="forms-list sortable">
+        </ol>
+        <h1 class="forms-section">Tip preferences</h1>
+        <span class="forms-desc">Highest tip in the list below will be displayed first.
+        <br>
+            Drag and drop to change the order.</span>
+        <ol id="tip-setting" class="forms-list sortable">
+        </ol>
+    </form>
+</div>

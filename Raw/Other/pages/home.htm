@@ -1,0 +1,91 @@
+<script type="text/javascript">
+	"use strict";
+	$(document).ready(function() {	
+		loadSettings(false, false);
+		loadPage();
+		loadDailyPaths();
+	});
+		
+	function loadDailyPaths() {
+		// Load tracking info.
+		verifyDailyPaths();
+		$(".tracker").each(function(event){
+			var path = $(this).data("tag");
+			if (settings.dailyPaths.indexOf(path) > -1)
+				$(this).html('<img class="profession-icon" src="media/img/gold_star.png">');		
+			else if (settings.donePaths.indexOf(path) > -1)
+				$(this).html('<img class="profession-icon" src="media/img/silver_star.png">');
+			else
+				$(this).html('<img class="profession-icon" src="media/img/empty_star.png">');
+		});
+		// Clicking tracker should update the completion status.
+		// Not completed -> Completed.
+		// Completed before -> Completed.
+		// Completed -> Not completed.
+		$(".tracker").on('click',function(event){
+			var path = $(this).data("tag");
+			if (settings.dailyPaths.indexOf(path) > -1) {
+				// Remove the path completely.
+				settings.dailyPaths.splice( $.inArray(path, settings.dailyPaths), 1 );
+				settings.donePaths.splice( $.inArray(path, settings.donePaths), 1 );
+				$(this).html('<img class="profession-icon" src="media/img/empty_star.png">');
+			}
+			else if (settings.donePaths.indexOf(path) > -1) {
+				// Add the path.
+				settings.dailyPaths.push(path);
+				$(this).html('<img class="profession-icon" src="media/img/gold_star.png">');		
+			}
+			else {
+				// Add the path.
+				settings.dailyPaths.push(path);
+				settings.donePaths.push(path);
+				$(this).html('<img class="profession-icon" src="media/img/gold_star.png">');		
+			}
+			saveSetting("dailyPaths", settings.dailyPaths);
+			saveSetting("donePaths", settings.donePaths);
+		});
+	}
+	
+</script>
+<div class="alert alert-info">
+     <strong><a href="http://gw2efficiency.com/dungeons" class="alert-link">Add</a></strong> your dungeon and fractal run times to help figure out the average run times!
+</div>
+<ul class="dungeon-list">
+    <li style="float:left;">
+        <img class="dungeon-image" src="./media/img/dungeon_fotm.jpg" alt="">
+DUNGEON_FOTM
+    </li>
+    <li>
+        <img class="dungeon-image" src="./media/img/dungeon_ac.jpg" alt="">
+DUNGEON_AC
+    </li>
+    <li>
+        <img class="dungeon-image" src="./media/img/dungeon_cm.jpg" alt="">
+DUNGEON_CM
+    </li>
+    <li>
+        <img class="dungeon-image" src="./media/img/dungeon_ta.jpg" alt="">
+DUNGEON_TA
+    </li>
+    <li>
+        <img class="dungeon-image" src="./media/img/dungeon_se.jpg" alt="">
+DUNGEON_SE
+    </li>
+    <li>
+        <img class="dungeon-image" src="./media/img/dungeon_cof.jpg" alt="">
+DUNGEON_COF
+    </li>
+    <li>
+        <img class="dungeon-image" src="./media/img/dungeon_hotw.jpg" alt="">
+DUNGEON_HOTW
+    </li>
+    <li>
+        <img class="dungeon-image" src="./media/img/dungeon_coe.jpg" alt="">
+DUNGEON_COE
+    </li>
+    <li>
+        <img class="dungeon-image" src="./media/img/dungeon_arah.jpg" alt="">
+DUNGEON_ARAH
+    </li>
+</ul>
+<br style="clear:both;"/>

@@ -1,0 +1,1141 @@
+init=Arah1|The Ruined City of Arah|Investigate the Jotuns (path&nbsp;1)|Path 1
+init=Arah2|The Ruined City of Arah|Investigate the Mursaat (path&nbsp;2)|Path 2
+init=Arah3|The Ruined City of Arah|Investigate the Forgotten (path&nbsp;3)|Path 3
+init=Arah4|The Ruined City of Arah|Investigate the Seers (path&nbsp;4)|Path 4
+
+path=Arah1
+name=The Ruined City of Arah Path 1: Jotun
+tactic=normal
+Level: 80.
+Reward: 3.31g + 60 tokens.
+Average length: 28 minutes.
+Difficulty: Hard.
+Enemies: Undead.
+Time: Day.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty if you want to be optimal.
+youtube=rHxBVdOg4V8|Video_guide (Banter Bill).
+Current record: record=31.
+
+name=Start
+image=http://i.imgur.com/I87OBqE.jpg
+image=http://i.imgur.com/KU3nTfu.jpg
+tactic=normal
+Use the nearby waypoint immediately. If you want to walk, watch your step because there is a hole right front of you with full of enemy=Orrian_Spiders:normal and enemy=Spider_Hatchlings. If you fall down keep running while dodging until you reach allied NPCs.
+Talk to enemy=Odgen_Stonehealer to start the path selection. Choose enemy=Varra_Skylark to find secrets of Jotun. After the selection, go through the debris and turn left. Don't bother with enemy=Servants, enemy=Farmers or enemy=Villagers because they constantly respawn.
+
+name=Way to enemy=Ancient_Ooze
+image=http://i.imgur.com/EegetpK.jpg
+image=http://i.imgur.com/KjNYb2F.jpg
+tactic=skip|fight
+The first door is guarded by 2 enemy=text:Risen|elementalist:elite|hunter:elite|illusionist:elite|mage:elite.
+After those two, 4 enemy=Vile_Oozes:elite will ambush you. Their only ability is a channeled attack which strikes four times,
+#######################################
+tactic=skip
+| inflicting cripple with each strike. This cripple is covered by poison and vulnerability, making skills that remove a single condition less effective here. Try to dodge their attack, use skills that remove multiple conditions, full cleanses or skills and traits that specifically remove cripple.
+To the left, you will see three random elite Risen. Try to avoid aggroing to them. Also watch out for 3 enemy=Orrian_Guard_Turrets:structure to your right. If possible, use either anti projectiles skills or blocks and, most importantly, avoid stepping on one of the three corpses lying on the way. Those explode on contact, taking away ~90% of your HP. If you get hit a few times by the enemy=Turrets:structure and run into one of the corpses, you will most likely find yourself downed and subsequently defeated by the enemy=Oozes:elite.
+#######################################
+tactic=fight
+| inflicting multiple conditions with each strike, most importantly weakness. Do not stay in one spot and you should not be hit more than once for every attack.
+To the left, you will see three random elite Risen. Try to avoid approaching them as there is no need to kill them. Watch out for 3 enemy=Orrian_Guard_Turrets:structure to your right. You can find a reflecting crystal nearby but those are very unreliable. If possible, use anti projectiles skills or use ranged weapons while sidestepping constantly to avoid getting blinded. Most importantly, avoid stepping on one of the three corpses that are lying on the way. Those on contact, taking away ~ 90% of your HP. If you get hit a few times by the enemy=Turrets:structure and you run into one of the corpses, you will most likely find yourself downed.
+#######################################
+tactic=skip|fight
+When you see the path split, continue along the right side. If you choose to go left, you will be ambushed by 3 enemy=Orrian_Spiders:normal and twelve enemy=Undead_Spider_Hatchlings:normal. This triggers the Jotun NPC, who in turn activates the first boss.
+Continue further towards the next split. To your left, there are 5 enemy=Undead_Spider_Hatchlings:normal, while to your right - three random elite Risen. Pick the left path. After you kill the spiders, you will reach an open area with 6 enemy=Orrian_Guard_Turrets:structure and the first boss - enemy=Ancient_Ooze:legendary. Try to destroy as many enemy=Turrets:structure as possible before attempting to kill this boss.
+#######################################
+tactic=skip|fight
+tactic=elementalist
+wiki=Ether_Renewal cleanses conditions really fast on a 15 seconds cooldown.
+tactic=elementalist
+wiki=Magnetic_Wave and wiki=Cleansing_Flame both remove 3 conditions.
+tactic=elementalist
+Use either wiki=Magnetic_Aura to reflect projectiles or wiki=Swirling_Winds to protect your team from the fire of enemy=Turrets:structure.
+tactic=guardian
+Destroy enemy=Turrets:structure by using wiki=Wall_of_Reflection.
+tactic=guardian
+wiki=Virtue_of_Resolve traited with wiki=Absolute_Resolution is able to quickly remove three conditions from your team.
+#######################################
+tactic=skip
+tactic=consumable
+Use wiki=Order_of_Whispers_Spy_Kit to make sure you do not aggro the first group of Risen.
+
+name=enemy=Ancient_Ooze:legendary
+image=http://i.imgur.com/EQWOK6n.jpg
+image=http://i.imgur.com/rX5UiVy.jpg
+tactic=ranged|melee
+Try to pull the boss closer to the Jotun NPC but remember the locations of the enemies that you skipped. The enemy=Ooze:legendary has two very similar attacks. If no one is at close range, it will bounce thrice, launching and dealing high damage to everyone around its position.
+#######################################
+tactic=ranged
+| Try to keep the boss immobilized, chilled or crippled and dodge backward. If it is not slowed down, one dodge might not be enough. stability will protect you from the launch effect, but remember that the attack itself still deals significant damage. If the boss targets an ally at close range, it will use a slightly different version of its bounce attack. The enemy=Ooze:legendary will bounce six times instead of three, but will remain stationary when channeling. One skilled melee player can trivialize the whole fight by making it only use this attack.
+#######################################
+tactic=melee
+| If the boss targets an ally at close range, it will use a slightly different version of its bounce attack. The enemy=Ooze:legendary will bounce six times instead of three, but will remain stationary when channeling. stability will protect you from the launch effect, but remember that the attack itself still deals significant damage. Try to get back into melee range as soon as possible to force it to only use its stationary version of the attack.
+#######################################
+tactic=ranged|melee
+After you get its HP down to 25%, the boss will drop a Blood of the Ancients, which will continuously spawn enemy=Vile_Oozes:elite. The boss will also split into 2 enemy=Vile_Oozes:champion which spam AoEs and are rather tough to kill. It is recommended to simply ignore them and deliver the bundle to the Jotun NPC as fast as possible. If your team is organized, dodge twice while holding the Blood to move faster and then drop it for someone else to pick it up.
+#######################################
+tactic=ranged|melee
+tactic=engineer
+There's a slight delay before the two champions spawn after the boss's death. Try to use this moment to wiki=Blast_finisher|blast your smoke field created by wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb_(bomb_kit) or wiki=Smoke_Screen_(engineer_skill)|Smoke_Screen_(overcharge_skill_of_Flame_Turret) with wiki=Magnetic_Inversion, wiki=Big_Ol'_Bomb and denotation of any turret to get long lasting stealth. If you hit an enemy with one of your finishers, you will be the only person not stealthed.
+tactic=guardian
+wiki=Judge's_Intervention used on either the spiders you skipped or other enemies allows you to teleport up to 1200 range with a bundle. Be careful not to aggro the mobs you used as the target for this ability.
+tactic=mesmer
+At ~30% of boss HP, put down wiki=Portal_Entre|Portal_(utility) and head back the Jotun NPC, the boss should not follow you. After the enemy=Ooze:legendary drops the Blood, have someone else pick it up and then activate your portal for instant delivery.
+tactic=thief
+Use wiki=Shadow_Refuge and carry the bundle without anything following you.
+#######################################
+tactic=ranged|melee
+tactic=thief
+Use wiki=Infiltrator's_Strike to easily get in and out of range (if the boss targets you, you can easily make it only use the stationary version of its attack).
+#######################################
+tactic=melee
+tactic=elementalist
+wiki=Updraft gives you another dodge to quickly escape the stationary bounce.
+tactic=warrior
+Use wiki=Rush and wiki=Whirlwind_Attack for hit-and-run tactics.
+
+name=Way to Crystalline Entities
+image=http://i.imgur.com/guTFPHK.jpg
+tactic=skip
+The enemy=Oozes:champion  will chase you, making it difficult to kill enemies unless you are able to lose aggro. Most teams will decide to skip everything anyway. If you manage to leave combat, equip condition removal skills.
+Guarding the exit from the open area are 4 enemy=text:Risen|Elementalist:elite|Hunter:elite|Illusionist:elite|Risen_Mage:elite.
+After you skip them, you can either stick to the left or the right side. Watch out for 3 enemy=Vile_Oozes:elite which will spawn on the way. In the middle of the path there are 2 enemy=Orrian_Drakes:elite, with two more further up the road.
+After reaching a small slope, more than a dozen of enemy=Lesser_Oozes_(Fighting):normal will appear. At the end of the corridor there are three additional enemy=Drakes:elite.
+Keep running forward, ignoring enemy=Crystalline_Entities:champion. Once you reach the back wall, most enemies will lose aggro, though you may have to kill a few that have not.
+It is easy to die during the skip. You can easily clear the enemy=Drakes:elite and enemy=Lesser_Oozes_(Fighting):normal and ressurect any party members that died towards the end. If a party member died earlier they should waypoint back. In such situations, killing the enemy=Drakes:elite and enemy=Lesser_Oozes_(Fighting):normal is advised in order to make skipping easier for those that died.
+#######################################
+tactic=fight
+If the enemy=Oozes:champion did not lose aggro, attempting to kill any enemies is ill-advised. In this case, skipping is recommended.
+Guarding the exit from the open area are 4 enemy=text:Risen|Elementalist:elite|Hunter:elite|Illusionist:elite|Mage. This is a hard encounter for an average party, try to first focus on the enemy=Illusionist:elite while hiding behind anti projectiles skills. Do not stand in chaos storms or corrupted geysers and dodge wave of corruption.
+After dispatching the Risen, you can either stick to the left or the right side. In both cases 3 enemy=Vile_Oozes:elite will ambush you. In the middle of the path there are 2 enemy=Orrian_Drakes:elite, with two more further up the road. anti projectile skills, especially reflections are highly effective against this type of mobs.
+After reaching a small slope, more than a dozen of enemy=Lesser_Oozes_(Fighting):normal will appear. At the end of corridor there are three additional enemy=Drakes:elite. Deal with them as usually.
+#######################################
+tactic=fight
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect your team against deadly projectiles of elite Risen and Drakes.
+tactic=guardian
+wiki=Virtue_of_Resolve traited with wiki=Absolute_Resolution is able to quickly remove three conditions from your team.
+
+name=enemy=Crystalline_Entities:champion
+image=http://i.imgur.com/YuEDYVU.jpg
+image=http://i.imgur.com/EfXyuLr.jpg
+tactic=normal
+The objective is to kill the nine enemy=Crystalline_Entities:champion wandering around the area. They are resistant to damage and conditions.
+In order to be able to damage them, you need a debuff which is acquired by standing in the spots where a green light is shining through the roof of the cave. The more stacks you have, the more damage you will deal, be advised, however, that each stack deals damage to you every second.
+The enemy=Entities:champion are extremely easy to kill if you play as a team. Group together at the first light spot and wait until everyone in the team has at least five stacks. If you attack immediately with one or two stacks, you will barely do any damage. Try not to aggro more than 3 at a time and burst them down quickly.
+They only have one basic melee attack but they can quickly kill you if you try to tank them. Stay mobile and keep kiting them inside the light, with proper movement they should not be able to hit you at all.
+If you take too much damage and the stacks are about to kill you, just step out of the light. If possible, use mobility skills to quickly break aggro. If you keep kiting them outside of the light other players will have a hard time hitting them (especially melee players).
+Once they are dead, do not forget to get your chest near the Jotun spirit NPC.
+
+name=To Tar
+image=http://i.imgur.com/Lg0K6ty.jpg
+tactic=skip|fight
+All enemies are often skipped, there is no incentive to kill them as this skip is very straightforward. When you drop down from the ledge you will see 3 enemy=Orrian_Drakes:elite. Run forward until you see a Detonator. Use it to kill about thirty normal Risen further down the path.
+If you stick to the right near the wreck of the ship, you will be ambushed by 3 enemy=Orrian_Spiders:elite, 5 enemy=Orrian_Spiders:normal and an enemy=Orrian_Spider:champion.
+Further on the road there will be enemy=Orrian_Drake:champion and 8 enemy=Orrian_Drakes:elite on the right side which you should just ignore.
+
+name=enemy=Shoggroth:legendary
+tactic=normal
+Wait for rest of the team before going to the area with geysers. Spread over the area and quickly clean up 4 corpses by walking over them when at full health. Ignore "300 years old Whiskey" bundle on the ground because its burning has a very low duration.
+After a while, four geysers will activate and start spawning enemy=Tars:normal. In order to stop them from spawning, a player has to stand on a geyser. To spawn the boss, four players have to stand on the four geysers. Step on them as fast as possible to avoid getting overrun. When the boss appears, the geysers stop spawning Tars so you can safely get off them.
+The boss is rather easy to defeat as long as your team can maintain constant burning. enemy=Shoggroth:legendary has just one attack which causes multiple unblockable AoEs. If the boss is not burning, each AoE will spawn a Tar and stepping on those AoEs will give you the "Covered in Tar" debuff which disables you completely for 1 minute (downed state is the only way to break it). If the boss is on fire, its attack only causes burning, though this burning has a long duration and might down players in teams with low sustainability.
+Focus enemy=Tars:normal to reduce pressure and remember to rally off of them. Every 25% enemy=Shoggroth:legendary will hide, which will activate the geysers again. Quickly stand on 3 geysers to prevent lots of Tars from appearing. Keep the last one open if there are lots of Tars to kill or if anyone needs to be healed or resurrected.
+Check wiki=Burning|wiki for a list of skills and traits which cause burning. Coordinate with your party.
+tactic=warrior
+Use wiki=Combustive_Shot and wiki=Fan_of_Fire for burning.
+tactic=guardian
+Use wiki=Zealot's_Flame and don't activate wiki=Virtue_of_Justice for burning.
+#######################################
+tactic=coordinated
+When Shoggroth appears, move back and pull him behind a corner. If you can't keep burning permanently up, time it right before he attacks.
+When Shoggroth stars moving back, keep him permanently immobilized. Immobilization stacks only 3 times so use it only when it's about to run out. You don't have to care about burning any more since he won't fight back while trying to escape.
+If Shoggroth manages to escape quickly move to geysers and pull him again. If he has less than 25% health you can just kill him on spot.
+Check wiki=Immobilized|wiki for a list of skills and traits which cause immobilization. Coordinate with your party.
+tactic=warrior
+Use wiki=Combustive_Shot and wiki=Fan_of_Fire for burning and wiki=Pin_Down and wiki=Throw_Bolas for immobilization.
+
+#################################################################################################################################
+
+path=Arah2
+name=The Ruined City of Arah Path 2: Mursaat
+tactic=normal
+Level: 80.
+Reward: 3.31g + 60 tokens.
+Average length: 28 minutes.
+Difficulty: Hard.
+Enemies: Undead.
+Time: Day.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty if you want to be optimal.
+youtube=ptXuson2fyI|Video_guide (Banter Bill).
+Current record: record=32.
+
+name=Start
+image=http://i.imgur.com/I87OBqE.jpg
+image=http://i.imgur.com/KU3nTfu.jpg
+tactic=normal
+Use the nearby waypoint immediately. If you want to walk, watch your step because there is a hole right front of you with full of enemy=Orrian_Spiders:normal and enemy=Spider_Hatchlings. If you fall down keep running while dodging until you reach allied NPCs.
+Talk to enemy=Odgen_Stonehealer to start the path selection. Choose enemy=Scholar_Yissa to find secrets of Mursaat. After the selection, go through the debris and go forward. Don't bother with enemy=Servants, enemy=Farmers or enemy=Villagers because they constantly respawn.
+
+name=Way to Belka
+image=http://i.imgur.com/4DO0aOe.jpg
+tactic=skip
+At the start you will get ambushed by lots of enemy=Orrian_Spiders:normal. You should kill them for loot and sigil stacks.
+After you pass the gate, you will face a enemy=Risen_Defiler:elite. Its poison aura is a high-damage poison DoT, try to either stick to the wall as much as possible, dodge through it or use condition removal if you get poisoned as fast as possible before you enter combat due to the damage. This mob also has a pull skill, dodge when you see it whirl. After the single enemy=Risen_Defiler:elite there are two groups of 2 enemy=Risen_Berserkers:elite with one or 2 enemy=Risen_Defiler:elite. Run past the enemy=Risen_Berserkers:elite avoiding their melee-only attacks and avoid poison clouds/pulls from enemy=Risen_Defilers:elite.
+Finally, before the first boss encounter there is one final group of 3 enemy=Risen_Berserkers:elite and one enemy=Risen_Deadeye:elite. enemy=Risen_Deadeye:elite has a lethal sniper-attack. If you find yourself targetted by its beam, it means you are about to be shot. The shot also pierces so do not stand in the beam even if you are not its target. Dodge, use an invulnerability skill, blind the Deadeye or interrupt it. Normal blocks and anti projectiles skills are ineffective against their attack. It also plants a bomb on nearby targets which explodes after 10s. Dodging or blocking works normally. Both of those attacks can be seen in your UI.
+After the enemy=Deadeye:elite group, stick to the right side in order to avoid aggroing enemy=Belka:legendary. Keep running or hide behind a wooden structure until all enemies lose aggro.
+#######################################
+tactic=fight
+At the start you will get ambushed by lots of enemy=Orrian_Spiders:normal. You should kill them for loot and sigil stacks.
+After you pass the gate you will face a enemy=Risen_Defiler:elite. Its poison aura is a high-damage poison DoT, equip a condition removal to remove the posion. It is possible to melee them but you need to back off before the poison kills you. This mob also has a pull move, dodge when you see it whirl or you might be pulled inside its poison cloud. After the single enemy=Risen_Defiler:elite there are two groups of 2 enemy=Risen_Berserkers:elite with one or 2 enemy=Risen_Defiler:elite. Focus on the Defilers first.
+Finally, before the first boss encounter there is one final group of 3 enemy=Risen_Berserkers:elite and one enemy=Risen_Deadeye:elite. enemy=Risen_Deadeye:elite has a lethal sniper-attack. If you you find yourself targetted by its beam, it means you are about to be shot. The shot also pierces so do not stand in the beam even if you are not its target. Dodge, use an invulnerability skill, blind the Deadeye or interrupt it. Normal blocks and anti projectiles skills are ineffective against their attack. He also plants a bomb on nearby targets which explodes after 10s. Dodging or blocking works normally. Both of those attacks can be seen in your UI. Killing the enemy=Deadeye:elite should be the team's priority.
+#######################################
+tactic=skip
+tactic=elementalist
+Use either wiki=Ether_Renewal to remove poison or wiki=Glyph_of_Elemental_Harmony to gain swiftness.
+tactic=elementalist
+Both wiki=Obsidian_Flesh and wiki=Mist_Form give you invulnerability that helps immensely when skipping enemy=Defilers:elite and enemy=Deadeyes:elite.
+tactic=elementalist
+Try to teleport through enemy=text:Defiler's|Defiler:elite poison cloud with wiki=Lightning_Flash.
+tactic=elementalist
+wiki=Ride_the_Lightning gives you additional mobility.
+tactic=elementalist
+If your team lacks swiftness, consider equipping wiki=Signet_of_Air for a passive movement speed bonus.
+tactic=guardian
+When running use wiki="Stand_Your_Ground!", wiki="Retreat!" and wiki=Virtue_of_Courage to prevent Defilers from pulling.
+tactic=guardian
+Use wiki=Renewed_Focus to block shot from the enemy=Deadeye:elite or blind him with traited wiki=Virtue_of_Justice or one of many weapon skills.
+
+name=enemy=Operative_Belka:legendary
+tactic=normal
+Her only dangerous attack is a ballistic projectile which deals extreme damage. If you see a glowing orb of energy coming towards you, dodge away. It is not used on targets standing close toher but may hit players in close range if you move fast.
+Her basic attack shoots 3 projectiles which apply burning. Grab Consider using condition removal if you party has low sustain. She also occasionally teleports, gaining projectile reflection (signified by an icon under her healthbar) and shoots fast projectiles which knock back. Stop using projectile based attacks when you see her use the bubble.
+Every 25% more and more enemy=Suspicious_Pots:structure ignite. Stay away from them. Be careful not to confuse their red circles with that of enemy=text:Belka's|Belka:legendary ballistic projectile.
+Because enemy=Belka:legendary does not move naturally you can easily run behind something to get cover and regenerate.
+tactic=elementalist
+wiki=Swirling_Winds can be used to protect your team from the ballistic projectiles.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect your team.
+tactic=guardian
+Use Aegis when you see her shooting a ballistic projectile to protect your team.
+#######################################
+tactic=exploit
+Run straight through her to the bonewall after her. This will make her disengage and become passive. You can attack from 1200 range without her attacking back.
+Occasionally she will wake up and either attack or teleport around. Just run back to the bonewall to make her passive again. Her health won't regenerate.
+tactic=bug
+Belka doesn't appear if NPC is too far away when you enter the area. Run together to keep NPC close. If someone is behind ensure NPC is with you before getting to the area. There is no known fix.
+
+name=Golem Suit
+tactic=normal
+You need to pass through a cave with lots of enemy=Undead_Abominations:elite and enemy=Orrian_Spiders:elite. Their melee range is much bigger than normal, enabling them to hit players even from a certain distance.
+tactic=normal
+Intended way is to use a nearby asuran golem and chargers lying around it to get through. However in some cases it might be easier to run without it, especially if you have access to stealth.
+One player gets inside the golem and one player charges it with a charger. Charging the golem gives it "Energized" buff which allows it to use the buff to create a protecting shield. This buff doesn't stack so charging him while buff is up just wastes the charger.
+Decide initial charging order to avoid wasting charges. Pay attention to the buff on golem. When it disappears the first player uses his charger. When it disappears again the second player uses his charger. Once all 4 initial charges have been used you should be pretty far already. Newer players should use their charger first because it's easy to lose focus and mess up.
+Before grabbing a charger use any area swiftness or vigor skill to get through faster. When golem dodges it will make a short dash allowing it to move faster. When buffs are up pick up a charger and proceed quickly to avoid buffs wearing off.
+Golem user should keep up the protective shield at all times so stay near him. After using your charger look for a new one. Chargers are scattered along the corridor. However remember to use any area buffs before picking up.
+Take revival skills to get people up fast if they get down. If you stop to revive them normally you will get killed. When you get through the corrifor, enemies should focus a flashing beacon nearby. Sometimes 2 enemy=Orrian_Spiders:elite will follow you, just kill them at range.
+If someone didn't get through and he can't skip it alone, you have to proceed without him or waypoint back.
+#######################################
+tactic=skip
+With decent players and access to stealth getting without golem will be much easier and faster. Stack stealth and swiftness before going in. Use mobility skills to move faster and try to stay out of combat by blocking or evading attacks.
+Take revival skills to get people up fast if they get down. If you stop to revive them normally you will probably get killed. When you get through the corrifor, enemies should focus a flashing beacon nearby. Sometimes 2 enemy=Orrian_Spiders:elite will follow you. Ignore them and proceed with skipping.
+If someone didn't get through and he can't skip it alone, you have to proceed without him or waypoint back.
+#######################################
+tactic=elementalist
+Use either wiki=Ether_Renewal to remove cripple or wiki=Glyph_of_Elemental_Harmony to gain swiftness.
+tactic=elementalist
+Both wiki=Obsidian_Flesh and wiki=Mist_Form give you invulnerability which helps immensely when trying to get through.
+tactic=elementalist
+wiki=Lightning_Flash gives you additional mobility, try not to use hit any enemies with it if you are not in combat yet.
+tactic=elementalist
+wiki=Ride_the_Lightning helps with skipping.
+tactic=elementalist
+If your team lacks swiftness, consider equipping wiki=Signet_of_Air for a passive movement speed bonus.
+tactic=engineer
+Blast your smoke field created by wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb_(bomb_kit), wiki=Toss_Elixir_U or wiki=Smoke_Screen_(engineer_skill)|Smoke_Screen_(overcharge_skill_of_Flame_Turret).
+tactic=guardian
+Use wiki="Retreat!", wiki="Save_Yourselves!" and another shout in conjunction with wiki=Pure_of_Voice or wiki=Superior_Rune_of_the_Soldier|Superior_Rune_of_the_Soldier for swiftness and to remove cripple.
+tactic=guardian
+You can use wiki=Judge's_Intervention for additional  mobility if you are already in combat.
+tactic=guardian
+Use wiki=Shield_of_Wrath and wiki=Virtue_of_Courage for blocks.
+tactic=thief
+wiki=Smoke_Screen with wiki=Cluster_Bomb and wiki=Shadow_Refuge allow you to easily get through undetected.
+
+name=Way to Abomination
+image=http://i.imgur.com/Lg0K6ty.jpg
+tactic=skip
+The open area is filled with enemy=Risen_Sentinels:elite and enemy=Risen_Deadeyes:elite. They form a very dangerous combo because enemy=Sentinels:elite stun and put down rings of warding while enemy=Deadeyes:elite kill you at range.
+Stick to the right side all the time to avoid most of the enemies. Apart from typical skills for skipping prepare 1 or 2 different sources of stability or even teleports, mostly against enemy=Sentinels:elite and their rings of warding. Take damage immunity or invulnerability if you have trouble evading Killshot from Deadeyes.
+The first group has 2 enemy=Risen_Sentinels:elite and a enemy=Risen_Deadeye:elite. If you only have one source of stability, try not to use it here. Quickly run into the tunnel. After the tunnel there are 3 enemy=Risen_Sentinels:elite and 2 enemy=Risen_Deadeyes:elite. Stick to the right side if you want to avoid as many mobs as possible and do not have stealth.
+#######################################
+tactic=fight
+The open area is filled with enemy=Risen_Sentinels:elite and enemy=Risen_Deadeyes:elite. They form a very dangerous combo because enemy=Sentinels:elite stun and put down rings of warding while enemy=Deadeyes:elite kill you at range.
+Focus on enemy=Deadeyes:elite first. Pull the enemies inside the tunnel to force enemy=Deadeyes:elite to come to you, but pay attention to any sticky bombs on your allies. Stick to the right side if you do not have stealth and want to avoid as many mobs as possible.
+tactic=skip|fight
+Run forward until you see a Detonator. Use it to kill the nearby horde of normal Risen. Further down the road you will see an enemy=Orrian_Drake:champion and 8 enemy=Orrian_Drakes:elite to your right which you should just ignore.
+#######################################
+tactic=skip
+tactic=elementalist
+Both wiki=Obsidian_Flesh and wiki=Mist_Form give you invulnerability which helps immensely when skipping enemy=Sentinels:elite and enemy=Deadeyes:elite.
+tactic=elementalist
+wiki=Lightning_Flash gives you additional mobility and a way to escape rings of warding.
+tactic=elementalist
+wiki=Armor_of_Earth grants stability needed to get out of rings of warding.
+tactic=elementalist
+wiki=Ride_the_Lightning helps with skipping.
+tactic=elementalist
+If your team lacks swiftness, consider equipping wiki=Signet_of_Air for a passive movement speed bonus.
+tactic=guardian
+Use wiki=Symbol_of_Swiftness and wiki="Retreat!" for group swiftness. Use wiki="Stand_Your_Ground!" if someone gets trapped inside enemy=Sentinels:elite bubble. Use wiki=Renewed_Focus to block enemy=text:Deadeye's|Deadeye:elite sniper shots.
+tactic=thief
+Use wiki=Smoke_Screen with wiki=Cluster_Bomb to get through the first group. Use wiki=Shadow_Refuge to get through the second group.
+tactic=mesmer
+Use wiki=Temporal_Curtain to pull the first group away to the left. Then stick to the right wall to get through without aggro.
+#######################################
+tactic=fight
+tactic=elementalist
+wiki=Lightning_Flash enables you to escape out of rings of warding.
+tactic=elementalist
+wiki=Armor_of_Earth grants stability needed to get out of rings of warding.
+
+name=enemy=Berserker_Abomination:legendary
+tactic=normal|coordinated
+Very easy to kill if you can avoid its attacks. 3 enemy=Handlers:normal respawn in the area. They drop Tranquilizer Guns upon death. You should fight the boss behind a pair of stones near the entrance to the area to LoS the Handlers.
+The enemy=text:Abomination's|Abomination:legendary normal attack is so slow that you can just run through it to avoid being hit. Dodge if unsure because of high damage it deals.
+When it jumps up you must dodge, otherwise you will be launched and take extreme damage. Staying at range is a bit risky because the Abomination will throw rocks with an unreliable hitbox at ranged players. It can hit for extreme damage even if it seems like it missed.
+Occasionally, the enemy=Abomination:legendary will enter into berserker mode during which it turns red and becomes much bigger. It does not take any damage and constantly applies strong burning at close range. Shoot it with a Tranquilizer Gun to remove the buff but keep in mind that tranquilizing interrupts animations, be prepared to dodge rocks, stomps or autoattacks without animations.
+tactic=coordinated
+The most efficient way to stop it from berserkering is to interrupt it with typical control skills.
+#######################################
+tactic=normal|coordinated
+tactic=guardian
+Use wiki="Stand_Your_Ground!" when it berserks to prevent knockback.
+tactic=guardian
+Use Aegis when it jumps to protect your team.
+tactic=guardian
+Use wiki=Binding_Blade to pull the Handlers if needed.
+tactic=thief
+wiki=Basilisk_Venom interrupts its berserkering even with defiance stacks.
+tactic=bug
+Sometimes its Stomp may deal damage at start of the animation. There is nothing you can do about it. This should happen only once.
+
+#################################################################################################################################
+
+path=Arah1|Arah2
+name=Way to Lupicus
+tactic=skip|fight
+A enemy=Risen_Hunter:elite and about twelve normal Risen patrol the area. It is advised to kill them for loot and to gain sigil stacks. Try to LoS them by standing in the right corner of the wall. Further on the way there is a enemy=Risen_Berserker:elite which you can skip.
+In the big open area there are a lot of exploding corpses, enemy=Orrian_Guard_Turrets:structure, enemy=Risen_Illusionists:elite, enemy=Risen_Hunters:elite, enemy=Risen_Mages:elite, enemy=Risen_Elementalists:elite and a enemy=Orrian_Warrior:champion.
+#######################################
+tactic=skip
+Killing them takes a lot of time so you should try to sneak through. Stick to the left side and take out enemy=Turrets:structure, preferably by utilizing projectile reflection or absorption. Pay attention to enemies in the middle. There are some spots where you can aggro enemies due to their movement. If any enemy is close enough wait until it goes away and then proceed. If any enemy aggroes, try to pull it towards your group and kill it.
+#######################################
+tactic=fight
+If you decide to clear the area, try to pull the mobs one by one if possible, avoid stepping on corpses and use projectile reflection to destroy enemy=Turrets:structure.
+#######################################
+tactic=skip|fight
+When you reach the door you will have to kill 2 enemy=Undead_Abominations:elite. Their charge move is really dangerous so get out of its way or interrupt it. Their attacks are slow and easily dodgeable. Focus on the enemy=Abominations:elite even if you accidentaly aggro something else as well. Once they are dead, the door will open and you can run in. It should be easy to kill any enemies that are still following you inside the arena.
+#######################################
+tactic=skip
+tactic=guardian
+Run past the first few turrets and use wiki=Wall_of_Reflection on the rock or in the corner by the door to destroy problematic enemy=Turrets:structure.
+tactic=skip|fight
+tactic=elementalist
+Destroy enemy=Turrets:structure with the help of wiki=Magnetic_Aura and wiki=Magnetic_Wave or protect your team with wiki=Swirling_Winds.
+tactic=elementalist
+Consider casting wiki=Magnetic_Aura or wiki=Magnetic_Wave and standing on top of a enemy=Hunter:elite for a few seconds.
+tactic=guardian
+Use wiki=Binding_Blade to pull any aggroed enemies closer.
+tactic=guardian
+Rotate blind and aegis when killing the enemy=Abominations:elite.
+tactic=Optional
+First enemy=Risen_Berserker:elite may very rarely be enemy=Risen_Illusionist:elite instead.
+
+#################################################################################################################################
+
+path=Arah3
+name=The Ruined City of Arah Path 3: Forgotten
+tactic=normal
+Level: 80.
+Reward: 1.81g + 60 tokens.
+Average length: 24 minutes.
+Difficulty: Hard.
+Enemies: Undead.
+Time: Day.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty if you want to be optimal.
+youtube=p_TBYMN5G3Q|Video_guide (Banter Bill).
+Current record: record=33.
+
+name=Start
+image=http://i.imgur.com/I87OBqE.jpg
+image=http://i.imgur.com/KU3nTfu.jpg
+tactic=normal
+Use the nearby waypoint immediately. If you want to walk, watch your step because there is a hole right front of you with full of enemy=Orrian_Spiders:normal and enemy=Spider_Hatchlings. If you fall down keep running while dodging until you reach allied NPCs.
+Talk to enemy=Odgen_Stonehealer to start the path selection. Choose enemy=Warden_Illyra to find secrets of Forgotten. After the selection, go through the debris and turn right. Don't bother with enemy=Servants, enemy=Farmers or enemy=Villagers because they constantly respawn.
+
+name=Way to enemy=Wraithlord's_Crusher
+image=http://i.imgur.com/7Fb42Wf.jpg
+tactic=normal
+You could pull first sizeable group that includes 2 enemy=Risen_Mages:elite and lots of normal Risen to the camp to get some help from NPCs and to stack mobs together. Stand in the corner in the right exit of the camp to los them.
+When you approach circular gate, it closes and 4 elite Risen appear (includes randomly one of enemy=Risen_Berserker:elite, enemy=Risen_Defiler:elite, enemy=Risen_Devastator:elite, enemy=Risen_Elementalist:elite, enemy=Risen_Hunter:elite, enemy=Risen_Sentinel:elite). Focus enemy=Hunter:elite or enemy=Elementalist:elite (if any) because they deal the most amount of damage. People often stand behind corner to stack them together but you ought to have projectile reflections or at least absorptions. After them keep sticking to left side to avoid enemy patrols.
+#######################################
+tactic=elementalist
+wiki=Swirling_Winds can protect your team against deadly projectiles.
+tactic=elementalist
+Consider casting wiki=Magnetic_Aura or wiki=Magnetic_Wave and standing on top of an enemy=Elementalist:elite and a enemy=Hunter:elite for few seconds.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect your team.
+tactic=mesmer
+Using wiki=Feedback and traited with wiki=Warden's_Feedback focus skills helps tremendously.
+tactic=engineer
+wiki=Toss_Elixir_U to get random protection from projectiles.
+tactic=warrior
+If your team lacks anti projectiles and you want to stack consider wiki=Earthshaker. Use it only with high dps parties.
+#######################################
+tactic=exploit
+If you delay path selection you can run to the gate, select path and with stealth skip 4 elite Risens. To use this effectively you need to stealth entire team or a Mesmer with stealth and wiki=Portal_Entre|Portal_(utility). Using consumables that grant stealth is also feasible.
+
+name=enemy=Wraithlord's_Crusher:legendary and enemy=Wraithlord's_Hunter:champion
+tactic=normal
+Whole battle is based on avoiding enemy=text:Crusher's|Crusher:legendary one-hit channeled melee attack. It's a very slow and well telegraphed move. However, there are two mechanics that makes this fight harder. Most important is the presence of enemy=Hunter:champion that can immobilize you with two of his attacks and cover it with poison which he uses with his other attack. enemy=text:Hunter's|Hunter:champion basic ranged attack bounces and hits 3 times. Last hit will immobilize for 7 seconds. If you get his aggro you should stay away from others to not get them immobilized. When he glows he either shoots poison gas at enemy=Crusher:legendary or shoots slow projectile which immobilizes (easy to avoid with movement). If targeted at close range, he will dodge back and lay immobilizing trap. Dodge towards him or simply attack him without having him as a target.
+enemy=Crusher:legendary has a minor healing ability and his shouts resurrect dead allies (this includes enemy=Hunter:champion) and transfer all conditions to nearby enemies so using immobilize on him is counterproductive. To survive easily, make you sure you have 3-4 ways to counter immobilize (either good condition-removal, block, evade, teleport or immunity). Keep in mind that single blocks like wiki=Riposte will not protect your from enemy=Crusher:legendary if you are in melee range. If you have party members that are using range weapons from a distance, try to force it to slam in opposite direction of them.
+The usual tactic is to focus enemy=Crusher:legendary because he will resurrect enemy=Hunter:champion otherwise. However, when the former dies, all enemies it resurrected will die too. So hit enemy=Hunter:champion too if possible. You can also focus on enemy=Hunter:champion first because once he gets resurrected he will no longer use poison Cloud and once you kill enemy=Crusher:legendary, enemy=Hunter:champion will die as well.
+#######################################
+tactic=exploit
+You can pull enemy=Crusher:legendary away from enemy=Hunter:champion if you have pulled and killed starting enemies away from their spawn point (even if he resurrects them you will be safe as long as they do not get aggroed).
+#######################################
+tactic=normal|exploit
+tactic=elementalist
+wiki=Magnetic_Wave and wiki=Cleansing_Flame both remove 3 conditions.
+tactic=elementalist
+wiki=Ether_Renewal cleanses conditions really fast on a 15s cooldown.
+tactic=mesmer
+Use wiki=Null_Field to remove conditions from the team.
+tactic=ranger
+wiki=Healing_Spring removes conditions from your team.
+#######################################
+tactic=normal
+tactic=elementalist
+wiki=Swirling_Winds can protect your team against immobilize.
+tactic=guardian
+Use wiki=Renewed_Focus or wiki=Shield_of_Wrath to tank enemy=Crusher:legendary if needed.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to prevent immobilize from enemy=Hunter:champion.
+tactic=mesmer
+Using wiki=Feedback and traited Focus skills prevent applications of immobilize from enemy=Hunter:champion.
+tactic=engineer
+wiki=Toss_Elixir_U to prevent immobilize from Hunter.
+
+name=Way to Mage Crusher
+tactic=fight
+The next part is filled with mostly elite Risen. There are six groups of 4 enemy=text:Risen|Elementalist:elite|Hunter:elite|Illusionist:elite|Mage:elite. You should pull those groups very carefully. Using projectile reflections helps extremely against enemy=Risen_Elementalists:elite and enemy=Risen_Hunters:elite. Move towards the South while clearing 4 groups of elite Risen.
+#######################################
+tactic=skip
+This part is very often skipped but this skip is one of the harder in Arah because of the elite Risen which like to inflict long lasting Chill and tight space. There are four groups of 4 enemy=text:Risen|Elementalist:elite|Hunter:elite|Illusionist:elite|Mage:elite. At the start stick to left side, wait for patrol to move out of way and quickly move to the ledge above. Then skip normally by using typical skipping methods.
+#######################################
+tactic=fight|skip
+After a while you will face 2 another groups of elite Risen and enemy=Orrian_Spiders:normal if you keep moving forward. Both of those two groups are avoidable if you move between their aggro range. Turn the left immediately after those two groups and stick to the left side (there are enemy=Risen_Hands:structure nearby).
+#######################################
+tactic=fight
+On the wide area there is patrolling a enemy=Giant:champion. There are also a lot of enemy=Risen_Hands:structure which occasionaly will throw a rock that knocks you down. There are 3 entrance to the area of the next boss. Two of them (left and right) appear unguarded but in fact you will be ambushed by enemy=Orrian_Spider:champion and 2 enemy=Orrian_Spiders:elite. The center entrance is never used because it has a group of 6 elite Risen and 6 normal Risen.
+#######################################
+tactic=skip
+There are 3 entrance to the area of the next boss. Two of them (left and right) appear unguarded but in fact you will be ambushed by enemy=Orrian_Spider:champion and 2 enemy=Orrian_Spiders:elite. Left way is often used because you can easily lose aggro by running to the nearby media=arahp3_firstskip3.jpg|ledge, right next to enemy=Mage_Crusher:legendary. The center entrance is never used because it has a group of 6 elite Risen and 6 normal Risen.
+#######################################
+tactic=fight
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect your team against deadly projectiles of elite Risen.
+tactic=skip
+tactic=engineer
+Blast your smoke field created by wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb_(bomb_kit), wiki=Toss_Elixir_U or wiki=Smoke_Screen_(engineer_skill)|Smoke_Screen_(overcharge_skill_of_Flame_Turret) to get long lasting stealth.
+tactic=guardian
+Use wiki=Symbol_of_Swiftness, wiki="Retreat!" and wiki=Judge's_Intervention for mobility.
+tactic=guardian
+Use wiki=Wall_of_Reflection in front of close enemy=Hunters:elite or enemy=Elementalists:elite to protect your team.
+tactic=guardian
+Use shouts with wiki=Pure_of_Voice or wiki=Superior_Rune_of_the_Soldier|Superior_Rune_of_the_Soldier to remove chilled from the team.
+tactic=thief
+Blast your wiki=Smoke_Screen with wiki=Cluster_Bomb and later use wiki=Shadow_Refuge to get through undetected.
+tactic=exploit
+Right after the Crusher you can jump up the cliff by using media=arahp3_firstskip.jpg|a_coraltree. It takes some practice and you may have to use waypoint if you get stuck. Alternatively you can also sneak up. Let a patrol of 3 Risen pass you and then stick to the wall on left (you may have to get back if there's another patrol on the way). If you get caught you should either just die or run away from everyone else so you won't get them killed.
+Once you are at the top you need to use media=arahp3_firstskip2.jpg|a_leap.
+
+name=enemy=Wraithlord's_Mage_Crusher:legendary
+tactic=coordinated
+If your team has high uptime of anti projectiles skills this boss is very easy to defeat. His basic attack is hard hitting slow projectiles that inflicts high amount of damage and poison. If you stay in melee it's very difficult to dodge it and everyone in melee needs to do it. On top of that there are multiple respawning enemy=Risen_Hands:structure which knock you down with their rocks. That's where anti projectiles comes handy.
+#######################################
+tactic=normal
+Without anti projectiles skills he is dangerous with his strong basic attack. This basic attack is hard hitting slow projectiles that inflicts high amount of damage and poison. If you stay in melee it's very difficult to dodge it and everyone in melee needs to do it. On top of that there are multiple respawning enemy=Risen_Hands:structure which knock you down with their rocks. Stay mobile and move in zig zag pattern to avoid most of them. You should have a stun breaker to save you from dangerous situations. If you want to melee him as a group you need to either block or use anti projectiles skills. You can dodge it but everyone needs to do it then. Alternatively, just the person that has his aggro could attack him from range while the rest can attack him from melee range.
+#######################################
+tactic=normal|coordinated
+enemy=Mage_Crusher:legendary often plants marks which have no initial effect. After he jumps in the air they explode dealing high damage to everyone standing on top of them. Dodge or simply move out of them if there's a room for that.
+After 75% he occasionally drains health from one player. It's rather long channeled attack, you should break line of sight, try to quickly move out of his range, keep dodging or try to interrupt him.
+#######################################
+tactic=normal|coordinated
+tactic=elementalist
+Use wiki=Swirling_Winds to protect your team from his strong basic attack and knockdown from enemy=Risen_Hands:structure.
+tactic=engineer
+wiki=Toss_Elixir_U can be used to grant your team anti projectiles skills.
+tactic=guardian
+Pick wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger as utilities to prevent strong basic attack and knockdown from Hands.
+tactic=guardian
+Use wiki="Retreat!" or wiki=Virtue_of_Courage when enemy=Mage_Crusher:legendary is about to trigger his marks.
+tactic=mesmer
+Use wiki=Feedback and wiki=Temporal_Curtain with wiki=Phantasmal_Warden traited with wiki=Warden's_Feedback to prevent strong basic attack and knockdown from enemy=Risen_Hands:structure.
+tactic=ranger
+Go in melee range and use wiki=Whirling_Defense.
+
+#################################################################################################################################
+
+path=Arah4
+name=The Ruined City of Arah Path 4: Seer
+tactic=normal
+Level: 80.
+Reward: 3.31g + 60 tokens.
+Average length: 45 minutes.
+Difficulty: Hard.
+Enemies: Undead.
+Time: Day.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty if you want to be optimal.
+youtube=2uXao7Xgl30|Video_guide (Banter Bill).
+Current record: record=34.
+
+name=Start
+image=http://i.imgur.com/I87OBqE.jpg
+image=http://i.imgur.com/KU3nTfu.jpg
+tactic=normal
+Use the nearby waypoint immediately. If you want to walk, watch your step because there is a hole right front of you with full of enemy=Orrian_Spiders:normal and enemy=Spider_Hatchlings. If you fall down keep running while dodging until you reach allied NPCs.
+Talk to enemy=Odgen_Stonehealer to start the path selection. Choose enemy=Randall_Greyston to find secrets of Seer. After the selection, go through the debris and go forward. Don't bother with enemy=Servants, enemy=Farmers or enemy=Villagers because they constantly respawn.
+
+name=Way to enemy=Kaisar,_High_Priest_of_Balthazar
+image=http://i.imgur.com/4DO0aOe.jpg
+tactic=normal
+At the start you will get ambushed by lots of enemy=Orrian_Spiders:normal. You should kill them for loot and sigil stacks.
+After gate you will face lots of normal Risen. Just kill them. After that wait a bit for enemy=Undead_Knight:champion to appear. Just do not tank his melee attacks and he should be easy to kill.
+tactic=optional
+If you waypoint back to the camp after aggroing enemy=Undead_Knight:champion, he will teleport with you. Unfortunately he isn't very strong so NPCs survive pretty well against him.
+
+name=enemy=Kaisar,_High_Priest_of_Balthazar:legendary
+tactic=normal
+To make him appear you have to kill 3 enemy=Hounds_of_Balthazar:elite and bring their remainings to torches on middle.
+Kaisar should be very easy to kill. Just avoid AoEs. If you range then just keep him slowed and kite him. Melee is also easy if you have good reflexes (or just predict). Just dodge through him when he spins.
+
+name=Way to Vahid
+tactic=normal
+First you will see moving green glowing balls. Just avoid them because they kill quite fast. After that you get ambushed by ~4 enemy=Vile_Oozes:elite. Then ~5 elite Spectral enemies and then bit more green glowing balls. After that a group of ~5 elite Risen. They are quite hard to kill so people just skip them.
+
+name=enemy=Vahid,_High_Priest_of_Melandru:legendary
+tactic=ranged|melee
+The room has 3 enemy=Orrian_Gorillas:elite at the middle. They keep respawning so you shouldn't kill them unless your group has a high damage. Instead, dedicate one player to kite them at back of the room. Kiting them is pretty easy with swiftness and a stun break as a back up.
+Rest of the players should use buckets on tree stumps which are located on small rooms. Successful usage causes a tree to appear which starts shooting glowing balls to middle. After reviving all trees Vahid will appear at the middle. He is surrounded by lots of moving green balls which knock you back and deal lots of damage on hit.
+tactic=ranged
+Use weapons with a high range and try to find a spot where green balls don't move.
+tactic=melee
+Consider using ranged weapons. Melee is very hard and unforgiving unless you have a good team and can find the safe spot from green balls. He has an attack which launches nearby targets so you need to have stability, blocks or evades which don't make you move. If you move you may get killed by green balls.
+tactic=ranged|melee
+He occasionally summons enemy=Trees which apply immobilized once in a while. With Gorillas away it's nothing to worry about. Summon also has some initial damage so avoid falling asleep.
+tactic=coordinated
+Stack at the melee safe spot. Use group stability so you don't launched or knocked down by Gorillas. Burst the boss and Gorillas down.
+Alternative safer tactic is to kill Gorillas first and then move to the melee spot. If Gorillas manage to respawn, move back to kill them again.
+
+name=Way to Farnaz
+tactic=normal
+You will get ambushed by ~4 enemy=text:Risen|Elementalist:elite|Hunter:elite|Illusionist:elite|Mage:elite. If you want to skip them you need to move really fast, use stealth or burst really hard.
+At the end of road there is a closed door. You need to kill enemy=undead_abomination:elite to open it. Rally from normal Risen if needed.
+After gate you will end up on wide area. There is patrolling a enemy=Giant:champion. There are also lots of enemy=Risen_Hands:structure. There are 3 ways to go on, left, forward or right. Forward is never used because it has a group of 6 elite Risen and 6 normal Risen.
+On both left and right way you get ambushed by a enemy=Orrian_Spider:champion and 2 enemy=Orrian_Spiders:elite. Left way is often used because you can more easily lose aggro by running to nearby ledge (right next to Mage Crusher). These enemies should be easy to skip.
+
+name=enemy=Farnaz,_High_Priestess_of_Lyssa:legendary
+tactic=normal
+She is really easy with party wide condition removal and if you pay attention. When she summons clones she will shatter them and cause 25 confusion party wide. You can kill yourself in seconds so stop attacking and remove them.
+Her basic ranged attack does some damage and inflicts conditions but should not be a threat. When she glows purple she morphs one player to a Moa. Try to dodge it. She also summons illusions based on targets profession, just cleave/AoE them.
+tactic=bug
+Farnaz may not spawn if Whispers Agent died during her dialogue or something similar. To prevent it, use stealth to skip spiders or lose aggro before approaching the statue. There is no known fix.
+
+#################################################################################################################################
+
+path=Arah3|Arah4
+name=Corrupted Light
+tactic=normal
+Underwater tunnel is filled with enemy=Rotten_Mouths:structure. They barely do any damage and the only threat they present is getting in combat slowing your move speed down. Once you resurface, there will be 2 enemy=Orrian_Gorillas:elite and 2 enemy=Orrian_Gorillas:normal. Their knockdowns last very long, take stun breaker or stability to counter them.
+To open next pair of doors you need to bring "Corrupted Light"-bundle taken from the nearby globe to the holder near the closed door. While holding the bundle you receive constant damage. To complete this part you have to pass it to the other players. Keep in mind that throwing the bundle is a ground targeted skill - aim behind your target so he catch it. You can use mobility skills, teleports and swiftness to move faster.
+After you complete it, there are another closed doors with exactly same mechanics to open it, except you have to bring the bundle much further.
+#######################################
+tactic=coordinated
+Underwater tunnel is filled with enemy=Rotten_Mouths:structure. They barely do any damage and the only threat they present is getting in combat slowing your move speed down. Once you resurface, there will be 2 enemy=Orrian_Gorillas:elite and 2 enemy=Orrian_Gorillas:normal. Skip them, run quickly towards first globe and complete both parts without failing. Otherwise angry gorillas will catch you.
+#######################################
+tactic=normal|coordinated
+tactic=elementalist
+wiki=Lightning_Flash gives you additional mobility.
+tactic=engineer
+wiki=Rocket_Boots give you additional mobility.
+tactic=guardian
+Use wiki=Symbol_of_Swiftness and wiki="Retreat!" for mobility.
+tactic=guardian
+Use wiki=Virtue_of_Resolve for an extra heal.
+tactic=mesmer
+wiki=Portal_Entre|Portal_(utility) is extremely useful, especially for 2nd "Corrupted Light".
+tactic=mesmer
+wiki=Blink gives you additional mobility.
+tactic=necromancer
+You can plant a wiki=Flesh_Wurm to work like Portal.
+tactic=necromancer
+Use wiki=Spectral_Walk in the middle of the run. Run up to the light, pick up the bundle and use spectral walk again to teleport with the bundle.
+tactic=thief
+wiki=Shadow_Step gives you additional mobility.
+tactic=warrior
+Use wiki=Defiant_Stance when at low health for big healing.
+#######################################
+tactic=coordinated
+tactic=elementalist
+Interact with the light without accepting it. Turn your character appropriately, use wiki=Ride_the_Lightning and quickly take light before getting too far.
+tactic=elementalist
+You can use wiki=Ride_the_Lightning while catching the bundle to move much faster while holding the bundle.
+tactic=engineer
+Interact with the light without accepting it. Turn your character appropriately, use wiki=Rocket_Jump and quickly take light before getting too far.
+tactic=engineer
+You can use wiki=Rocket_Jump while catching the bundle to move much faster while holding the bundle.
+tactic=guardian
+Interact with the light without accepting it. Turn your character appropriately, use wiki=Leap_of_Faith and quickly take light before getting too far.
+tactic=guardian
+You can use wiki=Leap_of_Faith while catching the bundle to move much faster while holding the bundle.
+tactic=thief
+Interact with the light without accepting it. Use wiki=Infiltrator's_Arrow and quickly take light.
+tactic=thief
+You can use wiki=Infiltrator's_Arrow while catching the bundle to teleport with it.
+tactic=warrior
+Interact with the light without accepting it. Turn your character appropriately, use wiki=Rush and quickly take light before getting too far. Follow up with wiki=Bull's_Charge.
+tactic=warrior
+You can use wiki=Savage_Leap, wiki=Rush, wiki=Bull's_Charge, wiki=Whirlwind_Attack while catching the bundle mid-air.
+tactic=solo
+tactic=warrior
+youtube=R9Qm-lzOofc|Video of a solo.
+
+name=Way to Lupicus
+tactic=skip|fight
+On big open area there are lots of exploding corpses, enemy=Orrian_Guard_Turrets:structure, enemy=Risen_Illusionists:elite, enemy=Risen_Hunters:elite, enemy=Risen_Mages:elite, enemy=Risen_Elementalists:elite and enemy=Orrian_Warrior:champion.
+#######################################
+tactic=skip
+Killing them takes a lot of time so you should try to sneak through. Stick to left side and take out enemy=Turrets:structure, preferably by utilizing projectile reflections or absorptions. Pay attention to enemies on the middle. There are some spots where you can aggro enemies due to their movement. If any enemy is close enough wait until it goes away and then proceed. If any enemy aggroes, try to pull it to you and kill it.
+#######################################
+tactic=fight
+If you decide to clear the area, try to pull mobs one by one if possible, avoid stepping on corpses and use projectile reflections to destroy enemy=Turrets:structure.
+#######################################
+tactic=skip|fight
+When you reach the door you have to kill 2 enemy=Undead_Abominations:elite. Their charge is really dangerous so get out of its way or interrupt them. Their attacks are slow so you can easily dodge them all. Focus enemy=Abominations:elite even if you aggro something. Once they are dead, the door opens and you can run in. It should be easy to kill any following enemies then.
+#######################################
+tactic=skip
+tactic=guardian
+Run past the first few turrets and use wiki=Wall_of_Reflection on the rock or in the corner by the door to destroy problematic enemy=Turrets:structure.
+tactic=skip|fight
+tactic=guardian
+Use wiki=Binding_Blade to pull any aggroed enemies closer.
+tactic=guardian
+Rotate blind and aegis when killing the enemy=Abominations:elite.
+
+#################################################################################################################################
+
+path=Arah1|Arah2|Arah3|Arah4
+name=enemy=Giganticus_Lupicus:legendary
+tactic=ranged
+This boss fight consists of 3 distinct phases. In the first phase, enemy=Lupicus:legendary remains mostly stationary and does three different moves (but one is only used if you are within melee range). If you want to play it safe and simply range it, have your party stack in one spot. Its first move, the roar, summons 0-4 enemy=Locusts:elite which will start moving towards your group. They can only damage you if you stay stationary but if you have 1-3 people with melee weapons you can kill them really fast when they come within your melee range.
+#######################################
+tactic=melee|coordinated
+This boss fight consists of 3 distinct phases. In the first phase, enemy=Lupicus:legendary remains mostly stationary and does three different moves. Its first move, the roar, summons 0-4 enemy=Locusts:elite which die really fast to cleave damage. They can only damage you if you remain stationary so try to stay mobile throughout the whole phase.
+Its next attack is the kick. enemy=Lupicus:legendary leans on his left foot before kicking but it is quite fast, making it difficult for inexperienced players to dodge. Try to predict it - if it does not do anything for about 3s he might try to kick. This move can instantly down players with low defensive stats.
+#######################################
+tactic=ranged|melee|coordinated
+Its last skill infects the targeted player. Infected players glow with a dark green light. After roughly 4s this player will be knocked down for about 5s and spawn an inactive enemy=Risen_Grub:normal, which will move towards enemy=Lupicus:legendary, and get eaten by it after a few seconds (or immediately after enemy=Lupicus:legendary finishes its current animation if you are in melee). This will give him 1 stack of Empower, granting him more damage and armor. What you have to do is to either dodge or use an immunity skill (this skill is unblockable) when his hand is up to prevent the infection. If you fail to do so, burst the grub down before it starts moving.
+At 75% HP, after finishing its current animation, enemy=Lupicus:legendary turns invulnerable for 5s and infects the closest target (even NPCs, this infection is unavoidable), entering phase 2.
+#######################################
+tactic=coordinated
+Use stability and time your dodge to avoid spawning the final grub.
+#######################################
+tactic=melee|coordinated
+tactic=guardian
+Use Aegis to protect your team from its kick.
+
+path=Arah1|Arah2|Arah3|Arah4
+name=enemy=Giganticus_Lupicus_(Phase_2):legendary
+tactic=ranged
+Try to kill the last enemy=Grub:normal but if not possible let enemy=Lupicus_(Phase_2):legendary eat it. Kill any remaining enemy=Locusts:elite. enemy=Lupicus_(Phase_2):legendary has 4 different abilities.
+Its first attack is the Dash. It shadowsteps slowly towards an enemy, damaging and knocking down everyone nearby upon reaching its target. A simple dodge or block is enough to avoid it.
+Its next move is Lupine Blast. It is a slow-moving projectile which can either be dodged at closer range or evaded by zig zagging when at higher range. If you stay within melee range, this attack cannot hit you.
+Its close range move, mighty Blow, is very distinct and is often used after enemy=Lupicus_(Phase_2):legendary finishes his Dash and someone gets knocked down.
+Its last and most dangerous attack is Frenzied Blast. enemy=Lupicus_(Phase_2):legendary puts its hands on its chest, launching a barrage of projectiles all over the arena. Those projectiles first hit those standing closer to it, hitting targets in melee range almost immediately. Projectiles also come in 3 waves. On top of that, if more than 2 players are fighting enemy=Lupicus_(Phase_2):legendary, some red circles are not drawn, and at long range the circles might disappear before the projectiles hit the ground. To counter this move, try to either move towards him while dodging or move towards the walls of the arena. You may also use block/immunity skills and anti projectiles skills, but keep in mind that personal reflects are ineffective if you do not use them in conjunction with immunity skills. Prepare to dodge Lupine Blast afterwards as he may use it shortly after finishing casting Frenzied Blast.
+At 50% HP, enemy=Lupicus_(Phase_2):legendary once again turns invulnerable, casts a less dangerous version of Frenzied Blast and enters Phase 3.
+#######################################
+tactic=melee
+First thing you should do is kill the last enemy=Grub:normal. Usually, there are two ways of dealing with it. Either get some distance from enemy=Lupicus_(Phase_2):legendary and burst it while waiting for Frenzied Blast, or use anti projectiles skills and kill the grub before enemy=Lupicus_(Phase_2):legendary finishes its animation.
+This phase is really straightforward and fast if your team has projectile reflections. enemy=Lupicus_(Phase_2):legendary has 4 different attacks.
+Its first attack is the Dash. enemy=Lupicus_(Phase_2):legendary shadowsteps slowly towards an enemy, damaging and knocking down everyone nearby upon reaching its target. A simple dodge or block is enough to avoid it. If your whole team is in melee range, he will never use it unless on an NPC.
+Its next move is Lupine Blast. It is a slow-moving projectile but still hard to dodge at close range. Try to keep anti projectile skills up so you don't have to worry about this.
+Its close range move, mighty Blow, has a distinct and slow animation - enemy=Lupicus_(Phase_2):legendary swipes with its arms. It is possible to simply move through it behind its back with swiftness to completely avoid its damage. Otherwise, a dodge is enough.
+Its last and most dangerous attack is Frenzied Blast, especially so if you are in melee range. enemy=Lupicus_(Phase_2):legendary puts its hands on its chest,launching a barrage of projectiles all over the arena. Those projectiles first hit those standing closer to it, hitting targets in melee range almost immediately. Projectiles also come in 3 waves. On top of that, if more than 2 players are fighting enemy=Lupicus_(Phase_2):legendary, some red circle are not drawn, and at long range the circles might disappear before the projectiles hit the ground. To counter this move, use your AoE projectile reflects, duration-based blocks, immunity skills or dodge twice. Projectile reflects are extremely effective here and it is even possible to immediately trigger phase 3 if the whole party stays in melee range.
+At 50% HP, enemy=Lupicus_(Phase_2):legendary once again turns invulnerable, casts a less dangerous version of Frenzied Blast and enters Phase 3.
+#######################################
+tactic=ranged|melee
+tactic=elementalist
+wiki=Swirling_Winds will protect your team from Frenzied Blast.
+tactic=elementalist
+wiki=Mist_Form and wiki=Obsidian_Flesh are effective against Frenzied Blast.
+tactic=elementalist
+Using wiki=Mist_Form or wiki=Obsidian_Flesh in conjunction with wiki=Magnetic_Wave or wiki=Magnetic_Aura can reflect a portion of Frenzied Blast.
+tactic=engineer
+wiki=Toss_Elixir_U can either reflect or absorb Frenzied Blast or Lupine Blast.
+tactic=engineer
+If you push Lupicus to the wall, wiki=Toss_Elixir_U at the wall to reflect all of the projectiles for massive damage.
+tactic=engineer
+Use wiki=Gear_Shield to block Frenzied Blast.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" to prevent the infected player from getting knocked down by the final Grub.
+tactic=guardian
+Use wiki=Wall_of_Reflection when in melee to reflect some damage, but do not count on it to keep you safe, unless everyone standing near you will stack in its field (if a projectile hits the ground nearby, the splash may still damage you).
+tactic=guardian
+If you push Lupicus to the wall, use wiki=Wall_of_Reflection with wiki=Consecrated_Ground at the wall to reflect all of the projectiles for massive damage.
+tactic=guardian
+wiki=Shield_of_the_Avenger and wiki=Shield_of_Absorption will protect your team from Frenzied Blast.
+tactic=guardian
+wiki=Shelter, wiki=Renewed_Focus or two dodges with wiki=Shield_of_Wrath help against Frenzied Blast.
+tactic=guardian
+Use Aegis against melee attacks when reviving or if yor team is doing full melee.
+tactic=mesmer
+wiki=Feedback protects melee players from the big AoE and deals extreme damage. Use it when enemy=Lupicus_(Phase_2):legendary starts the animation and then try to get inside the bubble or blink inside.
+tactic=mesmer
+If you push Lupicus to the wall, use wiki=Feedback to reflect all of the projectiles for massive damage.
+tactic=ranger
+wiki=Whirling_Defense protects you and reflects a lot of damage if you time it correctly, consider traiting wiki=Off-Hand_Training to also protect your team.
+tactic=ranger
+wiki=Lightning_Reflexes gives you an additional dodge.
+tactic=thief
+Using wiki=Smoke_Screen may protect your team but it is not a perfectly safe option.
+tactic=thief
+wiki=Infiltrator's_Strike and wiki=Shadow_Return can be used to safely avoid its Frenzied Blast by teleporting out-and-in of melee range.
+tactic=thief
+wiki=Withdraw, wiki=Roll_for_Initiative and wiki=Signet_of_Agility give you additional dodges.
+tactic=warrior
+wiki=Shield_Stance and wiki=Riposte are every effective against Frenzied Blast. Just keep in mind that you have to get some distance from enemy=Lupicus_(Phase_2):legendary to avoid counterattacking with riposte.
+tactic=warrior
+wiki=Endure_Pain might help you against Frenzied Blast.
+tactic=bug
+With 3 or more players every AoE circle of Frenzied Blast won't get drawn. Try to have full health so you won't get downed if you get hit.
+
+path=Arah1|Arah2|Arah3|Arah4
+name=enemy=Giganticus_Lupicus_(Phase_3):legendary
+tactic=ranged|melee
+After the transition enemy=Lupicus_(Phase_3):legendary will start to chase its targets, It will still use Lupine Blast, albeit not as frequently. Apart from Lupine Blast, enemy=Lupicus_(Phase_3):legendary replaces its moveset with 4 new moves.
+Its first new skill is an Life Drain during which it will rise in the air and float for a few seconds. This ability hits every target in range twice every second. Try to get outside its range as fast as possible, utilize dodges, teleports and other mobility skills. You can also use this attack as an opportunity to go out of combat for a brief period of time as enemy=Lupicus_(Phase_3):legendary will not reset that quickly.
+Its next move is called Life Drink. enemy=Lupicus_(Phase_3):legendary makes a horizontal motion with its right arm. Since this attack hits 4 times in 2s, targeted player has to dodge twice, use 2s blocks or both to completely negate the damage, which is high enough to kill most professions. Keep in mind that this attack has much longer range. enemy=Lupicus_(Phase_3):legendary prioritizes ranged players when using this attack. Both this and former attack, as their names suggest, heal it. Should it use them at the very start of phase 3, it is possible for it to heal itself above 50% and go back to phase 2.
+Its medium range skill, Frenzied Blast (same name as one of its P2 abilities), shoots multiple projectiles over a medium sized area. Dodge once or twice if you are in the center of its effect, use anti projectiles (personal reflects are ineffective) or simply block with skills that give duration-based blocks. Have in mind that, like all of the Giant's projectiles, those also explode on impact meaning that you can be hit outside of the red circle.
+Lastly, its most dangerous attack, called Necrid Trap, as the name suggests, entraps target player and everyone around them, dealing high amounts of damage. The targeted player cannot leave the dome without using stability, immunity skills (blocking does not allow you to leave the trap), normal teleports or using mobility skills in the opposite direction to enemy=Lupicus_(Phase_3):legendary, while non-targeted players can try to dodge outside of the place where the dome is about to appear, combined with the same skills as the targeted player. If you cannot leave the trap, try to use blocks or dodge within the dome without touching its borders to reduce the damage taken. It is also possible to get out of it by using a stunbreaker at the right time when being pushed back inside on contact with the border, but it is very unreliable. enemy=Lupicus_(Phase_3):legendary prioritizes moving and downed players when using this skill, try to remain still as much as possible.
+#######################################
+tactic=ranged
+enemy=Lupicus_(Phase_3):legendary usually focuses on a single target, who might end up downed because of that. Try to revive as fast as possible but make sure you do not get your entire team killed in the process. Try to pull the boss away from downed teammates. Most of its attacks have medium range, making kiting an effective tactic. Keep in mind, however, that it is immune to Cripple and Chill/Immobilize last shorter on it.
+#######################################
+tactic=melee
+enemy=Lupicus_(Phase_3):legendary usually focuses on a single target, who might end up downed because of that. Try to revive as fast as possible but make sure you do not get your entire team killed in the process. Try to pull the boss away from downed teammates.
+General strategy is to stay in melee range, remain still, absorb/reflect/block Frenzied Blast, run away from his AoE Life Drain and return into melee range as quickly as possible afterwards.
+#######################################
+tactic=ranged|melee
+tactic=elementalist
+Use wiki=Lightning_Flash to get out of the AoE Life Drain.
+tactic=elementalist
+wiki=Armor_of_Earth, wiki=Mist_Form, wiki=Obsidian_Flesh and wiki=Lightning_Flash allow you to escape Necrid Trap.
+tactic=guardian
+If you are caught by the trap some distance away from enemy=Lupicus_(Phase_3):legendary, you can use wiki=Flashing_Blade or wiki=Judge's_Intervention to teleport out of the bubble.
+tactic=guardian
+Use wiki=Wall_of_Reflection to reflect lots of damage or wiki=Shield_of_Absorption to negate its Frenzied Blast attack.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" to help your teammates get out of Necrid Trap. You can also use wiki=Renewed_Focus to walk out of it. Use wiki=Shield_of_Wrath if you are unable to get out to tank some of the damage.
+tactic=guardian
+Use wiki=Shield_of_Wrath to block 3 out of 4 hits of its Life Drink.
+tactic=mesmer
+Use wiki=Feedback to reflect Frenzied Blast for massive damage.
+tactic=mesmer
+wiki=Blink can get you out of its Life Drain.
+tactic=mesmer
+Prepare wiki=Mantra_of_Concentration and have wiki=Blink ready to escape Necrid Trap.
+tactic=necromancer
+Use active wiki=Flesh_Wurm to escape Necrid Trap or Life Drain.
+tactic=necromancer
+Trait your Death Shroud to grant stability to easily escape Necrid Trap.
+tactic=necromancer
+Use your elite transformations to get stability.
+tactic=ranger
+wiki=Whirling_Defense allows you to deal massive damage by reflecting Frenzied Blast.
+tactic=ranger
+wiki=Lightning_Reflexes helps get out of the Life Drain quickly.
+tactic=thief
+wiki=Infiltrator's_Strike and wiki=Shadow_Return make avoiding its Life Drain much easier.
+tactic=thief
+wiki=Withdraw and wiki=Roll_for_Initiative gets you out of its Life Drain very fast.
+tactic=warrior
+Use wiki=Shield_Stance or wiki=Riposte to block his Life Drink or tank the damage if inside the bubble.
+#######################################
+tactic=melee
+tactic=guardian
+Dodging twice and using wiki=Shelter allow to you to survive the Life Drain without getting out of its range. Wait until enemy=Lupicus_(Phase_3):legendary finishes channeling the skill before going back into melee range to avoid knockback.
+tactic=mesmer
+With full endurance you can dodge twice and then use wiki=Blurred_Frenzy to completely negate the damage done by Life Drain without getting out of its range. Wait until enemy=Lupicus_(Phase_3):legendary finishes channeling the skill before going back into melee range to avoid knockback.
+tactic=warrior
+wiki=Whirlwind_Attack in conjunction with one dodge offers additional mobility and evade to get out of its Life Drain without getting hit.
+tactic=warrior
+With a wiki=Sigil_of_Energy|Sigil_of_Energy and full endurance bar you can use three dodges with wiki=Whirlwind_Attack to evade all Life Drain hits without getting out of its range. Wait until enemy=Lupicus_(Phase_3):legendary finishes channeling the skill before going back into melee range to avoid knockback.
+
+#################################################################################################################################
+
+path=Arah1
+name=Way to Korga
+tactic=skip|fight
+After leaving the arena there are 2 enemy=text:Risen|Elementalist:elite|Mage:elite|Illusionist:elite|Hunter:elite and a corpse hidden around the corner.
+#######################################
+tactic=skip
+| Next ones are 5 elite Risen. After those you will get into more broader corridor filled with even more but less dangerous mobs. That includes 2 enemy=Orrian_Drakes:elite, 3 enemy=Orrian_Gorillas:elite and later 2 enemy=Orrian_Drakes:elite and enemy=Orrian_Gorilla:elite. Lastly, you will be ambushed by 6 enemy=Orrian_Spiders:elite.
+#######################################
+tactic=fight
+| Next ones are 5 elite Risen, try not to pull all 5 at the same time. As always when dealing with elite Risen, focus on enemy=Risen_Illusionist:elite while keeping other Risen behind layer of anti projectiles skills.
+After those you will get into more broader corridor filled with even more but less dangerous mobs. That includes 2 enemy=Orrian_Drakes:elite, 3 enemy=Orrian_Gorillas:elite and later 2 enemy=Orrian_Drakes:elite and enemy=Orrian_Gorilla:elite. Projectile reflection works well against enemy=Drakes:elite while against enemy=Gorillas:elite it is advised to equip stability to counter their 7s long knockdowns and something to remove long lasting weakness which reduces your damage capabilities significantly.
+Lastly, before next boss encounter, you will be ambushed by 6 enemy=Orrian_Spiders:elite.
+#######################################
+tactic=skip
+tactic=elementalist
+Both wiki=Obsidian_Flesh and wiki=Mist_Form give you invulnerability that helps immensely when skipping Risen.
+tactic=elementalist
+wiki=Lightning_Flash and wiki=Ride_the_Lightning give you additional mobility.
+tactic=elementalist
+If your team has enough swiftness, try not to use wiki=Windborne_Speed until someone gets chilled by enemy=Elementalist:elite or enemy=Illusionist:elite.
+tactic=elementalist
+If your team lacks swiftness, consider equipping wiki=Signet_of_Air for passive movement speed bonus.
+tactic=guardian
+wiki=Leap_of_Faith, wiki=Blinding_Flash and wiki=Judge's_Intervention increase your mobility.
+tactic=guardian
+Use wiki=Symbol_of_Swiftness and wiki="Retreat!" to get long lasting swiftness.
+tactic=guardian
+wiki=Line_of_Warding can be used to stop enemies from following you.
+tactic=guardian
+Invulnerability gained via wiki=Renewed_Focus helps when skipping Risen.
+#######################################
+tactic=fight
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect your team against deadly projectiles of elite Risen.
+
+name=enemy=Korga_the_Mighty:legendary
+tactic=normal
+Quite tricky to kill because of its strong attacks and lots of enemy=Orrian_Gorillas:elite. Use Staff of Radiance that can be found nearby to lay a trap which stuns it. Cycle it between players to keep him stunned most of the time.
+He dashes around which you should avoid. He also has very rapid close range attacks which you should try to predict. After 2 dashes he will try to resurrect nearby enemy=Gorillas:elite.
+Try to control direction of his dashes to keep him on about same spot. This prevents lots of enemy=Gorillas:elite to wake up. Keep kiting enemy=Gorillas:elite and focus enemy=Korga:legendary.
+#######################################
+tactic=skip
+This boss is pretty much always skipped by running past it.
+
+name=Way to Jotun
+tactic=skip
+There's a room with two respawning Reflecting Crystals. When you get close 2 enemy=Orrian_Spiders:champion, 3 enemy=Orrian_Spiders:elite and ~10 enemy=Orrian_Spiders:normal appear. They are tough to kill so you should just grab a Crystal and run through this room.
+If you want to kill them focus normal and elite enemies first while kiting both champions. Their area attack can easily wipe entire party so watch out. You could use Staff of Radiance to lay down long lasting stun field.
+On next room there are "traps" which shoot projectiles to the room. You should pass it as quickly as possible. It is very dangerous and extremely hard to get  anyone up (reviving locks you and you need to dodge fast).
+#######################################
+tactic=elementalist
+Both wiki=Obsidian_Flesh and wiki=Mist_Form give you invulnerability that helps immensely when skipping spiders.
+tactic=elementalist
+wiki=Lightning_Flash and wiki=Ride_the_Lightning give you additional mobility.
+tactic=elementalist
+If your team lacks swiftness, consider equipping wiki=Signet_of_Air for passive movement speed bonus.
+tactic=guardian
+wiki=Line_of_Warding can be used to stop enemies from following you.
+tactic=guardian
+Invulnerability gained via wiki=Renewed_Focus helps when skipping spiders.
+
+name=enemy=Jotun_Stargazer:legendary
+tactic=normal
+You need 3-5 Reflecting Crystals to beat him (depends on luck, your damage stats and other sources of reflections). Crystals break randomly on hit so pay attention.
+Do not aggro him before everyone is ready and in near vicinity (unless you want to solo it). A Firecircle filling entire room will appear around the Jotun. It will down anyone trying to get in or out. It also gets continuously smaller so keep an eye for it.
+enemy=Jotun:legendary mostly shoots homing projectiles. They will instantly kill you on hit and that's where those Reflecting Crystals come handy. Reflect projectiles by holding a Crystal. You should stand on top of the enemy=Jotun:legendary to instantly reflect them, this protects people without Crystals by body blocking a projectile.
+When he starts to glow he will cast dangerous AoE. Just dodge when you see the animation.
+If you need to revive someone, hold a Crystal and protect them with your body, blocking any incoming projectiles. Also, similarly take care of people without a Crystal.
+If you do not have crystal you should still attack enemy=Jotun:legendary normally (hide behind people with a Crystal).
+#######################################
+tactic=elementalist
+Consider casting wiki=Magnetic_Aura or wiki=Magnetic_Wave and standing on top of enemy=Jotun:legendary for a few seconds.
+tactic=guardian
+wiki=Wall_of_Reflection works normally while your other anti projectiles skills skills will only absorb Jotun's attacks.
+tactic=guardian
+You can increase the damage done by reflections by stacking vulnerability on Jotun. With wiki=Blind_Exposure use attacks that blinds foes. Keep in mind about traits that increase damage done under certain circumstances like Fiery Wrath.
+tactic=mesmer
+Normal reflections works as well, unleash your whole arsenal of reflections.
+tactic=warrior
+You can increase the damage done by reflections by stacking vulnerability on Jotun. Use wiki="On_My_Mark!", wiki=Cyclone_Axe, wiki=Crushing_Blow and even Greatsword autoattacks. Keep in mind about traits that increase damage done under certain circumstances like wiki=Attack_of_Opportunity.
+
+#################################################################################################################################
+
+path=Arah2
+name=Way to Alphard
+tactic=skip
+This part can be easily skipped by one person up to the next waypoint but the way is quite long. After leaving the arena you will encounter 2 enemy=Risen_Deadeyes:elite on your right side. Turn into right "alley". At the end of it there will be another 2 enemy=Risen_Deadeyes:elite and then long run to the water. Keep in mind that this area is filled with enemy=Land_Mines:structure. When walked over they will pop in the air and shortly explode dealing extreme damage. This means you can just walk over them but you should not walk right after someone. It's one of the reason why you only one person should do whole skip.
+Water-part is filled with enemy=Water_Mines:structure and with enemy=Magma_Turrets:structure which shoot projectiles. Just follow a trail of effects (they give swiftness) while avoiding mines. After them you will face two groups of 2 enemy=Risen_Sharks:normal. Their charge attack can easily down you if you do not pay attention. If you have problems just kill them.
+After water you get to a huge mine field. The easiest way to finish it is to turn right shortly after entering the field. This "secret" way bypasses all mines and enemies. Keep sticking to right side to avoid enemies until you reach waypoint.
+Your party may now use this waypoint and get to the next boss. Next area is filled with mines meaning you should not move in a group. There are 2 patrols with enemy=Inquest_Technicians:elite and elite Risen. You can get through undetected if you stick to left or right side. Sticking to left side is a bit slower but almost guarantees safe skip. If you stick to the right side you may have to wait a bit if mobs get close. Bring stability to counter stun-lock if you get caught.
+#######################################
+tactic=fight
+The area is filled with enemy=Land_Mines:structure. When walked over they will pop in the air and shortly explode dealing extreme damage. This means you can just walk over them and that you should not walk right after someone. After leaving the arena you will encounter 2 enemy=Risen_Deadeyes:elite on your right side. They are very easy to take out as long as you get close. After killing them take a right or left route, both of them lead to another group of 2 enemy=Risen_Deadeyes:elite.
+Water-part is filled with enemy=Water_Mines:structure and with enemy=Magma_Turrets:structure which shoot projectiles. Just follow a trail of effects (they give swiftness) while avoiding mines. After them you will face 2 enemy=Risen_Sharks:normal. Their charge attack can easily down you.
+After water you get to a huge mine field. The easiest way is to turn right shortly after entering the field. This "secret" way bypasses all mines and enemies. Keep sticking to right side to avoid enemies until you reach waypoint.
+After waypoint there are again lots of mines. There are 2 patrols with enemy=Inquest_Technicians:elite and elite Risen. Bring stability to counter stun-locks.
+#######################################
+tactic=skip
+tactic=elementalist
+Both wiki=Obsidian_Flesh and wiki=Mist_Form give you invulnerability that helps with skipping enemy=Deadeyes:elite and enemy=Technicians:elite if you get their aggro.
+tactic=elementalist
+wiki=Lightning_Flash and wiki=Ride_the_Lightning gives you additional mobility.
+tactic=elementalist
+If your team lacks swiftness, consider equipping wiki=Signet_of_Air for passive movement speed bonus.
+tactic=guardian
+Use wiki=Symbol_of_Swiftness and wiki="Retreat!" for mobility.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" against enemy=Risen_Sharks:normal and enemy=Technicians:elite if needed.
+
+name=enemy=Alphard,_Serpent_of_the_Waves:legendary
+tactic=melee|ranged|coordinated
+Moderately difficult boss without anti projectiles skills.. Conditions expire very fast on her so do not rely on them. Her autoattacks apply one stack of bleeding each but she sometimes uses Unload, a channeled attack, which deals only direct damage.
+One of her dangerous move is Throw Anchor which is a similar to that of Kholer's but with less visible cue and much faster activation time. If at least one party member gets pulled she will plant a bomb that explodes after approximately 3 seconds. Avoiding the explosion is a priority during the fight.
+Her signature attack, Dagger_Storm, is when she flashes and teleports to the middle of the arena. Immediately after she gets a lightning buff icon without any description and starts to spin while shooting projectiles all around the place which bounce and deal extreme damage per hit. They cannot be blocked and dodging is not reliable because they move very fast. During this attack she will also reflect projectiles for the first few seconds. Keep in mind that using summons and pets is not be a good idea because those projectiles may bounce on them which might result in killing you.
+Every 25% she spawns 6 enemy=Alphard_(Clones):normal. If you have a decent uptime of anti projectiles skills you can simply ignore team. If they present a problem just kill them quickly. Remember that you can rally from them in case someone gets downed.
+#######################################
+tactic=melee
+If you want to melee her and you lack anti-projecties skills, the person that has her aggro should kite around the barricades while hitting her. Dodging the pull is extremely important but harder than it is if you attack her from a distance. Try to dodge backward so that you do not get hit by the explosion in the event someone else gets pulled. The second part of the attack, the bomb, is very easy to avoid, just run out of red circle or dodge during explosion animation. One of the way to survive Dagger_Storm is to run behind barricades and take cover. It is possible to attack her behind barricades with ranged weapons while jumping. You may also pull her to the entrance where bone wall spawns after you aggroed her, in that case you can simply wait there for her to finish Dagger_Storm.
+#######################################
+tactic=ranged
+To defeat her in the least painful way, in the event that your party lacks anti projectiles skills and cannot reliably dodge her pull, lure her to the left side of the area, outside of the arena made by four barricades. There, enemy=Alphard_(Clones):normal will despawn immediately after spawning and dodging her pull should be much easier because of the distance. Keep randomly strafing to avoid getting hit by her attacks, evade or block the pull and dodge or hide behind the left barricade when she starts to use Dagger_Storm.
+#######################################
+tactic=coordinated
+Easiest way to defeat this boss is to melee her under the protection of anti projectiles skills which negate most of her skills. Try to attack her from 130 range, otherwise anti projectiles skills might now work against the pull move. LoS her near the left wall where bone wall spawns after you aggro her. This way you can simply wait safely till she finishes Dagger_Storm.
+#######################################
+tactic=melee|ranged|coordinated
+tactic=elementalist
+wiki=Swirling_Winds blocks her normal attacks and Throw Anchor.
+tactic=engineer
+wiki=Toss_Elixir_U to get random protection from projectiles.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to negate most of her attacks. Watch out for the shield as it might cause Dagger_Storm to bounce on it.
+tactic=mesmer
+wiki=Feedback with untraited wiki=Phantasmal_Warden are good ways to protect your team.
+tactic=ranger
+Go in melee range and use wiki=Whirling_Defense to reflect projectiles.
+tactic=thief
+wiki=Smoke_Screen should be used to protect your team.
+#######################################
+tactic=coordinated
+tactic=elementalist
+If you are sure that everyone will evade the pull, use wiki=Magnetic_Wave or wiki=Magnetic_Aura to reflect the damage done by the bomb.
+tactic=solo
+tactic=warrior
+Take wiki=Deep_Cuts to keep up the bonus from wiki=Attack_of_Opportunity.
+tactic=bug
+Alphard may immediately reset to full health during the fight. This might happen if people are behind bone wall when Alphard attempts to pull everyone in. Make sure everyone is in the area before you engage.
+Also if you wipe, the bone wall may stay up. To prevent it, wait a bit after wipe before waypointing. This may not always work. To fix it do a full party wipe few times or jump over the wall with swiftness.
+
+name=Way to Brie
+tactic=skip
+One of the harder skips because of vast amount of stuns mobs posses. If someone dies during the run it may be too hard for him to do it alone. It's advised that you wait till you can swap utility skills for the ones that give you stability, consider also elite transformations for long lasting stability. Having a thief helps tremendously.
+First group of mobs is composed of 4 enemy=Plague_Carrier_Abomination:elite. They will run towards you and explode dealing high damage and spawning ~10 enemy=Risen_Grubs:normal which are quite harmless. Shortly after there are 2 enemy=Plague_Carrier_Abominations:elite and enemy=Inquest_Technician:elite. There will be also 2 groups of 2 enemy=Inquest_Technicians:elite and 2 enemy=Plague_Carrier_Abominations:elite each circling a big ship wrack. They move counter-clockwise so you should stick to the right side. If you get stunned and die because of enemy=Plague_Carrier_Abominations:elite try to rally on spawned grubs. Those spawned grubs can also start to attack enemy=Inquest_Technician:elite if they lose your aggro making them completely harmless. If you die first part of the second run might be much easier. Also keep in mind that those groups have longer range of aggro.
+After that there is a group of enemy=Risen_Defiler:elite, enemy=Risen_Sentinel:elite and 2 enemy=Risen_Berserkers:elite. Watch out for pulls and ring of warding.
+Next mobs are 2 groups of 2 enemy=Inquest_Technicians:elite and 2 enemy=Risen_Deadeyes:elite. Really hard to skip if you do not have stability or stealth. On open area there will be lots of patrolling enemy groups. To avoid them all you should hug to the left wall.One patrol may attack you at end so wait until they have went away. Once you see a ledge just jump on it and keep moving.
+#######################################
+tactic=fight
+For this part having stability or CC is recommended because of the presence of enemy=Inquest_Technicians:elite.
+First group of mobs is composed of 4 enemy=Plague_Carrier_Abomination:elite. They will run towards you and explode dealing high damage and spawning ~10 enemy=Risen_Grubs:normal which are quite harmless. Just dodge their explosion or even blind them. Shortly after there are 2 enemy=Plague_Carrier_Abominations:elite and enemy=Inquest_Technician:elite. There will be also 2 groups of 2 enemy=Inquest_Technicians:elite and 2 enemy=Plague_Carrier_Abominations:elite each circling a big ship wrack. They move counter-clockwise so you should stick to the right side if you do not want to fight two groups simultaneously. If you get stunned and die because of enemy=Plague_Carrier_Abominations:elite try to rally on spawned grubs. Also keep in mind that those groups have longer range of aggro.
+After that there is a group of enemy=Risen_Defiler:elite, enemy=Risen_Sentinel:elite and 2 enemy=Risen_Berserkers:elite. Focus Defilers down before he reaches the team and poisons everyone.
+Next mobs are 2 groups of 2 enemy=Inquest_Technicians:elite and 2 enemy=Risen_Deadeyes:elite. If you lose aggro of them they will start to attack each others.
+On open area there will be lots of patrolling enemy groups. You can easily avoid them all by hugging the left wall). One patrol may attack you at end. Once you see a ledge just jump on it and keep moving.
+#######################################
+tactic=skip
+tactic=elementalist
+Both wiki=Obsidian_Flesh and wiki=Mist_Form give you invulnerability that helps immensely when skipping enemy=Deadeyes:elite coupled with enemy=Technicians:elite.
+tactic=elementalist
+wiki=Lightning_Flash and wiki=Ride_the_Lightning give you additional mobility.
+tactic=elementalist
+wiki=Armor_of_Earth is a good counter against enemy=Technicians:elite.
+tactic=elementalist
+If your team lacks swiftness, consider equipping wiki=Signet_of_Air for passive movement speed bonus.
+tactic=guardian
+Use wiki=Symbol_of_Swiftness and wiki="Retreat!" for mobility.
+tactic=skip|fight
+tactic=guardian
+wiki="Stand_Your_Ground!" is a good counter against enemy=Inquest_Technicians:elite.
+tactic=guardian
+Use wiki=Renewed_Focus to block shot from a enemy=Deadeye:elite.
+
+name=enemy=Operative_Brie:legendary
+tactic=normal
+She is very easy (even solo) as long as you do not try to tank her attacks. She is phased and immune to damage caused by non-phased targets. While she is over 50% you have to use nearby terminal to get phased for 20 seconds and to get huge damage boost. Terminal recharges in 20 seconds so only person can attack her. Same person can't use terminal again until 1 minute has expired so you may have to rotate players. Clones/pets or conditions won't benefit from increased damage so rely on direct damage.
+Using the terminal causes enemies to attack the terminal until Brie reaches 50%. That's why killing her fast is top priority because you get teleported out if the terminal gets destroyed. First wave has 3 enemy=Plague_Carriers:elite and a enemy=Technician:elite. Second wave has 2 enemy=Plague_Carriers:elite an 2 enemy=Dominated_Berserkers:elite. Third wave has a enemy=Plague_Carrier:elite, enemy=Dominated_Deadeye:elite and 2 enemy=Dominated_Berserkers:elite.
+With offensive build, buffs and boons you can easily kill her in several seconds before any enemies even appearing. Once she reaches 50% you lose the damage bonus and everyone can attack her.
+Her normal ranged attack bounces but will not do much damage. When she glows with purple light she will shoot a laser with extreme damage. All you have to do is step aside. There will be also a lot of ticking AoEs in the area. They can easily kill some people. She may also shoot a glowing ball, which is a homing projectile. Try to avoid it by dodging towards its path if you see it coming.
+tactic=warrior
+Use wiki=Eviscerate when she's almost at 50%.
+
+#################################################################################################################################
+
+path=Arah3
+name=Way to Wraithlord
+tactic=fight
+No one fights the following mobs and so should not you. Send one mobile person to get the next waypoint.
+tactic=skip
+This part is always skipped. Always. Send just one person with enough mobility to get the next waypoint.
+tactic=fight|skip
+At the beginning there are 3 enemy=text:Risen|Elementalist:elite|Mage:elite|Illusionist:elite|Hunter:elite. They will start moving forward if you follow the road. This makes them move out of the way when jumping over wall on the left side. After this group there will be an ambush of 6 enemy=Orrian_Spiders:elite and a bit after that an ambush of enemy=Orrian_Spider:champion and 3 enemy=Orrian_Spiders:elite. Just run past them while dodging champion's deadly attack. You will get near a caged chicken which triggers a cinematic. Continue forward. Once you reach the open area there will be 5 elite enemy=text:Risen|Elementalist:elite|Illusionist:elite|Hunter:elite|Mage:elite. Just jump down. You should get last waypoint soon after.
+tactic=skip
+This area is being patrolled by 3 enemy=Giants:champion. Just stick to left or right side to avoid them.
+tactic=fight
+This area is being patrolled by 3 enemy=Giants:champion. You can kill them one by one, they are fairly easy, just take something to remove weakness and fear or stability and dodge their stomp. They also throw rocks and send 3 shockwaves (animation is similar to their stomp) which needs 2 dodges and a block or more than one block.
+tactic=fight|skip
+Once you reach an altar in the centre of this area, a cinematic will run. If NPC died during the run and you did not get a cinematic you need to revive her. If she does not move you need to get an enemy to attack her.
+#######################################
+tactic=engineer
+Blast your smoke field created by wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb_(bomb_kit), wiki=Toss_Elixir_U or wiki=Smoke_Screen_(engineer_skill)|Smoke_Screen_(overcharge_skill_of_Flame_Turret) to get long lasting stealth.
+tactic=engineer
+Use wiki=Rocket_Boots for mobility.
+tactic=guardian
+Use wiki=Symbol_of_Swiftness, wiki="Retreat!" and wiki=Judge's_Intervention for mobility.
+tactic=guardian
+wiki=Line_of_Warding can be used to keep Spiders away from the NPC.
+tactic=guardian
+Use shouts with wiki=Pure_of_Voice or wiki=Superior_Rune_of_the_Soldier|Superior_Rune_of_the_Soldier to remove crippled from the team.
+tactic=thief
+Blast your wiki=Smoke_Screen with wiki=Cluster_Bomb and later use wiki=Shadow_Refuge to get through undetected.
+tactic=warrior
+You can easily get through alone with wiki=Signet_of_Rage, wiki=Charge_(warrior_skill)|Charge_(Warhorn), wiki=Whirlwind_Attack, wiki=Rush, wiki=Savage_Leap and wiki=Bull's_Charge. Use wiki=Mending if you get crippled.
+
+name=The ritual: Cleansing the chicken
+tactic=normal
+First part of this boss fight is about controling at least 2 out of 3 pillars which shoot balls at the chicken in order to cure it. At the start, control of all 3 pillars belongs to you. Soon after, Wraithlord who is invulnerable and has strong poison aura (stay away from him) will shadowstep towards one random pillar. If you did not send anyone on that point, he will uncap it. On top of that, after ~20 seconds, 6 enemy=Risen_Wraiths_(Corruptor):elite appear which will try to uncap more points.
+To capture a circle you need to have more players than enemies on it. Same applies to losing the cap. With the same amount of players and enemies on one point its color will change but it's actually not capped. Look at the color of the projectiles shooted from a pillar to be certain. You can stay in a circle even when the boss came as long as you stay near the edge, outside of his poison Aura's range.
+The fastest and easiest way is to send 1-2 players while everyone else does not enter the area. When Wraiths appear, sent players should attack them to draw aggro and just kite in the middle. Rest of the players can now enter and cap all pillars (as long as they do not attack anything and get aggro). The players kiting Wraiths in the middle should be aware that the Wraithlord occasionaly spawns a few enemy=Undead_Tendrils:structure which deals some amount of damage, dodge it when you see him channeling an attack. Also, every hit made by Wraith gives one stack of corruption which stuns you after getting every 5th stack.
+#######################################
+tactic=guardian
+Use wiki=Symbol_of_Swiftness, wiki="Retreat!" for mobility.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" if you get stunned by Corruption.
+#######################################
+tactic=solo
+tactic=warrior
+youtube=1j4jR9vPWTA|Video of a solo.
+tactic=bug
+Ritual doesn't start if you used a teleport to skil "Up the slope" dialogue. There is no known fix.
+Also elite wraiths may not rarely spawn. Aggroing and deaggroing Wraithlord immediately may have something to do with it.
+
+name=enemy=Wraithlord:legendary
+tactic=normal
+The fight is really easy as long as you do not stand on his cone attack. It quickly stacks Corruption which makes you take a lot more damage and spawns Wraiths after a certain threshold. Once in a while white spots appear on ground, stand on them to remove stacks of Corruption.
+Wraithlord's basic melee attack and enemy=Undead_Tendrils:structure do some damage but also bleeding and poison. Condition removal is good choice for that fight.
+If you do not stay in melee range he likes to use a combo that immobilize you (spawns enemy=Undead_Tendrils:structure), then dashes which deals high damage and grants 5 stacks of Corruption (which stuns you as well) and lastly starts to channel his cone attack.
+#######################################
+tactic=guardian
+wiki=Virtue_of_Resolve traited with wiki=Absolute_Resolution is able to quickly remove conditions.
+tactic=guardian
+Use shouts with wiki=Pure_of_Voice or wiki=Superior_Rune_of_the_Soldier|Superior_Rune_of_the_Soldier to remove conditions.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" if you or someone else get stunned by Corruption.
+tactic=guardian
+Plant light field (wiki=Symbol|Symbols) and use wiki=Whirling_Wrath to quickly remove conditions.
+tactic=mesmer
+Use wiki=Null_Field to remove conditions.
+tactic=ranger
+Use wiki=Healing_Spring to remove conditions.
+
+#################################################################################################################################
+
+path=Arah4
+name=Air Towers
+tactic=normal|alternative
+The objective here is to destroy 3 enemy=Orrian_Air_Towers:structure. First tower is guarded by few elite Risen, second one by enemy=Orrian_Drakes:normal and enemy=Orrian_Drakes:elite while the last one by enemy=Risen_Grubs:elite and enemy=Undead_Abomination:elite. There's also a enemy=Giant:elite patroling the area between the second and the third tower.
+tactic=normal
+You can do it without aggroing a single enemy by using ranged weapons though the first tower can be destroyed from melee range as well, just stick to the left wall and start attacking it while you get closer to it.
+tactic=alternative
+You can avoid getting aggro on the first tower even if you attack in melee range if you stick to the left wall. For the second tower, run in and destroy it as fast as possible and then, while sticking to the left wall to avoid enemy=Giant:elite, move towards 2 enemy=Orrian_Guard_Turrets:structure. For the last tower just use ranged weapons.
+tactic=normal|alternative
+At the door there are 2 enemy=Turrets:structure with a nearby reflection crystal laying on the ground nearby. As usual, use that bundle, anti projectiles skills or use ranged weapons while constantly moving in zig zag patterns.
+#######################################
+tactic=elementalist
+Protect your team from enemy=Turrets:structure with the help of wiki=Swirling_Winds.
+tactic=engineer
+With the help of wiki=Toss_Elixir_U you can easily destroy enemy=Turrets:structure from melee range.
+tactic=guardian
+Destroy enemy=Turrets:structure by using wiki=Wall_of_Reflection.
+tactic=mesmer
+Use wiki=Feedback, wiki=Phantasmal_Warden and wiki=Temporal_Curtain traited with wiki=Warden's_Feedback to deal with Turrets (stucture).
+
+name=enemy=Ghasem,_High_Priest_of_Grenth:legendary
+tactic=normal
+After the gate you will be amushed by few enemy=Orrian_Spiders:normal, enemy=Orrian_Spiders:elite and one enemy=Risen_Elementalist:elite. You will enter new area with 3 groups of mobs (tough 2 are hidden) you should clear before attempting to finish this encounter.
+Start with the rightmost group, near a coffin. It's composed of 3 enemy=Risen_Grubs:elite and enemy=Risen_Devastator:elite. Try to focus on Devastator first because of his cc but watch out for small AoEs that Grubs use. After those, go to the middle and kill group of 3 enemy=Risen_Grubs:elite.
+Last group is hidden on the left side and is the hardest to deal with - enemy=Risen_Elementalist:elite, enemy=Risen_Mage:elite, enemy=Risen_Illusionist:elite, enemy=Risen_Hunter:elite. Focus Illusionist first.
+Once the area is clear (except enemy=undead_wraith:elite) you should split up on 5 black spots. Your task here is to kill enemy=undead_wraith:elite to activate statue. Every 10% he teleports to another spot and 2 normal Risen appear. If you do not hit him in few seconds he will reset so you need 1 player at each spot. Wraith reflects projectiles (buff icon) meaning you cannot use them if you want to hit him. However, if you do not have any non-projectiles weapon set pick up "Bone" from ground. It does not matter how fast you kill it as long as you hit it once before he resets. Keep in mind that some quasi-melee attacks are projectiles while some ranged attacks are not. Wraith always teleports in same pattern so you can easily predict its moves. This means melee-oriented players can go assist other players if needed. Obviously, if someone gets downed you should go to help him. If Wraith is at your spot stop attacking it and wait until situation gets better.
+Once he is dead, 15 enemy=Risen_Wraiths_(Drain):elite start to appear on black spots over the time (1, 2 or 3 at the same time). Keep killing them and revive people getting drained or killed by Grenth's Mark. Move as a group kill them as fast as possible or if you party has overall high dps you can split once 2 Wraiths start to appear simultaneously.
+#######################################
+tactic=elementalist
+Do not rely on staff and fire/water autoattacks from dagger against enemy=undead_wraith:elite.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect your team against deadly projectiles of elite Risen.
+tactic=guardian
+Last attack from sword autoattack chain counts as a projectile.
+tactic=mesmer
+Even though greatsword is a ranged weapons, its autoattack does not count as a projectile. Though wiki=Mirror_Blade does.
+
+name=Way to Simin
+tactic=skip
+Stick to the right side to avoid all enemies. Dodge or use blocks to get through collapsing rocks. Once you get out, stick to left-side and enter the cave with enemy=Sparks:normal.
+
+name=enemy=Simin,_High_Priestess_of_Dwayna:legendary
+tactic=normal
+At the beginning, there are 5 enemy=Sparks:normal, two of them being friendly, trapped nearby statue. To make enemy=Simin:legendary appears, you ought to lure remaining 3 enemy=Sparks:normal to appropriate position near the statue. But before you do that, you should prepare for the whole fight.
+enemy=Simin:legendary has two very distinct mechanics. Firstly, every few seconds she applies "Dead Eyed Stare"-debuff with her ranged attack. While you are under its effect, you move slower and your skills recharge slower as well. After 10s, when it expires, it will petrify debuffed character. The only way to cure this is to throw nearby "Tear of Dwayna" bundle on pefrified team mate. You can also avoid getting petrified by getting stability before "Dead Eyed Stare" ends.
+You should designate a "Tear-thrower" whose only task would be to throw Tears on petrified allies. The best player for that is the one with the lowest damage and the highest amount of support. If you have "Simple Party UI" option turn on, swtich it off because simple ui does not display unique debuffs. Pay attention to debuffs and when purple "Dead Eyed Stare" starts to blink, you should prepare to throw a Tear. Green debuff means that an ally is already petrified but you can throw a Tear just before that happens to minimize the time of petrification. You can try attacking enemy=Simin:legendary if you have spare time.
+Second distint mechanic she has is her cloak'n'heal. At 50% hp mark she will become invulnerable, invisible and start self-healing. Simultaneously, 5 enemy=Sparks:normal appear and to break her invisibility and stop her from healing, you need to lure all those enemy=Sparks:normal to 5 circles near the central statue. The common tactic here is to assign two people to lure enemy=Sparks:normal while the rest of the part should stick to the wall to avoid getting aggro. One runner should run 3 enemy=Sparks:normal near the start of the cave and the other one should lure 2 enemy=Sparks:normal at the end of the cave. Both runners should posses mobility skills, swiftness and even stability if you usually get Petrified. If one runner keeps getting Petrified, consider switching him for someone else. If she was below ~65% hp when she disappeared, you have 45s to lure sparks and damage her. After that time she will disappear again.
+Before the fight starts, decide on where you want to fight enemy=Simin:legendary and bring a lot of Tears so that your "Tear-thrower" does not have to move to pick it up. This boss is not threatening while at the same time having more damage makes whole fight more forgiving. That means you should use melee weapons and potions of undead slaying with offensive food buff. Defensive support can be completely disregarded in favour of offensive one. Be careful with minions/pets/clones because they might aggro enemy=Sparks:normal which makes luring them much harder.
+Once the fight starts, try to pull her as close to the wall as possible, then use melee attacks to her towards the wall. Her normal attacks are rather weak but do not stand on AoEs. The deal moderate damage but rarely they will deal much higher damage. Deal enough damage that she will disappear at 50% hp mark. Let your 2 Spark-runners lure enemy=Sparks:normal and damage her again. Repeat this process until she's dead. If you have issues like enemy=Simin:legendary disappearing much faster than after 45s, you should just reset the fight, it may be bugged.
+tactic=bug
+There have been reports of Simin constantly hiding at 50% health even with high damage and fast spark runs. If this even happens to you, please invite someone really experienced to verify the situation and let me know about it.
+
+
+name=Way to Bloodstone Shard
+tactic=fight
+Leave the cave and turn left, where there is enemy=Orrian_Drake:champion. Use anti projectiles skills when it leans back and prepares to send insect swarms. If you step on nearby egg, small enemy=Drakes:normal spawns.
+Next group is composed of elite Spectrals (2 enemy=Orrian_Spectral_Guards:elite, 2 enemy=Orrian_Spectral_Archers:elite and enemy=Orrian_Spectral_Juggernaut:elite). They use immobilize, cripple, stuns and area of effect skills so prepare accordingly. Focus enemy=Juggernaut:elite first moving then to enemy=Archer:elite. When you finish with them stick to the left side. Before enemy=Undead_Knight:champion there should be a well, you know have two ways to pick.
+#######################################
+tactic=skip
+Leave the cave and turn left, where there is enemy=Orrian_Drake:champion. Just run past him and he should not hit you. Watch out for nearby eggs which spawn enemy=Drakes:normal.
+Next group is composed of elite Spectrals (2 enemy=Orrian_Spectral_Guards:elite, 2 enemy=Orrian_Spectral_Archers:elite and enemy=Orrian_Spectral_Juggernaut:elite). They use immobilize, cripple and stuns so prepare accordingly. When you past them, stick to the left side. Before enemy=Undead_Knight:champion there should be a well, you know have two ways to pick.
+tactic=fight|skip
+First way is to jump down into this well. In the water there is a enemy=Risen_Shark:elite which is able to down anyone with its charging attack. Try to dodge it or use stability to decrease the amount of hits his charge would do.
+After getting out of the water you will find yourself in some kind of tunnel with 4 enemy=Orrian_Spiders:elite.
+Second path is to move past enemy=Undead_Knight:champion, move towards where there is a group of four elite enemy=text:Risen|Elementalist:elite|Illusionist:elite|Hunter:elite|Mage:elite. After them, turn left where there will be 4 enemy=Orrian_Spiders:elite. You will be in area where both of those ways converge.
+tactic=fight
+There are five elite Spectrals (2 enemy=Orrian_Spectral_Ghostblades:elite, 2 enemy=Orrian_Spectral_Archers:elite and enemy=Orrian_Spectral_Flamecaster:elite) here. Your priority is to kill enemy=Flamecaster:elite first then try to focus on enemy=Ghostblades:elite. Once you take care of them, continue through the passage to end up in the forest with 3 enemy=Orrian_Gorillas:elite. You can kill them or simply ignore them and run past them towards the last boss.
+tactic=skip
+Now you have another two options to choose. First one is to turn immediately left from the first way and stick to the wall (or run straight ahead if you picked the second path). That way you can sneak past five elite Spectrals (2 enemy=Orrian_Spectral_Ghostblades:elite, 2 enemy=Orrian_Spectral_Archers:elite and enemy=Orrian_Spectral_Flamecaster:elite). Second way is to run past those spectrals. Either way you choose, you will end up in the forest with 3 enemy=Orrian_Gorillas:elite. Just ignore them and run past them towards the last boss.
+#######################################
+tactic=fight
+tactic=elementalist
+wiki=Swirling_Winds will protect your allies from heavy hits of enemy=Drake:champion.
+tactic=guardian
+Use wiki=Wall_of_Reflection to kill enemy=Drake:champion faster.
+tactic=mesmer
+Utilize wiki=Feedback and and wiki=Temporal_Curtain with wiki=Phantasmal_Warden traited with wiki=Warden's_Feedback to kill enemy=Drake:champion with ease.
+#######################################
+tactic=skip
+tactic=thief
+Leave wiki=Shadow_Refuge for enemy=Orrian_Drake:champion and use it before first group of Spectrals.
+tactic=warrior
+Equip wiki=Balanced_Stance or wiki=Dolyak_Signet to help against stun Spectrals apply.
+tactic=warrior
+Have wiki="Shake_It_Off!" or wiki=Charge_(warrior_skill)|Charge_(warhorn) ready to remove cripple or immobilize Spectrals apply.
+
+name=enemy=Bloodstone_Shard:legendary
+tactic=normal
+To make boss killable you first need to kill nearby enemy=Risen_Elementalist:elite, enemy=Risen_Mage:elite, enemy=Risen_Illusionist:elite, enemy=Risen_Hunter:elite. You can pull them one by one, then wait for Randall to activate enemy=Shard:legendary.
+tactic=alternative
+To make boss killable you first need to kill nearby enemy=Risen_Elementalist:elite, enemy=Risen_Mage:elite, enemy=Risen_Illusionist:elite, enemy=Risen_Hunter:elite. If your party is good enough to handle four of them simultaneously, you can try los-ing. Decent spot for that is behind them. Then wait for Randall to activate enemy=Shard:legendary.
+#######################################
+tactic=normal|alternative
+This last boss is simply mix of all the previous priests. There will be green, constantly moving, miasmas (Melandru's priest) but as long as you stay in melee range or at high range they will not hit you. It can also summon enemy=Risen_Wraith_(Drain):elite (Grenth's priest) and illusions based on targets profession (Lyssa's priestess). You can mostly ignore them but kill if they cause some issues.
+Pay attention to the ground for fire storm (Balthazar's priest), avoid those circles. Occasionally, someone may get "Dead Eyed Stare" (Dwayna's priestess). There are nearby Tears to help you remedy the petrify, just watch out for green miasmas that are between you and the bundle.

@@ -1,0 +1,18 @@
+
+RewriteEngine on
+# This redirects www to non-www.
+RewriteCond %{HTTP_HOST} !^gw2dungeons\.net$ [NC]
+RewriteRule ^(.*)$ http://gw2dungeons\.net/$1 [R=301,L]
+# These allow syntax without ? in the beginning.
+RewriteRule ^(\w+)$  ?$1
+RewriteRule ^dev/(\w+)$  dev/?$1
+# Disables directory listing.
+Options -Indexes
+
+ExpiresActive On
+ExpiresByType image/jpg "access plus 2 month"
+ExpiresByType image/jpeg "access plus 2 month"
+ExpiresByType image/gif "access plus 2 month"
+ExpiresByType image/png "access plus 2 month"
+ExpiresDefault "access plus 3 day"
+

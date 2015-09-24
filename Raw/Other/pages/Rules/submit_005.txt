@@ -1,0 +1,47 @@
+<h2>Record Submission Guidelines</h2>
+<ol>
+	<li>Submit new attempts under their own topic in the official dungeon forums. <a href="https://forum-en.guildwars2.com/forum/game/dungeons">https://forum-en.guildwars2.com/forum/game/dungeons</a>
+		<ol type="a">
+			<li>Records will be approved or denied with 7 days of submission by an official approver.</li>
+		</ol>
+	</li>
+	<li>Ensure that all required information is included in your submission.
+		<ol type="a">
+			<li>Category (Restricted / Unrestricted)</li>
+			<li>Instance Name</li>
+			<li>Run time (Round up to the next even second)</li>
+			<li>The game build and date recorded</li>
+		</ol>
+	</li>
+	<li>The game build from the Options Menu must be displayed in at least one point of view.</li>
+	<li>Include profession, character name, player name, guild tag and video link for each participant.
+		<ol type="a">
+			<li>Player name is your alias used for all records)</li>
+			<li>If all players are in the same guild, only list the tag for the first player</li>
+		</ol>
+	</li>
+</ol>
+
+<h3>Example</h3>
+<ul>
+	<li>The Ruined City of Arah: Path 4</li>
+	<li>25th January 2015, game build 44039</li>
+	<li>Restricted time: 20 m, 12 s</li>
+	<li></li>
+	<li>Guild: Example [EX]</li>
+	<li>Profession1 Character1 (Player1): Video1</li>
+	<li>Profession2 Character2 (Player2): Video2</li>
+	<li>Profession3 Character3 (Player3): Video3</li>
+	<li>Profession4 Character4 (Player4): Video4</li>
+	<li>Profession5 Character5 (Player5old -> Player5new): Video5</li>
+</ul>
+
+<h3>List of approvers</h3>
+<ul>
+	<li>Particlar (Snowball.3497)</li>
+	<li>Ravi (Saix.4126)</li>
+	<li>Rising Dusk (Rising Dusk.2408)</li>
+	<li>Deathly (ShadowRX.9024)</li>
+	<li>Spoj (spoj.9672)</li>
+	<li>Jerem (jeremlloyd.6837)</li>
+</ul>

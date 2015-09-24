@@ -1,0 +1,33 @@
+Date: 31th January 2015
+
+These rules are used for solo, duo, trio, quadro and full party runs.
+
+<b>1.)</b> For a record to be valid, the time must be faster than the current record displayed and the record must be accompanied by a video for evidence/proof; one point of view is sufficient.
+
+<b>a.</b> Videos may not be sped up or slowed down, and must be captured in normal time.
+
+<b>b.</b> You must display the game build at some point in your video to show when your run was done. This can be done before, during, or after the run. You can do this by showing your F11  (options) menu at some point in your video.
+
+<b>c.</b> There must be at least one PoV that shows what's going on within the dungeon, from start to finish. If at any point there is no video evidence of activities within the run, it'll be denied.
+
+<b>2.)</b> No use of hacks or 3rd party software that allows players to perform acts that would be impossible without said means. This includes but is not limited to speed hacks, fly hacks, no-clip, teleporting, dps meters and boss hp monitors.
+
+<b>3.)</b> The records timer starts when any party member activates a skill or moves their model. Using emotes will not result in the timer starting.
+
+<b>4.)</b> The timer stops when the final boss of the dungeon has been killed. In Fractal records timer stops when the shard reward chest appears.
+
+<b>5.)</b> The record system is founded on trust. Please do not attempt to fake videos, i.e.: Editing them, using DC tricks to manipulate the in-game events, etc. All we have is third-party proof and no real way to verify your accomplishments. Because of this, some people may, and will fake records. If a record appears to be fake, feel free to follow up with your own posts in its thread debating its legitimacy.
+
+<b>6.)</b> Any disputes will be handled by approvers. Staff decisions are final.
+
+<b>7.)</b> Have fun, and good luck.
+
+<b>8.)</b> Fractal must be played in scale 50.
+
+*** These rules are subject to change at any time so it is advised you brief yourself with them each time before you post a record. ***
+
+
+<h2>Path Specific Rules</h2>
+
+Everything is <b>allowed</b>.
+

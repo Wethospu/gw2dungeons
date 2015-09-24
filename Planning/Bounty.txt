@@ -1,0 +1,42 @@
+Ander Westward:
+Slash: Melee. 3k damage
+Pounce: Melee. 5k damage.
+Knockout Gas: Ticking AoE. 2.5k damage, Blindness, Poison, "Knockout Gas"
+"Knockout Gas": Movement and casting is slowed. Stacks up to 25.
+Minotaur Gun: Projectile. 13.5k damage.
+Net Bomb: Projectile at everyone. 1k damage, Immobilized and Knockdown (1.5 s).
+
+
+
+2-Mult (10000 health)
+Punch: 2 melee-hits in 0.2 s. ~3000 damage per hit. Last hit: Blindness. "Swings right and left arm".
+Golem Grab: Projectile. ~5000 damage and Pull?.
+Golem Leap: Leap (0.75 s): ~5000 damage. "Twists (0.75 s), leaps".
+At every 25%: Channeled PBAoE. Overcharge. Throw sparks to "Overload". "Glows, spreads arms and says something (1 s)".
+"Overcharge": Uses Whirling Assault and summons Sparks. Reflects projectiles and takes no damage.
+"Overload": Debuff (X seconds). 5 stacks remove Overcharge.
+Whirling Assault: Multiple projectiles (cone). ~5000 damage and Daze (0.9 s) per hit.
+
+
+
+Poodaboo (2500 health):
+On ground:
+Vabor Blade: 2 piercing and returning projectiles in 0.4 s. ~325 damage and Vulnerability (10 s) per hit. Can't be blocked. Used every 5 s. "Swings right arm (0.4 s)".
+
+
+Underwater:
+Stab: Melee. ~425 damage. "Swings right arm (0.25 s)".
+Ice Globe: 2 piercing projectiles with AoE. in 0.4 s. ~750 damage per hit. Can't be blocked. AoE: ~1550 damage per hit. Used every 5 s. "Swings left (0.25 s)".
+
+Glacial Defense: Aura (7.5 s). Reflects projectiles (reflected cause "Ice" (2 s)) and ~425 damage per second. Used every 30 s. "Jumps (0.3 s)".
+"Ice:" Debuff. Can't move or use skills with cast-time. Chilled (3 s) every second. Can be broken with damage?.
+Glacial Spike: "Bulk" + ~10 delayed (2.5 s) AoEs on area over ~5 s.  ~1520 damage and Chilled (4 s) per hit. Used every 25 s. "Holds head with water-effect (2.5 s)".
+"Bulk": Buff. Increases damage and size (15%, 30%, 45%, 60%)
+
+
+
+Sotzz (3500 health):
+Pistol Storm: Channeled projectiles or Ticking AoE (1.5 s). ~250 damage per hit. End effect: Knockdown (5 s)".
+Pistol Storm (Drunk): Channeled projectiles (360 degres): ~500 damage per hit.
+Grapeshot: 3 projectiles (cone): ~500 damage per hit.
+PBAOE: Protects from damage. Poison. Drunken-effect.

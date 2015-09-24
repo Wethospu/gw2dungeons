@@ -1,0 +1,5 @@
+Rounding: Values don't round like in UI. Easily tested with multihitting attacks.
+
+Higher level targets: Ratio doesn't seem to scale. Easily tested with multihitting attacks.
+
+Higher level enemies: Critical damage stays at 150% regardless of level. Easily tested with multihitting enemies.

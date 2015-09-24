@@ -1,0 +1,7048 @@
+#TODO: Id 11451 + 11452 Ascalonian Healer has 0.5 toughness (also 1.0).
+
+##################################################################
+# Instabilities                                                  #
+##################################################################
+
+name=Lightning
+path=Insta
+category=trap
+
+attack=Effect
+effect=small AoE (120 range)
+subeffect=damage:3500|stun:3
+
+##################################################################
+
+name=Frosty
+path=Insta
+category=trap
+
+attack=Icy Ground
+animation=red circle appears and ice shard falls to it|0.75|leaves icy ground
+effect=ticking AoE (10 hits in 9 s)
+subeffect=damage:217|chilled:3| per hit
+
+##################################################################
+# Due to simplicity, all Aetherblade and Molten non-boss enemies #
+# are listed at the bottom of the file.                          #
+##################################################################
+
+##################################################################
+# Aetherblade                                                    #
+# Have Inquest enemies been verified?
+# What about Aetherblade Golem?
+potion=inquest|main
+##################################################################
+
+Name=Frizz
+Category=champion
+image=http://wiki.guildwars2.com/images/1/19/Frizz.jpg
+Path=Aether
+# Scaling not verified.
+scaling=constant|49
+health=630960
+toughness=0.75
+type=inquest
+
+attack=Flame Jet
+animation=instant|0|shoots flame
+cooldown=2.5
+additional=can't rotate
+effect=~10 cones in 2 s
+subeffect=damage:360| per hit
+#note=keep circling at melee range
+#note=keep kiting at high range
+
+attack=Flame Blast
+cooldown=12
+animation=slightly raises gun|0.5|shoots a orange ball
+effect=piercing projectile
+subeffect=damage:4434
+effect=with AoE
+subeffect=damage:8234
+#note=at close range you won't get hit by the AoE
+#note=at higher range you must evade
+
+attack=Push
+cooldown=19
+animation=instant|0|shoots white spray
+effect=melee
+subeffect=knockback:1.5
+
+##################################################################
+# Similar enemy: SE P1 Inquest Extinguisher
+
+Name=Inquest Extinguisher
+alt=Inquest Extinguishers|Extinguisher|Extinguishers
+Category=elite
+Path=Aether
+type=inquest
+
+attack=Freeze Shot
+cooldown=2.5
+animation=raises the gun slightly|0.5|shoots an icy line	
+effect=projectile
+subeffect=damage:2878|chilled:2
+
+# Not (probably) shared with similar enemy.
+attack=Freezing Jet
+cooldown=4.5
+animation=starts spraying ice from the gun and then raises the gun|0.5|shoots an icy spray
+effect=cone
+subeffect=damage:1865
+
+attack=Frost Bomb
+cooldown=39
+animation=gun disappears and swings left arm|0.75
+effect=projectile with AoE
+subeffect=damage:3159|chilled:2|knockdown:3
+
+##################################################################
+# Similar enemy: SE P1 Inquest Assassin
+# Same enemy: CoE123 Inquest Assassin
+
+Name=Inquest Assassin
+alt=Assassin
+image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assassin.jpg
+Category=veteran
+Path=Aether
+# Health and scaling not verified.
+scaling=normal
+health=46061
+type=inquest
+
+attack=Swing
+image=http://i.imgur.com/afnrAd3.gif
+cooldown=0
+animation=swing from right|0.5
+effect=melee
+subeffect=damage:942
+
+attack=Blinding Powder
+image=http://i.imgur.com/lJWAhZY.gif
+effect=AoE
+subeffect=blind:3|stealth
+
+attack=Hornet Sting
+image=http://i.imgur.com/rTMlUM2.gif
+effect=Melee
+subeffect=damage
+effect=evade back
+
+attack=Flanking Strike (1)
+image=http://i.imgur.com/mQZLGNF.gif
+effect=melee
+subeffect=damage:1001
+
+attack=Flanking Strike (2)
+animation=swing from right with jump|0.66
+effect=melee
+subeffect=damage:1668
+
+##################################################################
+# Similar enemy: SE P1 Inquest Assistant
+
+Name=Inquest Assistant
+Category=veteran
+Path=Aether
+# Health and scaling not verified.
+scaling=normal
+health=46061
+type=inquest
+
+attack=Impale
+image=http://i.imgur.com/7YhAPwk.gif
+cooldown=3
+animation=pulls weapon behind back, jumps and smashes ground|0.75|sends a rock line
+effect=returning and piercing projectile
+subeffect=damage:1319| per hit (up to 3 times)
+
+attack=Ring of Earth
+image=http://i.imgur.com/ahdZ3sa.gif
+animation=raises left arm with small earth effect|0.2|ring of rocks appears
+effect=PBAoE
+subeffect=damage:978
+
+attack=Shield
+image=http://i.imgur.com/u5aG990.gif
+cooldown=16
+animation=instant|0|a yellow shield
+effect=Invulnerability (3 s) and Magnetic Aura (3 s)
+#note=Invulnerability overrides Magnetic Aura
+
+##################################################################
+# Similar enemy: SE P1 Inquest Grenadier
+
+Name=Inquest Grenadier
+Category=veteran
+image=http://wiki.guildwars2.com/images/d/df/Inquest_Grenadier.jpg
+Path=Aether
+# Health and scaling not verified.
+scaling=normal
+health=46061
+type=inquest
+
+attack=Throw Bomb
+image=http://i.imgur.com/AvOU6th.gif
+animation=swings right arm while jumping|0.25|throws a bomb
+effect=projectile with AoE
+subeffect=damage:948
+
+attack=Throw Bomb
+image=http://i.imgur.com/AvOU6th.gif
+animation=swings right arm while jumping|0.25|throws a bomb
+effect=projectile with AoE
+subeffect=damage:948|poison:0:5
+
+# Not shared with similar enemy.
+attack=Bouncing Bomb
+image=http://i.imgur.com/AvOU6th.gif
+animation=pulls right arm behind back|0.5|throws a bomb
+effect=projectile with AoE
+subeffect=damage:615
+
+##################################################################
+
+Name=Inquest Technician
+alt=Inquest Technicians|Technician|Technicians
+# Verified?
+image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
+Category=veteran
+# Health and scaling not verified.
+scaling=normal
+health=11516
+Path=Aether
+# TODO: VERIFY
+type=inquest
+
+##################################################################
+
+Name=The Trap
+alt=Trap|Traps|square|squares
+Category=trap
+Path=Aether
+
+attack=Energy Field
+effect=On hit
+subeffect=damage:4962859| and teleport to start of the trap area
+
+##################################################################
+
+Name=Spinning Laser
+alt=Spinning Lasers
+Category=trap
+Path=Aether
+
+# This enemy should perhaps be split to two?
+tactic=normal
+Walls do either one attack.
+
+attack=Wall Beam
+effect=On hit
+subeffect=damage:5034|stun:1|agony:3
+
+attack=Energy Beam
+effect=On hit
+subeffect=damage:4920|stun:1|agony:3
+
+##################################################################
+
+Name=Cannon
+alt=Cannons
+Category=trap
+Path=Aether
+
+attack=Cannon Blast
+effect=multiple delayed (2-3 s) ticking AoEs (5 hits in 4 s?)
+subeffect=damage:6979|agony:3| per tick
+
+##################################################################
+
+Name=Aetherblade Golem
+alt=Aetherblade Golems|Golem|Golems
+image=http://wiki.guildwars2.com/images/9/9c/Mark_I_Golemite.jpg
+Category=elite
+Path=Aether
+type=inquest
+
+attack=Punch
+cooldown=3.5
+animation=pulls right arm back|0.66|swings both arms
+effect=2 melee hits in 0.3 s
+subeffect=damage:1281| per hit
+
+attack=Pull
+animation=points right arm|0.5|shoots a fist
+additional=only used at distant targets
+effect=fast projectile
+subeffect=damage|pull
+
+attack=Spin
+animation=glows and spreads arms|2|moves forward while spinning arms
+effect=Dash (4.5 s) with PBAoE
+subeffect=damage|knockback| per hit
+
+attack=Gets buffed by Small_Lasers (trap] and Big_Lasers (trap]
+
+attack=Lightning Shot
+additional=only used when "Boost" buff
+effect=quick projectile
+subeffect=damage:2271|blind|confusion:1921:5
+
+##################################################################
+
+Name=Small Laser
+alt=Small Lasers
+Category=trap
+Path=Aether
+
+tactic=normal
+Spins around in 15 s.
+
+attack=Wall Beam
+additional=can't be blocked or evaded
+effect=On hit (5 hits per second)
+subeffect=damage:2413|stun:1|agony:3|buff:"block":4
+#note=Easy to get hit multiple times
+#note=If you get in bad spot dodge or use mobility to try get through fast
+
+attack="Block"
+effect=buff
+subeffect=blocks all attacks and |daze:2| when blocking a melee attack
+
+##################################################################
+
+Name=Big Laser
+alt=Big Lasers
+Category=trap
+Path=Aether
+
+tactic=normal
+Spins around in 30 s.
+
+attack=Wall Beam
+additional=can't be blocked or evaded
+effect=On hit (5 hits per second)
+subeffect=damage:2413|stun:1|agony:3|buff:"Boost":8|might:8:3
+#note=Buffs a enemy=Golem:elite to 25 might in one second
+#note=If you get in bad spot dodge or use mobility to try get through fast
+
+attack="Boost"
+effect=buff
+subeffect=Enables Lightning Shot
+
+##################################################################
+
+Name=Ellen Kiel
+Category=ally
+image=http://wiki.guildwars2.com/images/0/05/Captain_Ellen_Kiel.jpg
+Path=Aether|Mai
+
+##################################################################
+# Aquatic Ruins                                                  #
+# Krait verified for Krait and Scarlet.                          #
+# Jellyfish verified for nothing.                                #
+potion=krait|side
+##################################################################
+
+Name=Dolphin
+Category=Bundle
+Path=Aqua
+
+Attack=Echo
+effect=PBAoE
+subeffect=reveal hidden Krait
+
+attack=Distract (1)
+effect=summon
+subeffect=Clone which moves forward
+
+attack=Distract (2)
+effect=stops Clone
+
+attack=Rush
+effect=dash
+
+attack=Retrieve Ally
+effect=high-range PBAoE
+subeffect=resurrect dead allies and teleport them to your location
+
+##################################################################
+
+name=Jellyfish Beast
+category=legendary
+image=http://wiki.guildwars2.com/images/b/bd/Jellyfish.jpg
+# Scaling not verified.
+scaling=legendary
+health=677160
+path=Aqua
+type=fish
+
+attack=Tentacle Slash
+animation=swings lower body behind|1
+effect=melee
+subeffect=damage:5380|knockback:1.5
+#note=block/evade or outrange
+
+attack=Spin
+animation=spins anti-clockwise|0.75|spins clockwise
+effect=6 PBAoEs in 5 s
+subeffect=damage:674|stun:2| per hit
+#note=evade away. stability/Stun break if needed
+
+attack=Summon
+animation=rises a bit, tentacles wave horizontally|2.5
+additional=maximum amount over 25
+effect=summon
+subeffect=7 enemy=Jellyfishes:normal
+
+attack=Pull (1)
+animation=spins clockwise and rises up|2
+additional=used when below 75%. Can't be blocked or evaded. Only used at close targets
+effect=ranged
+subeffect=pull
+#note=interrupt
+#note=Stability prevents pull but not the attack
+
+attack=Eat (2)
+effect=channeled ranged
+subeffect=Agony:1|regeneration|might:0:5|, "Stun" (1 s) and "Damage Resistance" (1 s) per hit
+#note=spam skill 1 to get out
+
+attack=Eat End (3)
+effect=ranged
+subeffect=knockback:2
+
+##################################################################
+
+name=Jellyfish
+image=http://wiki.guildwars2.com/images/b/bd/Jellyfish.jpg
+alt=Jellyfishes
+category=normal
+# Scaling not verified.
+scaling=normal
+toughness=0.5
+type=fish
+health=10112
+path=Aqua
+
+attack=Tentacle Slash
+cooldown=4
+animation=spins clockwise|0.5
+effect=dash with 4 PBAoEs in 1.5 s
+subeffect=damage:647|vulnerability:5
+#note=Used constantly (long ending animation).
+
+##################################################################
+
+name=Krait Damoss
+image=http://wiki.guildwars2.com/images/a/a3/Krait_Damoss.jpg
+scaling=normal
+health=11516
+category=normal
+path=Aqua
+type=krait
+
+attack=Lunge
+effect=Melee
+subeffect=damage:0|crippled:6
+effect=dash
+subeffect=damage:0|crippled:6
+
+attack=Slice
+effect=2 melee hits
+subeffect=damage:0|poison:0:8| per hit
+
+attack=Retreating Strike
+effect=melee
+subeffect=damage:0
+effect=evade back
+
+##################################################################
+
+name=Krait Damoss
+image=http://wiki.guildwars2.com/images/a/a3/Krait_Damoss.jpg
+scaling=normal
+category=veteran
+health=46061
+path=Aqua
+type=krait
+
+attack=Lunge
+effect=Melee
+subeffect=damage:0|crippled:6
+effect=dash
+subeffect=damage:0|crippled:6
+
+attack=Slice
+effect=2 melee hits
+subeffect=damage:0|poison:0:8| per hit
+
+attack=Retreating Strike
+effect=melee
+subeffect=damage:0
+effect=evade back
+
+attack=Summon
+effect=summon
+subeffect=enemy=Young_Barracuda:normal
+
+##################################################################
+
+# Level 79
+name=Young Barracuda
+image=http://wiki.guildwars2.com/images/8/8d/Barracuda.jpg
+# Scaling not verified.
+scaling=constant
+health=15137
+category=normal
+path=Aqua
+type=fish
+
+##################################################################
+
+name=Krait Hypnosis
+image=http://wiki.guildwars2.com/images/0/0f/Krait_Hypnoss.jpg
+scaling=normal
+health=11516
+toughness=0.8
+category=normal
+path=Aqua
+type=krait
+
+attack=Putrid Grasp
+effect=projectile
+subeffect=damage:0
+
+attack=Poison Cloud
+effect=ticking AoE
+subeffect=damage:0|poison:0:5| per tick
+
+attack=Healing Thingy
+effect=summon
+subeffect=enemy=Healing_Thingy:structure
+
+##################################################################
+
+name=Krait Hypnosis
+image=http://wiki.guildwars2.com/images/0/0f/Krait_Hypnoss.jpg
+scaling=normal
+health=46061
+toughness=0.8
+category=veteran
+path=Aqua
+type=krait
+
+attack=Putrid Grasp
+effect=projectile
+subeffect=damage:0
+
+attack=Poison Cloud
+effect=ticking AoE
+subeffect=damage:0|poison:0:5| per tick
+
+attack=Healing Thingy
+effect=summon
+subeffect=enemy=Healing_Thingy:structure
+
+##################################################################
+
+name=Healing Thingy
+category=structure
+path=Aqua
+
+attack=Aura
+effect=aura
+subeffect=regeneration:0:3| every 3 s
+
+##################################################################
+
+name=Krait Nimross
+image=http://wiki.guildwars2.com/images/3/30/Krait_Nimross.jpg
+scaling=normal
+health=11516
+toughness=0.8
+category=normal
+path=Aqua
+type=krait
+
+attack=Slash
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Grappling Throw
+effect=projectile
+subeffect=damage:0|stun
+
+attack=Net
+effect=trap
+subeffect=immobilized:2
+
+##################################################################
+
+name=Krait Nimross
+image=http://wiki.guildwars2.com/images/3/30/Krait_Nimross.jpg
+scaling=normal
+health=46061
+toughness=0.8
+category=veteran
+path=Aqua
+type=krait
+
+attack=Slash
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Grappling Throw
+effect=projectile
+subeffect=damage:0|stun
+
+attack=Net
+effect=trap
+subeffect=immobilized:2
+
+##################################################################
+
+name=Krait Slaver
+alt=Krait Slayers
+# Scaling not verified.
+scaling=normal
+health=15774
+category=normal
+path=Aqua
+type=krait
+
+attack=Sink (1)
+animation=spins
+effect=ranged
+subeffect=sink
+#note=evade twice (needs good timing)
+
+attack=Sink (2)
+effect=ranged
+subeffect=sink|damage:0
+
+attack=Sink (3)
+effect=ranged
+subeffect=sink|damage:0
+
+##################################################################
+
+copy=Krait Damoss|veteran
+name=Krait Damoss (Dolphin)
+category=veteran
+# Scaling not verified.
+scaling=constant
+health=63096
+
+##################################################################
+
+name=Farmer
+alt=Farmers|Villager|Villagers
+image=http://wiki.guildwars2.com/images/5/5b/Farmer.jpg
+category=ally
+path=Aqua
+# Scaling not verified.
+scaling=constant
+
+
+
+
+##################################################################
+# Cliffside                                                      #
+# ALl enemies verified as Outlaws.                               #
+potion=outlaw|main
+##################################################################
+
+name=Archdiviner (Start)
+category=legendary
+image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
+# Scaling unverified.
+scaling=legendary
+health=790020
+path=Cliff
+type=outlaw
+
+attack=Swing
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Ring of Warding
+additional=used at primary target
+effect=AoE
+subeffect=damage:0
+#note=evade if unsure who is being targeted or target is close
+effect=6 projectiles (cone)
+subeffect=damage:0|confusion:0:3
+#note=evade
+
+attack=Thundering Leap
+effect=leap with small PBAoE
+subeffect=damage:0
+
+attack=Wells
+effect=7 delayed (1 s) AoEs in 6 s at target
+subeffect=Agony:3|weakness:5|poison:0:5|vulnerability:5|bleeding:0:5| and remove a Boon per hit
+#note=targeted player should run away from others
+
+attack=Backbreaker
+additional=used when below 50%
+effect=single target melee
+subeffect=damage:0|knockdown:2|agony:3
+
+##################################################################
+
+name=Cultist Hammer
+category=bundle
+path=Cliff
+
+attack=Picking up
+effect=at 0 stacks
+subeffect=percent:30
+effect=at 1-9 stacks
+subeffect=percent:30|poison:5995:55
+effect=at 10-19 stacks
+subeffect=percent:30|poison:5995:55|bleeding:3025:55
+effect=at 20-39 stacks
+subeffect=percent:30|poison:5995:55|bleeding:3025:55|burning:16995:55
+
+attack=Wielding
+additional=Wielding Hammer causes "Corruption" (41 s) every second
+
+attack="Corruption"
+effect=at 10 stacks
+subeffect=vulnerability:13
+effect=at 20 stacks
+subeffect=vulnerability:13|weakness:13
+effect=at 30 stacks
+subeffect=vulnerability:13|weakness:13|stun:3
+effect=at 40 stacks
+subeffect=downed
+
+attack=Hammer Swing
+effect=melee
+subeffect=damage
+
+attack=Hammer Smash
+effect=melee
+subeffect=damage|knockback
+#note=not much reason to use. Puts all skills on 3 s cooldown and does poor damage
+
+attack=Sanctuary
+effect=aura (6 s)
+subeffect=Stability:1| every 1 s
+
+attack=Seal Breaker
+additional=kill an enemy to charge. Also does damage to Seals
+effect=melee
+subeffect=damage|knockback
+
+##################################################################
+
+name=Spike Trap
+alt=Spike Traps
+category=trap
+path=Cliff
+
+attack=Trap
+cooldown=0
+effect=trap (2 hits)
+subeffect=damage:0|knockdown:3|bleeding:204:4.75| per hit
+
+##################################################################
+
+name=Wind Trap
+alt=Wind Traps
+category=trap
+path=Cliff
+
+attack=Wind
+cooldown=6
+animation=instant||wind blown
+effect=7 cones in 3 s
+subeffect=damage:0|launch| per hit
+
+##################################################################
+
+name=Fire Trap
+alt=Fire Traps
+category=trap
+path=Cliff
+
+attack=Flamestrike
+animation=small pulsing flames|6|big flame (first 6 s) or no effect (last 6 s)
+cooldown=12
+effect=delayed (6 s) ticking AoE (7 hits in 12 s)
+subeffect=damage:0|burning:0:5.75| per tick
+#note=AoEs stack which means old one is still there doing damage while new one is pulsing (unless Water extinguishes)
+
+##################################################################
+
+name=Exploding Trap
+alt=Exploding Traps
+category=trap
+path=Cliff
+
+attack=Small Fire Explosion
+effect=multiple AoEs in line
+subeffect=damage:0|launch:2| per hit
+
+##################################################################
+
+name=Archdiviner (Phase 1)
+# Scaling unverified.
+image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
+scaling=legendary
+health=1128600
+category=legendary
+path=Cliff
+type=outlaw
+
+attack=Swing
+cooldown=0
+effect=melee
+subeffect=damage:0|knockback
+
+attack=Wells
+effect=7 delayed (1 s) AoEs in 6 s at target
+subeffect=Agony:3|weakness:5|poison:0:5|vulnerability:5|bleeding:0:5| and remove a Boon per hit
+#note=targeted player should run away from others
+
+##################################################################
+
+name=Archdiviner (Phase 2)
+image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
+# Scaling unverified.
+scaling=legendary
+health=1128600
+category=legendary
+path=Cliff
+type=outlaw
+
+attack=Swing
+cooldown=0
+effect=melee
+subeffect=damage:0|knockback
+
+attack=Cursed Grasp (1)
+effect=3 projectiles (cone)
+subeffect=damage:0|pull| per hit
+#note=evade
+
+attack=Nova (2)
+animation=raises left arm||white flash
+effect=Reflect projectiles (5 s, protection-icon)
+effect=high-range PBAoE
+subeffect=damage:0|agony:3
+#note=keep eye on boss all the time on for protection-icon to block/evade Nova
+#note=be careful with single-blocks (Bone Fiends may waste them)
+
+attack=Backbreaker
+effect=single target melee
+subeffect=damage:0|knockdown:2|agony:3
+
+attack=Summon & Cage
+additional=can't be blocked or evaded
+effect=teleport target to a enemy=Cage:structure
+effect=summon
+subeffect=2 enemy=Bone_Fiends:normal
+#note=break cage to get free, help other players if they need help
+
+##################################################################
+
+name=Bone Fiend
+alt=Bone Fiends
+# Scaling unverified.
+scaling=normal
+health=10112
+toughness=1.1
+category=normal
+path=Cliff
+type=outlaw
+
+attack=Bone Shard
+cooldown=0
+effect=2 projectiles
+subeffect=damage:0| per hit
+
+attack=Bone Shard
+effect=2 projectiles
+subeffect=damage:0|crippled:2| per hit
+
+##################################################################
+
+name=Chanter
+alt=Chanters
+image=http://wiki.guildwars2.com/images/6/64/Chanter.jpg
+category=normal
+path=Cliff
+# Scaling unverified.
+scaling=normal
+health=11516
+type=outlaw
+
+attack=Runs away when at low health
+
+attack=Putrid Curse
+animation=waves staff with green glow
+effect=ranged
+subeffect=damage:0|poison:0:1.75
+
+attack=Feast of Corruption
+animation=waves staff
+effect=ranged
+subeffect=damage:0| (more damage on targets with Conditions)
+
+attack=Spinal Shivers
+animation=waves left hand with green glow
+effect=ranged
+subeffect=damage:0|vulnerability:4.5
+
+attack=Reaper's Touch
+animation=swings left arm bit slower
+effect=projectile
+subeffect=damage:0|vulnerability:10:4
+
+##################################################################
+
+name=Chanter
+alt=Chanters
+image=http://wiki.guildwars2.com/images/6/64/Chanter.jpg
+category=veteran
+# Scaling unverified.
+scaling=normal
+health=46061
+path=Cliff
+type=outlaw
+
+attack=Runs away when at low health
+
+attack=Putrid Curse
+animation=waves staff with green glow
+effect=ranged
+subeffect=damage:0|poison:0:1.75
+
+attack=Feast of Corruption
+animation=waves staff
+effect=ranged
+subeffect=damage:0| (more damage on targets with Conditions)
+
+attack=Spinal Shivers
+animation=waves left hand with green glow
+effect=ranged
+subeffect=damage:0|vulnerability:4.5
+
+attack=Reaper's Touch
+animation=swings left arm bit slower
+effect=projectile
+subeffect=damage:0|vulnerability:10:4
+
+##################################################################
+
+name=Fanatic
+alt=Fanatics
+category=normal
+path=Cliff
+# Scaling unverified.
+scaling=normal
+health=11516
+type=outlaw
+
+attack=Runs away when at low health
+
+attack=Necrotic Bite
+effect=melee
+subeffect=damage:0
+
+attack=Life Siphon
+animation=raises right arm|0|right glow
+effect=9 ranged hits in 3 s
+subeffect=damage:0|healing| per hit (very high damage)
+#note=evade twice
+
+attack=Deathly Swarm
+animation=swings left arm|0|green swarm
+effect=projectile
+subeffect=damage:0|blind| and random condition (|vulnerability:1:10|bleeding:0:0:2|vulnerability:0:2|)
+
+##################################################################
+
+name=Novice (Dagger)
+alt=Novices (Dagger)
+image=http://wiki.guildwars2.com/images/9/91/Novice.jpg
+category=normal
+path=Cliff
+# Scaling unverified.
+scaling=normal
+health=11516
+type=outlaw
+
+attack=Runs away when at low health
+
+attack=Double Strike (1)
+cooldown=0
+effect=2 melee hits
+subeffect=damage:0| per hit
+
+attack=Lotus Strike (2)
+effect=melee
+subeffect=damage:0|poison:249:1.5
+
+attack=Heartseeker
+effect=short leap
+subeffect=damage:0
+effect=if target has low health
+subeffect=damage:0
+
+attack=Backstab
+effect=melee
+subeffect=damage:0
+
+##################################################################
+
+name=Novice (Dagger)
+alt=Novices (Dagger)
+image=http://wiki.guildwars2.com/images/9/91/Novice.jpg
+category=veteran
+path=Cliff
+# Scaling unverified.
+scaling=normal
+health=46061
+type=outlaw
+
+attack=Runs away when at low health
+
+attack=Double Strike (1)
+cooldown=0
+effect=2 melee hits
+subeffect=damage:0| per hit
+
+attack=Lotus Strike (2)
+effect=melee
+subeffect=damage:0|poison:249:1.5
+
+attack=Heartseeker
+effect=short leap
+subeffect=damage:0
+effect=if target has low health
+subeffect=damage:0
+
+attack=Backstab
+effect=melee
+subeffect=damage:0
+
+##################################################################
+
+name=Novice (Shortbow)
+alt=Novices (Shortbow)
+category=normal
+# Scaling unverified.
+scaling=normal
+health=11516
+path=Cliff
+type=outlaw
+
+attack=Runs away when at low health
+
+attack=Trick Shot
+cooldown=0
+effect=homing and bouncing? projectile
+subeffect=damage:0| per hit
+
+attack=Disabling Shot
+effect=homing projectile
+subeffect=damage:0|crippled:2
+effect=evade back
+
+##################################################################
+
+name=Novice (Shortbow)
+alt=Novices (Shortbow)
+category=veteran
+path=Cliff
+# Scaling unverified.
+scaling=normal
+health=46061
+type=outlaw
+
+attack=Runs away when at low health
+
+attack=Trick Shot
+cooldown=0
+effect=homing and bouncing? projectile
+subeffect=damage:0| per hit
+
+attack=Disabling Shot
+effect=homing projectile
+subeffect=damage:0|crippled:2
+effect=evade back
+
+##################################################################
+
+name=Cage
+category=structure
+path=Cliff
+# Scaling unverified.
+scaling=constant
+health=4482
+
+##################################################################
+
+name=Seal
+alt=Seals
+category=structure
+path=Cliff
+# Scaling unverified.
+scaling=constant
+health=14940
+
+attack=Takes no damage from normal attacks
+#note=Use Hammer skill 4.
+
+##################################################################
+# Captain Mai Trin                                               #
+# Aetherblade enemies listed at bottom of the file.              #
+# Have Mai Trin or any enemies been verified?
+##################################################################
+potion=inquest|side
+
+Name=Mai Trin
+alt=Mai
+Category=legendary
+Path=Mai
+image=http://wiki.guildwars2.com/images/d/d6/Captain_Mai_Trin.jpg
+type=aetherblade
+# Scaling not verified.
+scaling=legendary|49
+health=772127
+
+attack=Slash (1)
+cooldown=1
+animation=swing from right|0.5
+effect=Melee
+subeffect=damage:1521|bleeding:1358:15:1
+
+attack=Slash (2)
+animation=swing from left|0.25
+effect=Melee
+subeffect=damage:1521|bleeding:2715:15:2
+
+attack=Crippling Strike (3)
+animation=swing from right|0.5
+effect=Melee
+subeffect=damage:721|bleeding:1358:15:1|crippled:7|weakness:15
+
+attack=Final Thrust (4)
+animation=overhead swing with thrust|0.6|keeps sword forward
+effect=3 melee hits in 0.8 s
+subeffect=bleeding:2715:15:2| per hit
+
+attack=Pistol Shot (1)
+cooldown=14
+animation=crouches and aims with piston left hand|1.6|shoots a bullet with electric trail
+additional=targeted at the furthest player. Minimum range. Can't be evaded.
+effect=fast homing projectile
+subeffect=teleport to target
+#note=Block or reflect, or stay closer than someone else
+#note=Stay at max melee range
+
+attack=Teleporting Shot (2)
+animation=instant|0|white flash
+additional=can't be evaded
+effect=small PBAOE
+subeffect=damage:3405
+effect=small PBAOE
+subeffect=damage:3405|blind:5|crippled:3
+#note=Dodge or use a mobility skill to prevent following melee attacks
+#note=Good timing with a dodge or a mobility skill prevents the second hit
+
+attack=Pistol Spin
+cooldown=22
+animation=kneels and spins|0.5|shoots energy bolts
+additional=minimum range. Can't be blocked
+effect=projectile at every target
+subeffect=damage:3691
+#note=Evade or tank
+#note=Good indicator for Pistol Shot because same range requirement
+
+attack="Captain's Shield"
+additional=Stacks up to 10 times. Recharges every 25%.
+effect=buff
+subeffect=10% less damage, reduced control effects and 20% less condition duration
+#note=Even +100% condition duration isn't enough with full stacks
+#note=Takes no damage with full stacks
+
+##################################################################
+
+Name=First Mate Horrik
+alt=Horrik
+image=http://wiki.guildwars2.com/images/5/5b/Aetherized_Tonic.jpg
+Category=champion
+Path=Mai
+type=aetherblade
+# Scaling not verified.
+scaling=champion|49
+health=378576
+
+attack=Cannon Blast
+cooldown=9
+animation=red circle, raises cannon and glows|1.5
+effect=projectile with AoE
+subeffect=damage:3503|burning:1584:3
+#note=block or evade
+
+attack=Electric Blast
+cooldown=17
+animation=aims up and kneels back|1
+effect=projectile with ticking AoE (4 hits in 3 s)
+subeffect=damage:1212| and removes 1-3 "Shielding" from enemy=Mai:legendary
+#note=On scale 10, 3 stacks are removed
+#note=On scale 49. 1 stack is removed
+
+attack=Cannon Smash
+animation=glows and holds cannon overhead|2|smashes the ground
+effect=PBAoE
+subeffect=damage:2585|knockback:1.5
+#note=block or evade
+
+##################################################################
+Name=Inquest Technician
+alt=Technician
+# TODO: VERIFY
+image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
+Category=champion
+Path=Mai
+# TODO: VERIFY
+type=inquest
+# Scaling not verified.
+scaling=constant|49
+health=630960
+
+attack=Stab
+animation=moves back and swings from right with thrust|0.5
+cooldown=2
+effect=melee
+subeffect=damage:3751
+
+attack=Bouncing Electricity
+cooldown=7
+animation=swings sword from right|0.5|shoots blue balls
+effect=3 projectiles
+subeffect=damage:1863
+
+attack=Shocking Aura
+cooldown=24
+animation=instant
+effect=buff (4 s)
+subeffect=stun:2| if hit at melee
+
+attack=Shocking Stab
+cooldown=33
+animation=glows and holds sword behind back|2|leaps
+effect=leap
+subeffect=damage:3063|stun:2
+
+##################################################################
+
+name=Mark I Golemite
+alt=Mark I Golemites|Golemite|Golemites
+image=http://wiki.guildwars2.com/images/9/9c/Mark_I_Golemite.jpg
+category=normal
+# Health and scaling not verified.
+scaling=normal
+health=11516
+path=Mai
+# TODO: VERIFY
+type=inquest
+
+attack=Punch
+effect=2 melee hits
+subeffect=damage:1255| per hit
+
+##################################################################
+# Similar enemy: SE P1 Inquest Technician (Melee)
+
+Name=Inquest Technician
+alt=Technician
+# TODO: VERIFY
+image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
+Category=normal
+# Health and scaling not verified.
+scaling=normal
+health=11516
+Path=Mai|Aether
+# TODO: VERIFY
+type=inquest
+
+attack=Stab
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Shocking Stab
+animation=glows
+effect=melee
+subeffect=damage:0|stun:2
+
+attack=Bouncing Electricity
+effect=bouncing projectile
+subeffect=damage:0|swiftness
+
+##################################################################
+# Molten Furnace                                                 #
+# Molten enemies listed at the bottom of the file.               #
+# Earth elementals verified as elementals.                       #
+# Red Oozes tested for elementals.                               #
+# Have these been verified?                                      #
+potion=elemental|side
+potion=flame legion|side
+##################################################################
+
+name=Weapon Testing Core
+alt=Core|Crushers
+scaling=constant
+health=59760
+category=structure
+path=Furn
+toughness=5.3
+
+attack=Pound
+animation=crusher smashes ground||a white ring
+additional=can't be blocked. Can be jumped over. Max-range 1200. Phase lasts about 55 s
+effect=PBAoE
+subeffect=damage:15504
+effect=growing PBarea field
+subeffect=damage:1550|knockdown:2|agony:3| when passing through
+#note=Dodge, jump over or out range
+#note=Staying near one corner means you just have to avoid the closest attack
+#note=Movement skills may randomly work
+
+attack=Fiery Tornado
+animation=moving fire effects
+additional=phase lasts about 50 s
+effect=piercing projectile
+subeffect=damage:3876|burning:656:2|launch:2.4|agony:3
+#note=avoid by movement or evade through
+#note=Look at which side they are coming and go opposite side of Core
+
+attack=Fireball
+additional=phase lasts about 55 s
+effect=projectile
+subeffect=damage:717|agony:3
+effect=with 2 ticking AoEs (~10 s)
+subeffect=damage:716|burning:1968:2| per both hits
+#note=Stay at far left corner for a safe spot
+#note=stay mobile and dodge when needed. Bring sustain.
+
+attack=Stressed
+effect=debuff
+subeffect=damage:1|healing:1| every second
+#note=only purpose is to prevent getting out of combat
+
+##################################################################
+
+name=Weapons Test Engineer
+category=champion
+type=molten
+# Scaling not verified.
+scaling=champion|49
+health=473220
+path=Furn
+
+attack=Sonic Boom
+cooldown=1.75
+animation=slightly raises run and aims|0.75|shoots a brown line
+effect=piercing projectile
+subeffect=damage:2864
+#note=block/evade/tank at melee
+#note=sidestep at range
+
+attack=Sonicwave
+animation=kneels with gun forward and waves it|1.5|shoots a white cone
+cooldown=13
+effect=cone
+subeffect=Causes nearby enemy=Crushers:structure to hit
+#note=Try to stay at between them so you can jump over both waves
+
+attack=Flame Vortex
+cooldown=14
+animation=kneels and channels fire on the ground|2.25|shoots 3 fiery tornadoes
+effect=3 piercing projectiles (cone)
+subeffect=damage:7433|launch:2.4|agony:3
+#note=evade at melee
+#note=sidestep at range
+
+attack=Impale (1)
+cooldown=17
+animation=kneels back with the gun behind back and thrusts|0.9
+effect=melee
+subeffect=damage:7196|stun:2
+#note=keep circling at melee (dodge if needed)
+#note=stun break and dodge if you get hit
+
+attack=Impale (2)
+animation=pulls the gun back|0.5
+effect=melee
+subeffect=damage:5397|knockback:1.5|burning:2640:5
+
+##################################################################
+
+name=Environment
+alt=Steam Walls|Fire Lobs
+category=trap
+path=Furn
+
+attack=Steam
+effect=wall
+subeffect=percent:50|knockback| and removes stability when touched
+
+attack=Fire Lob
+effect=ticking AoE
+subeffect=damage:221|burning:432:2| per hit
+
+##################################################################
+
+name=Tunnel
+category=Trap
+path=Furn
+
+attack=Drill
+effect=Aura
+subeffect=burning:2821:6.5| when touching
+
+attack=Tunnel Collapse
+effect=AoE
+subeffect=damage:1794|knockdown:3
+
+##################################################################
+
+name=Tunnel Enemies
+category=Trap
+path=Furn
+
+attack=List
+effect=enemy=Cave_Bat:elite
+subeffect=enemy=Cave_Bat:veteran
+# Normal spiders???
+effect=enemy=Cave_Spider:elite
+subeffect=enemy=Cave_Spider:normal
+effect=enemy=Earth_Elemental:elite
+subeffect=enemy=Earth_Elemental:veteran
+effect=enemy=Ember:elite
+subeffect=enemy=Ember:veteran
+effect=enemy=Lashtail_Devourer:elite
+subeffect=enemy=Lashtail_Devourer:veteran
+effect=enemy=Murellow:elite
+subeffect=enemy=Murellow:veteran
+effect=enemy=Red_Ooze:elite
+subeffect=enemy=Red_Ooze:veteran
+effect=enemy=Tar_Elemental:elite
+subeffect=enemy=Tar_Elemental:veteran
+effect=enemy=Toxic_Ooze:elite
+subeffect=enemy=Toxic_Ooze:veteran
+
+##################################################################
+
+name=Cave Bat
+category=elite
+image=http://wiki.guildwars2.com/images/8/8b/Bat_%28NPC%29.jpg
+path=Furn
+type=no type
+
+attack=Slashing Claws
+cooldown=0
+effect=melee
+subeffect=damage:3750
+
+attack=Dive
+effect=melee
+subeffect=damage:3500
+
+##################################################################
+
+name=Cave Bat
+category=veteran
+image=http://wiki.guildwars2.com/images/8/8b/Bat_%28NPC%29.jpg
+# Health and scaling not verified (likely!).
+scaling=normal
+health=46061
+path=Furn
+type=no type
+
+attack=Slashing Claws
+cooldown=0
+effect=melee
+subeffect=damage:3750
+
+attack=Dive
+effect=melee
+subeffect=damage:3500
+
+##################################################################
+
+name=Cave Spider
+category=elite
+image=http://wiki.guildwars2.com/images/b/bf/Cave_Spider.jpg
+path=Furn
+type=no type
+
+##################################################################
+
+name=Cave Spider
+category=normal
+scaling=normal
+image=http://wiki.guildwars2.com/images/b/bf/Cave_Spider.jpg
+health=46061
+path=Furn
+type=no type
+
+##################################################################
+
+name=Cave Spider Hatchling
+category=normal
+image=http://wiki.guildwars2.com/images/b/b1/Cave_Spider_Hatchling.jpg
+# Scaling not verified.
+scaling=normal|49|83
+health=17909
+path=Furn
+type=no type
+
+##################################################################
+# Quite similar with FOTM Solid Jade Colossus
+
+name=Earth Elemental
+category=elite
+type=elemental
+image=https://wiki.guildwars2.com/images/a/a0/Earth_Elemental.jpg
+# Health and scaling not verified.
+scaling=normal|49|82
+health=130433
+type=elemental
+path=Furn
+# 3264 - 3314
+toughness=1.5
+
+attack=Immune to Control
+
+attack=Jab
+animation=swings right arm|0.5
+cooldown=0
+effect=melee
+subeffect=damage:3750
+
+attack=Fireball
+animation=stands still with arms pointing forward|0.5|earth-line
+effect=ticking AoE (10 hits in 5 s)
+subeffect=damage:750|crippled:2| per tick
+
+attack=Ring of Earth
+animation=stands still with arms pointing forward|0.5|earth-ring
+effect=PBAoE
+subeffect=damage:6750|knockdown:3
+#note=often used immediately at melee-range so prepare to evade/block
+
+attack=Self Buff
+animation=stands still with arms pointing forward|0.5|yellow bubble
+effect=buff
+subeffect=reflect projectiles (5 s)
+
+##################################################################
+# Quite similar with FOTM Solid Jade Colossus
+
+name=Earth Elemental
+category=veteran
+image=https://wiki.guildwars2.com/images/a/a0/Earth_Elemental.jpg
+# Scaling not verified.
+# 41555 at scale 1
+scaling=normal|49|82
+# Tested.
+health=130433
+type=elemental
+path=Furn
+# 3264 - 3314
+toughness=1.5
+
+attack=Immune to Control
+
+attack=Jab
+animation=swings right arm|0.5
+cooldown=0
+effect=melee
+subeffect=damage:2500
+
+attack=Fireball
+animation=stands still with arms pointing forward|0.5|earth-line
+effect=ticking AoE (10 hits in 5 s)
+subeffect=damage:500|crippled:2| per tick
+
+attack=Ring of Earth
+animation=stands still with arms pointing forward|0.5|earth-ring
+effect=PBAoE
+subeffect=damage:3750|knockdown:3
+#note=often used immediately at melee-range so prepare to evade/block
+
+attack=Self Buff
+animation=stands still with arms pointing forward|0.5|yellow bubble
+effect=buff
+subeffect=reflect projectiles (5 s)
+
+##################################################################
+
+name=Ember
+category=elite
+# Health and scaling not verified.
+scaling=normal
+health=46061
+type=elemental
+path=Furn
+
+attack=Immune to burning
+
+attack=Fiery
+effect=buff
+subeffect=burning:0:2.5| when hit at melee range
+
+attack=Fireball
+animation=rises a bit|0.5
+effect=2 projectiles in 0.3 s
+subeffect=damage:2500| per hit
+
+attack=Lava Fond
+animation=rises to sky or stands still|2
+effect=3 ticking AoEs (6 s) in 2 s
+subeffect=damage:2250| per hit
+
+##################################################################
+
+name=Ember
+category=veteran
+# Health and scaling not verified.
+scaling=normal
+health=46061
+type=elemental
+path=Furn
+
+attack=Immune to burning
+
+attack=Fiery
+effect=buff
+subeffect=burning:0:2.5| when hit at melee range
+
+attack=Fireball
+animation=rises a bit|0.5
+effect=2 projectiles in 0.3 s
+subeffect=damage:2500| per hit
+
+attack=Lava Fond
+animation=rises to sky or stands still|2
+effect=3 ticking AoEs (6 s) in 2 s
+subeffect=damage:2250| per hit
+
+##################################################################
+# Similar enemy: CoF P2 Lashtail Devourer
+
+Name=Lashtail Devourer
+alt=Lashtail Devourers
+image=http://wiki.guildwars2.com/images/a/a9/Lashtail_Devourer.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Category=elite
+Path=Furn
+type=flame legion
+
+attack=Slash
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Tail Lash
+animation=raises stinger on back
+effect=5 melee hits in 3 s
+subeffect=damage:0|crippled:5|poison:0:5| per hit
+effect=last hit
+subeffect=immobilized:4| and lose crippled
+
+##################################################################
+# Similar enemy: CoF P2 Lashtail Devourer
+
+Name=Lashtail Devourer
+alt=Lashtail Devourers
+image=http://wiki.guildwars2.com/images/a/a9/Lashtail_Devourer.jpg
+Category=veteran
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Furn
+type=flame legion
+
+attack=Slash
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Tail Lash
+animation=raises stinger on back
+effect=5 melee hits in 3 s
+subeffect=damage:0|crippled:5|poison:0:5| per hit
+effect=last hit
+subeffect=immobilized:4| and lose crippled
+
+##################################################################
+
+name=Murellow
+category=elite
+image=http://wiki.guildwars2.com/images/b/b9/Juvenile_Murellow.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+path=Furn
+toughness=1
+# Tested for Scarlet, Inquest, Flame, Dredge, Icebrood, Grawl
+type=no type
+
+attack=Diseased Bite
+animation=bites|0.5
+effect=melee
+subeffect=damage|poison:984:8
+
+attack=Slash
+animation=Stands up and slashes|0.75
+effect=melee
+subeffect=damage
+
+attack=Screech
+animation=bends forward|0.1
+effect=cone
+subeffect=damage:2377|daze:1|weakness:8
+
+##################################################################
+
+name=Murellow
+category=veteran
+# Health and scaling not verified.
+scaling=normal
+health=46061
+path=Furn
+type=no type
+
+attack=Diseased Bite
+animation=bites|0.5
+effect=melee
+subeffect=damage|poison:984:8
+
+attack=Slash
+animation=Stands up and slashes|0.75
+effect=melee
+subeffect=damage
+
+attack=Screech
+animation=bends forward|0.1
+effect=cone
+subeffect=damage:2377|daze:1|weakness:8
+
+##################################################################
+# Similar enemy: CoF P3 Red Ooze
+
+Name=Red Ooze
+alt=Red Oozes
+type=no type
+image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Category=elite
+Path=Furn
+
+attack=Fireball
+cooldown=5.5
+animation=waves head
+effect=3 projectiles with small AoE in 1.6 s
+subeffect=damage:1250| per hit
+
+attack=Belch (1)
+animation=fiery glow and spins head|0.5
+effect=3 PBAoEs in 0.8 s
+subeffect=damage:1250|burning:0:1| per hit
+
+attack=Belch (2)
+animation=idles|3
+effect=cone
+subeffect=damage:1250|burning:0:1
+#note=sometimes used in reverse order
+
+attack=Ooze Shield
+animation=spins weirdly
+effect=block (4.5 s)
+effect=PBAOE (if blocked anything)
+subeffect=damage:8000
+
+##################################################################
+# Similar enemy: CoF P3 Red Ooze
+
+Name=Red Ooze
+alt=Red Oozes
+image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
+Category=veteran
+# Scaling not verified.
+scaling=normal
+health=46061
+type=no type
+Path=Furn
+
+attack=Fireball
+cooldown=5.5
+animation=waves head
+effect=3 projectiles with small AoE in 1.6 s
+subeffect=damage:750| per hit
+
+attack=Belch (1)
+animation=fiery glow and spins head|0.5
+effect=3 PBAoEs in 0.8 s
+subeffect=damage:750|burning:0:1| per hit
+
+attack=Belch (2)
+animation=idles|3
+effect=cone
+subeffect=damage:750|burning:0:1
+#note=sometimes used in reverse order
+
+attack=Ooze Shield
+animation=spins weirdly
+effect=block (4.5 s)
+effect=PBAOE (if blocked anything)
+subeffect=damage:8000
+
+##################################################################
+# Similar enemy: CoF P3 Tar Elemental
+
+Name=Tar Elemental
+alt=Tar Elementals
+image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
+Category=elite
+# Health and scaling not verified.
+scaling=normal
+health=46061
+type=elemental
+Path=Furn
+
+attack=Spit
+cooldown=3.5
+animation=swings head|0.5
+effect=projectile
+subeffect=damage:1000
+
+attack=Tar Pool
+cooldown=33
+animation=glows|1.75
+effect=projectile
+subeffect=damage:500|immobilized|0.5
+effect=with ticking AoE (3 ticks in 2 s)
+subeffect=damage:500|immobilized|0.5| per tick
+
+##################################################################
+# Similar enemy: CoF P3 Tar Elemental
+
+Name=Tar Elemental
+alt=Tar Elementals
+image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
+Category=veteran
+scaling=normal
+health=46061
+type=elemental
+Path=Furn
+
+attack=Spit
+cooldown=3.5
+animation=swings head|0.5
+effect=projectile
+subeffect=damage:1000
+
+attack=Tar Pool
+cooldown=33
+animation=glows|1.75
+effect=projectile
+subeffect=damage:500|immobilized|0.5
+effect=with ticking AoE (3 ticks in 2 s)
+subeffect=damage:500|immobilized|0.5| per tick
+
+##################################################################
+
+Name=Toxic Ooze
+alt=Toxic Oozes
+type=no type
+image=http://wiki.guildwars2.com/images/d/d2/Toxic_Ooze.jpg
+Category=elite
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Furn
+
+# Values from veteran.
+
+attack=Dirt Lob
+animation=swings head|1
+cooldown=4
+effect=2 projectiles in 0.8 s
+subeffect=damage:1193
+
+attack=Protection
+cooldown=18
+animation=instant|0|spins as a disc
+effect=2 self buffs in 2.25 s
+subeffect=protection:3| per hit
+
+attack=Muddied Ground (1)
+cooldown=30
+animation=instant|0|blends to the ground
+effect=evade (3.75 s)
+effect=ticking PBAoE (4 hits in 3 s) when evade ends
+subeffect=damage:946|crippled:2| per hit
+effect=stealth (3 s)) when evade ends
+
+attack=Ooze Mark (2)
+effect=melee
+subeffect=damage:1915|bleeding:1240:5:3
+#note=used instantly when Muddied Ground ends
+
+##################################################################
+
+Name=Toxic Ooze
+alt=Toxic Oozes
+type=no type
+image=http://wiki.guildwars2.com/images/d/d2/Toxic_Ooze.jpg
+Category=veteran
+scaling=normal
+# Health verified.
+health=46061
+Path=Furn
+
+attack=Dirt Lob
+animation=swings head|1
+cooldown=4
+effect=2 projectiles in 0.8 s
+subeffect=damage:1193
+
+attack=Protection
+cooldown=18
+animation=instant|0|spins as a disc
+effect=2 self buffs in 2.25 s
+subeffect=protection:3| per hit
+
+attack=Muddied Ground (1)
+cooldown=30
+animation=instant|0|blends to the ground
+effect=evade (3.75 s)
+effect=ticking PBAoE (4 hits in 3 s) when evade ends
+subeffect=damage:946|crippled:2| per hit
+effect=stealth (3 s)) when evade ends
+
+attack=Ooze Mark (2)
+effect=melee
+subeffect=damage:1915|bleeding:1240:5:3
+#note=used instantly when Muddied Ground ends
+
+##################################################################
+
+Name=Translucent Ooze
+alt=Translucent Oozes
+image=http://wiki.guildwars2.com/images/e/e8/Translucent_Ooze.jpg
+type=no type
+Category=elite
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Furn
+
+attack=Vapor Blade (1)
+animation=waves head|0.5
+additional=Uses Tidal Wave if returning projectiles hit
+effect=Returning and piercing projectile
+subeffect=damage:0| per hit
+effect=when returning
+subeffect=pull:1.5
+#note=stand against a wall to prevent returning projectiles
+
+attack=Stealth Blades (1)
+animation=moves head|0.75
+additional=Uses Tidal Wave regardless of hits
+effect=4 returning and piercing projectiles (cone)
+subeffect=damage:0| per hit
+effect=when returning
+subeffect=pull:1.5|stealth
+
+attack=Tidal Wave (2)
+animation=jumps|1.5
+effect=PBAoE
+subeffect=damage:0|knockdown:1.5|healing
+#note=block or evade
+
+##################################################################
+
+Name=Translucent Ooze
+alt=Translucent Oozes
+type=no type
+image=http://wiki.guildwars2.com/images/e/e8/Translucent_Ooze.jpg
+Category=veteran
+scaling=normal
+health=46061
+Path=Furn
+
+attack=Vapor Blade (1)
+animation=waves head|0.5
+additional=Uses Tidal Wave if returning projectiles hit
+effect=Returning and piercing projectile
+subeffect=damage:0| per hit
+effect=when returning
+subeffect=pull:1.5
+#note=stand against a wall to prevent returning projectiles
+
+attack=Stealth Blades (1)
+animation=moves head|0.75
+additional=Uses Tidal Wave regardless of hits
+effect=4 returning and piercing projectiles (cone)
+subeffect=damage:0| per hit
+effect=when returning
+subeffect=pull:1.5|stealth
+
+attack=Tidal Wave (2)
+animation=jumps|1.5
+effect=PBAoE
+subeffect=damage:0|knockdown:1.5|healing
+#note=block or evade
+
+##################################################################
+
+name=Rox
+category=ally
+image=http://wiki.guildwars2.com/images/5/5b/Rox.jpg
+# Scaling not verified.
+scaling=constant
+health=68817
+path=Furn|Molten
+
+##################################################################
+
+name=Braham
+category=ally
+image=http://wiki.guildwars2.com/images/b/b8/Braham_Eirsson.jpg
+# Scaling not verified.
+scaling=constant
+health=68817
+path=Furn|Molten
+
+##################################################################
+
+name=Frostbite
+category=ally
+image=http://wiki.guildwars2.com/images/9/9d/Frostbite.jpg
+# Scaling not verified.
+scaling=constant
+health=39327
+path=Furn|Molten
+
+##################################################################
+# Molten Bosses                                                  #
+# Molten enemies verified.
+##################################################################
+
+name=Molten Berserker
+alt=Berserker
+category=legendary
+image=http://wiki.guildwars2.com/images/3/34/Molten_Berserker.jpg
+type=molten
+# Scaling unverified.
+scaling=legendary
+health=362172
+path=Molten
+
+attack=Smash (1)
+animation=swings left arm|0.2
+cooldown=0
+effect=melee
+subeffect=damage:1000
+#note=does full combo even if it doesn't hit
+#note=can be quite easily tanked
+effect=enraged
+subeffect=damage:1200|knockdown:1.5
+#note=if kiting try to bait this to force him to do entire combo
+
+attack=Bash (2)
+animation=swings left arm|0.5
+effect=2 melee hits in 0.8 s
+subeffect=damage:1000| per hit
+effect=enraged
+subeffect=damage:1200|knockdown:1.5| per hit
+
+attack=Uppercut (3)
+animation=hugs hands and raises them|1
+effect=cone
+subeffect=damage:2000
+#note=block, evade or just tank
+effect=enraged
+subeffect=damage:2300|launch:2.3
+
+attack=Shadowstep
+animation=turns right and leaps|0.5
+additional=can't be blocked or evaded. Only used at distant targets
+effect=ranged
+subeffect=teleport to target
+#note=If Clap is active this attack may cause it to hit (bug). Try to evade in that case
+
+attack=Shockwave
+animation=glows and jumps|1
+effect=Uses "Pound"/"Clap" once
+subeffect="Pound" if target is at distance and "Clap" if target is close (bit random)
+#note=Never run along the wave or you melt in a second
+effect=when Enraged
+subeffect=Used twice
+effect=when enemy=Firestorm:legendary is below 25%
+subeffect=Used 3-4 times
+effect=when alone
+subeffect=Used 4 times
+
+attack="Pound"
+animation=jumps||a white ring
+additional=can't be blocked. Can be jumped over. Max-range 1200.
+effect=growing PBarea field
+subeffect=damage:4250| when passing through
+#note=Dodge, jump over or out range
+
+attack="Clap"
+animation=claps||a blue ring
+additional=can't be blocked. Max-range 1200.
+effect=growing PBarea field
+subeffect=damage:4250|launch:2.3| when passing through
+#note=Bit different hit box than "Pound" so evade needs different timing
+#note=Dodge or out range
+
+attack=Shield (1)
+animation=hands down|0.5
+additional=only used when alone
+effect=Evade
+effect=area field
+subeffect=burning:568:1| when passin through
+effect=with ticking AoE
+subeffect=buff:"shielding":2| every 2 seconds
+
+attack=Jetpack Pound (2)
+animation=Rises to air, laughs and drops to the ground|5|a fiery ring
+additional=can't be blocked. Can be jumped over. Max-range 1200.
+effect=Growing PBAoE field
+subeffect=damage:0|knockdown| when passing through
+#note=Dodge or out range. Jump only if you are confident
+
+attack=Frost Siege (3)
+additional=not channeled.
+effect=~30 delayed (2 s) AoEs in area during 15.5 s
+subeffect=damage:0|knockdown:3| per hit
+
+attack="Shielding"
+effect=buff
+subeffect=take no damage
+
+##################################################################
+
+name=Molten Firestorm
+alt=Firestorm
+category=legendary
+image=http://wiki.guildwars2.com/images/5/5a/Molten_Firestorm.jpg
+type=molten
+# Scaling unverified.
+scaling=legendary
+health=362172
+path=Molten
+
+attack=Fireball
+effect=projectile
+subeffect=damage:0|burning:1136:2
+effect=with ticking AoE
+subeffect=damage:0|burning:1136:2| per hit
+#note=Impossible to distinguish from the other Fireball so avoid every circle.
+effect=when Enraged
+subeffect=bigger radius
+
+attack=Fireball
+effect=projectile
+subeffect=damage:3500|burning:1136:2
+effect=with ticking AoE
+subeffect=damage:3500|burning:1136:2| per hit
+effect=when Enraged
+subeffect=bigger radius
+
+attack=Bouncing Fireball
+effect=projectile with a bounce on ground
+subeffect=damage:1000| per hit
+effect=when Enraged
+subeffect=damage:0|launch:2.3| per hit
+effect=with ticking AoE (11 hits in 10 s)
+subeffect=damage:1000|burning:568:1| per hit
+effect=when Enraged
+subeffect=bigger radius
+
+attack=Retreat
+effect=ticking AoE
+subeffect=damage:1000|burning:795:1.4| per hit
+effect=evade back
+
+attack=Sonic Vortex
+effect=permanent AoE ring
+subeffect=damage:750|launch
+#note=Effect basically halves radius of fighting area (you have to stay near center)
+#note=Firestorm may enter it making melee impossible until he moves back
+
+##################################################################
+# Similar enemy: FOTM Molten Molten Effigy
+
+Name=Molten Effigy
+Category=champion
+Path=Molten
+# Scaling unverified.
+scaling=champion
+health=479531
+type=molten
+
+attack=Immune to knockdown, Pull, Knockback and launch
+#note=Stun and daze probably work
+
+attack=Fireball
+cooldown=4
+animation=moves left foot back and pulls left hand back|1|throws a fireball
+effect=projectile with small AoE
+subeffect=damage:8494
+#note=block/evade
+
+attack=Firestorm
+cooldown=17
+animation=bends forward and raises arms|3|a red circle appears
+effect=delayed (1 s) ticking AoE (5 hits in 4 s)
+subeffect=damage:5022|burning| per hit (|damage:25110|)
+
+attack=Fire Aura
+effect=huge aura
+subeffect=Burning:528:1| every second
+
+##################################################################
+# Snowblind                                                      #
+# Elementals at Source verified for Elementals.
+# Svanir enemies verified for Svanir.
+# Summons verified for Icebrood.
+# Wolves verified for none.
+potion=sons of svanir|main
+potion=elemental|side
+##################################################################
+
+name=Elemental Source
+category=structure
+path=Snow
+scaling=constant
+health=272655
+toughness=0.67
+
+attack=May target lit bonfires
+
+attack=Wind Gust
+cooldown=5
+animation=when blue shards appear|instant
+additional=can't be blocked
+effect=piercing projectile
+subeffect=damage:798|launch:2
+effect=with 2 AoE hits
+subeffect=damage:798| per hit (|damage:1596|)
+#note=Use stability (especially when meleeing)
+#note=evade,
+#note=if you want to melee stay at max melee range to maximise reaction time and dodge when blue shards appear
+
+attack=Lightning Strike
+effect=ticking AoE (5 hits in 4 s)
+subeffect=damage:7|crippled:1| per hit
+effect=last hit
+subeffect=damage:57|launch:4
+#note=get out or evade the last hit
+#note=Use ground targeted (and some other specific skills) to destroy the top part
+
+attack=Snowstorm (1)
+animation=white mist appears|3
+additional=used at 75%/50%/25%
+effect=teleport ~2 players away. Reduce visibility
+#note=if you get teleported, use side of the arena to get to your party (don't go middle and aggro everything)
+
+attack=summon (2)
+additional=maximum amount of 5
+effect=summon
+subeffect=5 enemy=Ice_Elementals:veteran
+#note=avoid aggroing (they just get replaced next time)
+#note=focus down necessary amount to reduce pressure
+
+##################################################################
+# Can't be attacked any more so doesn't "exist" anymore.
+
+#name=Elemental Source (Top)
+#category=structure
+#path=Snow
+#scaling=constant
+#health=7470
+#toughness=0.67
+
+#attack=May target lit bonfires
+
+##################################################################
+
+name=Shaman Lornarr Dragonseeker
+category=legendary
+image=http://wiki.guildwars2.com/images/a/a6/Hafdan_the_Black.jpg
+path=Snow
+# Scaling not verified.
+scaling=legendary
+type=sons of svanir
+health=1128600
+
+attack=Strike (1)
+animation=swings sword from right overhead|0.4
+cooldown=0
+effect=melee
+subeffect=damage:1598|buff:"Frostbite":15
+
+attack=Strike (2)
+animation=waits and swings sword from right|1.4
+effect=melee
+subeffect=damage:2079|buff:"Frostbite":15
+
+attack=Strike (3)
+animation=waits and thrusts sword forward|1.7
+effect=melee
+subeffect=damage:3245|buff:"Frostbite":15:2
+#note=deals about same damage as previous hits so don't tank it
+#note=block/evade
+
+attack=Icy Breath
+cooldown=14
+animation=lowers sword, leans back and leans forward|0.5|sprays ice
+additional=able to rotate
+effect=10 cones in 4.5 s
+subeffect=damage:1664|buff:"Frostbite":15| per hit (|damage:16640|)
+#note=evade back to direct away from your party
+#note=usually targets the same player
+
+attack=Self-Heal
+animation=kneels
+additional=can be destroyed
+effect=covered by enemy=Ice:structure
+subeffect=invulnerability, heal and Ice Spikes around the area
+
+attack=Ice Spike
+effect=delayed (2 s) AoE
+subeffect=damage:0|agony:3
+
+attack=Ice Spikes
+cooldown=50
+animation=instant||teleports away and rambles about power of dragon
+effect=leaves the arena
+effect=multiple delayed (2 s) AoEs in line (lasts about 20 s)
+subeffect=damage:8620|agony:3| per hit
+#note=used on cooldown (even cancels other skills)
+
+attack="Frostbite"
+additional=stacks up to 10 times
+effect=debuff
+subeffect=damage:90.5| per second
+effect=at 10 stacks
+subeffect=lose all "Frostbite" and get enemy=Ice_Shard:structure.
+
+##################################################################
+
+Name=Crystal
+alt=Crystals
+Category=normal
+type=no type
+# Scaling not verified.
+scaling=constant
+health=7470
+Path=Snow
+toughness=0.67
+
+##################################################################
+# Same enemy: HotW Icebrood Wolf
+# Same enemy: CoE1 Icebrood enemy=Wolf:Normal
+# Same enemy: HotWS Icebrood enemy=Wolf:Normal
+
+Name=Icebrood Wolf
+alt=Icebrood Wolves
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+Category=normal
+# Scaling not verified.
+scaling=normal
+# Not tested.
+health=11516
+Path=Snow
+type=icebrood
+
+attack=Bite
+cooldown=3.5
+effect=melee
+subeffect=damage:1325
+
+attack=Leap
+cooldown=35
+effect=2 PBAoEs
+subeffect=damage:2671|crippled:3| per hit (|damage:5342|)
+
+##################################################################
+# Same enemy: Snow Icebrood Elemental (79).
+# Same enemy: HotW1 Icebrood Elemental (Big).
+# Same enemy: HotWS Icebrood Elemental (Big).
+# Same enemy: HotW1 Icebrood Elemental (Big 81).
+# Same enemy: HotW1 Icebrood Elemental (Big 79).
+
+Name=Icebrood Elemental
+Category=normal
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+# Scaling not verified.
+scaling=normal
+health=15774
+Path=Snow
+type=icebrood
+
+attack=Ice Strike
+cooldown=7
+animation=moves left hand and points it forward|0.65|a red circle with ice shard appears
+effect=AoE
+subeffect=damage:1176
+effect=delayed (2 s) AoE
+subeffect=damage:1176|bleeding:825:5:2
+
+attack=Shockwave
+cooldown=11
+animation=holds right arm behind back with water effect and smashes ground|1.75|sends a frosty shockwave
+effect=homing projectile
+subeffect=damage:1175
+
+##################################################################
+# Same enemy: Snow Icebrood Elemental.
+# Same enemy: HotW1 Icebrood Elemental (Big).
+# Same enemy: HotWS Icebrood Elemental (Big).
+# Same enemy: HotW1 Icebrood Elemental (Big 81).
+# Same enemy: HotW1 Icebrood Elemental (Big 79).
+
+Name=Icebrood Elemental (79)
+Category=normal
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+# Scaling not verified.
+scaling=normal
+level=79
+health=15022
+Path=Snow
+type=icebrood
+# Not tested.
+
+attack=Ice Strike
+cooldown=7
+animation=moves left hand and points it forward|0.65|a red circle with ice shard appears
+effect=AoE
+subeffect=damage:1028
+effect=delayed (2 s) AoE
+subeffect=damage:1028|bleeding:820:5:2
+
+attack=Shockwave
+cooldown=11
+animation=holds right arm behind back with water effect and smashes ground|1.75|sends a frosty shockwave
+effect=homing projectile
+subeffect=damage:1028
+
+##################################################################
+
+Name=Ice Elemental
+alt=Ice Elementals
+Category=veteran
+image=https://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
+# Scaling not verified.
+scaling=normal
+health=46061
+Path=Snow
+type=elemental
+toughness=0.67
+
+attack=Ice Shards
+cooldown=4
+animation=points left arm|0.75
+effect=projectile
+subeffect=damage:2168
+effect=also randomly
+subeffect=chilled:2
+
+attack=Ice Spike
+cooldown=8
+animation=glows and jumps|1|a red circle with an ice shard
+effect=delayed (2.5 s) AoE
+subeffect=damage:5471
+
+attack=Frost Blast
+cooldown=16
+animation=pulls right arm back and smashes ground|1.5
+effect=PBAoE
+subeffect=damage:2950|knockback:1.5
+
+##################################################################
+# Same enemy: HotW1 Icebrood enemy=Berserker:Elite
+# Similar enemy: HotW1 Icebrood enemy=Berserker:Normal
+# Similar enemy: HotW1 Son of Svanir (Weak Axe)
+
+Name=Son of Svanir (Axe)
+alt=Sons of Svanir (Axe)
+Category=veteran
+image=http://wiki.guildwars2.com/images/d/db/Son_of_Svanir_axes.jpg
+# Scaling not verified.
+scaling=normal
+health=23031
+Path=Snow
+type=sons of svanir
+
+attack=Throw Axe
+cooldown=2
+animation=swings left/right arm|0.3|throws an axe
+effect=projectile
+subeffect=damage:1198
+
+attack=Boomerang Axe
+cooldown=12
+animation=swings left/right arm|0.3|throws an axe
+effect=returning projectile
+subeffect=damage:1485|crippled:8| per hit
+#note=projectile moves slightly slower than with Throw Axe
+
+attack=Whirling Defense
+cooldown=24
+animation=moves axes fast with a whirl effect and wind sound|instant|spins around
+effect=6 PBAoEs in 5 s
+subeffect=damage:1515| per hit (|damage:9090|)
+effect=reflects projectiles (5 s)
+#note=at melee move away to max melee range
+#note=at range stop using projectiles
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Throw Axe
+subeffect=damage:1474
+effect=Boomerang Axe
+subeffect=damage:1659|chilled:5| per hit
+effect=Whirling Defense
+subeffect=not used
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: HotWS Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter (81).
+# Same enemy: HotWS Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow 78).
+
+Name=Son of Svanir (Bow)
+alt=Sons of Svanir (Bow)
+image=http://wiki.guildwars2.com/images/4/43/Son_of_Svanir_bow.jpg
+Category=veteran
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Snow
+type=sons of svanir
+toughness=0.8
+
+attack=Shoot
+animation=raises bow and aims|0.5|shoots an arrow
+cooldown=2.5
+effect=projectile
+subeffect=damage:1245
+
+attack=Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots arrows
+effect=5 projectiles in 1.5 s
+subeffect=damage:561| per hit (|damage:2805|)
+
+attack=Frost Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots icy arrows
+additional=only used when buffed up
+effect=5 projectiles in 1.5 s
+subeffect=damage:561|chilled:1| per hit (|damage:2805|)
+
+attack=Barrage
+animation=aims up|0.5|shoots an arrow rain in a big circle
+effect=channeled AoE (10 hits in 3.5 s)
+subeffect=damage:596|crippled:3| per hit (|damage:5960|)
+
+attack=Summon
+animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
+additional=only used when buffed up
+effect=Summon
+subeffect=2 enemy=Icebrood_Wolves:normal
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons
+additional=used when below 25%
+effect=Shoot
+subeffect=No change
+effect=Volley
+subeffect=Use Frost Volley instead
+effect=Barrage
+subeffect=???
+effect=Summon
+subeffect=Enabled
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: HotW1 Icebrood Claymore
+# Same enemy: HotW1 Son of Svanir (Weak Greatsword)
+
+Name=Son of Svanir (Greatsword)
+alt=Sons of Svanir (Greatsword)
+image=http://wiki.guildwars2.com/images/4/47/Son_of_Svanir_greatsword.jpg
+Category=veteran
+# Scaling not verified.
+scaling=normal
+health=46061
+Path=Snow
+type=sons of svanir
+
+attack=Slash
+cooldown=2
+animation=swings sword|0.4
+effect=2 melee hits in 0.5 s
+subeffect=damage:918| per hit
+
+attack=Whirlwind Attack
+cooldown=24
+animation=glows and sticks sword to the ground|0.6
+effect=4 projectiles (cone)
+subeffect=damage:2506| per hit
+
+attack=Whirlwind Attack
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:1852| per hit
+#note=usually hits only once, may hit twice if you run with him 
+
+attack=Frostwind Attack
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+additional=only used when buffed up
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:2206| per hit.
+effect=leaves 4 delayed (1 s) AoEs
+subeffect=damage:1055|bleeding:164:2| per hit
+#note=usually hits only once, may hit twice if you run with him 
+#note=very dangerous when against a wall
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Slash
+subeffect=no changes
+effect=Whirlwind Attack
+subeffect=no changes
+effect=Whirlwind Attack
+subeffect=Uses Frostwind Attack instead
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Similar enemy: HotWS Icebrood Mauler
+# Similar enemy: HotWS Son of Svanir (Hammer)
+# Similar enemy: HotW1 Son of Svanir (Weak Hammer)
+
+Name=Son of Svanir (Hammer)
+alt=Sons of Svanir (Hammer)
+image=http://wiki.guildwars2.com/images/9/95/Son_of_Svanir_hammer.jpg
+Category=veteran
+# Scaling not verified.
+scaling=normal
+health=46061
+Path=Snow
+type=sons of svanir
+
+attack=Smash
+cooldown=2.5
+animation=swing from right|0.5|frost effect on hit
+effect=Melee
+subeffect=damage:1854
+
+attack=Leap
+cooldown=14
+animation=crouches and leaps with hammer above head|0.9
+effect=leap
+subeffect=damage:2317|knockdown:2
+#note=block/evade
+
+attack=Ice Leap
+cooldown=14
+animation=crouches and leaps with hammer above head|0.9
+effect=leap
+subeffect=damage:3077| and enemy=Ice_Shard:structure on the target
+#note=block/evade
+#note=attack Ice Shard immediately (one hit)
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 50%
+effect=Smash
+subeffect=no changes
+effect=Leap
+subeffect=Uses Ice Leap instead
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: HotW1 Icebrood Seer.
+# Same enemy: HotWS Icebrood Seer.
+# Same enemy: HotW1 Icebrood Seer (81).
+# Same enemy: HotW1 Son of Svanir (Staff 78).
+
+Name=Son of Svanir (Staff)
+alt=Sons of Svanir (Staff)
+Category=veteran
+image=http://wiki.guildwars2.com/images/5/55/Son_of_Svanir_staff.jpg
+# Scaling not verified.
+scaling=normal
+health=46061
+Path=Snow
+type=sons of svanir
+toughness=0.8
+
+attack=Ice Shards
+cooldown=7
+animation=ice shard grows on top of the staff and he points it forward|1
+effect=3 medium-range projectiles in 0.1 s
+subeffect=damage:453|chilled:1| per hit
+
+attack=Ice Spike
+cooldown=5
+animation=leans back with ice effect on top of the staff, crouches and raises left arm|1|red circle
+effect=delayed (3 s) AoE
+subeffect=damage:2495
+
+attack=Summon
+animation=leans back, crouches and raises left arm|1
+additional=maximum of 2
+effect=Summon
+subeffect=enemy=Icebrood_Elemental:normal or enemy=Icebrood_Elemental_(79):normal at target
+
+attack=On death
+animation=none
+effect=summon
+subeffect=2 enemy=Ice_Imps:normal
+#note=Might be based on alive Icebrood Elementals
+
+##################################################################
+
+Name=Ice Imp
+alt=Ice Imps
+Category=normal
+image=http://wiki.guildwars2.com/images/8/88/Ice_Imp.jpg
+# Scaling not verified.
+scaling=normal
+Path=Snow
+type=imp
+
+attack=Ice Explosion
+animation=stands still with a red circle, white mist forms up and dives fast to the ground|3
+effect=PBAoE
+subeffect=damage:1778|chilled:1
+effect=self destruct
+#note=Either kill or move away
+
+
+##################################################################
+
+Name=Ice Shard
+Category=structure
+# Scaling not verified.
+scaling=constant
+health=50
+Path=Snow
+
+attack=Effect
+effect=debuff (5 s)
+subeffect=chilled:3| every second and can't move or use skills
+#note=Stability prevents effect
+#note=stun breaks have no effect
+#note=use a teleport to get out
+#note=Destroy to remove the effect
+
+##################################################################
+
+Name=Wolf
+alt=Wolves
+Category=veteran
+image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
+# Scaling not verified.
+scaling=normal
+health=11516
+Path=Snow
+type=dog
+
+attack=Bite
+animation=bites|0.25
+cooldown=2.5
+effect=melee
+subeffect=damage:1519
+
+attack=Howl
+animation=pulls air in, raises head and howls|1.5
+cooldown=24
+effect=PBAoE
+subeffect=might:5:3
+#note=About 10% more damage
+
+##################################################################
+# Solid Ocean                                                    #
+# Jade Colossii verified as elemental.                           #
+# Irukandji and tentacles tested for elemental.                  #
+##################################################################
+
+Name=Jade Maw
+Category=legendary
+image=http://wiki.guildwars2.com/images/1/12/Jade_Maw.jpg
+Path=Solid
+scaling=constant
+health=14940
+type=elemental
+
+attack=Laser
+cooldown=15
+animation=marks target|0|glows yellow and shoots laser with sound
+additional=can't be blocked
+effect=ranged
+subeffect=percent:100
+#note=hold Crystal to absorb
+#note=evade when skull disappears
+
+attack=summon
+effect=summon
+subeffect=enemy=Jade_Colossus:veteran
+
+##################################################################
+
+Name=Jade Maw (Enraged)
+alt=Enraged
+Category=legendary
+Path=Solid
+scaling=constant
+type=elemental
+health=14940
+
+attack=Laser
+cooldown=8
+animation=marks target|0|glows yellow and shoots laser with sound
+additional=can't be blocked
+effect=ranged
+subeffect=percent:100
+#note=hold Crystal to absorb
+#note=learn timing for evade (don't rely on sound because it doesn't always make it)
+
+attack=Death
+animation=marks every target
+additional=used on death. Can't be blocked or evaded
+effect=multiple ranged hits at every target
+subeffect=percent:100
+#note=hold Crystal
+
+##################################################################
+
+Name=Giant Irukandji
+alt=Giant Irukandjis
+image=http://wiki.guildwars2.com/images/6/6f/Veteran_Irukandji.jpg
+Category=veteran
+# Scaling not verified.
+scaling=normal|49|82
+health=173911
+toughness=1.2
+Path=Solid
+type=wind rider
+
+attack=Eye Beam
+animation=glows bright purple
+effect=2 ranged hits
+subeffect=damage:0|confusion:258:1| per hit
+
+attack=Shoot
+animation=glows dark purple
+effect=slow projectile
+subeffect=damage:0|knockback:1.5
+
+attack=Stealth (1)
+animation=spins and glows green
+effect=Stealth
+effect=PBAoE
+subeffect=blind:5
+
+attack=Prestige (2)
+animation=delay|3|purple effect
+effect=PBAoE
+subeffect=???
+
+##################################################################
+
+Name=Irukandji
+alt=Irukandjis
+image=http://wiki.guildwars2.com/images/6/6f/Veteran_Irukandji.jpg
+Category=veteran
+# Scaling not verified.
+scaling=normal|49|82
+health=108695
+toughness=0.75
+Path=Solid
+type=wind rider
+
+attack=Tentacle Slash
+effect=Melee
+subeffect=damage:0|bleeding:162:2
+
+attack=Self Buff
+animation=spins
+effect=PBAoE
+subeffect=swiftness:10
+
+attack=Stealth (1)
+animation=spins and glows green
+effect=Stealth
+effect=PBAoE
+subeffect=blind:5
+
+attack=Prestige (2)
+animation=delay|3|purple effect
+effect=PBAoE
+subeffect=damage:0|poison:0:3|stun:2
+
+##################################################################
+
+Name=Jade Colossus
+alt=Jade Colossi
+Category=veteran
+# Scaling not verified.
+scaling=constant|49
+health=23031
+type=elemental
+Path=Solid
+
+attack=Reflects projectiles. Immune to Control effects
+
+attack=Jab
+animation=swings right arm|0.5
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Fireball
+animation=stands still with arms pointing forward|0.5|earth-line
+effect=ticking AoE (10 hits in 5 s)
+subeffect=damage:0|crippled:2| per tick
+
+attack=Ring of Earth
+animation=stands still with arms pointing forward|0.5|earth-ring
+effect=PBAoE
+subeffect=damage:0|knockdown:3
+#note=often used immediately at melee-range so prepare to evade/block
+
+attack=Self Buff
+animation=stands still with arms pointing forward|0.5|yellow bubble
+effect=buff
+subeffect=reflect projectiles (5 s)
+#note=already reflects projectiles so pointless
+
+##################################################################
+
+Name=Jade Maw Tentacle
+alt=Tentacle|Tentacles|Jade Maw Tentacles
+Category=veteran
+# Scaling not verified.
+scaling=normal|49|82
+health=115941
+toughness=0.8
+Path=Solid
+type=wind rider
+
+tactic=normal
+Cooldowns cause Tentacle to alternate between attacks.
+
+attack=Can't be moved
+
+attack=Whip
+animation=rises straight up and hits
+cooldown=5
+effect=melee
+subeffect=damage:0
+#note=just sidestep
+
+attack=Swoop
+animation=twists and then spins
+effect=high-range PBAoE
+subeffect=damage:0|launch
+#note=block/evade
+
+##################################################################
+
+Name=Jade Shard
+alt=Jade Shards
+Category=veteran
+# Scaling not verified.
+scaling=normal|49|82
+health=72463
+type=elemental
+Path=Solid
+
+attack=Reflects projectiles. Immune to Control effects
+
+attack=Ice Shards
+animation=points left arm|1
+effect=homing projectile
+subeffect=damage:0
+effect=if Critical???
+subeffect=chilled:2
+
+attack=Ice Spike
+animation=glows and jumps|1|jade shard on air with red circle
+effect=delayed (2.5 s) AoE
+subeffect=damage:0
+
+attack=Frost Blast
+animation=pulls right arm back and smashes ground|2
+effect=PBAoE
+subeffect=damage:0|knockback:1
+
+##################################################################
+# Swampland                                                      #
+# Mossman and Bloomhunger have been tested for all types.        #
+##################################################################
+
+Name=Bloomhunger
+Category=legendary
+Path=Swamp
+image=http://wiki.guildwars2.com/images/1/16/Veteran_Willowheart.jpg
+scaling=legendary|49
+health=2119564
+toughness=0.8
+type=plant
+
+attack=cant be moved
+#note=easy to get out of combat
+
+attack=Shoot
+cooldown=0
+image=http://giant.gfycat.com/WarpedHilariousBlackbuck.gif
+animation=swings left/right arm|0.75|green gas
+effect=3 projectiles (cone) with ticking AoE (4 hits in 3 s)
+subeffect=damage:1750|poison:1080:6| per tick
+#note=AoEs only start ticking if not blocked/evaded. Visually they still stay so try stay out if possible to be on safe side.
+
+attack=Entangle
+image=http://giant.gfycat.com/GlitteringThreadbareDragonfly.gif
+animation=smashes ground with left/right hand|1
+additional=minimum-range (stack)
+effect=3 projectiles (cone)
+subeffect=damage:0|immobilized:3| and "Binding Roots" (2.5 s)
+#note=block/evade if at range. Stay inside him if at melee.
+#note=can be reflected for great damage
+
+attack=Poison Rain
+image=http://giant.gfycat.com/WeepyBewitchedBison.gif
+animation=shakes leaves|0.75
+effect=~20 ballistic projectiles with AoE in 4 s
+subeffect=damage:8000|vulnerability:10|agony:3| per hit
+#note=use area anti projectile skills (you have stand inside them).
+#note=At lower range projectiles land fast so you have to react faster
+#note=At higher range projectiles land slower so you have to remember where circles were
+
+attack=Summon Spirits
+image=http://giant.gfycat.com/TalkativeWavyFossa.gif
+additional=maximum amount of 3
+effect=summon
+subeffect=enemy=Sun_Spirit:normal, enemy=Spirit_of_Frost:normal and enemy=Storm_Spirit:normal
+#note=Storm Spirit causes quite strong retaliation so destroy it if needed.
+#note=Because of the spawning order, Storm Spirit won't spawn if any other Spirit is still alive
+
+##################################################################
+
+Name=Sun Spirit
+Category=normal
+scaling=constant
+health=2389
+toughness=1.15
+Path=Swamp
+type=plant
+
+attack=buff
+effect=channeled ranged (hits every 5 s)
+subeffect=might:5|buff:"Sun Spirit's Essence"
+
+attack="Sun Spirit's Essence"
+effect=buff
+subeffect=burning:2785:5| caused by Entangle.
+
+##################################################################
+
+Name=Spirit of Frost
+Category=normal
+scaling=constant
+health=2389
+toughness=1.15
+Path=Swamp
+type=plant
+
+attack=buff
+effect=channeled ranged (hits every 5 s)
+subeffect=fury:5|buff:"Frost Spirit's Essence"
+
+attack="Frost  Spirit's Essence"
+animation=white projectiles
+effect=buff
+subeffect=chilled:5| caused by poison Rain.
+
+##################################################################
+
+Name=Storm Spirit
+Category=normal
+scaling=constant
+health=2389
+toughness=1.15
+Path=Swamp
+type=plant
+
+attack=buff
+effect=channeled ranged (hits every 5 s)
+subeffect=retaliation:137:5|buff:"storm Spirit's Essence"
+
+attack="Storm Spirit's Essence"
+animation=lightning circle
+effect=buff
+subeffect=daze:5| caused by Shoot
+#note=doesn't seem to have any effect
+
+##################################################################
+
+Name=The Mossman (Stalk)
+alt=Mossman (Stalk)
+Category=legendary
+Path=Swamp|Insta
+image=http://wiki.guildwars2.com/images/e/ef/The_Mossman.jpg
+# Scaling not verified.
+scaling=constant|49
+health=1135540
+type=no type
+
+attack=Slice
+animation=swings right hand to left and hits|0.75
+effect=cone
+subeffect=damage:6500
+
+attack=Dancing Dagger
+animation=pulls left arm behind|0.25|throws a dagger
+effect=bouncing projectile
+subeffect=damage:4250|agony:2| per hit
+
+##################################################################
+
+Name=The Mossman
+alt=Mossman
+Category=legendary
+Path=Swamp
+image=http://wiki.guildwars2.com/images/e/ef/The_Mossman.jpg
+# Scaling not verified.
+scaling=legendary|49
+health=1748732
+# Armor not verified.
+type=no type
+
+attack=Aggro
+effect=Has a primary target (may change for example when someone gets downed)
+subeffect=Slice, Point Target, Teleport and Gouge are only used on primary target.
+
+attack=Slice
+animation=swings right hand to left and hits|0.75
+effect=cone
+subeffect=damage:6500
+
+attack=Dancing Dagger
+animation=pulls left arm behind|0.25|throws a dagger
+effect=bouncing projectile
+subeffect=damage:4250|agony:2| per hit
+
+attack=Stealth
+cooldown=20
+animation=pulls right arm behind|0.5
+effect=buff
+subeffect=Stealth:10
+effect=summon
+subeffect=enemy=wolf:veteran
+#note=Pay attention to mini-map to see its location.
+#note=Don't kill the Wolf. He can easily kill people while stealthed so save it for a rally.
+#note=If possible, get hit to break his stealth (prevents him spending lots of time stealthed).
+
+attack=Point Target (1)
+animation=pulls right arm behind back while facing target|0.5
+additional=Used after 75%.
+effect=No initial effect. Teleport and Gouge are used on pointed target.
+
+attack=Blazing Axe (2)
+animation=pulls left arm behind back|0.25|throws an axe
+effect=projectile
+subeffect=damage:6500|bleeding:450:5|agony:3
+
+attack=Teleport (3)
+additional=short range
+effect="Brown effect" (~10 s)
+effect=summon
+subeffect=2 enemy=Wolves:normal
+effect=teleport to target (when close enough)
+subeffect=remove "Brown Effect".
+#note=You can kite him to prevent him using any other attack. However he will stealth quite soon.
+
+attack=Gouge (4)
+animation=glows, raises arms and strikes|1
+effect=2 cones
+subeffect=damage:8000| per hit
+#note=evade away from Mossman to prevent him from turning and killing other people
+
+attack="Brown Effect"
+effect=debuff
+subeffect=slows movement
+effect=when expires naturally
+subeffect=stealth
+
+attack=Transform
+animation=pulls right arm behind|0.5
+additional=Rarely used when below 25%
+effect=transform to enemy=The_Mossman_(Animal):legendary
+
+##################################################################
+
+Name=The Mossman (Animal)
+alt=animal forms
+Category=legendary
+Path=Swamp
+# Scaling not verified.
+scaling=legendary|49
+health=1748732
+type=no type
+
+attack=Bear Form
+effect=Transform into a bear.
+subeffect=Pulses |might
+
+attack=Feral Maul (1)
+animation=swings both arms|0.25
+additional=Only used in the bear form.
+effect=melee
+subeffect=damage:10750|launch:3.1
+
+attack=Leopard Form (2)
+effect=Transform into a leopard.
+subeffect=pulses |protection:10
+
+attack=Feral Bounce
+additional=Only used in the leopard form.
+effect=Leap (0.75 s)
+subeffect=damage:6000|agony:3
+
+attack=Wolf Form
+effect=Transform into a wolf.
+
+attack=Feral Tear
+animation=swings both arms|0.25
+additional=Only used in the wolf form.
+effect=2 melee hits
+subeffect=damage:6500| per hit
+#note=sometimes deal like 50% more damage
+
+attack=Feral Roar
+animation=howls
+additional=Only used in the wolf form.
+effect=PBAoE
+subeffect=fear:1
+
+##################################################################
+
+Name=Environment
+alt=traps
+Category=trap
+Path=Swamp
+
+attack=Tripwire
+image=http://giant.gfycat.com/BigSadDrever.gif
+additional=can't be blocked or evaded
+effect=trap
+subeffect=knockdown:3|crippled:2.5
+#note=jump over
+
+attack=Bear Trap
+image=http://giant.gfycat.com/EllipticalGracefulLadybird.gif
+additional=can't be blocked or evaded
+effect=trap
+subeffect=immobilized:1.5|crippled:2.5|bleeding:0:7
+#note=avoid
+
+attack=Spike Trap
+animation=red circle
+additional=can't be blocked or evaded
+effect=trap
+subeffect=damage:0|crippled:3.5|bleeding:0:7:6
+#note=avoid
+
+attack=Spider Egg
+image=http://giant.gfycat.com/TinyExcellentCoqui.gif
+additional=can't be blocked or evaded
+effect=trap
+subeffect=poison:872:8| and summon 2-3 enemy=Spider_Hatchlings:normal.
+#note=breaking multiple eggs gets you easily overrun
+
+attack=Binding Roots
+image=http://giant.gfycat.com/ScaredGlumAnteater.gif
+
+##################################################################
+
+Name=Firefly
+alt=Mosquito|Marsh Mosquitos
+image=http://wiki.guildwars2.com/images/f/f2/Firefly.jpg
+Category=normal
+Path=Swamp
+scaling=normal
+health=9260
+type=insect
+
+attack=Neutral
+
+attack=Sting
+animation=swings body|0.4
+cooldown=3
+effect=melee
+subeffect=damage:2250
+
+attack=Charging Sting
+additional=only used at distant targets
+effect=dash
+subeffect=damage:0
+
+attack=Sting Flurry
+animation=flies a circle|1.4
+effect=9 melee hits in 5.3 s
+subeffect=damage:1000| per hit
+
+##################################################################
+
+Name=Marsh Mosquito (weak)
+alt=Marsh Mosquitos (weak)
+image=http://wiki.guildwars2.com/images/3/33/Mosquito.jpg
+Category=normal
+Path=Swamp
+scaling=normal|10
+toughness=0.2
+type=insect
+
+attack=Neutral
+
+attack=Sting
+animation=swings body|0.4
+cooldown=3
+effect=melee
+subeffect=damage:426
+
+attack=Charging Sting
+additional=only used at distant targets
+effect=dash
+subeffect=damage:441
+
+attack=Sting Flurry
+animation=flies a circle|1.4
+effect=9 melee hits in 5.3 s
+subeffect=damage:180| per hit
+
+##################################################################
+
+Name=Jungle Skelk
+alt=Jungle Skelk Lurker|Jungle Skelks|Skelk|Skelks
+image=http://wiki.guildwars2.com/images/e/eb/Jungle_Skelk.jpg
+scaling=normal
+health=9260
+Category=normal
+Path=Swamp
+type=no type
+
+attack=Slash
+animation=swings right arm|0.7
+cooldown=0
+effect=Melee
+subeffect=damage:2500
+
+attack=Jab
+animation=bites|0.25
+effect=melee
+subeffect=damage:2500
+
+attack=Stealth (1)
+effect=buff
+subeffect=Stealth:1
+
+attack=Ambush (2)
+animation=leans forward|0.1
+effect=Melee
+subeffect=damage:3000
+
+##################################################################
+
+Name=Jungle Spider
+alt=Jungle Spiders|Spiders|Spider
+image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
+scaling=normal
+health=11516
+Category=normal
+Path=Swamp
+type=spider
+
+attack=Bite
+animation=leans back|0.5
+cooldown=2.5
+effect=melee
+subeffect=damage:4250
+
+attack=Venom Spray
+animation=glows and leans back|1
+cooldown=20
+effect=3 projectiles in 0.8 s
+subeffect=damage:750|poison:0:3| per hit
+
+##################################################################
+
+Name=Marsh Spider Hatchling
+alt=Marsh Spider Hatchlings|Spider Hatchling|Spider Hatchlings
+image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
+scaling=normal
+health=11516
+toughness=0.2
+Category=normal
+Path=Swamp
+type=spider
+
+scaling=normal|10
+attack=Bite
+animation=leans back|0.5
+cooldown=2.5
+effect=melee
+subeffect=damage:328
+
+attack=Venom Spray
+animation=glows and leans back|1
+cooldown=20
+effect=3 projectiles in 0.8 s
+subeffect=damage:418|poison:444:3| per hit
+
+##################################################################
+
+Name=Marsh Drake Hatchling
+alt=Marsh Drake Hatchlings|Drake Hatchling|Drake Hatchlings
+image=http://wiki.guildwars2.com/images/3/30/Marsh_Drake.jpg
+scaling=normal
+health=11516
+toughness=0.2
+Category=normal
+Path=Swamp
+type=drake
+
+attack=bite
+cooldown=4
+animation=bites|0.2
+effect=melee
+subeffect=damage:789
+
+##################################################################
+
+Name=Marsh Drake
+scaling=constant
+image=http://wiki.guildwars2.com/images/3/30/Marsh_Drake.jpg
+health=630960
+toughness=1.4
+Category=champion
+Path=Swamp
+type=drake
+
+attack=bite
+cooldown=4
+animation=bites|0.2
+effect=melee
+subeffect=damage:4250
+
+attack=Poison
+animation=glows and opens mouth|2
+effect=ticking AoE (13 s)
+subeffect=poison:750:5| per tick
+
+##################################################################
+
+Name=Siamoth
+scaling=normal
+image=http://wiki.guildwars2.com/images/4/4c/Siamoth.jpg
+health=15278
+Category=normal
+Path=Swamp
+type=no type
+
+attack=Neutral
+
+attack=Horn Strike
+animation=swings head to right|0.3
+cooldown=2.5
+effect=melee
+subeffect=damage:1750
+
+##################################################################
+
+Name=Wolf
+alt=Wolves
+Category=veteran
+image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
+# Scaling not verified.
+scaling=constant|49
+health=63096
+Path=Swamp
+type=dog
+
+attack=Bite
+cooldown=2.5
+animation=bites|0.25
+effect=melee
+subeffect=damage:1750
+
+attack=Howl
+effect=summon
+subeffect=2 enemy=Wolves:normal
+
+##################################################################
+
+Name=Wolf
+alt=Wolves
+Category=normal
+image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
+# Scaling not verified.
+scaling=constant|49
+health=7887
+Path=Swamp
+type=dog
+
+attack=Bite
+cooldown=2.5
+animation=bites|0.25
+effect=melee
+subeffect=damage:750
+
+
+##################################################################
+# Thaumanova Reactor                                             #
+# Have these been verified?
+# Nightmare court enemies verified.
+potion=icebrood|side
+potion=flame legion|side
+potion=nightmare court|side
+################################################################## 
+
+Name=Thaumanova Anomaly
+alt=Anomaly
+Category=legendary
+image=http://wiki.guildwars2.com/images/b/b6/Thaumanova_Anomaly.jpg
+# Scaling not verified.
+scaling=legendary
+health=825804
+Path=Thauma
+type=no type
+
+attack=Binding Bolt
+animation=swings left arm|0.5|shoots a white bolt
+cooldown=1.5
+effect=piercing projectile
+subeffect=damage:591|crippled:2
+
+attack=Beam
+cooldown=12
+#image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-laser-beam_thumb.jpg
+animation=kneels and shoots white beam|1|keeps channelling the beam
+effect=12 ranged hits in 6.6 s
+subeffect=constant:275| per hit and causes platforms disappear below the target
+#note=run away from others
+
+attack=Flux Bomb
+cooldown=10
+effect=debuff (4 s)
+subeffect=damage:2635| and causes platforms disappear when ends
+#note=run away from others
+
+attack=Cosmic Barrage
+#image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-attacks_thumb.jpg
+animation=starts spinning|0.5|spins and makes white orbs appear over area
+effect=multiple delayed AoEs (2.5 s) over area
+subeffect=damage:1974|agony:3| and causes platforms disappear
+effect=PBAoE
+subeffect=knockback
+
+attack=Star Smash
+cooldown=5
+animation=instant|0|white orb appears
+effect=delayed AoE (2 s)
+subeffect=damage:5926|agony:3
+#note=just move a bit
+
+#attack=Cosmic Anomaly
+#effect=??
+#subeffect=damage| and platforms disappear
+
+attack=Cosmic Instability
+#image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-ball.jpg
+additional=activates when below 50%
+effect=huge aura
+subeffect=buff:"Cosmic_Instability":6| every 30 seconds
+#note=hits every player
+
+attack="Cosmic Instability"
+effect=debuff
+subeffect=causes platforms disappear below
+#note=run together if possible to reduce amount of disappearing platforms
+
+################################################################## 
+
+Name=Subject 6
+Category=champion
+image=http://wiki.guildwars2.com/images/d/d2/Toxic_Ooze.jpg
+Path=Thauma
+# Scaling not verified.
+scaling=champion
+health=504768
+type=ooze
+
+attack=Slimey Smash
+cooldown=0
+effect=melee
+subeffect=damage:1842|buff:"Corrode_Armor":8
+
+attack=Acid Rain
+#image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-5_thumb.jpg
+cooldown=26
+animation=waves head and looks stupid|0.5|shoots green balls
+additional=can't be blocked
+effect=multiple projectiles with small AoEs in 8 s
+subeffect=damage:1167|agony:1|buff:"Corrode_Weapon":3|poison:516:3
+
+attack=Jump
+cooldown=22
+animation=glows, jumps and lands with dust effect|1.6|keeps jumping 5 times
+effect=6 PBAoEs in 3.5 s
+subeffect=damage:1629| per hit (|damage:9774|)
+
+attack="Corrode Weapon"
+additional=stacks ? times. Removed by condition removal.
+effect=debuff
+subeffect=reduces outgoing damage
+
+attack="Corrode Arrmor"
+additional=stacks ? times. Removed by condition removal.
+effect=debuff
+subeffect=increases incoming damage
+
+attack=Shield Form
+cooldown=59
+#image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-4_thumb.jpg
+animation=looks stupid and spins|0.5|keeps looking stupid
+effect=block for 10 s
+subeffect=buff:"Overload"| for every block
+
+attack="Overload"
+effect=buff
+subeffect=Explodes at 20 stacks
+
+attack=Explode
+effect=big PBAoE
+subeffect=damage
+
+attack=Summon
+effect=Summon
+subeffect=enemy=Repair_Ooze:normal
+#note=Oozes heal Subject 6 if they reach him
+
+################################################################## 
+
+Name=Repair Ooze
+alt=Repair Oozes
+category=normal
+# Scaling not verified.
+scaling=normal
+health=31548
+Path=Thauma
+type=ooze
+
+attack=Power Spit
+effect=projectile
+subeffect=damage:1210
+#note=only used when Subject 6 is dead
+
+attack=Heal
+effect=melee
+subeffect=healing
+effect=self destruct
+
+################################################################## 
+
+Name=Mark I Golem
+alt=golems
+category=normal
+image=https://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
+# Scaling not verified.
+scaling=normal
+health=15774
+Path=Thauma
+type=inquest
+
+attack=gatling fists
+effect=multiple ranged hits
+subeffect=damage:311| per hit
+
+attack=whirling assault
+effect=dash with PBAoE
+subeffect=damage:1190| per hit
+
+################################################################## 
+
+Name=Repulsor Turret
+category=trap
+Path=Thauma
+
+attack=Repulsor Bolt
+effect=projectile
+subeffect=damage:7754|launch:2.4|buff:"overheating":10
+
+attack="Overheating"
+effect=debuff
+subeffect=damage:200| per second
+
+
+################################################################## 
+
+Name=Unstable portal
+alt=Unstable portals|portal|portals
+category=structure
+Path=Thauma
+scaling=constant
+health=14940
+
+attack=Gravity Well
+effect=PBAoE
+subeffect=damage:7|pull:1.5
+
+################################################################## 
+
+Name=Aatxe
+alt=Aatxes
+category=veteran
+image=http://wiki.guildwars2.com/images/a/ae/Aatxe.jpg
+# Scaling not verified.
+scaling=constant
+health=63096
+Path=Thauma
+type=underworld
+
+attack=Lunge
+effect=Melee
+subeffect=damage:3042
+
+attack=Charge
+effect=dash
+subeffect=damage
+
+attack=Leap
+effect=leap
+subeffect=damage|knockdown:3
+
+################################################################## 
+
+Name=Aatxe
+alt=Aatxes
+category=normal
+image=http://wiki.guildwars2.com/images/a/ae/Aatxe.jpg
+# Scaling not verified.
+scaling=constant
+Path=Thauma
+type=underworld
+
+attack=Lunge
+effect=Melee
+subeffect=damage
+
+attack=Charge
+effect=dash
+subeffect=damage
+
+attack=Leap
+effect=leap
+subeffect=damage|knockdown:3
+
+################################################################## 
+
+Name=Ascalonian Archer
+alt=Archer|Ascalonian Archers|Archers
+category=veteran
+# Scaling not verified.
+scaling=constant
+health=63096
+Path=Thauma
+type=no type
+
+################################################################## 
+
+Name=Ascalonian Captain
+alt=Captain|Ascalonian Captains|Captains
+category=veteran
+# Scaling not verified.
+scaling=constant
+health=63096
+Path=Thauma
+type=no type
+
+################################################################## 
+
+Name=Ascalonian Cultist
+alt=Cultist|Ascalonian Cultists|Cultists
+category=veteran
+# Scaling not verified.
+scaling=constant
+health=63096
+Path=Thauma
+type=no type
+
+################################################################## 
+
+Name=Ascalonian Warrior
+alt=Warrior|Ascalonian Warriors|Warriors
+category=veteran
+# Scaling not verified.
+scaling=constant
+health=63096
+Path=Thauma
+type=no type
+
+################################################################## 
+# Copied from a potentially similar enemy: CoF P3
+Name=Flame Legion Blademaster
+alt=Blademaster|Flame Legion Blademasters|Blademasters
+Category=veteran
+# Scaling not verified.
+scaling=constant
+health=157296
+type=flame legion
+Path=Thauma
+
+attack=Sever Artery (1)
+cooldown=0
+effect=melee
+subeffect=damage:1052|bleeding:400:5
+
+attack=Gash (2)
+effect=melee
+subeffect=damage:1052|bleeding:640:8
+
+attack=Final Thrust (3)
+effect=melee
+subeffect=damage:1052
+
+attack=Flurry
+effect=multiple melee hits
+
+attack=Shield Bash
+effect=dash
+subeffect=damage:3797|stun:2
+
+attack=Shield Stance
+animation=instant||hides behind shield
+effect=blocks all attacks
+
+################################################################## 
+# Copied from a potentially similar enemy: CoF P3
+Name=Flame Legion Igniter
+alt=Igniter|Flame Legion Igniters|Igniters
+Category=veteran
+# Scaling not verified.
+scaling=constant
+health=63096
+type=flame legion
+Path=Thauma
+
+attack=Flame Spray
+additional=able to move
+effect=channeled cone (5 hits per sec)
+subeffect=damage:0|burning:0:1|might:1| per hit
+
+attack=Backdraft
+animation=muscle show off
+effect=buff
+subeffect=pull| on next attack
+
+################################################################## 
+# Copied from a potentially similar enemy: HotW P3 (Rare)
+Name=Icebrood Wolf
+alt=Wolf|Icebrood Wolves|Wolves
+category=veteran
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+# Scaling not verified.
+scaling=constant
+health=63096
+type=icebrood
+Path=Thauma
+
+attack=Bite
+cooldown=0
+animation=bites|0.25
+effect=Melee
+subeffect=damage:0
+
+attack=Frost Leap
+animation=instant||leaves icy ground
+cooldown=30
+effect=PBAoE
+subeffect=damage:0|chilled:3
+#note=try to predict
+
+attack=Leap
+animation=dashes|0.25
+cooldown=30
+effect=short dash (0.25 s) with 2 PBAoEs
+subeffect=damage:0|crippled:3| per hit (extreme damage)
+#note=try to predict, often used right after Frost Leap
+
+################################################################## 
+# Not verified!
+Name=Nightmare Hound
+alt=Hound|Nightmare Hounds|Hounds
+category=veteran
+# Scaling not verified.
+scaling=constant
+health=63096
+type=nightmare court
+Path=Thauma
+
+attack=Bite
+animation=moves head and bites|0.3
+cooldown=2
+effect=melee
+subeffect=damage:2006
+
+attack=Leap
+animation=withdraws while standing still|0.75
+cooldown=15
+additional=only used at distant targets
+effect=leap
+subeffect=damage:3688|knockdown:3
+
+################################################################## 
+
+Name=Skritt Bottle Lobber
+alt=Bottle Lobber|Skritt Bottle Lobbers|Bottle Lobbers
+category=veteran
+image=http://wiki.guildwars2.com/images/7/7d/Skritt_Bottle_Lobber.jpg
+# Scaling not verified.
+scaling=constant
+health=63096
+type=skritt
+Path=Thauma
+
+attack=Throw
+effect=projectile
+subeffect=damage:1513
+
+attack=Heave
+effect=???
+subeffect=damage:2514|knockdown:2
+
+################################################################## 
+
+Name=Skritt Gear Lobber
+alt=Gear Lobber|Skritt Gear Lobbers|Gear Lobbers
+image=http://wiki.guildwars2.com/images/7/74/Veteran_Skritt_Gear_Lobber.jpg
+category=veteran
+# Scaling not verified.
+scaling=constant
+health=63096
+type=skritt
+Path=Thauma
+
+attack=bomb
+effect=delayed AoE
+subeffect=damage
+
+##################################################################
+# Same enemy: CM Bandit Rifleman
+
+Name=Bandit Rifleman
+alt=Bandit Riflemen|Rifleman|Riflemen
+image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
+Category=normal
+Path=Thauma
+type=outlaw
+
+attack=Prefers targets with ranged weapons
+
+Attack=Shoot
+animation=crouches a bit and aims|0.5
+cooldown=2
+additional=high range
+effect=fast projectile
+subeffect=Damage
+effect=If target is moving
+subeffect=Damage|bleeding:0:3:3
+
+Attack=Sniper Shot
+cooldown=11
+animation=kneels and marks target|1.75
+additional=high range
+effect=fast projectile
+subeffect=Damage
+effect=If target is moving
+subeffect=Damage|knockdown:3
+
+##################################################################
+# Same enemy: CM Bandit Cutpurse
+
+Name=Bandit Scout
+alt=Bandit Scouts|Scout|Scouts
+Category=normal
+Path=Thauma
+type=outlaw
+
+Attack=Slash
+animation=swing from right|0.5
+cooldown=2
+effect=melee
+subeffect=Damage
+
+Attack=Slash
+animation=swing from left|0.2
+cooldown=2
+effect=melee
+subeffect=Damage
+
+Attack=Slash
+animation=swing from right|0.1
+cooldown=2
+effect=melee
+subeffect=Damage
+
+Attack=Death Blossom
+cooldown=11
+animation=jumps over target|0.4
+effect=3 small PBAoes in 0.15 s
+subeffect=Damage|bleeding:0:8:4| per hit
+
+Attack=Envenom
+cooldown=19
+effect=buff (15 s)
+subeffect=Poison:0:6| inflicted whenever hits
+
+##################################################################
+# Uncategorised                                                  #
+# Saboteur verified as Outlaw.
+# Shaman verified as Flame Legion.
+# Ettin is NOT an Ogre.
+# Tested for Centaur, Dredge, Demon, Elemental, Ghost, Grawl, Halloween, Icebrood, Inquest, Krait, Nightmare Court, Ogre, Outlaw, Scarlet, Svanir, Undead
+# Harpies tested for Inquest.
+# Old Tom and cat golems (with their master) verified as Inquest.
+potion=inquest|main
+potion=flame legion|side
+potion=outlaw|side
+##################################################################
+
+Name=Harpy Hunter
+alt=Harpy Hunters
+image=http://wiki.guildwars2.com/images/6/6a/Harpy_Hunter.jpg
+scaling=normal
+health=46061
+toughness=0.8
+Category=veteran
+type=harpy
+Path=Uncat
+
+attack=Shoot
+image=http://giant.gfycat.com/YearlyBigFallowdeer.gif
+effect=projectile
+subeffect=damage:1578
+
+attack=Multi Shot
+image=http://giant.gfycat.com/MinorGracefulAmericanbadger.gif
+animation=shouts
+effect=5 projectiles in 2 s
+subeffect=damage:1198|crippled:1| per hit (|damage:5990|)
+#note=anti projectile skills are very effective
+#note=try to zig zag at range or block
+
+attack=Pulsing Orb
+additional=used on level 10 and higher
+effect=projectile with AoE
+subeffect=damage:0|launch:3
+#note=use anti projectile, block or stability
+#note=when running zig zag to mess up their aiming
+#note=don't rely on red circle. zig zagging causes it fly somewhere else
+
+##################################################################
+
+Name=Power Generator
+alt=Generator
+Category=structure
+scaling=constant
+health=14940
+toughness=0.67
+Path=Uncat
+
+##################################################################
+
+Name=Rabbit
+Category=champion
+# Scaling unverified.
+scaling=champion
+image=http://wiki.guildwars2.com/images/0/0b/Rabbit.jpg
+health=23031
+Path=Uncat
+type=animal
+
+attack=Bite
+animation=lunges forward|0.5|bites
+effect=melee
+subeffect=damage:736
+
+attack=Ninja Kick
+image=http://fat.gfycat.com/ObedientWhiteIlladopsis.gif
+animation=raises front legs from ground, crouches and jumps up in the air|0.6|kicks player in the face
+effect=melee
+subeffect=percent:110
+#note=Evade fast when you see him in the air
+
+##################################################################
+
+Name=Bandit Saboteur
+Category=veteran
+# Scaling unverified.
+scaling=normal
+health=46061
+Path=Uncat
+type=outlaw
+
+attack=Bomb
+animation=kneels|0.3|leaves a bomb
+cooldown=5
+effect=delayed (3 s) AoE
+subeffect=burning:2640:5|launch:3.3
+
+attack=Poison
+cooldown=12
+animation=swings left arm|0.5|throws a green projectile
+effect=projectile with small ticking AoE (6 hits in 5 s)
+subeffect=poison:328:2| per hit
+
+attack=Evasive Trap
+cooldown=20
+animation=instant||moves back and leaves a bomb with a red circle
+effect=delayed (2 s) AoE
+subeffect=damage:1758|confusion:0:5:3
+effect=evade back
+#note=use AoE cleave without targeting her to prevent triggering it
+#note=move bit back if you are on a red circle
+
+##################################################################
+
+Name=Flame Legion Fire Shaman
+Category=champion
+Path=Uncat
+# Scaling unverified.
+scaling=champion
+health=460602
+type=flame legion
+
+attack=Detonate
+cooldown=7
+animation=swings right arm|0.75|throws 3 fire balls
+effect=3 short-range projectiles (cone)
+subeffect=damage:5973| per hit (|damage:17919|)
+#note=Try to direct away from other players
+#note=evade or use area anti projectile
+#note=Run away to get out of range
+#note=Run through (needs good timing) or circle at melee range
+
+attack=Lava Font
+cooldown=7
+animation=swings glowing left arm and raises right arm|0.35
+additional=Firefield
+effect=4 ticking AoEs in 1.5 s(4 hits in 3 s)
+subeffect=damage:2364| per hit (|damage:9456|)
+#note=stay mobile, block/evade if needed
+
+attack=Dragon Punch
+cooldown=9
+animation=raises both arms and head|1.25|dashes quickly
+additional=leap finisher. Only used at distant targets
+effect=dash with a melee hit and a cone
+subeffect=damage:4768|launch| per hit (|damage:9536|)
+#note=Run away to make him miss
+#note=evade
+
+##################################################################
+
+Name=Ettin
+Category=champion
+image=http://wiki.guildwars2.com/images/d/d4/Champion_Ettin.jpg
+# Scaling unverified.
+scaling=champion
+health=552722
+type=ettin
+Path=Uncat
+
+attack=Sweep
+image=http://fat.gfycat.com/SeparateHeftyBrontosaurus.gif
+animation=swings club|0.75
+cooldown=4
+effect=wide cone
+subeffect=damage:6035
+#note=block/evade
+#note=run through (needs good timing)
+
+attack=Shockwave
+image=http://giant.gfycat.com/SelfishCharmingAbyssiniangroundhornbill.gif
+cooldown=33
+animation=holds club back and smashes ground|1.25|shoots a tremor
+additional=only used at distant targets
+effect=projectile
+subeffect=damage:4881|crippled:3
+#note=block/evade
+#note=at melee range run through him
+#note=at high range sidestep
+
+attack=Massive Smash
+image=http://giant.gfycat.com/WhisperedInferiorAquaticleech.gif
+cooldown=28
+animation=glows, holds club back and smashes ground|2.25|spikes on ground
+effect=PBAoE
+subeffect=damage:9786|bleeding:328:4|knockdown:3
+#note=block/evade
+#note=run away
+
+attack=Bellow
+image=http://giant.gfycat.com/UltimateThatGoat.gif
+cooldown=30
+animation=glows, keeps club above head and stomps ground|1.25
+effect=buff
+subeffect=protection:15|fury:15|might:15
+effect=6 short-range projectiles (360 degrees)
+subeffect=damage:5702| per hit (extreme damage)
+#note=evade
+#note=use reflects for extreme damage
+
+attack=Break stun
+# Not verified.
+cooldown=60
+effect=break a Control effect
+#note=only used at scale 10 and above
+#note=don't rely on Control
+
+##################################################################
+
+Name=Old Tom
+Category=legendary
+image=http://wiki.guildwars2.com/images/4/46/Old_Tom.jpg
+# Scaling unverified.
+scaling=legendary
+health=523010
+Path=Uncat
+type=inquest
+toughness=0.8
+
+tactic=normal
+Uses 2-3 other attacks between spins.
+
+attack=Disrupting Blasts
+image=http://giant.gfycat.com/TallPerfectKingsnake.gif
+cooldown=30
+animation=spreads arms, sits down and starts spinning|2.25
+additional=can't be blocked
+effect=hundreds of projectiles (360 degrees) in 24 s
+subeffect=damage:682| per hit
+#note=stay inside Tom, at high-range or behind other players/pets/minions
+
+attack=Chain Lightning
+image=http://giant.gfycat.com/IncomparableReasonableIraniangroundjay.gif
+cooldown=7
+animation=raises both arms|2|shoots a lightning ball
+effect=bouncing projectile
+subeffect=damage:6426| per hit
+#note=block/evade
+
+attack=Launch Fist
+image=http://giant.gfycat.com/RegalFarawayCamel.gif
+cooldown=7
+animation=points right arm|1|shoots his fist
+effect=very fast projectile
+subeffect=damage:5304|pull:1.5
+#note=block/evade
+
+attack=Poison Gas
+effect=environment
+subeffect=percent:3|poison:109:1| every 1 second
+#note=gets reapplied every 30 seconds
+#note=use main console to ventilate the room and remove effect. Console cools down in 30 seconds.
+#note=ventilation removes the effect ONLY for the remaining duration. If you are slow, new poison Gas appears before the console cools down
+#note=at level 10 and higher you need to use tears to power-up secondary consoles
+#note=don't use main console before you take damage from gas or it may not work
+
+##################################################################
+
+Name=Raving Asura
+Category=legendary
+# Scaling unverified.
+scaling=legendary
+health=128984
+Path=Uncat
+type=inquest
+
+attack=Determined
+effect=invulnerable
+
+attack=Lightning Bolt
+image=http://giant.gfycat.com/WhoppingDeadlyKingsnake.gif
+cooldown=3
+animation=points staff forward|0.35|shoots 3 lightning balls
+effect=3 homing projectiles in 0.3 s
+subeffect=damage:1816|agony:3| per hit
+#note=evade towards to destroy them while evading
+#note=block or use anti projectile skills
+
+attack=Lightning Blast
+image=http://giant.gfycat.com/FeminineShadowyCob.gif
+cooldown=17
+animation=swings left arm|0.5|throws a lightning ball
+effect=ballistic homing projectile with small AoE
+subeffect=damage:2655|might:15|protection:15
+
+##################################################################
+
+Name=Snuggles
+# Scaling unverified.
+scaling=normal
+image=http://wiki.guildwars2.com/images/5/52/Snuggles.jpg
+health=46061
+Category=veteran
+Path=Uncat
+type=inquest
+
+attack=Static Field
+image=http://giant.gfycat.com/PassionateGrandioseAndeancat.gif
+cooldown=10
+animation=electric effect on left hand, turns bit right and swings the right arm|0.5|throws an electric ball
+effect=projectile with an area field
+subeffect=damage:1867|stun:2| when passing through
+#note=stay inside
+#note=block/evade when going through
+
+attack=Golem Rockets
+image=http://giant.gfycat.com/WeirdExaltedCats.gif
+cooldown=11
+animation=spreads arms and spins|3|shoots rockets
+effect=2 projectiles with small AoE
+subeffect=damage:555| per hit
+
+attack=On Death
+additional=only used during second life
+effect=big PBAoE
+subeffect="Feline regeneration" (5 m) on alive golems
+
+attack="Feline regeneration"
+effect=buff
+subeffect=take 66 % less damage
+
+##################################################################
+
+Name=Mr. Mittens
+scaling=normal
+health=46061
+Category=veteran
+Path=Uncat
+type=inquest
+
+attack=Smash
+image=http://giant.gfycat.com/DazzlingFewChickadee.gif
+cooldown=10
+animation=leans bit forward, waves arms and jumps|1|lands left fist against the ground
+effect=leap with PBAoE
+subeffect=damage:2393
+#note=block/evade
+
+attack=Whirling Assault
+image=http://giant.gfycat.com/RigidWaryCockatoo.gif
+animation=glows, spreads arms and starts spinning|2|spins while moving forward
+effect=cone
+subeffect=damage:1206|pull:1.5
+#note=block/evade
+
+attack=Punch
+image=http://giant.gfycat.com/SparklingOrganicJoey.gif
+animation=swings right and then left arm|0.5
+effect=2 melee hits in 0.25 s
+subeffect=damage:1518| per hit
+
+attack=Slash
+image=http://giant.gfycat.com/WindyConsciousGalah.gif
+animation=swings right arm|0.75
+effect=melee
+subeffect=damage:1996|knockback:1.5
+#note=block/evade
+
+attack=On Death
+additional=only used during second life
+effect=big PBAoE
+subeffect="Feline protection" (5 m) on alive golems
+
+attack="Feline protection"
+effect=buff
+subeffect=take 66 % less damage
+
+##################################################################
+
+Name=Professor Mew
+scaling=normal
+health=46061
+Category=veteran
+Path=Uncat
+type=inquest
+
+attack=Punch
+image=http://giant.gfycat.com/AccomplishedEasyDuckbillcat.gif
+animation=swings right and then left arm|0.5
+effect=2 melee hits in 0.25 s
+subeffect=damage:1518| per hit
+
+attack=Charge
+image=http://giant.gfycat.com/GargantuanFaroffAmericantoad.gif
+cooldown=8
+animation=spreads arms and spins|3.75|gets hit by lightning and emits white ring
+additional=can't be blocked
+effect=huge PBAoE
+subeffect="Positive Charge" or "Negative Charge" (10 s)
+#note=damage adds up quickly so try to evade if you plan to stay near other players
+
+attack="Positive/Negative Charge"
+effect=debuff
+subeffect=damage| when standing close to different charge
+
+##################################################################
+
+Name=Baron von Scrufflebutt
+scaling=normal
+health=46061
+Category=veteran
+Path=Uncat
+type=inquest
+
+attack=Rocket
+image=http://giant.gfycat.com/RewardingRipeEastsiberianlaika.gif
+cooldown=6
+animation=swings right arm|0.75|shoots two rockets and swings left arm
+additional=can't be blocked
+effect=2 projectiles with small AoE
+subeffect=damage:605| per hit
+#note=evade
+#note=keep him controlled
+
+attack=Golem Rockets
+image=http://giant.gfycat.com/TornUnsightlyArachnid.gif
+cooldown=17
+animation=spreads arms and spins|3|shoots rockets
+additional=can't be blocked
+effect=2-3 projectiles with small AoE at every target
+subeffect=damage:948| per hit (|damage:2844|)
+#note=very dangerous, especially when near other players
+#note=interrupt
+
+##################################################################
+# Underground Facility                                           #
+# Dredge (except boss) verified.                                 #
+# Elementals verified.                                           #
+potion=dredge|main
+potion=elemental|side
+##################################################################
+
+name=Rabsovich
+image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
+category=champion
+path=Under
+type=dredge
+
+attack=Shockwave
+animation=charge animation
+additional=can't be blocked
+effect=projectile
+subeffect=percent:90
+
+attack=Slice
+effect=melee
+subeffect=damage:0
+
+attack=Dazing Block
+animation=kneels||hides behind shield
+effect=channel block
+subeffect=daze:1| when hit and block all attacks
+
+attack=Summon & Heal
+animation=instant||weird sound
+additional=maximum amount of 1. Easily interruptable.
+effect=summon
+subeffect=enemy=Dredge_Disaggregator:veteran
+effect=channeled
+subeffect=healing
+#note=Interrupt to stop (at least knockdown should work).
+
+##################################################################
+
+name=Rampaging Ice Elemental
+category=legendary
+image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
+path=Under
+type=elemental
+
+attack=Ice Spike
+animation=jumps||dropping ice
+effect=multiple delayed AoEs
+subeffect=damage:0|launch:2|agony:3
+#note=walk out
+
+attack=Polar Smash
+animation=slowly pulls right arm back and smashes ground
+effect=big ticking AoE at melee-range (10 hits in 3 s)
+subeffect=damage:0|chilled:1|agony:3| per tick
+#note=get out of range, evade if needed
+
+attack=Ice Shards
+animation=waves arms with weird sound|1.5
+effect=multiple delayed (2.75 s) tiny AoEs (V-shape)
+subeffect=damage:0|launch:2| per hit
+#note=walk away (note hit box is much bigger than graphics)
+
+attack=Heal & Summon
+animation=kneels
+additional=maximum amount of 3
+effect=summon
+subeffect=3 enemy=Ice_Elementals_(Melee):veteran
+effect=channeled heal
+subeffect=Healing
+#note=interrupt (if "Superheated" damage automatically interrupts)
+#note=can be interrupted with Knockback or launch
+
+##################################################################
+
+name=Dredge Powersuit
+category=legendary
+image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
+path=Under
+type=dredge
+
+attack=Slash
+animation=pulls right arm back
+effect=2 wide melee hits
+subeffect=damage:0|bleeding:364:4| per hit
+#note=evade
+
+attack=Ground Smash
+animation=glows and smashes ground
+additional=hits entire room
+effect=self-buff
+subeffect=stability:3
+effect=3 huge growing PBAoEs in 3 s
+subeffect=damage:0|agony:3| per hit
+#note=evade twice (needs proper timing)
+
+attack=Bomb
+animation=raises both arms
+effect=2 waves of multiple projectiles with delayed AoE
+subeffect=damage:0| per hit
+#note=try to walk out, evade if needed
+#note=area anti projectile skills are very effective
+#note=reflected projectiles deal no damage to Powersuit
+
+attack=Shockwave
+animation=jumps
+additional=can't be blocked
+effect=multiple short-range projectile (360 degrees)
+subeffect=damage:0
+#note=evade, tank or out-range
+
+attack=Heal
+animation=sits down
+effect=channeled heal
+subeffect=Healing
+#note=interrupt (if "Superheated" damage automatically interrupts)
+#note=can be interrupted with Knockback or launch
+
+##################################################################
+# Similar enemy: FOTM Furn Molten Disaggregator
+
+name=Dredge Disaggregator
+alt=Dredge Disaggregators
+category=normal
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+# Health and scaling not verified.
+scaling=normal
+health=11516
+path=Under|Thauma
+type=dredge
+
+attack=Immune to blind
+
+attack=Slice
+animation=swings mace|0.2
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Shield Bash
+animation=swings shield|0.5
+effect=melee
+subeffect=damage:0|daze:3
+
+attack=Gong
+animation=instant||plays gong 4 times
+cooldown=20
+effect=4 PBAoEs in 5.5 s
+subeffect=might:8|swiftness:8|protection:8
+effect=last hit
+subeffect=protection:8
+
+##################################################################
+# Similar enemy: FOTM Furn Molten Disaggregator
+# Same enemy: SE2 Dredge Disaggregator
+
+name=Dredge Disaggregator
+alt=Dredge Disaggregators
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+category=veteran
+# Health and scaling not verified.
+scaling=normal
+health=46061
+path=Under
+type=dredge
+
+attack=Immune to blind
+
+attack=Slice
+animation=swings mace|0.2
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Shield Bash
+animation=swings shield|0.5
+effect=melee
+subeffect=damage:0|daze:3
+
+attack=Gong
+animation=instant||plays gong 4 times
+cooldown=20
+effect=4 PBAoEs in 5.5 s
+subeffect=might:8|swiftness:8|protection:8|regeneration:0:8
+
+##################################################################
+
+name=Dredge Excavator (Pickaxe)
+alt=Dredge Excavators (Pickaxe)
+image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
+category=normal
+path=Under|Thauma
+# Health and scaling not verified.
+scaling=normal
+health=11516
+type=dredge
+
+attack=Immune to blind
+
+attack=Slash
+effect=Melee
+subeffect=damage:0
+
+attack=Slice
+effect=melee
+subeffect=damage:0
+
+attack=Helmet Splitter
+animation=mines with pickaxe
+effect=Melee
+subeffect=damage:0|vulnerability:8
+#note=only first hit actually does anything
+
+attack=Pickup a Weapon
+effect=Interacts with dead Dredge or items and transforms
+
+##################################################################
+
+name=Dredge Excavator (Tunneler)
+alt=Dredge Excavators (Tunneler)
+image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
+category=normal
+# Health and scaling not verified.
+scaling=normal
+health=11516
+path=Under|Thauma
+type=dredge
+
+attack=Immune to blind
+
+attack=Slash
+cooldown=0
+effect=Melee
+subeffect=damage:0|bleeding
+
+attack=Tunnel?
+effect=dash with small PBAoE
+subeffect=damage:0| per hit
+effect=end effect
+subeffect=damage:0|knockdown:2
+
+##################################################################
+
+name=Dredge Excavator (Tunneler)
+alt=Dredge Excavators (Tunneler)
+image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
+category=veteran
+path=Under
+# Health and scaling not verified.
+scaling=normal
+health=46061
+type=dredge
+
+attack=Immune to blind
+
+attack=Slash
+cooldown=0
+effect=Melee
+subeffect=damage:0|bleeding:672:8
+
+attack=Tunnel
+effect=dash with small PBAoE
+subeffect=damage:0| per hit
+effect=end effect
+subeffect=damage:0|knockdown:2
+
+##################################################################
+
+name=Dredge Mining Suit
+alt=Dredge Mining Suits
+category=veteran
+image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+path=Under|Thauma
+type=dredge
+
+attack=Immune to blind
+
+attack=Slash
+animation=pulls right arm back
+cooldown=0
+effect=2 melee hits
+subeffect=damage:0| per hit
+
+attack=summon
+animation=sits down
+effect=summon
+subeffect=2 enemy=Dredge_Excavator_(Pickaxe):normal / enemy=Dredge_Excavator_(Tunneler):normal / enemy=Dredge_Disaggregator:normal / enemy=Ratnik:normal
+
+attack=Pummel (1)
+animation=pulls left arm back
+effect=Melee
+subeffect=damage:0|stun:2
+
+attack=Pummel (2)
+effect=3 melee hits in 2 s
+subeffect=damage:0|bleeding:0:8.5| per hit
+
+##################################################################
+
+name=Dredge Mining Turret (Fire)
+alt=Turret (Fire)
+category=structure
+path=Under
+
+attack=Fire Mortar
+effect=projectile
+subeffect=damage:0
+effect=with ticking AoE (30 ticks in 10 s)
+subeffect=damage:0|burning:984:3| per tick
+
+##################################################################
+
+name=Dredge Mining Turret (Ice)
+alt=Turret (Ice)
+category=structure
+path=Under
+
+attack=Ice Mortar
+effect=projectile
+subeffect=damage:0
+effect=with ticking AoE (6 ticks in 6 s)
+subeffect=damage:0|chilled:2| per tick
+
+##################################################################
+
+name=Dredge Mining Turret (Shock)
+alt=Turret (Shock)
+category=structure
+path=Under
+
+attack=Shock Mortar
+effect=projectile
+subeffect=damage:0
+effect=with area field (4 s)
+subeffect=stun:2| when passing through
+
+##################################################################
+
+name=Dredge Oscillator
+alt=Dredge Oscillators
+image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
+category=normal
+# Health and scaling not verified.
+scaling=normal
+health=11516
+path=Under
+type=dredge
+
+attack=Immune to blind
+
+attack=Shockwave
+animation=pulls weapon slowly back
+cooldown=0
+effect=piercing projectile
+subeffect=damage:0
+
+attack=Upper Cut
+animation=Swings right arm|0.2
+effect=melee
+subeffect=damage:0|knockback:1.5
+
+##################################################################
+# Similar enemy exists: "Molten Oscillator"
+# Same enemy: SE2 Dredge Oscillator.
+
+name=Dredge Oscillator
+alt=Dredge Oscillators
+image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
+category=veteran
+# Health and scaling not verified.
+scaling=normal
+health=46061
+path=Under
+type=dredge
+
+attack=Immune to blind
+
+attack=Shockwave
+animation=pulls weapon slowly back
+cooldown=0
+effect=3 piercing projectiles (cone)
+subeffect=damage:0| per hit
+#note=evade (especially if at close range)
+
+attack=Upper Cut
+animation=Swings right arm|0.2
+effect=melee
+subeffect=damage:0|knockback:1.5
+
+##################################################################
+# Similar enemy exists: "Molten Resonator"
+# Same enemy: SE2 Dredge Resonator.
+
+name=Dredge Resonator
+alt=Dredge Resonators
+image=http://wiki.guildwars2.com/images/4/48/Dredge_Resonator.jpg
+category=normal
+# Health and scaling not verified.
+scaling=normal
+health=11516
+path=Under
+type=dredge
+
+attack=Immune to blind
+
+attack=Shockwave
+animation=slowly swings staff to right
+cooldown=0
+effect=3 piercing projectiles in 1 s
+subeffect=damage:0| per hit
+
+attack=Earthquake
+animation=raises staff and hits ground
+effect=PBAoE
+subeffect=damage:0|knockdown:2
+
+##################################################################
+# Same enemy: SE2 Dredge Ratnik.
+
+name=Dredge Ratnik
+alt=Dredge Ratniks
+image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
+category=normal
+# Health and scaling not verified.
+scaling=normal
+health=11516
+path=Under|Thauma
+type=dredge
+
+attack=Immune to blind
+
+attack=Shoot
+cooldown=0
+effect=projectile
+subeffect=damage:0
+
+attack=Bayonet Thrust
+animation=swings weapon
+effect=melee
+subeffect=damage:0
+
+attack=Sonic Blast
+animation=kneels and aims||weird sound
+effect=cone
+subeffect=damage:0|vulnerability:8
+
+##################################################################
+
+copy=Dredge Ratnik|normal
+name=Dredge Strazar
+alt=Dredge Strazars
+
+copy=Dredge Ratnik|normal
+name=Dredge Reverberant
+alt=Dredge Reverberants
+
+##################################################################
+
+name=Dredge Reverberant
+alt=Dredge Reverberants
+category=veteran
+image=http://wiki.guildwars2.com/images/c/c3/Veteran_Dredge_Reverberant.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+path=Under
+type=dredge
+
+attack=Immune to blind
+
+attack=Shoot
+cooldown=0
+effect=projectile
+subeffect=damage:0
+
+attack=Bayonet Thrust
+animation=swings weapon
+effect=melee
+subeffect=damage:0|bleeding:672:8
+
+attack=Sonic Blast
+animation=kneels and aims||weird sound
+effect=cone
+subeffect=damage:0|daze:2|vulnerability:8
+
+##################################################################
+
+name=Dredge Strazar
+alt=Dredge Strazars
+category=veteran
+# Health and scaling not verified.
+scaling=normal
+health=46061
+path=Under
+type=dredge
+
+attack=Immune to blind
+
+attack=Shoot
+cooldown=0
+effect=projectile
+subeffect=damage:0
+
+attack=Bayonet Thrust
+animation=swings weapon
+effect=melee
+subeffect=damage:0
+
+attack=Sonic Blast
+animation=kneels and aims||weird sound
+effect=cone
+subeffect=damage:0|vulnerability:8
+
+##################################################################
+
+name=Ice Elemental (Melee)
+alt=Ice Elementals (Melee)
+category=veteran
+image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+path=Under
+type=elemental
+
+attack=Ice Strike
+animation=swings with right arm
+cooldown=0
+effect=projectile
+subeffect=damage:0
+
+attack=Chilled Ground
+animation=slowly pulls right arm back and smashes ground
+effect=ticking AoE at melee-range (~5 hits in ~5 s)
+subeffect=chilled:1| per tick
+
+attack=Cleansing Wave
+animation=stands idle and smashes ground
+effect=PBAoE
+subeffect=damage:0|launch|healing| and remove all Conditions
+
+##################################################################
+
+Name=Ice Elemental (Ranged)
+alt=Ice Elementals (Ranged)
+image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
+Category=veteran
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Under
+type=elemental
+
+attack=Ice Shards
+animation=points left arm|1
+effect=projectile
+subeffect=damage:0|chilled:3| (sometimes)
+
+attack=Ice Spike
+animation=glows and jumps|1
+effect=delayed AoE
+subeffect=damage:0
+
+attack=Frost Blast
+animation=glows, pulls right arm back and smashes ground|2
+effect=PBAoE
+subeffect=damage:0|knockback:1
+
+##################################################################
+# Urban Battleground
+# Tested for all possible types.
+##################################################################
+
+Name=Siegemaster Dulfy
+scaling=champion
+image=http://wiki.guildwars2.com/images/f/f4/Siegemaster_Dulfy.jpg
+health=239766
+Category=Champion
+Path=Urban
+type=no type
+
+attack=Sever Artery (1)
+effect=melee
+subeffect=damage:0|bleeding
+
+attack=Gash (2)
+effect=melee
+subeffect=damage:0|bleeding
+
+attack=Final Thrust (3)
+effect=melee
+subeffect=damage:0|bleeding
+
+attack=Fiery Block
+animation=kneels||hides behind shield
+effect=channeled block
+subeffect=burning:0:1| when hit and block all attacks
+
+attack=Trebuchet Shot
+animation=instant||marks target
+effect=delayed AOE
+subeffect=damage
+
+attack=Repair
+effect=PBAoE
+subeffect=repairs structures
+
+##################################################################
+
+Name=Captain Ashym (Sword)
+alt=Sword and Shield|Captain Ashym
+Category=legendary
+# Scaling not verified.
+scaling=legendary
+health=517388
+Path=Urban
+type=no type
+
+attack=Savage Leap
+cooldown=10
+animation=stops with brief yellow glow|0.2|leaps sword forward
+effect=leap with PBAoE
+subeffect=damage:4286
+
+attack=Blinding Blade
+animation=swing from right|0.4
+effect=melee
+subeffect=damage:3505|blind:2
+
+attack=Fiery Block
+animation=kneels|0.2|hides behind shield
+effect=channeled block (3 s)
+subeffect=burning:0:1| when hit and block all attacks
+
+attack=Summon
+animation=crouches and shouts|0.2
+additional=maximum amount of 1
+effect=summon
+subeffect=enemy=Ascalonian_Squire:veteran
+
+attack=Aura
+additional=only works while Squire is alive
+effect=Aura (every 15 s)
+subeffect=retaliation:450:15
+#note=Sometimes no effect on Ashym
+effect=Aura (every 15 s)
+subeffect=protection:15
+#note=Sometimes no effect on Squire
+
+##################################################################
+
+Name=Captain Ashym (Staff)
+alt=Staff
+Category=legendary
+Path=Urban
+# Scaling not verified.
+scaling=legendary
+health=517388
+type=no type
+
+attack=Meteor Shower
+cooldown=10
+animation=raises glowing left arm, kneels and keeps left arm forward|2.5
+effect=multiple projectiles with small AoE in 7.5 s on area
+subeffect=damage:6632| per hit (fatal damage)
+#note=get out of area quickly, evade/block if needed
+
+attack=Meteor Shower
+cooldown=13
+animation=glows and holds staff forward|1
+effect=PBAoE
+subeffect=damage:3222|burning:528:1|agony:3
+effect=high-range PBAoE (after 0.75 s)
+subeffect=damage:3222|burning:528:1|agony:3
+#note=evading both requires good timing (single-block + evade is more reliable)
+#note=staying range makes evading this attack easy
+
+attack=Flamewall
+animation=swings and raises glowing left arm|1
+effect=ticking area line (7 s)
+subeffect=damage:1009|burning:1584:3| per hit
+
+attack=Summon
+additional=maximum amount of 1
+effect=summon
+subeffect=enemy=Ascalonian_Squire:veteran
+
+attack=Aura
+additional=only works while Squire is alive
+effect=Aura (every 15 s)
+subeffect=retaliation:445:15
+#note=Sometimes no effect on Ashym
+effect=Aura (every 15 s)
+subeffect=protection:15
+#note=Sometimes no effect on Squire
+
+##################################################################
+
+Name=Captain Ashym (Greatsword)
+alt=Fiery Greatsword
+Category=legendary
+Path=Urban
+# Scaling not verified.
+scaling=legendary
+health=517388
+type=no type
+
+attack=Flame Wave
+animation=instant||waves sword
+effect=4 projectiles in 2.5 s
+subeffect=damage:4713| per hit (|damage:18852|)
+
+attack=Flamewave
+animation=sticks sword to the ground|1
+effect=2 melee hits
+subeffect=damage:0| per hit
+effect=ticking AoE
+subeffect=burning:1848:3.5| per tick
+
+attack=Firestorm
+effect=ticking AoE
+subeffect=damage:12000| per tick (fatal damage)
+
+attack=Fiery Whirl
+effect=dash with PBAoE
+subeffect=damage:12000|crippled| per hit (extreme damage)
+
+attack=Rush End
+effect=dash
+subeffect=damage:12000
+effect=leaves a trail (ticking AoEs)
+subeffect=damage:6000| per tick
+
+attack=Aura
+additional=only works while Squire is alive
+effect=Aura (every 15 s)
+subeffect=retaliation:445:15
+#note=Sometimes no effect on Ashym
+
+attack=Rage
+effect=Buff (every 3 s)
+subeffect=might:60
+#note=results in 20 might
+#note=causes all attacks to hit extremely hard
+# 546 -> 554 burning damage, so might works as it should
+
+##################################################################
+
+Name=Arrow Cart
+alt=Arrow Carts
+scaling=constant
+health=14940
+toughness=0.67
+Category=structure
+Path=Urban
+
+attack=Volley
+effect=multiple delayed (1 s) AoEs
+subeffect=damage:0| per hit
+
+##################################################################
+
+Name=Arrow Cart (Strong)
+alt=Arrow Carts (Strong)
+scaling=constant
+health=14940
+toughness=0.67
+Category=structure
+Path=Urban
+
+attack=Volley
+effect=multiple delayed (1 s) AoEs
+subeffect=damage:0| per hit
+
+##################################################################
+
+Name=Ascalonian Archer (Igniter)
+alt=Ascalonian Archers (Igniter)|Archer (Igniter)|Archers (Igniter)
+Category=veteran
+scaling=normal
+toughness=0.8
+health=46061
+Path=Urban
+type=no type
+
+attack=Dual Shot
+animation=aims|0.4|shoots two arrows
+cooldown=3
+effect=2 projectiles in 0.1 s
+subeffect=damage:968| per hit (|damage:1936|)
+
+attack=Forceful Shot
+animation=kneels and aims|0.6|shoots an arrow
+cooldown=13
+effect=projectile
+subeffect=damage:4605
+#note=Often used to initiate
+#note=hard to detect but try to block/evade
+
+attack=Incendiary Arrow
+cooldown=13
+animation=aims with brief glow|0.5|shoots a blue arrow
+effect=projectile with small AoE
+subeffect=damage:1379|burning:1584:3
+#note=block/evade anything blue
+
+attack=Crippling Shot
+cooldown=29
+animation=aims|0.15|shoots an arrow with circle effect
+effect=fast projectile
+subeffect=damage:1268|crippled:3
+#note=too fast to react
+
+##################################################################
+
+copy=Ascalonian Archer (Igniter)
+name=Ascalonian Archer (Female)
+alt=Ascalonian Archers (Female)|Archer (Female)|Archers (Female)
+
+##################################################################
+
+Name=Ascalonian Archer (Condition)
+alt=Ascalonian Archers (Condition)|Archer (Condition)|Archers (Condition)
+scaling=normal
+toughness=0.8
+health=46061
+Category=veteran
+Path=Urban
+type=no type
+
+attack=Basic Shot
+cooldown=0
+effect=projectile
+subeffect=damage:0| and random Condition (|crippled:5|chilled:3|poison:0:10|burning:0:3|bleeding:0:10|blind:5|weakness:5|)
+
+attack=Quick Shot
+effect=projectile
+subeffect=damage:0
+
+attack=Chaos Trap
+effect=trap
+subeffect=something
+
+##################################################################
+
+Name=Ascalonian Assassin
+alt=Ascalonian Assassins|Assassin|Assassins
+scaling=normal
+health=46061
+scaling=normal|0
+toughness=0.8
+Category=veteran
+Path=Urban
+type=no type
+
+##################################################################
+# Damage values probably tested at respawning enemies.
+
+Name=Ascalonian Cultist
+alt=Ascalonian Cultists|Cultist|Cultists
+scaling=normal
+health=46061
+scaling=normal|0
+toughness=0.8
+Category=veteran
+Path=Urban
+type=no type
+
+attack=Double Strike (1)
+animation=swings right arm|0.15
+cooldown=0
+effect=2 single target melee hits in 0.15 s
+subeffect=damage:946| per hit (|damage:1892|)
+
+attack=Wild Strike (2)
+animation=waits and swings right arm fast|1.5
+effect=melee
+subeffect=damage:1048
+#note=cleaves
+
+attack=Lotus Strike (3)
+animation=waits and thrusts right dagger from above|1
+effect=single target melee
+subeffect=damage:0|poison:0:2
+
+attack=Life Siphon
+animation=right hand forward||red glowing and life-steal sound
+effect=7 ranged hits in 2.5 s
+subeffect=damage:0|healing| per hit
+
+attack=Crippling Dagger
+effect=projectile
+subeffect=damage:0|crippled:3
+
+attack=Disrupting Dagger
+effect=projectile
+subeffect=damage:0|daze:1
+
+attack=Heartseeker
+animation=turns bit left|0.25|jumps in air
+effect=short leap (0.5 s) with PBAoE
+subeffect=damage:3377|bleeding:410:5
+
+##################################################################
+
+copy=Ascalonian Cultist|Veteran|Urban
+Name=Ascalonian Cultist (Respawn)
+alt=Ascalonian Cultists (Respawn)|Cultist (Respawn)|Cultists (Respawn)
+scaling=level
+health=63096
+Category=veteran
+Path=Urban
+
+##################################################################
+
+Name=Ascalonian Enchanter
+alt=Ascalonian Enchanters|Enchanter|Enchanters
+scaling=normal
+health=46061
+scaling=normal|0
+toughness=0.8
+Category=veteran
+Path=Urban
+type=no type
+
+
+##################################################################
+# Damage values probably tested at respawning enemies.
+
+Name=Ascalonian Fighter
+alt=Ascalonian Fighters|Fighter|Fighters
+scaling=normal
+health=46061
+scaling=normal|0
+Category=veteran
+Path=Urban
+type=no type
+
+attack=Sever Artery (1)
+cooldown=0
+effect=damage:0|bleeding
+
+attack=Gash (2)
+effect=melee
+subeffect=damage:0|bleeding
+
+attack=Final Thrust (3)
+effect=melee
+subeffect=damage:0|bleeding
+
+attack=Fiery Block
+animation=kneels||hides behind shield
+effect=channeled block
+subeffect=burning:0:1| when hit and block all attacks
+
+attack=Healing
+effect=buff
+subeffect=healing:15 %
+
+##################################################################
+
+Name=Ascalonian Healer
+alt=Ascalonian Healers|Healer|Healers
+scaling=normal
+health=46061
+Category=veteran
+Path=Urban
+type=no type
+
+attack=Healing Breeze
+animation=leans back and forward|0.5|sprays white mist
+effect=5 cones in 1.5 s
+subeffect=damage:781| per hit (|damage:3905|)
+
+##################################################################
+# Damage values probably tested at respawning enemies.
+
+Name=Ascalonian Mage
+alt=Ascalonian Mages|Mage|Mages
+scaling=normal
+health=46061
+scaling=normal|0
+toughness=0.8
+Category=veteran
+Path=Urban
+type=no type
+
+attack=Fireball
+animation=swings left arm|1|throws a fireball
+cooldown=2.5
+effect=projectile with small AoE
+subeffect=damage:1405
+
+attack=Flame Burst
+cooldown=14
+animation=staff glows, crouches and raises left hand up in the air with weird sound|1|fire effect
+effect=PBAoE
+subeffect=damage:3676
+#note=pay attention when getting near them
+#note=be ready to block/evade when you hear weird sound
+
+attack=Firestorm
+cooldown=17
+animation=raises left hand, crouches and raises left hand up in the air|1|red circle
+effect=ticking AoE (6 hits in 5 s)
+subeffect=damage:977| per hit (|damage:5862|)
+
+##################################################################
+
+copy=Ascalonian Mage|Veteran|Urban
+Name=Ascalonian Mage (Respawn)
+alt=Ascalonian Mages (Respawn)|Mage (Respawn)|Mages (Respawn)
+scaling=level
+health=63096
+Category=veteran
+Path=Urban
+
+##################################################################
+# Damage values probably tested at respawning enemies.
+
+Name=Ascalonian Monk
+alt=Ascalonian Monks|Monk|Monks
+scaling=normal
+health=46061
+scaling=normal|0
+toughness=0.8
+Category=veteran
+Path=Urban
+type=no type
+
+attack=Heal Area
+animation=outer right arm swing with water effect|0.5
+cooldown=5
+effect=melee
+subeffect=damage:1777|healing
+
+attack=Heal Area
+animation=inner right arm swing|0.25|ice effect
+cooldown=5
+effect=quick cone
+subeffect=damage:1777
+
+attack=Might (1)
+animation=rises to air hands behind back|0.5
+effect=4 PBAoEs in 2.2 s
+subeffect=might:10:4| per hit
+#note=big effect on damage so kill Monks fast
+
+attack=Heal (2)
+animation=descends to ground|0.8|white splash
+effect=PBAoE
+subeffect=healing
+
+##################################################################
+
+Name=Ascalonian Squire
+alt=Squire
+scaling=normal
+health=46061
+Category=veteran
+Path=Urban
+type=no type
+
+attack=Stab
+cooldown=2
+effect=Melee
+subeffect=damage:4560
+
+attack=Staggering Bane
+animation=holds banner behind back|0.5|spins
+effect=small PBAoE
+subeffect=damage:3654|knockback:1.5
+
+attack=Swiftness
+animation=raises arms, croches and raises left arm up in the air|0.9
+effect=PBAoE
+subeffect=swiftness:10
+
+##################################################################
+
+Name=Ascalonian Warrior
+alt=Ascalonian Warriors|Warrior|Warriors
+scaling=normal
+health=46061
+Category=veteran
+Path=Urban
+type=no type
+
+attack=Greatsword Swing (1)
+animation=swings sword from right|0.5
+cooldown=0
+effect=Melee
+subeffect=damage:2024
+
+attack=Greatsword Slice (2)
+animation=swings sword from left|0.7
+effect=Melee
+subeffect=damage:2024
+
+attack=Brutal Swing (3)
+animation=swings swomrd from right upwards|0.8
+effect=Melee
+subeffect=damage:2271|vulnerability:10
+
+attack=Leap of Faith
+effect=leap (0.5 s)
+subeffect=damage:2379
+
+attack=Rush (1)
+cooldown=24
+animation=instant||runs forward sword behind back
+effect=PBAoE
+subeffect=buff:"Swiftness":10
+effect=dash
+#note=be ready to block/evade
+
+attack=Rush (2)
+animation=swings from right|0.40
+effect=melee
+subeffect=damage:6309
+
+attack="Swiftness"
+animation=blue icon
+effect=buff
+subeffect=increased movement speed
+
+##################################################################
+
+copy=Ascalonian Warrior|Veteran|Urban
+Name=Ascalonian Warrior (Respawn)
+alt=Ascalonian Warriors (Respawn)|Warrior (Respawn)|Warriors (Respawn)
+scaling=level
+health=63096
+Category=veteran
+Path=Urban
+
+##################################################################
+
+Name=Ballista
+alt=Ballistas
+scaling=constant
+health=14940
+toughness=0.67
+Category=structure
+Path=Urban
+
+attack=Ballista Bolt
+animation=side-thingies flap
+additional=can't be blocked
+effect=piercing projectile
+subeffect=damage:0|knockback:1.5
+
+##################################################################
+
+Name=Ballista (Rapid)
+alt=Ballistas (Rapid)
+scaling=constant
+toughness=0.67
+health=14940
+Category=structure
+Path=Urban
+
+attack=Ballista Bolt
+animation=side-thingies flap
+additional=can't be blocked
+effect=4 piercing projectiles in 6.5 s
+subeffect=damage:0|knockback:1.5| per hit
+
+##################################################################
+
+Name=Burning Oil
+alt=Burning Oils
+scaling=constant
+health=14940
+toughness=0.67
+Category=structure
+Path=Urban
+
+attack=Boiling Oil
+cooldown=8
+additional=Usable on targets not directly below (even higher elevation).
+effect=ticking AoE (5 hits in 4 s)
+subeffect=damage:2347|burning:820:2.5| per hit (|damage:11735|)
+#note=don't get false sense of security based on animation/logic
+
+##################################################################
+
+Name=Gate
+scaling=constant
+health=149400
+toughness=0.67
+Category=structure
+Path=Urban
+
+##################################################################
+# Volcanic                                                       #
+# Grawl verified. Imbued is demon. Elementals are elemental.     #
+potion=grawl|main
+potion=elemental|side
+potion=demon|side
+##################################################################
+
+Name=Grawl Shaman
+alt=Shaman
+Category=Champion
+image=http://wiki.guildwars2.com/images/8/8f/Grawl_Shaman.jpg
+Path=Volc
+scaling=champion
+health=565715
+toughness=1.25
+type=grawl
+
+attack=Fireball
+effect=piercing projectile
+subeffect=damage:0|burning:0:3
+effect=with ticking AoE
+subeffect=burning:0:3| per tick
+effect=first tick
+subeffect=damage:0
+
+attack=Bash
+animation=instant||spins
+effect=melee
+subeffect=damage:0|crippled:3|knockback:1.5
+effect=reflects projectiles (2 s)
+#note=stay at max melee range to prevent usage
+
+attack=Churning Earth
+effect=channeled PBAoE
+subeffect=cripple| per hit
+effect=end effect
+subeffect=damage:45000
+#note=do not rely on single blocks
+
+attack=summon
+effect=summon
+subeffect=enemy=Grawl_Totem:structure
+
+attack=Bubble
+effect=shield (15 s)
+subeffect=block all attacks
+#note=throw "Infused Stone" to break or wait until it runs out
+
+##################################################################
+
+Name=Grawl Totem
+Category=structure
+Path=Volc
+# Scaling unverified.
+scaling=constant
+health=7470
+
+attack=Aura
+effect=aura (every 6 s)
+subeffect=protection:6|fury:6
+
+##################################################################
+
+Name=Imbued Shaman
+alt=Shaman
+Category=legendary
+image=http://wiki.guildwars2.com/images/c/cd/Legendary_Imbued_Shaman.jpg
+Path=Volc
+scaling=legendary
+health=790020
+type=demon
+
+attack=Flaming Arrow
+animation=uses bow
+cooldown=0
+effect=projectile
+subeffect=damage:0|agony:3| and "Enveloping Flames"
+#note=block, evade or zig zag at range
+#note=try to avoid wasting AoE anti projectile skills on this
+
+attack="Enveloping Flames"
+animation=flame effect
+effect=aura
+subeffect=burning| per tick
+
+attack=Dive
+animation=flies up fast in an arc
+additional=only used on close targets
+effect=3 small ticking AoEs on its feet
+subeffect=damage:0|burning| per tick (extreme damage)
+#note=evade back as fast as possible
+#note=attack has bigger range than circles and hits even before circles appear
+#note=stay at range to avoid usage
+
+attack=Wing Buffet
+animation=rises up slowly with red circle
+additional=only used on close targets
+effect=PBAoE
+subeffect=damage:0|knockback
+#note=block, evade or get out of range
+#note=stay at range to avoid usage
+
+attack=Fire Storm
+animation=instant
+effect=ticking AoE
+subeffect=damage:0| per tick (very high damage)
+#note=very low after cast, it usually uses another attack very quickly
+#note=evade out
+
+attack=Summon and Shield (1)
+image=http://wiki.guildwars2.com/images/7/72/Imbued_Shaman_Bubble.jpg
+additional=used at 75%/50%/25% health
+effect=summon
+subeffect=~15 enemy=Lava_Elementals:normal
+effect=shield (40 charges)
+subeffect=block a skill
+#note=the amount of summoned enemy=Elementals:normal depends on difficulty scale
+#note=one skill will remove one charge no matter how many times it hits
+#note=some ground-targeted skills may have no effect
+#note=use area anti projectile skills to protect you from enemy=Elementals:normal
+
+attack=Eat (2)
+animation=rises up in an arc
+effect=melee
+subeffect=healing:25 %| when eating a Villager
+#note=use unblockable skills to slow it down
+
+##################################################################
+
+Name=Grawl Berserker
+alt=Grawl Berserkers|Berserkers
+Category=normal
+image=http://wiki.guildwars2.com/images/7/7a/Grawl_Berserker.jpg
+scaling=normal
+health=11516
+Path=Volc
+type=grawl
+
+attack=Dual Attack
+animation=swings left and right arm
+cooldown=0
+effect=2 melee hits in 0.5 s
+subeffect=damage:0| per hit
+
+attack=Cyclone Spin
+animation=glows
+effect=melee
+subeffect=damage:0
+
+attack=Axe
+animation=swings right arm
+effect=Melee
+subeffect=damage:0|knockdown:2
+
+##################################################################
+
+Name=Grawl Raider
+alt=Grawl Raiders|Raiders
+scaling=normal|49|82
+image=http://wiki.guildwars2.com/images/8/8c/Grawl_Raider.jpg
+health=37241
+Category=normal
+Path=Volc
+type=grawl
+
+attack=Shoot
+cooldown=0
+effect=projectile
+subeffect=damage:0
+
+attack=Trap
+animation=touches ground
+effect=Trap on its feet
+subeffect=immobilized:5| when walked on
+
+attack=Meteor Arrow
+animation=glows
+effect=slow projectile with small AoE
+subeffect=damage:0|vulnerability:5
+
+##################################################################
+
+Name=Grawl Shaman
+alt=Grawl Shamans|Shamans
+Category=normal
+image=http://wiki.guildwars2.com/images/8/8f/Grawl_Shaman.jpg
+scaling=normal
+health=11516
+Path=Volc
+type=grawl
+
+attack=Impale
+cooldown=0
+animation=raises staff with red glow
+effect=ranged
+subeffect=damage:0
+
+attack=Sandstorm
+animation=raises staff without glow
+effect=slow, big and piercing projectile (3 hits)
+subeffect=damage:0|blind:10| per hit
+
+attack=Magnetic Grasp
+animation=holds staff forward horizontally
+effect=projectile
+subeffect=damage:0|pull|immobilized:2.5
+
+attack=summon
+effect=summon
+subeffect=enemy=Earth_Totem:structure
+
+##################################################################
+
+Name=Earth Totem
+Category=structure
+Path=Volc
+scaling=constant
+health=7470
+
+attack=Aura
+effect=aura (every 6 s)
+subeffect=protection:6
+
+##################################################################
+
+Name=Grawl Shaman
+alt=Grawl Shamans
+image=http://wiki.guildwars2.com/images/8/8f/Grawl_Shaman.jpg
+scaling=normal
+health=41455
+Category=veteran
+Path=Volc
+type=grawl
+
+attack=Impale
+cooldown=0
+animation=raises staff with red glow
+effect=ranged
+subeffect=damage:0
+
+attack=Sandstorm
+animation=raises staff without glow
+effect=slow, big and piercing projectile (3 hits)
+subeffect=damage:0|blind:10| per hit
+
+attack=Magnetic Grasp
+animation=holds staff forward horizontally
+effect=projectile
+subeffect=damage:0|pull|immobilized:2.5
+
+attack=summon
+effect=summon
+subeffect=enemy=Earth_Totem:structure
+
+##################################################################
+
+Name=Lava Elemental
+alt=Lava Elementals|Elementals
+image=http://wiki.guildwars2.com/images/d/d4/Lava_Elemental.jpg
+scaling=normal
+health=11516
+Category=normal
+Path=Volc
+type=elemental
+
+attack=Spit
+effect=projectile
+subeffect=damage:0|immobilized:1
+
+##################################################################
+
+Name=Vampire Bat
+alt=Vampire Bats
+image=http://wiki.guildwars2.com/images/6/6f/Vampire_Bat.jpg
+Category=veteran
+scaling=constant
+health=46061
+Path=Volc
+type=bat
+
+attack=Slashing Claws
+cooldown=0
+effect=Melee
+subeffect=damage:0
+
+attack=Vampiric Bite
+animation=flies bit back and dashes
+effect=short dash
+subeffect=damage:0|healing
+
+##################################################################
+
+name=Lava
+category=trap
+path=Volc|Thauma
+
+attack=Lava
+effect=debuff
+subeffect=percent:12|burning:487:1.25| every second
+
+##################################################################
+
+Name=Boulder
+alt=Boulders
+Category=trap
+# Scaling unverified.
+scaling=normal
+health=11516
+Path=Volc
+
+attack=Invulnerable
+
+attack=Leaves a fiery trail
+
+attack=Touch
+effect=melee
+subeffect=damage:100000
+
+##################################################################
+# Aetherblade                                                    #
+# Tested for Centaur, Dredge, Demon, Elemental, Ghost, Grawl, Icebrood, Inquest, Krait, Nightmare Court, Ogre, Outlaw, Svanir, Undead
+# Verified for Scarlet?
+# Same enemies are also used in TAAE so remember also update there!
+##################################################################
+##################################################################
+# Damage values are wrong.
+
+Name=Aetherblade Grenadier
+alt=Aetherblade Grenadiers|Grenadier|Grenadiers
+Category=normal
+image=http://wiki.guildwars2.com/images/8/8f/Aetherblade_Grenadier.jpg
+# Health and scaling not verified.
+# At Mai Trin didn't seem to scale.
+scaling=normal
+health=11516
+Path=Aether|Mai
+type=aetherblade
+
+attack=Shrapnel Grenade
+cooldown=5
+animation=swings left arm from right|0.75
+effect=slow projectile with AoE
+subeffect=damage:1793
+
+attack=Static Grenade
+animation=swings left arm from right|0.75|red circle
+cooldown=11
+effect=slow projectile with AoE
+subeffect=damage:2658|vulnerability:10:5
+
+attack=Freeze Grenade
+animation=swings left arm from right|0.75|red circle
+cooldown=20
+effect=slow projectile with AoE
+subeffect=damage:2308|chilled:5
+
+##################################################################
+# Damage values are wrong.
+
+Name=Aetherblade Grenadier
+alt=Aetherblade Grenadiers|Grenadier|Grenadiers
+Category=veteran
+image=http://wiki.guildwars2.com/images/8/8f/Aetherblade_Grenadier.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Aether
+type=aetherblade
+
+attack=Shrapnel Grenade
+cooldown=5
+animation=swings left arm from right|0.75
+effect=slow projectile with AoE
+subeffect=damage:1793
+
+attack=Static Grenade
+animation=swings left arm from right|0.75|red circle
+cooldown=11
+effect=slow projectile with AoE
+subeffect=damage:2658|vulnerability:10:5
+
+attack=Freeze Grenade
+animation=swings left arm from right|0.75|red circle
+cooldown=20
+effect=slow projectile with AoE
+subeffect=damage:2308|chilled:5
+
+##################################################################
+
+Name=Aetherblade Grenadier
+alt=Aetherblade Grenadiers|Grenadier|Grenadiers
+Category=elite
+image=http://wiki.guildwars2.com/images/8/8f/Aetherblade_Grenadier.jpg
+Path=Aether
+type=aetherblade
+
+attack=Shrapnel Grenade
+cooldown=5
+animation=swings left arm from right|0.75
+effect=slow projectile with AoE
+subeffect=damage:1793
+
+attack=Static Grenade
+animation=swings left arm from right|0.75|red circle
+cooldown=11
+effect=slow projectile with AoE
+subeffect=damage:2658|vulnerability:10:5
+
+attack=Freeze Grenade
+animation=swings left arm from right|0.75|red circle
+cooldown=20
+effect=slow projectile with AoE
+subeffect=damage:2308|chilled:5
+
+##################################################################
+# Damage values are wrong.
+
+Name=Aetherblade Striker
+alt=Aetherblade Strikers|Striker|Strikers
+Category=normal
+image=http://wiki.guildwars2.com/images/b/b6/Aetherblade_Striker.jpg
+# Health and scaling not verified.
+scaling=normal
+health=11516
+Path=Mai
+type=aetherblade
+
+attack=Arc of Lightning
+cooldown=4.5
+animation=swings right arm from left|0.4|blue lightning
+effect=3 ranged hits in 2 s
+subeffect=damage:623| per hit
+
+attack=Static Field (1)
+cooldown=20
+animation=swings left arm from right with lightning effect|0.75|creates a lightning ring
+effect=ticking ring (lasts 4 s)
+subeffect=damage:952|stun:1| when going out/at border?
+
+attack=Lightning Storm (2)
+cooldown=21
+animation=turns bit right|0.25|lightning effect
+effect=ticking AoE (6 hits in 5 s)
+subeffect=damage:515| per hit
+#note=Slightly higher cooldown means this will be skipped about once per 3 Static Fields.
+
+attack=Shocking Aura
+cooldown=33
+animation=instant
+effect=buff (3 s)
+subeffect=stun:2| if hit at melee
+
+##################################################################
+# Assuming 55.5% less damage.
+
+Name=Aetherblade Striker
+alt=Aetherblade Strikers|Striker|Strikers
+Category=veteran
+image=http://wiki.guildwars2.com/images/b/b6/Aetherblade_Striker.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Aether
+type=aetherblade
+
+attack=Arc of Lightning
+cooldown=4.5
+animation=swings right arm from left|0.4|blue lightning
+effect=3 ranged hits in 2 s
+subeffect=damage:623| per hit
+
+attack=Static Field (1)
+cooldown=20
+animation=swings left arm from right with lightning effect|0.75|creates a lightning ring
+effect=ticking ring (lasts 4 s)
+subeffect=damage:952|stun:1| when going out/at border?
+
+attack=Lightning Storm (2)
+cooldown=21
+animation=turns bit right|0.25|lightning effect
+effect=ticking AoE (6 hits in 5 s)
+subeffect=damage:515| per hit
+#note=Slightly higher cooldown means this will be skipped about once per 3 Static Fields.
+
+attack=Shocking Aura
+cooldown=33
+animation=instant
+effect=buff (3 s)
+subeffect=stun:2| if hit at melee
+
+##################################################################
+# Assuming 125% more damage.
+
+Name=Aetherblade Striker
+alt=Aetherblade Strikers|Striker|Strikers
+Category=elite
+image=http://wiki.guildwars2.com/images/b/b6/Aetherblade_Striker.jpg
+Path=Aether
+type=aetherblade
+
+attack=Arc of Lightning
+cooldown=4.5
+animation=swings right arm from left|0.4|blue lightning
+effect=3 ranged hits in 2 s
+subeffect=damage:1401| per hit
+
+attack=Static Field (1)
+cooldown=20
+animation=swings left arm from right with lightning effect|0.75|creates a lightning ring
+effect=ticking ring (lasts 4 s)
+subeffect=damage:2142|stun:1| when going out/at border?
+
+attack=Lightning Storm (2)
+cooldown=21
+animation=turns bit right|0.25|lightning effect
+effect=ticking AoE (6 hits in 5 s)
+subeffect=damage:1159| per hit
+#note=Slightly higher cooldown means this will be skipped about once per 3 Static Fields.
+
+attack=Shocking Aura
+cooldown=33
+animation=instant
+effect=buff (3 s)
+subeffect=stun:2| if hit at melee
+
+##################################################################
+# Damage values wrong!
+
+Name=Aetherblade Taskmaster
+alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
+Category=normal
+image=http://wiki.guildwars2.com/images/9/93/Aetherblade_Taskmaster.jpg
+# Health and scaling not verified.
+scaling=normal
+health=11516
+Path=Aether
+type=aetherblade
+
+attack=Lightning Whip
+animation=swings whip from left with lightning effect|0.3
+cooldown=3
+effect=2 long range melee hits in 0.35 s
+subeffect=damage:715| per hit
+
+attack=Lightning Shot
+cooldown=9
+animation=aims with left pistol with lighting effect|0.75
+effect=piercing projectile
+subeffect=damage:1748|confusion:500:5:2
+
+attack=Lightning Shot
+cooldown=19
+animation=kneels and aims with left pistol with lighting effect|3
+effect=piercing projectile
+subeffect=damage:2886|blind:5|confusion:1250:5:5
+
+##################################################################
+
+Name=Aetherblade Taskmaster
+alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
+Category=veteran
+image=http://wiki.guildwars2.com/images/9/93/Aetherblade_Taskmaster.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Aether
+type=aetherblade
+
+attack=Lightning Whip
+animation=swings whip from left with lightning effect|0.3
+cooldown=3
+effect=2 long range melee hits in 0.35 s
+subeffect=damage:715| per hit
+
+attack=Lightning Shot
+cooldown=9
+animation=aims with left pistol with lighting effect|0.75
+effect=piercing projectile
+subeffect=damage:1748|confusion:500:5:2
+
+attack=Lightning Shot
+cooldown=19
+animation=kneels and aims with left pistol with lighting effect|3
+effect=piercing projectile
+subeffect=damage:2886|blind:5|confusion:1250:5:5
+
+##################################################################
+# About 95% more damage.
+
+Name=Aetherblade Taskmaster
+alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
+Category=elite
+image=http://wiki.guildwars2.com/images/9/93/Aetherblade_Taskmaster.jpg
+Path=Aether
+type=aetherblade
+
+attack=Lightning Whip
+animation=swings whip from left with lightning effect|0.3
+cooldown=3
+effect=2 long range melee hits in 0.35 s
+subeffect=damage:1400| per hit
+
+attack=Lightning Shot
+cooldown=9
+animation=aims with left pistol with lighting effect|0.75
+effect=piercing projectile
+subeffect=damage:3386|confusion:548:5:2
+
+attack=Lightning Shot
+cooldown=19
+animation=kneels and aims with left pistol with lighting effect|3
+effect=piercing projectile
+subeffect=damage:5702|blind:5|confusion:1370:5:5
+
+##################################################################
+# Damage values wrong!
+
+Name=Aetherblade Thug
+alt=Aetherblade Thugs|Thug|Thugs
+Category=normal
+image=http://wiki.guildwars2.com/images/d/d4/Aetherblade_Thug.jpg
+# Health and scaling not verified.
+scaling=normal
+health=11516
+Path=Mai
+type=aetherblade
+
+attack=Smash (1)
+cooldown=4.5
+animation=pulls scythe to right and swings overhead|0.65
+effect=melee
+subeffect=damage:1742
+
+attack=Smash (2)
+animation=pulls scythe behind back, keeps it there with glow and swings overhead with massive effect|2.3
+additional=Can't rotate.
+effect=melee
+subeffect=damage:3902|knockdown:3|weakness:10|crippled:5
+#note=run behind back or away
+
+attack=Throw Anchor
+cooldown=12
+animation=pulls scythe to right and spins anti-clockwise|0.65|throws a black anchor
+effect=projectile
+subeffect=damage:1371|immobilized:3
+
+attack=Battle Standard
+cooldown=120
+effect=ticking AoE (20 hits in 57 s)
+subeffect=fury:5|might:10:2|swiftness:5| per hit
+effect=initial hit
+subeffect=damage:5162|stability:10|fury:5|might:10:2
+
+##################################################################
+# Assuming 40% less damage.
+
+Name=Aetherblade Thug
+alt=Aetherblade Thugs|Thug|Thugs
+Category=veteran
+image=http://wiki.guildwars2.com/images/d/d4/Aetherblade_Thug.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Aether
+type=aetherblade
+
+attack=Smash (1)
+cooldown=4.5
+animation=pulls scythe to right and swings overhead|0.65
+effect=melee
+subeffect=damage:1742
+
+attack=Smash (2)
+animation=pulls scythe behind back, keeps it there with glow and swings overhead with massive effect|2.3
+additional=Can't rotate.
+effect=melee
+subeffect=damage:3902|knockdown:3|weakness:10|crippled:5
+#note=run behind back or away
+
+attack=Throw Anchor
+cooldown=12
+animation=pulls scythe to right and spins anti-clockwise|0.65|throws a black anchor
+effect=projectile
+subeffect=damage:1371|immobilized:3
+
+attack=Battle Standard
+cooldown=120
+effect=ticking AoE (20 hits in 57 s)
+subeffect=fury:5|might:10:2|swiftness:5| per hit
+effect=initial hit
+subeffect=damage:5162|stability:10|fury:5|might:10:2
+
+##################################################################
+# Assuming 66% more damage.
+
+Name=Aetherblade Thug
+alt=Aetherblade Thugs|Thug|Thugs
+Category=elite
+image=http://wiki.guildwars2.com/images/d/d4/Aetherblade_Thug.jpg
+Path=Aether
+type=aetherblade
+
+attack=Smash (1)
+cooldown=4.5
+animation=pulls scythe to right and swings overhead|0.65
+effect=melee
+subeffect=damage:2890
+
+attack=Smash (2)
+animation=pulls scythe behind back, keeps it there with glow and swings overhead with massive effect|2.3
+additional=Can't rotate.
+effect=melee
+subeffect=damage:6477|knockdown:3|weakness:10|crippled:5
+#note=run behind back or away
+
+attack=Throw Anchor
+cooldown=12
+animation=pulls scythe to right and spins anti-clockwise|0.65|throws a black anchor
+effect=projectile
+subeffect=damage:2276|immobilized:3
+
+attack=Battle Standard
+cooldown=120
+effect=ticking AoE (20 hits in 57 s)
+subeffect=fury:5|might:10:2|swiftness:5| per hit
+effect=initial hit
+subeffect=damage:8569|stability:10|fury:5|might:10:2
+
+##################################################################
+
+Name=Aetherblade Thumper
+alt=Aetherblade Thumpers|Thumper|Thumpers
+Category=veteran
+image=http://wiki.guildwars2.com/images/9/91/Aetherblade_Thumper.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Aether
+type=aetherblade
+
+attack=Mace Smash (1)
+cooldown=5
+animation=swings mace from right|0.35
+effect=melee
+subeffect=damage:760
+
+attack=Crushing Blow (2)
+animation=swings mace from left|0.8
+effect=melee
+subeffect=damage:951
+
+attack=Faithful Strike (3)
+animation=keeps mace overhead and swings from below|1.2
+effect=melee
+subeffect=damage:1248|regeneration:0:5
+
+attack=Shield Throw
+cooldown=11
+animation=loses shield, leans back with lightning effect, pulls mace behind back and swings left arm from right|2.5
+effect=bouncing projectile (hits 5 times)
+subeffect=damage:834|stun:1| per hit
+
+attack=Aetherized Shielding
+cooldown=25
+animation=hides behind shield|0.15|green gas
+effect=buff (4 s)
+subeffect=Negates damage and conditions
+
+##################################################################
+
+Name=Aetherblade Thumper
+alt=Aetherblade Thumpers|Thumper|Thumpers
+Category=elite
+image=http://wiki.guildwars2.com/images/9/91/Aetherblade_Thumper.jpg
+Path=Aether
+type=aetherblade
+
+attack=Mace Smash (1)
+cooldown=5
+animation=swings mace from right|0.35
+effect=melee
+subeffect=damage:1260
+
+attack=Crushing Blow (2)
+animation=swings mace from left|0.8
+effect=melee
+subeffect=damage:1530
+
+attack=Faithful Strike (3)
+animation=keeps mace overhead and swings from below|1.2
+effect=melee
+subeffect=damage:2070|regeneration:0:5
+
+attack=Shield Throw
+cooldown=11
+animation=loses shield, leans back with lightning effect, pulls mace behind back and swings left arm from right|2.5
+effect=bouncing projectile (hits 5 times)
+subeffect=damage:873|stun:1| per hit
+
+attack=Aetherized Shielding
+cooldown=25
+animation=hides behind shield|0.15|green gas
+effect=buff (4 s)
+subeffect=Negates damage and conditions
+
+##################################################################
+# Damage values wrong!
+
+Name=Aetherblade Swashbuckler
+alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
+Category=normal
+image=http://wiki.guildwars2.com/images/7/7a/Aetherblade_Swashbuckler.jpg
+# Health and scaling not verified.
+scaling=normal
+health=11516
+Path=Aether
+type=aetherblade
+
+attack=Slash (1)
+animation=swings sword|0.5
+effect=melee
+subeffect=damage:696|bleeding:2490:15:2
+
+attack=Kick (2)
+animation=jumps and kicks|0.6
+effect=melee
+subeffect=damage:688|crippled:10
+
+attack=Pounce (3)
+animation=leans back and thrusts with sword|0.8
+effect=melee
+subeffect=damage:1058
+
+attack=Thrown Dagger
+cooldown=4
+animation=pulls sword behind back, kneels, spins and swings left arm from right|1
+effect=projectile
+subeffect=damage:991|weakness:10|bleeding:2490:15:2
+
+attack=Dagger Fan
+cooldown=15
+animation=glows, pulls sword behind back, kneels, spins and swings left arm from right|1
+effect=5 low range projectiles (cone)
+subeffect=damage:1029|daze:2| per hit
+
+attack=Whirling Defense
+cooldown=32
+animation=glows with whirling effect|1
+# Duration/hits unknown.
+effect=8 small PBAoEs in 1.4 s
+subeffect=damage:340|vulnerability:10| per hit. Reflects projectiles.
+
+##################################################################
+# Assuming 50% less damage.
+
+Name=Aetherblade Swashbuckler
+alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
+Category=veteran
+image=http://wiki.guildwars2.com/images/7/7a/Aetherblade_Swashbuckler.jpg
+# Health and scaling not verified.
+scaling=normal
+health=46061
+Path=Aether
+type=aetherblade
+
+attack=Slash (1)
+animation=swings sword|0.5
+effect=melee
+subeffect=damage:696|bleeding:2490:15:2
+
+attack=Kick (2)
+animation=jumps and kicks|0.6
+effect=melee
+subeffect=damage:688|crippled:10
+
+attack=Pounce (3)
+animation=leans back and thrusts with sword|0.8
+effect=melee
+subeffect=damage:1058
+
+attack=Thrown Dagger
+cooldown=4
+animation=pulls sword behind back, kneels, spins and swings left arm from right|1
+effect=projectile
+subeffect=damage:991|weakness:10|bleeding:2490:15:2
+
+attack=Dagger Fan
+cooldown=15
+animation=glows, pulls sword behind back, kneels, spins and swings left arm from right|1
+effect=5 low range projectiles (cone)
+subeffect=damage:1029|daze:2| per hit
+
+attack=Whirling Defense
+cooldown=32
+animation=glows with whirling effect|1
+# Duration/hits unknown.
+effect=8 small PBAoEs in 1.4 s
+subeffect=damage:340|vulnerability:10| per hit. Reflects projectiles.
+
+##################################################################
+# Assuming 100% more damage.
+
+Name=Aetherblade Swashbuckler
+alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
+Category=elite
+image=http://wiki.guildwars2.com/images/7/7a/Aetherblade_Swashbuckler.jpg
+Path=Aether|Mai
+type=aetherblade
+
+attack=Slash (1)
+animation=swings sword|0.5
+effect=melee
+subeffect=damage:1391|bleeding:2730:15:2
+
+attack=Kick (2)
+animation=jumps and kicks|0.6
+effect=melee
+subeffect=damage:1376|crippled:10
+
+attack=Pounce (3)
+animation=leans back and thrusts with sword|0.8
+effect=melee
+subeffect=damage:2116
+
+attack=Thrown Dagger
+cooldown=4
+animation=pulls sword behind back, kneels, spins and swings left arm from right|1
+effect=projectile
+subeffect=damage:1982|weakness:10|bleeding:2730:15:2
+
+attack=Dagger Fan
+cooldown=15
+animation=glows, pulls sword behind back, kneels, spins and swings left arm from right|1
+effect=5 low range projectiles (cone)
+subeffect=damage:2057|daze:2| per hit
+
+attack=Whirling Defense
+cooldown=32
+animation=glows with whirling effect|1
+# Duration/hits unknown.
+effect=8 small PBAoEs in 1.4 s
+subeffect=damage:680|vulnerability:10| per hit. Reflects projectiles.
+
+##################################################################
+##################################################################
+# Molten enemies                                                 #
+# Verified for Scarlet.                                          #
+##################################################################
+##################################################################
+
+name=Molten Brawler
+category=elite
+image=http://wiki.guildwars2.com/images/5/5a/Veteran_Molten_Brawler.jpg
+type=molten
+scaling=level
+health=98310
+path=Furn
+
+attack=Smash (1)
+animation=swings right arm|0.4
+cooldown=4
+effect=melee
+subeffect=damage:1780|vulnerability:3
+
+attack=Bash (2)
+animation=swings right arm left|0.4
+effect=melee
+subeffect=damage:1816|vulnerability:3
+
+attack=Uppercut (3)
+animation=swings right arm behind|1
+effect=melee
+subeffect=damage:5426| and a interrupt
+#note=block/evade or use stability
+
+attack=Savage Leap
+animation=Withdraws and turns bit right|0.75
+effect=leap (0.6 s)
+subeffect=damage:6931|knockback:1.5|bleeding:1365:5:3
+#note=block/evade
+
+attack=Getting Closer
+cooldown=7
+effect=leap (0.5 s)
+subeffect=damage:3639| and a interrupt
+
+attack=Pound
+cooldown=17
+animation=glows and jumps|1|a white ring
+additional=can't be blocked. Can be jumped over. Max range 1200.
+effect=growing PBAoE field
+# Note: might be a critical hit.
+subeffect=damage:8992|crippled:3| when passing through
+#note=Never run along the wave or you melt in a second
+#note=Evade or jump over
+
+##################################################################
+# Similar enemy: CoF P3 Flame Legion Axe Fiend
+
+Name=Molten Axe Fiend
+alt=Molten Axe Fiends|Axe Fiend|Axe Fiends
+Category=veteran
+image=http://wiki.guildwars2.com/images/c/c3/Molten_Axe_Fiend.jpg
+# Scaling not verified. Different health in Molten?
+scaling=normal
+health=46061
+Path=Furn|Molten
+type=molten
+
+attack=Chop (1)
+cooldown=0
+effect=melee
+subeffect=damage:2500
+
+attack=Double Chop (2)
+effect=2 melee hits
+subeffect=damage:0| per hit
+
+attack=Triple Chop (3)
+effect=3 melee hits
+subeffect=damage:0| per hit
+
+attack=Dual Strike
+animation=raises axe|0.33
+effect=2 melee hits
+subeffect=damage:2000| per hit
+
+# Unique attack.
+attack=Cyclone Axe
+animation=spins|0.4
+effect=PBAoE
+subeffect=damage:5500|crippled:8
+
+##################################################################
+# Similar enemy: CoF P3 Flame Legion Blade Master
+
+Name=Molten Bladestorm
+alt=Molten Bladestorms|Bladestorm|Bladestorms
+Category=veteran
+image=http://wiki.guildwars2.com/images/8/83/Molten_Bladestorm.jpg
+# Scaling not verified.
+scaling=normal
+health=47954
+Path=Furn
+type=molten
+
+attack=Slash
+animation=swings blade to right|0.5
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Charge
+additional=leap finisher
+effect=long dash
+subeffect=damage:1250
+
+attack=Hundred Blades
+animation=swings blade from right behind back and hits overhead|0.75
+effect=melee
+subeffect=damage:6500
+#note=Try to avoid
+
+##################################################################
+# Similar enemy: FOTM Under Dredge Disaggregator
+
+name=Molten Disaggregator
+alt=Molten Disaggregators|Disaggregator|Disaggregators
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+category=veteran
+# Scaling not verified.
+scaling=normal
+# 46061 at Molten?
+health=47954
+path=Furn|Molten
+type=molten
+
+attack=Immune to blind
+
+attack=Slice
+animation=swings mace|0.2
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Shield Bash
+animation=swings shield|0.5
+effect=melee
+subeffect=damage:0|daze:3
+
+attack=Gong
+animation=instant||plays gong 3 times
+cooldown=20
+effect=3 PBAoEs in 2.5 s
+subeffect=might:8|swiftness:8|protection:8|protection:8
+
+##################################################################
+# Similar enemy: CoF P3 Flame Legion Igniter
+# might be similar enemy: FOTM Thauma
+
+Name=Molten Igniter
+alt=Igniter
+Category=veteran
+# Scaling not verified.
+scaling=normal
+health=46061
+Path=Molten
+type=molten
+
+attack=Flame Spray
+additional=able to move
+effect=channeled cone (5 hits per sec)
+subeffect=damage:0|burning:0:1|might:1| per hit
+
+attack=Backdraft
+animation=muscle show off
+effect=buff
+subeffect=pull| on next attack
+
+##################################################################
+# Similar enemy: "Dredge Oscillator"
+
+name=Molten Oscillator
+alt=Molten Oscillators
+category=veteran
+image=http://wiki.guildwars2.com/images/c/cb/Molten_Oscillator.jpg
+type=molten
+# Health and scaling not verified.
+scaling=normal
+health=46061
+path=Furn
+toughness=0.8
+
+attack=Immune to blind
+
+attack=Shockwave
+animation=Swings right arm back|1.25
+cooldown=3.5
+effect=3 piercing projectiles (cone)
+subeffect=damage:3082| per hit
+#note=evade (especially if at close range)
+#note=movement doesn't work (except at high range)
+
+attack=Upper Cut
+cooldown=14
+animation=Swings right arm|0.2
+effect=melee
+subeffect=damage:3795|knockback:1.5
+
+##################################################################
+
+name=Molten Protector
+category=veteran
+image=http://wiki.guildwars2.com/images/7/73/Veteran_Molten_Protector.jpg
+type=molten
+scaling=normal
+health=46061
+path=Furn
+toughness=0.8
+
+attack=Slice
+animation=swings mace|0.25
+cooldown=3.5
+effect=melee
+subeffect=damage:1822
+
+attack=Shield Bash
+cooldown=11
+animation=turns right and swings shield|0.5
+effect=melee
+subeffect=damage:1575|daze:3|burning:528:1
+
+attack=Shielding
+animation=moves mace behind back and hits the shield|1
+effect=ticking AoE field (14.5 s)
+subeffect=buff:"Shielded":2| every 2 s and |burning:528:1| when passing through
+#note=try to interrupt. It that fails, let enemies walk out of it or use Pull, Knockback and launch.
+#note=Total duration is 16.5 s
+
+attack="Shielded"
+effect=buff
+subeffect=take no damage
+
+##################################################################
+# Similar enemy (not same): FOTM Under Dredge Resonator
+
+name=Molten Resonator
+category=veteran
+image=http://wiki.guildwars2.com/images/f/f9/Molten_Resonator.jpg
+type=molten
+# Health and scaling not verified.
+scaling=normal
+health=46061
+path=Furn
+toughness=0.8
+
+attack=Immune to blind
+
+attack=Shockwave
+animation=swings staff right and then forward|1.5
+cooldown=4.5
+effect=3 piercing projectiles in 0.8 s
+subeffect=damage:1750| per hit
+#note=evade
+
+attack=Earthquake
+cooldown=18
+animation=raises staff over head and smashes ground|1.5
+effect=PBAoE
+subeffect=damage:8494|launch:2.4
+#note=block/evade
+
+##################################################################
+
+name=Molten Reverberant
+category=veteran
+type=molten
+# Scaling not verified.
+scaling=normal
+health=46061
+path=Molten
+
+attack=Shoot
+effect=projectile
+subeffect=damage:3500
+
+##################################################################
+
+Name=Molten Shadowblade
+alt=Molten Shadowblades|Shadowblade|Shadowblades
+Category=veteran
+image=http://wiki.guildwars2.com/images/d/d7/Molten_Shadowblade.jpg
+Path=Furn
+# Scaling not verified.
+scaling=normal
+health=47954
+type=molten
+toughness=1
+
+attack=Twisting Fang (1)
+effect=2 melee hits
+subeffect=damage| per hit
+
+attack=Twisting Fang (2)
+effect=melee
+subeffect=damage
+
+attack=Twisting Fang (3)
+effect=melee
+subeffect=damage
+
+attack=Death Blossom
+animation=jumps over target|0.4
+effect=3 small PBAoes in 0.15 s
+subeffect=damage|bleeding
+#note=Try to evade.
+
+##################################################################
+
+Name=Molten Shaman
+alt=Molten Shamans|Shaman|Shamans
+Category=veteran
+image=http://wiki.guildwars2.com/images/b/b1/Veteran_Molten_Shaman.jpg
+Path=Furn
+scaling=normal
+health=46061
+type=molten
+
+attack=Fireball
+cooldown=3
+animation=swings right arm|0.6
+effect=piercing projectile
+subeffect=damage:428
+effect=when passing through
+subeffect=damage:42
+effect=with ticking AoE (11 hits in 10 s)
+subeffect=damage:428|burning:1056:2| per hit
+#note=Move out of red circles
+
+attack=Flame Breath (1)
+cooldown=10
+animation=leans back with a fiery effect|0.75|sprays flame
+effect=4 cones in 0.6 s
+subeffect=damage:1047| per hit
+#note=evade
+
+attack=Flame Breath (2)
+animation=opens mouth|0.25|shoots fireballs
+additional=randomly stuns itself preventing this attack
+effect=3 projectiles (cone)
+subeffect=damage:1258| per hit
+#note=move away or evade
+
+attack=Bouncing Fireball
+cooldown=21
+animation=moves right arm behind back with a fiery effect and swings right arm|1.75
+additional=bounces once on ground creating another AoE
+effect=piercing projectile
+subeffect=damage:428
+effect=when passing through
+subeffect=damage:42
+effect=ticking AoE (11 hits in 10 s)
+subeffect=damage:428|burning:1056:2| per hit
+#note=Move out of red circles
+
+##################################################################
+
+Name=Molten Smoke Shaman
+alt=Molten Smoke Shamans|Smoke Shaman|Smoke Shamans
+Category=veteran
+image=http://wiki.guildwars2.com/images/1/1c/Molten_Smoke_Shaman.jpg
+Path=Furn
+# Scaling not verified.
+scaling=normal
+# 126641 at 49?
+health=59773
+type=molten
+toughness=0.8
+
+attack=Ash Blast
+animation=moves right arm back and forth|1
+effect=projectile with AoE
+subeffect=damage:3255
+
+attack=Ash Cloud
+animation=crouches forward and rises arms|2.5
+effect=Ticking AoE
+subeffect=damage:2500|blind:3| per hit
+
+attack=Smoke Cloud
+animation=crouches forward and rises arms|3
+effect=PBAoE
+subeffect=blind:3|stealth
+
+attack=Mark of Immobilization
+animation=rises right arm and touches ground|2|plants a small mark
+effect=trap
+subeffect=damage:6445|immobilized:3| when triggered
+
+##################################################################
+# Similar enemy: FOTM Furn Flame Legion Stalker
+
+Name=Molten Stalker
+alt=Molten Stalkers
+Category=veteran
+image=http://wiki.guildwars2.com/images/1/10/Molten_Stalker.jpg
+Path=Furn
+# Health and scaling not verified.
+scaling=normal
+health=46061
+type=molten
+# Weird value (check Oscillator), valid range: 2286-2356.
+toughness=0.8
+
+attack=Shoot
+cooldown=3
+animation=raises bow and aims|0.6
+effect=projectile
+subeffect=damage:1936
+
+attack=Dual Shot
+cooldown=10
+animation=raises bow and aims|0.5
+effect=2 projectiles in 0.1 s
+subeffect=damage:1858| per hit (|damage:3716|)
+
+attack=Spread Shot
+animation=crouches and aims|1.5
+effect=5 projectiles (cone)
+subeffect=damage:3347| per hit (|damage:16735|)
+#note=Very dangerous at close range
+
+attack=Ignite Arrows
+animation=touches ground with right hand|0.25
+effect=buff (15 s)
+subeffect=damage:669| (PBAoE) when hitting with attacks
+#note=very effective with Spread Shot
+
+##################################################################

@@ -1,0 +1,679 @@
+init=ACS|Ascalonian Catacombs|Story|Story
+init=AC1|Ascalonian Catacombs|Hodgins's Plan (path&nbsp;1)|Path 1
+init=AC2|Ascalonian Catacombs|Detha's Plan (path&nbsp;2)|Path 2
+init=AC3|Ascalonian Catacombs|Tzark's Plan (path&nbsp;3)|Path 3
+
+Path=ACS
+Name=Ascalonian Catacombs Story
+tactic=normal
+Level: 30.
+Reward: 0.73g.
+Average length: 17 minutes.
+Difficulty: Easy.
+Enemies: Ghost.
+Time: Night.
+Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Ghost_Slaying|Sigil_of_Ghost_Slaying instead of Force if you want to be optimal.
+youtube=v8wgKbzTbBo|Cutscenes.
+Current record: record=1.
+
+Name=Coffins
+tactic=normal
+The room is filled with many coffins and 2 blue dust. Opening a coffin causes one of the following: a knockdown; gives you a hammer;  spawns an enemy=Elementalist:elite, a enemy=Mesmer:elite, a enemy=Monk:elite, a enemy=Necromancer:elite, a enemy=Ranger:elite, enemy=Warrior:elite; or ~7 enemy=Spider_Hatchlings:normal. Opening the 7th coffin will additionally spawn a enemy=Gateguard:champion. If approached, the closer blue dust spawns a enemy=Warrior:elite and the further one spawns a enemy=Mesmer:elite.
+First you should trigger dust and kill the Warrior and the Mesmer. Then decide who is going to open coffins. They have to be opened one by one or you will get overrun. Be careful to not open coffins midfight (like when looting). Pay attention to the health of your team before opening more coffins.
+Keep opening coffins and killing enemies until the Gateguard appears. Focus down the last enemies before you start attacking the Gateguard. The door to the next room will open once the Gateguard is killed.
+tactic=skip
+Everyone goes in and keeps opening coffins until the enemy=Gateguard:champion appears. Ignore all enemies, run back until all other enemies lose aggro and then focus the Gateguard.
+tactic=coordinated
+Keep opening coffins until the enemy=Gateguard:champion. Quickly burst the Gateguard and other enemies down.
+
+name=enemy=Gateguard:champion
+tactic=ranged
+Keep some distance. As long as you keep running away he won't be able to hit with his normal melee attack.
+If he is following you be ready to dodge when he gets close. Most likely he will jump in air causing either launch or knockdown.
+tactic=melee
+Keep running behind his back and he won't be able to hit with his normal melee attack. Try to dodge or block when he jumps in air to avoid launch or knockdown. Take 1-2 stun breaks if you don't think you can avoid it.
+
+name=Next Room and corridor
+image=http://i.imgur.com/3IUy7VI.png
+tactic=normal
+The room contains 2 enemy=Spike_Traps:trap, an enemy=Elementalist:elite and a enemy=Monk:elite. There is a chain on the left to disable all traps.
+You should pull enemies out of the room (especially if people want to melee). Attack them, run behind corner and stay there until they have arrived. If you don't want to pull them then disable traps immediately because they will deal lots of damage.
+Focus the Monk first because her bouncing attack will do lots of damage. The Elementalist is only dangerous if you stand on her Firestorm so dodge out from the red circle.
+On corridor there are enemy=Flame_Jets:trap, a enemy=Warrior:normal, a enemy=Monk:elite and an enemy=Elementalist:normal. Disable traps if you haven't done it yet so you don't have to care about Flame Jets.
+Focus normal enemies because they don't have much health. The corridor doesn't have much space so make sure you dodge to right direction when on Firestorm.
+tactic=coordinated
+Run through all the enemies. Keep attention to enemy=Flame_Jets:trap on the corridor. You have to either dodge when going past them or disable the traps.
+
+name=Closed gate and spike room
+image=http://i.imgur.com/VmjhGqz.jpg
+tactic=normal
+To open the gate you need to get a boulder from spike room and put it on the pressure plate. On the stairs there are a enemy=Warrior:elite, a enemy=Ranger:normal and a enemy=Ranger:elite.
+Pull the Warrior away from the Rangers to kill him easily. The Rangers are very dangerous. They stack lots of poison, do a knockback, and have high damage otherwise.
+The spike room has lots of enemy=Spike_Traps:trap in the area. Going through the middle gets you quickly killed so stick to the left side. Wait for traps to go off and move in. Be ready to use your healing skill if you get hit. Dodging or blocking won't help.
+At the end of the room there is a chain to disable traps. It is guarded by a enemy=Ascalonian_Captain_(Ranged):champion. Run past him and disable traps as fast as possible.
+The Captain shoots homing arrows which keep knocking you back. Take stability or count on a Guardian to take stability for the group so you can to prevent becoming a rag doll.
+Once he is dead pick up a boulder and bring it to the pressure plate.
+tactic=coordinated
+You don't need boulder to get through. One player can link=http://i.imgur.com/h8it1nB.gif|stand on the pressure plate to open the gate. Then you can either use Portal, link=http://i.imgur.com/oX2a7kv.gif|teleport or leap to get past the gate.
+tactic=warrior
+Use wiki=Savage_Leap to jump over the gate.
+
+name=Fire Room
+tactic=normal
+The room is filled with ~15 enemy=flame_traps:structure. Right at the entrance and at the end there are enemy=Flame_traps_(Jet):trap which will shoot when walking past them. Remember to dodge when going through.
+Stick together and take out structures. You need a ranged weapon to attack some of them. When going upstairs there are even more structures, a Jet and 2 enemy=Rangers:elite. They will attack if you get too close.
+Pull chains to disable Jets as fast as possible and kill Rangers if they aggroed. Run downstairs and turn left.
+tactic=skip
+Run through the room (just keep going forward). Dodge the enemy=Flame_Traps_(Jet):trap at the entrance and at the end.
+
+name=enemy=Cave_Troll:champion
+tactic=melee|ranged|skip
+At this point you may get attacked by a Cave Troll. There are also several other spawning points so most likely you won't see him.
+tactic=melee|ranged
+The Troll will attack most of the enemies which you can use as your advantage. Pull them together, run away and let them smash each other!
+He is extremely deadly unless you know what you are doing. Every one of his attacks can't be blocked, cause some kind of CC and do plenty of damage. Running past him is much easier.
+tactic=ranged
+Stay at range to avoid his close range attacks. His attacks can't be blocked and apply CC so dodge everything which comes towards you.
+His basic ranged attack shoots blue ball and when he jumps in the air he will shoot a brown shockwave.
+tactic=melee
+To melee him properly you have to watch for his animations. All his abilities apply CC so use stability if you can't dodge them. Take at least one stun break because his roar can't even be evaded.
+Most importantly you have to learn his basic ranged attack. Dodge if he is looking towards you and swings his right arm. Try stay behind his back so you know when he is aiming at you.
+Occasionally he will look up and jump in the air. Immediately start running away so you don't have to use a dodge. When he lands he will also shoot a ranged attack. You can avoid with zig zag at range but dodging is more reliable.
+When he roars prepare to break fear with a stun break if you don't get away from him on time (not likely).
+tactic=skip
+Just run past him if he appears. If you have to kill any enemies focus them down quick and then keep going.
+
+name=Burrow Room and Corridor
+image=http://i.imgur.com/FLBxSMT.jpg
+tactic=melee|ranged
+When you get close to the closed door a enemy=Graveling_Burrow:structure appears. Destroy it fast because it will constantly spawn enemy=Graveling_Hatchlings:normal. The door will open once it's destroyed.
+At the corridor there are a enemy=Mesmer:elite, a enemy=Warrior:elite and an enemy=Elementalist:elite. Focus fire Elementalist -> Mesmer -> Warrior.
+At the end of the corridor there is an enemy=Ascalonian_Captain_(Melee):champion. She deals lots of melee damage and may be hard to kite because of limited space. Most importantly don't go forward or you will aggro a enemy=Mesmer:elite and a enemy=Warrior:elite.
+tactic=melee
+Try to stay at max melee range. She can still hit you but won't attack until she gets bit closer. Keep her crippled and dance around her.
+If you don't have aggro try to stay behind her back. At all times be ready to dodge away whenever you take any damage because more will quickly follow.
+tactic=ranged
+Try to keep her snared to kite more easily and assist melee players. Be ready to dodge if she dashes towards.
+tactic=melee|ranged
+Positioning is extremely important when reviving people. You can easily get people up as long as you aren't getting hit.
+
+Name=King room
+tactic=normal
+About 15 enemy=:ghosts|Elementalist:normal|Mesmer:normal|Monk:normal|Necromancer:normal|Ranger:normal|Warrior:normal and enemy=Gateguard:champion appear after enemy has talked a bit.
+Try to kill enemies quickly with AoE. If you get downed, attack enemies with low health to rally.
+Gateguard is exactly same as on coffin room. Stay behind his back and try to dodge when he jumps.
+After that you need to take out 3 different Champions. You can kill them in any order. Suggested order is enemy=Nente:champion, enemy=Kasha:champion and then enemy=Raleena:champion + enemy=Vassar:champion. Nente is the closest one and has the closest waypoint for last fight which means less running. Kasha is easy to kill and gives much needed waypoint for Raleena and Vassar.
+
+Name=Way to Nente
+tactic=normal
+enemy=Warrior:elite and enemy=Necromancer:elite at bridge. Close patrol so watch out and don't aggro him.
+When entering the next room 2 enemy=Rangers:elite and 1 enemy=Warrior:elite run towards. They can be quite hard to take out. Focus fire and dodge when they throw a trap.
+Don't wander to random places because there's few ambushes on the area.
+
+Name=enemy=Ranger_Nente:champion
+image=http://i.imgur.com/mMjtIZk.jpg
+tactic=warrior
+If you want to melee easily use wiki=Savage_Leap to quickly get over the gap.
+tactic=melee
+At start he will be on a platform shooting arrows with AoE. Use a leap to get over the gap or walk on plank to get up. Stay behind his back and dodge if he turns to face you.
+tactic=ranged
+At start he will be on a platform shooting arrows with AoE. His arrows will get a red circle so it's very easy to know when to dodge.
+tactic=melee|ranged
+At 75% he will teleport over the gap and switches to a enemy=text:hammer|Ranger_Nente_(Hammer):champion. enemy=Fang:elite also appears. Focus Nente because he is bit more dangerous.
+tactic=melee
+As usually try to stay behind his back and at max melee range. Most importantly you must avoid getting hit when he raises his hammer. If you get hit use a stun break immediately to get up. If you stay knocked down his next attack will do double damage taking away most of your health.
+Stay mobile if Fang is following you. Try keep him close to Nente for cleave damage if you can afford it. Slow Fang down to help kiting.
+tactic=ranged
+If you get aggro try to run in circles and use snares/cc to keep them still. Try keep them together for area damage.
+tactic=ranged|melee
+At 50% he will go back to platform. Finish off Fang if he is still alive. At 25% he will teleport again and enemy=Shadow:elite appears. Finish off Nente and then kill Shadow.
+tactic=coordinated
+Focus Nente and ignore enemy=Fang:elite and enemy=Shadow:elite. Interrupt? to keep him longer on platform.
+
+Name=Way to Kasha
+image=http://i.imgur.com/ObTsuYL.jpg
+tactic=normal|skip
+Walk over bridge and watch out for traps and blue dusts. enemy=Cave_Troll:champion may appear. Stick to left side to avoid all enemies. If an enemy appears focus it down.
+tactic=normal
+Destroy enemy=Graveling_Burrow:structure when it appears then proceed to corridor with 2 enemy=Necromancers:elite. They will do lots of condition and fear at melee range. Take a stun break and condition removal.
+tactic=skip
+Just run through everything. Take a stun break if you get fear from enemy=Necromancers:elite.
+
+name=enemy=Kasha:champion
+tactic=melee|ranged
+Kasha is really easy to kill. Wait for your team before going down to her and triggering cinematic. After that her green fire appear around the area which prevents entering. If someone is outside he can just wait or go through and get downed (go to revive him).
+Most of the time she will be casting delayed AoEs around the area. Your top priority is to not get hit. weakness will remove lots of your damage and other conditions will kill you.
+tactic=melee
+| Positioning is extremely important so that you can still keep hitting her.
+Sometimes she may fear you with lots of damage so try keep your health up and bring a stun break. When she summons 4 enemy=Bone_Minions:normal focus one down quick. You can't melee her while they are all up.
+tactic=ranged
+Occasionally she summons 4 enemy=Bone_Minions:normal. You can ignore them and keep attacking as long as you stay at range.
+tactic=melee|ranged
+Also stay away from and ignore enemy=Flesh_Golem:normal. His attacks knock back which may get you hit by an AoE.
+tactic=bug
+Kasha may not become hostile if you split and trigger multiple cutscenes at the same time. There is no known fix.
+
+Name=enemy=Raleena:champion and enemy=Vassar:champion
+image=http://i.imgur.com/ALxpPWf.jpg
+image=http://i.imgur.com/ON7s6Jx.jpg
+tactic=melee|ranged|exploit
+Assuming you killed enemy=Kasha:champion before. Put boulder on pressure plate to open the door.
+tactic=melee|ranged
+The idea of the fight is to keep them separated. When they are close they will get powerful shields (blue one knocks back and purple one reflects projectiles).
+They don't have Unshakeable so you can and should spam blind and control skills. There are Boulders all around the area which you can use to knock them away (if against wall you can keep one permanently disabled by just spamming one Boulder).
+Their skills will do lots of damage so keep them disabled. Focus Vassar because he is much more dangerous. He will summon lots of enemy=Illusionary_Mages:normal which will put lots of confusion. Killing them is a top priority. Their attacks and Vassar's ranged attack will bounce so stay from each other.
+Vassar will also put very dangerous ticking AoE so dodge out immediately.
+Raleena is also quite dangerous but she has a ticking PBAoE which is much easier to avoid.
+tactic=engineer
+Use wiki=Big_Ol'_Bomb at the start to separate them.
+tactic=exploit
+Use a door to separate them. Put a boulder to a pressure plate near the second door. Remove the boulder from a pressure plate near the second door.
+One player should go in, pull one of them and immediately run to the pressure plate. Pick up the boulder and hug wall and hope that one of them gets close. Immediately step away to close doors when one of them gets in.
+Everyone else should wait behind but still between the doors because they will close. Trapped enemy may still have his/her shield if other one is close. Use melee or ranged accordingly.
+
+Name=Way to King Adelbern
+tactic=normal
+Use the waypoint near enemy=Ranger_Nente:champion.
+
+Name=enemy=King_Adelbern:legendary
+tactic=warrior
+Use wiki=Battle_Standard to get people up if they die on AoEs.
+tactic=ranged
+He will also throw his sword so stay at max range and prepare to dodge. Make sure you have wall behind you so you don't get knocked down. If possible don't stay behind your team mates so they don't also get hit.
+Pay attention to the ground at all times. Adelbern will put very dangerous ticking AoEs which may be hard to see. You will be extremely hard to revive if you get downed.
+Occasionally he will pull everyone in. Just run back to range when that happens.
+tactic=melee
+He won't use his dangerous ticking AoE on close targets but if people move back and forth it may appear on close range. Also you may get hit by his ranged attack if people are behind you.
+He will constantly spam his melee attack chain. It deals decent damage but you should be fine as long as you avoid third hit because of strong burning. Try to stay behind his back unless he is aggroed on you.
+tactic=exploit
+Stay behind him but at max melee range. He will keep hitting air and won't use his ranged attacks.
+
+#################################################################
+
+path=AC1
+name=Ascalonian Catacombs Path 1: Defeat the Howling King
+tactic=normal
+Level: 35.
+Reward: 1.81g + 60 tokens.
+Average length: 13 minutes.
+Difficulty: Easy.
+Enemies: Graveling, Spider and Ghost.
+Time: Night.
+Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+youtube=RF0anqwVcu8|Video_guide (Banter Bill).
+Current record: record=2.
+
+path=AC2
+name=Ascalonian Catacombs Path 2: Trap and kill the Ghost Eater
+tactic=normal
+Level: 35.
+Reward: 1.81g + 60 tokens.
+Average length: 16 minutes.
+Difficulty: Easy.
+Enemies: Graveling, Spider and Ghost.
+Time: Night.
+Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+youtube=zfz67k5hr34|Video_guide (Banter Bill).
+Current record: record=3.
+
+path=AC3
+name=Ascalonian Catacombs Path 3: Defeat the Colossus Rumblus
+tactic=normal
+Level: 35.
+Reward: 1.81g + 60 tokens.
+Average length: 16 minutes.
+Difficulty: Easy.
+Enemies: Graveling, Spider and Ghost.
+Time: Night.
+Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+youtube=N91aCxfHLJA|Video_guide (Banter Bill).
+Current record: record=4.
+
+path=AC1|AC2|AC3
+name=Get to the Camp
+image=https://i.imgur.com/6U6em0B.jpg
+image=http://i.imgur.com/7oJJOpw.jpg
+tactic=normal
+Watch out for enemy=Spike_Traps:trap on ground in front of a enemy=Breeder:elite. Wait them to disappear or jump on coffins.
+Escort nearby NPCs to the camp. Use area swiftness to make them run faster.
+tactic=coordinated
+One player escorts NPCs while giving them area swiftness. Everyone else proceeds to enemy=Spider_Queen:legendary.
+tactic=normal|coordinated
+tactic=warrior
+Use wiki=Charge_(warrior_skill)|Charge_(Warhorn) and wiki=Inspire for area swiftness.
+
+name=Stairs
+image=http://i.imgur.com/eMVwZgf.jpg
+tactic=normal
+Once you enter the stairs a enemy=Burrow:structure appears at the bottom. It will spawn lots of enemy=Graveling_Hatchlings:normal which stack bleeding fast.
+Focus the burrow immediately to destroy it before you get overrun by hatchlings. Keep circling around the burrow to avoid most graveling attacks.
+tactic=skip
+Once you enter the stairs a enemy=Burrow:structure appears at the bottom. Just keep going and move fast through trap room.
+tactic=exploit
+The enemy=Burrow:structure only activates once the path has been selected. Delay the path selection until everyone (including you) has entered the stairs and it won't appear at all.
+tactic=optional
+There's a secret event below the stairs (waste of a time reward wise). Turn left immediately after stairs and enter small room. When you activate one torch 4 random enemy=text:Ghosts|Elementalist:elite|Mesmer:elite|Monk:elite|Necromancer:elite|Ranger:elite|Warrior:elite appear.
+
+name=Traps
+image=http://i.imgur.com/pXI88Gs.jpg
+image=http://i.imgur.com/1yG7iJ9.jpg
+tactic=normal
+Watch out for enemy=Spike_Traps:trap on ground and enemy=Flame_Jets:trap on walls (especially when going down stairs).
+You can either stick to left and jump over a gap or stick to right and jump over enemy=Flame_Jets:trap. Melee players should use latter so they can easily melee enemy=gargoyle_heads:structure.
+tactic=coordinated
+Don't bother with enemy=Gargoyle_Heads:structure. If it's not your job to pull the spiders then stack behind media=ac_spider.jpg|a_corner near the stairs. If not already decided, decide who goes to pull.
+
+name=Spider room
+image=https://i.imgur.com/elQXXEb.jpg
+tactic=normal
+Filled with enemy=Spider_Hatchlings:normal and low level enemy=Spider_Hatchlings:normal:3. enemy=Spider_Queen:legendary and 11 enemy=Spider_Hatchlings:normal appear when all low level Spiders have been killed. Also 4 enemy=Gargoyle_Heads:structure which you should destroy if possible.
+Don't kill last low level spider until the room is clear of other enemies! Making the Spider Queen appear middle of fight often gets unprepared team killed.
+Proceed carefully, don't aggro the whole room. Bring condition removal against poison. Teams often pull all enemies behind corner in the gap between stairs and wall.
+Reflection/absorption is effective at mitigating hatchlings' attacks.
+tactic=coordinated
+Run to the room as a team and quickly kill every spider. Stack might immediately when low level spiders are dead and then wait for enemy=Spider_Queen:legendary to appear.
+Reflection/absorption is effective at mitigating hatchlings' attacks.
+tactic=solo
+Clean the room carefully. If you kill all low level spiders enemy=Spider_Queen:legendary appears which makes it much harder. First destroy two enemy=Gargoyle_Heads:structure right after flame traps. You can hit them both through corners with melee attacks. Then clear the lower area from enemy=Spider_Hatchlings:normal. Pull them behind any corner to maximise your area damage.
+When the lower area is clear equip a high range weapon and take down two remaining enemy=Gargoyle_Heads:structure without aggroing spiders on the higher part. Finally take down the remaining spiders which makes Spider Queen appear. With experience you can clear hatchlings while fighting Queen.
+To kill hatchlings more easily and safely, start running back immediately. Run through the trap room and move behind the corner right after the second spike trap. About half of the hatclings will come there while rest reset. After that quickly burst down any remaining hatclings before Queen becomes a threat.
+
+name=enemy=Spider_Queen:legendary
+image=http://i.imgur.com/sG0uMTI.jpg
+tactic=ranged|melee
+First focus on any leftover enemy=Spider_Hatchlings:normal. Once they are dead don't hesitate to fall back as a team to regenerate if needed.
+tactic=ranged
+Ranging her is very easy because she doesn't attempt to get close. At high range you only have to care about one attack, Venom Spray. When she glows she will shoot 3 large ticking AoEs which deal lots of damage over time. If you get downed inside one you will very likely get defeated.
+Pay attention to the ground and move out of any red circle. Keep in mind that the attack can't be reflected, blocked or evaded. Try to stay away from others so you don't have to move when they get targeted and vice versa.
+You should have a condition removal if you accidentally get too close and get immobilized by her. Patiently wait until the attack finishes and then remove the immobilized.
+tactic=melee
+Meleeing her is very dangerous unless you know her attacks well or can kill her fast. Try to learn her animations so you can counter the attacks properly.
+Her most dangerous attack is Venom Spray. When she glows she will shoot 3 large ticking AoEs which deal lots of damage over time. If you get downed inside one you will very likely get defeated. Keep in mind that the attack can't be reflected, blocked or evaded so you have walk out of it. Consider using a mobility skill.
+Most importantly you have to try direct the attack away from Queen so you can stay on melee range (can't reach her if she is inside one). She won't move out on her own unless you break line of sight (use the statue in middle). If possible, save interrupts for this attack.
+Her Entangling Web attack hits several times dealing decent damage and immobilized on medium range. If you get immobilized you can't move or dodge so AoEs will kill you. Take plenty of condition removal until you know how to reliably avoid it. Also try to direct it away from other players.
+Avoiding Web is very tricky because she is able to change direction twice, after the cast and after the first hit. Easiest way to avoid it is to use a single block while moving around her. Block will absorb the first hit and movement avoids the rest. You can also dodge it but you need a good timing unless you spend 2 dodges.
+If you get hit you have two options. Either wait until the attack finishes or remove it during the attack while dodging away. Latter allows you to take less damage but may just get you immobilized again.
+Her Bite is a fairly powerful melee attack with lots of damage coming from bleeding. Unless you have high toughness and/or good condition removal you don't want to tank it. It also applies weakness which severely reduces your direct damage.
+Most importantly try to stay behind her back if someone else is being targeted. If you are the target try to block or dodge whenever you can. If you get low health you can move away from her and she will probably attack someone else.
+It is possible to avoid the attack by precise movement by either running through her or away from her. However, this requires lots of practice to do reliably.
+tactic=solo
+Learn the jump timing to make Venom Spray overshoot. This makes the fight much easier because you don't have to move around the room. Stay at high range and jump right before her glowing ends until you learn the timing.
+Then learn how to avoid Entangling Web with a single dodge. This is easy to do as long as you don't dodge too early. Take lots of condition removal and stay bith further than melee range so she won't Bite. This also allows you to train jumping against Venom Spray. If you have an access to a block, practice also using it. Activate the block and just keep circling around her.
+For an easy way, let the NPC tank it. Web doesn't deal much damage so NPCs can survive against it for a long time, as long as you direct Venom Spray and Bite away from them.
+If you can deal with her other attacks, practising Bite isn't needed because you can dodge most and afford getting hit few times. It's possible to avoid the attack by running through or away from her. This needs a really good timing and/or swiftness but improves your survivability a lot.
+tactic=warrior
+wiki=Charge_(warrior_skill)|Charge_(Warhorn) is very useful against Entangling Web allowing you clear entire party.
+tactic=warrior
+Use wiki=Call_to_Arms to improve survivability of entire party and to weaken Spider Queen.
+tactic=warrior
+Use wiki=Riposte or wiki=Counter_Blow as a short cooldown single block.
+tactic=coordinated
+Start with a long lasting interrupt to prevent her using Venom Spray and to give you few more extra seconds. Burst her down in the open as fast as possible. If she manages to use Venom Spray move out of the AoEs immediately unless you can burst her down.
+Stay behind her back to avoid her melee and web attack. If your team lacks damage use the statue in the middle to move Spider Queen out of her AoEs. Try to strip down Defiance stacks to interrupt Venom Spray.
+Reflection/absorption is effective at mitigating hatchlings' attacks if any remain.
+tactic=warrior
+Use wiki=Fear_Me for a long disable if you don't have access to a wiki=Conjure_Frost_Bow|Frost_Bow_(Elementalist).
+tactic=warrior
+Use wiki=Tremor to strip down Defiance and to interrupt Venom Spray.
+tactic=elementalist
+Use wiki=Ice_Storm and wiki=Frost_Fan for massive burst, then drop it.
+tactic=elementalist
+Use wiki=Deep_Freeze for a very long disable.
+
+name=Corridor with spikes
+image=https://i.imgur.com/PRuABN0.jpg
+tactic=normal
+Multiple enemy=Spike_Traps:trap in the corridor and a patrol with a enemy=Stalker:champion, a enemy=Graveling:elite, a enemy=Breeder:elite and a enemy=Howler:elite. Pull enemies away from the traps because traps deal lots of damage.
+Focus Breeder or interrupt it to not get overrun by enemy=Hatchlings:normal. Keep an eye on the Graveling to dodge its leap. Take a stun break unless you know how to avoid their control skills.
+Don't rush in to the corridor. Each trap deals 2000 damage so triggering multiple traps will get you killed. Armor, evading, blocking and most immunities have no effect. Instead, observer trap locations and their on-off pattern and rely on smart movement.
+There are multiple safe spots at side of the corridor. If you get low health go wait there for a few seconds to get out of combat regeneration. Traps can be triggered only once (until they reappear) so you can safely move through triggered traps.
+Be careful when using any mobility skills (except teleports) because you can easily trigger multiple traps and get downed. Reviving may be hard if you get downed middle of a trap.
+There is a switch at left end of the corridor. Use it as fast as possible to help everyone else to get through. Then kill 2 enemy=Gargoyle_Heads:structure.
+tactic=skip
+Skipping is not suggested because enemies are pretty fast to kill and skipping is very risky without coordination or a long stealth. Use mobility and teleports.
+If you have access to stealth, cast it before aggroing enemies or going to traps. Run together but don't stack so triggered traps won't hit multiple players. Player with most health should go first to trigger traps when needed. Each trap deals 2000 damage so rotate the first player as needed.
+Without stealth it is very tough as enemies will also attack you. Bring stability or a stun break if you get hit by their control attacks. If anyone gets downed it is probably safer to leave him there. Disable traps at end of the corridor, lose aggro (or kill enemies) and then go resurrect him.
+Remember to disable traps at end of corridor in case you wipe. Spend your remaining dodges to avoid Fireballs from enemy=gargoyle_heads:structure to stay out of combat.
+tactic=mesmer
+Use wiki=Portal if your team has issues.
+tactic=thief
+Use wiki=Smoke_Screen with wiki=Cluster_Bomb and wiki=Shadow_Refuge to easily run through with your team.
+tactic=coordinated
+Stack behind media=ac_spike.jpg|a_corner and burst elite enemies down.
+Dodge twice after corridor to avoid Fireballs from 2 enemy=gargoyle_heads:structure to stay out of combat.
+tactic=warrior
+wiki=Defiant_Stance or wiki=Endure_Pain doesn't work against traps.
+tactic=warrior
+Use wiki=Healing_Surge to quickly heal after getting hit by traps.
+tactic=mesmer
+Use wiki=Blink to teleport over some traps.
+tactic=guardian
+Use wiki=Flashing_Blade and wiki=Judge's_Intervention to teleport over traps (target enemy=Gargoyle_Head:structure.
+
+name=enemy=Cave_Troll:champion
+tactic=normal|skip
+Troll may appear from several spots during the run (5 for path 1, 7 for path 2, 7 for path 3).
+tactic=normal
+| It is pretty tough to kill because it deals lots of damage and control. Often skipped.
+If it appears close to enemy=Kholer:champion you can pull it there and let them fight together. This allows to kill both of them easily but takes a long time (just remember to hit Troll few times to get loot).
+See Ranged or Melee tactic for more info.
+tactic=skip
+| Just ignore him and run through.
+tactic=ranged|melee
+Troll is very dangerous even at range because his every attack can't be blocked and hits hard. You have to dodge a lot so try to boost your Endurance regeneration.
+tactic=ranged
+His normal ranged attack bounces, weakens and dazes so be ready to evade if you see something flying towards you. Sidestepping won't work as the projectile follows you.
+tactic=melee
+Try to stay behind his back so you can see if he is going to attack you. Learn his basic attack animation to evade it properly. 
+tactic=ranged|melee
+| He occasionally roars to fear. It can't even be evaded so you should have a stun break with ~20 s cooldown.
+When he looks up he is about to jump which can destroy whole team. He leaps towards his target with big AoE and shoots a projectile at every player upon landing. Be ready evade if he leaps towards you. If you get hit you have to stunbreak immediately so you can dodge the follow up projectile. If your Endurance is low you can also jump over the projectile but you need better timing.
+tactic=ranged
+| If you are at high range you can just sidestep to avoid it.
+
+name=enemy=Lieutenant_Kholer:champion
+image=https://i.imgur.com/lMNIrxU.jpg
+tactic=melee|ranged
+Unorganized teams usually skip him because he can easily kill the whole group with his pull and spin. However killing him spawns a chest and a waypoint so learn him and kill him.
+At start and every 25% 2 enemy=text:ghosts|elementalist:elite|mesmer:elite|monk:elite|necromancer:elite|ranger:elite|warrior:elite appear. Focus them to reduce pressure.
+Keep an eye on Kholer at all times to see when he raises his sword and glows. Be ready to dodge, use stability, use anti projectile skills or run behind a corner. Take a stun break / immunity as a fail safe because spin after pull does extreme damage and lots of conditions.
+His normal melee attacks/leaps don't hit very hard, you can always kite him a bit if needed.
+tactic=mesmer
+Use wiki=Feedback when he glows to protect team from the pull.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" or wiki=Wall_of_Reflection when he glows to protect your team from the pull.
+tactic=coordinated
+Stack behind media=ac_kholer.jpg|a_corner and use a non-crippling attack to pull him. This keeps him still and allows you to quickly kill spawned elite Ghosts. Pay attention to Kholer as his pull attack may be hard to see through all the spell effects.
+Save your control skills for his first spin. Try to remove defiance to interrupt it again. Be ready to dodge away or use an immunity once this fails.
+tactic=warrior
+If you have to pull use a non-crippling ranged attack such as wiki=Impale. You may quickly switch weapon while the projectile is mid-air.
+tactic=warrior
+wiki=Tremor deals lots of damage and also knocks down any elite Ghosts.
+tactic=elementalist
+Use wiki=Ice_Storm and wiki=Frost_Fan for massive burst, then drop it.
+tactic=elementalist
+Use wiki=Deep_Freeze for a very long stun.
+
+##################################################################
+
+path=AC1
+name=Defend Hodgins on burrows
+image=http://i.imgur.com/2Dvqx7R.jpg
+image=https://i.imgur.com/jEkKd8i.jpg
+image=http://i.imgur.com/1Wg49di.jpg
+tactic=normal
+When going down stairs, watch out for enemy=Flame_Jets:trap at both sides. If you get hit you will most likely end up defeated. Wait for them to go off and rush in or keep jumping on top of them.
+You can do this one before Kholer if you want. You need to keep Hodgings alive and destroy two burrow chains, both containing 3 enemy=text:Burrows|Burrows_(scepter):structure. When a burrow is destroyed next one spawns until whole chain is cleared.
+Positions are (based on Hodgins/middle of room):
+Chain 1: west, south-west, north-east.
+Chain 2: north, south-east, north-west.
+Enemies spawned (respawns when killed):
+Chain 1: enemy=Breeder:elite and enemy=Hatchlings:normal then enemy=Stalker:elite and enemy=Hatchlings:normal and then enemy=Howler:elite and enemy=Hatchlings:normal.
+Chain 2: enemy=Stalker:elite and enemy=Hatchlings:normal then 2 enemy=gravelings:elite and then enemy=Breeder:elite and enemy=Hatchlings:normal.
+Different strategies are possible, but mostly follow one of two patterns:
+1) Focus on one chain (usually chain 1) first while having a person kite the spawns from the other chain to keep them from attacking Hodgins. As a general rule of thumb, all players should stay far away from Hodgins and detour north of his table if needing to cross the room. This is because the gravelings will aggro onto him without provocation if running nearby. A guardian + staff has the easiest time kiting as they can pull gravelings with ranged AOE autoattack from the other side of the table.
+2) Split into 2 groups and attack both chains. This is the fastest way to clear and doesn't require a person to kite for Hodgins since the players will aggro the gravelings from the mounds as soon as they spawn. However it's riskier since Hodgins will be defenseless if any gravelings slip by.
+The most important thing in this room is to make sure everyone is on the same page. Hodgins will start the event as soon as the last party member enters the room, so coordinate before entering.
+Melee characters can kill burrows effectively by targetting them then attacking while circle-strafing around the edges.
+Burrows push players back when destroyed. In some locations, this will cause the player to glitch through walls/bookcases etc. and get stuck depending on where they're at relative to the burrow. If meleeing a burrow, position yourself so that when it dies you get pushed into an open space and don't get stuck.
+tactic=coordinated
+Stack might when Hodgins walks to his spot. Split around the room and use high powered attack to quickly burst down burrows.
+tactic=normal|coordinated
+tactic=elementalist
+wiki=Meteor_Shower and wiki=Ice_Storm are extremely effective against Burrows.
+tactic=thief
+Use wiki=Black_Powder to protect Hodgins when running past him.
+tactic=thief
+Use Sword instead of Dagger because Burrows don't have a back.
+tactic=thief
+Use wiki=Cluster_Bomb to deal lots of damage to Burrows.
+tactic=warrior
+Swap any Precision skills to Power ones (wiki=Signet_of_Might and wiki=Banner_of_Strength.
+tactic=bug
+Hodgins may not start the event if he was dead when you entered the room. This may happen quite easily on the flame corridor so keep an eye on him. If this happens, run to the far corner of the room to make him teleport to the table and start the event.
+
+name=The first scepter
+image=http://i.imgur.com/aB1Txoh.jpg
+tactic=normal
+Once event finishes, one player follows Hodgins (or uses the waypoint), gets up and interacts with a coffin on top.
+Rest of the party proceeds.
+
+name=Way to the second scepter
+tactic=normal|skip
+If you have killed enemy=Kholer:champion, use the waypoint close to him. Otherwise just run back (you may need mobility to get past enemy=Flame_Jets:trap), or waypoint to the Priory camp if you can't make it up the stairs.
+tactic=normal
+Look for position on the map and run there. First you will get ambushed by 6 enemy=Grubs:normal which are very easy to kill. Then you will face 2 enemy=Breeders:elite and a enemy=Howler:elite. Focus one Breeder while interrupting the other.
+After them you will get ambushed by a 3 enemy=Oozes:elite and 4 enemy=Oozes:normal. Pull them behind a corner for maximum area damage.
+tactic=skip
+After 2 enemy=Breeders:elite and a enemy=Howler:elite be ready to turn left when entering the room with the objective (the path splits). This allows you completely avoid enemy=Oozes:elite so you won't risk Hodgins trying to fight them.
+tactic=normal|skip
+tactic=warrior
+Use wiki=Rush to easily get past Jets.
+
+name=Gathering pieces for the second scepter
+image=http://i.imgur.com/vsQxIrU.jpg
+image=https://i.imgur.com/Th7szrs.jpg
+tactic=normal
+To repair the second scepter you need to gather 5 scepter pieces for Hodgins. Pieces are in a big room filled with lots of Gravelings. On total there are at least 8 enemy=Scavengers:elite, 4 enemy=Stalkers:elite, 8 enemy=Breeders:elite, 6 enemy=Gravelings:elite, 9 enemy=Howlers:elite and 24 enemy=Hatchlings:normal.
+One player stays with Hodgins and interacts with him when other players have found all pieces. This finishes the encounter faster and prevents Hodgings from aggroing any enemies who are following returning players. For extra speed, use area Swiftness to buff Hodgins while he is moving.
+Everyone else (at least 2) go to the big room to get the pieces. Take mobility, anti-Control and immunity skills. Try to avoid every attack either with movement, evading or blocking to keep out-combat speed. Picking up a piece locks you in a place briefly so pull enemies bit away if needed.
+First piece is just up the stairs and can be easily missed. Rest of the pieces are in the big room. Once all pieces are found get out of combat as fast as possible by running to north or east side of the room. If all get out, everyone can just teleport to the nearby waypoint. However this rarely happens (unless coordinated) so run back normally while waiting.
+tactic=warrior
+Consider also taking wiki=Dolyak_Signet for extra stability.
+
+name=Way to enemy=Howling_King:legendary
+image=https://i.imgur.com/bsZKZls.jpg
+tactic=normal|skip
+Run back to the location where you were ambushed by enemy=Grubs:normal. There will be 9 enemy=Hatchlings:normal, a enemy=Scavenger:elite and a enemy=Stalker:elite. Then there are a patrol with a enemy=Stalker:champion and 2 enemy=Gravelings:elite, a patrol with 3 enemy=Stalkers:elite and a enemy=Howler:elite and a patrol with 2 enemy=Gravelings:elite and a enemy=Howler:elite. There also 4 Flame Jets (Weak) at intersection.
+tactic=normal
+Patrol routes partially overlap so pull enemies back to reduce risk of aggroing another group. Be careful to not stand on Flame Jets at the intersection.
+tactic=skip
+As usually, focus on mobility and survivability skills. stability is very useful especially if you are behind someone (you will get hit with attacks aimed at him). Stay alert and be ready to dodge whenever something is leaping towards you.
+tactic=guardian
+Protect your party with area stability and aegis.
+
+# Howling King later because shares path with P3.
+############################################################################
+
+path=AC2
+name=Way to spikes
+image=https://i.imgur.com/cM37Sk5.jpg
+image=https://i.imgur.com/MrllOG1.jpg
+tactic=normal
+After enemy=Kholer:champion and bridge you should to stick to right. Avoid Flame enemy=Jet:trap and Spike enemy=Traps:trap. On middle you will get ambushed by 4 enemy=Spiders:elite. They are really easy to kill as long as you keep circling around them.
+enemy=Troll:champion may also appear if you go to middle of the room.
+tactic=skip
+Hug the wall on right after going over the bridge near enemy=Kholer:champion. Just run through any traps and heal up if needed.
+
+name=Spikes
+image=https://i.imgur.com/MJufBVw.jpg
+image=https://i.imgur.com/YCX9NUz.jpg
+tactic=normal
+You need to kill enemy=Graveling_(Breeder):champion and lots of enemy=Gravelings:elite and enemy=Hatchlings:normal while keeping enemy=Detha alive. Every 25% health lost causes Detha to kill nearby thrash enemies.
+link=http://i.imgur.com/pnbzrtz.jpg|Two different tactics are commonly used. In the first one, people stack at the middle trap while one player uses the middle trap. In the other one, people stack behind a pillar on the edge while one player uses both traps on the same side.
+The second is slightly worse because traps can't reach the stacking spot. If any gravelings get through players have to kill them on their own unlike with the first tactic. Also with the first tactic, the trap operator has more time to help with ranged attacks.
+Traps instantly kill any gravelings except the champion. When the champion appears focus it down fast to finish the event. If you get downed tag gravelings to rally when they get killed by traps. When enough gravelings are killed the trap operator should come down.
+tactic=warrior
+When operating traps use wiki="On_My_Mark!" to help bursting down the champion.
+tactic=exploit
+enemy=Detha kills every nearby thrash enemy each time she loses 25% health. If you stay back she can kill enough gravelings on her own as long as you kill the champion fast enough.
+
+name=Way to enemy=Ghost_Eater:legendary
+image=https://i.imgur.com/WRhmYtP.jpg
+tactic=normal
+Go north and kill 2 enemy=Scavengers:elite, a enemy=Howler:elite and a enemy=Stalker:champion. Focus on Scavengers. Be ready to dodge when they glow and leap or they may knockdown and kill you (randomly fails). Take a stun break as a fail safe.
+tactic=alternative
+You need have to killed enemy=Kholer:champion. This will skip one Champion so you will miss its loot.
+Go to the waypoint near Kholer. Go north and kill a enemy=Breeder:elite and 4 enemy=Gravelings:elite.
+tactic=normal|alternative
+Kill 3 Elites and enemy=Scavenger:champion. Focus on Elites but keep an eye on Scavenger to dodge its leap. Take a stun break as a fail safe.
+Either go left (9 enemy=Ghastly_Oozes:normal) or right, pull chains and kill appearing Oozes.
+tactic=skip
+If you have killed Kholer then go to the waypoint near him. After pulling chains you should consider killing Oozes or Detha may get stuck (only way to fix her is to get her killed).
+
+name=Setting up traps
+image=https://i.imgur.com/62Vw7ZO.jpg
+image=https://i.imgur.com/UuawWIG.jpg
+image=https://i.imgur.com/6hNRWyI.jpg
+image=https://i.imgur.com/0rzTSQC.jpg
+tactic=normal
+Detha will set up traps at 3 locations. enemy=text:Ghosts|Elementalist:elite|Mesmer:elite|Monk:elite|Necromancer:elite|Ranger:elite|Warrior:elite will keep spawning while she builds. You can let her die if needed but it will halt building until resurrected.
+Don't revive Detha midfight. She may just go to next trap which spawns even more enemies!
+Pull enemies behind corner for better cleave/area damage. Reflect and absorption are effective at mitigating damage from elementalists and rangers.
+tactic=coordinated
+For the first two traps, let give Detha stability and then let her die. After she dies, immediately ressurect her with a Ressurrection skill, and kill the mobs.
+For the final trap, stealth Detha.
+Quickness is effective on speeding up her build speed. Swiftness will speed up her travel time between traps.
+tactic=bug
+Detha may not set up the traps if she was in combat or dead when you entered the trap area. Make sure Detha is alive and all enemies have deaggroed before going to the middle. Also you can use stealth to safely pass the enemies.
+If Detha bugs you may try killing her by pulling enemies but this rarely works.
+tactic=thief
+When stacking at corner use stolen Fear for long control (needs a proper position).
+When stacking use wiki=Cluster_Bomb for area damage and blast finishers.
+
+name=enemy=Ghost_Eater:legendary
+image=https://i.imgur.com/NrnIaRY.jpg
+image=https://i.imgur.com/FHYzWW4.jpg
+image=https://i.imgur.com/vTsUOev.jpg
+tactic=normal
+Ghost Eater is protected by a Ghost Shield which makes him immune to conditions and damage. To remove it for 30 seconds, you have to power up traps and pull Ghost Eater to it.
+At start you should power up at least 2 traps. Most importantly don't attack or aggro Eater. If anyone does that just run away and let him reset. Powering up traps while fighting him makes it unnecessarily hard.
+Instead, pick up an enemy=Anti-Spectral_Ordnance:bundle and shoot Ghost Eater with the first skill (second one aggroes him, also on-crit effects may aggro him). Hitting him makes enemy=Ectoplasmic_Oozes:normal to appear. Then one player uses skill 1 to raise and another player uses skill 2 to pull an Ooze. Pull it to a trap and repeat 3 times to power it up.
+Once everything is done, aggro Ghost Eater and pull it to a trap. Then burst him hard until he gets his shield back and pull him to another trap. If you run out of traps don't panic. Keep him at the trap, grab an Ordnance and just raise an Ooze near the trap. If the Ooze is close enough it will immediately disappear and power up the trap without using pull at all.
+Ghost Eater is quite dangerous. His normal attack shoots 3-6 projectiles in a cone and at close range it may deal lots of damage. Use anti projectile skills to protect and deal lots of damage. If you don't have enough anti projectile coverage then learn to dodge it. At close range you should dodge through him based on animation.
+Occasionally he will shoot 3 ticking AoEs. Try to learn its animations so you can prepare. If you are on a red circle then dodge out fast or you will die.
+tactic=coordinated
+Use reflects to protect your party and to deal massive damage.
+Tactic 1 (standard): Charge one trap safely without aggro and stack behind a corner. One player pulls Eater through the trap, lets him use Ectoplasmic Spew (area attack) and then pulls him to the corner. Everyone else stacks might and prepares to burst him down.
+Tactic 2 (for weak groups): Same as above but charge 2 traps. Second one is a back up if Eater gets Ghost Shield back.
+Tactic 3 (speed): Pull Eater immediately over a trap to charge it faster (only have to raise Oozes). Then either burst him there or pull behind a nearby corner.
+tactic=normal|coordinated
+tactic=mesmer
+Use wiki=Feedback for an easy reflect.
+tactic=guardian
+Use wiki=Wall_of_Reflection for a reflect.
+tactic=thief
+Use wiki=Dagger_Storm if your party lacks a reflect.
+tactic=ranger
+Use wiki=Whirling_Defense if your party lacks a reflect.
+
+#######################################################################################
+
+Path=AC3
+name=Way to Tomb of Lovers
+image=https://i.imgur.com/XD1BKZt.jpg
+tactic=normal
+After enemy=Kholer:champion and bridge keep going forward. 4 enemy=Spiders:elite appear. enemy=Cave_Troll:champion may appear (can be pulled to Ghosts on corridor). 4 elite Ghosts on corridor.
+tactic=skip
+Run through the enemy=Spiders:elite and elite Ghosts. Run all way to the back wall to lose aggro. Tzark may aggro on Ghosts, but if all party members go far enough back he should disengage.
+tactic=warrior
+Use wiki=Shield_Stance to tank Ghosts while staying out of combat.
+
+name=Tomb of Lovers
+image=https://i.imgur.com/HqUkNjA.jpg
+image=https://i.imgur.com/ic4IJvQ.jpg
+tactic=normal
+You need to keep at least one Collector working until the progress reaches 100% (takes about 6 minutes). 15 enemy=text:Burrows|Burrows_(collector):structure appear around media=ACP3_burrows.jpg|the_area during the progress and spawn gravelings.
+Bring plenty of offense to quickly destroy Burrows and enemy=Breeders:elite. Faster you get them down less enemies will appear!
+Try to memorize spawning order to optimize your damage output (especially if you keep failing). Keep an eye on the essence extractors to peel off any attackers.
+If you fall behind the burrow spawns, you can actually complete this without killing burrows just by pulling gravelings off the extractors and kiting them around the room until the progress reaches 100%.
+tactic=coordinated
+The burrows always spawn in the same order/locations, so if you have the order memorized then with even moderate DPS you should be able to kill them as fast as they spawn, preventing significant gravelings from spawning.
+tactic=normal|coordinated
+tactic=elementalist
+wiki=Meteor_Shower and wiki=Ice_Storm are extremely effective against Burrows.
+tactic=thief
+Save initiative for wiki=Headshot to interrupt Breeders and wiki=Black_Powder for blind if you have problems.
+tactic=thief
+Use Sword instead of Dagger because of cleave and because Burrows don't have back.
+tactic=thief
+Use wiki=Cluster_Bomb to deal lots of damage to Burrows.
+tactic=warrior
+Swap any Precision skills to Power ones (wiki=Signet_of_Might and wiki=Banner_of_Strength.
+tactic=bug
+Tzark may not start the collector event. You can try re-entering the room but if he got killed during his speech there is no known fix. Make sure all enemies have lost aggro by running to end of the room.
+
+name=Way to four burrows
+image=https://i.imgur.com/cAEW7sz.jpg
+tactic=normal
+enemy=Spiders:elite and enemy=Spiders:normal on way. Very easy to kill.
+tactic=skip
+Just run through. Take a condition removal to remove poison at end.
+
+name=Four burrows
+image=https://i.imgur.com/uhLllOF.jpg
+image=https://i.imgur.com/EL4orws.jpg
+image=https://i.imgur.com/N5rxUj0.jpg
+tactic=normal
+Destroy 4 enemy=text:Burrows|Burrows_(big):structure to open door and make enemies disappear. Best way is to move as a team, burst a burrow down and then move to a next one. Enemies can't keep up if you move fast. Melee characters can circle-strafe around the edge of burrows while autoattacking to avoid most damage, and dodge when seeing any graveling charge an attack.
+If you have problems you can try attack them at max-range without getting aggro.
+Once they are cleared a waypoint appear. Don't teleport to it before the door opens or you risk getting the dungeon stuck.
+tactic=elementalist
+wiki=Meteor_Shower and wiki=Ice_Storm are extremely effective against Burrows.
+tactic=thief
+Use wiki=Cluster_Bomb to deal lots of damage to Burrows.
+tactic=warrior
+Switch wiki=Signet_of_Fury to wiki=Signet_of_Might if needed.
+tactic=warrior
+Mobile encounter so don't use banners.
+
+
+path=AC1|AC3
+image=https://i.imgur.com/OEFwpGb.jpg
+name=Tunnels
+tactic=normal|skip
+Path splits to 3 ways. Left has a enemy=Breeder:elite, a enemy=Graveling:elite and ~10 enemy=Hatchlings:normal. Middle way has 3 enemy=Breeders:elite and ~5 enemy=Hatchlings:normal. Right way has 2 enemy=Scavengers:elite, a enemy=Howler:elite and 4 enemy=Hatchlings:normal.
+tactic=normal
+The left way is the easiest to kill but other ways aren't much harder. Just focus Breeders.
+tactic=skip
+People usually go middle way because Breeders don't have any Control skills. However, left way is almost a good option.
+
+path=AC3
+name=enemy=Colossus_Rumblus:legendary
+image=https://i.imgur.com/lrv3YzX.jpg
+image=https://i.imgur.com/oXRn06r.jpg
+tactic=ranged|melee
+Idea of the fight is to keep Grast-NPC alive and stay inside his bubble when rocks start falling. Your top priority is to prevent him from getting hit by Colossus's melee attacks. If you have aggro then don't stand next to him! If Grast dies then everyone should go revive him (except guy with aggro).
+When Colossus waves his arms rocks start falling soon. Get closer to Grast and get inside his bubble when it appears. If you have aggro try to direct Colossus's attacks away from everyone. Use an immunity skill or keep blocking/evading. If you don't have aggro then stay behind his back. If Grast is dead then run to a corner to minimize chance getting hit and keep evading (blocking doesn't work). You can also interrupt him but that will probably just delay it for ~5 seconds.
+tactic=ranged
+Stay away from Colossus whenever possible because his melee attacks have quite long reach. Be ready to dodge when he claps his hands. Take a stun break if you get hit.
+tactic=melee
+To survive at melee you need to have good evade/block coverage because Colossus attacks fast and hits very hard. If you don't have aggro then stay behind his back to reserve your defenses.
+His normal melee attack chain contains two hits. Unlike many other enemies he will always use second attack even if first one misses, don't get caught off-guard. If you run out of defenses then immediately start running away.
+Be ready to dodge when he claps his hands. Avoid standing close to him or you may get hit multiple times. Take 1-2 stun breaks if you get hit to prevent next attacks.
+tactic=coordinated
+Stack in a corner. This reduces chance to get hit by the Cave In. Also his melee attacks can only hit up to 3 targets. Use party wide stability and Aegis against his attacks. Burst down Colossus before he is able to kill you. Try to dodge his attacks if needed.
+tactic=exploit
+There's an arch at the edge of the pit which you can stand underneath to avoid any falling rocks. At one side of this arch there's an L-shaped pillar you can stack on where if the boss knocks you back you won't go anywhere. The group can stack here and range Colossus or switch to melee if he comes close. This avoids depending on Warmaster Grast and allows a fairly consistent kill, although the group may need to be able to tank the boss' hits depending if the NPC holds the boss aggro or not.
+tactic=bug
+Grast's shield may not protect you properly. If Grast gets interrupted while channeling the shield his shield won't protect you next time. Grast has only one stack of stability so he gets interrupted very easily.
+Direct hits away from him, burst Rumblus down fast or use area stability to prevent this from happening.
+tactic=warrior
+wiki=Battle_Standard is very useful to quickly get Grast (and other players) up.
+
+############################################################################
+
+path=AC1
+image=https://i.imgur.com/AJkyAb7.jpg
+image=http://i.imgur.com/k9KHxCW.jpg
+name=enemy=Howling_King:legendary
+tactic=melee|ranged
+Ensure that everyone is ready and prepared before aggroing the King. Once started, 7 enemy=Gravelings:elite / enemy=Scavengers:elite spawn every ~20 seconds (until high cap is reached) and they can easily kill unprepared people. You should also wait until the King is near back wall because this leaves the biggest space between you and enemy respawning location.
+The idea is to pull elite Gravelings to rings of fire to instantly kill them. These appear all around the area once the fight has been started. Closer you are the back wall more likely a ring will be between you and the enemies.
+At all times keep a ring of fire between you and the enemies. If you let them get close their spam of control skills will get you killed. You should take 1-2 stun breaks as a fail safe. If you get in bad position run through a ring.
+tactic=ranged
+You should try to stay between the King and the respawning location so you get aggro instead of melee players. You can attack the King much more easier than melee players while pulling Gravelings to the rings. The King itself won't be dangerous as long as you stay away from him and never directly front of him.
+tactic=melee
+Positioning is extremely important. On top of staying behind a ring of fire, you also need to be able to stay behind the King or he will kill you. If you have problems then keep it simple. When Gravelings are alive run away from the King and focus on getting them killed. Once they are gone, attack the King until new ones appear.
+tactic=ranged|melee
+If you happen to get downed then tag as many Gravelings as possible. You will rally when they die on fire.
+tactic=coordinated
+Bring full offense to burst him down before any elite Gravelings appear.
+tactic=warrior
+To maximise damage from wiki=Hundred_Blades use it when King shoots a beam.
+You can use wiki="Fear_Me!" to push King to a wall.
+tactic=elementalist
+Use wiki=Ice_Storm and wiki=Frost_Fan for a massive burst, then drop it.
+tactic=elementalist
+Use wiki=Deep_Freeze for a very long stun.
+

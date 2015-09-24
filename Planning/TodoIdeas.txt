@@ -1,0 +1,25 @@
+BACKLOG:
+ - remove/fix blocking css (google analyzed)
+ - options to change page style (font size, etc)
+ - would a condition toolbar be useful? (to alter enemy numbers on fly)
+ - group up fractals based on their order (bosses last and so on) -> add coloured rectangles to group them up
+ - organize research data (figure out what has been documented, create research todo for open questions / data needs)
+
+ 
+(BAD) IDEAS:
+ - general description for a dungeon explaining where it is, what to get there, what's usually and so on
+   * Wiki should explain this pretty well
+ - General profession page to give info about utility skills and how to play.
+   * Dulfy guides are up
+ - visualize animations and attacks (gifs are quite big but possible)
+   * Takes lots of bandwidth and work
+ - DataCreator should merge all css and js to one css and js file (and optimize variables, spaces)
+   * With caching not much difference
+ - Add debug mode to DataCreator (prevents file merging and ads)
+   * No need without above feature
+ - make translation apply to gw2dungeons-search.js!
+   * No one doing translations so not needed.
+ - Support for translating images (image names change per translation?)
+   * No one doing translations so not needed.
+ - Check which image files translations are using and decide which way is right (and either fix or remove useless files).
+   * No one doing translations so not needed.

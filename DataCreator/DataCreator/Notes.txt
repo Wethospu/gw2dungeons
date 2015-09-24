@@ -1,0 +1,9 @@
+﻿Attack name: Multiple delayed high damage ticking aoes, Cooldown, Animation
+ Initial effect: Delayed (x s) AoE.
+ Landing effect: Delayed (y s) ticking AoE.
+
+Slash: Melee....
+ Effect: x damage and y condition.
+
+Dual Slash: 2 melee-hits x s
+  Effect: x damage and y condition.

@@ -1,0 +1,1981 @@
+# Note: Damage values NOT updated after feature patch!
+# TODO: ID 10931, Inquest Grenadier has 1.25 toughness (but also 1.0).
+# TODO: ID 10909/10008, Prototype golems have 0.75/1.25 toughness.
+# Potion system causes minor issues because enemy types are different in each path.
+# Standard elite healths: 93984 (65), 96947 (66), 97133 (68)
+##################################################################
+# Enemies in story.                                              #
+potion=inquest|main
+potion=dredge|side
+##################################################################
+# Bosses                                                         #
+##################################################################
+
+Name=Inspector Snik
+Category=Champion
+Path=SES
+# Verified.
+type=inquest
+
+attack=Swaps to a flamethrower at 50%
+
+attack=Body Shot (Pistol)
+cooldown=0
+effect=projectile
+subeffect=damage:0
+subeffect=vulnerability:0
+
+attack=Unload (Pistol)
+effect=channeled projectiles
+subeffect=damage:0
+
+attack=Kick (Pistol)
+effect=melee
+subeffect=damage:0
+subeffect=knockback:0
+
+attack=Flame Jet (Flamethrower)
+effect=channeled cone
+subeffect=damage:0
+#note=sidestep at melee or evade away
+
+attack=Firewall (Flamethrower)
+effect=ticking AoE
+subeffect=Burning:0
+
+##################################################################
+
+Name=Overseer Kolt
+Category=Elite
+Path=SES
+# Verified.
+type=inquest
+
+##################################################################
+
+Name=Golem Specialist Noko
+level=61
+Category=Champion
+Path=SES
+# Verified.
+type=inquest
+
+attack=Chain Lightning
+effect=2 bouncing projectiles
+count=2
+subeffect=damage:0
+#note=evade
+
+attack=Whirling Assault
+effect=channeled low-range PBAoE
+subeffect=damage:0
+subeffect=bleeding:0
+subeffect=knockback:0
+effect=projectile reflection
+#note=move back if at melee-range
+#note=stop using projectiles
+
+attack=Well of Enfeeblement
+animation=raises hands
+additional=only used at close targets
+effect=low-range aura
+subeffect=damage:0
+subeffect=buff:"Enfeebling_Aura"
+#note=visually bugged: effect follows Noko!
+#note=keep distance
+#note=stay at melee-range to trigger (long cast-time)
+
+attack="Enfeebling Aura"
+effect=debuff
+subeffect=lose a Boon every second
+
+##################################################################
+
+Name=Kudu
+level=62
+Category=Legendary
+image=http://wiki.guildwars2.com/images/9/9a/Kudu.jpg
+Path=SES
+# Verified.
+type=inquest
+
+Attack=Doesn't regenerate health (even if you wipe)
+
+attack=Grenade Barrage
+effect=slow projectile with small AoE
+subeffect=damage:0
+
+attack=Snap Shot
+animation=stops briefly to aim
+effect=projectile (normally)
+subeffect=damage:0
+effect=projectile (if target is immobilized)
+subeffect=damage:0
+#note=zig zag at range or block/evade
+
+attack=Glue
+animation=jumps back
+effect=slow projectile with big ticking AoE
+subeffect=immobilized:0
+
+attack=Dart Volley
+animation=green darts
+effect=4 projectiles in 2 s
+count=4
+length=2
+subeffect=damage:0
+subeffect=burning:0
+#note=evade or zig zag
+
+attack=Shield Bash
+animation=leaps
+effect=dash
+subeffect=damage:0
+subeffect=stun:0
+
+attack=Summon
+additional=used at 75%/50%/25% health
+effect=invulnerability until the golem dies
+effect=at 75%x
+subeffect=summon enemy=Prototype_E-IV:champion
+effect=at 50%
+subeffect=summon enemy=Prototype_F-IV:champion
+effect=at 25%
+subeffect=summon enemy=Prototype_T-IV:champion
+
+##################################################################
+
+Name=Prototype E-IV
+level=62
+Category=champion
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SES
+# Verified.
+type=inquest
+
+attack=Lightning Debuff
+effect=ranged
+subeffect="Flash"
+
+attack="Flash"
+animation=flashing
+effect=debuff
+subeffect=damage:0| to nearby allies (no damage to itself)
+
+attack=Chain Lightning
+cooldown=0
+effect=2 bouncing projectiles
+count=2
+subeffect=damage:0
+#note=evade
+
+attack=Short Circuit
+animation=raises arms
+additional=only used at close targets
+effect=channeled small PBAoE
+subeffect=damage:0
+subeffect=weakness:0
+subeffect=stun:0
+#note=get out of range
+
+##################################################################
+
+Name=Prototype F-IV
+level=62
+Category=champion
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SES
+# Verified.
+type=inquest
+
+attack=Consume Conditions
+effect=self-heal
+subeffect=remove all Conditions and heal for each removed
+#note=avoid stacking Conditions
+
+attack=Fireball
+animation=points target
+effect=2 projectiles
+count=2
+subeffect=damage:0
+subeffect=burning:0
+#note=zig zag or evade
+
+attack=Ring of Fire
+animation=raises hands
+effect=2 projectiles in 0.25 seconds
+count=2
+length=0.25
+subeffect=damage:0
+subeffect=burning:5
+effect=with ticking AoEs (9 hits in 4 s) at every target
+count=9
+length=4
+subeffect=damage:0
+subeffect=burning:5
+#note=zig zag or evade
+#note=may cause 22 stacks of burning per target
+
+attack=Fire Spin
+animation=spreads hands, spins
+additional=only used at close targets
+effect=channeled PBAoE
+subeffect=damage:0
+subeffect=burning:0
+#note=get out of range, evade/block if needed
+#note=try to trigger this attack (stay at close range)
+
+##################################################################
+
+Name=Prototype T-IV
+level=62
+Category=champion
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SES
+# Verified.
+type=inquest
+
+attack=Poison Assault
+cooldown=0
+effect=2 projectiles
+count=2
+subeffect=damage:0
+subeffect=poison:0
+subeffect=bleeding:0
+#note=evade or zig zag
+
+attack=Rapid Fire
+effect=~20 projectiles in 2 s
+count=20
+length=2
+subeffect=damage:0
+subeffect=poison:0
+subeffect=bleeding:0
+#note=evade twice or use immunity
+#note=remove intense bleeding quickly if you get hit
+
+attack=Whirlwind Pull
+effect=4 projectiles at every target in 3 s
+count=4
+length=3
+subeffect=pull:0
+#note=zig zag, block/evade or just get pulled
+
+attack=AoE
+effect=ticking PBAoE
+subeffect=vulnerability:0
+subeffect=poison:0
+
+##################################################################
+
+Name=Sentry Golem Mark S-IV
+level=62
+# Verified.
+Category=champion
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SES
+type=inquest
+
+attack=Launch Fist
+animation=points one arm
+cooldown=0
+additional=hits through walls
+effect=projectile
+subeffect=damage:0
+#note=block/evade
+
+attack=Gatling Fists
+animation=points both arms
+effect=channeled projectiles
+subeffect=damage:0
+#note=break line of sight or evade twice
+
+attack=Golem Rockets
+animation=when spinning ends
+effect=few projectiles with AoE
+subeffect=damage:0
+#note=break line of sight or evade
+
+attack=Shocking Aura
+effect=buff
+subeffect=stun:0| when hit on melee range
+#note=if you melee then disable autoattack and equip a stun break
+
+##################################################################
+
+Name=Iron Forgeman
+Category=Legendary
+image=http://wiki.guildwars2.com/images/c/cc/Iron_Forgeman.jpg
+Path=SES
+# Verified.
+type=inquest
+
+attack=Attacks have specific pattern
+
+attack=Vulnerable to Boulders
+#note=kill enemy=Flame_Jellies:normal to get
+
+attack=Flamespray
+effect=multiple ticking AoEs
+subeffect=damage:0
+subeffect=burning:0
+#note=pay attention to its head and see where it is aiming
+#note=hide behind barricades
+
+attack=Chain
+animation=pull chains
+effect=ticking AoE at safe-spots
+effect=summon enemy=Flame_Jellies:normal at safe-spots
+
+##################################################################
+
+Name=Flame Jelly
+alt=Flame Jellies
+Category=normal
+Path=SES
+type=elemental
+
+##################################################################
+# Normal enemies                                                 #
+# Dredge (Soldier) verified for Dredge.                          #
+##################################################################
+
+Name=Dredge Soldier
+alt=Dredge Soldiers|Soldier|Soldiers
+Category=elite
+Path=SES
+type=dredge
+health=79352
+condition=710
+
+attack=immune to blind
+
+attack=Shoot
+animation=raises rifle and aims|0.75|shoots a bullet
+cooldown=3
+effect=fast projectile
+subeffect=damage:2317318
+#note=Tank, block or evade
+#note=zig zag at high range
+#note=Run through at melee range (needs good timing or constant movement)
+
+attack=Bayonet Thrust
+cooldown=24
+animation=swings rifle from right|0.9
+effect=melee
+subeffect=damage:2603185
+subeffect=bleeding:8
+#note=Tank, block or evade
+#note=Stay at high range
+#note=Run through or away at melee range
+
+attack=Sonic Blast
+cooldown=28
+animation=raises head and kneels|2.25|sprays air
+effect=cone
+subeffect=damage:4619445
+subeffect=daze:2
+subeffect=vulnerability:8
+#note=block or evade
+#note=Stay at high range
+#note=Run through or to side at melee range
+##################################################################
+
+Name=Dredge Soldier (Weapon)
+alt=Dredge Soldiers (Weapon)|Soldier (Weapon)|Soldiers (Weapon)
+Category=elite
+Path=SES
+type=dredge
+health=79352
+
+tactic=normal
+Becomes a normal enemy=Soldier:elite after attacking enough times.
+
+attack=immune to blind
+
+attack=Hip Shot
+animation=turns toward target|0.5|shoots a bullet
+cooldown=1.5
+effect=fast homing projectile
+subeffect=damage:2039737
+#note=Tank, block or evade
+
+attack=Net Shot (1)
+cooldown=14
+animation=looks up and kneels|1|shoots a net
+effect=ballistic projectile
+subeffect=damage:2050785
+subeffect=immobilized:5
+#note=block or evade
+#note=side step at range
+
+attack=Jump Shot (2)
+animation=instant|0|explosion at target
+effect=AoE
+subeffect=damage:2052166
+effect=Dash to target with PBAoE at end
+subeffect=damage:2052166
+
+attack=Overcharged Shot
+animation=looks bit up, raises gun a bit and moves away|0.5
+effect=melee
+subeffect=damage:2672235
+subeffect=launch:3.3
+effect=moves back
+#note=be ready to block or evade at close range
+
+##################################################################
+
+Name=Dredge Reverberant
+alt=Dredge Reverberants|Reverberant|Reverberants
+Category=elite
+image=http://wiki.guildwars2.com/images/c/c3/Veteran_Dredge_Reverberant.jpg
+Path=SES
+type=dredge
+
+attack=immune to blind
+
+attack=Zap
+effect=projectile
+subeffect=damage:0
+
+attack=Zap
+effect=melee
+subeffect=damage:0
+subeffect=crippled:3
+subeffect=daze:2
+
+attack=Aim (1)
+animation=purple beam
+effect=7 ranged hits in 3 s
+count=7
+length=3
+subeffect=vulnerability:6
+
+attack=Sniper Shot (2)
+effect=projectile
+subeffect=damage:0
+
+##################################################################
+
+name=Dredge Mining Suit
+alt=Dredge Mining Suits
+category=elite
+image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
+path=SES
+type=dredge
+
+attack=Immune to blind
+
+attack=Slash
+animation=pulls right arm back
+cooldown=0
+effect=2 melee hits
+count=2
+subeffect=damage:0
+
+attack=summon
+animation=sits down
+effect=summon
+subeffect=2 normal dredge
+
+attack=Pummel (1)
+animation=pulls left arm back
+effect=Melee
+subeffect=damage:0
+subeffect=stun:2
+
+attack=Pummel (2)
+effect=3 melee hits in 2 s
+count=3
+length=2
+subeffect=damage:0
+subeffect=bleeding:8.5
+
+##################################################################
+# Tested for Dredge.
+
+name=Cave Spider
+alt=Cave Spiders
+category=normal
+image=http://wiki.guildwars2.com/images/f/fc/Juvenile_Cave_Spider.jpg
+path=SES
+health=7957
+type=spider
+condition=480
+
+attack=Neutral
+
+attack=Bite
+animation=leans back and lunges forward|0.75
+cooldown=3
+effect=melee
+subeffect=damage:5869250
+
+attack=Venom Spray
+animation=glows and leans back|1.75|sprays green venom
+cooldown=20
+effect=projectile
+subeffect=damage:972224
+subeffect=poison:6
+
+##################################################################
+
+name=Rat
+category=normal
+path=SES
+health=99
+type=no type
+
+attack=Peaceful
+
+##################################################################
+# Enemies in path 1.                                             #
+potion=inquest|main
+potion=dredge|side
+##################################################################
+
+Name=Impasse Mark IV
+Category=champion
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SE1
+health=377040
+type=inquest
+
+attack=Uppercut
+cooldown=5
+animation=moves right foot back and swings right arm|1
+effect=melee
+subeffect=damage:2826726
+subeffect=launch:3.3
+#note=block or evade
+#note=run through (needs good timing)
+
+attack=Punch
+animation=moves left foot back and swings right arm|1|throws a blue ball
+cooldown=6
+effect=homing and piercing projectile
+subeffect=damage:4060602
+#note=tank, block or evade
+
+attack=Whirlwind Pull
+cooldown=19
+animation=spreads arms and start spinning|2.25|shoots browns balls
+additional=20% projectile finisher
+effect=4 projectiles at everyone in 3 s
+count=4
+length=3
+subeffect=damage:1201242
+subeffect=pull:1.5
+effect=combo (20% chance)
+subeffect=vulnerability:5
+#note=zig zag at range
+#note=at melee use (area) stability or stand behind someone to prevent getting pulled
+#note=don't waste your dodges, just tank them or use an immunity skill
+
+attack=Static Field
+cooldown=22
+animation=moves right and then left foot a bit, sits down and closes the eye|1|creates an electric field
+additional=lightning field
+effect=area field, when entering
+subeffect=damage:4017090
+subeffect=daze:3
+effect=area field, when exiting
+subeffect=damage:4017090
+subeffect=stun:3
+#note=often uses Whirlwind Pull when Field is up so be careful
+
+##################################################################
+
+Name=Nokk
+Category=legendary
+Path=SE1
+health=377040
+type=inquest
+condition=490
+
+attack=Vapor Blade
+animation=moves staff forward and then swings it with water effect|0.5
+cooldown=0
+additional=only used at close targets
+effect=returning and piercing medium-range projectile
+count=2
+length=1
+subeffect=damage:4060602
+subeffect=vulnerability
+#note=stay at high range to prevent usage
+#note=stay close to wall or edge so it can't return
+#note=use anti projectile skills
+
+attack=Gravity Shift
+cooldown=11
+animation=bends forward, kneels, raises up and puts right hand in the air|1.5|multiple red circles
+effect=multiple ticking AoEs (6 hits in 5 s)
+count=6
+length=5
+subeffect=damage:1975134
+subeffect=confusion:6
+subeffect=crippled:1
+
+attack=Gravity Distortion (1)
+animation=moves staff behind back, kneels, gets up and raises hands in air|1|shoots a black ball
+effect=homing projectile
+subeffect=buff:"Gravity_Distortion":8
+#note=block or evade
+#note=precasting stability prevents the effect
+
+attack="Gravity Distortion"
+effect=debuff (9 s)
+subeffect=unbreakable stun
+#note=stun breaks have no effect
+effect=delayed PBAoE (8 s) (no effect on itself)
+subeffect=damage:0
+subeffect=launch:0
+#note=avoid players with this debuff
+#note=PBAoE removes "Gravity Distortion"
+
+attack=Summon
+animation=raises staff over head, spins it, jumps and kneels|1|summons a red ball
+additional=maximum amount of 3
+effect=Summon enemy=Singularity:elite at target
+#note=avoid them (try get them summoned close each other)
+
+##################################################################
+
+Name=Singularity
+Category=elite
+Path=SE1
+health=23501
+type=elemental
+
+attack=doesn't move
+
+attack=Kick
+effect=melee
+subeffect=damage:3149938
+subeffect=knockdown:0
+#note=breaks "Gravity Distortion" effect 
+
+attack=Aura
+effect=Aura (ticks every second)
+subeffect=weakness
+subeffect=crippled
+
+##################################################################
+
+Name=Prototype E-IV
+Category=champion
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SE1
+health=161520
+type=inquest
+
+attack=Lightning Debuff
+effect=ranged
+subeffect="Flash"
+
+attack="Flash"
+animation=flashing
+effect=debuff
+subeffect=damage:0| to nearby allies (no damage to itself)
+
+attack=Chain Lightning
+cooldown=0
+effect=2 bouncing projectiles
+count=2
+subeffect=damage:1693860
+#note=evade
+#note=stay away from other players to prevent bounces
+
+attack=Short Circuit
+animation=raises arms
+additional=only used at close targets
+effect=3 PBAoEs 
+count=3
+subeffect=damage:2713284
+subeffect=weakness:0
+subeffect=stun:0
+#note=get out of range
+
+##################################################################
+
+Name=Prototype F-IV
+Category=champion
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SE1
+health=161520
+type=inquest
+condition=915
+
+attack=Consume Conditions
+effect=self-heal
+subeffect=remove all Conditions and heal for each removed
+#note=avoid stacking Conditions
+
+attack=Fireball
+animation=points target
+effect=2 projectiles
+count=2
+subeffect=damage:0
+subeffect=burning:0
+#note=zig zag or evade
+
+attack=Ring of Fire
+animation=raises hands
+effect=2 projectiles in 0.25 seconds
+count=2
+length=0.25
+subeffect=damage:461538
+subeffect=burning:5
+effect=with ticking AoEs (9 hits in 4 s) at every target
+count=9
+length=4
+subeffect=damage:461538
+subeffect=burning:5
+#note=zig zag or evade
+#note=may cause 22 stacks of burning per target
+
+attack=Fire Spin
+animation=spreads hands, spins
+additional=only used at close targets
+# at least 3
+effect=3 PBAoEs
+count=3
+subeffect=damage:1846152
+subeffect=burning:0
+#note=get out of range, evade/block if needed
+#note=try to trigger this attack even when ranging to reduce pressure
+
+##################################################################
+
+Name=Prototype T-IV
+Category=champion
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SE1
+health=161520
+type=inquest
+condition=650
+
+attack=Poison Assault
+cooldown=4
+animation=moves left foot back and swings both arms||1|shoots poison balls
+effect=2 projectiles
+count=2
+subeffect=damage:3605280
+subeffect=poison:5
+subeffect=bleeding:5:2
+#note=evade
+#note=sidestep at high range
+
+attack=Rapid Fire
+cooldown=16
+animation=moves feet a bit and points arms forward|1.75|shoots poison balls
+effect=~20 projectiles in 2 s
+count=20
+length=2
+subeffect=damage:881118
+subeffect=poison:5
+subeffect=bleeding:5:2
+#note=evade twice or use immunity
+#note=remove intense bleeding quickly if you get hit
+#note=sidestep at high range
+
+attack=Whirlwind Pull
+animation=spreads arms and starts spinning|2.5|shoots grey balls
+cooldown=20
+effect=4 projectiles at every target in 3 s
+count=4
+length=3
+subeffect=pull:0
+#note=block or evade
+#note=sidestep at high range
+#note=you can also just get pulled
+
+attack=AoE
+effect=ticking PBAoE
+subeffect=vulnerability:0
+subeffect=poison:0
+
+##################################################################
+
+Name=Tazza
+Category=legendary
+image=http://wiki.guildwars2.com/images/0/0a/Tazza.jpg
+Path=SE1
+type=inquest
+health=899990
+
+attack=Spatial Surge
+cooldown=0
+effect=3 ranged hits in 1 s
+count=3
+length=1
+subeffect=damage:0
+
+attack=Mirror Blade
+effect=projectile
+subeffect=damage:0
+subeffect=summon enemy=text:a_clone|elementalist|engineer|guardian|mesmer|necromancer|ranger|thief|warrior if it hits
+#note=Summoned clone depends on target profession
+
+attack=Illusionary Wave
+effect=melee
+subeffect=damage:0
+subeffect=knockback:0
+
+attack=Blink
+effect=teleport
+
+attack=Mind Stab
+effect=delayed AoE at every target
+subeffect=damage:0
+#note=evade
+#note=seems to do nothing when alone (own AoE won't hit?)
+
+##################################################################
+
+Name=elementalist
+Category=elite
+Path=SE1
+# Tested for inquest and elemental.
+type=no type
+health=10301
+
+##################################################################
+
+Name=engineer
+Category=elite
+Path=SE1
+# Tested for inquest and elemental.
+type=no type
+health=10301
+
+##################################################################
+
+Name=guardian
+Category=elite
+Path=SE1
+# Tested for inquest and elemental.
+type=no type
+health=10301
+
+##################################################################
+
+Name=mesmer
+Category=elite
+Path=SE1
+# Tested for inquest and elemental.
+type=no type
+health=10301
+
+##################################################################
+
+Name=necromancer
+Category=elite
+Path=SE1
+# Tested for inquest and elemental.
+type=no type
+health=10301
+
+##################################################################
+
+Name=ranger
+Category=elite
+Path=SE1
+# Tested for inquest and elemental.
+type=no type
+health=10301
+
+##################################################################
+
+Name=thief
+Category=elite
+Path=SE1
+# Tested for inquest and elemental.
+type=no type
+health=10301
+
+##################################################################
+
+Name=warrior
+Category=elite
+Path=SE1
+# Tested for inquest and elemental.
+type=no type
+health=10301
+
+attack=Chop (1)
+effect=melee
+subeffect=damage:986790
+
+attack=Double Chop (2)
+effect=2 melee hits
+count=2
+subeffect=damage:1016316
+
+attack=Dual Strike
+effect=2 melee hits
+count=2
+subeffect=damage:1277388
+subeffect=fury:3
+
+attack=Cyclone Axe
+effect=melee
+subeffect=damage:1554000
+subeffect=crippled:3
+
+attack=Whirling Axe
+effect=~20 PBAoEs in ~2 s
+count=20
+length=2
+subeffect=damage:615384
+
+##################################################################
+
+Name=Troop Commander Kaeyi
+Category=champion
+Path=SE1
+type=inquest
+health=771480
+toughness=0.8
+
+attack=Caltrops
+effect=ticking AoE
+subeffect=bleeding:0
+subeffect=crippled:0
+
+attack=Blinding Powder
+effect=AoE
+subeffect=Blind:0
+subeffect=Stealth:0
+
+attack=Summon
+additional=used at 75%/50%/25%
+effect=summon
+subeffect=2 elite inquest
+
+##################################################################
+
+Name=Barrier Turret
+Category=structure
+Path=SE1
+health=10200
+
+##################################################################
+
+Name=Inquest Golemcaster
+Category=elite
+Path=SE1
+health=93984
+type=inquest
+
+attack=Banish (1)
+effect=Melee
+subeffect=damage:0
+subeffect=launch:0
+
+attack=Banish (2)
+effect=leap
+subeffect=damage:0
+
+attack=Ice Spike
+effect=AoE
+subeffect=damage:0
+subeffect=vulnerability:3
+
+attack=Whirling Assault
+effect=2 melee hits
+subeffect=damage:0
+
+attack=Stab
+effect=melee
+subeffect=damage:0
+
+##################################################################
+# Similar enemy: FOTM AETHER Inquest Grenadier
+
+Name=Inquest Grenadier
+Category=elite
+Path=SE1
+health=93984
+type=inquest
+
+attack=Throw Bomb
+image=http://i.imgur.com/AvOU6th.gif
+effect=projectile with AoE
+subeffect=damage:0
+
+attack=Throw Bomb
+image=http://i.imgur.com/AvOU6th.gif
+effect=projectile with AoE
+subeffect=damage:0
+subeffect=chilled:5
+
+# Not shared with similar enemy.
+attack=Throw Bomb
+image=http://i.imgur.com/AvOU6th.gif
+effect=projectile with AoE
+subeffect=damage:0
+subeffect=poison:5
+
+##################################################################
+
+Name=Inquest Engineer (Ranged)
+Category=elite
+image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
+Path=SE1
+health=93984
+type=inquest
+
+attack=Explosive Shot
+effect=projectile
+subeffect=damage:0
+subeffect=bleeding:12
+
+attack=Dart Volley
+effect=4 projectiles in 2 s
+count=4
+length=2
+subeffect=damage:0
+subeffect=poison:1
+
+##################################################################
+
+Name=Inquest Engineer (Melee)
+Category=elite
+image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
+Path=SE1
+health=93984
+type=inquest
+
+attack=Heartseeker
+effect=leap
+subeffect=damage:0
+
+attack=Viper's Nest
+effect=???
+subeffect=damage:0
+
+attack=Pounce
+effect=melee
+subeffect=damage:0
+
+attack=Kick
+effect=melee
+subeffect=damage:0
+
+attack=slash
+effect=melee
+subeffect=damage:0
+
+attack=Dagger Storm
+animation=spins
+effect=multiple projectiles (360 degrees) in 3 s
+subeffect=damage:0
+effect=projectile reflection?
+
+##################################################################
+
+Name=Inquest Technician (Ranged)
+Category=elite
+image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
+health=93984
+Path=SE1
+type=inquest
+
+attack=Shoot
+effect=projectile
+subeffect=damage:0
+
+attack=Chain Shot
+effect=5 projectiles in 3 s
+count=5
+length=3
+subeffect=damage:0
+
+##################################################################
+
+Name=Inquest Technician (Melee)
+Category=elite
+image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
+health=93984
+Path=SE1
+type=inquest
+
+attack=True Strike (1)
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Pure Strike (2)
+effect=melee
+subeffect=damage:0
+
+attack=Faithful Strike (3)
+effect=melee
+subeffect=damage:0
+
+attack=Symbol of Faith
+effect=ticking PBAoE (lasts 5 s)
+length=5
+subeffect=damage:0
+
+attack=Ring of Warding
+animation=blue bubble
+effect=area field, when passing
+subeffect=knockback:0
+
+##################################################################
+
+Name=Inquest Worker
+Category=elite
+health=93984
+Path=SE1
+type=inquest
+
+attack=Wrench Toss
+effect=projectile
+subeffect=damage:0
+
+attack=Summon
+effect=Summon enemy=Thumper_Turret:structure
+
+##################################################################
+
+Name=Flame Turret
+Category=structure
+health=6120
+Path=SE1
+
+attack=Flame On
+effect=cone
+subeffect=damage:0
+subeffect=burning:2
+
+##################################################################
+
+Name=Thumper Turret
+Category=structure
+Path=SE1
+health=8160
+
+attack=Smash
+effect=PBAoE
+subeffect=damage:0
+
+##################################################################
+
+Name=Mine
+Category=trap
+Path=SE1
+
+attack=Detonate
+effect=PBAoE
+subeffect=damage:45628548
+effect=self destructs
+
+##################################################################
+
+Name=Mark I Golem
+Category=elite
+image=http://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
+health=93984
+Path=SE1
+type=inquest
+
+attack=Launch Fist
+effect=projectile
+subeffect=damage:2944830
+subeffect=pull:0
+
+attack=Punch
+effect=2 melee hits
+count=2
+subeffect=damage:2947938
+
+attack=Whirling Assault
+effect=3 melee hits
+count=3
+subeffect=damage:2940168
+subeffect=knockback:0
+
+##################################################################
+# Similar enemy: FOTM AETHER Inquest Assassin
+# Similar enemy: CoE123 Inquest Assassin
+
+Name=Inquest Assassin
+image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assassin.jpg
+Category=normal
+Path=SE1
+type=inquest
+
+attack=Swing
+cooldown=0
+animation=swing from right|0.5
+effect=melee
+subeffect=damage:0
+
+attack=Blinding Powder
+effect=AoE
+subeffect=blind:3
+subeffect=stealth:0
+
+##################################################################
+# Similar enemy: FOTM AETHER Inquest Assistant
+# Same enemy: CoE123 Inquest Assistant
+
+Name=Inquest Assistant
+Category=normal
+image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
+Path=SE1
+type=inquest
+
+attack=Impale
+image=http://i.imgur.com/7YhAPwk.gif
+effect=projectile
+subeffect=damage:0
+
+attack=Ring of Earth
+image=http://i.imgur.com/ahdZ3sa.gif
+effect=PBAoE
+subeffect=damage:0
+
+attack=Shield
+image=http://i.imgur.com/u5aG990.gif
+effect=buff:Invulnerability:3
+effect=buff:Magnetic_Aura:3
+#note=Invulnerability overrides Magnetic Aura
+
+##################################################################
+# Same enemy: CoE123 Inquest Grenadier
+
+Name=Inquest Grenadier
+image=media=coe_inquest_grenadier.jpg
+Category=normal
+Path=SE1
+type=inquest
+
+attack=Throw Bomb
+effect=projectile with AoE
+subeffect=damage:0
+
+attack=Throw Bomb
+effect=projectile with AoE
+subeffect=damage:0
+subeffect=poison:5
+
+attack=Throw Bomb
+effect=projectile with AoE
+subeffect=damage:0
+subeffect=chilled:5
+
+##################################################################
+
+Name=Inquest Engineer
+Category=normal
+image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
+Path=SE1
+health=9426
+type=inquest
+
+attack=Summon
+effect=Summon enemy=Flame_Turret:structure
+
+##################################################################
+# Similar enemy: FOTM AETHER Inquest Extinguisher
+
+Name=Inquest Extinguisher
+Category=normal
+image=http://wiki.guildwars2.com/images/a/a9/Inquest_Extinguisher.jpg
+health=9426
+Path=SE1
+type=inquest
+
+attack=Freeze Shot
+cooldown=2.5
+animation=raises the gun slightly|0.5|shoots an icy line	
+effect=projectile
+subeffect=damage:0
+subeffect=chilled:2
+
+##################################################################
+
+Name=Inquest Technician (Ranged)
+Category=normal
+image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
+Path=SE1
+health=9426
+type=inquest
+
+attack=Fire Shot
+effect=projectile
+subeffect=damage:0
+
+attack=Phoenix
+effect=returning projectile with AoE
+count=2
+length=1
+subeffect=damage:0
+
+##################################################################
+# Similar enemy: FOTM MAI Inquest Technician
+
+Name=Inquest Technician (Melee)
+Category=normal
+image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
+health=9426
+Path=SE1
+type=inquest
+
+attack=Stab
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Shocking Stab
+animation=glows
+effect=melee
+subeffect=damage:0
+subeffect=stun:2
+
+attack=Bouncing Electricity
+effect=bouncing projectile
+subeffect=damage:0
+subeffect=swiftness:0
+
+##################################################################
+# Enemies in path 2.                                             #
+potion=inquest|side
+potion=dredge|main
+potion=destroyer|side
+##################################################################
+
+Name=Foreman Kreutzerova
+Category=legendary
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE2
+type=dredge
+
+attack=Melee
+effect=melee
+subeffect=damage:0
+subeffect=knockback:0
+
+attack=Shockwave
+effect=projectile
+subeffect=damage:0
+subeffect=knockdown:0
+
+attack=Healing
+animation=takes cover behind shield
+effect=channeled healing
+subeffect=healing:0
+
+##################################################################
+
+Name=Foreman Korov
+Category=champion
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE2
+type=dredge
+
+attack=Exploding Shot
+effect=projectile
+subeffect=damage:0
+subeffect=knockback:0
+
+##################################################################
+
+Name=Foreman Zeleoniy
+Category=champion
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE2
+type=dredge
+
+attack=Burrow
+effect=dash
+subeffect=damage:0
+subeffect=knockdown:0
+
+##################################################################
+
+Name=Foreman Tomak
+Category=champion
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE2
+type=dredge
+
+attack=Melee
+effect=Melee
+subeffect=damage:0
+subeffect=knockback:0
+
+##################################################################
+
+Name=Foreman Webarov
+Category=champion
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE2
+type=dredge
+
+attack=block
+
+##################################################################
+# Similar enemy exists: "Molten Oscillator"
+# Same enemy: FOTM UNDER Dredge Oscillator.
+
+name=Dredge Oscillator
+alt=Dredge Oscillators|Oscillator|Oscillators
+image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
+category=elite
+path=SE2
+type=dredge
+
+attack=Immune to blind
+
+attack=Shockwave
+animation=pulls weapon slowly back
+cooldown=0
+effect=3 piercing projectiles (cone)
+count=3
+subeffect=damage:0
+#note=evade (especially if at close range)
+
+attack=Upper Cut
+animation=Swings right arm|0.2
+effect=melee
+subeffect=damage:0
+subeffect=knockback:1.5
+
+##################################################################
+# Same enemy: FOTM UNDER Dredge Ratnik.
+
+name=Dredge Ratnik
+alt=Dredge Ratniks|Ratnik|Ratniks
+image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
+category=elite
+path=SE2
+type=dredge
+
+attack=Immune to blind
+
+attack=Shoot
+cooldown=0
+effect=projectile
+subeffect=damage:0
+
+attack=Bayonet Thrust
+animation=swings weapon
+effect=melee
+subeffect=damage:0
+
+attack=Sonic Blast
+animation=kneels and aims||weird sound
+effect=cone
+subeffect=damage:0
+subeffect=vulnerability:8
+
+##################################################################
+# Same enemy: FOTM UNDER Dredge Ratnik.
+
+name=Dredge Ratnik
+alt=Dredge Ratniks|Ratnik|Ratniks
+image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
+category=normal
+path=SE2
+type=dredge
+
+attack=Immune to blind
+
+attack=Shoot
+cooldown=0
+effect=projectile
+subeffect=damage:0
+
+attack=Bayonet Thrust
+animation=swings weapon
+effect=melee
+subeffect=damage:0
+
+attack=Sonic Blast
+animation=kneels and aims||weird sound
+effect=cone
+subeffect=damage:0
+subeffect=vulnerability:8
+
+##################################################################
+# Once any attack is know, check FOTM UNDER for similarities.
+
+name=Dredge Excavator 
+alt=Dredge Excavators|Excavator|Excavators
+image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
+category=elite
+path=SE2
+type=dredge
+
+##################################################################
+# Once any attack is know, check FOTM UNDER for similarities.
+
+name=Dredge Excavator 
+alt=Dredge Excavators|Excavator|Excavators
+image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
+category=normal
+path=SE2
+type=dredge
+
+##################################################################
+
+name=Dredge Rifleman 
+alt=Dredge Riflemen|Rifleman|Riflemen
+category=elite
+path=SE2
+type=dredge
+
+##################################################################
+# Similar enemy exists: "Molten Resonator"
+# Same enemy: FOTM UNDER Dredge Resonator.
+
+name=Dredge Resonator
+alt=Dredge Resonators
+image=http://wiki.guildwars2.com/images/4/48/Dredge_Resonator.jpg
+category=elite
+path=SE2
+type=dredge
+
+attack=Immune to blind
+
+attack=Shockwave
+animation=slowly swings staff to right
+cooldown=0
+effect=3 piercing projectiles in 1 s
+count=3
+length=1
+subeffect=damage:0
+
+attack=Earthquake
+animation=raises staff and hits ground
+effect=PBAoE
+subeffect=damage:0
+subeffect=knockdown:2
+
+##################################################################
+# Similar enemy: FOTM FURN Molten Disaggregator
+# Same enemy: FOTM UNDER Dredge Disaggregator
+
+name=Dredge Disaggregator
+alt=Dredge Disaggregators
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+category=elite
+path=SE2
+type=dredge
+
+attack=Immune to blind
+
+attack=Slice
+animation=swings mace|0.2
+cooldown=0
+effect=melee
+subeffect=damage:0
+
+attack=Shield Bash
+animation=swings shield|0.5
+effect=melee
+subeffect=damage:0
+subeffect=daze:3
+
+attack=Gong
+animation=instant||plays gong 4 times
+cooldown=20
+effect=4 PBAoEs in 5.5 s
+count=4
+length=5.5
+subeffect=might:8
+subeffect=swiftness:8
+subeffect=protection:8
+subeffect=regeneration:8
+
+##################################################################
+
+Name=Dredge Bomber
+alt=Dredge Bombers|Bomber|Bombers
+Category=elite
+Path=SE2|SE3
+type=dredge
+
+attack=immune to blind
+
+attack=Molachev Coctail
+effect=projectile with AoE
+subeffect=damage:0
+subeffect=burning:4
+
+attack=Molachev Coctail
+effect=projectile with AoE
+subeffect=damage:0
+subeffect=burning:4
+#note=visually bugged: looks like 3 projectiles
+
+##################################################################
+
+copy=Dredge Bomber|elite|SE2:SE3
+name=Sentry
+alt=Sentries
+
+##################################################################
+
+copy=Dredge Reverberant|elite|SES
+Name=Dredge Reverberant
+alt=Dredge Reverberants|Reverberant|Reverberants
+Path=SE2|SE3
+
+copy=Dredge Reverberant|elite|SE2:SE3
+Name=Dredge Reverberant
+alt=Dredge Reverberants|Reverberant|Reverberants
+Path=SE2|SE3
+category=champion
+
+##################################################################
+
+copy=Dredge Mining Suit|elite|SES
+Name=Dredge Mining Suit
+alt=Dredge Mining Suits
+Path=SE2
+
+##################################################################
+# Enemies in path 3.                                             #
+potion=dredge|main
+potion=destroyer|side
+##################################################################
+
+Name=General Volkov
+Category=champion
+image=http://wiki.guildwars2.com/images/3/32/Molten_Excavator.jpg
+Path=SE3
+health=377040
+type=dredge
+
+attack=Claw Slash
+cooldown=0
+effect=melee
+subeffect=damage:0
+subeffect=Bleeding:0:5
+effect=if target has 10 stacks of bleeding
+subeffect=swiftness:0
+subeffect=quickness:0
+#note=block/evade, remove bleeding if you get too many stacks
+
+attack=Claw Smash
+animation=glows
+effect=melee
+subeffect=damage:0
+subeffect=bleeding:0:3
+subeffect=knockdown:0
+subeffect=buff:projectile_reflection:5
+#note=block/evade
+
+attack=Tunnel
+animation=burrows and moves underground
+additional=only used at distant targets
+effect=dash with PBAoE
+subeffect=damage:0
+effect=end effect
+subeffect=damage:0
+#note=evade
+
+##################################################################
+
+Name=General Molradovich
+Category=champion
+image=http://wiki.guildwars2.com/images/4/48/Dredge_Resonator.jpg
+health=377040
+Path=SE3
+type=dredge
+
+attack=doesn't move
+
+attack=Fireball
+cooldown=0
+effect=3 projectiles
+subeffect=damage:0
+#note=sidestep, block/evade or tank
+
+attack=Breath of Flame
+effect=ranged
+subeffect=buff:Breath_of_Flame
+
+attack="Breath of Flame"
+effect=aura
+subeffect=damage:0
+subeffect=Breath_of_Flame
+#note=spreads to allies
+#note=stand at water-spring to extinguish
+
+attack=Pull (1)
+animation=raises staff
+effect=PBAoE
+subeffect=pull:0
+#note=evade and get out of range
+
+attack=Meteor Shower (2)
+effect=short shower
+subeffect=damage:0| per hit
+
+##################################################################
+
+Name=General Zadorojny
+Category=champion
+image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
+Path=SE3
+health=590776
+type=dredge
+
+attack=Slash
+effect=3 projectiles (cone)
+subeffect=damage:0
+#note=only one will hit as long as you don't hug him
+
+attack=Flameball
+animation=glows
+effect=projectile
+subeffect=damage:0
+
+attack=Burning Aura
+effect=buff
+subeffect=burning:0| when hit
+
+##################################################################
+
+Name=Destroyer of the Worlds
+Category=legendary
+image=http://wiki.guildwars2.com/images/d/db/Destroyer_of_Worlds.jpg
+Path=SE3
+health=904790
+type=destroyer
+
+attack=Shrapnel Grenade
+additional=maximum amount of 4
+effect=fast projectile with small AoE
+subeffect=damage:0
+subeffect=launch:0
+subeffect=summon enemy=Destroyer_Of_the_Earth:elite
+#note=decide whether to focus or ignore Destroyers
+
+attack=Pull (1)
+animation=pulls air in
+effect=cone
+subeffect=pull:0
+#note=evade pull, then run behind/away
+
+attack=Devastating Blow (2)
+animation=glows?
+effect=slow melee
+subeffect=damage:0
+subeffect=knockdown:0
+
+attack=Geyser
+effect=ticking AoE
+subeffect=damage:0
+subeffect=burning:0
+
+attack=Ignite ground
+animation=charges
+effect=PBAoE
+subeffect=burning
+effect=ticking AoE
+subeffect=burning:0
+#note=block/evade initial hit and avoid ignited ground
+
+##################################################################
+
+Name=Destroyer of the Earth
+alt=Destroyers of the Earth
+level=68
+Category=elite
+image=http://wiki.guildwars2.com/images/7/7d/Destroyer_Troll.jpg
+Path=SE3
+health=97102
+type=destroyer
+
+##################################################################
+
+Name=Dredge Reverberant
+Category=champion
+image=http://wiki.guildwars2.com/images/c/c3/Veteran_Dredge_Reverberant.jpg
+Path=SE3
+level=67
+health=402116
+type=dredge
+
+##################################################################
+
+Name=Dredge Bomber
+Category=champion
+Path=SE3
+level=66
+health=389439
+type=dredge
+
+##################################################################
+
+Name=Dredge Carrier
+Category=structure
+image=http://wiki.guildwars2.com/images/6/60/Dredge_Personnel_Carrier.jpg
+Path=SE3
+health=329000
+
+##################################################################
+
+Name=Blockade
+Category=structure
+Path=SE3
+health=10510
+
+##################################################################
+
+Name=Mortar
+alt=Mortars
+Category=structure
+Path=SES|SE2|SE3
+health=10510
+
+##################################################################
+
+Name=Cave Spider
+alt=Cave Spiders
+Category=elite
+image=http://wiki.guildwars2.com/images/f/fc/Juvenile_Cave_Spider.jpg
+Path=SE3
+level=66
+health=96915
+type=spider
+
+##################################################################
+
+Name=Taskmaster
+Category=Champion
+Path=SE2
+type=inquest
+
+##################################################################
+# NPCs                                                           #
+##################################################################
+
+Name=Eir Stegalkin
+alt=Eir
+image=http://wiki.guildwars2.com/images/4/47/Eir_Stegalkin.jpg
+Category=ally
+Path=SES
+health=19838
+
+##################################################################
+
+Name=Garm
+Category=ally
+image=http://wiki.guildwars2.com/images/a/a5/Garm.jpg
+Path=SES
+health=34717
+
+attack=Bite
+animation=leans back and leaps|1
+cooldown=3
+effect=melee
+subeffect=constant:120
+
+##################################################################
+
+Name=Caithe
+Category=ally
+image=http://wiki.guildwars2.com/images/3/3e/Caithe.jpg
+Path=SES
+
+##################################################################
+
+name=Zojja
+category=ally
+image=http://wiki.guildwars2.com/images/2/29/Zojja.jpg
+path=SES
+
+##################################################################
+
+Name=Dredge Disaggregator
+Category=ally
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE1|SE2|SE3
+
+##################################################################
+
+Name=Dredge Excavator
+Category=ally
+image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
+Path=SE1|SE2|SE3
+
+##################################################################
+
+Name=Dredge Miner
+Category=ally
+Path=SE1|SE2|SE3
+
+##################################################################
+
+Name=Fergg
+Category=ally
+image=http://wiki.guildwars2.com/images/7/7b/Fergg.jpg
+Path=SE1|SE2|SE3
+
+##################################################################
+
+Name=Koptev
+Category=ally
+image=http://wiki.guildwars2.com/images/8/81/Elite_Koptev.jpg
+Path=SE1|SE2|SE3
+
+##################################################################
+
+Name=Krewe Apprentice
+Category=ally
+image=http://wiki.guildwars2.com/images/f/fe/Krewe_Apprentice.jpg
+Path=SE1|SE2|SE3
+
+##################################################################
+
+Name=Krewe Researcher
+Category=ally
+image=http://wiki.guildwars2.com/images/0/0f/Krewe_Researcher.jpg
+Path=SE1|SE2|SE3
+
+##################################################################
+
+Name=Rasolov
+Category=ally
+image=http://wiki.guildwars2.com/images/a/a9/Rasolov.jpg
+Path=SE1|SE2|SE3
+
+##################################################################
+
+Name=Tarleov
+Category=ally
+Path=SE1|SE2|SE3
+
+##################################################################
+
+Name=Vambery
+Category=ally
+image=http://wiki.guildwars2.com/images/3/32/Molten_Excavator.jpg
+Path=SE1|SE2|SE3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

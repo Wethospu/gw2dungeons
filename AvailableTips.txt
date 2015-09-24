@@ -1,0 +1,16 @@
+# Order is important because it directly affects the order in the page!
+guardian
+elementalist
+engineer
+mesmer
+necromancer
+ranger
+renevant
+thief
+warrior
+consumable
+asura
+charr
+human
+norn
+sylvari

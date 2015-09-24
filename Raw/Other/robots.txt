@@ -1,0 +1,6 @@
+# robotstxt.org/
+
+User-agent: *
+Disallow: /dev/
+Disallow: /Interface
+Disallow: /?Interface

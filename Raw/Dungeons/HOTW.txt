@@ -1,0 +1,266 @@
+init=HotWS|Honor of the Waves|Story|Story
+init=HotW1|Honor of the Waves|Hunt the butcher (path&nbsp;1)|Path 1
+init=HotW2|Honor of the Waves|Hunt the plunderer (path&nbsp;2)|Path 2
+init=HotW3|Honor of the Waves|Hunt the zealot (path&nbsp;3)|Path 3
+
+path=HotWS
+name=Honor of the Waves Story: Find the Voice
+tactic=normal
+Level: 76.
+Reward: 0.73 g.
+Average length: 30 minutes.
+Difficulty: Easy.
+Enemies: Icebrood and some Sons of Svanir.
+Time: Day.
+Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty if you want to be optimal.
+youtube=iWSS2B0vnYM|Cutscenes.
+Current record: record=22.
+
+name=Start
+tactic=normal
+After the door you will face 2 enemy=Icebrood_Seers:elite and some normal Sons of Svanir.
+When you reach middle of the area you will be ambushed by an enemy=Ice_Spike:structure. It summons enemy=Icebrood_Elementals:elite so keep kiting them while you focus the Ice Spike down.
+After that you will face lots of enemies which all can be skipped.
+enemy=Icebrood_Seer:champion and 2 enemy=Icebrood_Trolls:elite.
+enemy=Icebrood_Mauler:elite, enemy=Sons_of_Svanir_(Bow):normal, enemy=Icebrood_Wolf:normal and enemy=Corrupted_Ice_Turret:structure.
+2 enemy=Icebrood_Wolves:elite and 3 enemy=Icebrood_Wolves:normal.
+2 enemy=Icebrood_Colossi:elite.
+2 enemy=Icebrood_Goliaths:elite and 3 enemy=Icebrood_Wolves:normal.
+
+name=enemy=Kulag_the_Fallen:champion
+tactic=melee|ranged
+This boss is stationary so you can run away to get out of combat. He is easy to kill but his normal attack knocks back which can be annoying, so party wide stability is important.
+He has a ranged attack which summons enemy=Corrupted_Ice_Crystal:structure if it hits. It looks like a delayed AoE but has no effect without line of sight. Just keep moving to make it miss.
+tactic=melee
+Be ready to dodge when he touches the ground to avoid high damage and launch.
+tactic=melee|ranged
+When he dies just run back where you came from.
+
+name=enemy=Icebrood_Goliath:champion
+tactic=normal
+As long as you dodge when he jumps you really can't die. His normal melee attack is so slow that you can just step away.
+Use AoE/cleave to kill enemy=Son_of_Svanir_(Axe):normal and enemy=Son_of_Svanir_(Greatsword):normal.
+
+name=enemy=Hirvela_the_Lost:champion
+tactic=melee|ranged
+His normal ranged attacks won't do much damage so you may be able to tank them.
+tactic=ranged
+Stop attacking when he starts spinning. He will reflect projectiles and those projectiles will turn you into an Ice-shard. Dodge your own projectiles if needed. You can keep using attacks which are not reflectable.
+tactic=melee
+He quickly deals high damage when he starts spinning. Dodge away immediately but don't use projectiles because he will reflect them back. If you have low health you should stay back until he has finished spinning.
+tactic=melee|ranged
+At 50% he will transform into a dog. The only dangerous thing is when he pounds his chest and charges. Knockback causes you to get hit multiples times which may kill you.
+Wiping after transformation causes him to remain in the dog-form. He will only use basic attacks and completely stop attacking after 50%.
+tactic=exploit
+Hitting him with melee may interrupt transformation (very likely if everyone keeps attacking).
+
+name=Ice Door
+tactic=normal
+On way to the door you will face enemy=Icebrood_Hunter:elite and 4 normal enemies. Focus normal enemies to reduce the pressure.
+tactic=skip
+Just run past the first group.
+tactic=normal|skip
+Once you get down the area is filled with traps which cause chill and cripple. It is possible to get very long durations so pack some party wide condition removal.
+To melt the door you have to light torches. That causes 4 enemy=Icebrood_Elementals:elite to constantly respawn. You can attack but you shouldn't kill them because they will just respawn. Kite them around and finish them once the door melts.
+After door you will face enemy=Icebrood_Hunter:elite and ~4 normal enemies. Bit after that there are 6 enemy=Corrupted_Ice_Turrets:structure.
+tactic=warrior
+wiki=Charge_(warrior_skill)|Charge_(Warhorn) is a good way to clear both conditions party wide.
+
+name=enemy=Lani_Winterfist:champion
+tactic=normal
+3 enemy=Icebrood_Berserkers:normal constantly respawn. Try to AoE/cleave them and use them to rally off of.
+Lani is quite deadly. His normal attack hits fast and does lots of damage. Dodge away from him if needed.
+He occasionally channels ~15 delayed AoEs in the area. Keep moving and dodge if needed. Even a few hits will down you from full health.
+
+name=enemy=Honor's_Voice:champion
+tactic=melee|ranged
+First you must kill 3 enemy=Icebrood_Claymores:elite.
+tactic=ranged
+Stay at a distance so you won't get hit by her attacks.
+tactic=melee
+She hits fast and quite hard on close range so you should have a ranged weapon unless your team can burst her down fast. 
+tactic=melee|ranged
+| Keep an eye on the team and destroy enemy=Ice_Shard:structure covering them. Ice can be blocked or even evaded but it hits almost instantly.
+tactic=guardian
+Keep Aegis up to prevent people getting covered by Ice.
+
+name=enemy=The_Huntsman:legendary and enemy=Bane's_Teeth:champion
+tactic=normal
+4 enemy=Ice_Sharks:champion on the water so stay close to the surface if you jump/fall down. Teeth is quite harmless but you should focus it down to reduce pressure (won't respawn even if you wipe). Dodge away if you see it glowing or spinning.
+All the Huntsman's attacks deal very high or extreme damage.
+Most notable is Hunter's Call which makes birds attack one player. The only way to survive is to use immunity, dodge multiple times (4 for total coverage) or break line of sight. You can either run behind a structure or jump on water to break the line of sight. Sharks won't attack you as long as you stay away from them.
+All of the Huntsman's melee attacks and leaps do very high damage so you should keep him crippled/chilled and kite him. Melee is very risky and you really need to know what you are doing.
+tactic=exploit
+Bane's Teeth can be pulled and separated from The Huntsman which allows you kill it easily.
+
+################################################################################################################
+# Path 1
+################################################################################################################
+
+path=HotW1
+name=Honor of the Waves Path 1: Stop the Butcher
+tactic=normal
+Level: 80.
+Reward: 1.31 g + 60 tokens.
+Average length: 15 minutes.
+Difficulty: Medium.
+Enemies: Icebrood and some Sons of Svanir.
+Time: Day.
+Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty if you want to be optimal.
+youtube=buwUa0xAdzc|Video_guide (Banter Bill).
+Current record: record=23.
+
+name=Start
+tactic=normal
+The first group has a enemy=Son_of_Svanir_(Bow):elite, a enemy=Son_of_Svanir_Berserker:elite and 2 enemy=Icebrood_Hunters:elite. The second group has 2 enemy=Icebrood_Seers:elite and 2 enemy=Corrupted_Ice_Turrets:structure. Destroy the turrets to open the door.
+After the door you will face 3 enemy=Icebrood_Hunters:elite and an enemy=Ice_Dragon_Totem_(PBAoE):structure. Bottom route has a enemy=Svanir_Ballista:structure, 2 enemy=Icebrood_Berserkers:elite, an enemy=Icebrood_Seer:elite and an enemy=Icebrood_Hunter:elite. Top route has 3 enemy=Icebrood_Wolves:elite, an enemy=Icebrood_wolf_(Rare):elite and an enemy=Ice_Dragon_Totem_(shooting):structure.
+tactic=optional
+Destroy a totem to complete an optional event.
+tactic=coordinated
+Use stealth to path the first group of mobs, quickly burst down the turrets, re-stealth, and run straight to the troll using the lower route.
+
+name=enemy=Icebrood_Troll:champion
+tactic=ranged|melee
+The troll is very dangerous even at range because all of his attacks hit hard and cannot be blocked. You have to dodge a lot so try to boost your Endurance regeneration.
+tactic=ranged
+His normal ranged attack bounces, weakens and dazes so be ready to evade if you see something flying towards you. Sidestepping won't work as the projectile follows you.
+tactic=melee
+Try to stay behind his back so you can see if he is going to attack you. Learn his basic attack animation to evade it properly. 
+tactic=ranged|melee
+| He occasionally roars to fear. It can't even be evaded so you should have a stun break with ~20 s cooldown.
+When he looks up he is about to jump which can destroy whole team. He leaps towards his target with big AoE and shoots a projectile at every player upon landing. Be ready evade if he leaps towards you. If you get hit you have to stunbreak immediately so you can dodge the follow up projectile. If your Endurance is low you can also jump over the projectile but you need better timing.
+tactic=ranged
+| If you are at high range you can just sidestep to avoid it.
+tactic=coordinated
+Stack might and stack on him. Use group wide stability to prevent daze from his ranged attack and Fear from his roar. Dodge towards the wall when he jumps.
+tactic=exploit
+Kill any Wolves first. Stand on the bridge and aggro him with ranged attacks. Move back so he gets closer. Once he is below media=hotw1_troll_safespot.jpg|the_bridge enter his line of sight so he stops and starts attacking. If at right position his attacks should hit the bridge above while you can safely range him down.
+
+name=enemy=Aldus_Stormbringer:legendary
+tactic=thief
+Use Smoke Screen to protect your team.
+tactic=normal
+Clear the area first. Aldus should be easy to kill as long as you focus the enemies he summons.
+His ranged attack won't do much damage. Melee players need to dodge away when he places Frozen Ground at his feet.
+tactic=coordinated
+Stack on Aldus and burst enemies down as they are summoned.
+
+name=Way to the Butcher
+tactic=normal
+Jump down (try land on platforms, falling hurts). Either clear enemies or skip.
+
+name=enemy=Ginva_the_Butcher:legendary
+tactic=normal
+There are 3 Totems on the area. One grants protection, one retaliation and one regeneration. They all respawn after a while so destroy only ones which are needed.
+You should fight Ginva near the protection-Totem to cleave/AoE it. Destroy retaliation if you have problems with surviving.
+All his attacks do high damage so try stay at least at max melee-range. Try to dodge his pull.
+Occasional Whirling Defense makes him very dangerous to melee players. You can still keep hitting him at max melee-range but don't get too close! It also reflects projectiles so stop using those for a while.
+Don't stand Icy Ground to avoid being inflicted with a long chill.
+tactic=thief
+Use wiki=Basilisk_Venom and wiki=Steal to interrupt his Whirling Defense (you can get half of them).
+
+################################################################################################################
+
+path=HotW2
+name=Honor of the Waves Path 2: Prevent the Plunderer from erasing culture
+tactic=normal
+Level: 80.
+Reward: 1.31 g + 60 tokens.
+Average length: 21 minutes.
+Difficulty: Medium.
+Enemies: Icebrood and some Sons of Svanir.
+Time: Day.
+Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty if you want to be optimal.
+youtube=oI6iMApKHak|Video_guide (Banter Bill).
+Location: Land and water.
+Current record: record=24.
+
+name=Start
+tactic=normal
+A group of Elites will run towards you. Line of sight them behind the door to have an easier time killing them. Reflects work well here.
+
+name=enemy=Torn_Fur:champion
+tactic=ranged
+Keep some distance to avoid melee attacks. Be ready to dodge if he throws his greatsword at you.
+tactic=melee
+Try to stay at max melee range so he won't attack. Run away from him when he sticks his greatsword in the ground. Area effect won't do much damage but it will knock you away anyway.
+
+name=enemy=Jaddeor_Icefist:legendary
+tactic=normal
+He does some damage and can easily kill if you stay in his charge. If you have aggro try to direct him away from your team.
+Both Jaddeor's melee and ranged attacks do lots of damage so be careful. He will pound his chest before charging so get out of his way.
+tactic=skip
+Just run to the next boss.
+
+name=enemy=Balgren_Creedbreaker:legendary
+tactic=melee|ranged
+Keep blocking/evading his ranged attack to avoid most of his damage.
+Get out of area circles and ignore stuff he summons.
+tactic=melee
+Run away (dodge may be a bit faster) from him when he glows. His Roar can't be blocked or evaded and will Fear you. Use a stun break if you fail to get out of range on time.
+Staying behind him will allow you to avoid most of his attacks.
+
+name=enemy=Andal_the_Thug:legendary, enemy=Poron:champion and enemy=Oolon:champion
+tactic=normal
+Quaggans do barely any damage as long as you kite them so focus Andal.
+His cone attack hits fast and hard so try get out of range. Occasionally he summons lots of delayed AoEs. Keep moving and dodge if needed.
+tactic=exploit
+Pull Poron and Oolon away from Andal and kill them. They will run back easily so you may have to tank them.
+
+name=Swimming
+tactic=skip
+Enemies can be skipped as long as you stick to the right side.
+tactic=fight
+Enemies can be fought, but it is time consuming and relatively pointless to do so.
+
+name=enemy=Wollam_the_Plunderer:legendary
+tactic=ranged
+Keep your distance so you have more time to dodge if he rushes towards you.
+tactic=melee
+His rush attack is very dangerous and may down you instantly. Consider staying at range until he uses it and then go burst him for several seconds.
+tactic=melee|ranged
+| Other attacks aren't really a threat. Obviously don't swim to his mines.
+
+################################################################################################################
+
+path=HotW3
+name=Honor of the Waves Path 3: Defeat the Zealot
+tactic=normal
+Level: 80.
+Reward: 1.31 g + 60 tokens.
+Average length: 19 minutes.
+Difficulty: Medium.
+Enemies: Icebrood and some Sons of Svanir.
+Time: Day.
+Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty if you want to be optimal.
+youtube=TNZHOpQpQU0|Video_guide (Banter Bill).
+Location: Land and water.
+Current record: record=25.
+
+name=enemy=Icebrood_Goliath:champion
+tactic=normal
+Kill the elite enemies first. He is trivial to kill. Dodge when he jumps.
+
+name=enemy=Svánigandr:legendary
+tactic=normal
+Most of his attacks do high damage so pay attention. Try stay at least at max melee range to prevent him using his melee attacks.
+When he glows and leaps just dodge or block. That attack has huge range so there is a good chance to get hit.
+When he howls dodge to prevent getting stuck (not just immobilized). Block doesn't work so don't rely on it.
+His normal attack is a short dash with lots of delayed AoEs around the area. Stay mobile and don't stand in AoE circles.
+
+name=enemy=Fimbul:legendary
+tactic=normal
+Very easy to kill as long as you don't stand in AoEs. When he turns into an Ice-shard just destroy it fast to prevent him from healing.
+Immediately a group of elites will spawn. Line of sight behind the door that just opened to make a quick kill of them. Reflection and blinds would help.
+tactic=exploit
+You can permanently immobilize Fimbul to prevent him from reachinng his trigger point, thus preventing him from doing any attacks while he attempts to reach said trigger point.
+
+name=enemy=Sorge_the_Zealot:legendary
+tactic=normal
+First clear the room of enemy=Jellyfish:normal.
+His ranged attack does high damage. It is easy to avoid, just dodge when you see claw effect on you. He also occasionally sinks. It won't do much damage but it is a bit annoying.
+The biggest threat are the enemy=Giant_Arctic_Jellyfishes:veteran which he summons. They detonate dealing very high damage so keep some distance and dodge at right time. He also summons enemy=Barracudas:normal which you should use to rally off of.
+tactic=thief
+Use Shadow Assault (Spear), Withdraw and initiative-traits and skills to evade the Zealot and Jellyfishes.
+
+

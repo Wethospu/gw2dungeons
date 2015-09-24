@@ -1,0 +1,266 @@
+<script type="text/javascript">
+	"use strict";
+
+	var login = "";
+	var password = "";
+	var database = "";
+	var form;
+	$(document).ready(function() {	
+		loadSettings(false, false);
+		loadPage();
+		$("#old-poll-button").click(function() {
+			if ($("#old-polls").html() == "")
+				exec("getOldPolls", "");
+        });
+		exec("getCurrentPolls", "");
+		
+		$('form').bind('submit', function(event) {
+        	form = this;
+
+       		event.preventDefault();
+        	event.stopPropagation();
+		
+			if (form.submitted)
+				return;
+			login = $("#username").val();
+			password = $("#password").val();
+			exec("login", "");
+		});
+	});
+
+	function exec(type, params)	{
+		var request = $.ajax({
+			url: "votes.php",
+			type: "post",
+			data: "type=" + type + "&username=" + login + "&password=" + password + "&database=" + database + params
+		});
+
+		// Callback handler that will be called on success
+		request.done(function (data){
+			data = JSON.parse(data);
+			if (data.message != '')
+				$("#messages").html(data.message);
+			if (data.success)
+			{
+				if (type == "getCurrentPolls")
+				{
+					updateCurrentPolls(data.polls);
+				}
+				else if (type == "getOldPolls")
+				{
+					updateOldPolls(data.polls);
+				}
+				else if (type == "addVote")
+				{
+					exec("getCurrentPolls", "");
+				}
+				else if (type == "login") {
+					form.submit(); //invoke the save password in browser
+					$("#tab-login").html("<a href=\"./Voting\">Log out</a>.");
+					$("#login-frame").html("");
+					exec("getCurrentPolls", "");
+				}
+			}
+			else
+			{
+				login = "";
+				password = "";
+			}
+		});
+
+		// Callback handler that will be called on failure
+		request.fail(function (data){
+			data = JSON.parse(data);
+			$("#messages").html(data.message);
+			login = "";
+			password = "";
+		});
+	}
+
+	function updateCurrentPolls(polls) {
+		var content = "";
+		// Check amount of polls which are missing user's vote.
+		var missingVotes = 0;
+		$.each(polls, function() {
+			content += '<div class="panel panel-primary">';
+			content += '<div class="panel-heading panel-title">' + this.label + ' (expires ' + timeRemaing(this.expire) + ')';
+			content += '</div>';
+			content += '<div class="panel-body">';
+			// Explanation of the poll.
+			if (this.description)
+				content += this.description.replace(/\n/g, '</br>') + '</br>';
+			// Link to the discussion topic.
+			if (this.topic)
+				content += ' <a href="' + this.topic + '">Discussion topic</a></br></br>';
+			content += this.text.replace(/\n/g, '</br>');
+			content += '</br>';
+			if (login != "")
+			{
+				//// Add voting options.
+				// Find own vote and comment (if any).
+				var ownVote = -1;
+				var ownComment = '';
+				$.each(this.votes, function() {
+					// Note: Server returns null votes if the vote is private.
+					if (this && this.voter == login)
+					{
+						ownVote = this.vote;
+						ownComment = this.comment;
+					}
+				});
+				if (ownVote == -1)
+					missingVotes++;
+				content += '</br>My vote: <div class="btn-group">';
+				if (this.type > 1)
+				{
+					for (var i = 0; i < this.type; i++) {
+						content += '<button class="btn btn-default';
+						if (i == ownVote)
+							content += ' active';
+						content += '">' + String.fromCharCode("A".charCodeAt(0) + i) + '</button> ';
+					}
+				}
+				content += '</div></br>My comment: <input class="comment" type="text" value="' + ownComment + '">';
+				content += '</br><button class="btn btn-default vote-button" data-id="' + this.ID + '">Vote</button>';		
+			}
+			content += '</div>';
+			//// Add current votes.
+			var voteString = '';
+			if (this.showvotes == 1 || login == "Approver") {
+				// Count votes.
+				var votes = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+				var votesTotal = 0;
+				var individualVotes = '<div class="panel panel-primary" style="margin-top:10px;"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse' + this.ID + '">Show individual votes</a></h4></div>';
+				individualVotes += '<div id="collapse' + this.ID + '" class="panel-collapse collapse"><div class="panel-body">';
+				$.each(this.votes, function() {
+					// Note: Server returns null votes if the vote is private.
+					if (!this)
+						return;
+					votes[this.vote]++;
+					votesTotal++;
+					individualVotes += String.fromCharCode("A".charCodeAt(0) + (this.vote - 0));
+					if (this.comment != '')
+						individualVotes += ': ' + this.comment;
+					if (login == "Approver")
+						individualVotes += ' (' + this.voter + ')';
+					individualVotes += '</br>';	
+				});
+				individualVotes += '</div></div></div>';
+				// Generate the string.
+				for (var i = 0; i < this.type; i++) {
+					voteString += String.fromCharCode("A".charCodeAt(0) + i) + ': ' + votes[i] + ' (';
+					if (votesTotal == 0)
+						voteString += '0';
+					else
+						voteString += Math.round(100 * votes[i] / votesTotal);
+					voteString += '%), ';
+				}
+			}
+			else
+				voteString = "The result is hidden.";
+			content += '<div class="panel-footer">' + voteString;
+			if (votesTotal > 0)
+				content += individualVotes;
+			content += '</div></div>';
+		});
+		if (missingVotes > 0)
+			$("#messages").html("You haven't voted on " + missingVotes + " polls!");
+		
+		$("#current-polls").html(content);
+		$(".btn-group > .btn").click(function(e){
+			// Prevent default bootstrap behavior.
+			e.stopPropagation();
+			$(this).addClass("active").siblings().removeClass("active");
+			$(this).blur();
+		});
+		$(".vote-button").click(function(){
+			var comment = $(this).siblings(".comment").val();
+			var vote = $(this).siblings(".btn-group").children(".active").html();
+			if (!vote) {
+				$("#messages").html("Choose your vote before submitting!");
+				return;
+			}
+			vote = String.fromCharCode("0".charCodeAt(0) + vote.charCodeAt(0) - "A".charCodeAt(0));
+			exec('addVote', '&poll=' + $(this).data("id") + '&comment=' + comment + '&vote=' + vote);
+		});
+	}
+	
+	function updateOldPolls(polls) {
+		var content = "";
+		$.each(polls, function() {
+			content += '<div class="panel panel-primary">';
+			content += '<div class="panel-heading panel-title">' + this.label + ' (expired ' + SQLToDate(this.expire) + ')';
+			content += '</div>';
+			content += '<div class="panel-body">';
+			// Explanation of the poll.
+			if (this.description)
+				content += this.description.replace(/\n/g, '</br>') + '</br>';
+			// Link to the discussion topic.
+			if (this.topic)
+				content += ' <a href="' + this.topic + '">Discussion topic</a></br></br>';
+			content += this.text.replace(/\n/g, '</br>');
+			content += '</br>';
+			content += '</div>';
+			//// Add current votes.
+			// Count votes.
+			var votes = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+			var votesTotal = 0;
+			var individualVotes = '<div class="panel panel-primary" style="margin-top:10px;"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse' + this.ID + '">Show individual votes</a></h4></div>';
+			individualVotes += '<div id="collapse' + this.ID + '" class="panel-collapse collapse"><div class="panel-body">';
+			$.each(this.votes, function() {
+				votes[this.vote]++;
+				votesTotal++;
+				individualVotes += String.fromCharCode("A".charCodeAt(0) + (this.vote - 0));
+				if (this.comment != '')
+					individualVotes += ': ' + this.comment;
+				if (login == "Approver")
+					individualVotes += ' (' + this.voter + ')';
+				individualVotes += '</br>';	
+			});
+			individualVotes += '</div></div></div>';
+			// Generate the string.
+			var voteString = '';
+			for (var i = 0; i < this.type; i++) {
+				voteString += String.fromCharCode("A".charCodeAt(0) + i) + ': ' + votes[i] + ' (';
+				if (votesTotal == 0)
+					voteString += '0';
+				else
+					voteString += Math.round(100 * votes[i] / votesTotal);
+				voteString += '%), ';
+			}
+			content += '<div class="panel-footer">' + voteString;
+			if (votesTotal > 0)
+				content += individualVotes;
+			content += '</div></div>';
+		});
+		$("#old-polls").html(content);
+	}
+</script>
+<div id="messages"></div>
+</br>
+<div id="tab-login">
+<form action="pages/login.htm" autocomplete="on" target="login-frame">
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text" value="" autocomplete="on" />
+    <label for="password">Password</label>
+	<input id="password" name="password" type="password" value="" autocomplete="on" />
+    <input type="submit" name="doLogin" value="Login" />
+</form>
+</div>
+</br>
+<div>
+    <ul class="nav nav-tabs">
+		<li class="active"><a href="#tab-current" data-toggle="tab">Current polls</a></li>
+        <li><a href="#tab-old" data-toggle="tab" id="old-poll-button">Old polls</a></li>
+    </ul>
+
+<div class="tab-content">
+<div class="tab-pane active" id="tab-current">
+	<div id="current-polls"></div>
+</div>
+<div class="tab-pane active" id="tab-old">
+	<div id="old-polls"></div>
+</div>
+</div>
+</div>
+<iframe id="login-frame" name="login-frame" style="width:0;height:0;max-height:0;display:none;"></iframe>

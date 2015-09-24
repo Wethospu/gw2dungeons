@@ -1,0 +1,516 @@
+PvE meta:
+
+Current PvE meta is based on high burst damage and active defenses, commonly referred as a glasscannon. This is bit harder to pull off than with passive defense but after 2 years lots of people have mastered stagnant content with easy and simple encounters.
+
+Trinity:
+People often criticize GW2 for having lack of trinity or any roles. They say everything is about damage and things like tanking and healing are useless. Then other people counter it by saying that GW2's trinity is based on damage, control and support. But I don't think those are actually meaningful roles in current meta.
+I think trinity in PvE is about raw damage, offensive support and defensive support. All professions can do any of these but different professions excel at different roles. For example Warrior can bring lots of offensive support while Guardian can bring defensive support. 
+
+Raw damage:
+Since raw damage can't get capped like offensive and defensive support you don't really need to focus on it.
+While everyone can bring a decent amount of raw damage the only way to reach maximum amounts is to neglect offensive and defensive support.
+
+Offensive support:
+This is primary focus in coordinated partys. To clear enemies fast and efficiently you need offensive buffs like might, fury, vulnerability and banners.
+Also using control skills to position enemies correctly for maximum damage counts as offensive support.
+
+
+Defensive support:
+This is the most important thing in hard content. If you don't have sufficient defensive tools then you won't last a long.
+Passive defenses and healing also counts but is overshadowed by active defenses like evading, blocking and blinding.
+
+Building your character:
+There are plenty of options in game to get through the content completely fine. But if you care about efficiency you have to focus on certain things.
+
+Gear:
+Your gear consists of armor, jewelry, weapon, runes and sigils. Most of these things will simply give you raw stats but there are also other things to take in consideration.
+If you take a look at possible stat options you can see that no stat affects effectiveness of control and active defenses.
+
+
+
+
+
+
+Dealing damage
+
+Damage is split to two main categories, raw damage and condition damage. Both have their own advantages and disadvantages.  In PvE, raw damage is clearly superior because of easy difficulty and simple encounter design.
+
+Time frame:
+Raw damage deals damage instantly which is a clear advantage versus damage over time of conditions. This means it takes a while until conditions reach their full damage potential, commonly referred as a ramp up time. With burst meta killing some enemies in less than 10 seconds fights may be over before you even reach your top damage output.
+Some people argue that damage over time is actually an advantage because conditions still keep doing damage even when you stop attacking. While this is true, once you stop attacking your damage output starts to ramp down which means you have to ramp it up again reducing total damage.
+
+Stat allocation:
+Direct damage needs power, precision and ferocity to be effective unlike condition damage which mostly relies on condition damage but benefits from condition duration and precision too. 
+This gives condition users option to get passive defense like toughness but also prevents them from reaching same damage output as direct damage.
+Also most damage modifiers like traits, runes, sigils and vulnerability only work with direct damage. 
+
+Armor:
+Most enemies in high level dungeons have a medium armor which doesn't really benefit either of them. However there are some highly armored bosses like Lupicus.
+Unfortunately most enemies in lower level dungeons have low armor which benefits direct damage.
+
+Immunities:
+In almost every dungeon path there are enemies which take greatly reduced damage from conditions.
+Either because they are structures, have reduced condition duration, take extra direct damage or have lots of condition removal.
+
+
+
+Boons:
+
+Might:
+OFFENSE: Very useful because of big damage boost. Stack it before fight with fire fields and blast finishers. In good partys gets capped so consider changing skills or traits.
+DEFENSE: No direct effect.
+SKIPPING: No effect.
+
+Fury:
+OFFENSE: Very useful because of big damage boost. Depending on party composition may get capped very easily. In these cases consider changing skills or traits.
+DEFENSE: No direct effect.
+SKIPPING: No effect.
+
+Swiftness:
+OFFENSE: Useless because enemies don't try to run away from you. In few encounters enemies move but even then normal speed is enough.
+DEFENSE: Useless when stacking at melee. Useful when kiting enemies at range or avoiding attacks with movement (see: special section).
+SKIPPING: Very useful because moving faster gives enemies less time to attack you and allows you to outrun them.
+
+Stability:
+OFFENSE: Situational because most control attacks can be avoided with active defense. Area stability is very useful against some enemies or if your party has trouble seeing enemy ettecks.
+DEFENSE: Very situational because most attacks can be avoided with active defense or countered with a stun break. Also even if you get hit enemies usually don't have any dangerous follow-up attacks.
+SKIPPING: Very useful when enemies have control. If you get hit you get behind other players and get surrounded by enemies.
+
+Retaliation:
+OFFENSE: Usually barely any effect because most enemies hit every 3-5 seconds and even with 3k power retaliation does ~400 damage. But decent damage boost against some rapid hitting enemies if you have easy access to it.
+DEFENSE: No effect. Enemies won't stop using their attacks.
+SKIPPING: No effect. Enemies won't stop using their attacks.
+
+Regeneration:
+OFFENSE: Useful against weak hits to keep Scholar-buff.
+DEFENSE: Very weak effect. Useful against pressure.
+SKIPPING: Skips happen fast so barely any effect.
+
+Protection:
+OFFENSE: No direct benefit.
+DEFENSE: Helps against big hits. Very useful against pressure. For example veteran or elite groups with constant attacks.
+SKIPPING: Not very useful. You want to avoid all attacks to stay out of combat to keep your speed boost.
+
+Aegis:
+OFFENSE: Helps finishing channeled attacks because of automatic active defense.
+DEFENSE: Very valuable. Automatic active defense saves people when they make mistakes.
+SKIPPING: Very useful as an automatic active defense. Helps you to stay of combat and keep your speed boost.
+
+Stealth:
+OFFENSE: Useless as a mechanic because you can't surprise or fool the enemies. Thieves get damage boost from it.
+DEFENSE: Useless when stacked because area attacks will hit you anyway. In other cases useful to drop aggro and revive downed people.
+SKIPPING: Trivializes most skips allowing you to get through undetected. Very useful to save people.
+
+Auras:
+Generally very weak because they rely on getting hit frequently.
+
+Frost Aura:
+OFFENSE: No direct effect.
+DEFENSE: Small damage reduction doesn't help with big hits. Slightly useful against pressure. For example veteran or elite groups with constant attacks.
+SKIPPING: Barely any effect so don't bother unless you really need it.
+
+Fire Shield:
+OFFENSE: Barely any effect unless enemies have rapidly hitting attacks.
+DEFENSE: No effect. Enemies won't stop using their attacks.
+SKIPPING: No effect. Enemies won't stop using their attacks.
+
+Magnetic Aura:
+OFFENSE: Can be used to reflect some attacks for good damage. However, area reflects are more reliable.
+DEFENSE: Can be used to reflect some attacks to protect yourself. However, area reflects are more reliable.
+SKIPPING: Reflecting will put you in combat which makes it worse than avoiding attacks. Useful in some cases.
+
+Shocking Aura:
+Does this stun before the hit??
+OFFENSE: No direct effect.
+DEFENSE:
+
+Chaos Armor:
+OFFENSE: No offensive boons or conditions.
+DEFENSE: Very poor because you need to get hit and the end result is unreliable. Even good result is barely any use.
+SKIPPING: Useful if you can't avoid every attack. End result is useful in most cases.
+
+Invulnerability:
+OFFENSE: No direct effect.
+DEFENSE: Very powerful active defense because it works against anything.
+SKIPPING: Very powerful active defense because it works against anything.
+
+Quickness:
+OFFENSE: Very powerful damage boost when you have access to good auto attack.
+DEFENSE: Very harmful because reduces durations of many defensive skills. Pay attention when using.
+SKIPPING: Very harmful because it shortens distance of mobility skills. Never use.
+
+
+Conditions:
+
+Bleeding & Burning:
+OFFENSE: With 25 might gives a small damage boost. Keep in mind that if you have any players focusing on condition damage your conditions may lower damage output!
+DEFENSE: Offense is the best defense.
+SKIPPING: Puts you in combat with no effect. Don't use.
+
+Poison:
+OFFENSE: Deals low damage. Only a few enemies have powerful healing skills but even then won't make big difference.
+DEFENSE: Barely any effect.
+SKIPPING: Puts you in combat with no effect. Don't use.
+
+Confusion:
+OFFENSE: Most enemies attack every 3-5 seconds which results in very low damage output.
+DEFENSE: No effect. Enemies won't stop using their attacks.
+SKIPPING: Puts you in combat with no effect. Enemies won't stop using their attacks. Don't use.
+
+Blind:
+OFFENSE: Defensive skills don't require a target.
+DEFENSE: Useless against bosses because only works 10% of the time. Area blind is very useful against veteran or elite groups.
+SKIPPING: Puts you in combat which makes it worse than other active defense. Useful to save people.
+
+Fear:
+OFFENSE: Useful to force enemies to a corner to maximise damage output of wiki=FGS and some other skills.
+DEFENSE: Interrupting is the weakest form of active defense. Don't rely on it. Area fear can be useful against veteran or elite groups but avoid breaking the stack.
+SKIPPING: Puts you in combat which makes it worse than other active defense. Very useful to save people.
+
+Vulnerability:
+OFFENSE: Significant damage boost which helps whole group. Usually hard to reach 25 stacks so you should build for it.
+DEFENSE: Offense is the best defense.
+SKIPPING: Puts you in combat with no effect. Don't use.
+
+Crippled & Immobilized:
+OFFENSE: Enemies never directly run away (kite) from you. Very useful in a few special encounters.
+DEFENSE: Melee meta doesn't involve kiting. Helps if you ranging melee enemies.
+SKIPPING: Applying conditions puts you in combat so avoid using them. Can be used to help other players.
+
+Chilled:
+Movement-wise same as above.
+OFFENSE: Most enemies don't have powerful defensive or healing skills. Useful against a few enemies.
+DEFENSE: Most enemies rely on their basic attack which doesn't get affected by chill. Any other attack can usually be avoided with active defense.
+SKIPPING: Skips happen fast so enemies don't have time to recharge their skills. Don't use.
+
+Weakness:
+OFFENSE: Enemies don't dodge so endurance regeneration reduction has no effect.
+DEFENSE: Unreliable against big hits which should be avoided with active defense anyway. Very useful against pressure. For example veteran or elite enemy groups with constant attacks.
+SKIPPING: Puts you in combat and is unreliable. Don't use.
+
+
+Control:
+Generally weak interrupting puts most skills on 3 s cooldown which means they will be used instantly again. Very poor against bosses because you need decent coordination to deal with defiance stacks.
+Useful against veteran or elite groups or when moving boss to wall for better FGS damage. Enemies don't dodge or move much so daze, stun and knockdown work similarly.
+
+Daze, stun & knockdown:
+OFFENSE: Very situational because most enemies don't have powerful defensive skills.
+DEFENSE: Useful when bursting bosses down fast to prevent a powerful attack. In other cases usually harmful because people waste their active defense on an interrupt attack which will only get a 3s cooldown. Area control is useful against veteran or elite groups.
+SKIPPING: Very situational. Can be used to save someone in trouble.
+
+Launch and knockback:
+OFFENSE: Harmful if pushing enemy out of stack so better to use only for removing defiance stacks. Very situational because most enemies don't have powerful defensive skills.
+DEFENSE: Same as with other control skills.
+SKIPPING: Same as with other control skills.
+
+Pull:
+OFFENSE: Same as with other control skills. Additionally allows you to pull enemies in some cases.
+DEFENSE: Same as with other control skills.
+SKIPPING: Useful to save other people because you very likely get enemy aggro.
+
+Float & Sink (underwater):
+OFFENSE: Ignores defiance so very powerful against underwater bosses.
+DEFENSE: Ignores defiance so very powerful against underwater bosses.
+SKIPPING: Useful to save other people.
+
+
+
+
+List of PvE and dungeon related terms:
+
+Zerk: Refers to berserker armor set. Usually indicates a glass cannon (high damage) build.
+Ping gear: A way to gearcheck. Means you should ping your armor and trinkets on the chat (shift + click) so group can verify you meet their requirements.
+Skip: Means ignoring and running through a group or groups of veteran or elite enemies.
+
+
+
+[SIZE=1]Last edit 17.04.2013.[/SIZE]
+If you just have experience with normal-PvE enemies your first experience in dungeons can be extremely devastating. Goal of this guide is to give you as smooth crashing as possible.
+First of all, read the wiki-page for [URL="http://wiki.guildwars2.com/wiki/Dungeon"]dungeons[/URL] and [URL="http://wiki.guildwars2.com/wiki/Fractals_of_the_Mists"] fractals[/URL]!
+Dungeon-specific guides you can check [URL="http://guildwars.incgamers.com/forums/showthread.php?509046"]here[/URL].
+Please ask if you have any questions/concerns. It's quite hard for me to know how new players see dungeons.
+
+
+[B][SIZE=5]Prepare your character[/SIZE][/B]
+
+Level up
+[INDENT]
+If you are playing your first character I seriously suggest reaching level 80 first. This gives you time to learn the game. You get downscaled in lower level dungeons but additional traits and access to rare/exotic gear make a difference. Also being a level 80 helps finding a group easier.[/INDENT]
+
+Gear up
+[INDENT]
+Get best gear you can afford from Trading Post (or craft). Compare different options and pick suitable one for your budget (like level 80 rare, level 78 exotic or level 80 exotic).
+At first glance amount of different options may seem devastating ([URL="http://guildwars.incgamers.com/wp-content/uploads/2013/04/UpgradesGW2April2013.png"]image[/URL] of different options by Gorani). Try think what stats you want to focus on to narrow choices down (do you need more health/armor? do you focus on raw damage/condition damage?).
+If you are completely clueless and have no idea what you are doing I suggest getting level 80 rares with Knight-prefix (toughness, power, precision) with orbs of choice.
+
+Also it is good to carry different weapons with you. This gives variety and allows you to experiment if you run into problems (like some situations greatly benefit from anti-projectile skills). Most importantly have at least one ranged and one melee weapon because there are some situations which greatly favor other one.[/INDENT]
+
+Build up
+[INDENT]
+Your build is also important. Try focus on party-wide skills, damage and active defenses (evades, block). Scroll down for more detail about game mechanics.[/INDENT]
+
+Buff up
+[INDENT]
+You can use food consumables and "other" consumables (potions, oils, sharpening stones) simultaneously.
+Get best food and "other" consumables you can afford from Trading Post. Simple stat-buff or life-steal on critical are good options for food. Get different potions against different enemies but don't forget stone/oil for other situations.
+PvE consumables can not be bought from Trading Post. Instead there are NPC's scattered all over the world. ([URL="http://dulfy.net/2013/01/16/gw2-useful-and-fun-consumables-guide"]Dulfy has useful guide[/URL]) Quite many won't work on dungeons!
+[/INDENT]
+
+
+[B][SIZE=5]Prepare yourself[/SIZE][/B]
+[INDENT]
+If you going to join random party you really should read text guides and/or watch videos before-hand. You want as smooth run as possible because most partys disperse after few failures (or simply kick you). Also you can't rely them to guide you properly (or at all).
+This site has text guides but feel free to use your favorite search engine to look up for other sources (videos).
+If you are going with friends it can be extremely fun to figure stuff by yourselves.
+[/INDENT]
+
+
+[B][SIZE=5]Finding a group[/SIZE][/B]
+
+Where to get people
+[INDENT]
+Finding a group can be extremely easy or hard. You have 3 different ways to get party members. Most importantly use your contacts and try get guildies and friends to join you! 
+If you can't fill your group your best bet is to post on lfg-site ([url]http://gw2lfg.com/[/url]). If even this fails your only option is to start spamming "lfg" in Lions Arch or in dungeon entrance.[/INDENT]
+
+Joining existing parties
+[INDENT]
+If you want to join an existing party you need to be aware of its requirements. Parties can be looking only level 80 characters, only character with exotic/ascended clear, only players with previous experience or specific classes. If you don't meet their requirements your options are talking your way in or lying. If you lack gear, level or class you can try make it up with your experience. If you lack experience you can try make it up with gear and willingness to listen. "Experienced" people aren't usually that good so if you have read guides/watched videos you can quite easily claim that you are "pro".[/INDENT]
+
+
+[B][SIZE=5]On the run[/SIZE][/B]
+
+Calling targets
+[INDENT]
+Calling targets is a powerful tool because it allows your party kill an enemy faster which reduces enemy pressure (and ensures progress). Often partys don't use because it's not needed. However if your party has issues you should start calling targets. Sometimes 2-3 people call targets which confuses everyone so decide dedicated caller if needed.
+[/INDENT]
+
+Skipping
+[INDENT]
+If you are in a random group you will very likely heard word "skip" (or just see people running past enemies). People do this because running is often easier and faster while killing has poor rewards. This is often very chaotic and you can expect zero support from your party (if you get downed no one comes for you). So be ready to equip different weapons/utilities on fly if party suddenly starts running.
+If you want to skip you should discuss it with your party before running in to make sure everyone is ready. When you get more experienced you should try to make sure that everyone makes it. If one guy dies and resurrects at a waypoint, ask if he needs help. Waiting for one guy to make it can take much longer than if you had killed the enemies.
+[/INDENT]
+
+Exploiting
+[INDENT]
+Exploiting bosses is currently very popular. You may notice people jumping to weird places while bosses just helplessly stand still. This can put you in extremely tricky situation if you want to do it normally. If your actions make it harder for your party you risk getting kicked. If possible you should try to learn these encounters normally (usually faster).
+[/INDENT]
+
+Pulling
+[INDENT]
+Pulling has two possible meanings. You can pull entire groups to choke-points for better area-damage. However more often it's used to split enemy groups so you don't have to face so many enemies at same time. Enemies often have different leash-ranges/areas (when they start running back). Hit one enemy from max range, run back and hope that only few of them follow/remain!
+[/INDENT]
+
+Reviving
+[INDENT]
+When people get downed it should be your top priority to get them up. Whether you try to revive or rally them is situational. If there are any low targets you should try to kill them, otherwise try to revive. If you get downed try to tag low health targets for quick rally!
+If you get defeated you can't resurrect at a waypoint while [b]any[/b] party-members are in combat. Most of the time you should wait for resurrection. If you are in a bad spot (like middle of enemies) you may have to go back to a waypoint.
+In Fractals there are no waypoints. Instead there are automatically updated checkpoints. If whole party dies you can resurrect at latest checkpoint.
+[/INDENT]
+
+Wiping
+[INDENT]
+Eventually you will face the inevitable and see your whole party eating dirt on floor. Many groups tend to just mindlessly retry and retry until they get frustrated (and quit). You should try to analyze what went wrong. Talk with your party, use combat log and just generally try to figure out what got you killed. If you think there's a issue inform your party (be polite, generally people don't like being told that they suck) and try to work on it.
+[/INDENT]
+
+
+[B][SIZE=5]Game mechanics[/SIZE][/B]
+The way game and dungeons are built favor some mechanics. It is important to know which mechanics to focus if you want to be effective. If you lack basic knowledge (what Conditions or Boons check out [URL="http://wiki.guildwars2.com/"]wiki[/URL] for relevant articles.
+
+Damage versus Defense
+[INDENT]
+Most important thing to realize is that higher damage also means better survivability. Faster you kill enemies, less time they have to hurt you. However, it's not that simple. You need to have enough defense to survive, if you die all the time you are not dealing any damage. Also if your party-mates deal low damage fights may last longer than expected!
+But it's good to keep in mind that higher damage means faster clear times which means higher reward/time.
+Point is, build as offensively as you can, keep just enough defense to survive (needed defense gets lower and lower when you get better). If you find surviving easy get more damage and vice versa (optimal if you have two armor-sets). Dungeons have been soloed on glass-cannon (minimal defense) builds so it is definitely possible.
+[/INDENT]
+
+Raw damage versus Condition damage
+[INDENT]
+Raw damage is easier, has less risks and often even better than Conditions. First of all, raw damage has no caps, if enemy hits Condition-cap you aren't dealing any more damage. Also Conditions won't work against Structures and some enemies have immunities/dispels. Finally raw damage benefits from more sources (more stats, Vulnerability).
+Condition-build works and can deal major damage but you need to be aware of its limitations.
+[/INDENT]
+
+Anti-projectile skills
+[INDENT]
+These are one of the strongest type of skills in the game (against ranged enemies). Enemies are dumb which means one skill can negate lots of damage (or even deal it back in case of Reflection).
+If your class has access to AoE anti-projectile skills remember to use them in right spots (Reflections can deal 100k++ damage in some cases).
+[/INDENT]
+
+Avoiding damage versus healing
+[INDENT]
+Generally monsters hit hard in dungeons. This means avoiding damage (evades, blocks, anti-projectile, control) is much more effective than passive tanking/healing (Regeneration, Protection, Toughness, heals).
+If you have issues with surviving try get access to Vigor, blocks, etc. Bunker-builds work poorly and just slowdown the group.
+It's also good to realize that blocks and evades have a difference. Some attacks can't be blocked (also some attacks can't be evaded either). Single-blocks are weak when damage comes in multiple (small) packets like ticking AoEs, evading avoids all.
+[/INDENT]
+
+Unshakable & Defiant (on bosses)
+[INDENT]  
+Most bosses have Unshakable. This means Blind only works 10% of time, Weakness/Vulnerability expire twice as fast and interrupting grants Defiant-stacks. Defiant-stacks prevent interrupts. You need to burn down stacks by wasting interrupts. Once stacks are down boss can again be interrupted once.
+Obviously this severely hurts Blind- and control-skills. Interrupting is still useful (self-heals, extreme attacks) but it requires good coordination. Also you may have to consider whether Weakness/Vulnerability are worth of it (mainly utilities).
+[/INDENT]
+
+Summons, minions and pets
+[INDENT]
+While these are great to soak up damage you need to be aware of their biggest issue. There are many cases when you want to avoid enemy attention when sneaking through (skipping) or trying fight a small part of a big group. Artificial intelligence tends to rush in and aggro everything from left to right.
+Rangers can't get rid of their pet so they need to be extra aware and control it accordingly.
+[/INDENT]
+
+
+[B][SIZE=5]Using my other guides[/SIZE][/B]
+If for some reason you have decided to use my other [URL="http://guildwars.incgamers.com/forums/showthread.php?509046"]guides[/URL] this section might be helpful.
+
+Explaining terms used on skill listing (I'm still experimenting so may not be accurate).
+[INDENT]
+Damage: Listed damages are based how much damage my Warrior took (with potion 8-10% damage reduction and with no extra vitality/toughness). Fatal > 200%, Extreme > 75%, very high > 50%, high > 25%, medium > 10%, low > 1%, very low > 0%. These values of course vary based on your health and armor.
+Melee: Short-range cone-attack (hits 3 targets). Some might be single-target (please let me know).
+Cone: Medium-range cone-attack.
+Ranged: Ranged attack which doesn't get affected by anti-projectile skills. Usually instant travel time. Requires line of sight.
+Projectile: Ranged attack which gets affected by anti-projectile skills. Projectiles have various travel times. Zig-zagging/side-stepping can be used to avoid slower ones. Anti-projectile skills behave bit differently and there are some exceptions (please let me know). Requires line of sight.
+"Some text": Explains animation (etc) of the attack to help you recognize it.
+Dash/Leap: Mobile melee-skill. Single-target by default.
+Single-target: Used with "Melee" to specify that attack hits just one target.
+Bouncing: Used with "Projectile" to specify that projectile jumps to nearby targets. Bouncing attacks can be extremely dangerous if it keeps bouncing between two targets.
+Returning: Used with "Projectile" to specify that projectile returns to caster after reaching certain range.
+Homing: Used with "Projectile" to specify that projectile follows moving targets.
+Trap: AoE which triggers when walked on.
+Numbered attacks: Attacks-chained are listed with increased numbers (like Chop (1), Double Chop (2)). Often enemies continue chain if previous attack hits, in some cases they keep going regardless of success.
+Basic attack: Means most commonly used attack.
+PBAoE: Point-Blank Area of Effect. Centered at caster.
+AoE: Area of Effect. Effect applies on specific area and may hit multiple targets.
+Ticking: Used with "AoE" to specify that AoE hits over time.
+Channeled: Attack lasts over time and needs to be casted.
+Aura: Ticking PBAoE which follows caster.
+[/INDENT]
+
+
+name=Meta
+Meta refers to builds which are currently considered the best for general gameplay. Meta has been quite stable for a long time but balance updates may alter it little. You don't necessarily have to use these builds to complete dungeons or fractals but lots of groups require these.
+Lots of people think that people who ask for zerkers, meta builds or experienced people are elitist and toxic for the community. The truth is that different people have different preferences. When you do a dungeon for the first time you don't mind if people make mistakes and it takes a long time. But when you have ran it dozens of times you don't want to repeat the same mistakes every time.
+Dungeons also give a good amount of gold so lots of people farm them for gold. This means people use high damage builds to get through the dungeon fast. With high damage enemies die fast so you don't need to worry about defense that much.
+Dungeons are also quite easy which makes any kind of passive defense useless. Dodging and active defenses are enough to deal with all situations.
+To fit these groups use armor and runes with power, precision and ferocity with power based weapons and utilities. See builds section for more info.
+To maximise your damage stack might, fury, vulnerability and other bonuses while performing a good skill rotation.
+
+path=Gameplay
+name=Gameplay
+This section explains some commonly used gameplay elements in dungeons and fractals. Main focus is on finishing the content fast but there are useful for any kind of groups.
+To clear a dungeon or fractal fast you need three things: high damage, stay alive and high mobility.
+To deal high damage you need a good build, decent execution and some teamplay. Build and skill rotations can be checked from profession guides.
+To stay alive you need to correctly use active defenses like dodges, blocks or control. Defensive gear is not needed but it helps you to stay alive when starting.
+To move fast you need to keep swiftness up when moving and skip optional enemies with help of stealth and defensive skills.
+
+Name=Stacking might, fury and vulnerability
+Might, fury and vulnerability significantly increase damage output which allows your team to burst down enemies faster.
+Some stacks can be acquired passively by standard weapon rotations and traits but you need planning and teamwork to reach the maximum output. Different professions excel at different things so you need to vary your gameplay based on team composition.
+Using a blast finisher on a fire field causes 3 area might stacks for 20 seconds. Blasting is split to pre-combat blasting and in-combat blasting. On short fights you only need pre-combat blasting but its effect reduces longer the fight lasts.
+You need up to 9 blast finishers to reach 25 stacks but other might sources reduce the amount. Most professions can create a fire field but Elementalists have the best access. All professions have blast finishers but Elementalists have the best access.
+
+name=Stacking stealth and swiftness
+Your move speed is determined by your slowest group member. Some professions also have better mobility than others so it's important to help others. Otherwise you have wait for them all the time.
+
+
+path=Roles
+name=Roles
+Quick reference for what's expected from each profession. For more detailed info check profession guides.
+All professions are expected to have either berserker or assassin gear.
+
+
+name=Elementalist
+Elementalists have the highest damage output and can stack lots of might which makes them the best damage dealer in the game.
+With trait wiki=Persisting_Flames blasting also gives fury which allows you to cap it for the entire team
+Use wiki=Frost_Bow for massive burst damage.
+
+name=Warrior
+Medicore damage but high passive defense. Excels at offensive support and ease of play. Generally one warrior per group is enough.
+Warriors have mediocre damage but they have powerful unique bonuses and can stack lots of might if needed. Generally one warrior per group is enough.
+Use wiki=Banner_of_Discipline and wiki=Banner_of_Strength to buff damage of your entire team. Same banners won't stack so coordinate usage when with multiple warriors.
+If your team lacks might you can use Phalanx Strength (PS) build to generate lots of might for the entire group. This reduces your own damage a lot so only use it when needed.
+Use Greatsword and Axe/Mace for high damage output and vulnerability.
+Use blast finishers from banners, warhorn and longbow to stack might and stealth when needed.
+
+name=Ranger
+Rangers have mediocre damage but have access to an unique bonus. When played correctly with a melee build they can replace a warrior.
+However rangers often get kicked from groups because of their bad reputation. It's a good idea to let your group know that you have a meta build.
+Use wiki=Spotter
+Stay on melee with rest of the group and use pets with damage.
+
+name=Necromancer
+Necromancers have mediocre damage but poor support options. Generally speaking they are the weakest profession in PvE.
+They often kicked from groups but it's good to keep in mind that properly played they deal as much as damage as warriors.
+
+name=Engineer
+Engineers have access to mediocre damage but can stack lots of vulnerability and might with help of the team. They are very versatile and powerful when played properly.
+However engineers often get kicked from groups because most players don't realize their strength. You should try to educate them.
+
+name=Thief
+Thiefs have access to high damage but weak offensive support.
+
+name=Guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_Absorption to reflect and absorb projectiles
+Use wiki=Virtue_of_Courage and wiki="Retreat" to give area aegis
+Use wiki="Stand_Your_Ground!" and wiki=Hallowed_Ground to give area stability
+
+
+
+
+
+
+
+
+#####################################################################################################################################
+
+#Name=Defense
+#alt=fighting 3
+#path=profession
+#attack=Ranger
+
+#note=Skill wiki=Call_of_the_Wild gives both might and fury which makes it very valuable unless fury is capped
+
+#attack=Thief
+#note=Thiefs can't stack might on their own. However they have lots of blast finishers which can be used before combat.
+
+#attack=Warrior
+#note=Warriors can generate lots of might with traits and utilities with loss of some personal damage.
+#note=Easiest way to blast fire fields is to use wiki=Banner_of_Discipline or wiki=Banner_of_Strength on it, grab the banner and then use wiki=Plant_Banner.
+#note=Additionally you can temporarily change weapons and use wiki=Call_to_Arms and wiki=Arcing_Arrow.
+#note=Skill wiki="For_Great_Justice" gives both might and fury which makes it very valuable unless both already capped
+
+#attack=Mesmers
+#note=Mesmers can't stack might on their own. They also have very limited access to blast finishers.
+
+#attack=Engineers
+#note=Engineers can stack might on their own. They got decent access to fire fields and blast finishers.
+
+#attack=Necromancers
+#note=Necromancers can't stack might on their own. They also have very limited access to blast finishers.
+
+#####################################################################################################################################
+
+#Name=Defense
+#alt=fighting 3
+#path=profession
+
+#attack=What and why?
+#note=Defense can be split to active and passive defense. Active defense is about using short-duration actions to completely avoid an attack while passive defense is about reducing damage taken.
+#note=Active defense is very powerful in dungeons because enemies hit hard but not very often. With some experience about your profession and the enemies you can easily avoid most of the damage.
+#note=Active defense includes dodging, evading skills, blocking skills, aegis, vigor, blind, positioning and interrupts.
+#note=Passive defense is not often wanted in dungeons because defensive gear reduces your damage output. However it doesn't really require any experience so some passive defense can be useful for newer players.
+#note=Passive defense includes toughness, protection, frost aura, weakness and healing skills.
+#note=Passive defense can be very powerful if you stack multiple sources of passive defense. Even biggest hits only tickle when you take 90% less damage than damage focused players.
+
+#attack=Positioning
+#Lots of attacks can be avoided by movement and proper positioning. This helps saving active defenses for other attacks. Good examples are soloing youtube=VdA9xfLsF2Y|Spider_Queen and youtube=QwmEB652Py0|uncategorized_champions without dodging.
+#Delayed area effects often have enough time to walk out of them. This is very easy to do and should be mastered as soon as possible.
+#Lots of area effects don't deal much damage so you can just move out of them. You will take some damage so it's a trade off.
+#Some melee attacks can be avoided by circling the enemy. This is quite easy to do but can be disorienting because of the constant movement.
+#Some melee attacks can be avoided by moving through or away from the enemy. This requires precise timing and is hard to master.
+#Lots of ranged attacks can be avoided by strafing at high range. Simple random zig zagging works very well and is very easy to do. However if you want to avoid all damage you need good timing.
+#Most melee attacks can be avoided by staying at max melee range. Enemies' melee attacks often have slightly shorter range than yours. By staying at your maximum range you can keep attacking without getting hit yourself. Idea is to kite away from the enemy by moving backwards or sideways. It takes some practice to stay at correct range. Keep the enemy crippled.
+
+
+#attack=Warrior
+#note=Lots of in-build passive defense because of high health, armor and wiki=Healing_Signet. Easiest profession to survive for beginners.
+#note=Decent personal active defences with evade on wiki=Whirlwind_Attack and block on wiki=Riposte.
+
+
+
+

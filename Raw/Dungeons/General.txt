@@ -1,0 +1,584 @@
+init=General|General|General|General
+init=Meta|General|Meta|Meta
+init=Combat|General|Combat|Combat
+init=Skipping|General|Skipping|Skipping
+init=Defense|General|Defense|Defense
+init=Combos|General|Combos|Combos
+init=Other|General|Other|Other
+init=Glossary|General|Glossary|Glossary
+
+path=General
+name=What's this?
+If you are interested of dungeon or fractals then you are in a good place. Whether you have just started, have already few runs behind or consider yourself a pro this site should be useful for you.
+If you have just started you should keep reading this page as it will contain general information about dungeons or fractals.
+If you already know the basics feel free to skip to actual guides or other sections.
+If you consider yourself a pro you are probably most interested of the record section and information about boss attacks.
+
+name=Dungeons and fractals
+Both dungeons and fractals are instanced content for groups of 5 players. They are much harder than most stuff you have faced in open world PvE. If you have already tried them you probably noticed how even weakest enemies take you down very easily.
+However lots of people consider dungeons very easy which they are when you are properly geared, know the encounters and have some basic information about your profession. Goal of this site is to give you information about the encounters and direct you to the various dungeon and fractal related resources.
+For a quick overview you should check out wiki=Dungeons and wiki=Fractals on the official wiki. For various dungeon and fractal related questions you should check link=https://forum-en.guildwars2.com/forum/game/dungeons/Dungeon-Forum-FAQ/first|Dungeon_Forum_FAQ on the official forum. After reading these you should have a general ideal what dungeons and fractals are about.
+
+
+name=Learning to play
+The first step for smooth dungeon runs is learn to play the game and especially learn your profession. Player called Finder has made a link=http://tinyurl.com/GW2combatguide|basic_combat_guide for this. It tells you how to tweak your settings and explains various game mechanics. Also remember to check out the official wiki for any further information.
+There are very good guides for every profession. For links check local=Meta which include information about efficient playstyle and builds. Of course it's up to you how you are going to use that info.
+
+name=Gearing up
+If you are at below level 80 you should use only green masterwork gear. To stay efficient you need to update your gear often so buying rares or exotics would get very expensive. Either craft or buy your gear from the trading post.
+If you are level 80 you should get either level 80 rare or exotic armor depending on your amount of gold. If you have already ran dungeons you can also get gear with dungeon tokens. Weapon has the biggest impact on your efficiency so focus on getting those first.
+Since ascended trinkets are account bound you can freely move them between your characters. Check from wiki=List_of_Ascended_equipment|wiki if you can get any of them so you don't have to waste gold on exotic trinkets. You may have to eventually replace exotic trinkets because ascended trinkets are needed for higher level of fractals.
+Runes for meta builds are used a lot so they are expensive. If you can't afford them consider using alternatives like Ruby Orbs or Runes of Eagle / Hoelbrak.
+If you are running damage oriented builds it's an option to replace some pieces with more defensive captain, cavalier, knight, soldier or valkyrie gear. They are not needed but can be useful while learning. However this always wastes your resources (gold) unless you have previously acquired them.
+
+name=Knowing the encounters
+With good general information and proper gear you are more than ready to try dungeons or fractals on your own, especially if you have some friends. However if you want to join experience groups you should at least have a general understanding of the encounters.
+For written guides this site should give you to the best results. If you prefer videos you should check out link=https://www.youtube.com/playlist?list=PL-SgPU6dqb0B7vouPNA1syia6J9d9h1EV|dungeon_guides from Banter Bill and link=http://www.youtube.com/playlist?list=PLtmrC91LQfu5-hlj9Mh2dfwqN57qE3VXU|fractal_guides from [KING].
+
+name=Finding a group
+For best results you should start playing with friends or guildies. Dungeons and fractals can be very frustrating in the beginning if you don't end up with nice groups. However more experienced you become, more easily you blend in and can get to smoother runs.
+To find a group with strangers open the wiki=Looking_For_Group panel. Depending on time of the day there may be suitable groups available. If not just start your own group with a message like "first time, all welcome, help appreciated".
+Lots of groups have some sort of a requirement. It's important to read group descriptions before joining in. If you don't meet their expectations there is a very high risk of getting kicked during the run.
+For more info check link=https://forum-en.guildwars2.com/forum/game/dungeons/Dungeon-Forum-FAQ/first|Dungeon_Forum_FAQ if you haven't already. Also see local=Glossary if you need to check any terms.
+
+name=Links
+link=https://forum-en.guildwars2.com/forum/game/dungeons|<b>Official_dungeon_forums:</b> Best place to get dungeon related advice and help, as long as you stay polite. Also a good place to get in a fight if you are looking for a trouble.
+link=https://forum-en.guildwars2.com/forum/professions|<b>Official_profession_forums:</b>  Consider staying away. It will be hard to detect which answers are good, which PvP/WvW oriented and which just really bad.
+link=http://www.reddit.com/r/Guildwars2/|<b>GW2_reddit:</b>  Usually results in a good advice but your question may get buried really fast under fluff topics.
+link=http://www.dtguilds.com/forum/m/6563292/viewforum/4280860|<b>DnT_forums:</b>  Good place for high end discussion and theorycrafting. However official dungeon forum is much more active so it's more suitable for questions.
+link=http://metabattle.com/wiki/MetaBattle_Wiki|<b>Metabattle:</b>  GW2 version of PvX-wiki. Good place to check meta and alternative builds.
+link=http://gw2skills.net|<b>Build_editor:</b>  A site to create and share builds.
+
+####################################################################################################################################################################################
+
+path=Meta
+name=What Does 'Meta' Mean?
+When players refer to the "meta" they can mean multiple things. In regards to individual player character builds, they are referring to builds that are understood by the community to be optimal by providing terrific support capabilities along with good DPS. In regards to team compositions, they are referring to a composition that is generally accepted to be the one that provides the most efficient way to complete a dungeon.
+These are not definite concepts, but an ever-changing zeitgeist based on the most up to date build ideas and strategies. What is "meta" one day could easily be outside the meta the next simply as a result of changing tastes and approaches. Additionally, there are multiple metas. There is a meta for record runs, a meta for casual daily speed clears and a meta for pick up groups. These all vary from each in important ways, but in some respect they are each "meta".
+For example, in a record run meta team Mesmer is often favored over Guardian due to access to Portal despite having lower defensive utility; whereas in a daily speed clear team Guardian is preferred for exactly the same reason. In a record run speed is preferred to smoothness since the run can be reset in case of a mistake, in a daily run a little speed is worth sacrificing for a smooth run. As a result, it is important to know when someone refers to a meta, which meta he is actually discussing.
+
+name=What Is The Meta?
+The PvE speed run meta is centered around a few pillar concepts. The professions can change as balance patches and community tastes evolve, but the roles will remain.
+Might, Fury and Vulnerability Stacking: Party-wide Might and Fury stacking is an enormous DPS boost and the foundation of every party composition theorycraft. A party composition that does not have a reliable plan for achieving and maintaining 25 Might stacks and 100% Fury uptime is to be considered suboptimal with no further consideration needed.  The same can almost be said for Vulnerability as the effect is quite powerful, but achieving 25 Vulnerability for the duration of a boss fight is almost impossible so it is regarded as one area where "good enough is good enough."
+Projectile Defenses: Whereas bosses and mobs with melee attacks can be dodged or blinded, projectile attacks are much harder to defend against without specific planning. In almost every dungeon path or fractal map there are projectile attacks that if not accounted for will decimate a party. Thus, every meta party includes one member who is responsible for projectile defenses as well as the other players bringing some additional defenses when even more are required. This is also a foundational concept: any team without the capability of blocking or reflecting projectiles would be considered sub-optimal summarily.
+Stealth: Stealth is not a requirement for completion of any instance, but utilizing stealth to bypass otherwise tedious or troublesome trash mobs is an immense time saver. The completion time of dungeons can be reduced substantially by using stealth, but even more than reducing completion time stealth reduces the overall difficulty of dungeons. Like the others, stealth is a pillar concept and as stealth is valuable in nearly every instance, it is considered non-negotiable in team composition.
+Active Defense: While all content can be beaten with any gear type, the most efficient method (aka the meta) is to utilize Berserker stats enabled by active defenses. The community has discovered that actively mitigating damage with dodges, blocks, blinds and positioning is a superior strategy than using passive defenses (higher armor and healing) to deal with enemy attacks. Utilizing active defenses allows players to wear gear prefixes that eschew defensive stats in order to maximize their offensive capabilities.
+These core concepts have been implemented in different ways by the community as the game has evolved but they are now and will remain the basis of every "meta" group moving forward.
+
+name=Profession Roles Within The Meta
+Each profession has a role within the meta. Many of the roles overlap and some professions can perform the same role better than another, and this is reflected in the individual profession's perceived value in the community. At the time of this writing, Elementalist is valued extremely highly and Necromancer valued extremely lowly, for example. The is a reflection of the utility and role-fulfillment each professional is capable of much more so than simply a ranking of their DPS.
+
+name=Elementalist
+Primary Fury provider with Persisting Flames. Also very strong Might generation capabilities. On demand blast finishers to assist other professions in their roles. Can provide projectile defenses. Conjured weapons provide a non-standard unique DPS boost for the party and powerful crowd control abilities. Elementalist also contributes to group Swiftness. Extremely high personal DPS.
+Guides: link=http://www.dtguilds.com/forum/m/6563292/viewthread/12515254|Build_guide, link=http://dulfy.net/2014/07/11/gw2-elementalist-pve-class-guide-by-haviz-and-zelyhn/|Profession_guide.
+Videos: link=https://www.youtube.com/channel/UCVadvC5qJzP9umIHOyNjxUg/videos|Abe, link=https://www.youtube.com/user/joniis93/videos|Particlar, link=https://www.youtube.com/channel/UCb3FhPCjdSmuMgwHGi0I-iw/videos|Goku.
+
+name=Engineer
+Engineer can produce the most sustained Vulnerability stacks in the game. Additionally they are one of the few professions capable of creating a smoke field to generate Stealth. The same smoke field can assist defensively by blinding trash mobs. They also have access to many blast finishers to assist in overall utility. Lastly they have strong condition cleansing capabilities. Engineer can also provide Might generation for the party.  A skilled Engineer is an effective Jack of All Trades for a dungeon party. Very high personal DPS.
+Guides: link=http://www.dtguilds.com/forum/m/6563292/viewthread/15457607|Build_guide, link=http://dulfy.net/2014/10/24/gw2-engineer-class-guide-by-doomblade-and-element/|Profession_guide, link=http://www.wolfineer.com/the-engineer-handbook/|Alternative_guide.
+Videos: link=https://www.youtube.com/channel/UCP9VaQTvRQD_qW20WvjIZhw|Tom.
+
+name=Guardian
+Guardian is primarily a defensive support class. They have among the best sustained projectile defenses, Stability and condition cleansing. Additionally, they can provide Aegis which is a critical active defense for fights with powerful one hit kill type attacks. Lower tier personal DPS.
+Guides: link=http://www.dtguilds.com/forum/m/6563292/viewthread/12501056|Build_guide, link=http://dulfy.net/2014/08/25/gw2-guardian-pve-class-guide-by-bordy/|Profession_guide.
+
+name=Mesmer
+Mesmer is also a defensive support class primarily. They are also capable of very good projectile defense and condition cleanse. They also provide Stability and very powerful crowd control capabilities. The elite skill Time Warp is an offensive buffing skill for the party which is very highly prized. The lack of an on demand blast finisher and well as the incapability of providing useful combo field contributes to the preference for Guardian in many parties, however the skill Portal can allow for advanced groups to save significant completion time in the dungeon. Lower tier personal DPS.
+Guides: link=http://www.dtguilds.com/forum/m/6563292/viewthread/12497837|Build_guide, link=http://dulfy.net/2014/07/21/gw2-mesmer-pve-class-guide-by-sanderinoa/|Profession_guide.
+Videos: link=https://www.youtube.com/user/sanderinoa/videos|sanderinoa, link=https://www.youtube.com/user/JeremDefineHC/playlists|Jerem, link=https://www.youtube.com/playlist?list=PLBs7VWbw3f7Gk4JCpIOrUOXgYwfKQYLR5|Frifox, link=https://www.youtube.com/user/TheSublimatio1/videos|sublimatio.
+
+name=Necromancer
+Necromancer is second only to Engineer in Vulnerability production and can also bring Blinds for defense against trash mobs. However, they lack blast finishers and group buffing capabilities, and the combo fields they generate are not highly prized currently. Necromancer is capable of cleansing conditions for the group as well as crowd control and enemy boon stripping. Lowest personal DPS.
+Guides: link=http://www.dtguilds.com/forum/m/6563292/viewthread/12498059|Build_guide, link=http://dulfy.net/2014/06/30/gw2-necromancer-pve-guide-by-spoj/|Profession_guide.
+Videos: link=https://www.youtube.com/user/TheSublimatio1/videos|sublimatio.
+
+name=Ranger
+Ranger is an offensive support class with excellent unique DPS buffs like Spotter and Frost Spirit. Additionally, each Ranger pet can bring unique group buffing abilities like Might and Fury generation. Thanks to Warhorn, Ranger is excellent at helping group Fury and Swiftness uptime. With offhand Axe, they can provide minor projectile defenses as well.  Their best healing skill is a Water field which can be blasted for group healing and also cures a condition. Upper middle tier personal DPS.
+Guides: link=http://www.dtguilds.com/forum/m/6563292/viewthread/12497757|Build_guide, link=http://dulfy.net/2014/07/05/gw2-ranger-pve-class-guide-by-lorek-and-cell/|Profession_guide.
+
+name=Thief
+Thief is the master of Stealth as they are capable of generating permanent stealth for a party in dungeons, which makes them extremely useful. Additionally, they are also the best profession for generating Blinds to defend against trash mobs. Thanks to Smokescreen they are able to contribute to projectile defense. Their Shortbow skill Cluster Bomb is an on demand spammable blast finisher which gives them to ability to contribute by blasting other professions' fields in order to maximize their value. Extremely high personal DPS.
+Guides: link=http://www.dtguilds.com/forum/m/6563292/viewthread/12497961|Build_guide, link=http://dulfy.net/2014/07/10/gw2-thief-pve-class-guide/|Profession_guide.
+Videos: link=https://www.youtube.com/channel/UCQ_HZQFgCzda0X-8XpEIYTQ/videos|Domm, link=http://www.twitch.tv/eco_r_i|EcoRI, link=https://www.youtube.com/channel/UCTCC_EnnHwdIlesOSv7pPHw/videos|Nexus, link=https://www.youtube.com/channel/UC24EWPHDKAMejrnXXDjPZlA/videos|Xukk.
+
+name=Warrior
+Warrior is an offensive support class, like Ranger, with excellent unique DPS boosting abilities. Thanks to Empower Allies, Banner of Strength and Banner of Discipline, they can provide unique buffs that can increase a team's DPS by almost 30%. Additionally, the trait Phalanx Strength allows Warrior to be the primary Might generator for his party, sustaining the party at the maximum 25 stacks for the duration of the battle. Out of combat their warhorn can provide group swiftness and it has an on demand blast finisher for utility. Lastly, Warrior ranks just behind Engineer and Necromancer is its ability to generate Vulnerability stacks for the group. Middle to Lower tier DPS depending on build.
+Guides: link=http://www.dtguilds.com/forum/m/6563292/viewthread/12497977|Build_guide, link=http://dulfy.net/2014/06/28/gw2-comprehensive-warrior-pve-guide-by-element/|Profession_guide, link=https://forum-en.guildwars2.com/forum/professions/warrior/DPS-guide-for-PvE-Dungeons-Soloing-More|Solo_guide.
+Videos: link=https://www.youtube.com/user/TurboDzan/videos|Nike, link=https://www.youtube.com/channel/UCAioO5TLHE6iw1yZ1j7kKCA/videos|Purple_Miku (link=http://www.twitch.tv/purpleishawt/profile|Twitch), link=https://www.youtube.com/playlist?list=PLJ5YwIolZPhBDJ0xqzZg0eIlx_6gRgNPQ|Sesshi, link=https://www.youtube.com/user/Wethospu/playlists|Wethospu.
+
+name=Conclusions
+What the exact "meta builds" and "meta team composition" is can change with each balance patch and the community preferences. However, the general roles I described will continue. When reviewing each profession's capabilities, the overarching theme of the description is what party utility they bring to the party as opposed to their personal DPS or personal defenses. As we have learned through experience, five players sharing group utility and responsibilities are exponentially more effective than five players acting independently. The best results will flow from players doing their best to maximize the group value they contribute via the pillars of the PvE meta as previously stated.
+
+####################################################################################################################################################################################
+
+path=Combat
+name=Combat
+This section explains what you should generally be doing if you want to clear enemies fast. In all cases switching weapons, traits and utilities frequently results in better performance.
+To deal lots of damage you need a high damage gear, traits and weapons, a good skill rotation and teamwork to stack might. Buffs and boons have a limited range so the whole party should stay near each other. This doesn't mean stacking on top of each other which most groups do nowadays.
+To survive you need just enough active defenses to counter enemy attacks. This includes anti projectile skills, boons, conditions and control. For more info check local=Defense section.
+
+name=Stacking
+There are 3 ways to stack: running and stacking at the enemy, stacking behind corner while stacking might and stacking behind corner while doing nothing. Most of the groups do the last one which is very slow and in some cases very risky because everyone in the party gets hit by the attacks.
+Organized groups fight most bosses on spot. They run there, stack might, use wiki=Deep_Freeze and in some cases burst the boss down before most groups would have even damaged it. Pulling enemies behind a corner is useful when you want to group up lots of enemies for better area damage but that still doesn't mean everyone would have to strictly stand at the same spot.
+However when playing with random players it's the best to go with the flow. Stack where they stack even when it rarely makes any sense. If you stand out you will get blamed in all cases. If possible try to get them stack might with combos.
+
+name=Pulling
+There are 3 reasons to pull enemies: grouping lots of ranged enemies, separating enemies and forcing a mobile enemy to corner to restrict its movement. In most cases pulling a single enemy (boss) behind a corner is pointless. Pulling can be done with a skills with pull effect or using line of sight.
+Enemies want to have a line of sight at all times. If you break the line of sight by running behind a corner they will move towards your position until they can see you. When they reach your position they will be right next to you which allows you to easily force ranged enemies to melee range.
+To pull enemies, use a slow long range projectile. With a slow projectile you can easily equip another weapon before you enter combat and move behind the corner before enemies can attack you. If enemies attack you they may put a powerful area effect on you which can kill the entire party. In these cases you should first bait the attack before running behind the corner.
+
+name=Positioning and mobility
+This may seem pointless when most parties mindlessly stack but mastering these techniques is very useful for harder content. By staying at right positions and moving properly you can prevent lots of damage. The easiest form of this is to move out of area effects or slow attacks before getting hit. Another easy way is to stay behind a boss when someone else is targeted.
+All attacks have a maximum range while few also have a minimum range. You can prevent some powerful attacks by staying that the right distance. For example all melee attacks can be prevented by staying out of melee range. You have to constantly move away from enemies because they attempt to get on range. This is often called as kiting.
+Most attacks hit further than their listed maximum range. This means that if you kite a melee enemy at bit further than melee range you can still hit it with your melee attacks. This requires some practice because the correct range is very small. Use cripple and chilled to make this easier by slowing the enemy.
+Additionally lots of melee attacks can be avoided by circling or running through the enemy. Circling is very easy to do but constant movement can be disorienting. Running through an enemy requires a precise timing and takes some time to learn because it's different for different attacks.
+Projectiles can be sidestepped at high range which can be useful in some situations. With random movement you can avoid most hits but with practise you can learn to avoid every hit.
+
+name=Summoned bundles
+So far only elementalists and warriors can summon bundles. Elementalists can conjure weapons which deal lots of damage or give mobility. Warriors can summon banners which give buffs and have some utility skills.
+Elementalists often conjure 3 different weapons: wiki=Fiery_Greatsword, wiki=Ice_Bow and wiki=Lightning_Hammer. Fiery Greatsword has a decent burst with skills wiki=Firestorm and wiki=Fiery_Whirl but is generally used for mobility during skipping. Ice Bow has huge amount of burst with wiki=Ice_Storm followed by wiki=Frost_Fang if on close range. Additionally wiki=Deep_Freeze will stun target for 5 seconds. After done, just drop the bow. Lightning Hammer shouldn't be picked up because Elementalists need it for their own damage. If you do, the basic attack chain does the most damage.
+Warriors often use 3 different banners: wiki=Banner_of_Discipline, wiki=Banner_of_Strength and in some cases wiki=Battle_Standard. To keep up the buffs from fight to fight, it's important that you help with carrying the banners. All banners also have wiki=Inspire which gives swiftness and wiki=Plant_Standard which gives a blast finisher. Additionally Banner of Discipline has wiki=Furious_Rally which gives fury. Keep this in mind if you need any of those.
+
+name=Elementalist
+Equip a staff. Use link=http://gw2skills.net/editor/?fFAQFAWnMISLDW9AmNAdEGgAQCHIyAxlyMq0bA-TxRBABXt/o8DPdELcABy7CAAwDCgS1fMTJYAgDgf/Nw3fz5nf+5nfe/+7v/+7vlC4pdVA-e|66002 with wiki=Internal_Fire|VI, wiki=Pyromancer's_Alacrity|VII, wiki=Persisting_Flames|XI, wiki=Bolt_to_the_Heart|VI, wiki=Arcane_Lightning|VII, wiki=Quick_Glyphs|III and wiki=Blasting_Staff|V.
+For healing take wiki=Arcane_Brilliance. For utilities take wiki=Arcane_Wave, wiki=Conjure_Frost_Bow and wiki=Signet_of_Fire. If you need defense take wiki=Arcane_Shield. For elite take wiki=Glyph_of_Elementals.
+Use wiki=Lava_Font, wiki=Meteor_Shower and wiki=Fireball to deal lots of damage.
+If you see a fire field before combat, equip different weapons and use skills like Eruption, Arcane Brilliance, Arcane Wave, wiki=Phoenix, wiki=Earthquake and wiki=Magnetic_Wave to blast it. If not, use a fire field found on any weapon.
+For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/12515254|Build_guide and link=http://dulfy.net/2014/07/11/gw2-elementalist-pve-class-guide-by-haviz-and-zelyhn/|Profession_guide.
+
+
+name=Engineer
+Equip a rifle. Use link=http://en.gw2skills.net/editor/?fdEQFAUlUUpWrlYxdLseNSbBNq3A6TMi2+5CEgjC-TxBEABMt/o8TPdEAcABe4BBcp6PudBA2SJYAgDghHOQ4hz6rv+6rveDP8wDP8wlCQsdVA-e|66002 with wiki=Shrapnel|II, wiki=Explosive_Powder|VII, wiki=Grenadier|XI, wiki=Precise_Sights|V, wiki=Rifle_Mod|IX, wiki=Modified_Ammunition|XI and wiki=Static_Discharge|II.
+For healing take wiki=Healing_Turret. For utilities take wiki=Flamethrower, wiki=Grenade_Kit and wiki=Elixir_Gun. If you need defense, take wiki=Elixir_R or wiki=Tool_Kit. For elite take wiki=Supply_Crate.
+You need to rotate high damage attacks on your weapon and kits to deal good damage. Use wiki=Grenade_Barrage, wiki=Napalm, wiki=Flame_Blast, wiki=Acid_Bomb, weaponswap to interrupt the leap, wiki=Blunderbuss, wiki=Jump_Shot, wiki=Freeze_Grenade, wiki=Shrapnel_Grenade and wiki=Grenade to deal lots of damage. Try to switch to appropriate kit when skills come off cooldown.
+Use wiki=Fumigate and wiki=Super_Elixir to remove conditions and wiki=Healing_Mist to break a stun.
+If you see a fire field before combat, use skills like wiki=Big_Ol'_Bomb, wiki=Rumble, wiki=Flame_Blast, wiki=Acid_Bomb to blast it. If not, create your own with a wiki=Fire_Bomb or Napalm.
+For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/15457607|Build_guide, link=http://dulfy.net/2014/10/24/gw2-engineer-class-guide-by-doomblade-and-element/|Profession_guide and link=http://www.wolfineer.com/the-engineer-handbook/|Alternative_guide.
+
+
+name=Guardian
+For dungeons equip a greatsword, a sword and a focus. Use link=http://gw2skills.net/editor/?fVAQNAR8dlsApUo9CxZI8DNR8Ql7Y8i2+BtQlBQDA-TxRBABXt/o8DPdPLcAEy7KCAwDLgS1fMTJYAgDgf/Nf7bf/93ff+5nf+5n3v/+7v/+bpAiYXF-e|45004 with wiki=Fiery_Wrath|II, wiki=Zealous_Blade|VII, wiki=Blind_Exposure|VI, wiki=Powerful_Blades|X, wiki=Master_of_Consecrations|VI, wiki=Absolute_Resolution|IX.
+For fractals equip a hammer and a greatsword. Use link=http://gw2skills.net/editor/?fVAQJASRlsApUo9CxOI8DRR8gk1Yb/8quAY+cLA-TxRBABXt/o8DPdNLcAEy7SCAwTKgS1fMTJYAgDgf/Nf/Nf/93ff+5nf+5n3v/+7v/+bpAiYXF-e|35042 with wiki=Fiery_Wrath|II, wiki=Blind_Exposure|VI, wiki=Radiant_Fire|VII, wiki=Superior_Aria|II, wiki=Writ_of_Persistence|VII and wiki=Master_of_Consecrations|VI.
+For healing take wiki=Shelter or wiki=Shelter against conditions. For utilities take wiki=Wall_of_Reflection against projectiles, wiki=Shield_of_the_Avenger against projectiles, wiki="Stand_Your_Ground" against control, wiki=Hallowed_Ground against control, wiki=Purging_Flames against conditions or wiki="Retreat!" against attacks. If you have space you can also take wiki="Save_Yourselves!" or wiki=Bane_Signet for more damage. For elite take wiki=Renewed_Focus.
+With a hammer, keep autoattacking to trigger wiki=Symbol_of_Protection. Use wiki=Mighty_Blow to only blast fire or water fields. Use wiki=Banish to remove defiant if needed but don't push enemies away.
+Use wiki=Flashing_Blade, wiki=Leap_of_Faith, wiki=Ray_of_Judgement and wiki=Virtue_of_Justice to blind thrash enemies. Use wiki=Binding_Blade to pull enemies together, remove defiant or just do damage. Against big enemies use the attack inside them to hit multiple times. Also use wiki=Shield_of_Wrath to block attacks or deals lots of damage.
+Use wiki=Virtue_of_Courage and recharge it with Renewed Focus to keep aegis up.
+For 44 seconds of projectile defenses, start with Wall of Reflection. When it ends at 22 seconds of cooldow remaining, use Shield of the Avenger and then use Wall of Reflection again.
+If you see a fire field before combat, blast it with wiki=Mighty_Blow and wiki=Shield_of_Wrath. If not, consider using wiki=Purging_Flames if you expect someone to help with blasting. If there is no might, equip a staff, use wiki=Empower and equip something else before enemies arrive.
+Be careful with light fields so you don't prevent pre- or in-combat might stacking, especially with wiki=Symbol_of_Wrath.
+For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/12501056|Build_guide and link=http://dulfy.net/2014/08/25/gw2-guardian-pve-class-guide-by-bordy/|Profession_guide.
+
+
+name=Mesmer
+Equip two swords and a focus. Swap the focus to a pistol if you don't need any reflects or pull from wiki=Into_the_Void. Use link=http://gw2skills.net/editor/?fhAQRAsd8ansISraWlGGpB1aGR1QOZxhkOQiIlsTJA-TBSBABUq+jZKBva/R5XHnEA80/swBQAgnUQeHQgAAHA/23+23++7v/+8zP/8zPvf/93f/93SBExuK-e|64040 with wiki=Empowered_Illusions|III, wiki=Signet_Mastery|VI, wiki=Empowering_Mantras|XI, wiki=Phantasmal_Fury|II, wiki=Blade_Training|IV, wiki=Glamour_Mastery|II and wiki=Warden's_Feedback|VIII.
+For healing take wiki=Signet_of_the_Ether or wiki=Ether_Feast if you can't rely on phantasms. For utilities take wiki=Feedback against projectiles, wiki=Null_Field against conditions, wiki=Phantasmal_Disenchanter against boons, wiki=Signet_of_Inspiration to copy boons like might or wiki=Mantra_of_Concentration against control. For elite take wiki=Time_Warp.
+Against projectiles use wiki=Phantasmal_Warden, swap weapons before getting in combat, use wiki=Phantasmal_Swordsman, use Signet of the Ether, swap weapons and use Phantasmal Warden again after 3-4 seconds so they protect each other. Against bosses without projectiles use wiki=Phantasmal_Duelist instead of a Warden.
+Use wiki=Blurred_Frenzy to save dodges and avoid hits. Use wiki=Counter_Blade to strip defiance but avoid interrupting bosses for no reason.
+If you see a fire field before combat, equip a torch and blast it with wiki=The_Prestige.
+For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/12497837|Build_guide and link=http://dulfy.net/2014/07/21/gw2-mesmer-pve-class-guide-by-sanderinoa/|Profession_guide.
+
+
+name=Necromancer
+Equip a dagger, a focus and a warhorn. Use link=http://gw2skills.net/editor/?fRAQNBIh3akjmqbbpxxG2bTgLIQPIQro/cqDVbB-TRSBABUcCAY4AIQp6PmpE8q9Hlf4p3RjDCAAPog8OgABAOA+tvx3++7v/+8zP/8zPvhHe4hHe4SB80uK-e|66002 with wiki=Spiteful_Talisman|II, wiki=Chill_of_Death|X, wiki=Close_to_Death|XII, wiki=Reaper's_Precision|V, wiki=Master_of_Corruption|VII, wiki=Banshee's_Wail|VIII and wiki=Path_of_Midnight|III.
+For healing take wiki=Consume_Conditions. For utilities take wiki=Signet_of_Spite and wiki=Well_of_Suffering. For the last utility take wiki=Well_of_Darkness against thrash, wiki=Well_of_Power agains conditions or wiki=Blood_Is_Power if team doesn't give you might.
+When someone is pulling enemies, equip a staff, put wiki=Mark_of_Blood and wiki=Putrid_Mark behind the corner and equip a different weapon. Don't use wiki=Chillblains or wiki=Reaper's_Mark so you don't prevent might stacking or fear the enemies away. If you use wiki=Summon_Flesh_Golem, cast it right before enemies arrive.
+For area damage use wiki=Locust_Swarm, wiki=Well_of_Suffering, wiki=Well_of_Corruption, wiki=Life_Transfer and wiki=Tainted_Shackles.
+Use wiki=Doom, wiki=Reaper's_Mark and wiki=Wail_of_Doom to remove stacks of defiance from bosses. When using a fear, make sure the enemies will run towards a corner instead of scattering.
+If you see a fire field before combat, use wiki=Summon_Bone_Minions and blast it 1-2 times with wiki=Putrid_Explosion. If you blast only once then change the utility after usage.
+For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/12498059|Build_guide and link=http://dulfy.net/2014/06/30/gw2-necromancer-pve-guide-by-spoj/|Profession_guide.
+
+
+name=Ranger
+Equip a sword, an axe and a longbow. If you aren't comfortable with using sword you can replace the longbow with a greatsword. If your group has no fury you can replace the axe with a warhorn. Use link=http://gw2skills.net/editor/?fNAQNAsXTjMqUxarKmsw1ag9gadAEwjO3MoD8VFZ8UJymA-TBSBABPt/Alq/YmSwrU+hn+mFOACA8kCy7UCEA4A43+23fz3f/93nf+5nf+597v/+7v/WKgn2VB-e|65030 build with wiki=Steady_Focus|I, wiki=Spotter|VII, wiki=Predator's_Onslaught|XI, wiki=Pet's_Prowess|I, wiki=Companion's_Might|V and wiki=Vigorous_Spirits|IV.
+For healing take wiki=Healing_Spring to remove conditions and heal party with blast finishers. For utilities take wiki=Frost_Spirit and wiki=Signet_of_the_Wild. If a ranger is already using Frost Spirit, switch trait wiki=Vigorous_Spirits to make them stack. For the last utility take wiki="Sic_'Em", wiki=Quickening_Zephyr or wiki=Search_and_Rescue. For elite take wiki=Rampage_as_One.
+Manage your pets with wiki=Pet#Pet_interaction before and during a fight to ensure they don't pull extra enemies and so on. For LOSing and positioning mobs or bosses, make sure your pet is either in "Avoid Combat" mode or "Stowed". Alternatively, you can continuously pull them back to you with "Return to Me (F3)" but that can be trickier to manage.
+For pets use wiki=Juvenile_Jaguar|Jaguar for damage, wiki=Juvenile_Red_Moa|Red_Moa if party lacks fury or wiki=Juvenile_Jungle_Stalker|Jungle_Stalker if party lacks might. Use wiki=Juvenile_Brown_Bear|Bear only in special cases.
+Initiate with wiki=Barrage and wiki=Rapid_Fire. Only switch back to the longbow if your health gets dangerously low or to do wiki=Rapid_Fire right before the last enemy dies. Rest of the time use wiki=Slash_(ranger_sword_skill)|Slash and wiki=Path_of_Scars or wiki=Slash_(ranger_greatsword_skill)|Slash and wiki=Maul_(ranger_greatsword_skill)|Maul depending on the weapon. Sword has an animation which is difficult to interrupt. Unless you are comfortable with the timing, disable wiki=Autoattack in order to better time dodges and other skills.
+If you see a fire field before combat, blast it with wiki=Call_of_the_Wild. If not, equip a torch and use wiki=Bonfire. During combat try to use Call of the Wild on fire fields.
+For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/12497757|Build_guide and link=http://dulfy.net/2014/07/05/gw2-ranger-pve-class-guide-by-lorek-and-cell/|Profession_guide.
+
+
+name=Thief
+Equip two daggers against bosses, a sword and a pistol against thrash and a shortbow if you need a ranged weapon. Use link=http://gw2skills.net/editor/?fZAQRAoY8al8MpxpFOx6JsPNRLRtdHsBfgXnh2XQAEiA-TBCBABVq+zZKBxa/R5HAPBg80/wwBQIgTWgeHQgAAHA/23+23++7v/+8zP/8zPvf/93f/93SBExuK-e|66002 build with wiki=Sundering_Strikes|VI, wiki=Dagger_Training|IX, wiki=Revealed_Training|XIII, wiki=Side_Strike|III, wiki=Critical_Haste|X, wiki=Executioner|X and wiki=Flanking_Strikes|IV.
+For healing take wiki=Hide_in_Shadows, wiki=Withdraw or wiki=Signet_of_Malice depending on the situation. For utilities take wiki=Signet_of_Agility, wiki=Smoke_Screen and wiki=Assassin's_Signet. For elite take wiki=Dagger_Storm against projectiles or wiki=Thieves_Guild for a damage boost.
+Against bosses use wiki=Cloak_and_Dagger and wiki=Backstab when wiki=Revealed wears off. Use Smoke Screen against projectiles or save it when boss is at 50% health. Use wiki=Heartseeker on it to stealth followed by Backstab. Use Assassin's Signet for final Heartseeker burst when the boss is at 25%-50% health.
+Against thrash use wiki=Black_Powder to keep them blinded and spam wiki=Pistol_Whip to stun, evade and deal damage. Use Smoke Screen for extra blinds. If you need to manage wiki=Defiant, use Pistol Whip and wiki=Headshot against bosses.
+If you see a fire field before combat, equip a shortbow and blast it few times with wiki=Cluster_Bomb to stack might.
+For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/12497961|Build_guide and link=http://dulfy.net/2014/07/10/gw2-thief-pve-class-guide/|Profession_guide.
+
+
+
+name=Warrior
+Equip a greatsword, an axe and a mace. If you need more defense swap the mace to a sword. If you need a ranged weapon swap the axe and mace to a longbow. Use link=http://gw2skills.net/editor/?fJAQNAR3ZjMd03ZtHWewJaAmg6aEEA6ei0zQME8A-TxRBABXt/o8rjDCAe6GA4CAk3TAgS1fMTJIA-e|05063 (Phalanx Strength) with wiki=Rending_Strikes|V, wiki=Forceful_Greatsword|X, wiki=Empowered|VI wiki=Empower_Allies|VIII, wiki=Phalanx_Strength|XIII and wiki=Signet_Mastery|VI. If your party can generate 20 stacks of might or if there is already a warrior with Phalanx Strength then use link=http://en.gw2skills.net/editor/?fJAQNAR3ZjMd03ZtHWewJaAgAx8hALumKju2A-TxRBABXt/o8rjDCAe6GA4CAk3TAgS1fMTJogAGF-e|65003 with wiki=Dual_Wielding|V, wiki=Slashing_Power|IX, wiki=Berserker's_Power|XI, wiki=Rending_Strikes|V, wiki=Forceful_Greatsword|X and wiki=Signet_Mastery|VI.
+For healing take wiki=Healing_Signet. When you get more experienced you can take wiki=Defiant_Stance for fights with lots of spike damage. Defiant Stance is better than Healing Signet if you can reliably tank powerful hits to get full health but much harder to use. For utilities take both wiki=Banner_of_Discipline and wiki=Banner_of_Strength unless another warrior already has them. For remaining utilities take wiki="For_Great_Justice!", wiki=Signet_of_Fury or wiki=Signet_of_Might. For elite take wiki=Signet_of_Rage or wiki=Battle_Standard if you expect to people get downed.
+Rotate between both weapon sets to use high powered attacks like wiki=Hundred_Blades, wiki=Whirlwind_Attack, wiki=Crushing_Blow and wiki=Tremor. If party plans to use wiki=Deep_Freeze to freeze bosses be careful with Tremor. Remember to use Tremor against thrash enemies.
+If you see a fire field before combat, equip a warhorn and blast it with wiki=Call_to_Arms then quickly equip a longbow and blast again with wiki=Arcing_Arrow. Also cast your banners on fire fields whenever possible.
+When stacking place your banners out of stack so people don't accidentally pick them up. Remember to take one of them to the next fight.
+For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/12497977|Build_guide, link=http://dulfy.net/2014/06/28/gw2-comprehensive-warrior-pve-guide-by-element/|Profession_guide and link=https://forum-en.guildwars2.com/forum/professions/warrior/DPS-guide-for-PvE-Dungeons-Soloing-More|Solo_guide.
+
+
+####################################################################################################################################################################################
+
+path=Skipping
+name=Skipping
+The main purpose of skipping is to save time. Faster you get to the end, faster you get the big end reward. While enemies drop loot, you are facing elite enemies which are much tougher than normal enemies in open world.
+Another reason is that some elite enemy groups are quite hard to take down. There are also encounters where you have run instead of fighting.
+Nowadays most of the groups will be skipping enemies. If you wish to clear the enemies you should specifically mention it on your LFG message and repeat it on party chat few times before starting the run.
+
+name=How to?
+Teamwork is important for fast and safe skips. While most skips are doable with any profession keep in mind that not every profession is as good with skipping as thieves or warriors. You lose a lot of time if you just watch someone fail many times instead of helping him.
+Stealth, swiftness, condition removal, mobility skills, teleports and control will always be useful on skips. If there are lots of control you should also take stun breaks and/or stability. For longer skips vigor is also helpful.
+Stealth and swiftness can be stacked with combo fields. See local=Combos for more info. For stealth you need either an engineer or a thief on your party. For swiftness you need an elementalist.
+It's important to have autotargetting off in options if you want to use any mobility skills.
+Before skipping equip defensive and mobility skills. Then stack swiftness and stealth (if available) with skills and combo fields.
+During a skip try to stay out of combat to keep your increased movement speed. If someone is in trouble remove his conditions or control enemies depending on the situation.
+
+name=Consumables
+There are some consumables which help with it skipping. They are not necessary but can be really helpful when you are new.
+wiki=Harpy_Feathers_(consumable)|Harpy_Feathers gives 3 seconds of stealth with 6s? and 40 c cost. These allow you to get through any situation by using the consumable again and again. In most cases you only have to use one to get out of a bad spot.
+wiki=Order_of_Whispers_Spy_Kit gives 3 seconds of stealth on 60 seconds of cooldown and 16 c cost.
+wiki=Ash_Legion_Spy_Kit gives 10 seconds of wiki=camouflage on 60 seconds of cooldown and 24 karma cost. If you get in a bad spot this gives you long time to recover and recharge skills.
+wiki=Pot_Of_Hylek_Poison gives 10 seconds of swiftness on 15 seconds of cooldown and 16 c cost. If you have no access to swiftness consider using these on harder skips.
+
+name=Elementalist
+For healing take wiki=Arcane_Brilliance or wiki=Ether_Renewal if there are lots of conditions. For utilities take wiki=Lightning_Flash, wiki=Mist_Form and wiki=Arcane_Wave, wiki=Armor_of_Earth, wiki=Arcane_Shield depending on the situation. For elite take wiki=Conjure_Fiery_Greatsword.
+Equip a staff and use wiki=Windborne_Speed. If you see a smoke field, blast it with blast finisher on other weapons. If your party lacks swiftness, equip staff and use wiki=Eruption, wiki=Static_Field, wiki=Arcane_Wave or any other blast finisher on other weapons.
+Equip dagger and focus. While skipping use wiki=Obsidian_Flesh before getting hit, use wiki=Swirling_Winds and equip dagger during the channel. Use wiki=Ride_the_Lightning, turn 180 degrees and use wiki=Updraft and finally use wiki=Burning_Speed.
+Use wiki=Conjure_Fiery_Greatsword during harder and longer skips or if you think anyone needs the extra mobility. Use wiki=Fiery_Whirl and wiki=Fiery_Rush to move fast.
+If anyone is in trouble you can use wiki=Earthquake, wiki=Updraft, wiki=Frozen_Burst or wiki=Cleansing_Wave if available. If out of combat you can also equip staff and use wiki=Unsteady_Ground, wiki=Static_Field, wiki=Gust or wiki=Frozen_Ground.
+
+name=Engineer
+For healing take wiki=Med_Kit or wiki=Healing_Turret if you need condition removal. For utilities take wiki=Rocket_Boots, wiki=Elixir_S and wiki=Tool_Kit, wiki=Elixir_R or wiki=Toss_Elixir_B depending on the situation.
+If you see a smoke field, equip a shield and blast it with wiki=Magnetic_Inversion. Addtionally you can use wiki=Thump, wiki=Detonate_Thumper_Turret, wiki=Rumble, wiki=Detonate_Healing_Turret or wiki=Acid_Bomb as a blast finisher. Without a smoke field use wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb and then blast it.
+Equip a rifle. For harder skips equip a shield, use wiki=Static_Shield and equip the rifle back during the channel. Use wiki=Rocket_Boots and wiki=Jump_Shot to move fast. Use wiki=Gear_Shield, wiki=Elixir_S or/and wiki=Toss_Elixir_S to avoid attacks.
+If anyone is in trouble you can use wiki=Supply_Crate and wiki=Big_Ol'_Bomb to disable enemies. Also use wiki=Toss_Elixir_R to revive downed party members or even yourself with a good timing.
+If you expect to die you should retrait to (00466) to get toughness, vitality, wiki=Low-Health_Response_System, wiki=Automated_Medical_Response, wiki=Cloaking_Device, wiki=Stabilized_Armor, wiki=Hidden_Flask, wiki=Transmute, wiki=Invigorating_Speed, wiki=Self-Regulating_Defenses, wiki=Automated_Response, wiki=Adrenaline_Pump, wiki=Inertial_Converter, wiki=Speedy_Kits, wiki=Packaged_Stimulants and wiki=Armor_Mods.
+
+name=Guardian
+For healing take wiki=Shelter. For utilities take wiki="Retreat!", wiki="Stand_Your_Ground!" and wiki=Judge's_Intervention, wiki="Hold_the_Line!" or wiki=Signet_of_Judgment depending on the situation. For elite take wiki=Renewed_Focus.
+Equip a greatsword, a sword and a focus. If you see a smoke or a lighting field, blast it with wiki=Shield_of_Wrath then quickly equip a hammer and blast again with wiki=Mighty_Blow. If your party lacks swiftness equip staff and use wiki=Symbol_of_Swiftness. Remember to use it after any other combo fields!
+Use wiki=Leap_of_Faith, wiki=Flashing_Blade and wiki=Judge's_Intervention to move fast. Last two need a target to use them. Choose a far-away target so you don't get in combat. Use wiki=Shield_of_Wrath if you get in a bad spot. Be careful about the final explosion because it will break stealth if you hit anything.
+Use defensive skils to help party members. If you are out of combat you can equip a hammer or a staff and use wiki=Ring_of_Warding or wiki=Line_of_Warding to stop enemies.
+
+name=Mesmer
+For healing take wiki=Mantra_of_Recovery or wiki=Mirror if there are projectiles. For utilities take wiki=Blink and wiki=Decoy, wiki=Null_Field, wiki=Portal_Entre, wiki=Veil, wiki=Mantra_of_Concentration or wiki=Mantra_of_Resolve depending on the situation. For elite take wiki=Mass_Invisibility.
+Equip a focus. Use wiki=Temporal_Curtain if you don't get any swiftness. If you see a smoke or a lighting field, equip torch and blast it with The_Prestige. If you don't get any stealth use wiki=Veil, wiki=Mass_Invisibility, wiki=Decoy and wiki=The_Prestige in that order for stealth.
+While skipping use wiki=Blink and wiki=Temporal_Curtain. Use wiki=Portal_Entre to help people and in organized partys to save time.
+
+name=Necromancer
+For healing take wiki=Consume_Conditions. For utilities take wiki=Well_of_Power, wiki=Spectral_Walk and wiki=Signet_of_the_Locust, wiki=Well_of_Darkness or wiki=Spectral_Wall. For elite take wiki=Plague. Ask your party to give you swiftness or/and wiki=Conjure_Fiery_Greatsword.
+Equip a staff and a warhorn. If you see a smoke or a lighting field, blast it with wiki=Summon_Bone_Minions followed by wiki=Putrid_Explosion. You can use wiki=Putrid_Explosion again if you don't need that utility slot.
+Use wiki=Spectral_Walk to give yourself swiftness. Avoid using other skills unless you are already in combat. Then use wiki=Locust_Swarm, wiki=Reaper's_Mark and wiki=Putrid_Mark. Enter death shroud to tank damage if needed. If you get in a bad spot use wiki=Plague.
+You can negate all falling damage if you use wiki=Spectral_Walk and wiki=Spectral_Recall shortly before hitting the ground.
+If you expect to die you should retrait to (000626) to get toughness, vitality, wiki=Armored_Shroud, wiki=Reaper's_Protection, wiki=Shrouded_Removal, wiki=Unholy_Sanctuary, wiki=Full_of_Life, wiki=Last_Gasp, wiki=Vital_Persistence, wiki=Near_to_Death and wiki=Foot_in_the_Grave.
+
+name=Ranger
+For healing take wiki=Healing_Spring. For utilities take wiki=Signet_of_Renewal, wiki=Signet_of_Stone and wiki=Signet_of_the_Wild, wiki=Signet_of_the_Hunt, wiki="Protect_Me" depending on the situation. For elite take wiki=Rampage_As_One.
+Equip a greatsword, a sword and a warhorn. Set your pet to avoid combat and stow it. If you see a smoke or a lighting field, blast it with wiki=Call_of_the_Wild. Otherwise just use wiki=Call_of_the_Wild for swiftness.
+While skipping turn 180 degrees, use wiki=Hornet_Sting, turn 180 degrees, use wiki=Monarch's_Leap and finally use wiki=Swoop to move fast. Use wiki=Counterattack if you are still under attack.
+If you or someone else gets condition use wiki=Healing_Spring to clear them.
+
+name=Thief
+For healing take wiki=Hide_in_Shadows or wiki=Withdraw. For utilities take wiki=Smoke_Screen, wiki=Blinding_Powder and wiki=Shadow_Refuge.
+Equip a shortbow, a sword and a pistol. Use wiki=Black_Powder if you expect your party to help with stacking stealth. Otherwise use wiki=Smoke_Screen, wiki=Blinding_Powder and wiki=Cluster_Bomb to stack stealth on your own.
+While skipping call and use wiki=Shadow_Refuge when stealth is about to run out. Stand inside it whole duration or you get revealed. Use wiki=Infiltrator's_Arrow to move faster during the skip.
+For harder skips you can quickly retrait to (00333) to get toughness, vitality, wiki=Last_Refuge, wiki=Meld_with_Shadows, wiki=Expeditious_Dodger, wiki=Feline_Grace and wiki=Preparedness.
+If you expect to die you should retrait to (00644) to additionally get wiki=Master_of_Deception, wiki=Patience, wiki=Fleet_Shadow, wiki=Fleet_of_Foot, wiki=Merciful_Ambush and wiki=Instinctual_Response.
+
+name=Warrior
+For healing take wiki=Defiant_Stance, For utilities take wiki="Shake_It_Off!"|(utility), wiki=Bull's_Charge|(utility) and wiki=Endure_Pain, wiki=Balanced_Stance or wiki="Fear_Me!" depending on the situation. For elite take wiki=Signet_of_Rage or wiki=Battle_Standard if you expect people to go down.
+Equip a greatsword, a sword and a warhorn. Use wiki=Charge_(warrior_skill)|Charge for area swiftness. If your party already has lots of swiftness you can save it later to remove conditions. If you see a smoke or a lighting field, blast it with wiki=Call_to_Arms then quickly equip longbow and blast again with wiki=Arcing_Arrow.
+For harder skips take shield instead of warhorn. Use wiki=Shield_Stance before you get hit and equip sword during the channel. Then use wiki=Riposte before you get hit and equip warhorn during the channel. This allows you to block damage for over 5 seconds.
+While skipping use wiki=Savage_Leap, wiki=Rush, wiki=Whirlwind_Attack and wiki=Bull's_Charge to quickly pass any enemies. If you take heavy damage use wiki=Defiant_Stance to instantly heal back to full health.
+If you expect to die you should retrait to (20633) to get toughness, vitality, wiki=Restorative_Strength, wiki=Thick_Skin, wiki=Dogged_March, wiki=Last_Stand, wiki=Defy_Pain, wiki=Lung_Capacity and wiki=Fast_Hands.
+
+####################################################################################################################################################################################
+
+path=Other
+name=Other
+This section has mechanics which don't really fit any of the topics.
+
+name=Combat debuff
+While being in combat is normal it's good to realize that in some cases it's more beneficial to avoid being in combat. In combat your character moves slower, can't change skills or traits, gets cooldown on weapon swap, doesn't regenerate health automatically, revives people slower and prevents everyone using a waypoint.
+The most important case is skipping. Faster you move, less time you spend near enemies. If someone gets in trouble if you are out of combat you can revive him faster or even change skills to help him better.
+However getting out of combat is very useful in boss fights when things go wrong. If your health gets low you only need few seconds out of combat to regenerate back to full. If someone gets defeated it's much faster to resurrect him while out of combat. If everyone else dies they can resurrect themselves at a waypoint if you are out of combat while holding the boss aggro.
+To get out of combat during a fight you need to have no conditions and get far enough from the enemy. Use mobility skills to save time and to break boss aggro.
+
+name=Line casting
+Skills wiki=Ice_Storm and wiki=Meteor_Shower cause multiple small AoEs inside a circle. However if AoEs for some reason appear farther than the maximum range then they will be moved to the maximum range. This causes an extremely damaging line of AoEs which gives the name linecasting. While an elementalist is needed for both skills, Frost Bow can be shared which means it's useful to practice this for all professions. If you don't have an elementalist you can quickly create one and go to the PvP area.
+Linecasting can be done with a dodge, a teleport or both but in most cases a dodge is enough. It's important to put the circle at maximum range so you should turn off fast casting if enabled. With a dodge, place your cursor at the maximum range, dodge back and then release the skill instantly. With a teleport, just cast it at the maximum range and then teleport back.
+For example Ice Storm normally has a 240 radius which results in an area of 181k units. Dodging moves you 300 units back which turns the circle into a segment with a 180 height resulting in an area of 62k units. Against small targets this can result in 2-3 times more damage.
+youtube=HJncPGDJ9Ho|Video_guide for line casting. Few examples: youtube=90J8Llsu7rc|Brie, youtube=uVjlzgBSX5Q|Spider_Queen, youtube=uVjlzgBSX5Q|Malrona, youtube=T3a70rLLhr0|Belka, youtube=XcUfduwnNUo|Hound_of_Balthazar.
+
+name=NPCs
+Every dungeon path contains one or more NPCs which follow you around. They are quite tanky but deal extremely low damage so they aren't very useful unless soloing. However they are still very important because they are needed to trigger events which allow you to proceed. You may get stuck if NPC is dead or missing at some specific moments. Try to keep them alive and with you so you don't have to restart the dungeon.
+Normally NPCs follow someone by walking which can either put them in danger or slow the run down. If all players are too far the NPC will teleport to one player instead of walking. This can be abused by having some people waypoint in some situations. For example in CoF path 2 this trick can be used to make Magg safely teleport over the lava field.
+
+name=Pathing
+# Some info: https://forum-en.guildwars2.com/forum/game/dungeons/About-pathing/first
+This youtube:_F7kgM52aus|video_tutorial explains the concept and shows lots of examples where it happens.
+Some enemies get a scripted order "Move to target" or "Move to location". These can be triggered by reaching a certain location or starting an event. Orders break when enemies are aggroed or when their reach their location.
+The most important part is that order "Move to target" ignores stealth. This means enemies may follow stealthed players very far even if they don't aggro them. This makes stealth pointless because you often have to kill the enemies.
+However this can be prevented with a little practice and coordination. If enemies follow you while stealthed you should simply stop. Once they reach your location, their order expires and you are free to move. wiki=Shadow_Refuge is the best skill for this because it forces you to stand still and ensures the stealth won't run out.
+Technically enemies only lock to a one target. So in coordinated teams only one player has to wait, assuming you know who is the target. The order gets overriden by another within a short time so when moving as a group the last person gets targeted.
+Moving fast, moving to unreachable location or waypointing may break the order. However it may also teleport enemies to your location. Exact mechanics are unknown and seem to vary with different enemies and locations.
+When an order expires, enemy will be parked at its current location. This allows you to manipulate enemy positioning in some cases. Keep in mind that enemies may return to their initial location after a long time.
+Example of pathing different enemies in youtube=NhNDGqJe6iA|The_Ruined_City_of_Arah.
+
+####################################################################################################################################################################################
+
+path=Defense
+name=Defense
+There are multiple ways to survive an attack but different defensive methods excel at different situations. Passive defense is good against continuous pressure while active defense is good against spike damage. Most bosses hit hard but not very often which means additional passive defense is rarely needed. It's still helpful when learning to play because actively avoiding takes some skill.
+Active defense comes in many forms. All professions have access to dodges which allow evading attacks. On top of that there are evading skills, blocking skills, invulnerability, aegis, blind, interrupts, reflects and projectile absorption.
+
+name=wiki=Dodge
+Dodging makes you evade attacks for a short period which makes it useful against multiple simultaneous hits. It also recharges fairly quickly so don't hesitate to use it against single hits. Use vigor to recharge endurance faster.
+Keep in mind that some attacks can't be evaded so you have to use other ways to counter them.
+
+name=wiki=Evade
+Some weapon skills make you evade attacks for a short period just like a dodge. However these skills have additional effects which make them more suitable for certain situations.
+
+name=wiki=Block
+Some weapon skills make you block one or multiple attacks for a short period. This period is often longer than with evades. However there are quite many attacks which can't be blocked.
+Single-blocks often have a short cooldown so try to use them against single hits whenever possible. Some single-block skills may block multiple attacks if you aren't near any enemies.
+
+name=wiki=Aegis
+A boon which automatically blocks the next attack. It often lasts a long time so you should rely on other defenses and keep it as a safety net.
+
+name=wiki=Blind
+Most bosses have wiki=Unshakable which makes blind only work 10% of the time. This means blind is not a reliable way to avoid boss attacks.
+Against weaker enemies blind is very effective because it protects the entire team. It's also easy to use because it often lasts a long time.
+
+name=wiki=Control_effect
+Most bosses have wiki=Unshakable which protects them against control effects. Interrupting a boss gives it at least 5 stacks of wiki=Defiant. Each stack will absorb one control effect. This means you have to use 6 control skills to get a single disable.
+On top of this, interrupts don't put most skills on full cooldown so the enemy may use the interrupt attack as its next attack. This means you should favour other defenses instead of interrupting except in some special cases.
+Despite this, disabling enemies is useful with long disables. For example starting the fight with wiki=Deep_Freeze disable the boss for 5 seconds which prevents 1-2 attacks. Short disables like wiki=Headshot can be used to strip Defiant to use Deep Freeze again.
+Against weaker enemies effects like Pull can be used to group them up for better area damage.
+
+name=wiki=Invulnerability
+Invulnerability prevents getting hit by any means which makes it the strongest kind of a defense. However these often have a long cooldown so save them for special cases.
+
+name=Damage Absorption
+Similar to invulnerability but doesn't prevent conditions or control effects. However these often have a long cooldown so save them for special cases.
+
+name=wiki=Reflect
+Reflect protects against projectiles and sends them against the attacker. Reflects are powerful against enemies which use lots of projectiles while useless against melee enemies. Keep in mind that unblockable attacks can't be reflected.
+Area reflects can be extremely powerful because they can protect the entire group while dealing lots of damage. Communicate with your party if someone else also has reflects. It's important to chain them instead of using at the same time to keep the effect up for a long time.
+
+name=Projectile  Absorption
+Similar to reflect but doesn't send projectiles back. It's useful against projectiles but reflects should be used first because they also deal damage.
+
+####################################################################################################################################################################################
+
+path=Combos
+name=wiki=Combo
+Combos are very useful for both combat and skipping. While not required, they allow you to clear the content faster and safer while making the game more interesting. Once you learn to use them it's hard to look back. To do a combo, you need to use a finisher on a field. There are different finishers and fields and you get a different effect based on which were used.
+Comboing is fast when the whole party helps because each party member has to only use 1-2 finishers which takes only a few seconds. Some professions have a better access to these but everyone can contribute.
+Different skills excel at different situations. When out of combat, fields and finishers on unused weapons are the best because you can equip the main weapons and have no skills on cooldown. In combat, switching to a weak weapon for a combo will actually reduce your damage.
+With multiple overlapping fields, the oldest will be used. Keep this in mind when placing your fields. If you know people are going to stack might or stealth don't put any fields before them. If you want to stack might or stealth don't put the field on any other fields.
+Combo fields can be recognized by their distinct borders.
+
+name=Important combos
+Fire field with a blast finisher gives 3 stacks of area might for 20 seconds. Might is capped at 25 might so you need up to 9 blasts depending on other might sources. 25 stacks of might gives about 30% damage boost which equals 1.5 extra players. When capped, new might stacks replace the oldest stacks. If you know some stacks are about to expire you can overstack. Additionally avoid using short might stacks to replace longer ones.
+Smoke field with a blast finisher gives 3 seconds of area stealth. Stealth is capped at 5 stacks so you need only up to 5 blasts depending on other stealth sources. When capped, any new stacks will be completely ignored so it's pointless to overstack.
+Water field with a blast finisher gives 1.3k area healing. Healing is not capped but usually only few blasts are used for a 4k healing.
+Lightning field with a blast finisher gives 10 seconds of area swiftness. Swiftness is capped at 9 stacks but usually few blasts are more than enough. Like with stealth, overstacking is pointless.
+Water field with a leap finisher gives 1.3k healing for the user. Not very useful but can help a bit.
+Smoke field with a leap finisher gives 3 seconds of stealth for the user. Not very useful but can be useful for skipping.
+Light field with a projectile finisher: This removes a condition from allies around the enemy you hit. To remove a condition from yourself you have to hit an enemy on melee range.
+youtube=cmpIdxqPf_g|Intro_video for combos. Shorter youtube=aGmuEWtArZw|stealth_focused intro.
+
+name=Elementalist
+Elementalist has 7 fire fields, 2 ice fields, 3 lightning fields, 2 water fields, 12 blast finishers, 8 projectile finishers, 3 leap finishers and 2 whirl finishers. Elementalist can easily combo might in and out of combat.
+wiki=Burning_Speed, wiki=Ring_of_Fire, wiki=Burning_Retreat, wiki=Lava_Font, wiki=Flamewall (fire): All are good for prestacking and in combat stacking. For prestacking equip another weapon after usage if needed.
+wiki=Conjure_Flame_Axe (fire): No point to use.
+wiki=Static_Field (lightning): Good for skipping if your team lacks swiftness.
+wiki=Static_Field_(Lightning_Hammer_skill), wiki=Tornado (lightning): No point to use.
+wiki=Churning_Earth, wiki=Earthquake, wiki=Frozen_Burst, wiki=Phoenix, wiki=Eruption, wiki=Magnetic_Wave (blast): Good for all situations.
+wiki=Dragon's_Tooth, wiki=Comet (blast): Same as above but need to turn the camera to face down if you want to land them near you. This needs some practice.
+wiki=Churning_Earth (blast): Useful for prestacking and skipping if you need another blast. Leave it as the last skill because of the long cast time. As long as you started casting in a field you will get the combo.
+wiki=Explosive_Lava_Axe (blast): No point to use.
+wiki=Thunderclap_(Lightning_Hammer_skill) (blast): Good for combat stacking if you use the weapon.
+wiki=Arcane_Brilliance (blast): Good for all stacking. Use for prestacking if needed but try to save for combat because of the good effect.
+wiki=Arcane_Wave (blast): Good for all stacking. Use for prestacking if needed but try to save for combat because of the good effect.
+youtube=-bMz5pX9MsU|Prestacking_rotation, youtube=https://youtu.be/Ep9nCYSoZIo|Stacking_with_Scepter_Focus.
+For a Scepter/Dagger/Lightning Hammer build, stack might with Dragon's Tooth, Ring of Fire, Arcane Brilliance, Phoenix and Earthquake. Churning Earth can be used if no one else blasts.
+For a Scepter/Focus/Lightning Hammer build, stack might with Dragon's Tooth, Flamewall, Arcane Brilliance, Phoenix, Comet and Magnetic Wave.
+For a Dagger/Focus build, stack might with Flamewall, Arcane_Brilliance, Frozen Burst, Comet and Magnetic Wave.
+For a Staff build, stack might with Eruption, Lava Font and Arcane Brilliance.
+
+name=Engineer
+Engineer has 3 fire fields, 3 light fields, 2 water field, 3 smoke fields, 1 poison field, 1 lightning field, 17 blast finishers, 10 projectile finishers and 1 leap finisher. Engineer can easily combo some might and stealth on own.
+wiki=Fire_Bomb (fire): Good for prestacking. Switch the utility after usage. Good for in combat stacking if you use the kit.
+wiki=Smoke_Bomb (smoke): Good for skipping. Switch the utility after usage.
+wiki=Napalm (fire): Good for in combat stacking. Start prestacking with Fire Bomb.
+wiki=Throw_Napalm (fire): No point to use.
+wiki=Toss_Elixir_U (smoke): No point to use.
+wiki=Smoke_Screen_(engineer_skill) (smoke): No point to use.
+wiki=Cleansing_Burst (water): Good for in combat healing for coordinated teams.
+wiki=Regenerating_Mist (water): Very short duration so needs precise timing.
+wiki=Elixir_X (lightning): No point to use.
+wiki=Magnetic_Inversion (blast): Good for prestacking and skipping. Equip another weapon after usage.
+wiki=Flame_Blast (blast): Good for all situations because of the short cooldown. Utility can be changed after usage.
+wiki=Acid_Bomb (blast): Good for all situations. The skill moves you backwards so try to have a wall behind. Utility can be changed after usage.
+wiki=Big_Ol'_Bomb (blast): Good for prestacking and skipping. Utility can be changed after usage.
+wiki=Rumble (blast): Good for prestacking and skipping. Switch the utility after usage.
+wiki=Detonate_Healing_Turret (blast): Useful for all situations because of the low cooldown.
+wiki=Thump, wiki=Detonate_Thumper_Turret (blast): No point to use unless you really need extra blasts.
+wiki=Rocket_Boots (blast): No point to use.
+wiki=Throw_Mine (blast): No point to use unless you really need another blast.
+wiki=Supply_Crate (blast): Very long cooldown so don't use only for the blast.
+youtube=m6WOrSAivlg|Stacking_rotations.
+For a quick prestack, use Big Ol' Bomb, Fire Bomb, Rumble, Magnetic Inversion and Acid Bomb for 4 blasts. This leaves only Acid Bomb on cooldown.
+For a longer prestack, use Healing Turret, Big Ol'Bomb, Napalm, Detonate Healing Turret, Flame Blast, Rumble, Acid Bomb, Magnetic Inversion and Flame Blast for 7 blasts. This leaves Healing Turret, Napalm and Acid Bomb on cooldown.
+
+name=Guardian
+Guardian has 2 fire fields, 9 light fields, 3 blast finishers, 1 leap finisher and 2 whirl finishers. Guardian can provide a fire field if really needed.
+wiki=Purging_Flames (fire): There are often better options but can be used if you have a free utility slot.
+wiki=Hallowed_Ground (fire): Too long cooldown to only use for might stacking.
+wiki=Mighty_Blow (blast): Good for prestacking and skipping. The skill moves you forward so try to face a wall. Also with a hammer build very good for combat.
+wiki=Shield_of_Wrath (blast): Good for combat stacking. Also useful for prestacking and skipping but it's useful to save the skill. Keep in mind that the end explosion will reveal if you hit any enemies.
+wiki=Command_(hammer) (blast): Questionable for prestacking and combat because of the long cooldown and weak skill. Don't use for skipping because hammer may draw aggro.
+youtube=-HqqO-HTgj0|Intro_video for combos.
+
+name=Mesmer
+Mesmer has 4 ethereal fields, 2 light fields, 1 blast finisher, 3 projectile finishers, 3 leap finishers and 2 whirl finishers. Mesmer can only help with out of combat blasting.
+wiki=The_Prestige (blast): Good for prestacking and skipping. Keep in mind that the blast happens at end of the effect.
+youtube=-3skhcx_Jss|Intro_video for combos.
+
+name=Necromancer
+Necromancer has 2 poison fields, 1 light field, 4 dark fields, 1 ethereal field, 3 blast finishers and 3 projectile finishers. Necromancer can only help with out of combat blasting.
+wiki=Putrid_Explosion (blast): Good for prestacking and skipping. Exploding only one minion lets you switch out the utility skill. Short cooldown makes exploding both decent, even in combat.
+wiki=Putrid_Mark (blast): An enemy is needed to trigger it so this only works in combat.
+wiki=Necrotic_Traversal (blast): Questionable for skipping if you really need another blast. Long cooldown makes it not worth to use for combat.
+youtube=vAluKZQlA_Q|Intro_video for combos.
+
+name=Ranger
+Ranger has 2 fire fields, 1 water field, 1 ice field, 5 poison fields, 1 blast finisher, 13 projectile finishers, 2 leap finishers and 1 whirl finisher. Ranger can easily provide a fire field but needs a party to blast it.
+wiki=Bonfire (fire): Good for prestacking. Equip another weapon after usage.
+wiki=Healing_Spring (water): Very useful against lots of pressure for coordinated teams.
+wiki=Flame_Trap (fire): Bonfire is better in every way.
+wiki=Call_of_the_Wild (blast): Good for all situations.
+
+name=Thief
+Thief has 2 smoke fields, 1 dark field, 1 poison field, 2 blast finishers, 14 projectile finishers, 1 leap finisher and 2 whirl finishers. Thief can easily combo stealth on own and help with out of combat blasting.
+wiki=Black_Powder (smoke): Very useful in coordinated teams for skipping. The short duration is more than enough to cap stealth when the team helps. Not very good if no one helps.
+wiki=Smoke_Screen (smoke): Very useful in random teams for skipping. The long duration allows you cap stealth on your own.
+wiki=Cluster_Bomb (blast): Good for prestacking and skipping. Inititiave mechanic allows you to use this multiple times. Don't explode it mid-air or it won't blast. Useful for in combat stacking in some situations.
+wiki=Blinding_Powder (blast): Useful for skipping, especially with Black Powder. For prestacking Cluster Bomb is more than enough.
+wiki=Heartseeker (leap): Useful with Smoke Screen to get a free wiki=Backstab when the enemy is below 33% or 25% health.
+youtube=SvLfyhxiIkQ|Intro_video for combos.
+
+name=Warrior
+Warrior has 1 fire field, 11 blast finishers, 14 projectile finishers, 4 leap finishers and 5 whirl finishers. Warrior can help with both out of combat and in combat blasting.
+wiki=Combustive_Shot (fire): Possible but not realistic for prestacking. A coordinated team would have a better fire field and other teams wouldn't blast it. It's much easier to use wiki=Phalanx_Strength with wiki=Forceful_Greatsword to stack might. If you want to prestack, use wiki=Signet_of_Fury because of the low cooldown . However it's useful in combat if you stay at range.
+wiki=Call_to_Arms (blast): Good for prestacking and skipping. For prestacking equip a different weapon after usage. Keep in mind that hitting an enemy will put you in combat but not reveal.
+wiki=Arcing_Arrow (blast): Good for prestacking and skipping. In both cases equip different weapon after usage. Make sure you target it at the field. For combat stacking only useful if you are staying at range.
+wiki=Earthshaker (blast): Useful for prestacking and skipping. In both cases equip different weapon after usage. Use wiki=Signet_of_Fury because of the low cooldown. Attribute loss from Signet of Fury is much less than the attribute gain from 3 area might.
+wiki=Stomp (blast): Questionable for skipping if you really need another blast. Long cooldown makes it not worth to use for combat.
+wiki=Banner_of_Discipline (blast) + other banners: Good for prestacking and in combat stacking. When stacking try to put them as far as possible so people don't pick them up accidentally. If for some reason you them for skipping, carry one with you.
+wiki=Plant_Standard (blast): Good for prestacking and in combat stacking. If you aren't might capped using this will be a damage gain.
+wiki=Seismic_Leap (blast): Only useful if you use wiki=Rampage for roleplaying reasons.
+youtube=j9tBwiWKCoc|Intro_video for combos.
+
+####################################################################################################################################################################################
+
+path=Glossary
+name=Glossary
+A: wiki=Axe.
+AC: wiki=Ascalonian_Catacombs.
+AFK: Away from keyboard.
+Alt: Alternative. May refer to a lesser used character.
+Aggro: wiki=Aggro.
+AoE: wiki=Area_of_effect. If this site often means red (negative) or white (positive) circles or rectangles.
+AP: wiki=Achievement. Often used in LFG messages to filter out inexperienced people. Not a very good metric but better than nothing.
+Arah: wiki=The_Ruined_City_of_Arah.
+Aura: Ticking PBAoE which follows the caster.
+B: Back. Often used in combat to tell party go back / retreat.
+Berserker: Gear with Power, Precision and Ferocity attributes. In LFG messages may also mean a high damage build.
+Blasting: See local=Combos. Often refers using a blast finisher on fire, smoke or lighting field to stack might, stealth or swiftness.
+Boon: wiki=Boon.
+Bouncing: Projectile that jumps to nearby targets. These can deal lots of damage if they bounce between two targets.
+BRB: Be right back.
+Build: Combination of gear, traits and skills.
+CC: wiki=Control_effect or wiki=Condition depending on the context.
+Channeled: Attack lasts over time and needs to be constantly casted.
+CM: wiki=Caudecus's_Manor.
+CoE: wiki=Crucible_of_Eternity.
+CoF: wiki=Citadel_of_Flame.
+Condition: wiki=Condition.
+Cone: Cone which often hit 5 targets.
+Control: wiki=Control_effect.
+D: wiki=Dagger.
+Dash: Mobile melee-skill. Single-target by default. May have additional effects before, during or after the dash.
+Disc: wiki=Banner_of_Discipline.
+DPS: Damage per second. Often refers to high damage builds.
+DoT: Damage over time. Often refers to harmful AoEs.
+EA: wiki=Empower_Allies. Often refers to a warrior meta build. See local=Meta.
+Ele: Elementalist.
+Eng: Engineer.
+Exp: Experienced. Often used in LFG messages. Actually definition varies from player to player. Can be quite easily faked if you pay attention and follow others.
+F: wiki=Focus or fractal scale (difficulty).
+Fb: wiki=Feedback.
+FGJ: wiki="For_Great_Justice!".
+FotM: wiki=Fractals_of_the_Mists.
+Glass cannon: Build which focus on maximising damage output.
+GS: wiki=Greatsword.
+Gua: Guardian.
+HPS: Healing per second.
+Homing: Projectile which follows targets. These can't be avoided by movement.
+HoT: Healing over time.
+HotW: wiki=Honor_of_the_Waves.
+ICD: Internal cooldown. Some effects like traits, sigils or runes have an internal cooldown. After triggering there is a certain amount of time which has to pass before they can trigger again.
+Leap: Mobile melee-skill. Single-target by default. May have additional effects before, during or after the leap.
+LFG: See wiki=Looking_For_Group. An in-game tool which can be used to find party members. Please read and respect party requirements!
+Kiting: See local=Combat. Refers to moving away from enemies to reduce damage taken.
+LoS: wiki=Line_of_Sight. By running behind a corner you can force ranged enemies come close to you.
+Lvl: Level. In dungeons this means a level requirement. In fractal his means a fractal scale requirement.
+Main: May refer to the most used character.
+Melee: Short cone which hits 1-3 targets.
+Mes: Mesmer.
+Meta: Currently used effective builds. Often used in LFG messages to require a meta build.
+MM: Minion master, a necromancer build.
+Nec: Necromancer.
+NPC: Non-player character. Often refers to in-game allies.
+Numbered attacks: Attacks-chained are listed with increased numbers (like Chop (1), Double Chop (2)). Often enemies continue chain if previous attack hits, in some cases they keep going regardless of success.
+P#: Path for a dungeon. For example P1 is the first explorable path.
+Pathing: Some enemies get a scripted order "Move to target" or "Move to location". "Move to target" ignores stealth which causes problems. See local=Other for more info.
+PBAoE: Point blank area of effect. AoE which is centered at the caster.
+Ping: Ctrl+Click or Shift+Click can be used to print (ping) items and skills on the chat. Often used in LFG messages to require everyone to ping their gear on the chat.
+Projectile: Ranged attack which gets affected by anti-projectile skills. Projectiles have various travel times. Zig-zagging/side-stepping can be used to avoid slower ones. Requires line of sight.
+PS: wiki=Phalanx_Strength. Often refers to a warrior meta build. See local=Meta.
+PUG: Pick up group. A group of random players.
+Pull: See local=Combat. Attacking enemies makes them follow you which can be used to move them to a better location.
+R: Ready.
+Rang: Ranger.
+Ranged: Ranged attack which doesn't get affected by anti-projectile skills. Usually instant travel time. Requires line of sight.
+Res: Revive/resurrection. Used by dead people.
+Returning: Projectile which returns back after reaching certain range.
+Stacking: See local=Combat. Staying near each other. When staying together you share boons and can revive downed players fast.
+S: wiki=Sword, wiki=Scepter, wiki=Staff, wiki=Shield or dungeon story mode depending on the context.
+Sc: Scepter.
+SE: wiki=Sorrow's_Embrace.
+Sh: Shield.
+Spec: Combination of gear, traits and skills.
+SR: wiki=Shadow_Refuge.
+St: Staff.
+Str: wiki=Banner_of_Strength.
+Sw: Sword.
+TA: wiki=Twilight_Arbor.
+Tank: A build with high passive defence but low damage.
+Tanking: Getting hit by easily avoidable attacks.
+Ticking: AoE or effect which hits over time.
+Trap: AoE which triggers when walked on.
+Trash: Weaker enemies between or during the boss fights. Often skipped and ignored.
+War: Warrior.
+WB: wiki=Battle_Standard.
+WH: wiki=Warhorn.
+WoR: wiki=Wall_of_Reflection.
+WP: Waypoint. Often used to tell dead people to resurrect at a nearby waypoint.
+Zerg: Huge amount of something (like players). People often use this when they meant Zerk.
+Zerk: See Berserker.
+
+

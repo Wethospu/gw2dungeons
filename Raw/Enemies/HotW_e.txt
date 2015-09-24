@@ -1,0 +1,2706 @@
+# Note: Story damage values NOT updated after feature patch! (if even any change)
+# File needs reorganizing.
+
+potion=sons of svanir|main
+potion=icebrood|side
+
+Name=Ice Spike
+Category=structure
+Path=HotWS
+
+attack=Corrupt Spike
+additional=maximum-range (900)
+effect=multiple projectiles (360 degrees)
+subeffect=damage:0
+subeffect=launch:2
+subeffect=chilled:2
+
+attack=Summon
+additional=maximum amount of 3
+effect=summon
+subeffect=enemy=Icebrood_Elemental:Elite
+#note=ignore
+
+##################################################################
+
+Name=Kulag the Fallen
+Category=champion
+Path=HotWS
+type=icebrood
+
+attack=can't be moved
+#note=you can easily run back to get out-of-combat regeneration
+
+attack=Ice Shards
+animation=points staff forward|0.5
+cooldown=0
+additional=medium-range
+effect=6 projectiles
+count=6
+subeffect=damage:0
+subeffect=knockback:1.5
+
+attack=Ice Storm
+animation=raises both rams and then left hand|2.5
+additional=can't be blocked
+effect=ranged
+subeffect=damage:0
+subeffect=launch:2.4
+subeffect=summon Corrupted Ice enemy=Crystal:structure
+#note=move a bit to avoid or evade
+#note=visually bugged: looks like delayed AoE
+#note=needs line of sight to hit but is used without
+
+attack=Ice Repel
+animation=touches ground and raises left arm|1.25
+effect=small PBAoE
+subeffect=damage:0
+subeffect=launch:3.3
+#note=block/evade
+
+##################################################################
+
+Name=Icebrood Goliath
+Category=champion
+image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
+Path=HotWS
+type=icebrood
+toughness=2.0
+
+attack=Smash
+image=http://i.imgur.com/XXFJoDF.gif
+cooldown=0
+animation=swings right arm|0.75
+additional=low-range
+effect=melee
+subeffect=damage:0
+#note=run through or keep moving back (even if you melee) to avoid
+
+attack=Lunge
+animation=jumps|1
+effect=melee
+subeffect=damage:0
+subeffect=knockdown:2
+#note=block/evade
+
+##################################################################
+
+Name=Icebrood Goliath
+Category=champion
+image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
+Path=HotW3
+type=icebrood
+toughness=2.0
+
+attack=Smash
+image=http://i.imgur.com/XXFJoDF.gif
+cooldown=0
+animation=swings right arm|0.75
+additional=low-range
+effect=melee
+subeffect=damage:0
+#note=run through or keep moving back (even if you melee) to avoid
+
+attack=Lunge
+animation=jumps|1
+effect=melee
+subeffect=damage:0
+subeffect=knockdown:2
+#note=block/evade
+
+##################################################################
+
+Name=Hirvela the Lost
+Category=champion
+Path=HotWS
+type=icebrood
+
+attack=Throw Axe
+cooldown=0
+animation=raises left/right hand|0.5|throws an axe
+effect=projectile
+subeffect=damage:0
+
+attack=Boomerang Axe
+animation=raises left/right hand|0.5|throws an axe
+effect=slow and returning projectile
+count=2
+subeffect=damage:0
+subeffect=chilled:8
+
+attack=Whirling Defense
+animation=instant||spins and moves axes fast
+effect=6 PBAoEs in 6 s
+count=6
+length=6
+subeffect=damage:0
+effect=reflect projectiles (6 s)
+subeffect=reflected projectiles inflict "Ice" (2 s)
+#note=stop using projectiles
+
+attack="Ice"
+additional=can be destroyed
+effect=debuff
+subeffect=chilled:3 every second and can't move or use skills
+
+attack=Lunge
+animation=turns right and glows|1
+effect=leap
+subeffect=damage:0
+
+attack=Transform
+animation=spreads arms and roars|2.5
+additional=used at 50%
+effect=transform to a dog
+#note=melee may interrupt
+#note=if you wipe he remains in dog-form. However, he won't charge and will stop attacking at 50%
+
+attack=Jab
+animation=swings left arm|0.25
+effect=melee
+subeffect=damage:0
+
+attack=lunge
+animation=bites|0.5
+effect=melee
+subeffect=damage:0
+
+attack=Charge
+animation=raises arms and pounds chest|1
+effect=buff
+subeffect=might:1
+effect=dash with PBAoE (~6 hits in ~2 s)
+count=6
+length=2
+subeffect=damage:0
+subeffect=knockback:1.5
+
+##################################################################
+
+Name=Lani Winterfist
+Category=champion
+Path=HotWS
+type=icebrood
+
+attack=Cone of Cold
+animation=points staff forward|0.25
+effect=6 cones in 1.5
+count=6
+length=1.5
+subeffect=damage:0
+
+attack=Meteor Shower
+animation=touches ground and raises left hand|2.5
+effect=~15 delayed (2.5 s) AoEs in 7 s
+subeffect=damage:0
+#note=keep moving and evade if needed
+
+##################################################################
+
+Name=Honor's Voice
+Category=champion
+image=http://wiki.guildwars2.com/images/b/be/Honor%27s_Voice.png
+Path=HotWS
+type=icebrood
+
+attack=Dragon's Claw
+animation=moves left arm to right|0.25
+additional=medium-range
+effect=3 projectiles (cone)
+subeffect=damage:0
+
+attack=Lightning Whip
+animation=swings right arm|0.25|whips
+effect=2 melee hits in 0.3 s
+count=2
+length=0.3
+subeffect=damage:0
+
+attack=Ice Leap
+cooldown=15
+animation=crouches|0.2
+effect=ranged
+subeffect=damage:0
+subeffect=enemy=Ice_Shard:structure on target (5 s)
+#note=try to predict and block/evade
+#note=destroy Ice Shard fast to free players
+
+##################################################################
+
+Name=The Huntsman
+Category=legendary
+Path=HotWS
+type=icebrood
+condition=1170
+
+attack=Pounce
+animation=turns left|0.15
+effect=leap
+subeffect=damage:0
+#note=block/evade
+
+attack=Hornet Sting (1)
+animation=swings right arm|0.5|hornet effect
+effect=melee
+subeffect=damage:0
+effect=evade back
+
+attack=Monarch's Leap (2)
+effect=leap (0.5 s)
+subeffect=damage:0
+subeffect=crippled:3
+
+attack=Serpent's Strike
+animation=instant||green effect
+effect=evade behind target (1 s)
+effect=melee
+subeffect=damage:0
+subeffect=vulnerability:3
+subeffect=poison:6
+
+attack=Horn
+animation=blows horn|0.3
+cooldown=15
+effect=AoE
+subeffect=Fury:45
+subeffect=might:15:3
+subeffect=swiftness:45
+
+attack=Hunter's Call
+animation=blows horn|1.5
+cooldown=15
+effect=ranged
+subeffect="Birds" (4 s) (extreme damage)
+#note=break line of sight
+#note=evade 4 times or use immunity
+
+attack="Birds"
+additional=only hits if line of sight
+effect=debuff (~4 hits every second)
+count=16
+length=4
+subeffect=damage:0
+
+##################################################################
+
+Name=Bane's Teeth
+Category=champion
+image=http://wiki.guildwars2.com/images/7/72/Ice_Drake.jpg
+Path=HotWS
+type=drake
+condition=800
+
+attack=Bite
+cooldown=0
+animation=bites|0.15
+effect=melee
+subeffect=damage:0
+
+attack=Tail Swipe
+animation=raises tail|3|spins
+effect=PBAoE
+subeffect=damage:0
+subeffect=launch:3.4
+
+attack=Eat (1)
+animation=glows and bites|1
+effect=channeled single target melee (6 s)
+subeffect=can't move or use skills
+effect=end effect
+subeffect=launch:3.4
+
+attack=Regurgitate (1, 2)
+animation=pukes|1.5
+effect=ticking AoE (10 hits in 10 s)
+count=10
+length=10
+subeffect=damage:0
+subeffect=poison:3
+
+##################################################################
+# Path 1 bosses
+##################################################################
+# Remember to update AC1 enemy=Troll:champion too!
+
+Name=Icebrood Troll
+Category=champion
+image=http://wiki.guildwars2.com/images/f/fc/Icebrood_Troll.jpg
+Path=HotW1
+health=523009
+# Verified.
+type=icebrood
+condition=970
+
+Attack=Troll Smash
+cooldown=3
+animation=swings right arm|1|throws a ball
+additional=can't be blocked
+effect=bouncing and homing ranged
+subeffect=damage:10528999
+subeffect=weakness:5
+subeffect=daze:1
+subeffect=removes 1 boon
+#note=evade
+
+attack=stomp (1)
+cooldown=17
+animation=crouches, roars up and jumps|2|red circle appears
+additional=can't be blocked
+effect=leap (1.5 s) with PBAoE
+subeffect=damage:24876817
+subeffect=launch:2.3
+#note=evade
+
+attack=Stomp (2)
+animation=after landing|0.5
+additional=Can't be blocked. Minimum range
+effect=piercing ranged at every target
+subeffect=damage:24876817
+subeffect=knockdown:2
+subeffect=crippled:6
+subeffect=bleeding:6:3
+#note=evade or jump over
+#note=sidestep if at high rage
+#note=stay inside Troll if stacking
+
+attack=Roar
+cooldown=20
+animation=holds head and roars forward|0.75
+additional=Can't be blocked or evaded
+effect=cone
+subeffect=fear:3
+subeffect=weakness:6
+subeffect=15 "Troll regeneration" (once per second)
+#note=stun break
+
+attack="Troll regeneration"
+effect=buff
+subeffect=no effect
+
+##################################################################
+
+Name=Aldus Stormbringer
+Category=legendary
+image=http://wiki.guildwars2.com/images/e/e4/Aldus_Stormbringer.jpg
+Path=HotW1
+health=1376400
+# Verified.
+type=sons of svanir
+
+attack=Can't be moved
+
+attack=Frostbolt
+effect=projectile
+subeffect=damage:8851454
+
+attack=Frostbolt Volley
+effect=projectile
+subeffect=damage:8817262
+
+attack=Frozen Ground
+effect=6 PBAoEs in 5 s
+count=6
+length=5
+subeffect=damage:5628858
+subeffect=chilled:0
+#note=run out, evade if needed
+
+attack=Mass Summon
+cooldown=55
+effect=summon
+subeffect=6 enemy=text:Icebrood|Icebrood_Mauler:normal|Icebrood_Seer:normal|Icebrood_Hunter:normal|Icebrood_Claymore:normal|Icebrood_Berserker:normal
+
+attack=Shielding
+effect=at start
+subeffect=60? buff:"Shield of Jormag"
+effect=at 75%
+subeffect=30 buff:"Shield of Jormag"
+effect=at 50%
+subeffect=45 buff:"Shield of Jormag"
+effect=at 25%
+subeffect=60 buff:"Shield of Jormag"
+
+attack="Shield of Jormag"
+effect=buff
+subeffect=blocks an attack. Projectiles are reflected.
+
+##################################################################
+
+Name=Ginva the Butcher
+Category=legendary
+health=1376340
+image=http://wiki.guildwars2.com/images/6/6a/Ginva_the_Butcher.jpg
+Path=HotW1
+# Verified.
+type=icebrood
+
+attack=Splitblade
+effect=3 projectiles (cone)
+subeffect=damage:10740562
+subeffect=pull:1.5
+#note=evade
+
+attack=Crude Swing
+effect=cone
+subeffect=damage:13458826
+#note=block/evade
+
+attack=Whirling Defense
+cooldown=30
+effect=9 PBAoEs in 4 s
+count=9
+length=4
+subeffect=damage:8609973
+effect=reflects projectiles (5 s)
+#note=if ranged: stop using projectiles
+#note=if melee: evade away, keep hitting at max melee range
+
+attack=Icy Ground
+cooldown=55
+effect=ticking AoE (21 hits in 20 s)
+count=21
+length=20
+subeffect=chilled:5
+
+##################################################################
+# Path 2 bosses
+##################################################################
+
+Name=Torn Fur
+Category=champion
+image=http://wiki.guildwars2.com/images/5/5f/Icebrood_Kodan.jpg
+Path=HotW2
+type=icebrood
+
+attack=Frost Aura
+animation=sticks sword to ground
+effect=3 PBAoEs in 5 s
+count=3
+length=5
+subeffect=damage:0
+subeffect=knockback:0
+subeffect=chilled:4
+subeffect=vulnerability:4
+subeffect=might:10
+
+attack=Throw Greatsword
+additional=can't be blocked
+effect=projectile
+subeffect=damage:0
+subeffect=launch:0
+subeffect=vulnerability:5:3
+
+attack=Flurry (1)
+effect=channeled melee
+subeffect=damage:0
+subeffect=vulnerability:10
+
+attack=Flurry (2)
+animation=instant
+effect=3 projectiles (cone)
+subeffect=damage:0
+
+attack=Leap (1)
+effect=leap
+subeffect=damage:0
+
+attack=Leap (2)
+animation=instant
+effect=3 projectiles (cone)
+subeffect=damage:0
+
+##################################################################
+
+Name=Jaddeor Icefist
+Category=legendary
+image=http://wiki.guildwars2.com/images/a/af/Champion_Svanir_Marauder.jpg
+Path=HotW2
+type=icebrood
+
+attack=Maul
+animation=moves arm back
+effect=homing projectile
+subeffect=damage:0
+subeffect=bleeding:5:2
+subeffect=vulnerability:15
+
+attack=Jab
+animation=weird sound
+effect=2 PBAoEs
+count=2
+subeffect=damage:0
+subeffect=bleeding:0:3
+
+attack=Charge (1)
+animation=glows and pounds chest
+effect=dash with PBAoE (2.5 s)
+subeffect=damage:0
+subeffect=launch:0
+effect=leaves a trail of "Icy Ground"
+
+attack=Charge (2)
+effect=melee
+subeffect=damage:0
+subeffect=launch:0
+
+attack="Icy Ground"
+effect=ticking AoE
+subeffect=chilled:0
+subeffect=vulnerability:0
+
+##################################################################
+
+Name=Balgren Creedbreaker
+image=http://wiki.guildwars2.com/images/a/af/Champion_Svanir_Marauder.jpg
+Category=legendary
+Path=HotW2
+type=icebrood
+
+attack=Maul
+animation=moves arm back
+effect=homing projectile
+subeffect=damage:0
+subeffect=bleeding:5:2
+subeffect=vulnerability:15
+
+attack=Jab
+animation=weird sound
+effect=2 PBAoEs
+count=2
+subeffect=damage:0
+subeffect=bleeding:0:3
+
+attack=Roar
+animation=glows
+additional=can't be blocked or evaded
+effect=melee
+subeffect=fear:3
+subeffect=protection:15
+subeffect=might:5:3
+#note=get out of range (evade back if on melee)
+#note=stun break
+
+attack=Summon
+effect=Summon
+
+##################################################################
+
+Name=Andal the Thug
+Category=legendary
+image=http://wiki.guildwars2.com/images/5/55/Son_of_Svanir_staff.jpg
+Path=HotW2
+type=sons of svanir
+
+attack=Cone of Cold
+#note=able to rotate
+effect=channeled cone
+subeffect=damage:0
+#note=evade twice or out-range
+
+attack=Quaggan Growth
+effect=AoE
+subeffect=damage:0
+subeffect=chilled:4
+subeffect=might:20:2
+
+attack=Meteor Shower
+animation=instant||falling ice shards
+effect=multiple delayed AoEs
+subeffect=damage:0
+subeffect=chilled:0
+effect=walk out of circles, evade if needed
+
+##################################################################
+
+Name=Poron
+Category=champion
+image=http://wiki.guildwars2.com/images/1/15/Corrupted_Quaggan.jpg
+Path=HotW2
+type=no type
+
+attack=Stab
+effect=melee
+subeffect=damage:0
+
+attack=Throw Javelin
+effect=slow projectile
+subeffect=damage:0
+
+##################################################################
+
+copy=Poron
+Name=Oolon
+
+##################################################################
+
+Name=Wollam the Plunderer
+Category=legendary
+image=http://wiki.guildwars2.com/images/e/ea/Wollam_the_Plunderer.jpg
+Path=HotW2
+type=icebrood
+
+attack=Stab
+effect=melee
+subeffect=damage:0
+
+attack=Throw mines
+effect=multiples mines on area
+
+attack=Dart
+effect=channeled PBAoE
+subeffect=damage:0
+#note=keep distance and evade, you can go melee after this for a while
+
+##################################################################
+# Path 3 bosses
+##################################################################
+
+Name=Svánigandr
+Category=legendary
+image=http://wiki.guildwars2.com/images/6/66/Becomethewolf.jpg
+Path=HotW3
+type=icebrood
+
+attack=bite
+cooldown=0
+animation=swings left arm
+effect=short dash
+subeffect=damage:0
+effect=multiple delayed AoEs
+subeffect=damage:0
+
+attack=Leap
+animation=glows and jumps at target
+effect=short leap with long cone
+subeffect=damage:0
+subeffect=bleeding:4
+#note=block/evade
+
+attack=Swipe (1)
+effect=melee
+subeffect=damage:0
+
+attack=Brutal Swipe (2)
+effect=Melee
+subeffect=damage:0
+
+attack=howl
+animation=howls
+additional=can't be blocked
+effect=huge PBAoE
+subeffect=damage:0
+subeffect=immobilized:4
+subeffect="Stun" (4 s)
+#note=evade
+
+##################################################################
+
+Name=Fimbul
+Category=legendary
+Path=HotW3
+#  Verified.
+type=sons of svanir
+
+attack=Leap
+effect=leap with PBAoE
+subeffect=damage:0
+subeffect=bleeding:0
+
+attack=Springs
+effect=ticking AoE
+subeffect=damage:0
+effect=final hit
+subeffect=launch:0
+#note=walk out
+
+attack=Iceshard
+effect=get covered in iceshard
+subeffect=healing:0
+subeffect=invulnerability until destroyed
+
+##################################################################
+
+Name=Sorge the Zealot
+Category=legendary
+image=http://wiki.guildwars2.com/images/e/ea/Wollam_the_Plunderer.jpg
+Path=HotW3
+# Verified.
+type=icebrood
+
+attack=Crimson Tide
+effect=ranged
+subeffect=damage:0
+subeffect=bleeding:0
+#note=block/evade when you see claws on you
+
+attack=Summon
+effect=Summon
+subeffect=enemy=Giant_Arctic_Jellyfish:normal
+
+attack=Sink
+effect=ranged
+subeffect=damage:0
+subeffect=sink:0
+
+##################################################################
+
+Name=Giant Arctic Jellyfish
+alt=Giant Arctic Jellyfishes|Jellyfish|Jellyfishes
+Category=veteran
+image=http://wiki.guildwars2.com/images/f/f9/Jellyfish_%28NPC%29.jpg
+Path=HotW3
+# Verified.
+type=fish
+toughness=0.5
+
+attack=Detonate
+effect=PBAoE
+subeffect=damage:0
+effect=self destruct
+
+##################################################################
+# Do these even exist?
+
+Name=Giant Arctic Jellyfish
+alt=Giant Arctic Jellyfishes|Jellyfish|Jellyfishes
+image=http://wiki.guildwars2.com/images/f/f9/Jellyfish_%28NPC%29.jpg
+Category=normal
+Path=HotW3
+toughness=0.5
+type=fish
+
+##################################################################
+# Icebrood
+##################################################################
+# Similar enemy: HotW1 Son of Svanir (Axe 78)
+# Similar enemy: HotW1 Icebrood enemy=Berserker:Normal
+# Same enemy: Snow Son of Svanir (Axe)
+
+Name=Icebrood Berserker
+alt=Icebrood Berserkers
+Category=elite
+image=http://wiki.guildwars2.com/images/5/50/Icebrood_Berserker.jpg
+health=157296
+Path=HotW1|HotW3
+type=icebrood
+
+attack=Throw Axe
+cooldown=2
+animation=swings left/right arm|0.3|throws an axe
+effect=projectile
+subeffect=damage:5556200
+
+attack=Boomerang Axe
+cooldown=12
+animation=swings left/right arm|0.3|throws an axe
+effect=returning projectile
+count=2
+subeffect=damage:6013518
+subeffect=crippled:8
+#note=projectile moves slightly slower than with Throw Axe
+
+attack=Whirling Defense
+cooldown=24
+animation=moves axes fast with a whirl effect and wind sound|instant|spins around
+effect=6 PBAoEs in 5 s
+count=6
+length=5
+subeffect=damage:6763605
+effect=reflects projectiles (5 s)
+#note=at melee move away to max melee range
+#note=at range stop using projectiles
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Throw Axe
+subeffect=damage:6834126
+effect=Boomerang Axe
+count=2
+subeffect=damage:8554411
+subeffect=chilled:5
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Similar enemy: HotW1 Son of Svanir (Axe 78)
+# Similar enemy: HotW1 Icebrood enemy=Berserker:Normal
+# Same enemy: Snow Son of Svanir (Axe)
+
+Name=Icebrood Berserker
+alt=Icebrood Berserkers
+Category=normal
+image=http://wiki.guildwars2.com/images/5/50/Icebrood_Berserker.jpg
+Path=HotWS
+type=icebrood
+
+attack=Throw Axe
+cooldown=2
+animation=swings left/right arm|0.3|throws an axe
+effect=projectile
+subeffect=damage:5140200
+
+attack=Boomerang Axe
+cooldown=12
+animation=swings left/right arm|0.3|throws an axe
+effect=returning projectile
+count=2
+subeffect=damage:5563278
+subeffect=crippled:8
+#note=projectile moves slightly slower than with Throw Axe
+
+attack=Whirling Defense
+cooldown=24
+animation=moves axes fast with a whirl effect and wind sound|instant|spins around
+effect=6 PBAoEs in 5 s
+count=6
+length=5
+subeffect=damage:6257205
+effect=reflects projectiles (5 s)
+#note=at melee move away to max melee range
+#note=at range stop using projectiles
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Throw Axe
+subeffect=damage:6322446
+effect=Boomerang Axe
+count=2
+subeffect=damage:7913931
+subeffect=chilled:5
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Greatsword)
+
+Name=Icebrood Claymore
+alt=Icebrood Claymores
+Category=elite
+Path=HotWS|HotW2
+# Not verified, less for story.
+health=157296
+type=icebrood
+condition=790
+
+attack=Slash
+cooldown=2
+animation=swings sword|0.4
+effect=2 melee hits in 0.5 s
+count=2
+length=0.5
+subeffect=damage:0
+
+attack=Whirlwind Attack
+cooldown=24
+animation=glows and sticks sword to the ground|0.6
+effect=4 projectiles (cone)
+subeffect=damage:0
+
+attack=Whirlwind Attack
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:0
+#note=usually hits only once, may hit twice if you run with him 
+
+attack=Frostwind Attack
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+additional=only used when buffed up
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:0
+effect=leaves 4 delayed (1 s) AoEs
+subeffect=damage:0
+subeffect=bleeding:2
+#note=usually hits only once, may hit twice if you run with him 
+#note=very dangerous when against a wall
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Slash
+subeffect=no changes
+effect=Whirlwind Attack
+subeffect=no changes
+effect=Whirlwind Attack
+subeffect=Uses Frostwind Attack instead
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Greatsword)
+
+Name=Icebrood Claymore
+alt=Icebrood Claymores
+Category=normal
+Path=HotW1
+type=icebrood
+condition=790
+
+attack=Slash
+cooldown=2
+animation=swings sword|0.4
+effect=2 melee hits in 0.5 s
+count=2
+length=0.5
+subeffect=damage:0
+
+attack=Whirlwind Attack
+cooldown=24
+animation=glows and sticks sword to the ground|0.6
+effect=4 projectiles (cone)
+subeffect=damage:0
+
+attack=Whirlwind Attack
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:0
+#note=usually hits only once, may hit twice if you run with him 
+
+attack=Frostwind Attack
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+additional=only used when buffed up
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:0| per hit.
+effect=leaves 4 delayed (1 s) AoEs
+subeffect=damage:0
+subeffect=bleeding:2
+#note=usually hits only once, may hit twice if you run with him 
+#note=very dangerous when against a wall
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Slash
+subeffect=no changes
+effect=Whirlwind Attack
+subeffect=no changes
+effect=Whirlwind Attack
+subeffect=Uses Frostwind Attack instead
+#note=Additional usages seem to have no effect
+
+##################################################################
+
+Name=Icebrood Colossus
+alt=Icebrood Colossi
+image=http://wiki.guildwars2.com/images/3/38/Icebrood_Colossus.jpg
+Category=elite
+# Not verified, less for story.
+health=157296
+Path=HotWS|HotW2
+type=icebrood
+
+attack=Ice Shards
+image=http://i.imgur.com/1rFMpCn.gif
+animation=points left arm|0.5
+effect=homing projectile
+subeffect=damage:0
+
+attack=Ice Spike
+image=http://i.imgur.com/OCvINVh.gif
+animation=glows and jumps|1
+effect=delayed AoE
+subeffect=damage:0
+
+attack=Frost Blast
+image=http://i.imgur.com/fastZ4n.gif
+animation=glows and pulls right arm back|1.5
+effect=PBAoE
+subeffect=damage:0
+subeffect=knockback:0
+
+##################################################################
+
+Name=Icebrood Elemental
+alt=Icebrood Elementals
+Category=elite
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+Path=HotWS
+type=icebrood
+
+attack=Ice Throw
+image=http://i.imgur.com/36lhIK0.gif
+animation=grabs ice from chest and throws with right hand|1
+effect=homing projectile
+subeffect=damage:0
+subeffect=bleeding:3
+subeffect=chilled:3
+
+attack=Polar Smash
+image=http://i.imgur.com/XldLxoC.gif
+animation=bends and pulls right arm back|2
+additional=can't be blocked
+effect=melee
+subeffect=damage:0
+
+attack=Freeze Row
+image=http://i.imgur.com/I9d5T6S.gif
+animation=waves arms with weird sound|1.5
+effect=multiple delayed (2.75 s) tiny AoEs (cone)
+subeffect=damage:0
+subeffect=launch:0
+#note=walk away (note hit box is much bigger than graphics)
+
+##################################################################
+
+Name=Icebrood Elemental
+alt=Icebrood Elementals
+Category=elite
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+# Not verified.
+health=157296
+Path=HotW2
+type=icebrood
+
+attack=Ice Strike
+effect=AoE
+subeffect=damage:0
+effect=delayed AoE
+subeffect=damage:0
+subeffect=bleeding:5:2
+
+attack=Shockwave
+animation=holds arm back
+effect=homing projectile
+subeffect=damage:0
+
+attack=Summon
+effect=PBAoE
+subeffect=chilled:2
+effect=Summon
+subeffect=3 enemy=Icebrood_Elementals_(Small):normal
+
+##################################################################
+
+Name=Icebrood Goliath
+alt=Icebrood Goliaths
+Category=elite
+image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
+Path=HotWS
+type=icebrood
+# VERIFY for all goliaths: Very high value.
+toughness=2.0
+
+attack=Smash
+image=http://i.imgur.com/XXFJoDF.gif
+animation=swings right arm|0.75
+cooldown=0
+effect=melee
+subeffect=damage:0
+subeffect=knockback:1.5
+
+attack=Smash
+image=http://i.imgur.com/SgQDJrV.gif
+animation=glows and pulls right arm back|2.5
+effect=melee
+subeffect=damage:0
+
+attack=Frost Breath
+image=http://i.imgur.com/sob1GdR.gif
+animation=raises arms and stomps ground|2.5|icy spray
+effect=channeled cone (2.5 s)
+subeffect=damage:0
+subeffect=chilled:1
+effect=first hit
+subeffect=immobilized:3
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Bow).
+# Same enemy: HotWS Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotWS Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow 78).
+
+Name=Icebrood Hunter
+alt=Icebrood Hunters
+image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
+Category=elite
+health=157296
+Path=HotW1|HotW3
+type=icebrood
+
+attack=Shoot
+animation=raises bow and aims|0.5|shoots an arrow
+cooldown=2.5
+effect=projectile
+subeffect=damage:0
+
+attack=Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots arrows
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+
+attack=Frost Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots icy arrows
+additional=only used when buffed up
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+subeffect=chilled:1
+
+attack=Barrage
+animation=aims up|0.5|shoots an arrow rain in a big circle
+effect=channeled AoE (10 hits in 3.5 s)
+count=10
+length=3.5
+subeffect=damage:0
+subeffect=crippled:3
+
+attack=Summon
+animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
+additional=only used when buffed up
+effect=Summon
+subeffect=2 enemy=Icebrood_Wolves:normal
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons
+additional=used when below 25%
+effect=Shoot
+subeffect=No change
+effect=Volley
+subeffect=Use Frost Volley instead
+effect=Barrage
+subeffect=???
+effect=Summon
+subeffect=Enabled
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Bow).
+# Same enemy: HotWS Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotWS Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow 78).
+
+Name=Icebrood Hunter
+alt=Icebrood Hunters
+Category=normal
+image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
+Path=HotW1
+type=icebrood
+
+attack=Shoot
+animation=raises bow and aims|0.5|shoots an arrow
+cooldown=2.5
+effect=projectile
+subeffect=damage:0
+
+attack=Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots arrows
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+
+attack=Frost Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots icy arrows
+additional=only used when buffed up
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+subeffect=chilled:1
+
+attack=Barrage
+animation=aims up|0.5|shoots an arrow rain in a big circle
+effect=channeled AoE (10 hits in 3.5 s)
+count=10
+length=3.5
+subeffect=damage:0
+subeffect=crippled:3
+
+attack=Summon
+animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
+additional=only used when buffed up
+effect=Summon
+subeffect=2 enemy=Icebrood_Wolves:normal
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons
+additional=used when below 25%
+effect=Shoot
+subeffect=No change
+effect=Volley
+subeffect=Use Frost Volley instead
+effect=Barrage
+subeffect=???
+effect=Summon
+subeffect=Enabled
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Bow).
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotWS Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow 78).
+
+Name=Icebrood Hunter
+Category=elite
+image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
+Path=HotWS
+type=icebrood
+
+attack=Shoot
+animation=raises bow and aims|0.5|shoots an arrow
+cooldown=2.5
+effect=projectile
+subeffect=damage:0
+
+attack=Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots arrows
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+
+attack=Frost Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots icy arrows
+additional=only used when buffed up
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+subeffect=chilled:1
+
+attack=Barrage
+animation=aims up|0.5|shoots an arrow rain in a big circle
+effect=channeled AoE (10 hits in 3.5 s)
+count=10
+length=3.5
+subeffect=damage:0
+subeffect=crippled:3
+
+attack=Summon
+animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
+additional=only used when buffed up
+effect=Summon
+subeffect=2 enemy=Icebrood_Wolves:normal
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons
+additional=used when below 25%
+effect=Shoot
+subeffect=No change
+effect=Volley
+subeffect=Use Frost Volley instead
+effect=Barrage
+subeffect=???
+effect=Summon
+subeffect=Enabled
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Remember to also update level 81 version!
+
+Name=Icebrood Kodan
+Category=elite
+image=http://wiki.guildwars2.com/images/5/5f/Icebrood_Kodan.jpg
+health=157296
+Path=HotW2
+type=icebrood
+
+attack=Slash
+effect=melee
+subeffect=damage:0
+
+attack=Retreating Swipe (1)
+animation=spin
+effect=melee
+subeffect=damage:0
+effect=evade back
+
+attack=Ambush (2)
+animation=glows and leans back
+effect=leap
+subeffect=damage:0
+subeffect=crippled:5
+
+attack=Flurry (3)
+effect=channeled melee
+subeffect=damage:0
+
+##################################################################
+# Similar enemy: Snow Son of Svanir (Hammer)
+# Similar enemy: HotWS Son of Svanir (Hammer)
+# Similar enemy: HotW1 Son of Svanir (Hammer 78)
+
+Name=Icebrood Mauler
+Category=elite
+image=http://wiki.guildwars2.com/images/c/c1/Icebrood_Mauler.jpg
+Path=HotWS
+type=icebrood
+
+attack=Smash
+cooldown=2.5
+animation=swing from right|0.5|frost effect on hit
+effect=Melee
+subeffect=damage:0
+
+attack=Spin
+animation=shouts||spins
+effect=PBAoE
+subeffect=damage:0
+
+##################################################################
+# Similar enemy: Snow Son of Svanir (Hammer)
+# Similar enemy: HotWS Son of Svanir (Hammer)
+# Similar enemy: HotW1 Son of Svanir (Hammer 78)
+
+Name=Icebrood Mauler
+Category=normal
+image=http://wiki.guildwars2.com/images/c/c1/Icebrood_Mauler.jpg
+Path=HotW1
+type=icebrood
+
+attack=Smash
+cooldown=2.5
+animation=swing from right|0.5|frost effect on hit
+effect=Melee
+subeffect=damage:0
+
+attack=Spin
+animation=shouts||spins
+effect=PBAoE
+subeffect=damage:0
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Staff)
+# Same enemy: HotWS Icebrood Seer.
+# Same enemy: HotW1 Icebrood Seer.
+# Same enemy: HotW1 Son of Svanir (Staff 78).
+
+Name=Icebrood Seer
+alt=icebrood Seers
+image=http://wiki.guildwars2.com/images/9/92/Icebrood_Seer.jpg
+Category=elite
+Path=HotW1
+health=157296
+type=icebrood
+
+attack=Ice Shards
+cooldown=7
+animation=ice shard grows on top of the staff and he points it forward|1
+effect=3 medium-range projectiles in 0.1 s
+count=3
+length=0.1
+subeffect=damage:2726812
+subeffect=chilled:1
+
+attack=Ice Spike
+cooldown=5
+animation=leans back with ice effect on top of the staff, crouches and raises left arm|1|red circle
+effect=delayed (3 s) AoE
+subeffect=damage:11945830
+
+attack=Summon
+animation=leans back, crouches and raises left arm|1
+additional=maximum of 2
+effect=Summon
+subeffect=enemy=Icebrood_Elemental_(Big):normal|Icebrood_Elemental_(Big):normal:79 at target
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Staff)
+# Same enemy: HotWS Icebrood Seer.
+# Same enemy: HotW1 Icebrood Seer.
+# Same enemy: HotW1 Son of Svanir (Staff 78).
+
+Name=Icebrood Seer
+alt=icebrood Seers
+image=http://wiki.guildwars2.com/images/9/92/Icebrood_Seer.jpg
+Category=normal
+Path=HotW1
+health=157296
+type=icebrood
+
+attack=Ice Shards
+cooldown=7
+animation=ice shard grows on top of the staff and he points it forward|1
+effect=3 medium-range projectiles in 0.1 s
+count=3
+length=0.1
+subeffect=damage:2726812
+subeffect=chilled:1
+
+attack=Ice Spike
+cooldown=5
+animation=leans back with ice effect on top of the staff, crouches and raises left arm|1|red circle
+effect=delayed (3 s) AoE
+subeffect=damage:11945830
+
+attack=Summon
+animation=leans back, crouches and raises left arm|1
+additional=maximum of 2
+effect=Summon
+subeffect=enemy=Icebrood_Elemental_(Big):normal|Icebrood_Elemental_(Big):normal:79 at target
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Staff)
+# Same enemy: HotW1 Icebrood Seer.
+# Same enemy: HotW1 Icebrood Seer.
+# Same enemy: HotW1 Son of Svanir (Staff 78).
+
+Name=Icebrood Seer
+alt=icebrood Seers
+image=http://wiki.guildwars2.com/images/9/92/Icebrood_Seer.jpg
+Category=elite
+Path=HotWS
+type=icebrood
+
+attack=Ice Shards
+cooldown=7
+animation=ice shard grows on top of the staff and he points it forward|1
+effect=3 medium-range projectiles in 0.1 s
+count=3
+length=0.1
+subeffect=damage:0
+subeffect=chilled:1
+
+attack=Ice Spike
+cooldown=5
+animation=leans back with ice effect on top of the staff, crouches and raises left arm|1|red circle
+effect=delayed (3 s) AoE
+subeffect=damage:0
+
+attack=Summon
+animation=leans back, crouches and raises left arm|1
+additional=maximum of 2
+effect=Summon
+subeffect=enemy=Icebrood_Elemental_(Big):normal at target
+
+##################################################################
+
+copy=Icebrood Seer|elite|HotW1
+name=Seer
+alt=Seers
+
+copy=Icebrood Seer|elite|HotW1
+name=Icebrood Seer
+alt=Icebrood Seer
+category=champion
+
+copy=Icebrood Seer|elite|HotWS
+name=Icebrood Seer
+alt=Icebrood Seer
+category=champion
+
+##################################################################
+# Same enemy: CoE Icebrood Troll
+
+Name=Icebrood Troll
+alt=Icebrood Trolls
+image=http://wiki.guildwars2.com/images/f/fc/Icebrood_Troll.jpg
+# Not verified.
+health=157296
+Category=elite
+Path=HotWS
+type=icebrood
+condition=910
+
+attack=Troll Smash
+animation=swings right arm|0.5
+effect=melee
+subeffect=damage:0
+subeffect=bleeding:5:4
+subeffect=chilled:8
+
+attack=Stomp
+animation=jumps in air|2.5
+effect=PBAoE
+subeffect=damage:0
+subeffect=launch:3.3
+
+attack=Roar
+animation=roars|1.5
+effect=buff
+subeffect=5 "Troll regeneration" in 5 s
+
+##################################################################
+# Same enemy: HotW1 Icebrood enemy=Wolf:Elite
+# Same enemy: CoE1 Icebrood enemy=Wolf:Elite
+
+Name=Icebrood Wolf
+alt=Icebrood Wolves
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+Category=elite
+Path=HotWS
+type=icebrood
+
+attack=Bite
+image=http://i.imgur.com/kkL8fmR.gif
+animation=swings arms|0.25
+cooldown=2.5
+effect=dash with 2 melee hits in 0.5 s
+count=2
+length=0.5
+subeffect=damage:0
+
+attack=Leap
+image=http://i.imgur.com/i0WYRxZ.gif
+cooldown=19
+effect=short leap
+subeffect=damage:0
+subeffect=knockdown:2
+effect=summon
+subeffect=enemy=Icebrood_Wolf:normal
+
+##################################################################
+# Same enemy: CoE1 Icebrood enemy=Wolf:Normal
+# Same enemy: HotW1 Icebrood enemy=Wolf:Normal
+# Same enemy: Snow Icebrood Wolf
+
+Name=Icebrood Wolf
+alt=Icebrood Wolves
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+Category=normal
+Path=HotWS
+type=icebrood
+
+attack=Bite
+image=http://i.imgur.com/kkL8fmR.gif
+cooldown=3.5
+effect=melee
+subeffect=damage:2564169
+
+attack=Leap
+image=http://i.imgur.com/mNIXPon.gif
+cooldown=35
+effect=2 PBAoEs
+count=2
+subeffect=damage:4721076
+subeffect=crippled:3
+
+##################################################################
+# Same enemy: CoE1 Icebrood enemy=Wolf:Elite
+# Same enemy: HotWS Icebrood enemy=Wolf:Elite
+
+Name=Icebrood Wolf
+alt=Icebrood Wolves|Wolf|Wolves
+Category=elite
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+health=157296
+Path=HotW1|HotW3
+type=icebrood
+
+attack=Bite
+image=http://i.imgur.com/kkL8fmR.gif
+animation=swings arms|0.25
+cooldown=2.5
+effect=dash with 2 melee hits in 0.5 s
+count=2
+length=0.5
+subeffect=damage:4248356
+
+attack=Leap
+image=http://i.imgur.com/i0WYRxZ.gif
+cooldown=19
+effect=short leap
+subeffect=damage:16668600
+subeffect=knockdown:3
+effect=summon
+subeffect=enemy=Icebrood_Wolf:normal
+
+##################################################################
+# Same enemy: CoE1 Icebrood enemy=Wolf:Normal
+# Same enemy: HotWS Icebrood enemy=Wolf:Normal
+# Same enemy: Snow Icebrood Wolf
+
+Name=Icebrood Wolf
+alt=Icebrood Wolves
+Category=normal
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+Path=HotW1|HotW3
+type=icebrood
+
+attack=Bite
+image=http://i.imgur.com/kkL8fmR.gif
+cooldown=3.5
+effect=melee
+subeffect=damage:2771689
+
+attack=Leap
+image=http://i.imgur.com/mNIXPon.gif
+cooldown=35
+effect=2 PBAoEs
+count=2
+subeffect=damage:5103156
+subeffect=crippled:3
+
+##################################################################
+# Same enemy: CoE1 Icebrood enemy=Wolf:Champion
+# might be similar enemy: FOTM Thauma
+
+Name=Icebrood Wolf (Rare)
+alt=Wolf (Rare)
+Category=elite
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+health=157296
+Path=HotW1|HotW3
+type=icebrood
+
+attack=Bite
+image=http://i.imgur.com/q0TdusG.gif
+cooldown=3.5
+animation=bites|0.25
+effect=Melee
+subeffect=damage:8030846
+
+attack=Frost Leap
+image=http://i.imgur.com/7bQUYcr.gif
+animation=instant||leaves icy ground
+cooldown=30
+effect=2 PBAoEs
+count=2
+subeffect=damage:17063945
+subeffect=chilled:3
+#note=keep distance until attack is used
+#note=burst down
+
+attack=Leap
+image=http://i.imgur.com/mNIXPon.gif
+animation=instant
+cooldown=30
+effect=short dash (0.25 s) with 2 PBAoEs
+count=2
+subeffect=damage:15666347
+subeffect=crippled:3
+#note=keep distance until attack is used
+#note=burst down
+
+##################################################################
+# Same enemy: HotW1 Son of Svanir (Axe 78)
+# NOTE: might be same. Need to check whether they use Whirling Defense.
+# Similar enemy: HotW1 Icebrood enemy=Berserker:Elite
+# Similar enemy: Snow Son of Svanir (Axe)
+
+Name=Icebrood Berserker
+Category=normal
+image=http://wiki.guildwars2.com/images/5/50/Icebrood_Berserker.jpg
+Path=HotW1|HotW3
+type=icebrood
+
+attack=Throw Axe
+cooldown=2
+animation=swings left/right arm|0.3|throws an axe
+effect=projectile
+subeffect=damage:0
+
+attack=Boomerang Axe
+cooldown=12
+animation=swings left/right arm|0.3|throws an axe
+effect=returning projectile
+count=2
+subeffect=damage:0
+subeffect=crippled:8
+#note=projectile moves slightly slower than with Throw Axe
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Throw Axe
+subeffect=damage:0
+effect=Boomerang Axe
+count=2
+subeffect=damage:0
+subeffect=chilled:5
+#note=Additional usages seem to have no effect
+
+##################################################################
+
+Name=Icebrood Elemental (small)
+alt=Icebrood Elementals (small)
+Category=normal
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+Path=HotW2
+type=icebrood
+
+attack=Punch
+effect=PBAoE
+subeffect=damage:0
+effect=self destruct
+
+##################################################################
+# Same enemy: Snow Icebrood Elemental.
+# Same enemy: Snow Icebrood Elemental.
+# Same enemy: HotWS Icebrood Elemental .
+# Same enemy: HotW1 Icebrood Elemental (Big 81).
+# Same enemy: HotW1 Icebrood Elemental (Big 79).
+
+Name=Icebrood Elemental (big)
+Category=normal
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+Path=HotW1
+health=15774
+type=icebrood
+condition=960
+
+attack=Ice Strike
+cooldown=7
+animation=moves left hand and points it forward|0.65|a red circle with ice shard appears
+effect=AoE
+subeffect=damage:2380618
+effect=delayed (2 s) AoE
+subeffect=damage:2380618
+subeffect=bleeding:5:2
+
+attack=Shockwave
+cooldown=11
+animation=holds right arm behind back with water effect and smashes ground|1.75|sends a frosty shockwave
+effect=homing projectile
+subeffect=damage:2519523
+
+##################################################################
+# Same enemy: Snow Icebrood Elemental.
+# Same enemy: Snow Icebrood Elemental.
+# Same enemy: HotW1 Icebrood Elemental (Big).
+# Same enemy: HotW1 Icebrood Elemental (Big 81).
+# Same enemy: HotW1 Icebrood Elemental (Big 79).
+
+Name=Icebrood Elemental (big)
+Category=normal
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+Path=HotWS
+type=icebrood
+
+attack=Ice Strike
+cooldown=7
+animation=moves left hand and points it forward|0.65|a red circle with ice shard appears
+effect=AoE
+subeffect=damage:0
+effect=delayed (2 s) AoE
+subeffect=damage:0
+subeffect=bleeding:5:2
+
+attack=Shockwave
+cooldown=11
+animation=holds right arm behind back with water effect and smashes ground|1.75|sends a frosty shockwave
+effect=homing projectile
+subeffect=damage:0
+
+##################################################################
+# Son of Svanir
+##################################################################
+# Probably same with one of these:
+# Similar enemy: HotWS Icebrood Mauler
+# Similar enemy: Snow Son of Svanir (Hammer)
+
+Name=Son of Svanir (Hammer)
+Category=elite
+image=http://wiki.guildwars2.com/images/c/c1/Icebrood_Mauler.jpg
+Path=HotWS
+type=sons of svanir
+
+attack=Smash
+cooldown=2.5
+animation=swing from right|0.5|frost effect on hit
+effect=Melee
+subeffect=damage:0
+
+attack=Spin
+animation=shouts||spins
+effect=PBAoE
+subeffect=damage:0
+
+attack=Leap
+cooldown=14
+animation=crouches and leaps with hammer above head|0.9
+effect=leap
+subeffect=damage:0
+subeffect=knockdown:2
+#note=block/evade
+
+##################################################################
+
+copy=Icebrood Berserker|elite|HotW1
+name=Son of Svanir Berserker
+type=sons of svanir
+path=HotW1
+
+##################################################################
+
+copy=Icebrood Hunter|elite|HotW1
+name=Son of Svanir (Bow)
+type=sons of svanir
+path=HotW1
+
+##################################################################
+
+Name=Svanir Ballista
+alt=Svanir Ballistas
+Category=structure
+Path=HotW1
+
+attack=Ice Dart
+animation=ballista gets loaded and arrow appears|2|shoots an arrow
+effect=projectile
+subeffect=damage:2340015
+subeffect=chilled:3
+subeffect=knockback:1.5
+
+##################################################################
+
+Name=Svanir Ice Bomb
+alt=Svanir Ice Bombs
+Category=structure
+Path=HotW1
+
+attack=Ice Bomb Explosion
+additional=used on death
+effect=2 PBAoEs
+count=2
+subeffect=damage:0
+subeffect=chilled:2
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Bow).
+# Same enemy: HotWS Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotWS Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow) [elite].
+# Same enemy: HotW1 Son of Svanir (Bow) [normal].
+
+Name=Son of Svanir (Bow)
+alt=Sons of Svanir (Bow)
+Category=normal
+image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
+Path=HotW1|HotW3
+type=sons of svanir
+
+attack=Shoot
+animation=raises bow and aims|0.5|shoots an arrow
+cooldown=2.5
+effect=projectile
+subeffect=damage:0
+
+attack=Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots arrows
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+
+attack=Frost Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots icy arrows
+additional=only used when buffed up
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+subeffect=chilled:1
+
+attack=Barrage
+animation=aims up|0.5|shoots an arrow rain in a big circle
+effect=channeled AoE (10 hits in 3.5 s)
+count=10
+length=3.5
+subeffect=damage:0
+subeffect=crippled:3
+
+attack=Summon
+animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
+additional=only used when buffed up
+effect=Summon
+subeffect=2 enemy=Icebrood_Wolves:normal
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons
+additional=used when below 25%
+effect=Shoot
+subeffect=No change
+effect=Volley
+subeffect=Use Frost Volley instead
+effect=Barrage
+subeffect=???
+effect=Summon
+subeffect=Enabled
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Bow).
+# Same enemy: HotWS Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotW1 Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow 78).
+
+Name=Son of Svanir (Bow)
+alt=Sons of Svanir (Bow)
+Category=normal
+image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
+Path=HotWS
+type=sons of svanir
+
+attack=Shoot
+animation=raises bow and aims|0.5|shoots an arrow
+cooldown=2.5
+effect=projectile
+subeffect=damage:0
+
+attack=Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots arrows
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+
+attack=Frost Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots icy arrows
+additional=only used when buffed up
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+subeffect=chilled:1
+
+attack=Barrage
+animation=aims up|0.5|shoots an arrow rain in a big circle
+effect=channeled AoE (10 hits in 3.5 s)
+count=10
+length=3.5
+subeffect=damage:0
+subeffect=crippled:3
+
+attack=Summon
+animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
+additional=only used when buffed up
+effect=Summon
+subeffect=2 enemy=Icebrood_Wolves:normal
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons
+additional=used when below 25%
+effect=Shoot
+subeffect=No change
+effect=Volley
+subeffect=Use Frost Volley instead
+effect=Barrage
+subeffect=???
+effect=Summon
+subeffect=Enabled
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Other stuff
+##################################################################
+
+##################################################################
+
+Name=Ice Shard
+Category=structure
+# Not verified.
+health=50
+Path=HotWS
+
+attack=Effect
+effect=debuff (5 s)
+subeffect=chilled:3 every second and can't move or use skills
+#note=Stability prevents effect
+#note=stun breaks have no effect
+#note=use a teleport to get out
+#note=Destroy to remove the effect
+
+##################################################################
+
+Name=Barracuda
+alt=Barracudas
+Category=normal
+image=http://wiki.guildwars2.com/images/8/8d/Barracuda.jpg
+Path=HotW3
+# Verified.
+type=icebrood
+
+##################################################################
+
+Name=Corrupted Ice Crystal
+alt=Corrupted Ice Crystals
+Category=structure
+Path=HotWS
+
+##################################################################
+
+Name=Corrupted Ice Turret
+alt=Corrupted Ice Turrets
+health=44820
+Category=structure
+Path=HotWS|HotW1|HotW3
+
+# This enemy should be split to two enemies.
+tactic=normal
+Some turrets are bit stronger.
+
+attack=Corrupted Turret
+cooldown=6
+animation=shards turn horizontally|1|
+effect=16 projectiles (360 degrees)
+subeffect=damage:2087849
+subeffect=chilled:4
+
+attack=Corrupted Turret
+cooldown=6
+animation=shards turn horizontally|1|
+effect=16 projectiles (360 degrees)
+subeffect=damage:3134979
+subeffect=chilled:4
+
+##################################################################
+
+copy=Corrupted Ice Turret
+Name=Corrupted Ice Turret (Weak)
+health=29880
+Category=structure
+Path=HotWS|HotW1|HotW3
+
+##################################################################
+
+Name=Ice dragon Totem (Shooting)
+Category=structure
+Path=HotW1
+image=http://wiki.guildwars2.com/images/9/90/Dragon_Totem.jpg
+
+attack=Corrupt Spike
+cooldown=8
+animation=none
+effect=4 projectiles (360 degrees)
+subeffect=damage:2506701
+subeffect=knockdown:3
+
+##################################################################
+
+Name=Ice dragon Totem (PBAoE)
+Category=structure
+image=http://wiki.guildwars2.com/images/9/90/Dragon_Totem.jpg
+Path=HotW1
+
+attack=Area?
+effect=PBAoE
+subeffect=Chilled:0 ?
+
+##################################################################
+
+Name=Icedragon Totem
+Category=structure
+image=http://wiki.guildwars2.com/images/9/90/Dragon_Totem.jpg
+Path=HotWS
+
+attack=Does nothing
+
+##################################################################
+
+Name=Ice Shark
+alt=Ice Sharks
+Category=champion
+Path=HotWS
+type=fish
+
+attack=Bite
+effect=melee
+subeffect=damage:0
+subeffect=poison:0
+subeffect=bleeding:0
+
+attack=Charge
+effect=dash with PBAoE
+subeffect=damage:0
+subeffect=bleeding:0
+
+################################################################################################################
+# NPCS
+################################################################################################################
+
+name=Honor's Claw
+category=ally
+path=HotW1|HotW2|HotW3
+health=68817
+
+##################################################################
+
+name=Kodan Horn
+category=ally
+path=HotW1|HotW2|HotW3
+health=15774
+
+##################################################################
+
+name=Kodan Snowcaller
+category=ally
+path=HotW1|HotW2|HotW3
+health=15774
+
+##################################################################
+
+name=Kodan Icehammer
+category=ally
+path=HotW1|HotW2|HotW3
+health=15774
+
+################################################################################################################
+# Level 81 enemies (nothing is verified)
+################################################################################################################
+# Same enemy: Snow Son of Svanir (Bow).
+# Same enemy: HotWS Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotWS Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow 78).
+
+Name=Icebrood Hunter
+Category=elite
+image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
+level=81
+health=161856
+Path=HotW1
+type=icebrood
+
+attack=Shoot
+animation=raises bow and aims|0.5|shoots an arrow
+cooldown=2.5
+effect=projectile
+subeffect=damage:0
+
+attack=Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots arrows
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+
+attack=Frost Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots icy arrows
+additional=only used when buffed up
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+subeffect=chilled:1
+
+attack=Barrage
+animation=aims up|0.5|shoots an arrow rain in a big circle
+effect=channeled AoE (10 hits in 3.5 s)
+count=10
+length=3.5
+subeffect=damage:0
+subeffect=crippled:3
+
+attack=Summon
+animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
+additional=only used when buffed up
+effect=Summon
+subeffect=2 enemy=Icebrood_Wolves:normal
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons
+additional=used when below 25%
+effect=Shoot
+subeffect=No change
+effect=Volley
+subeffect=Use Frost Volley instead
+effect=Barrage
+subeffect=???
+effect=Summon
+subeffect=Enabled
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Similar enemy: Icebrood Kodan
+
+Name=Icebrood Kodan
+Category=elite
+image=http://wiki.guildwars2.com/images/5/5f/Icebrood_Kodan.jpg
+level=81
+health=161856
+Path=HotW1
+type=icebrood
+
+attack=Slash
+effect=melee
+subeffect=damage:0
+
+attack=Retreating Swipe (1)
+animation=spin
+effect=melee
+subeffect=damage:0
+effect=evade back
+
+attack=Ambush (2)
+animation=glows and leans back
+effect=leap
+subeffect=damage:0
+subeffect=crippled:5
+
+attack=Flurry (3)
+effect=channeled melee
+subeffect=damage:0
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Staff)
+# Same enemy: HotW1 Icebrood Seer.
+# Same enemy: HotWS Icebrood Seer.
+# Same enemy: HotW1 Son of Svanir (Staff 78).
+
+Name=Icebrood Seer
+Category=elite
+image=http://wiki.guildwars2.com/images/9/92/Icebrood_Seer.jpg
+level=81
+Path=HotW1
+health=161856
+type=icebrood
+
+attack=Ice Shards
+cooldown=7
+animation=ice shard grows on top of the staff and he points it forward|1
+effect=3 medium-range projectiles in 0.1 s
+count=3
+length=0.1
+subeffect=damage:2726812
+subeffect=chilled:1
+
+attack=Ice Spike
+cooldown=5
+animation=leans back with ice effect on top of the staff, crouches and raises left arm|1|red circle
+effect=delayed (3 s) AoE
+subeffect=damage:11945830
+
+attack=Summon
+animation=leans back, crouches and raises left arm|1
+additional=maximum of 2
+effect=Summon
+subeffect=enemy=Icebrood_Elemental_(Big):normal|Icebrood_Elemental_(Big):normal:79 at target
+
+##################################################################
+# Same enemy: Snow Icebrood Elemental.
+# Same enemy: Snow Icebrood Elemental.
+# Same enemy: HotW1 Icebrood Elemental (Big).
+# Same enemy: HotW1 Icebrood Elemental (Big 79).
+# Same enemy: HotWS Icebrood Elemental (Big).
+
+Name=Icebrood Elemental (Big)
+Category=normal
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+level=81
+Path=HotW1
+health=16232
+type=icebrood
+condition=960
+
+attack=Ice Strike
+cooldown=7
+animation=moves left hand and points it forward|0.65|a red circle with ice shard appears
+effect=AoE
+subeffect=damage:2380618
+effect=delayed (2 s) AoE
+subeffect=damage:2380618
+subeffect=bleeding:5:2
+
+attack=Shockwave
+cooldown=11
+animation=holds right arm behind back with water effect and smashes ground|1.75|sends a frosty shockwave
+effect=homing projectile
+subeffect=damage:2519523
+
+##################################################################
+# Same enemy: Snow Icebrood Elemental.
+# Same enemy: Snow Icebrood Elemental.
+# Same enemy: HotW1 Icebrood Elemental (Big).
+# Same enemy: HotW1 Icebrood Elemental (Big 81).
+# Same enemy: HotWS Icebrood Elemental (Big).
+
+Name=Icebrood Elemental (Big)
+Category=normal
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+level=79
+Path=HotW1
+type=icebrood
+condition=960
+
+attack=Ice Strike
+cooldown=7
+animation=moves left hand and points it forward|0.65|a red circle with ice shard appears
+effect=AoE
+subeffect=damage:2380618
+effect=delayed (2 s) AoE
+subeffect=damage:2380618
+subeffect=bleeding:5:2
+
+attack=Shockwave
+cooldown=11
+animation=holds right arm behind back with water effect and smashes ground|1.75|sends a frosty shockwave
+effect=homing projectile
+subeffect=damage:2519523
+
+################################################################################################################
+# Level 78 enemies (nothing is verified)
+################################################################################################################
+# Same enemy: Snow Son of Svanir (Bow).
+# Same enemy: HotWS Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotW1 Icebrood Hunter.
+# Same enemy: HotWS Son of Svanir (Bow).
+# Same enemy: HotW1 Son of Svanir (Bow).
+
+Name=Son of Svanir (Bow)
+image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
+health=14923
+level=78
+Category=normal
+Path=HotW1
+type=sons of svanir
+
+attack=Shoot
+animation=raises bow and aims|0.5|shoots an arrow
+cooldown=2.5
+effect=projectile
+subeffect=damage:0
+
+attack=Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots arrows
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+
+attack=Frost Volley
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots icy arrows
+additional=only used when buffed up
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:0
+subeffect=chilled:1
+
+attack=Barrage
+animation=aims up|0.5|shoots an arrow rain in a big circle
+effect=channeled AoE (10 hits in 3.5 s)
+count=10
+length=3.5
+subeffect=damage:0
+subeffect=crippled:3
+
+attack=Summon
+animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
+additional=only used when buffed up
+effect=Summon
+subeffect=2 enemy=Icebrood_Wolves:normal
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons
+additional=used when below 25%
+effect=Shoot
+subeffect=No change
+effect=Volley
+subeffect=Use Frost Volley instead
+effect=Barrage
+subeffect=???
+effect=Summon
+subeffect=Enabled
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: HotW1 Icebrood enemy=Berserker:Normal
+# NOTE: might be same. Need to check whether they use Whirling Defense.
+# Similar enemy: Snow Icebrood enemy=Berserker:Elite
+# Similar enemy: Snow Son of Svanir (Axe)
+
+Name=Son of Svanir (Axe)
+health=14923
+level=78
+Category=normal
+image=http://wiki.guildwars2.com/images/5/50/Icebrood_Berserker.jpg
+Path=HotW1
+type=sons of svanir
+
+# Damage from same enemy: 1198
+attack=Throw Axe
+cooldown=2
+animation=swings left/right arm|0.3|throws an axe
+effect=projectile
+subeffect=damage:0
+
+# Damage from same enemy: 1485
+attack=Boomerang Axe
+cooldown=12
+animation=swings left/right arm|0.3|throws an axe
+effect=returning projectile
+count=2
+subeffect=damage:0
+subeffect=crippled:8
+#note=projectile moves slightly slower than with Throw Axe
+
+# Damage from same enemy: 1474
+# Damage from same enemy: 1659
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Throw Axe
+subeffect=damage
+effect=Boomerang Axe
+count=2
+subeffect=damage:0
+subeffect=chilled:5
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: HotW1 Icebrood enemy=Berserker:Normal
+# NOTE: might be same. Need to check whether they use Whirling Defense.
+# Similar enemy: Snow Icebrood enemy=Berserker:Elite
+# Similar enemy: Snow Son of Svanir (Axe)
+
+Name=Son of Svanir (Axe)
+Category=normal
+image=http://wiki.guildwars2.com/images/5/50/Icebrood_Berserker.jpg
+Path=HotWS
+type=sons of svanir
+
+# Damage from same enemy: 1198
+attack=Throw Axe
+cooldown=2
+animation=swings left/right arm|0.3|throws an axe
+effect=projectile
+subeffect=damage:0
+
+# Damage from same enemy: 1485
+attack=Boomerang Axe
+cooldown=12
+animation=swings left/right arm|0.3|throws an axe
+effect=returning projectile
+count=2
+subeffect=damage:0
+subeffect=crippled:8
+#note=projectile moves slightly slower than with Throw Axe
+
+# Damage from same enemy: 1474
+# Damage from same enemy: 1659
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Throw Axe
+subeffect=damage
+effect=Boomerang Axe
+count=2
+subeffect=damage:0
+subeffect=chilled:5
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: HotW1 Icebrood Claymore
+# Same enemy: Snow1 Son of Svanir (Greatsword)
+
+Name=Son of Svanir (Greatsword)
+health=14923
+level=78
+Category=normal
+Path=HotW1
+type=sons of svanir
+condition=790
+
+attack=Slash
+cooldown=2
+animation=swings sword|0.4
+effect=2 melee hits in 0.5 s
+count=2
+length=0.5
+subeffect=damage:0
+
+attack=Whirlwind Attack
+cooldown=24
+animation=glows and sticks sword to the ground|0.6
+effect=4 projectiles (cone)
+subeffect=damage:0
+
+attack=Whirlwind Attack
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:0
+#note=usually hits only once, may hit twice if you run with him 
+
+attack=Frostwind Attack
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+additional=only used when buffed up
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:0| per hit.
+effect=leaves 4 delayed (1 s) AoEs
+subeffect=damage:0
+subeffect=bleeding:2
+#note=usually hits only once, may hit twice if you run with him 
+#note=very dangerous when against a wall
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Slash
+subeffect=no changes
+effect=Whirlwind Attack
+subeffect=no changes
+effect=Whirlwind Attack
+subeffect=Uses Frostwind Attack instead
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: HotW1 Icebrood Claymore
+# Same enemy: Snow1 Son of Svanir (Greatsword)
+
+Name=Son of Svanir (Greatsword)
+Category=normal
+Path=HotWS
+type=sons of svanir
+condition=790
+
+attack=Slash
+cooldown=2
+animation=swings sword|0.4
+effect=2 melee hits in 0.5 s
+count=2
+length=0.5
+subeffect=damage:0
+
+attack=Whirlwind Attack
+cooldown=24
+animation=glows and sticks sword to the ground|0.6
+effect=4 projectiles (cone)
+subeffect=damage:0
+
+attack=Whirlwind Attack
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:0
+#note=usually hits only once, may hit twice if you run with him 
+
+attack=Frostwind Attack
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+additional=only used when buffed up
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:0
+effect=leaves 4 delayed (1 s) AoEs
+subeffect=damage:0
+subeffect=bleeding:2
+#note=usually hits only once, may hit twice if you run with him 
+#note=very dangerous when against a wall
+
+attack=Buff up
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Slash
+subeffect=no changes
+effect=Whirlwind Attack
+subeffect=no changes
+effect=Whirlwind Attack
+subeffect=Uses Frostwind Attack instead
+#note=Additional usages seem to have no effect
+
+##################################################################
+# Same enemy: Snow Son of Svanir (Staff)
+# Same enemy: HotW1 Icebrood Seer.
+# Same enemy: HotWS Icebrood Seer.
+# Same enemy: HotW1 Icebrood Seer.
+
+Name=Son of Svanir (Staff 78)
+health=14923
+image=http://wiki.guildwars2.com/images/9/92/Icebrood_Seer.jpg
+level=78
+Category=normal
+Path=HotW1
+type=sons of svanir
+
+attack=Ice Shards
+cooldown=7
+animation=ice shard grows on top of the staff and he points it forward|1
+effect=3 medium-range projectiles in 0.1 s
+count=3
+length=0.1
+subeffect=damage:0
+subeffect=chilled:1
+
+attack=Ice Spike
+cooldown=5
+animation=leans back with ice effect on top of the staff, crouches and raises left arm|1|red circle
+effect=delayed (3 s) AoE
+subeffect=damage:0
+
+attack=Summon
+animation=leans back, crouches and raises left arm|1
+additional=maximum of 2
+effect=Summon
+subeffect=enemy=Icebrood_Elemental_(big):normal|Icebrood_Elemental_(big):normal:79 at target
+
+##################################################################
+# Probably same with one of these:
+# Similar enemy: Snow1 Son of Svanir (Hammer)
+# Similar enemy: HotWS Son of Svanir (Hammer)
+# Similar enemy: HotWS Icebrood Mauler
+
+Name=Son of Svanir (Hammer 78)
+health=14923
+image=http://wiki.guildwars2.com/images/c/c1/Icebrood_Mauler.jpg
+level=78
+Category=normal
+Path=HotW1
+type=sons of svanir
+
+attack=Smash
+cooldown=2.5
+animation=swing from right|0.5|frost effect on hit
+effect=Melee
+subeffect=damage:0
+
+attack=Spin
+animation=shouts||spins
+effect=PBAoE
+subeffect=damage:0
+
+##################################################################
+# NPCS
+##################################################################
+
+Name=Caithe
+Category=ally
+image=http://wiki.guildwars2.com/images/3/3e/Caithe.jpg
+Path=HotWS
+
+##################################################################
+
+Name=Eir Stegalkin
+Category=ally
+image=http://wiki.guildwars2.com/images/4/47/Eir_Stegalkin.jpg
+Path=HotWS
+

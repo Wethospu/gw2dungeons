@@ -1,0 +1,31 @@
+# Order is important because it directly affects the order in the page!
+normal
+melee
+ranged
+skip
+coordinated
+fight
+alternative
+optional
+bug
+exploit
+low man
+north-west
+north
+north-east
+west
+east
+south-east
+solo
+struggling
+# French
+distance
+coordonné
+combat
+alternatif
+optionnel
+# German
+nahkampf
+fernkampf
+koordiniert
+überspringen

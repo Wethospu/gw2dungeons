@@ -1,0 +1,438 @@
+init=SES|Sorrow's Embrace|Story|Story
+init=SE1|Sorrow's Embrace|Clear out the remaining Inquest (path&nbsp;1)|Path 1
+init=SE2|Sorrow's Embrace|Free the oppressed workers (path&nbsp;2)|Path 2
+init=SE3|Sorrow's Embrace|Overthrow the military (path&nbsp;3)|Path 3
+
+path=SES
+name=Sorrow's Embrace Story
+tactic=normal
+Level: 60.
+Reward: 0.73g.
+Average length: 35 minutes.
+Difficulty: Easy.
+Enemies: Inquest and Dredge.
+Time: Night.
+Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Force if you want to be optimal.
+youtube=pr3aTHtol5M|Cutscenes.
+Current record: record=14.
+
+name=First group
+tactic=normal|skip
+Talk with enemy=Eir:ally to begin the dungeon. enemy=Garm:ally and enemy=Caithe:ally will join you.
+The first group has 4 enemy=Dredge_Soldiers:elite|Soldier_(Weapon):elite.
+tactic=skip
+There is a shortcut after the first group. Go down where you see a moving part. Walk on the ledge, jump on moving part and walk to the other side! (skips ~3 groups).
+
+name=enemy=Inspector_Snik:champion and his crew
+tactic=normal
+Pull and focus the Dredge and elite enemies first. Snik starts with pistols and switches to a flamethrower at 50%.
+He is much more dangerous with pistols. Keep evading to reduce pressure and try to predict his Kick if you melee.
+When he uses flamethrower you can just sidestep to avoid most of the damage.
+
+name=enemy=Golem_Specialist_Noko:champion
+tactic=ranged
+Stay at range to avoid the melee attacks. Block or evade if she throws lightning at you. Consider staying away from others if they aren't able to avoid it.
+About 33% of the time she will be spinning and reflecting projectiles. Save non-reflectable attacks for this. Most importantly don't kill yourself.
+tactic=melee
+Consider using a ranged swap so you can keep attacking. About 33% of the time she will have a red circle around her. This deals heavy damage and strips boons.
+Then about 33% of time she will be spinning which causes knockback and reflects projectiles. You need stability to be able to melee her and even then it may get stripped.
+This makes you able to melee her about 33% of time. Try to learn animation of her basic attack so you can block or evade it.
+
+name=Fixing the door
+tactic=normal|skip
+You need to bring 3 cogs to repair the door. Before getting close to the crushers, decide your tactic. Once you get close, a Dredge Carrier appears with some enemies. Without a plan things may get chaotic.
+tactic=skip
+Ignore the carrier and its enemies. Wait for crushers to smash the ground and then run through. Run past enemies dodging, grab a cog and run forward to jump down. Get cog to the door.
+tactic=normal
+Wait before crushers until carrier appears. Kill enemies. Make sure everyone is ready before going through crushers. There are 3 elite dredge and a champion at end which can easily kill lone players.
+Once all enemies are dead just grab cogs and bring them to the door.
+tactic=normal|skip
+Before fixing the door you should ensure that NPCs are alive and with you to prevent any problems further on in the dungeon.
+
+name=Big room
+tactic=normal|skip
+Lots of enemy=Mortars:structure, golems and dredge around the whole room. Watch where you move to prevent aggroing multiple patrols.
+tactic=normal
+Plan your way unless you really want to clear the entire room. Consider taking out mortars whenever possible to reduce pressure from their long range attacks. Sticking to right side is suggested.
+tactic=skip
+Stick to the right side and get as high as possible. Run past mortars and dredge and carefully jump down to not die from fall damage.
+tactic=normal|skip
+Kill the 2 golems at end to proceed.
+
+name=Lockpicking
+tactic=normal
+After cutscenes immediately run back ~10 meters (~33 ft or ~11 yards) to intercept enemies. This gives you some breathing room and protects enemy=Zojja. Focus enemy=Dredge_Mining_Suits:elite and Inquest. If you get downed kill normal enemies to rally.
+If NPC's were dead when you entered the big room nothing may happen. Wait a few minutes and door should open automatically.
+
+name=enemy=Kudu:legendary
+tactic=ranged|melee
+He doesn't regenerate health at all even if you wipe. So don't stress too much about wiping.
+tactic=ranged
+Stay at range to prevent him from using his stunning leap. At high range you can also side step to avoid his projectiles.
+Be ready to dodge away if he shoots glue at you. Ticking immobilized makes you an easy target for his Snap Shot which does high on targets with conditions. Try clear any condition as fast as possible.
+tactic=melee
+Be ready to block or evade when he leaps towards you to avoid stun. Dodge away when he jumps backs to prevent ticking immobilized from his Glue Shot. If you get stuck you will be an easy target for his Snap Shot which does high on targets with conditions.
+tactic=ranged|melee
+At 75%/50%/25% he teleports to platform above you, turns invulnerable and summons a golem. Tell everyone to run back to the corridor (wiping also works). Once everyone gets out of combat Kudu will stop attacking which makes dealing with the golem much easier.
+When Kudu is defeated dies, multiple elite golems appear on the room. If you run away immediately they won't aggro on you.
+
+name=enemy=Prototype_E-IV:champion
+tactic=ranged
+Stay away from other players to significantly reduce damage taken. This makes its basic bouncing ranged attack only hit once if you fail to dodge it.
+Most importantly it occasionally puts a flashing debuff on someone. It only damages other players so if you see someone flashing stay away from him.
+tactic=melee
+Learn the animation for its basic ranged attack. Dodging it is a priority because it will bounce to other players which causes significant pressure.
+This golem occasionally puts a flashing debuff on someone. It only damages other players so be ready to run away if you get hit. Also stay away from flashing players.
+Be ready to move away when golem raises its arms. Its Short Circuit will stunlock and deal high damage at melee range.
+
+name=enemy=Prototype_F-IV:champion
+tactic=ranged|melee
+This fire golem can put a significant amount of pressure on your team with its burning ranged attacks. Take 1-2 condition removals to remove burning from you and others. The high pressure also makes reviving difficult so focus on staying alive. You can run back to the corridor for out of combat regeneration.
+Avoid applying unnecessary conditions because it often consumes them for healing. Damaging conditions should be fine if you focus on condition damage.
+Reflects and projectile absorption are very effective to deal damage and to reduce pressure.
+tactic=ranged
+Stay mobile at all times. Zig zagging will mess with its aim which reduces chances of getting hit. Try to learn its animation. When it points forward it will only shoot at one target so save your dodge.
+However, when it points up it will shoot at every target so be ready to dodge. Get out of red circles fast to prevent getting a long burning.
+If you don't have trouble with surviving and you have no one at melee, consider going there. This will occasionally trigger a close range attack which reduces pressure from ranged players.
+tactic=melee
+Very risky unless you know its attacks. To save dodges you need to be able to distinguish its single target and multi target attack.
+When it points forward it will only shoot at one target so save your dodge. However, when it points up it will shoot at every target so be ready to dodge. Get out of red circles fast to prevent getting a long burning.
+Occasionally it will spread its arms and use a close range Fire Spin. Just run back a bit and let your team enjoy a moment of no pressure!
+
+name=enemy=Prototype_T-IV:champion
+tactic=ranged|melee
+Reflects and projectile absorption are very effective to deal damage and to reduce pressure.
+tactic=ranged
+Stay mobile at all times. Zig zagging will mess with its aim which reduces chances of getting hit. Also don't stack on other players because its attacks have small splash effect.
+Use zig zag to avoid its basic ranged attack to save dodges. Occasionally it will attempt to burst someone down with ~20 attacks. Just dodge twice or hide behind a corner.
+When it starts spinning it will throw 4 pulling projectiles at everyone. Just zig zag at range. It doesn't matter if you get pulled because it does no damage and you can just move back.
+tactic=melee
+Very risky without sufficient anti projectile skills. Its occasional burst attack will down you unless you can recognize the animation. Use single blocks and evades against its basic ranged attack and any immunity against burst.
+Occasionally it starts spinning which causes 4 pulling projectiles at everyone. Just get pulled it as it deals no damage. Also don't worry about the AoE on its feet as it only stacks poison and vulnerability.
+
+name=Corridor
+tactic=normal
+Some enemies.
+tactic=skip
+Just ignore any enemies.
+
+name=enemy=Sentry_Golem_Mark_S-IV:champion
+tactic=ranged
+Stay at high range or near a corner.
+tactic=melee
+Stay near a corner.
+tactic=ranged|melee
+| Corner can be used to break line of sight which prevents golem's powerful attacks.
+Its normal ranged attack hits through walls so just try to block or evade it.
+When it points its arms at you or starts spinning just run behind a corner. Gattling Fists does very high damage and Golem Rockets can kill multiple people if fail to dodge at end of spinning.
+tactic=melee
+Take a stun break if you accidentally hit its Shocking Aura. Try to predict it and disable your autoattack if needed.
+
+name=enemy=Iron_Forgeman:legendary
+tactic=ranged|melee
+There are 4 metal shields around the boss. The forgeman alternatives between two attacks.
+When he sprays lava around the area get close to a shield. When the spray gets close move behind the shield. If you get caught keep dodging.
+When he pulls chains, lava gets dropped on the shields. Quickly move out of them and prepare to kill appearing Slimes. They drop boulders which can be thrown at the Forgeman to deal a huge amount of damage.
+If you fall down keep jumping to reduce damage taken from the lava.
+tactic=melee
+Consider taking a ranged swap so you can attack the boss while waiting.
+
+###########################################################
+
+path=SE1
+name=Sorrow's Embrace Path 1: Clear out the remaining Inquest
+tactic=normal
+Level: 65.
+Reward: 1.31g + 60 tokens.
+Average length: 9 minutes.
+Difficulty: Easy.
+Enemies: Inquest.
+Time: Night.
+Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Force if you want to be optimal.
+youtube=R8sPGE_rsAc|Video_guide (Banter Bill).
+Current record: record=15.
+
+name=Start
+image=http://i.imgur.com/6SZvjVt.jpg
+image=http://i.imgur.com/TWTLvPU.jpg
+image=http://i.imgur.com/IP7f6VR.jpg
+tactic=normal
+Do not use the second waypoint until Fergg activates and walks through the portal. It causes the dungeon to get stuck.
+After the cinematic, enemy patrols will spawn and run towards the portal. You can choose to kill or hide from the first group.
+You can hide by jumping to the cliff edge to right of the barrier. Focus down the barrier after the first group runs past.
+tactic=coordinated
+Burst down the barrier and then stealth to hide from the patrols.
+
+name=enemy=Impasse_Mark_IV:champion
+image=http://i.imgur.com/q9jzmNQ.jpg
+tactic=normal
+The general strategy is to focus down the golem while trying to cleave/AoE the Inquest.
+The golem isn't very dangerous by itself but patrols quickly add up if you can't kill them fast enough.
+The golem will spin and pull people in. If you stay at range, wiggle or use stability. This does no damage, but will interrupt attacks.
+It also has a Static Field which creates a nasty combination with the previous mentioned area pull. Passing the field causes damage and stun.
+Melee players should try to predict its Uppercut (especially when Static Field is up because it knocks back).
+Keeping high reflection uptime will prevent most of the damage here, from both the golem and the Inquest. Try to plant the reflection right on top of the boss and stand inside the reflecting field to prevent taking hits from either inside or outside the field.
+tactic=mesmer
+Using wiki=Temporal_Curtain followed by wiki=Into_the_Void, you can pull all surrounding enemies together. This will allow aoes or cleave to be more effective. wiki=Phantasmal_Warden (traited or not) and wiki=Temporal_Curtain (traited) as well as wiki=Feedback make excellent sources of reflect uptime.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger for a near 100% reflect uptime.
+tactic=elementalist
+Use wiki=Swirling_Winds for projectile defense.
+
+name=Barriers
+tactic=normal
+You are confronted with multiple barriers, similar to the first one you destroyed at the start. A patrol consisting of 3-4 Inquest continues to spawn every ~15(?)seconds until you reach the next boss.
+There are few hiding spots on the way so, if you don't want to kill patrols, you should run past them. Projectile defense is recommended to mitigate damage.
+Once you reach Nokk, patrols will stop spawning. Try to avoid aggroing Nokk until you have dealt with any remaining Inquests, or lose inquest aggro by running to the end of the line.
+
+name=enemy=Nokk:legendary
+image=http://i.imgur.com/Yl28fos.jpg
+tactic=ranged
+Nokk does a few things - a knockback which can push you into lava (avoid via positioning!), a black projectile which applies "Gravity Distortion", summoned Singularities, and Vapor Blades (mid range hula hoops).
+Gravity Distortion is an *unbreakable* stun but can be *prevented* with stability, reflection or evasion. When the debuff ends all nearby players will take high damage and get launched. Avoid players with this debuff, and/or use group stability when it is about to end.
+Singularities have a weakening and crippling aura as well as the ability to knockdown on close range. They can't move, so they can be avoided by just running away from them.
+You can kill two birds with one stone. When first reaching Nokk, run past him to the closed door. This will break aggro and also pull him closer to the door, positioning the group so he can't knock you back into the lava.
+Since his vapor blades are mid range only, ranging him prevents him from using those allowing you to save endurance for dodging gravity distortion. If the group stays on one side of the door to begin with, most of the singularities should appear close together on that side and you can run to the other side to avoid them.
+tactic=coordinated
+Use 100% reflect/absorb uptime to nullify Vapor Blade and/or Gravity Distortion, or else it will quickly kill everyone with ~5k cleaving double-hits.
+Stack on him with melee for max DPS, using aegis to deal with any Gravity Distortion that made it through the reflects or singularity knockdowns. You can position him in the same way as when ranging, or just jump right on him in the middle but keep your back to the paths to avoid getting knocked into lava.
+Ideally if everyone is stacked on him, the singularities will spawn nearby and be destroyed quickly by the melee cleaving damage.
+tactic=ranged|coordinated
+tactic=thief
+Reflect/absorb sources: Smoke Screen.
+tactic=guardian
+Reflect/absorb sources: Wall of Reflection, Shield of the Avenger. Aegis sources: Retreat, Virtue of Courage. stability sources: Hallowed Ground, Stand Your Ground.
+tactic=engineer
+Reflect/absorb sources: Toss Elixir U (Wall of Reflection or Smoke Screen).
+tactic=mesmer
+Reflect/absorb sources: Focus 4 (traited) and 5 (traited or not), Feedback.
+tactic=elementalist
+Reflect/abosrb sources: Swirling Winds.
+
+name=Mine Field
+tactic=normal
+Mines deal damage about 1 second after they have been triggered. This means you won't get hit as long as you keep moving. This also means you probably get hit if you run behind someone.
+Either kill Golems one by one or run through and block/evade their pull. If skipping, it can be helpful to have one person run ahead and trigger all the mines first.
+tactic=guardian
+wiki="Retreat" and/or wiki="Stand_Your_Ground" make it easier for your team to run past golems without getting pulled.
+tactic=mesmer
+Using Portal, enable your team mates to safely get past. Only you have to go through the ordeal.
+tactic=thief
+Stealth your teammates with wiki=Shadow_Refuge or the Area stealth combo to enable your team to run through without worries.
+tactic=coordinated
+Stealth through the mine field. This will prevent the mines from exploding, as well as the golems from aggroing.
+
+name=Mini Golems
+image=http://i.imgur.com/I8ehUEr.jpg
+tactic=ranged|melee
+You will face enemy=Prototype_E-IV:champion, enemy=Prototype_F-IV:champion and enemy=Prototype_T-IV:champion simultaneously.
+E golem spams static discharge (repeat aoe stun/damage), F golem has a fire spin and ranged fire attack that creates lava fonts, T golem has a pull, conditions and rapid fire poison attack.
+tactic=melee
+For meleeing, there are several ways to pull the golems using typical line of sight tactics:
+1) Go down the tunnel to the left, and stack behind the left door (closer to mine field). Only enemy=Prototype_E-IV:champion will follow all the way around the corner.
+2) Same as 1 but stack behind the right door (closer to golems). enemy=Prototype_E-IV:champion and enemy=Prototype_F-IV:champion will follow around the corner.
+3) Stack behind the ramp leading to the tunnel on the left. All golems will follow here.
+4) Stack behind the little ledge of wall on the right just when exiting the mine field. All golems will follow here.
+
+To deal with the E golem, ensure you have group stability (Guardian - Hallowed Ground and Stand Your Ground), and to deal with all the rest of the golems ensure you have high reflect/absorb uptime. Once the E and F golems are dead, the T golem is not much threat and can be attacked wherever/whenever you want.
+Methods (3) and (4) are very fast and effective ways to clear the golems if you have the necessary utilities and high damage output; however it's very difficult to win in stacked melee against all 3 without at least one guardian in the party.
+tactic=ranged
+The basic ranged strategy is to keep reflects up and focus down one golem at a time. The golems can be pulled into the tunnel on the left, and 1 or 2 may lose aggro before the others making the fight easier. If reflects go down, the F golem may succeed in putting down lava fonts in the middle of the group - avoid these and you should be mostly OK.
+tactic=coordinated
+Pull the golems together using Binding Blades or Temporal Curtain. Use group stability and projectile defense and burst them down.
+tactic=thief
+Use Smoke Screen (traited if possible) and Dagger_Storm to protect your team.
+tactic=guardian
+Use Wall of Reflection and Shield of the Avenger to protect your team. Stand Your Ground and Hallowed Ground will prevent the lethal interrupts.
+tactic=engineer
+Use Toss Elixir U (Wall of Reflection or Smoke Screen) to protect your team.
+tactic=mesmer
+Use Feedback and traited focus to protect your team. Nullfield too or Mantra of Resolve if conditions become an issue. Mantra of Concentration can grant 2s stability in emergencies.
+tactic=elementalist
+Swirling Winds will absorb projectiles to protect your team.
+tactic=ranger
+Whirling Defense will reflect projectiles to protect your team.
+tactic=exploit
+Golems have different leash ranges so they can be easily separated by pulling them to the tunnel.
+
+name=enemy=Tazza:legendary and enemy=Troop_Commander_Kaeyi:champion
+image=http://i.imgur.com/bHr3Msf.jpg
+image=http://i.imgur.com/DKU24n2.jpg
+tactic=normal
+You want to focus Tazza and avoid hitting Kaeyi. Once Tazza is dead the dungeon will end. Kaeyi will summon 2 elite Inquest whenever he loses 25% health. If you fight Kaeyi and Tazza together, try to cleave the summoned Inquest while you attack Tazza - they may become an issue if ignored.
+They aren't very dangerous as long as you evade Tazza's Mind Stab which casts a delayed AoE at every target.
+Her normal attacks aren't a big threat. Melee players should try to dodge her Illusionary Wave which knocks back.She uses Illusionary Wave most commonly a few seconds after she does the Blink + Mind Stab combo.
+Kaeyi occasionally stealths and uses Caltrops, which apply bleeding and cripple every second you remain in it. Avoid fighting in his Caltrops unless you have high condition removal available.
+tactic=thief
+Use Ambush and Thieves Guild for maximum damage.
+tactic=exploit
+Pull Tazza out of her room to fight her without Kaeyi.
+tactic=optional|coordinated
+If you want loot from Tazza you have to kill Kaeyi first.
+
+Fight inside the room, stacking behind the stairs so both Tazza and Kaeyi can be pulled in.
+
+###########################################################
+
+path=SE2
+name=Sorrow's Embrace Path 2: Free the oppressed workers
+tactic=normal
+Level: 65.
+Reward: 1.31g + 60 tokens.
+Average length: 46 minutes.
+Difficulty: Medium.
+Enemies: Dredge.
+Time: Night.
+Use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Force if you want to be optimal.
+Current record: record=16.
+
+name=Start
+tactic=normal
+At start there are 3 enemy=Reverberants:elite; then 2-3 enemy=Bombers:elite; and finally at the door a enemy=Reverberant:elite, enemy=Rifleman:elite and 2 enemy=Bombers:elite.
+
+name=enemy=Foreman_Kreutzerova:legendary
+tactic=normal
+His attacks do high damage so try avoid them. Normal melee attack knocks back while Shockwave knocks down.
+Occasionally he will take cover behind shield and start healing. Use poison or interrupt.
+tactic=bug
+Dungeon will get stuck later if NPC is dead when Kreutrerova is killed. Make sure he is alive!
+
+name=Overseers
+tactic=normal
+Focus elite enemies first or pull Overseer away from them to reduce pressure.
+enemy=Foreman_Korov:champion is with 2 enemy=Bombers:elite. His normal ranged attack causes Knockback so use anti projectile skills and stability. He can also cause vulnerability and confusion.
+enemy=Foreman_Zeleoniy:champion is with a enemy=Bomber:elite and an enemy=Oscillator:elite but they can be separated. Foreman burrows which causes knockdown if you fail to dodge. His normal melee attack causes bleeding.
+enemy=Foreman_Tomak:champion is with a enemy=Bomber:elite and a enemy=Reverberant:elite. He doesn't do much damage but melee players have to dodge when he raises staff.
+enemy=Foreman_Webarov:champion is with a enemy=Bomber:elite, a enemy=Reverberant:elite, 2 enemy=Excavators:normal and 2 enemy=Ratniks:normal. He plays gong to cause protection and other boons. Also summons enemy=Ratnik:normal. Hides behind shield and blocks. Also occasional daze.
+tactic=bug
+Door may not open after the escort event if champions are killed before elites. There is no known fix.
+
+name=Escort
+tactic=normal
+NPC can die so you don't have to sacrifice yourself trying to save him. If the situation looks bad, you can just run away (preferably as a team).
+At start 4 enemy=Excavators:elite appear and they keep respawning. At some point 2 enemy=Disaggregator:elite, 3 enemy=Bombers:elite, an enemy=Oscillator:elite and a enemy=Reverberant:elite appear. At end a enemy=Reverberant:elite, an enemy=Oscillator:elite and a enemy=Bomber:elite appear.
+After opening the door you will face 4 enemy=Reverberants:elite and a enemy=Disaggregator:elite.
+tactic=bug
+Escort may never finish if NPC was dead at some specific points. Also the door may never open for the same reason. Try to keep the NPC alive since there is no known fix.
+
+name=enemy=Taskmaster:champion
+tactic=normal
+Go to left and jump down. Pull the Taskmaster away from the patrols. Make sure you don't pull any patrols while fighting him or you will probably wipe.
+When he points at you he is going to pull you, so try to dodge. He also occasionally does multiple PBAoEs which cause up to 12 stacks of bleeding (+ other stuff) so bring condition removal.
+Try to keep him under/close to a crusher so you can remove his protective bubble fast. Use immobilize to keep him at the spot.
+tactic=coordinated
+Stack behind media=se2_taskmaster.jpg|a_corner.
+
+name=Gathering the ores
+tactic=normal
+Keep avoiding the patrols. Equip mobility and survivability. Get ore and deliver it to the NPC. Remote ore locations usually have an ambush waiting so pay attention.
+
+name=End room
+tactic=normal|skip
+The first group has 2 enemy=Oscillators:elite, a enemy=Disaggregator:elite and a enemy=Mortar:structure. The second group has a enemy=Resonator:elite, a enemy=Bomber:elite and a enemy=Mortar:structure. The third group has 2 enemy=Bombers:elite and a enemy=Disaggregator:elite. The fourth group has a enemy=Reverberant:champion, 2 enemy=Disaggregators:elite, a enemy=Bomber:elite and a enemy=Mortar:structure. The fifth and final group has 2 enemy=Oscillators:elite, a enemy=Reverberant:elite and a enemy=Mortar:structure.
+tactic=normal
+Kill at least first two groups to reduce the amount of Mortars. They will shoot at you during the end boss making it a bit harder. You may also clear rest of the room (especially if you have problems with the end boss).
+tactic=skip
+Use a hit and run tactic to destroy enemy=Mortars:structure. Just run in, destroy them and try to get away safely.
+tactic=coordinated
+Head left and skip all enemies and enemy=Mortars:structure. This is much faster but makes the end fight harder because Mortars keep shooting at you.
+tactic=normal|skip
+Once you are ready approach Shukov and kill 5 enemy=Dredge_Mining_Suits:elite. Focus on getting one killed quickly and use interrupts to prevent them from summoning Dredge.
+tactic=bug
+Golems may not turn hostile if NPC was dead when entering the area. Make sure NPC survives by clearing the enemies or using stealth. There is no known fix.
+
+name=End fight
+tactic=normal
+To beat the final golems, you must kill them at the same time. Shukov keeps one of the golems shielded making it immune to attacks. At the start just attack whichever is vulnerable while trying to keep the Mark I lower because he is more durable. Once one gets to low health ignore it until the other is at low health too.
+The Mark I spins with knockback, fires rockets, pulls and also repairs itself. The Mark II stuns and burns with a static field. Melee may be tough!
+tactic=bug
+Golems may not turn hostile if NPC was dead when entering the area. Make sure NPC survives by clearing the enemies or using stealth. There is no known fix.
+
+###########################################################
+
+path=SE3
+name=Sorrow's Embrace Path 3: Overthrow the military
+tactic=normal
+Level: 65.
+Reward: 1.31g + 60 tokens.
+Average length: 12 minutes.
+Difficulty: Easy.
+Enemies: Dredge.
+Time: Night.
+Use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Force if you want to be optimal.
+youtube=45OtPjzooco|Video_guide (Banter Bill).
+Current record: record=17.
+
+name=enemy=General_Volkov:champion
+tactic=ranged
+Use crippled, chilled and immobilized to kite him more easily (this also helps melee players). Take group wide condition removal to remove bleeding from melee players.
+When he glows he will reflect projectiles for 5 seconds so stop attacking if needed.
+tactic=melee
+His normal melee attack inflicts 6 stacks of bleeding so take plenty of condition removals. Keep evading and blocking as much as you can. Don't let him hit you with 10 stacks of bleeding or he will gain swiftness and Quickness.
+Dodge or move away when he glows to prevent knockdown and 3 stacks of bleeding. Also don't use projectiles for 5 seconds or he will just reflect them.
+tactic=ranged|melee
+| When he burrows underground be ready to dodge if he tunnels towards you. Failing to dodge will kill you.
+tactic=exploit
+#Picture needed!
+You can stand on top of the machinery in the top right corner of the room and he can't hit you.
+
+name=Way to Molradovich
+tactic=normal
+When Volkov dies, the door will open and a small group will attack you. After those you can either continue along the road or drop down on left and face enemy=Cave_Spiders:elite.
+Following the road is probably easier because you have the room to fall back if needed. With that said, nearly every group drops down on the left.
+tactic=skip
+Drop down on left, quickly burst down one barricade and run to the bridge to trigger enemy movement, head left and jump down to bottom platforms. You then move forward and face enemy=General_Molradovich:champion without any other enemies present.
+tactic=coordinated
+Drop down on the left, kill the barricade, drop a projectile absorb and a Shadow Refuge (or blast stealth) at the end of the bridge, then move straight to Volkov.
+
+Alternatively, a Mesmer with a Fiery Greatsword can portal the team to the end of the bridge from where you fought Volkov. The team can then blast stealth and proceed to Volkov.
+tactic=thief
+After Volkov immediately use Smoke Screen and start using Cluster Bombs (Shortbow). Jump down and use Shadow Refuge at bottom when stealth is running out.
+
+name=enemy=General_Molradovich:champion
+tactic=normal
+Not a very dangerous boss as long as you avoid his Meteor Shower. Once he pulls you in start running away to avoid it.
+He occasionally puts a flame effect on someone. It spreads to allies. You can walk to the water spring to extinguish it.
+He will also put fire fields on the team that inflicts burn if you cross over. You can mitigate the damage by not moving.
+
+name=enemy=Dredge_Carrier:structure
+tactic=normal
+After the General you will get ambushed by a small group. Do not rush through once door opens. Moving to middle of room makes a Dredge Carrier appear which causes problems unless you are prepared.
+The carrier is a very durable structure and it will respawn any enemies you kill, so you need to deal decent damage and be able to survive for awhile.
+
+If you have sufficient projectile defense in your group, you should use the coordinated tactic.
+tactic=exploit
+Run up the platforms and use ranged attacks. With proper positioning the Dredge can't reach you and you will barely get hit. One player should trigger the carrier and quickly to join the team.
+tactic=coordinated
+Fight on top of the carrier. You need projectile defense to make this strategy work.
+
+Knock or pull the initially spawning enemies away from the carrier, ideally to under the ledge to the right. This isn't necessary, but is helpful because if they die the carrier will burrow under the ground and then resurface, being undamagable during that time period.
+tactic=bug
+Dredge cart may bug if someone leaves or disconnects during the event. There is no known fix.
+
+name=Two Champions
+tactic=normal
+Pull them behind door for cleave.
+tactic=mesmer
+Use wiki=Into_the_Void to pull the champions together.
+tactic=skip
+Just run through. The door opens when you get close.
+
+name=enemy=General_Zadorojny:champion
+tactic=normal
+This General will occasionally send tremors that deal high damage if you are ranged. Stay close at melee range to avoid this.
+He will be accompanied by a small patrol that pose a significant threat, cleave or aoe them down along with the General.
+Reflection or projectile absorption will mitigate a large amount of damage by the patrol.
+You can use line of sight behind the door or to the left of the pillar to gather all the enemies together.
+
+name=enemy=Destroyer_of_the_Worlds:legendary
+tactic=ranged|melee
+Decide whether you will focus or ignore summoned enemy=Destroyers_of_the_Earth:elite. They respawn quite fast so everyone must focus them if you want to get any benefit from killing them.
+Be ready to dodge when he pulls air in or throws something at you. If you get pulled in then dodge his following powerful melee attack. Pay attention to the ground so you won't stand in AoEs.
+tactic=melee
+Keep circling him to avoid his melee attacks.
+
+
+
+
+

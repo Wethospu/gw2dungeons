@@ -1,0 +1,483 @@
+﻿<script type="text/javascript">
+	"use strict";
+	
+	var searchDone = false;
+	
+    $(document).ready(function () {
+		loadSettings(false, false);
+		$('#tag-display').tagsinput({
+			itemValue: 'value',
+			itemText: 'text',
+			tagClass: function(item) {
+				switch (item.type) {
+					case 'tag'   : return 'label label-primary';
+					case 'category'  : return 'label label-danger label-important';
+					case 'dungeon': return 'label label-success';
+					//case 'Africa'   : return 'label label-default';
+					case 'race'     : return 'label label-warning';
+				}
+			}
+		});
+		$('.bootstrap-tagsinput input').attr("readonly", true);
+		$(".search-changer").change(function () {
+			var type = $(this).attr("data-type");
+			var value = $(this).val();
+			var text = $("option:selected", this).text()
+            $('#tag-display').tagsinput('add', { text: text, value: value, type: type });
+			$(this).val("");
+        });
+		$('#search-amount').change(function () {
+            saveSetting("searchAmount" + $('#search-view').val(), $(this).val());
+			if (searchDone)
+				handleSearch();
+        });
+		$('#search-view').change(function () {
+			$('#search-amount').val(getSetting("searchAmount" + $(this).val()));
+			saveSetting("searchView", $(this).val());
+			if (searchDone)
+				handleSearch();
+        });
+		$('#search-view').val(getSetting("searchView"));
+		$('#search-amount').val(getSetting("searchAmount" + $("#search-view").val()));
+		// Page should be loaded after search.
+        var page = $(location).attr('href').split("#");
+        if (page.length > 1) {
+            page = page[1];
+			$("#search-name").val(page.replace(/\+/g, ' '));
+            handleSearch();
+			// Search doesn't block the site from loading so don't add any code below.
+        }
+    });
+
+// Attempts to find dungeon, path and category from parameters. Data must match all of these.
+// Rest of the parameters are considered as a partial names. Data must contain at least one parameter.
+function handleSearch() {
+	$("#search-page").html("");
+	setHash($("#search-name").val().replace(/\ /g, '+'));
+	var names = $("#search-name").val().toLowerCase().split(" ");
+	loadSettings(false, false);
+	var searchObject = readParameters();
+	var paths = dungeonsToPaths(searchObject.dungeons);
+	searchIndex(names, searchObject.dungeons, paths, searchObject.categories, searchObject.races, searchObject.tags, $("#search-amount").val());
+	searchDone = true;
+}
+
+function readParameters() {
+	var tagArray = $("#tag-display").tagsinput('items');
+	if (tagArray == null)
+		return { dungeons: [], categories: [], races: [], tags: [] };
+	var dungeons = [];
+	var races = [];
+	var categories = [];
+	var tags = [];
+	// Separate tags.
+	for (var i = 0; i < tagArray.length; i++) {
+		if (tagArray[i].type == "dungeon")
+			dungeons.push(tagArray[i].value);
+		if (tagArray[i].type == "race")
+			races.push(tagArray[i].value);
+		if (tagArray[i].type == "category")
+		{
+			var value = tagArray[i].value;
+			// Special categories.
+			if (value == "boss")
+			{
+				if (categories.indexOf("champion") == -1)
+					categories.push("champion");
+				if (categories.indexOf("legendary") == -1)
+					categories.push("legendary");
+			}
+			else if (value == "thrash")
+			{
+				if (categories.indexOf("normal") == -1)
+					categories.push("normal");
+				if (categories.indexOf("veteran") == -1)
+					categories.push("veteran");
+				if (categories.indexOf("elite") == -1)
+					categories.push("elite");
+			}
+			else
+				categories.push(value);
+		}
+			
+		if (tagArray[i].type == "tag")
+			tags.push(tagArray[i].value);
+	}
+	return {
+        dungeons: dungeons,
+        categories: categories,
+		races: races,
+		tags: tags
+    };  
+}
+
+function dungeonsToPaths(dungeons) {
+	var newDungeons = new Array();
+	for (var i = 0; i < dungeons.length; i++) {
+		if (dungeons[i] == "fotm")
+		    newDungeons.push("insta", "aether", "aqua", "cliff", "furn", "mai", "molten", "snow", "solid", "swamp", "thauma", "uncat", "under", "urban", "volc");
+		else if (dungeons[i] == "ta")
+			newDungeons.push("tas", "taf", "taae", "tau");
+		else {
+			newDungeons.push(dungeons[i] + "s", dungeons[i] + "1", dungeons[i] + "2", dungeons[i] + "3");
+			if (dungeons[i] == "arah")
+				newDungeons.push("arah4");
+		}
+	}
+	return newDungeons;
+}
+
+// Performance: Takes up to 250 ms.
+function searchIndex(parameters, dungeons, paths, categories, races, tags, resultCount) {
+	var resultsTop = new Array();
+	var resultsHigh = new Array();
+	var resultsMedium = new Array();
+	var resultsLow = new Array();
+	var index = $("<div />");
+	$(index).load("enemies/indexfile.htm", function () {
+		var lines = $(index).html().split("\n");
+		// Filter lines.
+		for (var i = 0; i < lines.length; i++)
+		{
+			// Ignore comments.
+			if (lines[i][0] == '<')
+				continue;
+			// display name|search name|category|dungeon|path|index
+			var elements = lines[i].split("|");
+			if (elements.length < 8)
+				continue;
+			// Check category.
+			if (categories.length > 0 && categories.indexOf(elements[2]) == -1)
+				continue;
+			// Check race.
+			if (races.length > 0 && races.indexOf(elements[3]) == -1)
+				continue;
+			// Check dungeon.
+			if (dungeons.length > 0) {
+				if (dungeons.indexOf(elements[4]) == -1)
+					continue;
+				// Check paths (dungeon -> paths so not relevant at the moment).
+				var elementPaths = elements[5].split(" ");
+				var match = false;
+				for (var j = 0; j < elementPaths.length; j++) {
+					if (paths.indexOf(elementPaths[j]) > -1) {
+						match = true;
+						break;
+					}
+				}
+				if (!match)
+					continue;
+			}
+			// Check tags (all must exist!).
+			if ($(elements[7].split('')).filter(tags).length != tags.length)
+				continue;
+			// Check name for relevancy.
+			var namesArray = elements[1].split("_");
+			var exactMatches = 0;
+			var partialMatches = 0;
+			for (var j = 0; j < parameters.length; j++) {
+				var param = parameters[j];
+				for (var k = 0; k < namesArray.length; k++) {
+					var name = namesArray[k];
+					if (param == name)
+					{
+						exactMatches++;
+						break;
+					}
+					if (name.indexOf(param) > -1)
+					{
+						partialMatches++;
+						break;
+					}
+				}
+			}
+			if (exactMatches == parameters.length && parameters.length == namesArray.length)
+				resultsTop.push(lines[i]);
+			else if (exactMatches + partialMatches == parameters.length)
+				resultsHigh.push(lines[i]);
+			else if (exactMatches > 0)
+				resultsMedium.push(lines[i]);
+			else if (partialMatches > 0)
+				resultsLow.push(lines[i]);
+			else
+				continue;
+		}
+		// Take only most relevant.
+		var results = new Array();
+		var size = resultsTop.length;
+		if (size > resultCount)
+			size = resultCount;
+		results.push.apply(results, resultsTop.splice(0, size));
+		resultCount -= size;
+		if (resultCount > 0)
+		{
+			size = resultsHigh.length;
+			if (size > resultCount)
+				size = resultCount;
+			results.push.apply(results, resultsHigh.splice(0, size));
+			resultCount -= size;
+			if (resultCount > 0) {
+				size = resultsMedium.length;
+				if (size > resultCount)
+					size = resultCount;
+				results.push.apply(results, resultsMedium.splice(0, size));
+				resultCount -= size;
+				if (resultCount > 0) {
+					size = resultsLow.length;
+					if (size > resultCount)
+						size = resultCount;
+					results.push.apply(results, resultsLow.splice(0, size));
+					resultCount -= size;
+				}
+			}
+		}
+		results = processResults(results);
+		$("#search-page").html("Found " + results.length + " results.");
+		if (results.length == 0)
+			$("#instructions").css("display", "initial");
+		else
+		{
+			var htmlList = [];
+			displayResults(results, htmlList);
+		}
+		
+	}).error(function (jqXHR, textStatus, errorThrown) {
+		console.log("error " + textStatus);
+		console.log("incoming Text " + jqXHR.responseText);
+	});
+}
+
+// Converts a list of index file rows to a better data format. / 2015-08-12 / Wethospu
+function processResults(results) {
+	var elements = [];
+	
+	for (var i = 0; i < results.length; i++) {
+		var dataArray = results[i].split("|");
+		var element = {
+			display: dataArray[0],
+			category: dataArray[2],
+			dungeon: dataArray[4],
+			index: dataArray[6],
+			order: i
+		};
+		elements.push(element);
+	 }
+	 elements.sort(function(a,b) {return a.dungeon == b.dungeon ? a.index - b.index : (a.dungeon > b.dungeon ? 1 : -1);} );
+	 return elements;
+}
+
+// Finds found enemies from content files and displays them.
+// Note: Load is asynchonous. This means we have to use recursive callback way instead of a loop.
+// Performance: Takes up to 3000 ms if enemy pages not cached. Otherwise up to 500 ms.
+function displayResults(elements, htmlList) {
+	// Check is this the last call.
+	if (elements.length == 0) {
+		// Build the html.
+		var html = "";
+		for (var i = 0; i < htmlList.length; i++)
+			html += htmlList[i];
+		// Display them.
+		$("#instructions").css("display", "none");
+		$("#search-page").append(html);
+		applySettings(true, true);
+		loadPage();
+		return;
+	}
+	var dungeonToCheck = elements[0].dungeon;
+	var view = $("#search-view").val();
+	var fileLocation = "enemies/" + dungeonToCheck + ".htm";
+	var fileDiv = $("<div />");
+	$(fileDiv).load(fileLocation, function () {
+		// Find enemies.
+		var indexCounter = -1;
+		var elementCounter = 0;
+		$(fileDiv).find(".enemy").each(function () {
+			indexCounter++;
+			if (elementCounter >= elements.length)
+				return;
+			if (indexCounter != elements[elementCounter].index)
+				return;
+			// Verify the dungeon.
+			if (elements[elementCounter].dungeon != dungeonToCheck)
+				return;
+			
+			// Build enemy link.
+			var str = '<span class="' + elements[elementCounter].category + ' enemy-button" data-dungeon="' + elements[elementCounter].dungeon
+				+ '" data-index="' + elements[elementCounter].index + '"><h3>' + elements[elementCounter].display + '</h3></span>\n';
+			if (view == "All")
+				str += '<br/>\n' + $(this).html();
+			else if (view == "Info")
+				str += '<br/>\n' + $(".in-line", this).html();
+			str += '\n<br/><hr/>\n';
+			htmlList[elements[elementCounter].order] = str;
+			elementCounter++;
+		});
+		// Remove loaded elements.
+		elements.splice(0, elementCounter);
+		displayResults(elements, htmlList);
+	}).error(function (jqXHR, textStatus, errorThrown) {
+		console.log("error " + textStatus);
+		console.log("incoming Text " + jqXHR.responseText);
+	});
+}
+
+function pathsToName(paths) {
+	// Find dungeon.
+	var pathArray = paths.split(":");
+	var startSmall = pathArray[0].substring(0, 2);
+	var startMedium = pathArray[0].substring(0, 3);
+	var startBig = pathArray[0].substring(0, 4);
+	var name = "";
+	if (startSmall == "ac")
+		name = "Ascalonian Catacombs: ";
+	else if (startSmall == "cm")
+		name = "Caudecus's Manor: ";
+	else if (startSmall == "ta")
+		name = "Twilight Arbor: ";
+	else if (startSmall == "se")
+		name = "Sorrows Embrace: ";
+	else if (startMedium == "cof")
+		name = "Citadel of Flame: ";
+	else if (startBig == "hotw")
+		name = "Honor of the Waves: ";
+	else if (startMedium == "coe")
+		name = "Crucible of Eternity: ";
+	else if (startBig == "arah")
+		name = "The Ruined City of Arah: ";
+	else
+	{
+	    for (var i = 0; i < pathArray.length; i++) {
+	        if (pathArray[i] == "insta")
+	            name = "Instability, ";
+	        else if (pathArray[i] == "aether")
+	            name = "Aetherblade, ";
+			else if (pathArray[i] == "aqua")
+				name = "Aquatic Ruins, ";
+			else if (pathArray[i] == "cliff")
+			    name += "Cliffside, ";
+			else if (pathArray[i] == "furn")
+			    name += "Molten Furnace, ";
+			else if (pathArray[i] == "mai")
+			    name = "Captain Mai Trin, ";
+			else if (pathArray[i] == "molten")
+			    name = "Molten Boss, ";
+			else if (pathArray[i] == "snow")
+				name = "Snowblind, ";
+			else if (pathArray[i] == "solid")
+				name = "Solid Ocean, ";
+			else if (pathArray[i] == "swamp")
+			    name = "Swampland, ";
+			else if (pathArray[i] == "thauma")
+			    name = "Thaumanova Reactor, ";
+			else if (pathArray[i] == "uncat")
+				name = "Uncategorized, ";
+			else if (pathArray[i] == "under")
+				name = "Underground Facility, ";
+			else if (pathArray[i] == "urban")
+				name = "Urban Battleground, ";
+			else if (pathArray[i] == "volc")
+				name = "Volcanic, ";
+		}
+		if (name != "")
+			name = "Fractals of the Mists: " + name.substring(0, name.length - 2);
+		return name;
+	}
+	// Paths for normal dungeons.
+	for (var i = 0; i < pathArray.length; i++) {
+		var end = pathArray[i][pathArray[i].length - 1];
+		if (end == "s")
+			name += "Story, ";
+		else if (end == "1")
+			name += "Path 1, ";
+		else if (end == "2")
+			name += "Path 2, ";
+		else if (end == "3")
+			name += "Path 3, ";
+		else if (end == "4")
+			name += "Path 4, ";
+	}
+	if (name == "Twilight Arbor: ")
+	{
+		for (var i = 0; i < pathArray.length; i++) {
+			if (pathArray[i] == "tau")
+				name = "Path Up, ";
+			else if (pathArray[i] == "taf")
+				name += "Path Forward, ";
+			else if (pathArray[i] == "taae")
+				name += "Path Assault, ";
+		}
+	}
+	if (name != "")
+		name = name.substring(0, name.length - 2);
+	return name;
+}
+	
+</script>
+<br>
+<label for="search-name">Name</label>
+<input id="search-name" type="text">
+<button type="button" onclick="handleSearch()">Search</button>
+<br><br>
+<label for="tag-display">Active filters</label>
+<select multiple id="tag-display" readonly>
+</select>
+<br>
+<ul class="list-inline">
+	<li>
+		<select id="search-path" class="search-changer form-control" data-type="dungeon">
+			<option value ="">Dungeon</option>
+ID_PATHS
+		</select>
+	</li>
+	<li>
+		<select id="search-category" class="search-changer form-control" data-type="category">
+			<option value ="">Category</option>
+ID_CATEGORIES
+		</select>
+	</li>
+	<li>
+		<select id="search-race" class="search-changer form-control" data-type="race">
+			<option value ="">Race</option>
+ID_RACES
+		</select>
+	</li>
+	<li>
+		<select id="search-tag" class="search-changer form-control" data-type="tag">
+			<option value ="">Tag</option>
+ID_TAGS
+		</select>
+	</li>
+	<li>
+		<select id="search-effect-tag" class="search-changer form-control" data-type="tag">
+			<option value ="">Effect tag</option>
+ID_EFFECT_TAGS
+		</select>
+	</li>
+</ul>
+<br>
+<ul class="list-inline">
+	<li>
+		<label for="search-view">Display</label>
+		<select id="search-view" class="form-control">
+			<option value="Name">Only name</option>
+			<option value="Info">Some information</option>
+			<option value="All">Everything</option>
+		</select>
+	</li>
+	<li>
+		<label for="search-amount">Results</label>
+		<select id="search-amount" class="form-control">
+			<option value="10000">Unlimited</option>
+			<option value="100">100</option>
+			<option value="10">10</option>
+		</select>
+	</li>
+</ul>
+
+<div id="search-page"></div>
+<div id="instructions">
+	<p>Filter results by selecting options from dropdowns. Active filters are displayed on "Filters". You can remove filters by clicking on the "x" button on them.</p>
+	<p>Different type of filters are colored differently. Green is for dungeons, red is for categories, orange is for races and blue is for both tags.</p>
+	<p>Tag and effect tag filters are exclusive. Enemies must match all active tags. Dungeon, category and race are inclusive. If multiple same type is active enemies must match only one of them.</p>
+	<p>You can change amount of displayed information and results by changing view and results dropdowns. Amount of results automatically changes when you change amount of displayed information based on your previous selection.</p>
+</div>

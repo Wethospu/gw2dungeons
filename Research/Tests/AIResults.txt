@@ -1,0 +1,2 @@
+AI responsibility: Initial delay seems to be about 2 seconds.
+ - Used Blink at 1.6 s, Prototype Golem aggroed at 3.3 s.

@@ -1,0 +1,44 @@
+# Check http://www.thesauruslex.com/typo/eng/enghtml.htm for the values!
+# Special character=Html value=Simplified value
+
+# French:
+Ç=&Ccedil;=C
+ç=&ccedil;=c
+À=&Agrave;=A
+à=&agrave;=a
+Â=&Acirc;=A
+â=&acirc;=a
+È=&Egrave;=E
+è=&egrave;=e
+É=&Eacute;=E
+é=&eacute;=e
+Ê=&Ecirc;=E
+ê=&ecirc;=e
+Ì=&Igrave;=I
+ì=&igrave;=i
+Í=&Iacute;=I
+í=&iacute;=i
+Î=&Icirc;=I
+î=&icirc;=i
+Ï=&Iuml;=I
+ï=&iuml;=i
+Ò=&Ograve;=O
+ò=&ograve;=o
+Ô=&Ocirc;=O
+ô=&ocirc;=o
+Ù=&Ugrave;=U
+ù=&ugrave;=u
+Û=&Ucirc;=U
+û=&ucirc=u
+
+#German:
+Ä=&Auml;=A
+ä=&auml;=a
+Ö=&Ouml;=O
+ö=&ouml;=o
+Ü=&Uuml;=U
+ü=&uuml;=u
+ß=&szlig;=B
+
+#Others:
+á=&aacute;=a

@@ -1,0 +1,644 @@
+init=TAS|Twilight Arbor|Story|Story
+init=TAF|Twilight Arbor|Forward (path&nbsp;F)|Path F
+init=TAU|Twilight Arbor|Up (path&nbsp;UP)|Path U
+init=TAAE|Twilight Arbor|Twilight Assault (path&nbsp;AE)|Path AE
+
+path=TAS
+tactic=normal
+name=Twilight Arbor Story
+Level: 50.
+Reward: 0.73g.
+Average length: 20 minutes.
+Difficulty: Easy.
+Enemies: Nightmare Court.
+Time: Night.
+Use wiki=Powerful_Potion_of_Nightmare_Court_Slaying|Potion_of_Nightmare_Court_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force if you want to be optimal.
+youtube=dIfRvf4uW00|Cutscenes.
+Current record: record=9.
+
+name=Pod Area
+image=http://i.imgur.com/Oq5p9dm.jpg
+image=http://i.imgur.com/JaGjijB.jpg
+image=http://i.imgur.com/B6rfqo1.jpg
+image=http://i.imgur.com/8SMoxDn.jpg
+tactic=normal
+You will be ambushed by spiders.
+After you kill the spiders, you can open pods to save prisoners. There's about 50% chance to get an enemy instead of a prisoner so it saves time to leave them there. If you choose to open them you should do it one by one.
+Then you have to kill some nightmare court.
+tactic=skip
+Just run through.
+
+name=enemy=Undergrowth_Spider_Queen:champion
+image=http://i.imgur.com/qv13tku.jpg
+tactic=ranged|melee
+4 enemy=Spider_Hatchlings:normal constantly respawn on the area.
+tactic=ranged
+| Use area attacks to bring them down while attacking Queen.
+tactic=melee
+| Use cleaving attacks to bring them down while attacking the Queen.
+tactic=ranged
+Stay at range to avoid her melee Bite. She may occasionally leap towards you. Just move away from her if that happens.
+Pay attention when she is glowing. She will shoot projectiles which immobilize for a long time so focus on blocking or evading them.
+Take party wide condition removal to help or anyone else who gets hit by the immobilize attack.
+tactic=melee
+Stay behind her back so you know when she is going to attack you. Try to block or evade her melee attack.
+Be ready to dodge when she glows. She will shoot 3 projectiles in a cone each immobilize for a long time. At close range you may get hit by all of them and take lots of damage.
+Take 1-2 condition removals to remove immobilize if you get hit. Also remove weakness from her melee Bite if possible.
+
+name=Spell Blossoms
+image=http://i.imgur.com/Pcq4xXe.jpg
+tactic=normal
+One Nightmare Court in middle of enemy=Spell_Blossoms:structure. If it is a enemy=Knight:elite you should pull it back. Otherwise just go in and destroy everything.
+
+name=enemy=Sariel:champion
+image=http://i.imgur.com/USpAXrn.jpg
+tactic=normal
+She is a melee attacker so you can easily run around kiting. Jump down from ledges to create more distance if needed.
+Be ready to dodge when she dashes because it is a very high damage attack which may instantly down you if you are hit.
+
+name=Lake of Fear (after water tunnel)
+image=http://i.imgur.com/UvF8k9l.jpg
+tactic=normal
+There are ;ots of enemies in the area, so don't aimlessly run around. Kill 2 Archers near the entrance and then just walk forward through the water. Don't cross the bridge on left because there's an extremely strong enemy group of foes (lots of enemy=Hounds:elite).
+Kill 2 Nightmare Cours in front of you. Caithe needs 3 items to create a bridge. Look at the map and go together while avoiding unnecessary enemies.
+One item is guarded by enemy=Hounds:elite and enemy=Pups:normal. The second item is guarded by a enemy=Archer:elite. The third item is guarded by enemy=Mutated_Fish:champion.
+tactic=skip|coordinated
+Run through everything. Split up to complete the tasks faster. You will generally want 3-4 players to take on the Mutated Fish, while the others deal with the Hounds and Archer.
+
+name=enemy=Brangoire:champion
+image=http://i.imgur.com/DgnscLA.jpg
+tactic=normal
+He summons lots of enemy=Living_Nightmares:normal which explode as a poison gas. Bring AoE/Cleave to kill Nightmares before they release the gas. Stay mobile and don't stand in the gas. Bring condition-removal if you get poisoned.
+Dodge when he jumps in the air to evade his Fear (which may put you straight into a poison gas!). Get a stun break just in case.
+Reviving is extremely hard so don't get downed.
+tactic=exploit
+You can bind "Walk" and use that when he jumps into the air. This will cause you to travel very little distance when feared.
+
+name=enemy=Cadeyrn:champion
+image=http://i.imgur.com/G4eGEoK.jpg
+image=http://i.imgur.com/kQYKvIa.jpg
+tactic=normal
+He reflects projectiles so pay attention. Occasionally he morphs someone into a cat. Kill a enemy=Pup:normal to break the transform.
+
+name=Nursery
+image=http://i.imgur.com/OlxkAFl.jpg
+tactic=normal
+You need to throw 4 Volatile Essences at the enemy=Husk:champion to make it vulnerable. To get essences, you have to open pods, kill the enemy=Volatile_Nightmare:elite inside of them and throw their essence.
+Open pods one by one to avoid getting overrun. Nightmares can stack serious area Bleeding which can easily kill you, and as such it is a good idea to bring condition removal.
+The husk is a melee attacker with plenty of launches. Try avoid all of it's attacks and get a stun break if you get in trouble. Group stability such as wiki=Hallowed_Ground is extremely useful.
+
+name=enemy=Faolain:champion and the clones
+image=http://i.imgur.com/M9kDctu.jpg
+tactic=normal
+You have to kill 4 clones. enemy=Eir:elite, enemy=zojja:elite, enemy=Rytlock:elite and enemy=Logan:elite. Once one is dead Faolain teleports in and attempts to resurrect them. You must either damage her enough (safer) or kill another clone (if any is low) in order to break her resurrection attempt.
+Once resurrection fails that clone won't be resurrected even if you wipe so focusing is extremely important.
+enemy=Eir:elite is most deadly so focus her first. enemy=zojja:elite should be second as she is also a ranged attacker.
+enemy=Rytlock:elite And enemy=Logan:elite can easily be kited as they are melee attackers. If someone has their focus they can just run around the area.
+
+###########################################################
+
+path=TAF
+name=Twilight Arbor Path 1: Forward
+tactic=normal
+Level: 55.
+Reward: 1.31g + 60 tokens.
+Average length: 14 minutes.
+Difficulty: Easy.
+Enemies: Nightmare Court.
+Time: Night.
+Use wiki=Powerful_Potion_of_Nightmare_Court_Slaying|Potion_of_Nightmare_Court_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force if you want to be optimal.
+youtube=mkZVbUiGuLE|Video_guide (Banter Bill).
+Current record: record=10.
+
+path=TAU
+name=Twilight Arbor Path 2: Up
+tactic=normal
+Level: 55.
+Reward: 1.31g + 60 tokens.
+Average length: 14 minutes.
+Difficulty: Easy.
+Enemies: Nightmare Court.
+Time: Night.
+Use wiki=Powerful_Potion_of_Nightmare_Court_Slaying|Potion_of_Nightmare_Court_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force if you want to be optimal.
+youtube=tqr9XhnfsP4|Video_guide (Banter Bill).
+Current record: record=11.
+
+################################################################
+
+path=TAF|TAU
+name=Reception Hall
+image=http://i.imgur.com/1OQ0LWo.jpg
+image=http://i.imgur.com/4UkHJez.jpg
+image=http://i.imgur.com/JY5lmeH.jpg
+image=http://i.imgur.com/0PnJWwJ.jpg
+image=http://i.imgur.com/uQUf6K7.jpg
+tactic=skip|fight
+At the start there are some enemy=Volatile_Blossoms:structure. They respawn after some time. Use ranged weapons, preferably with AoE capabilities to destroy them with ease.
+################################################################
+tactic=skip
+The very first group of enemies comprising of 4 enemy=Nightmare_Hounds:elite requires from you to bring stability or a stunbreaker in case you miss a dodge or block. The following group has 4 enemy=Nightmare_Husks:elite where, once again, stability or a stunbreaker can be very effective.
+################################################################
+tactic=fight
+The very first group of enemies includes 4 enemy=Nightmare_Hounds:elite. Do not pull them to your position because enemy=Blossoms:structure will shortly respawn there. Fight where there is the least amount of them. Have one stunbreaker to counter their leaps.
+Following this group is a lonely enemy=Nightmare_Husk:elite and then 3 enemy=Husks:elite. Dodge their stomps and have a stunbreaker against their less predictable launch.
+################################################################
+tactic=skip|fight
+tactic=elementalist
+wiki=Chain_Lightning destroys Blossoms quite fast.
+tactic=guardian
+Use wiki=Wave_of_Wrath to easily clear Blossoms.
+tactic=necromancer
+Use wiki=Unholy_Feast to destroy Blossoms.
+tactic=thief
+Use wiki=Trick_Shot if you have to clear Blossoms.
+################################################################
+tactic=skip
+tactic=engineer
+wiki=Blast_finisher|Blast your smoke field created by wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb_(bomb_kit) or wiki=Smoke_Screen_(engineer_skill)|Smoke_Screen_(overcharge_skill_of_Flame_Turret) with wiki=Magnetic_Inversion, wiki=Big_Ol'_Bomb and denotation of any turret to get long lasting stealth.
+tactic=guardian
+wiki="Stand_Your_Ground!" and wiki="Retreat!" are very helpful.
+tactic=guardian
+wiki=Line_of_Warding can be used to stop enemies from following you.
+tactic=thief
+wiki=Blast_finisher|Blast your wiki=Smoke_Screen with wiki=Cluster_Bomb and later use wiki=Shadow_Refuge to get through undetected.
+tactic=bug
+Dungeon may not start if multiple people talk to Morrigu or choose something else than the dungeon starting option. There is no known fix.
+
+path=TAF|TAU
+name=Chamber of Envy
+image=http://i.imgur.com/bdMiwSc.jpg
+tactic=normal|exploit
+To make the enemy=Greater_Vine:champion appear you need to kill 5 enemy=Nightmare_Vines:elite. After you kill the first Vine, 2 more will appear on the right side. Killing any of them will make another spawn, this time on the left side. Similarly, killing another Vine will cause the 5th one to spawn. Finally, after killing the 5th one, the boss will spawn.
+################################################################
+tactic=normal
+Whenever the champion loses 25% of its health more Nightmare Vines appear. If you have low dps party, focus the newly spawned Vine before going for the boss. At 25% you should just focus the champion because other Vines disappear once it is dead. Otherwise you can try to kill the boss before being overrun by additional Vines. Pay attention to enemy=Volatile_Blossoms:structure. Avoid them and destroy for easy rallying. Bring condition removal to remove poison.
+################################################################
+tactic=exploit
+Send one person, preferably with ranged weapon, to the right on the left side. If that person remains there, all of the Vines, including the champion should stop attacking rest of the party making the fight trivial.
+
+################################################################
+
+path=TAF
+name=Peatrot Gallery
+image=http://i.imgur.com/9twqfZH.jpg
+tactic=normal
+After reaching the dead Sylvari at the end of the area you are ambushed by 6 enemy=Nightmare_Court_Archers:elite. Focus one side first and remember to rally from enemy=Volatile_Blossoms:structure. If you attack the left side first, you can cleave the two closest Archers with melee attacks if you stand between them. Bring condition removal against poison.
+After you dispose of the enemies enter the underwater tunnel at the end of the area, swim it through ignoring or killing 4 enemy=Barracudas:normal.
+tactic=coordinated
+Split up to kill all the enemies in less total time. Generally, two players should take the left side, and three should take the right side.
+tactic=elementalist
+wiki=Swirling_Winds protects you from most of the damage coming from the Archers.
+tactic=engineer
+wiki=Toss_Elixir_U can be used to grant your team anti projectiles skills.
+tactic=guardian
+Use wiki=Wall_of_Reflection to kill enemies faster.
+tactic=mesmer
+wiki=Feedback, wiki=Temporal_Curtain and wiki=Phantasmal_Warden traited with wiki=Warden's_Feedback are good ways to protect your team and deal damage.
+tactic=ranger
+Go in melee range and use wiki=Whirling_Defense to reflect projectiles.
+tactic=thief
+wiki=Smoke_Screen should be used to protect your team from projectiles.
+
+name=Lake of Fear
+image=http://i.imgur.com/ULrXUNT.jpg
+tactic=skip
+All the enemies can be easily skipped by sticking to the right side after you leave the underwater tunnel. enemy=Nightmare_Warder_(Sword):champion can either be skipped by running to the end of the next room or just killed since this champion does not present much of a challenge.
+When killing people usually cross the bridge and stack media=taf_bubble_stack.jpg|on right but some teams go under the bridge and then media=taf_bubble_stack_alt.jpg|turn_right.
+Some groups will pull the enemy=Nightmare_Warder_(Sword):champion to the enemy=Greater_Vine:champion that spawns to get additional champion bags. Do not pull the enemy=Nightmare_Warder_(Knight):champion as it has an incredible amount of low-cooldown CC, and will almost certainly wipe your group.
+################################################################
+tactic=fight
+This area is filled with enemies. First, you will get ambushed by 3 enemy=Nightmare_Vines:elite before the enemy=Nightmare_Warder_(Knight):champion. If you keep following the road you will face 9 random Nightmare Court enemy=text:enemies|Archer:elite|Cultist:elite|Duelist:elite|Knight:elite|Sorcerer:elite and multiple Vines. On the middle island there is a hiding enemy=Greater_Nightmare_Vine:champion. Finally, at the end of the road there is a enemy=Nightmare_Warder_(Sword):champion.
+Fighting is not recommended because of the abundance of the enemies and champions.
+
+name=Leurent's Elite Guard
+image=http://i.imgur.com/78aG6x9.jpg
+tactic=normal
+To proceed further you need to dispose of 4 enemy=Nightmare_Court_Archer_(Fire):elite protected. They are protected by fire shields which absorb projectiles and kill anyone trying to get through. If you want to use ranged weapons, use only those that do not involve any projectiles. Melee players should use blocks, blinds or invulnerability (evading does not work) to enter shields or pay attention to the mini-map and use portals at sides of the area to enter the appropriate bubbles.
+Each bubble remains active few seconds after killing an Archer even when it visually disappears, so wait a second, use a block, or use the portals.
+tactic=warrior
+Use wiki=Riposte to pass through safely.
+tactic=guardian
+Use wiki="Retreat!" and wiki=Virtue_of_Courage to grant your team blocks to pass shields safely.
+Invulnerability gained via wiki=Renewed_Focus allows you to enter bubbles while also renewing another block.
+tactic=thief
+Use wiki=Signet_of_Shadows to blind an archer so you or someone else can pass through.
+
+
+name=The Arboretum
+image=http://i.imgur.com/nIw5UQa.jpg
+image=http://i.imgur.com/FmA91yV.jpg
+image=http://i.imgur.com/VrCZTun.jpg
+image=http://i.imgur.com/yYzYoaW.jpg
+tactic=skip|fight
+Shortly after leaving the previous area you will encounter the first group of enemies comprising of 5 enemy=Nightmare_Hounds:elite. Bring stability or avoid their leaps, use a stunbreaker in case you miss a dodge or block.
+################################################################
+tactic=skip
+| There are a lot of enemy=Volatile_Blossoms:structure up ahead. Preferably use stealth or have your guardian using a staff in front of your group to destroy them with no effort.
+################################################################
+tactic=fight
+| If you go down, look for the nearest enemy=Volatile_Blossom:structure to rally off.
+################################################################
+tactic=skip|fight
+The next group includes 3 random Nightmare Court enemy=text:enemies|Archer:elite|Cultist:elite|Duelist:elite|Knight:elite|Sorcerer:elite.
+################################################################
+tactic=skip
+| Pay close attention to Knights as they can easily kill you during skipping. Their initial attack can stun your whole party, dodge it or use stability.
+################################################################
+tactic=fight
+| Knights can easily wipe your entire party if you are not careful. Preferably use blind before they complete their leap attack or dodge. If your party lacks dps, try to stun that type of mobs since they can inflict a lot of damage even when you negate their first attack. Sorcerers, on the other hand, apply 6 seconds long AoE fear. Having a stunbreaker in that situation can be a life-safer.The priority in which you should focus enemies should be Knight, Sorcerer, Duelist, Archer and lastly Cultist.
+################################################################
+tactic=coordinated
+Stealth past all of the mobs.
+tactic=elementalist
+wiki=Chain_Lightning destroys Blossoms quite fast.
+tactic=engineer
+wiki=Blast_finisher|Blast your smoke field created by wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb_(bomb_kit) or wiki=Smoke_Screen_(engineer_skill)|Smoke_Screen_(overcharge_skill_of_Flame_Turret) with wiki=Magnetic_Inversion, wiki=Big_Ol'_Bomb and denotation of any turret to get long lasting stealth.
+tactic=guardian
+Use wiki=Wave_of_Wrath to easily clear Blossoms.
+tactic=guardian
+wiki="Stand_Your_Ground!" and wiki="Retreat!" are very helpful.
+tactic=guardian
+wiki=Line_of_Warding can be used to stop enemies from following you.
+tactic=necromancer
+Use wiki=Unholy_Feast to destroy Blossoms.
+tactic=thief
+Use wiki=Trick_Shot if you have to clear Blossoms.
+tactic=thief
+wiki=Blast_finisher|Blast your wiki=Smoke_Screen with wiki=Cluster_Bomb and later use wiki=Shadow_Refuge to get through undetected.
+tactic=warrior
+Take wiki="Shake_It_Off!" for a stun break and to cleanse crippled.
+
+name=Verdure Gallery
+image=http://i.imgur.com/q9deDaA.jpg
+tactic=skip
+There are 3 groups of Nightmare Court enemy=text:enemies|Archer:elite|Cultist:elite|Duelist:elite|Knight:elite|Sorcerer:elite to skip. The skip is only hard if those groups have Knights. The first group has also a hidden enemy=Nightmare_Vine:elite but since it is immobile it does not present much of a threat.
+Stick to the right side, you should be able to avoid most of the enemy=Volatile_Blossoms:structure that way. After the third group, you will enter a tunnel filled with Blossoms. If you die there because of them or mobs that are chasing you, quickly rally on the nearest blossom and continue forwards. Try not to die and rally continuously as this will increase your death penalty.
+################################################################
+tactic=fight
+There are 3 groups of Nightmare Court enemy=text:enemies|Archer:elite|Cultist:elite|Duelist:elite|Knight:elite|Sorcerer:elite to defeat. Additionaly, the first group includes a hidden enemy=Nightmare_Vine:elite. Deal with those groups similarly as with the previous one, taking care of Knights first. Use enemy=Volatile_Blossoms:structure to your advantage while going down.
+################################################################
+tactic=coordinated
+Stealth past all of the mobs.
+tactic=elementalist
+wiki=Chain_Lightning destroys Blossoms quite fast.
+tactic=engineer
+wiki=Blast_finisher|Blast your smoke field created by wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb_(bomb_kit) or wiki=Smoke_Screen_(engineer_skill)|Smoke_Screen_(overcharge_skill_of_Flame_Turret) with wiki=Magnetic_Inversion, wiki=Big_Ol'_Bomb and denotation of any turret to get long lasting stealth.
+tactic=guardian
+Use wiki=Wave_of_Wrath to easily clear Blossoms.
+tactic=guardian
+wiki="Stand_Your_Ground!" and wiki="Retreat!" are very helpful.
+tactic=guardian
+wiki=Line_of_Warding can be used to stop enemies from following you.
+tactic=necromancer
+Use wiki=Unholy_Feast to destroy Blossoms.
+tactic=thief
+Use wiki=Trick_Shot if you have to clear Blossoms.
+tactic=thief
+wiki=Blast_finisher|Blast your wiki=Smoke_Screen with wiki=Cluster_Bomb and later use wiki=Shadow_Refuge to get through undetected.
+tactic=warrior
+Take wiki="Shake_It_Off!" for a stun break and to cleanse crippled.
+
+name=Pedipalp Roots
+tactic=normal
+Tunnel filled with a large amount of enemy=Volatile_Blossoms:structure. As always, try to have a person capable of destroying them quite fast at the front of your formation. After the first turn, 26 enemy=Nightmare_Pups:normal will come towards your direction. It is a good opportunity to fill your stacking sigils.
+
+name=The Nursery
+tactic=normal|coordinated
+Penultimate fight with enemy=Leurent:legendary and his guard that includes enemy=Archer:elite, enemy=Knight:elite and enemy=Cultist:elite.
+################################################################
+tactic=normal
+Depending on your team composition, it might be possible to burst down adds by LoS-ing them on the left wall.
+
+Otherwise, enemies could be pulled one by one. Try to start with the Knight since he presents the most threat. It might be tricky to pull just him, you need to stay at the right spot. Too close and every mob will come, too far and the pulled mob just goes back. If you stay too far back and he resets try to snare him while he does so, after few seconds he should become vulnerable.
+After you deal with Leurent's guard, you may proceed to fight the boss himself.
+################################################################
+tactic=coordinated
+Wait until dialogue between Fyonna and Leurent ends, stack might, drop stability (e.g. wiki=Hallowed_Ground|Hallowed_Ground), drop reflects (e.g. Wall_of_Reflection), and pull the elites together with wiki=Binding_Blade or wiki=Temporal_Curtain. Burst the mobs down. Ideally, you should CC Leurent after he activates--you should ensure that you pull the elites immediately after they activate, so as not to put defiance on Leurent.
+################################################################
+tactic=normal|coordinated
+| He likes to rotate entangle with bladetrail. Since you cannot block entangle, you have to pay attention to him and dodge when he pierces the ground. When he starts to glow, prepare to evade or block as his throw deals significant amount of damage. Try not to tank his autoattacks and watch out for his leap.
+################################################################
+tactic=normal
+tactic=engineer
+wiki=Magnet can be used to pull enemies from long range.
+tactic=necromancer
+Use wiki=Spectral_Grasp if you want to split enemies.
+tactic=thief
+Consider using wiki=Scorpion_Wire to pull enemies one by one.
+################################################################
+tactic=coordinated
+tactic=guardian
+Spawn wiki=Hallowed_Ground or use wiki="Stand_Your_Ground!" to give your party stability against the attacks of the Knight.
+
+name=Faolain's Lair
+tactic=melee|ranged
+After the cinematic ends do not come close to Vevina until she is dead, otherwise you will die. The enemy=Nightmare_Tree:legendary is considered an epic boss which means you cannot critically hit it but conditions work normally. The boss itself does not have any dangerous attacks, it summons up to maximum of 3 enemy=Oakhearts:veteran and provides them with buffs (Regeneration, might, swiftness, stability).
+################################################################
+tactic=ranged
+Keep a distance from veterans while attacking the Tree. Kite them while dodging their roots and rally from Binding Roots if needed. One person may try to grab their aggro and focus on surviving while the rest of the party concentrates on killing the boss.
+################################################################
+tactic=melee
+Stay as a group in one spot where you can melee the boss and constantly blind Oakhearts. In case that you lack spammable blinds focus on stability uptime. If necessary rally from Binding Roots which Oakhearts spawns.
+tactic=elementalist
+Use wiki=Lightning_Hammer to achieve permanent blind against Oakhearts.
+tactic=thief
+wiki=Black_Powder can be used to constantly blind enemies.
+
+################################################################
+
+path=TAU
+name=Orbweaver gallery
+tactic=normal
+Start by killing the lone enemy=Undergrowth_Recluse:elite. Shortly after, there are 2 enemy=Undergrowth_Webbers:elite. They usually start their rotation by using their long lasting immobilze (10 seconds), which they only use if there is at least one distant target, dodge or use projectile defense and deal with them normally.
+Immediately after, you will enter an area with 4 groups of spiders and friendly (for now) enemy=Malrona:legendary. You should pull 1 or 2 groups at the same time to avoid being overrun. Start with the rightmost and the leftmost groups. Both of these groups are comprised of fairly easy enemies and include 8 enemy=Spider_Hatchlings:normal as well as 2 Webbers and Recluse with Webber. Two remaining groups are a bit harder, the right one includes enemy=Undergrowth_Stonetouch:elite which is able to petrify (unbreakable stun) your whole party for 5 seconds which might lead to a wipe. This group have also 8 Hatchlings like two previous ones and an additional Recluse. The last group is made of only elites, those are 2 Recluses, 2 Webbers and one enemy=Bloodfang:elite, deal with them similarly as with the previous ones.
+################################################################
+tactic=skip
+In order to skip most of the enemies groups you need to use long lasting stealth. Avoid first enemy=Undergrowth_Recluse:elite and then 2 enemy=Undergrowth_Webbers:elite. You will enter an area with 4 groups and friendly (for now) enemy=Malrona:legendary.
+You can avoid aggroing the rightmost and the leftmost groups but you have to defeat the two centre ones. Optimal option is to stack near the wall behind the furthest group. The first group is comprised of 8 enemy=Spider_Hatchlings:normal, enemy=Undergrowth_Recluse:elite and enemy=Undergrowth_Stonetouch:elite. Pay great attention to the Stonetouch, as it is able to petrify (unbreakable stun) your whole party for 5 seconds. The second group is made out of 5 elite spiders (2 enemy=Undergrowth_Recluses:elite, 2 enemy=Undergrowth_Webbers:elite and enemy=Undergrowth_Bloodfang:elite). Immediately after killing both groups of enemies, Malrona turns hostile.
+################################################################
+tactic=skip
+tactic=engineer
+wiki=Blast_finisher|Blast your smoke field created by wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb_(bomb_kit) or wiki=Smoke_Screen_(engineer_skill)|Smoke_Screen_(overcharge_skill_of_Flame_Turret) with wiki=Magnetic_Inversion, wiki=Big_Ol'_Bomb and denotation of any turret to get long lasting stealth.
+tactic=thief
+wiki=Blast_finisher|Blast your wiki=Smoke_Screen or wiki=Black_Powder with wiki=Cluster_Bomb to get through undetected.
+tactic=thief
+wiki=Blinding_Powder increases your stealth duration.
+
+name=enemy=Malrona:legendary
+image=http://i.imgur.com/K1p1qJF.jpg
+tactic=normal|coordinated
+Malrona has only two attacks, Venom Spray and Blast, and she alternates between them. This makes her very predictable to fight. Both of her attacks have similar but not identical animations, so try to remember which one she used previously.
+Venom Spray, is a frontal cone attack that hits 4 times and inflicts poison with every hit. Moreover, if anyone gets hit by it, Malrona will gain Predator swiftness buff that makes her moving fast. At the same time, any party member that is poisoned will deal much more damage. You should use this fact to your advantage and get hit by this attack on purpose. If you do so, keep in mind that you cannot remove poison, do not use any whirl or projectile finishers in conjunction with a light field as they are able to remove conditions either from your allies or from yourself.
+The second of her attacks, Venom Blast, is much more dangerous. She launches multiple unblockable projectiles, concentrated on the targetted person, that on the contact with the ground explode, dealing a large amount of AoE damage.
+################################################################
+tactic=normal
+| Avoiding this attack is easy if you stay away from her but is much harder in melee range where you have to dodge or block much earlier. If you are sure you're not her current target, stay behind her, as there should be less concentration of falling projectiles.
+tactic=normal|coordinated
+She usually starts the combat with Venom Blast so prepare accordingly before you aggro her.
+################################################################
+
+name=Spinneret Creche
+image=http://i.imgur.com/Yan8nA4.jpg
+image=http://i.imgur.com/Ft9NCL8.jpg
+tactic=skip
+First part of this skip consists of 2 small groups of 2 enemy=Undergrowth_Stonetouch:elite and then 2 enemy=Undergrowth_Bloodfangs:elite. The only difficulty that comes with skipping is to avoid Stonetouches' petrify and not getting downed because of triggering too many enemy=Volatile_Blossoms:structure. Fortunately, you can use Blossoms for your advantage. Send a person with decent capabilities for destroying them, such as a guardian or preferably use stealth. Shortly after, 3 enemy=Nightmare_Vines:elite spawns, just turn left while avoiding their AoE fields and most importantly their stomps.
+After Vines, you will enter a corridor filled with 2 groups of spiders. Try not to run close to them as they might cripple you. As always, avoid Stonetouches.
+################################################################
+tactic=fight
+Shortly after defeating enemy=Malrona:legendary there are 2 enemy=Undergrowth_Stonetouch:elite with 2 enemy=Undergrowth_Bloodfangs:elite behind them. As always, if you see Stonetouch glowing brightly, go behind it or stun it. Use enemy=Volatile_Blossoms:structure to rally but try to avoid triggering them. After that, 3 enemy=Nightmare_Vines:elite spawns. You might simply skip them by turning left but if you want to kill the following groups it is safer if you don't have Vines blocking your escape route.
+You will find yourself in a corridor filled with 2 groups of spiders. Try not to aggro both of them as you will be most likely overrun. First of the groups comprise of 8 enemy=Spider_Hatchlings:normal and 3 enemy=Undergrowth_Bloodfangs:elite. The next group is much harder because of Stonetouches as well as 2 enemy=Undergrowth_Recluses:elite and Bloodfang.
+################################################################
+tactic=skip|fight
+tactic=elementalist
+wiki=Chain_Lightning destroys Blossoms quite fast.
+tactic=guardian
+Use wiki=Wave_of_Wrath to easily clear Blossoms.
+tactic=thief
+Use wiki=Trick_Shot if you have to clear Blossoms.
+################################################################
+tactic=skip
+tactic=elementalist
+If your team has enough swiftness, try not to use wiki=Windborne_Speed until someone gets crippled.
+tactic=elementalist
+If your team lacks swiftness, consider equipping wiki=Signet_of_Air for passive movement speed bonus.
+tactic=engineer
+wiki=Blast_finisher|Blast your smoke field created by wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb_(bomb_kit) or wiki=Smoke_Screen_(engineer_skill)|Smoke_Screen_(overcharge_skill_of_Flame_Turret) with wiki=Magnetic_Inversion, wiki=Big_Ol'_Bomb and denotation of any turret to get long lasting stealth.
+tactic=guardian
+wiki=Line_of_Warding can be used to stop enemies from following you.
+tactic=thief
+wiki=Blast_finisher|Blast your wiki=Smoke_Screen or wiki=Black_Powder with wiki=Cluster_Bomb and later use wiki=Shadow_Refuge to get through undetected.
+tactic=warrior
+Take wiki="Shake_It_Off!" for a stun break and to cleanse crippled.
+
+name=enemy=Fyonna_the_Countess_of_Spiders:legendary
+image=http://i.imgur.com/AHmMryU.jpg
+tactic=normal
+The fight starts after a short dialogue between Fyonna and Vevina and takes place in a room full of spider eggs. Anyone stepping on one of those eggs will spawn a random elite spider. Fyonna is primarily an archer with skills that either push or pull you which means that without stability you will probably be sent on one of those eggs. However, you can simply pull her outside the whole room to a corridor from where you came from and simply defeat her without worrying about additional spiders.
+Every attack of her is considered as a projectile which means that with enough projectile defense you can trivialize most of the fight. Even if you don't, her attacks apply relatively low pressure, if someone dies just revive him and continue the fight. After some time, she transforms into a spider form that no longer use projectiles but is still relatively easy to dispatch.
+When she dies, move through the room while avoiding spider eggs.
+tactic=coordinated
+Fight on top of Fyonna. Begin the fight with a hard CC (e.g. Deep Freeze) to put defiance on her and keep her from moving a bit. Then maintain reflects and DPS her down.
+################################################################
+tactic=elementalist
+Use wiki=Swirling_Winds to protect your team from Fyonna's attacks.
+tactic=engineer
+wiki=Toss_Elixir_U can be used to grant your team anti projectile skills.
+tactic=guardian
+Pick wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger as utilities to help your team.
+tactic=mesmer
+Utilize wiki=Feedback and and wiki=Temporal_Curtain with wiki=Phantasmal_Warden traited with wiki=Warden's_Feedback.
+tactic=ranger
+Go in melee range and use wiki=Whirling_Defense to reflect her projectiles.
+tactic=thief
+wiki=Smoke_Screen should be used to protect your team from Fyonna's attacks.
+
+name=Boleshian Pit
+image=http://i.imgur.com/kcnWjNN.jpg
+tactic=skip
+The skip is rather short and easy.
+################################################################
+tactic=skip|fight
+There is one group of 4 random Nightmare Court enemy=text:enemies|Archer:elite|Cultist:elite|Duelist:elite|Knight:elite|Sorcerer:elite that patrols this area and a group of 5 immobile enemy=Archers:elite in the following passage.
+If the first enemy group includes a Knight,
+################################################################
+tactic=skip
+|  pay close attention to him and evade his first leap or use stability. Otherwise, skipping the first group should be really easy.
+Similarly, the second group is relatively easy and most of the difficulty comes from the presence of enemy=Volatile_Blossoms:structure which can kill you rather fast if you don't destroy them before triggering them. As always, the easiest way is to use long lasting stealth.
+################################################################
+tactic=fight
+|  use blind before he completes his leap attack or dodge as Knights can easily wipe your entire party if you are not careful. If your party lacks dps, try to stun that type of mobs since they can inflict a lot of damage even when you negate their first attack. Sorcerers, on the other hand, apply 6 seconds long AoE fear. Having a stunbreaker in that situation can be a life-safer. The priority in which you should focus enemies should be Knight, Sorcerer, Duelist, Archer and lastly Cultist.
+After disposing that group, you will have to cross a narrow passage filled with 5 immobile Archers. You should skip them in almost all of the cases as they present relatively low threat. If you have troubles with surviving, sent someone with good AoE autoattacks to destroy enemy=Volatile_Blossoms:structure.
+################################################################
+tactic=skip|fight
+tactic=elementalist
+wiki=Chain_Lightning destroys Blossoms quite fast.
+tactic=engineer
+wiki=Blast_finisher|Blast your smoke field created by wiki=Smoke_Bomb_(engineer_skill)|Smoke_Bomb_(bomb_kit) or wiki=Smoke_Screen_(engineer_skill)|Smoke_Screen_(overcharge_skill_of_Flame_Turret) with wiki=Magnetic_Inversion, wiki=Big_Ol'_Bomb and denotation of any turret to get long lasting stealth.
+tactic=guardian
+Use wiki=Wave_of_Wrath to easily clear Blossoms.
+tactic=guardian
+wiki="Stand_Your_Ground!" and wiki="Retreat!" are very helpful.
+tactic=thief
+Use wiki=Trick_Shot if you have to clear Blossoms.
+tactic=thief
+wiki=Blast_finisher|Blast your wiki=Smoke_Screen with wiki=Cluster_Bomb and later use wiki=Shadow_Refuge to get through undetected.
+tactic=warrior
+Take wiki="Shake_It_Off!" for a stun break and to cleanse crippled.
+
+name=The Arboretum
+image=http://i.imgur.com/R0BTKZr.jpg
+tactic=normal
+An unskippable fight before the last boss. A small group of two enemies composed of enemy=Nightmare_Warder_(Sword):champion and enemy=Nightmare_Court_Knight:elite. As always, focus the Knight first, then move your attention to the champion.
+################################################################
+tactic=exploit
+It is possible to break the AI of both mobs by hiding behind a nearby tree that is in front of them on the left side. Pull them with a ranged attack and immediately hide behind the tree.
+################################################################
+tactic=normal
+tactic=engineer
+Use wiki=Magnet if you want to split enemies.
+tactic=necromancer
+Use wiki=Spectral_Grasp if you want to split enemies.
+tactic=thief
+Use wiki=Scorpion_Wire if you want to split enemies.
+
+name=Faolain's Lair
+image=http://i.imgur.com/6D82xdl.jpg
+tactic=melee|ranged
+After the cinematic ends do not come close to Leurent until he is dead, otherwise you will die. The enemy=Nightmare_Tree:legendary is considered an epic boss which means you cannot critically hit it but conditions work as if that would be normal enemy. That means you can easily keep it blinded completely negating its attacks. The Tree always starts by slamming the ground, prepare to evade it or try to blind it.
+This boss has 4 attacks, the first one, mentioned just before, hits a target and everyone around him. Received damage is high enough to kill glass cannons. The second attack targets everyone and after a slight delay root spikes come from the ground. You can either dodge when the boss touches the ground or when red circles already appeared. Like in the case of the previous attack, you can simply blind the boss to nullify this attack. The two remaining attacks summon either Sylvari Mortar Turret or Healing Seed. The former attacks rather slowish but hits for considerable amount of damage. Fortunately, those are projectiles and you can block them with an anti projectile skill. Healing Seed periodically applies regeneration to the Nightmare Tree but the heals are rather negligible.
+################################################################
+tactic=ranged
+If you stay at range it is advisable to move in zig zag patterns as much as possible in order to avoid getting hit by Mortar Turrets. Dodge slams and root spikes and the encounter should be really easy.
+################################################################
+tactic=melee
+In order to melee this boss relatively easy it is recommended to have some sort of projectile defense. Without it, evading Mortar Turrets makes melee much harder. Get your whole party in melee range and chain anti projectile skills to safely damage the boss.
+################################################################
+tactic=melee
+tactic=elementalist
+Use wiki=Lightning_Hammer to achieve permanent blind against Nightmare Tree.
+tactic=thief
+wiki=Black_Powder can be used to constantly blind the boss.
+
+##################################################################
+
+path=TAAE
+name=Twilight Arbor Path 3: Aetherblade
+tactic=normal
+Level: 80.
+Reward: 2.31g + 60 tokens.
+Average length: 35 minutes.
+Difficulty: Hard.
+Enemies: Nightmare Court and Aetherblade.
+Time: Night.
+Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+Current record: record=12.
+
+path=TAAE
+name=Start
+tactic=normal|coordinated
+At the start there are lots of respawning enemy=Volatile_Blossoms:structure. Just run through them dodging and remove poison at the end.
+You will encounter a patrol that consists of 2 enemy=Hounds:elite and 3 enemy=Pups:normal as well as a enemy=Nightmare_Husk:elite and a enemy=torrential_Husk:elite. On back of the area a group of a enemy=Stonetouch:elite, a enemy=Bloodfang:elite and 3 enemy=Hatchlings:normal and a group of a enemy=Webber:elite, a enemy=Recluse:elite and 3 enemy=Hatchlings:normal appear when Husks die (sometimes earlier).
+tactic=coordinated
+Stack behind a tree on the left side or on the right side and line of sight the mobs, so they run to you. Make sure you have stability or a stun break to counter control from Hounds and Husks.
+tactic=normal
+Wait for the patrolling Hounds to come so you can aggro and fight them without aggroing the Husks. Take a stun break if you fail to avoid their leap. After the Hounds are dead continue with the Husks; lure them a bit towards dungeon entrance, so you don't have to deal with the spiders before you are ready. Use stability.
+You can even split the Spiders if you desire. Simply hit the closest spider with a long range ability and move a bit back. If done correctly the second Spider spawn should not aggro with the first. Keep an eye on Stonetouch to move away or behind him when he glows to avoid long unbreakable stun.
+tactic=thief
+Use wiki=Black_Powder to negate a lot of damage for your party if you melee.
+tactic=guardian
+wiki="Stand_Your_Ground!" and wiki=Hallowed_Ground are excellent sources of stability when fighting Hounds and Husks.
+
+name=Nightmare Vine Room
+tactic=normal
+Next room has a enemy=Vine:elite and patrolling 2 enemy=Hounds:elite and 3 enemy=Pups:normal. Get close to the Vine so it stops using its ranged attack. Once the Vine is dead 2 more Vines appear at back of the room. You can run back to finish of Hounds if they give you problems.
+Once Hounds are dead 3 enemy=Wurms:veteran and 2 enemy=Wurms:normal appear. You should run close to the Vines and focus them down. Stay mobile to reduce damage from Wurms.
+
+name=Ooze Escort
+tactic=normal|alternative
+Your goal is to lure 2 Oozes to the other side of the room to open the door.
+There are 2 Flowers where you receive a 'Pheromone' Buff which lasts 45 seconds. Ooze will follow the person with that buff.
+The room is filled with lava and leaves 2 paths open to get to the other side. Ooze is immune to cc but is affected by conditions and damage (fear works on it as edge case between condition and cc).
+3 Lava Elementals will spawn for each Ooze and attack it. Their spit will immobilize the Ooze briefly and damage it. If you kill the Lava Elementals, they will respawn shortly after. 3 Elementals will be up per Ooze at almost all times.
+The Ooze will take a lot of damage if it walks through the lava, so be careful to keep it on the defined paths.
+The gate opens when both Oozes reach the other side alive within 10 seconds of each other.
+tactic=normal
+2 players grab the pheromone buff and start luring the Ooze at the same time. 1 player with pheromone per path. The remaining 3 players help the 2 luring players on their respective paths to keep the Oozes alive.
+Use cc to knock the lava elementals away from the Ooze / interrupt their spit attack / keep them from following. Projectile absorb and projectile reflect are helpful to defend Ooze from spit.
+Remember that killing the Lava Elementals only helps briefly because they respawn quickly after. Focus on cc or if you kill them, keep an eye out for respawning ones.
+tactic=alternative
+2 players run ahead to grab aggro from all 6 Lava Elementals and try to not die to them and stay away from the paths.
+As long as you don't kill any Lava Elemental, no new ones will respawn because the number is limited to 6 overall (3 per side). You can lower their health though and finish them off when Oozes get close if needed.
+With Lava Elementals out of the way it is easier to keep Ooze alive - just move quickly with pheromones through the path and don't lure them through lava.
+
+name=Way to Slick and Spark
+tactic=normal
+There are a enemy=Steam_Watcher:veteran, a enemy=Thug:veteran, a enemy=Swashbuckler:veteran, a enemy=Thumper:veteran and a enemy=Taskmaster:veteran around the area. At first Scarlet hologram you get ambushed by 2 enemy=Grenadiers:elite and a enemy=Thug:elite. At second hologram you get ambushed by 2 enemy=Swashbucklers:elite and a enemy=Striker:elite. At third hologram you get ambushed by 2 enemy=Taskmasters:elite and a enemy=Thumper:elite. enemy=Wurm_Hatchlings:normal and enemy=Spider_Hatchlings:normal respawn around the area. Generally easy fights.
+Use line of Sight via standing behind rocks or use pull skills to group them up. Have condition removal ready against confusion and bleeding. stability is useful versus Thugs and projectile reflection versus Grenadiers.
+Make sure to burst/cc the Steam Watcher as soon as he notices you - he will summon additional Aetherblades if left alive.
+tactic=optional
+Before third hologram there is small pond with half naked enemy=Thumper:elite and enemy=Striker:elite. They are completely pointless to kill unless you enjoy hitting naked people.
+
+name=enemy=Slick:legendary and enemy=Sparki:legendary
+tactic=normal
+Blossoms won't do anything so you don't have to care about those. Before entering the room you should decide which one to focus. Both options have their own advantages so you should change your plan if you have trouble. It's also possible to kill them but they will get stronger every 25% which will be too much for most groups.
+Killing Slick first is suggested because killing him last requires everyone to work together (oil puddles need to be cleaned really fast). Killing Sparki last doesn't need any coordination and you can easily get out of combat to get your health back. If your group knows how to handle the oil you should kill Sparki first to reduce lots of pressure.
+The key mechanic is to keep pulling enemy=Oil-Absorbing_Ooze:normal to oil puddles which Slick create (don't kill it or you will be in trouble). Ooze follows a player with the Pheromone buff (with multiple players seems to follow the closest). Buff can be gained either occasionally from Slick or from a nearby plant. The plant should only be used if absolutely needed because it just wastes time and makes Ooze pulling more confusing.
+Most importantly if you have the buff and Ooze is following you then your job is to pull it to the oil puddles. Don't hesitate to run through puddles if needed (dodge if they are on fire). If you fail to do your job correctly then the puddles will slowly kill your whole team. Also remember to stay mobile because you will lose 75% of your health if Ooze manages to hit you. However stay close to everyone else for faster cleaning because puddles are aimed at players.
+At start Slick has 3 ranged attacks. If he kneels, shouts and glows he is going to shoot a puddle. Otherwise he will either shoot a green ball which applies Pheromone or a blue dart which applies weakness and bleeding. After 75% he will use puddle attack two times in a row. After 50% he starts jumping which causes fear on a target. After 25% Sparki (not Slick!) enrages which causes him to attack more often and deal more damage. Also everyone gets "Hot Foot" debuff which causes burning if you not moving.
+The main reason why the puddles are so dangerous is that they deal unavoidable damage on huge area every second. If you let the puddles to stack there's literally nothing you can do. His other attacks aren't big deal but you should have a stun break against fear. You should also have condition removal to remove weakness and long burning (if you get from Sparki).
+Unlike Slick, Sparki can do some direct damage. Pay attention to him and try to learn his animations. His basic ranged attack deals good damage and lits puddles so try to dodge it. But more importantly be ready to dodge when he raises his arms (hard to see because of his size). He will pull you in and then leap with knockback and burning resulting in lots of damage. Leap is also on melee range so pay attention.
+After 75% he occasionally starts spinning and shoot unblockable projectiles all around the area. You should get some distance to reduce amount of projectiles hitting you. Alternatively go stand behind someone else so you don't take any damage. After 50% he will also jump like Slick but with fear and burning (really hard to see because of his size). After 25% Slick (not Sparki!) enrages which causes him to attack more often and deal more damage.
+If you killed Slick first then just clean up remaining puddles and start playing safe. Run away to get out of combat if needed. Don't kill Ooze or he will release lots of (10?) oil puddles.
+If you for some reason killed Sparki first then everyone should immediately get close to Slick (feel free to clean up puddles though). If people are far away then the puddles will also appear far away and you will get overrun. Slick can easily stack 10+ puddles quite fast resulting in 2000+ damage per second.
+
+name=Way to Foreman Spur
+tactic=normal
+Some Aetherblade Veterans patrolling the floors. Generally easy fights.
+You can abuse line of Sight them at a pillar to kill them faster. Have condition removal ready against confusion and bleeds. stability is useful against Thugs and projectile reflection against Grenadiers.
+You will encounter enemy=Holographic_Generators:structure for the first time. They take negligible damage from your attacks, so pull the holograms they spawn and kill them close to the reactor to inflict severe damage.
+They also inflict 1 stack of confusion on players and low-medium damage. Be careful if you kill many of them at once in close proximity. Evade explosion or kill them at range if you want to be safe. If you go down, target a hologram and attack it, you can rally off them.
+After destroying 3 generators, you reach the room where enemy=Foreman_Spur:legendary and his troops are stationed. You don't have to fight them all at once. Instead move either to the right and LOS pull a few Aetherblades to kill them or walk to the other side of the room and LOS behind the pillar there.
+Make sure to burst/cc the patrolling enemy=Steam_Watcher:veteran as soon as he notices you - he will summon additional Aetherblades if left alive.
+tactic=warrior
+Use Whirlwind Attack (Greatsword) to kill multiple holograms while evading their explosion damage.
+
+name=enemy=Foreman_Spur:legendary
+#tactic=melee
+#He hits fast and often so try to stay behind his back to avoid unnecessary damage. If you have his aggro then direct him away from your team.
+#His most notable move is the Axe Spin. He roars, removes slowdowns on him and moves quickly spinning towards his target. If there are any distant players he will go after them so you just have to dodge away from him to prevent getting sucked in. 
+#tactic=ranged
+#Keep some distance so you won't hit by his melee attacks. Pay attention when he throws axes in air to move away from red circles. If you stay there you will die in seconds.
+#At high range you will be his most likely target for Axe Spin. If you see him coming after you run away. Use immunity or dodges to prevent most of the damage. If you know you can't handle it then get closer so that he targets someone else. 
+tactic=normal
+His most notable move is the Axe Spin. He roars, removes cripple, chill and immobilize on him and moves quickly spinning towards his target. He prefers targeting most distant players which you should use at your advantage. If you have a immunity ready you can move away from him and vice versa.
+Be careful to not use projectiles during his Axe spin, as he is not only evading, but reflecting it back to you or your allies. If he does not have defiant up, you can interrupt his Axe spin with instantly casted cc (second part of guardian's binding blade for example). If you cant interrupt it, move away from him/dodge/use invulnerability skills as it deals a lot of AoE damage while inflicting bleeding, crippled and vulnerability on you.
+When he throws axes, they leave high damaging areas which you should avoid. The axe throw can be reflected. He hits quite hard and fast on close range so stay behind him.
+After 75% his Axe Spin creates a windy area at end of the channel. You cannot leave this area (even with stability) and it will destroy all projectiles. If you are outside get in so you can deal damage.  The area will disappear before he uses Axe Spin giving you time to move away.
+tactic=warrior
+wiki=Shield_Stance is extremely useful against Axe Spin. Dodge right before it ends to avoid all damage.
+tactic=optional
+Achievement 'Who's in Charge Here?' is bit complicated. Patrols don't count as his crew. You can attack his crew before aggroing Spur but you can't kill a whole row (nearest enemies to Spur form one row and so on). This means you can just go to the right side, pull enemies front of Spur and kill them without losing the achievement.
+Once necessary enemies have been cleared just pull Spur alone and finish him off. The fight may be little harder because of limited space. You will still get the achievement even if you wipe so keep trying (unknown if you can lose it somehow). Once Spur is dead kill rest of the crew.
+
+name=Electricity Puzzle
+tactic=normal
+The room consists of 8*8 squares on the ground. 4 of these squares contain pillars that are connected to the generator. The ground will be mostly electrified and moves in a pattern of 1 square per second into a specific direction.
+Your goal is to reach the pillar that has a circle hovering over it without touching the electrified ground. If you receive negative charge from the ground, the pillar will knock you back.
+Try to read in which direction the pattern is moving on move in sync with it on the free spots to reach the pillar. Getting charged from the electricity cannot be blocked, but you can dodge through it or use invulnerability skills as well as using blinks to cover distance to make it easier.
+Only 1 player has to reach a pillar to activate it. Once active a beam of light will shoot up from it and after ~5 seconds the whole ground will be electrified without free spots, so make sure get back to the entrance or on a pillar to prevent getting damaged. After each activation the direction of pattern changes.
+1 player needs to stay on each of the 4 pillars to charge the generator. A enemy=Holographic_Thug:normal will spawn once fully charged. It will despawn immediately if a pillar is left unattended.
+The 5th player can attack the Thug briefly to grab aggro and lure it to the closed door. Kill it there and the explosion will open your way. If you kill it in the wrong spot, a new Thug will spawn after ~3 seconds.
+tactic=warrior
+If you have problems with aggro you can try to use wiki="Fear_Me!" to move Thug to the proper direction (doesn't always work). Stand as close to to the closed door as you can to get Thug on the proper position.
+tactic=optional
+If you want to get the achievement easily you should inform your team about it (some groups may expect you to do your part of the puzzle). All you have to do is let someone reach the first platform, wait for all electricity to go off, run to the platform and then just wait there until everything is clear.
+
+name=Freeing the Clockheart
+tactic=normal
+This room is filled with 8 enemy=Holographic_Generators:structure. You are required to destroy all 8 via killing holograms in proximity to the generators. If you wipe before all 8 are destroyed, previously destroyed generators will respawn.
+Use a similar tactic to the Holographic Generators you encountered earlier. Pull holograms close to the generators either with pulling skills or breaking line of sight behind a generator. Then just kill them close to the generator.
+Be careful if you kill many holograms at once as multiple explosions may down you. Evade the explosion or back a bit off when they are about to die. If you go down, target a hologram and attack it to rally off them. Run away to get out of combat if needed.
+The ground will get electrified at times. Watch for pillars in the room. When they rise up, the ground will get electrified around ~2 seconds later, so jump on it to be safe from the electricity.
+
+name=enemy=Clockheart:legendary
+tactic=ranged|melee
+Start moving immediately once the cutscene ends because Clockheart will initiate with Gear Throw. He throws a ballistic projectile at every distant target. Upon reaching ground it will create a spinning gear which kills fast if you stand on it. If you need to run through one remember to dodge. Blocking or reflecting prevents Gear from appearing.
+Keep this in mind when reviving people. If you are away from him he will most likely throw one at you. If this happen the downed guy will get defeated if you fail to get him up before the gear lands or block/reflect the gear.
+tactic=ranged
+Pay attention to your positioning. Either stay at close enough range so he won't throw gears at you or stay near walls so gears get thrown at remote locations. Also try to make gears appear close together to reduce risk of anyone accidentally walking into them.
+tactic=melee
+His normal melee hits do low damage but apply weakness and vulnerability. Try to stay behind him if you aren't his primary target. He also occasionally throws you behind his back. It's hard to avoid so ensure that there is nothing dangerous behind him like electrified middle area or a gear. If there is then move around him. Alternatively you can also use a stun break. If you are kiting him pay attention to the surrounding area so you won't walk into a gear.
+tactic=ranged|melee
+He has two key animations. When he raises one arm he will apply torment and do powerful frontal cone. Either move behind him or dodge when arm hits the ground. When he raises two arms he will Immobilize and start supercharge when he hits the ground. Either run out of the area or dodge it.
+During his supercharge he is immune to conditions and takes no damage. If he reaches 30 stacks he will again raise two arms and do multiple powerful room wide PBAoEs downing weaker targets (damage increases a lot when he is below 25%). Either interrupt it (he loses stacks so can't use again) or use an immunity / stability with dodges to prevent most of the damage. First PBAoE hits bit before the arms smash the ground so try to act early enough! Also one quarter of the room gets electrified.
+To interrupt his charging (and remove any accumulated electricity from the room) you need to kill a enemy=Holographic_Aetherblade_Striker:normal near him. He will be in one of the corners and respawn shortly after killed (if he is far you can kill him to make him appear closer). If everyone works together you can easily interrupt charging every time. Remember to use pulling skills or break line of sight if needed. Striker has really low health so be careful to not kill him.
+tactic=warrior
+If you expect Clockheart to reach 30 stacks take wiki=Endure_Pain, wiki=Riposte or wiki=Shield_Stance to counter it.
+tactic=warrior
+wiki=Balanced_Stance or wiki=Dolyak_Signet gives you the needed stun break and stability if you have to dodge Clockheart's super attack.
+tactic=warrior
+When reviving people be ready with a blocking skill (wiki=Riposte, wiki=Shield_Stance or wiki=Counter_Blow to destroy any thrown Gears.
+
+name=After match
+tactic=normal
+This part is not needed and is only done for achievements. If you want to do all task you have to split up. Half of the team immediately goes down to defend Lionguard while others kill officers. Once officers are dead they get back and enter secret room with Caithe. In the room they interact with suggestion box and kill the Horror. Then just use EMP found on Clockheart's room to disable ships and hunt the chests.

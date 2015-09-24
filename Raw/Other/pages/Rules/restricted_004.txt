@@ -1,0 +1,79 @@
+Date: 15th June 2015
+
+These rules are used for trio, quadro and full party runs.
+
+<h2>Rules</h2>
+<ol>
+	<li>For a record to be valid, the path completion must trigger, the time must be faster than the current record displayed and the record must be accompanied by a video for evidence/proof.
+		<ol type="a"> 
+			<li>There must be at least one point of view that shows what's going on within the dungeon, from start to finish. If at any point there is no video evidence of activities within the run, it may be rejected.</li>
+			<li>Videos may not be sped up or slowed down, and must be captured in normal time.</li>
+			<li>You must display the game build at some point in your video to show when your run was done. This can be done before, during, or after the run. You can do this by showing your F11 (options) menu at some point in your video.</li>
+		</ol>
+	</li>
+	<li>The records timer starts when any party member activates a skill or moves their model. Using emotes will not result in the timer starting.</li>
+	<li>The timer stops when the final boss of the dungeon has been killed. In Fractal records timer stops when the shard reward chest appears.</li>
+	<li>No use of hacks or 3rd party software that allows players to perform acts that would be impossible without said means. This includes but is not limited to speed hacks, fly hacks, no-clip, teleporting, dps meters and boss hp monitors.</li>
+	<li>You are only allowed to use food, nourishment and Metabolic Primer. All other consumables and items are banned.
+		<ol type="a"> 
+			<li>This includes costume brawl items, event items such as the birthday booster and gem store boosters/items.</li>
+		</ol>
+	</li>
+	<li>Staying past blocked pathways is allowed if you get there when they are open.</li>
+	<li> A pathway is open if it can be passed without jumping or using skills. A pathway is blocked if it's not open but can be opened.</li>
+	<li>Getting inside solid or non-solid map geometry is banned. This includes but is not limited to any wall, roof or floor.</li>
+	<li>Compression of AoE hitboxes by moving, blinking and/or dodging is banned.</li>
+	<li>All racial skills are banned.</li>
+	<li>Abusing trait swapping to use any skill prior to its natural cool down is banned. This includes but is not limited to Mesmer Blink and Guardian Wall of Reflection.</li>
+	<li>Preventing any enemy from attacking you is banned. This includes but is not limited to safespotting, abusing terrain to make all enemy attacks miss, breaking the enemy AI with a line of sighting or attacking immobile enemies through walls. 
+		<ol type="a"> 
+			<li>Abusing of event scripts is banned. This includes but is not limited to manipulating event spawns, disabling event mechanics, etc. All cutscenes within a dungeon that are relevant to the path must be triggered.</li>
+			<li>Abusing of path selection is allowed.</li>
+		</ol>
+	</li>
+	<li>Switching character or re-entering the instance is banned.</li>
+	<li>The record system is founded on trust. Please do not attempt to fake videos, i.e.: Editing them, using DC tricks to manipulate the in-game events, etc. All we have is third-party proof and no real way to verify your accomplishments. Because of this, some people may, and will fake records. If a record appears to be fake, feel free to follow up with your own posts in its thread debating its legitimacy.</li>
+	<li>Any disputes will be handled by approvers. Staff decisions are final.</li>
+	<li>Have fun, and good luck.</li>
+	<li>Fractal must be played in scale 50.</li>
+</ol>
+*** These rules are subject to change at any time so it is advised you brief yourself with them each time before you post a record. ***
+
+
+<h2>Path Specific Rules</h2>
+
+<h3>Ascalonian Catacombs</h3>
+<ul>
+	<li>Story: Jumping over the gate with a pressure plate is <b>disallowed</b> when it's closed.</li>
+	<li>Story: Standing on the pressure plate and teleporting through the open gate is <b>allowed</b>.</li>
+</ul>
+
+<h3>Caudecus's Manor</h3>
+<ul>
+	<li>Path 2: When blowing the door putting a keg to an unreachable place is <b>disallowed</b>.</li>
+	<li>Path 3: Using the air guns against bosses is <b>allowed</b>.</li>
+</ul>
+
+<h3>Sorrow's Embrace</h3>
+<ul>
+	<li>Path 3: Destroying the Dredge Carrier from the ledge is <b>allowed</b>.</li>
+</ul>
+
+<h3>Honor of the Waves</h3>
+<ul>
+	<li>Path 1: Standing behind the stairs so Aldus can't hit you is <b>disallowed</b>.</li>
+	<li>Path 3: Pulling Sorge the Zealot out of water is <b>allowed</b>.</li>
+</ul>
+
+<h3>The Ruined City of Arah</h3>
+	<li>All paths: Using reflects on Lupicus' wall in phase 2 is <b>allowed</b>.</li>
+	<li>Path 2: Making Belka stationary by running back is <b>disallowed</b>.</li>
+	<li>Path 2: Entering Brie's dome by walking backwards is <b>allowed</b>.</li>
+</ul>
+
+<h3>Fractals</h3>
+<ul>
+	<li>Snowblind: Destroying the top part of Elemental Source is <b>allowed</b>.</li>
+	<li>Urban Battleground: Jumping over the wall is <b>disallowed</b>.</li>
+	<li>Volcanic: Using engineer kits, weapon changing or death shroud to replenish infused stones is <b>allowed</b>.</li>
+</ul>

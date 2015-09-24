@@ -1,0 +1,25 @@
+fotm 49 Mai Trin:
+THRASH DOESNT SCALE?? (check other aether!)
+grenadier (82): 16697
+elite swash (83):106960
+
+molten:
+!!!vet resonator 82: 83248
+
+!!vet flamestorm/shadowblade 82: 98843
+!!vet fiend/shadowblade 83: 101596
+!!vet smoke shaman 83: 126641
+
+aether:
+vet swash / thug 82: 66786
+vet tech / thumper / thug / swash / assistant 83: 68646
+elite golem 82 / 83: 66786 / 68464
+elite striker 82: 166496
+elite thug 82 / 83: 83248 / 85568
+elite exting 83: 171136
+normal grenadier / swash 82: 16697
+normal level 80: 13802
+taskmaster 82: 16974
+
+
+

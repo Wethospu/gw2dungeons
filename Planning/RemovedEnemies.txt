@@ -1,0 +1,723 @@
+# Old enemies may get added later so we should just copy/paste them here when removing.
+
+
+path=ArahS
+name=The Ruined City of Arah Story: Slay Zhaitan
+tactic=normal
+Level: 80
+Reward: 0.73g
+Average length: 60 minutes.
+Difficulty: Easy
+Enemies: Undead
+Time: Day
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty if you want to be optimal.
+youtube=VWmBo3GsCJo|Cutscenes
+Current record: record=30
+
+
+name=First door
+tactic=normal
+Two players have to stand on the pressure plates to open the door while 2 enemy=text:Risen|berserker:elite, defiler:elite, ravager:elite and 3 enemy=text:Risen|preserver:normal|ravager:normal|subjugator:normal constantly respawn.
+Remaining players engage with the enemies to protect the players on the pressure plates. Once the door is open don't bother with the enemies, just run in.
+
+name=enemy=Risen_Lich:champion
+tactic=normal
+This boss can be absolutely devastating or completely harmless depending on what you are doing. The key is to control your Attunement. If you have the same Attunement as the Lich it is near impossible to die, if not you may die in seconds.
+His normal attacks are not an issue but when he starts shooting projectiles all around the place things get problematic. If you have same Attunement projectiles will not do any damage but give protection instead! Without same Attunement only way to survive is stay at high-range or inside Lich (disable melee-assist).
+His PBarea attack affects Attunements (and knocks at melee-range). Whenever he casts it, his and everyone else's Attunement switches (only two different). Targets without an Attunement get a random Attunement. If you have wrong Attunement you have to either dodge this attack or stay at very high range. If you have same Attunement avoid dodging unless you can recognize the animation.
+
+name=Second Door
+tactic=normal
+You have to destroy 2 enemy=Obelisks:structure to open the door. When you get close enemy=Risen_Grub:elite and ~15 enemy=Risen_Grubs:normal appear. Focus elite enemy down first.
+
+name=enemy=Bloated_Creeper:champion
+tactic=ranged
+Stay at range to avoid his melee attacks. His basic ranged attack deals high damage and causes long lasting AoEs. Avoid red circles and be ready to move if anything is thrown at you.
+Occasionally he will summon enemy=Risen_Grubs:normal. They are bugged and unable to move so you only have to focus the ones dear Creeper. He will consume nearby ones to get more power and armor after a while.
+tactic=melee
+Creeper has fairly powerful melee attacks so you have to pay attention. His basic ranged attack should be targeted at ranged players or NPCs so you don't have to worry about it.
+Be ready to block or evade his melee attack when he glows. Running behind him won't be enough as he will turn towards you. Move away from him when he summons enemy=Risen_Grubs:normal to avoid very high amount of damage at melee range. Be ready to focus down any grubs near Creeper so he won't consume them for more power and armor.
+Take 1 - 2 stun breaks to break out of frequent fear which can't be blocked or evaded.
+
+name=Third Door
+tactic=normal
+Corridor with multiple enemy=Orrian_Eyes:structure. They have a very short range but their frequent attacks will blind you making you useless. Shoot them safely from range.
+Area effects deal only minor so you don't really have to worry about them.
+
+name=enemy=Risen_Knight:champion
+tactic=normal
+Multiple sources of long-duration conditions. You should take lots of condition removal (especially if you do not know its attacks).
+His basic ranged attack is quite dangerous with high damage, poison, bleeding and long vulnerability. Dodge if he raises his sword while facing you.
+When he quickly rises to sky dodge to not get hit. When he lands he will throw area fields around the area. Avoid them because crossing causes crippled and chilled.
+When he slowly rises to sky, 2-3 delayed AoEs appear. They do high damage and launch so dodge out of them. Each also summon enemy=Risen_Plague_Carrier:normal. Focus them down before they explode (high damage and lots of conditions).
+tactic=warrior
+wiki=Charge_(warrior_skill)|Charge_(warhorn) is really valuable to remove all crippled and chilled.
+
+name=Giants (Airship)
+tactic=normal
+If at any time you need to regenerate just run inside the ship. Enjoy the beatiful scenery until 4 giants appear at the right side.
+They will throw projectiles which summon enemy=Risen_Eagles:normal, enemy=Risen_Brutes:normal, enemy=Risen_Thralls:normal or enemy=Risen_Plague_Carriers:normal.
+3 players should immediately start using the cannons and spam skill 2 on cooldown. It will reflect their attacks and kill them.
+Remaining players should clear any enemies.
+
+name=Orrian Towers
+tactic=normal
+You need to destroy 3 enemy=Orrian_Towers:structure which are guarded by different enemies.
+One tower is guarded by enemy=Orrian_Gorillas:elite and enemy=Orrian_Eyes:structure. Use ranged attacks to take out eyes first or attack from side to avoid them. Kill gorillas or just focus the tower while kiting them.
+One tower is guarded by enemy=Toxic_Oozes:normal. Oozes will respawn when killed so run around the tower while attacking it.
+One tower is guarded by enemy=Orrian_Spectral_Flamecaster:elite, enemy=Orrian_Spectral_Ghostblade:elite and enemy=Orrian_Spectral_Archer:elite. Kill them or just focus the tower while kiting them.
+
+name=enemy=Mouth_of_Zhaitan:legendary
+tactic=ranged
+Stay at range to avoid his melee attack. Be ready dodge his basic ranged attack if it is thrown at you.
+tactic=melee
+Be ready to dodge when he jumps in air to prevent getting downed. Also try to block or evade his basic ranged attack.
+tactic=ranged|melee
+When he starts pulling air in you should throw Orb of Flame at him. That will stun him for 5 seconds while giving 25 stacks of vulnerability. If you fail to throw an Orb he will just pull you and copy one of your Boons.
+
+name=Ogravros the Moondeath (Airship)
+tactic=normal
+Kill some enemies to make him attack.
+He will always appear on the right side after diving under the ship. Just have 3 players permanently using 3 cannons on right-side while 2 players clear up enemies.
+Reflecting seems to have no effect so just keep spamming skill 1.
+
+name=Fafnarin the Heartslayer and Horrogor the Soulbreaker (Airship)
+tactic=normal
+After a while two dragons appear at the same time. Similar to above except you have to use all cannons. Try to focus one dragon down first to reduce pressure.
+There will be lots of enemies so no one should permanently be at a gun. Keep killing enemies and pay attention to dragons. When one of them dives under ship then quickly run to cannon and start shooting him. Reflecting seems to have no effect so just keep spamming skill 1.
+Remember to run inside the ship if you need to regenerate.
+
+name=Charging Cannon (Big Airship)
+tactic=normal
+Focus on staying out of big black AoEs as these will deal lots of damage. If Zojja gets down revive her immediately.
+NPCs can handles enemies quite well on their own but you should also kill stuff.
+Once the cannon is fixed more enemies appear. Keep killing them until 3 enemy=Eyes_of_Zhaitan:elite appear. Focus them down.
+Once Zhaitan gets close start using the cannons on right side. First 3 cannons can just shoot forward but 2 latter have to rotate to right.
+If enemy=Tendrils_of_Zhaitan:normal bother you just kill them. Shoot Zhaitan until he dies.
+
+###############################################################################################################
+
+##################################################################
+###                  Story - normal enemies                    ###
+##################################################################
+
+name=Risen Preserver
+path=ArahS
+image=http://wiki.guildwars2.com/images/e/e5/Risen_Preserver.jpg
+category=normal
+health=15774
+type=undead
+
+attack=Water Bolt
+cooldown=0
+type=projectile
+effect=low damage
+
+attack=Corrupted Geyser
+animation=bends forward and raises left arm
+type=7 ticking AoEs (6 hits in 5 s)
+effect=damage:low|regeneration:0:5| per tick
+
+attack=Wave of Corruption
+animation=rises up in air and smashes ground
+type=PBAoE
+effect=damage:low|Launch| and cures 1 condition
+
+##################################################################
+
+name=Risen Ravager
+path=ArahS
+category=normal
+image=http://wiki.guildwars2.com/images/7/7b/Risen_Ravager.jpg
+health=15774
+type=undead
+
+attack=Arcane Bolt
+type=projectile
+effect=damage:low
+
+##################################################################
+
+name=Risen Subjugator
+path=ArahS
+image=http://wiki.guildwars2.com/images/6/6a/Risen_Subjugator.jpg
+category=normal
+health=15774
+type=undead
+
+attack=Shadow Orb
+type=projectile
+effect=damage:low
+
+
+##################################################################
+
+name=Risen Plague Carrier
+alt=Risen Plague Carriers
+image=http://wiki.guildwars2.com/images/b/b0/Risen_Plague_Carrier.jpg
+path=ArahS
+category=normal
+type=undead
+
+attack=Explode
+animation=glows
+type=short-range PBAoE
+effect=damage:very high|vulnerability:10|crippled:10|weakness:10|poison:0:10|, self-destructs
+
+##################################################################
+
+name=Risen Eagle
+alt=Risen Eagles
+image=http://wiki.guildwars2.com/images/8/87/Risen_Eagle.jpg
+path=ArahS
+category=normal
+type=undead
+
+attack=Claw
+type=2 melee hits
+effect=damage:low| per hit (medium damage)
+
+attack=Bombing Run
+type=multiple delayed (1 s) AoEs on area
+effect=damage:low| per hit
+
+##################################################################
+
+name=Risen Brute
+alt=Risen Brutes
+image=http://wiki.guildwars2.com/images/1/15/Risen_Brute.jpg
+path=ArahS
+category=normal
+type=undead
+
+attack=Whirl
+cooldown=0
+type=melee
+effect=damage:low
+
+attack=Whirl
+animation=glows
+type=melee
+effect=damage:medium|knockdown:3
+
+##################################################################
+### Work in progress
+
+#name=Risen Thrall
+#path=ArahS
+#image=http://wiki.guildwars2.com/images/9/9a/Risen_Thrall.jpg
+#category=normal
+#type=undead
+
+##################################################################
+
+name=Toxic Ooze
+alt=Toxic Oozes
+image=http://wiki.guildwars2.com/images/d/d2/Toxic_Ooze.jpg
+path=ArahS
+category=normal
+type=undead
+
+attack=Ooze Multi
+cooldown=0
+type=quick melee
+effect=damage:low
+
+attack=Ooze Mace
+animation=spins as a mace
+type=melee
+effect=damage:low
+
+attack=Power Spit
+type=projectile
+effect=damage:low|immobilized:4
+
+##################################################################
+
+name=Orrian Gorilla
+alt=Orrian Gorillas
+image=http://wiki.guildwars2.com/images/d/d4/Risen_Gorilla.jpg
+path=ArahS
+category=elite
+type=undead
+
+attack=Shockwave
+animation=glows and smashes ground
+type=3 projectiles (cone)
+effect=damage:low| per hit
+
+attack=Roar
+animation=glows and roars
+type=low-range PBAoE
+effect=fear:4|stability:15
+
+##################################################################
+###                     Story - bosses                         ###
+##################################################################
+
+Name=Risen Lich
+category=champion
+image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
+Path=ArahS
+type=Undead
+
+attack=Horror Blast
+animation=moves right arm back
+type=Low-range PBAoE
+effect=knockback
+type=High-range PBAoE
+effect=damage:low| and swaps attunement (Lich and players), random attunement if none.
+note=only evade this attack if you have different attunement than Lich
+note=alternatively stay out of range until you get synced
+
+attack=Disrupting Blasts
+additional=Minimum range (stack)
+animation=Holds right arm back and moves it forward
+type=multiple projectiles (360 degrees) over few seconds
+effect=damage:very high| unless same attunement: |Protection:5| per hit
+note=If you have different attunement stay at high range or inside Lich.
+
+attack=Life Siphon
+additional=used rarely
+type=PBAoE
+effect=damage:high|healing
+
+attack=Phase Blink
+animation=spins
+type=projectile
+effect=damage:medium| and delayed (~3 s) teleport if it hits
+
+##################################################################
+
+name=Bloated Creeper
+Path=ArahS
+image=http://wiki.guildwars2.com/images/4/41/Bloated_Creeper.jpg
+category=champion
+type=undead
+
+attack=Roar
+animation=roars
+additional=cannot be blocked or evaded
+type=cone
+effect=fear:10|weakness:10
+
+attack=Throw
+cooldown=0
+animation=moves right arm behind back
+type=piercing projectile
+effect=damage:high
+type=landing
+effect=small area field (30 s).
+type=Passing (cannot be blocked or evaded)
+effect=poison:0:5|weakness:5
+note=may stack a lot of these at same location resulting in very long durations
+
+attack=Massive Smash
+additional=instantly turns after cast
+animation=glows
+type=melee
+effect=damage:high|vulnerability:5:5
+
+attack=Summoning Stomp
+cooldown=35
+animation=jumps
+type=summons
+effect=summons multiple non-attacking enemy=Risen_Grubs:normal
+note=Grubs will not move so you have to only kill nearby ones.
+type=aura (~5 ticks in 5 s)
+effect=damage:high| per tick
+note=stay away from melee until aura wears off (try to estimate)
+
+attack=Eat Grub
+additional=only used at nearby targets
+animation=eats a Grub
+type=Buff
+effect=Increases Power and Armor
+note=Creeper does not move on his own so you have to only worry about close Grubs.
+
+##################################################################
+
+name=Risen Knight
+category=champion
+image=http://wiki.guildwars2.com/images/b/bd/Risen_Knight.jpg
+Path=ArahS
+type=undead
+
+attack=Slash
+cooldown=0
+animation=raises sword
+type=projectile
+effect=damage:high|poison:0:5|bleeding:0:5|vulnerability:20:10
+note=evade or block
+
+attack=Aerial Assault (1)
+animation=rises to sky fast and dives
+type=high-range PBAoE
+effect=damage:medium|poison:0:10|crippled:10
+note=evade or block
+
+attack=Frost Fields (2)
+cooldown=25
+additional=can't be blocked or evaded
+type=4-7 projectiles
+effect=small area field (25 s)
+type=area field
+effect=crippled:3|chilled:3| when passed through
+note=not used if previous fields still on the ground
+
+attack=Debris
+animation=Rises slowly to sky
+type=2-3 delayed (~1.5 s) AoEs
+effect=damage:high|launch:2| and enemy=Risen_Plague_Carrier:normal
+note=block/evade or get out of area
+note=kill Carriers before they explode or get out of range
+
+##################################################################
+
+name=Mouth of Zhaitan
+category=legendary
+image=http://wiki.guildwars2.com/images/f/f5/Mouth_of_Zhaitan.jpg
+Path=ArahS
+type=undead
+
+attack=Burst
+animation=moves right arm behind back
+type=projectile with small AoE
+effect=damage:high|burning:0:5
+note=block or evade
+
+attack=Devastating Blow
+animation=jumps
+type=melee
+effect=damage:extreme
+note=block or evade
+
+attack=Vortex
+animation=Stomps ground and pulls air in
+type=high-range PBAoE
+effect=pull| and copy a Boon
+note=Throw Orb of Flame to interrupt
+note=you can also run away or block/evade
+
+attack=Orb of Flame
+type=Bundle
+effect=Vulnerability:15:25|stun:5| when interrupting Vortex
+
+##################################################################
+
+name=Eye of Zhaitan
+alt=Eyes of Zhaitan
+image=http://wiki.guildwars2.com/images/a/ae/Eye_of_Zhaitan.jpg
+category=elite
+Path=ArahS
+type=undead
+
+##################################################################
+
+name=Tendrils of Zhaitan
+category=normal
+Path=ArahS
+type=undead
+
+attack=Wurm Spit
+type=projectile
+effect=damage:928
+
+attack=Burrow (1)
+type=moves underground 
+
+attack=Rock Shards (2)
+type=PBAoE
+# Estimates.
+effect=damage:1712|bleeding:0:5:3|crippled:5
+
+attack=Lurk
+type=ticking PBAoE
+effect=damage:695| per hit
+
+##################################################################
+
+name=Zhaitan
+image=http://wiki.guildwars2.com/images/4/49/Zhaitan.jpg
+category=structure
+Path=ArahS
+type=undead
+
+##################################################################
+
+name=Orrian Tower
+alt=Orrian Towers
+category=structure
+Path=ArahS
+
+##################################################################
+
+name=Obelisk
+alt=Obelisks
+category=structure
+Path=ArahS
+
+##################################################################
+
+Name=Rytlock Brimstone
+alt=Rytlock
+Category=ally
+image=http://wiki.guildwars2.com/images/6/67/Rytlock_Brimstone.jpg
+Path=ArahS
+
+##################################################################
+
+Name=Logan Thackeray
+alt=Logan
+Category=ally
+image=http://wiki.guildwars2.com/images/d/d3/Captain_Logan_Thackeray.jpg
+Path=ArahS
+
+##################################################################
+
+Name=Eir Stegalkin
+alt=Eir
+image=http://wiki.guildwars2.com/images/4/47/Eir_Stegalkin.jpg
+Category=ally
+Path=ArahS
+
+##################################################################
+
+name=Zojja
+category=ally
+image=http://wiki.guildwars2.com/images/2/29/Zojja.jpg
+path=ArahS
+
+##################################################################
+
+Name=Garm
+Category=ally
+image=http://wiki.guildwars2.com/images/a/a5/Garm.jpg
+Path=ArahS
+
+##################################################################
+
+Name=Caithe
+Category=ally
+image=http://wiki.guildwars2.com/images/3/3e/Caithe.jpg
+Path=ArahS
+
+
+##################################################################
+# FOTM                                                           #
+##################################################################
+
+name=Archdiviner [Bug]
+category=legendary
+path=CLIFF
+
+attack=Swing
+cooldown=basic attack
+type=melee
+effect=damage:high|knockback
+
+attack=Summon & Cage
+additional=can't be blocked or evaded
+type=teleport target to  cage
+type=summon
+effect=2 Bone_Fiends (Normal)
+
+##################################################################
+# Old TAFU                                                       #
+##################################################################
+
+Name=The Defiler
+Category=Legendary
+Path=TAFU
+type=Nightmare Court
+
+attack=Husk Swipe
+type=cone
+effect=damage:medium|vulnerability:12
+note=doesn't attempt to get closer so you can stay at range
+
+attack=Thump
+animation=jumps
+type=PBAoE
+effect=damage:medium|launch
+note=doesn't attempt to get closer so you can stay at range
+
+attack=Send Bees
+animation=steps forward, roars chest forward and stomps|0|black cloud
+type=slow homing projectile
+effect="Bees" (15 s)
+
+attack="Bees"
+type=debuff
+effect=damage:low| per tick
+note=evade to remove
+
+##################################################################
+
+Name=Vevina
+Category=Legendary
+Path=TAFU
+type=Nightmare Court
+
+attack=Wind of Chaos
+type=homing and bouncing projectile
+effect=damage:high|burning|bleeding|vulnerability|might|fury| (random) per hit
+note=block/evade
+
+attack=Chaos Storm
+additional=Ethereal-field
+type=ticking AoE
+effect=damage:medium|poison|weakness|chilled|daze|swiftness|retaliation|aegis (random) per tick
+note=evade out
+
+attack=Chaos Armor
+type=buff
+effect=Chaos Armor (5 s)
+note=avoid attacking if needed
+
+attack=Cloak and Teleport (1)
+note=may still be there so keep hitting
+
+attack=The Prestige (2)
+type=PBAoE
+effect=damage:high
+
+##################################################################
+
+Name=Nightmare Tree
+Category=Legendary
+Path=TAFU
+type=Nightmare Court
+
+Attack=cannot be moved
+
+Attack=Right Smash
+animation=right hand smash
+type=ranged
+effect=damage:low|immobilized
+
+Attack=Left Smash
+animation=left hand smash
+type=delayed AoE
+effect=damage:high|vulnerability:5:10
+note=block/evade
+
+##################################################################
+
+Name=Flametouched Husk
+alt=Flametouched Husks
+Category=elite
+Path=TAFU
+type=nightmare court
+
+attack=Husk Swipe
+type=cone
+effect=damage:medium|vulnerability:12
+note=doesn't attempt to get on range so stay at max melee-range
+
+attack=Thump
+additional=leap-finisher
+type=PBaoE
+effect=damage:medium|launch
+note=doesn't attempt to get on range so stay at max melee-range
+
+attack=Flame
+animation=swings right arm
+type=projectile with ticking AoE
+effect=burning| per tick
+
+##################################################################
+
+Name=Deathly Touched Swarm
+alt=Deathly Touched Swarms
+Category=elite
+Path=TAFU
+
+attack=Invulnerable
+
+attack=Bug Bite
+type=quick melee
+effect=damage:fatal
+
+##################################################################
+# Old Molten Furnace dungeon                                     #
+##################################################################
+[B]?Molten Blademaster (Veteran)[/B]
+[LIST]
+[*] ?Sever Artery (1): Melee. Low damage and Bleeding (5 s). Basic attack.
+[*] ?Gash (2): Melee. Low damage and Bleeding (8 s).
+[*] ?Final Thrust (3): Melee. Low damage.
+[*] ?Flurry: Multiple melee hits.
+[*] Shied Bash: Dash. Medium damage and Daze? (2 s).
+[*] Blocks: Blocks all attacks. "Hides behind shield".
+[/LIST]
+
+[B]Molten Effigy (Veteran)[/B]
+[LIST]
+[*] Fireball: Projectile. ~2250 damage. "Swings left arm (1 s)".
+[*] Aura: Inflicts Burning (1704 dmg in 3 s) on nearby targets every ~2 s.
+[/LIST]
+
+[B]Molten Fire Shaman (Veteran)[/B]
+[LIST]
+[*]Spell Detonate: 3 low-range projectiles (cone, high damage). Medium damage per hit. "Swings right arm (1 s)".
+[*] Dragon Punch: Dash with 2 melee-hits at end (high damage). Medium damage and Launch per hit. Leap-finisher. Only used at distant targets "Roars (1 s)".
+ - Evade.
+[/LIST]
+
+[B]Molten Gunner (Silver)[/B]
+[LIST]
+[*] Sonic Shot: Homing and piercing projectile. ~750-4000 damage based on distance. Basic attack. "Aims (0.5 s)".
+ - Stay close.
+[*] Fire Tornado: Slow and piercing projectile. ~5000 damage, Launch (2.4 s) and Burning (1136 in 2 s). End effect: splits to 4 projectiles (360 degrees). "Kneels (1 s)".
+ - Evade or block.
+[*] Retreat: PBAoE (hits 1-2 times) + Evade back. ~2000 damage and Knockback (1.5 s) ."Turns (0.4 s)".
+ - Try to avoid or use Stability.
+[/LIST]
+
+[B]Cave Troll (Champion)[/B]
+[LIST]
+[*] Attack: Melee. ~4000 damage and Bleeding (270 in 3 s).  "Swings right arm (1 s)".
+[*] Jump: Delayed (1 s) ticking AoE (4 hits in 5 s). ~3500 damage per hit. First hit: Knockdown (2 s). "Looks up and jumps (3.5 s)".
+[/LIST]
+
+[B]Ember (Champion)[/B]
+[LIST]
+[*] Immune to Burning. Hitting in melee-range causes Burning (~2.5 s).
+[*] Fireball:  2 projectiles in 0.3 s. ~2750 damage per hit. "Rises a bit (0.5 s)".
+ - Evade.
+[*] Lava Font: 3 ticking AoEs (lasts 6 s) in 2 s. ~2750 damage per tick. Initial effect: Summons Lesser Ember (Normal), caps at 3. "Rises to sky / Stand still (2 s)".
+[/LIST]
+
+[B]Lesser Ember (Normal)[/B]
+[LIST]
+[*] Immune to Burning.
+[*] Slashing Claws: Melee. ~1500 damage. "Swings right arm (0.1 s)".
+[*] Swoop: Evade (1.5 s) + Melee. Low damage.
+[*] Dive: Dash. ~1250 damage.
+[/LIST]
+
+[B]Translucent Ooze (Silver)[/B]
+[LIST]
+[*] Vapor Blade (1): Returning and piercing projectile. Low damage. Returning projectile Pull (1.5 s) per hit. Basic attack."Waves head (0.5 s)".
+ - Stand against wall to prevent returning projectile.
+[*] Tidal Wave (2): If any returning projectile hit.
+ - Evade or block.
+[*] Stealth Blades (1): 4 returning and piercing projectiles (cone, high damage). Medium damage. Returning projectiles Pull (1.5 s) per hit Stealth if returning projectiles hit. "Moves head (0.75 s)".
+ - Stand against wall to prevent returning projectiles.
+[*] Tidal Wave (2): Used regardless of hits.
+[*] Tidal Wave: PBAoE. High damage, Knockdown (1.5 s) and Healing. "Jumps (1.5 s").
+[/LIST]
+
+[B]Translucent Ooze (Champion)[/B]
+[LIST]
+[*] Vapor Blade (1): Returning and piercing projectile. Low damage. Returning projectile Pull (1.5 s) per hit. Basic attack."Waves head (0.5 s)".
+ - Stand against wall to prevent returning projectile.
+[*] Tidal Wave (2): If any returning projectile hit.
+ - Evade or block.
+[*] Stealth Blades (1): 4 returning and piercing projectiles (cone). Medium damage. Returning projectiles Pull (1.5 s) per hit Stealth if returning projectiles hit. "Moves head (0.75 s)".
+ - Stand against wall to prevent returning projectiles.
+[*] Tidal Wave (2): Used regardless of hits.
+[*] Tidal Wave: PBAoE. Very high damage, Knockdown (1.5 s) and Healing. "Jumps (1.5 s").
+[*] Geyser: Ticking AoE (6 hits in 5 s, very high damage). Medium damage and Healing per tick. "Jumps (0.5 s").
+[/LIST]
