@@ -15,8 +15,7 @@ namespace DataCreator.Utility
 
   public static class Constants
   {
-    public static Encoding Encoding { get { return Encoding.Default; }
-    }
+    public static Encoding Encoding { get { return Encoding.Default; } }
 
     public static int UniqueIndexCounter { get; set;  }
 
@@ -29,6 +28,7 @@ namespace DataCreator.Utility
 
     public static string DataOutput { get { return "Output\\"; } }
     public static string DataEnemyResult { get { return "enemies\\"; } }
+    public static string DataMediaResult { get { return "media\\"; } }
     public static string DataEncounterResult { get { return "pages\\"; } }
     public static string DataThumbsResult { get { return "thumbs\\"; } }
 
@@ -39,10 +39,11 @@ namespace DataCreator.Utility
     public static string InitialdataPhp { get { return "// Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding; } }
     public static string InitialdataText { get { return "# Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding; } }
     public static string InitialDataIndex { get { return "<!-- display name|search name|category|race|dungeon|path|index|tags -->" + LineEnding; } }
-    public static string LineEnding { get { return "\n"; } }
+    public static string LineEnding { get; private set; }
+    public static string ForcedLineEnding { get { return "\n"; } }
     public static string Space { get { return "&nbsp;"; } }
-    public static Char Delimiter { get { return '|'; } }
-    public static Char LinkChar { get {return '='; } }
+    public static char Delimiter { get { return '|'; } }
+    public static char LinkChar { get {return '='; } }
 
     public static int ThumbWidth { get { return 350; } }
     public static int ThumbHeight { get { return 350; } }
@@ -58,11 +59,11 @@ namespace DataCreator.Utility
     public static readonly Dictionary<string, string> CharacterConversions = new Dictionary<string, string>();
     public static readonly Dictionary<string, string> CharacterSimplifications = new Dictionary<string, string>();
 
-    public static Char TagSeparator { get { return '='; } }
-    public static string Tab { get { return "    "; } }
-    public static Boolean ValidateUrls { get; set; }
+    public static char TagSeparator { get { return '='; } }
+    public static string Tab { get; private set; }
+    public static bool ValidateUrls { get; set; }
 
-    public static Boolean DownloadData { get; set; }
+    public static bool DownloadData { get; set; }
 
     public static string LinkMedia { get { return "media"; } }
     public static string LinkLocal { get { return "local"; } }
@@ -95,6 +96,39 @@ namespace DataCreator.Utility
     public static readonly SortedSet<string> EffectTags = new SortedSet<string>(){ "alacrity, condition", "bleeding", "burning", "chilled", "confusion", "crippled", "fear", "immobilized", "poison",
       "slow", "torment", "vulnerability", "weakness", "boon", "aegis", "fury", "might", "protection", "regeneration", "resistance", "retaliation", "stability", "swiftness", "quickness", 
       "vigor", "control", "daze", "float", "knockback", "knockdown", "launch", "pull", "sink", "stun", "taunt", "agony", "invulnerability", "revealed", "stealth", "buff" };
+
+    public static string JSFiles { get; private set; }
+    public static string CSSFiles { get; private set; }
+
+    public static bool IsRelease { get; private set; }
+
+    public static void Initialize(bool release)
+    {
+      IsRelease = release;
+      if (release)
+      {
+        Tab = "";
+        LineEnding = "";
+        JSFiles = "    <script src=\"./media/gw2dungeons.js\"></script>\n";
+        CSSFiles = "    <link rel=\"stylesheet\" href=\"./media/gw2dungeons.css\">\n";
+      }
+      else
+      {
+        Tab = "    ";
+        LineEnding = "\n";
+        JSFiles = Tab + "<script src =\"./media/js/bootstrap-tagsinput.min.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src =\"./media/js/jquery-sortable-min.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src =\"./media/js/commentsection.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src =\"./media/js/jquery.storage.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-main.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-settings.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-calculator.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-sql.js\"></script>" + LineEnding;
+
+        CSSFiles = Tab + "<link rel=\"stylesheet\" href=\"./media/css/gw2dungeons.css\">" + LineEnding;
+        CSSFiles += Tab + "<link rel=\"stylesheet\" href=\"./media/css/bootstrap-tagsinput.css\">" + LineEnding;
+      }
+    }
 
   }
 }

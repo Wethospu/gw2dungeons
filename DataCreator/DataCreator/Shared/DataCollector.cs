@@ -61,10 +61,10 @@ namespace DataCreator.Shared
         Tags.Add(tag, CurrentTag);
       }
       // Generate a new tag short value. / 2015-08-17 / Wethospu
-      CurrentTag = Char.ToString((Char)((int)CurrentTag[0] + 1));
+      CurrentTag = char.ToString((char)((int)CurrentTag[0] + 1));
       // Skip problematic characters. / 2015-08-17 / Wethospu
       if ((int)CurrentTag[0] == 60 || (int)CurrentTag[0] == 62)
-        CurrentTag = Char.ToString((Char)((int)CurrentTag[0] + 1));
+        CurrentTag = char.ToString((char)((int)CurrentTag[0] + 1));
     }
 
     public string ConvertTag(string tag)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using DataCreator.Utility;
+using System.Linq;
 
 namespace DataCreator.Shared
 {
@@ -28,12 +29,15 @@ namespace DataCreator.Shared
     public static void GenerateOthers(DataCollector dungeonData)
     {
       Console.WriteLine("Generating pages");
+      MergeFiles();
       // Generate main page to dynamically create the dungeon listing.
       ApplyDungeonData(Constants.DataOtherRaw + "pages\\home.htm", dungeonData.GenerateDungeonData());
       // Generate about page to dynamically update date of the last update.
       ApplyDate(Constants.DataOtherRaw + "pages\\about.htm");
       // Generate search page filters based on actual enemies. / 2015-08-14 / Wethospu
       ApplyData(Constants.DataOtherRaw + "pages\\search.htm", dungeonData);
+      // Generate includes based on release mode. / 2015-09-24 / Wethospu
+      ApplyIncludes(Constants.DataOtherRaw + "index.php");
     }
 
     /***********************************************************************************************
@@ -78,7 +82,7 @@ namespace DataCreator.Shared
           for (; endIndex < line.Length; endIndex++)
           {
             int useless;
-            if (Char.IsUpper(line[endIndex]) || line[endIndex] == '_' || int.TryParse("" + line[endIndex], out useless))
+            if (char.IsUpper(line[endIndex]) || line[endIndex] == '_' || int.TryParse("" + line[endIndex], out useless))
               continue;
             break;
           }
@@ -130,7 +134,7 @@ namespace DataCreator.Shared
         if (string.IsNullOrWhiteSpace(line))
           continue;
         // Apply dictionary.
-        line = line.Replace("ID_DATE", DateTime.Today.ToString().Split(' ')[0]);
+        line = line.Replace("ID_DATE", DateTime.Today.ToString("yyyy-MM-dd"));
         toSave.Append(line).Append(Constants.LineEnding);
       }
       // Save file.
@@ -178,6 +182,60 @@ namespace DataCreator.Shared
       }
       // Save file.
       File.WriteAllText(fileName, toSave.ToString());
+    }
+
+    /***********************************************************************************************
+    * MergeFiles / 2015-09-25 / Wethospu                                                           *
+    *                                                                                              *
+    * Copies data files to the output folder while merging some files together.                    *
+    *                                                                                              *
+    ***********************************************************************************************/
+
+    private static void MergeFiles()
+    {
+      var files = Directory.GetFiles(Constants.DataOtherRaw, "*", SearchOption.AllDirectories);
+      var jsBuilder = new StringBuilder();
+      var cssBuilder = new StringBuilder();
+      foreach (var file in files)
+      {
+        var outputFile = Constants.DataOutput + file.Replace(Constants.DataOtherRaw, "");
+        if (Constants.IsRelease && Path.GetExtension(file) == ".js" && !Path.GetFileNameWithoutExtension(file).Equals("html5shiv"))
+        {
+          jsBuilder.Append(File.ReadAllText(file));
+          continue;
+        }
+        if (Constants.IsRelease && Path.GetExtension(file) == ".css")
+        {
+          cssBuilder.Append(File.ReadAllText(file));
+          continue;
+        }
+        Directory.CreateDirectory(Path.GetDirectoryName(outputFile));
+        File.Copy(file, outputFile, true);
+      }
+      if (Constants.IsRelease)
+      {
+        File.WriteAllText(Constants.DataOutput + Constants.DataMediaResult + "gw2dungeons.js", jsBuilder.ToString());
+        File.WriteAllText(Constants.DataOutput + Constants.DataMediaResult + "gw2dungeons.css", cssBuilder.ToString());
+      }
+    }
+
+    /***********************************************************************************************
+    * ApplyIncludes / 2015-09-25 / Wethospu                                                        *
+    *                                                                                              *
+    * Replaces ID_JS AND ID_CSS with the correct includes.                                         *
+    *                                                                                              *
+    * file: File to process.                                                                       *
+    *                                                                                              *
+    ***********************************************************************************************/
+
+    private static void ApplyIncludes(string file)
+    {
+      var fileName = Constants.DataOutput + file.Replace(Constants.DataOtherRaw, "");
+      var dirName = Path.GetDirectoryName(fileName);
+      if (dirName != null)
+        Directory.CreateDirectory(dirName);
+      // Save file.
+      File.WriteAllText(fileName, File.ReadAllText(file, Constants.Encoding).Replace("ID_JS", Constants.JSFiles).Replace("ID_CSS", Constants.CSSFiles));
     }
   }
 }

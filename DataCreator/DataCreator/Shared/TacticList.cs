@@ -70,7 +70,7 @@ namespace DataCreator.Shared
 
     public void AddLine(string line)
     {
-      Boolean isAnythingActive = false;
+      bool isAnythingActive = false;
       foreach (var tactic in Tactics)
       {
         if (tactic.AddLine(line))
@@ -137,7 +137,7 @@ namespace DataCreator.Shared
           str = LinkGenerator.CreateEnemyLinks(str, path, enemies);
           if (str.EndsWith(".."))
             Helper.ShowWarningMessage("Extra dot detected at end of '" + str + "'. Remove it.");
-          if (Char.IsLower(str[0]))
+          if (char.IsLower(str[0]))
             Helper.ShowWarningMessage("Line '" + str + "' starts with a lower character. Fix it.");
           if (!str.EndsWith(".") && !str.EndsWith(":") && !str.EndsWith("!") && !str.EndsWith("\""))
             Helper.ShowWarningMessage("No '.', ':', '!' or '\"' at the end of line '" + str + "'. Add it.");
@@ -175,7 +175,7 @@ namespace DataCreator.Shared
             str = LinkGenerator.CreateEnemyLinks(str, path, enemies);
             if (str.EndsWith(".."))
               Helper.ShowWarningMessage("Extra dot detected at end of '" + str + "'. Remove it.");
-            if (Char.IsLower(str[0]))
+            if (char.IsLower(str[0]))
               Helper.ShowWarningMessage("Line '" + str + "' starts with a lower character. Fix it.");
             if (!str.EndsWith(".") && !str.EndsWith(":") && !str.EndsWith("!") && !str.EndsWith("\""))
               Helper.ShowWarningMessage("No '.', ':', '!' or '\"' at the end of line '" + str + "'. Add it.");      

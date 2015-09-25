@@ -16,7 +16,7 @@ namespace DataCreator.Shared
   {
     public string Name { get; private set; }
     public List<string> Lines { get; private set; }
-    private Boolean _isActive;
+    private bool _isActive;
 
     public Tactic(string type)
     {
@@ -50,7 +50,7 @@ namespace DataCreator.Shared
      *                                                                                             *
      ***********************************************************************************************/
 
-    public Boolean AddLine(string line)
+    public bool AddLine(string line)
     {
       if (!_isActive || line.Length == 0)
         return false;

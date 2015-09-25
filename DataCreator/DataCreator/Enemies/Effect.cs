@@ -195,7 +195,7 @@ namespace DataCreator.Enemies
           replace.Append(amount * hitCount).Append("</span> healing");
           if (hitCount > 1)
           {
-            replace.Append(HitLengthStr(hitLength)).Append(" (<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
+            replace.Append(HitLengthStr(hitLength)).Append(" ");
             replace.Append(amount).Append(" healing per hit)");
           }
         }

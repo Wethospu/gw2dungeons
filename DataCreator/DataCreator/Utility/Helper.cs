@@ -26,7 +26,7 @@ namespace DataCreator.Utility
      *                                                                                             * 
      ***********************************************************************************************/
 
-    static public Boolean IsValidUrl(string url)
+    static public bool IsValidUrl(string url)
     {
       // Check whether validating is disabled.
       if (!Constants.ValidateUrls)
@@ -87,7 +87,7 @@ namespace DataCreator.Utility
      *                                                                                             * 
      ***********************************************************************************************/
 
-    static public int AmountOf(string str, Char toFind)
+    static public int AmountOf(string str, char toFind)
     {
       return str.Count(ch => ch == toFind);
     }
@@ -300,7 +300,7 @@ namespace DataCreator.Utility
      *                                                                                             * 
      ***********************************************************************************************/
 
-    static public int LastIndexOf(string str, Char[] characters, int startIndex)
+    static public int LastIndexOf(string str, char[] characters, int startIndex)
     {
 	    if (startIndex < 0 || startIndex >= str.Length)
       {
@@ -343,7 +343,7 @@ namespace DataCreator.Utility
      *                                                                                             * 
      ***********************************************************************************************/
 
-    static public int LastIndexOf(string str, Char[] characters)
+    static public int LastIndexOf(string str, char[] characters)
     {
       return LastIndexOf(str, characters, str.Length);
     }
@@ -362,7 +362,7 @@ namespace DataCreator.Utility
     *                                                                                             * 
     ***********************************************************************************************/
 
-    static public int FirstIndexOf(string str, Char[] characters, int startIndex)
+    static public int FirstIndexOf(string str, char[] characters, int startIndex)
     {
       // Check whether to enable pairbracket search.
       var lookForBracketPairs = characters.Contains(')');
@@ -399,7 +399,7 @@ namespace DataCreator.Utility
      *                                                                                             * 
      ***********************************************************************************************/
 
-    static public int FirstIndexOf(string str, Char[] characters)
+    static public int FirstIndexOf(string str, char[] characters)
     {
       return FirstIndexOf(str, characters, 0);
     }
@@ -464,7 +464,7 @@ namespace DataCreator.Utility
      *                                                                                             * 
      ***********************************************************************************************/
 
-    static public Boolean IsInteger(string str)
+    static public bool IsInteger(string str)
     {
       int result;
       return int.TryParse(str, out result);

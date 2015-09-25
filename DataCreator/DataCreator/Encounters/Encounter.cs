@@ -65,7 +65,7 @@ namespace DataCreator.Encounters
      *                                                                                             *
      ***********************************************************************************************/
 
-    public string ToHtml(PathData currentPath, Boolean first, List<Enemy> enemies)
+    public string ToHtml(PathData currentPath, bool first, List<Enemy> enemies)
     {
       UpdateEnemyTactics(enemies);
       var htmlBuilder = new StringBuilder();

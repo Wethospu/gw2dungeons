@@ -3,6 +3,7 @@ using DataCreator.Enemies;
 using DataCreator.Shared;
 using DataCreator.Utility;
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
@@ -29,22 +30,34 @@ namespace DataCreator
         Helper.WarningCount = 0;
         if (Directory.Exists(Constants.DataOutput))
         {
-          var fileCount = 0;
+          // Gather old files to remove them. / 2015-09-25 / Wethospu
+          var fileList = new List<string>();
           if (Directory.Exists(Constants.DataOutput + Constants.DataEnemyResult))
-            fileCount += Directory.GetFiles(Constants.DataOutput + Constants.DataEnemyResult, "*", SearchOption.AllDirectories).Length;
+            fileList.AddRange(Directory.GetFiles(Constants.DataOutput + Constants.DataEnemyResult, "*", SearchOption.AllDirectories));
           if (Directory.Exists(Constants.DataOutput + Constants.DataEncounterResult))
-            fileCount += Directory.GetFiles(Constants.DataOutput + Constants.DataEncounterResult, "*", SearchOption.AllDirectories).Length;
-          Console.WriteLine("Removing " + fileCount + " generated data files.");
+            fileList.AddRange(Directory.GetFiles(Constants.DataOutput + Constants.DataEncounterResult, "*", SearchOption.AllDirectories));
+          if (Directory.Exists(Constants.DataOutput + Constants.DataMediaResult))
+            fileList.AddRange(Directory.GetFiles(Constants.DataOutput + Constants.DataMediaResult, "*", SearchOption.AllDirectories));
+          if (Directory.Exists(Constants.DataOutput))
+            fileList.AddRange(Directory.GetFiles(Constants.DataOutput, "*", SearchOption.TopDirectoryOnly));
+          Console.WriteLine("Removing " + fileList.Count + " generated data files.");
           Console.WriteLine("\n");
           try
           {
-            Directory.Delete(Constants.DataOutput + Constants.DataEnemyResult, true);
-            Directory.Delete(Constants.DataOutput + Constants.DataEncounterResult, true);
+            foreach (var file in fileList)
+              File.Delete(file);
+            // Also delete folders. / 2015-09-25 / Wethospu
+            if (Directory.Exists(Constants.DataOutput + Constants.DataEnemyResult))
+              Directory.Delete(Constants.DataOutput + Constants.DataEnemyResult, true);
+            if(Directory.Exists(Constants.DataOutput + Constants.DataEncounterResult))
+              Directory.Delete(Constants.DataOutput + Constants.DataEncounterResult, true);
+            if (Directory.Exists(Constants.DataOutput + Constants.DataMediaResult))
+              Directory.Delete(Constants.DataOutput + Constants.DataMediaResult, true);
           }
           catch
           {
             Console.WriteLine("Couldn't remove every output file. Some files may not be updated.");
-            Console.WriteLine("\n");
+            Console.WriteLine("");
           }
 
         }
@@ -257,12 +270,13 @@ namespace DataCreator
      *                                                                                             *
      ***********************************************************************************************/
 
-    static Boolean Build()
+    static bool Build()
     {
       Console.WriteLine("Press enter to start.");
       Console.WriteLine("Press 1 to validate urls and update ValidatedUrls.txt.");
       Console.WriteLine("Press 2 to download used images/videos and update MediaSizes.txt.");
       Console.WriteLine("Press 3 to do both.");
+      Console.WriteLine("Press 4 for optimized release generation.");
       Console.WriteLine("Press esc to quit.");
       var row = Console.CursorTop;
       var key = Console.ReadKey();
@@ -272,6 +286,7 @@ namespace DataCreator
       Console.WriteLine("");
       Constants.ValidateUrls = key.Key == ConsoleKey.D1 || key.Key == ConsoleKey.D3;
       Constants.DownloadData = key.Key == ConsoleKey.D2 || key.Key == ConsoleKey.D3;
+      Constants.Initialize(key.Key == ConsoleKey.D4);
       CheckInternetSettings();
       LoadSettings();
       Constants.UniqueIndexCounter = 0;

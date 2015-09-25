@@ -87,7 +87,7 @@ namespace DataCreator.Encounters
         return;
       }
       // Check for weird characters but allow "|" to skip next line.
-      if (!Char.IsLetterOrDigit(line[0]) && line[0] != '|' && line[0] != '~')
+      if (!char.IsLetterOrDigit(line[0]) && line[0] != '|' && line[0] != '~')
       {
         Helper.ShowWarning("Line starts with a weird character. Please remove!");
         return;
@@ -186,7 +186,7 @@ namespace DataCreator.Encounters
       {
         var first = true;
         var encounterFile = new StringBuilder();
-        encounterFile.Append("GUIDE:").Append(Helper.ConvertSpecial(dungeonPath.DungeonName)).Append(Constants.Delimiter).Append(Helper.ConvertSpecial(dungeonPath.PathName)).Append(Constants.LineEnding);
+        encounterFile.Append("GUIDE:").Append(Helper.ConvertSpecial(dungeonPath.DungeonName)).Append(Constants.Delimiter).Append(Helper.ConvertSpecial(dungeonPath.PathName)).Append(Constants.ForcedLineEnding);
         encounterFile.Append(navigation);
         encounterFile.Append(Constants.InitialdataHtml);
         foreach (var encr in encounters)
@@ -240,7 +240,7 @@ namespace DataCreator.Encounters
         links += dungeonPath.PathTag;
 
       }
-      return names + Constants.LineEnding + links + Constants.LineEnding;
+      return names + Constants.ForcedLineEnding + links + Constants.ForcedLineEnding;
     }
   }
 }

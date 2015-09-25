@@ -65,21 +65,12 @@ $class = strtolower($class);
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-	<link rel="stylesheet" href="./media/gw2dungeons.css">
-	<link rel="stylesheet" href="./media/bootstrap-tagsinput.css">
+ID_CSS
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-	<script src="./media/js/jquery-sortable-min.js"></script>
-	<script src="./media/js/commentsection.js"></script>
-    <script src="./media/js/jquery.storage.js"></script>
-    <!--[if lt IE 7]><script src="/media/js/jquery.cookie.js"></script><![endif]-->
-    <script src="./media/js/gw2dungeons-main.js"></script>
-    <script src="./media/js/gw2dungeons-settings.js"></script>
-    <script src="./media/js/gw2dungeons-calculator.js"></script>
-    <script src="./media/js/gw2dungeons-sql.js"></script>
-	<script src="./media/js/bootstrap-tagsinput.min.js"></script>
 	<script src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
+ID_JS
     <!--[if lt IE 9]>
         <script src="/media/js/html5shiv.js"></script>
     <![endif]-->

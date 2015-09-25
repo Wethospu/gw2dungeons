@@ -73,7 +73,7 @@ namespace DataCreator.Utility
         for (var i = 3; i < tag.Length; i++)
         {
           int useless;
-          if (!Char.IsUpper(tag[i]) && tag[i] != '_' && !int.TryParse("" + tag[i], out useless))
+          if (!char.IsUpper(tag[i]) && tag[i] != '_' && !int.TryParse("" + tag[i], out useless))
             Helper.ShowWarning("ID \"" + tag + "\" contains lowercase character '" + tag[i] + "'. Please fix!");
         }
         // Insert data.

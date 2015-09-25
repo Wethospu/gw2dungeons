@@ -491,7 +491,7 @@ namespace DataCreator.Shared
      *                                                                                             * 
      ***********************************************************************************************/
 
-    private static string CreateEnemyLinkText(string data, Boolean checkErrors = false)
+    private static string CreateEnemyLinkText(string data, bool checkErrors = false)
     {
       var shownText = "";
       var mainSplit = data.Split('|');
