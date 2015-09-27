@@ -66,7 +66,7 @@ namespace DataCreator.Enemies
 
     public enum EffectType
     {
-      Damage, ConditionEffect, ConditionDamage, BoonEffect, BoonDamage, Control,
+      Damage, Condition, Boon, Control,
       Agony, None, DamageFixed, DamagePercent, Buff, Healing
     }
 
@@ -84,6 +84,13 @@ namespace DataCreator.Enemies
     ***********************************************************************************************/
     private string HandleEffect(string effectStr, int hitCount, double hitLength, Enemy baseEnemy)
     {
+      /* What is wanted:
+      * Damage: <span>(count*stack*amount)</span> over time (<span>amount</span> per hit).
+      * Swiftness: (count*stack*amount) over time (amount per hit).
+      * count*stack stability: for amount over time (stack per hit)
+      * count*stack might: <span>count*stack</span>% more damage for amount over time (<span>stack</span>% more damage per hit)
+      */
+      // Note: Listing per hit for might/stability may not make sense if there is only stack. / 2015-09-27 / Wethospu
       var original = string.Copy(effectStr);
       effectStr = Helper.ToUpper(LinkGenerator.CreatePageLinks(effectStr));
       var split = effectStr.Split('|');
@@ -125,38 +132,49 @@ namespace DataCreator.Enemies
 
         var category = tag.ToLower();
         var amount = 0.0;
-        var amountSecondary = 0.0;
         var duration = 0.0;
         var stacks = 1;
         var buff = "";
         var icon = category;
-        if (effectType == EffectType.Damage || effectType == EffectType.DamageFixed || effectType == EffectType.DamagePercent
-          || effectType == EffectType.Healing)
+        var stacksAdditively = true;
+        var suffix = "damage";
+        if (effectType == EffectType.Damage || effectType == EffectType.DamageFixed || effectType == EffectType.DamagePercent)
         {
           amount = Helper.ParseD(effectData[0]);
+          icon = "damage";
+          stacks = 1;
         }
-        if (effectType == EffectType.BoonDamage && category.Equals("regeneration"))
-            amount = Gw2Helper.CalculateTickDamage(category, baseEnemy.Level, baseEnemy.HealingPower);
-        if (effectType == EffectType.BoonDamage && category.Equals("retaliation"))
-          amount = Gw2Helper.CalculateActivationDamage(category, baseEnemy.Level, baseEnemy.Power);
-        if (effectType == EffectType.ConditionDamage && (category.Equals("bleeding")
-          || category.Equals("poison") || category.Equals("confusion") || category.Equals("burning") || category.Equals("torment")))
+        else if (effectType == EffectType.Healing)
         {
-          amount = Gw2Helper.CalculateTickDamage(category, baseEnemy.Level, baseEnemy.ConditionDamage);
+          amount = Helper.ParseD(effectData[0]);
+          suffix = "healing";
+          stacks = 1;
         }
-        if (effectType == EffectType.ConditionDamage && category.Equals("torment"))
-          amountSecondary = 2 * amount;
-        if (effectType == EffectType.ConditionDamage && category.Equals("confusion"))
-          amountSecondary = Gw2Helper.CalculateActivationDamage(category, baseEnemy.Level, baseEnemy.ConditionDamage);
-
-        if (effectType == EffectType.BoonDamage || effectType == EffectType.BoonEffect || effectType == EffectType.ConditionDamage
-          || effectType == EffectType.ConditionEffect || effectType == EffectType.Control)
+        if (effectType == EffectType.Boon|| effectType == EffectType.Condition  || effectType == EffectType.Control)
         {
           baseEnemy.Tags.Add(category);
         }
-        if (effectType == EffectType.Agony || effectType == EffectType.BoonDamage || effectType == EffectType.ConditionDamage
-          || effectType == EffectType.BoonEffect || effectType == EffectType.ConditionEffect || effectType == EffectType.Control)
+        if (effectType == EffectType.Agony || effectType == EffectType.Boon || effectType == EffectType.Condition)
         {
+          duration = Helper.ParseD(effectData[0]);
+          if (effectType == EffectType.Agony || category.Equals("bleeding") || category.Equals("torment") || category.Equals("burning")
+            || category.Equals("poison") || category.Equals("confusion") || category.Equals("regeneration") || category.Equals("might"))
+            amount = duration;
+          if (effectData.Length > 1)
+            stacks = Helper.ParseI(effectData[1]);
+          stacksAdditively = EffectStacksDuration(category);
+          if (stacksAdditively || effectType == EffectType.Boon)
+            suffix = "seconds";
+          if (category.Equals("regeneration"))
+            suffix = "healing";
+          if (category.Equals("retaliation"))
+            suffix = "damage per hit";
+          if (category.Equals("retaliation") || category.Equals("might"))
+            amount = 1;
+        }
+        if (effectType == EffectType.Control)
+        {
+          stacksAdditively = false;
           duration = Helper.ParseD(effectData[0]);
           if (effectData.Length > 1)
             stacks = Helper.ParseI(effectData[1]);
@@ -165,115 +183,130 @@ namespace DataCreator.Enemies
         {
           buff = effectData[0];
           icon = buff;
-          if (effectData.Length > 1)
+          if (effectData.Length > 1 && effectData[1].Length > 0)
             duration = Helper.ParseD(effectData[1]);
-          if (effectData.Length > 2)
+          if (effectData.Length > 2 && effectData[2].Length > 0)
             stacks = Helper.ParseI(effectData[2]);
-          if (effectData.Length > 3)
+          if (effectData.Length > 3 && effectData[3].Length > 0)
             icon = effectData[3];
+          stacksAdditively = effectData.Length > 4;
         }
-        AddTagsFromEffectType(effectType, baseEnemy);
-        // Syntax: <span class="TAGValue">VALUE</span>
-        var replace = new StringBuilder();
-        if (effectType == EffectType.Damage || effectType == EffectType.DamageFixed || effectType == EffectType.DamagePercent)
+
+        var totalAmount = 0.0;
+        var totalDuration = 0.0;
+        if (stacksAdditively)
         {
-          icon = "damage";
+          totalAmount = hitCount * amount * stacks;
+          totalDuration = hitCount * duration * stacks;
           stacks = 0;
-          // Put both total and damage per hit. / 2015-09-08 / Wethospu
-          replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
-          replace.Append(amount * hitCount).Append("</span> damage");
-          if (hitCount > 1)
-          {
-            replace.Append(HitLengthStr(hitLength)).Append(" (<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
-            replace.Append(amount).Append("</span> damage per hit)");
-          }
-        }
-        else if (effectType == EffectType.Healing)
-        {
-          stacks = 0;
-          // Put both total and damage per hit. / 2015-09-08 / Wethospu
-          replace.Append(amount * hitCount).Append("</span> healing");
-          if (hitCount > 1)
-          {
-            replace.Append(HitLengthStr(hitLength)).Append(" ");
-            replace.Append(amount).Append(" healing per hit)");
-          }
-        }
-        else if (effectType == EffectType.BoonEffect || effectType == EffectType.ConditionEffect || effectType == EffectType.Buff)
-        {
-          // Put both total and per hit. / 2015-09-08 / Wethospu
-          // Note: No overstacking handling. / 2015-09-08 / Wethospu
-          replace.Append(duration * hitCount).Append(" second");
-          if (duration * hitCount != 1.0)
-            replace.Append("s");
-          if (hitCount > 1)
-          {
-            replace.Append(HitLengthStr(hitLength)).Append(" (");
-            replace.Append(duration).Append(" second");
-            if (duration != 1.0)
-              replace.Append("s");
-            replace.Append(" per hit)");
-          }
-          // Add the buff name (people probably won't recognize all icons). / 2015-09-23 / Wethospu
-          if (effectType == EffectType.Buff)
-            replace.Append(" (").Append(buff.Replace('_', ' ')).Append(")");
-        }
-        else if (effectType == EffectType.Agony)
-        {
-          // Damage value based on hitcount, character and fractal scale. / 2015-09-08 / Wethospu
-          replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
-          replace.Append(duration * hitCount).Append("</span> damage").Append(HitLengthStr(duration + hitLength));
-          if (hitCount > 1)
-          {
-            replace.Append(" (<span class=\"").Append(EffectTypeToClass(effectType)).Append("\">");
-            replace.Append(duration).Append("</span> damage").Append(HitLengthStr(duration)).Append(" per hit)");
-          }
-        }
-        else if (effectType == EffectType.BoonDamage || effectType == EffectType.ConditionDamage)
-        {
-          // Put both total and per hit. / 2015-09-08 / Wethospu
-          // Note: No overstacking handling. / 2015-09-08 / Wethospu
-          var suffix = "damage";
-          if (category.Equals("regeneration"))
-            suffix = "healing";
-          if (category.Equals("retaliation"))
-            suffix = "damage per hit";
-          replace.Append(amount * duration * stacks * hitCount).Append(" ").Append(suffix).Append(HitLengthStr(duration + hitLength));
-          if (hitCount > 1)
-          {
-            replace.Append(" (");
-            replace.Append(amount * duration * stacks).Append(" ").Append(suffix).Append(HitLengthStr(duration)).Append(" per hit)");
-          }
-          if (category.Equals("confusion"))
-          {
-            suffix = "damage per skill usage";
-            replace.Append(amountSecondary * stacks * hitCount).Append(" ").Append(suffix).Append(HitLengthStr(duration + hitLength));
-            if (hitCount > 1)
-            {
-              replace.Append(" (");
-              replace.Append(amountSecondary * stacks).Append(" ").Append(suffix).Append(HitLengthStr(duration)).Append(" per hit)");
-            }
-          }
-        }
-        else if (effectType == EffectType.Control)
-        {
-          replace.Append(duration + hitLength).Append("</span> second");
-          if (duration * hitCount != 1.0)
-            replace.Append("s");
-          if (hitCount > 1)
-          {
-            replace.Append(HitLengthStr(hitLength)).Append(" (");
-            replace.Append(duration).Append(" second");
-            if (duration != 1.0)
-              replace.Append("s");
-            replace.Append(" per hit)");
-          }
         }
         else
         {
-          Helper.ShowWarningMessage("Effect type " + category + " not implemented.");
-          replace.Clear();
+          amount = amount * stacks;
+          totalAmount = hitCount * amount;
+          totalDuration = duration;
+          stacks = hitCount * stacks;
         }
+
+        AddTagsFromEffectType(effectType, baseEnemy);
+        // Syntax: <span class="TAGValue">VALUE</span>
+        var replace = new StringBuilder();
+        //// Put both total and damage per hit. / 2015-09-08 / Wethospu
+        if (amount > 0)
+        {
+          // All amounts need clientside formatting. / 2015-09-27 / Wethospu
+          // Add information as data values so it can be recalculated in the browser when enemy level changes. / 2015 - 09 - 27 / Wethospu
+          replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\" data-effect=\"").Append(category);
+          if (category.Equals("confusion"))
+            replace.Append("1");
+          replace.Append("\" data-amount=\"").Append(totalAmount).Append("\"></span>");
+          replace.Append(" ").Append(suffix);
+        }
+        if (duration > 0)
+        {
+          if (amount > 0)
+            replace.Append(" for ");
+          // Durations don't need anything so they can be added as plain text. / 2015-09-27 / Wethospu
+          replace.Append(totalDuration).Append(" second");
+          if (totalDuration != 1.0)
+            replace.Append("s");
+        }
+        replace.Append(HitLengthStr(hitLength));
+        if (hitCount > 1)
+        {
+          // Same as above but for a single hit. / 2015-09-27 / Wethospu
+          replace.Append(" (");
+          if (amount > 0)
+          {
+            // All amounts need clientside formatting. / 2015-09-27 / Wethospu
+            // Add information as data values so it can be recalculated in the browser when enemy level changes. / 2015 - 09 - 27 / Wethospu
+            replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\" data-effect=\"").Append(category);
+            if (category.Equals("confusion"))
+              replace.Append("1");
+            replace.Append("\" data-amount=\"").Append(amount).Append("\"></span>");
+            replace.Append(" ").Append(suffix);
+          }
+          if (duration > 0)
+          {
+            if (amount > 0)
+              replace.Append(" for");
+            // Durations don't need anything so they can be added as plain text. / 2015-09-27 / Wethospu
+            replace.Append(duration).Append(" second");
+            if (duration != 1.0)
+              replace.Append("s");
+          }
+          replace.Append(HitLengthStr(hitLength));
+          replace.Append(")");
+        }
+        if (category.Equals("confusion"))
+        {
+          suffix = "damage per skill usage";
+          replace.Append(". ");
+          if (amount > 0)
+          {
+            replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\" data-effect=\"").Append(category).Append("2");
+            replace.Append("\" data-amount=\"").Append(totalAmount).Append("\"></span>");
+            replace.Append(" ").Append(suffix);
+          }
+          if (duration > 0)
+          {
+            if (amount > 0)
+              replace.Append(" for ");
+            replace.Append(totalDuration).Append(" second");
+            if (totalDuration != 1.0)
+              replace.Append("s");
+          }
+          replace.Append(HitLengthStr(hitLength));
+          if (hitCount > 1)
+          {
+            replace.Append(" (");
+            if (amount > 0)
+            {
+              replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\" data-effect=\"").Append(category).Append("2");
+              if (category.Equals("confusion"))
+                replace.Append("1");
+              replace.Append("\" data-amount=\"").Append(amount).Append("\"></span>");
+              replace.Append(" ").Append(suffix);
+            }
+            if (duration > 0)
+            {
+              if (amount > 0)
+                replace.Append(" for");
+              replace.Append(duration).Append(" second");
+              if (duration != 1.0)
+                replace.Append("s");
+            }
+            replace.Append(HitLengthStr(hitLength));
+            replace.Append(")");
+          }
+        }
+        if (effectType == EffectType.Buff)
+        {
+          // Add the buff name (people probably won't recognize all icons). / 2015-09-23 / Wethospu
+          replace.Append(" (").Append(buff.Replace('_', ' ')).Append(")");
+        }
+
+
         var toReplace = tag + ":" + effect;
         effectStr = effectStr.Replace(toReplace, replace.ToString());
         // Get the first subeffect type to display an icon. / 2015-09-09 / Wethospu
@@ -335,16 +368,16 @@ namespace DataCreator.Enemies
       if (str.Equals("blind") || str.Equals("chilled") || str.Equals("crippled")
            || str.Equals("fear") || str.Equals("immobilized") || str.Equals("slow")
            || str.Equals("vulnerability") || str.Equals("weakness") || str.Equals("revealed"))
-        return EffectType.ConditionEffect;
+        return EffectType.Condition;
       if (str.Equals("aegis") || str.Equals("fury") || str.Equals("might")
           || str.Equals("protection") || str.Equals("resistance") || str.Equals("stability") || str.Equals("swiftness")
            || str.Equals("quickness") || str.Equals("vigor") || str.Equals("stealth"))
-        return EffectType.BoonEffect;
+        return EffectType.Boon;
       if (str.Equals("bleeding") || str.Equals("burning") || str.Equals("confusion")
            || str.Equals("poison") || str.Equals("torment"))
-        return EffectType.ConditionDamage;
+        return EffectType.Condition;
       if (str.Equals("regeneration") || str.Equals("retaliation"))
-        return EffectType.BoonDamage;
+        return EffectType.Boon;
 
       Helper.ShowWarningMessage("Effect type " + str + " not recognized.");
       return EffectType.None;
@@ -363,18 +396,12 @@ namespace DataCreator.Enemies
     {
       if (type == EffectType.Agony)
         baseEnemy.Tags.Add("agony");
-      else if (type == EffectType.BoonDamage || type == EffectType.BoonEffect)
+      else if (type == EffectType.Boon)
         baseEnemy.Tags.Add("boon");
       else if (type == EffectType.Buff)
         baseEnemy.Tags.Add("buff");
-      else if (type == EffectType.ConditionDamage || type == EffectType.ConditionEffect)
-      {
+      else if (type == EffectType.Condition)
         baseEnemy.Tags.Add("condition");
-        if (type == EffectType.ConditionDamage)
-          baseEnemy.Tags.Add("condition damage");
-        else if (type == EffectType.ConditionEffect)
-          baseEnemy.Tags.Add("condition debuff");
-      }
       else if (type == EffectType.Control)
         baseEnemy.Tags.Add("control");
       else if (type == EffectType.Damage)
@@ -402,8 +429,8 @@ namespace DataCreator.Enemies
     {
       if (type == EffectType.Agony)
         return "agonyValue";
-      if (type == EffectType.ConditionDamage || type == EffectType.ConditionEffect)
-        return "conditionValue";
+      if (type == EffectType.Condition || type == EffectType.Boon)
+        return "effectValue";
       if (type == EffectType.Damage)
         return "damageValue";
       if (type == EffectType.DamageFixed)
@@ -416,6 +443,12 @@ namespace DataCreator.Enemies
       return "";
     }
 
+    /***********************************************************************************************
+    * HitLengthStr / 2015-09-26 / Wethospu                                                         *
+    *                                                                                              *
+    * Converts hitLenght to a string. Simplifies code.                                             *
+    *                                                                                              *
+    ***********************************************************************************************/
     private string HitLengthStr(double hitLength)
     {
       if (hitLength < 0.001)
@@ -423,6 +456,32 @@ namespace DataCreator.Enemies
       if (hitLength == 1.0)
         return " over 1 second";
       return " over " + hitLength + " seconds";
+    }
+
+    /***********************************************************************************************
+    * EffectStacksDuration / 2015-09-26 / Wethospu                                                 *
+    *                                                                                              *
+    * Returns whether effect stacks duration or intensity.                                         *
+    *                                                                                              *
+    ***********************************************************************************************/
+    private bool EffectStacksDuration(string str)
+    {
+      if (str.Equals("daze") || str.Equals("float") || str.Equals("knockback") || str.Equals("knockdown")
+          || str.Equals("launch") || str.Equals("pull") || str.Equals("sink") || str.Equals("stun") || str.Equals("taunt"))
+        return false;
+      if (str.Equals("blind") || str.Equals("chilled") || str.Equals("crippled") || str.Equals("fear") || str.Equals("immobilized") || str.Equals("slow")
+            || str.Equals("weakness") || str.Equals("revealed"))
+        return true;
+      if (str.Equals("aegis") || str.Equals("fury") || str.Equals("retaliation") || str.Equals("regeneration")
+          || str.Equals("protection") || str.Equals("resistance")|| str.Equals("swiftness")
+           || str.Equals("quickness") || str.Equals("vigor") || str.Equals("stealth"))
+        return true;
+      if (str.Equals("bleeding") || str.Equals("burning") || str.Equals("confusion")
+           || str.Equals("poison") || str.Equals("torment") || str.Equals("vulnerability"))
+        return false;
+      if (str.Equals("might") || str.Equals("stability"))
+        return false;
+      return true;
     }
   }
 }

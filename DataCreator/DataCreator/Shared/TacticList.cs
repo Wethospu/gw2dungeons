@@ -41,7 +41,7 @@ namespace DataCreator.Shared
       {
         if (!Constants.AvailableTactics.Contains(str.ToLower()) && !Constants.AvailableTips.Contains(str.ToLower()))
           Helper.ShowWarning("Tactic or tip " + str + " wasn't found!. Either fix or add to AvailableTactics.txt or AvailableTips.txt!");
-        // Check whether that tactic should be added. / 2015-06-28 / JereK
+        // Check whether that tactic should be added. / 2015-06-28 / Wethospu
         var found = false;
         foreach (var tactic in Tactics)
         {

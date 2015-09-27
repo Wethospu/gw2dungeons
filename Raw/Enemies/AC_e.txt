@@ -6,6 +6,7 @@ potion=ghost|none
 ##################################################################
 
 Name=Gateguard
+ID=6971
 Category=Champion
 image=https://wiki.guildwars2.com/images/f/fd/Ascalonian_Lieutenant.jpg
 Path=ACS
@@ -41,6 +42,8 @@ subeffect=Knockdown:4
 ##################################################################
 
 Name=Ascalonian Captain (Ranged)
+# Verify: 3363
+ID=9062
 Category=Champion
 image=http://wiki.guildwars2.com/images/c/cd/Ascalonian_Captain.jpg
 Path=ACS
@@ -65,6 +68,8 @@ subeffect=launch:3.2
 ##################################################################
 
 Name=Ascalonian Captain (Melee)
+# Verify: 9062
+ID=3363
 Category=Champion
 image=http://wiki.guildwars2.com/images/a/af/Champion_Ascalonian_Captain.jpg
 Path=ACS
@@ -133,6 +138,7 @@ subeffect=???
 ##################################################################
 
 Name=Ranger Nente (Hammer)
+ID=1701
 Category=Champion
 image=http://wiki.guildwars2.com/images/8/8c/Champion_Master_Ranger_Nente.jpg
 Path=ACS
@@ -165,6 +171,7 @@ subeffect=damage:485080
 ##################################################################
 
 Name=Fang
+ID=9247
 Category=elite
 image=http://wiki.guildwars2.com/images/0/0e/Elite_Fang.jpg
 Path=ACS
@@ -193,10 +200,12 @@ subeffect=crippled:5
 
 copy=Fang|Elite
 name=Shadow
+ID=5751
 
 ##################################################################
 
 Name=Kasha
+ID=1702
 Category=Champion
 image=http://wiki.guildwars2.com/images/f/fc/Champion_Kasha.jpg
 Path=ACS
@@ -246,6 +255,7 @@ subeffect=fear:1
 ##################################################################
 
 Name=Flesh Golem
+ID=10640
 Category=Normal
 Path=ACS
 type=no type
@@ -287,7 +297,8 @@ subeffect=damage:123280
 
 ##################################################################
 
-name=Raleena
+name=Ralena
+ID=1705
 image=https://wiki.guildwars2.com/images/b/be/Ralena_Stormbringer.jpg
 category=champion
 path=ACS
@@ -336,6 +347,7 @@ subeffect=knockback:1.5
 ##################################################################
 
 name=Vassar
+ID=1704
 category=champion
 image=https://wiki.guildwars2.com/images/e/ec/Vassar.jpg
 path=ACS
@@ -381,17 +393,17 @@ subeffect=enemy=Illusionary_Mages:normal
 
 attack=Lover's Embrace
 animation=purple bubble and red hearts
-effect=aura (when enemy=Raleena is near)
+effect=aura (when enemy=Ralena is near)
 subeffect=reflects projectiles
 
 ##################################################################
 
 name=Illusionary Mage
+ID=9159
 alt=Illusionary Mages
 category=normal
 path=ACS
 type=no type
-# VERIFY: Could be 5*270
 condition=270
 
 attack=Backfire
@@ -406,6 +418,7 @@ subeffect=retaliation:3
 ##################################################################
 
 name=King Adelbern
+ID=1691
 category=legendary
 image=http://wiki.guildwars2.com/images/a/ad/Legendary_King_Adelbern.jpg
 path=ACS
@@ -469,6 +482,7 @@ subeffect=damage:385920
 ##################################################################
 
 Name=Spider Queen
+ID=7039
 Category=legendary
 Path=AC1|AC2|AC3
 health=132265
@@ -523,8 +537,9 @@ subeffect=poison:6
 # Verified for nothing.
 
 Name=Cave Troll
+ID=7041
 Category=Champion
-Path=ACS|AC1|AC2|AC3
+Path=AC1|AC2|AC3
 type=troll
 
 Attack=Troll Smash
@@ -577,8 +592,17 @@ effect=buff
 subeffect=No effect
 
 ##################################################################
+# Remember to update HOTW1 Icebrood enemy=Troll:Champion too!
+# Verified for nothing.
+
+copy=Cave Troll
+Name=Cave Troll
+ID=7020
+Path=ACS
+##################################################################
 
 Name=Lieutenant Kholer
+ID=9115
 alt=Kholer
 health=150476
 Category=Champion
@@ -663,6 +687,7 @@ subeffect=damage:438204
 ##################################################################
 
 Name=Howling King
+ID=7018
 Category=Legendary
 image=http://wiki.guildwars2.com/images/7/7b/Shadow_Skelk.jpg
 health=150476
@@ -714,6 +739,7 @@ subeffect=Instantly kills elite Gravelings
 ##################################################################
 
 Name=Ghost Eater
+ID=9077
 Category=Legendary
 Path=AC2
 type=graveling
@@ -767,6 +793,7 @@ subeffect=Immunity to conditions and damage
 ##################################################################
 
 Name=Ectoplasmic Ooze
+ID=9079
 alt=Ectoplasmic Oozes
 Category=normal
 Path=AC2
@@ -782,6 +809,7 @@ subeffect=vulnerability:1
 ##################################################################
 
 Name=Colossus Rumblus
+ID=9078
 Category=Legendary
 image=http://wiki.guildwars2.com/images/5/59/Colossus_Rumblus.jpg
 Path=AC3
@@ -836,6 +864,7 @@ subeffect=knockdown:3
 ##################################################################
 
 Name=Ascalonian Elementalist
+ID=1933
 Category=Elite
 Alt=Elementalist|Elementalists|Ascalonian Elementalists
 image=http://wiki.guildwars2.com/images/9/99/Ascalonian_Elementalist.jpg
@@ -863,6 +892,7 @@ subeffect=Burning:2
 ##################################################################
 
 Name=Ascalonian Elementalist
+ID=6803
 Category=Normal
 Alt=Elementalist|Elementalists|Ascalonian Elementalists
 image=http://wiki.guildwars2.com/images/9/99/Ascalonian_Elementalist.jpg
@@ -889,6 +919,7 @@ subeffect=Burning:2
 
 ##################################################################
 Name=Ascalonian Elementalist
+ID=1933
 Category=Elite
 Alt=Elementalist|Elementalists|Ascalonian Elementalists
 image=http://wiki.guildwars2.com/images/9/99/Ascalonian_Elementalist.jpg
@@ -917,6 +948,7 @@ subeffect=Burning:2
 ##################################################################
 
 Name=Ascalonian Mesmer
+ID=1931
 Category=Elite
 Alt=Ascalonian Mesmers|Mesmer|Mesmers
 image=https://wiki.guildwars2.com/images/2/2a/Ascalonian_Mesmer.jpg
@@ -941,6 +973,7 @@ subeffect=reflects projectiles
 ##################################################################
 
 Name=Ascalonian Mesmer
+ID=6804
 Category=Normal
 Alt=Ascalonian Mesmers|Mesmer|Mesmers
 image=https://wiki.guildwars2.com/images/2/2a/Ascalonian_Mesmer.jpg
@@ -965,6 +998,7 @@ subeffect=reflects projectiles
 ##################################################################
 
 Name=Ascalonian Mesmer
+ID=1931
 Category=Elite
 Alt=Ascalonian Mesmers|Mesmer|Mesmers
 image=https://wiki.guildwars2.com/images/2/2a/Ascalonian_Mesmer.jpg
@@ -990,6 +1024,7 @@ subeffect=reflects projectiles
 ##################################################################
 
 Name=Ascalonian Monk
+ID=1932
 Category=Elite
 Alt=Ascalonian Monks|Monk|Monks
 image=https://wiki.guildwars2.com/images/0/05/Ascalonian_Monk.jpg
@@ -1018,6 +1053,7 @@ subeffect=Knockback:1.5
 ##################################################################
 # Power scaled from Ray of Judgement (information may be wrong).
 Name=Ascalonian Monk
+ID=6805
 Category=normal
 Alt=Ascalonian Monks|Monk|Monks
 image=https://wiki.guildwars2.com/images/0/05/Ascalonian_Monk.jpg
@@ -1044,6 +1080,7 @@ subeffect=Knockback:1.5
 ##################################################################
 
 Name=Ascalonian Monk
+ID=1932
 Category=Elite
 Alt=Ascalonian Monks|Monk|Monks
 image=https://wiki.guildwars2.com/images/0/05/Ascalonian_Monk.jpg
@@ -1071,6 +1108,44 @@ subeffect=Knockback:1.5
 ##################################################################
 
 Name=Ascalonian Necromancer
+ID=6806
+Category=normal
+Alt=Ascalonian Necromancers|Necromancer|Necromancers
+image=https://wiki.guildwars2.com/images/f/f7/Ascalonian_Necromancer.jpg
+Path=ACS
+type=ghost
+condition=370
+
+Attack=Life Siphon
+image=http://i.imgur.com/oLyFphc.gif
+cooldown=5
+effect=8 ranged hits in 2.5 s
+count=8
+length=2.5
+subeffect=damage:103984
+
+attack=Well
+image=http://i.imgur.com/eZOUKQ6.gif
+cooldown=12
+effect=ticking AoE (20 s)
+subeffect=Poison:6
+
+attack=Fear
+image=http://i.imgur.com/TPyADQZ.gif
+cooldown=22
+animation=swings left arm|0.25
+effect=PBAoE
+subeffect=fear:3
+subeffect=chilled:5
+subeffect=vulnerability:10
+subeffect=poison:10
+subeffect=weakness:10
+subeffect=blind:10
+
+##################################################################
+
+Name=Ascalonian Necromancer
+ID=1930
 Category=Elite
 Alt=Ascalonian Necromancers|Necromancer|Necromancers
 image=https://wiki.guildwars2.com/images/f/f7/Ascalonian_Necromancer.jpg
@@ -1107,6 +1182,7 @@ subeffect=blind:10
 ##################################################################
 
 Name=Ascalonian Necromancer
+ID=1930
 Category=Elite
 Alt=Ascalonian Necromancers|Necromancer|Necromancers
 image=https://wiki.guildwars2.com/images/f/f7/Ascalonian_Necromancer.jpg
@@ -1144,6 +1220,7 @@ subeffect=blind:10
 ##################################################################
 
 Name=Ascalonian Ranger
+ID=1918
 Category=Elite
 image=https://wiki.guildwars2.com/images/1/1f/Ascalonian_Ranger.jpg
 Alt=Ascalonian Rangers|Ranger|Rangers
@@ -1197,6 +1274,7 @@ subeffect=Immobilized:1
 ##################################################################
 # Power/Condition scaled from Spread Shot (information may be wrong).
 Name=Ascalonian Ranger
+ID=6807
 Category=normal
 image=https://wiki.guildwars2.com/images/1/1f/Ascalonian_Ranger.jpg
 Alt=Ascalonian Rangers|Ranger|Rangers
@@ -1247,6 +1325,7 @@ subeffect=Immobilized:1
 ##################################################################
 
 Name=Ascalonian Ranger
+ID=1918
 Category=Elite
 Alt=Ascalonian Rangers|Ranger|Rangers
 image=https://wiki.guildwars2.com/images/1/1f/Ascalonian_Ranger.jpg
@@ -1305,6 +1384,7 @@ subeffect=Immobilized:1
 ##################################################################
 
 Name=Ascalonian Warrior
+ID=1706
 Category=Elite
 Alt=Ascalonian Warrior|Warrior|Warriors
 image=https://wiki.guildwars2.com/images/d/d1/Ascalonian_Warrior.jpg
@@ -1356,6 +1436,7 @@ subeffect=Healing:25 %
 ##################################################################
 # Power/Condition scaled from Gash (information may be wrong).
 Name=Ascalonian Warrior
+ID=6808
 Category=Normal
 Alt=Ascalonian Warrior|Warrior|Warriors
 image=https://wiki.guildwars2.com/images/d/d1/Ascalonian_Warrior.jpg
@@ -1407,6 +1488,7 @@ subeffect=Healing:25 %
 ##################################################################
 
 Name=Ascalonian Warrior
+ID=1706
 Category=Elite
 Alt=Ascalonian Warrior|Warrior|Warriors
 image=https://wiki.guildwars2.com/images/d/d1/Ascalonian_Warrior.jpg
@@ -1540,8 +1622,10 @@ subeffect=damage:52788
 subeffect=burning:3
 
 ##################################################################
+#NOTE: Both level 35 and 37 exist!
 
 name=Ghastly Ooze
+ID=5953
 alt=Ghastly Oozes|Ooze|Oozes
 image=https://i.imgur.com/nbDt7ik.jpg
 Category=Elite
@@ -1572,8 +1656,10 @@ subeffect=damage:389868
 subeffect=immobilized:3
 
 ##################################################################
+#NOTE: Both level 35 and 37 exist!
 
 name=Ghastly Ooze
+ID=5956
 alt=Ghastly Oozes|Ooze|Oozes
 image=https://i.imgur.com/nbDt7ik.jpg
 health=2804
@@ -1606,6 +1692,8 @@ subeffect=immobilized:3
 ##################################################################
 
 name=Graveling
+#VERIFY: 1707
+ID=11733
 alt=Gravelings
 Category=Elite
 type=graveling
@@ -1641,8 +1729,10 @@ subeffect=damage:649356
 subeffect=launch:2.3
 
 ##################################################################
+# NOTE: Both level 35 and 37 exist!
 
 name=Graveling Breeder
+ID=5693
 alt=Graveling Breeders|Breeder|Breeders
 Category=Elite
 image=http://wiki.guildwars2.com/images/4/4d/Graveling_Breeder.jpg
@@ -1689,25 +1779,16 @@ subeffect=~15 enemy=Graveling_Hatchlings:normal in 14.5 s
 #note=All die when Breeder dies
 
 ##################################################################
-
-# Wrong damage values.
-# Level 37.
-copy=Graveling Breeder|elite
-name=Graveling Breeder (37)
-level=37
-category=elite
-health=14816
-type=graveling
-
-##################################################################
 # damage values need to be checked and copy removed
 copy=Graveling Breeder|elite
 name=Graveling (Breeder)
+ID=9114
 category=champion
 
 ##################################################################
 
 name=Graveling Hatchling
+ID=1710
 alt=Graveling Hatchlings|Hatchling|Hatchlings
 Category=Normal
 image=https://wiki.guildwars2.com/images/8/8b/Graveling_Hatchling.jpg
@@ -1736,6 +1817,8 @@ subeffect=bleeding:4:3
 ##################################################################
 
 name=Graveling Hatchling
+# VERIFY: 6080
+ID=1710
 alt=Graveling Hatchlings|Hatchling|Hatchlings
 image=https://wiki.guildwars2.com/images/8/8b/Graveling_Hatchling.jpg
 Category=Normal
@@ -1764,6 +1847,7 @@ subeffect=bleeding:4:3
 ##################################################################
 
 name=Graveling Howler
+ID=1939
 alt=Graveling Howlers|Howler|Howlers
 Category=Elite
 type=graveling
@@ -1807,6 +1891,7 @@ subeffect=confusion:3
 ##################################################################
 
 name=Graveling Stalker
+ID=7052
 alt=Graveling Stalkers|Stalker|Stalkers
 Category=champion
 type=graveling
@@ -1849,16 +1934,20 @@ effect=buff
 subeffect=Evade all attacks
 
 ##################################################################
-# damage values need to be checked and copy removed
+# Both levels 35 and 37 exist.
+
 copy=Graveling Stalker|champion
 name=Graveling Stalker
+ID=1938
 alt=Graveling Stalkers|Stalker|Stalkers
 Category=elite
 health=17395
 
 ##################################################################
-
+# Both levels 35 and 37 exist.
 name=Graveling Scavenger
+# Verify: 11734
+ID=5787
 alt=Graveling Scavengers|Scavenger|Scavengers
 Category=Elite
 type=graveling
@@ -1913,24 +2002,17 @@ subeffect=stun:2
 #note=sometimes goes straight to this
 
 ##################################################################
-
-# Wrong damage values.
-# Level 37.
-copy=Graveling Scavenger|elite
-name=Graveling Scavenger (Strong)
-category=elite
-health=18520
-
-##################################################################
 # damage values need to be checked and copy removed
 copy=Graveling Scavenger|elite
 name=Graveling Scavenger
+ID=7051
 alt=Graveling Scavengers|Scavenger|Scavengers
 category=champion
 
 ##################################################################
 
 name=Grub
+ID=4085
 image=http://wiki.guildwars2.com/images/c/ca/Grub_Yellow.jpg
 alt=Grubs
 Category=Normal
@@ -1956,6 +2038,7 @@ subeffect=burning:3
 ##################################################################
 
 name=Spider Hatchling
+ID=6972
 alt=Spider Hatchlings
 image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
 Category=Normal
@@ -1987,6 +2070,7 @@ subeffect=bleeding:5
 ##################################################################
 
 name=Spider
+ID=7040
 alt=Spiders
 image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
 Category=elite
@@ -2016,16 +2100,11 @@ subeffect=poison:3
 #note=keep circling to avoid
 
 ##################################################################
-
-copy=Spider|Elite
-name=Spider
-alt=Spiders
-Category=normal
-type=graveling
-
-##################################################################
+# Levels 1, 2, 3 and 35 exist.
 
 name=Spider Hatchling
+# VERIFY: 7045
+ID=6972
 alt=Spider Hatchlings
 image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
 Category=Normal
@@ -2058,6 +2137,7 @@ subeffect=bleeding:5
 ##################################################################
 
 name=Spider Hatchling
+ID=6972
 alt=Spider Hatchlings
 Category=Normal
 image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
@@ -2143,11 +2223,23 @@ Path=ACS
 
 attack=Summons enemy=graveling_hatchlings:normal
 
+
+##################################################################
+# Not found
+##################################################################
+
+name=Barracuda
+ID=1708
+Category=normal
+Path=ACS
+
+
 ##################################################################
 # NPCS
 ##################################################################
 
 name=Detha Tremblebones
+ID=5852
 Category=ally
 image=http://wiki.guildwars2.com/images/a/a4/Detha_NPC.jpg
 Path=AC2
@@ -2174,6 +2266,7 @@ Path=ACS
 ##################################################################
 
 Name=Rytlock Brimstone
+ID=6978
 Category=ally
 image=http://wiki.guildwars2.com/images/6/67/Rytlock_Brimstone.jpg
 Path=ACS
@@ -2181,15 +2274,69 @@ Path=ACS
 ##################################################################
 
 Name=Eir Stegalkin
+ID=6976
 Category=ally
 image=http://wiki.guildwars2.com/images/4/47/Eir_Stegalkin.jpg
 Path=ACS
 
 ##################################################################
 
+Name=Durmand Priory Explorer
+# VERIFY: 5903
+ID=5902
+Category=ally
+Path=AC1|AC2|AC3
+
+##################################################################
+
+Name=Priory Arcanist (Female)
+# VERIFY: 5361 and 5366
+ID=5335
+Category=ally
+Path=AC1|AC2|AC3
+
+##################################################################
+
+Name=Priory Arcanist (Male)
+# VERIFY: 5355 and 5368
+ID=5336
+Category=ally
+Path=AC1|AC2|AC3
+
+##################################################################
+
+Name=Priory Explorer
+# VERFIY: 5350
+ID=4787
+Category=ally
+Path=AC1|AC2|AC3
+
+##################################################################
+
+Name=Priory Scholar (Female)
+ID=1584
+Category=ally
+Path=AC1|AC2|AC3
+
+##################################################################
+
+Name=Priory Scholar (Male)
+ID=1591
+Category=ally
+Path=AC1|AC2|AC3
+
+##################################################################
+
 Name=Shrill Sunderbark
 Category=ally
 image=http://wiki.guildwars2.com/images/4/43/Shrill_Sunderbark.jpg
+Path=AC1|AC2|AC3
+
+##################################################################
+
+Name=Sylvan Hound
+ID=9158
+Category=ally
 Path=AC1|AC2|AC3
 
 ##################################################################
@@ -2202,6 +2349,7 @@ Path=AC1|AC2|AC3
 ##################################################################
 
 Name=Warmaster Grast
+ID=1703
 image=https://i.imgur.com/7fr2Zc1.jpg
 Category=ally
 Path=AC3
@@ -2209,6 +2357,7 @@ Path=AC3
 ##################################################################
 
 Name=Hodgins
+ID=5766
 Category=ally
 image=http://wiki.guildwars2.com/images/f/ff/Hodgins_Scepter.jpg
 Path=AC1|AC2|AC3

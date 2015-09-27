@@ -102,7 +102,7 @@ tactic=normal
 About 15 enemy=:ghosts|Elementalist:normal|Mesmer:normal|Monk:normal|Necromancer:normal|Ranger:normal|Warrior:normal and enemy=Gateguard:champion appear after enemy has talked a bit.
 Try to kill enemies quickly with AoE. If you get downed, attack enemies with low health to rally.
 Gateguard is exactly same as on coffin room. Stay behind his back and try to dodge when he jumps.
-After that you need to take out 3 different Champions. You can kill them in any order. Suggested order is enemy=Nente:champion, enemy=Kasha:champion and then enemy=Raleena:champion + enemy=Vassar:champion. Nente is the closest one and has the closest waypoint for last fight which means less running. Kasha is easy to kill and gives much needed waypoint for Raleena and Vassar.
+After that you need to take out 3 different Champions. You can kill them in any order. Suggested order is enemy=Nente:champion, enemy=Kasha:champion and then enemy=Ralena:champion + enemy=Vassar:champion. Nente is the closest one and has the closest waypoint for last fight which means less running. Kasha is easy to kill and gives much needed waypoint for Ralena and Vassar.
 
 Name=Way to Nente
 tactic=normal
@@ -153,7 +153,7 @@ Also stay away from and ignore enemy=Flesh_Golem:normal. His attacks knock back 
 tactic=bug
 Kasha may not become hostile if you split and trigger multiple cutscenes at the same time. There is no known fix.
 
-Name=enemy=Raleena:champion and enemy=Vassar:champion
+Name=enemy=Ralena:champion and enemy=Vassar:champion
 image=http://i.imgur.com/ALxpPWf.jpg
 image=http://i.imgur.com/ON7s6Jx.jpg
 tactic=melee|ranged|exploit
@@ -163,7 +163,7 @@ The idea of the fight is to keep them separated. When they are close they will g
 They don't have Unshakeable so you can and should spam blind and control skills. There are Boulders all around the area which you can use to knock them away (if against wall you can keep one permanently disabled by just spamming one Boulder).
 Their skills will do lots of damage so keep them disabled. Focus Vassar because he is much more dangerous. He will summon lots of enemy=Illusionary_Mages:normal which will put lots of confusion. Killing them is a top priority. Their attacks and Vassar's ranged attack will bounce so stay from each other.
 Vassar will also put very dangerous ticking AoE so dodge out immediately.
-Raleena is also quite dangerous but she has a ticking PBAoE which is much easier to avoid.
+Ralena is also quite dangerous but she has a ticking PBAoE which is much easier to avoid.
 tactic=engineer
 Use wiki=Big_Ol'_Bomb at the start to separate them.
 tactic=exploit
@@ -596,7 +596,7 @@ Tzark may not start the collector event. You can try re-entering the room but if
 name=Way to four burrows
 image=https://i.imgur.com/cAEW7sz.jpg
 tactic=normal
-enemy=Spiders:elite and enemy=Spiders:normal on way. Very easy to kill.
+enemy=Spiders:elite and enemy=Spider_Hatchlings:normal on way. Very easy to kill.
 tactic=skip
 Just run through. Take a condition removal to remove poison at end.
 

@@ -24,14 +24,8 @@ namespace DataCreator.Enemies
     // Alternative names for links and search. Guaranteed to be lower case without special marks.
     public List<string> AltNames { get; private set; }
     public string Path = "";
-    public string Race = "";
     public string Potion = "";
-    public int Health;
-    public int Armor;
-    public int Power = 0;
-    public int ConditionDamage = 0;
-    public int HealingPower = 0;
-    public double ToughnessMultiplier = 1.0;
+    public EnemyAttributes Attributes = new EnemyAttributes();
     // This tracks how valid current tactics are. It's needed to pick the best tactics when copying them from encounters. / 2015-08-09 / Wethospu
     public double TacticValidity = 0.0;
     public TacticList Tactics = new TacticList();
@@ -76,18 +70,11 @@ namespace DataCreator.Enemies
     {
       Category = string.Copy(toCopy.Category);
       Path = string.Copy(toCopy.Path);
-      Race = string.Copy(toCopy.Race);
       Potion = string.Copy(toCopy.Potion);
-      Health = toCopy.Health;
       Level = toCopy.Level;
-      Armor = toCopy.Armor;
       ScalingType = string.Copy(toCopy.ScalingType);
       ScalingLevel = toCopy.ScalingLevel;
       ScalingFractal = toCopy.ScalingFractal;
-      Power = toCopy.Power;
-      ConditionDamage = toCopy.ConditionDamage;
-      HealingPower = toCopy.HealingPower;
-      ToughnessMultiplier = toCopy.ToughnessMultiplier;
       foreach (var media in toCopy.Medias)
         Medias.Add(new Media(media));
       Tactics = new TacticList(toCopy.Tactics);
@@ -112,26 +99,6 @@ namespace DataCreator.Enemies
       // Alt names only used there so can be safely simplified this early.
       AltNames.Add(Helper.Simplify(altName));
     }
-
-    /***********************************************************************************************
-     * CheckRace / 2015-08-15 / Wethospu                                                           * 
-     *                                                                                             * 
-     * Verifies that the enemy has race set.                                                       *
-     *                                                                                             *
-     * https://forum-en.guildwars2.com/forum/game/dungeons/Race-Gadget-and-Slaying-Potions/first   *                                                                       *
-     *                                                                                             *
-     ***********************************************************************************************/
-
-    public void CheckRace()
-    {
-      if (Category.Equals("normal") || Category.Equals("veteran") || Category.Equals("elite")
-        || Category.Equals("champion") || Category.Equals("legendary"))
-      {
-        if (Race.Equals(""))
-          Helper.ShowWarningMessage("Enemy " + Name + " doesn't have a race!");
-      }
-    }
-
 
     /***********************************************************************************************
      * CompareTo / 2014-08-01 / Wethospu                                                           * 
@@ -204,12 +171,6 @@ namespace DataCreator.Enemies
 
     public string ToHtml(List<Enemy> enemies)
     {
-      CheckRace();
-      Armor = (int)Gw2Helper.CalculateArmor(Level, ToughnessMultiplier);
-      // Scale if needed.
-      if (!ScalingType.Equals(""))
-        Armor = Scaling.ArmorToZeroValue(Armor, ScalingType, ScalingLevel);
-
       var htmlBuilder = new StringBuilder();
       htmlBuilder.Append("<div class=\"enemy\"");
       //// Add identifier data (name, category, path, race, potion and level).
@@ -219,8 +180,10 @@ namespace DataCreator.Enemies
       htmlBuilder.Append("\"");
       htmlBuilder.Append(" data-category=\"").Append(Helper.Simplify(Category)).Append("\"");
       htmlBuilder.Append(" data-path=\"").Append(Helper.Simplify(Path)).Append("\"");
-      htmlBuilder.Append(" data-race=\"").Append(Helper.Simplify(Race)).Append("\"");
       htmlBuilder.Append(" data-potion=\"").Append(Helper.Simplify(Potion)).Append("\"");
+      htmlBuilder.Append(" data-level=\"").Append(Level).Append("\"");
+      htmlBuilder.Append(Attributes.ToHtml());
+      
       if (ScalingType.Length > 0)
         htmlBuilder.Append(" data-scaling=\"").Append(Scaling.ScalingTypeToMode(Helper.Simplify(ScalingType))).Append("\"");
       htmlBuilder.Append(">").Append(Constants.LineEnding);
@@ -230,17 +193,27 @@ namespace DataCreator.Enemies
       // Add name.
       htmlBuilder.Append(Gw2Helper.AddTab(3)).Append("<div class=\"in-line\">").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"enemy-name\">").Append(Helper.ConvertSpecial(Helper.ToUpperAll(Name.Replace(" ", Constants.Space)))).Append("</span>");
-      // Add details like category, race, level, health and armor at the same line. / 2015-08-09 / JereK
+      // Add details like category, race, level, health and armor at the same line. / 2015-08-09 / Wethospu
       if (!Category.Equals("Structure") && !Category.Equals("Trap") && !Category.Equals("Skill"))
-        htmlBuilder.Append("Level").Append(Constants.Space).Append("<span class=\"level\">").Append(Level).Append("</span>").Append(" ");
+      {
+        htmlBuilder.Append("Level").Append(Constants.Space);
+        // Level can be changed dynamically. / 2015-09-27 / Wethospu
+        htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-left level-minus\"></span><span class=\"level\"></span>");
+        htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-right level-plus\"></span>").Append(" ");
+      }
+        
       if (!Category.Equals(""))
         htmlBuilder.Append(Helper.ToUpper(Helper.ConvertSpecial(Category)).Replace(" ", Constants.Space)).Append(" ");
-      if (!Race.Equals(""))
-        htmlBuilder.Append(Helper.ToUpper(Helper.ConvertSpecial(Race)).Replace(" ", Constants.Space)).Append(" ");
-      if (Health != 0)
-        htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append(" title=\"health\">Health</span>:").Append(Constants.Space).Append("<span class=\"health\">").Append("" + Health).Append("</span>  ");
-      if (Armor != 0)
-        htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append(" title=\"armor\">Armor</span>:").Append(Constants.Space).Append("<span class=\"armor\">").Append("" + Armor).Append("</span>  ");
+      if (!Attributes.Family.Equals(""))
+        htmlBuilder.Append(Helper.ToUpper(Helper.ConvertSpecial(Attributes.Family)).Replace(" ", Constants.Space)).Append(" ");
+      htmlBuilder.Append("<br>").Append(Constants.LineEnding);
+      htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"health\">Health</span>:").Append(Constants.Space).Append("<span class=\"health\"></span>  ");
+      htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"armor\">Armor</span>:").Append(Constants.Space).Append("<span class=\"armor\"></span>  ");
+      htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"power\">Power</span>:").Append(Constants.Space).Append("<span class=\"power\"></span>  ");
+      htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"precision\">Critical chance</span>:").Append(Constants.Space).Append("<span class=\"precision\"></span>%  ");
+      htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"ferocity\">Critical damage</span>:").Append(Constants.Space).Append("<span class=\"ferocity\"></span>%  ");
+      htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"condition\">Condition damage</span>:").Append(Constants.Space).Append("<span class=\"condition\"></span>  ");
+      htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"healing_power\">Healing power</span>:").Append(Constants.Space).Append("<span class=\"healing-power\"></span>");
       htmlBuilder.Append(Constants.LineEnding).Append(Gw2Helper.AddTab(3)).Append("</div>").Append(Constants.LineEnding);
       // Add tactics. / 2015-08-09 / Wethospu
       htmlBuilder.Append(Tactics.ToHtml(Index, Path, enemies, 3));

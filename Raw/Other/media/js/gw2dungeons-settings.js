@@ -175,10 +175,6 @@ function applyEnemySettings(updateMain) {
 	applyEncounterSettings();
     // Calculating values.
     updateValues(getSetting("armor"), getSetting("health"), getSetting("level"), getSetting("profession"), getSetting("resist"), getSetting("fractal"), getSetting("defenseMultiplier"), getSetting("healthMultiplier"));
-
-    var damageSetting = getSetting("damage");
-    var potionUsage = getSetting("potionUsage");
-    var potionStrength = (Number)(getSetting("potionStrength")) / 100;
     // Updates every enemy.
 	var divId = "";
 	if (updateMain)
@@ -186,52 +182,91 @@ function applyEnemySettings(updateMain) {
 	else
 		divId = "#data-overlay";
     $(divId + " .enemy").each(function () {
-        // Read general data.
-        var enemyType = $(this).attr("data-race");
-        var enemyPotion = $(this).attr("data-potion");
-        if (enemyPotion == "" || potionUsage == "" || enemyPotion == "none" || potionUsage == "none" || (potionUsage == "main" && enemyPotion == "side"))
-            potionStrength = 0;
-        var dungeonLevel = pathToLevel($(this).attr("data-path"));
-        // Check if scaling is needed.
-        var scalingType = Number($(this).attr("data-scaling"));
-        if (scalingType != null && scalingType > 0) {
-            scaleValues(this, scalingType);
-        }
-        // Simplify health if needed.
-        if (getSetting("simplifyHealth")) {
-            $(this).find(".health").each(function () {
-                var baseHealth = (Number)($(this).html());
-                $(this).replaceWith(simplifyHealth(baseHealth));
-            });
-        }
-        // Simplify armor if needed.
-        if (getSetting("simplifyArmor")) {
-            $(this).find(".armor").each(function () {
-                var baseArmor = (Number)($(this).html());
-                $(this).replaceWith(simplifyArmor(baseArmor, dungeonLevel));
-            });
-        }
+        handleEnemy(this);
+    });
+}
 
-        $(this).find(".damageValue").each(function () {
-            var damage = getDamage((Number)($(this).html()), potionStrength, dungeonLevel);
-            insertDamage(this, damageSetting, damage, dungeonLevel);
+function handleEnemy(enemy) {
+	var damageSetting = getSetting("damage");
+    var potionUsage = getSetting("potionUsage");
+    var potionStrength = (Number)(getSetting("potionStrength")) / 100;
+	var enemyPotion = $(enemy).data("potion");
+    if (enemyPotion == "" || potionUsage == "" || enemyPotion == "none" || potionUsage == "none" || (potionUsage == "main" && enemyPotion == "side"))
+        potionStrength = 0;
+    var dungeonLevel = getPathLevel($(enemy).data("path"));
+	var playerLevel = getPlayerLevel($(enemy).data("path"), getSetting("level"));
+	// Get attributes.
+	var level = $(enemy).data("level");
+	if (level == null)
+		level = dungeonLevel;
+	$(enemy).find(".level").html(level);
+	var power = getAttribute(level, $(enemy).data("power"));
+	$(enemy).find(".power").html(power);
+	var criticalChance = getCriticalChance(level, $(enemy).data("precision"), playerLevel);
+	var category = $(enemy).data("category");
+	if (category == "elite" || category == "champion" || category == "legendary")
+		criticalChance = 0;
+	$(enemy).find(".precision").html(criticalChance);
+	$(enemy).find(".armor").html(getArmor(level, $(enemy).data("toughness")));
+	$(enemy).find(".health").html(getHealth(level, $(enemy).data("vitality"), $(enemy).data("health")));
+	$(enemy).find(".ferocity").html(getCriticalDamage(level, $(enemy).data("ferocity")));
+	var conditionDamage = getAttribute2(level, $(enemy).data("condition"));
+	$(enemy).find(".condition").html(conditionDamage);
+	var healingPower = getAttribute2(level, $(enemy).data("healing"));
+	$(enemy).find(".healing-power").html(healingPower);
+	
+    // Check if scaling is needed.
+    var scalingType = Number($(enemy).data("scaling"));
+    if (scalingType != null && scalingType > 0) {
+        scaleValues(enemy, scalingType);
+    }
+    // Simplify health if needed.
+    if (getSetting("simplifyHealth")) {
+        $(enemy).find(".health").each(function () {
+            var baseHealth = (Number)($(this).html());
+            $(this).html(simplifyHealth(baseHealth));
         });
-        $(this).find(".percentValue").each(function () {
-            var damage = calculatePercentDamage((Number)($(this).html()), dungeonLevel);
-            insertDamage(this, damageSetting, damage, dungeonLevel);
+    }
+    // Simplify armor if needed.
+    if (getSetting("simplifyArmor")) {
+        $(enemy).find(".armor").each(function () {
+            var baseArmor = (Number)($(this).html());
+            $(this).html(simplifyArmor(baseArmor, dungeonLevel));
         });
-        $(this).find(".conditionValue").each(function () {
-            var damage = (Number)($(this).html());
-            insertDamage(this, damageSetting, damage, dungeonLevel);
-        });
-        $(this).find(".agonyValue").each(function () {
-            var second = (Number)($(this).html());
-            insertDamage(this, damageSetting, getAgonyDamage(second), dungeonLevel);
-        });
-        $(this).find(".constantValue").each(function () {
-            var damage = (Number)($(this).html());
-            insertDamage(this, damageSetting, damage, dungeonLevel);
-        });
+    }
+
+    $(enemy).find(".damageValue").each(function () {
+        var damage = getDamage((Number)($(this).data('amount')), potionStrength, dungeonLevel);
+        insertDamage(this, damageSetting, damage, dungeonLevel);
+    });
+    $(enemy).find(".percentValue").each(function () {
+        var damage = calculatePercentDamage((Number)($(this).data('amount')), dungeonLevel);
+        insertDamage(this, damageSetting, damage, dungeonLevel);
+    });
+    $(enemy).find(".effectValue").each(function () {
+        var damage = (Number)($(this).data('amount'));
+		var effect = $(this).data('effect');
+		var attribute = conditionDamage;
+		if (effect == "regeneration")
+			attribute = healingPower;
+		if (effect == "retaliation")
+			attribute = power;
+		damage = getEffectDamage(effect, level, attribute, damage);
+		if (effect == "power")
+		{
+			damage = Math.round(1000 * damage / power) / 10;
+			$(this).html(damage);
+		}
+		else
+			insertDamage(this, damageSetting, damage, dungeonLevel);
+    });
+    $(enemy).find(".agonyValue").each(function () {
+        var second = (Number)($(this).data('amount'));
+        insertDamage(this, damageSetting, getAgonyDamage(second), dungeonLevel);
+    });
+    $(enemy).find(".constantValue").each(function () {
+        var damage = (Number)($(this).data('amount'));
+        insertDamage(this, damageSetting, damage, dungeonLevel);
     });
 }
 
@@ -373,5 +408,57 @@ function insertDamage(place, setting, damage, dungeonLevel) {
         var toAdd = "<span title=\"" + getPercentage(damage, dungeonLevel) + "%\">" + damage + "</span>";
     else
         var toAdd = damage + "(" + getPercentage(damage, dungeonLevel) + "%)";
-	$(place).replaceWith(toAdd);
+	$(place).html(toAdd);
+}
+
+
+function getPathLevel(path) {
+    if (path.substring(0, 7) == "setting")
+        return 80;
+    if (path.substring(0, 3) == "acs")
+        return 30;
+    if (path.substring(0, 2) == "ac")
+        return 35;
+    if (path.substring(0, 3) == "cms")
+        return 40;
+    if (path.substring(0, 2) == "cm")
+        return 45;
+    if (path.substring(0, 3) == "tas")
+        return 50;
+    if (path.substring(0, 3) == "taf" || path.substring(0, 3) == "tau")
+        return 55;
+    if (path.substring(0, 3) == "ses")
+        return 60;
+    if (path.substring(0, 2) == "se")
+        return 65;
+    if (path.substring(0, 4) == "cofs")
+        return 70;
+    if (path.substring(0, 3) == "cof")
+        return 75;
+    if (path.substring(0, 5) == "hotws")
+        return 76;
+    if (path.substring(0, 4) == "coes")
+        return 78;
+    return 80;
+}
+
+function getPlayerLevel(path, maxLevel) {
+    var pathLevel = getPathLevel(path);
+	if (path.substring(0, 3) == "acs" || path.substring(0, 3) == "cms" || path.substring(0, 3) == "tas"
+	|| path.substring(0, 3) == "ses" || path.substring(0, 4) == "cofs" || path.substring(0, 5) == "hotws"
+	|| path.substring(0, 4) == "coes") {
+		// Players have up to 2 more levels in story modes.
+		if (maxLevel == pathLevel + 1)
+			return maxLevel;
+		if (maxLevel > pathLevel);
+			pathLevel += 2;
+	}
+	// Dungeons don't scale players up.
+	if (path.substring(0, 2) == "ac" || path.substring(0, 2) == "cm" || path.substring(0, 2) == "ta"
+	|| path.substring(0, 2) == "se" || path.substring(0, 3) == "cof" || path.substring(0, 4) == "hotw"
+	|| path.substring(0, 3) == "coe" || path.substring(0, 4) == "arah") {
+		if (maxLevel < pathLevel)
+			pathLevel = maxLevel;
+	}
+	return pathLevel;	
 }

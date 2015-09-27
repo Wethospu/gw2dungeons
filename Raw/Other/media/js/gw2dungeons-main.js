@@ -148,8 +148,24 @@ function loadPage() {
 	// Remove no-js since js obviously works. / 2015-07-31 / Wethospu
     $('html').removeClass('no-js');
 	// Activate enemy links. / 2015-07-31 / Wethospu
-	$("#main-container").delegate("span.enemy-button", "click", openEnemyOverlay);
-    $("#data-overlay").delegate("span.enemy-button", "click", openEnemyOverlay);
+	$("#main-container, #data-overlay").on("click", "span.enemy-button", openEnemyOverlay);
+	$("#main-container, #data-overlay").on( "click", "span.level-minus", function() {
+		var enemy = $(this).parents('.enemy')[0];
+		var level = $(enemy).data('level');
+		if (level == 0)
+			return;
+		$(enemy).data('level', level - 1);
+		handleEnemy(enemy);
+	});
+	$("#main-container, #data-overlay").on( "click", "span.level-plus", function() {
+		var enemy = $(this).parents('.enemy')[0];
+		var level = $(enemy).data('level');
+		if (level == 100)
+			return;
+		$(enemy).data('level', level + 1);
+		handleEnemy(enemy);
+	});
+
 	$(document).keydown(function(event){
 		if (event.which == "17")
 			cntrlIsPressed = true;
@@ -166,6 +182,7 @@ function loadPage() {
 	loadRecordRun();
 	initScreenResize();
 }
+
 
 var overlayHtml = '<ul id="overlay-nav" class="nav nav-tabs"></ul><div id="overlay-pane" class="tab-content"></div>';
 
@@ -310,36 +327,6 @@ function dungeonToPages(dungeon) {
         return ["INSTA", "AETHER", "AQUA", "CLIFF", "FURN", "MAI", "MOLTEN", "SNOW", "SOLID", "SWAMP", "THAUMA",
 	    "UNCAT", "UNDER", "URBAN", "VOLC"];
     return new Array();
-}
-
-function pathToLevel(path) {
-    if (path.substring(0, 7) == "setting")
-        return 80;
-    if (path.substring(0, 3) == "acs")
-        return 30;
-    if (path.substring(0, 2) == "ac")
-        return 35;
-    if (path.substring(0, 3) == "cms")
-        return 40;
-    if (path.substring(0, 2) == "cm")
-        return 45;
-    if (path.substring(0, 3) == "tas")
-        return 50;
-    if (path.substring(0, 3) == "taf" || path.substring(0, 3) == "tau")
-        return 55;
-    if (path.substring(0, 3) == "ses")
-        return 60;
-    if (path.substring(0, 2) == "se")
-        return 65;
-    if (path.substring(0, 4) == "cofs")
-        return 70;
-    if (path.substring(0, 3) == "cof")
-        return 75;
-    if (path.substring(0, 5) == "hotws")
-        return 76;
-    if (path.substring(0, 4) == "coes")
-        return 78;
-    return 80;
 }
 
 // Finds a clicked enemy and loads it to detail.

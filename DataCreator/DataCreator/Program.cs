@@ -2,6 +2,7 @@
 using DataCreator.Enemies;
 using DataCreator.Shared;
 using DataCreator.Utility;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -218,7 +219,7 @@ namespace DataCreator
           Helper.ShowWarningMessage("File 'ValidatedUrls.txt' not found!");
         }
       }
-    }
+  }
 
     /***********************************************************************************************
      * SaveSettings / 2015-05-24 / Wethospu                                                        *
@@ -289,6 +290,12 @@ namespace DataCreator
       Constants.Initialize(key.Key == ConsoleKey.D4);
       CheckInternetSettings();
       LoadSettings();
+      Dictionary<string, EnemyAttributes> enemyData;
+      using (StreamReader r = new StreamReader(Constants.DataEnemyRaw + "output_ac.json"))
+      {
+        string json = r.ReadToEnd();
+        enemyData = JsonConvert.DeserializeObject<Dictionary<string, EnemyAttributes>>(json);
+      }
       Constants.UniqueIndexCounter = 0;
       string[] toGenerate = { "ac", "cm", "ta", "se", "cof", "hotw", "coe", "arah", "fotm" };
       // File containing all enemies and encounters for searching.
@@ -300,7 +307,7 @@ namespace DataCreator
       indexFile.Append(Constants.InitialDataIndex);
       var dungeonData = new DataCollector();
       foreach (var dungeon in toGenerate)
-        GenerateDungeon(dungeon, indexFile, dungeonData);
+        GenerateDungeon(dungeon, indexFile, dungeonData, enemyData);
       var fileName = Constants.DataOutput + Constants.DataEnemyResult + "indexfile.htm";
       File.WriteAllText(fileName, indexFile.ToString());
       OtherGenerator.GenerateOthers(dungeonData);
@@ -343,18 +350,20 @@ namespace DataCreator
     }
 
     /***********************************************************************************************
-     * GenerateDungeon / 2014-08-01 / Wethospu                                                     *
-     *                                                                                             *
-     * Generates one dungeon.                                                                      *
-     *                                                                                             *
-     ***********************************************************************************************/
+    * GenerateDungeon / 2014-08-01 / Wethospu                                                      *
+    *                                                                                              *
+    * Generates one dungeon.                                                                       *
+    *                                                                                              *
+    * enemyAttributes: Datamined enemy attributes and other information.                           *
+    *                                                                                              *
+    ***********************************************************************************************/
 
-    static void GenerateDungeon(string dungeon, StringBuilder indexFile, DataCollector dungeonData)
+    static void GenerateDungeon(string dungeon, StringBuilder indexFile, DataCollector dungeonData, Dictionary<string, EnemyAttributes> enemyAttributes)
     {
       Console.WriteLine("Dungeon " + dungeon.ToUpper());
       LinkGenerator.CurrentDungeon = dungeon;
       // Read and generate data. / 2015-08-09 / Wethospu
-      var enemyData = EnemyGenerator.GenerateEnemies(dungeon);
+      var enemyData = EnemyGenerator.GenerateEnemies(dungeon, enemyAttributes);
       var encounterData = EncounterGenerator.GeneratePaths(dungeon, enemyData);     
       EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, enemyData);
       EnemyGenerator.GenerateFiles(enemyData, dungeon, indexFile, dungeonData);

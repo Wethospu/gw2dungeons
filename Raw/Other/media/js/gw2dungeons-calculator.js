@@ -265,6 +265,108 @@ function getAgonyDamage(second) {
     return Math.floor(healthValues[dungeonLevels.indexOf(80)] * agonyPerSecond * second);
 }
 
+function getEffectDamage(effect, level, attribute, count) {
+	var tick = 0.0;
+	if (effect == "bleeding")
+		tick = 2 + 0.25 * level + 0.06 * attribute;
+	else if (effect == "poison")
+		tick = 3.5 + 0.375 * level + 0.06 * attribute;
+	else if (effect == "burning")
+		tick = 7.5 + 1.55 * level + 0.155 * attribute;
+	else if (effect == "torment")
+		tick = 1.5 + 0.18 * level + 0.045 * attribute;
+	else if (effect == "confusion1")
+		tick = 2 + 0.1 * level + 0.035 * attribute;
+	else if (effect == "confusion2")
+		tick = 3.5 + 0.575 * level + 0.0625 * attribute;
+	else if (effect == "regeneration")
+		tick = 5 + 1.5625 * level + 0.125 * attribute;
+	else if (effect == "regeneration")
+		tick = 8 + 0.03 * level * levl + 0.075 * attribute;
+	else if (effect == "power")
+		tick = 5 + 0.3125 * level;
+	return count * Math.floor(tick + 0.001);
+}
+
+//// ENEMY ATTRIBUTE CALCULATIONS ////
+
+function getAttribute(level, multiplier) {
+	var attributes =  [
+      5,   10,   17,   22,   27,   35,   45,   50,   55,   60,
+      68,   76,   84,   92,   94,   95,  103,  108,  112,  116,
+      123,  129,  140,  147,  153,  160,  166,  171,  186,  192,
+      208,  219,  230,  238,  253,  259,  274,  279,  284,  290,
+      304,  317,  339,  353,  366,  380,  401,  416,  440,  454,
+      471,  488,  514,  532,  561,  579,  598,  617,  643,  662,
+      696,  718,  741,  765,  795,  818,  866,  891,  916,  941,
+      976, 1004, 1059, 1089, 1119, 1149, 1183, 1214, 1274, 1307,
+      1374, 1413, 1453, 1493, 1534, 1575, 1616, 1658, 1700, 1743,
+      1786, 1829, 1873, 1917, 1961, 2006, 2052, 2098, 2144, 2190,
+      2237
+	];
+	return Math.ceil(attributes[level] * multiplier - 0.001);
+}
+
+function getAttribute2(level, multiplier) {
+	return level * multiplier;
+}
+
+function getArmor(level, multiplier) {
+	var bsaeDefense =  [
+      123,  128,  134,  138,  143,  148,  153,  158,  162,  167,
+      175,  183,  185,  187,  190,  192,  202,  206,  210,  214,
+      220,  224,  239,  245,  250,  256,  261,  267,  285,  291,
+      311,  320,  328,  337,  356,  365,  385,  394,  402,  411,
+      432,  443,  465,  476,  486,  497,  517,  527,  550,  561,
+      575,  588,  610,  624,  649,  662,  676,  690,  711,  725,
+      752,  769,  784,  799,  822,  837,  878,  893,  909,  924,
+      949,  968, 1011, 1030, 1049, 1067, 1090, 1109, 1155, 1174,
+      1223, 1247, 1271, 1295, 1319, 1343, 1367, 1391, 1415, 1439,
+      1463, 1487, 1511, 1535, 1559, 1583, 1607, 1631, 1655, 1679,
+      1703
+	];
+	return bsaeDefense[level] + getAttribute(level, multiplier);
+}
+
+function getHealth(level, multiplier1, multiplier2) {
+	var baseHealth =  [
+      0,   20,   40,   60,   80,  100,  120,  140,  160,  180,
+      200,  220,  240,  260,  265,  270,  292,  306,  319,  332,
+      370,  408,  462,  501,  538,  575,  611,  646,  713,  750,
+      818,  855,  892,  928,  995, 1032, 1103, 1141, 1178, 1215,
+      1328, 1410, 1531, 1614, 1695, 1776, 1892, 1974, 2101, 2183,
+      2265, 2346, 2464, 2547, 2677, 2760, 2842, 2924, 3040, 3122,
+      3303, 3432, 3561, 3688, 3852, 3980, 4226, 4357, 4487, 4616,
+      4774, 4904, 5164, 5295, 5426, 5557, 5710, 5841, 6112, 6245,
+      6580, 6780, 6980, 7180, 7380, 7580, 7780, 7980, 8180, 8380,
+      8580, 8780, 8980, 9180, 9380, 9580, 9780, 9980,10180,10380,
+      10580
+	];
+	return Math.ceil(multiplier2 * Math.ceil(0.9 * baseHealth[level] - 0.001) + getAttribute(level, multiplier1) - 0.001);
+}
+
+function getCriticalChance(level, multiplier, targetLevel) {
+	var criticalDefense =  [
+      1.0,  1.1,  1.2,  1.3,  1.4,  1.5,  1.6,  1.7,  1.8,  1.9,
+      2.0,  2.1,  2.2,  2.3,  2.4,  2.5,  2.6,  2.7,  2.8,  2.9,
+      3.0,  3.2,  3.4,  3.6,  3.8,  4.0,  4.2,  4.4,  4.6,  4.8,
+      5.0,  5.2,  5.4,  5.6,  5.8,  6.0,  6.2,  6.4,  6.6,  6.8,
+      7.0,  7.3,  7.6,  7.9,  8.2,  8.5,  8.8,  9.1,  9.4,  9.7,
+      10.0, 10.3, 10.6, 10.9, 11.2, 11.5, 11.8, 12.1, 12.4, 12.7,
+      13.0, 13.4, 13.8, 14.2, 14.6, 15.0, 15.4, 15.8, 16.2, 16.6,
+      17.0, 17.4, 17.8, 18.2, 18.6, 19.0, 19.4, 19.8, 20.2, 20.6,
+      21.0, 21.5, 22.0, 22.5, 23.0, 23.5, 24.0, 24.5, 25.0, 25.5,
+      26.0, 26.5, 27.0, 27.5, 28.0, 28.5, 29.0, 29.5, 30.0, 30.5,
+      31.0
+	];
+	return Math.max(0, Math.round(10 * (getAttribute(level, multiplier) / criticalDefense[targetLevel] - 43.119047619))/10);
+}
+
+function getCriticalDamage(level, multiplier) {
+	// Note: This is missing "critical damage per ferocity". So far no enemy does critical hits.
+	return Math.round(10 * (150 + getAttribute(level, multiplier)))/10;
+}
+
 ////// These values must match GW2Helper.cs ///////
 //// HEALTH SCALING /////
 

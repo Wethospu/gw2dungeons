@@ -24,16 +24,17 @@ namespace DataCreator.Enemies
     private static Effect _currentEffect;
 
     /***********************************************************************************************
-     * GenerateEnemies / 2014-08-01 / Wethospu                                                     *
-     *                                                                                             *
-     * Generates enemies for one dungeon.                                                          *
-     *                                                                                             *
-     * Returns list of generated enemies.                                                          *
-     * dungeon: Enemies will be generated for this dungeon.                                        *
-     *                                                                                             *
-     ***********************************************************************************************/
+    * GenerateEnemies / 2014-08-01 / Wethospu                                                      *
+    *                                                                                              *
+    * Generates enemies for one dungeon.                                                           *
+    *                                                                                              *
+    * Returns list of generated enemies.                                                           *
+    * dungeon: Enemies will be generated for this dungeon.                                         *
+    * enemyAttributes: Datamined enemy attributes and other info.                                  *
+    *                                                                                              *
+    ***********************************************************************************************/
 
-    public static List<Enemy> GenerateEnemies(string dungeon)
+    public static List<Enemy> GenerateEnemies(string dungeon, Dictionary<string, EnemyAttributes> enemyAttributes)
     {
       var rawDataLocation = Constants.DataEnemyRaw + dungeon + Constants.DataEnemySuffix + ".txt";
       string[] lines;
@@ -52,7 +53,7 @@ namespace DataCreator.Enemies
       for (var row = 0; row < lines.Length; row++)
       {
         Helper.InitializeWarningSystem(row + 1, lines[row]);
-        HandleLine(lines[row], enemies, typeToPotion);
+        HandleLine(lines[row], enemies, typeToPotion, enemyAttributes);
       }
       // Add the last enemy.
       if (_currentEffect != null && _currentAttack != null)
@@ -92,7 +93,7 @@ namespace DataCreator.Enemies
 
     // 0 = main loop, 1 = attack loop, 2 = effect loop.
     private static int _mode;
-    private static void HandleLine(string line, List<Enemy> enemies, Dictionary<string, string> typeToPotion)
+    private static void HandleLine(string line, List<Enemy> enemies, Dictionary<string, string> typeToPotion, Dictionary<string, EnemyAttributes> enemyAttributes)
     {
       // Empty line or comment: continue
       if (line == "" || line[0] == '#')
@@ -125,7 +126,7 @@ namespace DataCreator.Enemies
       // Analyze the tag and handle the data.
       var returnValue = 0;
       if (_mode == 0)
-        returnValue = EnemyLoop(tag, data, typeToPotion, enemies);
+        returnValue = EnemyLoop(tag, data, typeToPotion, enemies, enemyAttributes);
       else if (_mode == 1)
         returnValue = AttackLoop(tag, data);
       else if (_mode == 2)
@@ -135,7 +136,7 @@ namespace DataCreator.Enemies
       if (returnValue != 0)
       {
         // Line has to be rechecked on the new loop.
-        HandleLine(line, enemies, typeToPotion);
+        HandleLine(line, enemies, typeToPotion, enemyAttributes);
       }
     }
 
@@ -151,7 +152,7 @@ namespace DataCreator.Enemies
      *                                                                                             *
      ***********************************************************************************************/
 
-    private static int EnemyLoop(string tag, string data, Dictionary<string, string> typeToPotion, List<Enemy> enemies)
+    private static int EnemyLoop(string tag, string data, Dictionary<string, string> typeToPotion, List<Enemy> enemies, Dictionary<string, EnemyAttributes> enemyAttributes)
     {
       if (tag.Equals("potion"))
       {
@@ -187,9 +188,9 @@ namespace DataCreator.Enemies
         var found = FindEnemy(data, enemies);
         if (found != null)
         {
-          _currentEnemy = new Enemy(found) {Name = ""};
-          if (typeToPotion.ContainsKey(_currentEnemy.Race.ToLower()))
-            _currentEnemy.Potion = typeToPotion[_currentEnemy.Race.ToLower()];
+          _currentEnemy = new Enemy(found) { Name = "" };
+          if (typeToPotion.ContainsKey(_currentEnemy.Attributes.Family.ToLower()))
+            _currentEnemy.Potion = typeToPotion[_currentEnemy.Attributes.Family.ToLower()];
         }
         else
           Helper.ShowWarning("Copying failed. Enemy not found!");
@@ -209,7 +210,7 @@ namespace DataCreator.Enemies
             _currentEnemy.Name = data;
           else
           {
-            _currentEnemy = new Enemy(data) {Name = data};
+            _currentEnemy = new Enemy(data) { Name = data };
             if (data.Contains('_'))
               Helper.ShowWarning("Enemy name " + data + "  containts '_'. Replace them with ' '!");
           }
@@ -218,6 +219,20 @@ namespace DataCreator.Enemies
         }
         else
           Helper.ShowWarning("Missing info. Use \"name='name'\"!");
+      }
+      else if (tag.Equals("id"))
+      {
+        if (_currentEnemy == null)
+          Helper.ShowWarning("Enemy not initialized with name.");
+        else if (data.Length > 0)
+        {
+          if (enemyAttributes.ContainsKey(data))
+            _currentEnemy.Attributes = enemyAttributes[data];
+          else
+            Helper.ShowWarning("Id " + data + " not found in enemy attributes.");
+        }
+        else
+          Helper.ShowWarning("Missing info. Use \"id='id'\"!");
       }
       else if (tag.Equals("path"))
       {
@@ -272,58 +287,6 @@ namespace DataCreator.Enemies
         else
           Helper.ShowWarning("Missing info. Use \"image='imagelink'\"!");
       }
-      else if (tag.Equals("health"))
-      {
-        if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-        {
-          _currentEnemy.Health = Helper.ParseI(data);
-          // Scale if needed.
-          if (!_currentEnemy.ScalingType.Equals(""))
-            _currentEnemy.Health = Scaling.HealthToZeroValue(_currentEnemy.Health, _currentEnemy.ScalingType, _currentEnemy.ScalingFractal, _currentEnemy.ScalingLevel);
-        }
-        else
-          Helper.ShowWarning("Missing info. Use \"health='amount'\"");
-      }
-      else if (tag.Equals("condition"))
-      {
-        if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-          _currentEnemy.ConditionDamage = Helper.ParseI(data);
-        else
-          Helper.ShowWarning("Missing info. Use \"condition='amount'\"");
-      }
-      else if (tag.Equals("power"))
-      {
-        if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-          _currentEnemy.Power = Helper.ParseI(data);
-        else
-          Helper.ShowWarning("Missing info. Use \"power='amount'\"");
-      }
-      else if (tag.Equals("healing"))
-      {
-        if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-          _currentEnemy.HealingPower = Helper.ParseI(data);
-        else
-          Helper.ShowWarning("Missing info. Use \"healing='amount'\"");
-      }
-      else if (tag.Equals("toughness"))
-      {
-        if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-        {
-          _currentEnemy.ToughnessMultiplier = Helper.ParseD(data);
-        }
-        else
-          Helper.ShowWarning("Missing info. Use \"armor='amount'\"");
-      }
       else if (tag.Equals("level"))
       {
         if (_currentEnemy == null)
@@ -364,20 +327,6 @@ namespace DataCreator.Enemies
         else
           Helper.ShowWarning("Missing info. Use \"scaling='type'|'fractal scale'|'enemy level'\"!");
       }
-      else if (tag.Equals("type"))
-      {
-        if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-        {
-          _currentEnemy.Race = data.ToLower();
-          _currentEnemy.Potion = "";
-          if (typeToPotion.ContainsKey(_currentEnemy.Race))
-            _currentEnemy.Potion = typeToPotion[_currentEnemy.Race];
-        }
-        else
-          Helper.ShowWarning("Missing info. Use \"type='enemy race'\"!");
-      }
       else if (tag.Equals("attack"))
       {
         if (_currentEnemy == null)
@@ -394,6 +343,9 @@ namespace DataCreator.Enemies
           _currentEnemy.Tactics.AddTactics(data);
         else
           Helper.ShowWarning("Missing info. Use \"tactic='tactic1'|'tactic2'|'tacticN'\"!");
+      }
+      else if (tag.Equals("type") || tag.Equals("health") || tag.Equals("armor") || tag.Equals("condition") || tag.Equals("toughness"))
+      {
       }
       else if (tag.Equals("tag"))
       {
@@ -660,7 +612,7 @@ namespace DataCreator.Enemies
       foreach (var enemy in enemies)
       {
         indexFile.Append(enemy.Name).Append("|").Append(Helper.Simplify(enemy.Name)).Append("|").Append(enemy.Category);
-        indexFile.Append("|").Append(enemy.Race).Append("|").Append(LinkGenerator.CurrentDungeon.ToLower()).Append("|").Append(enemy.Path.Replace('|', ':'));
+        indexFile.Append("|").Append(enemy.Attributes.Family).Append("|").Append(LinkGenerator.CurrentDungeon.ToLower()).Append("|").Append(enemy.Path.Replace('|', ':'));
         // Store index so that the enemy can be found faster when searching.
         indexFile.Append("|").Append(enemy.FileIndex);
         // Generate tag string. / 2015-07-18 / Wethospu
@@ -710,8 +662,8 @@ namespace DataCreator.Enemies
         // Add enemy info to the data collector. / 2015-08-17 / Wethospu
         if (dungeonData != null)
         {
-          if (!enemies[i].Race.Equals(""))
-            dungeonData.AddRace(enemies[i].Race);
+          if (!enemies[i].Attributes.Family.Equals(""))
+            dungeonData.AddRace(enemies[i].Attributes.Family);
           dungeonData.AddCategory(enemies[i].Category);
           foreach (var tag in enemies[i].Tags)
             dungeonData.AddTag(tag);
