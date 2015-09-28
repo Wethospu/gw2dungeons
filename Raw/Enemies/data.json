@@ -6956,5 +6956,2328 @@
         "sex": "none",
         "size": 1.5,
         "family": "none"
+    },
+	"1179": {
+        "name": "Inquest Engineer",
+        "description": "Drops Turrets",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.087401032447815,
+        "family": "inquest"
+    },
+    "1202": {
+        "name": "Inquest Engineer",
+        "description": "Drops Turrets",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9272274374961853,
+        "family": "inquest"
+    },
+    "1697": {
+        "name": "Eir",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 283676161,
+        "multipliers": {
+            "power": 0.5,
+            "precision": 0.5,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 0,
+            "health_multiplier": 2
+        },
+        "sex": "female",
+        "size": 1.0156787633895874,
+        "family": "none"
+    },
+    "3257": {
+        "name": "War Minister Shukov",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 63
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 6.25,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.3750000298023224,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "3577": {
+        "name": "",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 277413890,
+        "multipliers": {
+            "power": 3.5,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 0.5,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 9,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "3579": {
+        "name": "Kudu",
+        "description": "Deploys Turrets • Summons Golems",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            },
+            {
+                "location": "sorrows_embrance_story",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8929287,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "inquest"
+    },
+    "3580": {
+        "name": "Caithe",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 283676161,
+        "multipliers": {
+            "power": 0.5,
+            "precision": 0.5,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 0,
+            "health_multiplier": 2
+        },
+        "sex": "female",
+        "size": 0.9965379238128662,
+        "family": "none"
+    },
+    "3581": {
+        "name": "Zojja",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 283676161,
+        "multipliers": {
+            "power": 0.5,
+            "precision": 0.5,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 0,
+            "health_multiplier": 2
+        },
+        "sex": "female",
+        "size": 0.9148303270339966,
+        "family": "none"
+    },
+    "3582": {
+        "name": "Gavara",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 281018368,
+        "multipliers": {
+            "power": 1.875,
+            "precision": 0.8250000178813934,
+            "toughness": 1,
+            "vitality": 1.3750000298023224,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "none"
+    },
+    "3583": {
+        "name": "Comrade Koptev",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 281018368,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "none"
+    },
+    "3943": {
+        "name": "Destroyer Harpy",
+        "description": "Immune to Burning",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388674,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "destroyer"
+    },
+    "4297": {
+        "name": "Dredge Oscillator",
+        "description": "Immune to Blind • Knocks Back",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259520,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "4298": {
+        "name": "Dredge Oscillator",
+        "description": "Immune to Blind • Knocks Back",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "4310": {
+        "name": "Rat",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_none",
+        "flag": -2135637504,
+        "multipliers": {
+            "power": 1,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 0.009999999776482582
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "5041": {
+        "name": "Dredge Resonator",
+        "description": "Immune to Blind • Launches • Bouncing Shock Wave",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388610,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "5043": {
+        "name": "Dredge Disaggregator",
+        "description": "Immune to Blind • Plays Gong • Dazes",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "5167": {
+        "name": "Inquest Assassin",
+        "description": "Stealths",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0366215705871582,
+        "family": "inquest"
+    },
+    "5170": {
+        "name": "Inquest Grenadier",
+        "description": "Applies Conditions • Bouncing Bombs",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9272916913032532,
+        "family": "inquest"
+    },
+    "5171": {
+        "name": "Inquest Grenadier",
+        "description": "Applies Conditions • Bouncing Bombs",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0182486772537231,
+        "family": "inquest"
+    },
+    "5179": {
+        "name": "Inquest Golemancer",
+        "description": "Buffs Golems • Stuns",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.034340739250183,
+        "family": "inquest"
+    },
+    "5180": {
+        "name": "Inquest Technician",
+        "description": "Heals Allies",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9372783899307251,
+        "family": "inquest"
+    },
+    "5184": {
+        "name": "Inquest Extinguisher",
+        "description": "Chills • Removes Conditions",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.019998550415039,
+        "family": "inquest"
+    },
+    "5187": {
+        "name": "Inquest Technician",
+        "description": "Stuns • Bouncing Projectile • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0275275707244873,
+        "family": "inquest"
+    },
+    "5266": {
+        "name": "Krewe Apprentice",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 1.0830490589141846,
+        "family": "none"
+    },
+    "5267": {
+        "name": "Krewe Apprentice",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 1.0705523490905762,
+        "family": "none"
+    },
+    "5271": {
+        "name": "Krewe Researcher",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 0.9487083554267883,
+        "family": "none"
+    },
+    "5401": {
+        "name": "Cave Spider",
+        "description": "Poisons",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "5834": {
+        "name": "Garm",
+        "description": "Eir's Companion",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 277392897,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "none"
+    },
+    "6079": {
+        "name": "Inspector Snik",
+        "description": "Unloads Pistols • Flame Thrower",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 0.9637769460678101,
+        "family": "inquest"
+    },
+    "6082": {
+        "name": "Inquest Advanced Assault Golem",
+        "description": "Removes Boons • Causes Burning",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 7.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.6500000357627869,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "6399": {
+        "name": "Commander Volkov",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "dredge"
+    },
+    "6424": {
+        "name": "Molradovich",
+        "description": "Moves into Geyser to Cleanse Buff • AoE Attacks",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "6450": {
+        "name": "Destroyer of Worlds",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 68
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914948,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 1.75,
+        "family": "destroyer"
+    },
+    "6481": {
+        "name": "Destroyer Harpy",
+        "description": "Immune to Burning",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259584,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "destroyer"
+    },
+    "6482": {
+        "name": "Destroyer of Earth",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 68
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545783840,
+        "multipliers": {
+            "power": 5.625,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.25,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 6.400000095367432
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "destroyer"
+    },
+    "6633": {
+        "name": "Flame Jelly",
+        "description": "Sprays lava",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518528,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "elemental"
+    },
+    "6764": {
+        "name": "Foreman Kreutzerova",
+        "description": "Stuns • Dazes • Heals Self",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "6765": {
+        "name": "Foreman Zeleoniy",
+        "description": "Cripples • Knocks Back",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "6766": {
+        "name": "Foreman Webaum",
+        "description": "Immune to Blind • Plays Gong • Dazes",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "6767": {
+        "name": "Foreman Kreutzerova",
+        "description": "Explosive Rounds • Adds Confusion and Vulnerabillity",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "6768": {
+        "name": "Foreman Thoms",
+        "description": "Cripples • Bouncing Shock Wave",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "6798": {
+        "name": "The Taskmaster",
+        "description": "Attacks Cause Bleeding • Use Smashers To Destroy Bubble",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5.5000001192092896,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "dredge"
+    },
+    "6799": {
+        "name": "Awakened Earth Elemental",
+        "description": "Strong Armor",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8912896,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "elemental"
+    },
+    "6839": {
+        "name": "Krewe Leader Nikroth",
+        "description": "Controls Gravity • Summons Singularities",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "6840": {
+        "name": "Mark I-A Golem",
+        "description": "Whirlwind Attack",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "6956": {
+        "name": "Singularity",
+        "description": "Damaging Aura",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 547389472,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 2
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "elemental"
+    },
+    "8056": {
+        "name": "Mark II Golem",
+        "description": "Stuns • Burns",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388611,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.399999976158142,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "inquest"
+    },
+    "8425": {
+        "name": "Inquest Advanced Defense Golem",
+        "description": "Protects Allies",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545783840,
+        "multipliers": {
+            "power": 6.75,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.5,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "8630": {
+        "name": "Dredge Excavator",
+        "description": "Immune to Blind • Picks up Weapons",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388612,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.800000011920929,
+        "family": "dredge"
+    },
+    "8632": {
+        "name": "Dredge Reverberant",
+        "description": "Immune to Blind • AoE Attacks • Dazes • Causes Bleeding and Vulnerability",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388610,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "8633": {
+        "name": "Dredge Reverberant",
+        "description": "Immune to Blind • Dazes • Causes Bleeding and Vulnerability",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "8634": {
+        "name": "Dredge Bomber",
+        "description": "Immune to Blind • Throws Bombs",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "8635": {
+        "name": "Dredge Bomber",
+        "description": "Immune to Blind • Throws Bombs",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "8680": {
+        "name": "Dredge Excavator",
+        "description": "Immune to Blind",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 276824580,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "dredge"
+    },
+    "8801": {
+        "name": "Dredge Bomber",
+        "description": "Immune to Blind • Throws Bombs",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388610,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.100000023841858,
+        "family": "dredge"
+    },
+    "9440": {
+        "name": "Tazza",
+        "description": "Summons Allies",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 15206401,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 0.9330474734306335,
+        "family": "inquest"
+    },
+    "10002": {
+        "name": "Dredge Excavator",
+        "description": "Immune to Blind • Tunnels • Bleeds",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "10003": {
+        "name": "Dredge Oscillator",
+        "description": "Immune to Blind • Knocks Back",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            },
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "10004": {
+        "name": "Dredge Mining Suit",
+        "description": "Immune to Blind • Stuns • Bleeds • Summons Dredge",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            },
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "10005": {
+        "name": "Dredge Resonator",
+        "description": "Immune to Blind • Launches",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            },
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "10006": {
+        "name": "Dredge Reverberant",
+        "description": "Immune to Blind • Dazes • Causes Bleeding and Vulnerability",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            },
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "10007": {
+        "name": "Dredge Disaggregator",
+        "description": "Immune to Blind • Plays Gong • Dazes",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            },
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "10008": {
+        "name": "Prototype E-IV Golem",
+        "description": "Unstable Shield Damages Attackers • Inflicts Weakness",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 7.5,
+            "precision": 0,
+            "toughness": 1.25,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 19.499999284744263
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10009": {
+        "name": "Prototype F-IV Golem",
+        "description": "Attacks Cause Burning • Purges Conditions to Heal",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5.7499998807907104,
+            "precision": 0,
+            "toughness": 0.75,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 19.499999284744263
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "10010": {
+        "name": "Prototype T-IV Golem",
+        "description": "Leaves Poison Trail • Pulls In Enemies • Attacks Cause Poison and Bleeding",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 10,
+            "precision": 0,
+            "toughness": 1.25,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10304": {
+        "name": "Inquest Assistant",
+        "description": "Vulnerability • Chills • Heals",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10305": {
+        "name": "Inquest Technician",
+        "description": "Regeneration • Blocks Projectiles",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10307": {
+        "name": "Inquest Assistant",
+        "description": "Vulnerability • Summons Minions and Wells",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10308": {
+        "name": "Inquest Engineer",
+        "description": "Shadowsteps • Reflects Projectiles",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10309": {
+        "name": "Inquest Technician",
+        "description": "Vulnerability",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10454": {
+        "name": "Inquest Engineer",
+        "description": "Drops Turrets",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.9117947816848755,
+        "family": "inquest"
+    },
+    "10456": {
+        "name": "Mark I Golem",
+        "description": "Area Damage • Self Repair • Pulls Target",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            },
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            },
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10457": {
+        "name": "Mark II Golem",
+        "description": "Stuns • Burns",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 60
+            },
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10467": {
+        "name": "Inquest Extinguisher",
+        "description": "Chills • Removes Conditions • Knocks Down",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.0762455463409424,
+        "family": "inquest"
+    },
+    "10473": {
+        "name": "Troop Commander Kaeyi",
+        "description": "Stealths",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5.5000001192092896,
+            "precision": 0,
+            "toughness": 0.800000011920929,
+            "vitality": 1.5400000071525568,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 45
+        },
+        "sex": "female",
+        "size": 1.5,
+        "family": "inquest"
+    },
+    "10579": {
+        "name": "Krewe Leader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 0.9333674311637878,
+        "family": "none"
+    },
+    "10723": {
+        "name": "",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 68
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 277413890,
+        "multipliers": {
+            "power": 3.5,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 0.5,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 9,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "dredge"
+    },
+    "10781": {
+        "name": "Elementalist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 547389473,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 1,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0716099739074707,
+        "family": "none"
+    },
+    "10871": {
+        "name": "Inquest Pilot",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 61
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8912897,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0421638488769531,
+        "family": "inquest"
+    },
+    "10907": {
+        "name": "Prototype T-IV Golem",
+        "description": "Leaves Poison Trail • Pulls In Enemies • Attacks Cause Poison and Bleeding",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 10,
+            "precision": 0,
+            "toughness": 2,
+            "vitality": 0.8800000321865085,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 15
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10908": {
+        "name": "Prototype F-IV Golem",
+        "description": "Attacks Cause Burning • Purges Conditions to Heal",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 6.25,
+            "precision": 0,
+            "toughness": 0.75,
+            "vitality": 0.8800000321865085,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 15
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10909": {
+        "name": "Prototype E-IV Golem",
+        "description": "Unstable Shield Damages Attackers • Inflicts Weakness",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 7.5,
+            "precision": 0,
+            "toughness": 0.75,
+            "vitality": 0.8800000321865085,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 15
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10931": {
+        "name": "Inquest Grenadier",
+        "description": "Conditions • Bouncing Bombs",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_story",
+                "level": 62
+            },
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 65
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.25,
+            "vitality": 1.399999976158142,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.0559298992156982,
+        "family": "inquest"
+    },
+    "10957": {
+        "name": "Mark I Golem",
+        "description": "Knocks Back",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388611,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.399999976158142,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "inquest"
+    },
+    "10958": {
+        "name": "Mark II Golem",
+        "description": "Creates Lightning Fields",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 67
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388611,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.399999976158142,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "inquest"
+    },
+    "10985": {
+        "name": "Destroyer Crab",
+        "description": "Immune to Burning",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "destroyer"
+    },
+    "10986": {
+        "name": "Cave Spider",
+        "description": "Poisons",
+        "occurrences": [
+            {
+                "location": "sorrows_embrance_explorable",
+                "level": 66
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "none"
     }
 }
