@@ -1,0 +1,3687 @@
+{
+    "1239": {
+        "name": "Whispers Lightbringer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9500096440315247,
+        "family": "none"
+    },
+    "1271": {
+        "name": "Vigil Crusader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0039116144180298,
+        "family": "none"
+    },
+    "1272": {
+        "name": "Vigil Crusader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9057743549346924,
+        "family": "none"
+    },
+    "1568": {
+        "name": "Vigil Crusader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.964583158493042,
+        "family": "none"
+    },
+    "1576": {
+        "name": "Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0523667335510254,
+        "family": "none"
+    },
+    "1577": {
+        "name": "Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 65
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.090950608253479,
+        "family": "none"
+    },
+    "1582": {
+        "name": "Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 65
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 1.0070420503616333,
+        "family": "none"
+    },
+    "1584": {
+        "name": "Priory Scholar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0547819137573242,
+        "family": "none"
+    },
+    "1587": {
+        "name": "Priory Scholar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9326498508453369,
+        "family": "none"
+    },
+    "1669": {
+        "name": "Iron Legion Soldier",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9973536729812622,
+        "family": "none"
+    },
+    "1689": {
+        "name": "Gaheron Baelfire",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "1735": {
+        "name": "Bolok Firebringer",
+        "description": "Burns • Leaves fire fields",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "flame_legion"
+    },
+    "1737": {
+        "name": "Forgefire",
+        "description": "Summons allies • Swaps Weapons",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "flame_legion"
+    },
+    "1778": {
+        "name": "Fiery Jelly",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.875,
+            "precision": 1.3750000298023224,
+            "toughness": 1,
+            "vitality": 1.3750000298023224,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "3415": {
+        "name": "Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0088205337524414,
+        "family": "none"
+    },
+    "3457": {
+        "name": "Whispers Keeper",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9566152095794678,
+        "family": "none"
+    },
+    "3467": {
+        "name": "Whispers Slayer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9149624705314636,
+        "family": "none"
+    },
+    "3468": {
+        "name": "Whispers Keeper",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0143791437149048,
+        "family": "none"
+    },
+    "3506": {
+        "name": "Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 0.9815154075622559,
+        "family": "none"
+    },
+    "4278": {
+        "name": "Flame Acolyte",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8912897,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 0.5,
+            "vitality": 0.550000011920929,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "4405": {
+        "name": "Vigil Warmaster",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.079054355621338,
+        "family": "none"
+    },
+    "4769": {
+        "name": "Flame Legion Igniter",
+        "description": "Burns",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 65
+            },
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "4787": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0116400718688965,
+        "family": "none"
+    },
+    "4788": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0822736024856567,
+        "family": "none"
+    },
+    "4955": {
+        "name": "Lashtail Devourer",
+        "description": "Paralyzing Venom",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.2999999523162842,
+            "precision": 1,
+            "toughness": 1.5,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "4957": {
+        "name": "Whiptail Devourer",
+        "description": "Poisons Foes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.2999999523162842,
+            "precision": 1,
+            "toughness": 1.5,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "5033": {
+        "name": "Flame Legion Lava Shaman",
+        "description": "Launches",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 65
+            },
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "5086": {
+        "name": "Cave Spider",
+        "description": "Poisons",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "5092": {
+        "name": "Jungle Spider",
+        "description": "Poisons",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388612,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "5329": {
+        "name": "Priory Researcher",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0034847259521484,
+        "family": "none"
+    },
+    "5333": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0381582975387573,
+        "family": "none"
+    },
+    "5334": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9342896938323975,
+        "family": "none"
+    },
+    "5335": {
+        "name": "Priory Arcanist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0427014827728271,
+        "family": "none"
+    },
+    "5341": {
+        "name": "Priory Scholar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0101884603500366,
+        "family": "none"
+    },
+    "5348": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9160051941871643,
+        "family": "none"
+    },
+    "5349": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0494407415390015,
+        "family": "none"
+    },
+    "5351": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 65
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9265015125274658,
+        "family": "none"
+    },
+    "5353": {
+        "name": "Priory Historian",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.000090479850769,
+        "family": "none"
+    },
+    "5354": {
+        "name": "Priory Arcanist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9252857565879822,
+        "family": "none"
+    },
+    "5358": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 65
+            },
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.949752926826477,
+        "family": "none"
+    },
+    "5361": {
+        "name": "Priory Arcanist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0223456621170044,
+        "family": "none"
+    },
+    "5366": {
+        "name": "Priory Arcanist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9141051173210144,
+        "family": "none"
+    },
+    "5417": {
+        "name": "Red Ooze",
+        "description": "Burns",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "5421": {
+        "name": "Whispers Creator",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9611242413520813,
+        "family": "none"
+    },
+    "5595": {
+        "name": "Vigil Warmaster",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9684590101242065,
+        "family": "none"
+    },
+    "6432": {
+        "name": "Red Ooze",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 5.625,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.25,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "flame_legion"
+    },
+    "6624": {
+        "name": "Fire Imp",
+        "description": "Launches • Burns",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10846272,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 0.5,
+            "vitality": 0.550000011920929,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.4000000059604645,
+        "family": "none"
+    },
+    "6734": {
+        "name": "Imp Roaster",
+        "description": "Summons Imps",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "flame_legion"
+    },
+    "6882": {
+        "name": "",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 11395072,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "6977": {
+        "name": "Logan Thackeray",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0094228982925415,
+        "family": "none"
+    },
+    "6978": {
+        "name": "Rytlock Brimstone",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0468292236328125,
+        "family": "none"
+    },
+    "7076": {
+        "name": "",
+        "description": "Scout",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 0.949091911315918,
+        "family": "none"
+    },
+    "7077": {
+        "name": "",
+        "description": "Scout",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0653589963912964,
+        "family": "none"
+    },
+    "7078": {
+        "name": "",
+        "description": "Scout",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.0066949129104614,
+        "family": "none"
+    },
+    "7079": {
+        "name": "Suma",
+        "description": "Commander",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283116545,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0203543901443481,
+        "family": "none"
+    },
+    "7080": {
+        "name": "Foundry Forgemaster",
+        "description": "Master of Founderies",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "flame_legion"
+    },
+    "7081": {
+        "name": "Flame Acolyte",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 1
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 2
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 3
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 0.550000011920929,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "7082": {
+        "name": "Searing Effigy",
+        "description": "Healed by Searing Crystals • Burns • Double Damage to Burning Foes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8390657,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 18,
+            "health_multiplier": 35
+        },
+        "sex": "none",
+        "size": 3,
+        "family": "flame_legion"
+    },
+    "7093": {
+        "name": "Gate Guard",
+        "description": "Scout",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283115521,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0169988870620728,
+        "family": "none"
+    },
+    "7094": {
+        "name": "Ista",
+        "description": "Vote Taker",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283115521,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.0183075666427612,
+        "family": "none"
+    },
+    "7120": {
+        "name": "Scout Roshan",
+        "description": "Scout",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 2.5,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 0.9278110861778259,
+        "family": "none"
+    },
+    "7121": {
+        "name": "Salamander Drake",
+        "description": "Breathes Fire",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "7134": {
+        "name": "Royal Jelly",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388610,
+        "multipliers": {
+            "power": 6.25,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.3750000298023224,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "flame_legion"
+    },
+    "7147": {
+        "name": "Sear Sneakblade",
+        "description": "Sear Sneakblade",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283115521,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0643011331558228,
+        "family": "none"
+    },
+    "7148": {
+        "name": "Godforged Smokelord",
+        "description": "Creates smoke fields • Creates dark fields",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "flame_legion"
+    },
+    "7149": {
+        "name": "Godforged Hellstorm",
+        "description": "Burns • Leaves fire fields",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "flame_legion"
+    },
+    "7151": {
+        "name": "Godforged Fanatic",
+        "description": "Creates fire fields • Charges",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "flame_legion"
+    },
+    "7152": {
+        "name": "Godforged Flame Caller",
+        "description": "Summons Fire Fiends • Gives flaming weapons",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "flame_legion"
+    },
+    "7153": {
+        "name": "Prison Warden",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.0628381967544556,
+        "family": "flame_legion"
+    },
+    "7155": {
+        "name": "Gaheron's toughest Devourer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "flame_legion"
+    },
+    "7156": {
+        "name": "Ghostly Gaheron Baelfire",
+        "description": "Leader of the Flame Legion",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 0.5,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "flame_legion"
+    },
+    "7166": {
+        "name": "Gaheron's Pet Drake",
+        "description": "Breathes Fire",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "none"
+    },
+    "7276": {
+        "name": "Fire Imp",
+        "description": "Fires Flame Bolts • Summons Altars and Minions",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "7277": {
+        "name": "Tar Elemental",
+        "description": "elemental composed of Tar",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388672,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "elemental"
+    },
+    "7278": {
+        "name": "Tar Elemental",
+        "description": "elemental composed of Tar",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259616,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.100000023841858,
+        "family": "elemental"
+    },
+    "7280": {
+        "name": "Fire Imp",
+        "description": "Fires Flame Bolts • Summons Altars and Minions",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.100000023841858,
+        "family": "none"
+    },
+    "7281": {
+        "name": "Fire Imp",
+        "description": "Fires Flame Bolts • Summons Altars and Minions",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388611,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "none"
+    },
+    "7284": {
+        "name": "Siege Commander",
+        "description": "Siege Commander",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 100,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "flame_legion"
+    },
+    "7322": {
+        "name": "Tribune Burntclaw",
+        "description": "Bleeds • Launches",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "flame_legion"
+    },
+    "7383": {
+        "name": "Enslaved Engineer",
+        "description": "Master Engineer",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283115521,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.0045907497406006,
+        "family": "none"
+    },
+    "7384": {
+        "name": "Enslaved Charr",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 60
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0026836395263672,
+        "family": "none"
+    },
+    "7386": {
+        "name": "Slave Driver",
+        "description": "Burns • Buffs Self",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 6.000000238418579,
+            "precision": 0,
+            "toughness": 0.800000011920929,
+            "vitality": 0.8800000321865085,
+            "ferocity": 30,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "flame_legion"
+    },
+    "7423": {
+        "name": "Magma Elemental",
+        "description": "elemental composed of Liquid hot magma",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388672,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "elemental"
+    },
+    "7425": {
+        "name": "Magma Elemental",
+        "description": "elemental composed of Liquid hot magma",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259616,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.100000023841858,
+        "family": "elemental"
+    },
+    "8055": {
+        "name": "Vigil Crusader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 65
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0462372303009033,
+        "family": "none"
+    },
+    "8655": {
+        "name": "Priory Historian",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9082882404327393,
+        "family": "none"
+    },
+    "8935": {
+        "name": "Flame Legion Axe Fiend",
+        "description": "Rapid Attacks • Cripples",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.0240105390548706,
+        "family": "flame_legion"
+    },
+    "8936": {
+        "name": "Flame Legion Shadowblade",
+        "description": "Bleeds • Cripples",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.0729228258132935,
+        "family": "flame_legion"
+    },
+    "8937": {
+        "name": "Flame Legion Bladestorm",
+        "description": "Whirls • AoE Attacks",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.0554821491241455,
+        "family": "flame_legion"
+    },
+    "8938": {
+        "name": "Flame Legion Blademaster",
+        "description": "Stuns • Bleeds • Immobilizes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.0031124353408813,
+        "family": "flame_legion"
+    },
+    "8939": {
+        "name": "Flame Legion Stalker",
+        "description": "Ignites Arrows",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.970328152179718,
+        "family": "flame_legion"
+    },
+    "8940": {
+        "name": "Flame Legion Fire Shaman",
+        "description": "Launches",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "8941": {
+        "name": "Flame Legion Lava Shaman",
+        "description": "Knocks back • Immobilizes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "8942": {
+        "name": "Flame Legion Smoke Shaman",
+        "description": "Blinds • Stealths Allies • Immobilizes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "8943": {
+        "name": "Flame Legion Igniter",
+        "description": "Burns",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "9135": {
+        "name": "Flame Legion Axe Fiend",
+        "description": "Rapid Attacks • Cripples",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0600882768630981,
+        "family": "flame_legion"
+    },
+    "9137": {
+        "name": "Flame Legion Shadowblade",
+        "description": "Bleeds • Cripples",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9113911390304565,
+        "family": "flame_legion"
+    },
+    "9138": {
+        "name": "Flame Legion Bladestorm",
+        "description": "Whirls • AoE Attacks",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9369431734085083,
+        "family": "flame_legion"
+    },
+    "9139": {
+        "name": "Flame Legion Fire Shaman",
+        "description": "Launches",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "9140": {
+        "name": "Flame Legion Lava Shaman",
+        "description": "Knocks back • Immobilizes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "9141": {
+        "name": "Flame Legion Smoke Shaman",
+        "description": "Blinds • Stealths Allies • Immobilizes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "9142": {
+        "name": "Flame Legion Igniter",
+        "description": "Burns",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "9143": {
+        "name": "Flame Legion Blademaster",
+        "description": "Stuns • Bleeds • Immobilizes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0865728855133057,
+        "family": "flame_legion"
+    },
+    "9158": {
+        "name": "Sylvan Hound",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10780672,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.375
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "9222": {
+        "name": "Flame Legion Effigy",
+        "description": "Burns Nearby Foes • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "9234": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.002524971961975,
+        "family": "none"
+    },
+    "9237": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0454145669937134,
+        "family": "none"
+    },
+    "9239": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0866847038269043,
+        "family": "none"
+    },
+    "9240": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9198290109634399,
+        "family": "none"
+    },
+    "9355": {
+        "name": "Flame Legion Bladestorm",
+        "description": "Whirls • AoE Attacks",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9344278573989868,
+        "family": "flame_legion"
+    },
+    "9356": {
+        "name": "Flame Legion Stalker",
+        "description": "Ignites Arrows",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9346449971199036,
+        "family": "flame_legion"
+    },
+    "9370": {
+        "name": "",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10870784,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "flame_legion"
+    },
+    "9416": {
+        "name": "Carrion Devourer",
+        "description": "Burrows",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.2999999523162842,
+            "precision": 1,
+            "toughness": 1.5,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "9417": {
+        "name": "Lashtail Devourer",
+        "description": "Paralyzing Venom",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.2999999523162842,
+            "precision": 1,
+            "toughness": 1.5,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "9419": {
+        "name": "Carrion Devourer",
+        "description": "Burrows",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 1.7999999523162842,
+            "precision": 1,
+            "toughness": 1.2999999523162842,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "9420": {
+        "name": "Lashtail Devourer",
+        "description": "Paralyzing Venom",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "9421": {
+        "name": "Whiptail Devourer",
+        "description": "Poisons Foes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "9916": {
+        "name": "Vigil Tactician",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.059873342514038,
+        "family": "none"
+    },
+    "9922": {
+        "name": "Vigil Warmaster",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0256541967391968,
+        "family": "none"
+    },
+    "9956": {
+        "name": "Vigil Crusader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9539209008216858,
+        "family": "none"
+    },
+    "10043": {
+        "name": "Whispers Initiate",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9516921639442444,
+        "family": "none"
+    },
+    "10069": {
+        "name": "Whispers Keeper",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 74
+            },
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 1.0062776803970337,
+        "family": "none"
+    },
+    "10161": {
+        "name": "Flame Legion Effigy",
+        "description": "Burns Nearby Foes • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "flame_legion"
+    },
+    "10162": {
+        "name": "Vigil Warmaster",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.0509814023971558,
+        "family": "none"
+    },
+    "10266": {
+        "name": "Ooze Queen",
+        "description": "Immobilizes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "none"
+    },
+    "10267": {
+        "name": "Ooze King",
+        "description": "Immobilizes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "none"
+    },
+    "10268": {
+        "name": "United Ooze",
+        "description": "Immobilizes",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "none"
+    },
+    "10707": {
+        "name": "Godforged Axe",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 11304961,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 2,
+        "family": "flame_legion"
+    },
+    "10708": {
+        "name": "Godforged Dagger",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 11304961,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 2,
+        "family": "flame_legion"
+    },
+    "10709": {
+        "name": "Godforged Greatsword",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 11304961,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 2,
+        "family": "flame_legion"
+    },
+    "10710": {
+        "name": "Godforged Hammer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_story",
+                "level": 70
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 11304961,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 2,
+        "family": "flame_legion"
+    },
+    "11008": {
+        "name": "Giant Devourer",
+        "description": "Siege Attack",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 76
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 5,
+        "family": "none"
+    },
+    "11605": {
+        "name": "Flame Legion Assassin",
+        "description": "Stealths • Sneak Attacks",
+        "occurrences": [
+            {
+                "location": "citadel_of_the_flames_explorable",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 0.699999988079071,
+            "vitality": 0.699999988079071,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 2
+        },
+        "sex": "male",
+        "size": 1.0031124353408813,
+        "family": "flame_legion"
+    }
+}

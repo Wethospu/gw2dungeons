@@ -1,14 +1,10 @@
-# VERIFY: Id 4278 Flame Acolyte has 0.5 toughness (also 1.0).
-# VERIFY: Id 4278 Flame Acolyte has 0.5 toughness (also 1.0).
-# Note: Damage values NOT updated after feature patch! (if even any change)
-
-potion=flame legion|main
+potion=flame_legion|main
 
 Name=Bolok Firebringer
+ID=1735
 Category=champion
 image=http://wiki.guildwars2.com/images/f/fa/Flame_Legion_Lava_Shaman.jpg
 Path=CoFS
-type=flame legion
 
 attack=Firewall
 cooldown=0
@@ -27,10 +23,10 @@ effect=summon 2 normal enemies
 ##################################################################
 
 Name=Rozgar the Forge
+ID=1737
 Category=champion
 image=http://wiki.guildwars2.com/images/8/83/Flame_Legion_Axe_Fiend.jpg
 Path=CoFS
-type=flame legion
 
 attack=Swaps weapon every 25% (Greatsword, Hammer, Axe, Dagger)
 
@@ -82,10 +78,10 @@ subeffect=bleeding:0
 ##################################################################
 
 Name=Hierophant Improaster
+ID=6734
 Category=champion
 image=http://wiki.guildwars2.com/images/f/fa/Flame_Legion_Lava_Shaman.jpg
 Path=CoFS
-type=flame legion
 
 attack=Summon
 effect=Summon Fire enemy=Imps:normal
@@ -93,11 +89,11 @@ effect=Summon Fire enemy=Imps:normal
 ##################################################################
 
 Name=Fire Imp
+ID=6624
 alt=Fire Imps
 Category=normal
 image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
 Path=CoFS
-type=imp
 
 attack=Putrid Blast
 animation=big red circle
@@ -112,10 +108,10 @@ effect=self destruct
 # Similar enemy: FOTM Molten Molten Effigy
 
 Name=Flame Legion Effigy
+ID=9222
 Category=champion
 image=http://wiki.guildwars2.com/images/6/6a/Flame_Legion_Effigy.jpg
 Path=CoFS
-type=flame legion
 
 attack=Immune to knockdown, Pull, Knockback and launch
 #note=Stun and daze probably work
@@ -142,11 +138,18 @@ subeffect=Burning:0 every second
 
 ##################################################################
 
+Name=Flame Acolyte
+ID=4278
+Category=normal
+Path=CoFS
+
+##################################################################
+
 Name=Gaheron Baelfire
+ID=1689
 Category=legendary
 image=http://wiki.guildwars2.com/images/9/9d/Gaheron_Baelfire.jpg
 Path=CoFS
-type=flame legion
 
 attack=Takes no damage
 #note=Throw Molten Hearts to damage
@@ -191,12 +194,10 @@ subeffect=knockdown:0
 ##################################################################
 
 Name=Slave Driver
+ID=7386
 Category=champion
 image=http://wiki.guildwars2.com/images/e/e4/Slave_Driver.jpg
 Path=CoF1
-type=flame legion
-toughness=0.8
-condition=976
 
 attack=Lightning Whip
 effect=2 melee hits
@@ -215,11 +216,10 @@ subeffect=Might:15:5
 ##################################################################
 
 Name=Searing Effigy
+ID=7082
 Category=legendary
 image=http://wiki.guildwars2.com/images/6/6a/Flame_Legion_Effigy.jpg
 Path=CoF1
-type=flame legion
-condition=1728
 
 attack=Double damage on burning targets
 
@@ -278,9 +278,9 @@ subeffect=buff:Soothing_Mist per tick (stacks 25 times)
 ##################################################################
 
 Name=Prison Warden
+ID=7153
 Category=champion
 Path=CoF2
-type=flame legion
 
 attack=Whip
 effect=melee
@@ -311,10 +311,10 @@ Path=CoF2
 ##################################################################
 
 Name=Siege Commander
+ID=7284
 Category=champion
 Path=CoF3
 type=flame legion
-condition=4336
 
 attack=Explosive Shot
 animation=aims with right pistol|0.25
@@ -360,10 +360,10 @@ subeffect=protection:5
 ##################################################################
 
 Name=Gaheron's Pet Drake
+ID=7166
 Category=champion
 image=http://wiki.guildwars2.com/images/3/34/Salamander_Drake.jpg
 Path=CoF3
-type=drake
 
 attack=bite
 cooldown=3.5
@@ -384,10 +384,9 @@ subeffect=damage:0
 ##################################################################
 
 Name=Tribune Burntclaw
+ID=7322
 Category=legendary
 Path=CoF3
-type=flame legion
-condition=4420
 
 attack=Banish
 cooldown=3
@@ -435,11 +434,11 @@ effect=Hammer or Bolas (unless on cooldown)
 ##################################################################
 
 Name=Carrion Devourer
+ID=9419
 alt=Carrion Devourers
 Category=elite
 image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
 Path=CoF2
-type=devourer
 
 attack=Slash
 cooldown=0
@@ -490,11 +489,12 @@ subeffect=enemy=text:Devourer|Carrion_Devourer:normal|Lashtail_Devourer:normal|W
 ##################################################################
 
 Name=Fire Imp
+ID=7276
+level=76
 alt=Fire Imps
 Category=elite
 image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
 Path=CoF2
-type=imp
 
 attack=Fire Bolt
 animation=glows and swings right arm
@@ -527,11 +527,11 @@ Path=CoF2
 ##################################################################
 
 Name=Flame Legion Effigy
+ID=9222
 alt=Flame Legion Effigies
-Category=veteran
+Category=elite
 image=http://wiki.guildwars2.com/images/6/6a/Flame_Legion_Effigy.jpg
 Path=CoFS|CoF1
-type=flame legion
 
 attack=Fireball
 animation=swing|1
@@ -545,12 +545,11 @@ subeffect=Burning:2 per second
 ##################################################################
 
 Name=Flame Legion Shadowblade
+ID=8936
 alt=Flame Legion Shadowblades
 Category=elite
 image=http://wiki.guildwars2.com/images/e/e9/Flame_Legion_Shadowblade.jpg
 Path=CoF1|CoF2|CoF3
-type=flame legion
-condition=940
 
 attack=Twisting Fang (1)
 effect=2 melee hits
@@ -576,11 +575,11 @@ subeffect=bleeding:10
 # Similar enemy: FOTM Furn Molten Stalker
 
 Name=Flame Legion Stalker
+ID=8939
 alt=Flame Legion Stalkers
 Category=elite
 image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Stalker.jpg
 Path=CoF1|CoF2|CoF3
-type=flame legion
 
 attack=Shoot
 animation=aims|0.5
@@ -624,10 +623,10 @@ subeffect=burning:3
 ##################################################################
 
 Name=Godforged Fanatic
+ID=7151
 alt=Godforged Fanatics
 Category=elite
 Path=CoF1|CoF2|CoF3
-type=flame legion
 
 attack=Spell Detonate
 animation=swings right arm|1
@@ -653,10 +652,10 @@ subeffect=launch:0
 ##################################################################
 
 Name=Godforged Flamecaller
+ID=7152
 alt=Godforged Flamecallers
 Category=elite
 Path=CoF1|CoF3
-type=flame legion
 
 attack=Immune to control-skills
 
@@ -676,28 +675,29 @@ subeffect=3 enemy=Fire_Imps_(Putrid):normal
 ##################################################################
 
 Name=Flame Legion Assassin
+ID=11605
+level=77
 alt=Flame Legion Assassins|Assassin|Assassins
 Category=elite
 Path=CoF1|CoF2|CoF3
-type=flame legion
-toughness=0.7
 
 ##################################################################
-
+# Levels 76 and 77 exist.
 Name=Godforged Smokelord
+ID=7148
+level=76
 alt=Godforged Smokelords|Smokelord|Smokelords
 Category=elite
 Path=CoF1|CoF2|CoF3
-type=flame legion
 
 ##################################################################
-
+# Levels 75, 76 and 77 exist.
 Name=Godforged Hellstorm
+ID=7149
 alt=Godforged Hellstorms
 Category=elite
 image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Igniter.jpg
 Path=CoF1|CoF2|CoF3
-type=flame legion
 
 attack=Flame Spray
 additional=able to move
@@ -721,11 +721,11 @@ path=CoF1
 # Similar enemy: FOTM Furn Lashtail Devourer
 
 Name=Lashtail Devourer
+ID=9420
 alt=Lashtail Devourers
 Category=elite
 image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
 Path=CoF2
-type=devourer
 
 attack=Slash
 cooldown=0
@@ -745,13 +745,13 @@ subeffect=immobilized:4
 subeffect=lose crippled
 
 ##################################################################
-
+# Levels 75, 76 and 77 exist.
 Name=Red Ooze
+ID=6432
 alt=Red Oozes
 Category=elite
 image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
 Path=CoF1|CoF2|CoF3
-type=flame legion
 
 attack=Ooze Multi
 effect=5 melee hits in 2 s
@@ -773,10 +773,11 @@ subeffect=damage:0
 ##################################################################
 
 Name=Siege Devourer
+ID=11008
+level=76
 Category=elite
 image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
 Path=CoF2
-type=devourer
 
 attack=Slash
 effect=melee
@@ -791,11 +792,11 @@ subeffect=damage:0
 ##################################################################
 
 Name=Whiptail Devourer
+ID=9421
 alt=Whiptail Devourers
 Category=elite
 image=http://wiki.guildwars2.com/images/3/34/Whiptail_Devourer.jpg
 Path=CoF2
-type=devourer
 
 attack=Shoot poison
 cooldown=0
@@ -812,11 +813,11 @@ subeffect=poison:4
 ##################################################################
 
 Name=Carrion Devourer
+ID=9416
 alt=Carrion Devourers
 Category=normal
 image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
 Path=CoF2
-type=devourer
 
 attack=Slash
 cooldown=0
@@ -842,13 +843,39 @@ subeffect=damage:0
 subeffect=healing:0
 
 ##################################################################
-
 Name=Fiery Jelly
+ID=1778
 alt=Fiery Jellies
 Category=normal
 image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
-Path=CoFS|CoF2
-type=flame legion
+Path=CoFS
+
+attack=Ooze Multi
+effect=5 melee hits in 2 s
+count=2
+length=2
+subeffect=damage:0
+
+attack=Power Spit
+animation=looks stupid
+effect=projectile
+subeffect=damage:0
+subeffect=immobilized:2
+
+attack=Ooze Mace
+animation=spins as a mace
+effect=melee
+subeffect=damage:0
+
+##################################################################
+# Levels 76 amd 77 exist.
+Name=Fiery Jelly
+ID=1778
+level=76
+alt=Fiery Jellies
+Category=normal
+image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
+Path=CoF2
 
 attack=Ooze Multi
 effect=5 melee hits in 2 s
@@ -870,12 +897,12 @@ subeffect=damage:0
 ##################################################################
 
 Name=Fire Imp
+ID=7276
+level=77
 alt=Fire Imps
 Category=normal
 image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
 Path=CoF2
-type=imp
-condition=600
 
 attack=Fire Bolt
 animation=glows and swings right arm
@@ -899,13 +926,12 @@ subeffect=burning:3
 ##################################################################
 
 Name=Fire Imp (Ice)
+# VERIFY: Check ID.
+ID=6624
 alt=Fire Imps (Ice)
 Category=normal
 image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
 Path=CoF2
-type=imp
-# VERIFY: Check ID.
-toughness=0.5
 
 attack=Ice Explosion
 effect=PBAOE
@@ -916,12 +942,11 @@ effect=self destruct
 ##################################################################
 
 Name=Fire Imp (Putrid)
+ID=6624
 alt=Fire Imps (Putrid)
 Category=normal
 image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
 Path=CoF1|CoF3
-type=imp
-toughness=0.5
 
 attack=Putrid Explosion
 animation=glows and strikes|2.5
@@ -934,11 +959,12 @@ effect=self destruct
 ##################################################################
 
 Name=Flame Legion Fire Shaman
+level=77
+ID=8940
 alt=Flame Legion Fire Shamans
 Category=elite
 image=http://wiki.guildwars2.com/images/6/60/Veteran_Flame_Legion_Fire_Shaman.jpg
 Path=CoF3
-type=flame legion
 
 attack=Dragon Punch
 animation=roars|1
@@ -949,13 +975,14 @@ subeffect=damage:0
 subeffect=launch:0
 
 ##################################################################
-
+# Levels 76 and 77 exist.
 Name=Flame Legion Fire Shaman
+ID=9139
+level=76
 alt=Flame Legion Fire Shamans
 Category=normal
 image=http://wiki.guildwars2.com/images/6/60/Veteran_Flame_Legion_Fire_Shaman.jpg
 Path=CoF3
-type=flame legion
 
 attack=Dragon Punch
 animation=roars|1
@@ -967,13 +994,13 @@ subeffect=launch:0
 
 ##################################################################
 # Similar enemy: FOTM Furn Molten Axe Fiend
-
+# Levels 75, 76 and 77 exist.
 Name=Flame Legion Axe Fiend
+ID=9135
 alt=Flame Legion Axe Fiends
 Category=normal
 image=http://wiki.guildwars2.com/images/8/83/Flame_Legion_Axe_Fiend.jpg
 Path=CoF3
-type=flame legion
 
 attack=Chop (1)
 cooldown=0
@@ -998,13 +1025,13 @@ subeffect=damage:0
 
 ##################################################################
 # Similar enemy: FOTM Furn Molten Bladestorm
-
+# Levels 75, 76 and 77 exist.
 Name=Flame Legion Blade Master
+ID=9143
 alt=Flame Legion Blade Masters
 Category=normal
 image=http://wiki.guildwars2.com/images/3/3e/Flame_Legion_Blademaster.jpg
 Path=CoF3
-type=flame legion
 
 attack=Slash
 animation=swings blade to right|0.5
@@ -1024,26 +1051,30 @@ subeffect=damage:0
 #note=try to avoid
 
 ##################################################################
-
+# Levels 75, 76 and 77 exist.
 copy=Flame Legion Blade Master
 name=Flame Legion Bladestorm
+# VERIFY 9355
+ID=9138
 alt=Flame Legion Bladestorms
 
+# Levels 76 and 77 exist.
 copy=Flame Legion Bladestorm|normal
 name=Flame Legion Bladestorm
+ID=8937
+level=76
 alt=Flame Legion Bladestorms
 category=elite
 path=CoF1|CoF3
 
 ##################################################################
-
+# Levels 75, 76 and 77 exist.
 Name=Flame Legion Blade Master (Stun)
+ID=9143
 alt=Flame Legion Blade Masters (Stun)
 Category=normal
 image=http://wiki.guildwars2.com/images/3/3e/Flame_Legion_Blademaster.jpg
 Path=CoF3
-type=flame legion
-condition=620
 
 attack=Sever Artery (1)
 cooldown=0
@@ -1075,11 +1106,12 @@ effect=blocks all attacks
 ##################################################################
 
 Name=Flame Legion Bladestorm (Hammer)
+# VERIFY
+ID=9143
 alt=Flame Legion Bladestorms (Hammer)
 Category=normal
 image=http://wiki.guildwars2.com/images/d/d7/Flame_Legion_Bladestorm.jpg
 Path=CoF3
-type=flame legion
 
 attack=Hammer Swing (1)
 effect=melee
@@ -1103,11 +1135,12 @@ subeffect=knockdown:2
 # might be similar enemy: FOTM Thauma
 
 Name=Flame Legion Igniter
+ID=9142
+level=76
 alt=Flame Legion Igniters
 Category=normal
 image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Igniter.jpg
 Path=CoF3
-type=flame legion
 
 attack=Flame Spray
 additional=able to move
@@ -1122,14 +1155,13 @@ effect=buff
 subeffect=pull:0| on next attack
 
 ##################################################################
-
+# Levels 75, 76 and 77 exist.
 Name=Flame Legion Shadowblade
+ID=9137
 alt=Flame Legion Shadowblades
 Category=normal
 image=http://wiki.guildwars2.com/images/e/e9/Flame_Legion_Shadowblade.jpg
 Path=CoF3
-type=flame legion
-condition=620
 
 attack=Twisting Fang (1)
 effect=2 melee hits
@@ -1152,8 +1184,9 @@ subeffect=damage:0
 subeffect=bleeding:10
 
 ##################################################################
-
+# Levels 75, 76 and 77 exist.
 Name=Flame Legion Stalker
+ID=9356
 alt=Flame Legion Stalkers
 Category=normal
 image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Stalker.jpg
@@ -1176,13 +1209,14 @@ effect=buff
 subeffect=damage:0 (PBAoE) when hitting
 
 ##################################################################
-
+# Levels 75 and 76 exist.
 Name=Lashtail Devourer
+# VERIFY 9417
+ID=4955
 alt=Lashtail Devourers
 Category=normal
 image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
 Path=CoF2
-type=devourer
 
 attack=Slash
 cooldown=0
@@ -1203,8 +1237,10 @@ subeffect=lose crippled
 
 ##################################################################
 # Similar enemy: FOTM Furn Tar Elemental
-
+# Levels 76 and 77 exist.
 Name=Magma Elemental
+ID=7423
+level=76
 alt=Tar Elemental|Magma Elementals|Tar Elementals
 Category=normal
 image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
@@ -1233,12 +1269,11 @@ subeffect=immobilized:0.5
 # Similar enemy: FOTM Furn Red Ooze
 
 Name=Red Ooze
+ID=5417
 alt=Red Oozes
 Category=normal
 image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
 Path=CoF3
-type=flame legion
-condition=600
 
 attack=Fireball
 cooldown=5.5
@@ -1266,11 +1301,11 @@ subeffect=burning:1
 ##################################################################
 
 Name=Salamander Drake
+ID=7121
 alt=Salamander Drakes
 image=http://wiki.guildwars2.com/images/3/34/Salamander_Drake.jpg
 Category=normal
 Path=CoF2
-type=drake
 
 attack=bite
 cooldown=3.5
@@ -1313,11 +1348,11 @@ subeffect=poison:3
 ##################################################################
 
 Name=Whiptail Devourer
+ID=4957
 alt=Whiptail Devourers
 Category=normal
 image=http://wiki.guildwars2.com/images/3/34/Whiptail_Devourer.jpg
 Path=CoF2
-type=devourer
 
 attack=Shoot poison
 cooldown=0
@@ -1332,12 +1367,12 @@ subeffect=damage:0
 subeffect=poison:4
 
 ##################################################################
-
+# Levels 1, 2, 3, 75 and 77 exist.
 Name=Flame Legion Acolyte
+ID=7081
 alt=Flame Legion Acolytes|Acolyte|Acolytes
 Category=normal
 Path=CoF1|CoF2
-type=flame legion
 
 ##################################################################
 
@@ -1347,25 +1382,32 @@ Path=CoF1
 
 ##################################################################
 
-Name=King Ooze
+Name=Ooze King
+ID=10267
 Category=champion
 Path=CoF1|CoF3
-type=ooze
 
 ##################################################################
 
-Name=Queen Ooze
+Name=Ooze Queen
+ID=10266
 Category=champion
 Path=CoF1|CoF3
-type=ooze
 
 ##################################################################
 
 Name=United Ooze
+ID=10268
 Category=legendary
 image=http://wiki.guildwars2.com/images/3/3c/United_Ooze.jpg
 Path=CoF1|CoF3
-type=ooze
+
+##################################################################
+
+Name=Royal Jelly
+ID=7134
+Category=champion
+Path=CoF1|CoF3
 
 ##################################################################
 # NPCS
@@ -1377,14 +1419,69 @@ Path=CoFS
 
 ##################################################################
 
+Name=Jron Legion Soldier
+ID=1669
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+# Levels 74 and 75 exist.
+Name=Priory Arcanist
+ID=5335
+# VERIFY 5361, 5366
+ID=5354
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+# Levels 65 and 70 exist.
 Name=Priory Explorer
+ID=5334
+# VERIFY 5358
+ID=5333
 Category=ally
 image=http://wiki.guildwars2.com/images/c/cb/Priory_Explorer.jpg
 Path=CoFS
 
 ##################################################################
+# Levels 74 and 75 exist.
+Name=Priory Explorer
+# VERIFY 4787, 5348
+ID=4788
+# VERIFY 5349, 5358
+ID=5349
+Category=ally
+image=http://wiki.guildwars2.com/images/c/cb/Priory_Explorer.jpg
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+
+Name=Priory Historian
+# VERIFY 8655
+ID=5353
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+# Levels 74 and 75 exist.
+Name=Priory Scholar
+# VERIFY 5341
+ID=1587
+ID=1584
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+# Levels 74 and 75 exist.
+Name=Priory Researcher
+ID=5329
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
 
 Name=Rytlock Brimstone
+ID=6978
 Category=ally
 image=http://wiki.guildwars2.com/images/6/67/Rytlock_Brimstone.jpg
 Path=CoFS
@@ -1392,6 +1489,7 @@ Path=CoFS
 ##################################################################
 
 Name=Logan Thackeray
+ID=6977
 Category=ally
 image=http://wiki.guildwars2.com/images/d/d3/Captain_Logan_Thackeray.jpg
 Path=CoFS
@@ -1399,23 +1497,130 @@ Path=CoFS
 ##################################################################
 
 Name=Agent Rhiannon
+ID=7078
 Category=ally
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
 
+Name=Scout Roshan
+ID=7120
+Category=ally
+Path=CoF1
+
+##################################################################
+
 Name=Commander Suma
+ID=7079
 Category=ally
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
 
 Name=Crea Irontooth
+ID=7383
 Category=ally
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
 
 Name=Crusader Ferrah
+ID=7076
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+
+Name=Magg
+ID=7077
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+
+Name=Sylvan Hound
+ID=9158
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+# Level 65, 74 and 75 exist.
+Name=Vigil Crusader
+# VERIFY 8055 9956
+ID=1272
+# VERIFY 1568
+ID=1271
+Category=ally
+Path=CoFS|CoF1|CoF2|CoF3
+
+##################################################################.
+# Level 70, 74 and 75 exist.
+Name=Vigil Marksman
+# VERIFY 9239
+ID=9237
+# VERIFY 9240
+ID=9234
+Category=ally
+Path=CoFS|CoF1|CoF2|CoF3
+
+##################################################################.
+# Level 74 and 75 exist.
+Name=Vigil Tactician
+ID=9916
+Category=ally
+Path=CoFS|CoF1|CoF2|CoF3
+
+##################################################################
+# Level 70, 74 and 75 exist.
+Name=Vigil Warmaster
+# VERIFY 5595 9922
+ID=4405
+ID=10162
+Category=ally
+Path=CoF1S|CoF1|CoF2|CoF3
+
+##################################################################
+# Level 65, 70, 74 and 75 exist.
+Name=Whispers Agent
+# VERIFY 3415, 3506
+ID=1577
+# VERIFY 1576
+ID=1582
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+
+Name=Whispers Creator
+ID=5421
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+# Level 74 and 75 exist.
+Name=Whispers Initiate
+ID=10043
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+# Level 74 and 75 exist.
+Name=Whispers Keeper
+# VERIFY 3468 10069
+ID=3457
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+# Level 74 and 75 exist.
+Name=Whispers Lightbringer
+ID=1239
+Category=ally
+Path=CoF1|CoF2|CoF3
+
+##################################################################
+# Level 74 and 75 exist.
+Name=Whispers Slayer
+ID=3467
 Category=ally
 Path=CoF1|CoF2|CoF3

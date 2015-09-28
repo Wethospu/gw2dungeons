@@ -45,9 +45,9 @@ At 75%/50%/20% health he will summon some normal enemies which can easily be kil
 
 name=Flame Legion Effigies
 tactic=fight
-There are some inert enemy=Flame_Legion_Effigies:veteran and some enemies. They slowly wake up so pull enemies back.
+There are some inert enemy=Flame_Legion_Effigies:elite and some enemies. They slowly wake up so pull enemies back.
 tactic=skip
-Because enemy=Flame_Legion_Effigies:veteran wake up so slowly, it is much faster to just run through everything.
+Because enemy=Flame_Legion_Effigies:elite wake up so slowly, it is much faster to just run through everything.
 
 name=Second waypoint
 tactic=normal
@@ -129,7 +129,7 @@ If you kill the initial enemies really fast (less than 9 seconds), Ferrah won't 
 
 name=enemy=Slave_Driver:champion
 tactic=normal
-Nearby enemy=Flame_Legion_Effigy:veteran wakes up after 10 seconds and keeps respawning if killed. Just focus on the Slave Driver.
+Nearby enemy=Flame_Legion_Effigy:elite wakes up after 10 seconds and keeps respawning if killed. Just focus on the Slave Driver.
 It is recommended for the group to stack might before the fight, and use the highest burst damage available to quickly kill the Slave Driver.
 He isn't very dangerous but does some damage at melee-range so you can kite him around while dodging fireballs thrown by the Effigy.
 
@@ -138,7 +138,7 @@ tactic=normal
 Before the bridge there are enemy=Flame_Legion_Stalker:elite and enemy=Godforged_Fanatic:elite. On the bridge there are enemy=Blacklan_Firetooth:elite and 2 enemy=Flame_Legion_Stalkers:elite. After the bridge there are 2 enemy=Flame_Legion_Turrets:structure and 2 enemy=Godforged_Flamecallers:elite.
 All of the enemies are often skipped (poor rewards). Dodge at Flame Turrets to avoid most of the damage.
 tactic=optional
-If you want to experience secret boss event you should jump down using link=http://wiki.guildwars2.com/images/c/cd/Walkthrough-CoF-P1-Drop-down-to-Ooze.jpg|ledges. You will end up in a canyon filled with enemy=Red_Oozes:elite. Go uphill until you reach enemy=King_Ooze:champion and enemy=Queen_Ooze:champion.
+If you want to experience secret boss event you should jump down using link=http://wiki.guildwars2.com/images/c/cd/Walkthrough-CoF-P1-Drop-down-to-Ooze.jpg|ledges. You will end up in a canyon filled with enemy=Red_Oozes:elite. Go uphill until you reach enemy=Ooze_King:champion and enemy=Ooze_Queen:champion.
 The King glows and then bounces 3 times causing lots of damage and a launch making him more much more dangerous. Focus him down while blocking/evading his bounces. Don't stand near any ledges so you don't fall down.  Once he reaches 50% he will disappear. Then proceed to kill Queen who immobilizes and does some AoE damage. Once they both are dead they reappear as enemy=United_Ooze:legendary.
 The United Ooze has the same attacks as King and Queen and he also spawns normal Oozes.
 
@@ -308,7 +308,7 @@ Attack the groups at the same time (someone says "go"). Once you are done and wa
 tactic=coordinated
 Enemy respawn timers are quite long so you don't really have to sync it if people know what they are doing.
 tactic=optional
-If you want to experience secret boss event you should jump down using link=http://wiki.guildwars2.com/images/c/cd/Walkthrough-CoF-P1-Drop-down-to-Ooze.jpg|ledges. You will end up in a canyon filled with enemy=Red_Oozes:elite. Go uphill until you reach enemy=King_Ooze:champion and enemy=Queen_Ooze:champion.
+If you want to experience secret boss event you should jump down using link=http://wiki.guildwars2.com/images/c/cd/Walkthrough-CoF-P1-Drop-down-to-Ooze.jpg|ledges. You will end up in a canyon filled with enemy=Red_Oozes:elite. Go uphill until you reach enemy=Ooze_King:champion and enemy=Ooze_Queen:champion.
 The King glows and then bounces 3 times causing lots of damage and a launch making him more much more dangerous. Focus him down while blocking/evading his bounces. Don't stand near any ledges so you don't fall down.  Once he reaches 50% he will disappear. Then proceed to kill Queen who immobilizes and does some AoE damage. Once they both are dead they reappear as enemy=United_Ooze:legendary.
 The United Ooze has the same attacks as King and Queen and he also spawns normal Oozes.
 
