@@ -161,12 +161,12 @@ Enemy data exists in Raw/Enemies/"dungeonname"_e.txt
 
 
 === Start ===
-You should start with defining enemy types and potion usage connected to them. The idea is to make damage calculation as realistic as possible (not assume people use potion against some thrash).
-Type can be anything, it just has to match what is actually used in enemy data.
+You should start with defining enemy types and potion usage connected to them. The idea is to make damage calculation as realistic as possible. People won't use potions against thrash.
+Race has to match enemy races in Raw/Enemies/data.json.
 Usage can be either "main", "side" or "none". If that type of potion is usually used (like when whole dungeon is filled with that enemy type) then use "main".
 
 syntax:
-	potion="enemy type"|"potion usage"
+	potion="enemy race"|"potion usage"
 example:
 	potion=dredge|main
 
@@ -180,7 +180,21 @@ syntax:
 example:
 	name=Ascalonian Mesmer
 
+== Enemy ID ==
+Internally enemies have an unique ID. This connects to their attributes and other information like models and size. These can only be acquired by reading the client memory.
+File Raw/Enemies/data.json has lots of ids listed. You can try to find your enemy from there. Keep in mind that enemy names may not exactly match what you see in game.
+Using IDs is not required. You can also enter the information manually but it isn't suggested.
+
+In some cases you have to use multiple IDs. For example some enemies have both male and female variants. By adding multile IDs their sexes get merged and both show up.
+However make separate entries if you know which enemies are male and which are female.
+
+syntax:
+	ID="id1"|"id2"
+examle
+	ID=2424
+	ID=23244|43242
 	
+
 == Alternative names ==
 When linking enemies from encounters the name isn't always enough. You may also need to use plural or may want to use a shorter version.
 You can add alternative names to make linking work properly.
@@ -207,13 +221,6 @@ example:
 	category="elite"
 
 	
-== Type ==
-Type is needed for damage calculation with potions. It can be anything (even empty) but if you want it to work on damage calculation it must match potion data.
-syntax:
-	type="type"
-example:
-	type="dredge"
-
 == Scaling ==
 Fractals enemies scale based on fractal level. However different enemies scale different which must be defined. Valid types are "normal", "champion", "legendary", "constant" and "level".
 "Normal" is for normal/veteran enemies, "champion" for champions and "legendary" for legendaries. Special type "constant" should be used for non-scaling (neither scale or level) enemies and "level" for half-scaling enemies (enemy level scales).
@@ -228,34 +235,7 @@ example:
 	scaling=normal
 	scaling=legendary|49
 	scaling=normal|45|83
-
 	
-== Atttributes ==
-Enemies have about same attributes as players. Most are currently hard or impossible to acquire but there is on-going data mining research about this.
-
-Health can be acquired with two ways. You can kill the enemy and sum up all damage dealt from combat log.
-Alternatively you can use a memory reader such as gw2esp (or some other dps tool) to read it from client memory (risk of getting banned).
-
-Power is needed to calculate retaliation damage. Currently retaliation formula isn't known so this needs testing.
-File "\Research\Conversion.ods" has a calculator for this. Without retaliation this can be acquired if enemy can get might.
-
-Healing power is needed to calculate regeneration healing. Healing per regeneration tick can be acquired same way as the enemy health.
-Then calculate healing power from regeneration formula. File "\Research\Conversion.ods" has a calculator for this.
-
-Condition damage is needed to calculate damage from conditions. This can be easily acquired from damage ticks with condition formulas.
-File "\Research\Conversion.ods" has a calculator for this.
-
-Armor is calculcated from defense and toughness. Every level has a specific base defense and toughness values. Every enemy has a toughness multiplier which can be acquired from data mined information.
-DataCreator automatilly calculates the armor from these values. Existing armor values can be converted to multiplier with file "\Research\DataMining\DataMining.xlsx".
-
-syntax:
-	health="number"
-	power="number"
-	healing="number"
-	condition="number"
-	toughness="multiplier"
-
-
 == Image ==
 Image/video link for the enemy or its attack. Adds a small icon after the enemy name on detail view. Size is checked from MediaSizes.txt which is generated during backup.
 Multiple images or videos can be linked to one enemy by using image= multiple times. Using media= on the link adds media/dungeonimages/ to the link so it can be used for local media.

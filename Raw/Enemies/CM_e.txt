@@ -1037,16 +1037,9 @@ Path=CMS
 
 ##################################################################
 
-Name=Noble (female)
-ID=5654
-Category=ally
-image=http://wiki.guildwars2.com/images/f/fe/Noble.jpg
-Path=CMS
-
-##################################################################
-
-Name=Noble (male)
+Name=Noble
 ID=5868
+ID=5654
 Category=ally
 image=http://wiki.guildwars2.com/images/f/fe/Noble.jpg
 Path=CMS
@@ -1077,16 +1070,9 @@ Path=CMS
 
 ##################################################################
 
-Name=Servant (male)
+Name=Servant
 # VERIFY 9398
 ID=5651
-Category=ally
-image=http://wiki.guildwars2.com/images/0/0e/Servant.jpg
-Path=CMS
-
-##################################################################
-
-Name=Servant (female)
 ID=5869
 Category=ally
 image=http://wiki.guildwars2.com/images/0/0e/Servant.jpg
@@ -1148,14 +1134,8 @@ Path=CM2
 
 ##################################################################
 
-Name=Seraph Soldier (male)
+Name=Seraph Soldier
 ID=6787
-Category=ally
-Path=CM1|CM2|CM3
-
-##################################################################
-
-Name=Seraph Soldier (female)
 ID=5649
 Category=ally
 Path=CM1|CM2|CM3
@@ -1169,16 +1149,9 @@ Path=CM2
 
 ##################################################################
 
-Name=Servant (male)
+Name=Servant
 # VERIFY 9398
 ID=5651
-Category=ally
-image=http://wiki.guildwars2.com/images/0/0e/Servant.jpg
-Path=CM1|CM2|CM3
-
-##################################################################
-
-Name=Servant (female)
 ID=5869
 Category=ally
 image=http://wiki.guildwars2.com/images/0/0e/Servant.jpg
@@ -1186,15 +1159,8 @@ Path=CM1|CM2|CM3
 
 ##################################################################
 
-Name=Shining Blade (male)
+Name=Shining Blade
 ID=6074
-Category=ally
-image=http://wiki.guildwars2.com/images/4/49/Shining_Blade_%28NPC%29.jpg
-Path=CM1|CM2|CM3
-
-##################################################################
-
-Name=Shining Blade (female)
 ID=6076
 Category=ally
 image=http://wiki.guildwars2.com/images/4/49/Shining_Blade_%28NPC%29.jpg

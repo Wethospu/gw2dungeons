@@ -2131,6 +2131,7 @@ subeffect=damage:1213816 per second
 ##################################################################
 # Damage values are wrong.
 name=Aetherblade Grenadier
+ID=12280
 ID=12282
 alt=Aetherblade Grenadiers|Grenadier|Grenadiers
 category=veteran
@@ -2156,26 +2157,18 @@ effect=slow projectile with AoE
 subeffect=damage:4932196
 subeffect=chilled:5
 
-##################################################################
-copy=Aetherblade Grenadier|veteran
-name=Aetherblade Grenadier (male)
-ID=12280
 
 ##################################################################
 copy=Aetherblade Grenadier|veteran
 name=Aetherblade Grenadier
 category=normal
+ID=12279
 ID=12278
 
 ##################################################################
-copy=Aetherblade Grenadier|veteran
-name=Aetherblade Grenadier (male)
-category=normal
-ID=12279
-
-##################################################################
 
 name=Aetherblade Grenadier
+ID=12290
 ID=12289
 alt=Aetherblade Grenadiers|Grenadier|Grenadiers
 category=elite
@@ -2202,13 +2195,10 @@ subeffect=damage:4932196
 subeffect=chilled:5
 
 ##################################################################
-copy=Aetherblade Grenadier|elite
-name=Aetherblade Grenadier (male)
-ID=12290
-
-##################################################################
 # Assuming 55.5% less damage.
 name=Aetherblade Striker
+# VERIFY 12740
+ID=12277
 ID=12285
 alt=Aetherblade Strikers|Striker|Strikers
 category=veteran
@@ -2246,25 +2236,15 @@ subeffect=stun:2| if hit at melee range
 
 ##################################################################
 copy=Aetherblade Striker|veteran
-name=Aetherblade Striker (male)
-# VERIFY 12740
-ID=12277
-
-##################################################################
-copy=Aetherblade Striker|veteran
 name=Aetherblade Striker
 category=normal
-ID=12269
-
-##################################################################
-copy=Aetherblade Striker|veteran
-name=Aetherblade Striker (male)
-category=normal
 ID=12262
+ID=12269
 
 ##################################################################
 # Assuming 125% more damage.
 name=Aetherblade Striker
+ID=12298
 ID=12297
 alt=Aetherblade Strikers|Striker|Strikers
 category=elite
@@ -2301,13 +2281,9 @@ effect=buff (3 s)
 subeffect=stun:2 if hit at melee range
 
 ##################################################################
-copy=Aetherblade Striker|elite
-name=Aetherblade Striker (male)
-ID=12298
-
-##################################################################
 
 name=Aetherblade Taskmaster
+ID=12261
 ID=12283
 alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
 category=veteran
@@ -2338,11 +2314,6 @@ subeffect=confusion:5:5
 
 ##################################################################
 copy=Aetherblade Taskmaster|veteran
-name=Aetherblade Taskmaster (male)
-ID=12261
-
-##################################################################
-copy=Aetherblade Taskmaster|veteran
 name=Aetherblade Taskmaster
 category=normal
 ID=12265
@@ -2350,6 +2321,7 @@ ID=12265
 ##################################################################
 # About 95% more damage.
 name=Aetherblade Taskmaster
+ID=12294
 ID=12293
 alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
 category=elite
@@ -2378,14 +2350,10 @@ subeffect=blind:5
 subeffect=confusion:5:5
 
 ##################################################################
-copy=Aetherblade Taskmaster|elite
-name=Aetherblade Taskmaster (male)
-ID=12294
-
-##################################################################
 # Assuming 40% less damage.
 name=Aetherblade Thug
-# Male: 12271 and 12735
+# Verify 12735
+ID=12271
 ID=12281
 alt=Aetherblade Thugs|Thug|Thugs
 category=veteran
@@ -2437,7 +2405,7 @@ category=normal
 ##################################################################
 # Assuming 66% more damage.
 name=Aetherblade Thug
-# Male: 12288
+ID=12288
 ID=12287
 alt=Aetherblade Thugs|Thug|Thugs
 category=elite
@@ -2483,7 +2451,7 @@ subeffect=might:10:2
 ##################################################################
 
 name=Aetherblade Thumper
-# Male 12272
+ID=12272
 ID=12284
 alt=Aetherblade Thumpers|Thumper|Thumpers
 category=veteran
@@ -2522,14 +2490,14 @@ subeffect=Negates damage and conditions
 ##################################################################
 copy=Aetherblade Thumper|veteran
 name=Aetherblade Thumper
-# Male 12259
+ID=12259
 ID=12268
 category=normal
 
 ##################################################################
 
 name=Aetherblade Thumper
-# Male 12296
+ID=12296
 ID=12295
 alt=Aetherblade Thumpers|Thumper|Thumpers
 category=elite
@@ -2568,7 +2536,7 @@ subeffect=Negates damage and conditions
 ##################################################################
 # Assuming 50% less damage.
 name=Aetherblade Swashbuckler
-# Male 12274
+ID=12274
 ID=12273
 alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
 category=veteran
@@ -2619,14 +2587,14 @@ effect=reflects projectiles
 ##################################################################
 copy=Aetherblade Swashbuckler|veteran
 name=Aetherblade Swashbuckler
-# Male 12256
+ID=12256
 ID=12260
 category=normal
 
 ##################################################################
 # Assuming 100% more damage.
 name=Aetherblade Swashbuckler
-# Male: 12292
+ID=12292
 ID=12291
 alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
 category=elite
@@ -2962,7 +2930,7 @@ Path=TAS
 ##################################################################
 
 Name=Sylvari Prisoner
-# Male 1979
+ID=1979
 ID=1978
 image=http://wiki.guildwars2.com/images/3/37/Prisoner.jpg
 Category=ally
@@ -2971,7 +2939,7 @@ Path=TAS|TAU|TAF
 ##################################################################
 
 Name=Guard
-# Male 1494
+ID=1494
 ID=1485
 Category=ally
 Path=TAU|TAF
@@ -2987,8 +2955,9 @@ Path=TAU|TAF|TAAE
 ##################################################################
 
 Name=Lion Guard
-# Male 1561, 2552, 3980, 5273, 5371, 5379
-# Female 2551, 3976, 3979, 4406, 5381
+# VERIFY 1561, 2552, 3980, 5273, 5371, 5379
+ID=1561
+# VERIFY 2551, 3976, 3979, 4406, 5381
 ID=2551
 level=80
 Category=ally
@@ -2997,7 +2966,7 @@ Path=TAU|TAF|TAAE
 ##################################################################
 
 Name=Farmer
-# Male 3975
+ID=3975
 ID=3973
 Category=ally
 Path=TAAE
@@ -3005,7 +2974,7 @@ Path=TAAE
 ##################################################################
 
 Name=Local
-# Male 12748
+ID=12748
 ID=12747
 Category=ally
 Path=TAAE
@@ -3021,7 +2990,7 @@ Path=TAAE
 ##################################################################
 
 Name=Worker
-# Male 4391
+ID=4391
 ID=4390
 level=20
 Category=ally

@@ -226,10 +226,28 @@ namespace DataCreator.Enemies
           Helper.ShowWarning("Enemy not initialized with name.");
         else if (data.Length > 0)
         {
-          if (enemyAttributes.ContainsKey(data))
-            _currentEnemy.Attributes = enemyAttributes[data];
-          else
-            Helper.ShowWarning("Id " + data + " not found in enemy attributes.");
+          var ids = data.Split('|');
+          foreach (var id in ids)
+          {
+            if (enemyAttributes.ContainsKey(id))
+            {
+              // Enemy can have multiple sexes if there are model variations. / 2015-09-28 / Wethospu
+              // Store old one to get both added. / 2015-09-28 / Wethospu
+              var oldSexes = _currentEnemy.Attributes.Sex;
+              _currentEnemy.Attributes = enemyAttributes[id];
+              if (oldSexes.Length > 0)
+              {
+                var sexes = oldSexes.Split('|');
+                // If the sex is already there it can be ignored. / 2015-09-28 / Wethospu
+                if (sexes.Contains(_currentEnemy.Attributes.Sex))
+                  _currentEnemy.Attributes.Sex = oldSexes;
+                else
+                  _currentEnemy.Attributes.Sex = oldSexes + "|" + _currentEnemy.Attributes.Sex;
+              }
+            }
+            else
+              Helper.ShowWarning("Id " + data + " not found in enemy attributes.");
+          }
         }
         else
           Helper.ShowWarning("Missing info. Use \"id='id'\"!");

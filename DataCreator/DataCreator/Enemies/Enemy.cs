@@ -206,6 +206,14 @@ namespace DataCreator.Enemies
         htmlBuilder.Append(Helper.ToUpper(Helper.ConvertSpecial(Category)).Replace(" ", Constants.Space)).Append(" ");
       if (!Attributes.Family.Equals(""))
         htmlBuilder.Append(Helper.ToUpper(Helper.ConvertSpecial(Attributes.Family)).Replace(" ", Constants.Space)).Append(" ");
+      // Enemy can have multiple sexes if there are model variations. / 2015-09-28 / Wethospu
+      var sexes = Attributes.Sex.Split('|');
+      for (int i = 0; i < sexes.Length; i++)
+      {
+        if (sexes[i].Equals("none"))
+          continue;
+        htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"").Append(sexes[i]).Append("\">").Append(Helper.ToUpper(sexes[i])).Append("</span>");
+      }
       htmlBuilder.Append("<br>").Append(Constants.LineEnding);
       htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"health\">Health</span>:").Append(Constants.Space).Append("<span class=\"health\"></span>  ");
       htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"armor\">Armor</span>:").Append(Constants.Space).Append("<span class=\"armor\"></span>  ");
@@ -213,7 +221,8 @@ namespace DataCreator.Enemies
       htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"precision\">Critical chance</span>:").Append(Constants.Space).Append("<span class=\"precision\"></span>%  ");
       htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"ferocity\">Critical damage</span>:").Append(Constants.Space).Append("<span class=\"ferocity\"></span>%  ");
       htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"condition\">Condition damage</span>:").Append(Constants.Space).Append("<span class=\"condition\"></span>  ");
-      htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"healing_power\">Healing power</span>:").Append(Constants.Space).Append("<span class=\"healing-power\"></span>");
+      htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"healing_power\">Healing power</span>:").Append(Constants.Space).Append("<span class=\"healing-power\"></span> ");
+      htmlBuilder.Append("<span class=").Append(Constants.IconClass).Append("title=\"size\">Size</span>:").Append(Constants.Space).Append(Math.Round(Attributes.Size * 100)).Append("%");
       htmlBuilder.Append(Constants.LineEnding).Append(Gw2Helper.AddTab(3)).Append("</div>").Append(Constants.LineEnding);
       // Add tactics. / 2015-08-09 / Wethospu
       htmlBuilder.Append(Tactics.ToHtml(Index, Path, enemies, 3));
