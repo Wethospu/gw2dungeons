@@ -200,12 +200,12 @@ tactic=melee
 Run away (dodge may be a bit faster) from him when he glows. His Roar can't be blocked or evaded and will Fear you. Use a stun break if you fail to get out of range on time.
 Staying behind him will allow you to avoid most of his attacks.
 
-name=enemy=Andal_the_Thug:legendary, enemy=Poron:champion and enemy=Oolon:champion
+name=enemy=Andal_the_Thug:legendary, enemy=Poroo:champion and enemy=Oolon:champion
 tactic=normal
 Quaggans do barely any damage as long as you kite them so focus Andal.
 His cone attack hits fast and hard so try get out of range. Occasionally he summons lots of delayed AoEs. Keep moving and dodge if needed.
 tactic=exploit
-Pull Poron and Oolon away from Andal and kill them. They will run back easily so you may have to tank them.
+Pull Poroo and Oolon away from Andal and kill them. They will run back easily so you may have to tank them.
 
 name=Swimming
 tactic=skip
@@ -259,7 +259,7 @@ name=enemy=Sorge_the_Zealot:legendary
 tactic=normal
 First clear the room of enemy=Jellyfish:normal.
 His ranged attack does high damage. It is easy to avoid, just dodge when you see claw effect on you. He also occasionally sinks. It won't do much damage but it is a bit annoying.
-The biggest threat are the enemy=Giant_Arctic_Jellyfishes:veteran which he summons. They detonate dealing very high damage so keep some distance and dodge at right time. He also summons enemy=Barracudas:normal which you should use to rally off of.
+The biggest threat are the enemy=Giant_Arctic_Jellyfishes:elite which he summons. They detonate dealing very high damage so keep some distance and dodge at right time. He also summons enemy=Barracudas:normal which you should use to rally off of.
 tactic=thief
 Use Shadow Assault (Spear), Withdraw and initiative-traits and skills to evade the Zealot and Jellyfishes.
 
