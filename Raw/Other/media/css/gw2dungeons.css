@@ -140,7 +140,11 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
 	list-style-type: none;
 }
 
-.enemy-button, .level-minus, .level-plus{
+.level-minus, .level-plus{
+    cursor: pointer;
+}
+
+.enemy-button {
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;

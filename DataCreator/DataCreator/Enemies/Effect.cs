@@ -437,6 +437,8 @@ namespace DataCreator.Enemies
         return "fixedValue";
       if (type == EffectType.DamagePercent)
         return "percentValue";
+      if (type == EffectType.Healing)
+        return "healingValue";
       if (type == EffectType.None)
         return "";
       Helper.ShowWarningMessage("Internal error. Effect type not implemented.");

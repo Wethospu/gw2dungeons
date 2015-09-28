@@ -10,8 +10,6 @@ ID=6971
 Category=Champion
 image=https://wiki.guildwars2.com/images/f/fd/Ascalonian_Lieutenant.jpg
 Path=ACS
-type=ghost
-health=53504
 
 Attack=Charged Backbreaker
 image=http://i.imgur.com/KMKdoV3.gif
@@ -47,7 +45,6 @@ ID=9062
 Category=Champion
 image=http://wiki.guildwars2.com/images/c/cd/Ascalonian_Captain.jpg
 Path=ACS
-type=ghost
 
 Attack=Spread Shot
 image=http://i.imgur.com/fsLrfi3.gif
@@ -73,7 +70,6 @@ ID=3363
 Category=Champion
 image=http://wiki.guildwars2.com/images/a/af/Champion_Ascalonian_Captain.jpg
 Path=ACS
-type=ghost
 
 Attack=Greatsword Swing (1)
 image=http://i.imgur.com/La0ekiP.gif
@@ -122,7 +118,6 @@ alt=Nente
 Category=Champion
 image=http://wiki.guildwars2.com/images/8/8c/Champion_Master_Ranger_Nente.jpg
 Path=ACS
-type=ghost
 
 Attack=Flaming Arrow
 image=http://i.imgur.com/95bGHBA.gif
@@ -142,7 +137,6 @@ ID=1701
 Category=Champion
 image=http://wiki.guildwars2.com/images/8/8c/Champion_Master_Ranger_Nente.jpg
 Path=ACS
-type=ghost
 
 Attack=Hammer Swing (1)
 image=http://i.imgur.com/4sXDrJJ.gif
@@ -175,8 +169,6 @@ ID=9247
 Category=elite
 image=http://wiki.guildwars2.com/images/0/0e/Elite_Fang.jpg
 Path=ACS
-type=ghost
-condition=370
 
 attack=Bite (1)
 effect=melee
@@ -209,8 +201,6 @@ ID=1702
 Category=Champion
 image=http://wiki.guildwars2.com/images/f/fc/Champion_Kasha.jpg
 Path=ACS
-type=ghost
-condition=390
 
 Attack=Condition wells
 image=http://i.imgur.com/JYXa2zQ.gif
@@ -258,8 +248,6 @@ Name=Flesh Golem
 ID=10640
 Category=Normal
 Path=ACS
-type=no type
-toughness=2.0
 
 attack=Fist
 cooldown=4
@@ -280,7 +268,6 @@ subeffect=knockback:1.5
 Name=Bone Minion
 alt=Bone Minions
 Category=Normal
-type=ghost
 Path=ACS
 
 Attack=Shield
@@ -302,7 +289,6 @@ ID=1705
 image=https://wiki.guildwars2.com/images/b/be/Ralena_Stormbringer.jpg
 category=champion
 path=ACS
-type=ghost
 
 attack=No unshakeable or defiant
 #note=Control skills are very effective
@@ -351,8 +337,6 @@ ID=1704
 category=champion
 image=https://wiki.guildwars2.com/images/e/ec/Vassar.jpg
 path=ACS
-type=ghost
-condition=370
 
 attack=No unshakable
 #note=Control skills are very effective
@@ -403,8 +387,6 @@ ID=9159
 alt=Illusionary Mages
 category=normal
 path=ACS
-type=no type
-condition=270
 
 attack=Backfire
 cooldown=7
@@ -422,10 +404,6 @@ ID=1691
 category=legendary
 image=http://wiki.guildwars2.com/images/a/ad/Legendary_King_Adelbern.jpg
 path=ACS
-type=ghost
-# VERIFY: Could be 220.
-condition=660
-toughness=1.25
 
 attack=Fire Swing (1)
 image=http://i.imgur.com/IoI5CGg.gif
@@ -485,9 +463,6 @@ Name=Spider Queen
 ID=7039
 Category=legendary
 Path=AC1|AC2|AC3
-health=132265
-condition=420
-type=graveling
 
 attack=Bite
 #description=Bites close enemies which causes weakness and bleeding.
@@ -540,7 +515,6 @@ Name=Cave Troll
 ID=7041
 Category=Champion
 Path=AC1|AC2|AC3
-type=troll
 
 Attack=Troll Smash
 cooldown=3
@@ -599,17 +573,14 @@ copy=Cave Troll
 Name=Cave Troll
 ID=7020
 Path=ACS
+
 ##################################################################
 
 Name=Lieutenant Kholer
 ID=9115
 alt=Kholer
-health=150476
 Category=Champion
 Path=AC1|AC2|AC3
-type=ghost
-condition=420
-toughness=1.25
 
 Attack=Summon 2 Elite Ghosts
 additional=Used at 75%/50%/25% health
@@ -690,11 +661,7 @@ Name=Howling King
 ID=7018
 Category=Legendary
 image=http://wiki.guildwars2.com/images/7/7b/Shadow_Skelk.jpg
-health=150476
 Path=AC1
-type=graveling
-condition=340
-toughness=1.25
 
 Attack=Spirit Scream
 cooldown=5
@@ -727,7 +694,6 @@ subeffect=crippled:5
 Name=Area
 Path=AC1
 Category=Trap
-condition=0
 
 Attack=Ring of Fire
 effect=multiple ticking AoES
@@ -742,8 +708,6 @@ Name=Ghost Eater
 ID=9077
 Category=Legendary
 Path=AC2
-type=graveling
-condition=420
 
 attack=Patriarch Swipe
 cooldown=4
@@ -797,7 +761,6 @@ ID=9079
 alt=Ectoplasmic Oozes
 Category=normal
 Path=AC2
-type=ooze
 
 attack=Ghost Shield
 effect=buff
@@ -813,9 +776,6 @@ ID=9078
 Category=Legendary
 image=http://wiki.guildwars2.com/images/5/59/Colossus_Rumblus.jpg
 Path=AC3
-type=graveling
-condition=420
-toughness=1.25
 
 Attack=Patriarch Swipe (1)
 animation=swings right arm|0.8
@@ -869,8 +829,6 @@ Category=Elite
 Alt=Elementalist|Elementalists|Ascalonian Elementalists
 image=http://wiki.guildwars2.com/images/9/99/Ascalonian_Elementalist.jpg
 Path=ACS
-type=ghost
-condition=392
 
 Attack=Fireball
 image=http://i.imgur.com/ZlKuwOS.gif
@@ -897,8 +855,6 @@ Category=Normal
 Alt=Elementalist|Elementalists|Ascalonian Elementalists
 image=http://wiki.guildwars2.com/images/9/99/Ascalonian_Elementalist.jpg
 Path=ACS
-type=ghost
-condition=240
 
 Attack=Fireball
 image=http://i.imgur.com/ZlKuwOS.gif
@@ -924,9 +880,6 @@ Category=Elite
 Alt=Elementalist|Elementalists|Ascalonian Elementalists
 image=http://wiki.guildwars2.com/images/9/99/Ascalonian_Elementalist.jpg
 Path=AC1|AC2|AC3
-type=ghost
-health=17395
-condition=456
 
 Attack=Fireball
 image=http://i.imgur.com/ZlKuwOS.gif
@@ -953,7 +906,6 @@ Category=Elite
 Alt=Ascalonian Mesmers|Mesmer|Mesmers
 image=https://wiki.guildwars2.com/images/2/2a/Ascalonian_Mesmer.jpg
 Path=ACS
-type=ghost
 
 Attack=Blackout
 image=http://i.imgur.com/NSZxiFp.gif
@@ -978,7 +930,6 @@ Category=Normal
 Alt=Ascalonian Mesmers|Mesmer|Mesmers
 image=https://wiki.guildwars2.com/images/2/2a/Ascalonian_Mesmer.jpg
 Path=ACS
-type=ghost
 
 Attack=Blackout
 image=http://i.imgur.com/NSZxiFp.gif
@@ -1003,8 +954,6 @@ Category=Elite
 Alt=Ascalonian Mesmers|Mesmer|Mesmers
 image=https://wiki.guildwars2.com/images/2/2a/Ascalonian_Mesmer.jpg
 Path=AC1|AC2|AC3
-type=ghost
-health=17395
 
 Attack=Blackout
 image=http://i.imgur.com/NSZxiFp.gif
@@ -1029,7 +978,6 @@ Category=Elite
 Alt=Ascalonian Monks|Monk|Monks
 image=https://wiki.guildwars2.com/images/0/05/Ascalonian_Monk.jpg
 Path=ACS
-type=ghost
 
 Attack=Ray of Judgement
 #description=Bouncing base attack which heals allies.
@@ -1058,7 +1006,6 @@ Category=normal
 Alt=Ascalonian Monks|Monk|Monks
 image=https://wiki.guildwars2.com/images/0/05/Ascalonian_Monk.jpg
 Path=ACS
-type=ghost
 
 Attack=Ray of Judgement
 image=http://i.imgur.com/CaUELnu.gif
@@ -1085,8 +1032,6 @@ Category=Elite
 Alt=Ascalonian Monks|Monk|Monks
 image=https://wiki.guildwars2.com/images/0/05/Ascalonian_Monk.jpg
 Path=AC1|AC2|AC3
-type=ghost
-health=17395
 
 Attack=Ray of Judgement
 cooldown=3
@@ -1113,8 +1058,6 @@ Category=normal
 Alt=Ascalonian Necromancers|Necromancer|Necromancers
 image=https://wiki.guildwars2.com/images/f/f7/Ascalonian_Necromancer.jpg
 Path=ACS
-type=ghost
-condition=370
 
 Attack=Life Siphon
 image=http://i.imgur.com/oLyFphc.gif
@@ -1150,8 +1093,6 @@ Category=Elite
 Alt=Ascalonian Necromancers|Necromancer|Necromancers
 image=https://wiki.guildwars2.com/images/f/f7/Ascalonian_Necromancer.jpg
 Path=ACS
-type=ghost
-condition=370
 
 Attack=Life Siphon
 image=http://i.imgur.com/oLyFphc.gif
@@ -1187,9 +1128,6 @@ Category=Elite
 Alt=Ascalonian Necromancers|Necromancer|Necromancers
 image=https://wiki.guildwars2.com/images/f/f7/Ascalonian_Necromancer.jpg
 Path=AC1|AC2|AC3
-type=ghost
-health=17395
-condition=420
 
 Attack=Life Siphon
 image=http://i.imgur.com/oLyFphc.gif
@@ -1225,8 +1163,6 @@ Category=Elite
 image=https://wiki.guildwars2.com/images/1/1f/Ascalonian_Ranger.jpg
 Alt=Ascalonian Rangers|Ranger|Rangers
 Path=ACS
-type=ghost
-condition=370
 
 tactic=normal
 They will do lots of damage, control and pressure so kill them fast.
@@ -1279,8 +1215,6 @@ Category=normal
 image=https://wiki.guildwars2.com/images/1/1f/Ascalonian_Ranger.jpg
 Alt=Ascalonian Rangers|Ranger|Rangers
 Path=ACS
-type=ghost
-condition=240
 
 Attack=Spread Shot
 image=http://i.imgur.com/TyclCNN.gif
@@ -1331,8 +1265,6 @@ Alt=Ascalonian Rangers|Ranger|Rangers
 image=https://wiki.guildwars2.com/images/1/1f/Ascalonian_Ranger.jpg
 Path=AC1|AC2|AC3
 type=ghost
-health=17395
-condition=420
 
 tactic=normal
 They will do lots of damage, control and pressure so kill them fast.
@@ -1389,8 +1321,6 @@ Category=Elite
 Alt=Ascalonian Warrior|Warrior|Warriors
 image=https://wiki.guildwars2.com/images/d/d1/Ascalonian_Warrior.jpg
 Path=ACS
-type=ghost
-condition=370
 
 tactic=normal
 More durable than other Ghosts because of selfhealing.
@@ -1441,8 +1371,6 @@ Category=Normal
 Alt=Ascalonian Warrior|Warrior|Warriors
 image=https://wiki.guildwars2.com/images/d/d1/Ascalonian_Warrior.jpg
 Path=ACS
-type=ghost
-condition=250
 
 tactic=normal
 More durable than other Ghosts because of selfhealing.
@@ -1494,8 +1422,6 @@ Alt=Ascalonian Warrior|Warrior|Warriors
 image=https://wiki.guildwars2.com/images/d/d1/Ascalonian_Warrior.jpg
 Path=AC1|AC2|AC3
 type=ghost
-health=17395
-condition=420
 
 tactic=normal
 More durable than other Ghosts because of selfhealing.
@@ -1576,7 +1502,6 @@ name=Flame Trap (Jet)
 alt=Flame Traps (Jet)|Flame Jets|Flame Jet
 Category=trap
 Path=ACS
-condition=0
 
 attack=Flame Jet
 cooldown=1
@@ -1592,7 +1517,6 @@ alt=Flame Traps
 image=http://wiki.guildwars2.com/images/e/ed/Gargoyle_Head.jpg
 Category=Structure
 Path=ACS
-condition=0
 
 attack=Fireball
 image=http://i.imgur.com/XycVkQ0.jpg
@@ -1611,7 +1535,6 @@ Category=Structure
 health=6840
 toughness=1.1
 Path=AC1|AC2|AC3
-condition=0
 
 attack=Fireball
 image=http://i.imgur.com/XycVkQ0.jpg
@@ -1629,9 +1552,7 @@ ID=5953
 alt=Ghastly Oozes|Ooze|Oozes
 image=https://i.imgur.com/nbDt7ik.jpg
 Category=Elite
-health=17395
 Path=AC1|AC2
-type=ooze
 
 attack=Ooze Mace
 image=https://i.imgur.com/HqHnS28.jpg
@@ -1662,9 +1583,7 @@ name=Ghastly Ooze
 ID=5956
 alt=Ghastly Oozes|Ooze|Oozes
 image=https://i.imgur.com/nbDt7ik.jpg
-health=2804
 Category=Normal
-type=ooze
 Path=AC1|AC2
 
 attack=Ooze Mace
@@ -1696,8 +1615,6 @@ name=Graveling
 ID=11733
 alt=Gravelings
 Category=Elite
-type=graveling
-health=17395
 Path=AC1|AC2|AC3
 
 attack=Slash (1)
@@ -1737,9 +1654,6 @@ alt=Graveling Breeders|Breeder|Breeders
 Category=Elite
 image=http://wiki.guildwars2.com/images/4/4d/Graveling_Breeder.jpg
 Path=AC1|AC2|AC3
-health=14076
-type=graveling
-toughness=1.2
 
 tactic=melee
 Her melee attack cause weakness so try staying at max melee range so you don't get hit. At third hit she will evade so time your bigger hits.
@@ -1793,9 +1707,6 @@ alt=Graveling Hatchlings|Hatchling|Hatchlings
 Category=Normal
 image=https://wiki.guildwars2.com/images/8/8b/Graveling_Hatchling.jpg
 Path=ACS
-type=ghost
-health=4224
-condition=390
 
 tactic=normal
 Weak alone but they usually come in big groups.
@@ -1822,10 +1733,7 @@ ID=1710
 alt=Graveling Hatchlings|Hatchling|Hatchlings
 image=https://wiki.guildwars2.com/images/8/8b/Graveling_Hatchling.jpg
 Category=Normal
-type=ghost
 Path=AC1|AC2|AC3
-health=5279
-condition=440
 
 tactic=normal
 Weak alone but they usually come in big groups.
@@ -1850,8 +1758,6 @@ name=Graveling Howler
 ID=1939
 alt=Graveling Howlers|Howler|Howlers
 Category=Elite
-type=graveling
-health=17395
 Path=AC1|AC2|AC3
 
 attack=Slash (1)
@@ -1894,8 +1800,6 @@ name=Graveling Stalker
 ID=7052
 alt=Graveling Stalkers|Stalker|Stalkers
 Category=champion
-type=graveling
-health=75798
 Path=AC1|AC2|AC3
 
 attack=Slash (1)
@@ -1941,7 +1845,6 @@ name=Graveling Stalker
 ID=1938
 alt=Graveling Stalkers|Stalker|Stalkers
 Category=elite
-health=17395
 
 ##################################################################
 # Both levels 35 and 37 exist.
@@ -1950,10 +1853,7 @@ name=Graveling Scavenger
 ID=5787
 alt=Graveling Scavengers|Scavenger|Scavengers
 Category=Elite
-type=graveling
-health=17395
 Path=AC1|AC2|AC3
-condition=440
 
 attack=Slash (1)
 cooldown=1
@@ -2016,10 +1916,7 @@ ID=4085
 image=http://wiki.guildwars2.com/images/c/ca/Grub_Yellow.jpg
 alt=Grubs
 Category=Normal
-health=2804
 Path=AC1
-type=no type
-condition=280
 
 attack=Spit
 cooldown=3
@@ -2042,9 +1939,7 @@ ID=6972
 alt=Spider Hatchlings
 image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
 Category=Normal
-type=ghost
 Path=ACS
-condition=390
 
 tactic=normal
 Weak alone but they usually come in big groups.
@@ -2074,11 +1969,7 @@ ID=7040
 alt=Spiders
 image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
 Category=elite
-# Not verified.
-health=17395
 Path=AC1|AC2|AC3
-type=graveling
-condition=420
 
 attack=Bite
 cooldown=2.5
@@ -2109,10 +2000,6 @@ alt=Spider Hatchlings
 image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
 Category=Normal
 Path=AC1|AC2|AC3
-health=5279
-toughness=0.67
-type=ghost
-condition=450
 
 tactic=normal
 Weak alone but they usually come in big groups.
@@ -2142,10 +2029,7 @@ alt=Spider Hatchlings
 Category=Normal
 image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
 Path=AC1|AC2|AC3
-health=309
-toughness=0
 level=3
-type=ghost
 
 attack=Venom Spray
 cooldown=3
@@ -2243,7 +2127,6 @@ ID=5852
 Category=ally
 image=http://wiki.guildwars2.com/images/a/a4/Detha_NPC.jpg
 Path=AC2
-health=12177
 
 attack=Stability
 effect=buff

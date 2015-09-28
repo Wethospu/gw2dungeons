@@ -1,0 +1,6960 @@
+{
+    "1584": {
+        "name": "Priory Scholar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0547819137573242,
+        "family": "none"
+    },
+    "1591": {
+        "name": "Priory Scholar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.013425350189209,
+        "family": "none"
+    },
+    "1691": {
+        "name": "King Adelbern",
+        "description": "Pulls Enemies Close • Summons Foefire",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 5.174999892711639,
+            "precision": 0,
+            "toughness": 1.3750000298023224,
+            "vitality": 1.100000023841858,
+            "ferocity": 120,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 40.24999916553497
+        },
+        "sex": "male",
+        "size": 1.7999999523162842,
+        "family": "ascalonian_ghost"
+    },
+    "1701": {
+        "name": "Master Nente",
+        "description": "Ranged Attacks • Confusion on CC",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.0499999523162842,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 19
+        },
+        "sex": "male",
+        "size": 1.7999999523162842,
+        "family": "ascalonian_ghost"
+    },
+    "1702": {
+        "name": "Kasha Blackblood",
+        "description": "Summons Minions • Fears • Applies Conditions",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.0499999523162842,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 11,
+            "health_multiplier": 19
+        },
+        "sex": "female",
+        "size": 1.7999999523162842,
+        "family": "ascalonian_ghost"
+    },
+    "1703": {
+        "name": "Warmaster Grast",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 276824064,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.021447777748108,
+        "family": "ascalonian_ghost"
+    },
+    "1704": {
+        "name": "Vassar",
+        "description": "Creates Illusions • Stronger Near Ralena",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.0499999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 14.25
+        },
+        "sex": "male",
+        "size": 1.7999999523162842,
+        "family": "ascalonian_ghost"
+    },
+    "1705": {
+        "name": "Ralena",
+        "description": "Casts Lightning • Summons Lightning Storms • Stronger Near Vassar",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 4.2500001192092896,
+            "precision": 0,
+            "toughness": 1.0499999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 14.25
+        },
+        "sex": "female",
+        "size": 1.7999999523162842,
+        "family": "ascalonian_ghost"
+    },
+    "1706": {
+        "name": "Ascalonian Warrior",
+        "description": "Self Heal • Stun",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "male",
+        "size": 1.0342419147491455,
+        "family": "ascalonian_ghost"
+    },
+    "1707": {
+        "name": "Graveling",
+        "description": "Leap Attack • Applies Cripple",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "none"
+    },
+    "1708": {
+        "name": "Barracuda",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 524289,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "none"
+    },
+    "1710": {
+        "name": "Graveling Hatchling",
+        "description": "Causes Bleeding",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518529,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 0.75,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 1.5
+        },
+        "sex": "none",
+        "size": 0.6499999761581421,
+        "family": "ascalonian_ghost"
+    },
+    "1918": {
+        "name": "Ascalonian Ranger",
+        "description": "Poison Arrows • Knockback",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "male",
+        "size": 0.9929273724555969,
+        "family": "ascalonian_ghost"
+    },
+    "1930": {
+        "name": "Ascalonian Necromancer",
+        "description": "Drains Life • Applies Fear",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "male",
+        "size": 1.003640055656433,
+        "family": "ascalonian_ghost"
+    },
+    "1931": {
+        "name": "Ascalonian Mesmer",
+        "description": "Dazes • Reflects Projectiles",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 0.800000011920929,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 4
+        },
+        "sex": "male",
+        "size": 1.0318865776062012,
+        "family": "ascalonian_ghost"
+    },
+    "1932": {
+        "name": "Ascalonian Monk",
+        "description": "Heals Allies",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 1.2999999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 13,
+            "health_multiplier": 4
+        },
+        "sex": "female",
+        "size": 0.9497295022010803,
+        "family": "ascalonian_ghost"
+    },
+    "1933": {
+        "name": "Ascalonian Elementalist",
+        "description": "Ghostly Firestorm",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 0.800000011920929,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 4
+        },
+        "sex": "female",
+        "size": 1.09958815574646,
+        "family": "ascalonian_ghost"
+    },
+    "1938": {
+        "name": "Graveling Stalker",
+        "description": "Tunnels to Enemies and Gains Evasion on hit",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 37
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 0.800000011920929,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 4
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "none"
+    },
+    "1939": {
+        "name": "Graveling Howler",
+        "description": "Buffs Allies",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 11,
+            "health_multiplier": 5
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "none"
+    },
+    "3363": {
+        "name": "Ascalonian Captain",
+        "description": "Knockdown",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.0499999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 19
+        },
+        "sex": "female",
+        "size": 1.2000000476837158,
+        "family": "ascalonian_ghost"
+    },
+    "4085": {
+        "name": "Grub",
+        "description": "Burns",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "4787": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0116400718688965,
+        "family": "none"
+    },
+    "5335": {
+        "name": "Priory Arcanist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0427014827728271,
+        "family": "none"
+    },
+    "5336": {
+        "name": "Priory Arcanist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0532299280166626,
+        "family": "none"
+    },
+    "5350": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0168572664260864,
+        "family": "none"
+    },
+    "5355": {
+        "name": "Priory Arcanist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9876015782356262,
+        "family": "none"
+    },
+    "5361": {
+        "name": "Priory Arcanist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0223456621170044,
+        "family": "none"
+    },
+    "5366": {
+        "name": "Priory Arcanist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9141051173210144,
+        "family": "none"
+    },
+    "5368": {
+        "name": "Priory Arcanist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0335029363632202,
+        "family": "none"
+    },
+    "5693": {
+        "name": "Graveling Breeder",
+        "description": "Summons Hatchlings • Inflicts Weakness",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 37
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 1.2999999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 13,
+            "health_multiplier": 4
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "none"
+    },
+    "5751": {
+        "name": "Shadow",
+        "description": "Cripples",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545292320,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "ascalonian_ghost"
+    },
+    "5766": {
+        "name": "Hodgins",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 3,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0728164911270142,
+        "family": "none"
+    },
+    "5787": {
+        "name": "Graveling Scavenger",
+        "description": "Leap Knockdown • Removes Boons",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 37
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "none"
+    },
+    "5834": {
+        "name": "Garm",
+        "description": "Eir's Companion",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 277392897,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "none"
+    },
+    "5852": {
+        "name": "Desch Temperbones",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 0.8500000238418579,
+        "family": "none"
+    },
+    "5902": {
+        "name": "Durmand Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9350682497024536,
+        "family": "none"
+    },
+    "5903": {
+        "name": "Durmand Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0731654167175293,
+        "family": "none"
+    },
+    "5953": {
+        "name": "Ghastly Ooze",
+        "description": "Spits Sticky Ooze",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 37
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "none"
+    },
+    "5956": {
+        "name": "Ghastly Ooze",
+        "description": "Spits Sticky Ooze",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 37
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8396800,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "ascalonian_ghost"
+    },
+    "6080": {
+        "name": "Graveling Hatchling",
+        "description": "Causes Bleeding",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10584065,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 0.75,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 1.5
+        },
+        "sex": "none",
+        "size": 0.6499999761581421,
+        "family": "ascalonian_ghost"
+    },
+    "6803": {
+        "name": "Ascalonian Elementalist",
+        "description": "Ghostly Firestorm",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.8999999761581421,
+        "family": "ascalonian_ghost"
+    },
+    "6804": {
+        "name": "Ascalonian Mesmer",
+        "description": "Dazes • Reflects Projectiles",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.8999999761581421,
+        "family": "ascalonian_ghost"
+    },
+    "6805": {
+        "name": "Ascalonian Monk",
+        "description": "Heals Allies",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.8999999761581421,
+        "family": "ascalonian_ghost"
+    },
+    "6806": {
+        "name": "Ascalonian Necromancer",
+        "description": "Drains Life • Applies Fear",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.8999999761581421,
+        "family": "ascalonian_ghost"
+    },
+    "6807": {
+        "name": "Ascalonian Ranger",
+        "description": "Poison Arrows • Knockback",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.8999999761581421,
+        "family": "ascalonian_ghost"
+    },
+    "6808": {
+        "name": "Ascalonian Warrior",
+        "description": "Poison Arrows • Knockback",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.8999999761581421,
+        "family": "ascalonian_ghost"
+    },
+    "6971": {
+        "name": "Ascalonian Captain",
+        "description": "Knockdown",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.0499999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 19
+        },
+        "sex": "male",
+        "size": 1.399999976158142,
+        "family": "ascalonian_ghost"
+    },
+    "6972": {
+        "name": "Spider Hatchling",
+        "description": "Sprays Poison",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 1
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 2
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 3
+            },
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518532,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 0.75,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 1.5
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "ascalonian_ghost"
+    },
+    "6976": {
+        "name": "Eir",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 0.9706100821495056,
+        "family": "none"
+    },
+    "6978": {
+        "name": "Rytlock Brimstone",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0468292236328125,
+        "family": "none"
+    },
+    "7018": {
+        "name": "The Howling King",
+        "description": "Summons Allies • Has Scream Armor",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8931328,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.3750000298023224,
+            "vitality": 1.100000023841858,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 40.24999916553497
+        },
+        "sex": "none",
+        "size": 4,
+        "family": "none"
+    },
+    "7020": {
+        "name": "Cave Troll",
+        "description": "Regenerates • AoE Knockback",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.0499999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 16.1500004529953
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "none"
+    },
+    "7039": {
+        "name": "Spider Queen",
+        "description": "Sprays Poison",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914948,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.100000023841858,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 35
+        },
+        "sex": "female",
+        "size": 2.5,
+        "family": "none"
+    },
+    "7040": {
+        "name": "Spider",
+        "description": "Sprays Poison",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "male",
+        "size": 0.5,
+        "family": "none"
+    },
+    "7041": {
+        "name": "Cave Troll",
+        "description": "Shouts • Leaps",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.100000023841858,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 48.99999916553497
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "none"
+    },
+    "7045": {
+        "name": "Spider Hatchling",
+        "description": "Sprays Poison",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 0.75,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 1.5
+        },
+        "sex": "male",
+        "size": 0.5,
+        "family": "ascalonian_ghost"
+    },
+    "7051": {
+        "name": "Graveling Scavenger",
+        "description": "Leap Knockdown • Removes Boons",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "none"
+    },
+    "7052": {
+        "name": "Graveling Stalker",
+        "description": "Tunnels to Enemies and Gains Evasion on hit",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 0.26249998807907104,
+            "vitality": 1.2000000476837158,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 19
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "none"
+    },
+    "9062": {
+        "name": "Ascalonian Captain",
+        "description": "Knockdown",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.0499999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 19
+        },
+        "sex": "female",
+        "size": 1.2000000476837158,
+        "family": "ascalonian_ghost"
+    },
+    "9077": {
+        "name": "The Ghost Eater",
+        "description": "Has Ghost Shield • Emits Ectoplasms When Struck",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.100000023841858,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 35
+        },
+        "sex": "none",
+        "size": 3.5,
+        "family": "none"
+    },
+    "9078": {
+        "name": "Colossus Rumblus",
+        "description": "Creates Seismic Activity",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.3750000298023224,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 40.24999916553497
+        },
+        "sex": "none",
+        "size": 4.5,
+        "family": "none"
+    },
+    "9079": {
+        "name": "Ectoplasmic Ooze",
+        "description": "Has Ghost Shield",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10584128,
+        "multipliers": {
+            "power": 2,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 2
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "ascalonian_ghost"
+    },
+    "9114": {
+        "name": "Graveling Breeder",
+        "description": "Summons Hatchlings • Inflicts Weakness",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8945667,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1.0499999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 19
+        },
+        "sex": "none",
+        "size": 2.700000047683716,
+        "family": "none"
+    },
+    "9115": {
+        "name": "Lieutenant Kholer",
+        "description": "Poisons, Cripples, Inflicts Vulnerability",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.3750000298023224,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 40.24999916553497
+        },
+        "sex": "male",
+        "size": 1.7999999523162842,
+        "family": "ascalonian_ghost"
+    },
+    "9158": {
+        "name": "Sylvan Hound",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10780672,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.375
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "9159": {
+        "name": "Illusionary Mage",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 77905921,
+        "multipliers": {
+            "power": 1.149999976158142,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 0.11000000402331356
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "9247": {
+        "name": "Fang",
+        "description": "Cripples",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545292320,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "ascalonian_ghost"
+    },
+    "10640": {
+        "name": "Flesh Golem",
+        "description": "Knocks back",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_story",
+                "level": 30
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10797056,
+        "multipliers": {
+            "power": 0.9199999946355817,
+            "precision": 1,
+            "toughness": 2,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "11733": {
+        "name": "Graveling",
+        "description": "Leap Attack • Applies Cripple",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545325089,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "none"
+    },
+    "11734": {
+        "name": "Graveling Scavenger",
+        "description": "Leap Knockdown • Removes Boons",
+        "occurrences": [
+            {
+                "location": "ascalonian_catacombs_explorable",
+                "level": 35
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545325089,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "none"
+    },
+	"3077": {
+        "name": "Ministry Commander",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.149999976158142,
+        "family": "outlaw"
+    },
+    "3085": {
+        "name": "Uzolan",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 281084416,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0179319381713867,
+        "family": "outlaw"
+    },
+    "3109": {
+        "name": "Prototype Golem",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "outlaw"
+    },
+    "3123": {
+        "name": "Councillor Ptud",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283116033,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 1.03042733669281,
+        "family": "none"
+    },
+    "3213": {
+        "name": "Separatist Lieutenant",
+        "description": "More damage to moving targets.",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 277348355,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 1.149999976158142,
+        "family": "outlaw"
+    },
+    "3218": {
+        "name": "Separatist Sniper",
+        "description": "More damage to moving targets.",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.9330887794494629,
+        "family": "outlaw"
+    },
+    "3220": {
+        "name": "Separatist Fighter",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.0336014032363892,
+        "family": "outlaw"
+    },
+    "3581": {
+        "name": "Zojja",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 283676161,
+        "multipliers": {
+            "power": 0.5,
+            "precision": 0.5,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 0,
+            "health_multiplier": 2
+        },
+        "sex": "female",
+        "size": 0.9148303270339966,
+        "family": "none"
+    },
+    "3611": {
+        "name": "Logan Thackeray",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 283676161,
+        "multipliers": {
+            "power": 0.5,
+            "precision": 0.5,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 0,
+            "health_multiplier": 2
+        },
+        "sex": "male",
+        "size": 1.040088415145874,
+        "family": "none"
+    },
+    "5649": {
+        "name": "Seraph Soldier",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0414682626724243,
+        "family": "none"
+    },
+    "5650": {
+        "name": "Medic Rosina",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.068851113319397,
+        "family": "none"
+    },
+    "5651": {
+        "name": "Servant",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            },
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680577,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 1.0448687076568604,
+        "family": "none"
+    },
+    "5654": {
+        "name": "Noble",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680577,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 1.0627119541168213,
+        "family": "none"
+    },
+    "5671": {
+        "name": "Traffa",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 0.9475908875465393,
+        "family": "none"
+    },
+    "5679": {
+        "name": "Worker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 1.0160324573516846,
+        "family": "none"
+    },
+    "5680": {
+        "name": "Worker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 1.0815403461456299,
+        "family": "none"
+    },
+    "5681": {
+        "name": "Worker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 0.9717961549758911,
+        "family": "none"
+    },
+    "5682": {
+        "name": "Worker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 0.9540755152702332,
+        "family": "none"
+    },
+    "5683": {
+        "name": "Worker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.0388920307159424,
+        "family": "none"
+    },
+    "5684": {
+        "name": "Worker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 0.9933241605758667,
+        "family": "none"
+    },
+    "5685": {
+        "name": "Worker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.0238968133926392,
+        "family": "none"
+    },
+    "5686": {
+        "name": "Worker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.0442867279052734,
+        "family": "none"
+    },
+    "5868": {
+        "name": "Noble",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680577,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 0.9374085664749146,
+        "family": "none"
+    },
+    "5869": {
+        "name": "Servant",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            },
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680577,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 0.9989122152328491,
+        "family": "none"
+    },
+    "5870": {
+        "name": "Separatist Bomber",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.9453125596046448,
+        "family": "outlaw"
+    },
+    "5873": {
+        "name": "Separatist Fighter",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 0.9459196329116821,
+        "family": "outlaw"
+    },
+    "5874": {
+        "name": "Mia Kindleshot",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9177883267402649,
+        "family": "none"
+    },
+    "5875": {
+        "name": "Sigfast",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283116033,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 0.9463485479354858,
+        "family": "none"
+    },
+    "5876": {
+        "name": "Dagonet",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283116033,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 0.9461618065834045,
+        "family": "none"
+    },
+    "5877": {
+        "name": "Minister Caudecus",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283116033,
+        "multipliers": {
+            "power": 1.875,
+            "precision": 1.3750000298023224,
+            "toughness": 1,
+            "vitality": 1.3750000298023224,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9524639248847961,
+        "family": "none"
+    },
+    "5879": {
+        "name": "Queen Jennah",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283116161,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 1.0469028949737549,
+        "family": "none"
+    },
+    "5982": {
+        "name": "Hunting Hound",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.8500000238418579,
+        "family": "outlaw"
+    },
+    "6074": {
+        "name": "Shining Blade",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283115521,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 0.9040411114692688,
+        "family": "none"
+    },
+    "6075": {
+        "name": "Exemplar Talie",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 0.9818403720855713,
+        "family": "none"
+    },
+    "6076": {
+        "name": "Shining Blade",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283115521,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 0.9221652150154114,
+        "family": "none"
+    },
+    "6088": {
+        "name": "Separatist Lieutenant",
+        "description": "Poison",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 277348355,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 1.149999976158142,
+        "family": "outlaw"
+    },
+    "6381": {
+        "name": "Sword of Justice",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 46
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 27558017,
+        "multipliers": {
+            "power": 1.4374999701976776,
+            "precision": 1.25,
+            "toughness": 1,
+            "vitality": 2.5,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 0.2750000059604645
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "none"
+    },
+    "6787": {
+        "name": "Seraph Soldier",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 0.957426130771637,
+        "family": "none"
+    },
+    "7670": {
+        "name": "Separatist Bomber",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.8500000238418579,
+        "family": "outlaw"
+    },
+    "7671": {
+        "name": "Separatist Fighter",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.8500000238418579,
+        "family": "outlaw"
+    },
+    "7673": {
+        "name": "Separatist Fighter",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.8500000238418579,
+        "family": "outlaw"
+    },
+    "7943": {
+        "name": "Separatist Captain DeLana",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8945667,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "8011": {
+        "name": "Monique DeLana",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 1.005074143409729,
+        "family": "outlaw"
+    },
+    "8866": {
+        "name": "Wahlen",
+        "description": "Applies Vulnerability • AOE",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "8867": {
+        "name": "Victoria",
+        "description": "Steals • AoE Bleeds • Stealths",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "8868": {
+        "name": "Morgan",
+        "description": "Throws Bombs",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "8869": {
+        "name": "Frost",
+        "description": "Chills • Buffs Self",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "8871": {
+        "name": "Bridgette",
+        "description": "Summons Weapons • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 46
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "8872": {
+        "name": "Martha",
+        "description": "Throws Bombs",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "8873": {
+        "name": "Bandit Saboteur",
+        "description": "Throw Bombs • AoE Vulnerability",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0993043184280396,
+        "family": "outlaw"
+    },
+    "8874": {
+        "name": "Bandit Saboteur",
+        "description": "AOE knockback and burning.",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.9368912577629089,
+        "family": "outlaw"
+    },
+    "8875": {
+        "name": "Bandit Cutpurse",
+        "description": "Bleeding • Poison",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            },
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 46
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0757431983947754,
+        "family": "outlaw"
+    },
+    "8876": {
+        "name": "Bandit Cutpurse",
+        "description": "Bleeding • Poison",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.9600014090538025,
+        "family": "outlaw"
+    },
+    "8878": {
+        "name": "Bandit Thug",
+        "description": "Buff and Heal Allies • Knockback",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 46
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9840100407600403,
+        "family": "outlaw"
+    },
+    "8879": {
+        "name": "Bandit Thug",
+        "description": "Buff and Heal Allies • Knockback",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.0171571969985962,
+        "family": "outlaw"
+    },
+    "8880": {
+        "name": "Bandit Scatter Shot",
+        "description": "Fires a cone shaped barrage",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            },
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 46
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0782246589660645,
+        "family": "outlaw"
+    },
+    "8881": {
+        "name": "Bandit Scatter Shot",
+        "description": "Fires a cone shaped barrage",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.0729365348815918,
+        "family": "outlaw"
+    },
+    "8883": {
+        "name": "Bandit Archer",
+        "description": "Cripples • Blinds • Confusion",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0923285484313965,
+        "family": "outlaw"
+    },
+    "8884": {
+        "name": "Bandit Archer",
+        "description": "Cripples • Blinds • Confusion",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            },
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 46
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.0421299934387207,
+        "family": "outlaw"
+    },
+    "8885": {
+        "name": "Bandit Rifleman",
+        "description": "More damage to moving targets.",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0876270532608032,
+        "family": "outlaw"
+    },
+    "8886": {
+        "name": "Bandit Thug",
+        "description": "Immobilize • Poison",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            },
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 46
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9150852560997009,
+        "family": "outlaw"
+    },
+    "8887": {
+        "name": "Bandit Hooligan",
+        "description": "Immobilize • Poison",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 50
+            },
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.0350754261016846,
+        "family": "outlaw"
+    },
+    "8888": {
+        "name": "Seamus",
+        "description": "Rapid Shot • Knocks Back",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 277350401,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "8889": {
+        "name": "Marius",
+        "description": "Steals • AoE Bleeds",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "8890": {
+        "name": "Bandit Rifleman",
+        "description": "More damage to moving targets.",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.9950735569000244,
+        "family": "outlaw"
+    },
+    "8891": {
+        "name": "Taylor",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "9026": {
+        "name": "Bandit Bomber",
+        "description": "Throw Bombs • AoE Vulnerability",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.0039976835250854,
+        "family": "outlaw"
+    },
+    "9056": {
+        "name": "Pygmy Moa",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 1
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.6000000089406967
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "none"
+    },
+    "9348": {
+        "name": "Turmaine",
+        "description": "Inflicts Conditions",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 120,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 46.90000116825104
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "9367": {
+        "name": "Hunting Hound",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 46
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+    "9398": {
+        "name": "Servant",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            },
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680577,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 1.0814095735549927,
+        "family": "none"
+    },
+    "9433": {
+        "name": "Vallog",
+        "description": "Reflects Projectiles • Bleeds • Burns • AOE",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 120,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "outlaw"
+    },
+    "9500": {
+        "name": "PWR 935i",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_explorable",
+                "level": 45
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "outlaw"
+    },
+    "11016": {
+        "name": "Separatist Fighter",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388611,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 0.9459196329116821,
+        "family": "outlaw"
+    },
+    "11017": {
+        "name": "Hunting Hound",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "caudecus_manor_story",
+                "level": 40
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "outlaw"
+    },
+	"1290": {
+        "name": "Mr. Sparkles",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 25165825,
+        "multipliers": {
+            "power": 1.875,
+            "precision": 1.3750000298023224,
+            "toughness": 1,
+            "vitality": 1.3750000298023224,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "1485": {
+        "name": "Guard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283116033,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 0.9660674333572388,
+        "family": "none"
+    },
+    "1494": {
+        "name": "Guard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283116033,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.022060513496399,
+        "family": "none"
+    },
+    "1495": {
+        "name": "Gairwen",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.0538848638534546,
+        "family": "none"
+    },
+    "1526": {
+        "name": "Nightmare Vine",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 0.75,
+        "family": "nightmare_court"
+    },
+    "1561": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 1.067186951637268,
+        "family": "none"
+    },
+    "1978": {
+        "name": "Prisoner",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 40
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": -1598029280,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9035928845405579,
+        "family": "none"
+    },
+    "1979": {
+        "name": "Prisoner",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 40
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": -1598029280,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9043948650360107,
+        "family": "none"
+    },
+    "2551": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9378722310066223,
+        "family": "none"
+    },
+    "2552": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0830795764923096,
+        "family": "none"
+    },
+    "3167": {
+        "name": "Barracuda",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 1,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.25,
+        "family": "nightmare_court"
+    },
+    "3169": {
+        "name": "Zojja",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 816316449,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3170": {
+        "name": "Rytlock Brimstone",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 816316449,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3171": {
+        "name": "Logan Thackeray",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 816316449,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3172": {
+        "name": "Eir",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 816316449,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3178": {
+        "name": "Nightmare Court Archer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.008682370185852,
+        "family": "nightmare_court"
+    },
+    "3182": {
+        "name": "Brangoire, Knight of Horror",
+        "description": "Summons nightmares",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3183": {
+        "name": "Cadeyrn, Baron of Remorse",
+        "description": "Morphs enemies • Confuses",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3189": {
+        "name": "Faolain",
+        "description": "Resurects Allies",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3190": {
+        "name": "Fyonna",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3191": {
+        "name": "Nightmare Court Reaver",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 1.25,
+        "family": "nightmare_court"
+    },
+    "3195": {
+        "name": "Leurent",
+        "description": "Bleeds • Cripples • Knocks Down • Heals",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3201": {
+        "name": "Sariel, Champion of Envy",
+        "description": "Singles out foes",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3204": {
+        "name": "Nightmare Court Cultist",
+        "description": "Bleeds • Manipulates Time",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 0.9963445663452148,
+        "family": "nightmare_court"
+    },
+    "3208": {
+        "name": "Nightmare Court Sorcerer",
+        "description": "Creates Wells • Causes Fear",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.0395691394805908,
+        "family": "nightmare_court"
+    },
+    "3210": {
+        "name": "Nightmare Court Knight",
+        "description": "Knockdown Combo",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.9783530235290527,
+        "family": "nightmare_court"
+    },
+    "3214": {
+        "name": "Vevina",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "3222": {
+        "name": "Undergrowth Recluse",
+        "description": "Poison",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "nightmare_court"
+    },
+    "3224": {
+        "name": "Undergrowth Spider Queen",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 2.25,
+        "family": "nightmare_court"
+    },
+    "3225": {
+        "name": "Undergrowth Webber",
+        "description": "Immobilize",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "nightmare_court"
+    },
+    "3230": {
+        "name": "Nightmare Hound",
+        "description": "Pounces • Bleeds • Poisons",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "nightmare_court"
+    },
+    "3973": {
+        "name": "Farmer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 20
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 1.0065385103225708,
+        "family": "none"
+    },
+    "3975": {
+        "name": "Farmer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 20
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 0.916317343711853,
+        "family": "none"
+    },
+    "3976": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9380353689193726,
+        "family": "none"
+    },
+    "3979": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.047361135482788,
+        "family": "none"
+    },
+    "3980": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0405700206756592,
+        "family": "none"
+    },
+    "4126": {
+        "name": "Nightmare Pup",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 46
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8421376,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 0.3499999940395355,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.5625
+        },
+        "sex": "none",
+        "size": 0.75,
+        "family": "nightmare_court"
+    },
+    "4127": {
+        "name": "Nightmare Court Duelist",
+        "description": "Challenges",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.051406741142273,
+        "family": "nightmare_court"
+    },
+    "4390": {
+        "name": "Worker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 20
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 0.937285304069519,
+        "family": "none"
+    },
+    "4391": {
+        "name": "Worker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 20
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 1.0170859098434448,
+        "family": "none"
+    },
+    "4406": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9674444198608398,
+        "family": "none"
+    },
+    "5096": {
+        "name": "Jungle Wurm",
+        "description": "Tunnels • Bites",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8519680,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 1.5
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "5273": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0324833393096924,
+        "family": "none"
+    },
+    "5371": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0518832206726074,
+        "family": "none"
+    },
+    "5379": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9203557968139648,
+        "family": "none"
+    },
+    "5381": {
+        "name": "Lionguard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0507029294967651,
+        "family": "none"
+    },
+    "5561": {
+        "name": "Spider Hatchling",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518528,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "nightmare_court"
+    },
+    "5562": {
+        "name": "Mutated Fish",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 524291,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 4,
+        "family": "nightmare_court"
+    },
+    "6771": {
+        "name": "Jungle Wurm Hatchling",
+        "description": "Tunnels • Bites",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8519680,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 1.5
+        },
+        "sex": "none",
+        "size": 0.4000000059604645,
+        "family": "none"
+    },
+    "6975": {
+        "name": "Caithe",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.0009411573410034,
+        "family": "none"
+    },
+    "6977": {
+        "name": "Logan Thackeray",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0094228982925415,
+        "family": "none"
+    },
+    "6978": {
+        "name": "Rytlock Brimstone",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0468292236328125,
+        "family": "none"
+    },
+    "7065": {
+        "name": "Nightmare Court Cultist",
+        "description": "Bleeds • Manipulates Time",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.8500000238418579,
+        "family": "nightmare_court"
+    },
+    "7339": {
+        "name": "Undergrowth Spider Queen",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.5,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 2.25,
+        "family": "nightmare_court"
+    },
+    "7393": {
+        "name": "Nightmare Husk",
+        "description": "Knockback",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 0.8999999761581421,
+        "family": "nightmare_court"
+    },
+    "7394": {
+        "name": "Greater Nightmare Vine",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "nightmare_court"
+    },
+    "7396": {
+        "name": "Nightmare Court Knight",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "nightmare_court"
+    },
+    "10078": {
+        "name": "Nightmare Court Archer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.0529097318649292,
+        "family": "nightmare_court"
+    },
+    "10110": {
+        "name": "Unstable Nightmare Husk",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "10111": {
+        "name": "Volatile Nightmare",
+        "description": "Applies Heavy Bleeding • Fast",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545292321,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 0.911906361579895,
+        "family": "nightmare_court"
+    },
+    "10180": {
+        "name": "Undergrowth Stonetouch",
+        "description": "Paralysis",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "nightmare_court"
+    },
+    "10181": {
+        "name": "Undergrowth Bloodfang",
+        "description": "Drains Life",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "nightmare_court"
+    },
+    "10220": {
+        "name": "Torrential Husk",
+        "description": "Knockback • Summons Bees",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            },
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 0.8999999761581421,
+        "family": "nightmare_court"
+    },
+    "10221": {
+        "name": "Flametouched Husk",
+        "description": "Knockback • Burning",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 0.8999999761581421,
+        "family": "nightmare_court"
+    },
+    "10333": {
+        "name": "Death Touched Swarm",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 60
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 10797600,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "nightmare_court"
+    },
+    "10519": {
+        "name": "Forest Spider Hatchling",
+        "description": "Poison Clouds",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518528,
+        "multipliers": {
+            "power": 0.75,
+            "precision": 0.550000011920929,
+            "toughness": 0.5,
+            "vitality": 0.550000011920929,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.5625
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "none"
+    },
+    "10625": {
+        "name": "Living Nightmare",
+        "description": "Poisons",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10780672,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.1875
+        },
+        "sex": "none",
+        "size": 0.75,
+        "family": "nightmare_court"
+    },
+    "10626": {
+        "name": "Fiendish Nightmare",
+        "description": "Inflicts Weakness • Steals Life from Poisoned Foes",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_story",
+                "level": 50
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518528,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "nightmare_court"
+    },
+    "10899": {
+        "name": "Oakheart",
+        "description": "Immobilizes Foes",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 55
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 547520512,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 2.5,
+        "family": "none"
+    },
+    "12140": {
+        "name": "Deputy Turma",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 15204355,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "female",
+        "size": 0.9386142492294312,
+        "family": "none"
+    },
+    "12256": {
+        "name": "Aetherblade Swashbuckler",
+        "description": "Bleeds",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.7999999523162842,
+            "precision": 1.2999999523162842,
+            "toughness": 1,
+            "vitality": 0.800000011920929,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12257": {
+        "name": "Aetherblade Thug",
+        "description": "Immobilize • Knocksdown",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.2999999523162842,
+            "precision": 1,
+            "toughness": 1.5,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12259": {
+        "name": "Aetherblade Thumper",
+        "description": "Protective Shield",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.2999999523162842,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1.600000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12260": {
+        "name": "Aetherblade Swashbuckler",
+        "description": "Bleeds",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.7999999523162842,
+            "precision": 1.2999999523162842,
+            "toughness": 1,
+            "vitality": 0.800000011920929,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12261": {
+        "name": "Aetherblade Taskmaster",
+        "description": "Confuses • Blinds",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12262": {
+        "name": "Aetherblade Striker",
+        "description": "Lightning Attacks",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12265": {
+        "name": "Aetherblade Taskmaster",
+        "description": "Confuses • Blinds",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12268": {
+        "name": "Aetherblade Thumper",
+        "description": "Protective Shield",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.2999999523162842,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1.600000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12269": {
+        "name": "Aetherblade Striker",
+        "description": "Lightning Attacks",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12271": {
+        "name": "Aetherblade Thug",
+        "description": "Immobilize • Knocksdown • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 1.7999999523162842,
+            "precision": 1,
+            "toughness": 1.2999999523162842,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12272": {
+        "name": "Aetherblade Thumper",
+        "description": "Protective Shield • Dazes • Heals",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 1.7999999523162842,
+            "precision": 1,
+            "toughness": 1.2999999523162842,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 9,
+            "health_multiplier": 3
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12273": {
+        "name": "Aetherblade Swashbuckler",
+        "description": "Bleeds • Throws Dagger",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12274": {
+        "name": "Aetherblade Swashbuckler",
+        "description": "Bleeds • Throws Dagger",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12277": {
+        "name": "Aetherblade Striker",
+        "description": "Lightning Attacks • Stuns",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12278": {
+        "name": "Aetherblade Grenadier",
+        "description": "Throws Grenades",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12279": {
+        "name": "Aetherblade Grenadier",
+        "description": "Throws Grenades",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12280": {
+        "name": "Aetherblade Grenadier",
+        "description": "Throws Grenades",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12281": {
+        "name": "Aetherblade Thug",
+        "description": "Immobilize • Knocksdown • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 1.7999999523162842,
+            "precision": 1,
+            "toughness": 1.2999999523162842,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12282": {
+        "name": "Aetherblade Grenadier",
+        "description": "Throws Grenades",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12283": {
+        "name": "Aetherblade Taskmaster",
+        "description": "Confuses • Blinds",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12284": {
+        "name": "Aetherblade Thumper",
+        "description": "Protective Shield • Dazes • Heals",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 1.7999999523162842,
+            "precision": 1,
+            "toughness": 1.2999999523162842,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 9,
+            "health_multiplier": 3
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12285": {
+        "name": "Aetherblade Striker",
+        "description": "Lightning Attacks • Stuns",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12287": {
+        "name": "Aetherblade Thug",
+        "description": "Immobilize • Knocksdown • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 1.2999999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 13,
+            "health_multiplier": 4
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12288": {
+        "name": "Aetherblade Thug",
+        "description": "Immobilize • Knocksdown • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 1.2999999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 13,
+            "health_multiplier": 4
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12289": {
+        "name": "Aetherblade Grenadier",
+        "description": "Throws Grenades",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12290": {
+        "name": "Aetherblade Grenadier",
+        "description": "Throws Grenades",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12291": {
+        "name": "Aetherblade Swashbuckler",
+        "description": "Bleeds • Throws Dagger",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12292": {
+        "name": "Aetherblade Swashbuckler",
+        "description": "Bleeds • Throws Dagger",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12293": {
+        "name": "Aetherblade Taskmaster",
+        "description": "Confuses • Blinds",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12294": {
+        "name": "Aetherblade Taskmaster",
+        "description": "Confuses • Blinds",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 10,
+            "health_multiplier": 5
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12295": {
+        "name": "Aetherblade Thumper",
+        "description": "Protective Shield • Dazes • Heals",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 1.2999999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 14,
+            "health_multiplier": 4
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12296": {
+        "name": "Aetherblade Thumper",
+        "description": "Protective Shield • Dazes • Heals",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 1.2999999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 14,
+            "health_multiplier": 4
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12297": {
+        "name": "Aetherblade Striker",
+        "description": "Lightning Attacks • Stuns",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12298": {
+        "name": "Aetherblade Striker",
+        "description": "Lightning Attacks • Stuns",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12477": {
+        "name": "Twisted Nightmare",
+        "description": "Launches Grenades • Reflective Shield • Launches • Knocks Down",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545259521,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12483": {
+        "name": "Twisted Horror",
+        "description": "Builds Twisted Menders • Knocks Down",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518529,
+        "multipliers": {
+            "power": 1.7999999523162842,
+            "precision": 1.2999999523162842,
+            "toughness": 1,
+            "vitality": 1.2000000178813934,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "scarlet_minion"
+    },
+    "12726": {
+        "name": "Holographic Thug",
+        "description": "Electric Explosion on Death",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518529,
+        "multipliers": {
+            "power": 1.2999999523162842,
+            "precision": 1,
+            "toughness": 1.5,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.375
+        },
+        "sex": "male",
+        "size": 0.800000011920929,
+        "family": "scarlet_minion"
+    },
+    "12727": {
+        "name": "Holographic Striker",
+        "description": "Electric Explosion on Death",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518529,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.375
+        },
+        "sex": "male",
+        "size": 0.800000011920929,
+        "family": "scarlet_minion"
+    },
+    "12728": {
+        "name": "Holographic Taskmaster",
+        "description": "Electric Explosion on Death",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518529,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.375
+        },
+        "sex": "female",
+        "size": 0.800000011920929,
+        "family": "scarlet_minion"
+    },
+    "12730": {
+        "name": "Scarlet Briar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 1.149999976158142,
+        "family": "nightmare_court"
+    },
+    "12731": {
+        "name": "Scarlet Briar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 3,
+        "family": "nightmare_court"
+    },
+    "12734": {
+        "name": "Holographic Thug",
+        "description": "Electric Explosion on Death",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518529,
+        "multipliers": {
+            "power": 1.2999999523162842,
+            "precision": 1,
+            "toughness": 1.5,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.375
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "scarlet_minion"
+    },
+    "12735": {
+        "name": "Aetherblade Thug",
+        "description": "Immobilize • Knocksdown • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 547389441,
+        "multipliers": {
+            "power": 1.7999999523162842,
+            "precision": 1,
+            "toughness": 1.2999999523162842,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12740": {
+        "name": "Aetherblade Striker",
+        "description": "Lightning Attacks • Stuns",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 547389441,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "scarlet_minion"
+    },
+    "12746": {
+        "name": "Jungle Wurm",
+        "description": "Tunnels • Bites",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545390592,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 6
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "12747": {
+        "name": "Local",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545783841,
+        "multipliers": {
+            "power": 3,
+            "precision": 0,
+            "toughness": 1.2999999523162842,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 13,
+            "health_multiplier": 4
+        },
+        "sex": "female",
+        "size": 0.9277999997138977,
+        "family": "none"
+    },
+    "12748": {
+        "name": "Local",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545783841,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 0.800000011920929,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 4
+        },
+        "sex": "male",
+        "size": 1.000117301940918,
+        "family": "none"
+    },
+    "12749": {
+        "name": "Aetherblade Foreman Spur",
+        "description": "Throws Axes • Spins",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914977,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.100000023841858,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 31.499999165534973
+        },
+        "sex": "male",
+        "size": 1.75,
+        "family": "scarlet_minion"
+    },
+    "12750": {
+        "name": "Slick",
+        "description": "Oil Lob • Elixir • Fiery Overload • Frenzy",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8947713,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 0.75,
+            "vitality": 0.800000011920929,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.399999976158142,
+        "family": "scarlet_minion"
+    },
+    "12751": {
+        "name": "Sparki",
+        "description": "Fire Lob • Backdraft • Fiery Overload • Frenzy",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8947712,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.100000023841858,
+            "vitality": 0.8800000321865085,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 35
+        },
+        "sex": "female",
+        "size": 0.5,
+        "family": "scarlet_minion"
+    },
+    "12752": {
+        "name": "Oil-Absorbing Ooze",
+        "description": "Absorbs • Massive Hit • Life Steal • Toxic Explosion",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518528,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 2,
+            "vitality": 5.5000001192092896,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "none"
+    },
+    "12753": {
+        "name": "Clockheart",
+        "description": "Armor-Charged Super Attack • Massive Ranged Attacks • Frontal Cone AoE",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8521760,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.100000023841858,
+            "vitality": 1.100000023841858,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 35
+        },
+        "sex": "none",
+        "size": 4,
+        "family": "none"
+    },
+    "12764": {
+        "name": "Slick Ooze",
+        "description": "Massive Hit",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518528,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 0.8250000178813934,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "12765": {
+        "name": "Lava Elemental",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518592,
+        "multipliers": {
+            "power": 2.25,
+            "precision": 1.100000023841858,
+            "toughness": 2,
+            "vitality": 2.200000047683716,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "elemental"
+    },
+    "12766": {
+        "name": "Steam Watcher",
+        "description": "Sounds Alarm upon Hostile Contact",
+        "occurrences": [
+            {
+                "location": "twilight_arbor_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545783812,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 1.5
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "none"
+    }
+}

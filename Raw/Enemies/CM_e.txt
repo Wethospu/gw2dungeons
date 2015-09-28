@@ -3,11 +3,10 @@
 potion=Outlaw|main
 
 Name=Prototype Golem
+ID=3109
 Category=Champion
 image=http://wiki.guildwars2.com/images/a/a4/Prototype_Golem.jpg
 Path=CMS
-# Verified.
-type=outlaw
 
 attack=Resistant to interrupts
 effect=Daze and stun have no effect
@@ -56,10 +55,10 @@ subeffect=pull:0
 ##################################################################
 
 Name=Door Guard
+# VERIFY
+ID=3077
 Category=Champion
 Path=CMS
-# Verified.
-type=outlaw
 
 Attack=Slash
 image=http://i.imgur.com/yV2jufu.gif
@@ -77,9 +76,9 @@ subeffect=damage:0
 ##################################################################
 
 Name=Separatist Fighter
+ID=11016
 Category=champion
 Path=CMS
-type=outlaw
 
 attack=Slash
 image=http://i.imgur.com/aYsVhMP.gif
@@ -104,9 +103,9 @@ subeffect=knockback:1.5
 ##################################################################
 
 Name=Separatist Lieutenant
+ID=6088
 Category=champion
 Path=CMS
-type=outlaw
 
 attack=Basic attack
 image=https://i.imgur.com/dJPuBts.gif
@@ -135,20 +134,18 @@ subeffect=poison:0
 ##################################################################
 
 Name=Separatist Captain DeLana
+ID=7943
 Category=Legendary
-# Verified.
 image=http://wiki.guildwars2.com/images/d/df/Monique_DeLana.jpg
 Path=CMS
-type=outlaw
 
 ##################################################################
 
 Name=Sure-Shot Seamus
+ID=8888
 Category=Legendary
 image=http://wiki.guildwars2.com/images/7/7e/Sure-shot_Seamus.jpg
 Path=CM1|CM3
-type=outlaw
-condition=680
 
 Attack=Starts with pistols, swaps to shotgun at 95% health
 
@@ -185,10 +182,10 @@ subeffect=knockback:2.8
 ##################################################################
 
 Name=Gunpowder Morgan
+ID=8868
 Category=Legendary
 image=http://wiki.guildwars2.com/images/d/d4/Wahlen.jpg
 Path=CM1
-type=outlaw
 
 Attack=Doesn't move
 
@@ -218,10 +215,9 @@ subeffect=knockback:1.5
 ##################################################################
 
 Name=Bloody Victoria
+ID=8867
 Category=Legendary
 Path=CM1
-type=outlaw
-condition=640
 
 Attack=Slash
 cooldown=4
@@ -262,18 +258,24 @@ subeffect=bleeding:10:2
 ##################################################################
 
 Name=Frost
+ID=8869
 Category=Legendary
 image=http://wiki.guildwars2.com/images/d/df/Frost.jpg
 Path=CM1
-type=outlaw
+
+##################################################################
+
+Name=PWR 935i
+ID=9500
+Category=elite
+Path=CM1
 
 ##################################################################
 
 Name=Taylor
+ID=8891
 Category=champion
 Path=CM2
-type=outlaw
-health=174210
 
 attack=Can't move or be moved
 
@@ -301,18 +303,16 @@ effect=evade (1 s)
 ##################################################################
 
 Name=Marius
+ID=8889
 Category=champion
 Path=CM2
-type=outlaw
-# Not verified.
-health=174210
 
 ##################################################################
 
 Name=Bridgette
+ID=8871
 Category=Legendary
 Path=CM2
-type=outlaw
 
 Attack=Pure/True Strike
 effect=melee
@@ -332,19 +332,33 @@ subeffect=retaliation:0
 
 ##################################################################
 
+Name=Sword of Justice
+ID=6381
+Category=Legendary
+Path=CM2
+
+##################################################################
+
 Name=Hound
+ID=9367
 Category=Legendary
 image=http://wiki.guildwars2.com/images/4/4e/Juvenile_Krytan_Drakehound.jpg
 Path=CM2
-type=outlaw
+
+##################################################################
+
+Name=Martha
+ID=8872
+Category=Legendary
+Path=CM2
 
 ##################################################################
 
 Name=Turmaine
+ID=9348
 Category=Legendary
 image=http://wiki.guildwars2.com/images/5/5e/Bandit_Thug.jpg
 Path=CM2
-type=outlaw
 
 Attack=Condition wells
 effect=multiple ticking AoEs
@@ -369,10 +383,10 @@ effect=multiple dashes
 ##################################################################
 
 Name=Wahlen
+ID=8866
 Category=Legendary
 image=http://wiki.guildwars2.com/images/d/d4/Wahlen.jpg
 Path=CM3
-type=outlaw
 
 Attack=Throw Bomb
 image=https://i.imgur.com/929kjyQ.gif
@@ -401,10 +415,10 @@ subeffect=knockback:1.5
 ##################################################################
 
 Name=Vallog
+ID=9433
 Category=Legendary
 image=http://wiki.guildwars2.com/images/7/72/Vallog.jpg
 Path=CM3
-type=outlaw
 
 Attack=Earth Spikes
 image=https://i.imgur.com/9HsKVVn.gif
@@ -432,12 +446,10 @@ subeffect=reflects projectiles
 ##################################################################
 
 Name=Bandit Archer
+ID=8884
 alt=Bandit Archers|Archer|Archers
-# Not verified.
-health=43416
 Category=Elite
 Path=CM1|CM2|CM3
-type=outlaw
 
 Attack=Shoot
 cooldown=1.5
@@ -466,10 +478,10 @@ subeffect=Block all attacks
 ##################################################################
 
 Name=Bandit Archer
+ID=8883
 alt=Bandit Archers|Archer|Archers
 Category=Normal
 Path=CM1|CM2|CM3
-type=outlaw
 
 Attack=Shoot
 cooldown=1.5
@@ -498,11 +510,10 @@ subeffect=Block all attacks
 ##################################################################
 
 Name=Bandit Bomber
+ID=9026
 alt=Bandit Bombers|Bomber|Bombers
-health=43416
 Category=Elite
 Path=CM1|CM2|CM3
-type=outlaw
 
 Attack=Throw Bomb
 animation=pulls right arm behind back|0.5|throws a grenade
@@ -533,12 +544,10 @@ subeffect=knockback:1.5
 # Same enemy: Thauma Bandit Scout
 
 Name=Bandit Cutpurse
+ID=8876
 alt=Bandit Cutpurses|Cutpurse|Cutpurses
-health=43416
 Category=Elite
 Path=CM1|CM2|CM3
-type=outlaw
-condition=640
 
 Attack=Slash
 image=https://i.imgur.com/CiA1iXz.gif
@@ -579,15 +588,17 @@ subeffect=Poison:6
 copy=Bandit Cutpurse|elite
 name=Bandit Scout
 alt=Bandit Scouts|Scout|Scouts
+# VERIFY
+ID=8876
 
 ##################################################################
+# Levels 45 and 46 exist.
 
 Name=Bandit Cutpurse
+ID=8875
 alt=Bandit Cutpurses|Cutpurse|Cutpurses
 Category=Normal
 Path=CM1|CM2|CM3
-type=outlaw
-condition=640
 
 Attack=Slash
 image=https://i.imgur.com/CiA1iXz.gif
@@ -624,24 +635,22 @@ effect=buff (15 s), on hits
 subeffect=Poison:6
 
 ##################################################################
+# Both level 45 and 50 exist.
 
 Name=Bandit Hooligan
+ID=8887
 alt=Bandit Hooligans|Hooligan|Hooligans
-# Not verified.
-health=43416
 Category=Elite
 Path=CM1|CM2|CM3
-type=outlaw
 
 ##################################################################
 
-Name=Bandit Rifleman
-alt=Bandit Riflemen|Rifleman|Riflemen
+Name=Separatist Sniper
+ID=3218
+alt=Separatist Snipers|Sniper|Snipers
 image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
 Category=Elite
 Path=CMS
-type=outlaw
-condition=540
 
 attack=Prefers targets with ranged weapons
 
@@ -671,6 +680,7 @@ subeffect=knockdown:3
 # Same enemy: Thauma Bandit Rifleman
 
 Name=Bandit Rifleman
+ID=8890
 alt=Bandit Riflemen|Rifleman|Riflemen
 image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
 health=43416
@@ -704,12 +714,11 @@ subeffect=knockdown:3
 ##################################################################
 
 Name=Bandit Rifleman
+ID=8885
 alt=Bandit Riflemen|Rifleman|Riflemen
 image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
 Category=normal
 Path=CM1
-type=outlaw
-condition=460
 
 attack=Prefers targets with ranged weapons
 
@@ -736,15 +745,40 @@ subeffect=knockdown:3
 ##################################################################
 copy=Bandit Rifleman|Normal
 name=Bandit Enforcer (Sniper)
+# VERIFY
+ID=8885
 alt=Enforcer (Sniper)
 image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
 
+##################################################################
+#
+
 Name=Bandit Scatter Shot
+ID=8881
 alt=Bandit Scatter Shots|Scatter Shot|Scatter Shots
-health=43416
 Category=Elite
 Path=CM1|CM2|CM3
-type=outlaw
+
+attack=Shoot
+effect=projectile
+subeffect=damage:0
+
+attack=Grapeshot
+effect=projectiles (cone)
+subeffect=damage:0
+
+attack=Chain Shot
+effect=projectiles over time
+subeffect=damage:0
+
+##################################################################
+# Both levels 45 and 46 exist.
+
+Name=Bandit Scatter Shot
+ID=8890
+alt=Bandit Scatter Shots|Scatter Shot|Scatter Shots
+Category=normal
+Path=CM1|CM2|CM3
 
 attack=Shoot
 effect=projectile
@@ -771,6 +805,7 @@ type=outlaw
 ##################################################################
 
 Name=Bandit Enforcer
+# TODO ID
 alt=Bandit Enforcers|Enforcer|Enforcers
 Category=Normal
 Path=CM1|CM2|CM3
@@ -779,12 +814,51 @@ type=outlaw
 ##################################################################
 
 Name=Bandit Thug
+ID=8879
 alt=Bandit Thugs|Thug|Thugs
-# Not verified.
-health=43416
 Category=Elite
 Path=CM1|CM2|CM3
-type=outlaw
+
+attack=True Strike (1)
+animation=swings mace from right|0.5
+effect=melee
+subeffect=damage:1015008
+
+attack=Pure Strike (2)
+animation=swings mace from left|0.6
+effect=melee
+subeffect=damage:1021112
+
+attack=Faithful Strike (3)
+animation=kneels and swings mace from right|1
+effect=melee
+subeffect=damage:1430952
+subeffect=daze:1
+
+attack=Shield Bash
+cooldown=7
+animation=turns left and dashes shield forward|0.5
+effect=dash
+subeffect=damage:1094360
+subeffect=launch:3.3
+
+attack=Buff
+animation=raises hands in air|1
+cooldown=18
+effect=PBAoE
+subeffect=Protection:8
+subeffect=Stability:8
+subeffect=Might:8:5
+
+##################################################################
+# Level 46
+
+Name=Bandit Thug
+ID=8878
+alt=Bandit Thugs|Thug|Thugs
+Category=normal
+Path=CM1|CM2|CM3
+level=46
 
 attack=True Strike (1)
 animation=swings mace from right|0.5
@@ -820,12 +894,18 @@ subeffect=Might:8:5
 ##################################################################
 
 Name=Bandit Saboteur
+ID=8874
 alt=Bandit Saboteurs|Saboteur|Saboteurs
-# Not verified.
-health=43416
 Category=Elite
 Path=CM1|CM2|CM3
-type=outlaw
+
+##################################################################
+
+Name=Bandit Saboteur
+ID=8873
+alt=Bandit Saboteurs|Saboteur|Saboteurs
+Category=normal
+Path=CM1|CM2|CM3
 
 ##################################################################
 
@@ -891,11 +971,19 @@ Path=CM2
 ##################################################################
 
 Name=Hunting Dog
+ID=11017
 alt=Hunting Dogs
 Category=elite
 image=http://wiki.guildwars2.com/images/4/4e/Juvenile_Krytan_Drakehound.jpg
-# Verified.
-type=outlaw
+Path=CMS
+
+##################################################################
+
+Name=Hunting Dog
+ID=5982
+alt=Hunting Dogs
+Category=normal
+image=http://wiki.guildwars2.com/images/4/4e/Juvenile_Krytan_Drakehound.jpg
 Path=CMS
 
 ##################################################################
@@ -910,6 +998,7 @@ Path=CMS
 ##################################################################
 
 Name=Dagonet
+ID=5876
 Category=ally
 image=http://wiki.guildwars2.com/images/1/12/Dagonet.jpg
 Path=CMS
@@ -917,6 +1006,7 @@ Path=CMS
 ##################################################################
 
 Name=Logan Thackeray
+ID=3611
 Category=ally
 image=http://wiki.guildwars2.com/images/d/d3/Captain_Logan_Thackeray.jpg
 Path=CMS
@@ -924,6 +1014,7 @@ Path=CMS
 ##################################################################
 
 Name=Mia Kindleshot
+ID=5874
 Category=ally
 image=http://wiki.guildwars2.com/images/9/97/Mia_Kindleshot.png
 Path=CMS
@@ -931,6 +1022,7 @@ Path=CMS
 ##################################################################
 
 Name=Minister Caudecus
+ID=5877
 Category=ally
 image=http://wiki.guildwars2.com/images/0/0c/Minister_Caudecus_new.jpg
 Path=CMS
@@ -938,13 +1030,23 @@ Path=CMS
 ##################################################################
 
 Name=Monique DeLana
+ID=8011
 Category=ally
 image=http://wiki.guildwars2.com/images/d/df/Monique_DeLana.jpg
 Path=CMS
 
 ##################################################################
 
-Name=Noble
+Name=Noble (female)
+ID=5654
+Category=ally
+image=http://wiki.guildwars2.com/images/f/fe/Noble.jpg
+Path=CMS
+
+##################################################################
+
+Name=Noble (male)
+ID=5868
 Category=ally
 image=http://wiki.guildwars2.com/images/f/fe/Noble.jpg
 Path=CMS
@@ -952,6 +1054,7 @@ Path=CMS
 ##################################################################
 
 Name=Phlunt
+ID=3123
 Category=ally
 image=http://wiki.guildwars2.com/images/f/f1/Phlunt.jpg
 Path=CMS
@@ -959,6 +1062,7 @@ Path=CMS
 ##################################################################
 
 Name=Pygmy Moa
+ID=9056
 Category=ally
 image=http://wiki.guildwars2.com/images/c/ca/Pygmy_Moa.jpg
 Path=CMS
@@ -966,13 +1070,24 @@ Path=CMS
 ##################################################################
 
 Name=Queen Jennah
+ID=5879
 Category=ally
 image=http://wiki.guildwars2.com/images/4/43/Queen_Jennah.jpg
 Path=CMS
 
 ##################################################################
 
-Name=Servant
+Name=Servant (male)
+# VERIFY 9398
+ID=5651
+Category=ally
+image=http://wiki.guildwars2.com/images/0/0e/Servant.jpg
+Path=CMS
+
+##################################################################
+
+Name=Servant (female)
+ID=5869
 Category=ally
 image=http://wiki.guildwars2.com/images/0/0e/Servant.jpg
 Path=CMS
@@ -980,6 +1095,7 @@ Path=CMS
 ##################################################################
 
 Name=Sigfast
+ID=5875
 Category=ally
 image=http://wiki.guildwars2.com/images/e/ef/Sigfast.jpg
 Path=CMS
@@ -987,6 +1103,7 @@ Path=CMS
 ##################################################################
 
 Name=Uzolan
+ID=3085
 Category=ally
 image=http://wiki.guildwars2.com/images/1/13/Uzolan_the_Artist.jpg
 Path=CMS
@@ -994,6 +1111,7 @@ Path=CMS
 ##################################################################
 
 Name=Zojja
+ID=3581
 Category=ally
 image=http://wiki.guildwars2.com/images/2/29/Zojja.jpg
 Path=CMS
@@ -1014,19 +1132,33 @@ Path=CM1|CM2|CM3
 ##################################################################
 
 Name=Exemplar Talie
+ID=6075
 Alt=Talie
 Category=ally
 image=http://wiki.guildwars2.com/images/f/f1/Exemplar_Talie.jpg
 Path=CM1|CM2|CM3
-health=18995
 
 ##################################################################
 
 Name=Medic Rosina
+ID=5650
 Alt=Rosina
 Category=ally
 Path=CM2
-health=18995
+
+##################################################################
+
+Name=Seraph Soldier (male)
+ID=6787
+Category=ally
+Path=CM1|CM2|CM3
+
+##################################################################
+
+Name=Seraph Soldier (female)
+ID=5649
+Category=ally
+Path=CM1|CM2|CM3
 
 ##################################################################
 
@@ -1037,14 +1169,33 @@ Path=CM2
 
 ##################################################################
 
-Name=Servant
+Name=Servant (male)
+# VERIFY 9398
+ID=5651
 Category=ally
 image=http://wiki.guildwars2.com/images/0/0e/Servant.jpg
 Path=CM1|CM2|CM3
 
 ##################################################################
 
-Name=Shining Blade
+Name=Servant (female)
+ID=5869
+Category=ally
+image=http://wiki.guildwars2.com/images/0/0e/Servant.jpg
+Path=CM1|CM2|CM3
+
+##################################################################
+
+Name=Shining Blade (male)
+ID=6074
+Category=ally
+image=http://wiki.guildwars2.com/images/4/49/Shining_Blade_%28NPC%29.jpg
+Path=CM1|CM2|CM3
+
+##################################################################
+
+Name=Shining Blade (female)
+ID=6076
 Category=ally
 image=http://wiki.guildwars2.com/images/4/49/Shining_Blade_%28NPC%29.jpg
 Path=CM1|CM2|CM3
@@ -1052,6 +1203,7 @@ Path=CM1|CM2|CM3
 ##################################################################
 
 Name=Traffa
+ID=5671
 Category=ally
 image=http://wiki.guildwars2.com/images/1/1f/Traffa.png
 Path=CM1
@@ -1059,6 +1211,8 @@ Path=CM1
 ##################################################################
 
 Name=Worker
+# VERIFY 5679, 5680, 5681, 5682, 5683, 5684, 5685, 5686.
+ID=5679
 Category=ally
 image=http://wiki.guildwars2.com/images/e/e9/Worker.jpg
 Path=CM1|CM2|CM3

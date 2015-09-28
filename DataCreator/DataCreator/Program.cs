@@ -291,7 +291,7 @@ namespace DataCreator
       CheckInternetSettings();
       LoadSettings();
       Dictionary<string, EnemyAttributes> enemyData;
-      using (StreamReader r = new StreamReader(Constants.DataEnemyRaw + "output_ac.json"))
+      using (StreamReader r = new StreamReader(Constants.DataEnemyRaw + "data.json"))
       {
         string json = r.ReadToEnd();
         enemyData = JsonConvert.DeserializeObject<Dictionary<string, EnemyAttributes>>(json);

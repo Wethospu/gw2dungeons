@@ -58,10 +58,10 @@ After killing initial enemies near Sigfast more will appear. You should run back
 
 name=Outside area
 tactic=normal
-Two patrols with enemy=Hunting_Dogs:elite, lots of enemies and enemy=Riflemen:elite near trees.
+Two patrols with enemy=Hunting_Dogs:elite, lots of enemies and enemy=Snipers:elite near trees.
 Kill patrols before getting close. Bring anti-CC against dogs.
-Stay behind trees to avoid Riflemen. Kill enemies.
-Go finish off Riflemen.
+Stay behind trees to avoid Snipers. Kill enemies.
+Go finish off Snipers.
 
 name=enemy=Separatist_Captain_DeLana:legendary
 tactic=normal
