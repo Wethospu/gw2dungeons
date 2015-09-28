@@ -329,10 +329,10 @@ function dungeonToPages(dungeon) {
     return new Array();
 }
 
-// Finds a clicked enemy and loads it to detail.
+// Finds a clicked enemy and loads details about it.
 function openEnemyOverlay() {
     var enemyIndexes = $(this).attr("data-index").split(":");
-	enemyIndexes.sort();
+	var enemyLevels = $(this).attr("data-level").split(":"); 
 	if (!$("#data-overlay").hasClass("in")) {
 		$('#data-overlay').modal();
 		$('#data-overlay').css('padding-right', '');
@@ -341,29 +341,32 @@ function openEnemyOverlay() {
     var enemyDiv = $("<div />");
 	var dungeon = $(this).attr("data-dungeon");
     $(enemyDiv).load('enemies/' + dungeon + '.htm', function () {
-		var counter = -1;
-		var enemyIndex = 0;
-		$(enemyDiv).find(".enemy").each(function () {
-			counter++;
-			if (enemyIndex >= enemyIndexes.length)
-				return;
-			if (enemyIndexes[enemyIndex] != counter)
-				return;
-			enemyIndex++;
-			var id =  dungeon + '' + counter;
-			overlayRemoveOld(id);
-			// Create a new tab. / 2015-07-31 / Wethospu
-			var content = $(this)[0].outerHTML;
-			var name =  $(content).find(".enemy-name").html();
-			$("#overlay-nav").append('<li><a class="set-event" href="#tab-' + id + '" data-toggle="tab" data-description="' + id + '" data-width="1250" data-height="0">' + name + '</a></li>');
-			$("#overlay-pane").append('<div class="tab-pane" id="tab-' + id + '">' + content + '</div>');
-			// Activate the new tab. / 2015-09-16 / Wethospu
-			$('#overlay-nav a[data-toggle="tab"]').each(function () {
-				if (id == $(this).data('description'))
-					$(this).tab('show');		
+		// Find enemies one by one. / 2015-09-28 / Wethospu
+		// This is pretty inefficient but order shouldn't be changed. Also multiple enemies are loaded rarely.
+		for (var i = 0; i < enemyIndexes.length; i++) {
+			var counter = -1;
+			$(enemyDiv).find(".enemy").each(function () {
+				counter++;
+				if (enemyIndexes[i] != counter)
+					return;
+				var id =  dungeon + '' + counter;
+				overlayRemoveOld(id);
+				// Set enemy level dynamically based on enemy link. / 2015-09-28 / Wethospu
+				if (enemyLevels[i] > 0)
+					$(this).data('level', level);
+				// Create a new tab. / 2015-07-31 / Wethospu
+				var content = $(this)[0].outerHTML;
+				var name =  $(content).find(".enemy-name").html();
+				$("#overlay-nav").append('<li><a class="set-event" href="#tab-' + id + '" data-toggle="tab" data-description="' + id + '" data-width="1250" data-height="0">' + name + '</a></li>');
+				$("#overlay-pane").append('<div class="tab-pane" id="tab-' + id + '">' + content + '</div>');
+				// Activate the new tab. / 2015-09-16 / Wethospu
+				$('#overlay-nav a[data-toggle="tab"]').each(function () {
+					if (id == $(this).data('description'))
+						$(this).tab('show');		
+				});
+				setOverlaySize(1250, 0);
 			});
-			setOverlaySize(1250, 0);
-		});
+		}	
 		applyEnemySettings(false);
 		handleOverlayLinks();
 		loadThumbs();

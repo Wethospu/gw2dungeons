@@ -69,10 +69,10 @@ namespace DataCreator.Utility
      *                                                                                             *
      * Returns enemies matching the requirements.                                                  *
      * enemies: List of enemies to search.                                                         *
-     * name, category, level, path: Requirements. Use "" if you want to exclude a requirement.     *
+     * name, category, path: Requirements. Use "" if you want to exclude a requirement.            *
      *                                                                                             * 
      ***********************************************************************************************/
-    public static List<Enemy> FindEnemies(List<Enemy> enemies, string name, string category, int level, string path)
+    public static List<Enemy> FindEnemies(List<Enemy> enemies, string name, string category, string path)
     {
       if (enemies == null)
       {
@@ -98,11 +98,6 @@ namespace DataCreator.Utility
         if (category.Length > 0)
         {
           if (!enemy.Category.ToLower().Equals(category))
-            continue;
-        }
-        if (level > 0)
-        {
-          if (enemy.Level != level)
             continue;
         }
         if (path.Length > 0)
@@ -149,8 +144,8 @@ namespace DataCreator.Utility
         foundEnemies = partialNameMatches;
       else
         foundEnemies = partialAltMatches;
-      // If no level was given, enemies with same level as the path should have a priority.
-      if (level == 0 && foundEnemies.Count > 1)
+      // Enemies with same level as the path should have a priority.
+      if (foundEnemies.Count > 1)
       {
         // Get path specific level.
         var pathLevel = PathToLevel(path);

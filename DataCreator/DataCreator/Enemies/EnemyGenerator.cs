@@ -589,7 +589,6 @@ namespace DataCreator.Enemies
       var name = dataSplit[0];
       var category = "";
       var path = "";
-      var level = 0;
       if (dataSplit.Length > 1)
         category = dataSplit[1];
       if (dataSplit.Length > 2)
@@ -598,10 +597,7 @@ namespace DataCreator.Enemies
           Helper.ShowWarning("' ' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'category'|'path1':'path2':'pathN'\"");
         path = dataSplit[2].Replace(':', '|');
       }
-      if (dataSplit.Length > 3)
-        level = Helper.ParseI(dataSplit[3]);
-
-      var foundEnemies = Gw2Helper.FindEnemies(enemies, name, category, level, path);
+      var foundEnemies = Gw2Helper.FindEnemies(enemies, name, category, path);
       if (foundEnemies.Count == 0)
       {
         Helper.ShowWarning("No enemy found for copy. Change parameters, add missing enemy, change order of enemies or check syntax file.");

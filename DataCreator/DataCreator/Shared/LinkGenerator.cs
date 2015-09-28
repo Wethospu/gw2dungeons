@@ -244,6 +244,7 @@ namespace DataCreator.Shared
       var shownText = CreateEnemyLinkText(linkData);
 
       var enemiesToLink = new List<Enemy>();
+      var enemyLevels = new List<int>();
       // Get linked enemy data.
       var enemySplit = linkData.Split('|');
       foreach (var enemyStr in enemySplit)
@@ -260,8 +261,9 @@ namespace DataCreator.Shared
           category = subSplit[1].ToLower();
         if (subSplit.Length > 2)
           level = Helper.ParseI(subSplit[2].ToLower());
+        enemyLevels.Add(level);
         // Find enemy.
-        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, category, level, path);
+        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, category, path);
         if (foundEnemies.Count == 0)
         {
           Helper.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + path + ". Change parameters, add missing enemy or check syntax file.");
@@ -289,7 +291,16 @@ namespace DataCreator.Shared
           link.Append(':');
       }
       // Add the dungeon
-      link.Append("\" data-dungeon=\"").Append(_currentDungeon).Append("\">");
+      link.Append("\" data-dungeon=\"").Append(_currentDungeon).Append("\"");
+      // Add enemy levels to allow changing enemy level dynamically. / 2015-09-28 / Wethospu
+      link.Append(" data-level=\"");
+      for (var index = 0; index < enemyLevels.Count; index++)
+      {
+        link.Append(enemyLevels[index]);
+        if (index + 1 < enemiesToLink.Count)
+          link.Append(':');
+      }
+      link.Append("\"> ");
       // Add shown text.
       link.Append(shownText).Append("</span>");
       return link.ToString();
@@ -317,17 +328,14 @@ namespace DataCreator.Shared
         var subSplit = enemyStr.Split(':');
         var name = subSplit[0].ToLower();
         var category = "";
-        var level = 0;
         // Ignore shown texts.
         if (name.Equals("text"))
           continue;
         // Get enemy data.
         if (subSplit.Length > 1)
           category = subSplit[1].ToLower();
-        if (subSplit.Length > 2)
-          level = Helper.ParseI(subSplit[2]);
         // Find enemy.
-        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, category, level, path);
+        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, category, path);
         if (foundEnemies.Count == 0)
         {
           Helper.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + path + ". Change parameters, add missing enemy or check syntax file.");
