@@ -14886,5 +14886,4292 @@
         "sex": "none",
         "size": 2,
         "family": "none"
+    },
+	"1195": {
+        "name": "Chicken",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 1
+            }
+        ],
+        "rank": "rank_none",
+        "flag": -2135637504,
+        "multipliers": {
+            "power": 1,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 0.009999999776482582
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "none"
+    },
+    "1250": {
+        "name": "Vigil Crusader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9338338971138,
+        "family": "none"
+    },
+    "1565": {
+        "name": "Vigil Crusader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0115156173706055,
+        "family": "none"
+    },
+    "1567": {
+        "name": "Vigil Crusader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9965125322341919,
+        "family": "none"
+    },
+    "1576": {
+        "name": "Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0523667335510254,
+        "family": "none"
+    },
+    "1583": {
+        "name": "Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 0.9692859649658203,
+        "family": "none"
+    },
+    "1586": {
+        "name": "Priory Scholar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.050752878189087,
+        "family": "none"
+    },
+    "1590": {
+        "name": "Priory Scholar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9398195743560791,
+        "family": "none"
+    },
+    "1592": {
+        "name": "Priory Scholar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0852739810943604,
+        "family": "none"
+    },
+    "1593": {
+        "name": "Priory Scholar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0479528903961182,
+        "family": "none"
+    },
+    "3128": {
+        "name": "Wounded Seraph Soldier",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680069,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.084571361541748,
+        "family": "none"
+    },
+    "3131": {
+        "name": "Wounded Seraph Soldier",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680069,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0977678298950195,
+        "family": "none"
+    },
+    "3384": {
+        "name": "Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9585355520248413,
+        "family": "none"
+    },
+    "3426": {
+        "name": "Whispers Lightbringer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9455458521842957,
+        "family": "none"
+    },
+    "3438": {
+        "name": "Whispers Designer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.008785605430603,
+        "family": "none"
+    },
+    "3461": {
+        "name": "Whispers Lightbringer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 81
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0460498332977295,
+        "family": "none"
+    },
+    "3511": {
+        "name": "Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9501513242721558,
+        "family": "none"
+    },
+    "3947": {
+        "name": "Spark",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388672,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "elemental"
+    },
+    "4404": {
+        "name": "Vigil Warmaster",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0262057781219482,
+        "family": "none"
+    },
+    "4490": {
+        "name": "Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0778979063034058,
+        "family": "none"
+    },
+    "4648": {
+        "name": "Ogden Stonehealer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 820511233,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "none"
+    },
+    "4787": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0116400718688965,
+        "family": "none"
+    },
+    "4788": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0822736024856567,
+        "family": "none"
+    },
+    "5279": {
+        "name": "Researcher",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 1.01792311668396,
+        "family": "none"
+    },
+    "5333": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0381582975387573,
+        "family": "none"
+    },
+    "5334": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9342896938323975,
+        "family": "none"
+    },
+    "5349": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0494407415390015,
+        "family": "none"
+    },
+    "5352": {
+        "name": "Priory Historian",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 81
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9027107357978821,
+        "family": "none"
+    },
+    "5360": {
+        "name": "Priory Explorer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0671210289001465,
+        "family": "none"
+    },
+    "5389": {
+        "name": "Researcher",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 1.0443228483200073,
+        "family": "none"
+    },
+    "5412": {
+        "name": "Risen Shark",
+        "description": "Toxic Bite",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 1,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 2,
+        "family": "undead"
+    },
+    "5416": {
+        "name": "Risen Abomination",
+        "description": "Unstoppable • Builds Frenzy • Regenerates Health",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 545390596,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "none",
+        "size": 2.25,
+        "family": "undead"
+    },
+    "5426": {
+        "name": "Whispers Creator",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.075563669204712,
+        "family": "none"
+    },
+    "6448": {
+        "name": "Inquest Power Suit",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 79
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10747905,
+        "multipliers": {
+            "power": 1.149999976158142,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 1.6500000357627869
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "7931": {
+        "name": "Giganticus Lupicus",
+        "description": "Summons Insects • Shadow Walks • Drains Life",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 9046016,
+        "multipliers": {
+            "power": 8.75,
+            "precision": 0,
+            "toughness": 1.5,
+            "vitality": 1,
+            "ferocity": 120,
+            "healing_power": 0,
+            "condition_damage": 16,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 8,
+        "family": "undead"
+    },
+    "8018": {
+        "name": "Risen Putrifier",
+        "description": "Point Blank Area of Effect",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.399999976158142,
+        "family": "undead"
+    },
+    "8019": {
+        "name": "Risen Corrupter",
+        "description": "Chills",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.399999976158142,
+        "family": "undead"
+    },
+    "8020": {
+        "name": "Risen Plaguebearer",
+        "description": "Steals Life • Transfers Conditions",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.399999976158142,
+        "family": "undead"
+    },
+    "8055": {
+        "name": "Vigil Crusader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0462372303009033,
+        "family": "none"
+    },
+    "8126": {
+        "name": "Risen Servant",
+        "description": "Inflicts Conditions",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.2599999904632568,
+        "family": "undead"
+    },
+    "8127": {
+        "name": "Risen Servant",
+        "description": "Inflicts Conditions",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.2599999904632568,
+        "family": "undead"
+    },
+    "8128": {
+        "name": "Risen Farmer",
+        "description": "Digs Up Turrets",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.281000018119812,
+        "family": "undead"
+    },
+    "8134": {
+        "name": "Risen Wizard",
+        "description": "Knocks Back • Lightning Strikes",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.2120000123977661,
+        "family": "undead"
+    },
+    "8138": {
+        "name": "Risen Noble",
+        "description": "Shadowsteps • Creates Symbols",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.2510000467300415,
+        "family": "undead"
+    },
+    "8139": {
+        "name": "Risen Noble",
+        "description": "Shadowsteps • Creates Symbols",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.2300000190734863,
+        "family": "undead"
+    },
+    "8140": {
+        "name": "Risen Squire",
+        "description": "Inflicts Conditions",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.2630000114440918,
+        "family": "undead"
+    },
+    "8141": {
+        "name": "Risen Squire",
+        "description": "Inflicts Conditions",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.2580000162124634,
+        "family": "undead"
+    },
+    "8143": {
+        "name": "Risen Jester",
+        "description": "Buffs Allies • Burns",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.2990000247955322,
+        "family": "undead"
+    },
+    "8282": {
+        "name": "Undead Abomination",
+        "description": "Unstoppable • Builds Frenzy • Regenerates Health",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259556,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "8284": {
+        "name": "Risen Elementalist",
+        "description": "Steals Life • Transfers Conditions • Plagues when Attacked • Converts Boons to Conditions",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "8285": {
+        "name": "Giant",
+        "description": "Stomps and Shouts",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388610,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "8286": {
+        "name": "Giant",
+        "description": "Stomps and Shouts",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 60,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "8289": {
+        "name": "Orrian Farmer",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 75
+            },
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9710979461669922,
+        "family": "undead"
+    },
+    "8290": {
+        "name": "Orrian Farmer",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 75
+            },
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9153971076011658,
+        "family": "undead"
+    },
+    "8292": {
+        "name": "Orrian Jester",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9545926451683044,
+        "family": "undead"
+    },
+    "8293": {
+        "name": "Orrian Jester",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0526782274246216,
+        "family": "undead"
+    },
+    "8298": {
+        "name": "Orrian Servant",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 75
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9618320465087891,
+        "family": "undead"
+    },
+    "8299": {
+        "name": "Orrian Servant",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 75
+            },
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0841172933578491,
+        "family": "undead"
+    },
+    "8300": {
+        "name": "Orrian Squire",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0333811044692993,
+        "family": "undead"
+    },
+    "8301": {
+        "name": "Orrian Squire",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0770035982131958,
+        "family": "undead"
+    },
+    "8302": {
+        "name": "Orrian Villager",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 75
+            },
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.993600070476532,
+        "family": "undead"
+    },
+    "8303": {
+        "name": "Orrian Villager",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 75
+            },
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9739043116569519,
+        "family": "undead"
+    },
+    "8304": {
+        "name": "Orrian Wizardess",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9282967448234558,
+        "family": "undead"
+    },
+    "8305": {
+        "name": "Orrian Wizard",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0264612436294556,
+        "family": "undead"
+    },
+    "8307": {
+        "name": "Undead Knight",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388611,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "8313": {
+        "name": "Undead Wraith",
+        "description": "Teleports • Steals Health • Chills",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 60,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "8314": {
+        "name": "Orrian Hunter",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388611,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "8315": {
+        "name": "Risen Hunter",
+        "description": "Summons Minions • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "8316": {
+        "name": "Orrian Warrior",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388611,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "8317": {
+        "name": "Risen Mage",
+        "description": "Heals Allies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "8320": {
+        "name": "Risen Illusionist",
+        "description": "Applies random conditions",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "8321": {
+        "name": "Orrian Chicken",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 10
+            }
+        ],
+        "rank": "rank_none",
+        "flag": -2135899648,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead"
+    },
+    "8323": {
+        "name": "Orrian Drake",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead"
+    },
+    "8324": {
+        "name": "Orrian Eagle",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518592,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 0.5,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead"
+    },
+    "8325": {
+        "name": "Orrian Gorilla",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.75,
+        "family": "undead"
+    },
+    "8326": {
+        "name": "Orrian Gorilla",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "8327": {
+        "name": "Undead Grub",
+        "description": "Spit Draws Undead",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.5,
+        "family": "undead"
+    },
+    "8331": {
+        "name": "Undead Shark",
+        "description": "Toxic Bite • Steals Health",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 2.5,
+        "family": "undead"
+    },
+    "8332": {
+        "name": "Orrian Spider",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            },
+            {
+                "location": "arah_explorable",
+                "level": 83
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead"
+    },
+    "8333": {
+        "name": "Orrian Spider",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 83
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388610,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "8334": {
+        "name": "Undead Spider Hatchling",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388612,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "undead"
+    },
+    "8335": {
+        "name": "Orrian Spider",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            },
+            {
+                "location": "arah_explorable",
+                "level": 83
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "8336": {
+        "name": "Scholar Yissa",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 0.9384903907775879,
+        "family": "none"
+    },
+    "8337": {
+        "name": "Warden Meinir",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 0.9054153561592102,
+        "family": "none"
+    },
+    "8338": {
+        "name": "Rhylla Ogrekin",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.0455125570297241,
+        "family": "none"
+    },
+    "8339": {
+        "name": "Jaret Zirkot",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0503462553024292,
+        "family": "none"
+    },
+    "8358": {
+        "name": "Durmand Priory Researcher",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9691619277000427,
+        "family": "none"
+    },
+    "8359": {
+        "name": "Durmand Priory Researcher",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9833703637123108,
+        "family": "none"
+    },
+    "8395": {
+        "name": "Durmand Priory Scholar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9800677299499512,
+        "family": "none"
+    },
+    "8515": {
+        "name": "Wraithlord",
+        "description": "Teleports • Steals Health • Fears",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 2.5,
+        "family": "undead"
+    },
+    "8582": {
+        "name": "Orrian Drake",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 81
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead"
+    },
+    "8583": {
+        "name": "Orrian Drake",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388611,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "8587": {
+        "name": "Undead Grub",
+        "description": "Spit Draws Undead",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "8595": {
+        "name": "Lesser Ooze",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 81
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10780672,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 1,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "undead"
+    },
+    "8598": {
+        "name": "Vile Ooze",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead"
+    },
+    "8727": {
+        "name": "Risen Devastator",
+        "description": "Throws Weapon • Bleeds • Cripples",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "9232": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0789227485656738,
+        "family": "none"
+    },
+    "9233": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9604772925376892,
+        "family": "none"
+    },
+    "9235": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 81
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9801201820373535,
+        "family": "none"
+    },
+    "9237": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0454145669937134,
+        "family": "none"
+    },
+    "9238": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0619111061096191,
+        "family": "none"
+    },
+    "9240": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9198290109634399,
+        "family": "none"
+    },
+    "9241": {
+        "name": "Vigil Marksman",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0813182592391968,
+        "family": "none"
+    },
+    "9251": {
+        "name": "Jotun Stargazer",
+        "description": "Fire Storm",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 83
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8390657,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "none"
+    },
+    "9576": {
+        "name": "Vile Ooze",
+        "description": "AOE Stray • Reflects Projectiles.",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912898,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "undead"
+    },
+    "9589": {
+        "name": "Ancient Ooze",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 3,
+        "family": "undead"
+    },
+    "9610": {
+        "name": "Crystalline Entity",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8683522,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "9803": {
+        "name": "Korga the Mighty",
+        "description": "Charging Attack",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 83
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 2.5,
+        "family": "undead"
+    },
+    "9905": {
+        "name": "Vigil Recruit",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.08599853515625,
+        "family": "none"
+    },
+    "9909": {
+        "name": "Vigil Tactician",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.063178300857544,
+        "family": "none"
+    },
+    "9913": {
+        "name": "Vigil Tactician",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_veteran",
+        "flag": 551550977,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "female",
+        "size": 1.052394986152649,
+        "family": "none"
+    },
+    "9917": {
+        "name": "Vigil Tactician",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0262476205825806,
+        "family": "none"
+    },
+    "9940": {
+        "name": "Vigil Crusader",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0807912349700928,
+        "family": "none"
+    },
+    "10051": {
+        "name": "Whispers Lightbringer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0261865854263306,
+        "family": "none"
+    },
+    "10082": {
+        "name": "Risen Grub",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8421377,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "undead"
+    },
+    "10083": {
+        "name": "Locust Swarm",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 10780704,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 1.2000000476837158
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead"
+    },
+    "10269": {
+        "name": "Risen Krill",
+        "description": "Bites • Poison Sting",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 1,
+        "multipliers": {
+            "power": 1.8000000715255737,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 0.7700000035762784,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.4000000059604645,
+        "family": "none"
+    },
+    "10390": {
+        "name": "Dominated Defiler",
+        "description": "Pulls • Poison Aura",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.2000000476837158,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "undead"
+    },
+    "10434": {
+        "name": "Kaisar, High Priest of Balthazar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "10435": {
+        "name": "Simin, High Priestess of Dwayna",
+        "description": "Petrifies • Heals While Hidden",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "10436": {
+        "name": "Ghasem, High Priest of Grenth",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8931329,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "10437": {
+        "name": "Farnaz, High Priestess of Lyssa",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "10438": {
+        "name": "Vahid, High Priest of Melandru",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "10439": {
+        "name": "Hound of Balthazar",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545554464,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "undead"
+    },
+    "10440": {
+        "name": "Dominated Deadeye",
+        "description": "Extreme Damage at Long Range • Sticky Bombs",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 4
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "undead"
+    },
+    "10441": {
+        "name": "Dominated Berserker",
+        "description": "Accumulates Fury and Might on Hit",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "undead"
+    },
+    "10442": {
+        "name": "Dominated Sentinel",
+        "description": "Challenges • Counters While Blocking",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "undead"
+    },
+    "10443": {
+        "name": "Inquest Assistant",
+        "description": "Teleports • Extreme Ranged Damage",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 18,
+            "health_multiplier": 35
+        },
+        "sex": "female",
+        "size": 0.9587313532829285,
+        "family": "undead"
+    },
+    "10446": {
+        "name": "",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10870784,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead"
+    },
+    "10497": {
+        "name": "Surratt, Whispers Agent",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14681089,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0109810829162598,
+        "family": "none"
+    },
+    "10499": {
+        "name": "Berserker Abomination",
+        "description": "Goes Berserk • Extreme Ranged Damage",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914948,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 48.99999916553497
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "10501": {
+        "name": "Inquest Handler",
+        "description": "Tranquilizer Rifles",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.375
+        },
+        "sex": "male",
+        "size": 1.0661001205444336,
+        "family": "inquest"
+    },
+    "10508": {
+        "name": "Undead Wraith",
+        "description": "Teleports • Steals Health • Chills • Reflects Projectiles",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545275937,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "10515": {
+        "name": "Wraithlord",
+        "description": "Teleports • Steals Health • Fears",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 2.5,
+        "family": "undead"
+    },
+    "10516": {
+        "name": "Inquest Technician",
+        "description": "Channels Stun",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 1
+            },
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.9789398312568665,
+        "family": "inquest"
+    },
+    "10520": {
+        "name": "Spark",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388672,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "undead"
+    },
+    "10532": {
+        "name": "Alphard, Serpent of the Waves",
+        "description": "Extreme Damage AoE • Summons Clones",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 0.9385177493095398,
+        "family": "undead"
+    },
+    "10533": {
+        "name": "Alphard, Serpent of the Waves",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9805053472518921,
+        "family": "undead"
+    },
+    "10545": {
+        "name": "Orrian Drake",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.3499999940395355,
+        "family": "undead"
+    },
+    "10546": {
+        "name": "Orrian Spectral Guard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "undead"
+    },
+    "10547": {
+        "name": "Orrian Spectral Juggernaut",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "undead"
+    },
+    "10548": {
+        "name": "Orrian Spectral Archer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "10578": {
+        "name": "Giant",
+        "description": "Stomps and Shouts",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8390656,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "10580": {
+        "name": "Inquest Golemcaster",
+        "description": "Phase Shifted",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 1.0301533937454224,
+        "family": "undead"
+    },
+    "10592": {
+        "name": "Wraithlord's Hunter",
+        "description": "Bouncing Shots",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 277413891,
+        "multipliers": {
+            "power": 2.5,
+            "precision": 0,
+            "toughness": 0.699999988079071,
+            "vitality": 0.7700000035762784,
+            "ferocity": 10,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "10593": {
+        "name": "Wraithlord's Crusher",
+        "description": "Uses Devastating Smash • Shouts • Heals",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 0.699999988079071,
+            "vitality": 0.699999988079071,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 2,
+        "family": "undead"
+    },
+    "10700": {
+        "name": "Wraithlord's Mage Crusher",
+        "description": "Poisons • Devastating Spells",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8947713,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1.3300000429153442,
+        "family": "undead"
+    },
+    "10718": {
+        "name": "Orrian Spider",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "10748": {
+        "name": "Lesser Ooze",
+        "description": "Combine into larger Oozes",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10781184,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 1,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "none"
+    },
+    "10766": {
+        "name": "Plague Carrier Abomination",
+        "description": "Explodes",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545538081,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 80
+        },
+        "sex": "male",
+        "size": 2,
+        "family": "undead"
+    },
+    "10767": {
+        "name": "Risen Grub",
+        "description": "Spit Draws Undead",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518529,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.1875
+        },
+        "sex": "male",
+        "size": 0.25,
+        "family": "undead"
+    },
+    "10768": {
+        "name": "Orrian Spectral Ghostblade",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "undead"
+    },
+    "10769": {
+        "name": "Orrian Spectral Flamecaster",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "undead"
+    },
+    "10770": {
+        "name": "Risen Wraith",
+        "description": "Teleports • Steals Health",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "undead"
+    },
+    "10771": {
+        "name": "Bloodstone Shard",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "undead"
+    },
+    "10772": {
+        "name": "Risen Wraith",
+        "description": "Teleports • Steals Health",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "undead"
+    },
+    "10780": {
+        "name": "Guardian",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 547389473,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 1,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9395221471786499,
+        "family": "none"
+    },
+    "10781": {
+        "name": "Elementalist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 547389473,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 1,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0716099739074707,
+        "family": "none"
+    },
+    "10782": {
+        "name": "Farnaz, High Priestess of Lyssa",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 547915809,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 8,
+            "healing_power": 1,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.5,
+        "family": "undead"
+    },
+    "10799": {
+        "name": "Tar Elemental",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518592,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.75,
+        "family": "elemental"
+    },
+    "10800": {
+        "name": "Shoggroth",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8407104,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 3,
+        "family": "elemental"
+    },
+    "10805": {
+        "name": "Risen Sentinel",
+        "description": "Challenges  • Counters while Blocking",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "10806": {
+        "name": "Risen Defiler",
+        "description": "Pulls • Poison Aura",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.2000000476837158,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "10807": {
+        "name": "Risen Berserker",
+        "description": "Accumulates Fury and Might on Hit",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            },
+            {
+                "location": "arah_explorable",
+                "level": 82
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead"
+    },
+    "10823": {
+        "name": "Orrian Gorilla",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 813695008,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 0.75,
+            "vitality": 0.75,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.149999976158142,
+        "family": "undead"
+    },
+    "10901": {
+        "name": "Vahid's Flora",
+        "description": "Immobilizes Foes",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10649600,
+        "multipliers": {
+            "power": 3,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 0.8250000178813934,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "none",
+        "size": 0.25,
+        "family": "none"
+    },
+    "11015": {
+        "name": "Vile Ooze",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "arah_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 547389472,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead"
     }
 }
