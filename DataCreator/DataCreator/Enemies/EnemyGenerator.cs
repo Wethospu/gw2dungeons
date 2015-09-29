@@ -534,7 +534,15 @@ namespace DataCreator.Enemies
       else if (tag.Equals("count"))
       {
         if (data.Length > 0)
-          _currentEffect.HitCount = Helper.ParseI(data);
+        {
+          if (data.Equals("?"))
+            _currentEffect.HitCount = -1;
+          else
+            _currentEffect.HitCount = Helper.ParseI(data);
+          if (_currentEffect.HitCount == 0)
+            Helper.ShowWarning("Hit count can't be zero.");
+        }
+         
         else
           Helper.ShowWarning("Missing info. Use \"count='number'\"");
       }

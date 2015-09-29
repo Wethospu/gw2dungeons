@@ -16,6 +16,7 @@ namespace DataCreator.Enemies
   public class Effect
   {
     private string _type;
+    // How many times this effects hit. -1 means variable or unknown. / 2015-09-29 / Wethospu
     public int HitCount;
     public double HitLength;
     public readonly List<string> SubEffects = new List<string>();
@@ -256,7 +257,7 @@ namespace DataCreator.Enemies
               replace.Append("s");
           }
           replace.Append(HitLengthStr(hitLength));
-          replace.Append(")");
+          replace.Append(" per hit)");
         }
         if (category.Equals("confusion"))
         {
@@ -297,9 +298,12 @@ namespace DataCreator.Enemies
                 replace.Append("s");
             }
             replace.Append(HitLengthStr(hitLength));
-            replace.Append(")");
+            replace.Append(" per hit)");
           }
         }
+        // Some effects can have variable or unknown hit count. Just add " per hit" in those cases. / 2015-09-29 / Wethospu
+        if (hitCount < 1)
+          replace.Append(" per hit");
         if (effectType == EffectType.Buff)
         {
           // Add the buff name (people probably won't recognize all icons). / 2015-09-23 / Wethospu
