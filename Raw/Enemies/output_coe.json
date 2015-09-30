@@ -1,0 +1,3629 @@
+{
+    "2540": {
+        "name": "Farmer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 60
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 1.0898888111114502,
+        "family": "none"
+    },
+    "2541": {
+        "name": "Farmer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 0.996465802192688,
+        "family": "none"
+    },
+    "2544": {
+        "name": "Fisher",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 0.5,
+            "toughness": 1,
+            "vitality": 0.5,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.2750000059604645
+        },
+        "sex": "male",
+        "size": 1.0143117904663086,
+        "family": "none"
+    },
+    "2601": {
+        "name": "Merchant",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "none"
+    },
+    "2605": {
+        "name": "Local",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 12582913,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 1.066114068031311,
+        "family": "none"
+    },
+    "2609": {
+        "name": "Farmer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "female",
+        "size": 0.9748785495758057,
+        "family": "none"
+    },
+    "2705": {
+        "name": "Farmer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 0.9563295841217041,
+        "family": "none"
+    },
+    "3230": {
+        "name": "Nightmare Hound",
+        "description": "Pounces • Bleeds • Poisons",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "nightmare_court"
+    },
+    "4103": {
+        "name": "Kudu's Monster",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914949,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 0.800000011920929,
+            "vitality": 0.800000011920929,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "4104": {
+        "name": "Kudu",
+        "description": "Killing Shot • Teleports",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8931333,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 0.6000000238418579,
+            "vitality": 0.6000000238418579,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 35
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "inquest"
+    },
+    "4120": {
+        "name": "Captive",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14696449,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 10,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.0903748273849487,
+        "family": "none"
+    },
+    "5301": {
+        "name": "Rancher",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9999966621398926,
+        "family": "none"
+    },
+    "5302": {
+        "name": "Rancher",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0061438083648682,
+        "family": "none"
+    },
+    "6039": {
+        "name": "Banker",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.25,
+            "precision": 1,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.550000011920929
+        },
+        "sex": "male",
+        "size": 1.0127326250076294,
+        "family": "none"
+    },
+    "6373": {
+        "name": "Brawler",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9309104084968567,
+        "family": "none"
+    },
+    "6977": {
+        "name": "Logan Thackeray",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0094228982925415,
+        "family": "none"
+    },
+    "6978": {
+        "name": "Rytlock Brimstone",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "male",
+        "size": 1.0468292236328125,
+        "family": "none"
+    },
+    "6979": {
+        "name": "Zojja",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.0707896947860718,
+        "family": "none"
+    },
+    "7393": {
+        "name": "Nightmare Husk",
+        "description": "Knockback",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 0.8999999761581421,
+        "family": "nightmare_court"
+    },
+    "7463": {
+        "name": "Mr. Sparkles",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 12599809,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "7538": {
+        "name": "Subversion Specialist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.2000000476837158,
+            "vitality": 1.2000000476837158,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.9344077706336975,
+        "family": "inquest"
+    },
+    "7583": {
+        "name": "Intercom Voice",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.03204345703125,
+        "family": "inquest"
+    },
+    "7591": {
+        "name": "Storage room Clerk",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9349783658981323,
+        "family": "inquest"
+    },
+    "7610": {
+        "name": "Agent Spire",
+        "description": "Whispers Agent",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 283117057,
+        "multipliers": {
+            "power": 0.20000000298023224,
+            "precision": 0,
+            "toughness": 0.5,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 2,
+            "health_multiplier": 3.5
+        },
+        "sex": "female",
+        "size": 1.093503713607788,
+        "family": "none"
+    },
+    "7611": {
+        "name": "Subject Alpha",
+        "description": "Morphic Abilities",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914948,
+        "multipliers": {
+            "power": 8.75,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 48.99999916553497
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "undead_minion"
+    },
+    "7660": {
+        "name": "Intercom Voice",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9633512496948242,
+        "family": "inquest"
+    },
+    "7991": {
+        "name": "Medic",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.005211353302002,
+        "family": "inquest"
+    },
+    "7992": {
+        "name": "Medic",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.056642770767212,
+        "family": "inquest"
+    },
+    "8067": {
+        "name": "Icebrood Quaggan",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "ice_brood"
+    },
+    "8281": {
+        "name": "Undead Abomination",
+        "description": "Unstoppable • Builds Frenzy • Regenerates Health",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388610,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 10,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "undead_minion"
+    },
+    "8313": {
+        "name": "Undead Wraith",
+        "description": "Teleports • Steals Health • Chills",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 60,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead_minion"
+    },
+    "8326": {
+        "name": "Orrian Gorilla",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "undead_minion"
+    },
+    "8727": {
+        "name": "Risen Devastator",
+        "description": "Throws Weapon • Bleeds • Cripples",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 12,
+            "healing_power": 1,
+            "condition_damage": 9,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead_minion"
+    },
+    "9603": {
+        "name": "Kudu's Power Suit",
+        "description": "Devastating Melee Attack • Electric Aura • Creates Electric Fields",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 4.200000166893005,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "outlaw"
+    },
+    "9653": {
+        "name": "Inquest Assassin",
+        "description": "Stealths",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0075923204421997,
+        "family": "inquest"
+    },
+    "9655": {
+        "name": "Inquest Grenadier",
+        "description": "Conditions",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 60
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9344414472579956,
+        "family": "inquest"
+    },
+    "9658": {
+        "name": "Inquest Assistant",
+        "description": "Bleeds",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 60
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9571766257286072,
+        "family": "inquest"
+    },
+    "9661": {
+        "name": "Inquest Engineer",
+        "description": "Drops Turrets",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 60
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1.0446581840515137,
+        "family": "inquest"
+    },
+    "9663": {
+        "name": "Mark I Golem",
+        "description": "Area Damage • Self Repair",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "9666": {
+        "name": "Mark I Golem",
+        "description": "Protects Allies • Heals Allies",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "9668": {
+        "name": "Mark I Golem",
+        "description": "Area Damage • Self Repair",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "9669": {
+        "name": "Mark II Golem",
+        "description": "Stuns",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "9673": {
+        "name": "Inquest Golemcaster",
+        "description": "Applies Conditions",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.91208815574646,
+        "family": "inquest"
+    },
+    "9676": {
+        "name": "Inquest Golemancer",
+        "description": "Buffs Golems • Stuns",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9277551174163818,
+        "family": "inquest"
+    },
+    "9679": {
+        "name": "Inquest Technician",
+        "description": "Heals Allies",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.920828104019165,
+        "family": "inquest"
+    },
+    "9680": {
+        "name": "Inquest Technician",
+        "description": "Heals Allies • Burning",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.06336510181427,
+        "family": "inquest"
+    },
+    "9682": {
+        "name": "Inquest Extinguisher",
+        "description": "Chills • Removes Conditions",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1.0962598323822021,
+        "family": "inquest"
+    },
+    "9683": {
+        "name": "Inquest Extinguisher",
+        "description": "Chills • Removes Conditions • Knocks Down",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.0127376317977905,
+        "family": "inquest"
+    },
+    "9686": {
+        "name": "Inquest Technician",
+        "description": "Stuns • Bouncing Projectile • Buffs Allies",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 60
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.928044855594635,
+        "family": "inquest"
+    },
+    "9710": {
+        "name": "Destroyer Crab",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "destroyer"
+    },
+    "9711": {
+        "name": "Destroyer Crab",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388611,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "destroyer"
+    },
+    "9713": {
+        "name": "Destroyer Crabling",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "destroyer"
+    },
+    "9714": {
+        "name": "Destroyer Harpy",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388672,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "destroyer"
+    },
+    "9716": {
+        "name": "Destroyer Harpy",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259616,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "destroyer"
+    },
+    "9717": {
+        "name": "Destroyer Troll",
+        "description": "Fire Attacks",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "destroyer"
+    },
+    "9719": {
+        "name": "Destroyer Troll",
+        "description": "Fire Attacks",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "destroyer"
+    },
+    "9721": {
+        "name": "Branded Charr",
+        "description": "Summons Exploding Shards",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "none"
+    },
+    "9722": {
+        "name": "Branded Charr",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.2999999523162842,
+        "family": "none"
+    },
+    "9723": {
+        "name": "Branded Devourer",
+        "description": "Bleeding Attacks",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "9725": {
+        "name": "Branded Rock Dog",
+        "description": "Leaping Attack",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "none"
+    },
+    "9729": {
+        "name": "Branded Human",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "none"
+    },
+    "9734": {
+        "name": "Branded Human",
+        "description": "Beam Attack",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "none"
+    },
+    "9735": {
+        "name": "Branded Human",
+        "description": "Beam Attack",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "none"
+    },
+    "9740": {
+        "name": "Icebrood Kodan",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 14680065,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 1,
+        "family": "ice_brood"
+    },
+    "9743": {
+        "name": "Icebrood Norn",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 12582913,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "ice_brood"
+    },
+    "9744": {
+        "name": "Icebrood Goliath",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8519680,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "ogre"
+    },
+    "9747": {
+        "name": "Icebrood Troll",
+        "description": "Punches and Smashes",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "ice_brood"
+    },
+    "9748": {
+        "name": "Icebrood Troll",
+        "description": "Punches and Smashes",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "ice_brood"
+    },
+    "9749": {
+        "name": "Icebrood Kodan",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 551551009,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.25,
+        "family": "ice_brood"
+    },
+    "9750": {
+        "name": "Summoned Husk",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "mordrem"
+    },
+    "9752": {
+        "name": "Summoned Husk",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "mordrem"
+    },
+    "9753": {
+        "name": "Risen Drake",
+        "description": "Knocks Back • Bleeds • Summons Flies",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead_minion"
+    },
+    "9757": {
+        "name": "Risen Spider",
+        "description": "Lays Eggs • Pulls",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388608,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead_minion"
+    },
+    "9760": {
+        "name": "Risen Abomination",
+        "description": "Unstoppable • Builds Frenzy",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388612,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "undead_minion"
+    },
+    "9764": {
+        "name": "Risen Brute",
+        "description": "Knocks Down",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.9346415996551514,
+        "family": "undead_minion"
+    },
+    "9765": {
+        "name": "Risen Thrall",
+        "description": "Frenzies",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 0.9427041411399841,
+        "family": "undead_minion"
+    },
+    "9772": {
+        "name": "Risen Plague Carrier",
+        "description": "Explodes",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "female",
+        "size": 0.918516993522644,
+        "family": "undead_minion"
+    },
+    "9777": {
+        "name": "Risen Brute",
+        "description": "Knocks Down",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead_minion"
+    },
+    "9780": {
+        "name": "Hologram of Kudu",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8929285,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 0.9292610883712769,
+        "family": "inquest"
+    },
+    "9866": {
+        "name": "Subversion Specialist",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.2000000476837158,
+            "vitality": 1.2000000476837158,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.0875506401062012,
+        "family": "inquest"
+    },
+    "9869": {
+        "name": "Icebrood Wolf[pl:\"wolves\"]",
+        "description": "Lunges and Bites",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "ice_brood"
+    },
+    "9870": {
+        "name": "Icebrood Wolf",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8388610,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "ice_brood"
+    },
+    "9871": {
+        "name": "Icebrood Troll",
+        "description": "Punches and Smashes",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "ice_brood"
+    },
+    "9873": {
+        "name": "Icebrood Goliath",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 2,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 12
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "ogre"
+    },
+    "9875": {
+        "name": "Icebrood Wolf[pl:\"wolves\"]",
+        "description": "Lunges and Bites",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "ice_brood"
+    },
+    "9887": {
+        "name": "Icebrood Elemental",
+        "description": "Stuns • Chills • Bleeds",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "ice_brood"
+    },
+    "9898": {
+        "name": "Resonance Cascade Field",
+        "description": "Generates Resonance Cascades",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10870784,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 6,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10079": {
+        "name": "Risen Grub",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8421377,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "male",
+        "size": 1,
+        "family": "undead_minion"
+    },
+    "10086": {
+        "name": "Alpha's Essence",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 1
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 70
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 11304960,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "elemental"
+    },
+    "10130": {
+        "name": "Mark T-B34RC3",
+        "description": "Stuns • Burns",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914945,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "inquest"
+    },
+    "10131": {
+        "name": "Emergency Specialist",
+        "description": "Drops Turrets",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "female",
+        "size": 0.9573643207550049,
+        "family": "inquest"
+    },
+    "10184": {
+        "name": "Mark P Support Golem",
+        "description": "Fire Shields",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10185": {
+        "name": "Mark P Battle Golem",
+        "description": "Throws Fireballs",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10186": {
+        "name": "Mark J Battle Golem",
+        "description": "Chills • Icy Blast",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 60
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10187": {
+        "name": "Mark K Assault Golem",
+        "description": "Stuns",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10188": {
+        "name": "Mark K Battle Golem",
+        "description": "Knocks Down • Causes Vulnerability",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10189": {
+        "name": "Mark J Assault Golem",
+        "description": "Delayed Blasts",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10205": {
+        "name": "Mark J Battle Golem",
+        "description": "Chills • Icy Blast",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "10206": {
+        "name": "Mark J Assault Golem",
+        "description": "Delayed Blasts",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 60
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "10207": {
+        "name": "Mark K Battle Golem",
+        "description": "Knocks Down • Causes Vulnerability",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "10208": {
+        "name": "Mark K Assault Golem",
+        "description": "Stuns",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 60
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "10209": {
+        "name": "Mark P Support Golem",
+        "description": "Fire Shields",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 60
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "10210": {
+        "name": "Mark P Battle Golem",
+        "description": "Throws Fireballs",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "10216": {
+        "name": "Alpha's Essence",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 11304960,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 0.699999988079071,
+            "vitality": 0.7700000035762784,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "elemental"
+    },
+    "10218": {
+        "name": "Bjarl the Rampager",
+        "description": "Heavily Armored • Charges",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914948,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "ice_brood"
+    },
+    "10219": {
+        "name": "Icebrood Colossus",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "ice_brood"
+    },
+    "10220": {
+        "name": "Torrential Husk",
+        "description": "Knockback • Summons Bees",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 0.8999999761581421,
+        "family": "nightmare_court"
+    },
+    "10221": {
+        "name": "Flametouched Husk",
+        "description": "Knockback • Burning",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "none",
+        "size": 0.8999999761581421,
+        "family": "nightmare_court"
+    },
+    "10224": {
+        "name": "Security Captain",
+        "description": "Lightning Attacks • Reflects Projectiles",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 0.800000011920929,
+            "vitality": 0.800000011920929,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "10225": {
+        "name": "Inquest Engineer",
+        "description": "Drops Turrets",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_champion",
+        "flag": 8912899,
+        "multipliers": {
+            "power": 7.700000166893005,
+            "precision": 0,
+            "toughness": 0.800000011920929,
+            "vitality": 0.800000011920929,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 70
+        },
+        "sex": "female",
+        "size": 1.25,
+        "family": "inquest"
+    },
+    "10265": {
+        "name": "Mark S Bomb Golem",
+        "description": "Detonates Self",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 3,
+            "precision": 1.100000023841858,
+            "toughness": 0.25,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.1875
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "inquest"
+    },
+    "10337": {
+        "name": "Evolved Husk",
+        "description": "Hearty",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8914944,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 140
+        },
+        "sex": "none",
+        "size": 1.25,
+        "family": "mordrem"
+    },
+    "10404": {
+        "name": "Evolved Destroyer",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_legendary",
+        "flag": 8931328,
+        "multipliers": {
+            "power": 7,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 0.5,
+            "ferocity": 12,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 48.99999916553497
+        },
+        "sex": "none",
+        "size": 2,
+        "family": "destroyer"
+    },
+    "10512": {
+        "name": "Unstable Bomb Golem",
+        "description": "Detonates Self",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10780673,
+        "multipliers": {
+            "power": 3,
+            "precision": 1.100000023841858,
+            "toughness": 0.25,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.1875
+        },
+        "sex": "none",
+        "size": 0.5,
+        "family": "inquest"
+    },
+    "10720": {
+        "name": "Hologram of Kudu",
+        "description": "",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8929285,
+        "multipliers": {
+            "power": 5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 30
+        },
+        "sex": "male",
+        "size": 3,
+        "family": "inquest"
+    },
+    "10766": {
+        "name": "Plague Carrier Abomination",
+        "description": "Explodes",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545538081,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 80
+        },
+        "sex": "male",
+        "size": 2,
+        "family": "undead_minion"
+    },
+    "10767": {
+        "name": "Risen Grub",
+        "description": "Spit Draws Undead",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518529,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.1875
+        },
+        "sex": "male",
+        "size": 0.25,
+        "family": "undead_minion"
+    },
+    "10806": {
+        "name": "Risen Defiler",
+        "description": "Pulls • Poison Aura",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.2000000476837158,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead_minion"
+    },
+    "10807": {
+        "name": "Risen Berserker",
+        "description": "Accumulates Fury and Might on Hit",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 1.25,
+        "family": "undead_minion"
+    },
+    "10906": {
+        "name": "Inquest Insurgent",
+        "description": "Evades attacks • Causes Bleeding and Vulnerability",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 5.400000214576721,
+            "precision": 0,
+            "toughness": 0.699999988079071,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.0075923204421997,
+        "family": "inquest"
+    },
+    "10910": {
+        "name": "Mark V Field Generator",
+        "description": "Creates Combo Fields",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 8388609,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1.7999999523162842,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "inquest"
+    },
+    "10914": {
+        "name": "Inquest Gunner",
+        "description": "Evasive",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 77
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.06336510181427,
+        "family": "inquest"
+    },
+    "10915": {
+        "name": "Inquest Mega Blaster",
+        "description": "Gains toughness when damaged • Tracking Projectiles",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1.2000000476837158,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.06336510181427,
+        "family": "inquest"
+    },
+    "10922": {
+        "name": "Mark XXX Juggernaut",
+        "description": "Retaliation • Protection",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            },
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 2,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 2.200000047683716,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 3
+        },
+        "sex": "none",
+        "size": 1.5,
+        "family": "inquest"
+    },
+    "10924": {
+        "name": "Inquest Magnetizer",
+        "description": "Pulls • Stuns",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 78
+            },
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259552,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 2,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "male",
+        "size": 0.9272274374961853,
+        "family": "inquest"
+    },
+    "10927": {
+        "name": "Inquest Golemaestro",
+        "description": "Summons Golems",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_story",
+                "level": 79
+            }
+        ],
+        "rank": "rank_elite",
+        "flag": 545259553,
+        "multipliers": {
+            "power": 4.5,
+            "precision": 0,
+            "toughness": 1,
+            "vitality": 1,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 8,
+            "health_multiplier": 8
+        },
+        "sex": "female",
+        "size": 1.072706699371338,
+        "family": "inquest"
+    },
+    "11708": {
+        "name": "Icebrood Wolf[pl:\"wolves\"]",
+        "description": "Lunges and Bites",
+        "occurrences": [
+            {
+                "location": "crucible_of_eternity_explorable",
+                "level": 80
+            }
+        ],
+        "rank": "rank_none",
+        "flag": 10518528,
+        "multipliers": {
+            "power": 1.5,
+            "precision": 1.100000023841858,
+            "toughness": 1,
+            "vitality": 1.100000023841858,
+            "ferocity": 0,
+            "healing_power": 0,
+            "condition_damage": 5,
+            "health_multiplier": 0.75
+        },
+        "sex": "none",
+        "size": 1,
+        "family": "ice_brood"
+    }
+}

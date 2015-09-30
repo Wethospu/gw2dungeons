@@ -1,5 +1,3 @@
-# Note: Story damage values NOT updated after feature patch! (if even any change)
-
 # Potion system causes minor issues because enemy types are different in each path.
 ##################################################################
 # Enemies in story.                                              #
@@ -12,11 +10,10 @@ potion=outlaw|side
 ##################################################################
 
 Name=Head Scientist
+ID=10224
 alt=Head Scientist
 Category=champion
 Path=CoES
-type=inquest
-health=1100190
 
 # Using level 77 damage values.
 attack=Lightning Whip
@@ -54,65 +51,22 @@ effect=nothing happens
 
 ##################################################################
 
-Name=Head Scientist
-Category=champion
-Path=CoES
-type=inquest
-health=1049580
-level=77
-
-attack=Lightning Whip
-animation=leans forward and pulls electrified whip behind back|0.25|whips
-cooldown=2.25
-effect=2 cones hits in 0.35 s
-count=2
-length=0.35
-subeffect=damage:4770900
-#note=hits when whip is behind back
-#note=deals damage really fast so avoid tanking it
-#note=at melee range keep circling him
-#note=at high range keep kiting
-
-attack=Lightning Leap
-animation=steps back and puts shield forward|0.15|jumps forward and electrifies the whip
-cooldown=11
-effect=leap (0.6 s)
-subeffect=damage:6519204
-#note=hits when whip gets electrified
-#note=doesn't deal much damage so can be tanked
-#note=may move out of reset range (can be used to split groups)
-
-attack=Magnetic Aura
-cooldown=17
-animation=instant|0|gets a orange bubble
-additional=instant cast
-effect=reflects projectiles (3 s)
-#note=watch out for the buff and stop using projectiles
-#note=if you rely on projectiles try to remember the cooldown
-
-attack=Nothing
-animation=raises right arm, bends forward and raises both arms|2-3
-effect=nothing happens
-
-##################################################################
-
 Name=Inquest Technologist
+ID=10225
+level=79
 alt=Technologist
 Category=champion
 Path=CoES
-type=inquest
-health=1126930
-level=79
+
 
 ##################################################################
 
 Name=Kudu's Power Suit
+ID=9603
+level=80
 Category=legendary
 image=http://wiki.guildwars2.com/images/f/f4/Kudu%27s_Power_Suit.jpg
 Path=CoES
-type=outlaw
-level=80
-health=1376400
 
 attack=Mega Punch
 animation=swings and target with left arm|1|punches with right arm
@@ -152,13 +106,11 @@ subeffect=daze:5
 ##################################################################
 
 Name=Kudu
+ID=4104
+level=80
 Category=legendary
 image=http://wiki.guildwars2.com/images/9/9a/Kudu.jpg
 Path=CoES
-type=inquest
-level=80
-toughness=0.6
-health=495670
 
 attack=Doesn't regenerate health
 
@@ -191,14 +143,11 @@ effect=teleports to one projectile landing spot
 # Tested for inquest, elemental, demon, undead, outlaw, scarlet, icebrood, svanir, flame legion, grawl
 
 Name=Kudu's Monster
+ID=4103
+level=80
 Category=legendary
 image=http://wiki.guildwars2.com/images/e/ec/Kudu%27s_Monster.jpg
 Path=CoES
-type=giant
-health=1183840
-toughness=0.8
-level=80
-condition=960
 
 attack=Swap element
 animation=bends forward, puts arms to head, bends backward and lowers arms|1|explosion effect depending on the element
@@ -432,13 +381,12 @@ subeffect=chilled:0.5
 # Same enemy: ARAHS Risen enemy=Grub:Elite
 
 Name=Risen Grub
+ID=10079
+level=80
 alt=Risen Grubs
 image=http://wiki.guildwars2.com/images/1/19/Risen_Grub.jpg
 Category=normal
 Path=CoES
-type=undead
-health=15774
-level=80
 
 attack=Undead Grub Spit
 cooldown=0
@@ -476,13 +424,12 @@ subeffect=pull:1.5
 ##################################################################
 # Inquest enemies.                                               #
 ##################################################################
-
+# Levels 78 and 79 exist.
 Name=Inquest Golemaestro
+ID=10927
 alt=Inquest Golemaestros|Golemaestro|Golemaestros
 Category=elite
 Path=CoES
-type=inquest
-health=146136
 
 attack=Shoot
 cooldown=3
@@ -500,39 +447,12 @@ effect=enemy=Mark_V_Field_Generator:normal
 #note=If Generator is alive this has no effects
 
 ##################################################################
-
-Name=Inquest Golemaestro
-alt=Inquest Golemaestros|Golemaestro|Golemaestros
-Category=elite
-Path=CoES
-type=inquest
-health=149572
-level=79
-
-attack=Shoot
-cooldown=3
-animation=crouches and swings wand from right|0.25|shoots 3 lightning balls to air
-effect=3 projectiles
-count=3
-subeffect=damage:29015280
-#note=this hits almost every time (managed to get hit only once when I tried)
-
-attack=Summon
-cooldown=12
-animation=kneels forward hands on ground and jumps up with left arm up|1.5
-additional=maximum amount of 1
-effect=enemy=Mark_V_Field_Generator:normal:79
-#note=If Generator is alive this has no effects
-
-##################################################################
-
+# Levels 77, 78 and 79 exist.
 Name=Inquest Gunner
+ID=10914
 alt=Inquest Gunners|Gunner|Gunners
 Category=elite
 Path=CoES
-type=inquest
-health=146136
-condition=700
 
 attack=Trick Shot
 cooldown=7
@@ -571,109 +491,12 @@ subeffect=confusion:5:3
 #note=Move out of the red circle
 
 ##################################################################
-
-Name=Inquest Gunner
-alt=Inquest Gunners|Gunner|Gunners
-Category=elite
-Path=CoES
-type=inquest
-health=139392
-level=77
-condition=693
-
-# Using 93.9% damage (based on Unload).
-attack=Trick Shot
-cooldown=7
-animation=aims with left pistol and shoots with pink glow on right hand|0.25|shoots a bullet
-additional=only used against multiple targets
-effect=fast bouncing projectile (4 hits)
-subeffect=damage:2540376 per hit
-effect=second hit
-subeffect=daze:2
-subeffect=vulnerability:3
-effect=third hit
-subeffect=blind:5
-effect=fourth hit
-subeffect=confusion:6
-#note=At close range try to predict
-#note=At high range block or evade quickly when you see a purple glow
-
-attack=Unload
-cooldown=6
-animation=crosses pistols and points right pistol up|0.3|shoots multiple bullets
-effect=16 projectiles in 3 s
-count=16
-length=3
-subeffect=damage:982908
-
-attack=Evasive Trap
-cooldown=10
-animation=frontal flip|instant|leaves a red circle
-effect=Evade forward
-effect=delayed (2 s) AoE
-subeffect=damage:6352992
-subeffect=confusion:5:3
-#note=Often used instantly when hit at melee range so use autoattack to bait it
-#note=Use ranged control skill and keep stunlocked to prevent usage
-#note=Not targeting him may prevent usage
-#note=Move out of the red circle
-
-##################################################################
-
-Name=Inquest Gunner
-alt=Inquest Gunners|Gunner|Gunners
-Category=elite
-Path=CoES
-type=inquest
-health=149572
-level=79
-condition=700
-
-# Using level 78 values.
-attack=Trick Shot
-cooldown=7
-animation=aims with left pistol and shoots with pink glow on right hand|0.25|shoots a bullet
-additional=only used against multiple targets
-effect=fast bouncing projectile (4 hits)
-subeffect=damage:2704536 per hit
-effect=second hit
-subeffect=daze:2
-subeffect=vulnerability:3
-effect=third hit
-subeffect=blind:5
-effect=fourth hit
-subeffect=confusion:6
-#note=At close range try to predict
-#note=At high range block or evade quickly when you see a purple glow
-
-attack=Unload
-cooldown=6
-animation=crosses pistols and points right pistol up|0.3|shoots multiple bullets
-effect=16 projectiles in 3 s
-subeffect=damage:510| per hit (|damage:8160|)
-
-attack=Evasive Trap
-cooldown=10
-animation=frontal flip|instant|leaves a red circle
-effect=Evade forward
-effect=delayed (2 s) AoE
-subeffect=damage:6765444
-subeffect=confusion:5:3
-#note=Often used instantly when hit at melee range so use autoattack to bait it
-#note=Use ranged control skill and keep stunlocked to prevent usage
-#note=Not targeting him may prevent usage
-#note=Move out of the red circle
-
-##################################################################
-
+# Levels 77, 78 and 79 exist.
 Name=Inquest Insurgent
+ID=10906
 alt=Inquest Insurgents|Insurgent|Insurgents
 Category=elite
 Path=CoES
-type=inquest
-health=146136
-toughness=0.7
-condition=936
 
 attack=Death Blossom
 cooldown=3.5
@@ -695,153 +518,45 @@ subeffect=stun:1.5
 #note=try to block or evade
 
 ##################################################################
-
-Name=Inquest Insurgent
-alt=Inquest Insurgents|Insurgent|Insurgents
-Category=elite
-Path=CoES
-type=inquest
-health=139392
-toughness=0.7
-level=77
-condition=920
-
-# Using 93.9% damage (based on Gunner).
-attack=Death Blossom
-cooldown=3.5
-# Bleeding is estimated.
-animation=leans bit forward and moves in air|0.5|jumps over target
-effect=evade
-effect=3 melee hits in 0.3 s
-count=3
-length=0.3
-subeffect=damage:2035584
-subeffect=bleeding:4
-subeffect=vulnerability:4
-#note=try to evade
-
-attack=Vial
-cooldown=8
-animation=front flip forward|0.35|throws a ball
-effect=ballistic projectile with AoE
-subeffect=stun:1.5
-#note=try to block or evade
-
-##################################################################
-
-Name=Inquest Insurgent
-alt=Inquest Insurgents|Insurgent|Insurgents
-Category=elite
-Path=CoES
-type=inquest
-health=149572
-toughness=0.7
-level=79
-condition=925
-
-# Uses level 78 values.
-attack=Death Blossom
-cooldown=3.5
-animation=leans bit forward and moves in air|0.5|jumps over target
-effect=evade
-effect=3 melee hits in 0.3 s
-count=3
-length=0.3
-subeffect=damage:2166912
-subeffect=bleeding:4
-subeffect=vulnerability:4
-#note=try to evade
-
-attack=Vial
-cooldown=8
-animation=front flip forward|0.35|throws a ball
-effect=ballistic projectile with AoE
-subeffect=stun:1.5
-#note=try to block or evade
-
-##################################################################
-
+# Levels 78 and 79 exist.
 Name=Inquest Magnetizer
+ID=10924
 alt=Inquest Magnetizer|Magnetizer|Magnetizers
 Category=elite
 Path=CoES
-type=inquest
-health=146136
 
 ##################################################################
-
-Name=Inquest Magnetizer
-alt=Inquest Magnetizer|Magnetizer|Magnetizers
-Category=elite
-Path=CoES
-type=inquest
-health=149572
-level=79
-
-##################################################################
-
+# Levels 78 and 79 exist.
 Name=Inquest Mega Blaster
+ID=10915
 alt=Inquest Mega Blasters|Mega Blaster|Mega Blasters
 Category=elite
 Path=CoES
-type=inquest
-health=146136
-toughness=1.2
 
 ##################################################################
-
-Name=Inquest Mega Blaster
-alt=Inquest Mega Blasters|Mega Blaster|Mega Blasters
-Category=elite
-Path=CoES
-type=inquest
-health=149752
-toughness=1.2
-level=79
-
-##################################################################
-
+# Levels 77 and 78 exist.
 Name=Subversion Specialist
+ID=7538
+ID=9866
 alt=Subversion Specialists
 Category=elite
 Path=CoES
-type=inquest
-health=166536
-toughness=1.2
 
 attack=Unshakable
 effect=Gains 1 defiance when interrupted
 effect=50% vulnerability reduction
 effect=50% weakness reduction
 effect=blind has 10% chance to work
-
-##################################################################
-
-Name=Subversion Specialist
-alt=Subversion Specialists
-Category=elite
-Path=CoES
-type=inquest
-health=158832
-toughness=1.2
-level=77
-
-attack=Unshakable
-effect=Gains 1 defiance when interrupted
-effect=50% vulnerability reduction
-effect=50% weakness reduction
-effect=blind has 10% chance to work
-
 
 ##################################################################
 # Similar enemy: FOTM AETHER Inquest Assistant
 # Same enemy: SE1 Inquest Assistant
-
+# Levels 60, 77, 78 and 80 exist (story).
 Name=Inquest Assistant
+ID=9658
 Category=normal
 image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
 Path=CoE1|CoE2|CoE3
-type=inquest
 
 attack=Impale
 image=http://i.imgur.com/7YhAPwk.gif
@@ -864,12 +579,12 @@ subeffect=Magnetic Aura (3 s)
 ##################################################################
 # Same enemy: FOTM AETHER Inquest Assassin
 # Similar enemy: SE1 Inquest Assassin
-
+# Levels 60, 77, 78 and 80 exist (story).
 Name=Inquest Assassin
+ID=9653
 image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assassin.jpg
 Category=normal
 Path=CoE1|CoE2|CoE3
-type=inquest
 
 attack=Swing
 image=http://i.imgur.com/afnrAd3.gif
@@ -902,12 +617,12 @@ subeffect=damage:0
 
 ##################################################################
 # Same enemy: SE1 Inquest Grenadier
-
+# Levels 60, 77, 78, 79 and 80 exist (story).
 Name=Inquest Grenadier
+ID=9655
 image=media=coe_inquest_grenadier.jpg
 Category=normal
 Path=CoE1|CoE2|CoE3
-type=inquest
 
 attack=Throw Bomb
 image=http://i.imgur.com/AvOU6th.gif
@@ -929,49 +644,28 @@ subeffect=chilled:5
 ##################################################################
 # Golems.                                                        #
 ##################################################################
-
+# Levels 78, 79 and 80 exist.
 Name=Mark I Golem
+ID=9663
 alt=Mark I Golems|I Golem|I Golems
 image=https://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
 Category=normal
 type=inquest
 Path=CoES
-type=inquest
-##################################################################
 
-Name=Mark I Golem
-alt=Mark I Golems|I Golem|I Golems
-image=https://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
-Category=normal
-type=inquest
-Path=CoES
-type=inquest
-level=79
 ##################################################################
-
+# Levels 78, 79 and 80 exist.
 Name=Mark II Golem
+ID=9669
 alt=Mark II Golems|II Golem|II Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=normal
-type=inquest
 Path=CoES
-toughness=0.75
 
 ##################################################################
-
-Name=Mark II Golem
-alt=Mark II Golems|II Golem|II Golems
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=normal
-type=inquest
-Path=CoES
-type=inquest
-level=79
-toughness=0.75
-
-##################################################################
-
+# Levels 60, 77, 78 and 79 exist.
 Name=Mark K Assault Golem
+ID=10208
 alt=Mark K Assault Golems|K-A Golem|K-A Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=elite
@@ -1004,81 +698,13 @@ subeffect=stun:2
 #note=break line of sight, interrupt or keep blocking / evading
 
 ##################################################################
-
-Name=Mark K Assault Golem
-alt=Mark K Assault Golems|K-A Golem|K-A Golems
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
-Path=CoES
-health=149752
-level=79
-type=inquest
-
-# Uses level 77 values.
-attack=Crystal Shot
-animation=swings right arm and then left arm|1|shoots two black shards
-cooldown=3
-effect=2 projectiles in 0.25 s
-count=2
-length=0.25
-subeffect=damage:2887164
-#note=at high range keep side stepping
-#note=at close range can't avoid with movement
-
-attack=Branded Beam
-cooldown=30
-animation=bends forward, raises arms and then lowers them|1.75|shoots a pink beam
-effect=12 ranged hits in 4.25 s
-count=2
-length=4.25
-subeffect=damage:4536972
-effect=first hit
-subeffect=stun:2
-#note=hits when arms are at bottom
-#note=break line of sight, interrupt or keep blocking / evading
-
-##################################################################
-
-Name=Mark K Assault Golem
-alt=Mark K Assault Golems|K-A Golem|K-A Golems
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
-Path=CoES
-health=139392
-level=77
-type=inquest
-
-attack=Crystal Shot
-animation=swings right arm and then left arm|1|shoots two black shards
-cooldown=3
-effect=2 projectiles in 0.25 s
-count=2
-length=0.25
-subeffect=damage:2887164
-#note=at high range keep side stepping
-#note=at close range can't avoid with movement
-
-attack=Branded Beam
-cooldown=30
-animation=bends forward, raises arms and then lowers them|1.75|shoots a pink beam
-effect=12 ranged hits in 4.25 s
-count=2
-length=4.25
-subeffect=damage:4536972
-effect=first hit
-subeffect=stun:2
-#note=hits when arms are at bottom
-#note=break line of sight, interrupt or keep blocking / evading
-
-##################################################################
-
+# Levels 77, 78 and 79 exist.
 Name=Mark K Battle Golem
+ID=10207
 alt=Mark K Battle Golems|K-B Golem|K-B Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=elite
 Path=CoES
-health=146136
-type=inquest
 
 # Uses level 77 values.
 
@@ -1106,83 +732,14 @@ effect=whirl finisher
 #note=may move out of reset range (can be used to split groups)
 
 ##################################################################
-
-Name=Mark K Battle Golem
-alt=Mark K Battle Golems|K-B Golem|K-B Golems
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
-Path=CoES
-type=inquest
-health=139392
-level=77
-
-attack=Sundering Punch
-animation=swings right arm and then left arm|0.75
-cooldown=3.5
-effect=2 melee hits 0.25 s
-count=2
-length=0.25
-subeffect=damage:2958984
-subeffect=vulnerability:6
-#note=block, evade or tank
-#note=run through (needs good timing)
-
-attack=Whirling Assault
-cooldown=38
-animation=spreads arms, glows and spins slightly|2|moves forward while spinning
-effect=slow dash with melee (4 hits in 3 s)
-count=4
-length=3
-subeffect=damage:4461048
-subeffect=knockback:3
-#note=run through behind back
-#note=may move out of reset range (can be used to split groups)
-
-##################################################################
-
-Name=Mark K Battle Golem
-alt=Mark K Battle Golems|K-B Golem|K-B Golems
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
-Path=CoES
-type=inquest
-health=149752
-level=79
-
-# Uses level 77 values.
-attack=Sundering Punch
-animation=swings right arm and then left arm|0.75
-cooldown=3.5
-effect=2 melee hits 0.25 s
-count=2
-length=0.25
-subeffect=damage:2958984
-subeffect=vulnerability:6
-#note=block, evade or tank
-#note=run through (needs good timing)
-
-attack=Whirling Assault
-cooldown=38
-animation=spreads arms, glows and spins slightly|2|moves forward while spinning
-effect=slow dash with melee (4 hits in 3 s)
-count=4
-length=3
-subeffect=damage:4461048
-subeffect=knockback:3
-effect=whirl finisher
-#note=run through behind back
-#note=may move out of reset range (can be used to split groups)
-
-##################################################################
-
+# Levels 60 and 79 exist.
 Name=Mark J Assault Golem
+ID=10206
+level=79
 alt=Mark J Assault Golems|J-A Golem|J-A Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=elite
 Path=CoES
-type=inquest
-health=146136
-condition=957
 
 # Uses level 79 values.
 attack=Grenade
@@ -1207,88 +764,32 @@ subeffect=bleeding:10:3
 #note=at range run out of circles
 
 ##################################################################
-
-Name=Mark J Assault Golem
-alt=Mark J Assault Golems|J-A Golem|J-A Golems
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
-Path=CoES
-type=inquest
-health=149752
-level=79
-
-attack=Grenade
-cooldown=3
-animation=swings a glowing right arm|1|throws a white line
-additional=can't be blocked
-effect=ballistic projectile with delayed (2.5 s) AoE
-subeffect=damage:10019916
-subeffect=bleeding:10:3
-#note=run out of the circle
-#note=at melee range position yourself properly so you don't run out of space
-
-attack=Grenade Barrage
-cooldown=20
-animation=spreads arms, spins a bit and starts spinning other direction|2.5|keeps spinning while throwing white lines
-additional=can't be blocked. Minimum range: melee
-effect=4 delayed (2.5 s) AoEs in ~3 s
-subeffect=damage:10019916
-subeffect=bleeding:10:3
-#note=interrupt
-#note=stay at melee range
-#note=at range run out of circles
-
-##################################################################
-
+# Levels 78 and 79 exist.
 Name=Mark J Battle Golem
+ID=10205
 alt=Mark J Battle Golems|J-B Golem|J-B Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=elite
 Path=CoES
-type=inquest
-health=146136
 
 ##################################################################
-
-Name=Mark J Battle Golem
-alt=Mark J Battle Golems|J-B Golem|J-B Golems
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
-Path=CoES
-type=inquest
-health=149752
-level=79
-
-##################################################################
-
+# Levels 78 and 79 exist.
 Name=Mark P Battle Golem
+ID=10210
 alt=Mark P Battle Golems|P-B Golem|P-B Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=elite
 Path=CoES
-type=inquest
-health=146136
 
 ##################################################################
-
-Name=Mark P Battle Golem
-alt=Mark P Battle Golems|P-B Golem|P-B Golems
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
-Path=CoES
-type=inquest
-health=149752
-level=79
-
-##################################################################
-
+# Levels 60 and 79 exist.
 Name=Mark P Support Golem
+ID=10209
+level=79
 alt=Mark P Support Golems|P-S Golem|P-S Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=elite
 Path=CoES
-type=inquest
-health=146136
 
 attack=Fire Shield
 animation=sits down|1
@@ -1296,31 +797,14 @@ effect=channeled PBAoE?
 subeffect="Fire Aura" per tick
 
 ##################################################################
-
-Name=Mark P Support Golem
-alt=Mark P Support Golems|P-S Golem|P-S Golems
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
-Path=CoES
-type=inquest
-health=149752
-level=79
-
-attack=Fire Shield
-animation=sits down|1
-effect=channeled PBAoE?
-subeffect="Fire Aura" per tick
-
-##################################################################
-
+# VERIFY Uustable Bomb Golem
 Name=Mark S Bomb Golem
+ID=10512
+level=80
 alt=Mark S Bomb Golems|Bomb Golem|Bomb Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=normal
 Path=CoES
-type=inquest
-toughness=0.25
-condition=585
 
 attack=Detonate
 animation=glows and sits down|4|red circle
@@ -1334,12 +818,12 @@ effect=self destruct
 ##################################################################
 
 Name=Mark V Field Generator
+ID=10910
+level=79
 alt=Mark V Field Generators|V-F Generator|V-F Generators
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=normal
 Path=CoES
-toughness=1.8
-type=inquest
 
 # Note: Uses level 79 value.
 attack=Whirling Assault
@@ -1366,47 +850,13 @@ subeffect=healing:1202 every second
 
 ##################################################################
 
-Name=Mark V Field Generator
-alt=Mark V Field Generators|V-F Generator|V-F Generators
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=normal
-Path=CoES
-type=inquest
-health=15022
-toughness=1.8
-level=79
-
-attack=Whirling Assault
-cooldown=6
-animation=shouts and spreads arms with glow then spins slightly|2|moves forward while spinning
-effect=slow dash with melee (4 hits in 3 s)
-count=4
-length=3
-subeffect=damage:2308500
-subeffect=knockback:3
-effect=whirl finisher
-#note=run through behind back
-
-attack=Field
-animation=glows, sits down, gets up and stands still|5
-effect=randomly
-subeffect=ethereal, fire or smoke field
-
-attack=Healing
-animation=sits down|0.3|keeps sitting
-effect=self heal until over ~ 70%
-subeffect=healing:1202 every second
-
-##################################################################
-
 Name=Mark XXX Juggernaut
+ID=10922
+level=79
 alt=Mark XXX Juggernauts|Juggernaut|Juggernauts
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=elite
 Path=CoES
-type=inquest
-# Level 79 value.
-health=103827
 
 attack=Flurry (1)
 animation=pulls left arm back|1.5
@@ -1427,38 +877,6 @@ effect=PBAoE
 subeffect=protection:15
 subeffect=retaliation:15
 #note=even works when interrupted
-
-##################################################################
-
-Name=Mark XXX Juggernaut
-alt=Mark XXX Juggernauts|Juggernaut|Juggernauts
-image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
-Path=CoES
-type=inquest
-health=103827
-level=79
-
-attack=Flurry (1)
-animation=pulls left arm back|1.5
-effect=melee
-subeffect=damage:0
-subeffect=immobilized:1.5
-
-attack=Flurry (2)
-animation=grabs and starts hitting
-effect=3 melee hits in 1 s
-count=3
-length=1
-subeffect=damage:0
-
-attack=Buff
-animation=glows and sits down|5
-effect=PBAoE
-subeffect=protection:15
-subeffect=retaliation:15
-#note=even works when interrupted
-
 
 ##################################################################
 # Other enemies.                                                 #
@@ -1468,6 +886,7 @@ Name=Proximity Alarm Device
 Category=structure
 Path=CoES
 health=14940
+
 ##################################################################
 
 Name=Radiation
@@ -1476,16 +895,15 @@ Path=CoES
 
 attack=Effect
 effect=debuff (1 s)
-subeffect=damage:2730
+subeffect=constant:2730
 
 ##################################################################
-
+# Levels 77, 78 and 80 exist.
 Name=Resonance Cascade Field
+ID=9898
 alt=Resonance Cascade Fields
 Category=normal
 Path=CoES
-type=no type
-health=14660
 
 attack=Immune to normal damage, conditions and control
 
@@ -1496,33 +914,20 @@ effect=Against enemy=Mr._Sparkles:ally
 subeffect=constant:15345 (24%)
 
 ##################################################################
-
-Name=Resonance Cascade Field
-alt=Resonance Cascade Field
-Category=normal
-Path=CoES
-type=no type
-health=13983
-level=77
-
-attack=Immune to normal damage, conditions and control
-
-##################################################################
 # Enemies in explorable.                                         #
-potion=undead|main
+potion=undead_minion|main
 potion=inquest|side
-potion=icebrood|side
+potion=ice_brood|side
 potion=destroyer|side
 potion=nightmare court|side
 ##################################################################
 # Remember to update HotW1 Icebrood Wolf enemy=(Rare):Elite too!
 
 Name=Icebrood Wolf
+ID=9870
 Category=champion
 image=http://wiki.guildwars2.com/images/b/bf/Champion_Icebrood_Wolf.jpg
 Path=CoE1|CoE2|CoE3
-type=icebrood
-health=630960
 
 attack=Bite
 image=http://i.imgur.com/q0TdusG.gif
@@ -1530,7 +935,6 @@ cooldown=3.5
 animation=bites|0.25
 effect=Melee
 subeffect=damage:9434855
-
 
 attack=Frost Leap
 image=http://i.imgur.com/7bQUYcr.gif
@@ -1559,12 +963,10 @@ subeffect=crippled:3
 ##################################################################
 
 Name=Subject Alpha (first)
+ID=7611
 Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE1
-type=undead
-health=963438
-condition=960
 
 attack=Teeth of Mordremoth
 additional=can't be blocked. Minimum-range (stack)
@@ -1599,12 +1001,10 @@ additional=used at 50%
 ##################################################################
 
 Name=Subject Alpha (first)
+ID=7611
 Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE2
-type=undead
-health=963438
-condition=960
 
 attack=Teeth of Primordus
 image=http://i.imgur.com/1TPSikP.gif
@@ -1648,12 +1048,10 @@ additional=used at 50%
 ##################################################################
 
 Name=Subject Alpha (first)
+ID=7611
 Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE3
-type=undead
-health=963438
-condition=960
 
 attack=Teeth of Mordremoth
 additional=can't be blocked. Minimum-range (stack)
@@ -1687,12 +1085,10 @@ effect=revive NPC
 ##################################################################
 
 Name=Subject Alpha (second)
+ID=7611
 Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE1
-type=undead
-health=963438
-condition=960
 
 attack=Teeth of Mordremoth
 additional=can't be blocked. Minimum-range (stack)
@@ -1746,12 +1142,10 @@ additional=used at 25% health
 ##################################################################
 
 Name=Subject Alpha (second)
+ID=7611
 Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE2
-type=undead
-health=963438
-condition=960
 
 attack=Teeth of Primordus
 image=http://i.imgur.com/1TPSikP.gif
@@ -1808,12 +1202,10 @@ additional=used at 25% health
 ##################################################################
 
 Name=Subject Alpha (second)
+ID=7611
 Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE3
-type=undead
-health=963438
-condition=960
 
 attack=Teeth of Mordremoth
 additional=can't be blocked. Minimum-range (stack)
@@ -1863,12 +1255,10 @@ additional=used at 25%
 ##################################################################
 
 Name=Subject Alpha (third)
+ID=7611
 Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE1
-type=undead
-health=963438
-condition=960
 
 attack=Teeth of Mordremoth
 additional=can't be blocked. Minimum-range (stack)
@@ -1921,12 +1311,10 @@ subeffect=deal 20% more damage
 ##################################################################
 
 Name=Subject Alpha (third)
+ID=7611
 Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE2
-type=undead
-health=963438
-condition=960
 
 attack=Teeth of Primordus
 image=http://i.imgur.com/1TPSikP.gif
@@ -1988,12 +1376,10 @@ subeffect=deal 20% more damage
 ##################################################################
 
 Name=Subject Alpha (third)
+ID=7611
 Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE3
-type=undead
-health=963438
-condition=960
 
 attack=Teeth of Mordremoth
 additional=can't be blocked. Minimum-range (stack)
@@ -2075,27 +1461,27 @@ subeffect=bleeding:30:5
 #note=getting downed also removes the effect because you will be immune to (some?) control effects
 
 ##################################################################
-
+# Levels 1, 70 and 80 exist.
 Name=Black Essence
+# VERIFY 10086
+ID=10216
 alt=Black Essences
 image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
 Category=normal
 Path=CoE1|CoE2|CoE3
-type=elemental
-toughness=0.7
 
 attack=Sacrifice
 effect=melee
-subeffect=healing| to target (Subject Alpha)
+subeffect=healing:0 to target (Subject Alpha)
 effect=self destruct
 
 ##################################################################
 
 Name=Mark T-B34RC3
+ID=10130
 Category=legendary
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=CoE1|CoE2|CoE3
-type=inquest
 
 attack=Ultra Beam
 animation=purple glow and raises arms|1.5
@@ -2140,10 +1526,10 @@ subeffect=damage:0
 ##################################################################
 
 Name=Bjarl the Rampager
+ID=10218
 Category=legendary
 image=http://wiki.guildwars2.com/images/f/ff/Havram_Girthbinder.jpg
 Path=CoE1|CoE2|CoE3
-type=sons of svanir
 
 attack=No unshakeable (or defiance)
 
@@ -2169,10 +1555,10 @@ subeffect=take much less damage
 ##################################################################
 
 Name=Evolved Husk
+ID=10337
 Category=legendary
 image=http://wiki.guildwars2.com/images/6/6a/The_Defiler.jpg
 Path=CoE2
-type=no type
 
 attack=AoE
 animation=glows and swings right arm|0.5
@@ -2188,10 +1574,10 @@ effect=buff:projectile_absorption
 ##################################################################
 
 Name=Destroyer Crab
+ID=9711
 Category=champion
 image=http://wiki.guildwars2.com/images/f/fe/Destroyer_Crab.jpg
 Path=CoE3
-type=destroyer
 
 attack=Lava Fonts
 effect=2-3 ticking AoEs
@@ -2207,6 +1593,7 @@ subeffect=burning:0
 ##################################################################
 
 Name=Destroyer Crab
+ID=9710
 alt=Destroyer Crabs
 image=http://wiki.guildwars2.com/images/f/fe/Destroyer_Crab.jpg
 Category=normal
@@ -2216,10 +1603,10 @@ type=destroyer
 ##################################################################
 
 Name=Evolved Destroyer
+ID=10404
 Category=legendary
 image=http://wiki.guildwars2.com/images/7/7d/Destroyer_Troll.jpg
 Path=CoE3
-type=destroyer
 
 attack=Tooth of Mordremoth
 cooldown=5
@@ -2239,13 +1626,11 @@ effect=buff
 ##################################################################
 
 Name=Flametouched Husk
+ID=10221
 alt=Flametouched Husks
 image=http://wiki.guildwars2.com/images/4/4c/Flametouched_Husk.jpg
 Category=elite
 Path=CoE2
-# Not verified.
-health=157296
-type=nightmare court
 
 attack=Husk Swipe
 effect=cone
@@ -2269,14 +1654,11 @@ subeffect=burning:0
 # Same enemy: HotW Icebrood Troll
 
 Name=Icebrood Troll
+ID=9871
 alt=Icebrood Trolls
 image=http://wiki.guildwars2.com/images/f/fc/Icebrood_Troll.jpg
-# Not verified.
-health=157296
 Category=elite
 Path=CoE1
-type=icebrood
-condition=870
 
 # Damage values from HotW.
 attack=Troll Smash
@@ -2300,13 +1682,11 @@ subeffect=5 "Troll regeneration" in 5 s
 ##################################################################
 
 Name=Icebrood Elemental
+ID=9887
 alt=Icebrood Elementals
 image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
 Category=elite
-health=157296
 Path=CoE1|CoE2|CoE3
-type=icebrood
-condition=950
 
 attack=Ice Throw
 image=http://i.imgur.com/36lhIK0.gif
@@ -2338,11 +1718,11 @@ subeffect=chilled:3
 ##################################################################
 
 Name=Icebrood Colossus
+ID=10219
 alt=Icebrood Colossi
 image=http://wiki.guildwars2.com/images/3/38/Icebrood_Colossus.jpg
 Category=elite
 Path=CoE1|CoE2|CoE3
-type=icebrood
 
 attack=Ice Shards
 cooldown=3
@@ -2371,13 +1751,11 @@ subeffect=knockback:1.5
 ##################################################################
 
 Name=Icebrood Goliath
+ID=9873
 alt=Icebrood Goliaths
 image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
 Category=elite
-health=157296
 Path=CoE1|CoE2|CoE3
-# Verified.
-type=ogre
 
 attack=Smash
 image=http://i.imgur.com/XXFJoDF.gif
@@ -2408,12 +1786,11 @@ subeffect=chilled:7
 # Remember to update HotWS Icebrood Wolf (Elite) too!
 
 Name=Icebrood Wolf
+ID=9869
 alt=Icebrood Wolves
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
-health=157296
 Category=elite
 Path=CoE1|CoE2|CoE3
-type=icebrood
 
 attack=Bite
 image=http://i.imgur.com/kkL8fmR.gif
@@ -2439,12 +1816,11 @@ subeffect=enemy=Icebrood_Wolf:normal
 # Remember to update Snow Icebrood Wolf too!
 
 Name=Icebrood Wolf
+ID=11708
 alt=Icebrood Wolves
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
-health=15774
 Category=normal
 Path=CoE1|CoE2|CoE3
-type=icebrood
 
 attack=Bite
 cooldown=3.5
@@ -2461,12 +1837,10 @@ subeffect=crippled:3
 ##################################################################
 
 Name=Mark K Assault Golem
+ID=10208
 Category=elite
 Path=CoE1|CoE2|CoE3
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-# Not verified.
-health=157296
-type=inquest
 
 attack=Crystal Shot
 animation=swings both arms|0.5
@@ -2487,12 +1861,10 @@ subeffect=stun:1
 ##################################################################
 
 Name=Mark J Assault Golem
+ID=10206
 Category=elite
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-# Not verified.
-health=157296
 Path=CoE1|CoE2|CoE3
-type=inquest
 
 attack=Grenade
 cooldown=0
@@ -2508,15 +1880,11 @@ subeffect=damage:0
 ##################################################################
 
 Name=Mark S Bomb Golem
+ID=10265
 alt=Mark S Bomb Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Category=normal
-# Not verified.
-health=15774
 Path=CoE1|CoE2|CoE3
-type=inquest
-toughness=0.25
-condition=553
 
 attack=Detonate
 animation=glows and sits down|4|red circle
@@ -2530,12 +1898,10 @@ effect=self destruct
 ##################################################################
 
 Name=Mark K Battle Golem
+ID=10207
 Category=elite
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-# Not verified.
-health=157296
 Path=CoE1|CoE2|CoE3
-type=inquest
 
 attack=Sundering Punch
 animation=swings both arm|0.5
@@ -2557,12 +1923,10 @@ effect=whirl finisher
 ##################################################################
 
 Name=Mark P Support Golem
+ID=10209
 Category=elite
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-# Not verified.
-health=157296
 Path=CoE1|CoE2|CoE3
-type=inquest
 
 attack=Fire Shield
 animation=sits down|1
@@ -2572,12 +1936,10 @@ subeffect="Fire Aura" per tick
 ##################################################################
 
 Name=Mark XXX Juggernaut
+ID=10922
 Category=elite
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-# Not verified.
-health=157296
 Path=CoE1|CoE2|CoE3
-type=inquest
 
 attack=Flurry (1)
 animation=pulls left arm back|1.5
@@ -2602,13 +1964,11 @@ subeffect=retaliation:15
 ##################################################################
 
 Name=Nightmare Hound
+ID=3230
 alt=Nightmare Hounds
 image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
 Category=elite
-# Not verified.
-health=157296
 Path=CoE2
-type=nightmare court
 
 attack=Bite
 cooldown=0
@@ -2627,14 +1987,11 @@ subeffect=knockdown:0
 ##################################################################
 
 Name=Nightmare Husk
+ID=7393
 alt=Nightmare Husks
 image=http://wiki.guildwars2.com/images/5/5d/Summoned_Husk.jpg
-# Not verified.
-health=157296
 Category=elite
 Path=CoE1|CoE2
-# Verified.
-type=nightmare court
 
 attack=Husk Swipe
 cooldown=0
@@ -2658,13 +2015,10 @@ subeffect=launch:0
 ###########################################################
 
 name=Plague Carrier Abomination
+ID=10766
 alt=Plague Carrier Abominations
 path=CoE2|CoE3
-# Not verified.
-health=157296
 category=elite
-type=undead
-condition=160
 
 attack=Explode
 effect=PBAoE
@@ -2692,11 +2046,10 @@ subeffect=bleeding:20 per tick. Instantly explodes any subverted enemy=Unstable_
 ###########################################################
 
 name=Unstable Bomb Golem
+ID=10512
 alt=Unstable Bomb Golems
 path=CoE2
 category=normal
-type=inquest
-toughness=0.25
 
 attack=Explode
 animation=glows and sits down, red circle|4
@@ -2707,17 +2060,15 @@ effect=self destruct
 #note=explodes instantly at certain situation (explained at Evolved Husk (Encounter))
 
 ##################################################################
-# Risen: Verified type.                                          #
+# Risen.                                                         #
 ##################################################################
 # Same enemy: ARAH Orrian Gorilla
 
 name=Orrian Gorilla
+ID=8326
 alt=Orrian Gorillas|Gorilla|Gorillas
 path=ARAH1|ARAH3|ARAH4
-# Not verified.
-health=157296
 category=elite
-type=undead
 
 # Damage values from ARAH.
 
@@ -2758,14 +2109,10 @@ subeffect=damage:8823673
 # Same enemy: ARAH Risen Berserker.
 
 name=Risen Berserker
+ID=10807
 alt=Risen Berserkers
 category=elite
 path=CoE2|CoE3
-type=undead
-# Health from ARAH.
-health=157296
-
-attack=Low armor.
 
 # Damage values from ARAH.
 attack=Axe Swing (1)
@@ -2818,13 +2165,10 @@ subeffect=deal 20% more damage
 # Similar enemy: ARAH2 Risen Defiler.
 
 name=Risen Defiler
+ID=10806
 alt=Risen Defilers
 path=CoE2|CoE3
 category=elite
-type=undead
-# Health from ARAH3.
-health=157296
-toughness=1.2
 
 tactic=normal
 Alternates between Throw Anchor and Smash.
@@ -2858,13 +2202,10 @@ subeffect=damage:7355554
 # Same enemy: ARAH Risen Devastator
 
 name=Risen Devastator
+ID=8727
 alt=Risen Devastators|Devastator|Devastators
 path=CoE1
 category=elite
-type=undead
-# Not verified.
-health=157296
-condition=870
 
 # Damage values based on ARAH.
 
@@ -2907,13 +2248,11 @@ subeffect=launch:2.3
 # Same enemy: ARAH Risen Grub.
 
 name=Risen Grub
+ID=10767
 alt=Risen Grubs
 image=http://wiki.guildwars2.com/images/1/19/Risen_Grub.jpg
 path=CoE2|CoE3
-# Not verified.
-health=15774
 category=normal
-type=undead
 
 attack=Undead Grub Spit
 cooldown=0
@@ -2924,15 +2263,12 @@ subeffect=damage:628278
 # Similar enemy: ARAH Risen Thrall.
 # Note: Inquest skin.
 name=Risen Thrall
+ID=9765
 alt=Risen Thralls
 image=http://wiki.guildwars2.com/images/1/1f/Risen_Thrall_Asura.jpg
 image=http://i.imgur.com/zfDZvGP.gif
 category=normal
 path=CoE1|CoE2|CoE3
-# Health from ARAH.
-health=15774
-type=undead
-condition=550
 
 # Damage values from ARAH.
 
@@ -2960,14 +2296,13 @@ effect=melee
 subeffect=damage:1282200
 subeffect=poison:5
 
-
 ###########################################################
 
 name=Undead Abomination
+ID=8281
 image=http://wiki.guildwars2.com/images/b/bf/Risen_Abomination.jpg
 path=CoE2|CoE3
 category=champion
-type=undead
 
 attack=immune to crippled, chilled, immobilized and control skills
 
@@ -3013,12 +2348,10 @@ subeffect=knockback:1
 # Same enemy: ARAH Risen Wraith (Corruptor)
 
 name=Undead Wraith
+ID=8313
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
 path=CoE2|CoE3
 category=elite
-# Not verified.
-health=157296
-type=undead
 
 attack=slash
 effect=melee
@@ -3093,27 +2426,20 @@ subeffect=target may get downed if Wraith is alive
 ##################################################################
 
 Name=Destroyer Harpy
+ID=9716
 alt=Destroyer Harpies
 image=http://wiki.guildwars2.com/images/0/05/Destroyer_Harpy.jpg
-# Not verified.
-health=157296
 Category=elite
 Path=CoE1|CoE3
-# Verified.
-type=destroyer
 
 ##################################################################
 
 Name=Destroyer Troll
+ID=9719
 alt=Destroyer Trolls
 image=http://wiki.guildwars2.com/images/7/7d/Destroyer_Troll.jpg
-# Not verified.
-health=157296
 Category=elite
 Path=CoE3
-# Verified.
-type=destroyer
-
 
 ##################################################################
 # Others.                                                        #
@@ -3150,44 +2476,54 @@ effect=slow melee
 subeffect=damage:0
 
 ##################################################################
-# NPCs                                                           #
+# Bundles                                                        #
+##################################################################
+
+Name=Resonatic Defrequencyizenator
+Category=bundle
+Path=CoES
+
+##################################################################
+# Main NPCs                                                      #
 ##################################################################
 
 Name=Rytlock Brimstone
+ID=6978
 alt=Rytlock
 Category=ally
 image=http://wiki.guildwars2.com/images/6/67/Rytlock_Brimstone.jpg
 Path=CoES
-health=63935
 
 ##################################################################
 
 name=Mr. Sparkles
+ID=7463
+level=77
 category=ally
 image=http://wiki.guildwars2.com/images/c/cf/Mr._Sparkles.jpg
 path=CoES
-health=63935
 
 ##################################################################
 
 Name=Logan Thackeray
+ID=6977
 alt=Logan
 Category=ally
 image=http://wiki.guildwars2.com/images/d/d3/Captain_Logan_Thackeray.jpg
 Path=CoES
-health=63935
 
 ##################################################################
 
 name=Zojja
+ID=6979
 category=ally
 image=http://wiki.guildwars2.com/images/2/29/Zojja.jpg
 path=CoES
-health=63935
 
 ##################################################################
 
 name=Agent Spire
+ID=7610
 category=ally
 image=http://wiki.guildwars2.com/images/5/51/Agent_Spire.jpg
 path=CoE1|CoE2|CoE3
@@ -3195,17 +2531,102 @@ path=CoE1|CoE2|CoE3
 ##################################################################
 
 Name=Captive
+ID=4120
 Category=ally
 Path=CoES
-health=63935
+
+##################################################################
+# Other NPCs                                                     #
+##################################################################
+
+Name=Banker
+ID=6039
+Category=ally
+Path=CoES
 
 ##################################################################
 
-Name=Resonatic Defrequencyizenator
-Category=bundle
+Name=Brawler
+ID=6373
+Category=ally
 Path=CoES
 
+##################################################################
+# Levels 60, 77 and 78 exist.
+Name=Farmer
+# VERIFY 2705
+ID=2541
+# VERIFY 2609
+ID=2540
+Category=ally
+Path=CoES
 
+##################################################################
+# Levels 77 and 78 exist.
+Name=Fisher
+ID=2544
+Category=ally
+Path=CoES
+
+##################################################################
+# Levels 77, 78 and 80 exist.
+Name=Hologram of Kudu
+# VERIFY 10720
+ID=9780
+Category=ally
+Path=CoES
+
+##################################################################
+
+Name=Intercom Voice
+ID=7583
+level=80
+Category=ally
+Path=CoES
+
+##################################################################
+
+Name=Intercom Voice
+ID=7660
+Category=ally
+Path=CoE1|CoE2|CoE3
+
+##################################################################
+# Levels 77 and 78 exist.
+Name=Local
+ID=2605
+Category=ally
+Path=CoES
+
+##################################################################
+
+Name=Medic
+ID=7991
+ID=7992
+Category=ally
+Path=CoES
+
+##################################################################
+# Levels 77 and 78 exist.
+Name=Merchant
+ID=2601
+Category=ally
+Path=CoES
+
+##################################################################
+
+Name=Rancher
+ID=5302
+ID=5301
+Category=ally
+Path=CoES
+
+##################################################################
+
+Name=Storage Room Clerk
+ID=7591
+Category=ally
+Path=CoES
 
 
 
