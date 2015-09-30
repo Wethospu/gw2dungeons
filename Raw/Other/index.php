@@ -68,7 +68,7 @@ $class = strtolower($class);
 ID_CSS
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
 ID_JS
     <!--[if lt IE 9]>
