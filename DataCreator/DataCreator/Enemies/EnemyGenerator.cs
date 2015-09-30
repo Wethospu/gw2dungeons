@@ -202,7 +202,7 @@ namespace DataCreator.Enemies
           if (_currentEnemy != null && _currentEnemy.Name.Length > 0)
           {
             enemies.Add(_currentEnemy);
-            if (_currentEnemy.Path.Length == 0)
+            if (_currentEnemy.Paths.Count == 0)
               Helper.ShowWarning("Path not set for enemy " + _currentEnemy.Name);
           }
           // Copied enemies exist but have no name.
@@ -264,7 +264,7 @@ namespace DataCreator.Enemies
         if (_currentEnemy == null)
           Helper.ShowWarning("Enemy not initialized with name.");
         else
-          _currentEnemy.Path = data.ToLower();
+          _currentEnemy.Paths = new List<string>(data.ToLower().Split('|'));
       }
       else if (tag.Equals("category"))
       {
@@ -641,7 +641,7 @@ namespace DataCreator.Enemies
       foreach (var enemy in enemies)
       {
         indexFile.Append(enemy.Name).Append("|").Append(Helper.Simplify(enemy.Name)).Append("|").Append(enemy.Category);
-        indexFile.Append("|").Append(enemy.Attributes.Family).Append("|").Append(LinkGenerator.CurrentDungeon.ToLower()).Append("|").Append(enemy.Path.Replace('|', ':'));
+        indexFile.Append("|").Append(enemy.Attributes.Family).Append("|").Append(LinkGenerator.CurrentDungeon.ToLower()).Append("|").Append(string.Join(":", enemy.Paths));
         // Store index so that the enemy can be found faster when searching.
         indexFile.Append("|").Append(enemy.FileIndex);
         // Generate tag string. / 2015-07-18 / Wethospu

@@ -140,7 +140,7 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
 	list-style-type: none;
 }
 
-.level-minus, .level-plus{
+.level-minus, .level-plus, .target-level-minus, .target-level-plus, .fractal-level-minus, .fractal-level-plus{
     cursor: pointer;
 }
 

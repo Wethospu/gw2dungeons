@@ -370,145 +370,117 @@ function getCriticalDamage(level, multiplier) {
 ////// These values must match GW2Helper.cs ///////
 //// HEALTH SCALING /////
 
-function fractalHealthScaling(baseHealth, scale, level, type) {
-    if (type == 1)
-        return baseHealth;
-    else if (type == 2)
-        return fractalNormalHealthCalculator(baseHealth, scale, level);
-    else if (type == 3)
-        return fractalChampionHealthCalculator(baseHealth, scale);
-    else if (type == 4)
-        return fractalLegendaryHealthCalculator(baseHealth, scale);
-    else if (type == 5)
-        return fractalLevelHealthCalculator(baseHealth, level);
+function fractalScaleHealth(health, scale, type) {
+	var normalHealthTable = [
+      1.000000000, 1.042855700, 1.085711400, 1.128567100, 1.171422800, 1.214278500, 1.257134200, 1.299989900, 1.342845600, 1.385701300,
+      1.428557000, 1.471412700, 1.514268400, 1.557124100, 1.599979800, 1.642835500, 1.685691200, 1.728546900, 1.771402600, 1.814258300,
+      1.857114000, 1.899969700, 1.942825400, 1.985681100, 2.028536800, 2.071392500, 2.114248200, 2.157103900, 2.199959600, 2.242815300,
+      2.285671000, 2.328526700, 2.371382400, 2.414238100, 2.457093800, 2.499949500, 2.542805200, 2.585660900, 2.628516600, 2.671372300,
+      2.714228000, 2.757083700, 2.799939400, 2.842795100, 2.885650800, 2.928506500, 2.971362200, 3.014217900, 3.057073600, 3.099929300,
+      3.142785000, 3.185640700, 3.228496400, 3.271352100, 3.314207800, 3.357063500, 3.399919200, 3.442774900, 3.485630600, 3.528486300,
+      3.571342000, 3.614197700, 3.657053400, 3.699909100, 3.742764800, 3.785620500, 3.828476200, 3.871331900, 3.914187600, 3.957043300,
+      3.999899000, 4.042754700, 4.085610400, 4.128466100, 4.171321800, 4.214177500, 4.257033200, 4.299888900, 4.342744600, 4.385600300,
+      4.428456000, 4.471311700, 4.514167400, 4.557023100, 4.599878800, 4.642734500, 4.685590200, 4.728445900, 4.771301600, 4.814157300,
+      4.857013000, 4.899868700, 4.942724400, 4.985580100, 5.028435800, 5.071291500, 5.114147200, 5.157002900, 5.199858600, 5.242714300,
+      5.285570000
+    ];
+	var championHealthTable = [
+      1.000000000, 1.013333333, 1.040000000, 1.066666667, 1.080000000, 1.093333333, 1.120000000, 1.146666667, 1.160000000, 1.173333333,
+      1.200000000, 1.226666667, 1.240000000, 1.253333333, 1.280000000, 1.306666667, 1.320000000, 1.333333333, 1.360000000, 1.386666667,
+      1.400000000, 1.413333333, 1.440000000, 1.466666667, 1.480000000, 1.493333333, 1.520000000, 1.546666667, 1.560000000, 1.573333333,
+      1.600000000, 1.626666667, 1.640000000, 1.653333333, 1.680000000, 1.706666667, 1.720000000, 1.733333333, 1.760000000, 1.786666667,
+      1.800000000, 1.813333333, 1.840000000, 1.866666667, 1.880000000, 1.893333333, 1.920000000, 1.946666667, 1.960000000, 1.973333333,
+      2.000000000, 2.026666667, 2.040000000, 2.053333333, 2.080000000, 2.106666667, 2.120000000, 2.133333333, 2.160000000, 2.186666667,
+      2.200000000, 2.213333333, 2.240000000, 2.266666667, 2.280000000, 2.293333333, 2.320000000, 2.346666667, 2.360000000, 2.373333333,
+      2.400000000, 2.426666667, 2.440000000, 2.453333333, 2.480000000, 2.506666667, 2.520000000, 2.533333333, 2.560000000, 2.586666667,
+      2.600000000, 2.613333333, 2.640000000, 2.666666667, 2.680000000, 2.693333333, 2.720000000, 2.746666667, 2.760000000, 2.773333333,
+      2.800000000, 2.826666667, 2.840000000, 2.853333333, 2.880000000, 2.906666667, 2.920000000, 2.933333333, 2.960000000, 2.986666667,
+      3.000000000
+    ];
+	var legendaryHealthTable = [
+      1.000000000, 1.012500000, 1.037500000, 1.062500000, 1.075000000, 1.087500000, 1.112500000, 1.137500000, 1.150000000, 1.162500000,
+      1.187500000, 1.212500000, 1.225000000, 1.237500000, 1.262500000, 1.287500000, 1.300000000, 1.312500000, 1.337500000, 1.362500000,
+      1.375000000, 1.387500000, 1.412500000, 1.437500000, 1.450000000, 1.462500000, 1.487500000, 1.512500000, 1.525000000, 1.537500000,
+      1.562500000, 1.587500000, 1.600000000, 1.612500000, 1.637500000, 1.662500000, 1.675000000, 1.687500000, 1.712500000, 1.737500000,
+      1.750000000, 1.762500000, 1.787500000, 1.812500000, 1.825000000, 1.837500000, 1.862500000, 1.887500000, 1.900000000, 1.912500000,
+      1.937500000, 1.962500000, 1.975000000, 1.987500000, 2.012500000, 2.037500000, 2.050000000, 2.062500000, 2.087500000, 2.112500000,
+      2.125000000, 2.137500000, 2.162500000, 2.187500000, 2.200000000, 2.212500000, 2.237500000, 2.262500000, 2.275000000, 2.287500000,
+      2.312500000, 2.337500000, 2.350000000, 2.362500000, 2.387500000, 2.412500000, 2.425000000, 2.437500000, 2.462500000, 2.487500000,
+      2.500000000, 2.512500000, 2.537500000, 2.562500000, 2.575000000, 2.587500000, 2.612500000, 2.637500000, 2.650000000, 2.662500000,
+      2.687500000, 2.712500000, 2.725000000, 2.737500000, 2.762500000, 2.787500000, 2.800000000, 2.812500000, 2.837500000, 2.862500000,
+      2.875000000
+    ];
+    if (type == 2)
+        return Math.ceil(health * normalHealthTable[scale]);
+    if (type == 3)
+        return Math.ceil(health * championHealthTable[scale]);
+    if (type == 4)
+        return Math.ceil(health * legendaryHealthTable[scale]);
+    return health;
 }
-
-// Nornal / veteran enemies get health every scale 0.0428557 of scale 0 value.
-function fractalNormalHealthCalculator(health, scale, level) {
-    health = Number(health);
-    level = Number(level);
-    scale = Number(scale);
-    health = health * (1 + 0.0428557 * scale);
-    health = Math.ceil(health);
-    return fractalLevelHealthCalculator(health, level);
-}
-
-// Legendary enemies get health every scale 0.013333333 or 0.026666667 of scale 0 value.
-// First is small and then comes pattern of two bigs + two smalls.
-function fractalChampionHealthCalculator(health, scale) {
-    health = Number(health);
-    scale = Number(scale);
-    // Apply first separately.
-    scale = scale - 1;
-    // Pattern of 4 scales. Cut tail and analyze it separately.
-    tail = scale % 4;
-    pattern = scale - tail;
-    bigScaling = pattern / 2;
-    smallScaling = pattern / 2 + 1;
-    if (tail > 0)
-        bigScaling = bigScaling + 1;
-    if (tail > 1)
-        bigScaling = bigScaling + 1;
-    if (tail > 2)
-        smallScaling = smallScaling + 1;
-    health = health * (1 + 0.02666667 * bigScaling + 0.01333333 * smallScaling);
-    return Math.ceil(health);
-}
-
-// Legendary enemies get health every scale 0.0125 or 0.0250 of scale 0 value.
-// First is big and then comes pattern of two bigs + two smalls.
-function fractalLegendaryHealthCalculator(health, scale) {
-    health = Number(health);
-    scale = Number(scale);
-    // Apply first separately.
-    scale = scale - 1;
-    // Pattern of 4 scales. Cut tail and analyze it separately.
-    tail = scale % 4;
-    pattern = scale - tail;
-    bigScaling = pattern / 2 + 1;
-    smallScaling = pattern / 2;
-    if (tail > 0)
-        bigScaling = bigScaling + 1;
-    if (tail > 1)
-        bigScaling = bigScaling + 1;
-    if (tail > 2)
-        smallScaling = smallScaling + 1;
-    health = health * (1 + 0.025 * bigScaling + 0.0125 * smallScaling);
-    return Math.ceil(health);
-}
-
-function fractalLevelHealthCalculator(health, level) {
-    health = Number(health);
-    level = Number(level);
-    if (level == 81)
-        health = health * 1.0290;
-    else if (level == 82)
-        health = health * 1.05848;
-    else if (level == 83)
-        health = health * 1.08796;
-    // Not very accurate.
-    else if (level == 84)
-        health = health * 1.1179;
-    // Not actually tested.
-    else if (level == 85)
-        health = health * 1.148;
-    return Math.ceil(health);
-}
-
 
 //// DAMAGE SCALING /////
-function fractalDamageScaling(baseDamage, scale, level, type) {
-    if (type == 1 || type == 5)
-        return baseDamage;
-    else if (type == 2)
-        return fractalNormalDamageCalculator(baseDamage, scale, level);
-    else if (type == 3)
-        return fractalNormalDamageCalculator(baseDamage, scale, 80);
-    else if (type == 4)
-        return fractalNormalDamageCalculator(baseDamage, scale, 80);
-}
 
-// Barely tested!
-// Nornal / veteran enemies get damage every scale 0.03 of scale 0 value.
-function fractalNormalDamageCalculator(damage, scale) {
-    damage = Number(damage);
-    scale = Number(scale);
-    damage = damage * (1 + 0.03 * scale);
-    return = Math.ceil(damage);
-}
-
-// Legendary enemies get damage every scale 0.0322 of scale 0 value.
-// Probably same big/small thing as with health (couldn't find any good looking values).
-function fractalBossDamageCalculator(damage, scale) {
-    damage = Number(damage);
-    level = Number(level);
-    scale = Number(scale);
-    damage = damage * (1 + 0.0322 * scale);
-    return Math.ceil(damage);
+function fractalScaleDamage(damage, scale, type) {
+	var normalDamageTable = [
+      1.000000000, 1.030000000, 1.060000000, 1.090000000, 1.120000000, 1.150000000, 1.180000000, 1.210000000, 1.240000000, 1.270000000,
+      1.300000000, 1.330000000, 1.360000000, 1.390000000, 1.420000000, 1.450000000, 1.480000000, 1.510000000, 1.540000000, 1.570000000,
+      1.600000000, 1.630000000, 1.660000000, 1.690000000, 1.720000000, 1.750000000, 1.780000000, 1.810000000, 1.840000000, 1.870000000,
+      1.900000000, 1.930000000, 1.960000000, 1.990000000, 2.020000000, 2.050000000, 2.080000000, 2.110000000, 2.140000000, 2.170000000,
+      2.200000000, 2.230000000, 2.260000000, 2.290000000, 2.320000000, 2.350000000, 2.380000000, 2.410000000, 2.440000000, 2.470000000,
+      2.500000000, 2.530000000, 2.560000000, 2.590000000, 2.620000000, 2.650000000, 2.680000000, 2.710000000, 2.740000000, 2.770000000,
+      2.800000000, 2.830000000, 2.860000000, 2.890000000, 2.920000000, 2.950000000, 2.980000000, 3.010000000, 3.040000000, 3.070000000,
+      3.100000000, 3.130000000, 3.160000000, 3.190000000, 3.220000000, 3.250000000, 3.280000000, 3.310000000, 3.340000000, 3.370000000,
+      3.400000000, 3.430000000, 3.460000000, 3.490000000, 3.520000000, 3.550000000, 3.580000000, 3.610000000, 3.640000000, 3.670000000,
+      3.700000000, 3.730000000, 3.760000000, 3.790000000, 3.820000000, 3.850000000, 3.880000000, 3.910000000, 3.940000000, 3.970000000,
+      4.000000000
+    ];
+	var bossDamageTable = [
+      1.000000000, 1.032200000, 1.064400000, 1.096600000, 1.128800000, 1.161000000, 1.193200000, 1.225400000, 1.257600000, 1.289800000,
+      1.322000000, 1.354200000, 1.386400000, 1.418600000, 1.450800000, 1.483000000, 1.515200000, 1.547400000, 1.579600000, 1.611800000,
+      1.644000000, 1.676200000, 1.708400000, 1.740600000, 1.772800000, 1.805000000, 1.837200000, 1.869400000, 1.901600000, 1.933800000,
+      1.966000000, 1.998200000, 2.030400000, 2.062600000, 2.094800000, 2.127000000, 2.159200000, 2.191400000, 2.223600000, 2.255800000,
+      2.288000000, 2.320200000, 2.352400000, 2.384600000, 2.416800000, 2.449000000, 2.481200000, 2.513400000, 2.545600000, 2.577800000,
+      2.610000000, 2.642200000, 2.674400000, 2.706600000, 2.738800000, 2.771000000, 2.803200000, 2.835400000, 2.867600000, 2.899800000,
+      2.932000000, 2.964200000, 2.996400000, 3.028600000, 3.060800000, 3.093000000, 3.125200000, 3.157400000, 3.189600000, 3.221800000,
+      3.254000000, 3.286200000, 3.318400000, 3.350600000, 3.382800000, 3.415000000, 3.447200000, 3.479400000, 3.511600000, 3.543800000,
+      3.576000000, 3.608200000, 3.640400000, 3.672600000, 3.704800000, 3.737000000, 3.769200000, 3.801400000, 3.833600000, 3.865800000,
+      3.898000000, 3.930200000, 3.962400000, 3.994600000, 4.026800000, 4.059000000, 4.091200000, 4.123400000, 4.155600000, 4.187800000,
+      4.220000000
+    ];
+    if (type == 2)
+        return Math.ceil(damage * normalDamageTable[scale]);
+    if (type == 3)
+        return Math.ceil(damage * bossDamageTable[scale]);
+    if (type == 4)
+        return Math.ceil(damage * bossDamageTable[scale]);
+    return damage;
 }
 
 //// LEVEL SCALING /////
-function fractalEnemyLevels(scale) {
-    if (scale == 1)
-        return "80";
+function fractalScaleLevel(level, scale, type) {
+	if (type == null || type < 1)
+		return [ level ];
+    if (scale == 1 || (type != 2 && type != 5))
+		return [ 80 ];
     if (scale < 20)
-        return "80|81";
+        return [ 81, 80 ];
     if (scale == 20)
-        return "81";
+        return [ 81 ];
     if (scale < 40)
-        return "81|82";
+        return [ 82, 81 ];
     if (scale == 40)
-        return "82";
+        return [ 82 ];
     if (scale < 60)
-        return "82|83";
+        return [ 83, 82 ];
     if (scale == 60)
-        return "83";
+        return [ 83 ];
     if (scale < 80)
-        return "83|84";
+        return [ 84, 83 ];;
     if (scale == 80)
-        return "84";
+        return [ 84 ];
     if (scale < 100)
-        return "84|85";
+        return [ 85, 84 ];
     if (scale == 100)
-        return "85";
+        return [ 85 ];
 }

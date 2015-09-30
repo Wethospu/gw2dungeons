@@ -21,40 +21,25 @@ namespace DataCreator.Utility
      * Returns level for given path.                                                               *
      *                                                                                             *
      ***********************************************************************************************/
-
-    static public int PathToLevel(string path)
+    private static Dictionary<string, int> pathToLevel = new Dictionary<string, int>
     {
-      path = path.ToUpper();
-      if (path.Contains("SETTING"))
-        return 80;
-      if (path.Contains("AC1") || path.Contains("AC2") || path.Contains("AC3"))
-        return 35;
-      if (path.Contains("ACS"))
-        return 30;
-      if (path.Contains("CM1") || path.Contains("CM2") || path.Contains("CM3"))
-        return 45;
-      if (path.Contains("CMS"))
-        return 40;
-      if (path.Contains("TAU") || path.Contains("TAF"))
-        return 55;
-      if (path.Contains("TAS"))
-        return 50;
-      if (path.Contains("SE1") || path.Contains("SE2") || path.Contains("SE3"))
-        return 65;
-      if (path.Contains("TAS"))
-        return 60;
-      if (path.Contains("COF1") || path.Contains("COF2") || path.Contains("COF3"))
-        return 75;
-      if (path.Contains("COFS"))
-        return 70;
-      if (path.Contains("HOTWS"))
-        return 76;
-      if (path.Contains("COES"))
-        return 78;
+        { "acs", 30 }, { "ac1", 35 }, { "ac2", 35 }, { "ac3", 35 },
+        { "cms", 40 }, { "cm1", 45 }, { "cm2", 45 }, { "cm3", 45 },
+        { "tas", 50 }, { "taf", 55 }, { "tau", 55 }, { "taae", 80 },
+        { "ses", 60 }, { "se1", 65 }, { "se2", 65 }, { "se3", 65 },
+        { "cofs", 70 }, { "cof1", 75 }, { "cof2", 75 }, { "cof3", 75 },
+        { "hotws", 76 }, { "coes", 78 }
+    };
+
+
+    public static int PathToLevel(string path)
+    {
+      if (pathToLevel.ContainsKey(path))
+        return pathToLevel[path];
       return 80;
     }
 
-    static public string AddTab(int amount)
+    public static string AddTab(int amount)
     {
       var toReturn = new StringBuilder();
       for (; amount > 0; amount--)
@@ -102,7 +87,7 @@ namespace DataCreator.Utility
         }
         if (path.Length > 0)
         {
-          var fail = paths.Any(str => !enemy.Path.ToLower().Contains(str));
+          var fail = paths.Any(str => !enemy.Paths.Contains(str));
           if (fail)
             continue;
         }
@@ -148,7 +133,7 @@ namespace DataCreator.Utility
       if (foundEnemies.Count > 1)
       {
         // Get path specific level.
-        var pathLevel = PathToLevel(path);
+        var pathLevel = PathToLevel(paths[0]);
         // Filter out enemies with different level.
         for (var index = foundEnemies.Count - 1; index >= 0; index--)
         {

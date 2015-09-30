@@ -116,10 +116,10 @@ namespace DataCreator.Utility
       {
         Tab = "    ";
         LineEnding = "\n";
-        JSFiles = Tab + "<script src =\"./media/js/bootstrap-tagsinput.min.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src =\"./media/js/jquery-sortable-min.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src =\"./media/js/commentsection.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src =\"./media/js/jquery.storage.js\"></script>" + LineEnding;
+        JSFiles = Tab + "<script src=\"./media/js/bootstrap-tagsinput.min.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/jquery-sortable-min.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/commentsection.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/jquery.storage.js\"></script>" + LineEnding;
         JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-main.js\"></script>" + LineEnding;
         JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-settings.js\"></script>" + LineEnding;
         JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-calculator.js\"></script>" + LineEnding;

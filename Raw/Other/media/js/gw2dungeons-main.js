@@ -150,20 +150,25 @@ function loadPage() {
 	// Activate enemy links. / 2015-07-31 / Wethospu
 	$("#main-container, #data-overlay").on("click", "span.enemy-button", openEnemyOverlay);
 	$("#main-container, #data-overlay").on( "click", "span.level-minus", function() {
-		var enemy = $(this).parents('.enemy')[0];
-		var level = $(enemy).data('level');
-		if (level == 0)
-			return;
-		$(enemy).data('level', level - 1);
-		handleEnemy(enemy);
+		levelMinus(this, 'level');
 	});
 	$("#main-container, #data-overlay").on( "click", "span.level-plus", function() {
-		var enemy = $(this).parents('.enemy')[0];
-		var level = $(enemy).data('level');
-		if (level == 100)
-			return;
-		$(enemy).data('level', level + 1);
-		handleEnemy(enemy);
+		levelPlus(this, 'level');
+	});
+	$("#main-container, #data-overlay").on( "click", "span.target-level-minus", function() {
+		levelMinus(this, 'target-level');
+	});
+	$("#main-container, #data-overlay").on( "click", "span.target-level-plus", function() {
+		levelPlus(this, 'target-level');
+	});
+	$("#main-container, #data-overlay").on( "click", "span.fractal-level-minus", function() {
+		levelMinus(this, 'fractal-level');
+		// Reset enemy level to let it scale normally. / 2015-09-30 / Wethospu
+		$($(this).parents('.enemy')[0]).data('level', '');
+	});
+	$("#main-container, #data-overlay").on( "click", "span.fractal-level-plus", function() {
+		levelPlus(this, 'fractal-level');
+		$($(this).parents('.enemy')[0]).data('level', '');
 	});
 
 	$(document).keydown(function(event){
@@ -181,6 +186,32 @@ function loadPage() {
 	handleOverlayLinks();
 	loadRecordRun();
 	initScreenResize();
+}
+
+function levelMinus(element, target) {
+	var enemy = $(element).parents('.enemy')[0];
+	var level = $(enemy).data(target);
+	if (cntrlIsPressed)
+		level -= 10;
+	else
+		level -= 1;
+	if (level < 0)
+		level = 0;
+	$(enemy).data(target, level);
+	handleEnemy(enemy);
+}
+
+function levelPlus(element, target) {
+	var enemy = $(element).parents('.enemy')[0];
+	var level = $(enemy).data(target);
+	if (cntrlIsPressed)
+		level += 10;
+	else
+		level += 1;
+	if (level > 100)
+		level = 100;
+	$(enemy).data(target, level);
+	handleEnemy(enemy);
 }
 
 
