@@ -16,7 +16,7 @@ namespace DataCreator
       Rank = "";
       Flag = 0;
       Multipliers = new Multipliers();
-      Sex = "";
+      Gender = "";
       Size = 1.0;
       Family = "";
     }
@@ -40,7 +40,7 @@ namespace DataCreator
     public Multipliers Multipliers { get; set; }
 
     [JsonProperty("sex")]
-    public string Sex { get; set; }
+    public string Gender { get; set; }
 
     [JsonProperty("size")]
     public double Size { get; set; }

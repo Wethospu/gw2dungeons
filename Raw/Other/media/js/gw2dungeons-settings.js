@@ -3,8 +3,8 @@
 // default settings
 var placeholders = {
     level: 80,
-    armor: 2137,
-    health: 18472,
+    armor: 2211,
+    health: 19212,
     resist: 0,
     fractal: 10,
     defenseMultiplier: 0,
@@ -29,27 +29,44 @@ var settings = {
     defenseMultiplier: null,      //
     healthMultiplier: null,       //
     ////////////////////////////////
+	profession: "warrior",
+    potionStrength: "10",
+    potionUsage: "none",
+	// Search settings.
 	searchAmountName: 10000,
 	searchAmountInfo: 100,
 	searchAmountAll: 10,
 	searchView: 'Info',
-    profession: "warrior",
-    potionStrength: "10",
-    potionUsage: "none",
+    // Tab settings.
     tactics: [],
 	tips: [],
-    damage: "damage",
+	tabAmount: 10,
+	// Enemy settings.
+    damageView: "damage",
+	damageRange: "maximum",
     simplifyHealth: true,
     simplifyArmor: true,
-    icon: true,
+	showHealth: true,
+	showArmor: true,
+	showWeaponStrength: true,
+	showPower: true,
+	showPrecision: true,
+	showFerocity: true,
+	showCondition: true,
+	showHealing: true,
+	showRace: true,
+    showSize: true,
+	showRank: true,
+	showGender: true,
+	// General settings.
     settingsVisited: false,
     comments: true,
     adSetting: "medium",
 	defaultFilters: "18EvyA4",
+	// Daily tracker memory.
 	donePaths: [],
 	dailyPaths: [],
-	date: null,
-	tabAmount: 10
+	date: null
 }
 
 function verifyDailyPaths() {
@@ -157,7 +174,7 @@ function chooseCorrectTab() {
 function applyEncounterSettings() {
     chooseCorrectTab();
     // Whether to show icons.
-    if (getSetting("icon"))
+    if (getSetting("showIcons"))
 	{
 		$('.icon').each(function () {
 			$(this).css('background-image', 'url(media/img/' + $(this).attr('title') + '.png)');
@@ -195,25 +212,95 @@ function handleEnemy(enemy) {
         potionStrength = 0;
     var dungeonLevel = getPathLevel($(enemy).data("path"));
 	var playerLevel = getPlayerLevel($(enemy).data("path"), getSetting("level"));
-	// Get attributes.
+	// Set attributes and visibility.
 	var level = $(enemy).data("level");
 	if (level == null)
 		level = dungeonLevel;
-	$(enemy).find(".level").html(level);
+	if (getSetting("showLevel")) {
+		$(enemy).find(".level-unit").show();
+		$(enemy).find(".level").html(level);
+	}	
+	else
+		$(enemy).find(".level-unit").hide();
+	
+	if (getSetting("showGender"))
+		$(enemy).find(".gender-unit").show();
+	else
+		$(enemy).find(".gender-unit").hide();
+	
+	if (getSetting("showRace"))
+		$(enemy).find(".race-unit").show();
+	else
+		$(enemy).find(".race-unit").hide();
+	
+	if (getSetting("showRank"))
+		$(enemy).find(".rank-unit").show();
+	else
+		$(enemy).find(".rank-unit").hide();
+	
+	if (getSetting("showSize"))
+		$(enemy).find(".size-unit").show();
+	else
+		$(enemy).find(".size-unit").hide();
+	
 	var power = getAttribute(level, $(enemy).data("power"));
-	$(enemy).find(".power").html(power);
+	if (getSetting("showPower")) {
+		$(enemy).find(".power-unit").show();
+		$(enemy).find(".power").html(power);
+	}	
+	else
+		$(enemy).find(".power-unit").hide();
+	
 	var criticalChance = getCriticalChance(level, $(enemy).data("precision"), playerLevel);
 	var category = $(enemy).data("category");
 	if (category == "elite" || category == "champion" || category == "legendary")
 		criticalChance = 0;
-	$(enemy).find(".precision").html(criticalChance);
-	$(enemy).find(".armor").html(getArmor(level, $(enemy).data("toughness")));
-	$(enemy).find(".health").html(getHealth(level, $(enemy).data("vitality"), $(enemy).data("health")));
-	$(enemy).find(".ferocity").html(getCriticalDamage(level, $(enemy).data("ferocity")));
+	if (getSetting("showPrecision")) {
+		$(enemy).find(".precision-unit").show();
+		$(enemy).find(".precision").html(precision);
+	}	
+	else
+		$(enemy).find(".precision-unit").hide();
+	
+	var armor = getArmor(level, $(enemy).data("toughness"));
+	if (getSetting("showArmor")) {
+		$(enemy).find(".armor-unit").show();
+		$(enemy).find(".armor").html(armor);
+	}	
+	else
+		$(enemy).find(".armor-unit").hide();
+	
+	var health = getHealth(level, $(enemy).data("vitality"), $(enemy).data("health"));
+	if (getSetting("showHealth")) {
+		$(enemy).find(".health-unit").show();
+		$(enemy).find(".health").html(health);
+	}
+	else
+		$(enemy).find(".health-unit").hide();
+	
+	var criticalDamage = getCriticalDamage(level, $(enemy).data("ferocity"));
+	if (getSetting("showFerocity")) {
+		$(enemy).find(".ferocity-unit").show();
+		$(enemy).find(".ferocity").html(ferocity);
+	}
+	else
+		$(enemy).find(".ferocity-unit").hide();
+	
 	var conditionDamage = getAttribute2(level, $(enemy).data("condition"));
-	$(enemy).find(".condition").html(conditionDamage);
+	if (getSetting("showCondition")) {
+		$(enemy).find("condition-unit").show();
+		$(enemy).find("condition").html(condition);
+	}
+	else
+		$(enemy).find("condition-unit").hide();
+	
 	var healingPower = getAttribute2(level, $(enemy).data("healing"));
-	$(enemy).find(".healing-power").html(healingPower);
+	if (getSetting("showHealing")) {
+		$(enemy).find("healing-unit").show();
+		$(enemy).find("healing-power").html(healing);
+	}
+	else
+		$(enemy).find("healing-unit").hide();
 	
     // Check if scaling is needed.
     var scalingType = Number($(enemy).data("scaling"));
@@ -221,14 +308,14 @@ function handleEnemy(enemy) {
         scaleValues(enemy, scalingType);
     }
     // Simplify health if needed.
-    if (getSetting("simplifyHealth")) {
+    if (getSetting("showHealth") && getSetting("simplifyHealth")) {
         $(enemy).find(".health").each(function () {
             var baseHealth = (Number)($(this).html());
             $(this).html(simplifyHealth(baseHealth));
         });
     }
     // Simplify armor if needed.
-    if (getSetting("simplifyArmor")) {
+    if (getSetting("showArmor") && getSetting("simplifyArmor")) {
         $(enemy).find(".armor").each(function () {
             var baseArmor = (Number)($(this).html());
             $(this).html(simplifyArmor(baseArmor, dungeonLevel));
@@ -299,7 +386,7 @@ function scaleValues(data, scalingType) {
     }
     //// Do first scaling normally.
     var health = fractalHealthScaling(baseHealth, fractalScale, enemyLevels[0], scalingType);
-    var armor = fractalLevelArmorCalculator(baseArmor, enemyLevels[0]);
+    var armor = baseArmor);
 
     var enemyDamages = new Array();
     for (damageIndex = 0; damageIndex < enemyBaseDamages.length; damageIndex++) {
@@ -330,7 +417,7 @@ function scaleValues(data, scalingType) {
         for (levelIndex = 1; levelIndex < enemyLevels.length; levelIndex++) {
             // Do scaling to the copy.
             health = fractalHealthScaling(baseHealth, fractalScale, enemyLevels[levelIndex], scalingType);
-            armor = fractalLevelArmorCalculator(baseArmor, enemyLevels[levelIndex]);
+            armor = baseArmor;
             enemyDamages = new Array();
             for (damageIndex = 0; damageIndex < enemyBaseDamages.length; damageIndex++) {
                 enemyDamages.push(fractalDamageScaling(enemyBaseDamages[damageIndex], fractalScale, enemyLevels[levelIndex], scalingType));

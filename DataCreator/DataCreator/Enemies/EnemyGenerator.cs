@@ -233,16 +233,16 @@ namespace DataCreator.Enemies
             {
               // Enemy can have multiple sexes if there are model variations. / 2015-09-28 / Wethospu
               // Store old one to get both added. / 2015-09-28 / Wethospu
-              var oldSexes = _currentEnemy.Attributes.Sex;
+              var oldSexes = _currentEnemy.Attributes.Gender;
               _currentEnemy.Attributes = enemyAttributes[id];
               if (oldSexes.Length > 0)
               {
                 var sexes = oldSexes.Split('|');
                 // If the sex is already there it can be ignored. / 2015-09-28 / Wethospu
-                if (sexes.Contains(_currentEnemy.Attributes.Sex))
-                  _currentEnemy.Attributes.Sex = oldSexes;
+                if (sexes.Contains(_currentEnemy.Attributes.Gender))
+                  _currentEnemy.Attributes.Gender = oldSexes;
                 else
-                  _currentEnemy.Attributes.Sex = oldSexes + "|" + _currentEnemy.Attributes.Sex;
+                  _currentEnemy.Attributes.Gender = oldSexes + "|" + _currentEnemy.Attributes.Gender;
               }
             }
             else

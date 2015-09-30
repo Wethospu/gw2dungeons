@@ -187,10 +187,6 @@
             <input type="text" name="number" id="agony-setting" data-setting="resist">
         </p>
         <p>
-            <label for="fractal-setting">Fractal Level</label>
-            <input type="text" name="number" id="fractal-setting" data-setting="fractal">
-        </p>
-        <p>
             <label for="potion-usage-setting">Slaying potion usage</label>
             <select class="dropdown" id="potion-usage-setting" data-setting="potionUsage">
                 <option value="none">No usage</option>
@@ -218,45 +214,14 @@
             <input type="text" name="number" id="health-multiplier-setting" data-setting="healthMultiplier"><span class="input-append">%</span><br>
             <span class="forms-desc">WvW and others.</span>
         </p>
-        <h1 class="forms-section">Look and feel</h1>
-        <p>
-            <label for="damage-setting">Damage as</label>
-            <select class="dropdown" id="damage-setting" data-setting="damage">
-                <option value="damage">number</option>
-                <option value="percent">percent</option>
-                <option value="both">both number and percent</option>
-            </select>
-            <span class="forms-desc">Character settings must be set for percents to be accurate.</span>
-        </p>
-        <p class="forms-inline">
-            <label for="tab-amount-setting">Amount of maximum tabs</label>
+		<h1 class="forms-section">General settings</h1>
+		<p class="forms-inline">
+            <label for="tab-amount-setting">Amount of maximum overlay tabs</label>
             <input type="text" name="number" id="tab-amount-setting" data-setting="tabAmount">
         </p>
-        <ul class="forms-list">
-            <li>
-                <input type="checkbox" id="image-setting" data-setting="icon">
-                <label for="image-setting">Shows effects as icons</label>
-            </li>
-        </ul>
-        <ul class="forms-list">
-            <li>
-                <input type="checkbox" id="simplify-health-setting" data-setting="simplifyHealth">
-                <label for="simplify-health-setting">Simplify enemy health</label>
-            </li>
-        </ul>
-        <ul class="forms-list">
-            <li>
-                <input type="checkbox" id="simplify-armor-setting" data-setting="simplifyArmor">
-                <label for="simplify-armor-setting">Simplify enemy armor</label>
-            </li>
-        </ul>
-		<ul class="forms-list">
-            <li>
-                <input type="checkbox" id="comments-setting" data-setting="comments">
-                <label for="comments-setting">Show comments at bottom</label>
-            </li>
-        </ul>
-        <p>
+		<input type="checkbox" id="comments-setting" data-setting="comments">
+        <label for="comments-setting">Show comments at bottom</label>
+        <p class="forms-inline">
             <label for="ad-setting">Advertisements</label>
             <select class="dropdown" id="ad-setting" data-setting="adSetting">
                 <option value="big">Show big ads</option>
@@ -265,6 +230,106 @@
             </select>
             <span class="forms-desc">For extra supporting, please consider donating.</span>
         </p>
+        <h1 class="forms-section">Enemy page</h1>
+        <p>
+            <label for="damage-setting">Damage as</label>
+            <select class="dropdown" data-setting="damageView">
+                <option value="damage">number</option>
+                <option value="percent">percent</option>
+                <option value="both">both number and percent</option>
+            </select>
+        </p>
+		<p>
+            <label for="damage-setting">Damage as</label>
+            <select class="dropdown" data-setting="damageRange">
+                <option value="maximum">maximum</option>
+                <option value="minimum">minimum</option>
+                <option value="average">average</option>
+				<option value="range">range</option>
+            </select>
+        </p>
+        <ul class="forms-list">
+            <li>
+				<label>Shows effects as icons
+					<input type="checkbox" data-setting="showIcons">
+                </label>
+            </li>
+			<li>
+				<label>Simplify enemy health
+					<input type="checkbox" data-setting="simplifyHealth">
+                </label>
+            </li>
+			<li>
+				<label>Simplify enemy armor
+					<input type="checkbox" data-setting="simplifyArmor">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy health
+					<input type="checkbox" data-setting="showHealth">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy armor
+					<input type="checkbox" data-setting="showArmor">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy power
+					<input type="checkbox" data-setting="showPower">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy weapon strength
+					<input type="checkbox" data-setting="showWeaponStrength">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy critical chance
+					<input type="checkbox" data-setting="showPrecision">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy critical damage
+					<input type="checkbox" data-setting="showFerocity">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy condition damage
+					<input type="checkbox" data-setting="showCondition">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy healing power
+					<input type="checkbox" data-setting="showHealing">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy size
+					<input type="checkbox" data-setting="showSize">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy race
+					<input type="checkbox" data-setting="showRace">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy level
+					<input type="checkbox" data-setting="showLevel">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy rank
+					<input type="checkbox" data-setting="showRank">
+                </label>
+            </li>
+			<li>
+                <label>Show enemy gender
+					<input type="checkbox" data-setting="showGender">
+                </label>
+            </li>
+        </ul>
         <h1 class="forms-section">Tactic preferences</h1>
         <span class="forms-desc">Highest tactic in the list below will be displayed first.
         <br>

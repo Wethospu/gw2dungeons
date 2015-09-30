@@ -458,7 +458,7 @@ function fractalLevelHealthCalculator(health, level) {
 
 //// DAMAGE SCALING /////
 function fractalDamageScaling(baseDamage, scale, level, type) {
-    if (type == 1)
+    if (type == 1 || type == 5)
         return baseDamage;
     else if (type == 2)
         return fractalNormalDamageCalculator(baseDamage, scale, level);
@@ -466,19 +466,15 @@ function fractalDamageScaling(baseDamage, scale, level, type) {
         return fractalNormalDamageCalculator(baseDamage, scale, 80);
     else if (type == 4)
         return fractalNormalDamageCalculator(baseDamage, scale, 80);
-    else if (type == 5)
-        return fractalLevelDamageCalculator(baseDamage, level);
 }
 
 // Barely tested!
 // Nornal / veteran enemies get damage every scale 0.03 of scale 0 value.
-function fractalNormalDamageCalculator(damage, scale, level) {
+function fractalNormalDamageCalculator(damage, scale) {
     damage = Number(damage);
-    level = Number(level);
     scale = Number(scale);
     damage = damage * (1 + 0.03 * scale);
-    damage = Math.ceil(damage);
-    return fractalLevelDamageCalculator(damage, level);
+    return = Math.ceil(damage);
 }
 
 // Legendary enemies get damage every scale 0.0322 of scale 0 value.
@@ -489,43 +485,6 @@ function fractalBossDamageCalculator(damage, scale) {
     scale = Number(scale);
     damage = damage * (1 + 0.0322 * scale);
     return Math.ceil(damage);
-}
-
-// Not tested at all.
-function fractalLevelDamageCalculator(damage, level) {
-    damage = Number(damage);
-    level = Number(level);
-    // Enemy level scaling (tweak until you get perfect results!).
-    if (level == 81)
-        damage = damage * 1.03;
-    else if (level == 82)
-        damage = damage * 1.06;
-    else if (level == 83)
-        damage = damage * 1.09;
-    else if (level == 84)
-        damage = damage * 1.12;
-    else if (level == 85)
-        damage = damage * 1.15;
-    return Math.ceil(damage);
-}
-
-//// ARMOR SCALING /////
-function fractalLevelArmorCalculator(armor, level) {
-    armor = Number(armor);
-    level = Number(level);
-	// Reverse calculate the toughness multiplier (dumb but expansion probably changes this stuff).
-	var multiplier = (armor - 1223) / 1374;
-    if (level == 81)
-        armor = 1247 + 1413 * multiplier;
-    else if (level == 82)
-        armor = 1271 + 1453 * multiplier;
-    else if (level == 83)
-        armor = 1295 + 1493 * multiplier;
-	else if (level == 84)
-        armor = 1319 + 1534 * multiplier;
-	else if (level == 85)
-        armor = 1343 + 1575 * multiplier;
-    return Math.round(armor);
 }
 
 //// LEVEL SCALING /////
