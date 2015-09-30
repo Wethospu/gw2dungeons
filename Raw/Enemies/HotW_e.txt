@@ -1,5 +1,5 @@
-potion=son_of_svanir|main
-potion=ice_brood|side
+potion=ice_brood|main
+potion=son_of_svanir|side
 
 Name=Ice Spike
 Category=structure

@@ -347,6 +347,8 @@ To beat the final golems, you must kill them at the same time. Shukov keeps one 
 The Mark I spins with knockback, fires rockets, pulls and also repairs itself. The Mark II stuns and burns with a static field. Melee may be tough!
 tactic=bug
 Golems may not turn hostile if NPC was dead when entering the area. Make sure NPC survives by clearing the enemies or using stealth. There is no known fix.
+tactic=exploit
+If you wipe, Shukov may turn inactive. This means he won't shield them so you can them burst them down much faster.
 
 ###########################################################
 

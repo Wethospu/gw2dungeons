@@ -1,6 +1,6 @@
-# Note: Damage values NOT updated after feature patch!
+potion=outlaw|main
 
-potion=Outlaw|main
+##################################################################
 
 Name=Prototype Golem
 ID=3109

@@ -1,5 +1,3 @@
-#TODO: Id 11451 + 11452 Ascalonian Healer has 0.5 toughness (also 1.0).
-
 ##################################################################
 # Instabilities                                                  #
 ##################################################################
@@ -10,7 +8,8 @@ category=trap
 
 attack=Effect
 effect=small AoE (120 range)
-subeffect=damage:3500|stun:3
+subeffect=damage:7479500
+subeffect=stun:3
 
 ##################################################################
 
@@ -21,7 +20,10 @@ category=trap
 attack=Icy Ground
 animation=red circle appears and ice shard falls to it|0.75|leaves icy ground
 effect=ticking AoE (10 hits in 9 s)
-subeffect=damage:217|chilled:3| per hit
+count=10
+length=9
+subeffect=damage:463729
+subeffect=chilled:3
 
 ##################################################################
 # Due to simplicity, all Aetherblade and Molten non-boss enemies #
@@ -50,7 +52,9 @@ animation=instant|0|shoots flame
 cooldown=2.5
 additional=can't rotate
 effect=~10 cones in 2 s
-subeffect=damage:360| per hit
+count=10
+length=2
+subeffect=damage:769320
 #note=keep circling at melee range
 #note=keep kiting at high range
 
@@ -58,9 +62,9 @@ attack=Flame Blast
 cooldown=12
 animation=slightly raises gun|0.5|shoots a orange ball
 effect=piercing projectile
-subeffect=damage:4434
+subeffect=damage:9475458
 effect=with AoE
-subeffect=damage:8234
+subeffect=damage:17596058
 #note=at close range you won't get hit by the AoE
 #note=at higher range you must evade
 
@@ -83,20 +87,23 @@ attack=Freeze Shot
 cooldown=2.5
 animation=raises the gun slightly|0.5|shoots an icy line	
 effect=projectile
-subeffect=damage:2878|chilled:2
+subeffect=damage:6150286
+subeffect=chilled:2
 
 # Not (probably) shared with similar enemy.
 attack=Freezing Jet
 cooldown=4.5
 animation=starts spraying ice from the gun and then raises the gun|0.5|shoots an icy spray
 effect=cone
-subeffect=damage:1865
+subeffect=damage:3985505
 
 attack=Frost Bomb
 cooldown=39
 animation=gun disappears and swings left arm|0.75
 effect=projectile with AoE
-subeffect=damage:3159|chilled:2|knockdown:3
+subeffect=damage:6750783
+subeffect=chilled:2
+subeffect=knockdown:3
 
 ##################################################################
 # Similar enemy: SE P1 Inquest Assassin
@@ -117,28 +124,30 @@ image=http://i.imgur.com/afnrAd3.gif
 cooldown=0
 animation=swing from right|0.5
 effect=melee
-subeffect=damage:942
+subeffect=damage:2013054
 
 attack=Blinding Powder
 image=http://i.imgur.com/lJWAhZY.gif
 effect=AoE
-subeffect=blind:3|stealth
+subeffect=blind:3
+subeffect=stealth:0
 
 attack=Hornet Sting
 image=http://i.imgur.com/rTMlUM2.gif
 effect=Melee
 subeffect=damage
-effect=evade back
+effect=moves back
+effect=buff:evade
 
 attack=Flanking Strike (1)
 image=http://i.imgur.com/mQZLGNF.gif
 effect=melee
-subeffect=damage:1001
+subeffect=damage:2139137
 
 attack=Flanking Strike (2)
 animation=swing from right with jump|0.66
 effect=melee
-subeffect=damage:1668
+subeffect=damage:3564516
 
 ##################################################################
 # Similar enemy: SE P1 Inquest Assistant
@@ -156,19 +165,21 @@ image=http://i.imgur.com/7YhAPwk.gif
 cooldown=3
 animation=pulls weapon behind back, jumps and smashes ground|0.75|sends a rock line
 effect=returning and piercing projectile
-subeffect=damage:1319| per hit (up to 3 times)
+count=?
+subeffect=damage:2818703
 
 attack=Ring of Earth
 image=http://i.imgur.com/ahdZ3sa.gif
 animation=raises left arm with small earth effect|0.2|ring of rocks appears
 effect=PBAoE
-subeffect=damage:978
+subeffect=damage:2089986
 
 attack=Shield
 image=http://i.imgur.com/u5aG990.gif
 cooldown=16
 animation=instant|0|a yellow shield
-effect=Invulnerability (3 s) and Magnetic Aura (3 s)
+effect=buff:Invulnerability:3
+effect=buff:Magnetic_Aura:3
 #note=Invulnerability overrides Magnetic Aura
 
 ##################################################################
@@ -187,20 +198,21 @@ attack=Throw Bomb
 image=http://i.imgur.com/AvOU6th.gif
 animation=swings right arm while jumping|0.25|throws a bomb
 effect=projectile with AoE
-subeffect=damage:948
+subeffect=damage:2025876
 
 attack=Throw Bomb
 image=http://i.imgur.com/AvOU6th.gif
 animation=swings right arm while jumping|0.25|throws a bomb
 effect=projectile with AoE
-subeffect=damage:948|poison:0:5
+subeffect=damage:2025876
+subeffect=poison:5
 
 # Not shared with similar enemy.
 attack=Bouncing Bomb
 image=http://i.imgur.com/AvOU6th.gif
 animation=pulls right arm behind back|0.5|throws a bomb
 effect=projectile with AoE
-subeffect=damage:615
+subeffect=damage:1314255
 
 ##################################################################
 
@@ -225,7 +237,8 @@ Path=Aether
 
 attack=Energy Field
 effect=On hit
-subeffect=damage:4962859| and teleport to start of the trap area
+subeffect=damage:10605629683
+subeffect=teleport to start of the trap area
 
 ##################################################################
 
@@ -240,11 +253,15 @@ Walls do either one attack.
 
 attack=Wall Beam
 effect=On hit
-subeffect=damage:5034|stun:1|agony:3
+subeffect=damage:10757658
+subeffect=stun:1
+subeffect=agony:3
 
 attack=Energy Beam
 effect=On hit
-subeffect=damage:4920|stun:1|agony:3
+subeffect=damage:10514040
+subeffect=stun:1
+subeffect=agony:3
 
 ##################################################################
 
@@ -255,7 +272,10 @@ Path=Aether
 
 attack=Cannon Blast
 effect=multiple delayed (2-3 s) ticking AoEs (5 hits in 4 s?)
-subeffect=damage:6979|agony:3| per tick
+count=5
+length=4
+subeffect=damage:14914123
+subeffect=agony:3
 
 ##################################################################
 
@@ -270,25 +290,32 @@ attack=Punch
 cooldown=3.5
 animation=pulls right arm back|0.66|swings both arms
 effect=2 melee hits in 0.3 s
-subeffect=damage:1281| per hit
+count=2
+length=0.3
+subeffect=damage:2737497
 
 attack=Pull
 animation=points right arm|0.5|shoots a fist
 additional=only used at distant targets
 effect=fast projectile
-subeffect=damage|pull
+subeffect=damage:0
+subeffect=pull:0
 
 attack=Spin
 animation=glows and spreads arms|2|moves forward while spinning arms
 effect=Dash (4.5 s) with PBAoE
-subeffect=damage|knockback| per hit
+count=?
+subeffect=damage:0
+subeffect=knockback:0
 
-attack=Gets buffed by Small_Lasers (trap] and Big_Lasers (trap]
+attack=Gets buffed by enemy:Small_Lasers and enemy:Big_Lasers
 
 attack=Lightning Shot
 additional=only used when "Boost" buff
 effect=quick projectile
-subeffect=damage:2271|blind|confusion:1921:5
+subeffect=damage:4853127
+subeffect=blind:0
+subeffect=confusion:5
 
 ##################################################################
 
@@ -303,13 +330,17 @@ Spins around in 15 s.
 attack=Wall Beam
 additional=can't be blocked or evaded
 effect=On hit (5 hits per second)
-subeffect=damage:2413|stun:1|agony:3|buff:block:4
+subeffect=damage:5156581
+subeffect=stun:1
+subeffect=agony:3
+subeffect=buff:block:4
 #note=Easy to get hit multiple times
 #note=If you get in bad spot dodge or use mobility to try get through fast
 
 attack="Block"
 effect=buff
-subeffect=blocks all attacks and |daze:2| when blocking a melee attack
+subeffect=buff:block
+subeffect=daze:2 when blocking a melee attack
 
 ##################################################################
 
@@ -324,7 +355,11 @@ Spins around in 30 s.
 attack=Wall Beam
 additional=can't be blocked or evaded
 effect=On hit (5 hits per second)
-subeffect=damage:2413|stun:1|agony:3|buff:lighting_boost:8|might:8:3
+subeffect=damage:5156581
+subeffect=stun:1|
+subeffect=agony:3
+subeffect=buff:lighting_boost:8
+subeffect=might:8:3
 #note=Buffs a enemy=Golem:elite to 25 might in one second
 #note=If you get in bad spot dodge or use mobility to try get through fast
 
@@ -382,13 +417,17 @@ type=fish
 attack=Tentacle Slash
 animation=swings lower body behind|1
 effect=melee
-subeffect=damage:5380|knockback:1.5
+subeffect=damage:11497060
+subeffect=knockback:1.5
 #note=block/evade or outrange
 
 attack=Spin
 animation=spins anti-clockwise|0.75|spins clockwise
 effect=6 PBAoEs in 5 s
-subeffect=damage:674|stun:2| per hit
+count=6
+length=5
+subeffect=damage:1440338
+subeffect=stun:2
 #note=evade away. stability/Stun break if needed
 
 attack=Summon
@@ -401,13 +440,18 @@ attack=Pull (1)
 animation=spins clockwise and rises up|2
 additional=used when below 75%. Can't be blocked or evaded. Only used at close targets
 effect=ranged
-subeffect=pull
+subeffect=pull:0
 #note=interrupt
 #note=Stability prevents pull but not the attack
 
 attack=Eat (2)
 effect=channeled ranged
-subeffect=Agony:1|regeneration|might:0:5|, "Stun" (1 s) and "Damage Resistance" (1 s) per hit
+count=?
+subeffect=Agony:1
+subeffect=regeneration:0
+subeffect=might:5
+subeffect=buff:petrify:1
+subeffect=buff:Damage_Resistance:1:1:-
 #note=spam skill 1 to get out
 
 attack=Eat End (3)
@@ -431,7 +475,10 @@ attack=Tentacle Slash
 cooldown=4
 animation=spins clockwise|0.5
 effect=dash with 4 PBAoEs in 1.5 s
-subeffect=damage:647|vulnerability:5
+count=4
+length=1.5
+subeffect=damage:1382639
+subeffect=vulnerability:5
 #note=Used constantly (long ending animation).
 
 ##################################################################
@@ -446,18 +493,23 @@ type=krait
 
 attack=Lunge
 effect=Melee
-subeffect=damage:0|crippled:6
+subeffect=damage:0
+subeffect=crippled:6
 effect=dash
-subeffect=damage:0|crippled:6
+subeffect=damage:0
+subeffect=crippled:6
 
 attack=Slice
 effect=2 melee hits
-subeffect=damage:0|poison:0:8| per hit
+count=2
+subeffect=damage:0
+subeffect=poison:8
 
 attack=Retreating Strike
 effect=melee
 subeffect=damage:0
-effect=evade back
+effect=move back
+subeffect=buff:evade
 
 ##################################################################
 
@@ -471,18 +523,23 @@ type=krait
 
 attack=Lunge
 effect=Melee
-subeffect=damage:0|crippled:6
+subeffect=damage:0
+subeffect=crippled:6
 effect=dash
-subeffect=damage:0|crippled:6
+subeffect=damage:0
+subeffect=crippled:6
 
 attack=Slice
 effect=2 melee hits
-subeffect=damage:0|poison:0:8| per hit
+count=2
+subeffect=damage:0
+subeffect=poison:8
 
 attack=Retreating Strike
 effect=melee
 subeffect=damage:0
-effect=evade back
+effect=move back
+subeffect=buff:evade
 
 attack=Summon
 effect=summon
@@ -517,7 +574,9 @@ subeffect=damage:0
 
 attack=Poison Cloud
 effect=ticking AoE
-subeffect=damage:0|poison:0:5| per tick
+count=?
+subeffect=damage:0
+subeffect=poison:5
 
 attack=Healing Thingy
 effect=summon
@@ -540,7 +599,9 @@ subeffect=damage:0
 
 attack=Poison Cloud
 effect=ticking AoE
-subeffect=damage:0|poison:0:5| per tick
+count=?
+subeffect=damage:0
+subeffect=poison:5
 
 attack=Healing Thingy
 effect=summon
@@ -554,7 +615,8 @@ path=Aqua
 
 attack=Aura
 effect=aura
-subeffect=regeneration:0:3| every 3 s
+frequency=3
+subeffect=regeneration:3
 
 ##################################################################
 
@@ -574,7 +636,8 @@ subeffect=damage:0
 
 attack=Grappling Throw
 effect=projectile
-subeffect=damage:0|stun
+subeffect=damage:0
+subeffect=stun:0
 
 attack=Net
 effect=trap
@@ -598,7 +661,8 @@ subeffect=damage:0
 
 attack=Grappling Throw
 effect=projectile
-subeffect=damage:0|stun
+subeffect=damage:0
+subeffect=stun:0
 
 attack=Net
 effect=trap
@@ -618,16 +682,18 @@ type=krait
 attack=Sink (1)
 animation=spins
 effect=ranged
-subeffect=sink
+subeffect=sink:0
 #note=evade twice (needs good timing)
 
 attack=Sink (2)
 effect=ranged
-subeffect=sink|damage:0
+subeffect=damage:0
+subeffect=sink:0
 
 attack=Sink (3)
 effect=ranged
-subeffect=sink|damage:0
+subeffect=damage:0
+subeffect=sink:0
 
 ##################################################################
 
@@ -647,7 +713,6 @@ category=ally
 path=Aqua
 # Scaling not verified.
 scaling=constant
-
 
 
 
@@ -677,7 +742,8 @@ effect=AoE
 subeffect=damage:0
 #note=evade if unsure who is being targeted or target is close
 effect=6 projectiles (cone)
-subeffect=damage:0|confusion:0:3
+subeffect=damage:0
+subeffect=confusion:3
 #note=evade
 
 attack=Thundering Leap
@@ -686,29 +752,44 @@ subeffect=damage:0
 
 attack=Wells
 effect=7 delayed (1 s) AoEs in 6 s at target
-subeffect=Agony:3|weakness:5|poison:0:5|vulnerability:5|bleeding:0:5| and remove a Boon per hit
+count=?
+subeffect=Agony:3
+subeffect=weakness:5
+subeffect=poison:5
+subeffect=vulnerability:5
+subeffect=bleeding:5
+subeffect=strip a boon
 #note=targeted player should run away from others
 
 attack=Backbreaker
 additional=used when below 50%
 effect=single target melee
-subeffect=damage:0|knockdown:2|agony:3
+subeffect=damage:0
+subeffect=knockdown:2
+subeffect=agony:3
 
 ##################################################################
 
 name=Cultist Hammer
 category=bundle
 path=Cliff
+condition=250
 
 attack=Picking up
 effect=at 0 stacks
 subeffect=percent:30
 effect=at 1-9 stacks
-subeffect=percent:30|poison:5995:55
+subeffect=percent:30
+subeffect=poison:5995:55
 effect=at 10-19 stacks
-subeffect=percent:30|poison:5995:55|bleeding:3025:55
+subeffect=percent:30
+subeffect=poison:55
+subeffect=bleeding:55
 effect=at 20-39 stacks
-subeffect=percent:30|poison:5995:55|bleeding:3025:55|burning:16995:55
+subeffect=percent:30
+subeffect=poison:55
+subeffect=bleeding:55
+subeffect=burning:55
 
 attack=Wielding
 additional=Wielding Hammer causes "Corruption" (41 s) every second
@@ -717,11 +798,14 @@ attack="Corruption"
 effect=at 10 stacks
 subeffect=vulnerability:13
 effect=at 20 stacks
-subeffect=vulnerability:13|weakness:13
+subeffect=vulnerability:13
+subeffect=weakness:13
 effect=at 30 stacks
-subeffect=vulnerability:13|weakness:13|stun:3
+subeffect=vulnerability:13
+subeffect=weakness:13
+subeffect=stun:3
 effect=at 40 stacks
-subeffect=downed
+subeffect=percent:100
 
 attack=Hammer Swing
 effect=melee
@@ -729,17 +813,21 @@ subeffect=damage
 
 attack=Hammer Smash
 effect=melee
-subeffect=damage|knockback
+subeffect=damage:0
+subeffect=knockback:0
 #note=not much reason to use. Puts all skills on 3 s cooldown and does poor damage
 
 attack=Sanctuary
-effect=aura (6 s)
-subeffect=Stability:1| every 1 s
+effect=buff
+count=7
+length=6
+subeffect=Stability:1
 
 attack=Seal Breaker
-additional=kill an enemy to charge. Also does damage to Seals
+additional=Charges by being near a dying enemy. Also does damage to Seals
 effect=melee
-subeffect=damage|knockback
+subeffect=damage:0
+subeffect=knockback:0
 
 ##################################################################
 
@@ -747,11 +835,15 @@ name=Spike Trap
 alt=Spike Traps
 category=trap
 path=Cliff
+condition=0
 
 attack=Trap
 cooldown=0
 effect=trap (2 hits)
-subeffect=damage:0|knockdown:3|bleeding:204:4.75| per hit
+count=2
+subeffect=damage:0
+subeffect=knockdown:3
+subeffect=bleeding:4.8
 
 ##################################################################
 
@@ -764,7 +856,10 @@ attack=Wind
 cooldown=6
 animation=instant||wind blown
 effect=7 cones in 3 s
-subeffect=damage:0|launch| per hit
+count=7
+length=3
+subeffect=damage:0
+subeffect=launch:0
 
 ##################################################################
 
@@ -777,7 +872,10 @@ attack=Flamestrike
 animation=small pulsing flames|6|big flame (first 6 s) or no effect (last 6 s)
 cooldown=12
 effect=delayed (6 s) ticking AoE (7 hits in 12 s)
-subeffect=damage:0|burning:0:5.75| per tick
+count=7
+length=12
+subeffect=damage:0
+subeffect=burning:5.75
 #note=AoEs stack which means old one is still there doing damage while new one is pulsing (unless Water extinguishes)
 
 ##################################################################
@@ -789,7 +887,8 @@ path=Cliff
 
 attack=Small Fire Explosion
 effect=multiple AoEs in line
-subeffect=damage:0|launch:2| per hit
+subeffect=damage:0
+subeffect=launch:2
 
 ##################################################################
 
@@ -805,11 +904,18 @@ type=outlaw
 attack=Swing
 cooldown=0
 effect=melee
-subeffect=damage:0|knockback
+subeffect=damage:0
+subeffect=knockback:0
 
 attack=Wells
 effect=7 delayed (1 s) AoEs in 6 s at target
-subeffect=Agony:3|weakness:5|poison:0:5|vulnerability:5|bleeding:0:5| and remove a Boon per hit
+count=?
+subeffect=Agony:3
+subeffect=weakness:5
+subeffect=poison:5
+subeffect=vulnerability:5
+subeffect=bleeding:5
+subeffect=strip a boon
 #note=targeted player should run away from others
 
 ##################################################################
@@ -826,24 +932,30 @@ type=outlaw
 attack=Swing
 cooldown=0
 effect=melee
-subeffect=damage:0|knockback
+subeffect=damage:0
+subeffect=knockback:0
 
 attack=Cursed Grasp (1)
 effect=3 projectiles (cone)
-subeffect=damage:0|pull| per hit
+count=?
+subeffect=damage:0
+subeffect=pull:0
 #note=evade
 
 attack=Nova (2)
 animation=raises left arm||white flash
-effect=Reflect projectiles (5 s, protection-icon)
+effect=buff:projectile_reflection:5:1:protection
 effect=high-range PBAoE
-subeffect=damage:0|agony:3
+subeffect=damage:0
+subeffect=agony:3
 #note=keep eye on boss all the time on for protection-icon to block/evade Nova
 #note=be careful with single-blocks (Bone Fiends may waste them)
 
 attack=Backbreaker
 effect=single target melee
-subeffect=damage:0|knockdown:2|agony:3
+subeffect=damage:0
+subeffect=knockdown:2
+subeffect=agony:3
 
 attack=Summon & Cage
 additional=can't be blocked or evaded
@@ -867,11 +979,14 @@ type=outlaw
 attack=Bone Shard
 cooldown=0
 effect=2 projectiles
-subeffect=damage:0| per hit
+count=2
+subeffect=damage:0
 
 attack=Bone Shard
 effect=2 projectiles
-subeffect=damage:0|crippled:2| per hit
+count=2
+subeffect=damage:0
+subeffect=crippled:2
 
 ##################################################################
 
@@ -890,22 +1005,25 @@ attack=Runs away when at low health
 attack=Putrid Curse
 animation=waves staff with green glow
 effect=ranged
-subeffect=damage:0|poison:0:1.75
+subeffect=damage:0
+subeffect=poison:1.75
 
 attack=Feast of Corruption
 animation=waves staff
 effect=ranged
-subeffect=damage:0| (more damage on targets with Conditions)
+subeffect=damage:0 (more damage on targets with Conditions)
 
 attack=Spinal Shivers
 animation=waves left hand with green glow
 effect=ranged
-subeffect=damage:0|vulnerability:4.5
+subeffect=damage:0
+subeffect=vulnerability:4.5
 
 attack=Reaper's Touch
 animation=swings left arm bit slower
 effect=projectile
-subeffect=damage:0|vulnerability:10:4
+subeffect=damage:0
+subeffect=vulnerability:10:4
 
 ##################################################################
 
@@ -924,22 +1042,25 @@ attack=Runs away when at low health
 attack=Putrid Curse
 animation=waves staff with green glow
 effect=ranged
-subeffect=damage:0|poison:0:1.75
+subeffect=damage:0
+subeffect=poison:1.75
 
 attack=Feast of Corruption
 animation=waves staff
 effect=ranged
-subeffect=damage:0| (more damage on targets with Conditions)
+subeffect=damage:0 (more damage on targets with Conditions)
 
 attack=Spinal Shivers
 animation=waves left hand with green glow
 effect=ranged
-subeffect=damage:0|vulnerability:4.5
+subeffect=damage:0
+subeffect=vulnerability:4.5
 
 attack=Reaper's Touch
 animation=swings left arm bit slower
 effect=projectile
-subeffect=damage:0|vulnerability:10:4
+subeffect=damage:0
+subeffect=vulnerability:10:4
 
 ##################################################################
 
@@ -961,13 +1082,20 @@ subeffect=damage:0
 attack=Life Siphon
 animation=raises right arm|0|right glow
 effect=9 ranged hits in 3 s
-subeffect=damage:0|healing| per hit (very high damage)
+count=9
+length=3
+subeffect=damage:0
+subeffect=healing:0
 #note=evade twice
 
 attack=Deathly Swarm
 animation=swings left arm|0|green swarm
 effect=projectile
-subeffect=damage:0|blind| and random condition (|vulnerability:1:10|bleeding:0:0:2|vulnerability:0:2|)
+subeffect=damage:0
+subeffect=blind
+subeffect=vulnerability:1:10|33%
+subeffect=bleeding:0:2|33%
+subeffect=vulnerability:0:2|33%
 
 ##################################################################
 
@@ -986,11 +1114,13 @@ attack=Runs away when at low health
 attack=Double Strike (1)
 cooldown=0
 effect=2 melee hits
-subeffect=damage:0| per hit
+count=2
+subeffect=damage:0
 
 attack=Lotus Strike (2)
 effect=melee
-subeffect=damage:0|poison:249:1.5
+subeffect=damage:0
+subeffect=poison:1.5
 
 attack=Heartseeker
 effect=short leap
@@ -1019,11 +1149,13 @@ attack=Runs away when at low health
 attack=Double Strike (1)
 cooldown=0
 effect=2 melee hits
-subeffect=damage:0| per hit
+count=2
+subeffect=damage:0
 
 attack=Lotus Strike (2)
 effect=melee
-subeffect=damage:0|poison:249:1.5
+subeffect=damage:0
+subeffect=poison:1.5
 
 attack=Heartseeker
 effect=short leap
@@ -1051,12 +1183,15 @@ attack=Runs away when at low health
 attack=Trick Shot
 cooldown=0
 effect=homing and bouncing? projectile
-subeffect=damage:0| per hit
+count=?
+subeffect=damage:0
 
 attack=Disabling Shot
 effect=homing projectile
-subeffect=damage:0|crippled:2
-effect=evade back
+subeffect=damage:0
+subeffect=crippled:2
+effect=move back
+subeffect=buff:evade
 
 ##################################################################
 
@@ -1074,12 +1209,15 @@ attack=Runs away when at low health
 attack=Trick Shot
 cooldown=0
 effect=homing and bouncing? projectile
-subeffect=damage:0| per hit
+count=?
+subeffect=damage:0
 
 attack=Disabling Shot
 effect=homing projectile
-subeffect=damage:0|crippled:2
-effect=evade back
+subeffect=damage:0
+subeffect=crippled:2
+effect=move back
+subeffect=buff:evade
 
 ##################################################################
 
@@ -1124,22 +1262,29 @@ attack=Slash (1)
 cooldown=1
 animation=swing from right|0.5
 effect=Melee
-subeffect=damage:1521|bleeding:1358:15:1
+subeffect=damage:3250377
+subeffect=bleeding:15:1
 
 attack=Slash (2)
 animation=swing from left|0.25
 effect=Melee
-subeffect=damage:1521|bleeding:2715:15:2
+subeffect=damage:3250377
+subeffect=bleeding:15:2
 
 attack=Crippling Strike (3)
 animation=swing from right|0.5
 effect=Melee
-subeffect=damage:721|bleeding:1358:15:1|crippled:7|weakness:15
+subeffect=damage:1540777
+subeffect=bleeding:15:1
+subeffect=crippled:7
+subeffect=weakness:15
 
 attack=Final Thrust (4)
 animation=overhead swing with thrust|0.6|keeps sword forward
 effect=3 melee hits in 0.8 s
-subeffect=bleeding:2715:15:2| per hit
+count=3
+length=0.8
+subeffect=bleeding:15:2
 
 attack=Pistol Shot (1)
 cooldown=14
@@ -1154,9 +1299,11 @@ attack=Teleporting Shot (2)
 animation=instant|0|white flash
 additional=can't be evaded
 effect=small PBAOE
-subeffect=damage:3405
+subeffect=damage:7276485
 effect=small PBAOE
-subeffect=damage:3405|blind:5|crippled:3
+subeffect=damage:7276485
+subeffect=blind:5
+subeffect=crippled:3
 #note=Dodge or use a mobility skill to prevent following melee attacks
 #note=Good timing with a dodge or a mobility skill prevents the second hit
 
@@ -1165,12 +1312,12 @@ cooldown=22
 animation=kneels and spins|0.5|shoots energy bolts
 additional=minimum range. Can't be blocked
 effect=projectile at every target
-subeffect=damage:3691
+subeffect=damage:7887667
 #note=Evade or tank
 #note=Good indicator for Pistol Shot because same range requirement
 
 attack="Captain's Shield"
-additional=Stacks up to 10 times. Recharges every 25%.
+additional=Stacks up to 10 times. Recharges every 25% health.
 effect=buff
 subeffect=10% less damage, reduced control effects and 20% less condition duration
 #note=Even +100% condition duration isn't enough with full stacks
@@ -1192,21 +1339,24 @@ attack=Cannon Blast
 cooldown=9
 animation=red circle, raises cannon and glows|1.5
 effect=projectile with AoE
-subeffect=damage:3503|burning:1584:3
+subeffect=damage:7485911
+subeffect=burning:3
 #note=block or evade
 
 attack=Electric Blast
 cooldown=17
 animation=aims up and kneels back|1
 effect=projectile with ticking AoE (4 hits in 3 s)
-subeffect=damage:1212| and removes 1-3 "Shielding" from enemy=Mai:legendary
+subeffect=damage:2590044
+subeffect=removes 1-3 "Shielding" from enemy=Mai:legendary
 #note=On scale 10, 3 stacks are removed
 #note=On scale 49. 1 stack is removed
 
 attack=Cannon Smash
 animation=glows and holds cannon overhead|2|smashes the ground
 effect=PBAoE
-subeffect=damage:2585|knockback:1.5
+subeffect=damage:5524145
+subeffect=knockback:1.5
 #note=block or evade
 
 ##################################################################
@@ -1226,25 +1376,26 @@ attack=Stab
 animation=moves back and swings from right with thrust|0.5
 cooldown=2
 effect=melee
-subeffect=damage:3751
+subeffect=damage:8015887
 
 attack=Bouncing Electricity
 cooldown=7
 animation=swings sword from right|0.5|shoots blue balls
 effect=3 projectiles
-subeffect=damage:1863
+subeffect=damage:3981231
 
 attack=Shocking Aura
 cooldown=24
 animation=instant
-effect=buff (4 s)
-subeffect=stun:2| if hit at melee
+effect=self
+subeffect=buff:shocking_aura:4
 
 attack=Shocking Stab
 cooldown=33
 animation=glows and holds sword behind back|2|leaps
 effect=leap
-subeffect=damage:3063|stun:2
+subeffect=damage:6545631
+subeffect=stun:2
 
 ##################################################################
 
@@ -1261,7 +1412,8 @@ type=inquest
 
 attack=Punch
 effect=2 melee hits
-subeffect=damage:1255| per hit
+count=2
+subeffect=damage:2681935
 
 ##################################################################
 # Similar enemy: SE P1 Inquest Technician (Melee)
@@ -1286,11 +1438,13 @@ subeffect=damage:0
 attack=Shocking Stab
 animation=glows
 effect=melee
-subeffect=damage:0|stun:2
+subeffect=damage:0
+subeffect=stun:2
 
 attack=Bouncing Electricity
 effect=bouncing projectile
-subeffect=damage:0|swiftness
+subeffect=damage:0
+subeffect=swiftness:0
 
 ##################################################################
 # Molten Furnace                                                 #
@@ -1314,9 +1468,11 @@ attack=Pound
 animation=crusher smashes ground||a white ring
 additional=can't be blocked. Can be jumped over. Max-range 1200. Phase lasts about 55 s
 effect=PBAoE
-subeffect=damage:15504
-effect=growing PBarea field
-subeffect=damage:1550|knockdown:2|agony:3| when passing through
+subeffect=damage:33132048
+effect=growing area field, when passing through
+subeffect=damage:3312350
+subeffect=knockdown:2
+subeffect=agony:3
 #note=Dodge, jump over or out range
 #note=Staying near one corner means you just have to avoid the closest attack
 #note=Movement skills may randomly work
@@ -1325,16 +1481,23 @@ attack=Fiery Tornado
 animation=moving fire effects
 additional=phase lasts about 50 s
 effect=piercing projectile
-subeffect=damage:3876|burning:656:2|launch:2.4|agony:3
+subeffect=damage:8283012
+subeffect=burning:2
+subeffect=launch:2.4
+subeffect=agony:3
 #note=avoid by movement or evade through
 #note=Look at which side they are coming and go opposite side of Core
 
 attack=Fireball
 additional=phase lasts about 55 s
 effect=projectile
-subeffect=damage:717|agony:3
-effect=with 2 ticking AoEs (~10 s)
-subeffect=damage:716|burning:1968:2| per both hits
+subeffect=damage:1532229
+subeffect=agony:3
+effect=with 2 ticking AoEs (~9 s)
+count=20
+length=9
+subeffect=damage:765046
+subeffect=burning:1
 #note=Stay at far left corner for a safe spot
 #note=stay mobile and dodge when needed. Bring sustain.
 
@@ -1357,7 +1520,7 @@ attack=Sonic Boom
 cooldown=1.75
 animation=slightly raises run and aims|0.75|shoots a brown line
 effect=piercing projectile
-subeffect=damage:2864
+subeffect=damage:6120368
 #note=block/evade/tank at melee
 #note=sidestep at range
 
@@ -1372,7 +1535,9 @@ attack=Flame Vortex
 cooldown=14
 animation=kneels and channels fire on the ground|2.25|shoots 3 fiery tornadoes
 effect=3 piercing projectiles (cone)
-subeffect=damage:7433|launch:2.4|agony:3
+subeffect=damage:15884321
+subeffect=launch:2.4
+subeffect=agony:3
 #note=evade at melee
 #note=sidestep at range
 
@@ -1380,14 +1545,17 @@ attack=Impale (1)
 cooldown=17
 animation=kneels back with the gun behind back and thrusts|0.9
 effect=melee
-subeffect=damage:7196|stun:2
+subeffect=damage:15377852
+subeffect=stun:2
 #note=keep circling at melee (dodge if needed)
 #note=stun break and dodge if you get hit
 
 attack=Impale (2)
 animation=pulls the gun back|0.5
 effect=melee
-subeffect=damage:5397|knockback:1.5|burning:2640:5
+subeffect=damage:11533389
+subeffect=knockback:1.5
+subeffect=burning:5
 
 ##################################################################
 
@@ -1402,7 +1570,9 @@ subeffect=percent:50|knockback| and removes stability when touched
 
 attack=Fire Lob
 effect=ticking AoE
-subeffect=damage:221|burning:432:2| per hit
+count=?
+subeffect=damage:472277
+subeffect=burning:2
 
 ##################################################################
 
@@ -1412,11 +1582,12 @@ path=Furn
 
 attack=Drill
 effect=Aura
-subeffect=burning:2821:6.5| when touching
+subeffect=burning:6.5 when touching
 
 attack=Tunnel Collapse
 effect=AoE
-subeffect=damage:1794|knockdown:3
+subeffect=damage:3833778
+subeffect=knockdown:3
 
 ##################################################################
 
@@ -1456,11 +1627,11 @@ type=no type
 attack=Slashing Claws
 cooldown=0
 effect=melee
-subeffect=damage:3750
+subeffect=damage:8013750
 
 attack=Dive
 effect=melee
-subeffect=damage:3500
+subeffect=damage:7479500
 
 ##################################################################
 
@@ -1476,11 +1647,11 @@ type=no type
 attack=Slashing Claws
 cooldown=0
 effect=melee
-subeffect=damage:3750
+subeffect=damage:8013750
 
 attack=Dive
 effect=melee
-subeffect=damage:3500
+subeffect=damage:7479500
 
 ##################################################################
 
@@ -1532,23 +1703,27 @@ attack=Jab
 animation=swings right arm|0.5
 cooldown=0
 effect=melee
-subeffect=damage:3750
+subeffect=damage:8013750
 
 attack=Fireball
 animation=stands still with arms pointing forward|0.5|earth-line
 effect=ticking AoE (10 hits in 5 s)
-subeffect=damage:750|crippled:2| per tick
+count=10
+length=5
+subeffect=damage:1602750
+subeffect=crippled:2
 
 attack=Ring of Earth
 animation=stands still with arms pointing forward|0.5|earth-ring
 effect=PBAoE
-subeffect=damage:6750|knockdown:3
+subeffect=damage:14424750
+subeffect=knockdown:3
 #note=often used immediately at melee-range so prepare to evade/block
 
 attack=Self Buff
 animation=stands still with arms pointing forward|0.5|yellow bubble
 effect=buff
-subeffect=reflect projectiles (5 s)
+subeffect=buff:projectile_reflection:5
 
 ##################################################################
 # Quite similar with FOTM Solid Jade Colossus
@@ -1572,23 +1747,27 @@ attack=Jab
 animation=swings right arm|0.5
 cooldown=0
 effect=melee
-subeffect=damage:2500
+subeffect=damage:5342500
 
 attack=Fireball
 animation=stands still with arms pointing forward|0.5|earth-line
 effect=ticking AoE (10 hits in 5 s)
-subeffect=damage:500|crippled:2| per tick
+count=10
+length=5
+subeffect=damage:1068500
+subeffect=crippled:2
 
 attack=Ring of Earth
 animation=stands still with arms pointing forward|0.5|earth-ring
 effect=PBAoE
-subeffect=damage:3750|knockdown:3
+subeffect=damage:8013750
+subeffect=knockdown:3
 #note=often used immediately at melee-range so prepare to evade/block
 
 attack=Self Buff
 animation=stands still with arms pointing forward|0.5|yellow bubble
 effect=buff
-subeffect=reflect projectiles (5 s)
+subeffect=buff:projectile_reflection:5
 
 ##################################################################
 
@@ -1604,17 +1783,20 @@ attack=Immune to burning
 
 attack=Fiery
 effect=buff
-subeffect=burning:0:2.5| when hit at melee range
+subeffect=burning:2.5 when hit at melee range
 
 attack=Fireball
 animation=rises a bit|0.5
 effect=2 projectiles in 0.3 s
-subeffect=damage:2500| per hit
+count=2
+length=0.3
+subeffect=damage:5342500
 
 attack=Lava Fond
 animation=rises to sky or stands still|2
 effect=3 ticking AoEs (6 s) in 2 s
-subeffect=damage:2250| per hit
+count=?
+subeffect=damage:4808250
 
 ##################################################################
 
@@ -1630,17 +1812,20 @@ attack=Immune to burning
 
 attack=Fiery
 effect=buff
-subeffect=burning:0:2.5| when hit at melee range
+subeffect=burning:2.5 when hit at melee range
 
 attack=Fireball
 animation=rises a bit|0.5
 effect=2 projectiles in 0.3 s
-subeffect=damage:2500| per hit
+count=2
+length=0.3
+subeffect=damage:5342500
 
 attack=Lava Fond
 animation=rises to sky or stands still|2
 effect=3 ticking AoEs (6 s) in 2 s
-subeffect=damage:2250| per hit
+count=?
+subeffect=damage:4808250
 
 ##################################################################
 # Similar enemy: CoF P2 Lashtail Devourer
@@ -1663,9 +1848,14 @@ subeffect=damage:0
 attack=Tail Lash
 animation=raises stinger on back
 effect=5 melee hits in 3 s
-subeffect=damage:0|crippled:5|poison:0:5| per hit
+count=5
+length=3
+subeffect=damage:0
+subeffect=crippled:5
+subeffect=poison:5
 effect=last hit
-subeffect=immobilized:4| and lose crippled
+subeffect=immobilized:4
+subeffect=lose crippled
 
 ##################################################################
 # Similar enemy: CoF P2 Lashtail Devourer
@@ -1688,9 +1878,14 @@ subeffect=damage:0
 attack=Tail Lash
 animation=raises stinger on back
 effect=5 melee hits in 3 s
-subeffect=damage:0|crippled:5|poison:0:5| per hit
+count=5
+length=3
+subeffect=damage:0
+subeffect=crippled:5
+subeffect=poison:5
 effect=last hit
-subeffect=immobilized:4| and lose crippled
+subeffect=immobilized:4
+subeffect=lose crippled
 
 ##################################################################
 
@@ -1708,17 +1903,20 @@ type=no type
 attack=Diseased Bite
 animation=bites|0.5
 effect=melee
-subeffect=damage|poison:984:8
+subeffect=damage:0
+subeffect=poison:8
 
 attack=Slash
 animation=Stands up and slashes|0.75
 effect=melee
-subeffect=damage
+subeffect=damage:0
 
 attack=Screech
 animation=bends forward|0.1
 effect=cone
-subeffect=damage:2377|daze:1|weakness:8
+subeffect=damage:5079649
+subeffect=daze:1
+subeffect=weakness:8
 
 ##################################################################
 
@@ -1733,17 +1931,20 @@ type=no type
 attack=Diseased Bite
 animation=bites|0.5
 effect=melee
-subeffect=damage|poison:984:8
+subeffect=damage:0
+subeffect=poison:8
 
 attack=Slash
 animation=Stands up and slashes|0.75
 effect=melee
-subeffect=damage
+subeffect=damage:0
 
 attack=Screech
 animation=bends forward|0.1
 effect=cone
-subeffect=damage:2377|daze:1|weakness:8
+subeffect=damage:5079649
+subeffect=daze:1
+subeffect=weakness:8
 
 ##################################################################
 # Similar enemy: CoF P3 Red Ooze
@@ -1762,24 +1963,31 @@ attack=Fireball
 cooldown=5.5
 animation=waves head
 effect=3 projectiles with small AoE in 1.6 s
-subeffect=damage:1250| per hit
+count=3
+length=1.6
+subeffect=damage:2671250
 
 attack=Belch (1)
 animation=fiery glow and spins head|0.5
 effect=3 PBAoEs in 0.8 s
-subeffect=damage:1250|burning:0:1| per hit
+count=3
+length=0.8
+subeffect=damage:2671250
+subeffect=burning:1
 
 attack=Belch (2)
 animation=idles|3
 effect=cone
-subeffect=damage:1250|burning:0:1
+subeffect=damage:2671250
+subeffect=burning:1
 #note=sometimes used in reverse order
 
 attack=Ooze Shield
 animation=spins weirdly
-effect=block (4.5 s)
-effect=PBAOE (if blocked anything)
-subeffect=damage:8000
+effect=self
+subeffect=buff:block:4.5
+effect=PBAOE at end if blocked anything)
+subeffect=damage:17096000
 
 ##################################################################
 # Similar enemy: CoF P3 Red Ooze
@@ -1798,24 +2006,31 @@ attack=Fireball
 cooldown=5.5
 animation=waves head
 effect=3 projectiles with small AoE in 1.6 s
-subeffect=damage:750| per hit
+count=3
+length=1.6
+subeffect=damage:1602750
 
 attack=Belch (1)
 animation=fiery glow and spins head|0.5
 effect=3 PBAoEs in 0.8 s
-subeffect=damage:750|burning:0:1| per hit
+count=3
+length=0.8
+subeffect=damage:1602750
+subeffect=burning:1
 
 attack=Belch (2)
 animation=idles|3
 effect=cone
-subeffect=damage:750|burning:0:1
+subeffect=damage:1602750
+subeffect=burning:1
 #note=sometimes used in reverse order
 
 attack=Ooze Shield
 animation=spins weirdly
-effect=block (4.5 s)
-effect=PBAOE (if blocked anything)
-subeffect=damage:8000
+effect=self
+subeffect=buff:block:4.5
+effect=PBAOE at end if blocked anything)
+subeffect=damage:17096000
 
 ##################################################################
 # Similar enemy: CoF P3 Tar Elemental
@@ -1834,15 +2049,19 @@ attack=Spit
 cooldown=3.5
 animation=swings head|0.5
 effect=projectile
-subeffect=damage:1000
+subeffect=damage:2137000
 
 attack=Tar Pool
 cooldown=33
 animation=glows|1.75
 effect=projectile
-subeffect=damage:500|immobilized|0.5
+subeffect=damage:1068500
+subeffect=immobilized:0.5
 effect=with ticking AoE (3 ticks in 2 s)
-subeffect=damage:500|immobilized|0.5| per tick
+count=3
+length=2
+subeffect=damage:1068500
+subeffect=immobilized:0.5
 
 ##################################################################
 # Similar enemy: CoF P3 Tar Elemental
@@ -1860,15 +2079,19 @@ attack=Spit
 cooldown=3.5
 animation=swings head|0.5
 effect=projectile
-subeffect=damage:1000
+subeffect=damage:2137000
 
 attack=Tar Pool
 cooldown=33
 animation=glows|1.75
 effect=projectile
-subeffect=damage:500|immobilized|0.5
+subeffect=damage:1068500
+subeffect=immobilized:0.5
 effect=with ticking AoE (3 ticks in 2 s)
-subeffect=damage:500|immobilized|0.5| per tick
+count=3
+length=2
+subeffect=damage:1068500
+subeffect=immobilized:0.5
 
 ##################################################################
 
@@ -1888,25 +2111,34 @@ attack=Dirt Lob
 animation=swings head|1
 cooldown=4
 effect=2 projectiles in 0.8 s
-subeffect=damage:1193
+count=2
+length=0.8
+subeffect=damage:2549441
 
 attack=Protection
 cooldown=18
 animation=instant|0|spins as a disc
 effect=2 self buffs in 2.25 s
-subeffect=protection:3| per hit
+count=2
+length=2.25
+subeffect=protection:3
 
 attack=Muddied Ground (1)
 cooldown=30
 animation=instant|0|blends to the ground
-effect=evade (3.75 s)
+effect=self
+subeffect=buff:evade:3.75
+subeffect=stealth:3 when evade ends
 effect=ticking PBAoE (4 hits in 3 s) when evade ends
-subeffect=damage:946|crippled:2| per hit
-effect=stealth (3 s)) when evade ends
+count=4
+length=3
+subeffect=damage:2021602
+subeffect=crippled:2
 
 attack=Ooze Mark (2)
 effect=melee
-subeffect=damage:1915|bleeding:1240:5:3
+subeffect=damage:4092355
+subeffect=bleeding:5:3
 #note=used instantly when Muddied Ground ends
 
 ##################################################################
@@ -1925,25 +2157,34 @@ attack=Dirt Lob
 animation=swings head|1
 cooldown=4
 effect=2 projectiles in 0.8 s
-subeffect=damage:1193
+count=2
+length=0.8
+subeffect=damage:2549441
 
 attack=Protection
 cooldown=18
 animation=instant|0|spins as a disc
 effect=2 self buffs in 2.25 s
-subeffect=protection:3| per hit
+count=2
+length=2.25
+subeffect=protection:3
 
 attack=Muddied Ground (1)
 cooldown=30
 animation=instant|0|blends to the ground
-effect=evade (3.75 s)
+effect=self
+subeffect=buff:evade:3.75
+subeffect=stealth:3 when evade ends
 effect=ticking PBAoE (4 hits in 3 s) when evade ends
-subeffect=damage:946|crippled:2| per hit
-effect=stealth (3 s)) when evade ends
+count=4
+length=3
+subeffect=damage:2021602
+subeffect=crippled:2
 
 attack=Ooze Mark (2)
 effect=melee
-subeffect=damage:1915|bleeding:1240:5:3
+subeffect=damage:4092355
+subeffect=bleeding:5:3
 #note=used instantly when Muddied Ground ends
 
 ##################################################################
@@ -1962,7 +2203,9 @@ attack=Vapor Blade (1)
 animation=waves head|0.5
 additional=Uses Tidal Wave if returning projectiles hit
 effect=Returning and piercing projectile
-subeffect=damage:0| per hit
+count=2
+length=1
+subeffect=damage:0
 effect=when returning
 subeffect=pull:1.5
 #note=stand against a wall to prevent returning projectiles
@@ -1971,14 +2214,19 @@ attack=Stealth Blades (1)
 animation=moves head|0.75
 additional=Uses Tidal Wave regardless of hits
 effect=4 returning and piercing projectiles (cone)
-subeffect=damage:0| per hit
+count=2
+length=1
+subeffect=damage:0
 effect=when returning
-subeffect=pull:1.5|stealth
+subeffect=pull:1.5
+subeffect=stealth:0
 
 attack=Tidal Wave (2)
 animation=jumps|1.5
 effect=PBAoE
-subeffect=damage:0|knockdown:1.5|healing
+subeffect=damage:0
+subeffect=knockdown:1.5
+subeffect=healing:0
 #note=block or evade
 
 ##################################################################
@@ -1996,7 +2244,9 @@ attack=Vapor Blade (1)
 animation=waves head|0.5
 additional=Uses Tidal Wave if returning projectiles hit
 effect=Returning and piercing projectile
-subeffect=damage:0| per hit
+count=2
+length=1
+subeffect=damage:0
 effect=when returning
 subeffect=pull:1.5
 #note=stand against a wall to prevent returning projectiles
@@ -2005,14 +2255,19 @@ attack=Stealth Blades (1)
 animation=moves head|0.75
 additional=Uses Tidal Wave regardless of hits
 effect=4 returning and piercing projectiles (cone)
-subeffect=damage:0| per hit
+count=2
+length=1
+subeffect=damage:0
 effect=when returning
-subeffect=pull:1.5|stealth
+subeffect=pull:1.5
+subeffect=stealth:0
 
 attack=Tidal Wave (2)
 animation=jumps|1.5
 effect=PBAoE
-subeffect=damage:0|knockdown:1.5|healing
+subeffect=damage:0
+subeffect=knockdown:1.5
+subeffect=healing:0
 #note=block or evade
 
 ##################################################################
@@ -2064,27 +2319,34 @@ attack=Smash (1)
 animation=swings left arm|0.2
 cooldown=0
 effect=melee
-subeffect=damage:1000
+subeffect=damage:2137000
 #note=does full combo even if it doesn't hit
 #note=can be quite easily tanked
 effect=enraged
-subeffect=damage:1200|knockdown:1.5
+subeffect=damage:2564400
+subeffect=knockdown:1.5
 #note=if kiting try to bait this to force him to do entire combo
 
 attack=Bash (2)
 animation=swings left arm|0.5
 effect=2 melee hits in 0.8 s
-subeffect=damage:1000| per hit
+count=2
+length=0.8
+subeffect=damage:2137000
 effect=enraged
-subeffect=damage:1200|knockdown:1.5| per hit
+count=2
+length=0.8
+subeffect=damage:2564400
+subeffect=knockdown:1.5
 
 attack=Uppercut (3)
 animation=hugs hands and raises them|1
 effect=cone
-subeffect=damage:2000
+subeffect=damage:4274000
 #note=block, evade or just tank
 effect=enraged
-subeffect=damage:2300|launch:2.3
+subeffect=damage:4915100
+subeffect=launch:2.3
 
 attack=Shadowstep
 animation=turns right and leaps|0.5
@@ -2108,15 +2370,16 @@ subeffect=Used 4 times
 attack="Pound"
 animation=jumps||a white ring
 additional=can't be blocked. Can be jumped over. Max-range 1200.
-effect=growing PBarea field
-subeffect=damage:4250| when passing through
+effect=growing PBarea field, when passing through
+subeffect=damage:9082250
 #note=Dodge, jump over or out range
 
 attack="Clap"
 animation=claps||a blue ring
 additional=can't be blocked. Max-range 1200.
-effect=growing PBarea field
-subeffect=damage:4250|launch:2.3| when passing through
+effect=growing PBarea field, when passing through
+subeffect=damage:4250
+subeffect=launch:2.3
 #note=Bit different hit box than "Pound" so evade needs different timing
 #note=Dodge or out range
 
@@ -2124,22 +2387,25 @@ attack=Shield (1)
 animation=hands down|0.5
 additional=only used when alone
 effect=Evade
-effect=area field
-subeffect=burning:568:1| when passin through
+effect=area field, when passing through
+subeffect=burning:1
 effect=with ticking AoE
-subeffect=buff:Shielding:2:1:fire_shield| every 2 seconds
+subeffect=buff:Shielding:2:1:fire_shield every 2 seconds
 
 attack=Jetpack Pound (2)
 animation=Rises to air, laughs and drops to the ground|5|a fiery ring
 additional=can't be blocked. Can be jumped over. Max-range 1200.
-effect=Growing PBAoE field
-subeffect=damage:0|knockdown| when passing through
+effect=Growing PBAoE field, when passing through
+subeffect=damage:0
+subeffect=knockdown:0
 #note=Dodge or out range. Jump only if you are confident
 
 attack=Frost Siege (3)
 additional=not channeled.
 effect=~30 delayed (2 s) AoEs in area during 15.5 s
-subeffect=damage:0|knockdown:3| per hit
+count=?
+subeffect=damage:0
+subeffect=knockdown:3
 
 attack="Shielding"
 effect=buff
@@ -2159,39 +2425,55 @@ path=Molten
 
 attack=Fireball
 effect=projectile
-subeffect=damage:0|burning:1136:2
+subeffect=damage:0
+subeffect=burning:2
 effect=with ticking AoE
-subeffect=damage:0|burning:1136:2| per hit
+count=?
+subeffect=damage:0
+subeffect=burning:2
 #note=Impossible to distinguish from the other Fireball so avoid every circle.
 effect=when Enraged
 subeffect=bigger radius
 
 attack=Fireball
 effect=projectile
-subeffect=damage:3500|burning:1136:2
+subeffect=damage:7479500
+subeffect=burning:2
 effect=with ticking AoE
-subeffect=damage:3500|burning:1136:2| per hit
+count=?
+subeffect=damage:7479500
+subeffect=burning:2
 effect=when Enraged
 subeffect=bigger radius
 
 attack=Bouncing Fireball
 effect=projectile with a bounce on ground
-subeffect=damage:1000| per hit
+count=?
+subeffect=damage:2137000
 effect=when Enraged
-subeffect=damage:0|launch:2.3| per hit
+count=?
+subeffect=damage:0
+subeffect=launch:2.3
 effect=with ticking AoE (11 hits in 10 s)
-subeffect=damage:1000|burning:568:1| per hit
+count=11
+length=10
+subeffect=damage:2137000
+subeffect=burning:1
 effect=when Enraged
 subeffect=bigger radius
 
 attack=Retreat
 effect=ticking AoE
-subeffect=damage:1000|burning:795:1.4| per hit
-effect=evade back
+count=?
+subeffect=damage:2137000
+subeffect=burning:1.4
+effect=move back
+subeffect=buff:evade
 
 attack=Sonic Vortex
 effect=permanent AoE ring
-subeffect=damage:750|launch
+subeffect=damage:1602750
+subeffect=launch:0
 #note=Effect basically halves radius of fighting area (you have to stay near center)
 #note=Firestorm may enter it making melee impossible until he moves back
 
@@ -2213,18 +2495,22 @@ attack=Fireball
 cooldown=4
 animation=moves left foot back and pulls left hand back|1|throws a fireball
 effect=projectile with small AoE
-subeffect=damage:8494
+subeffect=damage:18151678
 #note=block/evade
 
 attack=Firestorm
 cooldown=17
 animation=bends forward and raises arms|3|a red circle appears
 effect=delayed (1 s) ticking AoE (5 hits in 4 s)
-subeffect=damage:5022|burning| per hit (|damage:25110|)
+count=5
+length=4
+subeffect=damage:10732014
+subeffect=burning:0
 
 attack=Fire Aura
 effect=huge aura
-subeffect=Burning:528:1| every second
+frequency=1
+subeffect=Burning:1
 
 ##################################################################
 # Snowblind                                                      #
@@ -2250,18 +2536,24 @@ cooldown=5
 animation=when blue shards appear|instant
 additional=can't be blocked
 effect=piercing projectile
-subeffect=damage:798|launch:2
+subeffect=damage:1705326
+subeffect=launch:2
 effect=with 2 AoE hits
-subeffect=damage:798| per hit (|damage:1596|)
+count=2
+subeffect=damage:1705326
 #note=Use stability (especially when meleeing)
 #note=evade,
 #note=if you want to melee stay at max melee range to maximise reaction time and dodge when blue shards appear
 
 attack=Lightning Strike
 effect=ticking AoE (5 hits in 4 s)
-subeffect=damage:7|crippled:1| per hit
+count=4
+length=3
+subeffect=damage:14959
+subeffect=crippled:1
 effect=last hit
-subeffect=damage:57|launch:4
+subeffect=damage:121809
+subeffect=launch:4
 #note=get out or evade the last hit
 #note=Use ground targeted (and some other specific skills) to destroy the top part
 
@@ -2305,17 +2597,20 @@ attack=Strike (1)
 animation=swings sword from right overhead|0.4
 cooldown=0
 effect=melee
-subeffect=damage:1598|buff:Frostbite:15
+subeffect=damage:3414926
+subeffect=buff:Frostbite:15
 
 attack=Strike (2)
 animation=waits and swings sword from right|1.4
 effect=melee
-subeffect=damage:2079|buff:Frostbite:15
+subeffect=damage:4442823
+subeffect=buff:Frostbite:15
 
 attack=Strike (3)
 animation=waits and thrusts sword forward|1.7
 effect=melee
-subeffect=damage:3245|buff:Frostbite:15:2
+subeffect=damage:6934565
+subeffect=buff:Frostbite:15:2
 #note=deals about same damage as previous hits so don't tank it
 #note=block/evade
 
@@ -2324,7 +2619,10 @@ cooldown=14
 animation=lowers sword, leans back and leans forward|0.5|sprays ice
 additional=able to rotate
 effect=10 cones in 4.5 s
-subeffect=damage:1664|buff:Frostbite:15| per hit (|damage:16640|)
+count=10
+length=4.5
+subeffect=damage:3555968
+subeffect=buff:Frostbite:15
 #note=evade back to direct away from your party
 #note=usually targets the same player
 
@@ -2336,20 +2634,24 @@ subeffect=invulnerability, heal and Ice Spikes around the area
 
 attack=Ice Spike
 effect=delayed (2 s) AoE
-subeffect=damage:0|agony:3
+subeffect=damage:0
+subeffect=agony:3
 
 attack=Ice Spikes
 cooldown=50
 animation=instant||teleports away and rambles about power of dragon
 effect=leaves the arena
 effect=multiple delayed (2 s) AoEs in line (lasts about 20 s)
-subeffect=damage:8620|agony:3| per hit
+count=?
+subeffect=damage:18420940
+subeffect=agony:3
 #note=used on cooldown (even cancels other skills)
 
 attack="Frostbite"
 additional=stacks up to 10 times
 effect=debuff
-subeffect=damage:90.5| per second
+frequency=1
+subeffect=constant:90.5
 effect=at 10 stacks
 subeffect=lose all "Frostbite" and get enemy=Ice_Shard:structure.
 
@@ -2384,12 +2686,14 @@ type=icebrood
 attack=Bite
 cooldown=3.5
 effect=melee
-subeffect=damage:1325
+subeffect=damage:2831525
 
 attack=Leap
 cooldown=35
 effect=2 PBAoEs
-subeffect=damage:2671|crippled:3| per hit (|damage:5342|)
+count=2
+subeffect=damage:5707927
+subeffect=crippled:3
 
 ##################################################################
 # Same enemy: Snow Icebrood Elemental (79).
@@ -2405,53 +2709,23 @@ image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
 scaling=normal
 health=15774
 Path=Snow
+condition=800
 type=icebrood
 
 attack=Ice Strike
 cooldown=7
 animation=moves left hand and points it forward|0.65|a red circle with ice shard appears
 effect=AoE
-subeffect=damage:1176
+subeffect=damage:2513112
 effect=delayed (2 s) AoE
-subeffect=damage:1176|bleeding:825:5:2
+subeffect=damage:2513112
+subeffect=bleeding:5:2
 
 attack=Shockwave
 cooldown=11
 animation=holds right arm behind back with water effect and smashes ground|1.75|sends a frosty shockwave
 effect=homing projectile
-subeffect=damage:1175
-
-##################################################################
-# Same enemy: Snow Icebrood Elemental.
-# Same enemy: HotW1 Icebrood Elemental (Big).
-# Same enemy: HotWS Icebrood Elemental (Big).
-# Same enemy: HotW1 Icebrood Elemental (Big 81).
-# Same enemy: HotW1 Icebrood Elemental (Big 79).
-
-Name=Icebrood Elemental (79)
-Category=normal
-image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
-# Scaling not verified.
-scaling=normal
-level=79
-health=15022
-Path=Snow
-type=icebrood
-# Not tested.
-
-attack=Ice Strike
-cooldown=7
-animation=moves left hand and points it forward|0.65|a red circle with ice shard appears
-effect=AoE
-subeffect=damage:1028
-effect=delayed (2 s) AoE
-subeffect=damage:1028|bleeding:820:5:2
-
-attack=Shockwave
-cooldown=11
-animation=holds right arm behind back with water effect and smashes ground|1.75|sends a frosty shockwave
-effect=homing projectile
-subeffect=damage:1028
+subeffect=damage:2510975
 
 ##################################################################
 
@@ -2470,7 +2744,7 @@ attack=Ice Shards
 cooldown=4
 animation=points left arm|0.75
 effect=projectile
-subeffect=damage:2168
+subeffect=damage:4633016
 effect=also randomly
 subeffect=chilled:2
 
@@ -2478,13 +2752,14 @@ attack=Ice Spike
 cooldown=8
 animation=glows and jumps|1|a red circle with an ice shard
 effect=delayed (2.5 s) AoE
-subeffect=damage:5471
+subeffect=damage:11691527
 
 attack=Frost Blast
 cooldown=16
 animation=pulls right arm back and smashes ground|1.5
 effect=PBAoE
-subeffect=damage:2950|knockback:1.5
+subeffect=damage:6304150
+subeffect=knockback:1.5
 
 ##################################################################
 # Same enemy: HotW1 Icebrood enemy=Berserker:Elite
@@ -2505,21 +2780,27 @@ attack=Throw Axe
 cooldown=2
 animation=swings left/right arm|0.3|throws an axe
 effect=projectile
-subeffect=damage:1198
+subeffect=damage:2560126
 
 attack=Boomerang Axe
 cooldown=12
 animation=swings left/right arm|0.3|throws an axe
 effect=returning projectile
-subeffect=damage:1485|crippled:8| per hit
+count=2
+length=1.0
+subeffect=damage:3173445
+subeffect=crippled:8
 #note=projectile moves slightly slower than with Throw Axe
 
 attack=Whirling Defense
 cooldown=24
 animation=moves axes fast with a whirl effect and wind sound|instant|spins around
 effect=6 PBAoEs in 5 s
-subeffect=damage:1515| per hit (|damage:9090|)
-effect=reflects projectiles (5 s)
+count=6
+length=5
+subeffect=damage:3237555
+effect=self
+subeffect=buff:projectile_reflection:5
 #note=at melee move away to max melee range
 #note=at range stop using projectiles
 
@@ -2528,9 +2809,12 @@ cooldown=58
 animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
 additional=used when below 25%
 effect=Throw Axe
-subeffect=damage:1474
+subeffect=damage:3149938
 effect=Boomerang Axe
-subeffect=damage:1659|chilled:5| per hit
+count=2
+length=1.0
+subeffect=damage:3545283
+subeffect=chilled:5
 effect=Whirling Defense
 subeffect=not used
 #note=Additional usages seem to have no effect
@@ -2558,25 +2842,33 @@ attack=Shoot
 animation=raises bow and aims|0.5|shoots an arrow
 cooldown=2.5
 effect=projectile
-subeffect=damage:1245
+subeffect=damage:2660565
 
 attack=Volley
 cooldown=22
 animation=crouches, raises bow and aims|0.75|shoots arrows
 effect=5 projectiles in 1.5 s
-subeffect=damage:561| per hit (|damage:2805|)
+count=5
+length=1.5
+subeffect=damage:1198857
 
 attack=Frost Volley
 cooldown=22
 animation=crouches, raises bow and aims|0.75|shoots icy arrows
 additional=only used when buffed up
 effect=5 projectiles in 1.5 s
-subeffect=damage:561|chilled:1| per hit (|damage:2805|)
+count=5
+length=1.5
+subeffect=damage:1198857
+subeffect=chilled:1
 
 attack=Barrage
 animation=aims up|0.5|shoots an arrow rain in a big circle
 effect=channeled AoE (10 hits in 3.5 s)
-subeffect=damage:596|crippled:3| per hit (|damage:5960|)
+count=10
+length=3.5
+subeffect=damage:1273652
+subeffect=crippled:3
 
 attack=Summon
 animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
@@ -2616,19 +2908,23 @@ attack=Slash
 cooldown=2
 animation=swings sword|0.4
 effect=2 melee hits in 0.5 s
-subeffect=damage:918| per hit
+count=2
+length=0.5
+subeffect=damage:1961766
 
 attack=Whirlwind Attack
 cooldown=24
 animation=glows and sticks sword to the ground|0.6
 effect=4 projectiles (cone)
-subeffect=damage:2506| per hit
+count=?
+subeffect=damage:5355322
 
 attack=Whirlwind Attack
 cooldown=24
 animation=spins|0.5|moves forward while spinning
 effect=dash (2 s) with 2 PBAoEs
-subeffect=damage:1852| per hit
+count=?
+subeffect=damage:3957724
 #note=usually hits only once, may hit twice if you run with him 
 
 attack=Frostwind Attack
@@ -2636,9 +2932,12 @@ cooldown=24
 animation=spins|0.5|moves forward while spinning
 additional=only used when buffed up
 effect=dash (2 s) with 2 PBAoEs
-subeffect=damage:2206| per hit.
+count=?
+subeffect=damage:4714222
 effect=leaves 4 delayed (1 s) AoEs
-subeffect=damage:1055|bleeding:164:2| per hit
+count=?
+subeffect=damage:2254535
+subeffect=bleeding:2
 #note=usually hits only once, may hit twice if you run with him 
 #note=very dangerous when against a wall
 
@@ -2673,20 +2972,22 @@ attack=Smash
 cooldown=2.5
 animation=swing from right|0.5|frost effect on hit
 effect=Melee
-subeffect=damage:1854
+subeffect=damage:3961998
 
 attack=Leap
 cooldown=14
 animation=crouches and leaps with hammer above head|0.9
 effect=leap
-subeffect=damage:2317|knockdown:2
+subeffect=damage:4951429
+subeffect=knockdown:2
 #note=block/evade
 
 attack=Ice Leap
 cooldown=14
 animation=crouches and leaps with hammer above head|0.9
 effect=leap
-subeffect=damage:3077| and enemy=Ice_Shard:structure on the target
+subeffect=damage:6575549
+subeffect=enemy=Ice_Shard:structure on the target
 #note=block/evade
 #note=attack Ice Shard immediately (one hit)
 
@@ -2721,19 +3022,22 @@ attack=Ice Shards
 cooldown=7
 animation=ice shard grows on top of the staff and he points it forward|1
 effect=3 medium-range projectiles in 0.1 s
-subeffect=damage:453|chilled:1| per hit
+count=3
+length=0.1
+subeffect=damage:968061
+subeffect=chilled:1
 
 attack=Ice Spike
 cooldown=5
 animation=leans back with ice effect on top of the staff, crouches and raises left arm|1|red circle
 effect=delayed (3 s) AoE
-subeffect=damage:2495
+subeffect=damage:5331815
 
 attack=Summon
 animation=leans back, crouches and raises left arm|1
 additional=maximum of 2
 effect=Summon
-subeffect=enemy=Icebrood_Elemental:normal or enemy=Icebrood_Elemental_(79):normal at target
+subeffect=enemy=Icebrood_Elemental:normal or enemy=Icebrood_Elemental:normal:79 at target
 
 attack=On death
 animation=none
@@ -2755,7 +3059,8 @@ type=imp
 attack=Ice Explosion
 animation=stands still with a red circle, white mist forms up and dives fast to the ground|3
 effect=PBAoE
-subeffect=damage:1778|chilled:1
+subeffect=damage:3799586
+subeffect=chilled:1
 effect=self destruct
 #note=Either kill or move away
 
@@ -2771,7 +3076,8 @@ Path=Snow
 
 attack=Effect
 effect=debuff (5 s)
-subeffect=chilled:3| every second and can't move or use skills
+subeffect=chilled:3 every second
+subeffect=buff:petrify
 #note=Stability prevents effect
 #note=stun breaks have no effect
 #note=use a teleport to get out
@@ -2793,7 +3099,7 @@ attack=Bite
 animation=bites|0.25
 cooldown=2.5
 effect=melee
-subeffect=damage:1519
+subeffect=damage:3246103
 
 attack=Howl
 animation=pulls air in, raises head and howls|1.5
@@ -2876,11 +3182,13 @@ subeffect=damage:0|confusion:258:1| per hit
 attack=Shoot
 animation=glows dark purple
 effect=slow projectile
-subeffect=damage:0|knockback:1.5
+subeffect=damage:0
+subeffect=knockback:1.5
 
 attack=Stealth (1)
 animation=spins and glows green
-effect=Stealth
+effect=self
+subeffect=stealth:0
 effect=PBAoE
 subeffect=blind:5
 
@@ -2904,7 +3212,8 @@ type=wind rider
 
 attack=Tentacle Slash
 effect=Melee
-subeffect=damage:0|bleeding:162:2
+subeffect=damage:0
+subeffect=bleeding:2
 
 attack=Self Buff
 animation=spins
@@ -2920,7 +3229,9 @@ subeffect=blind:5
 attack=Prestige (2)
 animation=delay|3|purple effect
 effect=PBAoE
-subeffect=damage:0|poison:0:3|stun:2
+subeffect=damage:0
+subeffect=poison:0:3
+subeffect=stun:2
 
 ##################################################################
 
@@ -2944,18 +3255,22 @@ subeffect=damage:0
 attack=Fireball
 animation=stands still with arms pointing forward|0.5|earth-line
 effect=ticking AoE (10 hits in 5 s)
-subeffect=damage:0|crippled:2| per tick
+count=10
+length=5
+subeffect=damage:0
+subeffect=crippled:2
 
 attack=Ring of Earth
 animation=stands still with arms pointing forward|0.5|earth-ring
 effect=PBAoE
-subeffect=damage:0|knockdown:3
+subeffect=damage:0
+subeffect=knockdown:3
 #note=often used immediately at melee-range so prepare to evade/block
 
 attack=Self Buff
 animation=stands still with arms pointing forward|0.5|yellow bubble
 effect=buff
-subeffect=reflect projectiles (5 s)
+subeffect=buff:projectile_reflection:5
 #note=already reflects projectiles so pointless
 
 ##################################################################
@@ -2985,7 +3300,8 @@ subeffect=damage:0
 attack=Swoop
 animation=twists and then spins
 effect=high-range PBAoE
-subeffect=damage:0|launch
+subeffect=damage:0
+subeffect=launch:0
 #note=block/evade
 
 ##################################################################
@@ -3016,7 +3332,8 @@ subeffect=damage:0
 attack=Frost Blast
 animation=pulls right arm back and smashes ground|2
 effect=PBAoE
-subeffect=damage:0|knockback:1
+subeffect=damage:0
+subeffect=knockback:1
 
 ##################################################################
 # Swampland                                                      #
@@ -3040,7 +3357,10 @@ cooldown=0
 image=http://giant.gfycat.com/WarpedHilariousBlackbuck.gif
 animation=swings left/right arm|0.75|green gas
 effect=3 projectiles (cone) with ticking AoE (4 hits in 3 s)
-subeffect=damage:1750|poison:1080:6| per tick
+count=4
+length=3
+subeffect=damage:3739750
+subeffect=poison:6
 #note=AoEs only start ticking if not blocked/evaded. Visually they still stay so try stay out if possible to be on safe side.
 
 attack=Entangle
@@ -3048,7 +3368,9 @@ image=http://giant.gfycat.com/GlitteringThreadbareDragonfly.gif
 animation=smashes ground with left/right hand|1
 additional=minimum-range (stack)
 effect=3 projectiles (cone)
-subeffect=damage:0|immobilized:3| and "Binding Roots" (2.5 s)
+subeffect=damage:0
+subeffect=immobilized:3
+subeffect=Summon "Binding Roots" (2.5 s)
 #note=block/evade if at range. Stay inside him if at melee.
 #note=can be reflected for great damage
 
@@ -3056,7 +3378,14 @@ attack=Poison Rain
 image=http://giant.gfycat.com/WeepyBewitchedBison.gif
 animation=shakes leaves|0.75
 effect=~20 ballistic projectiles with AoE in 4 s
-subeffect=damage:8000|vulnerability:10|agony:3| per hit
+count=?
+subeffect=damage:17096000
+subeffect=vulnerability:10
+subeffect=agony:3
+effect=frontal cone
+subeffect=damage:17096000
+subeffect=vulnerability:10
+subeffect=agony:3
 #note=use area anti projectile skills (you have stand inside them).
 #note=At lower range projectiles land fast so you have to react faster
 #note=At higher range projectiles land slower so you have to remember where circles were
@@ -3080,12 +3409,14 @@ Path=Swamp
 type=plant
 
 attack=buff
-effect=channeled ranged (hits every 5 s)
-subeffect=might:5|buff:Sun_Spirit's_Essence:5:sun_spirit
+effect=channeled ranged
+frequency=5
+subeffect=might:5
+subeffect=buff:Sun_Spirit's_Essence:5:5:1:sun_spirit
 
 attack="Sun Spirit's Essence"
 effect=buff
-subeffect=burning:2785:5| caused by Entangle.
+subeffect=burning:5 caused by Entangle.
 
 ##################################################################
 
@@ -3098,13 +3429,15 @@ Path=Swamp
 type=plant
 
 attack=buff
-effect=channeled ranged (hits every 5 s)
-subeffect=fury:5|buff:Frost_Spirit's_Essence:frost_spirit
+effect=channeled ranged
+frequency=5
+subeffect=fury:5
+subeffect=buff:Frost_Spirit's_Essence:5:1:frost_spirit
 
 attack="Frost  Spirit's Essence"
 animation=white projectiles
 effect=buff
-subeffect=chilled:5| caused by poison Rain.
+subeffect=chilled:5 caused by poison Rain.
 
 ##################################################################
 
@@ -3117,13 +3450,15 @@ Path=Swamp
 type=plant
 
 attack=buff
-effect=channeled ranged (hits every 5 s)
-subeffect=retaliation:137:5|buff:Storm_Spirit's_Essence:storm_spirit
+effect=channeled ranged
+frequency=5
+subeffect=retaliation:5
+subeffect=buff:Storm_Spirit's_Essence:5:1:storm_spirit
 
 attack="Storm Spirit's Essence"
 animation=lightning circle
 effect=buff
-subeffect=daze:5| caused by Shoot
+subeffect=daze:5 caused by Shoot
 #note=doesn't seem to have any effect
 
 ##################################################################
@@ -3141,12 +3476,14 @@ type=no type
 attack=Slice
 animation=swings right hand to left and hits|0.75
 effect=cone
-subeffect=damage:6500
+subeffect=damage:13890500
 
 attack=Dancing Dagger
 animation=pulls left arm behind|0.25|throws a dagger
 effect=bouncing projectile
-subeffect=damage:4250|agony:2| per hit
+count=?
+subeffect=damage:9082250
+subeffect=agony:2
 
 ##################################################################
 
@@ -3168,12 +3505,14 @@ subeffect=Slice, Point Target, Teleport and Gouge are only used on primary targe
 attack=Slice
 animation=swings right hand to left and hits|0.75
 effect=cone
-subeffect=damage:6500
+subeffect=damage:13890500
 
 attack=Dancing Dagger
 animation=pulls left arm behind|0.25|throws a dagger
 effect=bouncing projectile
-subeffect=damage:4250|agony:2| per hit
+count=?
+subeffect=damage:9082250
+subeffect=agony:2
 
 attack=Stealth
 cooldown=20
@@ -3194,7 +3533,9 @@ effect=No initial effect. Teleport and Gouge are used on pointed target.
 attack=Blazing Axe (2)
 animation=pulls left arm behind back|0.25|throws an axe
 effect=projectile
-subeffect=damage:6500|bleeding:450:5|agony:3
+subeffect=damage:13890500
+subeffect=bleeding:5
+subeffect=agony:3
 
 attack=Teleport (3)
 additional=short range
@@ -3208,14 +3549,15 @@ subeffect=remove "Brown Effect".
 attack=Gouge (4)
 animation=glows, raises arms and strikes|1
 effect=2 cones
-subeffect=damage:8000| per hit
+count=2
+subeffect=damage:17096000
 #note=evade away from Mossman to prevent him from turning and killing other people
 
 attack="Brown Effect"
 effect=debuff
 subeffect=slows movement
 effect=when expires naturally
-subeffect=stealth
+subeffect=stealth:0
 
 attack=Transform
 animation=pulls right arm behind|0.5
@@ -3235,22 +3577,26 @@ type=no type
 
 attack=Bear Form
 effect=Transform into a bear.
-subeffect=Pulses |might
+frequency=1
+subeffect=might:0
 
 attack=Feral Maul (1)
 animation=swings both arms|0.25
 additional=Only used in the bear form.
 effect=melee
-subeffect=damage:10750|launch:3.1
+subeffect=damage:22972750
+subeffect=launch:3.1
 
 attack=Leopard Form (2)
 effect=Transform into a leopard.
-subeffect=pulses |protection:10
+frequency=5
+subeffect=protection:10
 
 attack=Feral Bounce
 additional=Only used in the leopard form.
 effect=Leap (0.75 s)
-subeffect=damage:6000|agony:3
+subeffect=damage:12822000
+subeffect=agony:3
 
 attack=Wolf Form
 effect=Transform into a wolf.
@@ -3259,7 +3605,8 @@ attack=Feral Tear
 animation=swings both arms|0.25
 additional=Only used in the wolf form.
 effect=2 melee hits
-subeffect=damage:6500| per hit
+count=2
+subeffect=damage:13890500
 #note=sometimes deal like 50% more damage
 
 attack=Feral Roar
@@ -3274,33 +3621,40 @@ Name=Environment
 alt=traps
 Category=trap
 Path=Swamp
+condition=250
 
 attack=Tripwire
 image=http://giant.gfycat.com/BigSadDrever.gif
 additional=can't be blocked or evaded
 effect=trap
-subeffect=knockdown:3|crippled:2.5
+subeffect=knockdown:3
+subeffect=crippled:2.5
 #note=jump over
 
 attack=Bear Trap
 image=http://giant.gfycat.com/EllipticalGracefulLadybird.gif
 additional=can't be blocked or evaded
 effect=trap
-subeffect=immobilized:1.5|crippled:2.5|bleeding:0:7
+subeffect=immobilized:1.5
+subeffect=crippled:2.5
+subeffect=bleeding:7
 #note=avoid
 
 attack=Spike Trap
 animation=red circle
 additional=can't be blocked or evaded
 effect=trap
-subeffect=damage:0|crippled:3.5|bleeding:0:7:6
+subeffect=damage:0
+subeffect=crippled:3.5
+subeffect=bleeding:7:6
 #note=avoid
 
 attack=Spider Egg
 image=http://giant.gfycat.com/TinyExcellentCoqui.gif
 additional=can't be blocked or evaded
 effect=trap
-subeffect=poison:872:8| and summon 2-3 enemy=Spider_Hatchlings:normal.
+subeffect=poison:8
+subeffect=summon 2-3 enemy=Spider_Hatchlings:normal.
 #note=breaking multiple eggs gets you easily overrun
 
 attack=Binding Roots
@@ -3323,7 +3677,7 @@ attack=Sting
 animation=swings body|0.4
 cooldown=3
 effect=melee
-subeffect=damage:2250
+subeffect=damage:4808250
 
 attack=Charging Sting
 additional=only used at distant targets
@@ -3333,7 +3687,9 @@ subeffect=damage:0
 attack=Sting Flurry
 animation=flies a circle|1.4
 effect=9 melee hits in 5.3 s
-subeffect=damage:1000| per hit
+count=9
+length=5.3
+subeffect=damage:2137000
 
 ##################################################################
 
@@ -3352,17 +3708,19 @@ attack=Sting
 animation=swings body|0.4
 cooldown=3
 effect=melee
-subeffect=damage:426
+subeffect=damage:910362
 
 attack=Charging Sting
 additional=only used at distant targets
 effect=dash
-subeffect=damage:441
+subeffect=damage:942417
 
 attack=Sting Flurry
 animation=flies a circle|1.4
 effect=9 melee hits in 5.3 s
-subeffect=damage:180| per hit
+count=9
+length=5.3
+subeffect=damage:384660
 
 ##################################################################
 
@@ -3379,12 +3737,12 @@ attack=Slash
 animation=swings right arm|0.7
 cooldown=0
 effect=Melee
-subeffect=damage:2500
+subeffect=damage:5342500
 
 attack=Jab
 animation=bites|0.25
 effect=melee
-subeffect=damage:2500
+subeffect=damage:5342500
 
 attack=Stealth (1)
 effect=buff
@@ -3393,7 +3751,7 @@ subeffect=Stealth:1
 attack=Ambush (2)
 animation=leans forward|0.1
 effect=Melee
-subeffect=damage:3000
+subeffect=damage:6411000
 
 ##################################################################
 
@@ -3410,13 +3768,16 @@ attack=Bite
 animation=leans back|0.5
 cooldown=2.5
 effect=melee
-subeffect=damage:4250
+subeffect=damage:9082250
 
 attack=Venom Spray
 animation=glows and leans back|1
 cooldown=20
 effect=3 projectiles in 0.8 s
-subeffect=damage:750|poison:0:3| per hit
+count=3
+length=0.8
+subeffect=damage:1602750
+subeffect=poison:3
 
 ##################################################################
 
@@ -3435,13 +3796,16 @@ attack=Bite
 animation=leans back|0.5
 cooldown=2.5
 effect=melee
-subeffect=damage:328
+subeffect=damage:700936
 
 attack=Venom Spray
 animation=glows and leans back|1
 cooldown=20
 effect=3 projectiles in 0.8 s
-subeffect=damage:418|poison:444:3| per hit
+count=3
+length=0.8
+subeffect=damage:893266
+subeffect=poison:3
 
 ##################################################################
 
@@ -3459,7 +3823,7 @@ attack=bite
 cooldown=4
 animation=bites|0.2
 effect=melee
-subeffect=damage:789
+subeffect=damage:1686093
 
 ##################################################################
 
@@ -3476,12 +3840,13 @@ attack=bite
 cooldown=4
 animation=bites|0.2
 effect=melee
-subeffect=damage:4250
+subeffect=damage:9082250
 
 attack=Poison
 animation=glows and opens mouth|2
 effect=ticking AoE (13 s)
-subeffect=poison:750:5| per tick
+count=?
+subeffect=poison:5
 
 ##################################################################
 
@@ -3499,7 +3864,7 @@ attack=Horn Strike
 animation=swings head to right|0.3
 cooldown=2.5
 effect=melee
-subeffect=damage:1750
+subeffect=damage:3739750
 
 ##################################################################
 
@@ -3517,7 +3882,7 @@ attack=Bite
 cooldown=2.5
 animation=bites|0.25
 effect=melee
-subeffect=damage:1750
+subeffect=damage:3739750
 
 attack=Howl
 effect=summon
@@ -3539,7 +3904,7 @@ attack=Bite
 cooldown=2.5
 animation=bites|0.25
 effect=melee
-subeffect=damage:750
+subeffect=damage:1602750
 
 
 ##################################################################
@@ -3565,46 +3930,56 @@ attack=Binding Bolt
 animation=swings left arm|0.5|shoots a white bolt
 cooldown=1.5
 effect=piercing projectile
-subeffect=damage:591|crippled:2
+subeffect=damage:1262967
+subeffect=crippled:2
 
 attack=Beam
 cooldown=12
 #image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-laser-beam_thumb.jpg
 animation=kneels and shoots white beam|1|keeps channelling the beam
 effect=12 ranged hits in 6.6 s
-subeffect=constant:275| per hit and causes platforms disappear below the target
+count=12
+length=6.6
+subeffect=constant:587675
+subeffect=causes platforms disappear below the target
 #note=run away from others
 
 attack=Flux Bomb
 cooldown=10
 effect=debuff (4 s)
-subeffect=damage:2635| and causes platforms disappear when ends
+subeffect=damage:5630995
+subeffect=causes platforms disappear when ends
 #note=run away from others
 
 attack=Cosmic Barrage
 #image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-attacks_thumb.jpg
 animation=starts spinning|0.5|spins and makes white orbs appear over area
 effect=multiple delayed AoEs (2.5 s) over area
-subeffect=damage:1974|agony:3| and causes platforms disappear
+subeffect=damage:4218438
+subeffect=agony:3
+subeffect=causes platforms disappear
 effect=PBAoE
-subeffect=knockback
+subeffect=knockback:0
 
 attack=Star Smash
 cooldown=5
 animation=instant|0|white orb appears
 effect=delayed AoE (2 s)
-subeffect=damage:5926|agony:3
+subeffect=damage:12663862
+subeffect=agony:3
 #note=just move a bit
 
 #attack=Cosmic Anomaly
 #effect=??
-#subeffect=damage| and platforms disappear
+#subeffect=damage:0
+#subeffect=platforms disappear
 
 attack=Cosmic Instability
 #image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-ball.jpg
 additional=activates when below 50%
 effect=huge aura
-subeffect=buff:Cosmic_Instability:6| every 30 seconds
+frequency=30
+subeffect=buff:Cosmic_Instability:6
 #note=hits every player
 
 attack="Cosmic Instability"
@@ -3626,7 +4001,8 @@ type=ooze
 attack=Slimey Smash
 cooldown=0
 effect=melee
-subeffect=damage:1842|buff:Corrode_Armor:8
+subeffect=damage:3936354
+subeffect=buff:Corrode_Armor:8
 
 attack=Acid Rain
 #image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-5_thumb.jpg
@@ -3634,13 +4010,18 @@ cooldown=26
 animation=waves head and looks stupid|0.5|shoots green balls
 additional=can't be blocked
 effect=multiple projectiles with small AoEs in 8 s
-subeffect=damage:1167|agony:1|buff:Corrode_Weapon:3|poison:516:3
+subeffect=damage:2493879
+subeffect=agony:1
+subeffect=buff:Corrode_Weapon:3
+subeffect=poison:3
 
 attack=Jump
 cooldown=22
 animation=glows, jumps and lands with dust effect|1.6|keeps jumping 5 times
 effect=6 PBAoEs in 3.5 s
-subeffect=damage:1629| per hit (|damage:9774|)
+count=6
+length=3.5
+subeffect=damage:3481173
 
 attack="Corrode Weapon"
 additional=stacks ? times. Removed by condition removal.
@@ -3665,7 +4046,7 @@ subeffect=Explodes at 20 stacks
 
 attack=Explode
 effect=big PBAoE
-subeffect=damage
+subeffect=damage:0
 
 attack=Summon
 effect=Summon
@@ -3685,12 +4066,12 @@ type=ooze
 
 attack=Power Spit
 effect=projectile
-subeffect=damage:1210
+subeffect=damage:2585770
 #note=only used when Subject 6 is dead
 
 attack=Heal
 effect=melee
-subeffect=healing
+subeffect=healing:0
 effect=self destruct
 
 ################################################################## 
@@ -3707,11 +4088,13 @@ type=inquest
 
 attack=gatling fists
 effect=multiple ranged hits
-subeffect=damage:311| per hit
+count=?
+subeffect=damage:664607
 
 attack=whirling assault
 effect=dash with PBAoE
-subeffect=damage:1190| per hit
+count=?
+subeffect=damage:2543030
 
 ################################################################## 
 
@@ -3721,11 +4104,14 @@ Path=Thauma
 
 attack=Repulsor Bolt
 effect=projectile
-subeffect=damage:7754|launch:2.4|buff:overheating:10
+subeffect=damage:16570298
+subeffect=launch:2.4
+subeffect=buff:overheating:10
 
 attack="Overheating"
 effect=debuff
-subeffect=damage:200| per second
+frequency=1
+subeffect=constant:200
 
 
 ################################################################## 
@@ -3739,7 +4125,8 @@ health=14940
 
 attack=Gravity Well
 effect=PBAoE
-subeffect=damage:7|pull:1.5
+subeffect=damage:14959
+subeffect=pull:1.5
 
 ################################################################## 
 
@@ -3755,15 +4142,16 @@ type=underworld
 
 attack=Lunge
 effect=Melee
-subeffect=damage:3042
+subeffect=damage:6500754
 
 attack=Charge
 effect=dash
-subeffect=damage
+subeffect=damage:0
 
 attack=Leap
 effect=leap
-subeffect=damage|knockdown:3
+subeffect=damage:0
+subeffect=knockdown:3
 
 ################################################################## 
 
@@ -3778,15 +4166,16 @@ type=underworld
 
 attack=Lunge
 effect=Melee
-subeffect=damage
+subeffect=damage:0
 
 attack=Charge
 effect=dash
-subeffect=damage
+subeffect=damage:0
 
 attack=Leap
 effect=leap
-subeffect=damage|knockdown:3
+subeffect=damage:0
+subeffect=knockdown:3
 
 ################################################################## 
 
@@ -3846,26 +4235,32 @@ Path=Thauma
 attack=Sever Artery (1)
 cooldown=0
 effect=melee
-subeffect=damage:1052|bleeding:400:5
+subeffect=damage:2248124
+subeffect=bleeding:5
 
 attack=Gash (2)
 effect=melee
-subeffect=damage:1052|bleeding:640:8
+subeffect=damage:2248124
+subeffect=bleeding:8
 
 attack=Final Thrust (3)
 effect=melee
-subeffect=damage:1052
+subeffect=damage:2248124
 
 attack=Flurry
 effect=multiple melee hits
+count=?
+subeffect=damage:0
 
 attack=Shield Bash
 effect=dash
-subeffect=damage:3797|stun:2
+subeffect=damage:8114189
+subeffect=stun:2
 
 attack=Shield Stance
 animation=instant||hides behind shield
-effect=blocks all attacks
+effect=self
+subeffect=buff:block
 
 ################################################################## 
 # Copied from a potentially similar enemy: CoF P3
@@ -3881,12 +4276,16 @@ Path=Thauma
 attack=Flame Spray
 additional=able to move
 effect=channeled cone (5 hits per sec)
-subeffect=damage:0|burning:0:1|might:1| per hit
+count=5
+length=1
+subeffect=damage:0
+subeffect=burning:1
+subeffect=might:1
 
 attack=Backdraft
 animation=muscle show off
-effect=buff
-subeffect=pull| on next attack
+effect=buff, on next attack
+subeffect=pull:0
 
 ################################################################## 
 # Copied from a potentially similar enemy: HotW P3 (Rare)
@@ -3910,14 +4309,17 @@ attack=Frost Leap
 animation=instant||leaves icy ground
 cooldown=30
 effect=PBAoE
-subeffect=damage:0|chilled:3
+subeffect=damage:0
+subeffect=chilled:3
 #note=try to predict
 
 attack=Leap
 animation=dashes|0.25
 cooldown=30
 effect=short dash (0.25 s) with 2 PBAoEs
-subeffect=damage:0|crippled:3| per hit (extreme damage)
+count=2
+subeffect=damage:0
+subeffect=crippled:3
 #note=try to predict, often used right after Frost Leap
 
 ################################################################## 
@@ -3935,14 +4337,15 @@ attack=Bite
 animation=moves head and bites|0.3
 cooldown=2
 effect=melee
-subeffect=damage:2006
+subeffect=damage:4286822
 
 attack=Leap
 animation=withdraws while standing still|0.75
 cooldown=15
 additional=only used at distant targets
 effect=leap
-subeffect=damage:3688|knockdown:3
+subeffect=damage:7881256
+subeffect=knockdown:3
 
 ################################################################## 
 
@@ -3958,11 +4361,12 @@ Path=Thauma
 
 attack=Throw
 effect=projectile
-subeffect=damage:1513
+subeffect=damage:3233281
 
 attack=Heave
 effect=???
-subeffect=damage:2514|knockdown:2
+subeffect=damage:5372418
+subeffect=knockdown:2
 
 ################################################################## 
 
@@ -3997,18 +4401,20 @@ animation=crouches a bit and aims|0.5
 cooldown=2
 additional=high range
 effect=fast projectile
-subeffect=Damage
-effect=If target is moving
-subeffect=Damage|bleeding:0:3:3
+subeffect=damage:0
+effect=If the target is moving
+subeffect=damage:0
+subeffect=bleeding:3:3
 
 Attack=Sniper Shot
 cooldown=11
 animation=kneels and marks target|1.75
 additional=high range
 effect=fast projectile
-subeffect=Damage
-effect=If target is moving
-subeffect=Damage|knockdown:3
+subeffect=damage:0
+effect=If the target is moving
+subeffect=damage:0
+subeffect=knockdown:3
 
 ##################################################################
 # Same enemy: CM Bandit Cutpurse
@@ -4023,30 +4429,33 @@ Attack=Slash
 animation=swing from right|0.5
 cooldown=2
 effect=melee
-subeffect=Damage
+subeffect=damage:0
 
 Attack=Slash
 animation=swing from left|0.2
 cooldown=2
 effect=melee
-subeffect=Damage
+subeffect=damage:0
 
 Attack=Slash
 animation=swing from right|0.1
 cooldown=2
 effect=melee
-subeffect=Damage
+subeffect=damage:0
 
 Attack=Death Blossom
 cooldown=11
 animation=jumps over target|0.4
 effect=3 small PBAoes in 0.15 s
-subeffect=Damage|bleeding:0:8:4| per hit
+count=3
+length=0.15
+subeffect=damage:0
+subeffect=bleeding:8:4
 
 Attack=Envenom
 cooldown=19
 effect=buff (15 s)
-subeffect=Poison:0:6| inflicted whenever hits
+subeffect=Poison:6 inflicted whenever hits
 
 ##################################################################
 # Uncategorised                                                  #
@@ -4074,20 +4483,24 @@ Path=Uncat
 attack=Shoot
 image=http://giant.gfycat.com/YearlyBigFallowdeer.gif
 effect=projectile
-subeffect=damage:1578
+subeffect=damage:3372186
 
 attack=Multi Shot
 image=http://giant.gfycat.com/MinorGracefulAmericanbadger.gif
 animation=shouts
 effect=5 projectiles in 2 s
-subeffect=damage:1198|crippled:1| per hit (|damage:5990|)
+count=5
+length=2
+subeffect=damage:2560126
+subeffect=crippled:1
 #note=anti projectile skills are very effective
 #note=try to zig zag at range or block
 
 attack=Pulsing Orb
 additional=used on level 10 and higher
 effect=projectile with AoE
-subeffect=damage:0|launch:3
+subeffect=damage:0
+subeffect=launch:3
 #note=use anti projectile, block or stability
 #note=when running zig zag to mess up their aiming
 #note=don't rely on red circle. zig zagging causes it fly somewhere else
@@ -4116,7 +4529,7 @@ type=animal
 attack=Bite
 animation=lunges forward|0.5|bites
 effect=melee
-subeffect=damage:736
+subeffect=damage:1572832
 
 attack=Ninja Kick
 image=http://fat.gfycat.com/ObedientWhiteIlladopsis.gif
@@ -4139,20 +4552,25 @@ attack=Bomb
 animation=kneels|0.3|leaves a bomb
 cooldown=5
 effect=delayed (3 s) AoE
-subeffect=burning:2640:5|launch:3.3
+subeffect=burning:5
+subeffect=launch:3.3
 
 attack=Poison
 cooldown=12
 animation=swings left arm|0.5|throws a green projectile
 effect=projectile with small ticking AoE (6 hits in 5 s)
-subeffect=poison:328:2| per hit
+count=6
+length=5
+subeffect=poison:2
 
 attack=Evasive Trap
 cooldown=20
 animation=instant||moves back and leaves a bomb with a red circle
 effect=delayed (2 s) AoE
-subeffect=damage:1758|confusion:0:5:3
-effect=evade back
+subeffect=damage:3756846
+subeffect=confusion:5:3
+effect=move back
+subeffect=buff:evade
 #note=use AoE cleave without targeting her to prevent triggering it
 #note=move bit back if you are on a red circle
 
@@ -4170,7 +4588,8 @@ attack=Detonate
 cooldown=7
 animation=swings right arm|0.75|throws 3 fire balls
 effect=3 short-range projectiles (cone)
-subeffect=damage:5973| per hit (|damage:17919|)
+count=?
+subeffect=damage:12764301
 #note=Try to direct away from other players
 #note=evade or use area anti projectile
 #note=Run away to get out of range
@@ -4180,8 +4599,10 @@ attack=Lava Font
 cooldown=7
 animation=swings glowing left arm and raises right arm|0.35
 additional=Firefield
-effect=4 ticking AoEs in 1.5 s(4 hits in 3 s)
-subeffect=damage:2364| per hit (|damage:9456|)
+effect=4 ticking AoEs in 1.5 s (4 hits in 3 s)
+count=4
+length=3
+subeffect=damage:5051868)
 #note=stay mobile, block/evade if needed
 
 attack=Dragon Punch
@@ -4189,7 +4610,9 @@ cooldown=9
 animation=raises both arms and head|1.25|dashes quickly
 additional=leap finisher. Only used at distant targets
 effect=dash with a melee hit and a cone
-subeffect=damage:4768|launch| per hit (|damage:9536|)
+count=2
+subeffect=damage:10189216
+subeffect=launch:0
 #note=Run away to make him miss
 #note=evade
 
@@ -4209,7 +4632,7 @@ image=http://fat.gfycat.com/SeparateHeftyBrontosaurus.gif
 animation=swings club|0.75
 cooldown=4
 effect=wide cone
-subeffect=damage:6035
+subeffect=damage:12896795
 #note=block/evade
 #note=run through (needs good timing)
 
@@ -4219,7 +4642,8 @@ cooldown=33
 animation=holds club back and smashes ground|1.25|shoots a tremor
 additional=only used at distant targets
 effect=projectile
-subeffect=damage:4881|crippled:3
+subeffect=damage:10430697
+subeffect=crippled:3
 #note=block/evade
 #note=at melee range run through him
 #note=at high range sidestep
@@ -4229,7 +4653,9 @@ image=http://giant.gfycat.com/WhisperedInferiorAquaticleech.gif
 cooldown=28
 animation=glows, holds club back and smashes ground|2.25|spikes on ground
 effect=PBAoE
-subeffect=damage:9786|bleeding:328:4|knockdown:3
+subeffect=damage:20912682
+subeffect=bleeding:4
+subeffect=knockdown:3
 #note=block/evade
 #note=run away
 
@@ -4240,7 +4666,8 @@ animation=glows, keeps club above head and stomps ground|1.25
 effect=buff
 subeffect=protection:15|fury:15|might:15
 effect=6 short-range projectiles (360 degrees)
-subeffect=damage:5702| per hit (extreme damage)
+count=?
+subeffect=damage:12185174
 #note=evade
 #note=use reflects for extreme damage
 
@@ -4272,7 +4699,8 @@ cooldown=30
 animation=spreads arms, sits down and starts spinning|2.25
 additional=can't be blocked
 effect=hundreds of projectiles (360 degrees) in 24 s
-subeffect=damage:682| per hit
+count=?
+subeffect=damage:1457434
 #note=stay inside Tom, at high-range or behind other players/pets/minions
 
 attack=Chain Lightning
@@ -4280,7 +4708,8 @@ image=http://giant.gfycat.com/IncomparableReasonableIraniangroundjay.gif
 cooldown=7
 animation=raises both arms|2|shoots a lightning ball
 effect=bouncing projectile
-subeffect=damage:6426| per hit
+count=?
+subeffect=damage:13732362
 #note=block/evade
 
 attack=Launch Fist
@@ -4288,12 +4717,15 @@ image=http://giant.gfycat.com/RegalFarawayCamel.gif
 cooldown=7
 animation=points right arm|1|shoots his fist
 effect=very fast projectile
-subeffect=damage:5304|pull:1.5
+subeffect=damage:11334648
+subeffect=pull:1.5
 #note=block/evade
 
 attack=Poison Gas
 effect=environment
-subeffect=percent:3|poison:109:1| every 1 second
+frequency=1
+subeffect=percent:3
+subeffect=poison:1
 #note=gets reapplied every 30 seconds
 #note=use main console to ventilate the room and remove effect. Console cools down in 30 seconds.
 #note=ventilation removes the effect ONLY for the remaining duration. If you are slow, new poison Gas appears before the console cools down
@@ -4318,7 +4750,10 @@ image=http://giant.gfycat.com/WhoppingDeadlyKingsnake.gif
 cooldown=3
 animation=points staff forward|0.35|shoots 3 lightning balls
 effect=3 homing projectiles in 0.3 s
-subeffect=damage:1816|agony:3| per hit
+count=3
+length=0.3
+subeffect=damage:3880792
+subeffect=agony:3
 #note=evade towards to destroy them while evading
 #note=block or use anti projectile skills
 
@@ -4327,7 +4762,9 @@ image=http://giant.gfycat.com/FeminineShadowyCob.gif
 cooldown=17
 animation=swings left arm|0.5|throws a lightning ball
 effect=ballistic homing projectile with small AoE
-subeffect=damage:2655|might:15|protection:15
+subeffect=damage:5673735
+subeffect=might:15
+subeffect=protection:15
 
 ##################################################################
 
@@ -4344,8 +4781,9 @@ attack=Static Field
 image=http://giant.gfycat.com/PassionateGrandioseAndeancat.gif
 cooldown=10
 animation=electric effect on left hand, turns bit right and swings the right arm|0.5|throws an electric ball
-effect=projectile with an area field
-subeffect=damage:1867|stun:2| when passing through
+effect=projectile with an area field, when passing through
+subeffect=damage:3989779
+subeffect=stun:2
 #note=stay inside
 #note=block/evade when going through
 
@@ -4354,16 +4792,17 @@ image=http://giant.gfycat.com/WeirdExaltedCats.gif
 cooldown=11
 animation=spreads arms and spins|3|shoots rockets
 effect=2 projectiles with small AoE
-subeffect=damage:555| per hit
+count=2
+subeffect=damage:1186035
 
 attack=On Death
 additional=only used during second life
 effect=big PBAoE
-subeffect="Feline regeneration" (5 m) on alive golems
+subeffect=buff:Feline_Regeneration:300:1:regeneration for on alive golems
 
 attack="Feline regeneration"
 effect=buff
-subeffect=take 66 % less damage
+subeffect=regenerate health
 
 ##################################################################
 
@@ -4379,33 +4818,37 @@ image=http://giant.gfycat.com/DazzlingFewChickadee.gif
 cooldown=10
 animation=leans bit forward, waves arms and jumps|1|lands left fist against the ground
 effect=leap with PBAoE
-subeffect=damage:2393
+subeffect=damage:5113841
 #note=block/evade
 
 attack=Whirling Assault
 image=http://giant.gfycat.com/RigidWaryCockatoo.gif
 animation=glows, spreads arms and starts spinning|2|spins while moving forward
 effect=cone
-subeffect=damage:1206|pull:1.5
+subeffect=damage:2577222
+subeffect=pull:1.5
 #note=block/evade
 
 attack=Punch
 image=http://giant.gfycat.com/SparklingOrganicJoey.gif
 animation=swings right and then left arm|0.5
 effect=2 melee hits in 0.25 s
-subeffect=damage:1518| per hit
+count=2
+length=0.25
+subeffect=damage:3243966
 
 attack=Slash
 image=http://giant.gfycat.com/WindyConsciousGalah.gif
 animation=swings right arm|0.75
 effect=melee
-subeffect=damage:1996|knockback:1.5
+subeffect=damage:4265452
+subeffect=knockback:1.5
 #note=block/evade
 
 attack=On Death
 additional=only used during second life
 effect=big PBAoE
-subeffect="Feline protection" (5 m) on alive golems
+subeffect=buff:Feline_Protection:300:1:protection
 
 attack="Feline protection"
 effect=buff
@@ -4424,7 +4867,9 @@ attack=Punch
 image=http://giant.gfycat.com/AccomplishedEasyDuckbillcat.gif
 animation=swings right and then left arm|0.5
 effect=2 melee hits in 0.25 s
-subeffect=damage:1518| per hit
+count=2
+length=0.25
+subeffect=damage:3243966
 
 attack=Charge
 image=http://giant.gfycat.com/GargantuanFaroffAmericantoad.gif
@@ -4437,7 +4882,7 @@ subeffect="Positive Charge" or "Negative Charge" (10 s)
 
 attack="Positive/Negative Charge"
 effect=debuff
-subeffect=damage| when standing close to different charge
+subeffect=damage:0 when standing close to different charge
 
 ##################################################################
 
@@ -4453,20 +4898,23 @@ image=http://giant.gfycat.com/RewardingRipeEastsiberianlaika.gif
 cooldown=6
 animation=swings right arm|0.75|shoots two rockets and swings left arm
 additional=can't be blocked
-effect=2 projectiles with small AoE
-subeffect=damage:605| per hit
-#note=evade
-#note=keep him controlled
+effect=2-3 projectiles with small AoE at every target
+count=3
+subeffect=damage:2025876
+#note=very dangerous, especially when near other players
+#note=interrupt
+
 
 attack=Golem Rockets
 image=http://giant.gfycat.com/TornUnsightlyArachnid.gif
 cooldown=17
 animation=spreads arms and spins|3|shoots rockets
 additional=can't be blocked
-effect=2-3 projectiles with small AoE at every target
-subeffect=damage:948| per hit (|damage:2844|)
-#note=very dangerous, especially when near other players
-#note=interrupt
+effect=2 projectiles with small AoE
+count=2
+subeffect=damage:1292885
+#note=evade
+#note=keep him controlled
 
 ##################################################################
 # Underground Facility                                           #
@@ -4494,8 +4942,9 @@ subeffect=damage:0
 
 attack=Dazing Block
 animation=kneels||hides behind shield
-effect=channel block
-subeffect=daze:1| when hit and block all attacks
+effect=channel
+subeffect=buff:block
+subeffect=daze:1 when hit
 
 attack=Summon & Heal
 animation=instant||weird sound
@@ -4517,19 +4966,27 @@ type=elemental
 attack=Ice Spike
 animation=jumps||dropping ice
 effect=multiple delayed AoEs
-subeffect=damage:0|launch:2|agony:3
+subeffect=damage:0
+subeffect=launch:2
+subeffect=agony:3
 #note=walk out
 
 attack=Polar Smash
 animation=slowly pulls right arm back and smashes ground
 effect=big ticking AoE at melee-range (10 hits in 3 s)
-subeffect=damage:0|chilled:1|agony:3| per tick
+count=10
+length=3
+subeffect=damage:0
+subeffect=chilled:1
+subeffect=agony:3
 #note=get out of range, evade if needed
 
 attack=Ice Shards
 animation=waves arms with weird sound|1.5
 effect=multiple delayed (2.75 s) tiny AoEs (V-shape)
-subeffect=damage:0|launch:2| per hit
+count=?
+subeffect=damage:0
+subeffect=launch:2
 #note=walk away (note hit box is much bigger than graphics)
 
 attack=Heal & Summon
@@ -4538,7 +4995,7 @@ additional=maximum amount of 3
 effect=summon
 subeffect=3 enemy=Ice_Elementals_(Melee):veteran
 effect=channeled heal
-subeffect=Healing
+subeffect=Healing:0
 #note=interrupt (if "Superheated" damage automatically interrupts)
 #note=can be interrupted with Knockback or launch
 
@@ -4553,7 +5010,10 @@ type=dredge
 attack=Slash
 animation=pulls right arm back
 effect=2 wide melee hits
-subeffect=damage:0|bleeding:364:4| per hit
+count=2
+length=0.25
+subeffect=damage:0
+subeffect=bleeding:4
 #note=evade
 
 attack=Ground Smash
@@ -4562,13 +5022,17 @@ additional=hits entire room
 effect=self-buff
 subeffect=stability:3
 effect=3 huge growing PBAoEs in 3 s
-subeffect=damage:0|agony:3| per hit
+count=3
+length=3
+subeffect=damage:0
+subeffect=agony:3
 #note=evade twice (needs proper timing)
 
 attack=Bomb
 animation=raises both arms
 effect=2 waves of multiple projectiles with delayed AoE
-subeffect=damage:0| per hit
+count=?
+subeffect=damage:0
 #note=try to walk out, evade if needed
 #note=area anti projectile skills are very effective
 #note=reflected projectiles deal no damage to Powersuit
@@ -4583,7 +5047,7 @@ subeffect=damage:0
 attack=Heal
 animation=sits down
 effect=channeled heal
-subeffect=Healing
+subeffect=Healing:0
 #note=interrupt (if "Superheated" damage automatically interrupts)
 #note=can be interrupted with Knockback or launch
 
@@ -4611,13 +5075,18 @@ subeffect=damage:0
 attack=Shield Bash
 animation=swings shield|0.5
 effect=melee
-subeffect=damage:0|daze:3
+subeffect=damage:0
+subeffect=daze:3
 
 attack=Gong
 animation=instant||plays gong 4 times
 cooldown=20
 effect=4 PBAoEs in 5.5 s
-subeffect=might:8|swiftness:8|protection:8
+count=3
+length=3.67
+subeffect=might:8
+subeffect=swiftness:8
+subeffect=protection:8
 effect=last hit
 subeffect=protection:8
 
@@ -4646,13 +5115,20 @@ subeffect=damage:0
 attack=Shield Bash
 animation=swings shield|0.5
 effect=melee
-subeffect=damage:0|daze:3
+subeffect=damage:0
+subeffect=daze:3
 
 attack=Gong
 animation=instant||plays gong 4 times
 cooldown=20
 effect=4 PBAoEs in 5.5 s
-subeffect=might:8|swiftness:8|protection:8|regeneration:0:8
+count=3
+length=3.67
+subeffect=might:8
+subeffect=swiftness:8
+subeffect=protection:8
+effect=last hit
+subeffect=protection:8
 
 ##################################################################
 
@@ -4679,7 +5155,8 @@ subeffect=damage:0
 attack=Helmet Splitter
 animation=mines with pickaxe
 effect=Melee
-subeffect=damage:0|vulnerability:8
+subeffect=damage:0
+subeffect=vulnerability:8
 #note=only first hit actually does anything
 
 attack=Pickup a Weapon
@@ -4702,13 +5179,16 @@ attack=Immune to blind
 attack=Slash
 cooldown=0
 effect=Melee
-subeffect=damage:0|bleeding
+subeffect=damage:0
+subeffect=bleeding:0
 
 attack=Tunnel?
 effect=dash with small PBAoE
-subeffect=damage:0| per hit
+count=?
+subeffect=damage:0
 effect=end effect
-subeffect=damage:0|knockdown:2
+subeffect=damage:0
+subeffect=knockdown:2
 
 ##################################################################
 
@@ -4727,13 +5207,16 @@ attack=Immune to blind
 attack=Slash
 cooldown=0
 effect=Melee
-subeffect=damage:0|bleeding:672:8
+subeffect=damage:0
+subeffect=bleeding:8
 
 attack=Tunnel
 effect=dash with small PBAoE
-subeffect=damage:0| per hit
+count=?
+subeffect=damage:0
 effect=end effect
-subeffect=damage:0|knockdown:2
+subeffect=damage:0
+subeffect=knockdown:2
 
 ##################################################################
 
@@ -4753,7 +5236,9 @@ attack=Slash
 animation=pulls right arm back
 cooldown=0
 effect=2 melee hits
-subeffect=damage:0| per hit
+count=2
+length=0.25
+subeffect=damage:0|
 
 attack=summon
 animation=sits down
@@ -4763,11 +5248,15 @@ subeffect=2 enemy=Dredge_Excavator_(Pickaxe):normal / enemy=Dredge_Excavator_(Tu
 attack=Pummel (1)
 animation=pulls left arm back
 effect=Melee
-subeffect=damage:0|stun:2
+subeffect=damage:0
+subeffect=stun:2
 
 attack=Pummel (2)
 effect=3 melee hits in 2 s
-subeffect=damage:0|bleeding:0:8.5| per hit
+count=3
+length=2
+subeffect=damage:0
+subeffect=bleeding:8.5
 
 ##################################################################
 
@@ -4775,12 +5264,16 @@ name=Dredge Mining Turret (Fire)
 alt=Turret (Fire)
 category=structure
 path=Under
+condition=0
 
 attack=Fire Mortar
 effect=projectile
 subeffect=damage:0
 effect=with ticking AoE (30 ticks in 10 s)
-subeffect=damage:0|burning:984:3| per tick
+count=30
+length=10
+subeffect=damage:0
+subeffect=burning:3
 
 ##################################################################
 
@@ -4792,8 +5285,11 @@ path=Under
 attack=Ice Mortar
 effect=projectile
 subeffect=damage:0
-effect=with ticking AoE (6 ticks in 6 s)
-subeffect=damage:0|chilled:2| per tick
+effect=with ticking AoE (6 ticks in 5 s)
+count=6
+length=5
+subeffect=damage:0
+subeffect=chilled:2
 
 ##################################################################
 
@@ -4806,7 +5302,7 @@ attack=Shock Mortar
 effect=projectile
 subeffect=damage:0
 effect=with area field (4 s)
-subeffect=stun:2| when passing through
+subeffect=stun:2 when passing through
 
 ##################################################################
 
@@ -4831,7 +5327,8 @@ subeffect=damage:0
 attack=Upper Cut
 animation=Swings right arm|0.2
 effect=melee
-subeffect=damage:0|knockback:1.5
+subeffect=damage:0
+subeffect=knockback:1.5
 
 ##################################################################
 # Similar enemy exists: "Molten Oscillator"
@@ -4853,13 +5350,16 @@ attack=Shockwave
 animation=pulls weapon slowly back
 cooldown=0
 effect=3 piercing projectiles (cone)
-subeffect=damage:0| per hit
+count=3
+length=0.1
+subeffect=damage:0
 #note=evade (especially if at close range)
 
 attack=Upper Cut
 animation=Swings right arm|0.2
 effect=melee
-subeffect=damage:0|knockback:1.5
+subeffect=damage:0
+subeffect=knockback:1.5
 
 ##################################################################
 # Similar enemy exists: "Molten Resonator"
@@ -4881,12 +5381,15 @@ attack=Shockwave
 animation=slowly swings staff to right
 cooldown=0
 effect=3 piercing projectiles in 1 s
-subeffect=damage:0| per hit
+count=3
+length=1
+subeffect=damage:0
 
 attack=Earthquake
 animation=raises staff and hits ground
 effect=PBAoE
-subeffect=damage:0|knockdown:2
+subeffect=damage:0
+subeffect=knockdown:2
 
 ##################################################################
 # Same enemy: SE2 Dredge Ratnik.
@@ -4916,7 +5419,8 @@ subeffect=damage:0
 attack=Sonic Blast
 animation=kneels and aims||weird sound
 effect=cone
-subeffect=damage:0|vulnerability:8
+subeffect=damage:0
+subeffect=vulnerability:8
 
 ##################################################################
 
@@ -4950,12 +5454,15 @@ subeffect=damage:0
 attack=Bayonet Thrust
 animation=swings weapon
 effect=melee
-subeffect=damage:0|bleeding:672:8
+subeffect=damage:0
+subeffect=bleeding:8
 
 attack=Sonic Blast
 animation=kneels and aims||weird sound
 effect=cone
-subeffect=damage:0|daze:2|vulnerability:8
+subeffect=damage:0
+subeffect=daze:2
+subeffect=vulnerability:8
 
 ##################################################################
 
@@ -4983,7 +5490,8 @@ subeffect=damage:0
 attack=Sonic Blast
 animation=kneels and aims||weird sound
 effect=cone
-subeffect=damage:0|vulnerability:8
+subeffect=damage:0
+subeffect=vulnerability:8
 
 ##################################################################
 
@@ -5005,13 +5513,18 @@ subeffect=damage:0
 
 attack=Chilled Ground
 animation=slowly pulls right arm back and smashes ground
-effect=ticking AoE at melee-range (~5 hits in ~5 s)
-subeffect=chilled:1| per tick
+effect=ticking AoE at melee-range (~5 hits in ~4 s)
+count=5
+length=4
+subeffect=chilled:1
 
 attack=Cleansing Wave
 animation=stands idle and smashes ground
 effect=PBAoE
-subeffect=damage:0|launch|healing| and remove all Conditions
+subeffect=damage:0
+subeffect=launch:0
+subeffect=healing:0
+subeffect=remove all Conditions
 
 ##################################################################
 
@@ -5028,7 +5541,9 @@ type=elemental
 attack=Ice Shards
 animation=points left arm|1
 effect=projectile
-subeffect=damage:0|chilled:3| (sometimes)
+subeffect=damage:0
+effect=randomly
+subeffect=chilled:3
 
 attack=Ice Spike
 animation=glows and jumps|1
@@ -5038,7 +5553,8 @@ subeffect=damage:0
 attack=Frost Blast
 animation=glows, pulls right arm back and smashes ground|2
 effect=PBAoE
-subeffect=damage:0|knockback:1
+subeffect=damage:0
+subeffect=knockback:1
 
 ##################################################################
 # Urban Battleground
@@ -5055,25 +5571,29 @@ type=no type
 
 attack=Sever Artery (1)
 effect=melee
-subeffect=damage:0|bleeding
+subeffect=damage:0
+subeffect=bleeding:0
 
 attack=Gash (2)
 effect=melee
-subeffect=damage:0|bleeding
+subeffect=damage:0
+subeffect=bleeding:0
 
 attack=Final Thrust (3)
 effect=melee
-subeffect=damage:0|bleeding
+subeffect=damage:0
+subeffect=bleeding:0
 
 attack=Fiery Block
 animation=kneels||hides behind shield
-effect=channeled block
-subeffect=burning:0:1| when hit and block all attacks
+effect=channeled
+subeffect=buff:block
+subeffect=burning:1 when hit
 
 attack=Trebuchet Shot
 animation=instant||marks target
 effect=delayed AOE
-subeffect=damage
+subeffect=damage:0
 
 attack=Repair
 effect=PBAoE
@@ -5094,17 +5614,19 @@ attack=Savage Leap
 cooldown=10
 animation=stops with brief yellow glow|0.2|leaps sword forward
 effect=leap with PBAoE
-subeffect=damage:4286
+subeffect=damage:9159182
 
 attack=Blinding Blade
 animation=swing from right|0.4
 effect=melee
-subeffect=damage:3505|blind:2
+subeffect=damage:7490185
+subeffect=blind:2
 
 attack=Fiery Block
 animation=kneels|0.2|hides behind shield
-effect=channeled block (3 s)
-subeffect=burning:0:1| when hit and block all attacks
+effect=channeled
+subeffect=buff:block:3
+subeffect=burning:1 when hit
 
 attack=Summon
 animation=crouches and shouts|0.2
@@ -5114,10 +5636,12 @@ subeffect=enemy=Ascalonian_Squire:veteran
 
 attack=Aura
 additional=only works while Squire is alive
-effect=Aura (every 15 s)
-subeffect=retaliation:450:15
+effect=Aura
+frequency=15
+subeffect=retaliation:15
 #note=Sometimes no effect on Ashym
-effect=Aura (every 15 s)
+effect=Aura
+frequency=15
 subeffect=protection:15
 #note=Sometimes no effect on Squire
 
@@ -5143,16 +5667,23 @@ attack=Meteor Shower
 cooldown=13
 animation=glows and holds staff forward|1
 effect=PBAoE
-subeffect=damage:3222|burning:528:1|agony:3
+subeffect=damage:6885414
+subeffect=burning:1
+subeffect=agony:3
 effect=high-range PBAoE (after 0.75 s)
-subeffect=damage:3222|burning:528:1|agony:3
+subeffect=damage:6885414
+subeffect=burning:1
+subeffect=agony:3
 #note=evading both requires good timing (single-block + evade is more reliable)
 #note=staying range makes evading this attack easy
 
 attack=Flamewall
 animation=swings and raises glowing left arm|1
 effect=ticking area line (7 s)
-subeffect=damage:1009|burning:1584:3| per hit
+count=8
+length=7
+subeffect=damage:2156233
+subeffect=burning:3
 
 attack=Summon
 additional=maximum amount of 1
@@ -5161,10 +5692,12 @@ subeffect=enemy=Ascalonian_Squire:veteran
 
 attack=Aura
 additional=only works while Squire is alive
-effect=Aura (every 15 s)
-subeffect=retaliation:445:15
+effect=Aura
+frequency=15
+subeffect=retaliation:15
 #note=Sometimes no effect on Ashym
-effect=Aura (every 15 s)
+effect=Aura
+frequency=15
 subeffect=protection:15
 #note=Sometimes no effect on Squire
 
@@ -5182,37 +5715,47 @@ type=no type
 attack=Flame Wave
 animation=instant||waves sword
 effect=4 projectiles in 2.5 s
-subeffect=damage:4713| per hit (|damage:18852|)
+count=4
+length=2.5
+subeffect=damage:10071681
 
 attack=Flamewave
 animation=sticks sword to the ground|1
 effect=2 melee hits
-subeffect=damage:0| per hit
+count=2
+subeffect=damage:0
 effect=ticking AoE
-subeffect=burning:1848:3.5| per tick
+count=?
+subeffect=burning:3.5
 
 attack=Firestorm
 effect=ticking AoE
-subeffect=damage:12000| per tick (fatal damage)
+count=?
+subeffect=damage:25644000
 
 attack=Fiery Whirl
 effect=dash with PBAoE
-subeffect=damage:12000|crippled| per hit (extreme damage)
+count=?
+subeffect=damage:25644000
+subeffect=crippled:0
 
 attack=Rush End
 effect=dash
-subeffect=damage:12000
+subeffect=damage:25644000
 effect=leaves a trail (ticking AoEs)
-subeffect=damage:6000| per tick
+count=?
+subeffect=damage:12822000
 
 attack=Aura
 additional=only works while Squire is alive
-effect=Aura (every 15 s)
-subeffect=retaliation:445:15
+effect=Aura
+frequency=15
+subeffect=retaliation:15
 #note=Sometimes no effect on Ashym
 
 attack=Rage
-effect=Buff (every 3 s)
+effect=Buff
+frequency=3
 subeffect=might:60
 #note=results in 20 might
 #note=causes all attacks to hit extremely hard
@@ -5230,7 +5773,8 @@ Path=Urban
 
 attack=Volley
 effect=multiple delayed (1 s) AoEs
-subeffect=damage:0| per hit
+count=?
+subeffect=damage:0
 
 ##################################################################
 
@@ -5244,7 +5788,8 @@ Path=Urban
 
 attack=Volley
 effect=multiple delayed (1 s) AoEs
-subeffect=damage:0| per hit
+count=?
+subeffect=damage:0
 
 ##################################################################
 
@@ -5261,13 +5806,15 @@ attack=Dual Shot
 animation=aims|0.4|shoots two arrows
 cooldown=3
 effect=2 projectiles in 0.1 s
-subeffect=damage:968| per hit (|damage:1936|)
+count=2
+length=0.1
+subeffect=damage:2068616
 
 attack=Forceful Shot
 animation=kneels and aims|0.6|shoots an arrow
 cooldown=13
 effect=projectile
-subeffect=damage:4605
+subeffect=damage:9840885
 #note=Often used to initiate
 #note=hard to detect but try to block/evade
 
@@ -5275,14 +5822,16 @@ attack=Incendiary Arrow
 cooldown=13
 animation=aims with brief glow|0.5|shoots a blue arrow
 effect=projectile with small AoE
-subeffect=damage:1379|burning:1584:3
+subeffect=damage:2946923
+subeffect=burning:3
 #note=block/evade anything blue
 
 attack=Crippling Shot
 cooldown=29
 animation=aims|0.15|shoots an arrow with circle effect
 effect=fast projectile
-subeffect=damage:1268|crippled:3
+subeffect=damage:2709716
+subeffect=crippled:3
 #note=too fast to react
 
 ##################################################################
@@ -5305,7 +5854,14 @@ type=no type
 attack=Basic Shot
 cooldown=0
 effect=projectile
-subeffect=damage:0| and random Condition (|crippled:5|chilled:3|poison:0:10|burning:0:3|bleeding:0:10|blind:5|weakness:5|)
+subeffect=damage:0
+subeffect=crippled:5|14%
+subeffect=chilled:3|14%
+subeffect=poison:10|14%
+subeffect=burning:3|14%
+subeffect=bleeding:10|14%
+subeffect=blind:5|14%
+subeffect=weakness:5|14%
 
 attack=Quick Shot
 effect=projectile
@@ -5344,36 +5900,45 @@ attack=Double Strike (1)
 animation=swings right arm|0.15
 cooldown=0
 effect=2 single target melee hits in 0.15 s
-subeffect=damage:946| per hit (|damage:1892|)
+count=2
+length=0.15
+subeffect=damage:2021602
 
 attack=Wild Strike (2)
 animation=waits and swings right arm fast|1.5
 effect=melee
-subeffect=damage:1048
+subeffect=damage:2239576
 #note=cleaves
 
 attack=Lotus Strike (3)
 animation=waits and thrusts right dagger from above|1
 effect=single target melee
-subeffect=damage:0|poison:0:2
+subeffect=damage:0
+subeffect=poison:2
 
 attack=Life Siphon
 animation=right hand forward||red glowing and life-steal sound
 effect=7 ranged hits in 2.5 s
-subeffect=damage:0|healing| per hit
+count=7
+length=2.5
+subeffect=damage:0
+subeffect=healing:0
 
 attack=Crippling Dagger
 effect=projectile
-subeffect=damage:0|crippled:3
+subeffect=damage:0
+subeffect=crippled:3
 
 attack=Disrupting Dagger
 effect=projectile
-subeffect=damage:0|daze:1
+subeffect=damage:0
+subeffect=daze:1
 
 attack=Heartseeker
 animation=turns bit left|0.25|jumps in air
 effect=short leap (0.5 s) with PBAoE
-subeffect=damage:3377|bleeding:410:5
+subeffect=damage:7216649
+subeffect=bleeding:5
 
 ##################################################################
 
@@ -5412,20 +5977,24 @@ type=no type
 
 attack=Sever Artery (1)
 cooldown=0
-effect=damage:0|bleeding
+effect=damage:0
+subeffect=bleeding:0
 
 attack=Gash (2)
 effect=melee
-subeffect=damage:0|bleeding
+subeffect=damage:0
+subeffect=bleeding:0
 
 attack=Final Thrust (3)
 effect=melee
-subeffect=damage:0|bleeding
+subeffect=damage:0
+subeffect=bleeding:0
 
 attack=Fiery Block
 animation=kneels||hides behind shield
-effect=channeled block
-subeffect=burning:0:1| when hit and block all attacks
+effect=channeled
+subeffect=buff:block
+subeffect=burning:1 when hit
 
 attack=Healing
 effect=buff
@@ -5444,7 +6013,9 @@ type=no type
 attack=Healing Breeze
 animation=leans back and forward|0.5|sprays white mist
 effect=5 cones in 1.5 s
-subeffect=damage:781| per hit (|damage:3905|)
+count=5
+length=1.5
+subeffect=damage:1668997
 
 ##################################################################
 # Damage values probably tested at respawning enemies.
@@ -5463,13 +6034,13 @@ attack=Fireball
 animation=swings left arm|1|throws a fireball
 cooldown=2.5
 effect=projectile with small AoE
-subeffect=damage:1405
+subeffect=damage:3002485
 
 attack=Flame Burst
 cooldown=14
 animation=staff glows, crouches and raises left hand up in the air with weird sound|1|fire effect
 effect=PBAoE
-subeffect=damage:3676
+subeffect=damage:7855612
 #note=pay attention when getting near them
 #note=be ready to block/evade when you hear weird sound
 
@@ -5477,7 +6048,9 @@ attack=Firestorm
 cooldown=17
 animation=raises left hand, crouches and raises left hand up in the air|1|red circle
 effect=ticking AoE (6 hits in 5 s)
-subeffect=damage:977| per hit (|damage:5862|)
+count=6
+length=5
+subeffect=damage:2087849
 
 ##################################################################
 
@@ -5506,24 +6079,27 @@ attack=Heal Area
 animation=outer right arm swing with water effect|0.5
 cooldown=5
 effect=melee
-subeffect=damage:1777|healing
+subeffect=damage:3797449
+subeffect=healing:0
 
 attack=Heal Area
 animation=inner right arm swing|0.25|ice effect
 cooldown=5
 effect=quick cone
-subeffect=damage:1777
+subeffect=damage:3797449
 
 attack=Might (1)
 animation=rises to air hands behind back|0.5
 effect=4 PBAoEs in 2.2 s
-subeffect=might:10:4| per hit
+count=4
+length=2.2
+subeffect=might:10:4
 #note=big effect on damage so kill Monks fast
 
 attack=Heal (2)
 animation=descends to ground|0.8|white splash
 effect=PBAoE
-subeffect=healing
+subeffect=healing:0
 
 ##################################################################
 
@@ -5543,7 +6119,8 @@ subeffect=damage:4560
 attack=Staggering Bane
 animation=holds banner behind back|0.5|spins
 effect=small PBAoE
-subeffect=damage:3654|knockback:1.5
+subeffect=damage:7808598
+subeffect=knockback:1.5
 
 attack=Swiftness
 animation=raises arms, croches and raises left arm up in the air|0.9
@@ -5564,21 +6141,22 @@ attack=Greatsword Swing (1)
 animation=swings sword from right|0.5
 cooldown=0
 effect=Melee
-subeffect=damage:2024
+subeffect=damage:4325288
 
 attack=Greatsword Slice (2)
 animation=swings sword from left|0.7
 effect=Melee
-subeffect=damage:2024
+subeffect=damage:4325288
 
 attack=Brutal Swing (3)
 animation=swings swomrd from right upwards|0.8
 effect=Melee
-subeffect=damage:2271|vulnerability:10
+subeffect=damage:4853127
+subeffect=vulnerability:10
 
 attack=Leap of Faith
 effect=leap (0.5 s)
-subeffect=damage:2379
+subeffect=damage:5083923
 
 attack=Rush (1)
 cooldown=24
@@ -5591,7 +6169,7 @@ effect=dash
 attack=Rush (2)
 animation=swings from right|0.40
 effect=melee
-subeffect=damage:6309
+subeffect=damage:13482333
 
 attack="Swiftness"
 animation=blue icon
@@ -5622,7 +6200,8 @@ attack=Ballista Bolt
 animation=side-thingies flap
 additional=can't be blocked
 effect=piercing projectile
-subeffect=damage:0|knockback:1.5
+subeffect=damage:0
+subeffect=knockback:1.5
 
 ##################################################################
 
@@ -5638,7 +6217,10 @@ attack=Ballista Bolt
 animation=side-thingies flap
 additional=can't be blocked
 effect=4 piercing projectiles in 6.5 s
-subeffect=damage:0|knockback:1.5| per hit
+count=4
+length=6.5
+subeffect=damage:0
+subeffect=knockback:1.5
 
 ##################################################################
 
@@ -5647,6 +6229,7 @@ alt=Burning Oils
 scaling=constant
 health=14940
 toughness=0.67
+condition=0
 Category=structure
 Path=Urban
 
@@ -5654,7 +6237,10 @@ attack=Boiling Oil
 cooldown=8
 additional=Usable on targets not directly below (even higher elevation).
 effect=ticking AoE (5 hits in 4 s)
-subeffect=damage:2347|burning:820:2.5| per hit (|damage:11735|)
+count=5
+length=4
+subeffect=damage:5015539
+subeffect=burning:2.5
 #note=don't get false sense of security based on animation/logic
 
 ##################################################################
@@ -5686,24 +6272,30 @@ type=grawl
 
 attack=Fireball
 effect=piercing projectile
-subeffect=damage:0|burning:0:3
+subeffect=damage:0
+subeffect=burning:3
 effect=with ticking AoE
-subeffect=burning:0:3| per tick
+count=?
+subeffect=burning:3
 effect=first tick
 subeffect=damage:0
 
 attack=Bash
 animation=instant||spins
 effect=melee
-subeffect=damage:0|crippled:3|knockback:1.5
-effect=reflects projectiles (2 s)
+subeffect=damage:0
+subeffect=crippled:3
+subeffect=knockback:1.5
+effect=channel
+subeffect=buff:projectile_reflection:2
 #note=stay at max melee range to prevent usage
 
 attack=Churning Earth
 effect=channeled PBAoE
-subeffect=cripple| per hit
+count=?
+subeffect=crippled:0
 effect=end effect
-subeffect=damage:45000
+subeffect=damage:96165000
 #note=do not rely on single blocks
 
 attack=summon
@@ -5711,8 +6303,8 @@ effect=summon
 subeffect=enemy=Grawl_Totem:structure
 
 attack=Bubble
-effect=shield (15 s)
-subeffect=block all attacks
+effect=channel
+subeffect=buff:block:15
 #note=throw "Infused Stone" to break or wait until it runs out
 
 ##################################################################
@@ -5725,8 +6317,10 @@ scaling=constant
 health=7470
 
 attack=Aura
-effect=aura (every 6 s)
-subeffect=protection:6|fury:6
+effect=aura
+frequency=6
+subeffect=protection:6
+subeffect=fury:6
 
 ##################################################################
 
@@ -5743,20 +6337,24 @@ attack=Flaming Arrow
 animation=uses bow
 cooldown=0
 effect=projectile
-subeffect=damage:0|agony:3| and "Enveloping Flames"
+subeffect=damage:0
+subeffect=agony:3
+subeffect=buff:Enveloping_Flames:0:1:-
 #note=block, evade or zig zag at range
 #note=try to avoid wasting AoE anti projectile skills on this
 
 attack="Enveloping Flames"
 animation=flame effect
 effect=aura
-subeffect=burning| per tick
+subeffect=burning:0
 
 attack=Dive
 animation=flies up fast in an arc
 additional=only used on close targets
 effect=3 small ticking AoEs on its feet
-subeffect=damage:0|burning| per tick (extreme damage)
+count=?
+subeffect=damage:0
+subeffect=burning:0
 #note=evade back as fast as possible
 #note=attack has bigger range than circles and hits even before circles appear
 #note=stay at range to avoid usage
@@ -5765,14 +6363,16 @@ attack=Wing Buffet
 animation=rises up slowly with red circle
 additional=only used on close targets
 effect=PBAoE
-subeffect=damage:0|knockback
+subeffect=damage:0
+subeffect=knockback:0
 #note=block, evade or get out of range
 #note=stay at range to avoid usage
 
 attack=Fire Storm
 animation=instant
 effect=ticking AoE
-subeffect=damage:0| per tick (very high damage)
+count=?
+subeffect=damage:0
 #note=very low after cast, it usually uses another attack very quickly
 #note=evade out
 
@@ -5782,7 +6382,7 @@ additional=used at 75%/50%/25% health
 effect=summon
 subeffect=~15 enemy=Lava_Elementals:normal
 effect=shield (40 charges)
-subeffect=block a skill
+subeffect=buff:block:0:40 blocks one skill
 #note=the amount of summoned enemy=Elementals:normal depends on difficulty scale
 #note=one skill will remove one charge no matter how many times it hits
 #note=some ground-targeted skills may have no effect
@@ -5791,7 +6391,7 @@ subeffect=block a skill
 attack=Eat (2)
 animation=rises up in an arc
 effect=melee
-subeffect=healing:25 %| when eating a Villager
+subeffect=healing:25 % when eating a Villager
 #note=use unblockable skills to slow it down
 
 ##################################################################
@@ -5809,7 +6409,9 @@ attack=Dual Attack
 animation=swings left and right arm
 cooldown=0
 effect=2 melee hits in 0.5 s
-subeffect=damage:0| per hit
+count=2
+length=0.5
+subeffect=damage:0
 
 attack=Cyclone Spin
 animation=glows
@@ -5819,7 +6421,8 @@ subeffect=damage:0
 attack=Axe
 animation=swings right arm
 effect=Melee
-subeffect=damage:0|knockdown:2
+subeffect=damage:0
+subeffect=knockdown:2
 
 ##################################################################
 
@@ -5840,12 +6443,13 @@ subeffect=damage:0
 attack=Trap
 animation=touches ground
 effect=Trap on its feet
-subeffect=immobilized:5| when walked on
+subeffect=immobilized:5 when walked on
 
 attack=Meteor Arrow
 animation=glows
 effect=slow projectile with small AoE
-subeffect=damage:0|vulnerability:5
+subeffect=damage:0
+subeffect=vulnerability:5
 
 ##################################################################
 
@@ -5867,12 +6471,16 @@ subeffect=damage:0
 attack=Sandstorm
 animation=raises staff without glow
 effect=slow, big and piercing projectile (3 hits)
-subeffect=damage:0|blind:10| per hit
+count=3
+subeffect=damage:0
+subeffect=blind:10
 
 attack=Magnetic Grasp
 animation=holds staff forward horizontally
 effect=projectile
-subeffect=damage:0|pull|immobilized:2.5
+subeffect=damage:0
+subeffect=pull:0
+subeffect=immobilized:2.5
 
 attack=summon
 effect=summon
@@ -5887,7 +6495,8 @@ scaling=constant
 health=7470
 
 attack=Aura
-effect=aura (every 6 s)
+effect=aura
+frequency=6
 subeffect=protection:6
 
 ##################################################################
@@ -5910,12 +6519,16 @@ subeffect=damage:0
 attack=Sandstorm
 animation=raises staff without glow
 effect=slow, big and piercing projectile (3 hits)
-subeffect=damage:0|blind:10| per hit
+count=3
+subeffect=damage:0
+subeffect=blind:10
 
 attack=Magnetic Grasp
 animation=holds staff forward horizontally
 effect=projectile
-subeffect=damage:0|pull|immobilized:2.5
+subeffect=damage:0
+subeffect=pull:0
+subeffect=immobilized:2.5
 
 attack=summon
 effect=summon
@@ -5934,7 +6547,8 @@ type=elemental
 
 attack=Spit
 effect=projectile
-subeffect=damage:0|immobilized:1
+subeffect=damage:0
+subeffect=immobilized:1
 
 ##################################################################
 
@@ -5955,17 +6569,21 @@ subeffect=damage:0
 attack=Vampiric Bite
 animation=flies bit back and dashes
 effect=short dash
-subeffect=damage:0|healing
+subeffect=damage:0
+subeffect=healing:0
 
 ##################################################################
 
 name=Lava
 category=trap
 path=Volc|Thauma
+condition=0
 
 attack=Lava
 effect=debuff
-subeffect=percent:12|burning:487:1.25| every second
+frequency=1
+subeffect=percent:12
+subeffect=burning:1.25
 
 ##################################################################
 
@@ -5983,7 +6601,7 @@ attack=Leaves a fiery trail
 
 attack=Touch
 effect=melee
-subeffect=damage:100000
+subeffect=damage:213700000
 
 ##################################################################
 # Aetherblade                                                    #
@@ -6009,19 +6627,21 @@ attack=Shrapnel Grenade
 cooldown=5
 animation=swings left arm from right|0.75
 effect=slow projectile with AoE
-subeffect=damage:1793
+subeffect=damage:3831641
 
 attack=Static Grenade
 animation=swings left arm from right|0.75|red circle
 cooldown=11
 effect=slow projectile with AoE
-subeffect=damage:2658|vulnerability:10:5
+subeffect=damage:5680146
+subeffect=vulnerability:10:5
 
 attack=Freeze Grenade
 animation=swings left arm from right|0.75|red circle
 cooldown=20
 effect=slow projectile with AoE
-subeffect=damage:2308|chilled:5
+subeffect=damage:4932196
+subeffect=chilled:5
 
 ##################################################################
 # Damage values are wrong.
@@ -6040,19 +6660,21 @@ attack=Shrapnel Grenade
 cooldown=5
 animation=swings left arm from right|0.75
 effect=slow projectile with AoE
-subeffect=damage:1793
+subeffect=damage:3831641
 
 attack=Static Grenade
 animation=swings left arm from right|0.75|red circle
 cooldown=11
 effect=slow projectile with AoE
-subeffect=damage:2658|vulnerability:10:5
+subeffect=damage:5680146
+subeffect=vulnerability:10:5
 
 attack=Freeze Grenade
 animation=swings left arm from right|0.75|red circle
 cooldown=20
 effect=slow projectile with AoE
-subeffect=damage:2308|chilled:5
+subeffect=damage:4932196
+subeffect=chilled:5
 
 ##################################################################
 
@@ -6067,19 +6689,21 @@ attack=Shrapnel Grenade
 cooldown=5
 animation=swings left arm from right|0.75
 effect=slow projectile with AoE
-subeffect=damage:1793
+subeffect=damage:3831641
 
 attack=Static Grenade
 animation=swings left arm from right|0.75|red circle
 cooldown=11
 effect=slow projectile with AoE
-subeffect=damage:2658|vulnerability:10:5
+subeffect=damage:5680146
+subeffect=vulnerability:10:5
 
 attack=Freeze Grenade
 animation=swings left arm from right|0.75|red circle
 cooldown=20
 effect=slow projectile with AoE
-subeffect=damage:2308|chilled:5
+subeffect=damage:4932196
+subeffect=chilled:5
 
 ##################################################################
 # Damage values are wrong.
@@ -6098,26 +6722,31 @@ attack=Arc of Lightning
 cooldown=4.5
 animation=swings right arm from left|0.4|blue lightning
 effect=3 ranged hits in 2 s
-subeffect=damage:623| per hit
+count=3
+length=2
+subeffect=damage:1331351
 
 attack=Static Field (1)
 cooldown=20
 animation=swings left arm from right with lightning effect|0.75|creates a lightning ring
-effect=ticking ring (lasts 4 s)
-subeffect=damage:952|stun:1| when going out/at border?
+effect=ticking ring (lasts 4 s), when passing
+subeffect=damage:2034424
+subeffect=stun:1
 
 attack=Lightning Storm (2)
 cooldown=21
 animation=turns bit right|0.25|lightning effect
 effect=ticking AoE (6 hits in 5 s)
-subeffect=damage:515| per hit
+count=6
+length=5
+subeffect=damage:1100555
 #note=Slightly higher cooldown means this will be skipped about once per 3 Static Fields.
 
 attack=Shocking Aura
 cooldown=33
 animation=instant
 effect=buff (3 s)
-subeffect=stun:2| if hit at melee
+subeffect=buff:shocking_aura:3
 
 ##################################################################
 # Assuming 55.5% less damage.
@@ -6128,34 +6757,39 @@ Category=veteran
 image=http://wiki.guildwars2.com/images/b/b6/Aetherblade_Striker.jpg
 # Health and scaling not verified.
 scaling=normal
-health=46061
-Path=Aether
+health=11516
+Path=Mai
 type=aetherblade
 
 attack=Arc of Lightning
 cooldown=4.5
 animation=swings right arm from left|0.4|blue lightning
 effect=3 ranged hits in 2 s
-subeffect=damage:623| per hit
+count=3
+length=2
+subeffect=damage:1331351
 
 attack=Static Field (1)
 cooldown=20
 animation=swings left arm from right with lightning effect|0.75|creates a lightning ring
-effect=ticking ring (lasts 4 s)
-subeffect=damage:952|stun:1| when going out/at border?
+effect=ticking ring (lasts 4 s), when passing
+subeffect=damage:2034424
+subeffect=stun:1
 
 attack=Lightning Storm (2)
 cooldown=21
 animation=turns bit right|0.25|lightning effect
 effect=ticking AoE (6 hits in 5 s)
-subeffect=damage:515| per hit
+count=6
+length=5
+subeffect=damage:1100555
 #note=Slightly higher cooldown means this will be skipped about once per 3 Static Fields.
 
 attack=Shocking Aura
 cooldown=33
 animation=instant
 effect=buff (3 s)
-subeffect=stun:2| if hit at melee
+subeffect=buff:shocking_aura:3
 
 ##################################################################
 # Assuming 125% more damage.
@@ -6171,26 +6805,31 @@ attack=Arc of Lightning
 cooldown=4.5
 animation=swings right arm from left|0.4|blue lightning
 effect=3 ranged hits in 2 s
-subeffect=damage:1401| per hit
+count=3
+length=2
+subeffect=damage:2993937
 
 attack=Static Field (1)
 cooldown=20
 animation=swings left arm from right with lightning effect|0.75|creates a lightning ring
-effect=ticking ring (lasts 4 s)
-subeffect=damage:2142|stun:1| when going out/at border?
+effect=ticking ring (lasts 4 s), when passing
+subeffect=damage:4577454
+subeffect=stun:1
 
 attack=Lightning Storm (2)
 cooldown=21
 animation=turns bit right|0.25|lightning effect
 effect=ticking AoE (6 hits in 5 s)
-subeffect=damage:1159| per hit
+count=6
+length=5
+subeffect=damage:2476783
 #note=Slightly higher cooldown means this will be skipped about once per 3 Static Fields.
 
 attack=Shocking Aura
 cooldown=33
 animation=instant
 effect=buff (3 s)
-subeffect=stun:2| if hit at melee
+subeffect=buff:shocking_aura:3
 
 ##################################################################
 # Damage values wrong!
@@ -6209,19 +6848,24 @@ attack=Lightning Whip
 animation=swings whip from left with lightning effect|0.3
 cooldown=3
 effect=2 long range melee hits in 0.35 s
-subeffect=damage:715| per hit
+count=2
+length=0.35
+subeffect=damage:1527955
 
 attack=Lightning Shot
 cooldown=9
 animation=aims with left pistol with lighting effect|0.75
 effect=piercing projectile
-subeffect=damage:1748|confusion:500:5:2
+subeffect=damage:3735476
+subeffect=confusion:5:2
 
 attack=Lightning Shot
 cooldown=19
 animation=kneels and aims with left pistol with lighting effect|3
 effect=piercing projectile
-subeffect=damage:2886|blind:5|confusion:1250:5:5
+subeffect=damage:6167382
+subeffect=blind:5
+subeffect=confusion:5:5
 
 ##################################################################
 
@@ -6239,19 +6883,24 @@ attack=Lightning Whip
 animation=swings whip from left with lightning effect|0.3
 cooldown=3
 effect=2 long range melee hits in 0.35 s
-subeffect=damage:715| per hit
+count=2
+length=0.35
+subeffect=damage:1527955
 
 attack=Lightning Shot
 cooldown=9
 animation=aims with left pistol with lighting effect|0.75
 effect=piercing projectile
-subeffect=damage:1748|confusion:500:5:2
+subeffect=damage:3735476
+subeffect=confusion:5:2
 
 attack=Lightning Shot
 cooldown=19
 animation=kneels and aims with left pistol with lighting effect|3
 effect=piercing projectile
-subeffect=damage:2886|blind:5|confusion:1250:5:5
+subeffect=damage:6167382
+subeffect=blind:5
+subeffect=confusion:5:5
 
 ##################################################################
 # About 95% more damage.
@@ -6267,19 +6916,24 @@ attack=Lightning Whip
 animation=swings whip from left with lightning effect|0.3
 cooldown=3
 effect=2 long range melee hits in 0.35 s
-subeffect=damage:1400| per hit
+count=2
+length=0.35
+subeffect=damage:2991800
 
 attack=Lightning Shot
 cooldown=9
 animation=aims with left pistol with lighting effect|0.75
 effect=piercing projectile
-subeffect=damage:3386|confusion:548:5:2
+subeffect=damage:7235882
+subeffect=confusion:5:2
 
 attack=Lightning Shot
 cooldown=19
 animation=kneels and aims with left pistol with lighting effect|3
 effect=piercing projectile
-subeffect=damage:5702|blind:5|confusion:1370:5:5
+subeffect=damage:12185174
+subeffect=blind:5
+subeffect=confusion:5:5
 
 ##################################################################
 # Damage values wrong!
@@ -6298,27 +6952,35 @@ attack=Smash (1)
 cooldown=4.5
 animation=pulls scythe to right and swings overhead|0.65
 effect=melee
-subeffect=damage:1742
+subeffect=damage:3722654
 
 attack=Smash (2)
 animation=pulls scythe behind back, keeps it there with glow and swings overhead with massive effect|2.3
 additional=Can't rotate.
 effect=melee
-subeffect=damage:3902|knockdown:3|weakness:10|crippled:5
+subeffect=damage:8338574
+subeffect=knockdown:3
+subeffect=weakness:10
+subeffect=crippled:5
 #note=run behind back or away
 
 attack=Throw Anchor
 cooldown=12
 animation=pulls scythe to right and spins anti-clockwise|0.65|throws a black anchor
 effect=projectile
-subeffect=damage:1371|immobilized:3
+subeffect=damage:2929827
+subeffect=immobilized:3
 
 attack=Battle Standard
 cooldown=120
 effect=ticking AoE (20 hits in 57 s)
-subeffect=fury:5|might:10:2|swiftness:5| per hit
+count=20
+length=57
+subeffect=fury:5
+subeffect=might:10:2
+subeffect=swiftness:5
 effect=initial hit
-subeffect=damage:5162|stability:10|fury:5|might:10:2
+subeffect=damage:11031194
 
 ##################################################################
 # Assuming 40% less damage.
@@ -6337,27 +6999,35 @@ attack=Smash (1)
 cooldown=4.5
 animation=pulls scythe to right and swings overhead|0.65
 effect=melee
-subeffect=damage:1742
+subeffect=damage:3722654
 
 attack=Smash (2)
 animation=pulls scythe behind back, keeps it there with glow and swings overhead with massive effect|2.3
 additional=Can't rotate.
 effect=melee
-subeffect=damage:3902|knockdown:3|weakness:10|crippled:5
+subeffect=damage:8338574
+subeffect=knockdown:3
+subeffect=weakness:10
+subeffect=crippled:5
 #note=run behind back or away
 
 attack=Throw Anchor
 cooldown=12
 animation=pulls scythe to right and spins anti-clockwise|0.65|throws a black anchor
 effect=projectile
-subeffect=damage:1371|immobilized:3
+subeffect=damage:2929827
+subeffect=immobilized:3
 
 attack=Battle Standard
 cooldown=120
 effect=ticking AoE (20 hits in 57 s)
-subeffect=fury:5|might:10:2|swiftness:5| per hit
+count=20
+length=57
+subeffect=fury:5
+subeffect=might:10:2
+subeffect=swiftness:5
 effect=initial hit
-subeffect=damage:5162|stability:10|fury:5|might:10:2
+subeffect=damage:11031194
 
 ##################################################################
 # Assuming 66% more damage.
@@ -6373,27 +7043,35 @@ attack=Smash (1)
 cooldown=4.5
 animation=pulls scythe to right and swings overhead|0.65
 effect=melee
-subeffect=damage:2890
+subeffect=damage:6175930
 
 attack=Smash (2)
 animation=pulls scythe behind back, keeps it there with glow and swings overhead with massive effect|2.3
 additional=Can't rotate.
 effect=melee
-subeffect=damage:6477|knockdown:3|weakness:10|crippled:5
+subeffect=damage:13841349
+subeffect=knockdown:3
+subeffect=weakness:10
+subeffect=crippled:5
 #note=run behind back or away
 
 attack=Throw Anchor
 cooldown=12
 animation=pulls scythe to right and spins anti-clockwise|0.65|throws a black anchor
 effect=projectile
-subeffect=damage:2276|immobilized:3
+subeffect=damage:4863812
+subeffect=immobilized:3
 
 attack=Battle Standard
 cooldown=120
 effect=ticking AoE (20 hits in 57 s)
-subeffect=fury:5|might:10:2|swiftness:5| per hit
+count=20
+length=57
+subeffect=fury:5
+subeffect=might:10:2
+subeffect=swiftness:5
 effect=initial hit
-subeffect=damage:8569|stability:10|fury:5|might:10:2
+subeffect=damage:18311953
 
 ##################################################################
 
@@ -6411,23 +7089,26 @@ attack=Mace Smash (1)
 cooldown=5
 animation=swings mace from right|0.35
 effect=melee
-subeffect=damage:760
+subeffect=damage:1624120
 
 attack=Crushing Blow (2)
 animation=swings mace from left|0.8
 effect=melee
-subeffect=damage:951
+subeffect=damage:2032287
 
 attack=Faithful Strike (3)
 animation=keeps mace overhead and swings from below|1.2
 effect=melee
-subeffect=damage:1248|regeneration:0:5
+subeffect=damage:2666976
+subeffect=regeneration:5
 
 attack=Shield Throw
 cooldown=11
 animation=loses shield, leans back with lightning effect, pulls mace behind back and swings left arm from right|2.5
 effect=bouncing projectile (hits 5 times)
-subeffect=damage:834|stun:1| per hit
+count=?
+subeffect=damage:1782258
+subeffect=stun:1
 
 attack=Aetherized Shielding
 cooldown=25
@@ -6448,23 +7129,26 @@ attack=Mace Smash (1)
 cooldown=5
 animation=swings mace from right|0.35
 effect=melee
-subeffect=damage:1260
+subeffect=damage:2692620
 
 attack=Crushing Blow (2)
 animation=swings mace from left|0.8
 effect=melee
-subeffect=damage:1530
+subeffect=damage:3269610
 
 attack=Faithful Strike (3)
 animation=keeps mace overhead and swings from below|1.2
 effect=melee
-subeffect=damage:2070|regeneration:0:5
+subeffect=damage:4423590
+subeffect=regeneration:5
 
 attack=Shield Throw
 cooldown=11
 animation=loses shield, leans back with lightning effect, pulls mace behind back and swings left arm from right|2.5
 effect=bouncing projectile (hits 5 times)
-subeffect=damage:873|stun:1| per hit
+count=5
+subeffect=damage:1865601
+subeffect=stun:1
 
 attack=Aetherized Shielding
 cooldown=25
@@ -6488,36 +7172,47 @@ type=aetherblade
 attack=Slash (1)
 animation=swings sword|0.5
 effect=melee
-subeffect=damage:696|bleeding:2490:15:2
+subeffect=damage:1487352
+subeffect=bleeding:15:2
 
 attack=Kick (2)
 animation=jumps and kicks|0.6
 effect=melee
-subeffect=damage:688|crippled:10
+subeffect=damage:1470256
+subeffect=crippled:10
 
 attack=Pounce (3)
 animation=leans back and thrusts with sword|0.8
 effect=melee
-subeffect=damage:1058
+subeffect=damage:2260946
 
 attack=Thrown Dagger
 cooldown=4
 animation=pulls sword behind back, kneels, spins and swings left arm from right|1
 effect=projectile
-subeffect=damage:991|weakness:10|bleeding:2490:15:2
+subeffect=damage:2117767
+subeffect=weakness:10
+subeffect=bleeding:15:2
 
 attack=Dagger Fan
 cooldown=15
 animation=glows, pulls sword behind back, kneels, spins and swings left arm from right|1
 effect=5 low range projectiles (cone)
-subeffect=damage:1029|daze:2| per hit
+count=?
+subeffect=damage:2198973
+subeffect=daze:2
 
 attack=Whirling Defense
 cooldown=32
 animation=glows with whirling effect|1
 # Duration/hits unknown.
 effect=8 small PBAoEs in 1.4 s
-subeffect=damage:340|vulnerability:10| per hit. Reflects projectiles.
+count=8
+length=1.4
+subeffect=damage:726580
+subeffect=vulnerability:10
+effect=channel
+subeffect=buff:projectile_reflection:1.4
 
 ##################################################################
 # Assuming 50% less damage.
@@ -6535,36 +7230,47 @@ type=aetherblade
 attack=Slash (1)
 animation=swings sword|0.5
 effect=melee
-subeffect=damage:696|bleeding:2490:15:2
+subeffect=damage:1487352
+subeffect=bleeding:15:2
 
 attack=Kick (2)
 animation=jumps and kicks|0.6
 effect=melee
-subeffect=damage:688|crippled:10
+subeffect=damage:1470256
+subeffect=crippled:10
 
 attack=Pounce (3)
 animation=leans back and thrusts with sword|0.8
 effect=melee
-subeffect=damage:1058
+subeffect=damage:2260946
 
 attack=Thrown Dagger
 cooldown=4
 animation=pulls sword behind back, kneels, spins and swings left arm from right|1
 effect=projectile
-subeffect=damage:991|weakness:10|bleeding:2490:15:2
+subeffect=damage:2117767
+subeffect=weakness:10
+subeffect=bleeding:15:2
 
 attack=Dagger Fan
 cooldown=15
 animation=glows, pulls sword behind back, kneels, spins and swings left arm from right|1
 effect=5 low range projectiles (cone)
-subeffect=damage:1029|daze:2| per hit
+count=?
+subeffect=damage:2198973
+subeffect=daze:2
 
 attack=Whirling Defense
 cooldown=32
 animation=glows with whirling effect|1
 # Duration/hits unknown.
 effect=8 small PBAoEs in 1.4 s
-subeffect=damage:340|vulnerability:10| per hit. Reflects projectiles.
+count=8
+length=1.4
+subeffect=damage:726580
+subeffect=vulnerability:10
+effect=channel
+subeffect=buff:projectile_reflection:1.4
 
 ##################################################################
 # Assuming 100% more damage.
@@ -6579,36 +7285,45 @@ type=aetherblade
 attack=Slash (1)
 animation=swings sword|0.5
 effect=melee
-subeffect=damage:1391|bleeding:2730:15:2
+subeffect=damage:2972567
+subeffect=bleeding:15:2
 
 attack=Kick (2)
 animation=jumps and kicks|0.6
 effect=melee
-subeffect=damage:1376|crippled:10
+subeffect=damage:2940512
+subeffect=crippled:10
 
 attack=Pounce (3)
 animation=leans back and thrusts with sword|0.8
 effect=melee
-subeffect=damage:2116
+subeffect=damage:4521892
 
 attack=Thrown Dagger
 cooldown=4
 animation=pulls sword behind back, kneels, spins and swings left arm from right|1
 effect=projectile
-subeffect=damage:1982|weakness:10|bleeding:2730:15:2
+subeffect=damage:4235534
+subeffect=weakness:10
+subeffect=bleeding:15:2
 
 attack=Dagger Fan
 cooldown=15
 animation=glows, pulls sword behind back, kneels, spins and swings left arm from right|1
 effect=5 low range projectiles (cone)
-subeffect=damage:2057|daze:2| per hit
+count=?
+subeffect=damage:4395809
+subeffect=daze:2
 
 attack=Whirling Defense
 cooldown=32
 animation=glows with whirling effect|1
 # Duration/hits unknown.
 effect=8 small PBAoEs in 1.4 s
-subeffect=damage:680|vulnerability:10| per hit. Reflects projectiles.
+subeffect=damage:1453160
+subeffect=vulnerability:10
+effect=channel
+subeffect=buff:projectile_reflection:1.4
 
 ##################################################################
 ##################################################################
@@ -6629,37 +7344,44 @@ attack=Smash (1)
 animation=swings right arm|0.4
 cooldown=4
 effect=melee
-subeffect=damage:1780|vulnerability:3
+subeffect=damage:3803860
+subeffect=vulnerability:3
 
 attack=Bash (2)
 animation=swings right arm left|0.4
 effect=melee
-subeffect=damage:1816|vulnerability:3
+subeffect=damage:3880792
+subeffect=vulnerability:3
 
 attack=Uppercut (3)
 animation=swings right arm behind|1
 effect=melee
-subeffect=damage:5426| and a interrupt
+subeffect=damage:11595362
+subeffect=daze:0.25
 #note=block/evade or use stability
 
 attack=Savage Leap
 animation=Withdraws and turns bit right|0.75
 effect=leap (0.6 s)
-subeffect=damage:6931|knockback:1.5|bleeding:1365:5:3
+subeffect=damage:14811547
+subeffect=knockback:1.5
+subeffect=bleeding:5:3
 #note=block/evade
 
 attack=Getting Closer
 cooldown=7
 effect=leap (0.5 s)
-subeffect=damage:3639| and a interrupt
+subeffect=damage:7776543
+subeffect=daze:0.25
 
 attack=Pound
 cooldown=17
 animation=glows and jumps|1|a white ring
 additional=can't be blocked. Can be jumped over. Max range 1200.
-effect=growing PBAoE field
+effect=growing PBAoE field, when passing through
 # Note: might be a critical hit.
-subeffect=damage:8992|crippled:3| when passing through
+subeffect=damage:19215904
+subeffect=crippled:3
 #note=Never run along the wave or you melt in a second
 #note=Evade or jump over
 
@@ -6679,26 +7401,32 @@ type=molten
 attack=Chop (1)
 cooldown=0
 effect=melee
-subeffect=damage:2500
+subeffect=damage:5342500
 
 attack=Double Chop (2)
 effect=2 melee hits
-subeffect=damage:0| per hit
+count=2
+length=0.5
+subeffect=damage:0
 
 attack=Triple Chop (3)
 effect=3 melee hits
-subeffect=damage:0| per hit
+count=3
+length=1.6
+subeffect=damage:0
 
 attack=Dual Strike
 animation=raises axe|0.33
 effect=2 melee hits
-subeffect=damage:2000| per hit
+count=2
+subeffect=damage:4274000
 
 # Unique attack.
 attack=Cyclone Axe
 animation=spins|0.4
 effect=PBAoE
-subeffect=damage:5500|crippled:8
+subeffect=damage:11753500
+subeffect=crippled:8
 
 ##################################################################
 # Similar enemy: CoF P3 Flame Legion Blade Master
@@ -6722,12 +7450,12 @@ subeffect=damage:0
 attack=Charge
 additional=leap finisher
 effect=long dash
-subeffect=damage:1250
+subeffect=damage:2671250
 
 attack=Hundred Blades
 animation=swings blade from right behind back and hits overhead|0.75
 effect=melee
-subeffect=damage:6500
+subeffect=damage:13890500
 #note=Try to avoid
 
 ##################################################################
@@ -6755,13 +7483,19 @@ subeffect=damage:0
 attack=Shield Bash
 animation=swings shield|0.5
 effect=melee
-subeffect=damage:0|daze:3
+subeffect=damage:0
+subeffect=daze:3
 
 attack=Gong
 animation=instant||plays gong 3 times
 cooldown=20
 effect=3 PBAoEs in 2.5 s
-subeffect=might:8|swiftness:8|protection:8|protection:8
+count=3
+length=2.5
+subeffect=might:8
+subeffect=swiftness:8
+subeffect=protection:8
+subeffect=regeneration:8
 
 ##################################################################
 # Similar enemy: CoF P3 Flame Legion Igniter
@@ -6779,12 +7513,16 @@ type=molten
 attack=Flame Spray
 additional=able to move
 effect=channeled cone (5 hits per sec)
-subeffect=damage:0|burning:0:1|might:1| per hit
+count=5
+length=1
+subeffect=damage:0
+subeffect=burning:0:1
+subeffect=might:1
 
 attack=Backdraft
 animation=muscle show off
 effect=buff
-subeffect=pull| on next attack
+subeffect=pull:1 on next attack
 
 ##################################################################
 # Similar enemy: "Dredge Oscillator"
@@ -6806,7 +7544,8 @@ attack=Shockwave
 animation=Swings right arm back|1.25
 cooldown=3.5
 effect=3 piercing projectiles (cone)
-subeffect=damage:3082| per hit
+count=?
+subeffect=damage:6586234
 #note=evade (especially if at close range)
 #note=movement doesn't work (except at high range)
 
@@ -6814,7 +7553,8 @@ attack=Upper Cut
 cooldown=14
 animation=Swings right arm|0.2
 effect=melee
-subeffect=damage:3795|knockback:1.5
+subeffect=damage:8109915
+subeffect=knockback:1.5
 
 ##################################################################
 
@@ -6831,18 +7571,23 @@ attack=Slice
 animation=swings mace|0.25
 cooldown=3.5
 effect=melee
-subeffect=damage:1822
+subeffect=damage:3893614
 
 attack=Shield Bash
 cooldown=11
 animation=turns right and swings shield|0.5
 effect=melee
-subeffect=damage:1575|daze:3|burning:528:1
+subeffect=damage:3365775
+subeffect=daze:3
+subeffect=burning:1
 
 attack=Shielding
 animation=moves mace behind back and hits the shield|1
 effect=ticking AoE field (14.5 s)
-subeffect=buff:"Shielded":2| every 2 s and |burning:528:1| when passing through
+frequency=2
+subeffect=buff:"Shielded":2
+effect=when passing
+subeffect=burning:1
 #note=try to interrupt. It that fails, let enemies walk out of it or use Pull, Knockback and launch.
 #note=Total duration is 16.5 s
 
@@ -6869,14 +7614,17 @@ attack=Shockwave
 animation=swings staff right and then forward|1.5
 cooldown=4.5
 effect=3 piercing projectiles in 0.8 s
-subeffect=damage:1750| per hit
+count=3
+length=0.8
+subeffect=damage:3739750
 #note=evade
 
 attack=Earthquake
 cooldown=18
 animation=raises staff over head and smashes ground|1.5
 effect=PBAoE
-subeffect=damage:8494|launch:2.4
+subeffect=damage:18151678
+subeffect=launch:2.4
 #note=block/evade
 
 ##################################################################
@@ -6891,7 +7639,7 @@ path=Molten
 
 attack=Shoot
 effect=projectile
-subeffect=damage:3500
+subeffect=damage:7479500
 
 ##################################################################
 
@@ -6908,20 +7656,24 @@ toughness=1
 
 attack=Twisting Fang (1)
 effect=2 melee hits
-subeffect=damage| per hit
+count=2
+subeffect=damage:0
 
 attack=Twisting Fang (2)
 effect=melee
-subeffect=damage
+subeffect=damage:0
 
 attack=Twisting Fang (3)
 effect=melee
-subeffect=damage
+subeffect=damage:0
 
 attack=Death Blossom
 animation=jumps over target|0.4
 effect=3 small PBAoes in 0.15 s
-subeffect=damage|bleeding
+count=3
+length=0.15
+subeffect=damage:0
+subeffect=bleeding:0
 #note=Try to evade.
 
 ##################################################################
@@ -6939,25 +7691,31 @@ attack=Fireball
 cooldown=3
 animation=swings right arm|0.6
 effect=piercing projectile
-subeffect=damage:428
+subeffect=damage:914636
 effect=when passing through
-subeffect=damage:42
+subeffect=damage:89754
 effect=with ticking AoE (11 hits in 10 s)
-subeffect=damage:428|burning:1056:2| per hit
+count=11
+length=10
+subeffect=damage:914636
+subeffect=burning:2
 #note=Move out of red circles
 
 attack=Flame Breath (1)
 cooldown=10
 animation=leans back with a fiery effect|0.75|sprays flame
 effect=4 cones in 0.6 s
-subeffect=damage:1047| per hit
+count=4
+length=0.6
+subeffect=damage:2237439
 #note=evade
 
 attack=Flame Breath (2)
 animation=opens mouth|0.25|shoots fireballs
 additional=randomly stuns itself preventing this attack
 effect=3 projectiles (cone)
-subeffect=damage:1258| per hit
+count=?
+subeffect=damage:2688346
 #note=move away or evade
 
 attack=Bouncing Fireball
@@ -6965,11 +7723,14 @@ cooldown=21
 animation=moves right arm behind back with a fiery effect and swings right arm|1.75
 additional=bounces once on ground creating another AoE
 effect=piercing projectile
-subeffect=damage:428
+subeffect=damage:914636
 effect=when passing through
-subeffect=damage:42
+subeffect=damage:89754
 effect=ticking AoE (11 hits in 10 s)
-subeffect=damage:428|burning:1056:2| per hit
+count=11
+length=10
+subeffect=damage:914636
+subeffect=burning:2
 #note=Move out of red circles
 
 ##################################################################
@@ -6989,22 +7750,26 @@ toughness=0.8
 attack=Ash Blast
 animation=moves right arm back and forth|1
 effect=projectile with AoE
-subeffect=damage:3255
+subeffect=damage:6955935
 
 attack=Ash Cloud
 animation=crouches forward and rises arms|2.5
 effect=Ticking AoE
-subeffect=damage:2500|blind:3| per hit
+count=?
+subeffect=damage:5342500
+subeffect=blind:3
 
 attack=Smoke Cloud
 animation=crouches forward and rises arms|3
 effect=PBAoE
-subeffect=blind:3|stealth
+subeffect=blind:3
+subeffect=stealth:0
 
 attack=Mark of Immobilization
 animation=rises right arm and touches ground|2|plants a small mark
 effect=trap
-subeffect=damage:6445|immobilized:3| when triggered
+subeffect=damage:13772965
+subeffect=immobilized:3
 
 ##################################################################
 # Similar enemy: FOTM Furn Flame Legion Stalker
@@ -7025,24 +7790,27 @@ attack=Shoot
 cooldown=3
 animation=raises bow and aims|0.6
 effect=projectile
-subeffect=damage:1936
+subeffect=damage:4137232
 
 attack=Dual Shot
 cooldown=10
 animation=raises bow and aims|0.5
 effect=2 projectiles in 0.1 s
-subeffect=damage:1858| per hit (|damage:3716|)
+count=2
+length=0.1
+subeffect=damage:3970546
 
 attack=Spread Shot
 animation=crouches and aims|1.5
 effect=5 projectiles (cone)
-subeffect=damage:3347| per hit (|damage:16735|)
+count=?
+subeffect=damage:7152539
 #note=Very dangerous at close range
 
 attack=Ignite Arrows
 animation=touches ground with right hand|0.25
 effect=buff (15 s)
-subeffect=damage:669| (PBAoE) when hitting with attacks
+subeffect=damage:1429653 (PBAoE) when hitting with attacks
 #note=very effective with Spread Shot
 
 ##################################################################

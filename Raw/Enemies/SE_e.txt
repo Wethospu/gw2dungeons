@@ -1,8 +1,3 @@
-# Note: Damage values NOT updated after feature patch!
-# TODO: ID 10931, Inquest Grenadier has 1.25 toughness (but also 1.0).
-# TODO: ID 10909/10008, Prototype golems have 0.75/1.25 toughness.
-# Potion system causes minor issues because enemy types are different in each path.
-# Standard elite healths: 93984 (65), 96947 (66), 97133 (68)
 ##################################################################
 # Enemies in story.                                              #
 potion=inquest|main

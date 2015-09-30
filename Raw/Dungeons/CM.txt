@@ -207,8 +207,6 @@ Pull the Cutpurses to Taylor and kill them all at the same time.
 tactic=exploit
 Cutpurses can be skipped if you attack Taylor from media=cmp2_taylor.jpg|bed with either melee or from afk-range spot.
 Also if you cleared turrets and cutpurses you can run out of the room to get out of combat regeneration without her reseting.
-tactic=bug
-Taylor won't turn hostile if you enter her room before selecting the path. There is no known fix.
 
 name=Second room
 tactic=normal

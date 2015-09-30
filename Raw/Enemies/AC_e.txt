@@ -1,8 +1,5 @@
-# Note: Damage and health values NOT updated after feature patch!
-# TODO: Stalker toughness problem: 1.0 or 0.25??
+potion=ascalonian_ghost|none
 
-potion=ghost|none
-# magic value of 0.878 when converting exp values to story values
 ##################################################################
 
 Name=Gateguard

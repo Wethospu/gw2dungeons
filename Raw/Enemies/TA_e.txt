@@ -1,7 +1,5 @@
-# Note: Damage values NOT updated after feature patch!
-
 potion=nightmare court|main
-
+potion=scarlet_minion|main
 ##################################################################
 ###                  Story - normal enemies                    ###
 ##################################################################
