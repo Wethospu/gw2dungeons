@@ -305,14 +305,17 @@ example:
 Use hit counter for attack parts which hit multiple times. This makes DataCreator automatically generate total damage values.
 If the hit count varies or is unknown, use "?" to add only " per hit" after the effect.
 Use length for attacks where multiple hits come over time. This makes DataCreator automatically add "over X seconds" to damage values.
+Use frequency when the effect is on all the time (like auras). Frequency adds "every X seconds" after the effect.
 
 syntax:
 	count="number"
 	length="number"
+	frequency="number"
 example:
 	count=5
 	count=?
 	length=1.5
+	frequeyncy=2
 
 Every attack part contains one or multiple effects. You should split effects to multiple lines for clarity. But it's possible to combine both effects and text together.
 	

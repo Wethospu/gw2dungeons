@@ -553,6 +553,13 @@ namespace DataCreator.Enemies
         else
           Helper.ShowWarning("Missing info. Use \"length='number'\"");
       }
+      else if (tag.Equals("frequency"))
+      {
+        if (data.Length > 0)
+          _currentEffect.HitFrequency = Helper.ParseD(data);
+        else
+          Helper.ShowWarning("Missing info. Use \"frequency='number'\"");
+      }
       // Add subeffects to the effect.
       else if (tag.Equals("subeffect"))
       {

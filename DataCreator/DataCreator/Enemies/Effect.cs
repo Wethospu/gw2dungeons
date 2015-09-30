@@ -19,12 +19,15 @@ namespace DataCreator.Enemies
     // How many times this effects hit. -1 means variable or unknown. / 2015-09-29 / Wethospu
     public int HitCount;
     public double HitLength;
+    // Auras don't really have length so count doesnt make sense. Frequence is used for them. / 2015-09-29 / Wethospu
+    public double HitFrequency;
     public readonly List<string> SubEffects = new List<string>();
 
     public Effect(string type)
     {
       HitCount = 1;
       HitLength = 0.0;
+      HitFrequency = 0.0;
       _type = type;
     }
 
@@ -58,7 +61,7 @@ namespace DataCreator.Enemies
       foreach (var subEffect in SubEffects)
       {
         htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<li>");
-        htmlBuilder.Append(HandleEffect(LinkGenerator.CreateEnemyLinks(subEffect, path, enemies), HitCount, HitLength, baseEnemy));
+        htmlBuilder.Append(HandleEffect(LinkGenerator.CreateEnemyLinks(subEffect, path, enemies), HitCount, HitLength, HitFrequency, baseEnemy));
         htmlBuilder.Append("</li>").Append(Constants.LineEnding);
       }
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("</ul>").Append(Constants.LineEnding);
@@ -80,10 +83,11 @@ namespace DataCreator.Enemies
     * effectStr: Raw effect data.                                                                  *
     * hitCount: How many times the attack part hits.                                               *
     * hitLength: How long it takes for all hits to hit.                                            *
+    * hitFrequency: How often the effect tics. Only relevant for auras.                            *
     * baseEnemy: Enemy which owns this effect. Needed to add tags to the enemy.                    *
     *                                                                                              *
     ***********************************************************************************************/
-    private string HandleEffect(string effectStr, int hitCount, double hitLength, Enemy baseEnemy)
+    private string HandleEffect(string effectStr, int hitCount, double hitLength, double hitFrequency, Enemy baseEnemy)
     {
       /* What is wanted:
       * Damage: <span>(count*stack*amount)</span> over time (<span>amount</span> per hit).
@@ -304,6 +308,12 @@ namespace DataCreator.Enemies
         // Some effects can have variable or unknown hit count. Just add " per hit" in those cases. / 2015-09-29 / Wethospu
         if (hitCount < 1)
           replace.Append(" per hit");
+        if (hitFrequency > 0.01)
+        {
+          replace.Append(" every ").Append(hitFrequency).Append(" second");
+          if (hitFrequency != 1.0)
+            replace.Append("s");
+        }
         if (effectType == EffectType.Buff)
         {
           // Add the buff name (people probably won't recognize all icons). / 2015-09-23 / Wethospu
