@@ -315,7 +315,7 @@ example:
 	count=5
 	count=?
 	length=1.5
-	frequeyncy=2
+	frequency=2
 
 Every attack part contains one or multiple effects. You should split effects to multiple lines for clarity. But it's possible to combine both effects and text together.
 	
