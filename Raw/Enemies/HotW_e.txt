@@ -242,7 +242,8 @@ attack=Hornet Sting (1)
 animation=swings right arm|0.5|hornet effect
 effect=melee
 subeffect=damage:0
-effect=evade back
+effect=dodge back
+subeffect=buff:evade
 
 attack=Monarch's Leap (2)
 effect=leap (0.5 s)
@@ -251,7 +252,8 @@ subeffect=crippled:3
 
 attack=Serpent's Strike
 animation=instant||green effect
-effect=evade behind target (1 s)
+effect=move behind target
+subeffect=buff:evade:1
 effect=melee
 subeffect=damage:0
 subeffect=vulnerability:3
@@ -604,7 +606,7 @@ animation=instant||falling ice shards
 effect=multiple delayed AoEs
 subeffect=damage:0
 subeffect=chilled:0
-effect=walk out of circles, evade if needed
+#note=walk out of circles, evade if needed
 
 ##################################################################
 

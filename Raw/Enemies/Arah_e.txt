@@ -159,7 +159,7 @@ attack=Swoop
 animation=glows
 effect=melee
 subeffect=damage:4006875
-subeffect=buff:evade
+effect=buff:evade
 
 ##################################################################
 
@@ -796,9 +796,9 @@ subeffect=stun:2
 attack=Fiery Block
 cooldown=19
 animation=instant|0|hides behind shield
-effect=blocks all attacks for 3 s
+effect=buff:projectile_reflection:3
+effect=buff:block:3
 subeffect=burning:1 when blocks
-subeffect=buff:reflect
 
 attack=Banner of Strength
 cooldown=32
@@ -2265,7 +2265,8 @@ attack=Evasive Trap
 cooldown=11
 animation=instant|0|dodges backwards
 additional=May interrupt his attacks. Used at close targets.
-effect=evade backwards
+effect=dodge back
+subeffect=buff:evade:0
 effect=trap at end location
 subeffect=damage:4515481
 subeffect=immobilized:5

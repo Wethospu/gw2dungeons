@@ -136,7 +136,7 @@ attack=Hornet Sting
 image=http://i.imgur.com/rTMlUM2.gif
 effect=Melee
 subeffect=damage
-effect=moves back
+effect=dodge back
 effect=buff:evade
 
 attack=Flanking Strike (1)
@@ -338,8 +338,7 @@ subeffect=buff:block:4
 #note=If you get in bad spot dodge or use mobility to try get through fast
 
 attack="Block"
-effect=buff
-subeffect=buff:block
+effect=buff:block
 subeffect=daze:2 when blocking a melee attack
 
 ##################################################################
@@ -508,7 +507,7 @@ subeffect=poison:8
 attack=Retreating Strike
 effect=melee
 subeffect=damage:0
-effect=move back
+effect=dodge back
 subeffect=buff:evade
 
 ##################################################################
@@ -538,7 +537,7 @@ subeffect=poison:8
 attack=Retreating Strike
 effect=melee
 subeffect=damage:0
-effect=move back
+effect=dodge back
 subeffect=buff:evade
 
 attack=Summon
@@ -1984,9 +1983,8 @@ subeffect=burning:1
 
 attack=Ooze Shield
 animation=spins weirdly
-effect=self
-subeffect=buff:block:4.5
-effect=PBAOE at end if blocked anything)
+effect=buff:block:4.5
+effect=PBAOE at end if blocked anything
 subeffect=damage:17096000
 
 ##################################################################
@@ -2027,9 +2025,8 @@ subeffect=burning:1
 
 attack=Ooze Shield
 animation=spins weirdly
-effect=self
-subeffect=buff:block:4.5
-effect=PBAOE at end if blocked anything)
+effect=buff:block:4.5
+effect=PBAOE at end if blocked anything
 subeffect=damage:17096000
 
 ##################################################################
@@ -2126,9 +2123,8 @@ subeffect=protection:3
 attack=Muddied Ground (1)
 cooldown=30
 animation=instant|0|blends to the ground
-effect=self
-subeffect=buff:evade:3.75
-subeffect=stealth:3 when evade ends
+effect=buff:evade:3.75
+effect=stealth:3 when evade ends
 effect=ticking PBAoE (4 hits in 3 s) when evade ends
 count=4
 length=3
@@ -2172,9 +2168,8 @@ subeffect=protection:3
 attack=Muddied Ground (1)
 cooldown=30
 animation=instant|0|blends to the ground
-effect=self
-subeffect=buff:evade:3.75
-subeffect=stealth:3 when evade ends
+effect=buff:evade:3.75
+effect=stealth:3 when evade ends
 effect=ticking PBAoE (4 hits in 3 s) when evade ends
 count=4
 length=3
@@ -2386,7 +2381,7 @@ subeffect=launch:2.3
 attack=Shield (1)
 animation=hands down|0.5
 additional=only used when alone
-effect=Evade
+effect=buff:evade
 effect=area field, when passing through
 subeffect=burning:1
 effect=with ticking AoE
@@ -2467,7 +2462,7 @@ effect=ticking AoE
 count=?
 subeffect=damage:2137000
 subeffect=burning:1.4
-effect=move back
+effect=dodge back
 subeffect=buff:evade
 
 attack=Sonic Vortex
@@ -4259,8 +4254,7 @@ subeffect=stun:2
 
 attack=Shield Stance
 animation=instant||hides behind shield
-effect=self
-subeffect=buff:block
+effect=buff:block
 
 ################################################################## 
 # Copied from a potentially similar enemy: CoF P3
@@ -4569,7 +4563,7 @@ animation=instant||moves back and leaves a bomb with a red circle
 effect=delayed (2 s) AoE
 subeffect=damage:3756846
 subeffect=confusion:5:3
-effect=move back
+effect=dodge back
 subeffect=buff:evade
 #note=use AoE cleave without targeting her to prevent triggering it
 #note=move bit back if you are on a red circle
@@ -4942,8 +4936,7 @@ subeffect=damage:0
 
 attack=Dazing Block
 animation=kneels||hides behind shield
-effect=channel
-subeffect=buff:block
+effect=buff:block
 subeffect=daze:1 when hit
 
 attack=Summon & Heal
@@ -5587,7 +5580,7 @@ subeffect=bleeding:0
 attack=Fiery Block
 animation=kneels||hides behind shield
 effect=channeled
-subeffect=buff:block
+effect=buff:block:3
 subeffect=burning:1 when hit
 
 attack=Trebuchet Shot
@@ -5625,7 +5618,7 @@ subeffect=blind:2
 attack=Fiery Block
 animation=kneels|0.2|hides behind shield
 effect=channeled
-subeffect=buff:block:3
+effect=buff:block:3
 subeffect=burning:1 when hit
 
 attack=Summon
@@ -5992,8 +5985,7 @@ subeffect=bleeding:0
 
 attack=Fiery Block
 animation=kneels||hides behind shield
-effect=channeled
-subeffect=buff:block
+effect=buff:block:3
 subeffect=burning:1 when hit
 
 attack=Healing
@@ -6303,8 +6295,7 @@ effect=summon
 subeffect=enemy=Grawl_Totem:structure
 
 attack=Bubble
-effect=channel
-subeffect=buff:block:15
+effect=buff:block:15
 #note=throw "Infused Stone" to break or wait until it runs out
 
 ##################################################################
@@ -7783,7 +7774,7 @@ Path=Furn
 scaling=normal
 health=46061
 type=molten
-# Weird value (check Oscillator), valid range: 2286-2356.
+# Weird value (check Oscillator), valid range is 2286-2356.
 toughness=0.8
 
 attack=Shoot

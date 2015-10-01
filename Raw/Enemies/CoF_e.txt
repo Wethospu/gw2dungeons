@@ -329,7 +329,8 @@ additional=only use at close targets
 effect=cone
 subeffect=damage:6292000
 subeffect=burning:9
-effect=Evade back
+effect=Dodge back
+subeffect=buff:evade
 #note=try to predict, remove burning
 
 attack=Horn
@@ -917,8 +918,8 @@ subeffect=damage:4356000
 
 attack=Fire Blast
 animation=rises to sky|1.25
-effect=evade
-subeffect=evade all attacks (1.25 s)
+effect=during cast
+subeffect=buff:evade:1.25
 effect=PBAoE
 subeffect=damage:6776000
 subeffect=burning:3
@@ -1101,7 +1102,7 @@ subeffect=stun:2
 
 attack=Shield Stance
 animation=instant||hides behind shield
-effect=blocks all attacks
+effect=buff:block
 
 ##################################################################
 
@@ -1340,7 +1341,8 @@ subeffect=damage:4356000
 attack=Poison Blast
 animation=rises to sky|1.25
 cooldown=9
-effect=evade (1.25 s)
+effect=during cast
+subeffect=buff:evade:1.25
 effect=PBAoE
 subeffect=damage:6776000
 subeffect=poison:3

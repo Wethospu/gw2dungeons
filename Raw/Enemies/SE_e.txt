@@ -1397,6 +1397,7 @@ image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
 Path=SE2
 
 attack=block
+effect=buff:block
 
 ##################################################################
 

@@ -298,7 +298,7 @@ cooldown=27
 animation=crouches, jumps back and shoots with left pistol|0.2|shoots a bullet
 effect=projectile
 subeffect=damage:713296
-effect=evade (1 s)
+effect=buff:evade:1
 
 ##################################################################
 
@@ -472,8 +472,7 @@ effect=buff (15 s)
 subeffect=low chance to gain "Evasion" (2 s) when hit
 
 attack="Evasion"
-effect=buff
-subeffect=Block all attacks
+effect=buff:block
 
 ##################################################################
 
@@ -505,7 +504,7 @@ subeffect=low chance to gain "Evasion" (2 s) when hit
 
 attack="Evasion"
 effect=buff
-subeffect=Block all attacks
+subeffect=buff:block
 
 ##################################################################
 

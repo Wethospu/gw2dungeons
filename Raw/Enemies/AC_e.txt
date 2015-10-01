@@ -615,7 +615,8 @@ subeffect=damage:907572
 
 attack=Serpent's Strike
 animation=Green snake
-effect=Evade behind target
+effect=Move behind target
+subeffect=buff:evade:0
 effect=Melee
 subeffect=damage:0
 subeffect=poison:0
@@ -633,7 +634,8 @@ animation=swings from right|0.4|bee effect
 effect=melee
 subeffect=damage:454104
 subeffect=might:5
-effect=Evade back
+effect=Dodge back
+subeffect=buff:evade:0
 
 attack=Monarch's Leap (2)
 effect=leap
@@ -645,7 +647,8 @@ animation=moves to side of target and spins|0.6
 effect=melee
 subeffect=damage:438840
 subeffect=vulnerability:5
-effect=evade behind target
+effect=Move behind target
+subeffect=buff:evade:0
 
 attack=Flanking Stab (2)
 animation=holds right sword behind back|0.5
@@ -1629,11 +1632,10 @@ subeffect=crippled:2
 
 attack=Crippling Slice (3)
 animation=swings right arm|0.5|does a back flip
-effect=evade
-subeffect=Evades all attacks
 effect=melee
 subeffect=damage:457920
 subeffect=crippled:2
+effect=buff:evade:0
 
 attack=Leap
 cooldown=13
@@ -1674,11 +1676,10 @@ subeffect=weakness:5
 
 attack=Crippling Slice (3)
 animation=swings right arm|0.5|does a back flip
-effect=evade
-subeffect=Evades all attacks
 effect=melee
 subeffect=damage:344712
 subeffect=weakness:5
+effect=buff:evade:0
 
 attack=Summon Hatchlings
 image=media=ac_breeder_summon.jpg
@@ -1809,10 +1810,9 @@ effect=melee
 subeffect=damage:491628
 
 attack=Crippling Slice (3)
-effect=evade
-subeffect=Evade all attacks
 effect=melee
 subeffect=damage:590208
+effect=buff:evade:0
 
 attack=Burrow (1)
 cooldown=17
@@ -1829,7 +1829,7 @@ subeffect=buff:evade:5 if hits any players
 #note=Don't get hit or it will spend lots of time evading.
 #note=Run out of area and dodge out if needed.
 
-attack="Evasion"
+attack="Evade"
 animation=Transparent effect
 effect=buff
 subeffect=Evade all attacks
@@ -1865,10 +1865,9 @@ subeffect=damage:388596
 
 attack=Crippling Slice (3)
 animation=swings right arm|0.5|does a back flip
-effect=evade
-subeffect=Evades all attacks
 effect=melee
 subeffect=damage:479544
+effect=buff:evade:0
 
 attack=Eat Corpse (1)
 cooldown=6

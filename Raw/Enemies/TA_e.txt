@@ -79,11 +79,11 @@ subeffect=damage:0
 
 attack=Evasive Trap
 image=http://fat.gfycat.com/WellgroomedTanDairycow.gif
-effect=Evades
 effect=Trap
 subeffect=damage:0
 subeffect=bleeding:4:3
 subeffect=immobilized:3
+effect=buff:evade:0
 #note=only used when hit within melee range while being targetted
 
 ##################################################################
@@ -1696,7 +1696,9 @@ subeffect=vulnerability:5
 attack=Axe Spin (1)
 cooldown=20
 animation=spins clockwise|1
-effect=reflects projectiles and evades (even during cast)
+effect=during cast and attack
+subeffect=buff:evade
+subeffect=buff:projectile_reflection
 effect=melee
 subeffect=percent:5
 subeffect=pull:1.5
@@ -2719,8 +2721,8 @@ subeffect=damage:3314487
 attack=Tunnel
 cooldown=8
 animation=straightens up and goes underground|1.25|white dust
-effect=evade (3 s)
 effect=dash (3 s)
+effect=buff:evade:3
 
 attack=Rock Shards (2)
 animation=dust disappears|1.25|comes to surface
@@ -2747,8 +2749,8 @@ subeffect=damage|2466098
 attack=Tunnel
 cooldown=8
 animation=straightens up and goes underground|1.25|white dust
-effect=evade (3 s)
 effect=dash (3 s)
+effect=buff:evade:3
 
 attack=Rock Shards (2)
 animation=dust disappears|1.25|comes to surface
