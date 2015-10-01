@@ -324,8 +324,8 @@ syntax:
 	subeffect="effect 1"
 example:
 	subeffect=damage:1000
-	subeffect=constant:5000
-	subeffect=percent:50
+	subeffect=damage-constant:5000
+	subeffect=damage-percent:50
 	subeffect=vulnerability:5:2
 	subeffect=burning:10
 	subeffect=launch:2.3
@@ -333,9 +333,10 @@ example:
 	
 Actual effects have different syntax based on their type.
 Normal damage: damage:"raw amount"
-Healing: healing:"healing"
-Armor-ignoring damage: constant:"amount"
-Percentile damage: percent:"amount"
+Healing by a fixed amount: healing:"healing"
+Healing by a percent: healing-percent:"amount"
+Armor-ignoring damage: damage-constant:"amount"
+Percentile damage: damage-percent:"amount"
 Conditions/boons: "name":"duration":"stacks"
 Agony: agony:"duration":"stacks"
 Buff (not boons): buff:"name":"duration":"stacks":"custom icon"

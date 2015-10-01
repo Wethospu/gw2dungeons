@@ -354,16 +354,16 @@ function handleEnemy(enemy) {
         });
     }
 
-    $(enemy).find(".damageValue").each(function () {
+    $(enemy).find(".damage-value").each(function () {
         var damage = getDamage((Number)($(this).data('amount')), potionStrength, dungeonLevel);
 		damage = fractalScaleDamage(damage, fractalLevel, scalingType)
         insertDamage(this, damageSetting, damage, dungeonLevel);
     });
-    $(enemy).find(".percentValue").each(function () {
+    $(enemy).find(".percent-value").each(function () {
         var damage = calculatePercentDamage((Number)($(this).data('amount')), dungeonLevel);
         insertDamage(this, damageSetting, damage, dungeonLevel);
     });
-    $(enemy).find(".effectValue").each(function () {
+    $(enemy).find(".effect-value").each(function () {
         var damage = (Number)($(this).data('amount'));
 		var effect = $(this).data('effect');
 		var attribute = conditionDamage;
@@ -380,13 +380,21 @@ function handleEnemy(enemy) {
 		else
 			insertDamage(this, damageSetting, damage, dungeonLevel);
     });
-    $(enemy).find(".agonyValue").each(function () {
+    $(enemy).find(".agony-value").each(function () {
         var second = (Number)($(this).data('amount'));
         insertDamage(this, damageSetting, getAgonyDamage(second), dungeonLevel);
     });
-    $(enemy).find(".fixedValue").each(function () {
+    $(enemy).find(".fixed-value").each(function () {
         var damage = (Number)($(this).data('amount'));
         insertDamage(this, damageSetting, damage, dungeonLevel);
+    });
+	$(enemy).find(".healing-value").each(function () {
+        var healing = (Number)($(this).data('amount'));
+		$(this).html(healing);
+    });
+	$(enemy).find(".healing-percent-value").each(function () {
+        var healing = (Number)($(this).data('amount'));
+		$(this).html(healing + "%");
     });
 }
 

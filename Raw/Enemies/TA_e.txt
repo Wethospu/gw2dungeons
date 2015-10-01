@@ -270,7 +270,7 @@ additional=used when stepped
 effect=6 PBAoEs in 0.5 s
 count=6
 length=0.5
-subeffect=percent:3
+subeffect=damage-percent:3
 subeffect=poison:4
 effect=self destruct
 #note=respawns periodically
@@ -1519,7 +1519,7 @@ effect=ticking AoE (tick per second)
 subeffect=crippled:1
 subeffect=buff:Tar:5
 effect=huge aura
-subeffect=constant:200| per second
+subeffect=damage-constant:200| per second
 #note=Actually you get a debuff for one second every two seconds. This debuff does damage at start and end resulting in constant damage but flickering debuffs.
 #note=It doesn't cover entire room. If you get really low health you can attempt to get out of combat (but don't do this if Ooze is following you).
 
@@ -1638,7 +1638,7 @@ cooldown=3.5
 animation=spins head|1.75
 additional=Cannot be blocked.
 effect=melee
-subeffect=percent:75
+subeffect=damage-percent:75
 #note=Keep kiting away
 
 attack=Life Steal
@@ -1700,17 +1700,17 @@ effect=during cast and attack
 subeffect=buff:evade
 subeffect=buff:projectile_reflection
 effect=melee
-subeffect=percent:5
+subeffect=damage-percent:5
 subeffect=pull:1.5
 effect=dash with big PBAoE (12 hits in 1.5 s)
 count=12
 length=1.5
-subeffect=percent:5
+subeffect=damage-percent:5
 subeffect=bleeding:5
 subeffect=crippled:5
 subeffect=vulnerability:5
 effect=end
-subeffect=percent:5
+subeffect=damage-percent:5
 subeffect=bleeding:5
 subeffect=crippled:5
 subeffect=vulnerability:5
@@ -2782,7 +2782,7 @@ additional=used when stepped
 effect=6 PBAoEs in 0.5 s
 count=6
 length=0.5
-subeffect=percent:3
+subeffect=damage-percent:3
 subeffect=poison:336:4
 #note=regenerates?
 
@@ -2795,7 +2795,7 @@ condition=0
 
 attack=Lava
 effect=debuff
-subeffect=percent:12
+subeffect=damage-percent:12
 subeffect=burning:1.25
 
 ##################################################################
@@ -2810,7 +2810,7 @@ cooldown=3.5
 animation=spins head|1.75
 additional=Cannot be blocked.
 effect=melee
-subeffect=percent:75
+subeffect=damage-percent:75
 #note=run away
 
 ##################################################################

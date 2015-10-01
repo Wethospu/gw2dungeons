@@ -776,16 +776,16 @@ condition=250
 
 attack=Picking up
 effect=at 0 stacks
-subeffect=percent:30
+subeffect=damage-percent:30
 effect=at 1-9 stacks
-subeffect=percent:30
+subeffect=damage-percent:30
 subeffect=poison:5995:55
 effect=at 10-19 stacks
-subeffect=percent:30
+subeffect=damage-percent:30
 subeffect=poison:55
 subeffect=bleeding:55
 effect=at 20-39 stacks
-subeffect=percent:30
+subeffect=damage-percent:30
 subeffect=poison:55
 subeffect=bleeding:55
 subeffect=burning:55
@@ -804,7 +804,7 @@ subeffect=vulnerability:13
 subeffect=weakness:13
 subeffect=stun:3
 effect=at 40 stacks
-subeffect=percent:100
+subeffect=damage-percent:100
 
 attack=Hammer Swing
 effect=melee
@@ -1502,7 +1502,9 @@ subeffect=burning:1
 
 attack=Stressed
 effect=debuff
-subeffect=damage:1|healing:1| every second
+frequency=1
+subeffect=damage:1
+subeffect=healing:1
 #note=only purpose is to prevent getting out of combat
 
 ##################################################################
@@ -1565,7 +1567,7 @@ path=Furn
 
 attack=Steam
 effect=wall
-subeffect=percent:50|knockback| and removes stability when touched
+subeffect=damage-percent:50|knockback| and removes stability when touched
 
 attack=Fire Lob
 effect=ticking AoE
@@ -2646,7 +2648,7 @@ attack="Frostbite"
 additional=stacks up to 10 times
 effect=debuff
 frequency=1
-subeffect=constant:90.5
+subeffect=damage-constant:90.5
 effect=at 10 stacks
 subeffect=lose all "Frostbite" and get enemy=Ice_Shard:structure.
 
@@ -3122,7 +3124,7 @@ cooldown=15
 animation=marks target|0|glows yellow and shoots laser with sound
 additional=can't be blocked
 effect=ranged
-subeffect=percent:100
+subeffect=damage-percent:100
 #note=hold Crystal to absorb
 #note=evade when skull disappears
 
@@ -3145,7 +3147,7 @@ cooldown=8
 animation=marks target|0|glows yellow and shoots laser with sound
 additional=can't be blocked
 effect=ranged
-subeffect=percent:100
+subeffect=damage-percent:100
 #note=hold Crystal to absorb
 #note=learn timing for evade (don't rely on sound because it doesn't always make it)
 
@@ -3153,7 +3155,7 @@ attack=Death
 animation=marks every target
 additional=used on death. Can't be blocked or evaded
 effect=multiple ranged hits at every target
-subeffect=percent:100
+subeffect=damage-percent:100
 #note=hold Crystal
 
 ##################################################################
@@ -3935,7 +3937,7 @@ animation=kneels and shoots white beam|1|keeps channelling the beam
 effect=12 ranged hits in 6.6 s
 count=12
 length=6.6
-subeffect=constant:587675
+subeffect=damage-constant:587675
 subeffect=causes platforms disappear below the target
 #note=run away from others
 
@@ -4106,7 +4108,7 @@ subeffect=buff:overheating:10
 attack="Overheating"
 effect=debuff
 frequency=1
-subeffect=constant:200
+subeffect=damage-constant:200
 
 
 ################################################################## 
@@ -4529,7 +4531,7 @@ attack=Ninja Kick
 image=http://fat.gfycat.com/ObedientWhiteIlladopsis.gif
 animation=raises front legs from ground, crouches and jumps up in the air|0.6|kicks player in the face
 effect=melee
-subeffect=percent:110
+subeffect=damage-percent:110
 #note=Evade fast when you see him in the air
 
 ##################################################################
@@ -4718,7 +4720,7 @@ subeffect=pull:1.5
 attack=Poison Gas
 effect=environment
 frequency=1
-subeffect=percent:3
+subeffect=damage-percent:3
 subeffect=poison:1
 #note=gets reapplied every 30 seconds
 #note=use main console to ventilate the room and remove effect. Console cools down in 30 seconds.
@@ -4928,7 +4930,7 @@ attack=Shockwave
 animation=charge animation
 additional=can't be blocked
 effect=projectile
-subeffect=percent:90
+subeffect=damage-percent:90
 
 attack=Slice
 effect=melee
@@ -5990,7 +5992,7 @@ subeffect=burning:1 when hit
 
 attack=Healing
 effect=buff
-subeffect=healing:15 %
+subeffect=healing-percent:15
 
 ##################################################################
 
@@ -6382,7 +6384,7 @@ subeffect=buff:block:0:40 blocks one skill
 attack=Eat (2)
 animation=rises up in an arc
 effect=melee
-subeffect=healing:25 % when eating a Villager
+subeffect=healing-percent:25 when eating a Villager
 #note=use unblockable skills to slow it down
 
 ##################################################################
@@ -6573,7 +6575,7 @@ condition=0
 attack=Lava
 effect=debuff
 frequency=1
-subeffect=percent:12
+subeffect=damage-percent:12
 subeffect=burning:1.25
 
 ##################################################################

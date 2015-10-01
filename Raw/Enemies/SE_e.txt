@@ -1883,7 +1883,7 @@ attack=Bite
 animation=leans back and leaps|1
 cooldown=3
 effect=melee
-subeffect=constant:120
+subeffect=damage-constant:120
 
 ##################################################################
 

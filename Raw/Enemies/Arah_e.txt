@@ -849,7 +849,7 @@ attack=Plot
 image=http://giant.gfycat.com/FakeGenerousCarpenterant.gif
 additional=triggered on touch
 effect=PBAoE
-subeffect=percent:90
+subeffect=damage-percent:90
 effect=self destruct
 
 ##################################################################
@@ -980,7 +980,7 @@ animation=raises gun and shoots electricity|1|keeps shooting electricity
 effect=16 ranged hits in 9 s
 count=16
 length=9
-subeffect=percent:2.5
+subeffect=damage-percent:2.5
 subeffect=stun:1
 subeffect=buff:Subvert:5:1:soothing_mist
 #note=interrupt to help party members
@@ -1937,7 +1937,7 @@ category=legendary
 attack=Homing projectile
 cooldown=0
 effect=homing projectile
-subeffect=percent:100
+subeffect=damage-percent:100
 #note=reflect back to deal tons of damage
 
 attack=Lava Font
@@ -1951,7 +1951,7 @@ subeffect=burning:0
 
 attack=Flame Wall
 effect=Shrinking area field
-subeffect=percent:100 when passing through
+subeffect=damage-percent:100 when passing through
 #note=if someone needs to get in get close to revive fast
 
 ##################################################################
@@ -2770,7 +2770,7 @@ category=bundle
 
 attack="Corruption"
 effect=buff (every second)
-subeffect=percent:15
+subeffect=damage-percent:15
 
 ##################################################################
 

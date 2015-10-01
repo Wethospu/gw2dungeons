@@ -987,7 +987,7 @@ animation=raises left arm|0.25
 additional=Hits only once. Also bounces on allies.
 effect=Bouncing (5 hits) ranged
 subeffect=damage:225656
-subeffect=healing:20 %
+subeffect=healing-percent:20
 
 Attack=Kick
 #description=Kicks close enemies back.
@@ -1014,7 +1014,7 @@ animation=raises left arm|0.25
 additional=Hits only once. Also bounces on allies.
 effect=Bouncing (5 hits) ranged
 subeffect=damage:109880
-subeffect=healing:20 %
+subeffect=healing-percent:20
 
 Attack=Kick
 image=http://i.imgur.com/EZDSgcW.gif
@@ -1040,7 +1040,7 @@ animation=raises left arm|0.25
 additional=Hits only once. Also bounces on allies.
 effect=Bouncing (5 hits) ranged
 subeffect=damage:305280
-subeffect=healing:20 %
+subeffect=healing-percent:20
 
 Attack=Kick
 image=http://i.imgur.com/EZDSgcW.gif
@@ -1360,7 +1360,7 @@ image=http://i.imgur.com/gdb4ygj.gif
 cooldown=30
 additional=used when below 50%
 effect=self buff
-subeffect=Healing:25 %
+subeffect=Healing-percent:25
 #note=Interrupt or burst before he gets it off
 
 ##################################################################
@@ -1410,7 +1410,7 @@ image=http://i.imgur.com/gdb4ygj.gif
 cooldown=30
 additional=used when below 50%
 effect=self buff
-subeffect=Healing:25 %
+subeffect=Healing-percent:25
 #note=Interrupt or burst before he gets it off
 
 ##################################################################
@@ -1461,7 +1461,7 @@ cooldown=30
 image=http://i.imgur.com/gdb4ygj.gif
 additional=used when below 50%
 effect=self buff
-subeffect=Healing:25 %
+subeffect=Healing-percent:25
 #note=Interrupt or burst before he gets it off
 
 ##################################################################
@@ -2054,7 +2054,7 @@ cooldown=12
 animation=red circle appears|0.8|spikes come out when triggered
 additional=can't be blocked or evaded. Goes through damage immunity
 effect=AoE
-subeffect=constant:2000
+subeffect=damage-constant:2000
 
 ##################################################################
 

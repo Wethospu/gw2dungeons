@@ -73,8 +73,7 @@ namespace DataCreator.Enemies
 
     public enum EffectType
     {
-      Damage, Condition, Boon, Control,
-      Agony, None, DamageFixed, DamagePercent, Buff, Healing
+      Damage, Condition, Boon, Control, Agony, None, DamageFixed, DamagePercent, Buff, Healing, HealingPercent
     }
 
     /***********************************************************************************************
@@ -152,10 +151,11 @@ namespace DataCreator.Enemies
           icon = "damage";
           stacks = 1;
         }
-        else if (effectType == EffectType.Healing)
+        else if (effectType == EffectType.Healing || effectType == EffectType.HealingPercent)
         {
           amount = Helper.ParseD(effectData[0]);
           suffix = "healing";
+          icon = "healing";
           stacks = 1;
         }
         if (effectType == EffectType.Boon|| effectType == EffectType.Condition  || effectType == EffectType.Control)
@@ -380,12 +380,14 @@ namespace DataCreator.Enemies
       str = str.ToLower();
       if (str.Equals("damage"))
         return EffectType.Damage;
-      if (str.Equals("constant"))
+      if (str.Equals("damage-constant"))
         return EffectType.DamageFixed;
-      if (str.Equals("percent"))
+      if (str.Equals("damage-percent"))
         return EffectType.DamagePercent;
       if (str.Equals("healing"))
         return EffectType.Healing;
+      if (str.Equals("healing-percent"))
+        return EffectType.HealingPercent;
       if (str.Equals("agony"))
         return EffectType.Agony;
       if (str.Equals("buff"))
@@ -438,7 +440,7 @@ namespace DataCreator.Enemies
         baseEnemy.Tags.Add("fixed damage");
       else if (type == EffectType.DamagePercent)
         baseEnemy.Tags.Add("percent damage");
-      else if (type == EffectType.Healing)
+      else if (type == EffectType.Healing || type == EffectType.HealingPercent)
         baseEnemy.Tags.Add("healing");
       else if (type != EffectType.None)
         Helper.ShowWarningMessage("Internal error. Effect type not implemented.");
@@ -456,17 +458,19 @@ namespace DataCreator.Enemies
     private string EffectTypeToClass(EffectType type)
     {
       if (type == EffectType.Agony)
-        return "agonyValue";
+        return "agony-value";
       if (type == EffectType.Condition || type == EffectType.Boon)
-        return "effectValue";
+        return "effect-value";
       if (type == EffectType.Damage)
-        return "damageValue";
+        return "damage-value";
       if (type == EffectType.DamageFixed)
-        return "fixedValue";
+        return "fixed-value";
       if (type == EffectType.DamagePercent)
-        return "percentValue";
+        return "percent-value";
       if (type == EffectType.Healing)
-        return "healingValue";
+        return "healing-value";
+      if (type == EffectType.HealingPercent)
+        return "healing-percent-value";
       if (type == EffectType.None)
         return "";
       Helper.ShowWarningMessage("Internal error. Effect type not implemented.");
