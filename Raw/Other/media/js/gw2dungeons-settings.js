@@ -374,8 +374,8 @@ function handleEnemy(enemy) {
 		if (effect == "retaliation")
 			attribute = power;
 		damage = getEffectDamage(effect, level, attribute, damage);
-		if (effect == "power")
-			$(this).html(getPercent(damage, power));
+		if (effect == "might")
+			$(this).html(toPercent(damage, power) + "%");
 		else if (effect == "healingPower")
 			insertHealing(this, healingView, damage, health);
 		else

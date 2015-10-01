@@ -284,7 +284,7 @@ function getEffectDamage(effect, level, attribute, count) {
 		tick = 5 + 1.5625 * level + 0.125 * attribute;
 	else if (effect == "regeneration")
 		tick = 8 + 0.03 * level * levl + 0.075 * attribute;
-	else if (effect == "power")
+	else if (effect == "might")
 		tick = 5 + 0.3125 * level;
 	return count * Math.floor(tick + 0.001);
 }

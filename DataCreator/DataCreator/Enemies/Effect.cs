@@ -177,6 +177,8 @@ namespace DataCreator.Enemies
             suffix = "healing";
           if (category.Equals("retaliation"))
             suffix = "damage per hit";
+          if(category.Equals("might"))
+            suffix = "more damage";
           if (category.Equals("retaliation") || category.Equals("might"))
             amount = 1;
         }
@@ -208,6 +210,9 @@ namespace DataCreator.Enemies
           totalAmount = hitCount * amount * stacks;
           totalDuration = hitCount * duration * stacks;
           totalLength = hitLength;
+          // 3 different values makes the effect very confusing so just remove the hit length. / 2015-10-11 / Wethospu
+          if (totalAmount > 0 && totalDuration > 0)
+            totalLength = 0;
           stacks = 0;
         }
         else
@@ -242,7 +247,7 @@ namespace DataCreator.Enemies
         if (totalDuration > 0)
         {
           if (amount > 0)
-            replace.Append(" for ");
+            replace.Append(" over ");
           replace.Append(totalDuration).Append(" second");
           if (totalDuration != 1.0)
             replace.Append("s");
