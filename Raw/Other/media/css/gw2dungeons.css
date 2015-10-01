@@ -142,6 +142,12 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
 
 .level-minus, .level-plus, .target-level-minus, .target-level-plus, .fractal-level-minus, .fractal-level-plus{
     cursor: pointer;
+	/* Prevent highlighting on double click. */
+	-webkit-user-select: none;   
+	-moz-user-select: none;
+	-ms-user-select: none;/
+	-o-user-select: none;
+	user-select: none;
 }
 
 .enemy-button {

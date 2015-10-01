@@ -55,8 +55,11 @@ namespace DataCreator.Enemies
     public string ToHtml(string path, List<Enemy> enemies, Enemy baseEnemy, int indent)
     {
       var htmlBuilder = new StringBuilder();
-      htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("<p>").Append(Helper.ToUpper(LinkGenerator.CreateEnemyLinks(_type, path, enemies)));
-      htmlBuilder.Append("</p>").Append(Constants.LineEnding);
+      _type = HandleEffect(LinkGenerator.CreateEnemyLinks(_type, path, enemies), 1, 0, 0, baseEnemy);
+      // Replace end dot with double dot if the effect has sub effects (visually looks better). / 2015-10-01 / Wethospu
+      if (_type[_type.Length - 1] == '.' && SubEffects.Count > 0)
+        _type = _type.Substring(0, _type.Length - 1) + ':';
+      htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("<p>").Append(_type).Append("</p>").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("<ul>").Append(Constants.LineEnding);
       foreach (var subEffect in SubEffects)
       {
@@ -198,18 +201,27 @@ namespace DataCreator.Enemies
         }
 
         var totalAmount = 0.0;
+        var totalLength = 0.0;
         var totalDuration = 0.0;
         if (stacksAdditively)
         {
           totalAmount = hitCount * amount * stacks;
           totalDuration = hitCount * duration * stacks;
+          totalLength = hitLength;
           stacks = 0;
         }
         else
         {
           amount = amount * stacks;
           totalAmount = hitCount * amount;
-          totalDuration = duration;
+          totalDuration = 0;
+          // Without damage don't do "over X seconds". Instead, just add the duration (makes control work properly). / 2015-10-01 / Wethospu
+          if (amount == 0)
+          {
+            totalDuration = duration;
+            duration = 0;
+          }
+          totalLength = hitLength + duration;
           stacks = hitCount * stacks;
         }
 
@@ -227,17 +239,16 @@ namespace DataCreator.Enemies
           replace.Append("\" data-amount=\"").Append(totalAmount).Append("\"></span>");
           replace.Append(" ").Append(suffix);
         }
-        if (duration > 0)
+        if (totalDuration > 0)
         {
           if (amount > 0)
             replace.Append(" for ");
-          // Durations don't need anything so they can be added as plain text. / 2015-09-27 / Wethospu
           replace.Append(totalDuration).Append(" second");
           if (totalDuration != 1.0)
             replace.Append("s");
         }
-        replace.Append(HitLengthStr(hitLength));
-        if (hitCount > 1)
+        replace.Append(HitLengthStr(totalLength));
+        if (hitCount > 1 && (amount > 0 || duration > 0))
         {
           // Same as above but for a single hit. / 2015-09-27 / Wethospu
           replace.Append(" (");
@@ -254,13 +265,11 @@ namespace DataCreator.Enemies
           if (duration > 0)
           {
             if (amount > 0)
-              replace.Append(" for");
-            // Durations don't need anything so they can be added as plain text. / 2015-09-27 / Wethospu
+              replace.Append(" over ");
             replace.Append(duration).Append(" second");
-            if (duration != 1.0)
+            if (totalDuration != 1.0)
               replace.Append("s");
           }
-          replace.Append(HitLengthStr(hitLength));
           replace.Append(" per hit)");
         }
         if (category.Equals("confusion"))
@@ -276,9 +285,9 @@ namespace DataCreator.Enemies
           if (duration > 0)
           {
             if (amount > 0)
-              replace.Append(" for ");
-            replace.Append(totalDuration).Append(" second");
-            if (totalDuration != 1.0)
+              replace.Append(" over ");
+            replace.Append(totalLength).Append(" second");
+            if (totalLength != 1.0)
               replace.Append("s");
           }
           replace.Append(HitLengthStr(hitLength));
@@ -296,12 +305,11 @@ namespace DataCreator.Enemies
             if (duration > 0)
             {
               if (amount > 0)
-                replace.Append(" for");
+                replace.Append(" over ");
               replace.Append(duration).Append(" second");
               if (duration != 1.0)
                 replace.Append("s");
             }
-            replace.Append(HitLengthStr(hitLength));
             replace.Append(" per hit)");
           }
         }
@@ -331,24 +339,30 @@ namespace DataCreator.Enemies
           else
             startIcon = "<span class=" + Constants.IconClass + " title=\"" + icon.ToLower() + "\"></span>";
           firstType = category;
-          firstStacks = stacks * hitCount;
+          firstStacks = stacks;
         }
       }
       // Syntax: <li>'stacks'<span class="icon" title="effectType'"></span>: 'effect'</li>
       var effectBuilder = new StringBuilder();
       if (!firstType.Equals(""))
       {
+        
+        effectBuilder.Append(startIcon);
         if (firstStacks > 1)
-          effectBuilder.Append(firstStacks).Append("x");
-        effectBuilder.Append(startIcon).Append(": ");
+          effectBuilder.Append("x").Append(firstStacks);
+        if (effectStr.Length > 0)
+         effectBuilder.Append(": ");
       }
-      effectBuilder.Append(effectStr);
-      if (effectBuilder.Length > 0 && effectBuilder[effectBuilder.Length - 1] != '.')
-        effectBuilder.Append(".");
-      if (firstType.Equals("torment"))
-        effectBuilder.Append(" Double damage when moving.");
-      if (effectChance.Length > 0)
-        effectBuilder.Append(" ").Append(effectChance).Append(" chance per hit.");
+      if (effectStr.Length > 0)
+      {
+        effectBuilder.Append(effectStr);
+        if (effectBuilder.Length > 0 && effectBuilder[effectBuilder.Length - 1] != '.')
+          effectBuilder.Append(".");
+        if (firstType.Equals("torment"))
+          effectBuilder.Append(" Double damage when moving.");
+        if (effectChance.Length > 0)
+          effectBuilder.Append(" ").Append(effectChance).Append(" chance per hit.");
+      }  
       return effectBuilder.ToString();
     }
 

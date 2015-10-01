@@ -294,13 +294,13 @@ example:
 	additional=Used only on distant targets. Minimum-range (stack).
 
 	
-== Parts and effects ==
-Each attack contains one or multiple parts. You can write anything you like but try look for examples form previous data to keep some consistency.
+== Effects and subeffects ==
+Each attack contains one or multiple effects. You can write anything you like but try look for examples form previous data to keep some consistency.
 
 syntax:
-	part="text"
+	effect="text"
 example:
-	part=projectile
+	effect=projectile
 
 Use hit counter for attack parts which hit multiple times. This makes DataCreator automatically generate total damage values.
 If the hit count varies or is unknown, use "?" to add only " per hit" after the effect.
@@ -317,18 +317,19 @@ example:
 	length=1.5
 	frequency=2
 
-Every attack part contains one or multiple effects. You should split effects to multiple lines for clarity. But it's possible to combine both effects and text together.
+Every attack effect contains zero, one or multiple subeffects. You should split effects to multiple lines for clarity but it's possible to combine both effects and text together.
+Subeffect formatting can also be directly used in the main effect.
 	
 syntax:
-	effect="effect 1"
+	subeffect="effect 1"
 example:
-	effect=damage:1000
-	effect=constant:5000
-	effect=percent:50
-	effect=vulnerability:5:2
-	effect=burning:10
-	effect=launch:2.3
-	effect=buff:block:1:1:-
+	subeffect=damage:1000
+	subeffect=constant:5000
+	subeffect=percent:50
+	subeffect=vulnerability:5:2
+	subeffect=burning:10
+	subeffect=launch:2.3
+	subeffect=buff:block:1:1:-
 	
 Actual effects have different syntax based on their type.
 Normal damage: damage:"raw amount"

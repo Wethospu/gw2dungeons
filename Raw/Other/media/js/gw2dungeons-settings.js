@@ -384,7 +384,7 @@ function handleEnemy(enemy) {
         var second = (Number)($(this).data('amount'));
         insertDamage(this, damageSetting, getAgonyDamage(second), dungeonLevel);
     });
-    $(enemy).find(".constantValue").each(function () {
+    $(enemy).find(".fixedValue").each(function () {
         var damage = (Number)($(this).data('amount'));
         insertDamage(this, damageSetting, damage, dungeonLevel);
     });
