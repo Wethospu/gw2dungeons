@@ -43,7 +43,8 @@ var settings = {
 	tabAmount: 10,
 	// Enemy settings.
 	showIcons: true,
-    damageView: "damage",
+    damageView: "number",
+	healingView: "number",
 	damageRange: "maximum",
     simplifyHealth: true,
     simplifyArmor: true,
@@ -208,7 +209,8 @@ function applyEnemySettings(updateMain) {
 }
 
 function handleEnemy(enemy) {
-	var damageSetting = getSetting("damageView");
+	var damageView = getSetting("damageView");
+	var healingView = getSetting("healingView");
     var potionUsage = getSetting("potionUsage");
     var potionStrength = (Number)(getSetting("potionStrength")) / 100;
 	var enemyPotion = $(enemy).data("potion");
@@ -357,11 +359,11 @@ function handleEnemy(enemy) {
     $(enemy).find(".damage-value").each(function () {
         var damage = getDamage((Number)($(this).data('amount')), potionStrength, dungeonLevel);
 		damage = fractalScaleDamage(damage, fractalLevel, scalingType)
-        insertDamage(this, damageSetting, damage, dungeonLevel);
+        insertDamage(this, damageView, damage, dungeonLevel);
     });
     $(enemy).find(".percent-value").each(function () {
         var damage = calculatePercentDamage((Number)($(this).data('amount')), dungeonLevel);
-        insertDamage(this, damageSetting, damage, dungeonLevel);
+        insertDamage(this, damageView, damage, dungeonLevel);
     });
     $(enemy).find(".effect-value").each(function () {
         var damage = (Number)($(this).data('amount'));
@@ -373,28 +375,27 @@ function handleEnemy(enemy) {
 			attribute = power;
 		damage = getEffectDamage(effect, level, attribute, damage);
 		if (effect == "power")
-		{
-			damage = Math.round(1000 * damage / power) / 10;
-			$(this).html(damage);
-		}
+			$(this).html(getPercent(damage, power));
+		else if (effect == "healingPower")
+			insertHealing(this, healingView, damage, health);
 		else
-			insertDamage(this, damageSetting, damage, dungeonLevel);
+			insertDamage(this, damageView, damage, dungeonLevel);
     });
     $(enemy).find(".agony-value").each(function () {
         var second = (Number)($(this).data('amount'));
-        insertDamage(this, damageSetting, getAgonyDamage(second), dungeonLevel);
+        insertDamage(this, damageView, getAgonyDamage(second), dungeonLevel);
     });
     $(enemy).find(".fixed-value").each(function () {
         var damage = (Number)($(this).data('amount'));
-        insertDamage(this, damageSetting, damage, dungeonLevel);
+        insertDamage(this, damageView, damage, dungeonLevel);
     });
 	$(enemy).find(".healing-value").each(function () {
         var healing = (Number)($(this).data('amount'));
-		$(this).html(healing);
+		insertHealing(this, healingView, healing, health);
     });
 	$(enemy).find(".healing-percent-value").each(function () {
-        var healing = (Number)($(this).data('amount'));
-		$(this).html(healing + "%");
+        var healing = Math.floor($(this).data('amount') * health / 100);
+		insertHealing(this, healingView, healing, health);
     });
 }
 
@@ -439,13 +440,24 @@ function simplifyArmor(armor, dungeonLevel) {
 }
 
 // Adds either percent, normal or both damage.
-function insertDamage(place, setting, damage, dungeonLevel) {
+function insertDamage(place, setting, amount, dungeonLevel) {
     if (setting == "percent")
-        var toAdd = "<span title=\"" + damage + "\">" + getPercentage(damage, dungeonLevel) + "%</span>";
-    else if (setting == "damage")
-        var toAdd = "<span title=\"" + getPercentage(damage, dungeonLevel) + "%\">" + damage + "</span>";
+        var toAdd = "<span title=\"" + amount + "\">" + getPercentage(amount, dungeonLevel) + "%</span>";
+    else if (setting == "number")
+        var toAdd = "<span title=\"" + getPercentage(amount, dungeonLevel) + "%\">" + amount + "</span>";
     else
-        var toAdd = damage + "(" + getPercentage(damage, dungeonLevel) + "%)";
+        var toAdd = amount + " (" + getPercentage(amount, dungeonLevel) + "%)";
+	$(place).html(toAdd);
+}
+
+// Adds either percent, normal or both healing.
+function insertHealing(place, setting, amount, maxHealth) {
+    if (setting == "percent")
+        var toAdd = "<span title=\"" + amount + "\">" + toPercent(amount, maxHealth) + "%</span>";
+    else if (setting == "number")
+        var toAdd = "<span title=\"" + toPercent(amount, maxHealth) + "%\">" + amount + "</span>";
+    else
+        var toAdd = amount + " (" + toPercent(amount, maxHealth) + "%)";
 	$(place).html(toAdd);
 }
 

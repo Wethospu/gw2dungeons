@@ -1,6 +1,11 @@
 ﻿;
 "use strict";
-var STAT_MAX = 926;
+// Returns val1 / val 2 as a percent value.
+function toPercent(val1, val2) {
+	return Math.ceil(1000 * val1 / val2) / 10;
+}
+
+var STAT_MAX = 1000;
 
 // Calculates base health at given level and profession.
 function getHealth(level, profession) {
@@ -246,11 +251,7 @@ function updateValues(playerArmorNew, playerHealth, playerLevel, playerClass, pl
 }
 
 function getPercentage(damage, dungeonLevel) {
-    return Math.ceil(1000 * damage / healthValues[dungeonLevels.indexOf(dungeonLevel)]) / 10;
-}
-
-function calculatePercentDamage(damage, dungeonLevel) {
-    return Math.ceil(damage * healthValues[dungeonLevels.indexOf(dungeonLevel)] / 10 ) / 10;
+	return toPercent(damage, healthValues[dungeonLevels.indexOf(dungeonLevel)]);
 }
 
 function getDamage(damage, potion, dungeonLevel) {
