@@ -48,15 +48,33 @@ namespace DataCreator.Utility
     }
 
     /***********************************************************************************************
-     * FindEnemies / 2014-07-27 / Wethospu                                                         * 
-     *                                                                                             * 
-     * Finds enemies based on given requirements. Empty requirements are excluded.                 *
-     *                                                                                             *
-     * Returns enemies matching the requirements.                                                  *
-     * enemies: List of enemies to search.                                                         *
-     * name, category, path: Requirements. Use "" if you want to exclude a requirement.            *
-     *                                                                                             * 
-     ***********************************************************************************************/
+    * ProcessRace / 2015-10-01 / Wethospu                                                          * 
+    *                                                                                              * 
+    * Converts datamined race to wanted output.                                                    *
+    *                                                                                              *
+    ***********************************************************************************************/
+    public static string ProcessRace(string race)
+    {
+      race = Helper.ToUpperAll(race.Replace('_', ' '));
+      if (race.Equals("Ascalonian Ghost"))
+        race = "Ghost";
+      if (race.Equals("Undead Minion"))
+        race = "Undead";
+      if(race.Equals("Scarlet Minion"))
+        race = "Aetherblade";
+      return race.Replace(" ", Constants.Space);
+    }
+
+    /***********************************************************************************************
+    * FindEnemies / 2014-07-27 / Wethospu                                                          * 
+    *                                                                                              * 
+    * Finds enemies based on given requirements. Empty requirements are excluded.                  *
+    *                                                                                              *
+    * Returns enemies matching the requirements.                                                   *
+    * enemies: List of enemies to search.                                                          *
+    * name, category, path: Requirements. Use "" if you want to exclude a requirement.             *
+    *                                                                                              * 
+    ***********************************************************************************************/
     public static List<Enemy> FindEnemies(List<Enemy> enemies, string name, string category, string path)
     {
       if (enemies == null)

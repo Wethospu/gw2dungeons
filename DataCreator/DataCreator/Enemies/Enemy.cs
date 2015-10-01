@@ -201,7 +201,7 @@ namespace DataCreator.Enemies
       if (!Category.Equals(""))
         htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"rank-unit\">").Append(Helper.ToUpper(Helper.ConvertSpecial(Category)).Replace(" ", Constants.Space)).Append(" </span>").Append(Constants.LineEnding);
       if (!Attributes.Family.Equals(""))
-        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"race-unit\">").Append(Helper.ToUpper(Helper.ConvertSpecial(Attributes.Family)).Replace(" ", Constants.Space)).Append("</span>").Append(Constants.LineEnding);
+        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"race-unit\">").Append(Gw2Helper.ProcessRace(Attributes.Family)).Append(" </span>").Append(Constants.LineEnding);
       // Enemy can have multiple sexes if there are model variations. / 2015-09-28 / Wethospu
       var genders = Attributes.Gender.Split('|');
       for (int i = 0; i < genders.Length; i++)

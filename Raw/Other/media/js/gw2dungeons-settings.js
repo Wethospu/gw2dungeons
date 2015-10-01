@@ -214,7 +214,7 @@ function handleEnemy(enemy) {
 	var enemyPotion = $(enemy).data("potion");
     if (enemyPotion == "" || potionUsage == "" || enemyPotion == "none" || potionUsage == "none" || (potionUsage == "main" && enemyPotion == "side"))
         potionStrength = 0;
-	var scalingType = Number($(enemy).data("scaling"));
+	var scalingType = $(enemy).data("scaling");
     var dungeonLevel = getPathLevel($(enemy).data("path"));
 	// Set attributes and visibility.
 	var playerLevel = $(enemy).data("target-level");

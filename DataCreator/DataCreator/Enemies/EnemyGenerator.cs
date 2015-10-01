@@ -189,8 +189,8 @@ namespace DataCreator.Enemies
         if (found != null)
         {
           _currentEnemy = new Enemy(found) { Name = "" };
-          if (typeToPotion.ContainsKey(_currentEnemy.Attributes.Family.ToLower()))
-            _currentEnemy.Potion = typeToPotion[_currentEnemy.Attributes.Family.ToLower()];
+          if (typeToPotion.ContainsKey(_currentEnemy.Attributes.Family))
+            _currentEnemy.Potion = typeToPotion[_currentEnemy.Attributes.Family];
         }
         else
           Helper.ShowWarning("Copying failed. Enemy not found!");
@@ -244,6 +244,8 @@ namespace DataCreator.Enemies
                 else
                   _currentEnemy.Attributes.Gender = oldSexes + "|" + _currentEnemy.Attributes.Gender;
               }
+              if (typeToPotion.ContainsKey(_currentEnemy.Attributes.Family))
+                _currentEnemy.Potion = typeToPotion[_currentEnemy.Attributes.Family];
             }
             else
               Helper.ShowWarning("Id " + data + " not found in enemy attributes.");

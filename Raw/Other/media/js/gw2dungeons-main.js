@@ -384,7 +384,7 @@ function openEnemyOverlay() {
 				overlayRemoveOld(id);
 				// Set enemy level dynamically based on enemy link. / 2015-09-28 / Wethospu
 				if (enemyLevels[i] > 0)
-					$(this).data('level', level);
+					$(this).data('level', enemyLevels[i]);
 				// Create a new tab. / 2015-07-31 / Wethospu
 				var content = $(this)[0].outerHTML;
 				var name =  $(content).find(".enemy-name").html();
