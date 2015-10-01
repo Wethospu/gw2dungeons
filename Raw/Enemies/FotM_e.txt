@@ -389,11 +389,10 @@ effect=PBAoE
 subeffect=reveal hidden Krait
 
 attack=Distract (1)
-effect=summon
-subeffect=Clone which moves forward
+effect=summon a Clone which moves forward
 
 attack=Distract (2)
-effect=stops Clone
+effect=stops the Clone
 
 attack=Rush
 effect=dash
@@ -432,8 +431,7 @@ subeffect=stun:2
 attack=Summon
 animation=rises a bit, tentacles wave horizontally|2.5
 additional=maximum amount over 25
-effect=summon
-subeffect=7 enemy=Jellyfishes:normal
+effect=summon 7 enemy=Jellyfishes:normal
 
 attack=Pull (1)
 animation=spins clockwise and rises up|2
@@ -541,8 +539,7 @@ effect=dodge back
 subeffect=buff:evade
 
 attack=Summon
-effect=summon
-subeffect=enemy=Young_Barracuda:normal
+effect=summon a enemy=Young_Barracuda:normal
 
 ##################################################################
 
@@ -578,8 +575,7 @@ subeffect=damage:0
 subeffect=poison:5
 
 attack=Healing Thingy
-effect=summon
-subeffect=enemy=Healing_Thingy:structure
+effect=summon a enemy=Healing_Thingy:structure
 
 ##################################################################
 
@@ -603,8 +599,7 @@ subeffect=damage:0
 subeffect=poison:5
 
 attack=Healing Thingy
-effect=summon
-subeffect=enemy=Healing_Thingy:structure
+effect=summon a enemy=Healing_Thingy:structure
 
 ##################################################################
 
@@ -959,8 +954,7 @@ subeffect=agony:3
 attack=Summon & Cage
 additional=can't be blocked or evaded
 effect=teleport target to a enemy=Cage:structure
-effect=summon
-subeffect=2 enemy=Bone_Fiends:normal
+effect=summon 2 enemy=Bone_Fiends:normal
 #note=break cage to get free, help other players if they need help
 
 ##################################################################
@@ -2562,8 +2556,7 @@ effect=teleport ~2 players away. Reduce visibility
 
 attack=summon (2)
 additional=maximum amount of 5
-effect=summon
-subeffect=5 enemy=Ice_Elementals:veteran
+effect=summon 5 enemy=Ice_Elementals:veteran
 #note=avoid aggroing (they just get replaced next time)
 #note=focus down necessary amount to reduce pressure
 
@@ -2870,8 +2863,7 @@ subeffect=crippled:3
 attack=Summon
 animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
 additional=only used when buffed up
-effect=Summon
-subeffect=2 enemy=Icebrood_Wolves:normal
+effect=Summon 2 enemy=Icebrood_Wolves:normal
 
 attack=Buff up
 cooldown=58
@@ -3033,13 +3025,11 @@ subeffect=damage:5331815
 attack=Summon
 animation=leans back, crouches and raises left arm|1
 additional=maximum of 2
-effect=Summon
-subeffect=enemy=Icebrood_Elemental:normal or enemy=Icebrood_Elemental:normal:79 at target
+effect=Summon an enemy=Icebrood_Elemental:normal or enemy=Icebrood_Elemental:normal:79 at target
 
 attack=On death
 animation=none
-effect=summon
-subeffect=2 enemy=Ice_Imps:normal
+effect=summon 2 enemy=Ice_Imps:normal
 #note=Might be based on alive Icebrood Elementals
 
 ##################################################################
@@ -3129,8 +3119,7 @@ subeffect=damage-percent:100
 #note=evade when skull disappears
 
 attack=summon
-effect=summon
-subeffect=enemy=Jade_Colossus:veteran
+effect=summon a enemy=Jade_Colossus:veteran
 
 ##################################################################
 
@@ -3390,8 +3379,7 @@ subeffect=agony:3
 attack=Summon Spirits
 image=http://giant.gfycat.com/TalkativeWavyFossa.gif
 additional=maximum amount of 3
-effect=summon
-subeffect=enemy=Sun_Spirit:normal, enemy=Spirit_of_Frost:normal and enemy=Storm_Spirit:normal
+effect=summon a enemy=Sun_Spirit:normal, a enemy=Spirit_of_Frost:normal and a enemy=Storm_Spirit:normal
 #note=Storm Spirit causes quite strong retaliation so destroy it if needed.
 #note=Because of the spawning order, Storm Spirit won't spawn if any other Spirit is still alive
 
@@ -4046,8 +4034,7 @@ effect=big PBAoE
 subeffect=damage:0
 
 attack=Summon
-effect=Summon
-subeffect=enemy=Repair_Ooze:normal
+effect=Summon a enemy=Repair_Ooze:normal
 #note=Oozes heal Subject 6 if they reach him
 
 ################################################################## 
@@ -4944,8 +4931,7 @@ subeffect=daze:1 when hit
 attack=Summon & Heal
 animation=instant||weird sound
 additional=maximum amount of 1. Easily interruptable.
-effect=summon
-subeffect=enemy=Dredge_Disaggregator:veteran
+effect=summon a enemy=Dredge_Disaggregator:veteran
 effect=channeled
 subeffect=healing
 #note=Interrupt to stop (at least knockdown should work).
@@ -4987,8 +4973,7 @@ subeffect=launch:2
 attack=Heal & Summon
 animation=kneels
 additional=maximum amount of 3
-effect=summon
-subeffect=3 enemy=Ice_Elementals_(Melee):veteran
+effect=summon 3 enemy=Ice_Elementals_(Melee):veteran
 effect=channeled heal
 subeffect=Healing:0
 #note=interrupt (if "Superheated" damage automatically interrupts)
@@ -5237,8 +5222,7 @@ subeffect=damage:0|
 
 attack=summon
 animation=sits down
-effect=summon
-subeffect=2 enemy=Dredge_Excavator_(Pickaxe):normal / enemy=Dredge_Excavator_(Tunneler):normal / enemy=Dredge_Disaggregator:normal / enemy=Ratnik:normal
+effect=summon 2 enemy=Dredge_Excavator_(Pickaxe):normal / enemy=Dredge_Excavator_(Tunneler):normal / enemy=Dredge_Disaggregator:normal / enemy=Ratnik:normal
 
 attack=Pummel (1)
 animation=pulls left arm back
@@ -5626,8 +5610,7 @@ subeffect=burning:1 when hit
 attack=Summon
 animation=crouches and shouts|0.2
 additional=maximum amount of 1
-effect=summon
-subeffect=enemy=Ascalonian_Squire:veteran
+effect=summon an enemy=Ascalonian_Squire:veteran
 
 attack=Aura
 additional=only works while Squire is alive
@@ -5682,8 +5665,7 @@ subeffect=burning:3
 
 attack=Summon
 additional=maximum amount of 1
-effect=summon
-subeffect=enemy=Ascalonian_Squire:veteran
+effect=summon an enemy=Ascalonian_Squire:veteran
 
 attack=Aura
 additional=only works while Squire is alive
@@ -6293,8 +6275,7 @@ subeffect=damage:96165000
 #note=do not rely on single blocks
 
 attack=summon
-effect=summon
-subeffect=enemy=Grawl_Totem:structure
+effect=summon a enemy=Grawl_Totem:structure
 
 attack=Bubble
 effect=buff:block:15
@@ -6372,8 +6353,7 @@ subeffect=damage:0
 attack=Summon and Shield (1)
 image=http://wiki.guildwars2.com/images/7/72/Imbued_Shaman_Bubble.jpg
 additional=used at 75%/50%/25% health
-effect=summon
-subeffect=~15 enemy=Lava_Elementals:normal
+effect=summon 15 enemy=Lava_Elementals:normal
 effect=shield (40 charges)
 subeffect=buff:block:0:40 blocks one skill
 #note=the amount of summoned enemy=Elementals:normal depends on difficulty scale
@@ -6476,8 +6456,7 @@ subeffect=pull:0
 subeffect=immobilized:2.5
 
 attack=summon
-effect=summon
-subeffect=enemy=Earth_Totem:structure
+effect=summon an enemy=Earth_Totem:structure
 
 ##################################################################
 
@@ -6524,8 +6503,7 @@ subeffect=pull:0
 subeffect=immobilized:2.5
 
 attack=summon
-effect=summon
-subeffect=enemy=Earth_Totem:structure
+effect=summon an enemy=Earth_Totem:structure
 
 ##################################################################
 

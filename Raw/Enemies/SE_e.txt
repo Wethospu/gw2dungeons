@@ -130,12 +130,9 @@ subeffect=stun:0
 attack=Summon
 additional=used at 75%/50%/25% health
 effect=invulnerability until the golem dies
-effect=at 75%x
-subeffect=summon enemy=Prototype_E-IV:champion
-effect=at 50%
-subeffect=summon enemy=Prototype_F-IV:champion
-effect=at 25%
-subeffect=summon enemy=Prototype_T-IV:champion
+effect=at 75% summon enemy=Prototype_E-IV:champion
+effect=at 50% summon enemy=Prototype_F-IV:champion
+effect=at 25% summon enemy=Prototype_T-IV:champion
 
 ##################################################################
 
@@ -153,7 +150,7 @@ subeffect="Flash"
 attack="Flash"
 animation=flashing
 effect=debuff
-subeffect=damage:0| to nearby allies (no damage to itself)
+subeffect=damage:0 to nearby allies (no damage to itself)
 
 attack=Chain Lightning
 cooldown=0
@@ -465,8 +462,7 @@ subeffect=damage:0
 
 attack=summon
 animation=sits down
-effect=summon
-subeffect=2 normal dredge
+effect=summon 2 normal dredge
 
 attack=Pummel (1)
 animation=pulls left arm back
@@ -935,8 +931,7 @@ subeffect=Stealth:0
 
 attack=Summon
 additional=used at 75%/50%/25%
-effect=summon
-subeffect=2 elite inquest
+effect=summon 2 elite inquest
 
 ##################################################################
 

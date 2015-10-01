@@ -136,8 +136,7 @@ effect=PBAoE
 subeffect=stability:9
 subeffect=might:9:3
 subeffect=regeneration:9
-effect=summons
-subeffect=enemy=Orrian_Eagle:normal
+effect=summon an enemy=Orrian_Eagle:normal
 #note=if you want to use CC, use it before this is used
 
 ##################################################################
@@ -1069,8 +1068,7 @@ subeffect=poison:8
 subeffect=vulnerability:8
 subeffect=weakness:8
 subeffect=crippled:8
-effect=summons
-subeffect=10 enemy=Risen_Grubs:normal
+effect=summon 10 enemy=Risen_Grubs:normal
 effect=self-destructs
 #note=you can blind Carrier
 #note=if you go down, rally on enemy=Risen_Grub:normal
@@ -1669,8 +1667,7 @@ category=legendary
 attack=Tar spit (if not burning)
 effect=multiple area fields
 subeffect="Covered in tar" (60 s) when passed through
-effect=summons
-subeffect=multiple enemy=Tars:normal
+effect=summon multiple enemy=Tars:normal
 #note=Keep it burning to prevent.
 
 attack=Tar spit (if burning)
@@ -1729,8 +1726,7 @@ attack=Roar
 image=http://i.imgur.com/uY1LA3s.gif
 cooldown=15
 animation=looks up and roars forward|2
-effect=summons
-subeffect=0-4 enemy=Locust_Swarms:elite
+effect=summons 0-4 enemy=Locust_Swarms:elite
 
 attack=Phase 2
 animation=turns invulnerable|5
@@ -2137,8 +2133,7 @@ subeffect=damage:42165147
 
 attack=Summon
 additional=used at 75%/50%/20% health
-effect=summons
-subeffect=6 enemy=Alphards:normal
+effect=summon 6 enemy=Alphards:normal
 #note=ignore or kill
 #note=rally on them if needed
 
@@ -2472,7 +2467,7 @@ effect=10 stacks
 subeffect=stun:1.5
 subeffect=take about twice as much damage
 effect=25 stacks
-subeffect=summon Risen Wraith enemy=(Drain):elite
+subeffect=summon a enemy=Risen_Wraith_(Drain):elite
 
 attack=Slash
 cooldown=0
@@ -2513,8 +2508,7 @@ subeffect=buff:Corruption:0:5
 #note=single blocks will not work because of "fake" hit
 
 attack=Summon
-effect=summons
-subeffect=enemy=Undead_Tendrils:structure
+effect=summons enemy=Undead_Tendrils:structure
 #note=avoid them and rally from if needed
 
 ##################################################################
@@ -2591,7 +2585,7 @@ subeffect=launch:0
 #note=block/evade when you see second explosion
 
 attack=Summon
-effect=summons a enemy=Tree:normal
+effect=summon a enemy=Tree:normal
 effect=AoE
 subeffect=damage:0
 #note=ignore
@@ -2631,8 +2625,7 @@ subeffect=turn target into a Moa
 #note=try to evade
 
 attack=Summon clones
-effect=summons
-subeffect=5 enemy=text:clones|Farnaz,_High_Priestess_of_Lyssa_(clone):legendary
+effect=summon 5 enemy=text:clones|Farnaz,_High_Priestess_of_Lyssa_(clone):legendary
 
 attack=Shatter
 effect=Shatter
@@ -2641,7 +2634,7 @@ subeffect=Confusion:0:5 per clone
 #note=disable autoattack and stop attacking
 
 attack=Summon Illusion
-effect=summons illusion based on target profession?
+effect=summons illusion based on target profession
 
 ##################################################################
 
@@ -2734,10 +2727,10 @@ subeffect=damage
 #note=ignore
 
 attack=Summon Illusion
-effect=summons illusion based on target profession?
+effect=summons illusion based on target profession
 
 attack=Summon Risen Wraith
-effect=summons enemy=Risen_Wraith_(Drain):elite
+effect=summon a enemy=Risen_Wraith_(Drain):elite
 
 attack=Dark Pact
 effect=ranged

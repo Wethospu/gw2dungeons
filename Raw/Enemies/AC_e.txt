@@ -217,8 +217,7 @@ subeffect=bleeding:5
 Attack=Summon
 image=http://i.imgur.com/2QPxUkY.gif
 animation=kneels and raises left arm|0.6|shoots 1 blue ball
-effect=summon
-subeffect=enemy=Flesh_Golem:normal
+effect=summon enemy=Flesh_Golem:normal
 
 Attack=Phase1
 image=http://i.imgur.com/JgVpKNG.gif
@@ -233,8 +232,7 @@ Attack=Summon
 image=http://i.imgur.com/5r87xGV.gif
 cooldown=70
 animation=rises in air|0.6|shoots 4 blue balls
-effect=summon
-subeffect=4 enemy=Bone_Minions:normal
+effect=summon 4 enemy=Bone_Minions:normal
 effect=aura (every 3 seconds, lasts 24 seconds)
 subeffect=fear:1
 #note=Focus one to remove aura (if you want to melee)
@@ -368,8 +366,7 @@ subeffect=swiftness:5|33%
 attack=Summon
 image=http://i.imgur.com/TbMQM0H.gif
 animation=raises left arm|0.3
-effect=summon
-subeffect=enemy=Illusionary_Mages:normal
+effect=summon enemy=Illusionary_Mages:normal
 #note=kill them fast
 
 attack=Lover's Embrace
@@ -746,9 +743,7 @@ subeffect=might:5.5:2 per consume.
 subeffect=healing:0 per consume
 
 attack=Summon
-effect=summon when hit
-subeffect=enemy=Ectoplasmic_Oozes:normal
-
+effect=summon enemy=Ectoplasmic_Oozes:normal when hit
 attack=Ghost Shield
 effect=buff
 subeffect=Immunity to conditions and damage
@@ -1685,8 +1680,7 @@ attack=Summon Hatchlings
 image=media=ac_breeder_summon.jpg
 animation=glows and pukes|3
 additional=maximum amount of 10
-effect=Summon
-subeffect=~15 enemy=Graveling_Hatchlings:normal in 14.5 s
+effect=Summon ~15 enemy=Graveling_Hatchlings:normal in 14.5 s
 #note=Focus Breeder fast or just interrupt
 #note=All die when Breeder dies
 

@@ -170,20 +170,17 @@ effect=take damage (~10 s)
 
 attack=Magma Wall
 additional=used after from 75% to 50%
-effect=summon
-subeffect=Magma Wall
+effect=summon a Magma Wall
 #note=destroy, run around or let Boulders to destroy
 
 attack=Double Magma Wall
 additional=used after from 50% to 25%
-effect=summon
-subeffect=2 Magma Walls
+effect=summon 2 Magma Walls
 #note=don't panic if you get trapped between walls. Either fight your way out or wait for Boulders
 
 attack=Triple Magma Wall
 additional=used after 25%
-effect=summon
-subeffect=3 Magma Walls
+effect=summon 3 Magma Walls
 
 attack=Iron Beam
 additional=used after 25%
@@ -256,9 +253,10 @@ subeffect=damage:0
 attack=Searing Crystals
 animation=raises right arm, glows purple and smashes ground with both hands|1
 effect=multiple delayed AoEs
+count=?
 subeffect=damage:0
 subeffect=launch:2.5
-subeffect=summon Searing enemy=Crystal:structure per hit
+subeffect=summon Searing enemy=Crystal:structure
 #note=Crystals won't heal much but you should clear up close ones
 #note=You can use poison to lower their effect if you can access it easily
 
@@ -472,8 +470,7 @@ Path=CoF2
 
 attack=Summon
 additional=maximum amount of 5
-effect=summon
-subeffect=enemy=text:Devourer|Carrion_Devourer:elite|Lashtail_Devourer:elite|Whiptail_Devourer:elite
+effect=summon enemy=text:Devourer|Carrion_Devourer:elite|Lashtail_Devourer:elite|Whiptail_Devourer:elite
 
 ##################################################################
 
@@ -484,8 +481,7 @@ Path=CoF2
 
 attack=Summon
 additional=maximum amount of 5
-effect=summon
-subeffect=enemy=text:Devourer|Carrion_Devourer:normal|Lashtail_Devourer:normal|Whiptail_Devourer:normal
+effect=summon enemy=text:Devourer|Carrion_Devourer:normal|Lashtail_Devourer:normal|Whiptail_Devourer:normal
 
 ##################################################################
 
@@ -511,13 +507,11 @@ subeffect=damage:0
 subeffect=burning:3
 
 attack=Summon Imps
-effect=summon
-subeffect=3 enemy=Fire_Imps:normal
+effect=summon 3 enemy=Fire_Imps:normal
 
 attack=Summon Altar
-effect=summon
-subeffect=enemy=Altar:structure
-effect=invulnerable while Altar is alive
+effect=summon enemy=Altar:structure
+effect=buff:invulnerable while Altar is alive
 
 ##################################################################
 
@@ -671,7 +665,6 @@ animation=touches ground|1.5|blue glow
 effect=summon
 subeffect=3 enemy=Fire_Imps_(Putrid):normal
 #note=kill before they explode
-
 
 ##################################################################
 

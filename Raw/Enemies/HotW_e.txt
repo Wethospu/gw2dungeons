@@ -14,8 +14,7 @@ subeffect=chilled:2
 
 attack=Summon
 additional=maximum amount of 3
-effect=summon
-subeffect=enemy=Icebrood_Elemental:Elite
+effect=summon an enemy=Icebrood_Elemental:Elite
 #note=ignore
 
 ##################################################################
@@ -403,8 +402,7 @@ subeffect=chilled:0
 
 attack=Mass Summon
 cooldown=55
-effect=summon
-subeffect=6 enemy=text:Icebrood|Icebrood_Mauler:normal|Icebrood_Seer:normal|Icebrood_Hunter:normal|Icebrood_Claymore:normal|Icebrood_Berserker:normal
+effect=summon 6 enemy=text:Icebrood|Icebrood_Mauler:normal|Icebrood_Seer:normal|Icebrood_Hunter:normal|Icebrood_Claymore:normal|Icebrood_Berserker:normal
 
 attack=Shielding
 effect=at start
@@ -734,8 +732,7 @@ subeffect=bleeding:0
 #note=block/evade when you see claws on you
 
 attack=Summon
-effect=Summon
-subeffect=enemy=Giant_Arctic_Jellyfish:elite
+effect=Summon a enemy=Giant_Arctic_Jellyfish:elite
 
 attack=Sink
 effect=ranged
@@ -1063,8 +1060,7 @@ subeffect=damage:0
 attack=Summon
 effect=PBAoE
 subeffect=chilled:2
-effect=Summon
-subeffect=3 enemy=Icebrood_Elementals_(Small):normal
+effect=Summon 3 enemy=Icebrood_Elementals_(Small):normal
 
 ##################################################################
 
@@ -1148,8 +1144,7 @@ subeffect=crippled:3
 attack=Summon
 animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
 additional=only used when buffed up
-effect=Summon
-subeffect=2 enemy=Icebrood_Wolves:normal
+effect=Summon 2 enemy=Icebrood_Wolves:normal
 
 attack=Buff up
 cooldown=58
@@ -1216,8 +1211,7 @@ subeffect=crippled:3
 attack=Summon
 animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
 additional=only used when buffed up
-effect=Summon
-subeffect=2 enemy=Icebrood_Wolves:normal
+effect=Summon 2 enemy=Icebrood_Wolves:normal
 
 attack=Buff up
 cooldown=58
@@ -1283,8 +1277,7 @@ subeffect=crippled:3
 attack=Summon
 animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
 additional=only used when buffed up
-effect=Summon
-subeffect=2 enemy=Icebrood_Wolves:normal
+effect=Summon 2 enemy=Icebrood_Wolves:normal
 
 attack=Buff up
 cooldown=58
@@ -1438,8 +1431,7 @@ subeffect=damage:11945830
 attack=Summon
 animation=leans back, crouches and raises left arm|1
 additional=maximum of 2
-effect=Summon
-subeffect=enemy=Icebrood_Elemental_(Big):normal|Icebrood_Elemental_(Big):normal:79 at target
+effect=Summon an enemy=Icebrood_Elemental_(Big):normal|Icebrood_Elemental_(Big):normal:79 at target
 
 ##################################################################
 # Same enemy: Snow Son of Svanir (Staff)
@@ -1472,8 +1464,7 @@ subeffect=damage:0
 attack=Summon
 animation=leans back, crouches and raises left arm|1
 additional=maximum of 2
-effect=Summon
-subeffect=enemy=Icebrood_Elemental_(Big):normal at target
+effect=Summon an enemy=Icebrood_Elemental_(Big):normal at target
 
 ##################################################################
 
@@ -1547,8 +1538,7 @@ cooldown=19
 effect=short leap
 subeffect=damage:0
 subeffect=knockdown:2
-effect=summon
-subeffect=enemy=Icebrood_Wolf:normal
+effect=summon an enemy=Icebrood_Wolf:normal
 
 ##################################################################
 # Same enemy: CoE1 Icebrood enemy=Wolf:Normal
@@ -1998,8 +1988,7 @@ subeffect=crippled:3
 attack=Summon
 animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
 additional=only used when buffed up
-effect=Summon
-subeffect=2 enemy=Icebrood_Wolves:normal
+effect=Summon 2 enemy=Icebrood_Wolves:normal
 
 attack=Buff up
 cooldown=58
@@ -2067,8 +2056,7 @@ subeffect=crippled:3
 attack=Summon
 animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
 additional=only used when buffed up
-effect=Summon
-subeffect=2 enemy=Icebrood_Wolves:normal
+effect=Summon 2 enemy=Icebrood_Wolves:normal
 
 attack=Buff up
 cooldown=58

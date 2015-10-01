@@ -165,8 +165,7 @@ cooldown=13
 animation=raises arms and right foot and steps forward smashing ground|1.25
 effect=PBAoE
 subeffect=damage:11550708
-effect=summon
-subeffect=~5 enemy=Undead_tendrils:structure over the area
+effect=summon ~5 enemy=Undead_tendrils:structure over the area
 #note=at melee range block or evade
 #note=stay at medium range
 #note=burst down tendrils if they are close you
@@ -994,8 +993,7 @@ subeffect=remove all Conditions
 
 attack=Summon
 additional=used at 75%
-effect=Summon
-subeffect=4 enemy=Risen_Thralls:normal
+effect=Summon 4 enemy=Risen_Thralls:normal
 effect=revive NPC
 
 attack=Escape
@@ -1041,8 +1039,7 @@ subeffect=damage:0
 
 attack=Summon
 additional=used at 75%
-effect=Summon
-subeffect=4 enemy=Risen_Thralls:normal
+effect=Summon 4 enemy=Risen_Thralls:normal
 effect=revive NPC
 
 attack=Escape
@@ -1081,8 +1078,7 @@ subeffect=damage:0
 
 attack=Summon
 additional=used at 75%
-effect=Summon
-subeffect=4 enemy=Risen_Thralls:normal
+effect=Summon 4 enemy=Risen_Thralls:normal
 effect=revive NPC
 
 ##################################################################
@@ -1116,14 +1112,12 @@ subeffect=remove all Conditions
 
 attack=Summon
 animation=raises left arm without glow|1|green effect
-effect=Summon
-subeffect=2 enemy=Undead_Tendrils:structure
+effect=Summon 2 enemy=Undead_Tendrils:structure
 #note=rally from these if you get downed
 
 attack=Summon
 additional=used at 75%
-effect=Summon
-subeffect=4 enemy=Risen_Thralls:normal
+effect=Summon 4 enemy=Risen_Thralls:normal
 effect=revive NPC
 
 attack=Crystallize
@@ -1182,8 +1176,7 @@ subeffect=damage:0
 
 attack=Summon
 animation=raises left arm without glow|1|green effect
-effect=Summon
-subeffect=2 enemy=Undead_Tendrils:structure
+effect=Summon 2 enemy=Undead_Tendrils:structure
 #note=rally from these if you get downed
 
 attack=Crystallize
@@ -1235,8 +1228,7 @@ subeffect=damage:0
 
 attack=Summon
 animation=raises left arm without glow|1|green effect
-effect=Summon
-subeffect=2 enemy=Undead_Tendrils:structure
+effect=Summon 2 enemy=Undead_Tendrils:structure
 #note=rally from these if you get downed
 
 attack=Crystallize
@@ -1286,8 +1278,7 @@ subeffect=remove all Conditions
 
 attack=Summon
 animation=raises left arm without glow|1|green effect
-effect=Summon
-subeffect=2 enemy=Undead_Tendrils:structure
+effect=Summon 2 enemy=Undead_Tendrils:structure
 #note=rally from these if you get downed
 
 attack=Crystallize
@@ -1299,8 +1290,7 @@ subeffect=enemy=Imprisonment_Crystal:structure on target
 
 attack=Summon Essence
 additional=used every 15%
-effect=summon
-subeffect=~10 enemy=Black_Essences:normal
+effect=summon ~10 enemy=Black_Essences:normal
 #note=try to destroy Essences to prevent healing
 #note=Alpha may stop attacking when killing Essences (use Control-skill to break)
 #note=only summons Essences once at particular health (if you wipe he will only use this when "new" health is reached)
@@ -1351,8 +1341,7 @@ subeffect=damage:0
 
 attack=Summon
 animation=raises left arm without glow|1|green effect
-effect=Summon
-subeffect=2 enemy=Undead_Tendrils:structure
+effect=Summon 2 enemy=Undead_Tendrils:structure
 #note=rally from these if you get downed
 
 attack=Crystallize
@@ -1364,8 +1353,7 @@ subeffect=enemy=Imprisonment_Crystal:structure on target
 
 attack=Summon Essence
 additional=used every 15%
-effect=summon
-subeffect=~10 enemy=Black_Essences:normal
+effect=summon ~10 enemy=Black_Essences:normal
 #note=try to destroy Essences to prevent healing
 #note=Alpha may stop attacking when killing Essences (use Control-skill to break)
 #note=only summons Essences once at particular health (if you wipe he will only use this when "new" health is reached)
@@ -1409,8 +1397,7 @@ subeffect=damage:0
 
 attack=Summon
 animation=raises left arm without glow|1|green effect
-effect=Summon
-subeffect=2 enemy=Undead_Tendrils:structure
+effect=Summon 2 enemy=Undead_Tendrils:structure
 #note=rally from these if you get downed
 
 attack=Crystallize
@@ -1433,8 +1420,7 @@ subeffect=bleeding:13500:30:5
 
 attack=Summon Essence
 additional=used every 15%
-effect=summon
-subeffect=~10 enemy=Black_Essences:normal
+effect=summon ~10 enemy=Black_Essences:normal
 #note=try to destroy Essences to prevent healing
 #note=Alpha may stop attacking when killing Essences (use Control-skill to break)
 #note=only summons Essences once at particular health (if you wipe he will only use this when "new" health is reached)
@@ -2381,7 +2367,7 @@ effect=10 stacks
 subeffect=stun:1.5
 subeffect=take double damage
 effect=25 stacks
-subeffect=summon Risen Wraith enemy=(Drain):elite
+subeffect=summon a enemy=Risen_Wraith_(Drain):elite
 
 ###########################################################
 # Same enemy: ARAH Risen Wraith (Drain).

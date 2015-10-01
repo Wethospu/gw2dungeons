@@ -427,8 +427,7 @@ subeffect=bleeding:10
 attack=Summon
 image=http://fat.gfycat.com/EvergreenBlueIrishterrier.gif
 animation=lightning effect
-effect=summon
-subeffect=enemy=Nightmare_Pup:normal
+effect=summon enemy=Nightmare_Pup:normal
 
 ##################################################################
 
@@ -698,15 +697,13 @@ path=TAS
 
 attack=Summon Living Nightmare
 image=http://giant.gfycat.com/OrdinaryBelatedHarpyeagle.gif
-effect=~7 piercing projectiles (cone) with summon
+effect=~7 piercing projectiles (cone)
 subeffect=damage:0
-effect=summon
-subeffect= enemy=Living_Nightmare:normal
+subeffect=summon enemy=Living_Nightmare:normal
 
 attack=Summon Fiendish Nightmare
 image=http://fat.gfycat.com/BriefInferiorCanine.gif
-effect=summon
-subeffect= enemy=Fiendish_Nightmare:normal
+effect=summon enemy=Fiendish_Nightmare:normal
 
 attack=Terrifying Blast
 image=http://fat.gfycat.com/NaughtyWelldocumentedArcticseal.gif
@@ -1314,8 +1311,7 @@ subeffect=stability:10
 
 attack=Summon
 additional=maximum amount of 3
-effect=summon
-subeffect=enemy=Oakheart:veteran
+effect=summon enemy=Oakheart:veteran
 #note=kite and evade. Rally from their roots
 #note=alternatively one player may try to grab their aggro and focus on surviving
 
@@ -1383,8 +1379,7 @@ subeffect=pull:0
 
 attack=Summon
 image=http://fat.gfycat.com/GlassWeeklyDouglasfirbarkbeetle.gif
-effect=summons
-subeffect=three enemy=Forest_Spider_Hatchlings:normal
+effect=summon three enemy=Forest_Spider_Hatchlings:normal
 
 attack=Randomly turns into a enemy=spider
 image=http://giant.gfycat.com/GaseousWarlikeAmericanbulldog.gif
@@ -1448,8 +1443,7 @@ subeffect=bleeding:0:10
 attack=Plant
 image=http://giant.gfycat.com/ObeseWellinformedGrub.gif
 animation=touches the ground with both hands
-effect=summons
-subeffect=multiple enemy=Sylvari_Mortar_Turrets and enemy=Healing_Seeds
+effect=summon multiple enemy=Sylvari_Mortar_Turrets and enemy=Healing_Seeds
 #note=use AoE anti projectiles skills against Turrets
 
 attack=Unknown attack
@@ -2653,8 +2647,7 @@ path=TAAE
 attack=Summon
 cooldown=5.5
 animation=glows blue|3
-effect=Summon
-subeffect=A enemy=Thug:veteran, a enemy=Striker:veteran, a enemy=Thumper:veteran, a enemy=Swashbuckler:veteran or enemy=Grenadier:veteran
+effect=Summon a enemy=Thug:veteran, a enemy=Striker:veteran, a enemy=Thumper:veteran, a enemy=Swashbuckler:veteran or enemy=Grenadier:veteran
 
 ##################################################################
 
