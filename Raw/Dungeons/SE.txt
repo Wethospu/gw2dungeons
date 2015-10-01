@@ -8,7 +8,7 @@ name=Sorrow's Embrace Story
 tactic=normal
 Level: 60.
 Reward: 0.73g.
-Average length: 35 minutes.
+Average length: 38 minutes.
 Difficulty: Easy.
 Enemies: Inquest and Dredge.
 Time: Night.
@@ -279,7 +279,7 @@ name=Sorrow's Embrace Path 2: Free the oppressed workers
 tactic=normal
 Level: 65.
 Reward: 1.31g + 60 tokens.
-Average length: 46 minutes.
+Average length: 42 minutes.
 Difficulty: Medium.
 Enemies: Dredge.
 Time: Night.

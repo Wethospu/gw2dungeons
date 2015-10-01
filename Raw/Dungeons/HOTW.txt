@@ -8,7 +8,7 @@ name=Honor of the Waves Story: Find the Voice
 tactic=normal
 Level: 76.
 Reward: 0.73 g.
-Average length: 30 minutes.
+Average length: 35 minutes.
 Difficulty: Easy.
 Enemies: Icebrood and some Sons of Svanir.
 Time: Day.
@@ -102,7 +102,7 @@ name=Honor of the Waves Path 1: Stop the Butcher
 tactic=normal
 Level: 80.
 Reward: 1.31 g + 60 tokens.
-Average length: 15 minutes.
+Average length: 14 minutes.
 Difficulty: Medium.
 Enemies: Icebrood and some Sons of Svanir.
 Time: Day.
@@ -166,7 +166,7 @@ name=Honor of the Waves Path 2: Prevent the Plunderer from erasing culture
 tactic=normal
 Level: 80.
 Reward: 1.31 g + 60 tokens.
-Average length: 21 minutes.
+Average length: 20 minutes.
 Difficulty: Medium.
 Enemies: Icebrood and some Sons of Svanir.
 Time: Day.
@@ -228,7 +228,7 @@ name=Honor of the Waves Path 3: Defeat the Zealot
 tactic=normal
 Level: 80.
 Reward: 1.31 g + 60 tokens.
-Average length: 19 minutes.
+Average length: 18 minutes.
 Difficulty: Medium.
 Enemies: Icebrood and some Sons of Svanir.
 Time: Day.

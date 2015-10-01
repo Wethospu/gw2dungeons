@@ -8,7 +8,7 @@ tactic=normal
 name=Twilight Arbor Story
 Level: 50.
 Reward: 0.73g.
-Average length: 20 minutes.
+Average length: 26 minutes.
 Difficulty: Easy.
 Enemies: Nightmare Court.
 Time: Night.
@@ -506,7 +506,7 @@ name=Twilight Arbor Path 3: Aetherblade
 tactic=normal
 Level: 80.
 Reward: 2.31g + 60 tokens.
-Average length: 35 minutes.
+Average length: 37 minutes.
 Difficulty: Hard.
 Enemies: Nightmare Court and Aetherblade.
 Time: Night.

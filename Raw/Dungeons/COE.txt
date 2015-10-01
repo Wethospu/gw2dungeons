@@ -9,7 +9,7 @@ name=Crucible of Eternity Story: Stop Kudu
 tactic=normal
 Level: 78.
 Reward: 0.73g.
-Average length: 40 minutes.
+Average length: 39 minutes.
 Difficulty: Medium.
 Enemies: Inquest and Outlaw.
 Time: Day.
@@ -154,9 +154,9 @@ name=Crucible of Eternity Path 1: Escape with the submarine
 tactic=normal
 Level: 80.
 Reward: 1.81g + 60 tokens.
-Average length: 19 minutes.
+Average length: 18 minutes.
 Difficulty: Medium.
-Enemies: Undead, Icebrood, Inquest and Sons of Svanir.
+Enemies: Undead, Icebrood and Inquest.
 Time: Night.
 Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=dUS5vSiOHJ8|Video_guide (Banter Bill).
@@ -167,7 +167,7 @@ Name=Crucible of Eternity Path 2: Use teleporter
 tactic=normal
 Level: 80.
 Reward: 1.81g + 60 tokens.
-Average length: 20 minutes.
+Average length: 19 minutes.
 Difficulty: Medium.
 Enemies: Undead, Icebrood, Inquest and Nightmare Court.
 Time: Night.
@@ -180,7 +180,7 @@ name=Crucible of Eternity Path 3: Go through the front door
 tactic=normal
 Level: 80.
 Reward: 1.81g + 60 tokens.
-Average length: 20 minutes.
+Average length: 19 minutes.
 Difficulty: Medium.
 Enemies: Undead, Icebrood, Inquest and Destroyer.
 Time: Night.

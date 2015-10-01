@@ -8,7 +8,7 @@ name=The Ruined City of Arah Path 1: Jotun
 tactic=normal
 Level: 80.
 Reward: 3.31g + 60 tokens.
-Average length: 28 minutes.
+Average length: 29 minutes.
 Difficulty: Hard.
 Enemies: Undead.
 Time: Day.
@@ -358,7 +358,7 @@ name=The Ruined City of Arah Path 3: Forgotten
 tactic=normal
 Level: 80.
 Reward: 1.81g + 60 tokens.
-Average length: 24 minutes.
+Average length: 25 minutes.
 Difficulty: Hard.
 Enemies: Undead.
 Time: Day.

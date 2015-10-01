@@ -184,7 +184,7 @@ name=Caudecus's Manor Path 2: Look for the Seraph
 tactic=normal
 Level: 45.
 Reward: 1.31g + 60 tokens.
-Average length: 14 minutes.
+Average length: 13 minutes.
 Difficulty: Medium.
 Enemies: Outlaw.
 Time: Day.
@@ -314,7 +314,6 @@ tactic=exploit
 He can be bugged in the treehouse (lure him up and jump down) or on a rock (attack him and run over it). This allows him to be AFK ranged without worrying about any of his attacks.
 tactic=warrior
 Take wiki=Signet_of_Stamina to clear lots of conditions at the same time.
-tactic=warrior
 Use wiki=Rush or/and wiki=Whirlwind_Attack to get away from him during plague form.
 
 ################################################################
@@ -324,7 +323,7 @@ name=Caudecus's Manor Path 3: Find the missing butler
 tactic=normal
 Level: 45.
 Reward: 1.31g + 60 tokens.
-Average length: 12 minutes.
+Average length: 11 minutes.
 Difficulty: Medium.
 Enemies: Outlaw.
 Time: Day.

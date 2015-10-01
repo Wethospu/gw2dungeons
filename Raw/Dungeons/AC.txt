@@ -8,7 +8,7 @@ Name=Ascalonian Catacombs Story
 tactic=normal
 Level: 30.
 Reward: 0.73g.
-Average length: 17 minutes.
+Average length: 18 minutes.
 Difficulty: Easy.
 Enemies: Ghost.
 Time: Night.
@@ -208,7 +208,7 @@ name=Ascalonian Catacombs Path 2: Trap and kill the Ghost Eater
 tactic=normal
 Level: 35.
 Reward: 1.81g + 60 tokens.
-Average length: 16 minutes.
+Average length: 15 minutes.
 Difficulty: Easy.
 Enemies: Graveling, Spider and Ghost.
 Time: Night.

@@ -8,7 +8,7 @@ tactic=normal
 name=Citadel of Flame Story: Assault the Flame Legion Citadel
 Level: 70.
 Reward: 0.73g.
-Average length: 40 minutes.
+Average length: 30 minutes.
 Difficulty: Easy.
 Enemies: Flame Legion.
 Time: Night.
@@ -96,7 +96,7 @@ name=Citadel of Flame Path 1: Destroy the superweapon
 tactic=normal
 Level: 75.
 Reward: 1.31 g + 60 tokens.
-Average length: 9 minutes.
+Average length: 8 minutes.
 Difficulty: Easy.
 Enemies: Flame Legion.
 Time: Night.
