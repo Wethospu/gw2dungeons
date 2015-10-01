@@ -18,7 +18,9 @@ namespace DataCreator
       Multipliers = new Multipliers();
       Gender = "";
       Size = 1.0;
-      Family = "";
+      Family = null;
+      Passive = null;
+      Weapons = null;
     }
 
     [JsonProperty("name")]
@@ -46,7 +48,13 @@ namespace DataCreator
     public double Size { get; set; }
 
     [JsonProperty("family")]
-    public string Family { get; set; }
+    public Family Family { get; set; }
+
+    [JsonProperty("passive")]
+    public Passive Passive { get; set; }
+
+    [JsonProperty("weapons")]
+    public Weapons Weapons { get; set; }
 
     public string ToHtml()
     {
@@ -99,5 +107,100 @@ namespace DataCreator
 
     [JsonProperty("level")]
     public int Level { get; set; }
+  }
+
+  public class Family
+  {
+
+    [JsonProperty("name")]
+    public string Name { get; set; }
+
+    [JsonProperty("guid")]
+    public int Guid { get; set; }
+
+    public string GetDisplay()
+    {
+      string display = Helper.ToUpperAll(Name.Replace('_', ' '));
+      if (display.Equals("Ascalonian Ghost"))
+        display = "Ghost";
+      if (display.Equals("Undead Minion"))
+        display = "Undead";
+      if (display.Equals("Scarlet Minion"))
+        display = "Aetherblade";
+      return display.Replace(" ", Constants.Space);
+    }
+  }
+
+  public class Passive
+  {
+
+    [JsonProperty("name")]
+    public string Name { get; set; }
+
+    [JsonProperty("id")]
+    public int id { get; set; }
+  }
+
+  public class Weapons
+  {
+
+    [JsonProperty("main_hand")]
+    public Weapon Main { get; set; }
+
+    [JsonProperty("off_hand")]
+    public Weapon Offhand { get; set; }
+
+    [JsonProperty("underwater")]
+    public Weapon Underwater { get; set; }
+  }
+
+  public class Weapon
+  {
+
+    [JsonProperty("id")]
+    public string id { get; set; }
+
+    [JsonProperty("scale")]
+    public int Scale { get; set; }
+
+    [JsonProperty("type")]
+    public int Type { get; set; }
+
+    [JsonProperty("rarity")]
+    public int Rarity { get; set; }
+
+    [JsonProperty("skill_palette")]
+    public List<SkillPalette> Skills { get; set; }
+  }
+
+  public class SkillPalette
+  {
+
+    [JsonProperty("name")]
+    public string Name { get; set; }
+
+    [JsonProperty("id")]
+    public string id { get; set; }
+
+    [JsonProperty("cooldown")]
+    public int Cooldown { get; set; }
+
+    [JsonProperty("casting_time")]
+    public int CastTime { get; set; }
+
+    [JsonProperty("min_range")]
+    public int MinimumRange { get; set; }
+
+    [JsonProperty("max_range")]
+    public int MaxRange { get; set; }
+
+    [JsonProperty("tags")]
+    public Tags Tags { get; set; }
+  }
+
+  public class Tags
+  {
+    [JsonProperty("Damage Multiplier")]
+    public int Coefficient { get; set; }
   }
 }

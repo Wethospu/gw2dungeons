@@ -189,8 +189,8 @@ namespace DataCreator.Enemies
         if (found != null)
         {
           _currentEnemy = new Enemy(found) { Name = "" };
-          if (typeToPotion.ContainsKey(_currentEnemy.Attributes.Family))
-            _currentEnemy.Potion = typeToPotion[_currentEnemy.Attributes.Family];
+          if (typeToPotion.ContainsKey(_currentEnemy.Attributes.Family.Name))
+            _currentEnemy.Potion = typeToPotion[_currentEnemy.Attributes.Family.Name];
         }
         else
           Helper.ShowWarning("Copying failed. Enemy not found!");
@@ -244,8 +244,8 @@ namespace DataCreator.Enemies
                 else
                   _currentEnemy.Attributes.Gender = oldSexes + "|" + _currentEnemy.Attributes.Gender;
               }
-              if (typeToPotion.ContainsKey(_currentEnemy.Attributes.Family))
-                _currentEnemy.Potion = typeToPotion[_currentEnemy.Attributes.Family];
+              if (typeToPotion.ContainsKey(_currentEnemy.Attributes.Family.Name))
+                _currentEnemy.Potion = typeToPotion[_currentEnemy.Attributes.Family.Name];
             }
             else
               Helper.ShowWarning("Id " + data + " not found in enemy attributes.");
@@ -693,8 +693,7 @@ namespace DataCreator.Enemies
         // Add enemy info to the data collector. / 2015-08-17 / Wethospu
         if (dungeonData != null)
         {
-          if (!enemies[i].Attributes.Family.Equals(""))
-            dungeonData.AddRace(enemies[i].Attributes.Family);
+          dungeonData.AddRace(enemies[i].Attributes.Family.GetDisplay());
           dungeonData.AddCategory(enemies[i].Category);
           foreach (var tag in enemies[i].Tags)
             dungeonData.AddTag(tag);

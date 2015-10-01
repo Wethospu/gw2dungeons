@@ -79,6 +79,8 @@ namespace DataCreator.Shared
 
     public void AddRace(string race)
     {
+      if (race.Equals(""))
+        return;
       Races.Add(race);
     }
 
@@ -180,7 +182,7 @@ namespace DataCreator.Shared
       foreach (var race in Races)
       {
         builder.Append(Gw2Helper.AddTab(3)).Append("<option value=\"").Append(race).Append("\">");
-        builder.Append(Gw2Helper.ProcessRace(race)).Append("</option>").Append(Constants.LineEnding);
+        builder.Append(race).Append("</option>").Append(Constants.LineEnding);
       }
       return builder.ToString();
     }

@@ -48,24 +48,6 @@ namespace DataCreator.Utility
     }
 
     /***********************************************************************************************
-    * ProcessRace / 2015-10-01 / Wethospu                                                          * 
-    *                                                                                              * 
-    * Converts datamined race to wanted output.                                                    *
-    *                                                                                              *
-    ***********************************************************************************************/
-    public static string ProcessRace(string race)
-    {
-      race = Helper.ToUpperAll(race.Replace('_', ' '));
-      if (race.Equals("Ascalonian Ghost"))
-        race = "Ghost";
-      if (race.Equals("Undead Minion"))
-        race = "Undead";
-      if(race.Equals("Scarlet Minion"))
-        race = "Aetherblade";
-      return race.Replace(" ", Constants.Space);
-    }
-
-    /***********************************************************************************************
     * FindEnemies / 2014-07-27 / Wethospu                                                          * 
     *                                                                                              * 
     * Finds enemies based on given requirements. Empty requirements are excluded.                  *

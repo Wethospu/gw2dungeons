@@ -200,8 +200,9 @@ namespace DataCreator.Enemies
       // Add details like category, race, level, health and armor. / 2015-08-09 / Wethospu   
       if (!Category.Equals(""))
         htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"rank-unit\">").Append(Helper.ToUpper(Helper.ConvertSpecial(Category)).Replace(" ", Constants.Space)).Append(" </span>").Append(Constants.LineEnding);
-      if (!Attributes.Family.Equals(""))
-        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"race-unit\">").Append(Gw2Helper.ProcessRace(Attributes.Family)).Append(" </span>").Append(Constants.LineEnding);
+      var family = Attributes.Family.GetDisplay();
+      if (!family.Equals(""))
+        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"race-unit\">").Append(family).Append(" </span>").Append(Constants.LineEnding);
       // Enemy can have multiple sexes if there are model variations. / 2015-09-28 / Wethospu
       var genders = Attributes.Gender.Split('|');
       for (int i = 0; i < genders.Length; i++)
