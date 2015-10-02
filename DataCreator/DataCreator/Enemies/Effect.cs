@@ -109,6 +109,12 @@ namespace DataCreator.Enemies
         effectChance = split[1];
       if (effectChance.Length > 0)
         hitCount = 1;
+      bool variableHitCount = false;
+      if (hitCount < 0)
+      {
+        variableHitCount = true;
+        hitCount = 1;
+      }
       // First effect type determines the icon. / 2015-09-05 / Wethospu
       var firstType = "";
       // The icon gets stack numbers. / 2015-09-05 / Wethospu
@@ -323,7 +329,7 @@ namespace DataCreator.Enemies
           }
         }
         // Some effects can have variable or unknown hit count. Just add " per hit" in those cases. / 2015-09-29 / Wethospu
-        if (hitCount < 1)
+        if (variableHitCount)
           replace.Append(" per hit");
         if (hitFrequency > 0.01)
         {
