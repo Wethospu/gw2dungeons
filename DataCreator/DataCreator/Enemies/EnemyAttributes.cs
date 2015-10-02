@@ -181,7 +181,7 @@ namespace DataCreator
   {
 
     [JsonProperty("id")]
-    public string id { get; set; }
+    public int id { get; set; }
 
     [JsonProperty("scale")]
     public int Scale { get; set; }
@@ -216,7 +216,13 @@ namespace DataCreator
     public string Name { get; set; }
 
     [JsonProperty("id")]
-    public string id { get; set; }
+    public int id { get; set; }
+
+    [JsonProperty("requiredBuff")]
+    public Buff BuffRequirement { get; set; }
+
+    [JsonProperty("requiredLevel")]
+    public int LevelRequirement { get; set; }
 
     [JsonProperty("cooldown")]
     public int Cooldown { get; set; }
@@ -234,9 +240,24 @@ namespace DataCreator
     public Tags Tags { get; set; }
   }
 
+  public class Buff
+  {
+    [JsonProperty("name")]
+    public string Name { get; set; }
+
+    [JsonProperty("id")]
+    public int id { get; set; }
+  }
+
   public class Tags
   {
     [JsonProperty("Damage Multiplier")]
     public double Coefficient { get; set; }
+
+    [JsonProperty("Trait Damage Multiplier")]
+    public double CoefficientTrait { get; set; }
+
+    [JsonProperty("Splash Damage Multiplier")]
+    public double CoefficientSplash { get; set; }
   }
 }

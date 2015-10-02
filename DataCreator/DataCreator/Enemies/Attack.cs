@@ -96,6 +96,9 @@ namespace DataCreator.Enemies
     {
       _name = string.Copy(toCopy._name);
       Cooldown = string.Copy(toCopy.Cooldown);
+      _minimumRange = toCopy._minimumRange;
+      _maximumRange = toCopy._maximumRange;
+      _coefficient = toCopy._coefficient;
       Animation = string.Copy(toCopy.Animation);
       foreach (var media in toCopy.Medias)
         Medias.Add(new Media(media));
@@ -136,7 +139,7 @@ namespace DataCreator.Enemies
       htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<div class=\"enemy-attack-effect\">").Append(Constants.LineEnding);
       // Add attack effects.
       foreach (var effect in Effects)
-        htmlBuilder.Append(effect.ToHtml(path, enemies, baseEnemy, indent + 2));
+        htmlBuilder.Append(effect.ToHtml(path, _coefficient, enemies, baseEnemy, indent + 2));
       htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("</div>").Append(Constants.LineEnding);
       
       return htmlBuilder.ToString();

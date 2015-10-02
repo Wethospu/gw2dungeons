@@ -538,12 +538,30 @@ subeffect=poison:8
 
 ##################################################################
 # Levels 80, 81 and 82 exist.
-copy=Orrian Drake|normal
-ID=8582
 name=Orrian Drake
+ID=8582
 alt=Orrian Drakes|Drake|Drakes
 image=http://wiki.guildwars2.com/images/5/53/Orrian_Drake.jpg
+path=Arah1|Arah2|Arah4
 category=elite
+
+attack=Bite
+animation=swings head|0.25
+cooldown=2
+effect=melee
+subeffect=damage:8441150
+#note=does not attempt to get on range so you can stay at max melee range
+
+attack=Poison Cloud
+image=http://giant.gfycat.com/AdmirableHeavenlyFrilledlizard.gif
+animation=leans back and glows and then opens mouth|1.25
+cooldown=4
+effect=few projectiles (cone) with ticking AoE (10 ticks)
+count=10
+length=9
+subeffect=damage:822745
+subeffect=poison:8
+#note=stay at melee range to prevent getting hit
 
 ##################################################################
 

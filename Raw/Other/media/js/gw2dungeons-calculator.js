@@ -212,9 +212,6 @@ var playerArmor = 2137;
 
 // Updates all character values.
 function updateValues(playerArmorNew, playerHealth, playerLevel, playerClass, playerAgony, playerFractal, wvwDefense, wvwHealth) {
-	// WvW defense is currently slightly bugged. All values (except 1%) are actually 1%-unit less.
-	if (wvwDefense > 1)
-		wvwDefense = wvwDefense - 1;
 	// Armor gets ceiled.
     playerArmor = Math.ceil(playerArmorNew * (1 + wvwDefense / 100));
     // Separate base health and vitality health.
@@ -254,11 +251,15 @@ function getPercentage(damage, dungeonLevel) {
 	return toPercent(damage, healthValues[dungeonLevels.indexOf(dungeonLevel)]);
 }
 
-function getDamage(damage, potion, dungeonLevel) {
+function getDamage(damage, weapon, potion, dungeonLevel) {
     // Not accurate because of weird armor scaling.
-    damage = damage / Math.floor(getArmorScale(dungeonLevel) * playerArmor);
+	var armor = Math.floor(getArmorScale(dungeonLevel) * playerArmor);
 	// Damage gets floored.
-    return Math.floor(damage * (1 - potion));
+	return {
+        min: Math.floor(damage * weapon.min / armor * (1 - potion)),
+		avg: Math.floor(damage * weapon.avg / armor * (1 - potion)),
+        max: Math.floor(damage * weapon.max / armor * (1 - potion))
+    };;
 }
 
 function getAgonyDamage(second) {

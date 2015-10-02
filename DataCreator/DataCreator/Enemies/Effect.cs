@@ -52,10 +52,10 @@ namespace DataCreator.Enemies
     *                                                                                              *
     ***********************************************************************************************/
 
-    public string ToHtml(string path, List<Enemy> enemies, Enemy baseEnemy, int indent)
+    public string ToHtml(string path, double coefficient, List<Enemy> enemies, Enemy baseEnemy, int indent)
     {
       var htmlBuilder = new StringBuilder();
-      _type = HandleEffect(LinkGenerator.CreateEnemyLinks(_type, path, enemies), 1, 0, 0, baseEnemy);
+      _type = HandleEffect(LinkGenerator.CreateEnemyLinks(_type, path, enemies), 0, 1, 0, 0, baseEnemy);
       // Replace end dot with double dot if the effect has sub effects (visually looks better). / 2015-10-01 / Wethospu
       if (_type[_type.Length - 1] == '.' && SubEffects.Count > 0)
         _type = _type.Substring(0, _type.Length - 1) + ':';
@@ -64,7 +64,7 @@ namespace DataCreator.Enemies
       foreach (var subEffect in SubEffects)
       {
         htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<li>");
-        htmlBuilder.Append(HandleEffect(LinkGenerator.CreateEnemyLinks(subEffect, path, enemies), HitCount, HitLength, HitFrequency, baseEnemy));
+        htmlBuilder.Append(HandleEffect(LinkGenerator.CreateEnemyLinks(subEffect, path, enemies), coefficient, HitCount, HitLength, HitFrequency, baseEnemy));
         htmlBuilder.Append("</li>").Append(Constants.LineEnding);
       }
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("</ul>").Append(Constants.LineEnding);
@@ -89,7 +89,7 @@ namespace DataCreator.Enemies
     * baseEnemy: Enemy which owns this effect. Needed to add tags to the enemy.                    *
     *                                                                                              *
     ***********************************************************************************************/
-    private string HandleEffect(string effectStr, int hitCount, double hitLength, double hitFrequency, Enemy baseEnemy)
+    private string HandleEffect(string effectStr, double coefficient, int hitCount, double hitLength, double hitFrequency, Enemy baseEnemy)
     {
       /* What is wanted:
       * Damage: <span>(count*stack*amount)</span> over time (<span>amount</span> per hit).
@@ -148,6 +148,8 @@ namespace DataCreator.Enemies
         if (effectType == EffectType.Damage || effectType == EffectType.DamageFixed || effectType == EffectType.DamagePercent)
         {
           amount = Helper.ParseD(effectData[0]);
+          if (effectType == EffectType.Damage)
+            amount = coefficient;
           icon = "damage";
           stacks = 1;
         }

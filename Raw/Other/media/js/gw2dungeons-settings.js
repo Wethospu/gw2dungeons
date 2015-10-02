@@ -211,6 +211,7 @@ function applyEnemySettings(updateMain) {
 
 function handleEnemy(enemy) {
 	var damageView = getSetting("damageView");
+	var damageRange = getSetting("damageRange")
 	var healingView = getSetting("healingView");
     var potionUsage = getSetting("potionUsage");
     var potionStrength = (Number)(getSetting("potionStrength")) / 100;
@@ -374,13 +375,13 @@ function handleEnemy(enemy) {
     }
 
     $(enemy).find(".damage-value").each(function () {
-        var damage = getDamage((Number)($(this).data('amount')), potionStrength, dungeonLevel);
-		damage = fractalScaleDamage(damage, fractalLevel, scalingType)
-        insertDamage(this, damageView, damage, dungeonLevel);
+		var damage = fractalScaleDamage($(this).data('amount') * power, fractalLevel, scalingType)
+		var damages = getDamage(damage, weaponStrength, potionStrength, dungeonLevel);
+        insertDamageRange(this, damages, damageView, damageRange, dungeonLevel);
     });
     $(enemy).find(".percent-value").each(function () {
         var damage = calculatePercentDamage((Number)($(this).data('amount')), dungeonLevel);
-        insertDamage(this, damageView, damage, dungeonLevel);
+        insertDamage(this, damage, damageView, dungeonLevel);
     });
     $(enemy).find(".effect-value").each(function () {
         var damage = (Number)($(this).data('amount'));
@@ -394,25 +395,25 @@ function handleEnemy(enemy) {
 		if (effect == "might")
 			$(this).html(toPercent(damage, power) + "%");
 		else if (effect == "healingPower")
-			insertHealing(this, healingView, damage, health);
+			insertHealing(this, damage, healingView, health);
 		else
-			insertDamage(this, damageView, damage, dungeonLevel);
+			insertDamage(this, damage, damageView, dungeonLevel);
     });
     $(enemy).find(".agony-value").each(function () {
         var second = (Number)($(this).data('amount'));
-        insertDamage(this, damageView, getAgonyDamage(second), dungeonLevel);
+        insertDamage(this, getAgonyDamage(second), damageView, dungeonLevel);
     });
     $(enemy).find(".fixed-value").each(function () {
         var damage = (Number)($(this).data('amount'));
-        insertDamage(this, damageView, damage, dungeonLevel);
+        insertDamage(this, damage, damageView, dungeonLevel);
     });
 	$(enemy).find(".healing-value").each(function () {
         var healing = (Number)($(this).data('amount'));
-		insertHealing(this, healingView, healing, health);
+		insertHealing(this, healing, healingView, health);
     });
 	$(enemy).find(".healing-percent-value").each(function () {
         var healing = Math.floor($(this).data('amount') * health / 100);
-		insertHealing(this, healingView, healing, health);
+		insertHealing(this, healing, healingView, health);
     });
 }
 
@@ -457,21 +458,47 @@ function simplifyArmor(armor, dungeonLevel) {
 }
 
 // Adds either percent, normal or both damage.
-function insertDamage(place, setting, amount, dungeonLevel) {
-    if (setting == "percent")
+function insertDamage(place, amount, viewSetting, dungeonLevel) {
+    if (viewSetting == "percent")
         var toAdd = "<span title=\"" + amount + "\">" + getPercentage(amount, dungeonLevel) + "%</span>";
-    else if (setting == "number")
+    else if (viewSetting == "number")
         var toAdd = "<span title=\"" + getPercentage(amount, dungeonLevel) + "%\">" + amount + "</span>";
     else
         var toAdd = amount + " (" + getPercentage(amount, dungeonLevel) + "%)";
 	$(place).html(toAdd);
 }
 
+function insertDamageRange(place, amounts, viewSetting, rangeSetting, dungeonLevel) {
+	if (rangeSetting == "maximum") {
+		var damageStr = amounts.max;
+		var percentStr = getPercentage(amounts.max, dungeonLevel);
+	}
+	else if (rangeSetting == "minimum") {
+		var damageStr = amounts.min;
+		var percentStr = getPercentage(amounts.min, dungeonLevel);
+	}
+	else if (rangeSetting == "average") {
+		var damageStr = amounts.avg;
+		var percentStr = getPercentage(amounts.avg, dungeonLevel);
+	}
+	else {
+		var damageStr = "" + amounts.min + "-" + amounts.max;
+		var percentStr = "" + getPercentage(amounts.min, dungeonLevel) + "-" + getPercentage(amounts.max, dungeonLevel);
+	}
+    if (viewSetting == "percent")
+        var toAdd = "<span title=\"" + damageStr + "\">" + percentStr + "%</span>";
+    else if (viewSetting == "number")
+        var toAdd = "<span title=\"" + percentStr + "%\">" + damageStr + "</span>";
+    else
+        var toAdd = damageStr + " (" + percentStr + "%)";
+	$(place).html(toAdd);
+}
+
 // Adds either percent, normal or both healing.
-function insertHealing(place, setting, amount, maxHealth) {
-    if (setting == "percent")
+function insertHealing(place, amount, viewSetting, maxHealth) {
+    if (viewSetting == "percent")
         var toAdd = "<span title=\"" + amount + "\">" + toPercent(amount, maxHealth) + "%</span>";
-    else if (setting == "number")
+    else if (viewSetting == "number")
         var toAdd = "<span title=\"" + toPercent(amount, maxHealth) + "%\">" + amount + "</span>";
     else
         var toAdd = amount + " (" + toPercent(amount, maxHealth) + "%)";
