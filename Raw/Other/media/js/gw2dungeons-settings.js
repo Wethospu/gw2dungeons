@@ -52,6 +52,7 @@ var settings = {
 	showArmor: true,
 	showWeaponStrength: true,
 	showPower: true,
+	showOffense: true,
 	showPrecision: true,
 	showFerocity: true,
 	showCondition: true,
@@ -341,6 +342,22 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".healing-unit").hide();
 
+	var weaponStrength = getWeaponStrength(level, $(enemy).data("weapon-level"), $(enemy).data("weapon-rarity"), $(enemy).data("weapon-type"), $(enemy).data("weapon-scale"));
+	if (getSetting("showWeaponStrength")) {
+		$(enemy).find(".weapon-unit").show();
+		$(enemy).find(".weapon").html(weaponStrength.min + "-" + weaponStrength.max);
+	}
+	else
+		$(enemy).find(".weapon-unit").hide();
+	
+	if (getSetting("showOffense")) {
+		var offense = Math.round(power * weaponStrength.avg / getArmor(level, 1));
+		$(enemy).find(".offense-unit").show();
+		$(enemy).find(".offense").html(offense);
+	}
+	else
+		$(enemy).find(".offense-unit").hide();
+	
     // Simplify health if needed.
     if (getSetting("showHealth") && getSetting("simplifyHealth")) {
         $(enemy).find(".health").each(function () {

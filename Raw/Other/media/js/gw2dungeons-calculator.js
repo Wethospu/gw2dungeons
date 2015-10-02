@@ -368,6 +368,40 @@ function getCriticalDamage(level, multiplier) {
 	return Math.round(10 * (150 + getAttribute(level, multiplier)))/10;
 }
 
+
+function getWeaponStrength(level, internalLevel, rarity, type, scale) {
+	// Weapon level gets calculated quite weird way. / 2015-10-01 / Wethospu
+	var weaponLevel = Math.min(Math.max(1, Math.min(rarity, 5)) - 1 + internalLevel, 100);
+	if (scale == 2)
+     weaponLevel += level;
+	weaponLevel = Math.min(weaponLevel, 100);
+	var monsterWeaponLut = [
+        162, 179, 197, 214, 231, 249, 267, 286, 303, 322,
+        344, 367, 389, 394, 402, 412, 439, 454, 469, 483,
+        500, 517, 556, 575, 593, 612, 622, 632, 672, 684,
+        728, 744, 761, 778, 820, 839, 885, 905, 924, 943,
+        991, 1016, 1067, 1093, 1119, 1145, 1193, 1220, 1275, 1304,
+        1337, 1372, 1427, 1461, 1525, 1562, 1599, 1637, 1692, 1731,
+        1802, 1848, 1891, 1936, 1999, 2045, 2153, 2201, 2249, 2298,
+        2368, 2424, 2545, 2604, 2662, 2723, 2792, 2854, 2985, 3047,
+        3191, 3269, 3348, 3427, 3508, 3589, 3671, 3754, 3838, 3922,
+        4007, 4093, 4180, 4267, 4356, 4445, 4535, 4625, 4717, 4809,
+        4902
+    ];
+	var avg = monsterWeaponLut[weaponLevel] * [0.5, 0.65, 0.8, 0.85, 0.9, 1, 1.05, 1.05][rarity] *
+       [1, 1.1, 1.05, 1, 1, 1, 1.1, 1, 1, 1.1, 1.15, 1, 1.1, 0.9, 0.9, 0.9, 0.9, 1, 1, 1, 1, 1, 1, 1][type];
+	   
+	var weaponPowerSpread = [
+        0.05, 0.06, 0.08, 0.05, 0.1, 0.03, 0.05, 0.06, 0.08, 0.1, 0.1, 0.06,
+        0.06, 0.03, 0.08, 0.05, 0.06, 0.05, 0.05, 0.05, 0.05, 0.05, 0, 0
+    ];
+	return {
+        min: Math.floor(avg - avg * weaponPowerSpread[type]),
+		avg: avg,
+        max: Math.floor(avg + avg * weaponPowerSpread[type])
+    };
+}
+
 ////// These values must match GW2Helper.cs ///////
 //// HEALTH SCALING /////
 

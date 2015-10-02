@@ -15,6 +15,10 @@ Time: Day.
 Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty if you want to be optimal.
 youtube=iWSS2B0vnYM|Cutscenes.
 Current record: record=22.
+tactic=rewards
+First run per character gives a level 75 rare head armor.
+First run per day gives 73 silvers. Next runs give only 23 silvers.
+Every run gives 70% of your next level which makes dungeons very good for leveling up. 
 
 name=Start
 tactic=normal

@@ -18,9 +18,9 @@ namespace DataCreator
       Multipliers = new Multipliers();
       Gender = "";
       Size = 1.0;
-      Family = null;
-      Passive = null;
-      Weapons = null;
+      Family = new Family();
+      Passive = new Passive();
+      Weapons = new Weapons();
     }
 
     [JsonProperty("name")]
@@ -59,14 +59,10 @@ namespace DataCreator
     public string ToHtml()
     {
       var htmlBuilder = new StringBuilder();
-      htmlBuilder.Append(" data-power=\"").Append(Multipliers.Power).Append("\"");
-      htmlBuilder.Append(" data-precision=\"").Append(Multipliers.Precision).Append("\"");
-      htmlBuilder.Append(" data-toughness=\"").Append(Multipliers.Toughness).Append("\"");
-      htmlBuilder.Append(" data-vitality=\"").Append(Multipliers.Vitality).Append("\"");
-      htmlBuilder.Append(" data-ferocity=\"").Append(Multipliers.Ferocity).Append("\"");
-      htmlBuilder.Append(" data-condition=\"").Append(Multipliers.ConditionDamage).Append("\"");
-      htmlBuilder.Append(" data-healing=\"").Append(Multipliers.HealingPower).Append("\"");
-      htmlBuilder.Append(" data-health=\"").Append(Multipliers.HealthMultiplier).Append("\"");
+      if (Multipliers != null)
+        htmlBuilder.Append(Multipliers.ToHtml());
+      if (Weapons != null)
+        htmlBuilder.Append(Weapons.ToHtml());
       return htmlBuilder.ToString();
     }
   }
@@ -97,6 +93,20 @@ namespace DataCreator
 
     [JsonProperty("health_multiplier")]
     public double HealthMultiplier { get; set; }
+
+    public string ToHtml()
+    {
+      var htmlBuilder = new StringBuilder();
+      htmlBuilder.Append(" data-power=\"").Append(Power).Append("\"");
+      htmlBuilder.Append(" data-precision=\"").Append(Precision).Append("\"");
+      htmlBuilder.Append(" data-toughness=\"").Append(Toughness).Append("\"");
+      htmlBuilder.Append(" data-vitality=\"").Append(Vitality).Append("\"");
+      htmlBuilder.Append(" data-ferocity=\"").Append(Ferocity).Append("\"");
+      htmlBuilder.Append(" data-condition=\"").Append(ConditionDamage).Append("\"");
+      htmlBuilder.Append(" data-healing=\"").Append(HealingPower).Append("\"");
+      htmlBuilder.Append(" data-health=\"").Append(HealthMultiplier).Append("\"");
+      return htmlBuilder.ToString();
+    }
   }
 
   public class Occurrence
@@ -111,19 +121,24 @@ namespace DataCreator
 
   public class Family
   {
+    public Family()
+    {
+      Name = "";
+      Guid = "";
+    }
 
     [JsonProperty("name")]
     public string Name { get; set; }
 
     [JsonProperty("guid")]
-    public int Guid { get; set; }
+    public string Guid { get; set; }
 
     public string GetDisplay()
     {
       string display = Helper.ToUpperAll(Name.Replace('_', ' '));
       if (display.Equals("Ascalonian Ghost"))
         display = "Ghost";
-      if (display.Equals("Undead Minion"))
+      if (display.Equals("Undead Minions"))
         display = "Undead";
       if (display.Equals("Scarlet Minion"))
         display = "Aetherblade";
@@ -152,6 +167,14 @@ namespace DataCreator
 
     [JsonProperty("underwater")]
     public Weapon Underwater { get; set; }
+
+    public string ToHtml()
+    {
+      var htmlBuilder = new StringBuilder();
+      if (Main != null)
+        htmlBuilder.Append(Main.ToHtml());
+      return htmlBuilder.ToString();
+    }
   }
 
   public class Weapon
@@ -169,8 +192,21 @@ namespace DataCreator
     [JsonProperty("rarity")]
     public int Rarity { get; set; }
 
+    [JsonProperty("internalLevel")]
+    public int InternalLevel { get; set; }
+
     [JsonProperty("skill_palette")]
     public List<SkillPalette> Skills { get; set; }
+
+    public string ToHtml()
+    {
+      var htmlBuilder = new StringBuilder();
+      htmlBuilder.Append(" data-weapon-scale=\"").Append(Scale).Append("\"");
+      htmlBuilder.Append(" data-weapon-type=\"").Append(Type).Append("\"");
+      htmlBuilder.Append(" data-weapon-rarity=\"").Append(Rarity).Append("\"");
+      htmlBuilder.Append(" data-weapon-level=\"").Append(InternalLevel).Append("\"");
+      return htmlBuilder.ToString();
+    }
   }
 
   public class SkillPalette
@@ -201,6 +237,6 @@ namespace DataCreator
   public class Tags
   {
     [JsonProperty("Damage Multiplier")]
-    public int Coefficient { get; set; }
+    public double Coefficient { get; set; }
   }
 }
