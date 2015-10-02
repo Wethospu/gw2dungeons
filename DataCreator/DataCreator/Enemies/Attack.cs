@@ -17,29 +17,14 @@ namespace DataCreator.Enemies
   {
     private readonly string _name;
     public readonly List<Effect> Effects = new List<Effect>();
-    private string _cooldown = "";
     private int _minimumRange = -1;
     private int _maximumRange = -1;
     private double _coefficient = 0;
+    private double _internalCooldown = 0.0;
+    private int _requiredLevel = -1;
+    private string _weapon = "";
     public List<Media> Medias = new List<Media>();
-    public string Cooldown
-    {
-      private get
-      {
-        return _cooldown;
-      }
-      set
-      {
-        // Gets called with empty value wben copying enemies with no cooldown.
-        if (value.Length == 0)
-        {
-          _cooldown = value;
-          return;
-        }
-        // Verify that cooldown is a number.
-        _cooldown = "" + Helper.ParseD(value);
-      }
-    }
+    public double Cooldown = 0.0;
     private string _animation = "";
     public string Animation
     {
@@ -74,36 +59,85 @@ namespace DataCreator.Enemies
       }
     }
 
-    public Attack(string name, EnemyAttributes attributes)
+    public Attack(string name)
     {
       _name = name;
-      // Attempt to find values from the database. / 2015-10-2 / Wethospu
-      if (attributes == null || attributes.Weapons == null || attributes.Weapons.Main == null)
-        return;
-      foreach (var skill in attributes.Weapons.Main.Skills)
-      {
-        if (skill.Name.Equals(name))
-        {
-          _minimumRange = skill.MinimumRange;
-          _maximumRange = skill.MaxRange;
-          if (skill.Tags != null)
-            _coefficient = skill.Tags.Coefficient;
-        }
-      }
     }
 
     public Attack(Attack toCopy)
     {
       _name = string.Copy(toCopy._name);
-      Cooldown = string.Copy(toCopy.Cooldown);
+      Cooldown = toCopy.Cooldown;
       _minimumRange = toCopy._minimumRange;
       _maximumRange = toCopy._maximumRange;
       _coefficient = toCopy._coefficient;
+      _requiredLevel = toCopy._requiredLevel;
+      _internalCooldown = toCopy._internalCooldown;
       Animation = string.Copy(toCopy.Animation);
       foreach (var media in toCopy.Medias)
         Medias.Add(new Media(media));
       foreach (var effect in toCopy.Effects)
         Effects.Add(new Effect(effect));
+    }
+
+    /***********************************************************************************************
+    * LoadAttributes / 2015-10-02 / Wethospu                                                       *
+    *                                                                                              *
+    * Loads skill attributes from datamined data.                                                  *
+    *                                                                                              *
+    * id: Id of the skill.                                                                         *
+    * attributes: Attributes for the base enemy.                                                   *
+    *                                                                                              *
+    ***********************************************************************************************/
+    public void LoadAttributes(int id, EnemyAttributes attributes)
+    {
+      if (attributes == null || attributes.Weapons == null)
+        return;
+      if (attributes.Weapons.Main != null)
+      {
+        foreach (var skill in attributes.Weapons.Main.Skills)
+        {
+          if (skill.id == id)
+          {
+            _minimumRange = skill.MinimumRange;
+            _maximumRange = skill.MaxRange;
+            _requiredLevel = skill.LevelRequirement;
+            _weapon = "main";
+            if (skill.Tags != null)
+              _coefficient = skill.Tags.Coefficient;
+          }
+        }
+      }
+      if (attributes.Weapons.Offhand != null)
+      {
+        foreach (var skill in attributes.Weapons.Offhand.Skills)
+        {
+          if (skill.id == id)
+          {
+            _minimumRange = skill.MinimumRange;
+            _maximumRange = skill.MaxRange;
+            _requiredLevel = skill.LevelRequirement;
+            _weapon = "off";
+            if (skill.Tags != null)
+              _coefficient = skill.Tags.Coefficient;
+          }
+        }
+      }
+      if (attributes.Weapons.Underwater != null)
+      {
+        foreach (var skill in attributes.Weapons.Underwater.Skills)
+        {
+          if (skill.id == id)
+          {
+            _minimumRange = skill.MinimumRange;
+            _maximumRange = skill.MaxRange;
+            _requiredLevel = skill.LevelRequirement;
+            _weapon = "water";
+            if (skill.Tags != null)
+              _coefficient = skill.Tags.Coefficient;
+          }
+        }
+      }
     }
 
     /***********************************************************************************************
@@ -139,7 +173,7 @@ namespace DataCreator.Enemies
       htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<div class=\"enemy-attack-effect\">").Append(Constants.LineEnding);
       // Add attack effects.
       foreach (var effect in Effects)
-        htmlBuilder.Append(effect.ToHtml(path, _coefficient, enemies, baseEnemy, indent + 2));
+        htmlBuilder.Append(effect.ToHtml(path, _coefficient, _weapon, enemies, baseEnemy, indent + 2));
       htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("</div>").Append(Constants.LineEnding);
       
       return htmlBuilder.ToString();

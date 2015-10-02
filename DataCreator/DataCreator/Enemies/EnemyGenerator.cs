@@ -229,6 +229,7 @@ namespace DataCreator.Enemies
           var ids = data.Split('|');
           foreach (var id in ids)
           {
+            _currentEnemy.InternalIds.Add(Helper.ParseI(id));
             if (enemyAttributes.ContainsKey(id))
             {
               // Enemy can have multiple sexes if there are model variations. / 2015-09-28 / Wethospu
@@ -412,7 +413,7 @@ namespace DataCreator.Enemies
 
         if (_currentAttack != null)
           _currentEnemy.Attacks.Add(_currentAttack);
-        _currentAttack = new Attack(LinkGenerator.CreatePageLinks(LinkGenerator.CheckLinkSyntax(data)), _currentEnemy.Attributes);
+        _currentAttack = new Attack(LinkGenerator.CreatePageLinks(LinkGenerator.CheckLinkSyntax(data)));
         _currentEffect = null;
       }
       // Tags from main loop. Save attack and exit this loop.
@@ -424,6 +425,15 @@ namespace DataCreator.Enemies
         _currentEffect = null;
         return -1;
       }
+      else if (tag.Equals("id"))
+      {
+        if (data.Length > 0)
+        {
+          _currentAttack.LoadAttributes(Helper.ParseI(data), _currentEnemy.Attributes);
+        }
+        else
+          Helper.ShowWarning("Missing info. Use \"id=number\".");
+      }
       // Tags from effect loop. Exit immediately.
       else if (tag.Equals("effect"))
       {
@@ -432,13 +442,9 @@ namespace DataCreator.Enemies
       else if (tag.Equals("cooldown"))
       {
         if (data.Length > 0)
-        {
-          if (data.Contains(" s"))
-            Helper.ShowWarning("Did you accidentaly include unnecessary 's'? Please remove!");
-          _currentAttack.Cooldown = data;
-        }
+          _currentAttack.Cooldown = Helper.ParseD(data);
         else
-          Helper.ShowWarning("Missing info. Use \"cooldown='number'\" or  \"cooldown='text'\"!");
+          Helper.ShowWarning("Missing info. Use \"cooldown='number'\".");
       }
       else if (tag.Equals("additional"))
       {
@@ -600,6 +606,19 @@ namespace DataCreator.Enemies
         Helper.ShowWarning("Missing info. Use syntax \"copy" + Constants.TagSeparator + "'name'|'category'|'path1':'path2':'pathN'\"");
         return null;
       }
+      // Check whether copy by id is used. / 2015-10-02 / Wethospu
+      try
+      {
+        var id = int.Parse(data);
+        foreach (var enemy in enemies)
+        {
+          if (enemy.InternalIds.Contains(id))
+            return enemy;
+        }
+        Helper.ShowWarning("No enemy found for copy " + data + ". Change parameters, add the missing enemy, change order of enemies or check the readme.");
+      }
+      catch { }
+
       if (data.Contains(Constants.TagSeparator))
         Helper.ShowWarning("'" + Constants.TagSeparator + "' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'category'|'path1':'path2':'pathN'\"");
       var dataSplit = data.Split('|');

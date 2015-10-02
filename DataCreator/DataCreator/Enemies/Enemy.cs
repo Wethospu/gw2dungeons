@@ -31,6 +31,7 @@ namespace DataCreator.Enemies
     public TacticList Tactics = new TacticList();
     public List<Media> Medias = new List<Media>();
     public SortedSet<string> Tags = new SortedSet<string>();
+    public SortedSet<int> InternalIds = new SortedSet<int>();
 
     private int _level = 0;
     private bool _useCustomPath = false;

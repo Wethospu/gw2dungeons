@@ -136,6 +136,8 @@ namespace DataCreator
     public string GetDisplay()
     {
       string display = Helper.ToUpperAll(Name.Replace('_', ' '));
+      if (display.Equals("Ghost"))
+        display = "Spectre";
       if (display.Equals("Ascalonian Ghost"))
         display = "Ghost";
       if (display.Equals("Undead Minions"))
@@ -172,7 +174,11 @@ namespace DataCreator
     {
       var htmlBuilder = new StringBuilder();
       if (Main != null)
-        htmlBuilder.Append(Main.ToHtml());
+        htmlBuilder.Append(Main.ToHtml("main"));
+      if (Offhand != null)
+        htmlBuilder.Append(Offhand.ToHtml("off"));
+      if (Underwater != null)
+        htmlBuilder.Append(Underwater.ToHtml("water"));
       return htmlBuilder.ToString();
     }
   }
@@ -198,13 +204,13 @@ namespace DataCreator
     [JsonProperty("skill_palette")]
     public List<SkillPalette> Skills { get; set; }
 
-    public string ToHtml()
+    public string ToHtml(string prefix)
     {
       var htmlBuilder = new StringBuilder();
-      htmlBuilder.Append(" data-weapon-scale=\"").Append(Scale).Append("\"");
-      htmlBuilder.Append(" data-weapon-type=\"").Append(Type).Append("\"");
-      htmlBuilder.Append(" data-weapon-rarity=\"").Append(Rarity).Append("\"");
-      htmlBuilder.Append(" data-weapon-level=\"").Append(InternalLevel).Append("\"");
+      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-scale =\"").Append(Scale).Append("\"");
+      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-type=\"").Append(Type).Append("\"");
+      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-rarity=\"").Append(Rarity).Append("\"");
+      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-level=\"").Append(InternalLevel).Append("\"");
       return htmlBuilder.ToString();
     }
   }
