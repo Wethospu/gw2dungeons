@@ -38,14 +38,14 @@ subeffect=poison:5
 
 ##################################################################
 # Levels 75, 80 and 82 exist.
-copy=Orrian Farmer
+copy=8289
 name=Orrian Servant
 # VERIFY 8298
 ID=8299
 alt=Orrian Servants
 
 # Level 75, 80 and 82 exist.
-copy=Orrian Farmer
+copy=8289
 name=Orrian Villager
 # VERIFY 8303
 ID=8302
@@ -305,14 +305,14 @@ subeffect=damage:-
 subeffect=launch:2.3
 
 ##################################################################
-
+copy=8727
 name=Orrian Warrior
 ID=8316
 alt=Warrior
 path=Arah1|Arah2|Arah3|Arah4
 category=champion
 
-copy=8727
+
 
 ##################################################################
 

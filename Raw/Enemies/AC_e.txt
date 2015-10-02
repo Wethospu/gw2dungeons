@@ -9,101 +9,108 @@ image=https://wiki.guildwars2.com/images/f/fd/Ascalonian_Lieutenant.jpg
 Path=ACS
 
 Attack=Charged Backbreaker
+ID=4049
 image=http://i.imgur.com/KMKdoV3.gif
 cooldown=3
 Animation=Holds glowing hammer behind back|2.25
 effect=Melee
-subeffect=Damage:422368
+subeffect=Damage:-
 #note=move behind his back or out of range
 
 Attack=Stomp
+ID=4056
 image=http://i.imgur.com/fQWfn6G.gif
 cooldown=10
 Animation=jumps to air|0.5
 effect=PBAoE
-subeffect=Damage:596568
+subeffect=Damage:.
 subeffect=launch:3.3
 #note=Try to dodge, bring a stun break.
 
 Attack=Earthshaker
+ID=4051
 image=http://i.imgur.com/0nuec45.gif
 cooldown=27
 Animation=leaps with hammer above head|0.5
 effect=PBAoE
-subeffect=Damage:586920
+subeffect=Damage:-
 subeffect=Knockdown:4
 #note=Try to dodge, bring a stun break.
 
 ##################################################################
 
 Name=Ascalonian Captain (Ranged)
-# Verify: 3363
 ID=9062
 Category=Champion
 image=http://wiki.guildwars2.com/images/c/cd/Ascalonian_Captain.jpg
 Path=ACS
 
 Attack=Spread Shot
+ID=4088
 image=http://i.imgur.com/fsLrfi3.gif
 cooldown=3
 animation=aims|0.25|white projectile
 effect=homing projectile
-subeffect=damage:335000
+subeffect=damage:-
 subeffect=knockback:1.5
 
 attack=Stomp
+ID=4056
 cooldown=11
 image=http://i.imgur.com/NU4UMSI.gif
 animation=jumps|0.5
 effect=PBAoE
-subeffect=damage:441128
+subeffect=damage:-
 subeffect=launch:3.2
 
 ##################################################################
 
 Name=Ascalonian Captain (Melee)
-# Verify: 9062
 ID=3363
 Category=Champion
 image=http://wiki.guildwars2.com/images/a/af/Champion_Ascalonian_Captain.jpg
 Path=ACS
 
 Attack=Greatsword Swing (1)
+ID=3368
 image=http://i.imgur.com/La0ekiP.gif
 cooldown=1
 animation=swings sword from right|0.5
 effect=melee
-subeffect=damage:466320
+subeffect=damage:-
 
 Attack=Greatsword Slice (2)
 animation=swings sword from left|0.65
 effect=melee
-subeffect=damage:466320
+subeffect=damage:0.5
 
 Attack=Brutal Strike (3)
 animation=uppercut|0.8
 effect=melee
-subeffect=damage:523136
+subeffect=damage:0.6
 subeffect=vulnerability:10
 
 attack=Slash
+ID=3250
 image=http://i.imgur.com/TTAj7Fj.gif
 cooldown=22
 animation=spins around|0.5|keeps spinning
 effect=slow dash with PBAoE (3 hits in 0.7 s)
 count=3
 length=0.7
-subeffect=damage:458816
+subeffect=damage:-
 
 attack=Rush (1)
+ID=3403
 image=http://i.imgur.com/0IWIkGp.gif
 cooldown=22
 animation=instant|0|runs while leaning forward with sword behind back
 effect=dash
-subeffect=damage:882792
+subeffect=damage:-
 #note=running away usually makes it miss but blocking/evading is safer
 
-attack=Rush End (2)
+attack=Uppercut (2)
+ID=3405
 animation=uppercut from right|0.3
 effect=melee
 subeffect=damage:450240
@@ -111,6 +118,7 @@ subeffect=damage:450240
 ##################################################################
 
 Name=Ranger Nente
+ID=1701
 alt=Nente
 Category=Champion
 image=http://wiki.guildwars2.com/images/8/8c/Champion_Master_Ranger_Nente.jpg
@@ -136,28 +144,31 @@ image=http://wiki.guildwars2.com/images/8/8c/Champion_Master_Ranger_Nente.jpg
 Path=ACS
 
 Attack=Hammer Swing (1)
+ID=4101
 image=http://i.imgur.com/4sXDrJJ.gif
 animation=raises hammer behind back|0.75
 cooldown=3
 effect=small PBAoE
-subeffect=damage:368768
+subeffect=damage:0.5
 subeffect=knockdown:3
 
 attack=Hammer Bash (2)
+ID=2102
 image=http://i.imgur.com/HJkvnjE.gif
 animation=jumps hammer above head|0.5
 effect=melee
-subeffect=damage:438448
+subeffect=damage:0.6
 # VERIFY: Is this double hit or double damage?
 effect=+melee (if target is disabled)
-subeffect=damage:438448
+subeffect=damage:0.6
 
 attack=Crude Swing
+ID=4103
 image=http://i.imgur.com/Wd8KxCj.gif
 cooldown=11
 animation=swings from right with a spin|0.7
 effect=small PBAoE
-subeffect=damage:485080
+subeffect=damage:-
 
 ##################################################################
 
@@ -168,26 +179,28 @@ image=http://wiki.guildwars2.com/images/0/0e/Elite_Fang.jpg
 Path=ACS
 
 attack=Bite (1)
+ID=4104
 effect=melee
-subeffect=damage:337144
+subeffect=damage:-
 subeffect=bleeding:6
 subeffect=crippled:5
 
 attack=Bite (2)
 effect=melee
-subeffect=damage:361800
+subeffect=damage:0.5
 subeffect=bleeding:6
 
 attack=Leap
+ID=4106
 animation=withdraws|1
 effect=leap
-subeffect=damage:337144
+subeffect=damage:-
 subeffect=bleeding:6
 subeffect=crippled:5
 
 ##################################################################
 
-copy=Fang|Elite
+copy=9247
 name=Shadow
 ID=5751
 
@@ -199,7 +212,8 @@ Category=Champion
 image=http://wiki.guildwars2.com/images/f/fc/Champion_Kasha.jpg
 Path=ACS
 
-Attack=Condition wells
+Attack=Corrupted Ground
+ID=4122
 image=http://i.imgur.com/JYXa2zQ.gif
 animation=raises staff horizontally|1.5|red circles
 effect=5 delayed (2 s) AoE fields in 3.2 s
@@ -214,7 +228,8 @@ subeffect=Poison:5
 subeffect=bleeding:5
 #note=Run out, dodge if needed
 
-Attack=Summon
+Attack=Summon Flesh Golem
+ID=4126
 image=http://i.imgur.com/2QPxUkY.gif
 animation=kneels and raises left arm|0.6|shoots 1 blue ball
 effect=summon enemy=Flesh_Golem:normal
@@ -245,17 +260,19 @@ Category=Normal
 Path=ACS
 
 attack=Fist
+ID=4125
 cooldown=4
 animation=swings left/right arm|0.3
 effect=melee
-subeffect=damage:84152
+subeffect=damage:-
 subeffect=knockback:1.5
 
 attack=Slash
+ID=4124
 cooldown=4
 animation=swings left/right arm|0.3
 effect=melee
-subeffect=damage:80936
+subeffect=damage:-
 subeffect=knockback:1.5
 
 ##################################################################
@@ -289,35 +306,37 @@ attack=No unshakeable or defiant
 #note=Control skills are very effective
 
 attack=Lightning Orb
+ID=4092
 image=http://i.imgur.com/4GlYVA7.gif
 cooldown=2
 animation=swings left arm|1.1|throws a blue ball
 effect=projectile with small AoE
-subeffect=damage:239056
+subeffect=damage:-
 
 attack=Branded Lightning Strike
+ID=4091
 image=http://i.imgur.com/Go6XNVo.gif
 animation=swings left arm from right|0.6
 cooldown=17
 effect=ranged
-subeffect=damage:564944
+subeffect=damage:-
 subeffect=blind:5
 
 attack=Lightning Storm
+ID=4095
 image=http://i.imgur.com/VCFqo8M.gif
 animation=spins and raises arm|1.75
 cooldown=10
 effect=ticking PBAoE (10 hits in 4.5 s)
 count=10
 length=4.5
-subeffect=damage:389672
+subeffect=damage:-
 #note=dodge out
 
 attack=Tornado
-# not tested: 30 and 45 gw2db.com
-cooldown=30
+ID=4108
 effect=ticking AoE
-subeffect=damage:499016
+subeffect=damage:-
 subeffect=launch:2.3
 
 attack=Lover's Embrace
@@ -337,21 +356,23 @@ attack=No unshakable
 #note=Control skills are very effective
 
 attack=Shared Burden
+ID=4090
 image=http://i.imgur.com/ZbCtTY9.gif
 animation=swings right arm|0.25|throws brown ball
 cooldown=2
 effect=bouncing projectile
-subeffect=damage:519384
+subeffect=damage:-
 subeffect=crippled:2
 
 attack=Chaos Storm
+ID=4107
 image=http://i.imgur.com/UCvA8YJ.gif
 cooldown=15
 animation=swings left arm|0.25|purple circle
 effect=ticking AoE (6 hits in 5 s)
 count=6
 length=5
-subeffect=damage:213864
+subeffect=damage:-
 subeffect=bleeding:3|16%
 subeffect=blind:3|16%
 subeffect=chilled:3|16%
@@ -383,11 +404,12 @@ category=normal
 path=ACS
 
 attack=Backfire
+ID=10166
 cooldown=7
 animation=shakes head (sometimes)|0.9|purple projectile
 additional=also hits allies
 effect=bouncing projectile
-subeffect=damage:206896
+subeffect=damage:-
 subeffect=confusion:3:3
 subeffect=retaliation:3
 
@@ -400,25 +422,29 @@ image=http://wiki.guildwars2.com/images/a/ad/Legendary_King_Adelbern.jpg
 path=ACS
 
 attack=Fire Swing (1)
+ID=4087
 image=http://i.imgur.com/IoI5CGg.gif
 cooldown=1
 animation=swings sword from right|0.8
 effect=melee
-subeffect=damage:95408
+subeffect=damage:-
 #note=stay behind king at maximum melee range and he will keep hitting air
 
 attack=Gash (2)
+ID=4086
 animation=swings sword from left|0.6
 effect=melee
-subeffect=damage:236376
+subeffect=damage:-
 
 attack=Final Thrust (3)
+ID=4085
 animation=swings sword from right|0.6
 effect=melee
-subeffect=damage:230480
+subeffect=damage:-
 subeffect=Burning:3
 
-attack=Pull
+attack=Draw Spirit
+ID=4066
 image=http://i.imgur.com/cOfEl4N.gif
 cooldown=21
 animation=pulls sword behind back and pulls air in|0.25
@@ -427,19 +453,21 @@ effect=cone
 subeffect=pull:1.5
 
 attack=Foefire
+ID=4065
 image=http://i.imgur.com/x2vo8xA.gif
 animation=pulls sword behind back|0.5
 cooldown=10
 additional=only used at distant targets
 effect=fast projectile
-subeffect=damage:473824
+subeffect=damage:-
 subeffect=launch:2.3
 #note=try to block/evade
 effect=melee (may happen at close range)
-subeffect=damage:473824
+subeffect=damage:-
 subeffect=knockback:2.3
 
 attack=Foefire
+ID=4068
 image=http://i.imgur.com/gyqIAcW.gif
 cooldown=9
 animation=bends forward and raises right arm|1.25
@@ -447,7 +475,7 @@ additional=only used at distant targets
 effect=delayed (4 s) ticking AoE (25 hits in 24 s)
 count=25
 length=24
-subeffect=damage:385920
+subeffect=damage:0.4
 #note=pay attention to ground, may be hard to see
 #note=run out / evade
 
@@ -459,6 +487,7 @@ Category=legendary
 Path=AC1|AC2|AC3
 
 attack=Bite
+ID=4012
 #description=Bites close enemies which causes weakness and bleeding.
 cooldown=4
 animation=leans back|0.75
@@ -471,6 +500,7 @@ subeffect=bleeding:5:6
 #note=Run through Queen or away from her (needs good timing and swiftness)
 
 attack=Entangling Web
+ID=4005
 #description=Sprays web which immobilizes nearby enemies.
 cooldown=10
 animation=leans back and raises "tail"|1.5|white webs
@@ -478,7 +508,7 @@ additional=changes direction after initial cast and after the first hit. Used at
 effect=5 cones in 2.5 s
 count=5
 length=2.5
-subeffect=damage:243588
+subeffect=damage:0.2
 subeffect=immobilized:5
 #note=Stay at high range or quickly move away from her
 #note=First hit can NOT be avoided by movement. However, you can move around her to avoid rest of the hits
@@ -487,6 +517,7 @@ subeffect=immobilized:5
 #note=If you get hit, remove immobilized after the attack has finished
 
 Attack=Venom Spray
+ID=4006
 #description=Shoots poison wells which deal heavy damage.
 cooldown=13
 animation=glows|1.5|green projectiles
@@ -494,7 +525,7 @@ additional=can't be blocked or evaded
 effect=3 projectiles (cone) with big ticking AoEs (21 hits in 20 s)
 count=21
 length=20
-subeffect=damage:487176
+subeffect=damage:0.4
 subeffect=poison:6
 #note=get quickly out of the red circles, use a mobility skill if needed
 #note=makes reviving very dangerous
@@ -511,22 +542,24 @@ Category=Champion
 Path=AC1|AC2|AC3
 
 Attack=Troll Smash
+ID=3945
 cooldown=3
 animation=swings right arm|1|throws a ball
 additional=can't be blocked
 effect=bouncing and homing ranged
-subeffect=damage:0
+subeffect=damage:-
 subeffect=weakness:5
 subeffect=daze:1
 subeffect=removes 1 boon per hit
 #note=evade
 
-attack=stomp (1)
+attack=Stomp (1)
+ID=Stomp
 cooldown=17
 animation=crouches, roars up and jumps|2|red circle appears
 additional=can't be blocked
 effect=leap (1.5 s) with PBAoE
-subeffect=damage:0
+subeffect=damage:-
 subeffect=launch:2.3
 #note=evade
 
@@ -534,14 +567,15 @@ attack=Stomp (2)
 animation=after landing|0.5
 additional=Can't be blocked. Minimum range
 effect=piercing ranged at every target
-subeffect=damage:0
+subeffect=damage:1
 subeffect=knockdown:2
 subeffect=crippled:6
 subeffect=bleeding:6:3
 #note=sidestep or evade
 #note=stay inside Troll
 
-attack=Roar
+attack=Shout
+ID=3949
 cooldown=20
 animation=holds head and roars forward|0.75
 additional=Can't be blocked or evaded
@@ -563,7 +597,7 @@ subeffect=No effect
 # Remember to update HOTW1 Icebrood enemy=Troll:Champion too!
 # Verified for nothing.
 
-copy=Cave Troll
+copy=7041
 Name=Cave Troll
 ID=7020
 Path=ACS
@@ -577,10 +611,19 @@ Category=Champion
 Path=AC1|AC2|AC3
 
 Attack=Summon 2 Elite Ghosts
-additional=Used at 75%/50%/25% health
+additional=Used at 100%/75%/50%/25% health
+effect=At 100% (initially)
+subeffect=Summon an enemy=Elementalist:elite and a enemy=Monk:elite.
+effect=At 75%
+subeffect=Summon a enemy=Mesmer:elite and a enemy=Warrior:elite.
+effect=At 50%
+subeffect=Summon a enemy=Necromancer:elite and a enemy=Warrior:elite.
+effect=At 25%
+subeffect=Summon a enemy=Mesmer:elite and a enemy=Ranger:elite.
 #note=Focus enemies
 
 Attack=Scorpion Wire (1)
+ID=4040
 animation=glows and pulls his sword back
 additional=also hits stealthed targets
 effect=2 projectiles at every target
@@ -603,46 +646,53 @@ subeffect=bleeding:0
 #note=break stun and evade back
 
 attack=Heartseeker
+ID=4017
 animation=turns|0.1|moves in air
 additional=Can't be blocked
 effect=leap (0.4 s)
-subeffect=damage:430572
-effect=if target is at low health
-subeffect=damage:907572
+subeffect=damage:0.5
+effect=when the target is below 66%
+subeffect=damage:0.7
+effect=when the target is below 33%
+subeffect=damage:1
 
 attack=Serpent's Strike
+ID=4015
 animation=Green snake
 effect=Move behind target
 subeffect=buff:evade:0
 effect=Melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=poison:0
 
 attack=Serpent's Strike
+ID=4015
 cooldown=6
 animation=crouches|0.2|moves in air with green snake effect
 effect=Leap (0.6 s)
-subeffect=damage:462372
+subeffect=damage:-
 subeffect=poison:6
 subeffect=vulnerability:3
 
 attack=Hornet String (1)
+ID=4013
 animation=swings from right|0.4|bee effect
 effect=melee
-subeffect=damage:454104
+subeffect=damage:-
 subeffect=might:5
 effect=Dodge back
 subeffect=buff:evade:0
 
 attack=Monarch's Leap (2)
 effect=leap
-subeffect=damage:448380
+subeffect=damage:0.5
 subeffect=crippled:0
 
 attack=Flanking Strike (1)
+ID=4019
 animation=moves to side of target and spins|0.6
 effect=melee
-subeffect=damage:438840
+subeffect=damage:-
 subeffect=vulnerability:5
 effect=Move behind target
 subeffect=buff:evade:0
@@ -650,7 +700,7 @@ subeffect=buff:evade:0
 attack=Flanking Stab (2)
 animation=holds right sword behind back|0.5
 effect=single target melee
-subeffect=damage:438204
+subeffect=damage:0.5
 
 ##################################################################
 
@@ -661,6 +711,7 @@ image=http://wiki.guildwars2.com/images/7/7b/Shadow_Skelk.jpg
 Path=AC1
 
 Attack=Spirit Scream
+ID=3997
 cooldown=5
 animation=holds head|0.8
 additional=can't rotate
@@ -674,6 +725,7 @@ subeffect=weakness:5
 #note=run behind
 
 Attack=Spirit Scream
+ID=3987
 cooldown=27
 animation=waves hands|2.5|huge beam
 additional=can't rotate
@@ -707,6 +759,7 @@ Category=Legendary
 Path=AC2
 
 attack=Patriarch Swipe
+ID=4024
 cooldown=4
 animation=swings left/right arm|1|shoots 3/6 blue spinning circles
 effect=3 piercing projectiles (cone)
@@ -721,6 +774,7 @@ subeffect=bleeding:5:2
 subeffect=crippled:5
 
 Attack=Ectoplasmic Spew
+ID=17221
 cooldown=15
 animation=holds head and spreads hands|1
 effect=3 projectiles in 1.75 s
@@ -735,6 +789,7 @@ subeffect=damage:276024
 subeffect=vulnerability:10:3
 
 attack=Buff
+ID=17222
 cooldown=35
 animation=waves hands in air and holds head|3
 effect=PBAoE
@@ -760,7 +815,8 @@ Path=AC2
 attack=Ghost Shield
 effect=buff
 subeffect=Immunity to conditions and high damage reduction
-effect=aura (every 0.75 s)
+effect=aura
+frequency=0.75
 subeffect=damage:0
 subeffect=vulnerability:1
 
