@@ -343,16 +343,20 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".healing-unit").hide();
 
-	var weaponStrength = getWeaponStrength(level, $(enemy).data("weapon-level"), $(enemy).data("weapon-rarity"), $(enemy).data("weapon-type"), $(enemy).data("weapon-scale"));
+	var weaponStrengthMain = getWeaponStrength(level, $(enemy).data("weapon-main-level"), $(enemy).data("weapon-main-rarity"), $(enemy).data("weapon-main-type"), $(enemy).data("weapon-main-scale"));
+	if ($(enemy).data("weapon-off-level") != null)
+		var weaponStrengthOff = getWeaponStrength(level, $(enemy).data("weapon-off-level"), $(enemy).data("weapon-off-rarity"), $(enemy).data("weapon-off-type"), $(enemy).data("weapon-off-scale"));
+	if ($(enemy).data("weapon-water-level") != null)
+		var weaponStrengthWater = getWeaponStrength(level, $(enemy).data("weapon-water-level"), $(enemy).data("weapon-water-rarity"), $(enemy).data("weapon-water-type"), $(enemy).data("weapon-water-scale"));
 	if (getSetting("showWeaponStrength")) {
 		$(enemy).find(".weapon-unit").show();
-		$(enemy).find(".weapon").html(weaponStrength.min + "-" + weaponStrength.max);
+		$(enemy).find(".weapon").html(weaponStrengthMain.min + "-" + weaponStrengthMain.max);
 	}
 	else
 		$(enemy).find(".weapon-unit").hide();
 	
 	if (getSetting("showOffense")) {
-		var offense = Math.round(power * weaponStrength.avg / getArmor(level, 1));
+		var offense = Math.round(power * weaponStrengthMain.avg / getArmor(level, 1));
 		$(enemy).find(".offense-unit").show();
 		$(enemy).find(".offense").html(offense);
 	}
@@ -376,7 +380,13 @@ function handleEnemy(enemy) {
 
     $(enemy).find(".damage-value").each(function () {
 		var damage = fractalScaleDamage($(this).data('amount') * power, fractalLevel, scalingType)
-		var damages = getDamage(damage, weaponStrength, potionStrength, dungeonLevel);
+		var weaponSlot = $(this).data('weapon');
+		if (weaponSlot == "water")
+			var damages = getDamage(damage, weaponStrengthWater, potionStrength, dungeonLevel);
+		else if (weaponSlot == "off")
+			var damages = getDamage(damage, weaponStrengthOff, potionStrength, dungeonLevel);
+		else
+			var damages = getDamage(damage, weaponStrengthMain, potionStrength, dungeonLevel);
         insertDamageRange(this, damages, damageView, damageRange, dungeonLevel);
     });
     $(enemy).find(".percent-value").each(function () {
