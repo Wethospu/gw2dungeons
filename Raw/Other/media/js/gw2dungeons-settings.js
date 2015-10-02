@@ -13,7 +13,7 @@ var placeholders = {
 
 // Find correct starting values from statcalculator.
 function updatePlaceholderValues() {
-    placeholders.health = getHealth(getSetting("level"), getSetting("profession"));
+    placeholders.health = getPlayerHealth(getSetting("level"), getSetting("profession"));
     placeholders.armor = getBaseArmor(getSetting("level"), getSetting("profession"));
     $("#armorSetting").attr("placeholder", placeholders.armor);
     $("#healthSetting").attr("placeholder", placeholders.health);
@@ -52,7 +52,7 @@ var settings = {
 	showArmor: true,
 	showWeaponStrength: true,
 	showPower: true,
-	showOffense: true,
+	showOffense: false,
 	showPrecision: true,
 	showFerocity: true,
 	showCondition: true,
@@ -378,7 +378,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".weapon-unit").hide();
 	
 	if (getSetting("showOffense")) {
-		var offense = Math.round(power * weaponStrengthMain.avg / getArmor(level, 1));
+		var offense = Math.round(100 * power * weaponStrengthMain.avg / getArmor(level, 1) / getPlayerHealth(80, "elementalist"));
 		$(enemy).find(".offense-unit").show();
 		$(enemy).find(".offense").html(offense);
 	}

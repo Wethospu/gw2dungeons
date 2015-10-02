@@ -8,7 +8,7 @@ function toPercent(val1, val2) {
 var STAT_MAX = 1000;
 
 // Calculates base health at given level and profession.
-function getHealth(level, profession) {
+function getPlayerHealth(level, profession) {
     return getBaseHealth(level, profession) + STAT_MAX * 10 * getStatScale(level);
 }
 
