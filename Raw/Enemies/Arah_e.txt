@@ -13,24 +13,27 @@ path=Arah1|Arah2|Arah3|Arah4
 category=normal
 
 attack=Claw
+ID=2409
 cooldown=3
 animation=swings right arm|0.5
 effect=melee
-subeffect=damage:1282200
+subeffect=damage:-
 effect=randomly
 subeffect=poison:5
 
 attack=Frenzy
+ID=2474
 cooldown=16
 animation=crouches and shouts|0.25|brown effect
 effect=buff (8 s)
 subeffect=deal 50% more damage and cooldowns get reduced to 50%
 
 attack=Kick
+ID=2476
 cooldown=24
 animation=jumps and kicks|0.25
 effect=melee
-subeffect=damage:1282200
+subeffect=damage:-
 subeffect=poison:5
 
 ##################################################################
@@ -57,18 +60,21 @@ path=Arah1|Arah2|Arah3|Arah4
 category=normal
 
 attack=Necrotic Grasp
+ID=2693
 cooldown=0
 effect=projectile
-subeffect=damage:0
+subeffect=damage:-
 
-attack=Buff
+attack=Furious Prayer
+ID=2695
 effect=PBAoE
 subeffect=might:5:3
 subeffect=fury:10
 
 attack=Dark Halting
+ID=2694
 effect=???
-subeffect=damage:0
+subeffect=damage:-
 subeffect=crippled:5
 
 ##################################################################
@@ -81,18 +87,20 @@ path=Arah1|Arah2|Arah3|Arah4
 category=elite
 
 attack=Vapor Blades
+ID=4141
 cooldown=1.5
 image=http://giant.gfycat.com/FelineEminentArcticwolf.gif
 animation=swings right arm|0.75|shoots 7 rings
 effect=7 returning and piercing projectiles in a cone
 count=17
 length=1
-subeffect=damage:4932196
+subeffect=damage:-
 subeffect=vulnerability:3:3
 #note=extreme damage at close range
 #note=reflecting is extremely effective
 
 attack=Cone of Corruption
+ID=4140
 image=http://giant.gfycat.com/CloseEcstaticJunebug.gif
 animation=leans back and kneels forward|0.4|sprays blue mist
 cooldown=10
@@ -100,10 +108,11 @@ additional=able to rotate
 effect=5 cones in 2 s
 count=5
 length=2
-subeffect=damage:4143643
+subeffect=damage:-
 subeffect=chilled:8
 
-attack=Self Buff
+attack=Frost Armor
+ID=4142
 cooldown=15
 image=http://fat.gfycat.com/PleasedGraciousAllensbigearedbat.gif
 animation=moves weird|0.5
@@ -120,16 +129,18 @@ path=Arah1|Arah2|Arah3|Arah4
 category=elite
 
 attack=Throw Axe
+ID=4149
 animation=swings right arm|0.25|throws an axe
 cooldown=1.5
 effect=bouncing projectile (5 hits)
 count=5
-subeffect=damage:7402568
+subeffect=damage:-
 #note=reflecting is extremely effective
 #note=extremely dangerous when it bounces between two targets
 #note=sidestep at range to avoid
 
 attack=Call of the Wild
+ID=4148
 animation=blows warhorn|0.3
 cooldown=9
 effect=PBAoE
@@ -149,15 +160,17 @@ path=Arah1|Arah2|Arah3|Arah4
 category=normal
 
 attack=Claw
+ID=2850
 animation=dives towards target|0.25
 cooldown=1.75
 effect=medium-range single target
-subeffect=damage:2835799
+subeffect=damage:-
 
 attack=Swoop
+ID=2851
 animation=glows
 effect=melee
-subeffect=damage:4006875
+subeffect=damage:-
 effect=buff:evade
 
 ##################################################################
@@ -170,24 +183,26 @@ path=Arah1|Arah2|Arah3|Arah4
 category=elite
 
 attack=Chaos Beam
+ID=4143
 cooldown=4.5
 image=http://giant.gfycat.com/GoodnaturedLegitimateEmperorshrimp.gif
 animation=purple beam|0.5
 effect=10 ranged hits in 1.5 s
 count=10
 length=1.5
-subeffect=damage:1104829
+subeffect=damage:-
 subeffect=vulnerability:4
 #note=keep controlled
 
 attack=Chaos Storm
+ID=4144
 image=http://giant.gfycat.com/RepulsiveFairArieltoucan.gif
 animation=turns right and raises left arm|0.25
 cooldown=13
 effect=ticking AoE (6 hits in 5 s)
 count=6
 length=5
-subeffect=damage:10122969
+subeffect=damage:-
 subeffect=weakness:0|25%
 subeffect=poison:2|25%
 subeffect=chilled:1|25%
@@ -209,31 +224,34 @@ path=Arah1|Arah2|Arah3|Arah4
 category=elite
 
 attack=Water Bolt
+ID=4146
 image=http://giant.gfycat.com/FrighteningTangibleBufflehead.gif
 animation=swings left arm from right|0.75
 cooldown=3
 effect=projectile
-subeffect=damage:9330142
+subeffect=damage:-
 #note=sidestep, block/evade or tank
 
 attack=Corrupted Geyser
+ID=4147
 image=http://giant.gfycat.com/AromaticBreakableBaiji.gif
 cooldown=9
 animation=bends backwards, crouches and raises left arm|1
 effect=7 ticking AoEs (6 hits in 5 s)
 count=6
 length=5
-subeffect=damage:4575317
+subeffect=damage:-
 subeffect=regeneration:5
 #note=AoEs may overlap resulting in extreme damage
 #note=block/evade first tick
 
 attack=Wave of Corruption
+ID=4145
 image=http://giant.gfycat.com/SlightImpoliteAllensbigearedbat.gif
 cooldown=10
 animation=rises up in air spinning and smashes ground with staff|1
 effect=PBAoE
-subeffect=damage:11131633
+subeffect=damage:-
 subeffect=Launch:2.8
 subeffect=cure 1 condition
 
@@ -247,38 +265,43 @@ path=Arah3|Arah4
 category=elite
 
 attack=Swing (1)
+ID=4135
 cooldown=6
 animation=raises arms overhead with greatsword and swings|0.35
 effect=melee
-subeffect=damage:9212607
+subeffect=damage:-
 subeffect=bleeding:30
 
 attack=Slice (2)
+ID=4136
 cooldown=6
 animation=waits and swings greatsword from right|1.75
 effect=melee
-subeffect=damage:9199785
+subeffect=damage:-
 subeffect=bleeding:30
 
 attack=Brutal Strike (3)
+ID=4137
 cooldown=6
 animation=waits, holds greatsword behind back and thrusts forward|2
 effect=melee
-subeffect=damage:17085315
+subeffect=damage:-
 subeffect=bleeding:30
 
 attack=Bladetrail
+ID=4139
 cooldown=7
 animation=raises arms overhead without greatsword|0.75|throws a greatsword
 additional=can't be evaded
 effect=returning projectile
-subeffect=damage:9272443
+subeffect=damage:-
 subeffect=crippled:8
 
 attack=Uppercut
+ID=4138
 animation=points greatsword towards ground and hits up|0.3
 effect=melee
-subeffect=damage:12785671
+subeffect=damage:-
 subeffect=launch:2.3
 
 ##################################################################
@@ -289,26 +312,7 @@ alt=Warrior
 path=Arah1|Arah2|Arah3|Arah4
 category=champion
 
-attack=Swing
-cooldown=6
-animation=raises arms overhead with greatsword and swings|0.35
-effect=melee
-subeffect=damage:9740446
-subeffect=bleeding:30
-
-attack=Bladetrail
-cooldown=7
-animation=raises arms overhead without greatsword|0.75|throws a greatsword
-additional=can't be evaded
-effect=returning projectile
-subeffect=damage:9552390
-subeffect=crippled:8
-
-attack=Uppercut
-animation=points greatsword towards ground and hits up|0.3
-effect=melee
-subeffect=damage:14959000
-subeffect=launch:2.3
+copy=8727
 
 ##################################################################
 
@@ -321,12 +325,13 @@ path=Arah1|Arah4
 category=elite
 
 attack=Ooze Multi
+ID=4202
 image=http://giant.gfycat.com/FrigidLeanFrillneckedlizard.gif
 cooldown=0
 effect=channeled melee (4 hits over 3 s?)
 count=4
 length=3
-subeffect=damage:0
+subeffect=damage:-
 subeffect=weakness:10
 subeffect=crippled:10
 subeffect=poison:10
@@ -334,6 +339,7 @@ subeffect=vulnerability:10:3
 #note=do not stand in front of them
 
 attack=Split
+ID=4158
 image=http://giant.gfycat.com/FeminineSaltyAmericanavocet.gif
 animation=melts and throws 2 brown balls
 additional=used at 20% health. Can't be blocked
@@ -355,6 +361,8 @@ image=http://wiki.guildwars2.com/images/3/3c/Lesser_Ooze.jpg
 path=Arah1|Arah4
 category=normal
 
+attack=Attempts to regroup to form a enemy=Vile_Ooze:elite
+
 ##################################################################
 
 name=Lesser Ooze (Fighting)
@@ -366,9 +374,10 @@ path=Arah1|Arah4
 category=normal
 
 attack=Ooze Multi
+ID=4157
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=crippled:10
 
 ##################################################################
@@ -398,49 +407,29 @@ path=Arah1|Arah2|Arah3|Arah4
 category=normal
 
 attack=Bite
+ID=4720
 image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
 animation=withdraws and bites|0.75
 cooldown=2.5
 effect=Melee
-subeffect=damage:3032403
+subeffect=damage:-
 subeffect=crippled:6
 subeffect=poison:6
 
 ##################################################################
 # Levels 80, 82 and 83 exist.
+copy=8334
 name=Orrian Spider
 ID=8332
 alt=Orrian Spiders|Spider|Spiders
-image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
-path=Arah1|Arah2|Arah3|Arah4
-category=normal
-
-attack=Bite
-image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
-animation=withdraws and bites|0.75
-cooldown=2.5
-effect=melee
-subeffect=damage:0
-subeffect=crippled:6
-subeffect=poison:6
 
 ##################################################################
 # Levels 80, 82 and 83 exist.
+copy=8334
 name=Orrian Spider
 ID=8335
 alt=Orrian Spiders|Spider|Spiders
-image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
-path=Arah1|Arah2|Arah3|Arah4
 category=elite
-
-attack=Bite
-image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
-animation=withdraws and bites|0.75
-cooldown=2.5
-effect=melee
-subeffect=damage:8968989
-subeffect=crippled:6
-subeffect=poison:6
 
 ##################################################################
 
@@ -452,11 +441,12 @@ path=Arah2
 category=elite
 
 attack=Bite
+ID=5224
 image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
 animation=withdraws and bites|0.75
 cooldown=3
 effect=big PBAoE
-subeffect=damage:9193374
+subeffect=damage:-
 subeffect=crippled:5
 
 ###########################################################
@@ -477,34 +467,43 @@ subeffect=lose all "Frenzy"-stacks
 
 attack="Frenzy"
 additional=caps at 25
-effect=buff
-subeffect=attack faster and deal more damage
+effect=buff (6-10 stacks)
+subeffect=attack 25% faster
+effect=buff (11-15 stacks)
+subeffect=attack 43% faster
+effect=buff (16-20 stacks)
+subeffect=attack 100% faster
+effect=buff (21-25 stacks)
+subeffect=attack 333% faster
 #note=avoid giving it stacks or it becomes very hard to deal with
 
 attack=Abomination Swipe
+ID=2405
 animation=swings right arm|2.5
 cooldown=0
 effect=slow melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=buff:Frenzy:60
 #note=move out of way
 #note=don't use minions/clones to prevent "Frenzy"-stacks
 
 attack=Abomination Slam
+ID=2406
 animation=glows and jumps|1.5
 effect=slow melee
-subeffect=damage:6842674
+subeffect=damage:-
 subeffect=buff:Frenzy:60
 #note=move out of way
 #note=don't use minions/clones to prevent "Frenzy"-stacks
 
 attack=Charge
+ID=16995
 animation=bends forward and glows purple|1
 additional=only used at distant targets
 effect=piercing dash with PBAoE (~4 hits in 2.5 s)
 count=4
 length=2.5
-subeffect=damage:0
+subeffect=damage:-
 subeffect=knockback:1
 #note=move out of way, evade if needed
 
@@ -519,22 +518,13 @@ path=Arah1|Arah2|Arah4
 category=normal
 
 attack=Bite
+ID=2887
 animation=swings head|0.25
 cooldown=2
 effect=melee
-subeffect=damage:8441150
+subeffect=damage:-
 #note=does not attempt to get on range so you can stay at max melee range
 
-attack=Poison Cloud
-image=http://giant.gfycat.com/AdmirableHeavenlyFrilledlizard.gif
-animation=leans back and glows and then opens mouth|1.25
-cooldown=4
-effect=few projectiles (cone) with ticking AoE (10 ticks)
-count=10
-length=9
-subeffect=damage:822745
-subeffect=poison:8
-#note=stay at melee range to prevent getting hit
 
 ##################################################################
 # Levels 80, 81 and 82 exist.
@@ -546,20 +536,22 @@ path=Arah1|Arah2|Arah4
 category=elite
 
 attack=Bite
+ID=4237
 animation=swings head|0.25
 cooldown=2
 effect=melee
-subeffect=damage:8441150
+subeffect=damage:-
 #note=does not attempt to get on range so you can stay at max melee range
 
 attack=Poison Cloud
+ID=4238
 image=http://giant.gfycat.com/AdmirableHeavenlyFrilledlizard.gif
 animation=leans back and glows and then opens mouth|1.25
 cooldown=4
 effect=few projectiles (cone) with ticking AoE (10 ticks)
 count=10
 length=9
-subeffect=damage:822745
+subeffect=damage:-
 subeffect=poison:8
 #note=stay at melee range to prevent getting hit
 
@@ -572,9 +564,10 @@ path=Arah1
 category=normal
 
 attack=Spit
+ID=4208
 cooldown=0
 effect=projectile
-subeffect=damage:0
+subeffect=damage:-
 
 ##################################################################
 # Same enemy: CoE Risen Berserke4.
@@ -588,42 +581,46 @@ category=elite
 attack=Low armor
 
 attack=Axe Swing (1)
+ID=5146
 cooldown=4
 animation=swings right axe|0.1
 additional=finishes whole chain whether hits or not
 effect=melee
-subeffect=damage:1305707
+subeffect=damage:-
 subeffect=might:5
 subeffect=fury:5
 
 attack=Axe Slice (2)
+ID=5147
 animation=swings right axe|0.6
 additional=can't rotate
 effect=2 melee hits in 0.5 s
 count=2
 length=0.5
-subeffect=damage:1756614
+subeffect=damage:-
 subeffect=might:5
 subeffect=fury:5
 
 attack=Brutal Strike (3)
+ID=5148
 animation=holds right axe over head|0.75
 additional=can't rotate
 effect=3 melee hits in 1.2 s
 count=3
 length=1.2
-subeffect=damage:2671250
+subeffect=damage:-
 subeffect=might:5
 subeffect=fury:5
 #note=move behind back
 
 attack=Whirling Axe
+ID=19106
 cooldown=25
 additional=can't move
 effect=15 small PBAoEs in 3 s
 count=15
 length=3
-subeffect=damage:1673271
+subeffect=damage:-
 #note=do not tank it and try to interrupt
 
 attack=Berserk
@@ -634,7 +631,7 @@ subeffect=deal 20% more damage
 
 ##################################################################
 
-copy=Risen Berserker|elite|Arah2
+copy=10807
 name=Dominated Berserker
 ID=10441
 alt=Dominated Berserkers
@@ -649,10 +646,11 @@ path=Arah1|Arah2|Arah3|Arah4
 category=elite
 
 attack=Bug Bite
+ID=2912
 animation=stays still|0.75
 cooldown=2
 effect=melee
-subeffect=damage:9129264
+subeffect=damage:-
 #note=keep moving to avoid this attack
 
 ##################################################################
@@ -689,10 +687,11 @@ subeffect=poison:3
 #note=extreme damage per second, remove as fast as possible
 
 attack=Throw Anchor (1)
+ID=5237
 cooldown=7
 animation=pulls scythe behind back and spins|0.9|throws 5 black anchors
 effect=~5 projectiles (cone)
-subeffect=damage:7479500
+subeffect=damage:-
 #note=block/evade, move at range or jump over
 
 attack=Pull (2)
@@ -704,14 +703,15 @@ subeffect=damage:0
 subeffect=pull:0
 
 attack=Smash
+ID=2552
 cooldown=6
 animation=holds anchor behind back and swings over head|0.6
 effect=melee
-subeffect=damage:7355554
+subeffect=damage:-
 
 ##################################################################
 
-copy=Risen Defiler|elite|Arah2
+copy=10806
 name=Dominated Defiler
 ID=10390
 alt=Dominated Defilers
@@ -725,43 +725,45 @@ path=Arah2
 category=elite
 
 attack=Kick
+ID=5141
 cooldown=4.5
 animation=raises leg and kicks|0.25
 effect=melee
-subeffect=damage:2944786
+subeffect=damage:-
 subeffect=knockback:1.5
 
 attack=Kill Shot
+ID=5140
 cooldown=8
 animation=glows, kneels and aims with debuff and laser on target|1.6
 additional=cannot be blocked. Only used at distant targets.
 effect=fast piercing projectile
-subeffect=damage:10304614 - damage:139394373 (based on distance)
+subeffect=damage:2
 subeffect=knockback:1.5
+effect=at 500-1000 range
+subeffect=damage:8
+effect=at 1000+ range
+subeffect=damage:25
 #note=evade it based on debuff icon
 #note=stay in melee range to prevent huge bonus damage
 #note=do not stand in beam or behind targeted player
 #note=interrupt or use blind
 
-attack=Plant
+attack=Orrian_Explosives
+ID=5143
 cooldown=20
 animation=swings rifle overhead|0.5
 additional=used at melee range
 effect=cone
 subeffect=buff:Orrian_Explosives:5:1:-
-
-attack="Orrian Explosives"
-effect=debuff
-effect=end effect (PBAoE)
-subeffect=damage:30018439
+effect=end effect
+subeffect=damage:-
 subeffect=knockdown:1.5
-#note=evade or block based on debuff icon
 
 ##################################################################
 
-copy=Risen Deadeye|elite|Arah2
+copy=10440
 name=Dominated Deadeye
-ID=10440
 alt=Dominated Deadeyes
 
 ##################################################################
@@ -773,7 +775,8 @@ category=structure
 condition=0
 
 attack=Flamestrike
-effect=aura (hits every 1 s)
+effect=aura
+frequency=1
 subeffect=damage:8280875
 subeffect=burning:6
 
@@ -786,38 +789,44 @@ path=Arah2|Arah3
 category=elite
 
 attack=Sword of Wrath (1)
+ID=5167
 animation=swings mace from right|0.3
 cooldown=0
 effect=melee
-subeffect=damage:2525934
+subeffect=damage:-
 
 attack=Sword Arc (2)
+ID=5168
 animation=swings mace from left|0.7
 effect=melee
 subeffect=damage:2867854
 
 attack=Sword Wave (3)
+ID=5169
 animation=holds mace behind back and thrusts forward|1.5
 additional=usually misses at melee range
 effect=melee
-subeffect=damage:3177719
+subeffect=damage:-
 
 attack=Shield Bash
+ID=5166
 animation=turns left|0.25|dashes shield forward
 cooldown=17
 additional=Leap finisher.
 effect=dash
-subeffect=damage:1474530
+subeffect=damage:-
 subeffect=stun:2
 
-attack=Fiery Block
+attack=Fire Shield
+ID=5170
 cooldown=19
 animation=instant|0|hides behind shield
 effect=buff:projectile_reflection:3
 effect=buff:block:3
 subeffect=burning:1 when blocks
 
-attack=Banner of Strength
+attack=Ring of Warding
+ID=5167
 cooldown=32
 animation=holds mace behind back with blue glow|0.5
 additional=cannot be blocked or evaded. Light field.
@@ -837,7 +846,7 @@ subeffect=deal 20% more damage
 
 ##################################################################
 
-copy=Risen Sentinel
+copy=10805
 name=Dominated Sentinel
 ID=10442
 alt=Dominated Sentinels
@@ -940,18 +949,20 @@ path=Arah2
 category=normal
 
 attack=Bite
+ID=2426
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:8|33%
 subeffect=poison:8|33%
 subeffect=weakness:8|33%
 
 attack=Charge
+ID=2425
 effect=dash with PBAoE (5 hits in 1 s)
 count=5
 length=1
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:10
 subeffect=knockback:0
 #note=use stability or evade forward
@@ -966,18 +977,20 @@ path=Arah4
 category=elite
 
 attack=Bite
+ID=2426
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:8|33%
 subeffect=poison:8|33%
 subeffect=weakness:8|33%
 
 attack=Charge
+ID=2529
 effect=dash with PBAoE (5 hits in 1 s)
 count=5
 length=1
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:10
 subeffect=knockback:0
 #note=use stability or evade forward
@@ -992,6 +1005,7 @@ path=Arah2
 category=elite
 
 attack=Subvert
+ID=5173
 cooldown=17
 animation=raises gun and shoots electricity|1|keeps shooting electricity
 effect=16 ranged hits in 9 s
@@ -1017,26 +1031,28 @@ path=Arah2
 category=normal
 
 attack=Tranquilizer Dart
+ID=5172
 cooldown=8
 animation=raises gun|0.5|shoots a blue dart
 effect=projectile
-subeffect=damage:2735360
+subeffect=damage:-
 subeffect=crippled:6
 
 attack=Blunderbuss
+ID=5816
 cooldown=13
 animation=raises gun|0.3|yellow explosion
 effect=short-range projectile
-subeffect=damage:6133190
+subeffect=damage:1
 subeffect=bleeding:4:1
-effect=at closer range
+effect=at closer 1.2
 subeffect=damage:7603446
 subeffect=bleeding:4:2
 effect=at even closer range
-subeffect=damage:8250957
+subeffect=damage:1.4
 subeffect=bleeding:4:3
 effect=at melee range
-subeffect=damage:10300340
+subeffect=damage:1.6
 subeffect=bleeding:4:4
 
 ##################################################################
@@ -1048,23 +1064,24 @@ image=http://wiki.guildwars2.com/images/4/43/Risen_Prince_Nekandezzar.jpg
 path=Arah2
 category=normal
 health=15774
-type=undead
 
 attack=Vital Shot
+ID=5195
 animation=aims with right pistol|0.3
 cooldown=1
 effect=projectile
-subeffect=damage:581264
+subeffect=damage:-
 subeffect=bleeding:4
 #note=tank, block/evade, use an anti projectiles skill or break line of sight
 
 attack=Unload
+ID=5194
 cooldown=19
 animation=points towards with both guns|0.3
 effect=8 projectiles in 1.5 s
 count=8
 length=1.5
-subeffect=damage:581264
+subeffect=damage:-
 #note=block/evade, use an anti projectiles skill or break line of sight
 
 
@@ -1078,6 +1095,7 @@ path=Arah2
 category=elite
 
 attack=Explode
+ID=4248
 animation=puts arms on face, glows and lowers arms|1.75|brown explosion
 effect=PBAoE
 subeffect=damage:19247959
@@ -1108,10 +1126,11 @@ Alternates between Throw Anchor and Smash.
 attack=Crippled
 
 attack=Throw Anchor (1)
+ID=5237
 cooldown=7
 animation=pulls scythe behind back and spins|0.9|throws 5 black anchors
 effect=~5 projectiles (cone)
-subeffect=damage:7479500
+subeffect=damage:-
 #note=block/evade, move at range or jump over
 
 attack=Pull (2)
@@ -1123,10 +1142,11 @@ subeffect=damage:0
 subeffect=pull:0
 
 attack=Smash
+ID=2552
 cooldown=6
 animation=holds anchor behind back and swings over head|0.6
 effect=melee
-subeffect=damage:7355554
+subeffect=damage:-
 
 ##################################################################
 
@@ -1169,23 +1189,25 @@ path=Arah3|Arah4
 category=normal
 
 attack=Smash
+ID=2625
 cooldown=2.5
 animation=raises left/right arm and smashes|0.15
 effect=melee
-subeffect=damage:3087965
+subeffect=damage:-
 
 attack=Massive Smash (1)
+ID=4221
 cooldown=10
 animation=swings left arm from right|0.6
 effect=melee
-subeffect=damage:2852895
+subeffect=damage:-
 subeffect=knockdown:7
 #note=try to evade, do not stun break too quickly
 
 attack=Thump (2)
 animation=smashes ground with left arm|0.3
 effect=quick melee
-subeffect=damage:1072774
+subeffect=damage:0.2
 subeffect=knockdown:7
 
 attack=Roar (1)
@@ -1198,55 +1220,21 @@ length=2
 subeffect=weakness:5
 
 attack=Shockwave (2)
+ID=4239
 animation=swings right arm|1
 effect=melee
-subeffect=damage:3122157
+subeffect=damage:-
 
 ##################################################################
 # Same enemy: CoE Orrian Gorilla
 # Levels 80 and 82 exist.
+copy=8325
 name=Orrian Gorilla
 # VERIFY 10823 (smaller).
 ID=8326
 alt=Orrian Gorillas|Gorilla|Gorillas
-image=http://wiki.guildwars2.com/images/d/d4/Risen_Gorilla.jpg
 path=Arah1|Arah3|Arah4
 category=elite
-health=157296
-type=undead
-
-attack=Smash
-cooldown=2.5
-animation=raises left/right arm and smashes|0.15
-effect=melee
-subeffect=damage:8736056
-
-attack=Massive Smash (1)
-cooldown=10
-animation=swings left arm from right|0.6
-effect=melee
-subeffect=damage:8618521
-subeffect=knockdown:7
-#note=try to evade, do not stun break too quickly
-
-attack=Thump (2)
-effect=quick melee
-subeffect=damage:3216185
-subeffect=knockdown:7
-
-attack=Roar (1)
-cooldown=20
-animation=glows and roars|1.5
-additional=cannot be blocked or evaded
-effect=3 PBAoEs in 2 s
-count=3
-length=2
-subeffect=weakness:5
-
-attack=Shockwave (2)
-animation=swings right arm|1
-effect=melee
-subeffect=damage:8823673
 
 ##################################################################
 # Same enemy: CoE Risen Wraith (Drain)
@@ -1260,25 +1248,28 @@ path=Arah3|Arah4
 category=elite
 
 attack=Vampiric Touch
+ID=2534
 animation=swings right arm
 effect=Melee
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Teleport
+ID=2536
 animation=raises hands, turns transparent
 effect=short dash
 
-attack=Roar (1)
+attack=Shriek (1)
 additional=cannot be blocked or evaded
 effect=ranged
 subeffect=buff:Grenth's_Mark:30:1:corruption after 4 seconds
 
-attack=Grenth's Mark (2)
+attack=Life Transfer (2)
+ID=18643
 animation=life-steal effect and sound
 effect=30 ranged hits in 29 s
 count=30
 length=29
-subeffect=damage:0
+subeffect=damage:-
 #note=continuous damage adds up on screen (does not get stronger)
 
 attack="Grenth's Mark"
@@ -1308,27 +1299,37 @@ subeffect=bleeding:15
 ##################################################################
 # Same enemy: CoES Risen enemy=Grub:Normal
 
-name=Risen Grub
-alt=Risen Grubs|Grub|Grubs
+name=Undead Grub
+ID=8587
+alt=Undead Grubs|Grub|Grubs
 image=http://wiki.guildwars2.com/images/1/19/Risen_Grub.jpg
 path=Arah4
 category=elite
-health=157296
-type=undead
 
 attack=Undead Grub Spit
+ID=2423
 cooldown=0
 animation=holds head back
 effect=slow projectile
-subeffect=damage:0
+subeffect=damage:-
 #note=zig zag at range
 
 attack=Slime Spray
+ID=2424
 animation=holds head back bit longer
 additional=only used at close targets
 effect=3 low-range projectiles with ticking AOE (6 hits in 4 s)
-subeffect=damage:0| per hit (lethal damage)
+count=6
+length=4
+subeffect=damage:-
 #note=be very careful at melee range
+
+##################################################################
+copy=8587
+name=Undead Grub
+ID=8327
+alt=Undead Grubs|Grub|Grubs
+category=normal
 
 ##################################################################
 # Same enemy: CoE2 Risen Grub.
@@ -1341,9 +1342,10 @@ path=Arah1|Arah2|Arah3|Arah4
 category=normal
 
 attack=Undead Grub Spit
+ID=4249
 cooldown=0
 effect=slow projectile
-subeffect=damage:628278
+subeffect=damage:-
 
 ##################################################################
 # Same enemy: CoE Undead Wraith.
@@ -1357,18 +1359,21 @@ path=Arah3|Arah4
 category=elite
 
 attack=slash
+ID=18642
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=buff:Corruption:25
 
 attack=Life Drain
+ID=2533
 animation=spins around|3.5
 effect=high-range PBAoE
-subeffect=damage:0
+subeffect=damage:-
 subeffect=healing:0
 subeffect=buff:Corruption
 
-attack=Warp
+attack=Teleport
+ID=2536
 additional=only used at distant targets
 effect=teleport
 
@@ -1391,7 +1396,6 @@ ID=10508
 path=Arah4
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
 category=elite
-type=undead
 
 ##################################################################
 
@@ -1402,20 +1406,23 @@ path=Arah4
 category=elite
 
 attack=Leap
+ID=4251
 effect=leap
-subeffect=damage:0
+subeffect=damage:-
 subeffect=crippled:5
 
 attack=Pull (1)
+ID=4252
 effect=delayed PBAoE
-subeffect=damage:0
+subeffect=damage:-
 subeffect=pull:0
 
 attack=Spin (2)
+ID=4255
 additional=channeled
 effect=multiple PBAoEs
 count=?
-subeffect=damage:0
+subeffect=damage:-
 effect=end effect
 subeffect=launch:3
 
@@ -1428,23 +1435,26 @@ path=Arah4
 category=elite
 
 attack=Trick Arrow
+ID=5124
 cooldown=0
 effect=bouncing projectile
 count=?
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Pin Down
+ID=5126
 cooldown=12
 effect=projectile
-subeffect=damage:0
+subeffect=damage:-
 subeffect=immobilized:0
 
 attack=Pinning Barrage
+ID=5125
 cooldown=25
 additional=channeled
 effect=aoe
 count=?
-subeffect=damage:0
+subeffect=damage:-
 subeffect=crippled:1
 
 ##################################################################
@@ -1456,9 +1466,10 @@ path=Arah4
 category=elite
 
 attack=Spin
+ID=4256
 effect=multiple projectiles (360 degrees) in 2.5 s
 count=?
-subeffect=damage:0
+subeffect=damage:-
 subeffect=burning:0
 effect=end effect
 subeffect=vulnerability:4.5
@@ -1474,13 +1485,15 @@ path=Arah4
 category=elite
 
 attack=Swing
+ID=2442
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Bash
+ID=2443
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=stun:2
 
 ##################################################################
@@ -1493,13 +1506,15 @@ path=Arah4
 category=elite
 
 attack=Spectral Hammer Attack
+ID=2440
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Stagger
+ID=2441
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
 ##################################################################
 ###                    Explorables - bosses                    ###
@@ -1513,6 +1528,7 @@ Path=Arah1
 category=legendary
 
 attack=Bounce (moving)
+ID=4205
 cooldown=8
 image=http://giant.gfycat.com/GoodSoulfulFoxhound.gif
 animation=glows|1|starts bouncing
@@ -1520,12 +1536,13 @@ additional=only used at distant targets
 effect=dash with PBAoE (3 hits in 2 s)
 count=3
 length=2
-subeffect=damage:0
+subeffect=damage:-
 subeffect=launch:3.5
 #note=If you are ranged, keep it slowed down and stay at distance
 #note=If you are melee, keep chasing and dodge at opposite direction Ooze is moving
 
 attack=Bounce (still)
+ID=4206
 image=http://giant.gfycat.com/EssentialVapidHamadryas.gif
 cooldown=10
 animation=glows|1|starts bouncing
@@ -1533,12 +1550,13 @@ additional=only used at close targets
 effect=6 PBAoEs in 4 s
 count=6
 length=4
-subeffect=damage:0
+subeffect=damage:-
 subeffect=launch:3.5
 #note=If you are ranged, relax
 #note=If you are melee, dodge back and get in fast to prevent Ooze from using other skill
 
 attack=Split
+ID=4160
 image=http://giant.gfycat.com/ThesePointlessHypsilophodon.gif
 additional=used at 25%. Can't be blocked
 effect=2 ballistic projectiles
@@ -1573,12 +1591,13 @@ category=champion
 attack=Reflects projectiles
 
 attack=Ooze Multi
+ID=4203
 cooldown=3
 image=http://giant.gfycat.com/HealthyInexperiencedAchillestang.gif
 additional=channeled
 effect=multiple ballistic projectiles (360 degrees) with small AoE
 count=?
-subeffect=damage:0
+subeffect=damage:-
 
 ##################################################################
 
@@ -1592,10 +1611,11 @@ category=champion
 attack=Immune to Conditions and Vulnerable to "Green Light"
 
 attack=Jab
+ID=1623
 image=http://giant.gfycat.com/EvergreenMarriedCoqui.gif
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 #note=keep moving in circles to avoid most of the attacks
 
 ##################################################################
@@ -1611,13 +1631,14 @@ Attack=Alternates between its two attacks
 #note=keep in mind which attack was used first
 
 Attack=Venom Spray
+ID=4774
 cooldown=6
 image=http://giant.gfycat.com/RingedPossibleCony.gif
 animation=glows and leans back|1.5
 effect=3 cones in 0.6 s
 count=3
 length=0.6
-subeffect=damage:4718496
+subeffect=damage:-
 subeffect=poison:5
 subeffect=buff:Predator_Swiftness if hits.
 #note=side step to avoid
@@ -1625,13 +1646,14 @@ subeffect=buff:Predator_Swiftness if hits.
 #note=Her poison stacks with other sources of poison.
 
 attack=Venom Blast
+ID=4772
 image=http://giant.gfycat.com/DimCommonArgentinehornedfrog.gif
 cooldown=6
 animation=glows and leans back|1.25
 additional=can't be blocked
 effect=5 projectiles (cone) with AoE
 count=?
-subeffect=damage:20100622
+subeffect=damage:0.9
 #note=stay behind spider if not targeted
 #note=evade 1-2 times (melee user has to react based on animation)
 
@@ -1649,26 +1671,29 @@ image=http://wiki.guildwars2.com/images/5/5a/Champion_Orrian_Drake.jpg
 category=champion
 
 attack=Bite
+ID=3128
 image=http://fat.gfycat.com/FalseFlatAmericancrayfish.gif
 animation=swings head from right|0.25
 cooldown=3
 effect=melee
-subeffect=damage:9919954
+subeffect=damage:-
 
 attack=Bite
+ID=2887
 image=http://fat.gfycat.com/NextTightIcelandgull.gif
 animation=swings head from left|0.25
 cooldown=3
 effect=melee
-subeffect=damage:9919954
+subeffect=damage:-
 
 attack=Insect Swarm
+ID=2883
 cooldown=20
 image=http://giant.gfycat.com/HastyInformalBittern.gif
 animation=leans back and glows|1.75
 effect=5 bouncing and homing projectiles (3 hits each one) in 3.75 seconds
 count=?
-subeffect=damage:8020161
+subeffect=damage:-
 subeffect=poison:10
 #subeffect=damage:0|poison:0:10| and after first bounce |damage:0|poison:0:10|crippled:10|vulnerability:10:1|weakness:10|
 #note=reflections work extremely well
@@ -1683,15 +1708,19 @@ image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
 category=legendary
 
 attack=Tar spit (if not burning)
+ID=4209
 effect=multiple area fields
+count=?
+subeffect=damage:-
 subeffect="Covered in tar" (60 s) when passed through
 effect=summon multiple enemy=Tars:normal
 #note=Keep it burning to prevent.
 
 attack=Tar spit (if burning)
+ID=4217
 effect=multiple ticking AoEs
 count=?
-subeffect=damage:0
+subeffect=damage:-
 subeffect=burning:0
 
 ##################################################################
@@ -1708,16 +1737,18 @@ attack=Immune to blind and crippled. 100% resistance to control skills.
 #note=you can interrupt it with wiki=Sigil_of_Paralyzation|Sigil_of_Paralyzation
 
 attack=Mighty Kick
+ID=4973
 image=http://i.imgur.com/OLZFceF.gif
 animation=leans a bit on left and kicks with left foot|0.75
 cooldown=8
 effect=melee
-subeffect=damage:31373297
+subeffect=damage:-
 subeffect=launch:3.3
 #note=block/evade, you may have to predict with slow connection
 #note=Usually used between every other attack
 
-attack=Infection
+attack=Summon Grub
+ID=4958
 image=http://i.imgur.com/o66R5AX.gif
 cooldown=15
 animation=waves hand in a big circle with green effect|2.5
@@ -1740,7 +1771,8 @@ effect=melee
 subeffect=Take 2% less damage and do more damage (10 hours) per stack
 #note=Up to 50% less damage
 
-attack=Roar
+attack=Summon Locusts
+ID=4959
 image=http://i.imgur.com/uY1LA3s.gif
 cooldown=15
 animation=looks up and roars forward|2
@@ -1774,30 +1806,33 @@ subeffect=Take 2% less damage and do more damage (10 hours) per stack
 #note=Up to 50% less damage
 
 attack=Lupine Blast
+ID=4963
 image=http://i.imgur.com/EPWX7vF.gif
 cooldown=2
 animation=raises left hand|0.5|shoots a green ball
 effect=projectile with small AoE
-subeffect=damage:20925504
+subeffect=damage:-
 subeffect=poison:2
 #note=block/evade
 #note=keep sidestepping in one direction and change direction when it shoots
 
 attack=Lupine Blast
+ID=4966
 cooldown=6
 animation=leans toward, raises right arm and then leans back|2|becomes a green cloud
 additional=only used at distant targets. Sometimes uses Lupine Blast mid-dash.
 effect=dash with PBAoE at end
-subeffect=damage:19957443
+subeffect=damage:-
 subeffect=knockdown:3
 #note=evade, block or use a mobility skill
 #note=Usually uses mighty Blow next to finish off the target
 
 attack=Vicious Slash
+ID=4964
 image=http://i.imgur.com/6o26zs1.gif
 animation=turns right and swings right arm|1
 effect=melee
-subeffect=damage:39500308
+subeffect=damage:-
 subeffect=launch:3.3
 effect=melee
 subeffect=bleeding:30:3
@@ -1805,13 +1840,14 @@ subeffect=bleeding:30:3
 #note=evade or block (single block still makes you bleed)
 
 attack=Frenzied Blast
+ID=4965
 image=http://i.imgur.com/uDYhcMA.gif
 cooldown=16
 animation=Puts hands on its chest and leans bit forward|1.25
 additional=Scales based on amount of targets.
 effect=3 waves of multiple ballistic projectiles (360 degrees) with small AoE in 2.75 s
 count=?
-subeffect=damage:21626440
+subeffect=damage:-
 #note=with more than 3 players every circle does not get drawn and you may get hit out of the circles
 #note=at long range circles disappear before projectile arrives
 #note=hits almost immediately at melee range
@@ -1842,16 +1878,18 @@ attack=Immune to blind and crippled. 100% resistance to control skills.
 #note=you can interrupt it with wiki=Sigil_of_Paralyzation|Sigil_of_Paralyzation
 
 attack=Lupine Blast
+ID=4946
 image=http://i.imgur.com/EPWX7vF.gif
 cooldown=2
 animation=turns bit left/right and shoots from left/right hand|0.5|shoots a green ball
 effect=projectile with small AoE
-subeffect=damage:20925504
+subeffect=damage:-
 subeffect=poison:2
 #note=block/evade
 #note=keep sidestepping to one direction and change direction when he shoots
 
 attack=Life Drain (1)
+ID=4949
 image=http://i.imgur.com/ouLI3xA.gif
 cooldown=18
 animation=Raises its arm and start rising to air|1.5|big red circle
@@ -1859,30 +1897,33 @@ effect=Channeled
 effect=8 PBAoEs in 3 s (2 hits every 1 s).
 count=8
 length=3
-subeffect=damage:4120136
+subeffect=damage:-
 subeffect=healing:0
 #note=try to get out as fast as possible
 #note=time your evades
 #note=single blocks are ineffective because attack hits twice every second
 
 attack=Life Drain (2)
+ID=4949
 animation=lands on ground|2.25
 effect=PBAoE
-subeffect=damage:4613783
+subeffect=damage:-
 subeffect=knockback:1.5
 
 attack=Life Drink
+ID=4948
 image=http://i.imgur.com/Bxr7cMh.gif
 cooldown=15
 animation=Moves right arm to very left and starts pointing at you|1.25
 effect=4 ranged hits in 1.5 s (1 hit every 0.5 s)
 count=4
 length=1.5
-subeffect=damage:8887783
+subeffect=damage:-
 subeffect=healing:0
 #note=evade twice (needs proper timing to not get hit)
 
 attack=Frenzied Blast
+ID=4947
 image=http://i.imgur.com/Jd17SJI.gif
 cooldown=6
 animation=Shakes both hands pointed at you and leans bit forward|0.5|shoots multiple small green balls
@@ -1890,10 +1931,11 @@ additional=Used in melee range.
 effect=~10 projectiles in 2.25 s with small AoE
 count=10
 length=2.25
-subeffect=damage:6413137
+subeffect=damage:-
 #note=use area anti projectiles skills, immunity or evade 1-2 times
 
 attack=Necrid Trap
+ID=4950
 image=http://i.imgur.com/Azyha0a.gif
 cooldown=5
 animation=Leans bit forward and raises both arms|0.9|green dome
@@ -1901,7 +1943,7 @@ effect=Used at close targets except when stacking. Tracks movement except at mel
 effect=AoE with 5 hits
 count=5
 length=4
-subeffect=damage:12415970
+subeffect=damage:-
 effect=Area field
 subeffect=knockback:0 when passing through (prevents escape)
 
@@ -1918,7 +1960,7 @@ subeffect=damage:0
 
 ##################################################################
 
-name=Korga the mighty
+name=Korga the Mighty
 ID=9803
 alt=Korga
 image=http://wiki.guildwars2.com/images/d/d4/Risen_Gorilla.jpg
@@ -1926,9 +1968,10 @@ path=Arah1
 category=legendary
 
 attack=Charge
+ID=4225
 cooldown=0
 effect=piercing dash
-subeffect=damage:0
+subeffect=damage:-
 subeffect=launch:0
 
 attack=Resurrect
@@ -1936,8 +1979,9 @@ effect=PBAoE
 subeffect=resurrect nearby allies
 
 attack=Thump
+ID=4226
 effect=PBAOE
-subeffect=damage:0
+subeffect=damage:-
 
 ##################################################################
 
@@ -1949,16 +1993,18 @@ path=Arah1
 category=legendary
 
 attack=Homing projectile
+ID=4260
 cooldown=0
 effect=homing projectile
-subeffect=damage-percent:100
+subeffect=damage:-
 #note=reflect back to deal tons of damage
 
 attack=Lava Font
+ID=4259
 animation=raises hand/staff
 effect=ticking AoE (6 s)
 count=?
-subeffect=damage:0
+subeffect=damage:-
 subeffect=burning:0
 #note=first tick happens immediately
 #note=keep moving, evade if needed
@@ -1980,11 +2026,12 @@ category=legendary
 attack=Immobilized (does not move and can't be moved) and immune to Control
 
 attack=Fan of Fire
+ID=5156
 cooldown=1.75
 animation=aims with bow|0.5
 effect=3 medium range piercing projectiles (cone)
 count=3
-subeffect=damage:557757
+subeffect=damage:-
 subeffect=burning:2
 
 attack=Teleport
@@ -1994,10 +2041,11 @@ effect=ranged
 subeffect=teleport to "random" predefined location
 
 attack=Point Blank Shot
+ID=5154
 animation=aims with bow|0.5
 cooldown=12
 effect=piercing projectile
-subeffect=damage:1331351
+subeffect=damage:-
 subeffect=knockback:1.5
 subeffect=buff:Bubble:5:1:projectile_reflection
 #note=Try to predict
@@ -2008,11 +2056,12 @@ effect=buff
 subeffect=Reflect projectiles
 
 attack=Pulsing Orb
+ID=5155
 cooldown=4
 animation=aims bit higher than normally|0.5
 additional=only used at distant targets
 effect=slow ballistic ranged with AoE
-subeffect=damage:56160360
+subeffect=damage:-
 subeffect=blind:0
 #note=May overlap/get mixed with enemy=Suspicious_Pots:structure. Dodge if unsure.
 #note=Attack tracks movement but red circle does not so pay attention.
@@ -2028,26 +2077,29 @@ path=Arah2
 category=legendary
 
 attack=Abomination Swipe
+ID=5223
 animation=swings club from right|1.75
 cooldown=4
 effect=cone
-subeffect=damage:13678937
+subeffect=damage:-
 #note=run behind its back
 
 attack=Throw Boulder
+ID=5220
 animation=holds right arm on stomach and then swings right arm|1|throws a boulder
 cooldown=12
 additional=only used at distant targets
 effect=projectile
-subeffect=damage:28165660
+subeffect=damage:-
 subeffect=knockdown:2
 #note=Very unreliable hit box so block/evade.
 
 attack=Stomp
+ID=5177
 cooldown=17
 animation=crouches and jumps|1|rock effect
 effect=big PBAoE
-subeffect=damage:14208913
+subeffect=damage:-
 subeffect=launch:2.3
 #note=block/evade
 #note=Rarely the damage happens at start of the animation. This should only happen once.
@@ -2055,7 +2107,7 @@ subeffect=launch:2.3
 attack=Frenzied (1)
 animation=looks idle and then pulls club behind back and raises left hand|2.25
 effect=small PBAoE
-subeffect=damage:14144803
+subeffect=damage:0.5
 #note=If you interrupt this he will use it again in few seconds.
 
 attack=Push (2)
@@ -2100,27 +2152,30 @@ category=legendary
 attack=Resistant to condition (base duration reduced by 95%)
 
 attack=Vital Shot
+ID=5195
 animation=aims with right pistol|0.3
 cooldown=1
 effect=projectile
-subeffect=damage:2590044
+subeffect=damage:-
 subeffect=bleeding:4
 #note=tank, use an anti projectiles skill or break line of sight
 
 attack=Unload
+ID=5194
 cooldown=19
 animation=points towards with both guns|0.3
 effect=8 projectiles in 1.5 s
 count=8
 length=1.5
-subeffect=damage:2590044
+subeffect=damage:-
 #note=evade, block, use anti projectiles or break line of sight
 
 attack=Throw Anchor (1)
+ID=5192
 cooldown=11
 animation=moves arms to the right behind back and spins a circle to left|1|shoots brown lines
 effect=projectile at every target
-subeffect=damage:262851
+subeffect=damage:-
 subeffect=pull:1.5
 #note=evade, block or use AoE anti projectiles
 
@@ -2128,7 +2183,7 @@ attack=Big Ol' Bomb (2)
 animation=crouches and touched ground|0.75|plants a barrel with red circle
 additional=only used if Anchor hits at least one target
 effect=delayed (3 s) PBAoE
-subeffect=damage:54241334
+subeffect=damage:2
 subeffect=launch:0
 #note=get out of range or evade
 #note=be careful with single blocks (it may get used on normal shot)
@@ -2138,14 +2193,15 @@ cooldown=40
 animation=lightning flash|1
 effect=teleports to the middle of the arena
 
-attack=Daggerstorm (2)
+attack=Dagger Storm (2)
+ID=5190
 #animation=when "Lightning Icon" expires.
 additional=cannot be blocked
 effect=buff (~5 s)
 subeffect=reflects projectiles
 effect=~35 bouncing projectiles (360 degrees) in ~10 s
 count=?
-subeffect=damage:42165147
+subeffect=damage:-
 #note=hide behind barricades
 #note=projectiles might bounce on your summons and pets
 
@@ -2171,40 +2227,44 @@ path=Arah2
 category=legendary
 
 attack=Chain Lightning
+ID=5207
 animation=swings left arm from right with blue effect|0.75|shoots a small lightning
 cooldown=3
 effect=bouncing and homing projectile
 count=2
-subeffect=damage:2769552
+subeffect=damage:-
 
 attack=Turbo Laser
+ID=5205
 cooldown=8
 animation=glows purple|1.25
 additional=seems to hit through walls
 effect=ranged
-subeffect=damage:25079832
+subeffect=damage:-
 subeffect=burning:1
 #note=side step
 #note=single-blocks also work
 
 attack=Orb of Wrath
+ID=5206
 cooldown=9
 animation=spins scepter over head with blue effect and summons a ball|1|sends the ball towards the target
 additional=only used at distant targets
 effect=slow and homing projectile
-subeffect=damage:16950684
+subeffect=damage:-
 #note=block or evade through
 
 attack=Fire Storm
+ID=5204
 cooldown=22
 animation=roars and raises arm|1.5|multiple red circles
 effect=multiple delayed (3 s) ticking AoEs (5 hits in 4 s) over time
 count=4
 length=3
-subeffect=damage:2459687
+subeffect=damage:0.2
 subeffect=confusion:3
 effect=first hit
-subeffect=damage:18457269
+subeffect=damage:-
 subeffect=confusion:3
 #note=stay out of red circles
 
@@ -2217,17 +2277,19 @@ path=Arah3
 category=legendary
 
 attack=Mighty Smash
+ID=17232
 cooldown=6
 animation=holds hammer behind back and swings overhead|2.25
 effect=short melee
 subeffect=No effect but uses a block.
 effect=long range cone
-subeffect=damage:145833154
+subeffect=damage:-
 #note=get behind his back
 #note=block/evade
 #note=single blocks do not work in close range
 
 attack=Healing Signet
+ID=17234
 cooldown=22
 animation=crouches, glows blue and raises right hand in the air|2
 effect=signet
@@ -2235,10 +2297,12 @@ subeffect=healing
 #note=doesn't seem to have much effect
 
 attack=Revive Shout
+ID=17233
 effect=PBAoE
 subeffect=resurrects nearby allies. Resurrected allies die when Crusher dies
 
 attack=Plague Shout
+ID=17233
 cooldown=30
 animation=instant|0|white bubble
 additional=cannot be blocked or evaded
@@ -2256,20 +2320,22 @@ path=Arah3
 category=champion
 
 attack=Bouncing Shot
+ID=4183
 animation=raises bow|0.5
 cooldown=3
 effect=bouncing projectile (hits 3 times)
-subeffect=damage:1000116
+subeffect=damage:-
 subeffect=crippled:3
 effect=last hit
-subeffect=damage:1000116
+subeffect=damage:-
 subeffect=immobilized:7
 
 attack=Binding Shot
+ID=4182
 cooldown=14
 animation=glows and aims|1.75
 effect=slow projectile
-subeffect=damage:1812176
+subeffect=damage:-
 subeffect=immobilized:4
 #note=keep moving to make it miss
 #note=block/evade
@@ -2281,7 +2347,7 @@ additional=May interrupt his attacks. Used at close targets.
 effect=dodge back
 subeffect=buff:evade:0
 effect=trap at end location
-subeffect=damage:4515481
+subeffect=damage:0.5
 subeffect=immobilized:5
 subeffect=bleeding:5:3
 #note=if Hunter is not targetted, he does not use it
@@ -2295,7 +2361,7 @@ additional=targeted at Crusher
 effect=ranged with ticking AoE (9 hits 8 s)
 count=9
 length=8
-subeffect=damage:1782258
+subeffect=damage:0.2
 subeffect=poison:2
 #note=stops using this attack if dies and gets resurrected
 
@@ -2309,114 +2375,69 @@ path=Arah3|Arah4
 category=champion
 
 attack=Giant Stomp
+ID=1750
 cooldown=7
 animation=raises arms and right foot and steps forward smashing ground|1.25
 effect=PBAoE
-subeffect=damage:32929033
+subeffect=damage:-
 subeffect=crippled:10
 effect=small PBAoE
 subeffect=launch:4.3
 #note=attack consists of two hits so a single block will only block the first part
 
 attack=Throw Boulder
+ID=1752
 cooldown=16
 animation=grabs a boulder from ground|2.5
 effect=projectile with small AoE
-subeffect=damage:33384214
+subeffect=damage:-
 subeffect=knockdown:2
 
-attack=Roar (1)
+attack=Giant Shout (1)
+ID=1751
 cooldown=20
 animation=raises arms and roars|1.25
 additional=cannot be blocked or evaded
 effect=PBAoE
 subeffect=weakness:10
 
-attack=Roar (2)
+attack=Giant Shout (2)
+ID=1751
 animation=keeps roaring|1.25
 additional=cannot be blocked or evaded
 effect=PBAoE
 subeffect=Fear:2
 
 attack=Giant Stomp (1)
+ID=1753
 cooldown=48
 animation=moves right foot back, raises arms and left foot and then smashes ground with left foot|1.5
 effect=projectile
-subeffect=damage:14809410
+subeffect=damage:-
 subeffect=crippled:10
 
 attack=Giant Stomp (2)
+ID=1753
 animation=raises left foot and steps forward smashing ground|0.8
 effect=projectile
-subeffect=damage:14809410
+subeffect=damage:-
 subeffect=knockback:1.5
 
 attack=Giant Stomp (3)
+ID=1753
 animation=raises right hand in air and smashes ground|1.6
 effect=projectile
-subeffect=damage:14809410
+subeffect=damage:-
 subeffect=???
 
 ##################################################################
-
+copy=8285
 name=Giant
 ID=8286
 alt=Giants
 image=http://wiki.guildwars2.com/images/1/13/Nageling_Giant.jpg
 path=Arah4
 category=elite
-type=undead
-
-# Uses values from champion.
-
-attack=Giant Stomp
-cooldown=7
-animation=raises arms and right foot and steps forward smashing ground|1.25
-effect=PBAoE
-subeffect=damage:32929033
-subeffect=crippled:10
-effect=small PBAoE
-subeffect=launch:4.3
-#note=attack consists of two hits so a single block will only block the first part
-
-attack=Throw Boulder
-cooldown=16
-animation=grabs a boulder from ground|2.5
-effect=projectile with small AoE
-subeffect=damage:33384214
-subeffect=knockdown:2
-
-attack=Roar (1)
-cooldown=20
-animation=raises arms and roars|1.25
-additional=cannot be blocked or evaded
-effect=PBAoE
-subeffect=weakness:10
-
-attack=Roar (2)
-animation=keeps roaring|1.25
-additional=cannot be blocked or evaded
-effect=PBAoE
-subeffect=Fear:2
-
-attack=Giant Stomp (1)
-cooldown=48
-animation=moves right foot back, raises arms and left foot and then smashes ground with left foot|1.5
-effect=projectile
-subeffect=damage:14809410
-subeffect=crippled:10
-
-attack=Giant Stomp (2)
-animation=raises left foot and steps forward smashing ground|0.8
-effect=projectile
-subeffect=damage:14809410
-subeffect=knockback:1.5
-
-attack=Giant Stomp (3)
-animation=raises right hand in air and smashes ground|1.6
-effect=projectile
-subeffect=damage:14809410
-subeffect=???
 
 ##################################################################
 
@@ -2428,15 +2449,17 @@ path=Arah3
 category=legendary
 
 attack=Fetid Blast
+ID=4193
 cooldown=2.5
 animation=swings left arm to right|0.3|throws a green ball
 effect=slow projectile with AoE
-subeffect=damage:13896911
+subeffect=damage:-
 subeffect=poison:10
 #note=at high range, you can just keep moving in zig zag patter to avoid
 #note=at close range use an anti projectiles skill, evade or block
 
 attack=Fetid Mark
+ID=4194
 cooldown=8
 animation=glows and crouches|5
 effect=multiple triggered AoEs around the area
@@ -2444,22 +2467,24 @@ subeffect=no initial effect
 #note=no threat while casting this
 
 attack=Trigger
+ID=4196
 cooldown=22
 animation=rises in air spinning with green effect|2.25
 effect=explodes every Fetid Mark
 count=?
-subeffect=damage:24502842
+subeffect=damage:-
 subeffect=knockdown:3
 #note=run out of marks or evade
 
 attack=Life Siphon
+ID=4197
 cooldown=42
 animation=points staff towards target|0.3|lifesteal sound
 additional=Used after 75%. 1200 range
 effect=16 ranged hits in 6 s
 count=16
 length=6
-subeffect=damage:2936238
+subeffect=damage:-
 subeffect=healing:0
 #note=break line of sight, get out of range or keep evading
 #note=try to interrupt
@@ -2467,13 +2492,59 @@ subeffect=healing:0
 ##################################################################
 
 name=Wraithlord
-# VERIFY 10515
+# ID 10515 is for the capture event.
 ID=8515
 path=Arah3
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
 category=legendary
 health=1376340
 type=undead
+
+attack=Slash
+ID=4245
+cooldown=0
+animation=swings left arm
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:15
+subeffect=poison:25
+#note=try to block or evade
+
+attack=Corruption
+ID=4241
+additional=channeled
+effect=~15 cones in ~7 s
+count=15
+length=7
+subeffect=damage:-
+subeffect=buff:Corruption
+#note=evade quickly to avoid first few hits
+#note=spray animation is wrong, look at the direction of Wraithlord's mouth
+
+attack=Grasping Dead (1)
+ID=4240
+animation=pulls right arm behind back
+additional=only used at distant targets
+effect=AoE
+subeffect=damage:-
+subeffect=immobilized:3
+#note=try to block or evade
+
+attack=Lupine Blast (1, 2)
+ID=4187
+additional=only used at distant targets
+effect=dash with end effect
+effect=PBAoE
+subeffect=no effect (lose single-block though)
+effect=PBAoE
+subeffect=damage:-
+subeffect=immobilized
+subeffect=buff:Corruption:0:5
+#note=single blocks will not work because of "fake" hit
+
+attack=Summon
+effect=summons enemy=Undead_Tendrils:structure
+#note=avoid them and rally from if needed
 
 attack="Corruption"
 effect=debuff
@@ -2487,48 +2558,6 @@ subeffect=take about twice as much damage
 effect=25 stacks
 subeffect=summon a enemy=Risen_Wraith_(Drain):elite
 
-attack=Slash
-cooldown=0
-animation=swings left arm
-effect=melee
-subeffect=damage:0
-subeffect=bleeding:15
-subeffect=poison:25
-#note=try to block or evade
-
-attack=Corruption
-additional=channeled
-effect=~15 cones in ~7 s
-count=15
-length=7
-subeffect=damage:0
-subeffect=buff:Corruption
-#note=evade quickly to avoid first few hits
-#note=spray animation is wrong, look at the direction of Wraithlord's mouth
-
-attack=Grasping Dead (1)
-animation=pulls right arm behind back
-additional=only used at distant targets
-effect=AoE
-subeffect=damage:0
-subeffect=immobilized:3
-#note=try to block or evade
-
-attack=Lupine Blast (1, 2)
-additional=only used at distant targets
-effect=dash with end effect
-effect=PBAoE
-subeffect=no effect (lose single-block though)
-effect=PBAoE
-subeffect=damage:0
-subeffect=immobilized
-subeffect=buff:Corruption:0:5
-#note=single blocks will not work because of "fake" hit
-
-attack=Summon
-effect=summons enemy=Undead_Tendrils:structure
-#note=avoid them and rally from if needed
-
 ##################################################################
 
 name=Undead Knight
@@ -2539,16 +2568,18 @@ path=Arah4
 category=champion
 
 attack=Slash
+ID=2649
 cooldown=0
 effect=melee
 count=2
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:3
 
 attack=Wing Buffet
+ID=1534
 animation=Raises in air
 effect=PBAoE
-subeffect=damage:0
+subeffect=damage:-
 subeffect=launch:2.3
 
 ##################################################################
@@ -2561,17 +2592,19 @@ path=Arah4
 category=legendary
 
 attack=Whirling Fire
+ID=4293
 animation=spins
 additional=cannot change direction. Used on close targets
 effect=slow dash with multiple PBAoEs
 count=?
-subeffect=damage:0
+subeffect=damage:-
 #note=evade through because he does not change direction
 
-attack=Fire AoE
+attack=Fire Storm
+ID=18882
 effect=multiple ticking AoEs on area
 count=?
-subeffect=damage:0
+subeffect=damage:-
 subeffect=burning:0
 
 ##################################################################
@@ -2581,6 +2614,16 @@ ID=10439
 alt=Hounds of Balthazar
 path=Arah4
 category=elite
+
+attack=Bite
+ID=3648
+effect=melee
+subeffect=damage:-
+
+attack=Fiery Leap
+ID=3649
+effect=short leap
+subeffect=damage:-
 
 ##################################################################
 
@@ -2595,14 +2638,16 @@ type=undead
 
 attack=cannot be moved
 
-attack=Launch
+attack=Chaos Blast
+ID=4232
 animation=two explosions
 effect=PBAoE
-subeffect=damage:0
+subeffect=damage:-
 subeffect=launch:0
 #note=block/evade when you see second explosion
 
-attack=Summon
+attack=Summon a flora
+ID=4233
 effect=summon a enemy=Tree:normal
 effect=AoE
 subeffect=damage:0
@@ -2617,8 +2662,9 @@ path=Arah4
 category=normal
 
 attack=Binding Roots
+ID=19442
 effect=debuff
-subeffect=Immobilized
+subeffect=Immobilized:0
 #note=Can be destroyed
 
 ##################################################################
@@ -2631,18 +2677,21 @@ path=Arah4
 category=legendary
 
 attack=Winds of Chaos
+ID=11157
 effect=bouncing projectile
-subeffect=damage:0
+subeffect=damage:-
 subeffect=random condition
 #note=you can break line of sight behind statue
 
-attack=Morph
+attack=Moa Morph
+ID=11156
 animation=purple glow
 effect=ranged
 subeffect=turn target into a Moa
 #note=try to evade
 
 attack=Summon clones
+ID=11158
 effect=summon 5 enemy=text:clones|Farnaz,_High_Priestess_of_Lyssa_(clone):legendary
 
 attack=Shatter
@@ -2651,7 +2700,8 @@ subeffect=Confusion:0:5 per clone
 #note=quickly use partywide condition removal
 #note=disable autoattack and stop attacking
 
-attack=Summon Illusion
+attack=Summon an illusion
+ID=11152
 effect=summons illusion based on target profession
 
 ##################################################################
@@ -2661,6 +2711,11 @@ ID=10782
 path=Arah4
 category=legendary
 type=undead
+
+attack=Winds of Chaos
+ID=11157
+effect=bouncing projectile
+subeffect=damage:-
 
 ##################################################################
 
@@ -2686,20 +2741,25 @@ path=Arah4
 category=legendary
 
 attack=Chain Lightning
+ID=5253
 effect=bouncing (3 hits) projectile
 count=2
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Dark Pact
+ID=5230
 effect=ranged
-subeffect=damage:0
+subeffect=damage:-
 subeffect="Dead Eyed Stare" (if not already)
 
-attack=Storm
+attack=Fire Storm
+ID=5204
 effect=multiple ticking AoEs
-subeffect=random damage (medium to very high) per hit
+count=?
+subeffect=damage:-
 
 attack=Cloak
+ID=5233
 effect=self-buff
 subeffect=gets invisible and start healing
 #note=she is invulnerable while being invisible
@@ -2732,27 +2792,32 @@ image=http://wiki.guildwars2.com/images/9/96/Bloodstone_Shard.jpg
 path=Arah4
 category=legendary
 
-attack=Fire AoE
+attack=Fire Storm
+ID=4292
 effect=multiple ticking AoEs on area
 count=?
-subeffect=damage:0
+subeffect=damage:-
 subeffect=burning:0
 
 attack=Summon
+ID=4323
 effect=summons a enemy=Tree:normal
 effect=AoE
 subeffect=damage
 #note=ignore
 
 attack=Summon Illusion
+ID=4325
 effect=summons illusion based on target profession
 
-attack=Summon Risen Wraith
+attack=Summon Wraith
+ID=4320
 effect=summon a enemy=Risen_Wraith_(Drain):elite
 
 attack=Dark Pact
+ID=4324
 effect=ranged
-subeffect=damage:0
+subeffect=damage:-
 subeffect="Dead Eyed Stare" (if not already)
 
 attack="Dead Eyed Stare"
@@ -2786,12 +2851,18 @@ subeffect=damage-percent:15
 ##################################################################
 
 name=Spark
-ID=3947
+# VERIFY 3947
+ID=10520
 alt=Sparks
 path=Arah4
 category=normal
 
 attack=Invulnerable
+
+attack=Lightning Bolt
+ID=2545
+effect=projectile
+subeffect=damage:-
 
 ##################################################################
 
@@ -2850,6 +2921,11 @@ Category=ally
 image=http://wiki.guildwars2.com/images/8/8e/Randall_Greyston.jpg
 Path=Arah4
 
+attack=Slash
+ID=3175
+effect=melee
+subeffect=damage:-
+
 ##################################################################
 
 Name=Scholar Yissa
@@ -2858,12 +2934,33 @@ Category=ally
 image=http://wiki.guildwars2.com/images/7/71/Scholar_Yissa.jpg
 Path=Arah2
 
+attack=Shoot
+ID=3160
+effect=projectile
+subeffect=damage:-
+
 ##################################################################
 
 Name=Surratt, Whispers Agent
 ID=10497
 Category=ally
 Path=Arah4
+
+attack=Slash
+ID=1416
+effect=melee
+subeffect=damage:-
+
+
+attack=Slash
+ID=3443
+effect=melee
+subeffect=damage:-
+
+attack=Shadow SHot
+ID=3447
+effect=projectile
+subeffect=damage:-
 
 ##################################################################
 
@@ -2873,6 +2970,11 @@ Category=ally
 image=http://wiki.guildwars2.com/images/5/5c/Varra_Skylark.jpg
 Path=Arah1
 
+attack=Shoot
+ID=3170
+effect=projectile
+subeffect=damage:-
+
 ##################################################################
 
 Name=Warden Illyra
@@ -2880,6 +2982,11 @@ ID=8337
 Category=ally
 image=http://wiki.guildwars2.com/images/5/50/Warden_Illyra.jpg
 Path=Arah3
+
+attack=Shoot
+ID=3160
+effect=projectile
+subeffect=damage:-
 
 ##################################################################
 # Other NPCs                                                     #
