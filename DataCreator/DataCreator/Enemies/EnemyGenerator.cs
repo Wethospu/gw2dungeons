@@ -412,7 +412,7 @@ namespace DataCreator.Enemies
 
         if (_currentAttack != null)
           _currentEnemy.Attacks.Add(_currentAttack);
-        _currentAttack = new Attack(LinkGenerator.CreatePageLinks(LinkGenerator.CheckLinkSyntax(data)));
+        _currentAttack = new Attack(LinkGenerator.CreatePageLinks(LinkGenerator.CheckLinkSyntax(data)), _currentEnemy.Attributes);
         _currentEffect = null;
       }
       // Tags from main loop. Save attack and exit this loop.

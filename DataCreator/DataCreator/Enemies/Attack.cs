@@ -18,6 +18,9 @@ namespace DataCreator.Enemies
     private readonly string _name;
     public readonly List<Effect> Effects = new List<Effect>();
     private string _cooldown = "";
+    private int _minimumRange = -1;
+    private int _maximumRange = -1;
+    private double _coefficient = 0;
     public List<Media> Medias = new List<Media>();
     public string Cooldown
     {
@@ -71,9 +74,22 @@ namespace DataCreator.Enemies
       }
     }
 
-    public Attack(string name)
+    public Attack(string name, EnemyAttributes attributes)
     {
       _name = name;
+      // Attempt to find values from the database. / 2015-10-2 / Wethospu
+      if (attributes == null || attributes.Weapons == null || attributes.Weapons.Main == null)
+        return;
+      foreach (var skill in attributes.Weapons.Main.Skills)
+      {
+        if (skill.Name.Equals(name))
+        {
+          _minimumRange = skill.MinimumRange;
+          _maximumRange = skill.MaxRange;
+          if (skill.Tags != null)
+            _coefficient = skill.Tags.Coefficient;
+        }
+      }
     }
 
     public Attack(Attack toCopy)
@@ -85,24 +101,6 @@ namespace DataCreator.Enemies
         Medias.Add(new Media(media));
       foreach (var effect in toCopy.Effects)
         Effects.Add(new Effect(effect));
-    }
-
-    /***********************************************************************************************
-     * CooldownToHtml / 2014-08-01 / Wethospu                                                      * 
-     *                                                                                             * 
-     * Converts cooldown string to html representation. Assumes cooldown is a number.              *
-     *                                                                                             *
-     * Returns representation.                                                                     *
-     *                                                                                             *
-     ***********************************************************************************************/
-
-    private string CooldownToHtml()
-    {
-      var toReturn = new StringBuilder();
-      toReturn.Append(Cooldown).Append(Constants.Space);
-      toReturn.Append("<span class=").Append(Constants.IconClass).Append(" title=\"cooldown\">CD</span>");
-      toReturn.Append(" ");
-      return toReturn.ToString();
     }
 
     /***********************************************************************************************
@@ -128,7 +126,12 @@ namespace DataCreator.Enemies
       if (!Animation.Equals(""))
         htmlBuilder.Append("<i>").Append(Helper.ConvertSpecial(Helper.ToUpper(LinkGenerator.CreateEnemyLinks(Animation, path, enemies)))).Append("</i>. ");
       if (!Cooldown.Equals(""))
-        htmlBuilder.Append(CooldownToHtml());
+        htmlBuilder.Append(Cooldown).Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" title=\"cooldown\">CD</span> ");
+      if (_minimumRange > -1 || _maximumRange > -1)
+      {
+        htmlBuilder.Append(_minimumRange > -1 ? "" + _minimumRange : "?").Append("-").Append(_maximumRange > -1 ? "" + _maximumRange : "?");
+        htmlBuilder.Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" title=\"range\">range</span> ");
+      }
       htmlBuilder.Append("</p>").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<div class=\"enemy-attack-effect\">").Append(Constants.LineEnding);
       // Add attack effects.
