@@ -64,6 +64,9 @@ var settings = {
 	showLevel: true,
 	showTargetLevel: true,
 	showFractalLevel: true,
+	showCooldowns: true,
+	properCooldowns: false,
+	showRanges: true,
 	// General settings.
     settingsVisited: false,
     comments: true,
@@ -283,6 +286,25 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".size-unit").hide();
 	
+	if (getSetting("showRanges"))
+		$(enemy).find(".range-unit").show();
+	else
+		$(enemy).find(".range-unit").hide();
+	
+	if (getSetting("showCooldowns")) {
+		$(enemy).find(".cooldown-unit").show();
+		$(enemy).find(".cooldown").each(function () {
+			var cooldown = $(this).data("amount");
+			var internal = $(this).data("internal");
+			if (cooldown != null && (internal == null || !getSetting("properCooldowns")))
+				$(this).html(cooldown);
+			else
+				$(this).html(internal);
+		});
+	}	
+	else
+		$(enemy).find(".cooldown-unit").hide();
+	
 	var power = getAttribute(level, $(enemy).data("power"));
 	if (getSetting("showPower")) {
 		$(enemy).find(".power-unit").show();
@@ -390,7 +412,7 @@ function handleEnemy(enemy) {
         insertDamageRange(this, damages, damageView, damageRange, dungeonLevel);
     });
     $(enemy).find(".percent-value").each(function () {
-        var damage = calculatePercentDamage((Number)($(this).data('amount')), dungeonLevel);
+        var damage = getPercentage((Number)($(this).data('amount')), dungeonLevel);
         insertDamage(this, damage, damageView, dungeonLevel);
     });
     $(enemy).find(".effect-value").each(function () {

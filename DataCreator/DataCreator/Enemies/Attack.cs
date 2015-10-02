@@ -20,11 +20,11 @@ namespace DataCreator.Enemies
     private int _minimumRange = -1;
     private int _maximumRange = -1;
     private double _coefficient = 0;
-    private double _internalCooldown = 0.0;
+    private double _internalCooldown = -1;
     private int _requiredLevel = -1;
     private string _weapon = "";
     public List<Media> Medias = new List<Media>();
-    public double Cooldown = 0.0;
+    public double Cooldown = -1;
     private string _animation = "";
     public string Animation
     {
@@ -102,6 +102,7 @@ namespace DataCreator.Enemies
             _minimumRange = skill.MinimumRange;
             _maximumRange = skill.MaxRange;
             _requiredLevel = skill.LevelRequirement;
+            _internalCooldown = skill.Cooldown;
             _weapon = "main";
             if (skill.Tags != null)
               _coefficient = skill.Tags.Coefficient;
@@ -117,6 +118,7 @@ namespace DataCreator.Enemies
             _minimumRange = skill.MinimumRange;
             _maximumRange = skill.MaxRange;
             _requiredLevel = skill.LevelRequirement;
+            _internalCooldown = skill.Cooldown;
             _weapon = "off";
             if (skill.Tags != null)
               _coefficient = skill.Tags.Coefficient;
@@ -132,6 +134,7 @@ namespace DataCreator.Enemies
             _minimumRange = skill.MinimumRange;
             _maximumRange = skill.MaxRange;
             _requiredLevel = skill.LevelRequirement;
+            _internalCooldown = skill.Cooldown;
             _weapon = "water";
             if (skill.Tags != null)
               _coefficient = skill.Tags.Coefficient;
@@ -162,12 +165,20 @@ namespace DataCreator.Enemies
       // Add other data.
       if (!Animation.Equals(""))
         htmlBuilder.Append("<i>").Append(Helper.ConvertSpecial(Helper.ToUpper(LinkGenerator.CreateEnemyLinks(Animation, path, enemies)))).Append("</i>. ");
-      if (!Cooldown.Equals(""))
-        htmlBuilder.Append(Cooldown).Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" title=\"cooldown\">CD</span> ");
+      if (Cooldown > -1 || _internalCooldown > -1)
+      {
+        htmlBuilder.Append("<span class=\"cooldown-unit\"><span class=\"cooldown\"");
+        if (Cooldown > -1)
+          htmlBuilder.Append(" data-amount=\"").Append(Cooldown).Append("\"");
+        if (_internalCooldown > -1)
+          htmlBuilder.Append(" data-internal=\"").Append(_internalCooldown).Append("\"");
+        htmlBuilder.Append("></span>").Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" title=\"cooldown\">CD</span> </span>");
+      }
       if (_minimumRange > -1 || _maximumRange > -1)
       {
+        htmlBuilder.Append("<span class=\"range-unit\">");
         htmlBuilder.Append(_minimumRange > -1 ? "" + _minimumRange : "?").Append("-").Append(_maximumRange > -1 ? "" + _maximumRange : "?");
-        htmlBuilder.Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" title=\"range\">range</span> ");
+        htmlBuilder.Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" title=\"range\">range</span> </span>");
       }
       htmlBuilder.Append("</p>").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<div class=\"enemy-attack-effect\">").Append(Constants.LineEnding);
