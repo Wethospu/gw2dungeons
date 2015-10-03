@@ -38,7 +38,6 @@ potion=inquest|main
 ##################################################################
 
 Name=Frizz
-Category=champion
 image=http://wiki.guildwars2.com/images/1/19/Frizz.jpg
 Path=Aether
 # Scaling not verified.
@@ -79,7 +78,6 @@ subeffect=knockback:1.5
 
 Name=Inquest Extinguisher
 alt=Inquest Extinguishers|Extinguisher|Extinguishers
-Category=elite
 Path=Aether
 type=inquest
 
@@ -112,7 +110,6 @@ subeffect=knockdown:3
 Name=Inquest Assassin
 alt=Assassin
 image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assassin.jpg
-Category=veteran
 Path=Aether
 # Health and scaling not verified.
 scaling=normal
@@ -153,7 +150,6 @@ subeffect=damage:3564516
 # Similar enemy: SE P1 Inquest Assistant
 
 Name=Inquest Assistant
-Category=veteran
 Path=Aether
 # Health and scaling not verified.
 scaling=normal
@@ -186,7 +182,6 @@ effect=buff:Magnetic_Aura:3
 # Similar enemy: SE P1 Inquest Grenadier
 
 Name=Inquest Grenadier
-Category=veteran
 image=http://wiki.guildwars2.com/images/d/df/Inquest_Grenadier.jpg
 Path=Aether
 # Health and scaling not verified.
@@ -220,7 +215,6 @@ Name=Inquest Technician
 alt=Inquest Technicians|Technician|Technicians
 # Verified?
 image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
-Category=veteran
 # Health and scaling not verified.
 scaling=normal
 health=11516
@@ -282,7 +276,6 @@ subeffect=agony:3
 Name=Aetherblade Golem
 alt=Aetherblade Golems|Golem|Golems
 image=http://wiki.guildwars2.com/images/9/9c/Mark_I_Golemite.jpg
-Category=elite
 Path=Aether
 type=inquest
 
@@ -404,7 +397,6 @@ subeffect=resurrect dead allies and teleport them to your location
 ##################################################################
 
 name=Jellyfish Beast
-category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Jellyfish.jpg
 # Scaling not verified.
 scaling=legendary
@@ -460,7 +452,6 @@ subeffect=knockback:2
 name=Jellyfish
 image=http://wiki.guildwars2.com/images/b/bd/Jellyfish.jpg
 alt=Jellyfishes
-category=normal
 # Scaling not verified.
 scaling=normal
 toughness=0.5
@@ -484,7 +475,6 @@ name=Krait Damoss
 image=http://wiki.guildwars2.com/images/a/a3/Krait_Damoss.jpg
 scaling=normal
 health=11516
-category=normal
 path=Aqua
 type=krait
 
@@ -513,7 +503,6 @@ subeffect=buff:evade
 name=Krait Damoss
 image=http://wiki.guildwars2.com/images/a/a3/Krait_Damoss.jpg
 scaling=normal
-category=veteran
 health=46061
 path=Aqua
 type=krait
@@ -549,7 +538,6 @@ image=http://wiki.guildwars2.com/images/8/8d/Barracuda.jpg
 # Scaling not verified.
 scaling=constant
 health=15137
-category=normal
 path=Aqua
 type=fish
 
@@ -560,7 +548,6 @@ image=http://wiki.guildwars2.com/images/0/0f/Krait_Hypnoss.jpg
 scaling=normal
 health=11516
 toughness=0.8
-category=normal
 path=Aqua
 type=krait
 
@@ -584,7 +571,6 @@ image=http://wiki.guildwars2.com/images/0/0f/Krait_Hypnoss.jpg
 scaling=normal
 health=46061
 toughness=0.8
-category=veteran
 path=Aqua
 type=krait
 
@@ -619,7 +605,6 @@ image=http://wiki.guildwars2.com/images/3/30/Krait_Nimross.jpg
 scaling=normal
 health=11516
 toughness=0.8
-category=normal
 path=Aqua
 type=krait
 
@@ -644,7 +629,6 @@ image=http://wiki.guildwars2.com/images/3/30/Krait_Nimross.jpg
 scaling=normal
 health=46061
 toughness=0.8
-category=veteran
 path=Aqua
 type=krait
 
@@ -669,7 +653,6 @@ alt=Krait Slayers
 # Scaling not verified.
 scaling=normal
 health=15774
-category=normal
 path=Aqua
 type=krait
 
@@ -693,7 +676,6 @@ subeffect=sink:0
 
 copy=Krait Damoss|veteran
 name=Krait Damoss (Dolphin)
-category=veteran
 # Scaling not verified.
 scaling=constant
 health=63096
@@ -717,7 +699,6 @@ potion=outlaw|main
 ##################################################################
 
 name=Archdiviner (Start)
-category=legendary
 image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
 # Scaling unverified.
 scaling=legendary
@@ -891,7 +872,6 @@ name=Archdiviner (Phase 1)
 image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
 scaling=legendary
 health=1128600
-category=legendary
 path=Cliff
 type=outlaw
 
@@ -919,7 +899,6 @@ image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
 # Scaling unverified.
 scaling=legendary
 health=1128600
-category=legendary
 path=Cliff
 type=outlaw
 
@@ -965,7 +944,6 @@ alt=Bone Fiends
 scaling=normal
 health=10112
 toughness=1.1
-category=normal
 path=Cliff
 type=outlaw
 
@@ -986,7 +964,6 @@ subeffect=crippled:2
 name=Chanter
 alt=Chanters
 image=http://wiki.guildwars2.com/images/6/64/Chanter.jpg
-category=normal
 path=Cliff
 # Scaling unverified.
 scaling=normal
@@ -1023,7 +1000,6 @@ subeffect=vulnerability:10:4
 name=Chanter
 alt=Chanters
 image=http://wiki.guildwars2.com/images/6/64/Chanter.jpg
-category=veteran
 # Scaling unverified.
 scaling=normal
 health=46061
@@ -1059,7 +1035,6 @@ subeffect=vulnerability:10:4
 
 name=Fanatic
 alt=Fanatics
-category=normal
 path=Cliff
 # Scaling unverified.
 scaling=normal
@@ -1095,7 +1070,6 @@ subeffect=vulnerability:0:2|33%
 name=Novice (Dagger)
 alt=Novices (Dagger)
 image=http://wiki.guildwars2.com/images/9/91/Novice.jpg
-category=normal
 path=Cliff
 # Scaling unverified.
 scaling=normal
@@ -1130,7 +1104,6 @@ subeffect=damage:0
 name=Novice (Dagger)
 alt=Novices (Dagger)
 image=http://wiki.guildwars2.com/images/9/91/Novice.jpg
-category=veteran
 path=Cliff
 # Scaling unverified.
 scaling=normal
@@ -1164,7 +1137,6 @@ subeffect=damage:0
 
 name=Novice (Shortbow)
 alt=Novices (Shortbow)
-category=normal
 # Scaling unverified.
 scaling=normal
 health=11516
@@ -1190,7 +1162,6 @@ subeffect=buff:evade
 
 name=Novice (Shortbow)
 alt=Novices (Shortbow)
-category=veteran
 path=Cliff
 # Scaling unverified.
 scaling=normal
@@ -1243,7 +1214,6 @@ potion=inquest|side
 
 Name=Mai Trin
 alt=Mai
-Category=legendary
 Path=Mai
 image=http://wiki.guildwars2.com/images/d/d6/Captain_Mai_Trin.jpg
 type=aetherblade
@@ -1321,7 +1291,6 @@ subeffect=10% less damage, reduced control effects and 20% less condition durati
 Name=First Mate Horrik
 alt=Horrik
 image=http://wiki.guildwars2.com/images/5/5b/Aetherized_Tonic.jpg
-Category=champion
 Path=Mai
 type=aetherblade
 # Scaling not verified.
@@ -1357,7 +1326,6 @@ Name=Inquest Technician
 alt=Technician
 # TODO: VERIFY
 image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
-Category=champion
 Path=Mai
 # TODO: VERIFY
 type=inquest
@@ -1395,7 +1363,6 @@ subeffect=stun:2
 name=Mark I Golemite
 alt=Mark I Golemites|Golemite|Golemites
 image=http://wiki.guildwars2.com/images/9/9c/Mark_I_Golemite.jpg
-category=normal
 # Health and scaling not verified.
 scaling=normal
 health=11516
@@ -1415,7 +1382,6 @@ Name=Inquest Technician
 alt=Technician
 # TODO: VERIFY
 image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
-Category=normal
 # Health and scaling not verified.
 scaling=normal
 health=11516
@@ -1504,7 +1470,6 @@ subeffect=healing:1
 ##################################################################
 
 name=Weapons Test Engineer
-category=champion
 type=molten
 # Scaling not verified.
 scaling=champion|49
@@ -1614,7 +1579,6 @@ subeffect=enemy=Toxic_Ooze:veteran
 ##################################################################
 
 name=Cave Bat
-category=elite
 image=http://wiki.guildwars2.com/images/8/8b/Bat_%28NPC%29.jpg
 path=Furn
 type=no type
@@ -1631,7 +1595,6 @@ subeffect=damage:7479500
 ##################################################################
 
 name=Cave Bat
-category=veteran
 image=http://wiki.guildwars2.com/images/8/8b/Bat_%28NPC%29.jpg
 # Health and scaling not verified (likely!).
 scaling=normal
@@ -1651,7 +1614,6 @@ subeffect=damage:7479500
 ##################################################################
 
 name=Cave Spider
-category=elite
 image=http://wiki.guildwars2.com/images/b/bf/Cave_Spider.jpg
 path=Furn
 type=no type
@@ -1659,7 +1621,6 @@ type=no type
 ##################################################################
 
 name=Cave Spider
-category=normal
 scaling=normal
 image=http://wiki.guildwars2.com/images/b/bf/Cave_Spider.jpg
 health=46061
@@ -1669,7 +1630,6 @@ type=no type
 ##################################################################
 
 name=Cave Spider Hatchling
-category=normal
 image=http://wiki.guildwars2.com/images/b/b1/Cave_Spider_Hatchling.jpg
 # Scaling not verified.
 scaling=normal|49|83
@@ -1681,7 +1641,6 @@ type=no type
 # Quite similar with FOTM Solid Jade Colossus
 
 name=Earth Elemental
-category=elite
 type=elemental
 image=https://wiki.guildwars2.com/images/a/a0/Earth_Elemental.jpg
 # Health and scaling not verified.
@@ -1724,7 +1683,6 @@ subeffect=buff:projectile_reflection:5
 # Quite similar with FOTM Solid Jade Colossus
 
 name=Earth Elemental
-category=veteran
 image=https://wiki.guildwars2.com/images/a/a0/Earth_Elemental.jpg
 # Scaling not verified.
 # 41555 at scale 1
@@ -1767,7 +1725,6 @@ subeffect=buff:projectile_reflection:5
 ##################################################################
 
 name=Ember
-category=elite
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -1796,7 +1753,6 @@ subeffect=damage:4808250
 ##################################################################
 
 name=Ember
-category=veteran
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -1831,7 +1787,6 @@ image=http://wiki.guildwars2.com/images/a/a9/Lashtail_Devourer.jpg
 # Health and scaling not verified.
 scaling=normal
 health=46061
-Category=elite
 Path=Furn
 type=flame legion
 
@@ -1858,7 +1813,6 @@ subeffect=lose crippled
 Name=Lashtail Devourer
 alt=Lashtail Devourers
 image=http://wiki.guildwars2.com/images/a/a9/Lashtail_Devourer.jpg
-Category=veteran
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -1885,7 +1839,6 @@ subeffect=lose crippled
 ##################################################################
 
 name=Murellow
-category=elite
 image=http://wiki.guildwars2.com/images/b/b9/Juvenile_Murellow.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -1916,7 +1869,6 @@ subeffect=weakness:8
 ##################################################################
 
 name=Murellow
-category=veteran
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -1989,7 +1941,6 @@ subeffect=damage:17096000
 Name=Red Ooze
 alt=Red Oozes
 image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
-Category=veteran
 # Scaling not verified.
 scaling=normal
 health=46061
@@ -2031,7 +1982,6 @@ subeffect=damage:17096000
 Name=Tar Elemental
 alt=Tar Elementals
 image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
-Category=elite
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -2062,7 +2012,6 @@ subeffect=immobilized:0.5
 Name=Tar Elemental
 alt=Tar Elementals
 image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
-Category=veteran
 scaling=normal
 health=46061
 type=elemental
@@ -2092,7 +2041,6 @@ Name=Toxic Ooze
 alt=Toxic Oozes
 type=no type
 image=http://wiki.guildwars2.com/images/d/d2/Toxic_Ooze.jpg
-Category=elite
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -2139,7 +2087,6 @@ Name=Toxic Ooze
 alt=Toxic Oozes
 type=no type
 image=http://wiki.guildwars2.com/images/d/d2/Toxic_Ooze.jpg
-Category=veteran
 scaling=normal
 # Health verified.
 health=46061
@@ -2184,7 +2131,6 @@ Name=Translucent Ooze
 alt=Translucent Oozes
 image=http://wiki.guildwars2.com/images/e/e8/Translucent_Ooze.jpg
 type=no type
-Category=elite
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -2226,7 +2172,6 @@ Name=Translucent Ooze
 alt=Translucent Oozes
 type=no type
 image=http://wiki.guildwars2.com/images/e/e8/Translucent_Ooze.jpg
-Category=veteran
 scaling=normal
 health=46061
 Path=Furn
@@ -2298,7 +2243,6 @@ path=Furn|Molten
 
 name=Molten Berserker
 alt=Berserker
-category=legendary
 image=http://wiki.guildwars2.com/images/3/34/Molten_Berserker.jpg
 type=molten
 # Scaling unverified.
@@ -2406,7 +2350,6 @@ subeffect=take no damage
 
 name=Molten Firestorm
 alt=Firestorm
-category=legendary
 image=http://wiki.guildwars2.com/images/5/5a/Molten_Firestorm.jpg
 type=molten
 # Scaling unverified.
@@ -2472,7 +2415,6 @@ subeffect=launch:0
 # Similar enemy: FOTM Molten Molten Effigy
 
 Name=Molten Effigy
-Category=champion
 Path=Molten
 # Scaling unverified.
 scaling=champion
@@ -2575,7 +2517,6 @@ effect=summon 5 enemy=Ice_Elementals:veteran
 ##################################################################
 
 name=Shaman Lornarr Dragonseeker
-category=legendary
 image=http://wiki.guildwars2.com/images/a/a6/Hafdan_the_Black.jpg
 path=Snow
 # Scaling not verified.
@@ -2649,7 +2590,6 @@ subeffect=lose all "Frostbite" and get enemy=Ice_Shard:structure.
 
 Name=Crystal
 alt=Crystals
-Category=normal
 type=no type
 # Scaling not verified.
 scaling=constant
@@ -2665,7 +2605,6 @@ toughness=0.67
 Name=Icebrood Wolf
 alt=Icebrood Wolves
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
-Category=normal
 # Scaling not verified.
 scaling=normal
 # Not tested.
@@ -2693,7 +2632,6 @@ subeffect=crippled:3
 # Same enemy: HotW1 Icebrood Elemental (Big 79).
 
 Name=Icebrood Elemental
-Category=normal
 image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
 # Scaling not verified.
 scaling=normal
@@ -2721,7 +2659,6 @@ subeffect=damage:2510975
 
 Name=Ice Elemental
 alt=Ice Elementals
-Category=veteran
 image=https://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
 # Scaling not verified.
 scaling=normal
@@ -2758,7 +2695,6 @@ subeffect=knockback:1.5
 
 Name=Son of Svanir (Axe)
 alt=Sons of Svanir (Axe)
-Category=veteran
 image=http://wiki.guildwars2.com/images/d/db/Son_of_Svanir_axes.jpg
 # Scaling not verified.
 scaling=normal
@@ -2820,7 +2756,6 @@ subeffect=not used
 Name=Son of Svanir (Bow)
 alt=Sons of Svanir (Bow)
 image=http://wiki.guildwars2.com/images/4/43/Son_of_Svanir_bow.jpg
-Category=veteran
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -2886,7 +2821,6 @@ subeffect=Enabled
 Name=Son of Svanir (Greatsword)
 alt=Sons of Svanir (Greatsword)
 image=http://wiki.guildwars2.com/images/4/47/Son_of_Svanir_greatsword.jpg
-Category=veteran
 # Scaling not verified.
 scaling=normal
 health=46061
@@ -2950,7 +2884,6 @@ subeffect=Uses Frostwind Attack instead
 Name=Son of Svanir (Hammer)
 alt=Sons of Svanir (Hammer)
 image=http://wiki.guildwars2.com/images/9/95/Son_of_Svanir_hammer.jpg
-Category=veteran
 # Scaling not verified.
 scaling=normal
 health=46061
@@ -2998,7 +2931,6 @@ subeffect=Uses Ice Leap instead
 
 Name=Son of Svanir (Staff)
 alt=Sons of Svanir (Staff)
-Category=veteran
 image=http://wiki.guildwars2.com/images/5/55/Son_of_Svanir_staff.jpg
 # Scaling not verified.
 scaling=normal
@@ -3036,7 +2968,6 @@ effect=summon 2 enemy=Ice_Imps:normal
 
 Name=Ice Imp
 alt=Ice Imps
-Category=normal
 image=http://wiki.guildwars2.com/images/8/88/Ice_Imp.jpg
 # Scaling not verified.
 scaling=normal
@@ -3074,7 +3005,6 @@ subeffect=buff:petrify
 
 Name=Wolf
 alt=Wolves
-Category=veteran
 image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
 # Scaling not verified.
 scaling=normal
@@ -3102,7 +3032,6 @@ subeffect=might:5:3
 ##################################################################
 
 Name=Jade Maw
-Category=legendary
 image=http://wiki.guildwars2.com/images/1/12/Jade_Maw.jpg
 Path=Solid
 scaling=constant
@@ -3125,7 +3054,6 @@ effect=summon a enemy=Jade_Colossus:veteran
 
 Name=Jade Maw (Enraged)
 alt=Enraged
-Category=legendary
 Path=Solid
 scaling=constant
 type=elemental
@@ -3152,7 +3080,6 @@ subeffect=damage-percent:100
 Name=Giant Irukandji
 alt=Giant Irukandjis
 image=http://wiki.guildwars2.com/images/6/6f/Veteran_Irukandji.jpg
-Category=veteran
 # Scaling not verified.
 scaling=normal|49|82
 health=173911
@@ -3188,7 +3115,6 @@ subeffect=???
 Name=Irukandji
 alt=Irukandjis
 image=http://wiki.guildwars2.com/images/6/6f/Veteran_Irukandji.jpg
-Category=veteran
 # Scaling not verified.
 scaling=normal|49|82
 health=108695
@@ -3223,7 +3149,6 @@ subeffect=stun:2
 
 Name=Jade Colossus
 alt=Jade Colossi
-Category=veteran
 # Scaling not verified.
 scaling=constant|49
 health=23031
@@ -3263,7 +3188,6 @@ subeffect=buff:projectile_reflection:5
 
 Name=Jade Maw Tentacle
 alt=Tentacle|Tentacles|Jade Maw Tentacles
-Category=veteran
 # Scaling not verified.
 scaling=normal|49|82
 health=115941
@@ -3294,7 +3218,6 @@ subeffect=launch:0
 
 Name=Jade Shard
 alt=Jade Shards
-Category=veteran
 # Scaling not verified.
 scaling=normal|49|82
 health=72463
@@ -3327,7 +3250,6 @@ subeffect=knockback:1
 ##################################################################
 
 Name=Bloomhunger
-Category=legendary
 Path=Swamp
 image=http://wiki.guildwars2.com/images/1/16/Veteran_Willowheart.jpg
 scaling=legendary|49
@@ -3386,7 +3308,6 @@ effect=summon a enemy=Sun_Spirit:normal, a enemy=Spirit_of_Frost:normal and a en
 ##################################################################
 
 Name=Sun Spirit
-Category=normal
 scaling=constant
 health=2389
 toughness=1.15
@@ -3406,7 +3327,6 @@ subeffect=burning:5 caused by Entangle.
 ##################################################################
 
 Name=Spirit of Frost
-Category=normal
 scaling=constant
 health=2389
 toughness=1.15
@@ -3427,7 +3347,6 @@ subeffect=chilled:5 caused by poison Rain.
 ##################################################################
 
 Name=Storm Spirit
-Category=normal
 scaling=constant
 health=2389
 toughness=1.15
@@ -3450,7 +3369,6 @@ subeffect=daze:5 caused by Shoot
 
 Name=The Mossman (Stalk)
 alt=Mossman (Stalk)
-Category=legendary
 Path=Swamp|Insta
 image=http://wiki.guildwars2.com/images/e/ef/The_Mossman.jpg
 # Scaling not verified.
@@ -3474,7 +3392,6 @@ subeffect=agony:2
 
 Name=The Mossman
 alt=Mossman
-Category=legendary
 Path=Swamp
 image=http://wiki.guildwars2.com/images/e/ef/The_Mossman.jpg
 # Scaling not verified.
@@ -3553,7 +3470,6 @@ effect=transform to enemy=The_Mossman_(Animal):legendary
 
 Name=The Mossman (Animal)
 alt=animal forms
-Category=legendary
 Path=Swamp
 # Scaling not verified.
 scaling=legendary|49
@@ -3650,7 +3566,6 @@ image=http://giant.gfycat.com/ScaredGlumAnteater.gif
 Name=Firefly
 alt=Mosquito|Marsh Mosquitos
 image=http://wiki.guildwars2.com/images/f/f2/Firefly.jpg
-Category=normal
 Path=Swamp
 scaling=normal
 health=9260
@@ -3681,7 +3596,6 @@ subeffect=damage:2137000
 Name=Marsh Mosquito (weak)
 alt=Marsh Mosquitos (weak)
 image=http://wiki.guildwars2.com/images/3/33/Mosquito.jpg
-Category=normal
 Path=Swamp
 scaling=normal|10
 toughness=0.2
@@ -3714,7 +3628,6 @@ alt=Jungle Skelk Lurker|Jungle Skelks|Skelk|Skelks
 image=http://wiki.guildwars2.com/images/e/eb/Jungle_Skelk.jpg
 scaling=normal
 health=9260
-Category=normal
 Path=Swamp
 type=no type
 
@@ -3745,7 +3658,6 @@ alt=Jungle Spiders|Spiders|Spider
 image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
 scaling=normal
 health=11516
-Category=normal
 Path=Swamp
 type=spider
 
@@ -3772,7 +3684,6 @@ image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
 scaling=normal
 health=11516
 toughness=0.2
-Category=normal
 Path=Swamp
 type=spider
 
@@ -3839,7 +3750,6 @@ Name=Siamoth
 scaling=normal
 image=http://wiki.guildwars2.com/images/4/4c/Siamoth.jpg
 health=15278
-Category=normal
 Path=Swamp
 type=no type
 
@@ -3855,7 +3765,6 @@ subeffect=damage:3739750
 
 Name=Wolf
 alt=Wolves
-Category=veteran
 image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
 # Scaling not verified.
 scaling=constant|49
@@ -3877,7 +3786,6 @@ subeffect=2 enemy=Wolves:normal
 
 Name=Wolf
 alt=Wolves
-Category=normal
 image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
 # Scaling not verified.
 scaling=constant|49
@@ -3903,7 +3811,6 @@ potion=nightmare court|side
 
 Name=Thaumanova Anomaly
 alt=Anomaly
-Category=legendary
 image=http://wiki.guildwars2.com/images/b/b6/Thaumanova_Anomaly.jpg
 # Scaling not verified.
 scaling=legendary
@@ -3975,7 +3882,6 @@ subeffect=causes platforms disappear below
 ################################################################## 
 
 Name=Subject 6
-Category=champion
 image=http://wiki.guildwars2.com/images/d/d2/Toxic_Ooze.jpg
 Path=Thauma
 # Scaling not verified.
@@ -4041,7 +3947,6 @@ effect=Summon a enemy=Repair_Ooze:normal
 
 Name=Repair Ooze
 alt=Repair Oozes
-category=normal
 # Scaling not verified.
 scaling=normal
 health=31548
@@ -4062,7 +3967,6 @@ effect=self destruct
 
 Name=Mark I Golem
 alt=golems
-category=normal
 image=https://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
 # Scaling not verified.
 scaling=normal
@@ -4116,7 +4020,6 @@ subeffect=pull:1.5
 
 Name=Aatxe
 alt=Aatxes
-category=veteran
 image=http://wiki.guildwars2.com/images/a/ae/Aatxe.jpg
 # Scaling not verified.
 scaling=constant
@@ -4141,7 +4044,6 @@ subeffect=knockdown:3
 
 Name=Aatxe
 alt=Aatxes
-category=normal
 image=http://wiki.guildwars2.com/images/a/ae/Aatxe.jpg
 # Scaling not verified.
 scaling=constant
@@ -4165,7 +4067,6 @@ subeffect=knockdown:3
 
 Name=Ascalonian Archer
 alt=Archer|Ascalonian Archers|Archers
-category=veteran
 # Scaling not verified.
 scaling=constant
 health=63096
@@ -4176,7 +4077,6 @@ type=no type
 
 Name=Ascalonian Captain
 alt=Captain|Ascalonian Captains|Captains
-category=veteran
 # Scaling not verified.
 scaling=constant
 health=63096
@@ -4187,7 +4087,6 @@ type=no type
 
 Name=Ascalonian Cultist
 alt=Cultist|Ascalonian Cultists|Cultists
-category=veteran
 # Scaling not verified.
 scaling=constant
 health=63096
@@ -4198,7 +4097,6 @@ type=no type
 
 Name=Ascalonian Warrior
 alt=Warrior|Ascalonian Warriors|Warriors
-category=veteran
 # Scaling not verified.
 scaling=constant
 health=63096
@@ -4209,7 +4107,6 @@ type=no type
 # Copied from a potentially similar enemy: CoF P3
 Name=Flame Legion Blademaster
 alt=Blademaster|Flame Legion Blademasters|Blademasters
-Category=veteran
 # Scaling not verified.
 scaling=constant
 health=157296
@@ -4249,7 +4146,6 @@ effect=buff:block
 # Copied from a potentially similar enemy: CoF P3
 Name=Flame Legion Igniter
 alt=Igniter|Flame Legion Igniters|Igniters
-Category=veteran
 # Scaling not verified.
 scaling=constant
 health=63096
@@ -4274,7 +4170,6 @@ subeffect=pull:0
 # Copied from a potentially similar enemy: HotW P3 (Rare)
 Name=Icebrood Wolf
 alt=Wolf|Icebrood Wolves|Wolves
-category=veteran
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
 # Scaling not verified.
 scaling=constant
@@ -4309,7 +4204,6 @@ subeffect=crippled:3
 # Not verified!
 Name=Nightmare Hound
 alt=Hound|Nightmare Hounds|Hounds
-category=veteran
 # Scaling not verified.
 scaling=constant
 health=63096
@@ -4334,7 +4228,6 @@ subeffect=knockdown:3
 
 Name=Skritt Bottle Lobber
 alt=Bottle Lobber|Skritt Bottle Lobbers|Bottle Lobbers
-category=veteran
 image=http://wiki.guildwars2.com/images/7/7d/Skritt_Bottle_Lobber.jpg
 # Scaling not verified.
 scaling=constant
@@ -4356,7 +4249,6 @@ subeffect=knockdown:2
 Name=Skritt Gear Lobber
 alt=Gear Lobber|Skritt Gear Lobbers|Gear Lobbers
 image=http://wiki.guildwars2.com/images/7/74/Veteran_Skritt_Gear_Lobber.jpg
-category=veteran
 # Scaling not verified.
 scaling=constant
 health=63096
@@ -4373,7 +4265,6 @@ subeffect=damage
 Name=Bandit Rifleman
 alt=Bandit Riflemen|Rifleman|Riflemen
 image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
-Category=normal
 Path=Thauma
 type=outlaw
 
@@ -4404,7 +4295,6 @@ subeffect=knockdown:3
 
 Name=Bandit Scout
 alt=Bandit Scouts|Scout|Scouts
-Category=normal
 Path=Thauma
 type=outlaw
 
@@ -4459,7 +4349,6 @@ image=http://wiki.guildwars2.com/images/6/6a/Harpy_Hunter.jpg
 scaling=normal
 health=46061
 toughness=0.8
-Category=veteran
 type=harpy
 Path=Uncat
 
@@ -4501,7 +4390,6 @@ Path=Uncat
 ##################################################################
 
 Name=Rabbit
-Category=champion
 # Scaling unverified.
 scaling=champion
 image=http://wiki.guildwars2.com/images/0/0b/Rabbit.jpg
@@ -4524,7 +4412,6 @@ subeffect=damage-percent:110
 ##################################################################
 
 Name=Bandit Saboteur
-Category=veteran
 # Scaling unverified.
 scaling=normal
 health=46061
@@ -4560,7 +4447,6 @@ subeffect=buff:evade
 ##################################################################
 
 Name=Flame Legion Fire Shaman
-Category=champion
 Path=Uncat
 # Scaling unverified.
 scaling=champion
@@ -4602,7 +4488,6 @@ subeffect=launch:0
 ##################################################################
 
 Name=Ettin
-Category=champion
 image=http://wiki.guildwars2.com/images/d/d4/Champion_Ettin.jpg
 # Scaling unverified.
 scaling=champion
@@ -4664,7 +4549,6 @@ effect=break a Control effect
 ##################################################################
 
 Name=Old Tom
-Category=legendary
 image=http://wiki.guildwars2.com/images/4/46/Old_Tom.jpg
 # Scaling unverified.
 scaling=legendary
@@ -4718,7 +4602,6 @@ subeffect=poison:1
 ##################################################################
 
 Name=Raving Asura
-Category=legendary
 # Scaling unverified.
 scaling=legendary
 health=128984
@@ -4756,7 +4639,6 @@ Name=Snuggles
 scaling=normal
 image=http://wiki.guildwars2.com/images/5/52/Snuggles.jpg
 health=46061
-Category=veteran
 Path=Uncat
 type=inquest
 
@@ -4792,7 +4674,6 @@ subeffect=regenerate health
 Name=Mr. Mittens
 scaling=normal
 health=46061
-Category=veteran
 Path=Uncat
 type=inquest
 
@@ -4842,7 +4723,6 @@ subeffect=take 66 % less damage
 Name=Professor Mew
 scaling=normal
 health=46061
-Category=veteran
 Path=Uncat
 type=inquest
 
@@ -4872,7 +4752,6 @@ subeffect=damage:0 when standing close to different charge
 Name=Baron von Scrufflebutt
 scaling=normal
 health=46061
-Category=veteran
 Path=Uncat
 type=inquest
 
@@ -4909,7 +4788,6 @@ potion=elemental|side
 
 name=Rabsovich
 image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
-category=champion
 path=Under
 type=dredge
 
@@ -4939,7 +4817,6 @@ subeffect=healing
 ##################################################################
 
 name=Rampaging Ice Elemental
-category=legendary
 image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
 path=Under
 type=elemental
@@ -4982,7 +4859,6 @@ subeffect=Healing:0
 ##################################################################
 
 name=Dredge Powersuit
-category=legendary
 image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
 path=Under
 type=dredge
@@ -5036,7 +4912,6 @@ subeffect=Healing:0
 
 name=Dredge Disaggregator
 alt=Dredge Disaggregators
-category=normal
 image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -5077,7 +4952,6 @@ subeffect=protection:8
 name=Dredge Disaggregator
 alt=Dredge Disaggregators
 image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
-category=veteran
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -5115,7 +4989,6 @@ subeffect=protection:8
 name=Dredge Excavator (Pickaxe)
 alt=Dredge Excavators (Pickaxe)
 image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
-category=normal
 path=Under|Thauma
 # Health and scaling not verified.
 scaling=normal
@@ -5147,7 +5020,6 @@ effect=Interacts with dead Dredge or items and transforms
 name=Dredge Excavator (Tunneler)
 alt=Dredge Excavators (Tunneler)
 image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
-category=normal
 # Health and scaling not verified.
 scaling=normal
 health=11516
@@ -5175,7 +5047,6 @@ subeffect=knockdown:2
 name=Dredge Excavator (Tunneler)
 alt=Dredge Excavators (Tunneler)
 image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
-category=veteran
 path=Under
 # Health and scaling not verified.
 scaling=normal
@@ -5202,7 +5073,6 @@ subeffect=knockdown:2
 
 name=Dredge Mining Suit
 alt=Dredge Mining Suits
-category=veteran
 image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -5288,7 +5158,6 @@ subeffect=stun:2 when passing through
 name=Dredge Oscillator
 alt=Dredge Oscillators
 image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
-category=normal
 # Health and scaling not verified.
 scaling=normal
 health=11516
@@ -5316,7 +5185,6 @@ subeffect=knockback:1.5
 name=Dredge Oscillator
 alt=Dredge Oscillators
 image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
-category=veteran
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -5347,7 +5215,6 @@ subeffect=knockback:1.5
 name=Dredge Resonator
 alt=Dredge Resonators
 image=http://wiki.guildwars2.com/images/4/48/Dredge_Resonator.jpg
-category=normal
 # Health and scaling not verified.
 scaling=normal
 health=11516
@@ -5376,7 +5243,6 @@ subeffect=knockdown:2
 name=Dredge Ratnik
 alt=Dredge Ratniks
 image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
-category=normal
 # Health and scaling not verified.
 scaling=normal
 health=11516
@@ -5415,7 +5281,6 @@ alt=Dredge Reverberants
 
 name=Dredge Reverberant
 alt=Dredge Reverberants
-category=veteran
 image=http://wiki.guildwars2.com/images/c/c3/Veteran_Dredge_Reverberant.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -5447,7 +5312,6 @@ subeffect=vulnerability:8
 
 name=Dredge Strazar
 alt=Dredge Strazars
-category=veteran
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -5476,7 +5340,6 @@ subeffect=vulnerability:8
 
 name=Ice Elemental (Melee)
 alt=Ice Elementals (Melee)
-category=veteran
 image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -5510,7 +5373,6 @@ subeffect=remove all Conditions
 Name=Ice Elemental (Ranged)
 alt=Ice Elementals (Ranged)
 image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
-Category=veteran
 # Health and scaling not verified.
 scaling=normal
 health=46061
@@ -5544,7 +5406,6 @@ Name=Siegemaster Dulfy
 scaling=champion
 image=http://wiki.guildwars2.com/images/f/f4/Siegemaster_Dulfy.jpg
 health=239766
-Category=Champion
 Path=Urban
 type=no type
 
@@ -5582,7 +5443,6 @@ subeffect=repairs structures
 
 Name=Captain Ashym (Sword)
 alt=Sword and Shield|Captain Ashym
-Category=legendary
 # Scaling not verified.
 scaling=legendary
 health=517388
@@ -5627,7 +5487,6 @@ subeffect=protection:15
 
 Name=Captain Ashym (Staff)
 alt=Staff
-Category=legendary
 Path=Urban
 # Scaling not verified.
 scaling=legendary
@@ -5682,7 +5541,6 @@ subeffect=protection:15
 
 Name=Captain Ashym (Greatsword)
 alt=Fiery Greatsword
-Category=legendary
 Path=Urban
 # Scaling not verified.
 scaling=legendary
@@ -5772,7 +5630,6 @@ subeffect=damage:0
 
 Name=Ascalonian Archer (Igniter)
 alt=Ascalonian Archers (Igniter)|Archer (Igniter)|Archers (Igniter)
-Category=veteran
 scaling=normal
 toughness=0.8
 health=46061
@@ -5824,7 +5681,6 @@ alt=Ascalonian Archers (Condition)|Archer (Condition)|Archers (Condition)
 scaling=normal
 toughness=0.8
 health=46061
-Category=veteran
 Path=Urban
 type=no type
 
@@ -5856,7 +5712,6 @@ scaling=normal
 health=46061
 scaling=normal|0
 toughness=0.8
-Category=veteran
 Path=Urban
 type=no type
 
@@ -5869,7 +5724,6 @@ scaling=normal
 health=46061
 scaling=normal|0
 toughness=0.8
-Category=veteran
 Path=Urban
 type=no type
 
@@ -5924,7 +5778,6 @@ Name=Ascalonian Cultist (Respawn)
 alt=Ascalonian Cultists (Respawn)|Cultist (Respawn)|Cultists (Respawn)
 scaling=level
 health=63096
-Category=veteran
 Path=Urban
 
 ##################################################################
@@ -5935,7 +5788,6 @@ scaling=normal
 health=46061
 scaling=normal|0
 toughness=0.8
-Category=veteran
 Path=Urban
 type=no type
 
@@ -5948,7 +5800,6 @@ alt=Ascalonian Fighters|Fighter|Fighters
 scaling=normal
 health=46061
 scaling=normal|0
-Category=veteran
 Path=Urban
 type=no type
 
@@ -5982,7 +5833,6 @@ Name=Ascalonian Healer
 alt=Ascalonian Healers|Healer|Healers
 scaling=normal
 health=46061
-Category=veteran
 Path=Urban
 type=no type
 
@@ -6002,7 +5852,6 @@ scaling=normal
 health=46061
 scaling=normal|0
 toughness=0.8
-Category=veteran
 Path=Urban
 type=no type
 
@@ -6035,7 +5884,6 @@ Name=Ascalonian Mage (Respawn)
 alt=Ascalonian Mages (Respawn)|Mage (Respawn)|Mages (Respawn)
 scaling=level
 health=63096
-Category=veteran
 Path=Urban
 
 ##################################################################
@@ -6047,7 +5895,6 @@ scaling=normal
 health=46061
 scaling=normal|0
 toughness=0.8
-Category=veteran
 Path=Urban
 type=no type
 
@@ -6083,7 +5930,6 @@ Name=Ascalonian Squire
 alt=Squire
 scaling=normal
 health=46061
-Category=veteran
 Path=Urban
 type=no type
 
@@ -6109,7 +5955,6 @@ Name=Ascalonian Warrior
 alt=Ascalonian Warriors|Warrior|Warriors
 scaling=normal
 health=46061
-Category=veteran
 Path=Urban
 type=no type
 
@@ -6159,7 +6004,6 @@ Name=Ascalonian Warrior (Respawn)
 alt=Ascalonian Warriors (Respawn)|Warrior (Respawn)|Warriors (Respawn)
 scaling=level
 health=63096
-Category=veteran
 Path=Urban
 
 ##################################################################
@@ -6238,7 +6082,6 @@ potion=demon|side
 
 Name=Grawl Shaman
 alt=Shaman
-Category=Champion
 image=http://wiki.guildwars2.com/images/8/8f/Grawl_Shaman.jpg
 Path=Volc
 scaling=champion
@@ -6300,7 +6143,6 @@ subeffect=fury:6
 
 Name=Imbued Shaman
 alt=Shaman
-Category=legendary
 image=http://wiki.guildwars2.com/images/c/cd/Legendary_Imbued_Shaman.jpg
 Path=Volc
 scaling=legendary
@@ -6371,7 +6213,6 @@ subeffect=healing-percent:25 when eating a Villager
 
 Name=Grawl Berserker
 alt=Grawl Berserkers|Berserkers
-Category=normal
 image=http://wiki.guildwars2.com/images/7/7a/Grawl_Berserker.jpg
 scaling=normal
 health=11516
@@ -6404,7 +6245,6 @@ alt=Grawl Raiders|Raiders
 scaling=normal|49|82
 image=http://wiki.guildwars2.com/images/8/8c/Grawl_Raider.jpg
 health=37241
-Category=normal
 Path=Volc
 type=grawl
 
@@ -6428,7 +6268,6 @@ subeffect=vulnerability:5
 
 Name=Grawl Shaman
 alt=Grawl Shamans|Shamans
-Category=normal
 image=http://wiki.guildwars2.com/images/8/8f/Grawl_Shaman.jpg
 scaling=normal
 health=11516
@@ -6478,7 +6317,6 @@ alt=Grawl Shamans
 image=http://wiki.guildwars2.com/images/8/8f/Grawl_Shaman.jpg
 scaling=normal
 health=41455
-Category=veteran
 Path=Volc
 type=grawl
 
@@ -6512,7 +6350,6 @@ alt=Lava Elementals|Elementals
 image=http://wiki.guildwars2.com/images/d/d4/Lava_Elemental.jpg
 scaling=normal
 health=11516
-Category=normal
 Path=Volc
 type=elemental
 
@@ -6526,7 +6363,6 @@ subeffect=immobilized:1
 Name=Vampire Bat
 alt=Vampire Bats
 image=http://wiki.guildwars2.com/images/6/6f/Vampire_Bat.jpg
-Category=veteran
 scaling=constant
 health=46061
 Path=Volc
@@ -6585,7 +6421,6 @@ subeffect=damage:213700000
 
 Name=Aetherblade Grenadier
 alt=Aetherblade Grenadiers|Grenadier|Grenadiers
-Category=normal
 image=http://wiki.guildwars2.com/images/8/8f/Aetherblade_Grenadier.jpg
 # Health and scaling not verified.
 # At Mai Trin didn't seem to scale.
@@ -6619,7 +6454,6 @@ subeffect=chilled:5
 
 Name=Aetherblade Grenadier
 alt=Aetherblade Grenadiers|Grenadier|Grenadiers
-Category=veteran
 image=http://wiki.guildwars2.com/images/8/8f/Aetherblade_Grenadier.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -6651,7 +6485,6 @@ subeffect=chilled:5
 
 Name=Aetherblade Grenadier
 alt=Aetherblade Grenadiers|Grenadier|Grenadiers
-Category=elite
 image=http://wiki.guildwars2.com/images/8/8f/Aetherblade_Grenadier.jpg
 Path=Aether
 type=aetherblade
@@ -6681,7 +6514,6 @@ subeffect=chilled:5
 
 Name=Aetherblade Striker
 alt=Aetherblade Strikers|Striker|Strikers
-Category=normal
 image=http://wiki.guildwars2.com/images/b/b6/Aetherblade_Striker.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -6724,7 +6556,6 @@ subeffect=buff:shocking_aura:3
 
 Name=Aetherblade Striker
 alt=Aetherblade Strikers|Striker|Strikers
-Category=veteran
 image=http://wiki.guildwars2.com/images/b/b6/Aetherblade_Striker.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -6767,7 +6598,6 @@ subeffect=buff:shocking_aura:3
 
 Name=Aetherblade Striker
 alt=Aetherblade Strikers|Striker|Strikers
-Category=elite
 image=http://wiki.guildwars2.com/images/b/b6/Aetherblade_Striker.jpg
 Path=Aether
 type=aetherblade
@@ -6807,7 +6637,6 @@ subeffect=buff:shocking_aura:3
 
 Name=Aetherblade Taskmaster
 alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
-Category=normal
 image=http://wiki.guildwars2.com/images/9/93/Aetherblade_Taskmaster.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -6842,7 +6671,6 @@ subeffect=confusion:5:5
 
 Name=Aetherblade Taskmaster
 alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
-Category=veteran
 image=http://wiki.guildwars2.com/images/9/93/Aetherblade_Taskmaster.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -6878,7 +6706,6 @@ subeffect=confusion:5:5
 
 Name=Aetherblade Taskmaster
 alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
-Category=elite
 image=http://wiki.guildwars2.com/images/9/93/Aetherblade_Taskmaster.jpg
 Path=Aether
 type=aetherblade
@@ -6911,7 +6738,6 @@ subeffect=confusion:5:5
 
 Name=Aetherblade Thug
 alt=Aetherblade Thugs|Thug|Thugs
-Category=normal
 image=http://wiki.guildwars2.com/images/d/d4/Aetherblade_Thug.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -6958,7 +6784,6 @@ subeffect=damage:11031194
 
 Name=Aetherblade Thug
 alt=Aetherblade Thugs|Thug|Thugs
-Category=veteran
 image=http://wiki.guildwars2.com/images/d/d4/Aetherblade_Thug.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -7005,7 +6830,6 @@ subeffect=damage:11031194
 
 Name=Aetherblade Thug
 alt=Aetherblade Thugs|Thug|Thugs
-Category=elite
 image=http://wiki.guildwars2.com/images/d/d4/Aetherblade_Thug.jpg
 Path=Aether
 type=aetherblade
@@ -7048,7 +6872,6 @@ subeffect=damage:18311953
 
 Name=Aetherblade Thumper
 alt=Aetherblade Thumpers|Thumper|Thumpers
-Category=veteran
 image=http://wiki.guildwars2.com/images/9/91/Aetherblade_Thumper.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -7091,7 +6914,6 @@ subeffect=Negates damage and conditions
 
 Name=Aetherblade Thumper
 alt=Aetherblade Thumpers|Thumper|Thumpers
-Category=elite
 image=http://wiki.guildwars2.com/images/9/91/Aetherblade_Thumper.jpg
 Path=Aether
 type=aetherblade
@@ -7132,7 +6954,6 @@ subeffect=Negates damage and conditions
 
 Name=Aetherblade Swashbuckler
 alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
-Category=normal
 image=http://wiki.guildwars2.com/images/7/7a/Aetherblade_Swashbuckler.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -7190,7 +7011,6 @@ subeffect=buff:projectile_reflection:1.4
 
 Name=Aetherblade Swashbuckler
 alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
-Category=veteran
 image=http://wiki.guildwars2.com/images/7/7a/Aetherblade_Swashbuckler.jpg
 # Health and scaling not verified.
 scaling=normal
@@ -7248,7 +7068,6 @@ subeffect=buff:projectile_reflection:1.4
 
 Name=Aetherblade Swashbuckler
 alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
-Category=elite
 image=http://wiki.guildwars2.com/images/7/7a/Aetherblade_Swashbuckler.jpg
 Path=Aether|Mai
 type=aetherblade
@@ -7304,7 +7123,6 @@ subeffect=buff:projectile_reflection:1.4
 ##################################################################
 
 name=Molten Brawler
-category=elite
 image=http://wiki.guildwars2.com/images/5/5a/Veteran_Molten_Brawler.jpg
 type=molten
 scaling=level
@@ -7361,7 +7179,6 @@ subeffect=crippled:3
 
 Name=Molten Axe Fiend
 alt=Molten Axe Fiends|Axe Fiend|Axe Fiends
-Category=veteran
 image=http://wiki.guildwars2.com/images/c/c3/Molten_Axe_Fiend.jpg
 # Scaling not verified. Different health in Molten?
 scaling=normal
@@ -7404,7 +7221,6 @@ subeffect=crippled:8
 
 Name=Molten Bladestorm
 alt=Molten Bladestorms|Bladestorm|Bladestorms
-Category=veteran
 image=http://wiki.guildwars2.com/images/8/83/Molten_Bladestorm.jpg
 # Scaling not verified.
 scaling=normal
@@ -7435,7 +7251,6 @@ subeffect=damage:13890500
 name=Molten Disaggregator
 alt=Molten Disaggregators|Disaggregator|Disaggregators
 image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
-category=veteran
 # Scaling not verified.
 scaling=normal
 # 46061 at Molten?
@@ -7474,7 +7289,6 @@ subeffect=regeneration:8
 
 Name=Molten Igniter
 alt=Igniter
-Category=veteran
 # Scaling not verified.
 scaling=normal
 health=46061
@@ -7500,7 +7314,6 @@ subeffect=pull:1 on next attack
 
 name=Molten Oscillator
 alt=Molten Oscillators
-category=veteran
 image=http://wiki.guildwars2.com/images/c/cb/Molten_Oscillator.jpg
 type=molten
 # Health and scaling not verified.
@@ -7530,7 +7343,6 @@ subeffect=knockback:1.5
 ##################################################################
 
 name=Molten Protector
-category=veteran
 image=http://wiki.guildwars2.com/images/7/73/Veteran_Molten_Protector.jpg
 type=molten
 scaling=normal
@@ -7570,7 +7382,6 @@ subeffect=take no damage
 # Similar enemy (not same): FOTM Under Dredge Resonator
 
 name=Molten Resonator
-category=veteran
 image=http://wiki.guildwars2.com/images/f/f9/Molten_Resonator.jpg
 type=molten
 # Health and scaling not verified.
@@ -7601,7 +7412,6 @@ subeffect=launch:2.4
 ##################################################################
 
 name=Molten Reverberant
-category=veteran
 type=molten
 # Scaling not verified.
 scaling=normal
@@ -7616,7 +7426,6 @@ subeffect=damage:7479500
 
 Name=Molten Shadowblade
 alt=Molten Shadowblades|Shadowblade|Shadowblades
-Category=veteran
 image=http://wiki.guildwars2.com/images/d/d7/Molten_Shadowblade.jpg
 Path=Furn
 # Scaling not verified.
@@ -7651,7 +7460,6 @@ subeffect=bleeding:0
 
 Name=Molten Shaman
 alt=Molten Shamans|Shaman|Shamans
-Category=veteran
 image=http://wiki.guildwars2.com/images/b/b1/Veteran_Molten_Shaman.jpg
 Path=Furn
 scaling=normal
@@ -7708,7 +7516,6 @@ subeffect=burning:2
 
 Name=Molten Smoke Shaman
 alt=Molten Smoke Shamans|Smoke Shaman|Smoke Shamans
-Category=veteran
 image=http://wiki.guildwars2.com/images/1/1c/Molten_Smoke_Shaman.jpg
 Path=Furn
 # Scaling not verified.
@@ -7747,7 +7554,6 @@ subeffect=immobilized:3
 
 Name=Molten Stalker
 alt=Molten Stalkers
-Category=veteran
 image=http://wiki.guildwars2.com/images/1/10/Molten_Stalker.jpg
 Path=Furn
 # Health and scaling not verified.

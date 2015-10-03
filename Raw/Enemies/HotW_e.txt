@@ -21,7 +21,6 @@ effect=summon an enemy=Icebrood_Elemental:Elite
 
 Name=Kulag the Fallen
 ID=7246
-Category=champion
 Path=HotWS
 
 attack=can't be moved
@@ -59,7 +58,6 @@ subeffect=launch:3.3
 Name=Icebrood Goliath
 ID=8907
 level=77
-Category=champion
 image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
 Path=HotWS
 
@@ -83,7 +81,6 @@ subeffect=knockdown:2
 
 Name=Icebrood Goliath
 ID=8907
-Category=champion
 image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
 Path=HotW3
 
@@ -108,7 +105,6 @@ subeffect=knockdown:2
 Name=Hirvela the Lost
 ID=9601
 level=77
-Category=champion
 Path=HotWS
 
 attack=Throw Axe
@@ -176,7 +172,6 @@ subeffect=knockback:1.5
 Name=Lani Winterfist
 ID=7200
 level=77
-Category=champion
 Path=HotWS
 
 attack=Cone of Cold
@@ -197,7 +192,6 @@ subeffect=damage:0
 Name=Honor's Voice
 ID=4281
 level=78
-Category=champion
 image=http://wiki.guildwars2.com/images/b/be/Honor%27s_Voice.png
 Path=HotWS
 
@@ -228,7 +222,6 @@ subeffect=enemy=Ice_Shard:structure on target (5 s)
 Name=The Huntsman
 ID=4420
 level=77
-Category=legendary
 Path=HotWS
 
 attack=Pounce
@@ -286,7 +279,6 @@ subeffect=damage:0
 Name=Bane's Teeth
 ID=7201
 level=78
-Category=champion
 image=http://wiki.guildwars2.com/images/7/72/Ice_Drake.jpg
 Path=HotWS
 
@@ -324,7 +316,6 @@ subeffect=poison:3
 
 Name=Icebrood Troll
 ID=13429
-Category=champion
 image=http://wiki.guildwars2.com/images/f/fc/Icebrood_Troll.jpg
 Path=HotW1
 
@@ -378,7 +369,6 @@ subeffect=no effect
 
 Name=Aldus Stormbringer
 ID=7428
-Category=legendary
 image=http://wiki.guildwars2.com/images/e/e4/Aldus_Stormbringer.jpg
 Path=HotW1
 
@@ -422,7 +412,6 @@ subeffect=blocks an attack. Projectiles are reflected.
 
 Name=Ginva the Butcher
 ID=4421
-Category=legendary
 image=http://wiki.guildwars2.com/images/6/6a/Ginva_the_Butcher.jpg
 Path=HotW1
 
@@ -460,7 +449,6 @@ subeffect=chilled:5
 
 Name=Torn Fur
 ID=10991
-Category=champion
 image=http://wiki.guildwars2.com/images/5/5f/Icebrood_Kodan.jpg
 Path=HotW2
 
@@ -506,7 +494,6 @@ subeffect=damage:0
 Name=Jaddeor Icefist
 # VERIFY 7525
 ID=7524
-Category=legendary
 image=http://wiki.guildwars2.com/images/a/af/Champion_Svanir_Marauder.jpg
 Path=HotW2
 type=icebrood
@@ -548,7 +535,6 @@ Name=Balgren Creedbreaker
 # VERIFY 7524
 ID=7525
 image=http://wiki.guildwars2.com/images/a/af/Champion_Svanir_Marauder.jpg
-Category=legendary
 Path=HotW2
 type=icebrood
 
@@ -583,7 +569,6 @@ effect=Summon
 
 Name=Andal the Thug
 ID=7528
-Category=legendary
 image=http://wiki.guildwars2.com/images/5/55/Son_of_Svanir_staff.jpg
 Path=HotW2
 
@@ -610,7 +595,6 @@ subeffect=chilled:0
 
 Name=Poroo
 ID=7527
-Category=champion
 image=http://wiki.guildwars2.com/images/1/15/Corrupted_Quaggan.jpg
 Path=HotW2
 type=no type
@@ -633,7 +617,6 @@ ID=7526
 
 Name=Wollam the Plunderer
 ID=4423
-Category=legendary
 image=http://wiki.guildwars2.com/images/e/ea/Wollam_the_Plunderer.jpg
 Path=HotW2
 
@@ -656,7 +639,6 @@ subeffect=damage:0
 Name=Svánigandr
 # VERIFY 10937
 ID=7467
-Category=legendary
 image=http://wiki.guildwars2.com/images/6/66/Becomethewolf.jpg
 Path=HotW3
 
@@ -697,7 +679,6 @@ subeffect="Stun" (4 s)
 Name=Fimbul
 ID=7475
 level=81
-Category=legendary
 Path=HotW3
 
 attack=Leap
@@ -721,7 +702,6 @@ subeffect=invulnerability until destroyed
 
 Name=Sorge the Zealot
 ID=4424
-Category=legendary
 image=http://wiki.guildwars2.com/images/e/ea/Wollam_the_Plunderer.jpg
 Path=HotW3
 
@@ -744,7 +724,6 @@ subeffect=sink:0
 Name=Giant Arctic Jellyfish
 ID=10977
 alt=Giant Arctic Jellyfishes|Jellyfish|Jellyfishes
-Category=elite
 image=http://wiki.guildwars2.com/images/f/f9/Jellyfish_%28NPC%29.jpg
 Path=HotW3
 
@@ -758,7 +737,6 @@ effect=self destruct
 Name=Jellyfish
 ID=11495
 alt=Jellyfish|Jellyfishes
-Category=normal
 image=http://wiki.guildwars2.com/images/f/f9/Jellyfish_%28NPC%29.jpg
 Path=HotW3
 
@@ -772,7 +750,6 @@ Path=HotW3
 Name=Icebrood Berserker
 ID=9888
 alt=Icebrood Berserkers
-Category=elite
 image=http://wiki.guildwars2.com/images/5/50/Icebrood_Berserker.jpg
 Path=HotW1|HotW3
 
@@ -823,7 +800,6 @@ Name=Icebrood Berserker
 ID=1693
 level=77
 alt=Icebrood Berserkers
-Category=normal
 image=http://wiki.guildwars2.com/images/5/50/Icebrood_Berserker.jpg
 Path=HotWS
 type=icebrood
@@ -872,7 +848,6 @@ subeffect=chilled:5
 Name=Icebrood Claymore
 ID=9890
 alt=Icebrood Claymores
-Category=elite
 Path=HotWS|HotW2
 
 attack=Slash
@@ -926,7 +901,6 @@ subeffect=Uses Frostwind Attack instead
 Name=Icebrood Claymore
 ID=6145
 alt=Icebrood Claymores
-Category=normal
 Path=HotW1
 
 attack=Slash
@@ -980,7 +954,6 @@ Name=Icebrood Colossus
 ID=10219
 alt=Icebrood Colossi
 image=http://wiki.guildwars2.com/images/3/38/Icebrood_Colossus.jpg
-Category=elite
 health=157296
 Path=HotWS
 type=icebrood
@@ -1009,7 +982,6 @@ subeffect=knockback:0
 Name=Icebrood Elemental
 ID=9887
 alt=Icebrood Elementals
-Category=elite
 image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
 Path=HotWS
 
@@ -1041,7 +1013,6 @@ subeffect=launch:0
 Name=Icebrood Elemental
 ID=10992
 alt=Icebrood Elementals
-Category=elite
 image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
 Path=HotW2
 
@@ -1067,7 +1038,6 @@ effect=Summon 3 enemy=Icebrood_Elementals_(Small):normal
 Name=Icebrood Goliath
 ID=9873
 alt=Icebrood Goliaths
-Category=elite
 image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
 Path=HotWS
 
@@ -1106,7 +1076,6 @@ Name=Icebrood Hunter
 ID=9889
 alt=Icebrood Hunters
 image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
-Category=elite
 Path=HotW1|HotW3
 
 attack=Shoot
@@ -1171,7 +1140,6 @@ subeffect=Enabled
 Name=Icebrood Hunter
 ID=6143
 alt=Icebrood Hunters
-Category=normal
 image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
 Path=HotW1
 type=icebrood
@@ -1238,7 +1206,6 @@ subeffect=Enabled
 Name=Icebrood Hunter
 ID=9889
 level=77
-Category=elite
 image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
 Path=HotWS
 
@@ -1298,7 +1265,6 @@ subeffect=Enabled
 # Level 80 and 81 exist.
 Name=Icebrood Kodan
 ID=9876
-Category=elite
 image=http://wiki.guildwars2.com/images/5/5f/Icebrood_Kodan.jpg
 Path=HotW2
 
@@ -1329,7 +1295,6 @@ subeffect=damage:0
 
 Name=Icebrood Mauler
 ID=9891
-Category=elite
 image=http://wiki.guildwars2.com/images/c/c1/Icebrood_Mauler.jpg
 Path=HotWS
 
@@ -1351,7 +1316,6 @@ subeffect=damage:0
 # Level 80 and 81 exist.
 Name=Icebrood Mauler
 ID=9891
-Category=normal
 image=http://wiki.guildwars2.com/images/c/c1/Icebrood_Mauler.jpg
 Path=HotW1
 
@@ -1376,7 +1340,6 @@ Name=Icebrood Seer
 ID=9892
 alt=icebrood Seers
 image=http://wiki.guildwars2.com/images/9/92/Icebrood_Seer.jpg
-Category=elite
 Path=HotW1
 
 attack=Ice Shards
@@ -1410,7 +1373,6 @@ Name=Icebrood Seer
 ID=6148
 alt=icebrood Seers
 image=http://wiki.guildwars2.com/images/9/92/Icebrood_Seer.jpg
-Category=normal
 Path=HotW1
 
 attack=Ice Shards
@@ -1443,7 +1405,6 @@ Name=Icebrood Seer
 ID=9892
 alt=icebrood Seers
 image=http://wiki.guildwars2.com/images/9/92/Icebrood_Seer.jpg
-Category=elite
 Path=HotWS
 
 attack=Ice Shards
@@ -1476,13 +1437,11 @@ copy=Icebrood Seer|elite|HotW1
 name=Icebrood Seer
 ID=6147
 alt=Icebrood Seer
-category=champion
 
 copy=Icebrood Seer|elite|HotWS
 ID=6147
 name=Icebrood Seer
 alt=Icebrood Seer
-category=champion
 
 ##################################################################
 # Same enemy: CoE Icebrood Troll
@@ -1491,7 +1450,6 @@ Name=Icebrood Troll
 ID=9871
 alt=Icebrood Trolls
 image=http://wiki.guildwars2.com/images/f/fc/Icebrood_Troll.jpg
-Category=elite
 Path=HotWS
 
 attack=Troll Smash
@@ -1520,7 +1478,6 @@ Name=Icebrood Wolf
 ID=9869
 alt=Icebrood Wolves
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
-Category=elite
 Path=HotWS
 
 attack=Bite
@@ -1550,7 +1507,6 @@ Name=Icebrood Wolf
 ID=11708
 alt=Icebrood Wolves
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
-Category=normal
 Path=HotWS
 
 attack=Bite
@@ -1575,7 +1531,6 @@ Name=Icebrood Wolf
 # VERIFY 9875
 ID=9869
 alt=Icebrood Wolves|Wolf|Wolves
-Category=elite
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
 Path=HotW1|HotW3
 
@@ -1605,7 +1560,6 @@ subeffect=enemy=Icebrood_Wolf:normal
 Name=Icebrood Wolf
 ID=11708
 alt=Icebrood Wolves
-Category=normal
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
 Path=HotW1|HotW3
 
@@ -1631,7 +1585,6 @@ Name=Icebrood Wolf (Rare)
 # VERIFY 9869
 ID=9875
 alt=Wolf (Rare)
-Category=elite
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
 Path=HotW1|HotW3
 
@@ -1672,7 +1625,6 @@ subeffect=crippled:3
 # Level 80 and 81 exist.
 Name=Icebrood Berserker
 ID=1693
-Category=normal
 image=http://wiki.guildwars2.com/images/5/50/Icebrood_Berserker.jpg
 Path=HotW1|HotW3
 
@@ -1708,7 +1660,6 @@ subeffect=chilled:5
 Name=Icebrood Elemental (small)
 ID=9317
 alt=Icebrood Elementals (small)
-Category=normal
 image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
 Path=HotW2
 
@@ -1726,7 +1677,6 @@ effect=self destruct
 # Level 79, 80, 81 and 82 exist.
 Name=Icebrood Elemental (big)
 ID=11497
-Category=normal
 image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
 Path=HotW1
 
@@ -1754,7 +1704,6 @@ subeffect=damage:2519523
 # Level 75 and 76 exist.
 Name=Icebrood Elemental (big)
 ID=11497
-Category=normal
 image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
 Path=HotWS
 
@@ -1780,7 +1729,6 @@ subeffect=damage:0
 Name=Son of Svanir (Axe)
 ID=4653
 level=77
-Category=normal
 image=http://wiki.guildwars2.com/images/5/50/Icebrood_Berserker.jpg
 Path=HotWS
 
@@ -1818,7 +1766,6 @@ subeffect=chilled:5
 
 Name=Son of Svanir (Hammer)
 ID=9896
-Category=elite
 image=http://wiki.guildwars2.com/images/c/c1/Icebrood_Mauler.jpg
 Path=HotWS
 
@@ -1858,7 +1805,6 @@ path=HotW1
 ##################################################################
 Name=Snow Son of Svanir (Greatsword)
 ID=4655
-Category=normal
 Path=HotWS
 
 attack=Slash
@@ -1948,7 +1894,6 @@ Name=Son of Svanir (Bow)
 ID=4654
 level=78
 alt=Sons of Svanir (Bow)
-Category=normal
 image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
 Path=HotW1|HotW3
 type=sons of svanir
@@ -2016,7 +1961,6 @@ Name=Son of Svanir (Bow)
 ID=4654
 level=77
 alt=Sons of Svanir (Bow)
-Category=normal
 image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
 Path=HotWS
 type=sons of svanir
@@ -2098,7 +2042,6 @@ Name=Barracuda
 ID=6999
 level=82
 alt=Barracudas
-Category=normal
 image=http://wiki.guildwars2.com/images/8/8d/Barracuda.jpg
 Path=HotW3
 
@@ -2183,7 +2126,6 @@ Name=Ice Shark
 ID=13502
 level=80
 alt=Ice Sharks
-Category=champion
 Path=HotWS
 
 attack=Bite

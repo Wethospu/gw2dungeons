@@ -4,7 +4,6 @@ potion=ascalonian_ghost|none
 
 Name=Gateguard
 ID=6971
-Category=Champion
 image=https://wiki.guildwars2.com/images/f/fd/Ascalonian_Lieutenant.jpg
 Path=ACS
 
@@ -41,7 +40,6 @@ subeffect=Knockdown:4
 
 Name=Ascalonian Captain (Ranged)
 ID=9062
-Category=Champion
 image=http://wiki.guildwars2.com/images/c/cd/Ascalonian_Captain.jpg
 Path=ACS
 
@@ -67,7 +65,6 @@ subeffect=launch:3.2
 
 Name=Ascalonian Captain (Melee)
 ID=3363
-Category=Champion
 image=http://wiki.guildwars2.com/images/a/af/Champion_Ascalonian_Captain.jpg
 Path=ACS
 
@@ -120,7 +117,6 @@ subeffect=damage:450240
 Name=Ranger Nente
 ID=1701
 alt=Nente
-Category=Champion
 image=http://wiki.guildwars2.com/images/8/8c/Champion_Master_Ranger_Nente.jpg
 Path=ACS
 
@@ -139,7 +135,6 @@ subeffect=???
 
 Name=Ranger Nente (Hammer)
 ID=1701
-Category=Champion
 image=http://wiki.guildwars2.com/images/8/8c/Champion_Master_Ranger_Nente.jpg
 Path=ACS
 
@@ -174,7 +169,6 @@ subeffect=damage:-
 
 Name=Fang
 ID=9247
-Category=elite
 image=http://wiki.guildwars2.com/images/0/0e/Elite_Fang.jpg
 Path=ACS
 
@@ -208,7 +202,6 @@ ID=5751
 
 Name=Kasha
 ID=1702
-Category=Champion
 image=http://wiki.guildwars2.com/images/f/fc/Champion_Kasha.jpg
 Path=ACS
 
@@ -256,7 +249,6 @@ subeffect=fear:1
 
 Name=Flesh Golem
 ID=10640
-Category=Normal
 Path=ACS
 
 attack=Fist
@@ -279,7 +271,6 @@ subeffect=knockback:1.5
 
 Name=Bone Minion
 alt=Bone Minions
-Category=Normal
 Path=ACS
 
 Attack=Shield
@@ -299,7 +290,6 @@ subeffect=damage:123280
 name=Ralena
 ID=1705
 image=https://wiki.guildwars2.com/images/b/be/Ralena_Stormbringer.jpg
-category=champion
 path=ACS
 
 attack=No unshakeable or defiant
@@ -348,7 +338,6 @@ subeffect=knockback:1.5
 
 name=Vassar
 ID=1704
-category=champion
 image=https://wiki.guildwars2.com/images/e/ec/Vassar.jpg
 path=ACS
 
@@ -400,7 +389,6 @@ subeffect=reflects projectiles
 name=Illusionary Mage
 ID=9159
 alt=Illusionary Mages
-category=normal
 path=ACS
 
 attack=Backfire
@@ -417,7 +405,6 @@ subeffect=retaliation:3
 
 name=King Adelbern
 ID=1691
-category=legendary
 image=http://wiki.guildwars2.com/images/a/ad/Legendary_King_Adelbern.jpg
 path=ACS
 
@@ -483,7 +470,6 @@ subeffect=damage:0.4
 
 Name=Spider Queen
 ID=7039
-Category=legendary
 Path=AC1|AC2|AC3
 
 attack=Bite
@@ -538,7 +524,6 @@ subeffect=poison:6
 
 Name=Cave Troll
 ID=7041
-Category=Champion
 Path=AC1|AC2|AC3
 
 Attack=Troll Smash
@@ -598,7 +583,6 @@ subeffect=No effect
 # Verified for nothing.
 
 copy=7041
-Name=Cave Troll
 ID=7020
 Path=ACS
 
@@ -607,7 +591,6 @@ Path=ACS
 Name=Lieutenant Kholer
 ID=9115
 alt=Kholer
-Category=Champion
 Path=AC1|AC2|AC3
 
 Attack=Summon 2 Elite Ghosts
@@ -706,7 +689,6 @@ subeffect=damage:0.5
 
 Name=Howling King
 ID=7018
-Category=Legendary
 image=http://wiki.guildwars2.com/images/7/7b/Shadow_Skelk.jpg
 Path=AC1
 
@@ -755,7 +737,6 @@ subeffect=Instantly kills elite Gravelings
 
 Name=Ghost Eater
 ID=9077
-Category=Legendary
 Path=AC2
 
 attack=Patriarch Swipe
@@ -809,7 +790,6 @@ subeffect=Immunity to conditions and damage
 Name=Ectoplasmic Ooze
 ID=9079
 alt=Ectoplasmic Oozes
-Category=normal
 Path=AC2
 
 attack=Ghost Shield
@@ -824,11 +804,11 @@ subeffect=vulnerability:1
 
 Name=Colossus Rumblus
 ID=9078
-Category=Legendary
 image=http://wiki.guildwars2.com/images/5/59/Colossus_Rumblus.jpg
 Path=AC3
 
 Attack=Patriarch Swipe (1)
+ID=4037
 animation=swings right arm|0.8
 cooldown=4
 effect=melee
@@ -840,6 +820,7 @@ subeffect=crippled:6
 #note=Block/evade
 
 Attack=Patriarch Swipe (2)
+ID=4037
 animation=swings left/right arm|0.5
 effect=melee
 subeffect=damage:738396
@@ -851,6 +832,7 @@ subeffect=crippled:6
 #note=Always used after (1) so run away if you can't avoid it
 
 attack=Shockwave
+ID=17226
 cooldown=10
 animation=raises and slaps hands|0.8
 effect=8 projectiles (360 degrees)
@@ -863,6 +845,7 @@ subeffect=knockdown:3
 #note=hits multiple times if standing close to him
 
 attack=Cave In
+ID=4032
 cooldown=30
 animation=glows, waves hands and screams|6
 additional=Reaches entire area. Can't be blocked.
@@ -876,97 +859,54 @@ subeffect=knockdown:3
 
 Name=Ascalonian Elementalist
 ID=1933
-Category=Elite
 Alt=Elementalist|Elementalists|Ascalonian Elementalists
 image=http://wiki.guildwars2.com/images/9/99/Ascalonian_Elementalist.jpg
-Path=ACS
+Path=ACS|AC1|AC2|AC3
 
 Attack=Fireball
+ID=4064
 image=http://i.imgur.com/ZlKuwOS.gif
 Animation=raises left arm|0.2
 Cooldown=2
 effect=Projectile with small AoE
-subeffect=damage:373592
+subeffect=damage:-
 
 Attack=Fire Storm
+ID=4062
 image=http://i.imgur.com/MlSW6US.gif
 cooldown=21
 Animation=Kneels and raises arm|0.75
 effect=Ticking AoE (6 hits in 5 s)
 count=6
 length=5
-subeffect=damage:174736
+subeffect=damage:-
 subeffect=Burning:2
 
 ##################################################################
 
-Name=Ascalonian Elementalist
+copy=1933
 ID=6803
-Category=Normal
-Alt=Elementalist|Elementalists|Ascalonian Elementalists
-image=http://wiki.guildwars2.com/images/9/99/Ascalonian_Elementalist.jpg
 Path=ACS
-
-Attack=Fireball
-image=http://i.imgur.com/ZlKuwOS.gif
-Animation=raises left arm|0.2
-Cooldown=2
-effect=Projectile with small AoE
-subeffect=damage:108808
-
-Attack=Fire Storm
-image=http://i.imgur.com/MlSW6US.gif
-cooldown=21
-Animation=Kneels and raises arm|0.75
-effect=Ticking AoE (6 hits in 5 s)
-count=6
-length=5
-subeffect=damage:54136
-subeffect=Burning:2
-
-##################################################################
-Name=Ascalonian Elementalist
-ID=1933
-Category=Elite
-Alt=Elementalist|Elementalists|Ascalonian Elementalists
-image=http://wiki.guildwars2.com/images/9/99/Ascalonian_Elementalist.jpg
-Path=AC1|AC2|AC3
-
-Attack=Fireball
-image=http://i.imgur.com/ZlKuwOS.gif
-Animation=raises left arm|0.2
-Cooldown=2
-effect=Projectile with small AoE
-subeffect=damage:504984
-
-Attack=Fire Storm
-image=http://i.imgur.com/MlSW6US.gif
-cooldown=21
-Animation=Kneels and raises arm|0.75
-effect=Ticking AoE (6 hits in 5 s)
-count=6
-length=5
-subeffect=damage:236592
-subeffect=Burning:2
 
 ##################################################################
 
 Name=Ascalonian Mesmer
 ID=1931
-Category=Elite
 Alt=Ascalonian Mesmers|Mesmer|Mesmers
 image=https://wiki.guildwars2.com/images/2/2a/Ascalonian_Mesmer.jpg
-Path=ACS
+Path=ACS|AC1|AC2|AC3
 
 Attack=Blackout
+ID=4075
 image=http://i.imgur.com/NSZxiFp.gif
 cooldown=3
 animation=swings left arm|0.75
 effect=melee
-subeffect=damage:385920
+subeffect=damage:-
 subeffect=daze:1
 
-attack=Reflecting Shield
+attack=Veil of Deflection
+ID=4081
 image=http://i.imgur.com/Ht2AI3G.gif
 cooldown=12
 animation=instant cast||purple bubble
@@ -975,438 +915,194 @@ subeffect=reflects projectiles
 
 ##################################################################
 
-Name=Ascalonian Mesmer
+copy=1931
 ID=6804
-Category=Normal
-Alt=Ascalonian Mesmers|Mesmer|Mesmers
-image=https://wiki.guildwars2.com/images/2/2a/Ascalonian_Mesmer.jpg
 Path=ACS
-
-Attack=Blackout
-image=http://i.imgur.com/NSZxiFp.gif
-cooldown=3
-animation=swings left arm|0.75
-effect=melee
-subeffect=damage:124352
-subeffect=daze:1
-
-attack=Reflecting Shield
-image=http://i.imgur.com/Ht2AI3G.gif
-cooldown=12
-animation=instant cast||purple bubble
-effect=buff (8 s)
-subeffect=reflects projectiles
-
-##################################################################
-
-Name=Ascalonian Mesmer
-ID=1931
-Category=Elite
-Alt=Ascalonian Mesmers|Mesmer|Mesmers
-image=https://wiki.guildwars2.com/images/2/2a/Ascalonian_Mesmer.jpg
-Path=AC1|AC2|AC3
-
-Attack=Blackout
-image=http://i.imgur.com/NSZxiFp.gif
-cooldown=3
-animation=swings left arm|0.75
-effect=melee
-subeffect=damage:521520
-subeffect=daze:1
-
-attack=Reflecting Shield
-image=http://i.imgur.com/Ht2AI3G.gif
-cooldown=12
-animation=instant cast||purple bubble
-effect=buff (8 s)
-subeffect=reflects projectiles
 
 ##################################################################
 
 Name=Ascalonian Monk
 ID=1932
-Category=Elite
 Alt=Ascalonian Monks|Monk|Monks
 image=https://wiki.guildwars2.com/images/0/05/Ascalonian_Monk.jpg
-Path=ACS
+Path=ACS|AC1|AC2|AC3
 
 Attack=Ray of Judgement
+ID=4078
 #description=Bouncing base attack which heals allies.
 image=http://i.imgur.com/CaUELnu.gif
 cooldown=3
 animation=raises left arm|0.25
 additional=Hits only once. Also bounces on allies.
 effect=Bouncing (5 hits) ranged
-subeffect=damage:225656
+subeffect=damage:-
 subeffect=healing-percent:20
 
 Attack=Kick
+ID=4079
 #description=Kicks close enemies back.
 image=http://i.imgur.com/EZDSgcW.gif
 animation=jumps and kicks|0.25
 cooldown=6
 effect=Melee
-subeffect=damage:310880
+subeffect=damage:-
 subeffect=Knockback:1.5
 
 ##################################################################
-# Power scaled from Ray of Judgement (information may be wrong).
-Name=Ascalonian Monk
+
+copy=1932
 ID=6805
-Category=normal
-Alt=Ascalonian Monks|Monk|Monks
-image=https://wiki.guildwars2.com/images/0/05/Ascalonian_Monk.jpg
 Path=ACS
-
-Attack=Ray of Judgement
-image=http://i.imgur.com/CaUELnu.gif
-cooldown=3
-animation=raises left arm|0.25
-additional=Hits only once. Also bounces on allies.
-effect=Bouncing (5 hits) ranged
-subeffect=damage:109880
-subeffect=healing-percent:20
-
-Attack=Kick
-image=http://i.imgur.com/EZDSgcW.gif
-animation=jumps and kicks|0.25
-cooldown=6
-effect=Melee
-subeffect=damage:151152
-subeffect=Knockback:1.5
-
-##################################################################
-
-Name=Ascalonian Monk
-ID=1932
-Category=Elite
-Alt=Ascalonian Monks|Monk|Monks
-image=https://wiki.guildwars2.com/images/0/05/Ascalonian_Monk.jpg
-Path=AC1|AC2|AC3
-
-Attack=Ray of Judgement
-cooldown=3
-image=http://i.imgur.com/CaUELnu.gif
-animation=raises left arm|0.25
-additional=Hits only once. Also bounces on allies.
-effect=Bouncing (5 hits) ranged
-subeffect=damage:305280
-subeffect=healing-percent:20
-
-Attack=Kick
-image=http://i.imgur.com/EZDSgcW.gif
-animation=jumps and kicks|0.25
-cooldown=6
-effect=Melee
-subeffect=damage:420396
-subeffect=Knockback:1.5
 
 ##################################################################
 
 Name=Ascalonian Necromancer
+ID=1930
+Alt=Ascalonian Necromancers|Necromancer|Necromancers
+image=https://wiki.guildwars2.com/images/f/f7/Ascalonian_Necromancer.jpg
+Path=ACS|AC1|AC2|AC3
+
+Attack=Life Siphon
+ID=4077
+image=http://i.imgur.com/oLyFphc.gif
+cooldown=5
+effect=8 ranged hits in 2.5 s
+count=8
+length=2.5
+subeffect=damage:-
+
+attack=Well
+ID=4083
+image=http://i.imgur.com/eZOUKQ6.gif
+cooldown=12
+effect=ticking AoE (20 s)
+subeffect=Poison:6
+
+attack=Fear
+ID=4076
+image=http://i.imgur.com/TPyADQZ.gif
+cooldown=22
+animation=swings left arm|0.25
+effect=PBAoE
+subeffect=fear:3
+subeffect=chilled:5
+subeffect=vulnerability:10
+subeffect=poison:10
+subeffect=weakness:10
+subeffect=blind:10
+
+##################################################################
+
+copy=1930
 ID=6806
-Category=normal
-Alt=Ascalonian Necromancers|Necromancer|Necromancers
-image=https://wiki.guildwars2.com/images/f/f7/Ascalonian_Necromancer.jpg
 Path=ACS
-
-Attack=Life Siphon
-image=http://i.imgur.com/oLyFphc.gif
-cooldown=5
-effect=8 ranged hits in 2.5 s
-count=8
-length=2.5
-subeffect=damage:103984
-
-attack=Well
-image=http://i.imgur.com/eZOUKQ6.gif
-cooldown=12
-effect=ticking AoE (20 s)
-subeffect=Poison:6
-
-attack=Fear
-image=http://i.imgur.com/TPyADQZ.gif
-cooldown=22
-animation=swings left arm|0.25
-effect=PBAoE
-subeffect=fear:3
-subeffect=chilled:5
-subeffect=vulnerability:10
-subeffect=poison:10
-subeffect=weakness:10
-subeffect=blind:10
-
-##################################################################
-
-Name=Ascalonian Necromancer
-ID=1930
-Category=Elite
-Alt=Ascalonian Necromancers|Necromancer|Necromancers
-image=https://wiki.guildwars2.com/images/f/f7/Ascalonian_Necromancer.jpg
-Path=ACS
-
-Attack=Life Siphon
-image=http://i.imgur.com/oLyFphc.gif
-cooldown=5
-effect=8 ranged hits in 2.5 s
-count=8
-length=2.5
-subeffect=damage:103984
-
-attack=Well
-image=http://i.imgur.com/eZOUKQ6.gif
-cooldown=12
-effect=ticking AoE (20 s)
-subeffect=Poison:6
-
-attack=Fear
-image=http://i.imgur.com/TPyADQZ.gif
-cooldown=22
-animation=swings left arm|0.25
-effect=PBAoE
-subeffect=fear:3
-subeffect=chilled:5
-subeffect=vulnerability:10
-subeffect=poison:10
-subeffect=weakness:10
-subeffect=blind:10
-
-##################################################################
-
-Name=Ascalonian Necromancer
-ID=1930
-Category=Elite
-Alt=Ascalonian Necromancers|Necromancer|Necromancers
-image=https://wiki.guildwars2.com/images/f/f7/Ascalonian_Necromancer.jpg
-Path=AC1|AC2|AC3
-
-Attack=Life Siphon
-image=http://i.imgur.com/oLyFphc.gif
-cooldown=5
-effect=8 ranged hits in 2.5 s
-count=8
-length=2.5
-subeffect=damage:140556
-
-attack=Well
-image=http://i.imgur.com/eZOUKQ6.gif
-cooldown=12
-effect=ticking AoE (20 s)
-subeffect=Poison:6
-
-attack=Fear
-image=http://i.imgur.com/TPyADQZ.gif
-cooldown=22
-animation=swings left arm|0.25
-effect=PBAoE
-subeffect=fear:3
-subeffect=chilled:5
-subeffect=vulnerability:10
-subeffect=poison:10
-subeffect=weakness:10
-subeffect=blind:10
 
 ##################################################################
 
 Name=Ascalonian Ranger
 ID=1918
-Category=Elite
 image=https://wiki.guildwars2.com/images/1/1f/Ascalonian_Ranger.jpg
 Alt=Ascalonian Rangers|Ranger|Rangers
-Path=ACS
+Path=ACS|AC1|AC2|AC3
 
 tactic=normal
 They will do lots of damage, control and pressure so kill them fast.
 
 Attack=Spread Shot
+ID=4067
 image=http://i.imgur.com/TyclCNN.gif
 Cooldown=2
 animation=aims|0.15
 effect=Homing projectile
-subeffect=damage:279792
+subeffect=damage:-
 subeffect=Crippled:5
 subeffect=Poison:18
 
 Attack=Kick
+ID=4079
 image=http://i.imgur.com/fpYOEqi.gif
 cooldown=10
 animation=kicks with right foot|0.25
 effect=Melee
-subeffect=damage:378416
+subeffect=damage:-
 subeffect=Knockback:1.5
 
 Attack=Power Shot
+ID=4069
 cooldown=10
 Animation=Kneels and aims|1.5
 effect=Homing projectile
-subeffect=damage:386456
+subeffect=damage:-
 subeffect=Knockback:1.5
 #note=block/evade
 
-Attack=Throw Trap
+Attack=Spike Trap
+ID=4112
 image=http://i.imgur.com/FJv6HDY.gif
 animation=throws a ball
 effect=Projectile
-subeffect=plants "Spike Trap"
-#note=Block/evade right before it hits the ground
-#note="Disarm" planted traps by moving to them while blocking/evading. This prevents people accidentally walking on them.
-
-Attack="Spike Trap"
-effect=Trap
-subeffect=damage:273360
+subeffect=plants a trap
+effect=When triggered
+subeffect=damage:-
 subeffect=Crippled:5
 subeffect=Bleeding:10:3
 subeffect=Immobilized:1
+#note=Block/evade right before it hits the ground
+#note="Disarm" planted traps by moving to them while blocking/evading. This prevents people accidentally walking on them.
 
 ##################################################################
-# Power/Condition scaled from Spread Shot (information may be wrong).
-Name=Ascalonian Ranger
+
+copy=1918
 ID=6807
-Category=normal
-image=https://wiki.guildwars2.com/images/1/1f/Ascalonian_Ranger.jpg
-Alt=Ascalonian Rangers|Ranger|Rangers
 Path=ACS
-
-Attack=Spread Shot
-image=http://i.imgur.com/TyclCNN.gif
-Cooldown=2
-animation=aims|0.15
-effect=Homing projectile
-subeffect=damage:99696
-subeffect=Crippled:5
-subeffect=Poison:18
-
-Attack=Kick
-image=http://i.imgur.com/fpYOEqi.gif
-cooldown=10
-animation=kicks with right foot|0.25
-effect=Melee
-subeffect=damage:135072
-subeffect=Knockback:1.5
-
-Attack=Power Shot
-cooldown=10
-Animation=Kneels and aims|1.5
-effect=Homing projectile
-subeffect=damage:137752
-subeffect=Knockback:1.5
-#note=block/evade
-
-Attack=Throw Trap
-image=http://i.imgur.com/FJv6HDY.gif
-animation=throws a ball
-effect=Projectile
-subeffect=plants "Spike Trap"
-#note=Block/evade right before it hits the ground
-#note="Disarm" planted traps by moving to them while blocking/evading. This prevents people accidentally walking on them.
-
-Attack="Spike Trap"
-effect=Trap
-subeffect=damage:97552
-subeffect=Crippled:5
-subeffect=Bleeding:10:3
-subeffect=Immobilized:1
-
-##################################################################
-
-Name=Ascalonian Ranger
-ID=1918
-Category=Elite
-Alt=Ascalonian Rangers|Ranger|Rangers
-image=https://wiki.guildwars2.com/images/1/1f/Ascalonian_Ranger.jpg
-Path=AC1|AC2|AC3
-type=ghost
-
-tactic=normal
-They will do lots of damage, control and pressure so kill them fast.
-
-Attack=Spread Shot
-image=http://i.imgur.com/TyclCNN.gif
-Cooldown=2
-animation=aims|0.15
-effect=Homing projectile
-subeffect=damage:378420
-subeffect=Crippled:5
-subeffect=poison:18
-#note=Quickly stacks long poison which will deal lots of damage.
-#note=Use condition removal before using your healing skill
-
-Attack=Kick
-image=http://i.imgur.com/fpYOEqi.gif
-cooldown=10
-animation=kicks with right foot|0.25
-effect=Melee
-subeffect=damage:511344
-subeffect=Knockback:1.5
-#note=try to predict and block/evade when going melee
-#note=use stability (also because of Power Shot)
-
-Attack=Power Shot
-cooldown=10
-Animation=Kneels and aims|1.5
-effect=Homing projectile
-subeffect=damage:522156
-subeffect=Knockback:1.5
-#note=Try to spot when he is "idle" to block/evade.
-
-Attack=Throw Trap
-image=http://i.imgur.com/FJv6HDY.gif
-animation=throws a ball
-effect=Projectile
-subeffect=plants "Spike Trap"
-#note=Block/evade right before it hits the ground
-#note="Disarm" planted traps by moving to them while blocking/evading. This prevents people accidentally walking on them.
-
-Attack="Spike Trap"
-effect=Trap
-subeffect=damage:369516
-subeffect=Crippled:5
-subeffect=Bleeding:10:3
-subeffect=Immobilized:1
 
 ##################################################################
 
 Name=Ascalonian Warrior
 ID=1706
-Category=Elite
 Alt=Ascalonian Warrior|Warrior|Warriors
 image=https://wiki.guildwars2.com/images/d/d1/Ascalonian_Warrior.jpg
-Path=ACS
+Path=ACS|AC1|AC2|AC3
 
 tactic=normal
 More durable than other Ghosts because of selfhealing.
 
 attack=Sever Artery (1)
+ID=4070
 image=http://i.imgur.com/McqsMZG.gif
 cooldown=1
 animation=swings sword from right|0.2
 effect=melee
-subeffect=damage:337680
+subeffect=damage:-
 subeffect=crippled:5
 #note=You can easily avoid lots of damage by moving away from him
 
 attack=Gash (2)
+ID=4072
 animation=swings sword from left|0.25
 effect=melee
-subeffect=damage:401464
+subeffect=damage:-
 subeffect=bleeding:5
 
 attack=Final Thrust (3)
+ID=4073
 animation=moves sword behind back and strikes|0.5
 effect=melee
-subeffect=damage:477576
+subeffect=damage:-
 subeffect=bleeding:5:3
 
 attack=Shield Bash
+ID=4080
 image=http://i.imgur.com/doIdALP.gif
 cooldown=12
 animation=dashes shield on front|0.5
 effect=dash
-subeffect=damage:358048
+subeffect=damage:-
 subeffect=stun:1
 #note=try to block/evade, stun is short so a stun break isn't needed
 
 attack=Healing Signet
+ID=4074
 image=http://i.imgur.com/gdb4ygj.gif
 cooldown=30
 additional=used when below 50%
@@ -1415,105 +1111,10 @@ subeffect=Healing-percent:25
 #note=Interrupt or burst before he gets it off
 
 ##################################################################
-# Power/Condition scaled from Gash (information may be wrong).
-Name=Ascalonian Warrior
+
+copy=1706
 ID=6808
-Category=Normal
-Alt=Ascalonian Warrior|Warrior|Warriors
-image=https://wiki.guildwars2.com/images/d/d1/Ascalonian_Warrior.jpg
 Path=ACS
-
-tactic=normal
-More durable than other Ghosts because of selfhealing.
-
-attack=Sever Artery (1)
-image=http://i.imgur.com/McqsMZG.gif
-cooldown=1
-animation=swings sword from right|0.2
-effect=melee
-subeffect=damage:125424
-subeffect=crippled:5
-#note=You can easily avoid lots of damage by moving away from him
-
-attack=Gash (2)
-animation=swings sword from left|0.25
-effect=melee
-subeffect=damage:149544
-subeffect=bleeding:5
-
-attack=Final Thrust (3)
-animation=moves sword behind back and strikes|0.5
-effect=melee
-subeffect=damage:177416
-subeffect=bleeding:5:3
-
-attack=Shield Bash
-image=http://i.imgur.com/doIdALP.gif
-cooldown=12
-animation=dashes shield on front|0.5
-effect=dash
-subeffect=damage:133464
-subeffect=stun:1
-#note=try to block/evade, stun is short so a stun break isn't needed
-
-attack=Healing Signet
-image=http://i.imgur.com/gdb4ygj.gif
-cooldown=30
-additional=used when below 50%
-effect=self buff
-subeffect=Healing-percent:25
-#note=Interrupt or burst before he gets it off
-
-##################################################################
-
-Name=Ascalonian Warrior
-ID=1706
-Category=Elite
-Alt=Ascalonian Warrior|Warrior|Warriors
-image=https://wiki.guildwars2.com/images/d/d1/Ascalonian_Warrior.jpg
-Path=AC1|AC2|AC3
-type=ghost
-
-tactic=normal
-More durable than other Ghosts because of selfhealing.
-
-attack=Sever Artery (1)
-image=http://i.imgur.com/McqsMZG.gif
-cooldown=1
-animation=swings sword from right|0.2
-effect=melee
-subeffect=damage:456012
-subeffect=crippled:5
-#note=You can easily avoid lots of damage by moving away from him
-
-attack=Gash (2)
-animation=swings sword from left|0.25
-effect=melee
-subeffect=damage:542508
-subeffect=bleeding:5
-
-attack=Final Thrust (3)
-animation=moves sword behind back and strikes|0.5
-effect=melee
-subeffect=damage:645540
-subeffect=bleeding:5:3
-
-attack=Shield Bash
-image=http://i.imgur.com/doIdALP.gif
-cooldown=12
-animation=dashes shield on front|0.5
-effect=dash
-subeffect=damage:483996
-subeffect=stun:1
-#note=try to block/evade, stun is short so a stun break isn't needed
-
-attack=Healing Signet
-cooldown=30
-image=http://i.imgur.com/gdb4ygj.gif
-additional=used when below 50%
-effect=self buff
-subeffect=Healing-percent:25
-#note=Interrupt or burst before he gets it off
 
 ##################################################################
 
@@ -1596,68 +1197,44 @@ subeffect=damage:52788
 subeffect=burning:3
 
 ##################################################################
-#NOTE: Both level 35 and 37 exist!
+# Levels 35 and 37 exist.
 
 name=Ghastly Ooze
 ID=5953
 alt=Ghastly Oozes|Ooze|Oozes
 image=https://i.imgur.com/nbDt7ik.jpg
-Category=Elite
 Path=AC1|AC2
 
 attack=Ooze Mace
+ID=2451
 image=https://i.imgur.com/HqHnS28.jpg
 cooldown=5
 animation=spins head|1.75
 effect=melee
-subeffect=damage:518340
+subeffect=damage:-
 
 attack=Ooze Multi
+ID=2452
 cooldown=12
 animation=pulls head behind|1|swings head
 effect=4 melee hits in 2.5 s
 count=4
 length=2.5
-subeffect=damage:209244
+subeffect=damage:-
 
 attack=Power Spit
+ID=2455
 cooldown=29
 animation=bends forward and stretches head|2|shoots a yellow ball
 effect=projectile
-subeffect=damage:389868
+subeffect=damage:-
 subeffect=immobilized:3
 
 ##################################################################
-#NOTE: Both level 35 and 37 exist!
+# Levels 35 and 37 exist.
 
-name=Ghastly Ooze
+copy=5953
 ID=5956
-alt=Ghastly Oozes|Ooze|Oozes
-image=https://i.imgur.com/nbDt7ik.jpg
-Category=Normal
-Path=AC1|AC2
-
-attack=Ooze Mace
-image=https://i.imgur.com/HqHnS28.jpg
-cooldown=5
-animation=spins head|1.75
-effect=melee
-subeffect=damage:185712
-
-attack=Ooze Multi
-cooldown=12
-animation=pulls head behind|1|swings head
-effect=4 melee hits in 2.5 s
-count=4
-length=2.5
-subeffect=damage:77592
-
-attack=Power Spit
-cooldown=29
-animation=bends forward and stretches head|2|shoots a yellow ball
-effect=projectile
-subeffect=damage:145644
-subeffect=immobilized:3
 
 ##################################################################
 
@@ -1665,34 +1242,35 @@ name=Graveling
 #VERIFY: 1707
 ID=11733
 alt=Gravelings
-Category=Elite
 Path=AC1|AC2|AC3
 
 attack=Slash (1)
+ID=3913
 animation=swings right arm|0.5
 cooldown=5
 effect=melee
-subeffect=damage:235956
+subeffect=damage:-
 subeffect=crippled:2
 
 attack=Slash (2)
 animation=swings left arm|0.5
 effect=melee
-subeffect=damage:365700
+subeffect=damage:0.4
 subeffect=crippled:2
 
 attack=Crippling Slice (3)
 animation=swings right arm|0.5|does a back flip
 effect=melee
-subeffect=damage:457920
-subeffect=crippled:2
+subeffect=damage:0.5
+subeffect=crippled:6
 effect=buff:evade:0
 
 attack=Leap
+ID=3916
 cooldown=13
 animation=glows|1
 effect=leap
-subeffect=damage:649356
+subeffect=damage:-
 subeffect=launch:2.3
 
 ##################################################################
@@ -1701,7 +1279,6 @@ subeffect=launch:2.3
 name=Graveling Breeder
 ID=5693
 alt=Graveling Breeders|Breeder|Breeders
-Category=Elite
 image=http://wiki.guildwars2.com/images/4/4d/Graveling_Breeder.jpg
 Path=AC1|AC2|AC3
 
@@ -1713,26 +1290,27 @@ Stay at range so you don't get weakness or trigger her third hit which causes he
 Bring lots of control to interrupt her summoning. Use area attacks to take down any hatchlings while focusing the breeder.
 
 attack=Slash (1)
+ID=3926
 cooldown=1
 animation=swings right arm|0.5
 effect=melee
-subeffect=damage:175536
+subeffect=damage:-
 subeffect=weakness:5
 
 attack=Slash (2)
 animation=swings left arm|0.5
 effect=melee
-subeffect=damage:271572
+subeffect=damage:0.4
 subeffect=weakness:5
 
 attack=Crippling Slice (3)
 animation=swings right arm|0.5|does a back flip
 effect=melee
-subeffect=damage:344712
+subeffect=damage:0.5
 subeffect=weakness:5
 effect=buff:evade:0
 
-attack=Summon Hatchlings
+attack=Aggro Barf
 image=media=ac_breeder_summon.jpg
 animation=glows and pukes|3
 additional=maximum amount of 10
@@ -1742,36 +1320,10 @@ effect=Summon ~15 enemy=Graveling_Hatchlings:normal in 14.5 s
 
 ##################################################################
 # damage values need to be checked and copy removed
-copy=Graveling Breeder|elite
-name=Graveling (Breeder)
+
+copy=5693
 ID=9114
-category=champion
-
-##################################################################
-
-name=Graveling Hatchling
-ID=1710
-alt=Graveling Hatchlings|Hatchling|Hatchlings
-Category=Normal
-image=https://wiki.guildwars2.com/images/8/8b/Graveling_Hatchling.jpg
-Path=ACS
-
-tactic=normal
-Weak alone but they usually come in big groups.
-
-attack=slash (1)
-cooldown=1
-animation=swings right arm|0.5
-effect=melee
-subeffect=damage:76112
-subeffect=bleeding:3:3
-#note=group of them can easily stacks 25 stacks of bleeding
-
-attack=slice (2)
-animation=swings right arm|0.5|does a back flip
-effect=melee
-subeffect=damage:76112
-subeffect=bleeding:4:3
+path=AC2
 
 ##################################################################
 
@@ -1780,24 +1332,25 @@ name=Graveling Hatchling
 ID=1710
 alt=Graveling Hatchlings|Hatchling|Hatchlings
 image=https://wiki.guildwars2.com/images/8/8b/Graveling_Hatchling.jpg
-Category=Normal
-Path=AC1|AC2|AC3
+Path=ACS|AC1|AC2|AC3
 
 tactic=normal
 Weak alone but they usually come in big groups.
 
 attack=slash (1)
+ID=3937
 cooldown=1
 animation=swings right arm|0.5
 effect=melee
-subeffect=damage:108756
+subeffect=damage:-
 subeffect=bleeding:3:3
 #note=group of them can easily stacks 25 stacks of bleeding
 
 attack=slice (2)
+ID=3939
 animation=swings right arm|0.5|does a back flip
 effect=melee
-subeffect=damage:108756
+subeffect=damage:-
 subeffect=bleeding:4:3
 
 ##################################################################
@@ -1805,25 +1358,28 @@ subeffect=bleeding:4:3
 name=Graveling Howler
 ID=1939
 alt=Graveling Howlers|Howler|Howlers
-Category=Elite
 Path=AC1|AC2|AC3
 
 attack=Slash (1)
+ID=3929
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Slash (2)
+ID=3928
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Crippling Slice (3)
+ID=3927
 effect=evade
 subeffect=Evades all attacks
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
-attack=Buff
+attack=Healing Burst
+ID=3930
 animation=glows and holds head
 effect=9 PBAoEs in 3 s
 count=9
@@ -1832,12 +1388,12 @@ subeffect=might:10
 subeffect=swiftness:1.5
 
 attack=Staggering Scream
+ID=3952
 animation=glows and pukes
 additional=changes direction after initial casting
 effect=2 cones in 1 s (high damage)
 count=2
 length=1
-subeffect=damage:0
 subeffect=launch:0
 subeffect=confusion:3
 #note=Direct away from your party
@@ -1847,24 +1403,25 @@ subeffect=confusion:3
 name=Graveling Stalker
 ID=7052
 alt=Graveling Stalkers|Stalker|Stalkers
-Category=champion
 Path=AC1|AC2|AC3
 
 attack=Slash (1)
+ID=3923
 cooldown=0
 effect=melee
-subeffect=damage:365064
+subeffect=damage:-
 
 attack=Slash (2)
 effect=melee
-subeffect=damage:491628
+subeffect=damage:0.4
 
 attack=Crippling Slice (3)
 effect=melee
-subeffect=damage:590208
+subeffect=damage:0.5
 effect=buff:evade:0
 
-attack=Burrow (1)
+attack=Lurk (1)
+ID=3923
 cooldown=17
 animation=burrows|1|moves underground
 effect=self
@@ -1873,7 +1430,7 @@ subeffect=Evades all attacks and moves fast.
 attack=Rock Shards (2)
 animation=big red circle and hands through ground|1
 effect=PBAoE
-subeffect=damage:219420
+subeffect=damage:0.2
 subeffect=launch:3.3
 subeffect=buff:evade:5 if hits any players
 #note=Don't get hit or it will spend lots of time evading.
@@ -1885,45 +1442,41 @@ effect=buff
 subeffect=Evade all attacks
 
 ##################################################################
-# Both levels 35 and 37 exist.
-
-copy=Graveling Stalker|champion
-name=Graveling Stalker
+# Levels 35 and 37 exist.
+copy=7052
 ID=1938
-alt=Graveling Stalkers|Stalker|Stalkers
-Category=elite
 
 ##################################################################
-# Both levels 35 and 37 exist.
+
 name=Graveling Scavenger
-# Verify: 11734
-ID=5787
+ID=7051
 alt=Graveling Scavengers|Scavenger|Scavengers
-Category=Elite
 Path=AC1|AC2|AC3
 
 attack=Slash (1)
+ID=3920
 cooldown=1
 animation=swings right arm|0.5
 effect=melee
-subeffect=damage:220692
+subeffect=damage:-
 
 attack=Slash (2)
 animation=swings left arm|0.5
 effect=melee
-subeffect=damage:388596
+subeffect=damage:0.4
 
 attack=Crippling Slice (3)
 animation=swings right arm|0.5|does a back flip
 effect=melee
-subeffect=damage:479544
+subeffect=damage:0.5
 effect=buff:evade:0
 
 attack=Eat Corpse (1)
+ID=3917
 cooldown=6
 animation=glows|1|leaps
 effect=leap with AoE
-subeffect=damage:480816
+subeffect=damage:-
 subeffect=knockdown:5
 subeffect=stun:2 (self)
 #note=This needs to be dodged. Have at least one stun break or stability to save you.
@@ -1931,7 +1484,7 @@ subeffect=stun:2 (self)
 attack=Eat Corpse (2, 4, 6)
 animation=moves head|1
 effect=melee
-subeffect=damage:384780
+subeffect=damage:0.4
 subeffect=bleeding:5
 subeffect=might:6
 
@@ -1940,7 +1493,7 @@ animation=puts head down|1.25|eats
 effect=3 melee hits in 1 s
 count=3
 length=1
-subeffect=damage:361884
+subeffect=damage:0.4
 
 attack=End (8)
 effect=self
@@ -1948,12 +1501,10 @@ subeffect=stun:2
 #note=sometimes goes straight to this
 
 ##################################################################
-# damage values need to be checked and copy removed
-copy=Graveling Scavenger|elite
-name=Graveling Scavenger
-ID=7051
-alt=Graveling Scavengers|Scavenger|Scavengers
-category=champion
+# Levels 35 and 37 exist.
+copy=7051
+# Verify: 11734
+ID=5787
 
 ##################################################################
 
@@ -1961,50 +1512,51 @@ name=Grub
 ID=4085
 image=http://wiki.guildwars2.com/images/c/ca/Grub_Yellow.jpg
 alt=Grubs
-Category=Normal
 Path=AC1
 
 attack=Spit
+ID=2965
 cooldown=3
 animation=swings head|1|shoots a yellow ball
 effect=projectile
-subeffect=damage:188892
+subeffect=damage:-
 
 attack=Fire Spray
-# gwd2db says 25 and testing gave 27
-cooldown=25
+ID=2967
 animation=glows|1.5
 effect=cone
-subeffect=damage:262032
+subeffect=damage:-
 subeffect=burning:3
 
 ##################################################################
-
+# Levels 1, 2, 3, 30 and 35 exist.
 name=Spider Hatchling
+# VERIFY 7045
 ID=6972
 alt=Spider Hatchlings
 image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
-Category=Normal
-Path=ACS
+Path=ACS|AC1|AC2|AC3
 
 tactic=normal
 Weak alone but they usually come in big groups.
 
 attack=Venom Spray
+ID=4007
 cooldown=3
 animation=glows|1.5|green projectiles
 additional=only used at distant targets
 effect=3 projectiles in 0.5 s
 count=3
 length=0.5
-subeffect=damage:109344
+subeffect=damage:-
 subeffect=poison:2
 
 attack=Bite
+ID=4008
 cooldown=2.5
 animation=leans back|0.75
 effect=melee
-subeffect=damage:262640
+subeffect=damage:-
 subeffect=bleeding:5
 #note=group of them can easily get 25 stacks of bleeding
 
@@ -2014,83 +1566,28 @@ name=Spider
 ID=7040
 alt=Spiders
 image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
-Category=elite
 Path=AC1|AC2|AC3
 
 attack=Bite
+ID=2917
 cooldown=2.5
 animation=leans back|1
 effect=melee
-subeffect=damage:492264
+subeffect=damage:-
 subeffect=crippled:3
 #note=keep circling to avoid
 
 attack=Venom Spray
+ID=21995
 cooldown=20
 animation=glows|1.25
 additional=only used at distant targets
 effect=3 melee hits in 0.75 s
 count=3
 length=0.75
-subeffect=damage:120204
+subeffect=damage:-
 subeffect=poison:3
 #note=keep circling to avoid
-
-##################################################################
-# Levels 1, 2, 3 and 35 exist.
-
-name=Spider Hatchling
-# VERIFY: 7045
-ID=6972
-alt=Spider Hatchlings
-image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
-Category=Normal
-Path=AC1|AC2|AC3
-
-tactic=normal
-Weak alone but they usually come in big groups.
-
-attack=Venom Spray
-cooldown=3
-animation=glows|1.5|green projectiles
-additional=only used at distant targets
-effect=3 projectiles in 0.5 s
-count=3
-length=0.5
-subeffect=damage:147552
-subeffect=poison:2
-
-attack=Bite
-cooldown=2.5
-animation=leans back|0.75
-effect=melee
-subeffect=damage:354252
-subeffect=bleeding:5
-
-##################################################################
-
-name=Spider Hatchling
-ID=6972
-alt=Spider Hatchlings
-Category=Normal
-image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
-Path=AC1|AC2|AC3
-level=3
-
-attack=Venom Spray
-cooldown=3
-animation=glows|1.5|green projectiles
-additional=only used at distant targets
-effect=3 projectiles in 0.5 s
-count=3
-length=0.5
-subeffect=damage:0
-
-attack=Bite
-cooldown=2.5
-animation=leans back|0.75
-effect=melee
-subeffect=damage:636
 
 ##################################################################
 
@@ -2160,7 +1657,6 @@ attack=Summons enemy=graveling_hatchlings:normal
 
 name=Barracuda
 ID=1708
-Category=normal
 Path=ACS
 
 
@@ -2175,9 +1671,25 @@ image=http://wiki.guildwars2.com/images/a/a4/Detha_NPC.jpg
 Path=AC2
 
 attack=Stability
-effect=buff
-subeffect=stability
+effect=stability:0
 #note=permanent unless stripped by enemies
+
+attack=Smite
+ID=3963
+effect=multiple ranged hits
+count=?
+subeffect=damage:-
+
+attack=Shield of Judgment
+ID=3965
+effect=PBAoE?
+subeffect=damage:-
+
+attack=Symbol of Wrath
+ID=3964
+effect=Ticking AoE
+count=?
+subeffect=damage:-
 
 ##################################################################
 
@@ -2186,11 +1698,77 @@ Category=bundle
 Path=AC2
 
 ##################################################################
+# Main NPCs                                                      #
+##################################################################
+
+Name=Eir Stegalkin
+ID=6976
+Category=ally
+image=http://wiki.guildwars2.com/images/4/47/Eir_Stegalkin.jpg
+Path=ACS
+
+attack=Concussion Shot
+ID=3905
+effect=projectile
+subeffect=damage:-
+
+attack=Flaming Arrow
+ID=3906
+effect=projectile
+subeffect=damage:-
+
+attack=FBarrage
+ID=3904
+effect=channeled ticking AoE
+subeffect=damage:-
+
+attack=On My Mark
+ID=3907
+effect=ranged
+
+##################################################################
 
 Name=Garm
+ID=5834
 Category=ally
 image=http://wiki.guildwars2.com/images/a/a5/Garm.jpg
 Path=ACS
+
+attack=Bite
+ID=2973
+effect=melee
+subeffect=damage:-
+
+attack=Leap
+ID=2872
+effect=leap
+subeffect=damage:-
+
+attack=Long Leap
+ID=2873
+effect=leap
+subeffect=damage:-
+
+##################################################################
+
+Name=Hodgins
+ID=5766
+Category=ally
+image=http://wiki.guildwars2.com/images/f/ff/Hodgins_Scepter.jpg
+Path=AC1|AC2|AC3
+
+attack=Water Blast
+ID=3960
+effect=projectile
+subeffect=damage:-
+
+attack=Healing Rain
+ID=3691
+effect=Ticking AoE
+count=?
+subeffect=healing:0
+subeffect=lose a condition
+
 
 ##################################################################
 
@@ -2200,14 +1778,69 @@ Category=ally
 image=http://wiki.guildwars2.com/images/6/67/Rytlock_Brimstone.jpg
 Path=ACS
 
+attack=Head Shot
+ID=3912
+effect=projectile
+subeffect=damage:-
+
+attack=Sever Artery (1)
+ID=3218
+effect=melee
+subeffect=damage:-
+
+attack=Gash (2)
+ID=3220
+effect=melee
+subeffect=damage:-
+
+attack=Final Thrust (3)
+ID=3222
+effect=melee
+subeffect=damage:-
+
+attack=Charging Lunge
+ID=3215
+effect=leap
+subeffect=damage:-
+
+attack=Shout
+ID=30363
+effect=PBAoE
+subeffect=damage:-
+
 ##################################################################
 
-Name=Eir Stegalkin
-ID=6976
+Name=Shrill Sunderbark
 Category=ally
-image=http://wiki.guildwars2.com/images/4/47/Eir_Stegalkin.jpg
-Path=ACS
+image=http://wiki.guildwars2.com/images/4/43/Shrill_Sunderbark.jpg
+Path=AC1|AC2|AC3
 
+##################################################################
+
+Name=Tzark
+Category=ally
+image=http://wiki.guildwars2.com/images/7/7d/Tzark_NPC.jpg
+Path=AC1|AC2|AC3
+
+##################################################################
+
+Name=Warmaster Grast
+ID=1703
+image=https://i.imgur.com/7fr2Zc1.jpg
+Category=ally
+Path=AC3
+
+attack=Shield
+type=channeled PBAoE
+effect=Protects against falling rocks.
+
+attack=Bash
+ID=4049
+effect=melee
+subeffect=damage:-
+
+##################################################################
+# Other NPCs                                                     #
 ##################################################################
 
 Name=Durmand Priory Explorer
@@ -2256,37 +1889,7 @@ Path=AC1|AC2|AC3
 
 ##################################################################
 
-Name=Shrill Sunderbark
-Category=ally
-image=http://wiki.guildwars2.com/images/4/43/Shrill_Sunderbark.jpg
-Path=AC1|AC2|AC3
-
-##################################################################
-
 Name=Sylvan Hound
 ID=9158
 Category=ally
-Path=AC1|AC2|AC3
-
-##################################################################
-
-Name=Tzark
-Category=ally
-image=http://wiki.guildwars2.com/images/7/7d/Tzark_NPC.jpg
-Path=AC1|AC2|AC3
-
-##################################################################
-
-Name=Warmaster Grast
-ID=1703
-image=https://i.imgur.com/7fr2Zc1.jpg
-Category=ally
-Path=AC3
-
-##################################################################
-
-Name=Hodgins
-ID=5766
-Category=ally
-image=http://wiki.guildwars2.com/images/f/ff/Hodgins_Scepter.jpg
 Path=AC1|AC2|AC3

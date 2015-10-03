@@ -282,7 +282,7 @@ namespace DataCreator.Shared
       // Syntax:
       // <span class="'main category' enemy-button" data-name="'enemy names'" data-category="'enemy categories" data-level="'enemy levels'" data-dungeon="'dungeon'" data-path="'path'">'shown text'</span>
       var link = new StringBuilder();
-      link.Append("<span class=\"").Append(enemiesToLink[0].Category).Append(" enemy-button\" data-index=\"");
+      link.Append("<span class=\"").Append(enemiesToLink[0].Rank).Append(" enemy-button\" data-index=\"");
       // Add enemy names.
       for (var index = 0; index < enemiesToLink.Count; index++)
       {

@@ -7,15 +7,15 @@ potion=scarlet_minion|main
 name=Spider Hatchling
 ID=5561
 alt=Spider Hatchlings
-category=normal
 image=http://wiki.guildwars2.com/images/0/02/Spider_Hatchling.jpg
-path=TAS
+path=TAS|TAU|TAAE
 
 attack=Bite
+ID=4720
 animation=withdraws and bites|0.8
 cooldown=3.25
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=poison:6
 subeffect=crippled:6
 
@@ -24,26 +24,27 @@ subeffect=crippled:6
 name=Undergrowth Recluse
 ID=3222
 alt=Undergrowth Recluses|Recluse|Recluses
-category=elite
-path=TAS
+path=TAS|TAU|TAAE
 
 attack=Bite
+ID=4720
 image=http://fat.gfycat.com/EminentSevereAfricanaugurbuzzard.gif
 animation=withdraws and bites|0.8
 cooldown=3.25
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=poison:6
 subeffect=crippled:6
 
 attack=Venom Spray
+iD=4723
 cooldown=9
 image=http://giant.gfycat.com/ShockingFakeAssassinbug.gif
 animation=glows and raises back|1.25|shoots green spray
 effect=3 cones in 0.65 s
 count=3
 length=0.65
-subeffect=damage:0
+subeffect=damage:-
 subeffect=poison:3
 #note=run behind its back
 #note=dodge when tail starts lowering
@@ -51,30 +52,30 @@ subeffect=poison:3
 ##################################################################
 
 name=Nightmare Court Archer
-# VERIFY 10078
-ID=3178
+ID=10078
 alt=Nightmare Court Archers|Archer|Archers
-category=elite
 image=http://wiki.guildwars2.com/images/e/e2/Elite_Nightmare_Court_Archer.jpg
-path=TAS
+path=TAS|TAF
 
 attack=cannot move
 #note=the ones that are part of random groups can move
 
 attack=Poison Volley
+ID=4786
 image=http://fat.gfycat.com/CarefreePositiveCaudata.gif
 additional=not used on close targets. Only hits once
 effect=4 projectiles (cone)
-subeffect=damage:0
+subeffect=damage:-
 subeffect=poison:2
 #note=stack on him to prevent usage
 
 attack=Binding Shot
+ID=4785
 image=http://giant.gfycat.com/HauntingDopeyHammerheadbird.gif
 animation=glows
 additional=not used on close targets
 effect=projectile
-subeffect=damage:0
+subeffect=damage:-
 #note=stack on him to prevent usage
 
 attack=Evasive Trap
@@ -92,16 +93,17 @@ name=Nightmare Court Cultist
 ID=3204
 alt=Nightmare Court Cultists|Cultist|Cultists
 image=http://wiki.guildwars2.com/images/0/0c/Nightmare_Court_Cultist.jpg
-category=elite
-path=TAS
+path=TAS|TAF
 
 attack=Ricochet
+ID=4797
 image=http://fat.gfycat.com/ElaborateRealElephant.gif
 effect=projectile
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:5
 
 attack=Time Warp
+ID=4798
 image=http://giant.gfycat.com/ClosedNaturalIndigobunting.gif
 effect=channeled PBAOE (10 s)
 count=11
@@ -112,62 +114,47 @@ subeffect=launch
 
 ##################################################################
 
-name=Nightmare Court Cultist
+copy=3204
 ID=7065
-alt=Nightmare Court Cultists|Cultist|Cultists
-image=http://wiki.guildwars2.com/images/0/0c/Nightmare_Court_Cultist.jpg
-category=normal
 path=TAS
-
-attack=Ricochet
-image=http://fat.gfycat.com/ElaborateRealElephant.gif
-effect=projectile
-subeffect=damage:0
-subeffect=bleeding:5
-
-attack=Time Warp
-image=http://giant.gfycat.com/ClosedNaturalIndigobunting.gif
-effect=channeled PBAOE (10 s)
-count=11
-length=10
-subeffect=Quickness:1
-effect=end effect
-subeffect=launch
 
 ##################################################################
 
 name=Nightmare Court Duelist
 ID=4127
 alt=Nightmare Court Duelists|Duelist|Duelists
-category=elite
-path=TAS
+path=TAS|TAF
 
 attack=Sever Artery (1)
+ID=5258
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:1
 
 attack=Gash (2)
 effect=melee
-subeffect=damage:0
+subeffect=damage:0.25
 subeffect=bleeding:1
 
 attack=Final Thrust (3)
 effect=melee
-subeffect=damage:0
+subeffect=damage:0.5
 subeffect=crippled:1
 
 attack=Savage Leap
+ID=5257
 effect=leap
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Dueling Signet
+ID=5255
 effect=teleport
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Throw Dagger
+ID=5261
 effect=projectile
-subeffect=damage:0
+subeffect=damage:-
 subeffect=Teleport to the target
 
 ##################################################################
@@ -175,42 +162,44 @@ subeffect=Teleport to the target
 name=Nightmare Court Knight
 ID=3210
 alt=Nightmare Court Knights|Knight|Knights
-category=elite
 image=http://wiki.guildwars2.com/images/3/3b/Elite_Nightmare_Court_Knight.jpg
-path=TAS
+path=TAS|TAF
 
 attack=Hammer Swing (1)
+ID=5262
 image=http://fat.gfycat.com/AdmiredImmaterialElver.gif
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Hammer Bash (2)
 effect=melee
-subeffect=damage:0
+subeffect=damage:0.3
 
 attack=Hammer Smash (3)
 effect=melee
-subeffect=damage:0
+subeffect=damage:0.5
 
 attack=Earthshaker (1)
+ID=5265
 image=http://giant.gfycat.com/BrilliantNaughtyBats.gif
 effect=leap with PBAoE
-subeffect=damage:0
+subeffect=damage:-
 subeffect=knockdown:0
 #note=evade or block
 
 attack=Hammer Shock (2)
 effect=cone
-subeffect=damage:0
+subeffect=damage:0.3
 subeffect=crippled:0
 
 attack=Well of Corruption
+ID=5268
 image=http://giant.gfycat.com/SeveralTanCommabutterfly.gif
 effect=aura (3 ticks)
 count=3
 # Verify.
 length=5
-subeffect=damage:0
+subeffect=damage:-
 subeffect=convert a boon to a condition
 subeffect=convert a condition to a boon
 #note=visually bugged, effect actually follows the Knight
@@ -221,18 +210,19 @@ name=Nightmare Court Sorcerer
 ID=3208
 alt=Nightmare Court Sorcerers|Sorcerer|Sorcerers
 image=http://wiki.guildwars2.com/images/8/84/Nightmare_Court_Sorcerer.jpg
-category=elite
-path=TAS
+path=TAS|TAF
 
 attack=Well
+ID=4799
 image=http://giant.gfycat.com/LegalMajesticDairycow.gif
-effect=ranged with ticking AoE (10 ticks in 5 s)
+effect=ticking AoE (10 ticks in 5 s)
 count=10
 length=5
-subeffect=damage:0
+subeffect=damage:-
 subeffect=regeneration:0
 
 attack=Fear
+ID=
 image=http://giant.gfycat.com/PitifulAgonizingGalapagosdove.gif
 additional=cannot be blocked or evaded
 effect=PBAoE
@@ -282,51 +272,51 @@ effect=self destruct
 name=Nightmare Pup
 ID=4126
 alt=Nightmare Pups|Pup|Pups
-category=normal
 image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
-path=TAS
+path=TAS|TAU|TAF
 
 attack=Bite
+ID=2973
 image=http://fat.gfycat.com/SharpAcademicBluemorphobutterfly.gif
 animation=moves head and bites|0.3
 cooldown=2
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
 ##################################################################
 
 name=Nightmare Pup
 ID=4126
 alt=Nightmare Pups|Pup|Pups
-category=normal
 image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
 path=TAAE
 
 ###########################################################
-
+# Also exists in COE.
 name=Nightmare Hound
 ID=3230
 alt=Nightmare Hounds|Hound|Hounds
-category=elite
 image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
-path=TAS
+path=TAS|TAU|TAF|TAAE
 
 attack=Bite
+ID=4801
 image=http://fat.gfycat.com/UnawareImaginaryBumblebee.gif
 animation=moves head and bites|0.3
 cooldown=2
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:3
 subeffect=poison:3
 
 attack=Leap
+ID=4806
 image=http://giant.gfycat.com/LongReliableAsiaticwildass.gif
 animation=withdraws while standing still|0.75
 cooldown=15
 additional=only used at distant targets
 effect=leap
-subeffect=damage:0
+subeffect=damage:-
 subeffect=knockdown:3
 #note=dangerous when skipping, block, evade or use stability
 
@@ -335,18 +325,19 @@ subeffect=knockdown:3
 name=Barracuda
 ID=3167
 alt=Barracudas
-category=normal
 image=http://wiki.guildwars2.com/images/8/8d/Barracuda.jpg
-path=TAS
+path=TAS|TAF|TAAE
 
 attack=Bite
+ID=2898
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:6
 
 attack=Frenzied Attack
+ID=2899
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:4
 
 attack=Summon
@@ -356,13 +347,13 @@ effect=Summon enemy=Barracudas_(Weak):normal
 
 name=Fiendish Nightmare
 ID=10626
-category=normal
 image=http://wiki.guildwars2.com/images/2/27/Fiendish_Nightmare.jpg
 path=TAS
 
 attack=Slash
-effect=quick melee (normally)
-subeffect=damage:0
+ID=4987
+effect=quick melee
+subeffect=damage:-
 subeffect=weakness:1
 effect=if the target is poisoned
 subeffect=healing:0
@@ -373,17 +364,17 @@ name=Living Nightmare
 ID=10625
 alt=Living Nightmares
 image=http://wiki.guildwars2.com/images/4/44/Living_Nightmare.jpg
-category=normal
 path=TAS
 
 attack=Bite
+ID=3123
 image=http://giant.gfycat.com/DiligentVibrantClownanemonefish.gif
 additional=self-destruct
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=poison:4
 effect=ticking AoE
-subeffect=damage:0
+subeffect=damage:-
 subeffect=poison:4
 #note=either kill fast with cleave/AoE or stay out of AoE
 
@@ -393,38 +384,40 @@ name=Volatile Nightmare
 ID=10111
 alt=Volatile Nightmares
 image=http://wiki.guildwars2.com/images/5/58/Volatile_Nightmare.jpg
-category=elite
 path=TAS
 
 attack=Vine Whip (1)
+ID=5269
 image=http://giant.gfycat.com/AcidicDangerousAmericanalligator.gif
 cooldown=0
 effect=quick cone
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:10:2
 
 attack=Vine Whirl (2)
 effect=quick cone
-subeffect=damage:0
+subeffect=damage:0.3
 subeffect=bleeding:10:2
 
 attack=Vine Trip (3)
 effect=quick cone
-subeffect=damage:0
+subeffect=damage:0.5
 subeffect=bleeding:10:3
 subeffect=crippled:10
 
 attack=Whirling Axe
+ID=5272
 image=http://giant.gfycat.com/TepidSecondAnnelida.gif
 animation=instant||spins
 effect=~20 PBAoEs in 3.5 s
 count=20
 length=3.5
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:10
 #note=remove bleeding
 
-attack=Summon
+attack=Pack Hunter
+ID=5273
 image=http://fat.gfycat.com/EvergreenBlueIrishterrier.gif
 animation=lightning effect
 effect=summon enemy=Nightmare_Pup:normal
@@ -433,42 +426,46 @@ effect=summon enemy=Nightmare_Pup:normal
 
 name=Eir
 ID=3172
-category=elite
 image=http://wiki.guildwars2.com/images/6/67/Elite_Eir.jpg
 path=TAS
 
-attack=Shoot
+attack=Shoot (1)
+ID=4660
 cooldown=0
 image=http://fat.gfycat.com/TerrificVelvetyGalapagosmockingbird.gif
 effect=long-range projectile
-subeffect=damage:0
+subeffect=damage:-
+
+attack=Poison Arrow (2)
+ID=4661
+image=http://giant.gfycat.com/PopularClassicBlesbok.gif
+effect=projectile
+subeffect=damage:-
+subeffect=poison:0
 
 attack=Crippling Shot
+ID=4662
 image=http://fat.gfycat.com/AggressiveAgonizingCanadagoose.gif
 animation=glows
 effect=long-range projectile
-subeffect=damage:0
+subeffect=damage:-
 subeffect=crippled:10
 
 attack=Point Blank Shot
+ID=4663
 image=http://fat.gfycat.com/FragrantFantasticEchidna.gif
 animation=glows
 effect=projectile
-subeffect=damage:0
+subeffect=damage:-
 subeffect=knockback:0
 
-attack=Poison Arrow
-image=http://giant.gfycat.com/PopularClassicBlesbok.gif
-effect=projectile
-subeffect=damage:0
-subeffect=poison:0
-
 attack=Spread Shot
+ID=4664
 image=http://giant.gfycat.com/ExcellentPertinentGazelle.gif
 additional=minimum-range (stack)
 effect=4 projectiles (cone, very high damage)
 count=4
-subeffect=damage:0
+subeffect=damage:-
 subeffect=poison:2
 #note=evade or stay inside her
 
@@ -476,91 +473,99 @@ subeffect=poison:2
 
 name=Zojja
 ID=3169
-category=elite
 image=http://wiki.guildwars2.com/images/a/a6/Elite_Zojja.jpg
 path=TAS
 
 attack=Lightning Orb
+ID=4781
 image=http://fat.gfycat.com/OrganicSmoothGelada.gif
 cooldown=0
 additional=used at distant targets
 effect=projectile
-subeffect=damage:0
+subeffect=damage:-
 subeffect=blind:5
 
 attack=Lightning Whip
+ID=4676
 image=http://fat.gfycat.com/OrderlyIncomparableFox.gif
 cooldown=0
 additional=used at close targets
 effect=cone
-subeffect=damage:0
+subeffect=damage:-
 
-attack=Summon
+attack=Summon Golem
+ID=4674
 image=http://fat.gfycat.com/WhiteCornyAfricanwildcat.gif
-effect=Summon Mr. Sparkles
+effect=Summon enemy=Mr._Sparkles:normal
 
 ##################################################################
 
 name=Rytlock
 ID=3170
-category=elite
 image=http://wiki.guildwars2.com/images/e/e2/Elite_Rytlock.jpg
 path=TAS
 
 attack=Sever Artery (1)
+ID=4670
 image=http://giant.gfycat.com/SomberIdealApisdorsatalaboriosa.gif
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:5
 
 attack=Gash (2)
+ID=4671
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:5
 
 attack=Final Thrust (3)
+ID=4672
 animation=glows
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:5
 
 attack=Charging Lunge
+ID=4669
 image=http://giant.gfycat.com/BlandDisfiguredCob.gif
 effect=leap
-subeffect=damage:0
+subeffect=damage:-
 #note=block or evade
 
 ##################################################################
 
 name=Logan
 ID=3171
-category=elite
 image=http://wiki.guildwars2.com/images/8/8c/Elite_Logan_Thackeray.jpg
 path=TAS
 
 attack=Sever Artery (1)
+ID=4666
 image=http://giant.gfycat.com/RadiantNarrowFattaileddunnart.gif
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:5
 
 attack=Gash (2)
+ID=4667
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:5
 
 attack=Final Thrust (3)
+ID=4668
 animation=glows
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:5
 
 attack=Shield Bash
+ID=4665
 image=http://fat.gfycat.com/LonelyPortlyAmphiuma.gif
 effect=dash
-subeffect=damage:0
+subeffect=damage:-
 subeffect=launch:0
 #note=block or evade
 
@@ -568,21 +573,23 @@ subeffect=launch:0
 
 name=Mr. Sparkles
 ID=1290
-category=normal
 image=http://wiki.guildwars2.com/images/8/80/Elite_Mr._Sparkles.jpg
 path=TAS
 
 attack=Punch
+ID=1502
 image=http://fat.gfycat.com/CoolLongArrowcrab.gif
 animation=punches
 effect=melee
-subeffect=damage
+subeffect=damage:-
 
 attack=Whirling Assault
+ID=1656
 image=http://fat.gfycat.com/InformalGreedyCorydorascatfish.gif
 animation=glows & spins
 effect=dash with multiple PBAoEs
-subeffect=damage:0
+count=?
+subeffect=damage:-
 subeffect=knockback:0
 
 ##################################################################
@@ -591,30 +598,34 @@ subeffect=knockback:0
 
 name=Undergrowth Spider Queen
 ID=3224
-category=champion
 image=http://wiki.guildwars2.com/images/2/23/Undergrowth_Spider_Queen.jpg
 path=TAS
 
 attack=Bite
+ID=4780
 image=http://fat.gfycat.com/ForkedAcrobaticCottonmouth.gif
 animation=withdraws and bites|0.8
 cooldown=3.25
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=crippled:5
 subeffect=weakness:5
+effect=against immobilized targets
+subeffect=damage:0.5
 
 attack=Charge
+ID=4778
 image=http://giant.gfycat.com/NarrowDishonestBats.gif
 animation=white glow
 effect=leap
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Entangling Web
+ID=4724
 image=http://giant.gfycat.com/LeftFondCamel.gif
 animation=glows
 effect=3 projectiles (cone)
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:5
 subeffect=immobilized:9
 #note=evade
@@ -623,34 +634,37 @@ subeffect=immobilized:9
 
 name=Sariel
 ID=3201
-category=champion
 image=http://wiki.guildwars2.com/images/6/63/Sariel.jpg
 path=TAS
 
 attack=Sever Artery (1)
+ID=3480
 image=http://giant.gfycat.com/CanineCloudyBluebottlejellyfish.gif
-additional=basic attack
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Gash (2)
+ID=3480
 effect=melee
-subeffect=damage:0
+subeffect=damage:0.5
 
 attack=Final Thrust (3)
+ID=3480
 effect=melee
-subeffect=damage:0
+subeffect=damage:0.6
 
 attack=Rending Strike
+ID=4983
 image=http://giant.gfycat.com/TornSlightFurseal.gif
 additional=channeled
 effect=7 melee hits in 1 s (high damage)
 count=7
 length=1
-subeffect=damage:0
+subeffect=damage:-
 subeffect=vulnerability:15
 
 attack=Shield Bash
+ID=4981
 image=http://fat.gfycat.com/AnyRareIndianpalmsquirrel.gif
 animation=shield forward, shouts
 effect=piercing dash (hits up to 5 times, extreme damage)
@@ -662,6 +676,7 @@ subeffect=knockback
 #note=evade or use immunity
 
 attack=Shield Bash
+ID=4981
 image=http://fat.gfycat.com/PortlyNaiveAmericanredsquirrel.gif
 animation=shield forward, shouts
 effect=dash
@@ -673,25 +688,25 @@ subeffect=knockdown:0
 
 name=Mutated Fish
 ID=5562
-category=champion
 image=http://wiki.guildwars2.com/images/2/2d/Mutated_Fish.jpg
 path=TAS
 
 attack=Bite
+ID=3052
 image=http://fat.gfycat.com/DetailedSplendidHydra.gif
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:3.75
 
 attack=Bite
+ID=3051
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
 ##################################################################
 
 name=Brangoire
 ID=3182
-category=champion
 image=http://wiki.guildwars2.com/images/0/04/Brangoire.jpg
 path=TAS
 
@@ -719,7 +734,6 @@ subeffect=fear:2
 name=Cadeyrn
 ID=3183
 image=http://wiki.guildwars2.com/images/b/bd/Cadeyrn.jpg
-category=champion
 path=TAS
 
 attack=Lightning Orb
@@ -764,7 +778,6 @@ subeffect=turn target to a cat. Cadyern becomes allied and enemy=Pups:normal hos
 name=Unstable Nightmare Husk
 ID=10110
 alt=Husk
-category=champion
 image=http://wiki.guildwars2.com/images/2/22/Unstable_Nightmare_Husk.jpg
 path=TAS
 
@@ -800,7 +813,6 @@ subeffect=launch:3.3
 name=Faolain
 ID=3189
 image=http://wiki.guildwars2.com/images/f/f5/Faolain.jpg
-category=champion
 path=TAS
 
 attack=Resurrect
@@ -836,7 +848,6 @@ path=TAF|TAU
 
 name=Nightmare Husk
 ID=7393
-category=elite
 alt=Nightmare Husks|Husk|Husks
 path=TAF|TAU
 
@@ -871,7 +882,6 @@ subeffect=launch:3.3
 name=Nightmare Vine
 ID=1526
 alt=Nightmare Vines|Vine|Vines
-category=elite
 image=http://wiki.guildwars2.com/images/2/25/Jungle_Wurm.jpg
 path=TAF|TAU
 
@@ -923,7 +933,6 @@ name=Nightmare Court Archer (Fire)
 ID=10078
 alt=Nightmare Court Archers (Fire)|Archer (Fire)|Archers (Fire)
 image=http://wiki.guildwars2.com/images/e/e2/Elite_Nightmare_Court_Archer.jpg
-category=elite
 path=TAF
 
 attack=cannot move
@@ -984,7 +993,6 @@ name=Oakheart
 ID=10899
 alt=Oakhearts
 image=http://wiki.guildwars2.com/images/9/92/Oakheart_Twilight.jpg
-category=veteran
 path=TAF
 
 attack=Oakheart Swipe
@@ -1021,18 +1029,9 @@ subeffect=bleeding:0
 
 ##################################################################
 
-copy=Spider Hatchling|normal|TAS
-name=Spider Hatchling
-ID=5561
-alt=Spider Hatchlings|Hatchling|Hatclings
-path=TAU
-
-##################################################################
-
 name=Forest Spider Hatchling
 ID=10519
 alt=Forest Spider Hatchlings
-category=normal
 image=http://wiki.guildwars2.com/images/d/d2/Nightmare_Spider.jpg
 path=TAU
 
@@ -1060,7 +1059,6 @@ name=Undergrowth Webber
 ID=3225
 alt=Undergrowth Webbers|Webber|Webbers
 image=http://wiki.guildwars2.com/images/d/d6/Undergrowth_Webber.jpg
-category=elite
 path=TAU
 
 attack=Bite
@@ -1102,7 +1100,6 @@ name=Undergrowth Stonetouch
 ID=10180
 alt=Undergrowth Stonetouches|Stonetouch|Stonetouches
 image=http://wiki.guildwars2.com/images/1/16/Undergrowth_Stonetouch.jpg
-category=elite
 path=TAU
 
 attack=Bite
@@ -1133,7 +1130,6 @@ name=Undergrowth Bloodfang
 ID=10181
 alt=Undergrowth Bloodfangs|Bloodfang|Bloodfangs
 image=http://wiki.guildwars2.com/images/3/33/Undergrowth_Bloodfang.jpg
-category=elite
 path=TAU
 
 attack=Bite
@@ -1153,7 +1149,6 @@ subeffect=poison:6
 name=Greater Nightmare Vine
 ID=7394
 alt=Greater Vine
-category=champion
 image=http://wiki.guildwars2.com/images/1/1f/Greater_Nightmare_Vine.jpg
 path=TAF|TAU
 
@@ -1183,14 +1178,12 @@ copy=Nightmare Court Knight|elite|TAF:TAU
 name=Nightmare Warder (Knight)
 ID=7396
 image=http://wiki.guildwars2.com/images/3/3f/Nightmare_Warder.jpg
-category=champion
 path=TAF
 
 ##################################################################
 
 name=Nightmare Warder (Sword)
 ID=3191
-category=champion
 path=TAF|TAU
 image=http://wiki.guildwars2.com/images/3/3f/Nightmare_Warder.jpg
 
@@ -1231,7 +1224,6 @@ subeffect=vulnerability:5
 
 name=Leurent
 ID=3195
-category=legendary
 image=http://gw2dungeons.net/media/dungeonimages/ta_leurent.jpg
 path=TAF
 
@@ -1284,7 +1276,6 @@ subeffect=bleeding:0
 
 name=Nightmare Tree
 alt=Tree
-category=legendary
 image=http://wiki.guildwars2.com/images/6/63/Nightmare_Tree.jpg
 path=TAF
 health=519000
@@ -1319,7 +1310,6 @@ effect=summon enemy=Oakheart:veteran
 
 name=Malrona
 ID=7339
-category=legendary
 image=http://wiki.guildwars2.com/images/3/3b/Malrona.jpg
 path=TAU
 
@@ -1355,7 +1345,6 @@ subeffect=moves faster but takes a lot more damage (~5 x) from poisoned players
 
 name=Fyonna the Countess of Spiders
 ID=3190
-category=legendary
 image=http://wiki.guildwars2.com/images/f/f1/Fyonna.jpg
 path=TAU
 
@@ -1388,7 +1377,6 @@ image=http://giant.gfycat.com/GaseousWarlikeAmericanbulldog.gif
 
 name=Fyonna the Countess of Spiders (Spider)
 alt=Spider
-category=legendary
 image=http://wiki.guildwars2.com/images/6/68/Fyonna_Spider.jpg
 path=TAU
 health=579110
@@ -1408,7 +1396,6 @@ subeffect=damage:0
 
 name=Nightmare Tree
 alt=Tree
-category=legendary
 image=http://wiki.guildwars2.com/images/6/63/Nightmare_Tree.jpg
 path=TAU
 health=519000
@@ -1491,7 +1478,6 @@ potion=ooze|none
 
 name=Slick
 ID=12750
-category=legendary
 path=TAAE
 
 attack=Tar Pool (1)
@@ -1549,7 +1535,6 @@ subeffect=more damage and reduced cooldowns
 
 name=Sparki
 ID=12751
-category=legendary
 path=TAAE
 
 attack=Flame Blast
@@ -1624,7 +1609,6 @@ subeffect=burning:3| every 3 second (if not moving)
 
 name=Oil-Absorbing Ooze
 ID=12752
-category=normal
 path=TAAE
 
 attack=Melee
@@ -1653,7 +1637,6 @@ subeffect=???
 
 name=Aetherblade Foreman Spur
 ID=12749
-category=legendary
 path=TAAE
 
 attack=Cyclone Axe
@@ -1722,7 +1705,6 @@ subeffect=destroys projectiles and prevents moving out (you can get in though).
 
 name=Clockheart
 ID=12753
-category=legendary
 path=TAAE
 
 attack=Short Jab
@@ -1831,7 +1813,6 @@ name=Undergrowth Recluse
 ID=3222
 alt=Undergrowth Recluses|Recluse|Recluses
 image=http://wiki.guildwars2.com/images/f/f9/Elite_Undergrowth_Recluse.jpg
-category=elite
 path=TAAE
 
 attack=Bite
@@ -1861,7 +1842,6 @@ name=Undergrowth BloodFang
 ID=10181
 alt=Undergrowth BloodFangs|Bloodfang|Bloodfangs
 image=http://wiki.guildwars2.com/images/3/33/Undergrowth_Bloodfang.jpg
-category=elite
 path=TAAE
 
 attack=Bite
@@ -1880,7 +1860,6 @@ name=Undergrowth Stonetouch
 ID=10180
 alt=Undergrowth Stonetouches|Stonetouch|Stonetouches
 image=http://wiki.guildwars2.com/images/1/16/Undergrowth_Stonetouch.jpg
-category=elite
 path=TAAE
 
 attack=Bite
@@ -1913,7 +1892,6 @@ name=Undergrowth Webber
 ID=3225
 alt=Undergrowth Webbers|Webber|Webbers
 image=http://wiki.guildwars2.com/images/d/d6/Undergrowth_Webber.jpg
-category=elite
 path=TAAE
 
 attack=Bite
@@ -1951,27 +1929,9 @@ subeffect=Deal 66% more damage and recharge skills 66% faster (~40% reduced cool
 
 ##################################################################
 
-name=Spider Hatchling
-ID=5561
-alt=Spider Hatchlings|Hatchling|Hatchlings
-category=normal
-image=http://wiki.guildwars2.com/images/d/d2/Nightmare_Spider.jpg
-path=TAAE
-
-attack=Bite
-animation=withdraws and bites|0.8
-cooldown=3.25
-effect=melee
-subeffect=damage:2778100
-subeffect=poison:6
-subeffect=crippled:6
-
-##################################################################
-
 name=Nightmare Hound
 ID=3230
 alt=Nightmare Hounds|Hound|Hounds
-category=elite
 image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
 path=TAAE
 
@@ -1998,7 +1958,6 @@ subeffect=knockdown:3
 name=Nightmare Husk
 ID=7393
 alt=Nightmare Husks
-category=elite
 image=http://wiki.guildwars2.com/images/5/5d/Summoned_Husk.jpg
 path=TAAE
 
@@ -2033,7 +1992,6 @@ subeffect=launch:3.3
 name=Nightmare Pup
 ID=4126
 alt=Nightmare Pups|Pup|Pups
-category=normal
 image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
 path=TAF
 
@@ -2049,7 +2007,6 @@ subeffect=damage:0
 name=Nightmare Vine
 ID=1526
 alt=Nightmare Vines
-category=elite
 image=http://wiki.guildwars2.com/images/2/25/Jungle_Wurm.jpg
 path=TAAE
 
@@ -2082,7 +2039,6 @@ subeffect=launch:2.8
 name=Torrential Husk
 ID=10220
 alt=Torrential Husks
-category=elite
 image=http://wiki.guildwars2.com/images/5/5d/Summoned_Husk.jpg
 path=TAAE
 
@@ -2128,7 +2084,6 @@ name=Aetherblade Grenadier
 ID=12280
 ID=12282
 alt=Aetherblade Grenadiers|Grenadier|Grenadiers
-category=veteran
 path=TAAE
 
 attack=Shrapnel Grenade
@@ -2155,7 +2110,6 @@ subeffect=chilled:5
 ##################################################################
 copy=Aetherblade Grenadier|veteran
 name=Aetherblade Grenadier
-category=normal
 ID=12279
 ID=12278
 
@@ -2165,7 +2119,6 @@ name=Aetherblade Grenadier
 ID=12290
 ID=12289
 alt=Aetherblade Grenadiers|Grenadier|Grenadiers
-category=elite
 path=TAAE
 
 attack=Shrapnel Grenade
@@ -2195,7 +2148,6 @@ name=Aetherblade Striker
 ID=12277
 ID=12285
 alt=Aetherblade Strikers|Striker|Strikers
-category=veteran
 path=TAAE
 
 attack=Arc of Lightning
@@ -2231,7 +2183,6 @@ subeffect=stun:2| if hit at melee range
 ##################################################################
 copy=Aetherblade Striker|veteran
 name=Aetherblade Striker
-category=normal
 ID=12262
 ID=12269
 
@@ -2241,7 +2192,6 @@ name=Aetherblade Striker
 ID=12298
 ID=12297
 alt=Aetherblade Strikers|Striker|Strikers
-category=elite
 path=TAAE
 
 attack=Arc of Lightning
@@ -2280,7 +2230,6 @@ name=Aetherblade Taskmaster
 ID=12261
 ID=12283
 alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
-category=veteran
 path=TAAE
 
 attack=Lightning Whip
@@ -2309,7 +2258,6 @@ subeffect=confusion:5:5
 ##################################################################
 copy=Aetherblade Taskmaster|veteran
 name=Aetherblade Taskmaster
-category=normal
 ID=12265
 
 ##################################################################
@@ -2318,7 +2266,6 @@ name=Aetherblade Taskmaster
 ID=12294
 ID=12293
 alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
-category=elite
 path=TAAE
 
 attack=Lightning Whip
@@ -2350,7 +2297,6 @@ name=Aetherblade Thug
 ID=12271
 ID=12281
 alt=Aetherblade Thugs|Thug|Thugs
-category=veteran
 path=TAAE
 
 attack=Smash (1)
@@ -2394,7 +2340,6 @@ subeffect=might:10:2
 copy=Aetherblade Thug|veteran
 name=Aetherblade Thug
 ID=12294
-category=normal
 
 ##################################################################
 # Assuming 66% more damage.
@@ -2402,7 +2347,6 @@ name=Aetherblade Thug
 ID=12288
 ID=12287
 alt=Aetherblade Thugs|Thug|Thugs
-category=elite
 path=TAAE
 
 attack=Smash (1)
@@ -2448,7 +2392,6 @@ name=Aetherblade Thumper
 ID=12272
 ID=12284
 alt=Aetherblade Thumpers|Thumper|Thumpers
-category=veteran
 path=TAAE
 
 attack=Mace Smash (1)
@@ -2486,7 +2429,6 @@ copy=Aetherblade Thumper|veteran
 name=Aetherblade Thumper
 ID=12259
 ID=12268
-category=normal
 
 ##################################################################
 
@@ -2494,7 +2436,6 @@ name=Aetherblade Thumper
 ID=12296
 ID=12295
 alt=Aetherblade Thumpers|Thumper|Thumpers
-category=elite
 path=TAAE
 
 attack=Mace Smash (1)
@@ -2533,7 +2474,6 @@ name=Aetherblade Swashbuckler
 ID=12274
 ID=12273
 alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
-category=veteran
 path=TAAE
 
 attack=Slash (1)
@@ -2583,7 +2523,6 @@ copy=Aetherblade Swashbuckler|veteran
 name=Aetherblade Swashbuckler
 ID=12256
 ID=12260
-category=normal
 
 ##################################################################
 # Assuming 100% more damage.
@@ -2591,7 +2530,6 @@ name=Aetherblade Swashbuckler
 ID=12292
 ID=12291
 alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
-category=elite
 path=TAAE
 
 attack=Slash (1)
@@ -2641,7 +2579,6 @@ effect=reflects projectiles.
 name=Steam Watcher
 ID=12766
 alt=Steam Watchers
-category=veteran
 path=TAAE
 
 attack=Summon
@@ -2653,14 +2590,12 @@ effect=Summon a enemy=Thug:veteran, a enemy=Striker:veteran, a enemy=Thumper:vet
 
 name=Twisted Nightmare
 ID=12477
-category=veteran
 path=TAAE
 
 ##################################################################
 
 name=Twisted Horror
 ID=12483
-category=normal
 path=TAAE
 
 ##################################################################
@@ -2670,7 +2605,6 @@ path=TAAE
 name=Barracuda
 ID=3167
 alt=Barracudas
-category=normal
 image=http://wiki.guildwars2.com/images/8/8d/Barracuda.jpg
 path=TAAE
 
@@ -2692,7 +2626,6 @@ effect=Summon enemy=Barracudas_(Weak):normal
 name=Barracuda (Weak)
 ID=3167
 alt=Barracudas (Weak)
-category=normal
 image=http://wiki.guildwars2.com/images/8/8d/Barracuda.jpg
 path=TAAE|TAF|TAS
 
@@ -2701,7 +2634,6 @@ path=TAAE|TAF|TAS
 name=Jungle Wurm
 ID=12746
 alt=Jungle Wurms|Wurm|Wurms
-category=veteran
 image=http://wiki.guildwars2.com/images/2/25/Jungle_Wurm.jpg
 path=TAAE
 
@@ -2729,7 +2661,6 @@ subeffect=crippled:6
 name=Jungle Wurm
 ID=5096
 alt=Jungle Wurms|Wurm|Wurms
-category=normal
 image=http://wiki.guildwars2.com/images/2/25/Jungle_Wurm.jpg
 path=TAAE
 
@@ -2795,7 +2726,6 @@ subeffect=burning:1.25
 
 name=Slick Ooze
 ID=12764
-category=normal
 path=TAAE
 
 attack=Melee
@@ -2810,7 +2740,6 @@ subeffect=damage-percent:75
 
 name=Lava Elemental
 ID=12765
-category=normal
 path=TAAE
 
 attack=Spit
@@ -2836,7 +2765,6 @@ subeffect=immobilized:0.5
 name=Holographic Aetherblade Striker
 ID=12727
 alt=Holographic Striker
-category=normal
 path=TAAE
 
 attack=Arc of Lightning
@@ -2857,7 +2785,6 @@ name=Holographic Aetherblade Thug
 # VERIFY 12734 (bigger model)
 ID=12726
 alt=Holographic Thug
-category=normal
 path=TAAE
 
 attack=On Death
@@ -2871,7 +2798,6 @@ subeffect=confusion:0
 name=Holographic Aetherblade Taskmaster
 ID=12728
 alt=Holographic Taskmaster
-category=normal
 path=TAAE
 
 attack=On Death

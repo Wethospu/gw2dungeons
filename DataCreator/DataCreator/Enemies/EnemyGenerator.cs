@@ -188,7 +188,7 @@ namespace DataCreator.Enemies
         var found = FindEnemy(data, enemies);
         if (found != null)
         {
-          _currentEnemy = new Enemy(found) { Name = "" };
+          _currentEnemy = new Enemy(found);
           if (typeToPotion.ContainsKey(_currentEnemy.Attributes.Family.Name))
             _currentEnemy.Potion = typeToPotion[_currentEnemy.Attributes.Family.Name];
         }
@@ -199,7 +199,7 @@ namespace DataCreator.Enemies
       {
         if (data.Length > 0)
         {
-          if (_currentEnemy != null && _currentEnemy.Name.Length > 0)
+          if (_currentEnemy != null && !_currentEnemy.IsCopy > 0)
           {
             enemies.Add(_currentEnemy);
             if (_currentEnemy.Paths.Count == 0)
@@ -214,6 +214,7 @@ namespace DataCreator.Enemies
             if (data.Contains('_'))
               Helper.ShowWarning("Enemy name " + data + "  containts '_'. Replace them with ' '!");
           }
+          _currentEnemy.IsCopy = false;
           _currentAttack = null;
           _currentEffect = null;
         }
@@ -226,6 +227,7 @@ namespace DataCreator.Enemies
           Helper.ShowWarning("Enemy not initialized with name.");
         else if (data.Length > 0)
         {
+          _currentEnemy.IsCopy = false;
           var ids = data.Split('|');
           foreach (var id in ids)
           {
@@ -245,6 +247,7 @@ namespace DataCreator.Enemies
                 else
                   _currentEnemy.Attributes.Gender = oldSexes + "|" + _currentEnemy.Attributes.Gender;
               }
+              _currentEnemy.Rank = _currentEnemy.Attributes.GetRank();
               if (typeToPotion.ContainsKey(_currentEnemy.Attributes.Family.Name))
                 _currentEnemy.Potion = typeToPotion[_currentEnemy.Attributes.Family.Name];
             }
@@ -275,9 +278,9 @@ namespace DataCreator.Enemies
           Helper.ShowWarning("Enemy not initialized with name.");
         else if (data.Length > 0)
         {
-          _currentEnemy.Category = data.ToLower();
-          if (!LinkGenerator.EnemyCategories.Contains(_currentEnemy.Category))
-            Helper.ShowWarning("Category " + _currentEnemy.Category + " not recognized. Check syntax for correct categories.");
+          _currentEnemy.Rank = data.ToLower();
+          if (!LinkGenerator.EnemyCategories.Contains(_currentEnemy.Rank))
+            Helper.ShowWarning("Category " + _currentEnemy.Rank + " not recognized. Check syntax for correct categories.");
         }
         else
           Helper.ShowWarning("Missing info. Use \"category='category'\"!");
@@ -352,7 +355,7 @@ namespace DataCreator.Enemies
       {
         if (_currentEnemy == null)
           Helper.ShowWarning("Enemy not initialized with name.");
-        else if (_currentEnemy.Category.Length == 0)
+        else if (_currentEnemy.Rank.Length == 0)
           Helper.ShowWarningMessage("Category not set for enemy " + _currentEnemy.Name + ". Please fix!");
         return 1;
       }
@@ -661,7 +664,7 @@ namespace DataCreator.Enemies
         return;
       foreach (var enemy in enemies)
       {
-        indexFile.Append(enemy.Name).Append("|").Append(Helper.Simplify(enemy.Name)).Append("|").Append(enemy.Category);
+        indexFile.Append(enemy.Name).Append("|").Append(Helper.Simplify(enemy.Name)).Append("|").Append(enemy.Rank);
         indexFile.Append("|").Append(enemy.Attributes.Family).Append("|").Append(LinkGenerator.CurrentDungeon.ToLower()).Append("|").Append(string.Join(":", enemy.Paths));
         // Store index so that the enemy can be found faster when searching.
         indexFile.Append("|").Append(enemy.FileIndex);
@@ -713,7 +716,7 @@ namespace DataCreator.Enemies
         if (dungeonData != null)
         {
           dungeonData.AddRace(enemies[i].Attributes.Family.GetDisplay());
-          dungeonData.AddCategory(enemies[i].Category);
+          dungeonData.AddCategory(enemies[i].Rank);
           foreach (var tag in enemies[i].Tags)
             dungeonData.AddTag(tag);
         }

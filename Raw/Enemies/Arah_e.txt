@@ -10,7 +10,6 @@ name=Orrian Farmer
 ID=8289
 alt=Orrian Farmers
 path=Arah1|Arah2|Arah3|Arah4
-category=normal
 
 attack=Claw
 ID=2409
@@ -57,7 +56,6 @@ name=Orrian Wizard
 # VERIFY 8304
 ID=8305
 path=Arah1|Arah2|Arah3|Arah4
-category=normal
 
 attack=Necrotic Grasp
 ID=2693
@@ -84,7 +82,6 @@ ID=8284
 alt=Risen Elementalists|Elementalist|Elementalists
 image=http://wiki.guildwars2.com/images/b/b8/Elite_Risen_Elementalist.jpg
 path=Arah1|Arah2|Arah3|Arah4
-category=elite
 
 attack=Vapor Blades
 ID=4141
@@ -126,7 +123,6 @@ name=Risen Hunter
 ID=8315
 alt=Risen Hunters|Hunter|Hunters
 path=Arah1|Arah2|Arah3|Arah4
-category=elite
 
 attack=Throw Axe
 ID=4149
@@ -157,7 +153,6 @@ ID=8324
 alt=Orrian Eagles
 image=http://wiki.guildwars2.com/images/8/87/Risen_Eagle.jpg
 path=Arah1|Arah2|Arah3|Arah4
-category=normal
 
 attack=Claw
 ID=2850
@@ -180,7 +175,6 @@ ID=8320
 alt=Risen Illusionists|Illusionist|Illusionists
 image=http://wiki.guildwars2.com/images/7/73/Elite_Risen_Illusionist.jpg
 path=Arah1|Arah2|Arah3|Arah4
-category=elite
 
 attack=Chaos Beam
 ID=4143
@@ -221,7 +215,6 @@ ID=8317
 alt=Risen Mages|Mage|Mages
 image=http://wiki.guildwars2.com/images/9/94/Elite_Risen_Mage.jpg
 path=Arah1|Arah2|Arah3|Arah4
-category=elite
 
 attack=Water Bolt
 ID=4146
@@ -262,7 +255,6 @@ name=Risen Devastator
 ID=8727
 alt=Risen Devastators|Devastator|Devastators
 path=Arah3|Arah4
-category=elite
 
 attack=Swing (1)
 ID=4135
@@ -310,7 +302,6 @@ name=Orrian Warrior
 ID=8316
 alt=Warrior
 path=Arah1|Arah2|Arah3|Arah4
-category=champion
 
 
 
@@ -322,7 +313,6 @@ ID=8598
 alt=Vile Oozes|Ooze|Oozes
 image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
 path=Arah1|Arah4
-category=elite
 
 attack=Ooze Multi
 ID=4202
@@ -359,7 +349,6 @@ ID=10748
 alt=Lesser Oozes
 image=http://wiki.guildwars2.com/images/3/3c/Lesser_Ooze.jpg
 path=Arah1|Arah4
-category=normal
 
 attack=Attempts to regroup to form a enemy=Vile_Ooze:elite
 
@@ -371,7 +360,6 @@ level=81
 alt=Lesser Oozes (Fighting)
 image=http://wiki.guildwars2.com/images/3/3c/Lesser_Ooze.jpg
 path=Arah1|Arah4
-category=normal
 
 attack=Ooze Multi
 ID=4157
@@ -404,7 +392,6 @@ ID=8334
 alt=Undead Spider Hatchlings
 image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
 path=Arah1|Arah2|Arah3|Arah4
-category=normal
 
 attack=Bite
 ID=4720
@@ -429,7 +416,6 @@ copy=8334
 name=Orrian Spider
 ID=8335
 alt=Orrian Spiders|Spider|Spiders
-category=elite
 
 ##################################################################
 
@@ -438,7 +424,6 @@ ID=10718
 alt=Orrian Spiders (Tunnel)|Spider (Tunnel)|Spiders (Tunnel)
 image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
 path=Arah2
-category=elite
 
 attack=Bite
 ID=5224
@@ -456,7 +441,6 @@ ID=8282
 alt=Undead Abominations
 path=Arah1|Arah2|Arah3|Arah4
 image=http://wiki.guildwars2.com/images/b/bf/Risen_Abomination.jpg
-category=elite
 
 attack=immune to crippled, chilled, immobilized and Control-skills
 
@@ -515,7 +499,6 @@ ID=8323
 alt=Orrian Drakes|Drake|Drakes
 image=http://wiki.guildwars2.com/images/5/53/Orrian_Drake.jpg
 path=Arah1|Arah2|Arah4
-category=normal
 
 attack=Bite
 ID=2887
@@ -576,7 +559,6 @@ name=Risen Berserker
 ID=10807
 alt=Risen Berserkers|Berserker|Berserkers
 path=Arah1|Arah2|Arah3
-category=elite
 
 attack=Low armor
 
@@ -643,7 +625,6 @@ ID=10083
 level=82
 alt=Locust Swarms|Locust|Locusts
 path=Arah1|Arah2|Arah3|Arah4
-category=elite
 
 attack=Bug Bite
 ID=2912
@@ -659,7 +640,6 @@ name=Risen Grub (passive)
 ID=10082
 level=82
 path=Arah1|Arah2|Arah3|Arah4
-category=normal
 
 tactic=normal
 Summoned by enemy=Lupicus. Grants increased damage and armor when consumed by him.
@@ -673,7 +653,6 @@ ID=10806
 alt=Risen Defilers|Defiler|Defilers
 image=http://wiki.guildwars2.com/images/d/da/Dominated_Defiler.jpg
 path=Arah2
-category=elite
 
 tactic=normal
 Alternates between Throw Anchor and Smash.
@@ -722,7 +701,6 @@ name=Risen Deadeye
 ID=10440
 alt=Risen Deadeyes|Deadeye|Deadeyes
 path=Arah2
-category=elite
 
 attack=Kick
 ID=5141
@@ -786,7 +764,6 @@ name=Risen Sentinel
 ID=10805
 alt=Risen Sentinels|Sentinel|Sentinels
 path=Arah2|Arah3
-category=elite
 
 attack=Sword of Wrath (1)
 ID=5167
@@ -856,7 +833,6 @@ alt=Dominated Sentinels
 name=Flying Raptor
 image=http://wiki.guildwars2.com/images/f/f3/Flying_Raptor.jpg
 path=Arah1|Arah2|Arah3|Arah4
-category=legendary
 type=no type
 
 attack=???
@@ -946,7 +922,6 @@ ID=5412
 alt=Risen Sharks|Shark|Sharks
 image=http://wiki.guildwars2.com/images/c/c5/Risen_Bull_Shark.jpg
 path=Arah2
-category=normal
 
 attack=Bite
 ID=2426
@@ -974,7 +949,6 @@ ID=8331
 alt=Risen Sharks|Shark|Sharks
 image=http://wiki.guildwars2.com/images/c/c5/Risen_Bull_Shark.jpg
 path=Arah4
-category=elite
 
 attack=Bite
 ID=2426
@@ -1002,7 +976,6 @@ ID=10516
 alt=Inquest Technicians|Technician|Technicians
 image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
 path=Arah2
-category=elite
 
 attack=Subvert
 ID=5173
@@ -1028,7 +1001,6 @@ name=Inquest Handler
 ID=10501
 alt=Inquest Handlers|Handler|Handlers
 path=Arah2
-category=normal
 
 attack=Tranquilizer Dart
 ID=5172
@@ -1062,7 +1034,6 @@ ID=10533
 alt=Alphards
 image=http://wiki.guildwars2.com/images/4/43/Risen_Prince_Nekandezzar.jpg
 path=Arah2
-category=normal
 health=15774
 
 attack=Vital Shot
@@ -1092,7 +1063,6 @@ ID=10766
 alt=Plague Carrier Abominations|Plague Carrier|Plague Carriers
 image=http://wiki.guildwars2.com/images/4/41/Bloated_Creeper.jpg
 path=Arah2
-category=elite
 
 attack=Explode
 ID=4248
@@ -1118,7 +1088,6 @@ ID=10806
 alt=Risen Defilers|Defiler|Defilers
 image=http://wiki.guildwars2.com/images/d/de/Risen_Putrifier.jpg
 path=Arah3
-category=elite
 
 tactic=normal
 Alternates between Throw Anchor and Smash.
@@ -1186,7 +1155,6 @@ ID=8325
 alt=Orrian Gorillas|Gorilla|Gorillas
 image=http://wiki.guildwars2.com/images/d/d4/Risen_Gorilla.jpg
 path=Arah3|Arah4
-category=normal
 
 attack=Smash
 ID=2625
@@ -1234,7 +1202,6 @@ name=Orrian Gorilla
 ID=8326
 alt=Orrian Gorillas|Gorilla|Gorillas
 path=Arah1|Arah3|Arah4
-category=elite
 
 ##################################################################
 # Same enemy: CoE Risen Wraith (Drain)
@@ -1245,7 +1212,6 @@ ID=10770
 alt=Risen Wraiths (Drain)
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
 path=Arah3|Arah4
-category=elite
 
 attack=Vampiric Touch
 ID=2534
@@ -1304,7 +1270,6 @@ ID=8587
 alt=Undead Grubs|Grub|Grubs
 image=http://wiki.guildwars2.com/images/1/19/Risen_Grub.jpg
 path=Arah4
-category=elite
 
 attack=Undead Grub Spit
 ID=2423
@@ -1329,7 +1294,6 @@ copy=8587
 name=Undead Grub
 ID=8327
 alt=Undead Grubs|Grub|Grubs
-category=normal
 
 ##################################################################
 # Same enemy: CoE2 Risen Grub.
@@ -1339,7 +1303,6 @@ ID=10767
 alt=Risen Grubs
 image=http://wiki.guildwars2.com/images/1/19/Risen_Grub.jpg
 path=Arah1|Arah2|Arah3|Arah4
-category=normal
 
 attack=Undead Grub Spit
 ID=4249
@@ -1356,7 +1319,6 @@ ID=10770
 alt=Risen Wraiths (Corruptor)
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
 path=Arah3|Arah4
-category=elite
 
 attack=slash
 ID=18642
@@ -1395,7 +1357,6 @@ name=Undead Wraith
 ID=10508
 path=Arah4
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
-category=elite
 
 ##################################################################
 
@@ -1403,7 +1364,6 @@ name=Orrian Spectral Ghostblade
 ID=10768
 alt=Orrian Spectral Ghostblades|Ghostblade|Ghostblades
 path=Arah4
-category=elite
 
 attack=Leap
 ID=4251
@@ -1432,7 +1392,6 @@ name=Orrian Spectral Archer
 ID=10548
 alt=Orrian Spectral Archers|Archer|Archers
 path=Arah4
-category=elite
 
 attack=Trick Arrow
 ID=5124
@@ -1463,7 +1422,6 @@ name=Orrian Spectral Flamecaster
 ID=10769
 alt=Orrian Spectral Flamecasters|Flamecaster|Flamecasters
 path=Arah4
-category=elite
 
 attack=Spin
 ID=4256
@@ -1482,7 +1440,6 @@ ID=10546
 alt=Orrian Spectral Guards|Guard|Guards
 image=http://wiki.guildwars2.com/images/1/16/Orrian_Spectral_Guard.jpg
 path=Arah4
-category=elite
 
 attack=Swing
 ID=2442
@@ -1503,7 +1460,6 @@ ID=10547
 alt=Orrian Spectral Juggernauts|Juggernaut|Juggernauts
 image=http://wiki.guildwars2.com/images/8/89/Orrian_Spectral_Juggernaut.jpg
 path=Arah4
-category=elite
 
 attack=Spectral Hammer Attack
 ID=2440
@@ -1525,7 +1481,6 @@ ID=9589
 alt=Ooze
 image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
 Path=Arah1
-category=legendary
 
 attack=Bounce (moving)
 ID=4205
@@ -1586,7 +1541,6 @@ ID=9576
 alt=Vile Oozes|Ooze|Oozes
 image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
 path=Arah1
-category=champion
 
 attack=Reflects projectiles
 
@@ -1606,7 +1560,6 @@ ID=9610
 alt=Crystalline Entities|The Entities
 Path=Arah1
 image=http://wiki.guildwars2.com/images/f/fa/Champion_Crystalline_Entity.jpg
-category=champion
 
 attack=Immune to Conditions and Vulnerable to "Green Light"
 
@@ -1625,7 +1578,6 @@ ID=8333
 alt=Orrian Spiders|Spider|Spiders
 image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
 path=Arah1|Arah2|Arah3|Arah4
-category=champion
 
 Attack=Alternates between its two attacks
 #note=keep in mind which attack was used first
@@ -1668,7 +1620,6 @@ ID=8583
 alt=Drake
 path=Arah1|Arah2|Arah4
 image=http://wiki.guildwars2.com/images/5/5a/Champion_Orrian_Drake.jpg
-category=champion
 
 attack=Bite
 ID=3128
@@ -1705,7 +1656,6 @@ ID=10800
 level=82
 Path=Arah1
 image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
-category=legendary
 
 attack=Tar spit (if not burning)
 ID=4209
@@ -1731,7 +1681,6 @@ level=82
 alt=Lupicus
 image=http://wiki.guildwars2.com/images/f/ff/Giganticus_Lupicus_%28NPC%29.jpg
 Path=Arah1|Arah2|Arah3|Arah4
-category=legendary
 
 attack=Immune to blind and crippled. 100% resistance to control skills.
 #note=you can interrupt it with wiki=Sigil_of_Paralyzation|Sigil_of_Paralyzation
@@ -1793,7 +1742,6 @@ level=82
 alt=Lupicus (Phase 2)
 image=http://wiki.guildwars2.com/images/f/ff/Giganticus_Lupicus_%28NPC%29.jpg
 Path=Arah1|Arah2|Arah3|Arah4
-category=legendary
 
 attack=Immune to blind and crippled. 100% resistance to control skills.
 #note=you can interrupt it with wiki=Sigil_of_Paralyzation|Sigil_of_Paralyzation
@@ -1872,7 +1820,6 @@ level=82
 alt=Lupicus (Phase 3)
 image=http://wiki.guildwars2.com/images/f/ff/Giganticus_Lupicus_%28NPC%29.jpg
 Path=Arah1|Arah2|Arah3|Arah4
-category=legendary
 
 attack=Immune to blind and crippled. 100% resistance to control skills.
 #note=you can interrupt it with wiki=Sigil_of_Paralyzation|Sigil_of_Paralyzation
@@ -1965,7 +1912,6 @@ ID=9803
 alt=Korga
 image=http://wiki.guildwars2.com/images/d/d4/Risen_Gorilla.jpg
 path=Arah1
-category=legendary
 
 attack=Charge
 ID=4225
@@ -1990,7 +1936,6 @@ ID=9251
 alt=Jotun
 image=http://wiki.guildwars2.com/images/8/81/Jotun_ghost.jpg
 path=Arah1
-category=legendary
 
 attack=Homing projectile
 ID=4260
@@ -2021,7 +1966,6 @@ ID=10443
 alt=Belka
 image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
 path=Arah2
-category=legendary
 
 attack=Immobilized (does not move and can't be moved) and immune to Control
 
@@ -2074,7 +2018,6 @@ ID=10499
 alt=Abomination
 image=http://wiki.guildwars2.com/images/b/bf/Risen_Abomination.jpg
 path=Arah2
-category=legendary
 
 attack=Abomination Swipe
 ID=5223
@@ -2147,7 +2090,6 @@ ID=10532
 alt=Alphard
 image=http://wiki.guildwars2.com/images/4/43/Risen_Prince_Nekandezzar.jpg
 path=Arah2
-category=legendary
 
 attack=Resistant to condition (base duration reduced by 95%)
 
@@ -2224,7 +2166,6 @@ ID=10580
 alt=Brie
 image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
 path=Arah2
-category=legendary
 
 attack=Chain Lightning
 ID=5207
@@ -2274,7 +2215,6 @@ name=Wraithlord's Crusher
 ID=10593
 alt=Crusher
 path=Arah3
-category=legendary
 
 attack=Mighty Smash
 ID=17232
@@ -2317,7 +2257,6 @@ name=Wraithlord's Hunter
 ID=10592
 alt=Hunter
 path=Arah3
-category=champion
 
 attack=Bouncing Shot
 ID=4183
@@ -2372,7 +2311,6 @@ ID=8285
 alt=Giants
 image=http://wiki.guildwars2.com/images/1/13/Nageling_Giant.jpg
 path=Arah3|Arah4
-category=champion
 
 attack=Giant Stomp
 ID=1750
@@ -2437,7 +2375,6 @@ ID=8286
 alt=Giants
 image=http://wiki.guildwars2.com/images/1/13/Nageling_Giant.jpg
 path=Arah4
-category=elite
 
 ##################################################################
 
@@ -2446,7 +2383,6 @@ ID=10700
 alt=Mage Crusher
 image=http://wiki.guildwars2.com/images/6/69/Wraithlord%27s_Mage_Crusher.jpg
 path=Arah3
-category=legendary
 
 attack=Fetid Blast
 ID=4193
@@ -2496,7 +2432,6 @@ name=Wraithlord
 ID=8515
 path=Arah3
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
-category=legendary
 health=1376340
 type=undead
 
@@ -2565,7 +2500,6 @@ ID=8307
 alt=Knight
 image=http://wiki.guildwars2.com/images/b/bd/Risen_Knight.jpg
 path=Arah4
-category=champion
 
 attack=Slash
 ID=2649
@@ -2589,7 +2523,6 @@ ID=10434
 alt=Kaisar
 image=http://wiki.guildwars2.com/images/0/06/Risen_Priest_of_Balthazar.jpg
 path=Arah4
-category=legendary
 
 attack=Whirling Fire
 ID=4293
@@ -2613,7 +2546,6 @@ name=Hound of Balthazar
 ID=10439
 alt=Hounds of Balthazar
 path=Arah4
-category=elite
 
 attack=Bite
 ID=3648
@@ -2632,7 +2564,6 @@ ID=10438
 alt=Vahid
 image=http://wiki.guildwars2.com/images/a/a2/Legendary_Risen_Priest_of_Melandru.jpg
 path=Arah4
-category=legendary
 health=1376340
 type=undead
 
@@ -2659,7 +2590,6 @@ name=Vahid's Flora
 ID=10901
 alt=Vahid's Floras|Tree|Trees
 path=Arah4
-category=normal
 
 attack=Binding Roots
 ID=19442
@@ -2674,7 +2604,6 @@ ID=10437
 alt=Farnaz
 image=http://wiki.guildwars2.com/images/6/6b/Risen_Priestess_of_Lyssa.jpg
 path=Arah4
-category=legendary
 
 attack=Winds of Chaos
 ID=11157
@@ -2709,7 +2638,6 @@ effect=summons illusion based on target profession
 name=Farnaz, High Priestess of Lyssa (clone)
 ID=10782
 path=Arah4
-category=legendary
 type=undead
 
 attack=Winds of Chaos
@@ -2723,7 +2651,6 @@ name=Ghasem, High Priest of Grenth
 ID=10436
 alt=Ghasem
 path=Arah4
-category=legendary
 
 attack=Invulnerability
 #note=cannot be attacked directly
@@ -2738,7 +2665,6 @@ ID=10435
 alt=Simin
 image=http://wiki.guildwars2.com/images/1/14/Risen_Priestess_of_Dwayna.jpg
 path=Arah4
-category=legendary
 
 attack=Chain Lightning
 ID=5253
@@ -2790,7 +2716,6 @@ ID=10771
 alt=Shard
 image=http://wiki.guildwars2.com/images/9/96/Bloodstone_Shard.jpg
 path=Arah4
-category=legendary
 
 attack=Fire Storm
 ID=4292
@@ -2855,7 +2780,6 @@ name=Spark
 ID=10520
 alt=Sparks
 path=Arah4
-category=normal
 
 attack=Invulnerable
 

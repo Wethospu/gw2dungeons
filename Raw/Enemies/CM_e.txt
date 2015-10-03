@@ -4,7 +4,6 @@ potion=outlaw|main
 
 Name=Prototype Golem
 ID=3109
-Category=Champion
 image=http://wiki.guildwars2.com/images/a/a4/Prototype_Golem.jpg
 Path=CMS
 
@@ -13,6 +12,7 @@ effect=Daze and stun have no effect
 effect=Knockback, knockdown and launch sometimes work (even though defiance)
 
 Attack=Laser (1)
+ID=4929
 image=http://i.imgur.com/20wQqEc.gif
 Animation=Puts arms behind back
 Additional=channeled. Can't be blocked
@@ -23,41 +23,44 @@ length=3
 subeffect=vulnerability:0
 
 Attack=Rocket (2)
+ID=4929
 image=http://i.imgur.com/R8UxuDF.gif
 additional=Can't be blocked
 effect=Projectile with small AoE
-subeffect=damage:0
+subeffect=damage:-
 #note=Evade when Laser ends
 
 Attack=Dual Rockets
+ID=4933
 image=http://i.imgur.com/nubOskm.gif
 additional=Can't be blocked
 effect=2 projectiles with small AoE
 count=2
-subeffect=damage:0
+subeffect=damage:-
 
 Attack=Fire Spin
+ID=4928
 image=http://i.imgur.com/evoReVz.gif
 Animation=spreads arms
 additional=channeled
 effect=multiples PBAoes
+count=?
 # VERIFY: count & length.
-subeffect=damage:0
+subeffect=damage:-
 
 Attack=Pull
+ID=4931
 image=http://i.imgur.com/r7a2aNS.gif
 Animation=points right arm at you
 effect=projectile
-subeffect=damage:0
+subeffect=damage:-
 subeffect=pull:0
 #note=just zig zag (even at melee range)
 
 ##################################################################
 
 Name=Door Guard
-# VERIFY
 ID=3077
-Category=Champion
 Path=CMS
 
 Attack=Slash
@@ -66,67 +69,86 @@ cooldown=0
 effect=Melee
 subeffect=damage:0|bleeding
 
+attack=Slash
+ID=15059
+effect=melee
+subeffect=damage:-
+
 Attack=Spin
+ID=15060
 image=http://i.imgur.com/P1HqWHG.gif
 Animation=glows
 Additional=channeled, able to rotate
 effect=multiple cones over time
-subeffect=damage:0
+coount=?
+subeffect=damage:-
 
 ##################################################################
 
 Name=Separatist Fighter
 ID=11016
-Category=champion
 Path=CMS
 
-attack=Slash
+attack=Slash (1)
+ID=4453
 image=http://i.imgur.com/aYsVhMP.gif
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
-attack=Slash
+attack=Slash (2)
+ID=4451
 image=http://i.imgur.com/yQdumaB.gif
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Kick
+ID=4450
 image=http://i.imgur.com/qKKLBSK.gif
 # ???
 cooldown=8
 animation=jumps and kicks|0.25
 effect=melee
-subeffect=Damage:0
+subeffect=Damage:-
 subeffect=knockback:1.5
 #note=try to predict
+
 
 ##################################################################
 
 Name=Separatist Lieutenant
 ID=6088
-Category=champion
 Path=CMS
 
-attack=Basic attack
+attack=Slash (1)
+ID=4458
 image=https://i.imgur.com/dJPuBts.gif
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 
-attack=Leap (1)
+attack=Slash (2)
+ID=4459
+image=https://i.imgur.com/dJPuBts.gif
+effect=melee
+subeffect=damage:-
+
+attack=Ambush (1)
+ID=4461
 image=https://i.imgur.com/lcPLJNl.gif
 effect=leap
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Flurry (2)
 effect=multiple melee hits
 subeffect=damage:0
 
-attack=Spin
+attack=Cyclone Attack
+ID=4460
 image=https://i.imgur.com/RgxCsUg.gif
 effect=PBAoE
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Envenom
+ID=4456
 image=https://i.imgur.com/9xRWZR7.gif
 effect=buff, hits cause
 subeffect=poison:0
@@ -135,35 +157,57 @@ subeffect=poison:0
 
 Name=Separatist Captain DeLana
 ID=7943
-Category=Legendary
 image=http://wiki.guildwars2.com/images/d/df/Monique_DeLana.jpg
 Path=CMS
+
+attack=Dual Shot
+ID=3460
+effect=2 projectiles
+count=2
+subeffect=damage:-
+
+attack=Pin Down
+ID=3462
+effect=projectile
+subeffect=damage:-
+
+attack=Combustive Shot
+ID=3459
+effect=projectile with ticking AoE
+subeffect=damage:0
+
+attack=Smoke Grenade
+ID=4927
+effect=melee
+subeffect=damage:-
+subeffect=blind:0
 
 ##################################################################
 
 Name=Sure-Shot Seamus
 ID=8888
-Category=Legendary
 image=http://wiki.guildwars2.com/images/7/7e/Sure-shot_Seamus.jpg
 Path=CM1|CM3
 
 Attack=Starts with pistols, swaps to shotgun at 95% health
 
 Attack=Shoot (pistol)
+ID=4476
 image=https://i.imgur.com/0snvwDr.gif
 animation=aims with right pistol|0.5
 cooldown=1.5
 effect=projectile
-subeffect=Damage:1609712
+subeffect=damage:-
 
 Attack=Chain Shot (pistol)
+ID=4477
 image=https://i.imgur.com/yhK2dCt.gif
 cooldown=29
 animation=glows and raises pistols|0.25
 effect=12 projectiles in 2.5 s
 count=12
 length=2.5
-subeffect=Damage:488320
+subeffect=Damage:0.15
 
 Attack=Shrapnel Blast (shotgun)
 image=https://i.imgur.com/kzl5lvu.gif
@@ -171,8 +215,8 @@ cooldown=3
 animation=stops and aims|0.85
 additional=medium range
 effect=cone
-subeffect=Damage:2244
-subeffect=bleeding:1296:8:3
+subeffect=Damage:0.5
+subeffect=bleeding:8:3
 subeffect=knockback:2.8
 #note=circle him at melee range to stay behind, evade if needed (direct away from your team)
 #note=stay at high range
@@ -183,32 +227,35 @@ subeffect=knockback:2.8
 
 Name=Gunpowder Morgan
 ID=8868
-Category=Legendary
 image=http://wiki.guildwars2.com/images/d/d4/Wahlen.jpg
 Path=CM1
 
 Attack=Doesn't move
 
 Attack=Throw Bomb
+ID=15704
 animation=pulls right arm behind back|0.5
 cooldown=3
 effect=slow projectile with aoe
-subeffect=Damage:1907936
+subeffect=Damage:-
 subeffect=vulnerability:12:4
 #note=simply sidestep at high range
 
 Attack=Throw Bomb
+ID=15705
 animation=spins (instant)
 additional=only used at close targets
 effect=multiple slow projectiles with aoe
-subeffect=Damage:1882648
+count=?
+subeffect=Damage:-
 subeffect=vulnerability:12:4
 
 Attack=Kick
+ID=4450
 cooldown=8
 animation=jumps and kicks|0.25
 effect=melee
-subeffect=Damage:1568728
+subeffect=Damage:-
 subeffect=knockback:1.5
 #note=try to predict
 
@@ -216,22 +263,24 @@ subeffect=knockback:1.5
 
 Name=Bloody Victoria
 ID=8867
-Category=Legendary
 Path=CM1
 
 Attack=Slash
+ID=3766
 cooldown=4
 animation=swings right arm|0.1
 effect=single target melee
-subeffect=damage:1589656
+subeffect=damage:-
 
 Attack=Slash
+ID=3766
 cooldown=4
 animation=swings left arm|0.65
 effect=single target melee
-subeffect=damage:1605352
+subeffect=damage:-
 
-Attack=Stealth (1)
+Attack=Hide in Shadows (1)
+ID=3764
 animation=instant||black powder
 cooldown=14
 
@@ -241,17 +290,19 @@ effect=single target melee
 subeffect=stun:3
 
 Attack=Backstab (3)
+ID=3762
 animation=swings right arm with blue effect|2.5
 effect=single target melee
-subeffect=Damage:16923776
+subeffect=Damage:-
 #note=use immunity or stun break
 
 Attack=Death Blossom (2)
+ID=3763
 animation=jumps over target|0.4
 effect=3 small PBAoes in 0.15 s
 count=3
 length=0.15
-subeffect=Damage:756896
+subeffect=Damage:-
 subeffect=bleeding:10:2
 #note=evade or remove conditions
 
@@ -259,72 +310,116 @@ subeffect=bleeding:10:2
 
 Name=Frost
 ID=8869
-Category=Legendary
 image=http://wiki.guildwars2.com/images/d/df/Frost.jpg
 Path=CM1
+
+attack=Frost Jet
+ID=4934
+effect=multiples cones over time
+count=?
+subeffect=damage:-
+subeffect=chilled:0
+
+attack=Frost Aura
+ID=4936
+effect=buff:Frost_Aura
+
+attack=Whirlwind Attack
+ID=4935
+effect=projectile
+subeffect=damage:-
+subeffect=turns target into ice
 
 ##################################################################
 
 Name=PWR 935i
 ID=9500
-Category=elite
 Path=CM1
+
+attack=Punch
+ID=1502
+effect=melee
+subeffect=damage:-
 
 ##################################################################
 
 Name=Taylor
 ID=8891
-Category=champion
 Path=CM2
 
 attack=Can't move or be moved
 
 attack=Shoot
+ID=1330
 animation=aims with right pistol and fires|1.25|shoots a bullet
 cooldown=3
 effect=projectile
-subeffect=damage:618248
+subeffect=damage:-
 
 attack=Chain Shot
+ID=2048
 cooldown=13
 animation=instant|0|glows, raises both pistols and shoots lots of bullets
 effect=12 projectiles in 2.25 s
 count=12
 length=2.25
-subeffect=damage:229336
+subeffect=damage:-
 
 attack=Evasive Shot
+ID=3373
 cooldown=27
 animation=crouches, jumps back and shoots with left pistol|0.2|shoots a bullet
 effect=projectile
-subeffect=damage:713296
+subeffect=damage:-
 effect=buff:evade:1
 
 ##################################################################
 
 Name=Marius
 ID=8889
-Category=champion
 Path=CM2
+
+attack=Slash (1)
+ID=3315
+effect=melee
+subeffect=damage:-
+
+attack=Tactical Strike (2)
+ID=3315
+effect=melee
+subeffect=damage:-
+
+attack=Heartseeker
+ID=3312
+effect=leap
+subeffect=damage:-
+
+attack=Stalker's Strike
+ID=3302
+effect=teleport with a melee
+subeffect=damage:-
 
 ##################################################################
 
 Name=Bridgette
 ID=8871
-Category=Legendary
 Path=CM2
 
 Attack=Pure/True Strike
+ID=3400
 effect=melee
-subeffect=damage:0
+subeffect=damage:-
 #note=stay at max melee-range to prevent usage
 
-Attack=summon Sword
+Attack=Sword of Justice
+ID=5128
+effect=summon a enemy=Sword_of_Justice
 #note=Ignore unless it starts attacking
 
 Attack=Symbol of Faith/Wraith
+ID=5127
 effect=ticking AoE at feet
-subeffect=damage:0
+subeffect=damage:-
 subeffect=burning:0
 subeffect=regeneration:0
 subeffect=retaliation:0
@@ -334,35 +429,66 @@ subeffect=retaliation:0
 
 Name=Sword of Justice
 ID=6381
-Category=Legendary
 Path=CM2
+
+attack=Strike
+ID=9169
+effect=melee
+subeffect=damage:-
 
 ##################################################################
 
 Name=Hound
 ID=9367
-Category=Legendary
+level=46
 image=http://wiki.guildwars2.com/images/4/4e/Juvenile_Krytan_Drakehound.jpg
 Path=CM2
+
+attack=Bite
+ID=4482
+effect=melee
+subeffect=damage:-
+
+attack=Leap
+ID=4481
+effect=leap
+subeffect=damage:-
+subeffect=knockdown:-
+
+attack=Howl
+ID=4480
+effect=PBAOE
+subeffect=damage:-
+subeffect=fear:-
 
 ##################################################################
 
 Name=Martha
 ID=8872
-Category=Legendary
 Path=CM2
+
+attack=Explosive Shot
+ID=3317
+effect=projectile
+subeffect=damage:-
+
+attack=Dart Volley
+ID=3318
+effect=projectile
+subeffect=damage:-
+subeffect=poison:0
 
 ##################################################################
 
 Name=Turmaine
 ID=9348
-Category=Legendary
 image=http://wiki.guildwars2.com/images/5/5e/Bandit_Thug.jpg
 Path=CM2
 
-Attack=Condition wells
+Attack=Plague
+ID=4940
 effect=multiple ticking AoEs
-subeffect=damage:0
+subeffect=damage:-
 subeffect=chilled:0
 subeffect=poison:0
 subeffect=weakness:0
@@ -370,7 +496,8 @@ subeffect=vulnerability:0
 #note=try to stay out, remove conditions if needed
 #note=makes reviving very hard
 
-attack=invulnerability (1)
+attack=Chillblains (1)
+ID=4940
 effect=invulnerability
 effect=aura
 subeffect=conditions on melee-range
@@ -384,31 +511,33 @@ effect=multiple dashes
 
 Name=Wahlen
 ID=8866
-Category=Legendary
 image=http://wiki.guildwars2.com/images/d/d4/Wahlen.jpg
 Path=CM3
 
 Attack=Throw Bomb
+ID=4448
 image=https://i.imgur.com/929kjyQ.gif
 cooldown=0
 effect=slow projectile with aoe
-subeffect=damage:0
+subeffect=damage:-
 subeffect=vulnerability:0:4
 #note=simply sidestep at high range
 
 Attack=Throw Bomb
+ID=4449
 image=https://i.imgur.com/jlHJUlc.gif
 animation=spins (instant)
 additional=only used at close targets
 effect=multiple slow projectiles with aoe
-subeffect=damage:0
+subeffect=damage:-
 subeffect=vulnerability:0:4
 
 Attack=Kick
+ID=4450
 cooldown=8
 animation=jumps and kicks|0.25
 effect=melee
-subeffect=Damage:1568728
+subeffect=Damage:-
 subeffect=knockback:1.5
 #note=try to predict
 
@@ -416,57 +545,61 @@ subeffect=knockback:1.5
 
 Name=Vallog
 ID=9433
-Category=Legendary
 image=http://wiki.guildwars2.com/images/7/72/Vallog.jpg
 Path=CM3
 
 Attack=Earth Spikes
+ID=4943
 image=https://i.imgur.com/9HsKVVn.gif
 animation=hops around
 effect=small PBAoE
-subeffect=damage:0
+subeffect=damage:-
 subeffect=bleeding:0:3
 subeffect=knockback:0
 #note=block/evade
 
 Attack=Fireball
+ID=4944
 image=https://i.imgur.com/0T4uCvW.gif
 animation=fiery effect
 effect=projectile with small AoE
-subeffect=damage:0
+subeffect=damage:-
 subeffect=burning:0
 #note=block/evade at melee, zig zag at range
 
 Attack=Swirling Winds
+ID=4945
 image=https://i.imgur.com/HNshgjQ.gif
 animation=air effect
 effect=area field
 subeffect=reflects projectiles
 
 ##################################################################
-
+# Levels 45 and 56 exist.
 Name=Bandit Archer
 ID=8884
 alt=Bandit Archers|Archer|Archers
-Category=Elite
 Path=CM1|CM2|CM3
 
 Attack=Shoot
+ID=4463
 cooldown=1.5
 animation=raises bow|0.25
 cooldown=0
 effect=projectile
-subeffect=damage:1038552
+subeffect=damage:-
 subeffect=crippled:5
 
 attack=Blinding Powder
+ID=4462
 cooldown=11
 animation=crouches a bit and pulls right arm behind back|0.5
 effect=ranged with AoE
-subeffect=damage:1047272
+subeffect=damage:0.5
 subeffect=blind:10
 
 attack=Evasion
+ID=4464
 animation=moves hands|0.35
 effect=buff (15 s)
 subeffect=low chance to gain "Evasion" (2 s) when hit
@@ -476,66 +609,41 @@ effect=buff:block
 
 ##################################################################
 
-Name=Bandit Archer
+copy=8884
 ID=8883
-alt=Bandit Archers|Archer|Archers
-Category=Normal
-Path=CM1|CM2|CM3
-
-Attack=Shoot
-cooldown=1.5
-animation=raises bow|0.25
-cooldown=0
-effect=projectile
-subeffect=damage:1038552
-subeffect=crippled:5
-
-attack=Blinding Powder
-cooldown=11
-animation=crouches a bit and pulls right arm behind back|0.5
-effect=ranged with AoE
-subeffect=damage:1047272
-subeffect=blind:10
-
-attack=Evasion
-animation=moves hands|0.35
-effect=buff (15 s)
-subeffect=low chance to gain "Evasion" (2 s) when hit
-
-attack="Evasion"
-effect=buff
-subeffect=buff:block
 
 ##################################################################
 
 Name=Bandit Bomber
 ID=9026
 alt=Bandit Bombers|Bomber|Bombers
-Category=Elite
 Path=CM1|CM2|CM3
 
 Attack=Throw Bomb
+ID=4448
 animation=pulls right arm behind back|0.5|throws a grenade
 cooldown=3
 effect=slow projectile with aoe
-subeffect=Damage:1027216
+subeffect=Damage:-
 subeffect=vulnerability:12:4
 #note=simply sidestep at high range
 
 Attack=Throw Bomb
+ID=4449
 cooldown=21
 animation=pulls right arm behind back and spins|0.5|lots of grenades
 additional=only used at close targets
 effect=~10 slow projectiles with aoe on area
-subeffect=Damage:1027216
+subeffect=Damage:-
 subeffect=vulnerability:12:4
 #note=Evade or use anti projectile
 
 attack=Kick
+ID=4450
 cooldown=13
 animation=jumps in air|0.4
 effect=melee
-subeffect=damage:1025472
+subeffect=damage:-
 subeffect=knockback:1.5
 #note=try to predict when going close
 
@@ -545,101 +653,67 @@ subeffect=knockback:1.5
 Name=Bandit Cutpurse
 ID=8876
 alt=Bandit Cutpurses|Cutpurse|Cutpurses
-Category=Elite
 Path=CM1|CM2|CM3
 
-Attack=Slash
+Attack=Slash (1)
+ID=4453
 image=https://i.imgur.com/CiA1iXz.gif
 animation=swing from right|0.5
 cooldown=2
 effect=melee
-subeffect=Damage:1029832
+subeffect=Damage:-
 
-Attack=Slash
+Attack=Slash (2)
+ID=4451
 animation=swing from left|0.2
 cooldown=2
 effect=melee
-subeffect=Damage:1029832
+subeffect=Damage:-
 
 Attack=Slash
+ID=4452
 animation=swing from right|0.1
 cooldown=2
 effect=melee
-subeffect=Damage:1029832
+subeffect=Damage:-
 
 Attack=Death Blossom
+ID=4457
 cooldown=11
 animation=jumps over target|0.4
 effect=3 small PBAoes in 0.15 s
 count=3
 length=0.15
-subeffect=Damage:617376
+subeffect=Damage:-
 subeffect=bleeding:8:4
 
 Attack=Envenom
+ID=4456
 cooldown=19
 image=https://i.imgur.com/mYv6Bgt.gif
 effect=buff (15 s), on hits
 subeffect=Poison:6
 
 ##################################################################
+# Levels 45 and 46 exist.
+copy=8876
+ID=8875
 
-copy=Bandit Cutpurse|elite
+##################################################################
+
+copy=8876
 name=Bandit Scout
 alt=Bandit Scouts|Scout|Scouts
 # VERIFY
 ID=8876
 
 ##################################################################
-# Levels 45 and 46 exist.
-
-Name=Bandit Cutpurse
-ID=8875
-alt=Bandit Cutpurses|Cutpurse|Cutpurses
-Category=Normal
-Path=CM1|CM2|CM3
-
-Attack=Slash
-image=https://i.imgur.com/CiA1iXz.gif
-animation=swing from right|0.5
-cooldown=2
-effect=melee
-subeffect=Damage:1029832
-
-Attack=Slash
-animation=swing from left|0.2
-cooldown=2
-effect=melee
-subeffect=Damage:1029832
-
-Attack=Slash
-animation=swing from right|0.1
-cooldown=2
-effect=melee
-subeffect=Damage:1029832
-
-Attack=Death Blossom
-cooldown=11
-animation=jumps over target|0.4
-effect=3 small PBAoes in 0.15 s
-count=3
-length=0.15
-subeffect=Damage:617376
-subeffect=bleeding:8:4
-
-Attack=Envenom
-cooldown=19
-image=https://i.imgur.com/mYv6Bgt.gif
-effect=buff (15 s), on hits
-subeffect=Poison:6
-
-##################################################################
 # Both level 45 and 50 exist.
 
+copy=6088
 Name=Bandit Hooligan
 ID=8887
 alt=Bandit Hooligans|Hooligan|Hooligans
-Category=Elite
 Path=CM1|CM2|CM3
 
 ##################################################################
@@ -648,101 +722,51 @@ Name=Separatist Sniper
 ID=3218
 alt=Separatist Snipers|Sniper|Snipers
 image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
-Category=Elite
 Path=CMS
 
 attack=Prefers targets with ranged weapons
 
-# Uses exp values.
-
 Attack=Shoot
+ID=4474
 animation=crouches a bit and aims|0.5
 cooldown=2
 additional=high range
 effect=fast projectile
-subeffect=Damage:1171968
+subeffect=Damage:0.5
 effect=If target is moving
-subeffect=Damage:2478224
-subeffect=bleeding:468:3:3
+subeffect=Damage:1
+subeffect=bleeding:3:3
 
 Attack=Sniper Shot
+ID=4475
 cooldown=11
 animation=kneels and marks target|1.75
 additional=high range
 effect=fast projectile
-subeffect=Damage:1797192
+subeffect=Damage:0.75
 effect=If target is moving
-subeffect=Damage:4222224
+subeffect=Damage:2
 subeffect=knockdown:3
 
 ##################################################################
 # Same enemy: Thauma Bandit Rifleman
 
+copy=3218
 Name=Bandit Rifleman
 ID=8890
 alt=Bandit Riflemen|Rifleman|Riflemen
 image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
-health=43416
-Category=Elite
 Path=CM1|CM2|CM3
-type=outlaw
-condition=540
-
-attack=Prefers targets with ranged weapons
-
-Attack=Shoot
-animation=crouches a bit and aims|0.5
-cooldown=2
-additional=high range
-effect=fast projectile
-subeffect=Damage:1171968
-effect=If target is moving
-subeffect=Damage:2478224
-subeffect=bleeding:468:3:3
-
-Attack=Sniper Shot
-cooldown=11
-animation=kneels and marks target|1.75
-additional=high range
-effect=fast projectile
-subeffect=Damage:1797192
-effect=If target is moving
-subeffect=Damage:4222224
-subeffect=knockdown:3
 
 ##################################################################
 
-Name=Bandit Rifleman
+copy=8890
 ID=8885
-alt=Bandit Riflemen|Rifleman|Riflemen
-image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
-Category=normal
 Path=CM1
 
-attack=Prefers targets with ranged weapons
-
-Attack=Shoot
-animation=crouches a bit and aims|0.5
-cooldown=2
-additional=high range
-effect=fast projectile
-subeffect=Damage:395016
-effect=If target is moving
-subeffect=Damage:742072
-subeffect=bleeding:3:3
-
-Attack=Sniper Shot
-cooldown=11
-animation=kneels and marks target|1.75
-additional=high range
-effect=fast projectile
-subeffect=Damage:618248
-effect=If target is moving
-subeffect=Damage:1591400
-subeffect=knockdown:3
-
 ##################################################################
-copy=Bandit Rifleman|Normal
+
+copy=8890
 name=Bandit Enforcer (Sniper)
 # VERIFY
 ID=8885
@@ -750,46 +774,34 @@ alt=Enforcer (Sniper)
 image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
 
 ##################################################################
-#
 
 Name=Bandit Scatter Shot
 ID=8881
 alt=Bandit Scatter Shots|Scatter Shot|Scatter Shots
-Category=Elite
 Path=CM1|CM2|CM3
 
 attack=Shoot
+ID=4476
 effect=projectile
-subeffect=damage:0
+subeffect=damage:-
 
 attack=Grapeshot
+ID=4478
 effect=projectiles (cone)
-subeffect=damage:0
+count=?
+subeffect=damage:-
 
 attack=Chain Shot
+ID=4477
 effect=projectiles over time
-subeffect=damage:0
+count=?
+subeffect=damage:-
 
 ##################################################################
 # Both levels 45 and 46 exist.
 
-Name=Bandit Scatter Shot
-ID=8890
-alt=Bandit Scatter Shots|Scatter Shot|Scatter Shots
-Category=normal
-Path=CM1|CM2|CM3
-
-attack=Shoot
-effect=projectile
-subeffect=damage:0
-
-attack=Grapeshot
-effect=projectiles (cone)
-subeffect=damage:0
-
-attack=Chain Shot
-effect=projectiles over time
-subeffect=damage:0
+copy=8881
+ID=8880
 
 ##################################################################
 
@@ -797,7 +809,6 @@ Name=Bandit Enforcer
 alt=Bandit Enforcers|Enforcer|Enforcers
 # Not verified.
 health=43416
-Category=Elite
 Path=CM1|CM2|CM3
 type=outlaw
 
@@ -806,7 +817,6 @@ type=outlaw
 Name=Bandit Enforcer
 # TODO ID
 alt=Bandit Enforcers|Enforcer|Enforcers
-Category=Normal
 Path=CM1|CM2|CM3
 type=outlaw
 
@@ -815,33 +825,37 @@ type=outlaw
 Name=Bandit Thug
 ID=8879
 alt=Bandit Thugs|Thug|Thugs
-Category=Elite
 Path=CM1|CM2|CM3
 
 attack=True Strike (1)
+ID=4468
 animation=swings mace from right|0.5
 effect=melee
-subeffect=damage:1015008
+subeffect=damage:-
 
 attack=Pure Strike (2)
+ID=4469
 animation=swings mace from left|0.6
 effect=melee
-subeffect=damage:1021112
+subeffect=damage:-
 
 attack=Faithful Strike (3)
+ID=4470
 animation=kneels and swings mace from right|1
 effect=melee
-subeffect=damage:1430952
+subeffect=damage:-
 subeffect=daze:1
 
 attack=Shield Bash
+ID=4467
 cooldown=7
 animation=turns left and dashes shield forward|0.5
 effect=dash
-subeffect=damage:1094360
+subeffect=damage:-
 subeffect=launch:3.3
 
-attack=Buff
+attack=Shout
+ID=4471
 animation=raises hands in air|1
 cooldown=18
 effect=PBAoE
@@ -850,60 +864,28 @@ subeffect=Stability:8
 subeffect=Might:8:5
 
 ##################################################################
-# Level 46
 
-Name=Bandit Thug
+copy=8879
 ID=8878
-alt=Bandit Thugs|Thug|Thugs
-Category=normal
-Path=CM1|CM2|CM3
 level=46
-
-attack=True Strike (1)
-animation=swings mace from right|0.5
-effect=melee
-subeffect=damage:1015008
-
-attack=Pure Strike (2)
-animation=swings mace from left|0.6
-effect=melee
-subeffect=damage:1021112
-
-attack=Faithful Strike (3)
-animation=kneels and swings mace from right|1
-effect=melee
-subeffect=damage:1430952
-subeffect=daze:1
-
-attack=Shield Bash
-cooldown=7
-animation=turns left and dashes shield forward|0.5
-effect=dash
-subeffect=damage:1094360
-subeffect=launch:3.3
-
-attack=Buff
-animation=raises hands in air|1
-cooldown=18
-effect=PBAoE
-subeffect=Protection:8
-subeffect=Stability:8
-subeffect=Might:8:5
 
 ##################################################################
 
 Name=Bandit Saboteur
 ID=8874
 alt=Bandit Saboteurs|Saboteur|Saboteurs
-Category=Elite
 Path=CM1|CM2|CM3
+
+attack=Draw Keg
+ID=4472
+effect=delayed AoE
+subeffect=damage:-
 
 ##################################################################
 
 Name=Bandit Saboteur
 ID=8873
 alt=Bandit Saboteurs|Saboteur|Saboteurs
-Category=normal
 Path=CM1|CM2|CM3
 
 ##################################################################
@@ -969,21 +951,18 @@ Path=CM2
 
 ##################################################################
 
+copy=9367
 Name=Hunting Dog
 ID=11017
+level=40
 alt=Hunting Dogs
-Category=elite
 image=http://wiki.guildwars2.com/images/4/4e/Juvenile_Krytan_Drakehound.jpg
 Path=CMS
 
 ##################################################################
 
-Name=Hunting Dog
+copy=11017
 ID=5982
-alt=Hunting Dogs
-Category=normal
-image=http://wiki.guildwars2.com/images/4/4e/Juvenile_Krytan_Drakehound.jpg
-Path=CMS
 
 ##################################################################
 # NPCS

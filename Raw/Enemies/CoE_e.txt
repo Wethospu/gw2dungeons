@@ -12,7 +12,6 @@ potion=outlaw|side
 Name=Head Scientist
 ID=10224
 alt=Head Scientist
-Category=champion
 Path=CoES
 
 # Using level 77 damage values.
@@ -55,7 +54,6 @@ Name=Inquest Technologist
 ID=10225
 level=79
 alt=Technologist
-Category=champion
 Path=CoES
 
 
@@ -64,7 +62,6 @@ Path=CoES
 Name=Kudu's Power Suit
 ID=9603
 level=80
-Category=legendary
 image=http://wiki.guildwars2.com/images/f/f4/Kudu%27s_Power_Suit.jpg
 Path=CoES
 
@@ -108,7 +105,6 @@ subeffect=daze:5
 Name=Kudu
 ID=4104
 level=80
-Category=legendary
 image=http://wiki.guildwars2.com/images/9/9a/Kudu.jpg
 Path=CoES
 
@@ -145,7 +141,6 @@ effect=teleports to one projectile landing spot
 Name=Kudu's Monster
 ID=4103
 level=80
-Category=legendary
 image=http://wiki.guildwars2.com/images/e/ec/Kudu%27s_Monster.jpg
 Path=CoES
 
@@ -384,7 +379,6 @@ ID=10079
 level=80
 alt=Risen Grubs
 image=http://wiki.guildwars2.com/images/1/19/Risen_Grub.jpg
-Category=normal
 Path=CoES
 
 attack=Undead Grub Spit
@@ -427,7 +421,6 @@ subeffect=pull:1.5
 Name=Inquest Golemaestro
 ID=10927
 alt=Inquest Golemaestros|Golemaestro|Golemaestros
-Category=elite
 Path=CoES
 
 attack=Shoot
@@ -450,7 +443,6 @@ effect=enemy=Mark_V_Field_Generator:normal
 Name=Inquest Gunner
 ID=10914
 alt=Inquest Gunners|Gunner|Gunners
-Category=elite
 Path=CoES
 
 attack=Trick Shot
@@ -495,7 +487,6 @@ subeffect=confusion:5:3
 Name=Inquest Insurgent
 ID=10906
 alt=Inquest Insurgents|Insurgent|Insurgents
-Category=elite
 Path=CoES
 
 attack=Death Blossom
@@ -522,7 +513,6 @@ subeffect=stun:1.5
 Name=Inquest Magnetizer
 ID=10924
 alt=Inquest Magnetizer|Magnetizer|Magnetizers
-Category=elite
 Path=CoES
 
 ##################################################################
@@ -530,7 +520,6 @@ Path=CoES
 Name=Inquest Mega Blaster
 ID=10915
 alt=Inquest Mega Blasters|Mega Blaster|Mega Blasters
-Category=elite
 Path=CoES
 
 ##################################################################
@@ -539,7 +528,6 @@ Name=Subversion Specialist
 ID=7538
 ID=9866
 alt=Subversion Specialists
-Category=elite
 Path=CoES
 
 attack=Unshakable
@@ -554,7 +542,6 @@ effect=blind has 10% chance to work
 # Levels 60, 77, 78 and 80 exist (story).
 Name=Inquest Assistant
 ID=9658
-Category=normal
 image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
 Path=CoE1|CoE2|CoE3
 
@@ -583,7 +570,6 @@ subeffect=Magnetic Aura (3 s)
 Name=Inquest Assassin
 ID=9653
 image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assassin.jpg
-Category=normal
 Path=CoE1|CoE2|CoE3
 
 attack=Swing
@@ -622,7 +608,6 @@ subeffect=damage:0
 Name=Inquest Grenadier
 ID=9655
 image=media=coe_inquest_grenadier.jpg
-Category=normal
 Path=CoE1|CoE2|CoE3
 
 attack=Throw Bomb
@@ -650,7 +635,6 @@ Name=Mark I Golem
 ID=9663
 alt=Mark I Golems|I Golem|I Golems
 image=https://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
-Category=normal
 type=inquest
 Path=CoES
 
@@ -660,7 +644,6 @@ Name=Mark II Golem
 ID=9669
 alt=Mark II Golems|II Golem|II Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=normal
 Path=CoES
 
 ##################################################################
@@ -669,7 +652,6 @@ Name=Mark K Assault Golem
 ID=10208
 alt=Mark K Assault Golems|K-A Golem|K-A Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
 type=inquest
 Path=CoES
 health=146136
@@ -704,7 +686,6 @@ Name=Mark K Battle Golem
 ID=10207
 alt=Mark K Battle Golems|K-B Golem|K-B Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
 Path=CoES
 
 # Uses level 77 values.
@@ -739,7 +720,6 @@ ID=10206
 level=79
 alt=Mark J Assault Golems|J-A Golem|J-A Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
 Path=CoES
 
 # Uses level 79 values.
@@ -770,7 +750,6 @@ Name=Mark J Battle Golem
 ID=10205
 alt=Mark J Battle Golems|J-B Golem|J-B Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
 Path=CoES
 
 ##################################################################
@@ -779,7 +758,6 @@ Name=Mark P Battle Golem
 ID=10210
 alt=Mark P Battle Golems|P-B Golem|P-B Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
 Path=CoES
 
 ##################################################################
@@ -789,7 +767,6 @@ ID=10209
 level=79
 alt=Mark P Support Golems|P-S Golem|P-S Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
 Path=CoES
 
 attack=Fire Shield
@@ -804,7 +781,6 @@ ID=10512
 level=80
 alt=Mark S Bomb Golems|Bomb Golem|Bomb Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=normal
 Path=CoES
 
 attack=Detonate
@@ -823,7 +799,6 @@ ID=10910
 level=79
 alt=Mark V Field Generators|V-F Generator|V-F Generators
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=normal
 Path=CoES
 
 # Note: Uses level 79 value.
@@ -857,7 +832,6 @@ ID=10922
 level=79
 alt=Mark XXX Juggernauts|Juggernaut|Juggernauts
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=elite
 Path=CoES
 
 attack=Flurry (1)
@@ -904,7 +878,6 @@ subeffect=damage-constant:2730
 Name=Resonance Cascade Field
 ID=9898
 alt=Resonance Cascade Fields
-Category=normal
 Path=CoES
 
 attack=Immune to normal damage, conditions and control
@@ -927,7 +900,6 @@ potion=nightmare court|side
 
 Name=Icebrood Wolf
 ID=9870
-Category=champion
 image=http://wiki.guildwars2.com/images/b/bf/Champion_Icebrood_Wolf.jpg
 Path=CoE1|CoE2|CoE3
 
@@ -966,7 +938,6 @@ subeffect=crippled:3
 
 Name=Subject Alpha (first)
 ID=7611
-Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE1
 
@@ -1003,7 +974,6 @@ additional=used at 50%
 
 Name=Subject Alpha (first)
 ID=7611
-Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE2
 
@@ -1049,7 +1019,6 @@ additional=used at 50%
 
 Name=Subject Alpha (first)
 ID=7611
-Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE3
 
@@ -1085,7 +1054,6 @@ effect=revive NPC
 
 Name=Subject Alpha (second)
 ID=7611
-Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE1
 
@@ -1140,7 +1108,6 @@ additional=used at 25% health
 
 Name=Subject Alpha (second)
 ID=7611
-Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE2
 
@@ -1199,7 +1166,6 @@ additional=used at 25% health
 
 Name=Subject Alpha (second)
 ID=7611
-Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE3
 
@@ -1251,7 +1217,6 @@ additional=used at 25%
 
 Name=Subject Alpha (third)
 ID=7611
-Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE1
 
@@ -1305,7 +1270,6 @@ subeffect=deal 20% more damage
 
 Name=Subject Alpha (third)
 ID=7611
-Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE2
 
@@ -1368,7 +1332,6 @@ subeffect=deal 20% more damage
 
 Name=Subject Alpha (third)
 ID=7611
-Category=legendary
 image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
 Path=CoE3
 
@@ -1456,7 +1419,6 @@ Name=Black Essence
 ID=10216
 alt=Black Essences
 image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
-Category=normal
 Path=CoE1|CoE2|CoE3
 
 attack=Sacrifice
@@ -1468,7 +1430,6 @@ effect=self destruct
 
 Name=Mark T-B34RC3
 ID=10130
-Category=legendary
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=CoE1|CoE2|CoE3
 
@@ -1516,7 +1477,6 @@ subeffect=damage:0
 
 Name=Bjarl the Rampager
 ID=10218
-Category=legendary
 image=http://wiki.guildwars2.com/images/f/ff/Havram_Girthbinder.jpg
 Path=CoE1|CoE2|CoE3
 
@@ -1545,7 +1505,6 @@ subeffect=take much less damage
 
 Name=Evolved Husk
 ID=10337
-Category=legendary
 image=http://wiki.guildwars2.com/images/6/6a/The_Defiler.jpg
 Path=CoE2
 
@@ -1564,7 +1523,6 @@ effect=buff:projectile_absorption
 
 Name=Destroyer Crab
 ID=9711
-Category=champion
 image=http://wiki.guildwars2.com/images/f/fe/Destroyer_Crab.jpg
 Path=CoE3
 
@@ -1585,7 +1543,6 @@ Name=Destroyer Crab
 ID=9710
 alt=Destroyer Crabs
 image=http://wiki.guildwars2.com/images/f/fe/Destroyer_Crab.jpg
-Category=normal
 Path=CoE3
 type=destroyer
 
@@ -1593,7 +1550,6 @@ type=destroyer
 
 Name=Evolved Destroyer
 ID=10404
-Category=legendary
 image=http://wiki.guildwars2.com/images/7/7d/Destroyer_Troll.jpg
 Path=CoE3
 
@@ -1618,7 +1574,6 @@ Name=Flametouched Husk
 ID=10221
 alt=Flametouched Husks
 image=http://wiki.guildwars2.com/images/4/4c/Flametouched_Husk.jpg
-Category=elite
 Path=CoE2
 
 attack=Husk Swipe
@@ -1646,7 +1601,6 @@ Name=Icebrood Troll
 ID=9871
 alt=Icebrood Trolls
 image=http://wiki.guildwars2.com/images/f/fc/Icebrood_Troll.jpg
-Category=elite
 Path=CoE1
 
 # Damage values from HotW.
@@ -1674,7 +1628,6 @@ Name=Icebrood Elemental
 ID=9887
 alt=Icebrood Elementals
 image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
-Category=elite
 Path=CoE1|CoE2|CoE3
 
 attack=Ice Throw
@@ -1710,7 +1663,6 @@ Name=Icebrood Colossus
 ID=10219
 alt=Icebrood Colossi
 image=http://wiki.guildwars2.com/images/3/38/Icebrood_Colossus.jpg
-Category=elite
 Path=CoE1|CoE2|CoE3
 
 attack=Ice Shards
@@ -1743,7 +1695,6 @@ Name=Icebrood Goliath
 ID=9873
 alt=Icebrood Goliaths
 image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
-Category=elite
 Path=CoE1|CoE2|CoE3
 
 attack=Smash
@@ -1778,7 +1729,6 @@ Name=Icebrood Wolf
 ID=9869
 alt=Icebrood Wolves
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
-Category=elite
 Path=CoE1|CoE2|CoE3
 
 attack=Bite
@@ -1808,7 +1758,6 @@ Name=Icebrood Wolf
 ID=11708
 alt=Icebrood Wolves
 image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
-Category=normal
 Path=CoE1|CoE2|CoE3
 
 attack=Bite
@@ -1827,7 +1776,6 @@ subeffect=crippled:3
 
 Name=Mark K Assault Golem
 ID=10208
-Category=elite
 Path=CoE1|CoE2|CoE3
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 
@@ -1851,7 +1799,6 @@ subeffect=stun:1
 
 Name=Mark J Assault Golem
 ID=10206
-Category=elite
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=CoE1|CoE2|CoE3
 
@@ -1872,7 +1819,6 @@ Name=Mark S Bomb Golem
 ID=10265
 alt=Mark S Bomb Golems
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
-Category=normal
 Path=CoE1|CoE2|CoE3
 
 attack=Detonate
@@ -1888,7 +1834,6 @@ effect=self destruct
 
 Name=Mark K Battle Golem
 ID=10207
-Category=elite
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=CoE1|CoE2|CoE3
 
@@ -1913,7 +1858,6 @@ effect=whirl finisher
 
 Name=Mark P Support Golem
 ID=10209
-Category=elite
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=CoE1|CoE2|CoE3
 
@@ -1926,7 +1870,6 @@ subeffect="Fire Aura" per tick
 
 Name=Mark XXX Juggernaut
 ID=10922
-Category=elite
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=CoE1|CoE2|CoE3
 
@@ -1956,7 +1899,6 @@ Name=Nightmare Hound
 ID=3230
 alt=Nightmare Hounds
 image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
-Category=elite
 Path=CoE2
 
 attack=Bite
@@ -1979,7 +1921,6 @@ Name=Nightmare Husk
 ID=7393
 alt=Nightmare Husks
 image=http://wiki.guildwars2.com/images/5/5d/Summoned_Husk.jpg
-Category=elite
 Path=CoE1|CoE2
 
 attack=Husk Swipe
@@ -2007,7 +1948,6 @@ name=Plague Carrier Abomination
 ID=10766
 alt=Plague Carrier Abominations
 path=CoE2|CoE3
-category=elite
 
 attack=Explode
 effect=PBAoE
@@ -2038,7 +1978,6 @@ name=Unstable Bomb Golem
 ID=10512
 alt=Unstable Bomb Golems
 path=CoE2
-category=normal
 
 attack=Explode
 animation=glows and sits down, red circle|4
@@ -2057,7 +1996,6 @@ name=Orrian Gorilla
 ID=8326
 alt=Orrian Gorillas|Gorilla|Gorillas
 path=ARAH1|ARAH3|ARAH4
-category=elite
 
 # Damage values from ARAH.
 
@@ -2100,7 +2038,6 @@ subeffect=damage:8823673
 name=Risen Berserker
 ID=10807
 alt=Risen Berserkers
-category=elite
 path=CoE2|CoE3
 
 # Damage values from ARAH.
@@ -2157,7 +2094,6 @@ name=Risen Defiler
 ID=10806
 alt=Risen Defilers
 path=CoE2|CoE3
-category=elite
 
 tactic=normal
 Alternates between Throw Anchor and Smash.
@@ -2194,7 +2130,6 @@ name=Risen Devastator
 ID=8727
 alt=Risen Devastators|Devastator|Devastators
 path=CoE1
-category=elite
 
 # Damage values based on ARAH.
 
@@ -2241,7 +2176,6 @@ ID=10767
 alt=Risen Grubs
 image=http://wiki.guildwars2.com/images/1/19/Risen_Grub.jpg
 path=CoE2|CoE3
-category=normal
 
 attack=Undead Grub Spit
 cooldown=0
@@ -2256,7 +2190,6 @@ ID=9765
 alt=Risen Thralls
 image=http://wiki.guildwars2.com/images/1/1f/Risen_Thrall_Asura.jpg
 image=http://i.imgur.com/zfDZvGP.gif
-category=normal
 path=CoE1|CoE2|CoE3
 
 # Damage values from ARAH.
@@ -2291,7 +2224,6 @@ name=Undead Abomination
 ID=8281
 image=http://wiki.guildwars2.com/images/b/bf/Risen_Abomination.jpg
 path=CoE2|CoE3
-category=champion
 
 attack=immune to crippled, chilled, immobilized and control skills
 
@@ -2340,7 +2272,6 @@ name=Undead Wraith
 ID=8313
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
 path=CoE2|CoE3
-category=elite
 
 attack=slash
 effect=melee
@@ -2375,7 +2306,6 @@ subeffect=summon a enemy=Risen_Wraith_(Drain):elite
 name=Risen Wraith (Drain)
 path=CoE2|CoE3
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
-category=elite
 # Not verified.
 health=157296
 type=undead
@@ -2418,7 +2348,6 @@ Name=Destroyer Harpy
 ID=9716
 alt=Destroyer Harpies
 image=http://wiki.guildwars2.com/images/0/05/Destroyer_Harpy.jpg
-Category=elite
 Path=CoE1|CoE3
 
 ##################################################################
@@ -2427,7 +2356,6 @@ Name=Destroyer Troll
 ID=9719
 alt=Destroyer Trolls
 image=http://wiki.guildwars2.com/images/7/7d/Destroyer_Troll.jpg
-Category=elite
 Path=CoE3
 
 ##################################################################

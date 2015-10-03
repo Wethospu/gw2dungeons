@@ -2,7 +2,6 @@ potion=flame_legion|main
 
 Name=Bolok Firebringer
 ID=1735
-Category=champion
 image=http://wiki.guildwars2.com/images/f/fa/Flame_Legion_Lava_Shaman.jpg
 Path=CoFS
 
@@ -24,7 +23,6 @@ effect=summon 2 normal enemies
 
 Name=Rozgar the Forge
 ID=1737
-Category=champion
 image=http://wiki.guildwars2.com/images/8/83/Flame_Legion_Axe_Fiend.jpg
 Path=CoFS
 
@@ -79,7 +77,6 @@ subeffect=bleeding:0
 
 Name=Hierophant Improaster
 ID=6734
-Category=champion
 image=http://wiki.guildwars2.com/images/f/fa/Flame_Legion_Lava_Shaman.jpg
 Path=CoFS
 
@@ -91,7 +88,6 @@ effect=Summon Fire enemy=Imps:normal
 Name=Fire Imp
 ID=6624
 alt=Fire Imps
-Category=normal
 image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
 Path=CoFS
 
@@ -109,7 +105,6 @@ effect=self destruct
 
 Name=Flame Legion Effigy
 ID=9222
-Category=champion
 image=http://wiki.guildwars2.com/images/6/6a/Flame_Legion_Effigy.jpg
 Path=CoFS
 
@@ -140,14 +135,12 @@ subeffect=Burning:0 every second
 
 Name=Flame Acolyte
 ID=4278
-Category=normal
 Path=CoFS
 
 ##################################################################
 
 Name=Gaheron Baelfire
 ID=1689
-Category=legendary
 image=http://wiki.guildwars2.com/images/9/9d/Gaheron_Baelfire.jpg
 Path=CoFS
 
@@ -192,7 +185,6 @@ subeffect=knockdown:0
 
 Name=Slave Driver
 ID=7386
-Category=champion
 image=http://wiki.guildwars2.com/images/e/e4/Slave_Driver.jpg
 Path=CoF1
 
@@ -214,7 +206,6 @@ subeffect=Might:15:5
 
 Name=Searing Effigy
 ID=7082
-Category=legendary
 image=http://wiki.guildwars2.com/images/6/6a/Flame_Legion_Effigy.jpg
 Path=CoF1
 
@@ -277,7 +268,6 @@ subeffect=buff:Soothing_Mist per tick (stacks 25 times)
 
 Name=Prison Warden
 ID=7153
-Category=champion
 Path=CoF2
 
 attack=Whip
@@ -310,7 +300,6 @@ Path=CoF2
 
 Name=Siege Commander
 ID=7284
-Category=champion
 Path=CoF3
 type=flame legion
 
@@ -360,7 +349,6 @@ subeffect=protection:5
 
 Name=Gaheron's Pet Drake
 ID=7166
-Category=champion
 image=http://wiki.guildwars2.com/images/3/34/Salamander_Drake.jpg
 Path=CoF3
 
@@ -384,7 +372,6 @@ subeffect=damage:0
 
 Name=Tribune Burntclaw
 ID=7322
-Category=legendary
 Path=CoF3
 
 attack=Banish
@@ -435,7 +422,6 @@ effect=Hammer or Bolas (unless on cooldown)
 Name=Carrion Devourer
 ID=9419
 alt=Carrion Devourers
-Category=elite
 image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
 Path=CoF2
 
@@ -489,7 +475,6 @@ Name=Fire Imp
 ID=7276
 level=76
 alt=Fire Imps
-Category=elite
 image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
 Path=CoF2
 
@@ -524,7 +509,6 @@ Path=CoF2
 Name=Flame Legion Effigy
 ID=9222
 alt=Flame Legion Effigies
-Category=elite
 image=http://wiki.guildwars2.com/images/6/6a/Flame_Legion_Effigy.jpg
 Path=CoFS|CoF1
 
@@ -542,7 +526,6 @@ subeffect=Burning:2 per second
 Name=Flame Legion Shadowblade
 ID=8936
 alt=Flame Legion Shadowblades
-Category=elite
 image=http://wiki.guildwars2.com/images/e/e9/Flame_Legion_Shadowblade.jpg
 Path=CoF1|CoF2|CoF3
 
@@ -572,7 +555,6 @@ subeffect=bleeding:10
 Name=Flame Legion Stalker
 ID=8939
 alt=Flame Legion Stalkers
-Category=elite
 image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Stalker.jpg
 Path=CoF1|CoF2|CoF3
 
@@ -620,7 +602,6 @@ subeffect=burning:3
 Name=Godforged Fanatic
 ID=7151
 alt=Godforged Fanatics
-Category=elite
 Path=CoF1|CoF2|CoF3
 
 attack=Spell Detonate
@@ -649,7 +630,6 @@ subeffect=launch:0
 Name=Godforged Flamecaller
 ID=7152
 alt=Godforged Flamecallers
-Category=elite
 Path=CoF1|CoF3
 
 attack=Immune to control-skills
@@ -672,7 +652,6 @@ Name=Flame Legion Assassin
 ID=11605
 level=77
 alt=Flame Legion Assassins|Assassin|Assassins
-Category=elite
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
@@ -681,7 +660,6 @@ Name=Godforged Smokelord
 ID=7148
 level=76
 alt=Godforged Smokelords|Smokelord|Smokelords
-Category=elite
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
@@ -689,7 +667,6 @@ Path=CoF1|CoF2|CoF3
 Name=Godforged Hellstorm
 ID=7149
 alt=Godforged Hellstorms
-Category=elite
 image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Igniter.jpg
 Path=CoF1|CoF2|CoF3
 
@@ -717,7 +694,6 @@ path=CoF1
 Name=Lashtail Devourer
 ID=9420
 alt=Lashtail Devourers
-Category=elite
 image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
 Path=CoF2
 
@@ -743,7 +719,6 @@ subeffect=lose crippled
 Name=Red Ooze
 ID=6432
 alt=Red Oozes
-Category=elite
 image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
 Path=CoF1|CoF2|CoF3
 
@@ -769,7 +744,6 @@ subeffect=damage:0
 Name=Siege Devourer
 ID=11008
 level=76
-Category=elite
 image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
 Path=CoF2
 
@@ -788,7 +762,6 @@ subeffect=damage:0
 Name=Whiptail Devourer
 ID=9421
 alt=Whiptail Devourers
-Category=elite
 image=http://wiki.guildwars2.com/images/3/34/Whiptail_Devourer.jpg
 Path=CoF2
 
@@ -809,7 +782,6 @@ subeffect=poison:4
 Name=Carrion Devourer
 ID=9416
 alt=Carrion Devourers
-Category=normal
 image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
 Path=CoF2
 
@@ -840,7 +812,6 @@ subeffect=healing:0
 Name=Fiery Jelly
 ID=1778
 alt=Fiery Jellies
-Category=normal
 image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
 Path=CoFS
 
@@ -867,7 +838,6 @@ Name=Fiery Jelly
 ID=1778
 level=76
 alt=Fiery Jellies
-Category=normal
 image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
 Path=CoF2
 
@@ -894,7 +864,6 @@ Name=Fire Imp
 ID=7276
 level=77
 alt=Fire Imps
-Category=normal
 image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
 Path=CoF2
 
@@ -923,7 +892,6 @@ Name=Fire Imp (Ice)
 # VERIFY: Check ID.
 ID=6624
 alt=Fire Imps (Ice)
-Category=normal
 image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
 Path=CoF2
 
@@ -938,7 +906,6 @@ effect=self destruct
 Name=Fire Imp (Putrid)
 ID=6624
 alt=Fire Imps (Putrid)
-Category=normal
 image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
 Path=CoF1|CoF3
 
@@ -956,7 +923,6 @@ Name=Flame Legion Fire Shaman
 level=77
 ID=8940
 alt=Flame Legion Fire Shamans
-Category=elite
 image=http://wiki.guildwars2.com/images/6/60/Veteran_Flame_Legion_Fire_Shaman.jpg
 Path=CoF3
 
@@ -974,7 +940,6 @@ Name=Flame Legion Fire Shaman
 ID=9139
 level=76
 alt=Flame Legion Fire Shamans
-Category=normal
 image=http://wiki.guildwars2.com/images/6/60/Veteran_Flame_Legion_Fire_Shaman.jpg
 Path=CoF3
 
@@ -992,7 +957,6 @@ subeffect=launch:0
 Name=Flame Legion Axe Fiend
 ID=9135
 alt=Flame Legion Axe Fiends
-Category=normal
 image=http://wiki.guildwars2.com/images/8/83/Flame_Legion_Axe_Fiend.jpg
 Path=CoF3
 
@@ -1023,7 +987,6 @@ subeffect=damage:0
 Name=Flame Legion Blade Master
 ID=9143
 alt=Flame Legion Blade Masters
-Category=normal
 image=http://wiki.guildwars2.com/images/3/3e/Flame_Legion_Blademaster.jpg
 Path=CoF3
 
@@ -1058,7 +1021,6 @@ name=Flame Legion Bladestorm
 ID=8937
 level=76
 alt=Flame Legion Bladestorms
-category=elite
 path=CoF1|CoF3
 
 ##################################################################
@@ -1066,7 +1028,6 @@ path=CoF1|CoF3
 Name=Flame Legion Blade Master (Stun)
 ID=9143
 alt=Flame Legion Blade Masters (Stun)
-Category=normal
 image=http://wiki.guildwars2.com/images/3/3e/Flame_Legion_Blademaster.jpg
 Path=CoF3
 
@@ -1103,7 +1064,6 @@ Name=Flame Legion Bladestorm (Hammer)
 # VERIFY
 ID=9143
 alt=Flame Legion Bladestorms (Hammer)
-Category=normal
 image=http://wiki.guildwars2.com/images/d/d7/Flame_Legion_Bladestorm.jpg
 Path=CoF3
 
@@ -1132,7 +1092,6 @@ Name=Flame Legion Igniter
 ID=9142
 level=76
 alt=Flame Legion Igniters
-Category=normal
 image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Igniter.jpg
 Path=CoF3
 
@@ -1153,7 +1112,6 @@ subeffect=pull:0| on next attack
 Name=Flame Legion Shadowblade
 ID=9137
 alt=Flame Legion Shadowblades
-Category=normal
 image=http://wiki.guildwars2.com/images/e/e9/Flame_Legion_Shadowblade.jpg
 Path=CoF3
 
@@ -1182,7 +1140,6 @@ subeffect=bleeding:10
 Name=Flame Legion Stalker
 ID=9356
 alt=Flame Legion Stalkers
-Category=normal
 image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Stalker.jpg
 Path=CoF1|CoF2|CoF3
 type=flame legion
@@ -1208,7 +1165,6 @@ Name=Lashtail Devourer
 # VERIFY 9417
 ID=4955
 alt=Lashtail Devourers
-Category=normal
 image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
 Path=CoF2
 
@@ -1236,7 +1192,6 @@ Name=Magma Elemental
 ID=7423
 level=76
 alt=Tar Elemental|Magma Elementals|Tar Elementals
-Category=normal
 image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
 Path=CoF3
 type=elemental
@@ -1265,7 +1220,6 @@ subeffect=immobilized:0.5
 Name=Red Ooze
 ID=5417
 alt=Red Oozes
-Category=normal
 image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
 Path=CoF3
 
@@ -1298,7 +1252,6 @@ Name=Salamander Drake
 ID=7121
 alt=Salamander Drakes
 image=http://wiki.guildwars2.com/images/3/34/Salamander_Drake.jpg
-Category=normal
 Path=CoF2
 
 attack=bite
@@ -1321,7 +1274,6 @@ subeffect=damage:0
 
 Name=Shadow Imp
 alt=Shadow Imps
-Category=normal
 Path=CoF3
 type=imp
 condition=600
@@ -1345,7 +1297,6 @@ subeffect=poison:3
 Name=Whiptail Devourer
 ID=4957
 alt=Whiptail Devourers
-Category=normal
 image=http://wiki.guildwars2.com/images/3/34/Whiptail_Devourer.jpg
 Path=CoF2
 
@@ -1366,7 +1317,6 @@ subeffect=poison:4
 Name=Flame Legion Acolyte
 ID=7081
 alt=Flame Legion Acolytes|Acolyte|Acolytes
-Category=normal
 Path=CoF1|CoF2
 
 ##################################################################
@@ -1379,21 +1329,18 @@ Path=CoF1
 
 Name=Ooze King
 ID=10267
-Category=champion
 Path=CoF1|CoF3
 
 ##################################################################
 
 Name=Ooze Queen
 ID=10266
-Category=champion
 Path=CoF1|CoF3
 
 ##################################################################
 
 Name=United Ooze
 ID=10268
-Category=legendary
 image=http://wiki.guildwars2.com/images/3/3c/United_Ooze.jpg
 Path=CoF1|CoF3
 
@@ -1401,7 +1348,6 @@ Path=CoF1|CoF3
 
 Name=Royal Jelly
 ID=7134
-Category=champion
 Path=CoF1|CoF3
 
 ##################################################################

@@ -1,7 +1,6 @@
 potion=undead|main
 
 Name=Example
-Category=legendary
 Path=SETTING
 type=undead
 scaling=legendary|0
@@ -30,7 +29,6 @@ subeffect=agony:9
 
 
 Name=Example 2
-Category=veteran
 Path=SETTING
 type=undead
 scaling=normal|0

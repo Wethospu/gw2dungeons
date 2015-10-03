@@ -82,7 +82,7 @@ namespace DataCreator.Utility
       {
         if (category.Length > 0)
         {
-          if (!enemy.Category.ToLower().Equals(category))
+          if (!enemy.Rank.ToLower().Equals(category))
             continue;
         }
         if (path.Length > 0)

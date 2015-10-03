@@ -20,7 +20,7 @@ namespace DataCreator.Enemies
     public int Index = 0;
     // Order number of this enemy in the enemy file. Needed for faster/simpler enemy linking. / 2015-08-11 / Wethospu
     public int FileIndex = 0;
-    public string Category = "";
+    public string Rank = "";
     // Alternative names for links and search. Guaranteed to be lower case without special marks.
     public List<string> AltNames { get; private set; }
     public List<string> Paths = new List<string>();
@@ -32,6 +32,7 @@ namespace DataCreator.Enemies
     public List<Media> Medias = new List<Media>();
     public SortedSet<string> Tags = new SortedSet<string>();
     public SortedSet<int> InternalIds = new SortedSet<int>();
+    public bool IsCopy = false;
 
     private int _level = 0;
     private bool _useCustomPath = false;
@@ -70,7 +71,10 @@ namespace DataCreator.Enemies
     public Enemy(Enemy toCopy)
       : this()
     {
-      Category = string.Copy(toCopy.Category);
+      Name = string.Copy(toCopy.Name);
+      foreach (var alt in toCopy.AltNames)
+        AltNames.Add(alt);
+      Rank = string.Copy(toCopy.Rank);
       foreach (var path in toCopy.Paths)
         Paths.Add(string.Copy(path));
       Potion = string.Copy(toCopy.Potion);
@@ -85,6 +89,7 @@ namespace DataCreator.Enemies
         Attacks.Add(new Attack(attack));
       foreach (var tag in toCopy.Tags)
         Tags.Add(tag);
+      IsCopy = true;
     }
 
     /***********************************************************************************************
@@ -125,7 +130,7 @@ namespace DataCreator.Enemies
       if (result == 0)
       {
         // If same, compare category.
-        result = CategoryToInt(Category) - CategoryToInt(toCompare.Category);
+        result = CategoryToInt(Rank) - CategoryToInt(toCompare.Rank);
         if (result == 0)
         {
           // If same, compare level.
@@ -181,7 +186,7 @@ namespace DataCreator.Enemies
       foreach (var altName in AltNames)
         htmlBuilder.Append(" ").Append(Helper.Simplify(altName));
       htmlBuilder.Append("\"");
-      htmlBuilder.Append(" data-category=\"").Append(Helper.Simplify(Category)).Append("\"");
+      htmlBuilder.Append(" data-category=\"").Append(Helper.Simplify(Rank)).Append("\"");
       htmlBuilder.Append(" data-path=\"").Append(Helper.Simplify(string.Join("|", Paths))).Append("\"");
       htmlBuilder.Append(" data-potion=\"").Append(Helper.Simplify(Potion)).Append("\"");
       // Only add non-default path info. / 2015-09-39 / Wethospu
@@ -199,8 +204,8 @@ namespace DataCreator.Enemies
       htmlBuilder.Append(Gw2Helper.AddTab(3)).Append("<div class=\"in-line\">").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"enemy-name\">").Append(Helper.ConvertSpecial(Helper.ToUpperAll(Name.Replace(" ", Constants.Space)))).Append("</span>").Append(Constants.LineEnding);
       // Add details like category, race, level, health and armor. / 2015-08-09 / Wethospu   
-      if (!Category.Equals(""))
-        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"rank-unit\">").Append(Helper.ToUpper(Helper.ConvertSpecial(Category)).Replace(" ", Constants.Space)).Append(" </span>").Append(Constants.LineEnding);
+      if (!Rank.Equals(""))
+        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"rank-unit\">").Append(Helper.ToUpper(Helper.ConvertSpecial(Rank)).Replace(" ", Constants.Space)).Append(" </span>").Append(Constants.LineEnding);
       var family = Attributes.Family.GetDisplay();
       if (!family.Equals(""))
         htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"race-unit\">").Append(family).Append(" </span>").Append(Constants.LineEnding);

@@ -35,6 +35,22 @@ namespace DataCreator
     [JsonProperty("rank")]
     public string Rank { get; set; }
 
+    public string GetRank()
+    {
+      if (Rank.Equals("rank_none"))
+        return "normal";
+      if (Rank.Equals("rank_veteran"))
+        return "veteran";
+      if (Rank.Equals("rank_elite"))
+        return "elite";
+      if (Rank.Equals("rank_champion"))
+        return "champion";
+      if (Rank.Equals("rank_legendary"))
+        return "legendary";
+      Helper.ShowWarning("Rank " + Rank + " not recognized.");
+      return "normal";
+    }
+
     [JsonProperty("flag")]
     public int Flag { get; set; }
 

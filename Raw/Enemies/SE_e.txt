@@ -8,7 +8,6 @@ potion=dredge|side
 
 Name=Inspector Snik
 ID=6079
-Category=Champion
 Path=SES
 
 attack=Swaps to a flamethrower at 50%
@@ -40,7 +39,6 @@ subeffect=Burning:0
 ##################################################################
 
 Name=Overseer Kolt
-Category=Elite
 Path=SES
 # Verified.
 type=inquest
@@ -50,7 +48,6 @@ type=inquest
 Name=Golem Specialist Noko
 ID=6082
 level=61
-Category=Champion
 Path=SES
 # Verified.
 type=inquest
@@ -89,7 +86,6 @@ subeffect=lose a Boon every second
 Name=Kudu
 ID=3579
 level=62
-Category=Legendary
 image=http://wiki.guildwars2.com/images/9/9a/Kudu.jpg
 Path=SES
 
@@ -139,7 +135,6 @@ effect=at 25% summon enemy=Prototype_T-IV:champion
 Name=Prototype E-IV
 ID=10008
 level=62
-Category=champion
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=SES
 
@@ -173,7 +168,6 @@ subeffect=stun:0
 Name=Prototype F-IV
 ID=10009
 level=62
-Category=champion
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=SES
 
@@ -219,7 +213,6 @@ subeffect=burning:0
 Name=Prototype T-IV
 ID=10010
 level=62
-Category=champion
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=SES
 
@@ -259,7 +252,6 @@ subeffect=poison:0
 Name=Sentry Golem Mark S-IV
 ID=8056
 level=62
-Category=champion
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=SES
 
@@ -292,7 +284,6 @@ subeffect=stun:0| when hit on melee range
 
 Name=Iron Forgeman
 ID=6799
-Category=Legendary
 image=http://wiki.guildwars2.com/images/c/cc/Iron_Forgeman.jpg
 Path=SES
 
@@ -318,7 +309,6 @@ effect=summon enemy=Flame_Jellies:normal at safe-spots
 Name=Flame Jelly
 ID=6633
 alt=Flame Jellies
-Category=normal
 Path=SES
 
 ##################################################################
@@ -328,7 +318,6 @@ Path=SES
 
 Name=Dredge Soldier
 alt=Dredge Soldiers|Soldier|Soldiers
-Category=elite
 Path=SES
 type=dredge
 health=79352
@@ -369,7 +358,6 @@ subeffect=vulnerability:8
 
 Name=Dredge Soldier (Weapon)
 alt=Dredge Soldiers (Weapon)|Soldier (Weapon)|Soldiers (Weapon)
-Category=elite
 Path=SES
 type=dredge
 health=79352
@@ -415,7 +403,6 @@ effect=moves back
 Name=Dredge Reverberant
 ID=10006
 alt=Dredge Reverberants|Reverberant|Reverberants
-Category=elite
 image=http://wiki.guildwars2.com/images/c/c3/Veteran_Dredge_Reverberant.jpg
 Path=SES
 
@@ -447,7 +434,6 @@ subeffect=damage:0
 name=Dredge Mining Suit
 ID=10004
 alt=Dredge Mining Suits
-category=elite
 image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
 path=SES
 
@@ -484,7 +470,6 @@ subeffect=bleeding:8.5
 name=Cave Spider
 ID=5401
 alt=Cave Spiders
-category=normal
 image=http://wiki.guildwars2.com/images/f/fc/Juvenile_Cave_Spider.jpg
 path=SES
 
@@ -507,7 +492,6 @@ subeffect=poison:6
 
 name=Rat
 ID=4310
-category=normal
 path=SES
 
 attack=Peaceful
@@ -517,7 +501,6 @@ attack=Peaceful
 Name=Shukov
 ID=3257
 level=63
-Category=champion
 Path=SES
 
 attack=self
@@ -531,7 +514,6 @@ potion=dredge|side
 
 Name=Impasse Mark IV
 ID=6840
-Category=champion
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=SE1
 
@@ -582,7 +564,6 @@ subeffect=stun:3
 
 Name=Nokk
 ID=6839
-Category=legendary
 Path=SE1
 
 attack=Vapor Blade
@@ -635,7 +616,6 @@ effect=Summon enemy=Singularity:elite at target
 
 Name=Singularity
 ID=6956
-Category=elite
 Path=SE1
 
 attack=doesn't move
@@ -655,7 +635,6 @@ subeffect=crippled
 
 Name=Prototype E-IV
 ID=10909
-Category=champion
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=SE1
 
@@ -690,7 +669,6 @@ subeffect=stun:0
 
 Name=Prototype F-IV
 ID=10908
-Category=champion
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=SE1
 
@@ -737,7 +715,6 @@ subeffect=burning:0
 
 Name=Prototype T-IV
 ID=10907
-Category=champion
 image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
 Path=SE1
 
@@ -785,7 +762,6 @@ subeffect=poison:0
 
 Name=Tazza
 ID=9440
-Category=legendary
 image=http://wiki.guildwars2.com/images/0/0a/Tazza.jpg
 Path=SE1
 
@@ -820,13 +796,11 @@ subeffect=damage:0
 
 Name=elementalist
 ID=10781
-Category=elite
 Path=SE1
 
 ##################################################################
 
 Name=engineer
-Category=elite
 Path=SE1
 # Tested for inquest and elemental.
 type=no type
@@ -835,7 +809,6 @@ health=10301
 ##################################################################
 
 Name=guardian
-Category=elite
 Path=SE1
 # Tested for inquest and elemental.
 type=no type
@@ -844,7 +817,6 @@ health=10301
 ##################################################################
 
 Name=mesmer
-Category=elite
 Path=SE1
 # Tested for inquest and elemental.
 type=no type
@@ -853,7 +825,6 @@ health=10301
 ##################################################################
 
 Name=necromancer
-Category=elite
 Path=SE1
 # Tested for inquest and elemental.
 type=no type
@@ -862,7 +833,6 @@ health=10301
 ##################################################################
 
 Name=ranger
-Category=elite
 Path=SE1
 # Tested for inquest and elemental.
 type=no type
@@ -871,7 +841,6 @@ health=10301
 ##################################################################
 
 Name=thief
-Category=elite
 Path=SE1
 # Tested for inquest and elemental.
 type=no type
@@ -880,7 +849,6 @@ health=10301
 ##################################################################
 
 Name=warrior
-Category=elite
 Path=SE1
 # Tested for inquest and elemental.
 type=no type
@@ -916,7 +884,6 @@ subeffect=damage:615384
 
 Name=Troop Commander Kaeyi
 ID=10473
-Category=champion
 Path=SE1
 
 attack=Caltrops
@@ -943,7 +910,6 @@ health=10200
 ##################################################################
 
 Name=Inquest Golemcaster
-Category=elite
 Path=SE1
 health=93984
 type=inquest
@@ -975,7 +941,6 @@ subeffect=damage:0
 
 Name=Inquest Grenadier
 ID=10931
-Category=elite
 Path=SE1
 
 attack=Throw Bomb
@@ -1001,7 +966,6 @@ subeffect=poison:5
 Name=Inquest Engineer (Ranged)
 # VERIFY; 10308
 ID=10454
-Category=elite
 image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
 Path=SE1
 
@@ -1022,7 +986,6 @@ subeffect=poison:1
 Name=Inquest Engineer (Melee)
 # VERIFY; 10454
 ID=10308
-Category=elite
 image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
 Path=SE1
 
@@ -1056,7 +1019,6 @@ effect=projectile reflection?
 
 Name=Inquest Technician (Ranged)
 ID=10309
-Category=elite
 image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
 Path=SE1
 
@@ -1074,7 +1036,6 @@ subeffect=damage:0
 
 Name=Inquest Technician (Melee)
 ID=10305
-Category=elite
 image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
 Path=SE1
 
@@ -1104,7 +1065,6 @@ subeffect=knockback:0
 ##################################################################
 
 Name=Inquest Worker
-Category=elite
 health=93984
 Path=SE1
 type=inquest
@@ -1154,7 +1114,6 @@ effect=self destructs
 
 Name=Mark I Golem
 ID=10456
-Category=elite
 image=http://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
 Path=SE1
 
@@ -1181,7 +1140,6 @@ subeffect=knockback:0
 Name=Inquest Assassin
 ID=5167
 image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assassin.jpg
-Category=normal
 Path=SE1
 
 attack=Swing
@@ -1200,7 +1158,6 @@ subeffect=stealth:0
 # Same enemy: CoE123 Inquest Assistant
 
 Name=Inquest Assistant
-Category=normal
 image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
 Path=SE1
 type=inquest
@@ -1227,7 +1184,6 @@ effect=buff:Magnetic_Aura:3
 Name=Inquest Grenadier
 ID=5171
 image=media=coe_inquest_grenadier.jpg
-Category=normal
 Path=SE1
 
 attack=Throw Bomb
@@ -1248,7 +1204,6 @@ subeffect=chilled:5
 
 Name=Inquest Engineer
 ID=1202|1179
-Category=normal
 image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
 Path=SE1
 
@@ -1260,7 +1215,6 @@ effect=Summon enemy=Flame_Turret:structure
 
 Name=Inquest Extinguisher
 ID=5184
-Category=normal
 image=http://wiki.guildwars2.com/images/a/a9/Inquest_Extinguisher.jpg
 Path=SE1
 
@@ -1275,7 +1229,6 @@ subeffect=chilled:2
 
 Name=Inquest Technician (Ranged)
 ID=5187
-Category=normal
 image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
 Path=SE1
 health=5180
@@ -1296,7 +1249,6 @@ subeffect=damage:0
 
 Name=Inquest Technician (Melee)
 ID=5187
-Category=normal
 image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
 Path=SE1
 
@@ -1325,7 +1277,6 @@ potion=destroyer|side
 
 Name=Foreman Kreutzerova
 ID=6764
-Category=legendary
 image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
 Path=SE2
 
@@ -1348,7 +1299,6 @@ subeffect=healing:0
 
 Name=Foreman Korov
 ID=6767
-Category=champion
 image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
 Path=SE2
 
@@ -1361,7 +1311,6 @@ subeffect=knockback:0
 
 Name=Foreman Zeleoniy
 ID=6765
-Category=champion
 image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
 Path=SE2
 
@@ -1374,7 +1323,6 @@ subeffect=knockdown:0
 
 Name=Foreman Tomak
 ID=6768
-Category=champion
 image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
 Path=SE2
 
@@ -1387,7 +1335,6 @@ subeffect=knockback:0
 
 Name=Foreman Webarov
 ID=6766
-Category=champion
 image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
 Path=SE2
 
@@ -1398,21 +1345,18 @@ effect=buff:block
 
 Name=Mark I Golem
 ID=10957
-Category=champion
 Path=SE2
 
 ##################################################################
 
 Name=Mark II Golem
 ID=10958
-Category=champion
 Path=SE2
 
 ##################################################################
 
 Name=Shukov
 ID=3577
-Category=champion
 Path=SE2
 
 attack=self
@@ -1426,7 +1370,6 @@ name=Dredge Oscillator
 ID=10003
 alt=Dredge Oscillators|Oscillator|Oscillators
 image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
-category=elite
 path=SE2
 
 attack=Immune to blind
@@ -1451,7 +1394,6 @@ subeffect=knockback:1.5
 name=Dredge Ratnik
 alt=Dredge Ratniks|Ratnik|Ratniks
 image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
-category=elite
 path=SE2
 type=dredge
 
@@ -1479,7 +1421,6 @@ subeffect=vulnerability:8
 name=Dredge Ratnik
 alt=Dredge Ratniks|Ratnik|Ratniks
 image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
-category=normal
 path=SE2
 type=dredge
 
@@ -1508,7 +1449,6 @@ name=Dredge Excavator
 ID=10002
 alt=Dredge Excavators|Excavator|Excavators
 image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
-category=elite
 path=SE2
 
 ##################################################################
@@ -1519,14 +1459,12 @@ name=Dredge Excavator
 ID=8680
 alt=Dredge Excavators|Excavator|Excavators
 image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
-category=normal
 path=SE2
 
 ##################################################################
 
 name=Dredge Rifleman
 alt=Dredge Riflemen|Rifleman|Riflemen
-category=elite
 path=SE2
 type=dredge
 
@@ -1538,7 +1476,6 @@ name=Dredge Resonator
 ID=10005
 alt=Dredge Resonators
 image=http://wiki.guildwars2.com/images/4/48/Dredge_Resonator.jpg
-category=elite
 path=SE2
 
 attack=Immune to blind
@@ -1565,7 +1502,6 @@ name=Dredge Disaggregator
 ID=10007
 alt=Dredge Disaggregators
 image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
-category=elite
 path=SE2
 
 attack=Immune to blind
@@ -1598,7 +1534,6 @@ subeffect=regeneration:8
 Name=Dredge Bomber
 ID=8635
 alt=Dredge Bombers|Bomber|Bombers
-Category=elite
 Path=SE2|SE3
 
 attack=immune to blind
@@ -1635,7 +1570,6 @@ ID=8632
 level=66
 alt=Dredge Reverberants|Reverberant|Reverberants
 Path=SE2
-category=champion
 
 ##################################################################
 
@@ -1654,7 +1588,6 @@ potion=destroyer|side
 
 Name=General Volkov
 ID=6399
-Category=champion
 image=http://wiki.guildwars2.com/images/3/32/Molten_Excavator.jpg
 Path=SE3
 
@@ -1690,7 +1623,6 @@ subeffect=damage:0
 
 Name=General Molradovich
 ID=6424
-Category=champion
 image=http://wiki.guildwars2.com/images/4/48/Dredge_Resonator.jpg
 Path=SE3
 
@@ -1726,7 +1658,6 @@ subeffect=damage:0| per hit
 ##################################################################
 
 Name=General Zadorojny
-Category=champion
 image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
 Path=SE3
 health=590776
@@ -1751,7 +1682,6 @@ subeffect=burning:0| when hit
 Name=Destroyer of the Worlds
 ID=6450
 level=68
-Category=legendary
 image=http://wiki.guildwars2.com/images/d/db/Destroyer_of_Worlds.jpg
 Path=SE3
 
@@ -1794,7 +1724,6 @@ Name=Destroyer of the Earth
 ID=6482
 alt=Destroyers of the Earth
 level=68
-Category=elite
 image=http://wiki.guildwars2.com/images/7/7d/Destroyer_Troll.jpg
 Path=SE3
 
@@ -1802,7 +1731,6 @@ Path=SE3
 
 Name=Dredge Reverberant
 ID=8632
-Category=champion
 image=http://wiki.guildwars2.com/images/c/c3/Veteran_Dredge_Reverberant.jpg
 Path=SE3
 level=67
@@ -1811,7 +1739,6 @@ level=67
 
 Name=Dredge Bomber
 ID=8801
-Category=champion
 Path=SE3
 level=66
 
@@ -1843,7 +1770,6 @@ health=10510
 Name=Cave Spider
 ID=10986
 alt=Cave Spiders
-Category=elite
 image=http://wiki.guildwars2.com/images/f/fc/Juvenile_Cave_Spider.jpg
 Path=SE3
 level=66
@@ -1852,7 +1778,6 @@ level=66
 
 Name=Taskmaster
 ID=6798
-Category=Champion
 Path=SE2
 
 ##################################################################
