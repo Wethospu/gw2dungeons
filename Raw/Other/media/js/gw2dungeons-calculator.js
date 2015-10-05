@@ -361,7 +361,7 @@ function getCriticalChance(level, multiplier, targetLevel) {
       26.0, 26.5, 27.0, 27.5, 28.0, 28.5, 29.0, 29.5, 30.0, 30.5,
       31.0
 	];
-	return Math.max(0, Math.round(10 * (getAttribute(level, multiplier) / criticalDefense[targetLevel] - 43.119047619))/10);
+	return Math.round(10 * (4 + getAttribute(level, multiplier - 1) / criticalDefense[targetLevel]))/10;
 }
 
 function getCriticalDamage(level, multiplier) {
