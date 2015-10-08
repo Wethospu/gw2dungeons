@@ -15,6 +15,10 @@ Time: Night.
 Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Force if you want to be optimal.
 youtube=pr3aTHtol5M|Cutscenes.
 Current record: record=14.
+tactic=rewards
+First run per character gives a level 60 rare head armor.
+First run per day gives 73 silvers. Next runs give only 23 silvers.
+Every run gives 70% of your next level which makes dungeons very good for leveling up.
 
 name=First group
 tactic=normal|skip
@@ -148,9 +152,16 @@ Average length: 9 minutes.
 Difficulty: Easy.
 Enemies: Inquest.
 Time: Night.
-Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Force if you want to be optimal.
+Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=R8sPGE_rsAc|Video_guide (Banter Bill).
 Current record: record=15.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Force.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Manifesto_of_the_Moletariate|Manifestos_of_the_Moletariate. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Band_of_the_Moliarchy, wiki=Dissonance_Amplifier or wiki=Revolutionary_Flyers from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_The_Replicator from the last boss, enemy=Tazza, if you kill enemy=Kaeyi first. The recipe allows you to craft wiki=The_Replicator which gives a much better gold return for your tokens.
 
 name=Start
 image=http://i.imgur.com/6SZvjVt.jpg
@@ -263,6 +274,8 @@ You want to focus Tazza and avoid hitting Kaeyi. Once Tazza is dead the dungeon 
 They aren't very dangerous as long as you evade Tazza's Mind Stab which casts a delayed AoE at every target.
 Her normal attacks aren't a big threat. Melee players should try to dodge her Illusionary Wave which knocks back.She uses Illusionary Wave most commonly a few seconds after she does the Blink + Mind Stab combo.
 Kaeyi occasionally stealths and uses Caltrops, which apply bleeding and cripple every second you remain in it. Avoid fighting in his Caltrops unless you have high condition removal available.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_The_Replicator from the last boss, enemy=Tazza, if you kill enemy=Kaeyi first. The recipe allows you to craft wiki=The_Replicator which gives a much better gold return for your tokens.
 tactic=thief
 Use Ambush and Thieves Guild for maximum damage.
 tactic=exploit
@@ -283,8 +296,16 @@ Average length: 42 minutes.
 Difficulty: Medium.
 Enemies: Dredge.
 Time: Night.
-Use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Force if you want to be optimal.
+Use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 Current record: record=16.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Force.
+Against end bosses, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Manifesto_of_the_Moletariate|Manifestos_of_the_Moletariate. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Band_of_the_Moliarchy, wiki=Dissonance_Amplifier or wiki=Revolutionary_Flyers from enemies and chests. All can be traded but aren't valuable.
+It may be possible to get an account bound wiki=Recipe:_Shukov's_Launch_Codes from somewhere in the dungeon. The recipe allows you to craft wiki=Shukov's_Launch_Codes which would give an extremely high return for your tokens.
 
 name=Start
 tactic=normal
@@ -349,6 +370,8 @@ tactic=bug
 Golems may not turn hostile if NPC was dead when entering the area. Make sure NPC survives by clearing the enemies or using stealth. There is no known fix.
 tactic=exploit
 If you wipe, Shukov may turn inactive. This means he won't shield them so you can them burst them down much faster.
+tactic=rewards
+It may be possible to get an account bound wiki=Recipe:_Shukov's_Launch_Codes from the end bosses. The recipe allows you to craft wiki=Shukov's_Launch_Codes which would give an extremely high return for your tokens.
 
 ###########################################################
 
@@ -361,9 +384,17 @@ Average length: 12 minutes.
 Difficulty: Easy.
 Enemies: Dredge.
 Time: Night.
-Use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Force if you want to be optimal.
+Use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=45OtPjzooco|Video_guide (Banter Bill).
 Current record: record=17.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Force.
+Against the end bosses, use wiki=Powerful_Potion_of_Destroyer_Slaying|Potion_of_Destroyer_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Destroyer_Slaying|Sigil_of_Destroyer_Slaying.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Manifesto_of_the_Moletariate|Manifestos_of_the_Moletariate. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Band_of_the_Moliarchy, wiki=Dissonance_Amplifier or wiki=Revolutionary_Flyers from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Husk_of_the_Destroyer from the end boss, enemy=Destroyer_of_the_Worlds. The recipe allows you to craft wiki=Husk_of_the_Destroyer which gives no extra return for your tokens.
 
 name=enemy=General_Volkov:champion
 tactic=ranged
@@ -433,6 +464,8 @@ Decide whether you will focus or ignore summoned enemy=Destroyers_of_the_Earth:e
 Be ready to dodge when he pulls air in or throws something at you. If you get pulled in then dodge his following powerful melee attack. Pay attention to the ground so you won't stand in AoEs.
 tactic=melee
 Keep circling him to avoid his melee attacks.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Husk_of_the_Destroyer from enemy=Destroyer_of_the_Worlds. The recipe allows you to craft wiki=Husk_of_the_Destroyer which gives no extra return for your tokens.
 
 
 

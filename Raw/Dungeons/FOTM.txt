@@ -1469,7 +1469,7 @@ Use wiki=Swirling_Winds for protection against projectiles.
 path=Under
 name=Underground Facility
 tactic=normal
-The fractal is full of Dredge so use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils. If you get the enemy=Rampaging_Ice_Elemental:legendary at end you can use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying. If you want to be optimal use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow or wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Force.
+The fractal is full of Dredge so use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying. Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force for damage sigils. If you get the enemy=Rampaging_Ice_Elemental:legendary at end you can use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying. If you want to be optimal use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow or wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Force.
 youtube=ALGpASCQMz4|Video_guide [KING].
 Current record (Bombs): record=48.
 Current record (Turret): record=49.
@@ -1660,8 +1660,6 @@ name=enemy=Siegemaster_Dulfy:champion
 tactic=normal
 At the enemy=gate:structure focus the 3 enemy=burning_Oils:structure at the top. They put ticking AoEs at an unexpectedly far range so don't be fooled by their weak look. Once they are destroyed attack the gate and Dulfy. Make sure NPCs also attack her. Ignore the enemy=Ballistas:structure because Dulfy will just repair them.
 Once Dulfy dies destroy any remaining siege weapons and focus the gate down.
-tactic=exploit
-You can jump over the wall and kill Dulfy and the gate from behind. At the beginning take turn right and jump on the walls. Move towards 3 enemy=Burning_Oils:structure and use a leap to jump over them. Stand on top of them while destroying them. Once destroyed they push you over the wall.
 tactic=coordinated
 Focus 3 the enemy=burning_Oils:structure with ranged attacks and then burst down Dulfy and the gate.
 

@@ -12,9 +12,15 @@ Average length: 20 minutes.
 Difficulty: Easy.
 Enemies: Outlaw.
 Time: Day.
-Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=NHnlmEbDF-s|Cutscenes.
 Current record: record=5.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
+tactic=rewards
+First run per character gives a level 40 rare head armor.
+First run per day gives 73 silvers. Next runs give only 23 silvers.
+Every run gives 70% of your next level which makes dungeons very good for leveling up.
 
 name=Start
 tactic=normal
@@ -63,7 +69,7 @@ Kill patrols before getting close. Bring anti-CC against dogs.
 Stay behind trees to avoid Snipers. Kill enemies.
 Go finish off Snipers.
 
-name=enemy=Separatist_Captain_DeLana:legendary
+name=enemy=Separatist_Captain_DeLana:champion
 tactic=normal
 Kill Elite enemies first. Finish off boss.
 
@@ -78,9 +84,16 @@ Average length: 13 minutes.
 Difficulty: Medium.
 Enemies: Outlaw.
 Time: Day.
-Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=FrqPtXZl8wI|Video_guide (Banter Bill).
 Current record: record=6.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Seal_of_Beetletun|Seals_of_Beetletun. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Bandit_Spineguard, wiki=Beetlestone's_Band or wiki=Caudecus's_Journal from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Spineguard_of_the_North from the end boss, enemy=Frost. It's account bound so it's not valuable.
 
 name=Destroying parts
 tactic=normal|skip|coordinated
@@ -176,6 +189,8 @@ tactic=coordinated
 Fight on top of Frost. Use anti-projectile skills to avoid having to kill the rockets, and burst Frost down.
 tactic=exploit
 Frost's chill-cone attack can only hit horizontally. There are numerous areas where you can jump up and avoid being hit by this attack; most of these areas will also protect you from the rockets and golems.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Spineguard_of_the_North from enemy=Frost. It's account bound so it's not valuable.
 
 ######################################################
 
@@ -188,9 +203,16 @@ Average length: 13 minutes.
 Difficulty: Medium.
 Enemies: Outlaw.
 Time: Day.
-Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=Joera2tPeHc|Video_guide (Banter Bill).
 Current record: record=7.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Seal_of_Beetletun|Seals_of_Beetletun. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Bandit_Spineguard, wiki=Beetlestone's_Band or wiki=Caudecus's_Journal from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Plague from the end boss, enemy=Turmaine. The recipe allows you to craft wiki=Plague_(ring)|Plague which gives a sligthly better gold return for your tokens.
 
 name=Start
 tactic=normal|skip
@@ -315,6 +337,8 @@ He can be bugged in the treehouse (lure him up and jump down) or on a rock (atta
 tactic=warrior
 Take wiki=Signet_of_Stamina to clear lots of conditions at the same time.
 Use wiki=Rush or/and wiki=Whirlwind_Attack to get away from him during plague form.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Plague from enemy=Turmaine. The recipe allows you to craft wiki=Plague_(ring)|Plague which gives better gold return for your tokens.
 
 ################################################################
 
@@ -327,9 +351,16 @@ Average length: 11 minutes.
 Difficulty: Medium.
 Enemies: Outlaw.
 Time: Day.
-Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=ByDSoege70Y|Video_guide (Banter Bill).
 Current record: record=8.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Seal_of_Beetletun|Seals_of_Beetletun. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Bandit_Spineguard, wiki=Beetlestone's_Band or wiki=Caudecus's_Journal from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Vallog's_Demise from the end boss, enemy=Vallog. The recipe allows you to craft wiki=Vallog's_Demise which gives a much better gold return for your tokens.
 
 name=enemy=Sure-Shot_Seamus:legendary
 tactic=melee|ranged
@@ -403,3 +434,6 @@ tactic=ranged
 Keep distance so you won't get hit by his melee attack. Watch out for wind effect because it will reflect your projectiles. Either stop attacking or do not use reflectable attacks. Dodge if he shoots fireball at you.
 tactic=melee
 Watch out for his animations. When he hops around be ready to dodge because he will hit all around him. If he is facing you with fiery effect dodge his ranged attack. You can probably ignore wind effect because it only reflects projectiles, but be aware if you have any melee attacks that involve projectiles (Such as Whirling Wrath for Guardians).
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Vallog's_Demise from enemy=Vallog. The recipe allows you to craft wiki=Vallog's_Demise which gives much better gold return for your tokens.
+

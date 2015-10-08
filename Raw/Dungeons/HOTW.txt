@@ -12,13 +12,15 @@ Average length: 35 minutes.
 Difficulty: Easy.
 Enemies: Icebrood and some Sons of Svanir.
 Time: Day.
-Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=iWSS2B0vnYM|Cutscenes.
 Current record: record=22.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty.
 tactic=rewards
 First run per character gives a level 75 rare head armor.
 First run per day gives 73 silvers. Next runs give only 23 silvers.
-Every run gives 70% of your next level which makes dungeons very good for leveling up. 
+Every run gives 70% of your next level which makes dungeons very good for leveling up.
 
 name=Start
 tactic=normal
@@ -110,9 +112,16 @@ Average length: 14 minutes.
 Difficulty: Medium.
 Enemies: Icebrood and some Sons of Svanir.
 Time: Day.
-Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=buwUa0xAdzc|Video_guide (Banter Bill).
 Current record: record=23.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Symbol_of_Kodan|Symbols_of_Kodan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Arctic_Ring, wiki=Carving_of_Jormag, wiki=Svanir_Taliman or wiki=Svanir_Taliman_(masterwork) from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Ring_of_Blood from the final chest. The recipe allows you to craft wiki=Ring_of_Blood which gives a much better gold return for your tokens.
 
 name=Start
 tactic=normal
@@ -160,6 +169,9 @@ You should fight Ginva near the protection-Totem to cleave/AoE it. Destroy retal
 All his attacks do high damage so try stay at least at max melee-range. Try to dodge his pull.
 Occasional Whirling Defense makes him very dangerous to melee players. You can still keep hitting him at max melee-range but don't get too close! It also reflects projectiles so stop using those for a while.
 Don't stand Icy Ground to avoid being inflicted with a long chill.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Ring_of_Blood from the final chest. The recipe allows you to craft wiki=Ring_of_Blood which gives a much better gold return for your tokens.
+
 tactic=thief
 Use wiki=Basilisk_Venom and wiki=Steal to interrupt his Whirling Defense (you can get half of them).
 
@@ -174,10 +186,17 @@ Average length: 20 minutes.
 Difficulty: Medium.
 Enemies: Icebrood and some Sons of Svanir.
 Time: Day.
-Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=oI6iMApKHak|Video_guide (Banter Bill).
 Location: Land and water.
 Current record: record=24.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Symbol_of_Kodan|Symbols_of_Kodan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Arctic_Ring, wiki=Carving_of_Jormag, wiki=Svanir_Taliman or wiki=Svanir_Taliman_(masterwork) from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Koda's_Gift from the final chest. The recipe allows you to craft wiki=Koda's_Gift which gives a much better gold return for your tokens.
 
 name=Start
 tactic=normal
@@ -224,6 +243,8 @@ tactic=melee
 His rush attack is very dangerous and may down you instantly. Consider staying at range until he uses it and then go burst him for several seconds.
 tactic=melee|ranged
 | Other attacks aren't really a threat. Obviously don't swim to his mines.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Koda's_Gift from the final chest. The recipe allows you to craft wiki=Koda's_Gift which gives a much better gold return for your tokens.
 
 ################################################################################################################
 
@@ -236,10 +257,17 @@ Average length: 18 minutes.
 Difficulty: Medium.
 Enemies: Icebrood and some Sons of Svanir.
 Time: Day.
-Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=TNZHOpQpQU0|Video_guide (Banter Bill).
 Location: Land and water.
 Current record: record=25.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying instead of Frailty.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Symbol_of_Kodan|Symbols_of_Kodan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Arctic_Ring, wiki=Carving_of_Jormag, wiki=Svanir_Taliman or wiki=Svanir_Taliman_(masterwork) from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_The_Zealot's_Amulet from the final chest. The recipe allows you to craft wiki=The_Zealot's_Amulet which gives a better gold return for your tokens.
 
 name=enemy=Icebrood_Goliath:champion
 tactic=normal
@@ -264,6 +292,8 @@ tactic=normal
 First clear the room of enemy=Jellyfish:normal.
 His ranged attack does high damage. It is easy to avoid, just dodge when you see claw effect on you. He also occasionally sinks. It won't do much damage but it is a bit annoying.
 The biggest threat are the enemy=Giant_Arctic_Jellyfishes:elite which he summons. They detonate dealing very high damage so keep some distance and dodge at right time. He also summons enemy=Barracudas:normal which you should use to rally off of.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_The_Zealot's_Amulet from the final chest. The recipe allows you to craft wiki=The_Zealot's_Amulet which gives a better gold return for your tokens.
 tactic=thief
 Use Shadow Assault (Spear), Withdraw and initiative-traits and skills to evade the Zealot and Jellyfishes.
 

@@ -12,9 +12,16 @@ Average length: 29 minutes.
 Difficulty: Hard.
 Enemies: Undead.
 Time: Day.
-Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=rHxBVdOg4V8|Video_guide (Banter Bill).
 Current record: record=31.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty.
+tactic=rewards
+First run per day gives 3.31 gold and 60 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shards or wiki=Risen_Spineguard from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Stargazer_Pendant from the final chest. The recipe allows you to craft wiki=Stargazer_Pendant which gives no extra gold return for your tokens.
 
 name=Start
 image=http://i.imgur.com/I87OBqE.jpg
@@ -164,9 +171,16 @@ Average length: 28 minutes.
 Difficulty: Hard.
 Enemies: Undead.
 Time: Day.
-Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=ptXuson2fyI|Video_guide (Banter Bill).
 Current record: record=32.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty.
+tactic=rewards
+First run per day gives 3.31 gold and 60 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shards or wiki=Risen_Spineguard from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Operative's_Creed from the final chest. The recipe allows you to craft wiki=Operative's_Creed which gives a better gold return for your tokens.
 
 name=Start
 image=http://i.imgur.com/I87OBqE.jpg
@@ -362,9 +376,16 @@ Average length: 25 minutes.
 Difficulty: Hard.
 Enemies: Undead.
 Time: Day.
-Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=p_TBYMN5G3Q|Video_guide (Banter Bill).
 Current record: record=33.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty.
+tactic=rewards
+First run per day gives 1.81 gold and 60 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shards or wiki=Risen_Spineguard from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Wraithlord_Chains from the final chest. It's account bound so it's not valuable.
 
 name=Start
 image=http://i.imgur.com/I87OBqE.jpg
@@ -496,9 +517,16 @@ Average length: 45 minutes.
 Difficulty: Hard.
 Enemies: Undead.
 Time: Day.
-Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=2uXao7Xgl30|Video_guide (Banter Bill).
 Current record: record=34.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty.
+tactic=rewards
+First run per day gives 3.31 gold and 60 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shards or wiki=Risen_Spineguard from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Bloodstone_Fragment from the final chest. The recipe allows you to craft wiki=Bloodstone_Fragment which gives a much better gold return for your tokens.
 
 name=Start
 image=http://i.imgur.com/I87OBqE.jpg
@@ -854,6 +882,8 @@ When he starts to glow he will cast dangerous AoE. Just dodge when you see the a
 If you need to revive someone, hold a Crystal and protect them with your body, blocking any incoming projectiles. Also, similarly take care of people without a Crystal.
 If you do not have crystal you should still attack enemy=Jotun:legendary normally (hide behind people with a Crystal).
 #######################################
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Stargazer_Pendant from the final chest. The recipe allows you to craft wiki=Stargazer_Pendant which gives no extra gold return for your tokens.
 tactic=elementalist
 Consider casting wiki=Magnetic_Aura or wiki=Magnetic_Wave and standing on top of enemy=Jotun:legendary for a few seconds.
 tactic=guardian
@@ -970,6 +1000,9 @@ She is very easy (even solo) as long as you do not try to tank her attacks. She 
 Using the terminal causes enemies to attack the terminal until Brie reaches 50%. That's why killing her fast is top priority because you get teleported out if the terminal gets destroyed. First wave has 3 enemy=Plague_Carriers:elite and a enemy=Technician:elite. Second wave has 2 enemy=Plague_Carriers:elite an 2 enemy=Dominated_Berserkers:elite. Third wave has a enemy=Plague_Carrier:elite, enemy=Dominated_Deadeye:elite and 2 enemy=Dominated_Berserkers:elite.
 With offensive build, buffs and boons you can easily kill her in several seconds before any enemies even appearing. Once she reaches 50% you lose the damage bonus and everyone can attack her.
 Her normal ranged attack bounces but will not do much damage. When she glows with purple light she will shoot a laser with extreme damage. All you have to do is step aside. There will be also a lot of ticking AoEs in the area. They can easily kill some people. She may also shoot a glowing ball, which is a homing projectile. Try to avoid it by dodging towards its path if you see it coming.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Operative's_Creed from the final chest. The recipe allows you to craft wiki=Operative's_Creed which gives a better gold return for your tokens.
+
 tactic=warrior
 Use wiki=Eviscerate when she's almost at 50%.
 
@@ -1029,6 +1062,8 @@ The fight is really easy as long as you do not stand on his cone attack. It quic
 Wraithlord's basic melee attack and enemy=Undead_Tendrils:structure do some damage but also bleeding and poison. Condition removal is good choice for that fight.
 If you do not stay in melee range he likes to use a combo that immobilize you (spawns enemy=Undead_Tendrils:structure), then dashes which deals high damage and grants 5 stacks of Corruption (which stuns you as well) and lastly starts to channel his cone attack.
 #######################################
+tactic=rewards
+There is a very low chance to get an account bound wiki=Wraithlord_Chains from the final chest. It's account bound so it's not valuable.
 tactic=guardian
 wiki=Virtue_of_Resolve traited with wiki=Absolute_Resolution is able to quickly remove conditions.
 tactic=guardian
@@ -1047,7 +1082,7 @@ Use wiki=Healing_Spring to remove conditions.
 path=Arah4
 name=Air Towers
 tactic=normal|alternative
-The objective here is to destroy 3 enemy=Orrian_Air_Towers:structure. First tower is guarded by few elite Risen, second one by enemy=Orrian_Drakes:normal and enemy=Orrian_Drakes:elite while the last one by enemy=Risen_Grubs:elite and enemy=Undead_Abomination:elite. There's also a enemy=Giant:elite patroling the area between the second and the third tower.
+The objective here is to destroy 3 enemy=Orrian_Air_Towers:structure. First tower is guarded by few elite Risen, second one by enemy=Orrian_Drakes:normal and enemy=Orrian_Drakes:elite while the last one by enemy=Undead_Grubs:elite and enemy=Undead_Abomination:elite. There's also a enemy=Giant:elite patroling the area between the second and the third tower.
 tactic=normal
 You can do it without aggroing a single enemy by using ranged weapons though the first tower can be destroyed from melee range as well, just stick to the left wall and start attacking it while you get closer to it.
 tactic=alternative
@@ -1067,7 +1102,7 @@ Use wiki=Feedback, wiki=Phantasmal_Warden and wiki=Temporal_Curtain traited with
 name=enemy=Ghasem,_High_Priest_of_Grenth:legendary
 tactic=normal
 After the gate you will be amushed by few enemy=Orrian_Spiders:normal, enemy=Orrian_Spiders:elite and one enemy=Risen_Elementalist:elite. You will enter new area with 3 groups of mobs (tough 2 are hidden) you should clear before attempting to finish this encounter.
-Start with the rightmost group, near a coffin. It's composed of 3 enemy=Risen_Grubs:elite and enemy=Risen_Devastator:elite. Try to focus on Devastator first because of his cc but watch out for small AoEs that Grubs use. After those, go to the middle and kill group of 3 enemy=Risen_Grubs:elite.
+Start with the rightmost group, near a coffin. It's composed of 3 enemy=Undead_Grubs:elite and enemy=Risen_Devastator:elite. Try to focus on Devastator first because of his cc but watch out for small AoEs that Grubs use. After those, go to the middle and kill group of 3 enemy=Undead_Grubs:elite.
 Last group is hidden on the left side and is the hardest to deal with - enemy=Risen_Elementalist:elite, enemy=Risen_Mage:elite, enemy=Risen_Illusionist:elite, enemy=Risen_Hunter:elite. Focus Illusionist first.
 Once the area is clear (except enemy=undead_wraith:elite) you should split up on 5 black spots. Your task here is to kill enemy=undead_wraith:elite to activate statue. Every 10% he teleports to another spot and 2 normal Risen appear. If you do not hit him in few seconds he will reset so you need 1 player at each spot. Wraith reflects projectiles (buff icon) meaning you cannot use them if you want to hit him. However, if you do not have any non-projectiles weapon set pick up "Bone" from ground. It does not matter how fast you kill it as long as you hit it once before he resets. Keep in mind that some quasi-melee attacks are projectiles while some ranged attacks are not. Wraith always teleports in same pattern so you can easily predict its moves. This means melee-oriented players can go assist other players if needed. Obviously, if someone gets downed you should go to help him. If Wraith is at your spot stop attacking it and wait until situation gets better.
 Once he is dead, 15 enemy=Risen_Wraiths_(Drain):elite start to appear on black spots over the time (1, 2 or 3 at the same time). Keep killing them and revive people getting drained or killed by Grenth's Mark. Move as a group kill them as fast as possible or if you party has overall high dps you can split once 2 Wraiths start to appear simultaneously.
@@ -1139,3 +1174,5 @@ To make boss killable you first need to kill nearby enemy=Risen_Elementalist:eli
 tactic=normal|alternative
 This last boss is simply mix of all the previous priests. There will be green, constantly moving, miasmas (Melandru's priest) but as long as you stay in melee range or at high range they will not hit you. It can also summon enemy=Risen_Wraith_(Drain):elite (Grenth's priest) and illusions based on targets profession (Lyssa's priestess). You can mostly ignore them but kill if they cause some issues.
 Pay attention to the ground for fire storm (Balthazar's priest), avoid those circles. Occasionally, someone may get "Dead Eyed Stare" (Dwayna's priestess). There are nearby Tears to help you remedy the petrify, just watch out for green miasmas that are between you and the bundle.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Bloodstone_Fragment from the final chest. The recipe allows you to craft wiki=Bloodstone_Fragment which gives a much better gold return for your tokens.

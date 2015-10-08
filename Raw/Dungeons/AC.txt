@@ -12,9 +12,15 @@ Average length: 18 minutes.
 Difficulty: Easy.
 Enemies: Ghost.
 Time: Night.
-Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Ghost_Slaying|Sigil_of_Ghost_Slaying instead of Force if you want to be optimal.
+Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=v8wgKbzTbBo|Cutscenes.
 Current record: record=1.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Ghost_Slaying|Sigil_of_Ghost_Slaying instead of Force.
+tactic=rewards
+First run per character gives a level 30 rare head armor.
+First run per day gives 73 silvers. Next runs give only 23 silvers.
+Every run gives 70% of your next level which makes dungeons very good for leveling up.
 
 Name=Coffins
 tactic=normal
@@ -202,6 +208,11 @@ Time: Night.
 Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=RF0anqwVcu8|Video_guide (Banter Bill).
 Current record: record=2.
+tactic=rewards
+First run per day gives 1.81 gold and 60 tokens, wiki=Ascalonian_Tear|Ascalonian_Tears. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Foefire_Amulet, wiki=Foefire_Amulet_(masterwork), wiki=Ghostly_Spineguard or wiki=Ring_of_the_Catacombs from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Claw_of_the_Howling_King from the end boss, enemy=Howling_King. The recipe allows you to craft wiki=Claw_of_the_Howling_King which gives a much better gold return for your tokens.
 
 path=AC2
 name=Ascalonian Catacombs Path 2: Trap and kill the Ghost Eater
@@ -215,6 +226,11 @@ Time: Night.
 Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=zfz67k5hr34|Video_guide (Banter Bill).
 Current record: record=3.
+tactic=rewards
+First run per day gives 1.81 gold and 60 tokens, wiki=Ascalonian_Tear|Ascalonian_Tears. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Foefire_Amulet, wiki=Foefire_Amulet_(masterwork), wiki=Ghostly_Spineguard or wiki=Ring_of_the_Catacombs from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Ghost_Eater's_Hide from the end boss, enemy=Ghost_Eater. It's account bound so it's not valuable.
 
 path=AC3
 name=Ascalonian Catacombs Path 3: Defeat the Colossus Rumblus
@@ -228,6 +244,11 @@ Time: Night.
 Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=N91aCxfHLJA|Video_guide (Banter Bill).
 Current record: record=4.
+tactic=rewards
+First run per day gives 1.81 gold and 60 tokens, wiki=Ascalonian_Tear|Ascalonian_Tears. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Foefire_Amulet, wiki=Foefire_Amulet_(masterwork), wiki=Ghostly_Spineguard or wiki=Ring_of_the_Catacombs from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Colossus_Fang from the end boss, enemy=Colossus_Rumblus. The recipe allows you to craft wiki=Colossus_Fang which gives a slightly better gold return for your tokens.
 
 path=AC1|AC2|AC3
 name=Get to the Camp
@@ -350,12 +371,12 @@ Use wiki=Blink to teleport over some traps.
 tactic=guardian
 Use wiki=Flashing_Blade and wiki=Judge's_Intervention to teleport over traps (target enemy=Gargoyle_Head:structure.
 
-name=enemy=Cave_Troll:champion
+name=enemy=Cave_Troll:legendary
 tactic=normal|skip
 Troll may appear from several spots during the run (5 for path 1, 7 for path 2, 7 for path 3).
 tactic=normal
 | It is pretty tough to kill because it deals lots of damage and control. Often skipped.
-If it appears close to enemy=Kholer:champion you can pull it there and let them fight together. This allows to kill both of them easily but takes a long time (just remember to hit Troll few times to get loot).
+If it appears close to enemy=Kholer:legendary you can pull it there and let them fight together. This allows to kill both of them easily but takes a long time (just remember to hit Troll few times to get loot).
 See Ranged or Melee tactic for more info.
 tactic=skip
 | Just ignore him and run through.
@@ -371,7 +392,7 @@ When he looks up he is about to jump which can destroy whole team. He leaps towa
 tactic=ranged
 | If you are at high range you can just sidestep to avoid it.
 
-name=enemy=Lieutenant_Kholer:champion
+name=enemy=Lieutenant_Kholer:legendary
 image=https://i.imgur.com/lMNIrxU.jpg
 tactic=melee|ranged
 Unorganized teams usually skip him because he can easily kill the whole group with his pull and spin. However killing him spawns a chest and a waypoint so learn him and kill him.
@@ -440,7 +461,7 @@ Rest of the party proceeds.
 
 name=Way to the second scepter
 tactic=normal|skip
-If you have killed enemy=Kholer:champion, use the waypoint close to him. Otherwise just run back (you may need mobility to get past enemy=Flame_Jets:trap), or waypoint to the Priory camp if you can't make it up the stairs.
+If you have killed enemy=Kholer:legendary, use the waypoint close to him. Otherwise just run back (you may need mobility to get past enemy=Flame_Jets:trap), or waypoint to the Priory camp if you can't make it up the stairs.
 tactic=normal
 Look for position on the map and run there. First you will get ambushed by 6 enemy=Grubs:normal which are very easy to kill. Then you will face 2 enemy=Breeders:elite and a enemy=Howler:elite. Focus one Breeder while interrupting the other.
 After them you will get ambushed by a 3 enemy=Oozes:elite and 4 enemy=Oozes:normal. Pull them behind a corner for maximum area damage.
@@ -480,10 +501,10 @@ name=Way to spikes
 image=https://i.imgur.com/cM37Sk5.jpg
 image=https://i.imgur.com/MrllOG1.jpg
 tactic=normal
-After enemy=Kholer:champion and bridge you should to stick to right. Avoid Flame enemy=Jet:trap and Spike enemy=Traps:trap. On middle you will get ambushed by 4 enemy=Spiders:elite. They are really easy to kill as long as you keep circling around them.
-enemy=Troll:champion may also appear if you go to middle of the room.
+After enemy=Kholer:legendary and bridge you should to stick to right. Avoid Flame enemy=Jet:trap and Spike enemy=Traps:trap. On middle you will get ambushed by 4 enemy=Spiders:elite. They are really easy to kill as long as you keep circling around them.
+enemy=Troll:legendary may also appear if you go to middle of the room.
 tactic=skip
-Hug the wall on right after going over the bridge near enemy=Kholer:champion. Just run through any traps and heal up if needed.
+Hug the wall on right after going over the bridge near enemy=Kholer:legendary. Just run through any traps and heal up if needed.
 
 name=Spikes
 image=https://i.imgur.com/MJufBVw.jpg
@@ -503,7 +524,7 @@ image=https://i.imgur.com/WRhmYtP.jpg
 tactic=normal
 Go north and kill 2 enemy=Scavengers:elite, a enemy=Howler:elite and a enemy=Stalker:champion. Focus on Scavengers. Be ready to dodge when they glow and leap or they may knockdown and kill you (randomly fails). Take a stun break as a fail safe.
 tactic=alternative
-You need have to killed enemy=Kholer:champion. This will skip one Champion so you will miss its loot.
+You need have to killed enemy=Kholer:legendary. This will skip one Champion so you will miss its loot.
 Go to the waypoint near Kholer. Go north and kill a enemy=Breeder:elite and 4 enemy=Gravelings:elite.
 tactic=normal|alternative
 Kill 3 Elites and enemy=Scavenger:champion. Focus on Elites but keep an eye on Scavenger to dodge its leap. Take a stun break as a fail safe.
@@ -547,6 +568,8 @@ Use reflects to protect your party and to deal massive damage.
 Tactic 1 (standard): Charge one trap safely without aggro and stack behind a corner. One player pulls Eater through the trap, lets him use Ectoplasmic Spew (area attack) and then pulls him to the corner. Everyone else stacks might and prepares to burst him down.
 Tactic 2 (for weak groups): Same as above but charge 2 traps. Second one is a back up if Eater gets Ghost Shield back.
 Tactic 3 (speed): Pull Eater immediately over a trap to charge it faster (only have to raise Oozes). Then either burst him there or pull behind a nearby corner.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Ghost_Eater's_Hide from enemy=Ghost_Eater. It's account bound so it's not valuable.
 tactic=normal|coordinated
 tactic=mesmer
 Use wiki=Feedback for an easy reflect.
@@ -563,7 +586,7 @@ Path=AC3
 name=Way to Tomb of Lovers
 image=https://i.imgur.com/XD1BKZt.jpg
 tactic=normal
-After enemy=Kholer:champion and bridge keep going forward. 4 enemy=Spiders:elite appear. enemy=Cave_Troll:champion may appear (can be pulled to Ghosts on corridor). 4 elite Ghosts on corridor.
+After enemy=Kholer:legendary and bridge keep going forward. 4 enemy=Spiders:elite appear. enemy=Cave_Troll:legendary may appear (can be pulled to Ghosts on corridor). 4 elite Ghosts on corridor.
 tactic=skip
 Run through the enemy=Spiders:elite and elite Ghosts. Run all way to the back wall to lose aggro. Tzark may aggro on Ghosts, but if all party members go far enough back he should disengage.
 tactic=warrior
@@ -648,6 +671,8 @@ There's an arch at the edge of the pit which you can stand underneath to avoid a
 tactic=bug
 Grast's shield may not protect you properly. If Grast gets interrupted while channeling the shield his shield won't protect you next time. Grast has only one stack of stability so he gets interrupted very easily.
 Direct hits away from him, burst Rumblus down fast or use area stability to prevent this from happening.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Colossus_Fang from enemy=Colossus_Rumblus. The recipe allows you to craft wiki=Colossus_Fang which gives a slightly better gold return for your tokens.
 tactic=warrior
 wiki=Battle_Standard is very useful to quickly get Grast (and other players) up.
 
@@ -676,4 +701,7 @@ tactic=elementalist
 Use wiki=Ice_Storm and wiki=Frost_Fan for a massive burst, then drop it.
 tactic=elementalist
 Use wiki=Deep_Freeze for a very long stun.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Claw_of_the_Howling_King from enemy=Howling_King. The recipe allows you to craft wiki=Claw_of_the_Howling_King which gives a much better gold return for your tokens.
+
 

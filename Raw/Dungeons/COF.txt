@@ -12,15 +12,25 @@ Average length: 30 minutes.
 Difficulty: Easy.
 Enemies: Flame Legion.
 Time: Night.
-Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force if you want to be optimal.
+Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=AS3MTBPLh4o|Cutscenes.
 Current record: record=18.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
+tactic=rewards
+First run per character gives a level 70 rare head armor.
+First run per day gives 73 silvers. Next runs give only 23 silvers.
+Every run gives 70% of your next level which makes dungeons very good for leveling up.
 
 name=Start
 tactic=normal
 If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=The_Battle_for_the_Flame_Citadel_and_Senecus_Castrum. Alternatively you can leave party and try relogging until you get to another instance.
 After the gate don't rush in. There are actually 3 different groups that you can pull one by one.
 Then you can either go left or right (you need to kill a champion at both locations). Kill enemies along the way.
+tactic=rewards
+First run per character gives a level 70 rare head armor.
+First run per day gives 73 silvers. Next runs give only 23 silvers.
+Every run gives 70% of your next level which makes dungeons very good for leveling up.
 
 name=enemy=Rozgar_the_Forge:champion
 tactic=melee|ranged
@@ -100,9 +110,16 @@ Average length: 8 minutes.
 Difficulty: Easy.
 Enemies: Flame Legion.
 Time: Night.
-Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force if you want to be optimal.
+Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=1b8bKS-Sikc|Video_guide (Banter Bill).
 Current record: record=19.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wilfire_Talisman from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Ashes_of_the_Effigy from the final chest. The recipe allows you to craft wiki=Ashes_of_the_Effigy which gives no extra gold return for your tokens.
 
 name=Start
 image=https://i.imgur.com/LWyum24.jpg
@@ -198,6 +215,9 @@ The Effigy will cast a large aoe that inflicts a long burn on you. Dodge after c
 He will summon a fire storm when he only raises his hand. Avoid these circles when they spawn to not get launched (dodge or use stability if needed).
 When he raise his right arm and smashes the ground he will shoot purple projectiles which knocks you down. Flame Burst can be reflected or absorbed. Keep stun breakers or stability if you make a mistake.
 Do not tank his flamethrower attack, side step to avoid damage.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Ashes_of_the_Effigy from the final chest. The recipe allows you to craft wiki=Ashes_of_the_Effigy which gives no extra gold return for your tokens.
+
 tactic=mesmer
 Feedback when he raises his hand to reflect back the damage. This may take practice as animation may seem similar to fire storm. Other projectile reflection such as Phantasmal Warden or Into the Void will work too.
 tactic=guardian
@@ -214,9 +234,16 @@ Average length: 17 minutes.
 Difficulty: Easy.
 Enemies: Flame Legion.
 Time: Night.
-Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force if you want to be optimal.
+Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=CaS1P8RXvV8|Video_guide (Banter Bill).
 Current record: record=20.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wilfire_Talisman from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Eternal_Flame from the final chest. The recipe allows you to craft wiki=Eternal_Flame which gives no extra gold return for your tokens.
 
 name=Start
 image=https://i.imgur.com/LWyum24.jpg
@@ -274,6 +301,8 @@ tactic=elementalist
 Meteor Shower (Staff) and Ice Storm (Frost Bow) are extremely effective against Stone.
 tactic=bug
 It may be hard to hit Stone on melee range. Try to stand on a bit higher ground. Untargeting Stone and hitting air next to it may help too.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Eternal_Flame from the final chest. The recipe allows you to craft wiki=Eternal_Flame which gives no extra gold return for your tokens.
 
 ###################################################################################################################
 
@@ -286,9 +315,16 @@ Average length: 24 minutes.
 Difficulty: Medium.
 Enemies: Flame Legion.
 Time: Night.
-Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force if you want to be optimal.
+Use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=D5YT8VwPsOU|Video_guide (Banter Bill).
 Current record: record=21.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wilfire_Talisman from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Burntclaw's_Brace from the final chest. It's account bound so it's not valuable.
 
 name=Start
 image=https://i.imgur.com/LWyum24.jpg
@@ -383,6 +419,8 @@ Try to learn the animations and try to dodge them (especially immobilize). It is
 tactic=melee|ranged
 | (either condition removal to remove immobilized or block/evade/immunity to tank melee hit).
 After 75% he will occasionally turn invulnerable, walk to the middle and send a shockwave. Just dodge through it. Just don't stand near the edge so you won't get knocked into the lava if you fail to dodge it.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Burntclaw's_Brace from the final chest. It's account bound so it's not valuable.
 
 
 

@@ -13,9 +13,17 @@ Average length: 39 minutes.
 Difficulty: Medium.
 Enemies: Inquest and Outlaw.
 Time: Day.
-Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty. Use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty if you want to be optimal.
+Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=dfu2rhXp50c|Cutscenes.
 Current record: record=26.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty.
+Against enemy=Kudu's_Power_Suit, use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Justice|Sigil_of_Justice.
+Against enemy=Kudu's_Monster, use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+tactic=rewards
+First run per character gives a level 80 rare head armor.
+First run per day gives 73 silvers. Next runs give only 23 silvers.
+Every run gives 70% of your next level which makes dungeons very good for leveling up.
 
 name=Crucible Access Platform
 tactic=normal
@@ -161,6 +169,18 @@ Time: Night.
 Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=dUS5vSiOHJ8|Video_guide (Banter Bill).
 Current record: record=27.
+tactic=coordinated
+In the beginning, use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying and wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying.
+Against the first enemy=Subject_Alpha_(first)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+After Alpha, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists.
+Against the second enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against enemy=Bjarl_the_Rampager, use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying and wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying.
+Against the final enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+tactic=rewards
+First run per day gives 1.81 gold and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Charged_Band, wiki=Diffraction_Crystal or wiki=Fiber_Splice from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Infinity_Loop from the final chest. The recipe allows you to craft wiki=Infinity_Loop which gives no extra gold return for your tokens.
 
 path=CoE2
 Name=Crucible of Eternity Path 2: Use teleporter
@@ -174,6 +194,18 @@ Time: Night.
 Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=Dm955moa-jk|Video_guide (Banter Bill).
 Current record: record=28.
+tactic=coordinated
+In the beginning, use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying and wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying.
+Against the first enemy=Subject_Alpha_(first)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+After Alpha, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists.
+Against the second enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against enemy=Evolved_Husk, use wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+Against the final enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+tactic=rewards
+First run per day gives 1.81 gold and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Charged_Band, wiki=Diffraction_Crystal or wiki=Fiber_Splice from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Alpha_Conduit from the final chest. The recipe allows you to craft wiki=Alpha_Conduit which gives no extra gold return for your tokens.
 
 path=CoE3
 name=Crucible of Eternity Path 3: Go through the front door
@@ -187,6 +219,18 @@ Time: Night.
 Use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=vO-rQoUhlec|Video_guide (Banter Bill).
 Current record: record=29.
+tactic=coordinated
+In the beginning, use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying and wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying.
+Against the first enemy=Subject_Alpha_(first)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+After Alpha, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists.
+Against the second enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against enemy=Evolved_Destroyer, use wiki=Powerful_Potion_of_Destroyer_Slaying|Potion_of_Destroyer_Slaying and wiki=Superior_Sigil_of_Destroyer_Slaying|Sigil_of_Destroyer_Slaying.
+Against the final enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+tactic=rewards
+First run per day gives 1.81 gold and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Charged_Band, wiki=Diffraction_Crystal or wiki=Fiber_Splice from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Prototype_Sheat from the final chest. It's account bound so it's not valuable.
 
 path=CoE1|CoE2|CoE3
 name=Start
@@ -444,6 +488,8 @@ Use wiki=Doom to fear Alpha to a corner.
 tactic=bug
 Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
 If enemy=Spire gets stuck you have to wait a while until you get the end reward.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Infinity_Loop from the final chest. The recipe allows you to craft wiki=Infinity_Loop which gives no extra gold return for your tokens.
 
 ###############################################################################################################
 
@@ -525,6 +571,8 @@ Use wiki=Doom to fear Alpha to a corner.
 tactic=bug
 Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
 If enemy=Spire gets stuck you have to wait a while until you get the end reward.
+tactic=rewards
+There is a very low chance to get an account bound wiki=Recipe:_Alpha_Conduit from the final chest. The recipe allows you to craft wiki=Alpha_Conduit which gives no extra gold return for your tokens.
 
 ###############################################################################################################
 
@@ -591,3 +639,6 @@ Use wiki=Doom to fear Alpha to a corner.
 tactic=bug
 Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
 If enemy=Spire gets stuck you have to wait a while until you get the end reward.
+tactic=reward
+There is a very low chance to get an account bound wiki=Prototype_Sheat from the final chest. It's account bound so it's not valuable.
+

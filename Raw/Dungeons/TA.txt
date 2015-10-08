@@ -12,9 +12,15 @@ Average length: 26 minutes.
 Difficulty: Easy.
 Enemies: Nightmare Court.
 Time: Night.
-Use wiki=Powerful_Potion_of_Nightmare_Court_Slaying|Potion_of_Nightmare_Court_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force if you want to be optimal.
+Use wiki=Powerful_Potion_of_Nightmare_Court_Slaying|Potion_of_Nightmare_Court_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=dIfRvf4uW00|Cutscenes.
 Current record: record=9.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force.
+tactic=rewards
+First run per character gives a level 50 rare head armor.
+First run per day gives 73 silvers. Next runs give only 23 silvers.
+Every run gives 70% of your next level which makes dungeons very good for leveling up.
 
 name=Pod Area
 image=http://i.imgur.com/Oq5p9dm.jpg
@@ -106,9 +112,17 @@ Average length: 14 minutes.
 Difficulty: Easy.
 Enemies: Nightmare Court.
 Time: Night.
-Use wiki=Powerful_Potion_of_Nightmare_Court_Slaying|Potion_of_Nightmare_Court_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force if you want to be optimal.
+Use wiki=Powerful_Potion_of_Nightmare_Court_Slaying|Potion_of_Nightmare_Court_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=mkZVbUiGuLE|Video_guide (Banter Bill).
 Current record: record=10.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Deadly_Bloom|Deadly_Blooms. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Forest_Brace, wiki=Darkened_Vine or wiki=Twisted_Tendril from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Arbor's_Embrace from enemies and chests. It's account bound so it's not valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Nightmare_Coil from the second last boss, enemy=Leurent. The recipe allows you to craft wiki=Nightmare_Coil which gives a much better gold return for your tokens.
 
 path=TAU
 name=Twilight Arbor Path 2: Up
@@ -119,9 +133,17 @@ Average length: 14 minutes.
 Difficulty: Easy.
 Enemies: Nightmare Court.
 Time: Night.
-Use wiki=Powerful_Potion_of_Nightmare_Court_Slaying|Potion_of_Nightmare_Court_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force. Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force if you want to be optimal.
+Use wiki=Powerful_Potion_of_Nightmare_Court_Slaying|Potion_of_Nightmare_Court_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=tqr9XhnfsP4|Video_guide (Banter Bill).
 Current record: record=11.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force.
+tactic=rewards
+First run per day gives 1.31 gold and 60 tokens, wiki=Deadly_Bloom|Deadly_Blooms. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a high chance to get wiki=Forest_Brace, wiki=Darkened_Vine or wiki=Twisted_Tendril from enemies and chests. All can be traded but aren't valuable.
+There is a very low chance to get an account bound wiki=Arbor's_Embrace from enemies and chests. It's account bound so it's not valuable.
+There is a very low chance to get an account bound wiki=Recipe:_Tortured_Root from the second last boss, enemy=Fyonna_the_Countess_of_Spiders:legendary. The recipe allows you to craft wiki=Tortured_Root which gives a better gold return for your tokens.
 
 ################################################################
 
@@ -318,6 +340,8 @@ Wait until dialogue between Fyonna and Leurent ends, stack might, drop stability
 tactic=normal|coordinated
 | He likes to rotate entangle with bladetrail. Since you cannot block entangle, you have to pay attention to him and dodge when he pierces the ground. When he starts to glow, prepare to evade or block as his throw deals significant amount of damage. Try not to tank his autoattacks and watch out for his leap.
 ################################################################
+tactic=rewards
+There is a very low chance get an account bound wiki=Recipe:_Nightmare_Coil from enemy=Leurent. The recipe allows you to craft wiki=Nightmare_Coil which gives a much better gold return for your tokens.
 tactic=normal
 tactic=engineer
 wiki=Magnet can be used to pull enemies from long range.
@@ -419,6 +443,8 @@ When she dies, move through the room while avoiding spider eggs.
 tactic=coordinated
 Fight on top of Fyonna. Begin the fight with a hard CC (e.g. Deep Freeze) to put defiance on her and keep her from moving a bit. Then maintain reflects and DPS her down.
 ################################################################
+tactic=rewards
+There is a very low chanc3 get an account bound wiki=Recipe:_Tortured_Root from enemy=Fyonna_the_Countess_of_Spiders:legendary. The recipe allows you to craft wiki=Tortured_Root which gives a better gold return for your tokens.
 tactic=elementalist
 Use wiki=Swirling_Winds to protect your team from Fyonna's attacks.
 tactic=engineer
@@ -512,6 +538,12 @@ Enemies: Nightmare Court and Aetherblade.
 Time: Night.
 Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 Current record: record=12.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force in the beginning. Switch back to Force after escorting the ooze.
+tactic=rewards
+First run per day gives 2.31 gold and 60 tokens, wiki=Deadly_Bloom|Deadly_Blooms. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+There is a very low chance to get wiki=Aetherized_Nightmare_weapons from the final chest after enemy=Clockheart. These can be traded and are extremely valuable.
 
 path=TAAE
 name=Start
@@ -638,6 +670,8 @@ tactic=warrior
 wiki=Balanced_Stance or wiki=Dolyak_Signet gives you the needed stun break and stability if you have to dodge Clockheart's super attack.
 tactic=warrior
 When reviving people be ready with a blocking skill (wiki=Riposte, wiki=Shield_Stance or wiki=Counter_Blow to destroy any thrown Gears.
+tactic=rewards
+There is a very low chance to get wiki=Aetherized_Nightmare_weapons from the final chest after enemy=Clockheart. These can be traded and are extremely valuable.
 
 name=After match
 tactic=normal
