@@ -146,8 +146,8 @@ namespace DataCreator.Enemies
       return damage;
     }
 
-    // 1: no scaling, 2 = normal scaling, 3 = champion, 4 = legendary
-    // 5: only level scales
+    // 1: no scaling, 2 = normal scaling, 3 = champion, 4 = legendary, 5: only level scales
+    // Anything else: custom.
     static public string ScalingTypeToMode(string scalingType)
     {
       if (scalingType.Equals("") || scalingType.Equals("constant"))
@@ -160,8 +160,10 @@ namespace DataCreator.Enemies
         return "4";
       if (scalingType.Equals("level"))
         return "5";
+      if (scalingType.Contains(":"))
+        return scalingType;
       Helper.ShowWarningMessage("Scaling type " + scalingType + " is not recognized! Use 'normal', 'champion', 'level', 'constant' or 'legendary'!");
-      return "0";
+      return scalingType;
     }
   }
 }

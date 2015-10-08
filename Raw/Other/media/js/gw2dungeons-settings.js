@@ -222,6 +222,7 @@ function handleEnemy(enemy) {
     if (enemyPotion == "" || potionUsage == "" || enemyPotion == "none" || potionUsage == "none" || (potionUsage == "main" && enemyPotion == "side"))
         potionStrength = 0;
 	var scalingType = $(enemy).data("scaling");
+	var rank = $(enemy).data("category");
     var dungeonLevel = getPathLevel($(enemy).data("path"));
 	// Set attributes and visibility.
 	var playerLevel = $(enemy).data("target-level");
@@ -254,7 +255,7 @@ function handleEnemy(enemy) {
 	if (level == null || level == '') {
 		level = dungeonLevel;
 		// Without set level, allow fractal scale to affect it. / 2015-09-30 / Wethospu
-		level = fractalScaleLevel(level, fractalLevel, scalingType)[0];
+		level = fractalScaleLevel(level, fractalLevel, scalingType, rank)[0];
 		$(enemy).data("level", level);
 	}
 		
@@ -314,8 +315,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".power-unit").hide();
 	
 	var criticalChance = getCriticalChance(level, $(enemy).data("precision"), playerLevel);
-	var category = $(enemy).data("category");
-	if (category == "elite" || category == "champion" || category == "legendary")
+	if (rank == "elite" || rank == "champion" || rank == "legendary")
 		criticalChance = 0;
 	if (getSetting("showPrecision")) {
 		$(enemy).find(".precision-unit").show();

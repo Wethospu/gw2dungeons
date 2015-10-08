@@ -808,8 +808,8 @@ alt=Mai
 Path=Mai
 image=http://wiki.guildwars2.com/images/d/d6/Captain_Mai_Trin.jpg
 scaling=legendary
-# TODO: 0.8 + 0.01 scaling.
-# TODO: + 0.0125 damage scaling.
+# Damage scaling +0.0125 is hard coded (expansion may change stuff).
+scaling=0.8:0.01
 
 attack=Slice (1)
 ID=19301
@@ -886,9 +886,8 @@ ID=12264
 alt=Horrik
 image=http://wiki.guildwars2.com/images/5/5b/Aetherized_Tonic.jpg
 Path=Mai
-# TODO: 0.75 + 0.01 scaling.
-# TODO: + 0.0125 damage scaling.
-scaling=champion
+# Damage scaling +0.0125 is hard coded (expansion may change stuff).
+scaling=0.75:0.01
 
 attack=Cannon Blast
 ID=19292

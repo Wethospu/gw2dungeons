@@ -1169,7 +1169,7 @@ subeffect=5 "Troll regeneration" in 5 s
 Name=Ettin
 ID=11331
 image=http://wiki.guildwars2.com/images/d/d4/Champion_Ettin.jpg
-scaling=scale
+scaling=normal
 Path=Uncat
 
 attack=Sweep
@@ -1487,7 +1487,7 @@ subeffect=launch:3
 
 Name=Rabbit
 ID=11329
-scaling=scale
+scaling=normal
 image=http://wiki.guildwars2.com/images/0/0b/Rabbit.jpg
 Path=Uncat
 
