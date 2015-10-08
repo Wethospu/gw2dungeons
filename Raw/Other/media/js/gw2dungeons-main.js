@@ -43,7 +43,7 @@ function loadThumbs() {
 	var width = $(window).width();
 	$('.thumb-image').each(function(){
 		// Load thumb based on screen size. / 2015-07-31 / Wethospu
-		var imageName = $(this).attr("data-name");
+		var imageName = $(this).data("name");
 		if (width > 1500) {
 			$(this).attr("src", "media/thumbs/" + imageName);
 			$(this).css("display", "initial");
@@ -162,15 +162,23 @@ function loadPage() {
 		levelPlus(this, 'target-level');
 	});
 	$("#main-container, #data-overlay").on( "click", "span.fractal-level-minus", function() {
-		levelMinus(this, 'fractal-level');
 		// Reset enemy level to let it scale normally. / 2015-09-30 / Wethospu
 		$($(this).parents('.enemy')[0]).data('level', '');
+		levelMinus(this, 'fractal-level');
 	});
 	$("#main-container, #data-overlay").on( "click", "span.fractal-level-plus", function() {
-		levelPlus(this, 'fractal-level');
 		$($(this).parents('.enemy')[0]).data('level', '');
+		levelPlus(this, 'fractal-level');
 	});
-
+	$("#main-container, #data-overlay").on( "click", "span.path-button", function() {
+		var enemy = $($(this).parents('.enemy')[0]);
+		$(enemy).data('level', '');
+		$(enemy).data('target-level', '');
+		$(enemy).data('current-path', $(this).html().toLowerCase());
+		handleEnemy(enemy);
+	});
+	
+	
 	$(document).keydown(function(event){
 		if (event.which == "17")
 			cntrlIsPressed = true;
@@ -362,8 +370,8 @@ function dungeonToPages(dungeon) {
 
 // Finds a clicked enemy and loads details about it.
 function openEnemyOverlay() {
-    var enemyIndexes = $(this).attr("data-index").split(":");
-	var enemyLevels = $(this).attr("data-level").split(":"); 
+    var enemyIndexes = String($(this).data("index")).split(":");
+	var enemyLevels = String($(this).data("level")).split(":"); 
 	if (!$("#data-overlay").hasClass("in")) {
 		$('#data-overlay').modal();
 		$('#data-overlay').css('padding-right', '');
@@ -380,21 +388,21 @@ function openEnemyOverlay() {
 				counter++;
 				if (enemyIndexes[i] != counter)
 					return;
-				var id =  dungeon + '' + counter;
-				overlayRemoveOld(id);
-				// Set enemy level dynamically based on enemy link. / 2015-09-28 / Wethospu
-				if (enemyLevels[i] > 0)
-					$(this).data('level', enemyLevels[i]);
-				// Set the enemy path to have a correct base level. / 2015-10-08 / Wethospu
-				$(this).data('current-path', path);
+				overlayRemoveOld(counter);
 				// Create a new tab. / 2015-07-31 / Wethospu
 				var content = $(this)[0].outerHTML;
 				var name =  $(content).find(".enemy-name").html();
-				$("#overlay-nav").append('<li><a class="set-event" href="#tab-' + id + '" data-toggle="tab" data-description="' + id + '" data-width="1250" data-height="0">' + name + '</a></li>');
-				$("#overlay-pane").append('<div class="tab-pane" id="tab-' + id + '">' + content + '</div>');
+				$("#overlay-nav").append('<li><a class="set-event" href="#tab-' + counter + '" data-toggle="tab" data-description="' + counter + '" data-width="1250" data-height="0">' + name + '</a></li>');
+				$("#overlay-pane").append('<div class="tab-pane" id="tab-' + counter + '">' + content + '</div>');
+				var enemy = $("#overlay-pane #tab-" + counter + " .enemy")[0];
+				// Set enemy level dynamically based on enemy link. / 2015-09-28 / Wethospu
+				if (enemyLevels[i] > 0)
+					$(enemy).data('level', enemyLevels[i]);
+				// Set the enemy path to have a correct base level. / 2015-10-08 / Wethospu
+				$(enemy).data('current-path', path);
 				// Activate the new tab. / 2015-09-16 / Wethospu
 				$('#overlay-nav a[data-toggle="tab"]').each(function () {
-					if (id == $(this).data('description'))
+					if (counter == $(this).data('description'))
 						$(this).tab('show');		
 				});
 				setOverlaySize(1250, 0);

@@ -140,9 +140,9 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
 	list-style-type: none;
 }
 
-.level-minus, .level-plus, .target-level-minus, .target-level-plus, .fractal-level-minus, .fractal-level-plus{
+.level-minus, .level-plus, .target-level-minus, .target-level-plus, .fractal-level-minus, .fractal-level-plus, .path-button {
     cursor: pointer;
-	/* Prevent highlighting on double click. */
+	/* Prevent highlighting on a double click. */
 	-webkit-user-select: none;   
 	-moz-user-select: none;
 	-ms-user-select: none;/
@@ -150,7 +150,7 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
 	user-select: none;
 }
 
-.enemy-button {
+.enemy-button, .path-button {
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;

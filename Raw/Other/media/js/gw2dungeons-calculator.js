@@ -406,6 +406,8 @@ function getWeaponStrength(level, internalLevel, rarity, type, scale) {
 //// HEALTH SCALING /////
 
 function fractalScaleHealth(health, scale, type) {
+	if (!type)
+		return health;
 	// Formula should be 0.75% + 1.5% per level.
 	// These is some weird rounding happening. This table seems to work so far.
 	var championHealthTable = [
@@ -454,6 +456,8 @@ function fractalScaleHealth(health, scale, type) {
 //// DAMAGE SCALING /////
 
 function fractalScaleDamage(damage, scale, type) {
+	if (!type)
+		return damage;
 	if (type == 1 || type == 5)
         return damage;
     if (type == 2 || type == 3 || type == 4)

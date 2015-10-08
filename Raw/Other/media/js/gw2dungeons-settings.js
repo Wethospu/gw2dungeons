@@ -62,6 +62,7 @@ var settings = {
 	showRank: true,
 	showGender: true,
 	showLevel: true,
+	showPathSelection : true,
 	showTargetLevel: true,
 	showFractalLevel: true,
 	showCooldowns: true,
@@ -225,11 +226,11 @@ function handleEnemy(enemy) {
 	var rank = $(enemy).data("category");
 	var currentPath = $(enemy).data("current-path");
 	var gameMode = pathToGameMode(currentPath);
-    var dungeonLevel = getPathLevel($(enemy).data("current-path"));
+    var dungeonLevel = getPathLevel(currentPath);
 	// Set attributes and visibility.
 	var playerLevel = $(enemy).data("target-level");
-	if (playerLevel == null) {
-		playerLevel = getPlayerLevel($(enemy).data("current-path"), getSetting("level"));
+	if (playerLevel == null || playerLevel == '') {
+		playerLevel = getPlayerLevel(currentPath, getSetting("level"));
 		$(enemy).data("target-level", playerLevel);
 	}
 	if (getSetting("showTargetLevel") && gameMode == "dungeon") {
@@ -293,6 +294,11 @@ function handleEnemy(enemy) {
 		$(enemy).find(".range-unit").show();
 	else
 		$(enemy).find(".range-unit").hide();
+	
+	if (getSetting("showPathSelection"))
+		$(enemy).find(".current-path-unit").show();
+	else
+		$(enemy).find(".current-path-unit").hide();
 	
 	if (getSetting("showCooldowns")) {
 		$(enemy).find(".cooldown-unit").show();
@@ -595,7 +601,7 @@ function pathToGameMode(path) {
 	if (path.substring(0, 2) == "ac" || path.substring(0, 2) == "cm" || path.substring(0, 2) == "ta"
 	|| path.substring(0, 2) == "se" || path.substring(0, 3) == "cof" || path.substring(0, 4) == "hotw"
 	|| path.substring(0, 3) == "coe" || path.substring(0, 4) == "arah") {
-		return "dungeon":
+		return "dungeon";
 	}
-	return fractal;
+	return "fractal";
 }

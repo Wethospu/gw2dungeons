@@ -1444,7 +1444,7 @@ And lastly enemy=Baron_von_Scrufflebutt:veteran. He is actually fairly dangerous
 Once Scrufflebutt is dead all the golems activate. Focus Scrufflebutt. Mittens is then the most dangerous, however killing him gives 66% damage reduction to all golems. If he doesn't feel like a threat then leave him last. Kill Snuggles and then Mew (killing gives golems regeneration). It can be very beneficial to group to golems up, either while they have activated individually, and/or when they activate together.
 tactic=exploit
 One player (with high toughness) may aggro and pull Asura away. You can easily kite it around a nearby column with just swiftness. Pull him back before your team kills last golem or it may reset.
-Any golems killed after they all wake up get scaled back to level 1 making them extremely easy to kill.
+Any golems killed after they all wake up get scaled back to level 1 making them extremely easy to kill (please verify).
 tactic=guardian
 Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against Asura's agony.
 tactic=guardian
