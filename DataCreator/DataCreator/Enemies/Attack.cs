@@ -161,7 +161,7 @@ namespace DataCreator.Enemies
         if (Cooldown > -1)
           htmlBuilder.Append(" data-amount=\"").Append(Cooldown).Append("\"");
         if (_internalCooldown > -1)
-          htmlBuilder.Append(" data-internal=\"").Append(_internalCooldown).Append("\"");
+          htmlBuilder.Append(" data-internal=\"").Append(_internalCooldown / 1000).Append("\"");
         htmlBuilder.Append("></span>").Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" title=\"cooldown\">CD</span> </span>");
       }
       if (_minimumRange > -1 || _maximumRange > -1)
