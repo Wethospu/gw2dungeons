@@ -1,0 +1,1168 @@
+
+name=Sariel
+ID=3201
+image=http://wiki.guildwars2.com/images/6/63/Sariel.jpg
+path=TAS
+
+attack=Sever Artery (1)
+ID=3480
+image=http://giant.gfycat.com/CanineCloudyBluebottlejellyfish.gif
+effect=melee
+subeffect=damage:-
+
+attack=Gash (2)
+ID=3480
+effect=melee
+subeffect=damage:0.5
+
+attack=Final Thrust (3)
+ID=3480
+effect=melee
+subeffect=damage:0.6
+
+attack=Rending Strike
+ID=4983
+image=http://giant.gfycat.com/TornSlightFurseal.gif
+additional=channeled
+effect=7 melee hits in 1 s (high damage)
+count=7
+length=1
+subeffect=damage:-
+subeffect=vulnerability:15
+
+attack=Shield Bash
+ID=4981
+image=http://fat.gfycat.com/AnyRareIndianpalmsquirrel.gif
+animation=shield forward, shouts
+effect=piercing dash (hits up to 5 times, extreme damage)
+count=5
+# Verify.
+length=0.2
+subeffect=damage:0
+subeffect=knockback
+#note=evade or use immunity
+
+attack=Shield Bash
+ID=4981
+image=http://fat.gfycat.com/PortlyNaiveAmericanredsquirrel.gif
+animation=shield forward, shouts
+effect=dash
+subeffect=damage:0
+subeffect=knockdown:0
+#note=block or evade
+
+##################################################################
+
+name=Brangoire
+ID=3182
+image=http://wiki.guildwars2.com/images/0/04/Brangoire.jpg
+path=TAS
+
+attack=Summon Living Nightmare
+ID=4984
+image=http://giant.gfycat.com/OrdinaryBelatedHarpyeagle.gif
+effect=~7 piercing projectiles (cone)
+subeffect=damage:0
+subeffect=summon enemy=Living_Nightmare:normal
+
+attack=Summon Fiendish Nightmare
+ID=4986
+image=http://fat.gfycat.com/BriefInferiorCanine.gif
+effect=summon enemy=Fiendish_Nightmare:normal
+
+attack=Terrifying Blast
+ID=12225
+image=http://fat.gfycat.com/NaughtyWelldocumentedArcticseal.gif
+animation=rises to air
+effect=PBAoE
+subeffect=damage:0
+subeffect=fear:2
+#note=block or evade
+#note=bring stunbreaker to avoid getting Feared to enemy=Living_Nightmares:normal
+
+##################################################################
+
+name=Cadeyrn
+ID=3183
+image=http://wiki.guildwars2.com/images/b/bd/Cadeyrn.jpg
+path=TAS
+
+attack=Lightning Orb
+ID=4657
+image=http://fat.gfycat.com/AppropriateHappygoluckyBluejay.gif
+additional=projectile finisher
+animation=lightning glow
+cooldown=0
+effect=projectile with small AoE
+subeffect=damage:-
+
+attack=Confusing Strikes
+ID=4769
+image=http://fat.gfycat.com/AlarmedWateryAmericanbadger.gif
+animation=distorting effect
+effect=buff (15 s), attacks cause
+subeffect=confusion:9
+
+attack=Temporal Curtain
+ID=3413
+image=http://fat.gfycat.com/DemandingFrailJenny.gif
+additional=light field
+effect=area field (line), passing causes
+subeffect=crippled:5
+subeffect=swiftness:10
+
+attack=Feedback
+ID=4770
+image=http://giant.gfycat.com/PracticalUnkemptKillifish.gif
+animation=purple hemisphere
+additional=ethereal field
+effect=area field
+subeffect=reflects projectiles
+
+attack=Cruel Transformation
+ID=4659
+image=http://fat.gfycat.com/BabyishBlandKudu.gif
+animation=jumps in air
+additional=cannot be blocked or evaded
+effect=ranged
+subeffect=turn target to a cat. Cadyern becomes allied and enemy=Pups:normal hostile.
+#note=find a enemy=Pup:normal and spam skills to kill it
+#note=may target NPC (does nothing)
+
+##################################################################
+
+name=Faolain
+ID=3189
+image=http://wiki.guildwars2.com/images/f/f5/Faolain.jpg
+path=TAS
+
+attack=Resurrect
+image=http://giant.gfycat.com/PhysicalSameAlaskanhusky.gif
+additional=used when a clone dies
+effect=melee
+subeffect=resurrect target. Damage Faolain enough to interrupt
+
+attack=Rebuke
+ID=4679
+additional=used if Resurrect fails
+effect=PBAoE
+subeffect=damage:-
+subeffect=knockback:0
+
+##################################################################
+
+name=Nightmare Warder (Knight)
+ID=7396
+image=http://wiki.guildwars2.com/images/3/3f/Nightmare_Warder.jpg
+path=TAF
+
+attack=Hammer Swing (1)
+ID=5262
+image=http://fat.gfycat.com/AdmiredImmaterialElver.gif
+effect=melee
+subeffect=damage:-
+
+attack=Hammer Bash (2)
+effect=melee
+subeffect=damage:0.3
+
+attack=Hammer Smash (3)
+effect=melee
+subeffect=damage:0.5
+
+attack=Earthshaker (1)
+ID=5265
+image=http://giant.gfycat.com/BrilliantNaughtyBats.gif
+effect=leap with PBAoE
+subeffect=damage:-
+subeffect=knockdown:0
+#note=evade or block
+
+attack=Hammer Shock (2)
+effect=cone
+subeffect=damage:0.3
+subeffect=crippled:0
+
+attack=Well of Corruption
+ID=5268
+image=http://giant.gfycat.com/SeveralTanCommabutterfly.gif
+effect=aura (3 ticks)
+count=3
+# Verify.
+length=5
+subeffect=damage:-
+subeffect=convert a boon to a condition
+subeffect=convert a condition to a boon
+#note=visually bugged, effect actually follows the Knight
+
+##################################################################
+
+copy=7396
+name=Nightmare Court Knight
+ID=3210
+alt=Nightmare Court Knights|Knight|Knights
+image=http://wiki.guildwars2.com/images/3/3b/Elite_Nightmare_Court_Knight.jpg
+path=TAS|TAF|TAU
+
+##################################################################
+
+name=Nightmare Warder (Sword)
+ID=3191
+path=TAF|TAU
+image=http://wiki.guildwars2.com/images/3/3f/Nightmare_Warder.jpg
+
+attack=Slash
+ID=2134
+image=http://fat.gfycat.com/FluidFearfulDeinonychus.gif
+effect=Melee
+subeffect=damage:-
+subeffect=launch:0
+
+attack=Sever Artery (1)
+ID=2131
+image=http://giant.gfycat.com/AmusingVariableLacewing.gif
+effect=melee
+subeffect=damage:-
+
+attack=Gash (2)
+effect=melee
+subeffect=damage:0.3
+
+attack=Final Thrust (3)
+effect=melee
+subeffect=damage:0.5
+subeffect=weakness:5
+
+attack=Savage Leap
+ID=2135
+image=http://fat.gfycat.com/AgileNervousChicken.gif
+effect=leap
+subeffect=damage:-
+
+attack=Whirlwind Attack
+ID=2136
+image=http://fat.gfycat.com/PlasticChiefGelding.gif
+effect=3 PBAoEs in 2 s
+count=3
+length=2
+subeffect=damage:-
+subeffect=vulnerability:5
+
+##################################################################
+
+name=Leurent
+ID=3195
+image=http://gw2dungeons.net/media/dungeonimages/ta_leurent.jpg
+path=TAF
+
+attack=Healing Signet
+ID=4764
+image=http://giant.gfycat.com/DistantAgitatedCoyote.gif
+effect=self-heal
+subeffect=healing
+effect=passive
+subeffect=regenerate health
+
+attack=Sever Artery (1)
+ID=4760
+image=http://giant.gfycat.com/FemaleHoarseDikdik.gif
+effect=melee
+subeffect=damage:-
+
+attack=Gash (2)
+effect=melee
+subeffect=damage:0.5
+
+attack=Bladetrail
+ID=4762
+image=http://fat.gfycat.com/LankyUnhappyDartfrog.gif
+animation=glows and pulls sword behind back
+effect=projectile
+subeffect=damage:-
+subeffect=knockdown:0
+#note=block or evade
+
+attack=Thundering Leap
+ID=4763
+image=http://fat.gfycat.com/PoisedPastHermitcrab.gif
+effect=leap
+subeffect=damage:-
+
+attack=Entangle
+ID=4765
+image=http://giant.gfycat.com/FearfulBeautifulKagu.gif
+animation=pierces the ground with his sword
+additional=cannot be blocked
+effect=high range PBAoE
+subeffect="Binding Roots"
+#note=evade
+
+attack="Binding Roots"
+additional=can be destroyed
+effect=debuff
+subeffect=damage:0
+subeffect=immobilized:0
+subeffect=bleeding:0
+#note=break with damage
+
+##################################################################
+
+name=Fyonna the Countess of Spiders
+ID=3190
+image=http://wiki.guildwars2.com/images/f/f1/Fyonna.jpg
+path=TAU
+
+attack=Trick Shot
+ID=4744
+image=http://fat.gfycat.com/CrazyBaggyFrigatebird.gif
+cooldown=0
+effect=bouncing projectile
+subeffect=damage:-
+
+attack=Knockback Shot
+ID=4752
+image=http://fat.gfycat.com/CheerfulDamagedCirriped.gif
+effect=projectile
+subeffect=damage:-
+subeffect=knockback:0
+
+attack=Scorpion Wire
+ID=4750
+image=http://fat.gfycat.com/VerifiableImpressionableDungbeetle.gif
+effect=projectile
+subeffect=damage:-
+subeffect=pull:0
+
+attack=Spiderling Summon
+ID=4751
+image=http://fat.gfycat.com/GlassWeeklyDouglasfirbarkbeetle.gif
+effect=summon three enemy=Forest_Spider_Hatchlings:normal
+
+attack=Cruel Transformation
+ID=4753
+image=http://giant.gfycat.com/GaseousWarlikeAmericanbulldog.gif
+effect=Transform itself to a enemy=spider
+
+##################################################################
+
+name=Fyonna the Countess of Spiders (Spider)
+ID=3190
+alt=Spider
+image=http://wiki.guildwars2.com/images/6/68/Fyonna_Spider.jpg
+path=TAU
+
+attack=Bite
+image=http://fat.gfycat.com/TerrificSmoothEuropeanfiresalamander.gif
+effect=melee
+subeffect=damage:0
+
+attack=Bite2
+image=http://giant.gfycat.com/LateCleanArachnid.gif
+effect=melee
+subeffect=damage:0
+
+##################################################################
+
+name=Nightmare Court Archer (Fire)
+ID=10078
+alt=Nightmare Court Archers (Fire)|Archer (Fire)|Archers (Fire)
+image=http://wiki.guildwars2.com/images/e/e2/Elite_Nightmare_Court_Archer.jpg
+path=TAF
+
+attack=cannot move
+#note=the ones that are part of random groups can move
+
+attack=Poison Volley
+ID=4786
+image=http://fat.gfycat.com/CarefreePositiveCaudata.gif
+additional=not used on close targets. Only hits once
+effect=4 projectiles (cone)
+subeffect=damage:-
+subeffect=poison:2
+#note=stack on him to prevent usage
+
+attack=Binding Shot
+ID=4785
+image=http://giant.gfycat.com/HauntingDopeyHammerheadbird.gif
+animation=glows
+additional=not used on close targets
+effect=projectile
+subeffect=damage:-
+#note=stack on him to prevent usage
+
+attack=Fire Shield
+additional=can't be evaded
+effect=AoE field, when crossing
+subeffect=damage-percent:100
+#note=blocking and blinding works
+
+##################################################################
+
+copy=10078
+name=Nightmare Court Archer
+ID=3178
+alt=Nightmare Court Archers|Archer|Archers
+image=http://wiki.guildwars2.com/images/e/e2/Elite_Nightmare_Court_Archer.jpg
+path=TAS|TAF|TAU
+
+attack=Evasive Trap
+image=http://fat.gfycat.com/WellgroomedTanDairycow.gif
+effect=Trap
+subeffect=damage:0
+subeffect=bleeding:4:3
+subeffect=immobilized:3
+effect=buff:evade:0
+#note=only used when hit within melee range while being targetted
+
+##################################################################
+
+name=Nightmare Court Cultist
+ID=3204
+alt=Nightmare Court Cultists|Cultist|Cultists
+image=http://wiki.guildwars2.com/images/0/0c/Nightmare_Court_Cultist.jpg
+path=TAS|TAF|TAU
+
+attack=Ricochet
+ID=4797
+image=http://fat.gfycat.com/ElaborateRealElephant.gif
+effect=projectile
+subeffect=damage:-
+subeffect=bleeding:5
+
+attack=Time Warp
+ID=4798
+image=http://giant.gfycat.com/ClosedNaturalIndigobunting.gif
+effect=channeled PBAOE (10 s)
+count=11
+length=10
+subeffect=Quickness:1
+effect=end effect
+subeffect=launch
+
+##################################################################
+
+copy=3204
+ID=7065
+path=TAS
+
+##################################################################
+
+name=Nightmare Court Duelist
+ID=4127
+alt=Nightmare Court Duelists|Duelist|Duelists
+path=TAS|TAF|TAU
+
+attack=Sever Artery (1)
+ID=5258
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:1
+
+attack=Gash (2)
+effect=melee
+subeffect=damage:0.25
+subeffect=bleeding:1
+
+attack=Final Thrust (3)
+effect=melee
+subeffect=damage:0.5
+subeffect=crippled:1
+
+attack=Savage Leap
+ID=5257
+effect=leap
+subeffect=damage:-
+
+attack=Dueling Signet
+ID=5255
+effect=teleport
+subeffect=damage:-
+
+attack=Throw Dagger
+ID=5261
+effect=projectile
+subeffect=damage:-
+subeffect=Teleport to the target
+
+##################################################################
+
+name=Nightmare Court Sorcerer
+ID=3208
+alt=Nightmare Court Sorcerers|Sorcerer|Sorcerers
+image=http://wiki.guildwars2.com/images/8/84/Nightmare_Court_Sorcerer.jpg
+path=TAS|TAF|TAU
+
+attack=Well
+ID=4799
+image=http://giant.gfycat.com/LegalMajesticDairycow.gif
+effect=ticking AoE (10 ticks in 5 s)
+count=10
+length=5
+subeffect=damage:-
+subeffect=regeneration:0
+
+attack=Fear
+ID=4800
+image=http://giant.gfycat.com/PitifulAgonizingGalapagosdove.gif
+additional=cannot be blocked or evaded
+effect=PBAoE
+subeffect=fear:6
+#note=stunbreak or use stability before
+
+##################################################################
+
+name=Volatile Nightmare
+ID=10111
+alt=Volatile Nightmares
+image=http://wiki.guildwars2.com/images/5/58/Volatile_Nightmare.jpg
+path=TAS
+
+attack=Vine Whip (1)
+ID=5269
+image=http://giant.gfycat.com/AcidicDangerousAmericanalligator.gif
+cooldown=0
+effect=quick cone
+subeffect=damage:-
+subeffect=bleeding:10:2
+
+attack=Vine Whirl (2)
+effect=quick cone
+subeffect=damage:0.3
+subeffect=bleeding:10:2
+
+attack=Vine Trip (3)
+effect=quick cone
+subeffect=damage:0.5
+subeffect=bleeding:10:3
+subeffect=crippled:10
+
+attack=Whirling Axe
+ID=5272
+image=http://giant.gfycat.com/TepidSecondAnnelida.gif
+animation=instant||spins
+effect=~20 PBAoEs in 3.5 s
+count=20
+length=3.5
+subeffect=damage:-
+subeffect=bleeding:10
+#note=remove bleeding
+
+attack=Pack Hunter
+ID=5273
+image=http://fat.gfycat.com/EvergreenBlueIrishterrier.gif
+animation=lightning effect
+effect=summon enemy=Nightmare_Pup:normal
+
+##################################################################
+###                  Hounds/Husks                              ###
+##################################################################
+
+# Both levels 46 and 50 exist.
+name=Nightmare Pup
+ID=4126
+alt=Nightmare Pups|Pup|Pups
+image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
+path=TAS|TAU|TAF
+
+attack=Bite
+ID=2973
+image=http://fat.gfycat.com/SharpAcademicBluemorphobutterfly.gif
+animation=moves head and bites|0.3
+cooldown=2
+effect=melee
+subeffect=damage:-
+
+############################# 
+
+copy=4126
+Name=Nightmare Hound
+ID=12909
+alt=Hound|Nightmare Hounds|Hounds
+scaling=level
+Path=Thauma
+
+##################################################################
+
+name=Nightmare Pup
+ID=4126
+alt=Nightmare Pups|Pup|Pups
+image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
+path=TAAE
+
+###########################################################
+
+name=Nightmare Hound
+ID=3230
+alt=Nightmare Hounds|Hound|Hounds
+image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
+path=TAS|TAU|TAF|TAAE|COE2
+
+attack=Bite
+ID=4801
+image=http://fat.gfycat.com/UnawareImaginaryBumblebee.gif
+animation=moves head and bites|0.3
+cooldown=2
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:3
+subeffect=poison:3
+
+attack=Leap
+ID=4806
+image=http://giant.gfycat.com/LongReliableAsiaticwildass.gif
+animation=withdraws while standing still|0.75
+cooldown=15
+additional=only used at distant targets
+effect=leap
+subeffect=damage:-
+subeffect=knockdown:3
+#note=dangerous when skipping, block, evade or use stability
+
+##################################################################
+
+name=Unstable Nightmare Husk
+ID=10110
+alt=Husk
+image=http://wiki.guildwars2.com/images/2/22/Unstable_Nightmare_Husk.jpg
+path=TAS
+
+attack=Husk Swipe
+ID=4638
+animation=swings left/right arm from left/right|0.5
+image=http://fat.gfycat.com/LavishSolidIndigobunting.gif
+cooldown=2
+effect=cone
+subeffect=damage:-
+subeffect=vulnerability:12
+
+attack=Husk Swipe
+ID=4728
+cooldown=7
+image=http://fat.gfycat.com/CelebratedHeartyHousefly.gif
+animation=swings left/right arm from right/left|0.2
+effect=cone
+subeffect=damage:-
+subeffect=launch:2.8
+#note=dangerous when skipping, block, evade or use stability
+
+attack=Thump
+ID=4640
+cooldown=10
+image=http://giant.gfycat.com/FoolhardyMetallicCrow.gif
+animation=crouches and jumps|1
+additional=leap finisher
+effect=PBAoE
+subeffect=damage:-
+subeffect=launch:3.3
+#note=dangerous when skipping, block, evade or use stability
+
+##################################################################
+
+copy=10110
+name=Nightmare Husk
+ID=7393
+alt=Nightmare Husks|Husk|Husks
+path=TAF|TAU|COE2|TAAE
+
+##################################################################
+
+name=Torrential Husk
+ID=10220
+alt=Torrential Husks
+image=http://wiki.guildwars2.com/images/5/5d/Summoned_Husk.jpg
+path=TAAE
+
+attack=Husk Swipe
+ID=4638
+image=http://fat.gfycat.com/LavishSolidIndigobunting.gif
+animation=swings left/right arm from left/right|0.5
+cooldown=2
+effect=cone
+subeffect=damage:-
+subeffect=vulnerability:12
+#note=doesn't attempt to get on range so stay at max melee-range
+
+attack=Thump
+ID=4640
+image=http://giant.gfycat.com/FoolhardyMetallicCrow.gif
+cooldown=10
+animation=crouches and jumps|1
+additional=leap finisher
+effect=PBAoE
+subeffect=damage:-
+subeffect=launch:3.3
+#note=doesn't attempt to get on range so stay at max melee-range
+
+attack=Bees
+ID=4639
+cooldown=8
+animation=steps forward, roars chest forward and stomps|0|black cloud
+effect=homing projectile
+subeffect="Bees" (20 s)
+#note=block or evade
+
+attack="Bees"
+effect=debuff
+subeffect=damage:1213816 per second
+#note=evade to remove
+
+
+##################################################################
+
+Name=Evolved Husk
+ID=10337
+image=http://wiki.guildwars2.com/images/6/6a/The_Defiler.jpg
+Path=CoE2
+
+attack=AoE
+animation=glows and swings right arm|0.5
+effect=delayed (~1 s) ticking AoE (~2 s)
+subeffect=???
+
+attack=Protective Branch
+animation=glows and stomps ground|2
+effect=aura
+subeffect=bleeding:0
+effect=buff:projectile_absorption
+
+##################################################################
+
+Name=Flametouched Husk
+ID=10221
+alt=Flametouched Husks
+image=http://wiki.guildwars2.com/images/4/4c/Flametouched_Husk.jpg
+Path=CoE2
+
+attack=Husk Swipe
+effect=cone
+subeffect=damage:0
+subeffect=vulnerability:12
+#note=doesn't attempt to get on range so stay at max melee-range
+
+attack=Thump
+additional=leap finisher
+effect=PBaoE
+subeffect=damage:0
+subeffect=launch:0
+#note=doesn't attempt to get on range so stay at max melee-range
+
+attack=Flame
+animation=swings right arm
+effect=projectile with ticking AoE
+subeffect=burning:0
+
+##################################################################
+###                  Trees/Vines/Wurms                          ###
+##################################################################
+
+name=Nightmare Tree
+alt=Tree
+image=http://wiki.guildwars2.com/images/6/63/Nightmare_Tree.jpg
+path=TAF
+health=519000
+type=nightmare court
+category=legendary
+
+attack=cannot be moved
+
+attack=Consume
+additional=used at the beginning
+effect=2 melee hits
+count=2
+subeffect=damage:0
+#note=keep some distance until used
+
+attack=Buff1
+effect=PBAoE
+subeffect=regeneration:0:10
+
+attack=Buff2
+effect=PBAoE
+subeffect=might:10:5
+subeffect=swiftness:10
+subeffect=stability:10
+
+attack=Summon
+additional=maximum amount of 3
+effect=summon enemy=Oakheart:veteran
+#note=kite and evade. Rally from their roots
+#note=alternatively one player may try to grab their aggro and focus on surviving
+
+##################################################################
+
+name=Nightmare Tree
+alt=Tree
+image=http://wiki.guildwars2.com/images/6/63/Nightmare_Tree.jpg
+path=TAU
+health=519000
+type=nightmare court
+category=legendary
+
+attack=cannot be moved
+
+attack=Consume
+image=http://giant.gfycat.com/AdorableQuarterlyCamel.gif
+additional=used at the beginning
+effect=2 melee hits
+count=2
+subeffect=damage:0
+#note=keep some distance until used
+
+attack=Slam
+image=http://giant.gfycat.com/RipeImpeccableIndigowingedparrot.gif
+animation=slowly raises right arm and smashes the ground
+effect=AoE
+subeffect=damage:0
+subeffect=bleeding:0:10
+#note=block or evade
+
+attack=Root spike
+image=http://giant.gfycat.com/NeatTotalGrouper.gif
+animation=touches the ground with both hands
+effect=1 s delayed AoE at all the targets
+subeffect=damage:0
+subeffect=bleeding:0:10
+#note=step out of the red cirles
+
+attack=Plant
+image=http://giant.gfycat.com/ObeseWellinformedGrub.gif
+animation=touches the ground with both hands
+effect=summon multiple enemy=Sylvari_Mortar_Turrets and enemy=Healing_Seeds
+#note=use AoE anti projectiles skills against Turrets
+
+attack=Unknown attack
+image=http://giant.gfycat.com/OrdinaryThankfulAracari.gif
+effect=???
+subeffect=???
+
+##################################################################
+
+name=Oakheart
+ID=10899
+alt=Oakhearts
+image=http://wiki.guildwars2.com/images/9/92/Oakheart_Twilight.jpg
+path=TAF
+
+attack=Oakheart Swipe
+ID=4809
+image=http://giant.gfycat.com/ScalyInexperiencedAmberpenshell.gif
+animation=swipes with left hand
+effect=melee
+subeffect=damage:-
+subeffect=steal a Boon
+subeffect=transfer a Condition
+
+attack=Thump
+ID=4807
+image=http://giant.gfycat.com/WeirdSnarlingAngora.gif
+animation=raises right hand
+effect=PBAoE
+subeffect=damage:-
+subeffect=launch
+
+attack=Binding Roots
+ID=4808
+image=http://giant.gfycat.com/CompassionateConsiderateKookaburra.gif
+animation=raises both hands and smashes ground
+additional=cannot be blocked
+effect=high range PBAoE
+subeffect="Binding Roots"
+#note=evade, block or blind it
+
+attack="Binding Roots"
+additional=can be destroyed
+effect=debuff
+subeffect=damage:0
+subeffect=immobilized:0
+subeffect=bleeding:0
+#note=break with damage
+#note=use to rally
+
+##################################################################
+
+name=Greater Nightmare Vine
+ID=7394
+alt=Greater Vine
+image=http://wiki.guildwars2.com/images/1/1f/Greater_Nightmare_Vine.jpg
+path=TAF|TAU
+
+attack=Cannot be moved
+
+attack=Poison Cloud
+ID=4726
+image=http://giant.gfycat.com/DizzyKindAustraliankestrel.gif
+additional=channeled. Only used at distant targets.
+effect=multiple projectiles with small ticking AoEs (lasts about 3 s)
+subeffect=damage:-
+#note=circles may overlap which might result in extreme damage
+#note=only projectiles absorption skills work
+#note=stack on close range to prevent usage
+#note=seems to favour targets at high range. This allows ranged users to take pressure from melee users when there are multiple Vines
+
+attack=Spit
+ID=4725
+image=http://giant.gfycat.com/BowedConcernedCaudata.gif
+animation=Straighten ups, head pointing up, red circle
+effect=PBAoE
+subeffect=damage:-
+subeffect=launch:0
+#note=evade or block
+
+##################################################################
+
+copy=7394
+name=Nightmare Vine
+ID=1526
+alt=Nightmare Vines|Vine|Vines
+image=http://wiki.guildwars2.com/images/2/25/Jungle_Wurm.jpg
+path=TAF|TAU|TAAE
+
+##################################################################
+
+name=Jungle Wurm
+ID=12746
+alt=Jungle Wurms|Wurm|Wurms
+image=http://wiki.guildwars2.com/images/2/25/Jungle_Wurm.jpg
+path=TAAE
+
+attack=Bite
+ID=2962
+cooldown=3
+animation=moves head and hits|0.5
+effect=melee
+subeffect=damage:-
+
+attack=Lurk
+ID=2958
+cooldown=8
+animation=straightens up and goes underground|1.25|white dust
+effect=dash (3 s)
+effect=buff:evade:3
+
+attack=Rock Shards (2)
+animation=dust disappears|1.25|comes to surface
+effect=PBAoE
+subeffect=damage:0.75
+subeffect=bleeding:6:3
+subeffect=crippled:6
+
+##################################################################
+
+copy=12746
+ID=5096
+
+##################################################################
+
+copy=12746
+name=Jungle Wurm Hatchling
+ID=6771
+alt=Jungle Wurm Hatchlings|Wurm Hatchling|Wurm Hatchlings
+
+##################################################################
+###                  Other                                     ###
+
+##################################################################
+
+name=Fiendish Nightmare
+ID=10626
+image=http://wiki.guildwars2.com/images/2/27/Fiendish_Nightmare.jpg
+path=TAS
+
+attack=Slash
+ID=4987
+effect=quick melee
+subeffect=damage:-
+subeffect=weakness:1
+effect=if the target is poisoned
+subeffect=healing:0
+
+##################################################################
+
+name=Living Nightmare
+ID=10625
+alt=Living Nightmares
+image=http://wiki.guildwars2.com/images/4/44/Living_Nightmare.jpg
+path=TAS
+
+attack=Bite
+ID=3123
+image=http://giant.gfycat.com/DiligentVibrantClownanemonefish.gif
+additional=self-destruct
+effect=melee
+subeffect=damage:-
+subeffect=poison:4
+effect=ticking AoE
+subeffect=damage:-
+subeffect=poison:4
+#note=either kill fast with cleave/AoE or stay out of AoE
+
+##################################################################
+
+name=Eir
+ID=3172
+image=http://wiki.guildwars2.com/images/6/67/Elite_Eir.jpg
+path=TAS
+
+attack=Shoot (1)
+ID=4660
+cooldown=0
+image=http://fat.gfycat.com/TerrificVelvetyGalapagosmockingbird.gif
+effect=long-range projectile
+subeffect=damage:-
+
+attack=Poison Arrow (2)
+ID=4661
+image=http://giant.gfycat.com/PopularClassicBlesbok.gif
+effect=projectile
+subeffect=damage:-
+subeffect=poison:0
+
+attack=Crippling Shot
+ID=4662
+image=http://fat.gfycat.com/AggressiveAgonizingCanadagoose.gif
+animation=glows
+effect=long-range projectile
+subeffect=damage:-
+subeffect=crippled:10
+
+attack=Point Blank Shot
+ID=4663
+image=http://fat.gfycat.com/FragrantFantasticEchidna.gif
+animation=glows
+effect=projectile
+subeffect=damage:-
+subeffect=knockback:0
+
+attack=Spread Shot
+ID=4664
+image=http://giant.gfycat.com/ExcellentPertinentGazelle.gif
+additional=minimum-range (stack)
+effect=4 projectiles (cone, very high damage)
+count=4
+subeffect=damage:-
+subeffect=poison:2
+#note=evade or stay inside her
+
+##################################################################
+
+name=Zojja
+ID=3169
+image=http://wiki.guildwars2.com/images/a/a6/Elite_Zojja.jpg
+path=TAS
+
+attack=Lightning Orb
+ID=4781
+image=http://fat.gfycat.com/OrganicSmoothGelada.gif
+cooldown=0
+additional=used at distant targets
+effect=projectile
+subeffect=damage:-
+subeffect=blind:5
+
+attack=Lightning Whip
+ID=4676
+image=http://fat.gfycat.com/OrderlyIncomparableFox.gif
+cooldown=0
+additional=used at close targets
+effect=cone
+subeffect=damage:-
+
+attack=Summon Golem
+ID=4674
+image=http://fat.gfycat.com/WhiteCornyAfricanwildcat.gif
+effect=Summon enemy=Mr._Sparkles:normal
+
+##################################################################
+
+name=Rytlock
+ID=3170
+image=http://wiki.guildwars2.com/images/e/e2/Elite_Rytlock.jpg
+path=TAS
+
+attack=Sever Artery (1)
+ID=4670
+image=http://giant.gfycat.com/SomberIdealApisdorsatalaboriosa.gif
+cooldown=0
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:5
+
+attack=Gash (2)
+ID=4671
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:5
+
+attack=Final Thrust (3)
+ID=4672
+animation=glows
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:5
+
+attack=Charging Lunge
+ID=4669
+image=http://giant.gfycat.com/BlandDisfiguredCob.gif
+effect=leap
+subeffect=damage:-
+#note=block or evade
+
+##################################################################
+
+name=Logan
+ID=3171
+image=http://wiki.guildwars2.com/images/8/8c/Elite_Logan_Thackeray.jpg
+path=TAS
+
+attack=Sever Artery (1)
+ID=4666
+image=http://giant.gfycat.com/RadiantNarrowFattaileddunnart.gif
+cooldown=0
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:5
+
+attack=Gash (2)
+ID=4667
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:5
+
+attack=Final Thrust (3)
+ID=4668
+animation=glows
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:5
+
+attack=Shield Bash
+ID=4665
+image=http://fat.gfycat.com/LonelyPortlyAmphiuma.gif
+effect=dash
+subeffect=damage:-
+subeffect=launch:0
+#note=block or evade
+
+##################################################################
+
+name=Mr. Sparkles
+ID=1290
+image=http://wiki.guildwars2.com/images/8/80/Elite_Mr._Sparkles.jpg
+path=TAS
+
+attack=Punch
+ID=1502
+image=http://fat.gfycat.com/CoolLongArrowcrab.gif
+animation=punches
+effect=melee
+subeffect=damage:-
+
+attack=Whirling Assault
+ID=1656
+image=http://fat.gfycat.com/InformalGreedyCorydorascatfish.gif
+animation=glows & spins
+effect=dash with multiple PBAoEs
+count=?
+subeffect=damage:-
+subeffect=knockback:0
+

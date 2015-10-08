@@ -1,0 +1,1996 @@
+
+Name=Door Guard
+ID=3077
+Path=CMS
+
+Attack=Slash
+image=http://i.imgur.com/yV2jufu.gif
+cooldown=0
+effect=Melee
+subeffect=damage:0|bleeding
+
+attack=Slash
+ID=15059
+effect=melee
+subeffect=damage:-
+
+Attack=Spin
+ID=15060
+image=http://i.imgur.com/P1HqWHG.gif
+Animation=glows
+Additional=channeled, able to rotate
+effect=multiple cones over time
+count=?
+subeffect=damage:-
+
+##################################################################
+
+Name=Separatist Fighter
+ID=11016
+Path=CMS
+
+attack=Slash (1)
+ID=4453
+image=http://i.imgur.com/aYsVhMP.gif
+effect=melee
+subeffect=damage:-
+
+attack=Slash (2)
+ID=4451
+image=http://i.imgur.com/yQdumaB.gif
+effect=melee
+subeffect=damage:-
+
+attack=Kick
+ID=4450
+image=http://i.imgur.com/qKKLBSK.gif
+# ???
+cooldown=8
+animation=jumps and kicks|0.25
+effect=melee
+subeffect=Damage:-
+subeffect=knockback:1.5
+#note=try to predict
+
+##################################################################
+
+Name=Separatist Lieutenant
+ID=6088
+Path=CMS
+
+attack=Slash (1)
+ID=4458
+image=https://i.imgur.com/dJPuBts.gif
+effect=melee
+subeffect=damage:-
+
+attack=Slash (2)
+ID=4459
+image=https://i.imgur.com/dJPuBts.gif
+effect=melee
+subeffect=damage:-
+
+attack=Ambush (1)
+ID=4461
+image=https://i.imgur.com/lcPLJNl.gif
+effect=leap
+subeffect=damage:-
+
+attack=Flurry (2)
+effect=multiple melee hits
+subeffect=damage:0
+
+attack=Cyclone Attack
+ID=4460
+image=https://i.imgur.com/RgxCsUg.gif
+effect=PBAoE
+subeffect=damage:-
+
+attack=Envenom
+ID=4456
+image=https://i.imgur.com/9xRWZR7.gif
+effect=buff, hits cause
+subeffect=poison:0
+
+##################################################################
+
+Name=Separatist Captain DeLana
+ID=7943
+image=http://wiki.guildwars2.com/images/d/df/Monique_DeLana.jpg
+Path=CMS
+
+attack=Dual Shot
+ID=3460
+effect=2 projectiles
+count=2
+subeffect=damage:-
+
+attack=Pin Down
+ID=3462
+effect=projectile
+subeffect=damage:-
+
+attack=Combustive Shot
+ID=3459
+effect=projectile with ticking AoE
+subeffect=damage:0
+
+attack=Smoke Grenade
+ID=4927
+effect=melee
+subeffect=damage:-
+subeffect=blind:0
+
+##################################################################
+
+Name=Sure-Shot Seamus
+ID=8888
+image=http://wiki.guildwars2.com/images/7/7e/Sure-shot_Seamus.jpg
+Path=CM1|CM3
+
+Attack=Starts with pistols, swaps to shotgun at 95% health
+
+Attack=Shoot (pistol)
+ID=4476
+image=https://i.imgur.com/0snvwDr.gif
+animation=aims with right pistol|0.5
+cooldown=1.5
+effect=projectile
+subeffect=damage:-
+
+Attack=Chain Shot (pistol)
+ID=4477
+image=https://i.imgur.com/yhK2dCt.gif
+cooldown=29
+animation=glows and raises pistols|0.25
+effect=12 projectiles in 2.5 s
+count=12
+length=2.5
+subeffect=Damage:0.15
+
+Attack=Shrapnel Blast (shotgun)
+image=https://i.imgur.com/kzl5lvu.gif
+cooldown=3
+animation=stops and aims|0.85
+additional=medium range
+effect=cone
+subeffect=Damage:0.5
+subeffect=bleeding:8:3
+subeffect=knockback:2.8
+#note=circle him at melee range to stay behind, evade if needed (direct away from your team)
+#note=stay at high range
+#note=not a projectile so reflects won't work
+#note=use stun break to break knocklock
+
+##################################################################
+
+Name=Gunpowder Morgan
+ID=8868
+image=http://wiki.guildwars2.com/images/d/d4/Wahlen.jpg
+Path=CM1
+
+Attack=Doesn't move
+
+Attack=Throw Bomb
+ID=15704
+animation=pulls right arm behind back|0.5
+cooldown=3
+effect=slow projectile with aoe
+subeffect=Damage:-
+subeffect=vulnerability:12:4
+#note=simply sidestep at high range
+
+Attack=Throw Bomb
+ID=15705
+animation=spins (instant)
+additional=only used at close targets
+effect=multiple slow projectiles with aoe
+count=?
+subeffect=Damage:-
+subeffect=vulnerability:12:4
+
+Attack=Kick
+ID=4450
+cooldown=8
+animation=jumps and kicks|0.25
+effect=melee
+subeffect=Damage:-
+subeffect=knockback:1.5
+#note=try to predict
+
+##################################################################
+
+Name=Bloody Victoria
+ID=8867
+Path=CM1
+
+Attack=Slash
+ID=3766
+cooldown=4
+animation=swings right arm|0.1
+effect=single target melee
+subeffect=damage:-
+
+Attack=Slash
+ID=3766
+cooldown=4
+animation=swings left arm|0.65
+effect=single target melee
+subeffect=damage:-
+
+Attack=Hide in Shadows (1)
+ID=3764
+animation=instant||black powder
+cooldown=14
+
+Attack=Stun (2)
+additional=can't be blocked or evaded
+effect=single target melee
+subeffect=stun:3
+
+Attack=Backstab (3)
+ID=3762
+animation=swings right arm with blue effect|2.5
+effect=single target melee
+subeffect=Damage:-
+#note=use immunity or stun break
+
+Attack=Death Blossom (2)
+ID=3763
+animation=jumps over target|0.4
+effect=3 small PBAoes in 0.15 s
+count=3
+length=0.15
+subeffect=Damage:-
+subeffect=bleeding:10:2
+#note=evade or remove conditions
+
+##################################################################
+
+Name=Frost
+ID=8869
+image=http://wiki.guildwars2.com/images/d/df/Frost.jpg
+Path=CM1
+
+attack=Frost Jet
+ID=4934
+effect=multiples cones over time
+count=?
+subeffect=damage:-
+subeffect=chilled:0
+
+attack=Frost Aura
+ID=4936
+effect=buff:Frost_Aura
+
+attack=Whirlwind Attack
+ID=4935
+effect=projectile
+subeffect=damage:-
+subeffect=turns target into ice
+
+##################################################################
+
+Name=Taylor
+ID=8891
+Path=CM2
+
+attack=Can't move or be moved
+
+attack=Shoot
+ID=1330
+animation=aims with right pistol and fires|1.25|shoots a bullet
+cooldown=3
+effect=projectile
+subeffect=damage:-
+
+attack=Chain Shot
+ID=2048
+cooldown=13
+animation=instant|0|glows, raises both pistols and shoots lots of bullets
+effect=12 projectiles in 2.25 s
+count=12
+length=2.25
+subeffect=damage:-
+
+attack=Evasive Shot
+ID=3373
+cooldown=27
+animation=crouches, jumps back and shoots with left pistol|0.2|shoots a bullet
+effect=projectile
+subeffect=damage:-
+effect=buff:evade:1
+
+##################################################################
+
+Name=Marius
+ID=8889
+Path=CM2
+
+attack=Slash (1)
+ID=3315
+effect=melee
+subeffect=damage:-
+
+attack=Tactical Strike (2)
+ID=3315
+effect=melee
+subeffect=damage:-
+
+attack=Heartseeker
+ID=3312
+effect=leap
+subeffect=damage:-
+
+attack=Stalker's Strike
+ID=3302
+effect=teleport with a melee
+subeffect=damage:-
+
+##################################################################
+
+Name=Bridgette
+ID=8871
+Path=CM2
+
+Attack=Pure/True Strike
+ID=3400
+effect=melee
+subeffect=damage:-
+#note=stay at max melee-range to prevent usage
+
+Attack=Sword of Justice
+ID=5128
+effect=summon a enemy=Sword_of_Justice
+#note=Ignore unless it starts attacking
+
+Attack=Symbol of Faith/Wraith
+ID=5127
+effect=ticking AoE at feet
+subeffect=damage:-
+subeffect=burning:0
+subeffect=regeneration:0
+subeffect=retaliation:0
+#note=break line of sight behind tree to make her move out of symbol
+
+##################################################################
+
+Name=Hound
+ID=9367
+level=46
+image=http://wiki.guildwars2.com/images/4/4e/Juvenile_Krytan_Drakehound.jpg
+Path=CM2
+
+attack=Bite
+ID=4482
+effect=melee
+subeffect=damage:-
+
+attack=Leap
+ID=4481
+effect=leap
+subeffect=damage:-
+subeffect=knockdown:0
+
+attack=Howl
+ID=4480
+effect=PBAOE
+subeffect=damage:-
+subeffect=fear:0
+
+##################################################################
+
+Name=Martha
+ID=8872
+Path=CM2
+
+attack=Explosive Shot
+ID=3317
+effect=projectile
+subeffect=damage:-
+
+attack=Dart Volley
+ID=3318
+effect=projectile
+subeffect=damage:-
+subeffect=poison:0
+
+##################################################################
+
+Name=Turmaine
+ID=9348
+image=http://wiki.guildwars2.com/images/5/5e/Bandit_Thug.jpg
+Path=CM2
+
+Attack=Plague
+ID=4940
+effect=multiple ticking AoEs
+subeffect=damage:-
+subeffect=chilled:0
+subeffect=poison:0
+subeffect=weakness:0
+subeffect=vulnerability:0
+#note=try to stay out, remove conditions if needed
+#note=makes reviving very hard
+
+attack=Chillblains (1)
+ID=4940
+effect=invulnerability
+effect=aura
+subeffect=conditions on melee-range
+
+attack=dash (2)
+effect=multiple dashes
+#note=try run away, evade/block if needed
+#note=climb up on tree house and jump down
+
+##################################################################
+
+Name=Wahlen
+ID=8866
+image=http://wiki.guildwars2.com/images/d/d4/Wahlen.jpg
+Path=CM3
+
+Attack=Throw Bomb
+ID=4448
+image=https://i.imgur.com/929kjyQ.gif
+cooldown=0
+effect=slow projectile with aoe
+subeffect=damage:-
+subeffect=vulnerability:0:4
+#note=simply sidestep at high range
+
+Attack=Throw Bomb
+ID=4449
+image=https://i.imgur.com/jlHJUlc.gif
+animation=spins (instant)
+additional=only used at close targets
+effect=multiple slow projectiles with aoe
+subeffect=damage:-
+subeffect=vulnerability:0:4
+
+Attack=Kick
+ID=4450
+cooldown=8
+animation=jumps and kicks|0.25
+effect=melee
+subeffect=Damage:-
+subeffect=knockback:1.5
+#note=try to predict
+
+##################################################################
+
+Name=Vallog
+ID=9433
+image=http://wiki.guildwars2.com/images/7/72/Vallog.jpg
+Path=CM3
+
+Attack=Earth Spikes
+ID=4943
+image=https://i.imgur.com/9HsKVVn.gif
+animation=hops around
+effect=small PBAoE
+subeffect=damage:-
+subeffect=bleeding:0:3
+subeffect=knockback:0
+#note=block/evade
+
+Attack=Fireball
+ID=4944
+image=https://i.imgur.com/0T4uCvW.gif
+animation=fiery effect
+effect=projectile with small AoE
+subeffect=damage:-
+subeffect=burning:0
+#note=block/evade at melee, zig zag at range
+
+Attack=Swirling Winds
+ID=4945
+image=https://i.imgur.com/HNshgjQ.gif
+animation=air effect
+effect=area field
+subeffect=reflects projectiles
+
+##################################################################
+# Levels 45 and 56 exist.
+Name=Bandit Archer
+ID=8884
+alt=Bandit Archers|Archer|Archers
+Path=CM1|CM2|CM3
+
+Attack=Shoot
+ID=4463
+cooldown=1.5
+animation=raises bow|0.25
+cooldown=0
+effect=projectile
+subeffect=damage:-
+subeffect=crippled:5
+
+attack=Blinding Powder
+ID=4462
+cooldown=11
+animation=crouches a bit and pulls right arm behind back|0.5
+effect=ranged with AoE
+subeffect=damage:0.5
+subeffect=blind:10
+
+attack=Evasion
+ID=4464
+animation=moves hands|0.35
+effect=buff (15 s)
+subeffect=low chance to gain "Evasion" (2 s) when hit
+
+attack="Evasion"
+effect=buff:block
+
+#############################
+
+copy=8884
+ID=8883
+
+##################################################################
+
+Name=Bandit Bomber
+ID=9026
+alt=Bandit Bombers|Bomber|Bombers
+Path=CM1|CM2|CM3
+
+Attack=Throw Bomb
+ID=4448
+animation=pulls right arm behind back|0.5|throws a grenade
+cooldown=3
+effect=slow projectile with aoe
+subeffect=Damage:-
+subeffect=vulnerability:12:4
+#note=simply sidestep at high range
+
+Attack=Throw Bomb
+ID=4449
+cooldown=21
+animation=pulls right arm behind back and spins|0.5|lots of grenades
+additional=only used at close targets
+effect=~10 slow projectiles with aoe on area
+subeffect=Damage:-
+subeffect=vulnerability:12:4
+#note=Evade or use anti projectile
+
+attack=Kick
+ID=4450
+cooldown=13
+animation=jumps in air|0.4
+effect=melee
+subeffect=damage:-
+subeffect=knockback:1.5
+#note=try to predict when going close
+
+##################################################################
+# Same enemy: Thauma Bandit Scout
+
+Name=Bandit Cutpurse
+ID=8876
+alt=Bandit Cutpurses|Cutpurse|Cutpurses
+Path=CM1|CM2|CM3
+
+Attack=Slash (1)
+ID=4453
+image=https://i.imgur.com/CiA1iXz.gif
+animation=swing from right|0.5
+cooldown=2
+effect=melee
+subeffect=Damage:-
+
+Attack=Slash (2)
+ID=4451
+animation=swing from left|0.2
+cooldown=2
+effect=melee
+subeffect=Damage:-
+
+Attack=Slash
+ID=4452
+animation=swing from right|0.1
+cooldown=2
+effect=melee
+subeffect=Damage:-
+
+Attack=Death Blossom
+ID=4457
+cooldown=11
+animation=jumps over target|0.4
+effect=3 small PBAoes in 0.15 s
+count=3
+length=0.15
+subeffect=Damage:-
+subeffect=bleeding:8:4
+
+Attack=Envenom
+ID=4456
+cooldown=19
+image=https://i.imgur.com/mYv6Bgt.gif
+effect=buff (15 s), on hits
+subeffect=Poison:6
+
+#############################
+# Levels 45 and 46 exist.
+copy=8876
+ID=8875
+
+#############################
+
+copy=8876
+name=Bandit Scout
+alt=Bandit Scouts|Scout|Scouts
+# VERIFY
+ID=8876
+
+#############################
+# Both level 45 and 50 exist.
+
+copy=6088
+Name=Bandit Hooligan
+ID=8887
+alt=Bandit Hooligans|Hooligan|Hooligans
+Path=CM1|CM2|CM3
+
+##################################################################
+
+Name=Separatist Sniper
+ID=3218
+alt=Separatist Snipers|Sniper|Snipers
+image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
+Path=CMS
+
+attack=Prefers targets with ranged weapons
+
+Attack=Shoot
+ID=4474
+animation=crouches a bit and aims|0.5
+cooldown=2
+additional=high range
+effect=fast projectile
+subeffect=Damage:0.5
+effect=If target is moving
+subeffect=Damage:1
+subeffect=bleeding:3:3
+
+Attack=Sniper Shot
+ID=4475
+cooldown=11
+animation=kneels and marks target|1.75
+additional=high range
+effect=fast projectile
+subeffect=Damage:0.75
+effect=If target is moving
+subeffect=Damage:2
+subeffect=knockdown:3
+
+#############################
+# Same enemy: Thauma Bandit Rifleman
+
+copy=3218
+Name=Bandit Rifleman
+ID=8890
+alt=Bandit Riflemen|Rifleman|Riflemen
+image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
+Path=CM1|CM2|CM3
+
+#############################
+
+copy=8890
+ID=8885
+Path=CM1
+
+#############################
+
+copy=8890
+name=Bandit Enforcer (Sniper)
+# VERIFY
+ID=8885
+alt=Enforcer (Sniper)
+image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
+
+##################################################################
+
+Name=Bandit Scatter Shot
+ID=8881
+alt=Bandit Scatter Shots|Scatter Shot|Scatter Shots
+Path=CM1|CM2|CM3
+
+attack=Shoot
+ID=4476
+effect=projectile
+subeffect=damage:-
+
+attack=Grapeshot
+ID=4478
+effect=projectiles (cone)
+count=?
+subeffect=damage:-
+
+attack=Chain Shot
+ID=4477
+effect=projectiles over time
+count=?
+subeffect=damage:-
+
+#############################
+# Both levels 45 and 46 exist.
+
+copy=8881
+ID=8880
+
+##################################################################
+
+Name=Bandit Enforcer
+alt=Bandit Enforcers|Enforcer|Enforcers
+# Not verified.
+health=43416
+Path=CM1|CM2|CM3
+type=outlaw
+category=elite
+
+##################################################################
+
+Name=Bandit Enforcer
+# TODO ID
+alt=Bandit Enforcers|Enforcer|Enforcers
+Path=CM1|CM2|CM3
+type=outlaw
+category=normal
+
+##################################################################
+
+Name=Bandit Thug
+ID=8879
+alt=Bandit Thugs|Thug|Thugs
+Path=CM1|CM2|CM3
+
+attack=True Strike (1)
+ID=4468
+animation=swings mace from right|0.5
+effect=melee
+subeffect=damage:-
+
+attack=Pure Strike (2)
+ID=4469
+animation=swings mace from left|0.6
+effect=melee
+subeffect=damage:-
+
+attack=Faithful Strike (3)
+ID=4470
+animation=kneels and swings mace from right|1
+effect=melee
+subeffect=damage:-
+subeffect=daze:1
+
+attack=Shield Bash
+ID=4467
+cooldown=7
+animation=turns left and dashes shield forward|0.5
+effect=dash
+subeffect=damage:-
+subeffect=launch:3.3
+
+attack=Shout
+ID=4471
+animation=raises hands in air|1
+cooldown=18
+effect=PBAoE
+subeffect=Protection:8
+subeffect=Stability:8
+subeffect=Might:8:5
+
+#############################
+
+copy=8879
+ID=8878
+level=46
+
+##################################################################
+
+Name=Bandit Saboteur
+ID=8874
+alt=Bandit Saboteurs|Saboteur|Saboteurs
+Path=CM1|CM2|CM3
+
+attack=Draw Keg
+ID=4472
+effect=delayed AoE
+subeffect=damage:-
+
+##################################################################
+
+Name=Bandit Saboteur
+ID=8873
+alt=Bandit Saboteurs|Saboteur|Saboteurs
+Path=CM1|CM2|CM3
+
+#############################
+
+copy=9367
+Name=Hunting Dog
+ID=11017
+level=40
+alt=Hunting Dogs
+image=http://wiki.guildwars2.com/images/4/4e/Juvenile_Krytan_Drakehound.jpg
+Path=CMS
+
+#############################
+
+copy=11017
+ID=5982
+
+##################################################################
+
+name=Archdiviner (Start)
+ID=11286
+image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
+scaling=legendary
+path=Cliff
+
+attack=Swing
+ID=16191
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Ring of Warding
+ID=16203
+additional=used at primary target
+effect=AoE
+subeffect=damage:0
+#note=evade if unsure who is being targeted or target is close
+effect=6 projectiles (cone)
+subeffect=damage:0
+subeffect=confusion:3
+#note=evade
+
+attack=Thundering Leap
+ID=16201
+effect=leap with small PBAoE
+subeffect=damage:-
+
+attack=Corrupted Ground
+ID=16194
+effect=7 delayed (1 s) AoEs in 6 s at target
+count=?
+subeffect=Agony:3
+subeffect=weakness:5
+subeffect=poison:5
+subeffect=vulnerability:5
+subeffect=bleeding:5
+subeffect=strip a boon
+#note=targeted player should run away from others
+
+attack=Backbreaker
+ID=16193
+additional=used when below 50%
+effect=single target melee
+subeffect=damage:-
+subeffect=knockdown:2
+subeffect=agony:3
+
+##################################################################
+
+name=Archdiviner (Phase 1)
+ID=11296
+image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
+scaling=legendary
+path=Cliff
+
+attack=Swing
+ID=16197
+cooldown=0
+effect=melee
+subeffect=damage:-
+subeffect=knockback:0
+
+attack=Corrupted Ground
+ID=16194
+effect=7 delayed (1 s) AoEs in 6 s at target
+count=?
+subeffect=Agony:3
+subeffect=weakness:5
+subeffect=poison:5
+subeffect=vulnerability:5
+subeffect=bleeding:5
+subeffect=strip a boon
+#note=targeted player should run away from others
+
+##################################################################
+
+name=Archdiviner (Phase 2)
+ID=11296
+image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
+scaling=legendary
+path=Cliff
+
+attack=Swing
+cooldown=0
+effect=melee
+subeffect=damage:0
+subeffect=knockback:0
+
+attack=Cursed Grasp (1)
+ID=16195
+effect=3 projectiles (cone)
+count=?
+subeffect=damage:-
+subeffect=pull:0
+#note=evade
+
+attack=Nova (2)
+animation=raises left arm||white flash
+effect=buff:projectile_reflection:5:1:protection
+effect=high-range PBAoE
+subeffect=damage:0.3
+subeffect=agony:3
+#note=keep eye on boss all the time on for protection-icon to block/evade Nova
+#note=be careful with single-blocks (Bone Fiends may waste them)
+
+attack=Backbreaker
+effect=single target melee
+subeffect=damage:0.5
+subeffect=knockdown:2
+subeffect=agony:3
+
+attack=Summon & Cage
+additional=can't be blocked or evaded
+effect=teleport target to a enemy=Cage:structure
+effect=summon 2 enemy=Bone_Fiends:normal
+#note=break cage to get free, help other players if they need help
+
+##################################################################
+
+name=Bone Fiend
+ID=11297
+alt=Bone Fiends
+scaling=normal
+path=Cliff
+
+attack=Bone Shard
+ID=3633
+cooldown=0
+effect=2 projectiles
+count=2
+subeffect=damage:-
+
+attack=Bone Shard
+ID=3644
+effect=2 projectiles
+count=2
+subeffect=damage:-
+subeffect=crippled:2
+
+##################################################################
+
+name=Chanter
+ID=11293|11294
+alt=Chanters
+image=http://wiki.guildwars2.com/images/6/64/Chanter.jpg
+path=Cliff
+scaling=normal
+
+attack=Runs away when at low health
+
+attack=Putrid Curse
+ID=16173
+animation=waves staff with green glow
+effect=ranged
+subeffect=damage:-
+subeffect=poison:1.75
+
+attack=Feast of Corruption
+ID=16174
+animation=waves staff
+effect=ranged
+subeffect=damage:-
+
+attack=Spinal Shivers
+ID=16176
+animation=waves left hand with green glow
+effect=ranged
+subeffect=damage:-
+subeffect=vulnerability:4.5
+
+attack=Reaper's Touch
+ID=16175
+animation=swings left arm bit slower
+effect=projectile
+subeffect=damage:-
+subeffect=vulnerability:10:4
+
+#############################
+
+copy=11293
+ID=11284|11285
+
+##################################################################
+
+name=Fanatic
+ID=11283
+alt=Fanatics
+path=Cliff
+scaling=normal
+
+attack=Runs away when at low health
+
+attack=Necrotic Bite
+ID=16170
+effect=melee
+subeffect=damage:-
+
+attack=Life Siphon
+ID=16171
+animation=raises right arm|0|right glow
+effect=9 ranged hits in 3 s
+count=9
+length=3
+subeffect=damage:-
+subeffect=healing:0
+#note=evade twice
+
+attack=Deathly Swarm
+ID=16172
+animation=swings left arm|0|green swarm
+effect=projectile
+subeffect=damage:-
+subeffect=blind:0
+subeffect=vulnerability:1:10|33%
+subeffect=bleeding:0:2|33%
+subeffect=vulnerability:0:2|33%
+
+##################################################################
+
+name=Novice (Dagger)
+ID=11290|11289
+alt=Novices (Dagger)
+image=http://wiki.guildwars2.com/images/9/91/Novice.jpg
+path=Cliff
+# Scaling unverified.
+scaling=normal
+health=11516
+type=outlaw
+
+attack=Runs away when at low health
+
+attack=Double Strike (1)
+ID=16165
+cooldown=0
+effect=2 melee hits
+count=2
+subeffect=damage:-
+
+attack=Lotus Strike (2)
+ID=16166
+effect=melee
+subeffect=damage:-
+subeffect=poison:1.5
+
+attack=Heartseeker
+ID=16167
+effect=short leap
+subeffect=damage:-
+effect=if the target has less then 50% health
+subeffect=damage:0.65
+effect=if the target has less then 25% health
+subeffect=damage:1.05
+
+attack=Backstab
+ID=16164
+effect=melee
+subeffect=damage:-
+effect=from behind
+subeffect=damage:0.7
+
+#############################
+
+copy=11290
+ID=11282|11281
+
+##################################################################
+
+name=Novice (Shortbow)
+ID=11291
+alt=Novices (Shortbow)
+path=Cliff
+scaling=normal
+
+attack=Runs away when at low health
+
+attack=Trick Shot
+ID=16168
+cooldown=0
+effect=homing and bouncing? projectile
+count=?
+subeffect=damage:-
+
+attack=Disabling Shot
+ID=16169
+effect=homing projectile
+subeffect=damage:-
+subeffect=crippled:2
+effect=move back
+subeffect=buff:evade
+
+#############################
+
+copy=11291
+# VERIFY 11288
+ID=11287
+
+##################################################################
+
+Name=The Mossman (Stalk)
+ID=11277
+alt=Mossman (Stalk)
+Path=Swamp|Insta
+image=http://wiki.guildwars2.com/images/e/ef/The_Mossman.jpg
+scaling=constant
+
+attack=Slice
+ID=16124
+animation=swings right hand to left and hits|0.75
+effect=cone
+subeffect=damage:-
+
+attack=Dancing Dagger
+ID=16127
+animation=pulls left arm behind|0.25|throws a dagger
+effect=bouncing projectile
+count=?
+subeffect=damage:-
+subeffect=agony:2
+
+##################################################################
+
+Name=The Mossman
+ID=11264
+alt=Mossman
+Path=Swamp
+image=http://wiki.guildwars2.com/images/e/ef/The_Mossman.jpg
+scaling=legendary
+
+attack=Aggro
+effect=Has a primary target (may change for example when someone gets downed)
+subeffect=Slice, Point Target, Teleport and Gouge are only used on primary target.
+
+attack=Slice
+ID=16124
+animation=swings right hand to left and hits|0.75
+effect=cone
+subeffect=damage:-
+
+attack=Dancing Dagger
+ID=16127
+animation=pulls left arm behind|0.25|throws a dagger
+effect=bouncing projectile
+count=?
+subeffect=damage:-
+subeffect=agony:2
+
+attack=Stealth
+ID=16128
+cooldown=20
+animation=pulls right arm behind|0.5
+effect=buff
+subeffect=Stealth:10
+effect=summon
+subeffect=enemy=wolf:veteran
+#note=Pay attention to mini-map to see its location.
+#note=Don't kill the Wolf. He can easily kill people while stealthed so save it for a rally.
+#note=If possible, get hit to break his stealth (prevents him spending lots of time stealthed).
+
+attack=Point Target (1)
+animation=pulls right arm behind back while facing target|0.5
+additional=Used after 75%.
+effect=No initial effect. Teleport and Gouge are used on pointed target.
+
+attack=Blazing Axe (2)
+animation=pulls left arm behind back|0.25|throws an axe
+effect=projectile
+subeffect=damage:0.3
+subeffect=bleeding:5
+subeffect=agony:3
+
+attack=Teleport (3)
+additional=short range
+effect="Brown effect" (~10 s)
+effect=summon
+subeffect=2 enemy=Wolves:normal
+effect=teleport to target (when close enough)
+subeffect=remove "Brown Effect".
+#note=You can kite him to prevent him using any other attack. However he will stealth quite soon.
+
+attack=Gouge (4)
+animation=glows, raises arms and strikes|1
+effect=2 cones
+count=2
+subeffect=damage:0.4
+#note=evade away from Mossman to prevent him from turning and killing other people
+
+attack="Brown Effect"
+effect=debuff
+subeffect=slows movement
+effect=when expires naturally
+subeffect=stealth:0
+
+attack=Transform
+animation=pulls right arm behind|0.5
+additional=Rarely used when below 25%
+effect=transform to enemy=The_Mossman_(Animal):legendary
+
+##################################################################
+
+Name=The Mossman (Animal)
+ID=11264
+alt=animal forms
+Path=Swamp
+scaling=legendary
+
+attack=Bear Form
+effect=Transform into a bear.
+frequency=1
+subeffect=might:0
+
+attack=Feral Maul (1)
+animation=swings both arms|0.25
+additional=Only used in the bear form.
+effect=melee
+subeffect=damage:0.5
+subeffect=launch:3.1
+
+attack=Leopard Form (2)
+effect=Transform into a leopard.
+frequency=5
+subeffect=protection:10
+
+attack=Feral Bounce
+additional=Only used in the leopard form.
+effect=Leap (0.75 s)
+subeffect=damage:0.3
+subeffect=agony:3
+
+attack=Wolf Form
+effect=Transform into a wolf.
+
+attack=Feral Tear
+animation=swings both arms|0.25
+additional=Only used in the wolf form.
+effect=2 melee hits
+count=2
+subeffect=damage:0.3
+#note=sometimes deal like 50% more damage
+
+attack=Feral Roar
+animation=howls
+additional=Only used in the wolf form.
+effect=PBAoE
+subeffect=fear:1
+
+##################################################################
+
+Name=Ascalonian Archer (Igniter)
+ID=11434|11463
+alt=Ascalonian Archers (Igniter)|Archer (Igniter)|Archers (Igniter)
+scaling=normal
+Path=Urban
+
+attack=Dual Shot
+ID=2033
+animation=aims|0.4|shoots two arrows
+cooldown=3
+effect=2 projectiles in 0.1 s
+count=2
+length=0.1
+subeffect=damage:-
+
+attack=Forceful Shot
+ID=2036
+animation=kneels and aims|0.6|shoots an arrow
+cooldown=13
+effect=projectile
+subeffect=damage:-
+#note=Often used to initiate
+#note=hard to detect but try to block/evade
+
+attack=Incendiary Arrow
+ID=2034
+cooldown=13
+animation=aims with brief glow|0.5|shoots a blue arrow
+effect=projectile with small AoE
+subeffect=damage:-
+subeffect=burning:3
+#note=block/evade anything blue
+
+attack=Crippling Shot
+ID=2035
+cooldown=29
+animation=aims|0.15|shoots an arrow with circle effect
+effect=fast projectile
+subeffect=damage:-
+subeffect=crippled:3
+#note=too fast to react
+
+# Internal: Skill Barrage also listed.
+
+############################# 
+
+copy=11434
+Name=Ascalonian Archer
+ID=12914
+alt=Archer|Ascalonian Archers|Archers
+scaling=level
+Path=Thauma
+
+################################################################## 
+
+Name=Ascalonian Captain
+ID=12915
+alt=Captain|Ascalonian Captains|Captains
+scaling=level
+Path=Thauma
+
+attack=Bash
+ID=1486
+effect=melee
+subeffect=damage:-
+
+attack=Staggering Blow
+ID=2038
+effect=melee
+subeffect=damage:-
+
+attack=Backbreaker
+ID=2039
+effect=melee
+subeffect=damage:-
+
+# Internal: Skills Bash (another) and Banner of Discipline also listed.
+
+##################################################################
+
+Name=Ascalonian Cultist
+ID=11475
+alt=Ascalonian Cultists|Cultist|Cultists
+scaling=normal
+Path=Urban
+
+attack=Double Strike (1)
+ID=16368
+animation=swings right arm|0.15
+cooldown=0
+effect=2 single target melee hits in 0.15 s
+count=2
+length=0.15
+subeffect=damage:-
+
+attack=Wild Strike (2)
+animation=waits and swings right arm fast|1.5
+effect=melee
+subeffect=damage:0.3
+#note=cleaves
+
+attack=Lotus Strike (3)
+animation=waits and thrusts right dagger from above|1
+effect=single target melee
+subeffect=damage:0
+subeffect=poison:2
+
+attack=Life Siphon
+ID=16373
+animation=right hand forward||red glowing and life-steal sound
+effect=7 ranged hits in 2.5 s
+count=7
+length=2.5
+subeffect=damage:-
+subeffect=healing:0
+
+attack=Crippling Dagger
+ID=16370
+effect=projectile
+subeffect=damage:-
+subeffect=crippled:3
+
+attack=Disrupting Dagger
+ID=16371
+effect=projectile
+subeffect=damage:-
+subeffect=daze:1
+
+attack=Heartseeker
+ID=16372
+animation=turns bit left|0.25|jumps in air
+effect=short leap (0.5 s) with PBAoE
+subeffect=damage:-
+subeffect=bleeding:5
+
+#############################
+
+copy=11475
+Name=Ascalonian Assassin
+alt=Ascalonian Assassins|Assassin|Assassins
+
+#############################
+
+copy=11475
+Name=Ascalonian Cultist (Respawn)
+alt=Ascalonian Cultists (Respawn)|Cultist (Respawn)|Cultists (Respawn)
+scaling=level
+
+#############################
+
+copy=11475
+ID=12916
+scaling=level
+Path=Thauma
+
+##################################################################
+
+Name=Ascalonian Warrior
+ID=11472|11471
+alt=Ascalonian Warriors|Warrior|Warriors
+scaling=normal
+Path=Urban
+
+attack=Greatsword Swing (1)
+ID=3368
+animation=swings sword from right|0.5
+cooldown=0
+effect=Melee
+subeffect=damage:-
+
+attack=Greatsword Slice (2)
+animation=swings sword from left|0.7
+effect=Melee
+subeffect=damage:0.5
+
+attack=Brutal Swing (3)
+animation=swings swomrd from right upwards|0.8
+effect=Melee
+subeffect=damage:0.5
+subeffect=vulnerability:10
+
+attack=Leap of Faith
+ID=16365
+effect=leap (0.5 s)
+subeffect=damage:-
+
+attack=Charge! (1)
+ID=16366
+cooldown=24
+animation=instant||runs forward sword behind back
+effect=PBAoE
+subeffect=buff:Swiftness:10:1:swiftness_buff
+effect=dash
+#note=be ready to block/evade
+
+attack=Charge! (2)
+animation=swings from right|0.40
+effect=melee
+subeffect=damage:1.5
+
+attack="Swiftness"
+animation=blue icon
+effect=buff
+subeffect=increased movement speed
+
+#############################
+
+copy=11475
+Name=Ascalonian Warrior (Respawn)
+alt=Ascalonian Warriors (Respawn)|Warrior (Respawn)|Warriors (Respawn)
+scaling=level
+Path=Urban
+
+#############################
+
+copy=11475
+scaling=level
+Path=Thauma
+
+##################################################################
+
+Name=Bandit Rifleman
+ID=12920
+alt=Bandit Riflemen|Rifleman|Riflemen
+image=http://wiki.guildwars2.com/images/a/a3/Separatist_Marksman.jpg
+scaling=level
+Path=Thauma
+
+attack=Prefers targets with ranged weapons
+
+Attack=Shoot
+ID=1333
+animation=crouches a bit and aims|0.5
+cooldown=2
+additional=high range
+effect=fast projectile
+subeffect=damage:-
+
+Attack=Sniper Shot
+ID=1817
+cooldown=11
+animation=kneels and marks target|1.75
+additional=high range
+effect=fast projectile
+subeffect=damage:-
+
+# Internal: Skills Bash and Equip Speargun also listed.
+
+##################################################################
+
+Name=Bandit Scout
+ID=12919
+alt=Bandit Scouts|Scout|Scouts
+scaling=level
+Path=Thauma
+
+attack=Shoot
+ID=1330
+effect=projectile
+subeffect=damage:-
+
+attack=Chain Shot
+ID=1332
+effect=multiple projectiles
+count=?
+subeffect=damage:0
+
+attack=Bonfire
+ID=1784
+effect=ticking AoE
+count=?
+subeffect=damage:-
+
+##################################################################
+
+Name=Bandit Saboteur
+ID=10818
+scaling=normal
+Path=Uncat
+
+attack=Draw Keg
+ID=1827
+animation=kneels|0.3|leaves a bomb
+cooldown=5
+effect=delayed (3 s) AoE
+subeffect=burning:5
+subeffect=launch:3.3
+
+attack=Poison Grenade
+ID=3319
+cooldown=12
+animation=swings left arm|0.5|throws a green projectile
+effect=projectile with small ticking AoE (6 hits in 5 s)
+count=6
+length=5
+subeffect=poison:2
+
+attack=Evasive Trap
+ID=3320
+cooldown=20
+animation=instant||moves back and leaves a bomb with a red circle
+effect=delayed (2 s) AoE
+subeffect=damage:3756846
+subeffect=confusion:5:3
+effect=dodge back
+subeffect=buff:evade
+#note=use AoE cleave without targeting her to prevent triggering it
+#note=move bit back if you are on a red circle
+
+##################################################################
+
+Name=Siegemaster Dulfy
+ID=11421
+scaling=champion
+image=http://wiki.guildwars2.com/images/f/f4/Siegemaster_Dulfy.jpg
+Path=Urban
+
+attack=Sever Artery (1)
+ID=2028
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:0
+
+attack=Gash (2)
+effect=melee
+subeffect=damage:0
+subeffect=bleeding:0
+
+attack=Final Thrust (3)
+effect=melee
+subeffect=damage:0
+subeffect=bleeding:0
+
+attack=Fire Shield
+ID=1499
+animation=kneels||hides behind shield
+effect=channeled
+effect=buff:block:3
+subeffect=burning:1 when hit
+
+attack=Trebuchet Shot
+ID=16353
+animation=instant||marks target
+effect=delayed AOE
+subeffect=damage:-
+
+attack=Repair
+ID=16348
+effect=PBAoE
+subeffect=repairs structures
+
+##################################################################
+
+Name=Captain Ashym (Sword)
+ID=11408
+alt=Sword and Shield|Captain Ashym
+scaling=legendary
+Path=Urban
+
+attack=Savage Leap
+ID=16328
+cooldown=10
+animation=stops with brief yellow glow|0.2|leaps sword forward
+effect=leap with PBAoE
+subeffect=damage:-
+
+attack=Blinding Blade
+ID=16327
+animation=swing from right|0.4
+effect=melee
+subeffect=damage:-
+subeffect=blind:2
+
+attack=Fire Shield
+ID=16332
+animation=kneels|0.2|hides behind shield
+effect=channeled
+effect=buff:block:3
+subeffect=burning:1 when hit
+
+attack=Summon
+animation=crouches and shouts|0.2
+additional=maximum amount of 1
+effect=summon an enemy=Ascalonian_Squire:veteran
+
+attack=Aura
+additional=only works while Squire is alive
+effect=Aura
+frequency=15
+subeffect=retaliation:15
+#note=Sometimes no effect on Ashym
+effect=Aura
+frequency=15
+subeffect=protection:15
+#note=Sometimes no effect on Squire
+
+##################################################################
+
+Name=Captain Ashym (Staff)
+ID=11408
+alt=Staff
+Path=Urban
+scaling=legendary
+
+attack=Meteor Shower
+cooldown=10
+animation=raises glowing left arm, kneels and keeps left arm forward|2.5
+effect=multiple projectiles with small AoE in 7.5 s on area
+count=?
+subeffect=damage:1
+#note=get out of area quickly, evade/block if needed
+
+attack=Meteor Shower
+cooldown=13
+animation=glows and holds staff forward|1
+effect=PBAoE
+subeffect=damage:0.5
+subeffect=burning:1
+subeffect=agony:3
+effect=high-range PBAoE (after 0.75 s)
+subeffect=damage:0.5
+subeffect=burning:1
+subeffect=agony:3
+#note=evading both requires good timing (single-block + evade is more reliable)
+#note=staying range makes evading this attack easy
+
+attack=Flamewall
+animation=swings and raises glowing left arm|1
+effect=ticking area line (7 s)
+count=8
+length=7
+subeffect=damage:0.15
+subeffect=burning:3
+
+attack=Summon
+additional=maximum amount of 1
+effect=summon an enemy=Ascalonian_Squire:veteran
+
+attack=Aura
+additional=only works while Squire is alive
+effect=Aura
+frequency=15
+subeffect=retaliation:15
+#note=Sometimes no effect on Ashym
+effect=Aura
+frequency=15
+subeffect=protection:15
+#note=Sometimes no effect on Squire
+
+##################################################################
+
+Name=Captain Ashym (Greatsword)
+ID=11408
+alt=Fiery Greatsword
+Path=Urban
+scaling=legendary
+
+attack=Flame Wave
+animation=instant||waves sword
+effect=4 projectiles in 2.5 s
+count=4
+length=2.5
+subeffect=damage:0.7
+
+attack=Flamewave
+animation=sticks sword to the ground|1
+effect=2 melee hits
+count=2
+subeffect=damage:0
+effect=ticking AoE
+count=?
+subeffect=burning:3.5
+
+attack=Firestorm
+effect=ticking AoE
+count=?
+subeffect=damage:1.7
+
+attack=Fiery Whirl
+effect=dash with PBAoE
+count=?
+subeffect=damage:1.7
+subeffect=crippled:0
+
+attack=Rush End
+effect=dash
+subeffect=damage:1.7
+effect=leaves a trail (ticking AoEs)
+count=?
+subeffect=damage:0.85
+
+attack=Aura
+additional=only works while Squire is alive
+effect=Aura
+frequency=15
+subeffect=retaliation:15
+#note=Sometimes no effect on Ashym
+
+attack=Rage
+effect=Buff
+frequency=3
+subeffect=might:60
+#note=results in 20 might
+#note=causes all attacks to hit extremely hard
+# 546 -> 554 burning damage, so might works as it should
+
+##################################################################
+
+Name=Ascalonian Archer (Condition)
+ID=11464
+alt=Ascalonian Archers (Condition)|Archer (Condition)|Archers (Condition)
+scaling=normal
+Path=Urban
+
+attack=Basic Shot
+ID=16357
+cooldown=0
+effect=projectile
+subeffect=damage:-
+subeffect=crippled:5|14%
+subeffect=chilled:3|14%
+subeffect=poison:10|14%
+subeffect=burning:3|14%
+subeffect=bleeding:10|14%
+subeffect=blind:5|14%
+subeffect=weakness:5|14%
+
+attack=Quick Shot
+ID=16359
+effect=projectile
+subeffect=damage:-
+
+attack=Chaos Trap
+ID=16358
+effect=trap
+subeffect=damage:-
+
+##################################################################
+
+Name=Ascalonian Enchanter
+ID=11446
+alt=Ascalonian Enchanters|Enchanter|Enchanters
+scaling=normal
+Path=Urban
+
+attack=Overload
+ID=1489
+effect=??
+subeffect=damage:-
+
+attack=Eye Blast
+ID=2047
+effect=??
+subeffect=??
+
+attack=Reflection Shield
+ID=1473
+effect=??
+subeffect=??
+
+##################################################################
+
+Name=Ascalonian Fighter
+ID=11450|11449
+alt=Ascalonian Fighters|Fighter|Fighters
+scaling=normal
+Path=Urban
+
+attack=Sever Artery (1)
+ID=2028
+cooldown=0
+effect=damage:-
+subeffect=bleeding:0
+
+attack=Gash (2)
+effect=melee
+subeffect=damage:0
+subeffect=bleeding:0
+
+attack=Final Thrust (3)
+effect=melee
+subeffect=damage:0
+subeffect=bleeding:0
+
+attack=Fire Shield
+ID=1499
+animation=kneels||hides behind shield
+effect=buff:block:3
+subeffect=burning:1 when hit
+
+attack=Healing Signet
+ID=2031
+effect=buff
+subeffect=healing-percent:15
+
+##################################################################
+
+Name=Ascalonian Healer
+ID=11454
+alt=Ascalonian Healers|Healer|Healers
+scaling=normal
+Path=Urban
+
+attack=Healing Breeze
+ID=2045
+animation=leans back and forward|0.5|sprays white mist
+effect=5 cones in 1.5 s
+count=5
+length=1.5
+subeffect=damage:1668997
+
+# Internar: Skills Heal Area, Flare and Resurrect also listed.
+
+##################################################################
+
+Name=Ascalonian Mage
+ID=11458|11457
+alt=Ascalonian Mages|Mage|Mages
+scaling=normal
+Path=Urban
+
+attack=Fireball
+ID=16376
+animation=swings left arm|1|throws a fireball
+cooldown=2.5
+effect=projectile with small AoE
+subeffect=damage:0.35
+
+attack=Flame Burst
+ID=16375
+cooldown=14
+animation=staff glows, crouches and raises left hand up in the air with weird sound|1|fire effect
+effect=PBAoE
+subeffect=damage:1
+#note=pay attention when getting near them
+#note=be ready to block/evade when you hear weird sound
+
+attack=Fire Storm
+ID=16377
+cooldown=17
+animation=raises left hand, crouches and raises left hand up in the air|1|red circle
+effect=ticking AoE (6 hits in 5 s)
+count=6
+length=5
+subeffect=damage:-
+
+#############################
+
+copy=11458
+Name=Ascalonian Mage (Respawn)
+alt=Ascalonian Mages (Respawn)|Mage (Respawn)|Mages (Respawn)
+
+##################################################################
+
+Name=Ascalonian Monk
+ID=11468|11467
+alt=Ascalonian Monks|Monk|Monks
+scaling=normal
+Path=Urban
+
+attack=Heal Area
+ID=16361
+animation=outer right arm swing with water effect|0.5
+cooldown=5
+effect=melee
+subeffect=damage:-
+subeffect=healing:0
+
+attack=Heal Area
+ID=16362
+animation=inner right arm swing|0.25|ice effect
+cooldown=5
+effect=quick cone
+subeffect=damage:-
+
+attack=Empower (1)
+ID=16363
+animation=rises to air hands behind back|0.5
+effect=4 PBAoEs in 2.2 s
+count=4
+length=2.2
+subeffect=might:10:4
+#note=big effect on damage so kill Monks fast
+
+attack=Heal (2)
+animation=descends to ground|0.8|white splash
+effect=PBAoE
+subeffect=healing:0
+
+# Internal: Skill Shield of Absorption also listed.
+
+##################################################################
+
+Name=Ascalonian Squire
+ID=11409
+alt=Squire
+scaling=normal
+health=46061
+Path=Urban
+type=no type
+
+attack=Stab
+ID=14494
+cooldown=2
+effect=Melee
+subeffect=damage:-
+
+attack=Staggering Banner
+ID=14561
+animation=holds banner behind back|0.5|spins
+effect=small PBAoE
+subeffect=damage:-
+subeffect=knockback:1.5
+
+attack=Inspire
+ID=14477
+animation=raises arms, croches and raises left arm up in the air|0.9
+effect=PBAoE
+subeffect=swiftness:10
+
+# Internal: Skills Sprint and Plant Standard also listed.
+

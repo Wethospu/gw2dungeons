@@ -286,7 +286,7 @@ namespace DataCreator.Shared
       // Add enemy names.
       for (var index = 0; index < enemiesToLink.Count; index++)
       {
-        link.Append(enemiesToLink[index].FileIndex);
+        link.Append(enemiesToLink[index].Index);
         if (index + 1 < enemiesToLink.Count)
           link.Append(':');
       }

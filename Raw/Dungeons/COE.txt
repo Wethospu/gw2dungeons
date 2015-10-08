@@ -171,11 +171,11 @@ youtube=dUS5vSiOHJ8|Video_guide (Banter Bill).
 Current record: record=27.
 tactic=coordinated
 In the beginning, use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying and wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying.
-Against the first enemy=Subject_Alpha_(first)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against the first enemy=Subject_Alpha_(first), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 After Alpha, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists.
-Against the second enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against the second enemy=Subject_Alpha_(second), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 Against enemy=Bjarl_the_Rampager, use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying and wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying.
-Against the final enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against the final enemy=Subject_Alpha_(third), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 tactic=rewards
 First run per day gives 1.81 gold and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
@@ -196,11 +196,11 @@ youtube=Dm955moa-jk|Video_guide (Banter Bill).
 Current record: record=28.
 tactic=coordinated
 In the beginning, use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying and wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying.
-Against the first enemy=Subject_Alpha_(first)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against the first enemy=Subject_Alpha_(first), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 After Alpha, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists.
-Against the second enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against the second enemy=Subject_Alpha_(second), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 Against enemy=Evolved_Husk, use wiki=Superior_Sigil_of_Force|Sigil_of_Force.
-Against the final enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against the final enemy=Subject_Alpha_(second), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 tactic=rewards
 First run per day gives 1.81 gold and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
@@ -221,11 +221,11 @@ youtube=vO-rQoUhlec|Video_guide (Banter Bill).
 Current record: record=29.
 tactic=coordinated
 In the beginning, use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying and wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying.
-Against the first enemy=Subject_Alpha_(first)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against the first enemy=Subject_Alpha_(first), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 After Alpha, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists.
-Against the second enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against the second enemy=Subject_Alpha_(second), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 Against enemy=Evolved_Destroyer, use wiki=Powerful_Potion_of_Destroyer_Slaying|Potion_of_Destroyer_Slaying and wiki=Superior_Sigil_of_Destroyer_Slaying|Sigil_of_Destroyer_Slaying.
-Against the final enemy=Subject_Alpha_(second)|Subject_Alpha, use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
+Against the final enemy=Subject_Alpha_(second), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 tactic=rewards
 First run per day gives 1.81 gold and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
@@ -639,6 +639,6 @@ Use wiki=Doom to fear Alpha to a corner.
 tactic=bug
 Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
 If enemy=Spire gets stuck you have to wait a while until you get the end reward.
-tactic=reward
+tactic=rewards
 There is a very low chance to get an account bound wiki=Prototype_Sheat from the final chest. It's account bound so it's not valuable.
 

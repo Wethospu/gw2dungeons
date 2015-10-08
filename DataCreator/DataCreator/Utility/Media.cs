@@ -18,6 +18,11 @@ namespace DataCreator.Utility
     public int Width = 0;
     public int Height = 0;
 
+    public Media()
+    {
+
+    }
+
     public Media(Media image)
     {
       if (image.Link != null)

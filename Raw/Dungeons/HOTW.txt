@@ -92,7 +92,7 @@ Keep Aegis up to prevent people getting covered by Ice.
 
 name=enemy=The_Huntsman:legendary and enemy=Bane's_Teeth:champion
 tactic=normal
-4 enemy=Ice_Sharks:champion on the water so stay close to the surface if you jump/fall down. Teeth is quite harmless but you should focus it down to reduce pressure (won't respawn even if you wipe). Dodge away if you see it glowing or spinning.
+4 enemy=Ice_Sharks:elite on the water so stay close to the surface if you jump/fall down. Teeth is quite harmless but you should focus it down to reduce pressure (won't respawn even if you wipe). Dodge away if you see it glowing or spinning.
 All the Huntsman's attacks deal very high or extreme damage.
 Most notable is Hunter's Call which makes birds attack one player. The only way to survive is to use immunity, dodge multiple times (4 for total coverage) or break line of sight. You can either run behind a structure or jump on water to break the line of sight. Sharks won't attack you as long as you stay away from them.
 All of the Huntsman's melee attacks and leaps do very high damage so you should keep him crippled/chilled and kite him. Melee is very risky and you really need to know what you are doing.
@@ -125,7 +125,8 @@ There is a very low chance to get an account bound wiki=Recipe:_Ring_of_Blood fr
 
 name=Start
 tactic=normal
-The first group has a enemy=Son_of_Svanir_(Bow):elite, a enemy=Son_of_Svanir_Berserker:elite and 2 enemy=Icebrood_Hunters:elite. The second group has 2 enemy=Icebrood_Seers:elite and 2 enemy=Corrupted_Ice_Turrets:structure. Destroy the turrets to open the door.
+# TODO: Son of Svanir enemies are randomized (at least Hammer, Berserker, Bow).
+The first group has a enemy=Son_of_Svanir_(Hammer):elite, a enemy=Son_of_Svanir_Berserker:elite and 2 enemy=Icebrood_Hunters:elite. The second group has 2 enemy=Icebrood_Seers:elite and 2 enemy=Corrupted_Ice_Turrets:structure. Destroy the turrets to open the door.
 After the door you will face 3 enemy=Icebrood_Hunters:elite and an enemy=Ice_Dragon_Totem_(PBAoE):structure. Bottom route has a enemy=Svanir_Ballista:structure, 2 enemy=Icebrood_Berserkers:elite, an enemy=Icebrood_Seer:elite and an enemy=Icebrood_Hunter:elite. Top route has 3 enemy=Icebrood_Wolves:elite, an enemy=Icebrood_wolf_(Rare):elite and an enemy=Ice_Dragon_Totem_(shooting):structure.
 tactic=optional
 Destroy a totem to complete an optional event.
@@ -289,7 +290,7 @@ You can permanently immobilize Fimbul to prevent him from reachinng his trigger 
 
 name=enemy=Sorge_the_Zealot:legendary
 tactic=normal
-First clear the room of enemy=Jellyfish:normal.
+First clear the room of enemy=Jellyfish:elite.
 His ranged attack does high damage. It is easy to avoid, just dodge when you see claw effect on you. He also occasionally sinks. It won't do much damage but it is a bit annoying.
 The biggest threat are the enemy=Giant_Arctic_Jellyfishes:elite which he summons. They detonate dealing very high damage so keep some distance and dodge at right time. He also summons enemy=Barracudas:normal which you should use to rally off of.
 tactic=rewards

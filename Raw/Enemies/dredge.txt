@@ -1,0 +1,1048 @@
+##################################################################
+# This file contains dredge enemies.                             #
+##################################################################
+
+##################################################################
+# Bosses.                                                        #
+##################################################################
+
+Name=Shukov
+ID=3257
+Path=SES|SE2
+
+attack=self
+effect=buff:invulnerability
+
+##################################################################
+
+Name=Foreman Kreutzerova
+ID=6764
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE2
+
+attack=Mace Smash
+ID=4512
+effect=melee
+subeffect=damage:0
+subeffect=knockback:0
+
+attack=Shock Wave
+ID=4510
+effect=projectile
+subeffect=damage:-
+subeffect=knockdown:0
+
+attack=Shield Bash
+ID=4509
+effect=melee
+subeffect=damage:-
+
+attack=Mending
+ID=4511
+animation=takes cover behind shield
+effect=channeled healing
+subeffect=healing:0
+
+##################################################################
+
+Name=Foreman Korov
+ID=6767
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE2
+
+attack=Explosive Shot
+ID=4488
+effect=projectile
+subeffect=damage:-
+subeffect=knockback:0
+
+attack=Sticky Bomb
+ID=4490
+effect=???
+
+##################################################################
+
+Name=Foreman Zeleoniy
+ID=6765
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE2
+
+attack=Slash
+ID=4623
+effect=melee
+subeffect=damage:-
+
+attack=Tunnel
+ID=4622
+effect=dash
+subeffect=damage:0
+subeffect=knockdown:0
+
+##################################################################
+
+Name=Foreman Tomak
+ID=6768
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE2
+
+attack=Grasping Earth
+ID=4621
+effect=???
+
+attack=Earthquake
+ID=1854
+effect=Melee
+subeffect=damage:-
+subeffect=knockback:0
+
+##################################################################
+
+Name=Foreman Webarov
+ID=6766
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+Path=SE2
+
+attack=Obliterate
+ID=2352
+effect=???
+
+attack=Gong
+ID=2353
+effect=???
+
+attack=Slash
+ID=2359
+effect=???
+
+attack=Shield Block
+ID=4489
+effect=buff:block
+
+attack=Summon Dredge
+ID=1859
+effect=summon 2 enemy=Dredge_Excavator_(Pickaxe):normal / enemy=Dredge_Excavator_(Tunneler):normal / enemy=Dredge_Disaggregator:normal / enemy=Ratnik:normal
+
+##################################################################
+
+Name=General Volkov
+ID=6399
+image=http://wiki.guildwars2.com/images/3/32/Molten_Excavator.jpg
+Path=SE3
+
+attack=Claw Slash
+ID=4579
+cooldown=0
+effect=melee
+subeffect=damage:0.2
+subeffect=Bleeding:0:5
+effect=if target has 10 stacks of bleeding
+subeffect=swiftness:0
+subeffect=quickness:0
+#note=block/evade, remove bleeding if you get too many stacks
+
+attack=Claw Smash
+ID=4578
+animation=glows
+effect=melee
+subeffect=damage:0.6
+subeffect=bleeding:0:3
+subeffect=knockdown:0
+subeffect=buff:projectile_reflection:5
+#note=block/evade
+
+attack=Tunnel
+ID=4577
+animation=burrows and moves underground
+additional=only used at distant targets
+effect=dash with PBAoE
+subeffect=damage:0
+effect=end effect
+subeffect=damage:0
+#note=evade
+
+##################################################################
+
+Name=General Molradovich
+ID=6424
+image=http://wiki.guildwars2.com/images/4/48/Dredge_Resonator.jpg
+Path=SE3
+
+attack=doesn't move
+
+attack=Fireball
+ID=4516
+cooldown=0
+effect=3 projectiles
+subeffect=damage:-
+#note=sidestep, block/evade or tank
+
+attack=Wreath of Flame
+ID=4515
+effect=ranged
+subeffect=buff:Wreath_of_Flame:0:1:-
+
+attack="Wreath of Flame"
+effect=aura
+subeffect=damage:0
+subeffect=Breath_of_Flame
+#note=spreads to allies
+#note=stand at water-spring to extinguish
+
+attack=Pull (1)
+ID=4517
+animation=raises staff
+effect=PBAoE
+subeffect=pull:0
+#note=evade and get out of range
+
+attack=Meteor Shower (2)
+effect=short shower
+count=?
+subeffect=damage:0.5
+
+##################################################################
+
+Name=General Zadorojny
+ID=10723
+level=68
+image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
+Path=SE3
+
+attack=Slash
+ID=4612
+effect=3 projectiles (cone)
+subeffect=damage:0
+#note=only one will hit as long as you don't hug him
+
+attack=Obliterate
+ID=4610
+animation=glows
+effect=projectile
+subeffect=damage:0
+
+attack=Gong
+effect=buff:burning_aura
+
+##################################################################
+
+Name=Taskmaster
+ID=6798
+Path=SE2
+
+attack=Slashing Spike
+ID=4617
+effect=???
+
+attack=Pulse of Earth
+ID=4615
+effect=multiple PBAoEs
+count=?
+subeffect=damage:-
+
+attack=Impale
+ID=4618
+effect=???
+
+attack=Shield of Earth
+ID=4616
+effect=Gets shielded
+
+##################################################################
+
+name=Weapons Test Engineer
+ID=12900
+scaling=constant
+path=Furn
+
+attack=Sonic Shot
+ID=22167
+cooldown=1.75
+animation=slightly raises run and aims|0.75|shoots a brown line
+effect=piercing projectile
+subeffect=damage:0.3
+#note=block/evade/tank at melee
+#note=sidestep at range
+
+attack=Fore Stomper
+ID=22166
+animation=kneels with gun forward and waves it|1.5|shoots a white cone
+cooldown=13
+effect=cone
+subeffect=Causes nearby enemy=Crushers:structure to hit
+#note=Try to stay at between them so you can jump over both waves
+
+attack=Flame Vortex
+ID=22164
+cooldown=14
+animation=kneels and channels fire on the ground|2.25|shoots 3 fiery tornadoes
+effect=3 piercing projectiles (cone)
+subeffect=damage:-
+subeffect=launch:2.4
+subeffect=agony:3
+#note=evade at melee
+#note=sidestep at range
+
+attack=Impale (1)
+ID=22165
+cooldown=17
+animation=kneels back with the gun behind back and thrusts|0.9
+effect=melee
+subeffect=damage:-
+subeffect=stun:2
+#note=keep circling at melee (dodge if needed)
+#note=stun break and dodge if you get hit
+
+attack=Impale (2)
+animation=pulls the gun back|0.5
+effect=melee
+subeffect=damage:0.6
+subeffect=knockback:1.5
+subeffect=burning:5
+
+##################################################################
+
+name=Rabsovich
+ID=11241
+scaling=champion
+image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
+path=Under
+
+attack=Shock Wave
+ID=15962
+animation=charge animation
+additional=can't be blocked
+effect=projectile
+subeffect=damage-percent:90
+
+attack=Slice
+ID=15972
+effect=melee
+subeffect=damage:-
+
+attack=Shield Block
+ID=1430
+animation=kneels||hides behind shield
+effect=buff:block
+subeffect=daze:1 when hit
+
+attack=Mending
+ID=15961
+animation=instant||weird sound
+additional=maximum amount of 1. Easily interruptable.
+effect=summon a enemy=Dredge_Disaggregator:veteran
+effect=channeled
+subeffect=healing
+#note=Interrupt to stop (at least knockdown should work).
+
+##################################################################
+
+name=Dredge Powersuit
+ID=11239
+scaling=legendary
+image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
+path=Under
+
+attack=15955
+ID=1437
+animation=pulls right arm back
+effect=2 wide melee hits
+count=2
+length=0.25
+subeffect=damage:0
+subeffect=bleeding:4
+#note=evade
+
+attack=Smash
+ID=15958
+animation=glows and smashes ground
+additional=hits entire room
+effect=self-buff
+subeffect=stability:3
+effect=3 huge growing PBAoEs in 3 s
+count=3
+length=3
+subeffect=damage:0
+subeffect=agony:3
+#note=evade twice (needs proper timing)
+
+attack=Bomb
+ID=15956
+animation=raises both arms
+effect=2 waves of multiple projectiles with delayed AoE
+count=?
+subeffect=damage:0
+#note=try to walk out, evade if needed
+#note=area anti projectile skills are very effective
+#note=reflected projectiles deal no damage to Powersuit
+
+attack=Shock Wave
+ID=15959
+animation=jumps
+additional=can't be blocked
+effect=multiple short-range projectile (360 degrees)
+subeffect=damage:0
+#note=evade, tank or out-range
+
+attack=Mending
+ID=15960
+animation=sits down
+effect=channeled heal
+subeffect=Healing:0
+#note=interrupt (if "Superheated" damage automatically interrupts)
+#note=can be interrupted with Knockback or launch
+
+##################################################################
+# Other.                                                         #
+##################################################################
+
+Name=Dredge Soldier (Weapon)
+ID=10006
+alt=Dredge Soldiers (Weapon)|Soldier (Weapon)|Soldiers (Weapon)
+Path=SES
+
+tactic=normal
+Becomes a normal enemy=Soldier:elite after attacking enough times.
+
+attack=immune to blind
+
+attack=Hip Shot
+animation=turns toward target|0.5|shoots a bullet
+cooldown=1.5
+effect=fast homing projectile
+subeffect=damage:0.35
+#note=Tank, block or evade
+
+attack=Net Shot (1)
+cooldown=14
+animation=looks up and kneels|1|shoots a net
+effect=ballistic projectile
+subeffect=damage:0.35
+subeffect=immobilized:5
+#note=block or evade
+#note=side step at range
+
+attack=Jump Shot (2)
+animation=instant|0|explosion at target
+effect=AoE
+subeffect=damage:0.35
+effect=Dash to target with PBAoE at end
+subeffect=damage:0.35
+
+attack=Overcharged Shot
+animation=looks bit up, raises gun a bit and moves away|0.5
+effect=melee
+subeffect=damage:0.5
+subeffect=launch:3.3
+effect=moves back
+#note=be ready to block or evade at close range
+
+##################################################################
+
+name=Dredge Mining Suit
+ID=10004
+alt=Dredge Mining Suits
+image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
+path=SES|SE2
+
+attack=Immune to blind
+
+attack=Slash
+ID=1437
+animation=pulls right arm back
+cooldown=0
+effect=2 melee hits
+count=2
+length=0.25
+subeffect=damage:-
+
+attack=Summon Dredge
+ID=1859
+animation=sits down
+effect=summon 2 enemy=Dredge_Excavator_(Pickaxe):normal / enemy=Dredge_Excavator_(Tunneler):normal / enemy=Dredge_Disaggregator:normal / enemy=Ratnik:normal
+
+attack=Pummel (1)
+ID=1438
+animation=pulls left arm back
+effect=Melee
+subeffect=damage:-
+subeffect=stun:2
+
+attack=Pummel (2)
+effect=3 melee hits in 2 s
+count=3
+length=2
+subeffect=damage:0.4
+subeffect=bleeding:8.5
+
+#############################
+
+copy=10004
+ID=7593
+scaling=normal
+path=Under
+
+#############################
+
+copy=10004
+ID=12918
+scaling=level
+path=Thauma
+
+##################################################################
+
+name=Dredge Oscillator
+ID=10003
+alt=Dredge Oscillators|Oscillator|Oscillators
+image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
+path=SE2
+
+attack=Immune to blind
+
+attack=Shock Wave
+ID=1843
+animation=Swings right arm back|1.25
+cooldown=3.5
+effect=3 piercing projectiles (cone)
+count=3
+subeffect=damage:-
+#note=evade (especially if at close range)
+
+attack=Uppercut
+ID=1837
+cooldown=14
+animation=Swings right arm|0.2
+effect=melee
+subeffect=damage:-
+subeffect=knockback:1.5
+
+#############################
+
+copy=10003
+ID=4297
+scaling=normal
+path=Under
+
+#############################
+
+copy=10003
+# Internal: ID 13633 has a weapon with higher rarity.
+ID=11233
+scaling=normal
+path=Under
+
+##################################################################
+
+# Internal: Different weapon but data seemed same.
+copy=10003
+name=Molten Oscillator
+ID=12089
+alt=Molten Oscillators
+image=http://wiki.guildwars2.com/images/c/cb/Molten_Oscillator.jpg
+type=molten
+scaling=level
+path=Furn
+
+##################################################################
+
+name=Dredge Reverberant (Sonic)
+ID=13626
+alt=Dredge Reverberants (Sonic)
+image=http://wiki.guildwars2.com/images/c/c3/Veteran_Dredge_Reverberant.jpg
+scaling=normal
+path=Under
+
+attack=Immune to blind
+
+attack=Shoot
+ID=1423
+animation=raises rifle and aims|0.75|shoots a bullet
+cooldown=3
+effect=fast projectile
+subeffect=damage:-
+
+attack=Bayonet Thrust
+ID=1424
+cooldown=24
+animation=swings rifle from right|0.9
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:8
+
+attack=Sonic Blast
+ID=1425
+cooldown=28
+animation=raises head and kneels|2.25|sprays air
+effect=cone
+subeffect=damage:-
+subeffect=daze:2
+subeffect=vulnerability:8
+
+#############################
+
+copy=13626
+# Internal: Different skill ID (no difference).
+ID=10006
+Path=SE2|SE3
+
+#############################
+
+copy=10006
+Name=Dredge Soldier
+alt=Dredge Soldiers|Soldier|Soldiers
+Path=SES
+
+#############################
+
+copy=13626
+name=Dredge Ratnik
+# Internal: ID 5045 is about same but has different weapon buff.
+ID=13628
+alt=Dredge Ratniks|Ratnik|Ratniks
+image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
+path=Under|Thauma|SES|SE2
+
+#############################
+
+copy=13626
+name=Molten Reverberant
+ID=12892
+scaling=normal
+path=Molten
+
+##################################################################
+
+Name=Dredge Reverberant (Zap)
+ID=8632
+alt=Dredge Reverberants (Zap)
+image=http://wiki.guildwars2.com/images/c/c3/Veteran_Dredge_Reverberant.jpg
+Path=SE2|SE3
+
+attack=immune to blind
+
+attack=Zap
+ID=4584
+effect=projectile
+subeffect=damage:-
+
+attack=Zap
+ID=4586
+effect=melee
+subeffect=damage:-
+subeffect=crippled:3
+subeffect=daze:2
+
+attack=Aim (1)
+ID=4585
+animation=purple beam
+effect=7 ranged hits in 3 s
+count=7
+length=3
+subeffect=vulnerability:6
+
+#############################
+
+copy=8632
+ID=8633
+
+#############################
+
+copy=8633
+name=Dredge Rifleman
+alt=Dredge Riflemen|Rifleman|Riflemen
+path=SE2
+
+##################################################################
+
+name=Dredge Excavator (Tunneler)
+ID=10002
+alt=Dredge Excavators (Tunneler)|Excavator (Tunneler)|Excavators (Tunneler)
+image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
+path=SES|SE2
+
+##################################################################
+
+name=Dredge Excavator (Pickaxe)
+# VERIFY 8630
+ID=8680
+alt=Dredge Excavators (Pickaxe)|Excavator (Pickaxe)|Excavators (Pickaxe)
+image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
+path=SES|SE2
+
+#############################
+
+# Let's merge some enemies to create a normal tunneler.
+copy=10002
+ID=8680
+
+##################################################################
+
+name=Dredge Resonator
+ID=10005
+alt=Dredge Resonators
+image=http://wiki.guildwars2.com/images/4/48/Dredge_Resonator.jpg
+path=SE2
+
+attack=Immune to blind
+
+attack=Shockwave
+ID=1434
+animation=swings staff right and then forward|1.5
+cooldown=0
+effect=3 piercing projectiles in 0.8 s
+count=3
+length=0.8
+subeffect=damage:-
+
+attack=Earthquake
+ID=1854
+animation=raises staff and hits ground|1.5
+effect=PBAoE
+subeffect=damage:-
+subeffect=knockdown:2
+
+#############################
+
+copy=10005
+ID=1898
+scaling=normal
+path=Under
+
+#############################
+
+copy=10005
+# VERIFY 5046
+ID=13631
+scaling=normal
+path=Under
+
+##################################################################
+
+name=Molten Resonator
+ID=12087
+image=http://wiki.guildwars2.com/images/f/f9/Molten_Resonator.jpg
+scaling=level
+path=Furn
+
+attack=Immune to blind
+
+attack=Shockj Wave
+ID=1434
+animation=swings staff right and then forward|1.5
+cooldown=4.5
+effect=3 piercing projectiles in 0.8 s
+count=3
+length=0.8
+subeffect=damage:-
+#note=evade
+
+attack=Earthquake
+ID=1854
+cooldown=18
+animation=raises staff over head and smashes ground|1.5
+effect=PBAoE
+subeffect=damage:-
+# VERIFY knockdown or launch.
+subeffect=launch:2.4
+#note=block/evade
+
+
+##################################################################
+
+name=Dredge Disaggregator
+ID=10007
+alt=Dredge Disaggregators
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+path=SES|SE2
+
+attack=Immune to blind
+
+attack=Slice
+ID=1705
+animation=swings mace|0.2
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Shield Bash
+ID=1852
+animation=swings shield|0.5
+effect=melee
+subeffect=damage:-
+subeffect=daze:3
+
+attack=Gong
+ID=1844
+animation=instant||plays gong 4 times
+cooldown=20
+effect=4 PBAoEs in 5.5 s
+count=4
+length=5.5
+subeffect=might:8
+subeffect=swiftness:8
+subeffect=protection:8
+subeffect=regeneration:8
+
+#############################
+
+copy=10007
+# ID 11243 has different stats (summoned by Rabsovich?).
+ID=11234
+scaling=normal
+path=Under
+
+#############################
+
+copy=10007
+# Internal: Different level requirement on Gong.
+ID=13625
+scaling=normal
+path=Under
+
+#############################
+
+copy=10007
+ID=12917
+scaling=level
+path=Thauma
+
+#############################
+
+copy=10007
+# Internal: Different level requirement on Gong.
+ID=5043
+scaling=level
+path=Thauma|SES|SE2
+
+##################################################################
+
+name=Molten Disaggregator
+ID=12893
+alt=Molten Disaggregators|Disaggregator|Disaggregators
+image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
+scaling=normal
+path=Molten
+
+attack=Immune to blind
+
+attack=Slice
+ID=1705
+animation=swings mace|0.2
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Shield Bash
+ID=1852
+animation=swings shield|0.5
+effect=melee
+subeffect=damage:-
+subeffect=daze:3
+
+# VERIFY is this attack really different from Dredge Disaggregator's Gong.
+attack=Gong
+ID=1844
+animation=instant||plays gong 3 times
+cooldown=20
+effect=3 PBAoEs in 2.5 s
+count=3
+length=2.5
+subeffect=might:8
+subeffect=swiftness:8
+subeffect=protection:8
+subeffect=regeneration:8
+
+#############################
+
+copy=12893
+ID=11664
+scaling=champion
+path=Furn
+
+##################################################################
+
+Name=Dredge Bomber
+ID=8635
+alt=Dredge Bombers|Bomber|Bombers
+Path=SES|SE2|SE3
+
+attack=immune to blind
+
+attack=Molachev Coctail
+ID=4561
+effect=projectile with AoE
+subeffect=damage:-
+subeffect=burning:4
+
+attack=Molachev Coctail
+ID=4581
+effect=projectile with AoE
+subeffect=damage:-
+subeffect=burning:4
+#note=visually bugged: looks like 3 projectiles
+
+# Internal: Skill Molachev Coctail (short range) also listed.
+
+#############################
+
+copy=8635
+ID=8801
+Path=SE3
+level=66
+
+#############################
+
+copy=8635
+name=Sentry
+ID=8635
+alt=Sentries
+
+##################################################################
+
+name=Dredge Excavator (Pickaxe)
+ID=13627
+alt=Dredge Excavators (Pickaxe)
+image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
+path=Under
+scaling=normal
+
+attack=Immune to blind
+
+attack=Slice
+ID=1705
+effect=melee
+subeffect=damage:-
+
+attack=Slash
+ID=1439
+effect=Melee
+subeffect=damage:-
+
+attack=Helmet Splitter
+ID=1709
+animation=mines with pickaxe
+effect=Melee
+subeffect=damage:-
+subeffect=vulnerability:8
+#note=only first hit actually does anything
+
+attack=Pickup a Weapon
+effect=Interacts with dead Dredge or items and transforms
+
+#############################
+
+copy=13627
+# Internal: Has a different buff.
+ID=5806
+scaling=level
+# Internal: May also exist in Under.
+path=Thauma
+
+##################################################################
+
+name=Dredge Excavator (Tunneler)
+# VERIFY 11237
+ID=8637
+alt=Dredge Excavators (Tunneler)
+image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
+path=Under
+scaling=normal
+
+attack=Immune to blind
+
+attack=Slash
+ID=1707
+cooldown=0
+effect=Melee
+subeffect=damage:-
+subeffect=bleeding:8
+
+attack=Tunnel
+ID=1704
+effect=dash with small PBAoE
+count=?
+subeffect=damage:0
+effect=end effect
+subeffect=damage:0
+subeffect=knockdown:2
+
+#############################
+
+copy=8637
+ID=13634
+
+#############################
+
+copy=13634
+# Internal: Has a different flags.
+ID=13871
+scaling=level
+path=Thauma
+
+##################################################################
+
+name=Dredge Strazar
+ID=11236
+alt=Dredge Strazars
+scaling=normal
+path=Under
+
+attack=Immune to blind
+
+attack=Shoot
+ID=1423
+cooldown=0
+effect=projectile
+subeffect=damage:-
+
+attack=Sniper Shot
+ID=1427
+effect=projectile
+subeffect=damage:-
+
+attack=Sonic Blast
+ID=1425
+animation=kneels and aims||weird sound
+effect=cone
+subeffect=damage:-
+subeffect=vulnerability:8
+
+##################################################################
+
+name=Molten Protector
+ID=12927
+image=http://wiki.guildwars2.com/images/7/73/Veteran_Molten_Protector.jpg
+scaling=normal
+path=Furn
+
+attack=Slice
+ID=17915
+animation=swings mace|0.25
+cooldown=3.5
+effect=melee
+subeffect=damage:-
+
+attack=Shield Bash
+ID=17916
+cooldown=11
+animation=turns right and swings shield|0.5
+effect=melee
+subeffect=damage:-
+subeffect=daze:3
+subeffect=burning:1
+
+attack=Protective Shield
+ID=17917
+animation=moves mace behind back and hits the shield|1
+effect=ticking AoE field (14.5 s)
+frequency=2
+subeffect=buff:"Shielded":2
+effect=when passing
+subeffect=burning:1
+#note=try to interrupt. It that fails, let enemies walk out of it or use Pull, Knockback and launch.
+#note=Total duration is 16.5 s
+
+attack="Shielded"
+effect=buff
+subeffect=take no damage
+
+

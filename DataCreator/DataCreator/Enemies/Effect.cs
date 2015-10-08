@@ -15,13 +15,13 @@ namespace DataCreator.Enemies
 
   public class Effect
   {
-    private string _type;
+    public string _type;
     // How many times this effects hit. -1 means variable or unknown. / 2015-09-29 / Wethospu
     public int HitCount;
     public double HitLength;
     // Auras don't really have length so count doesnt make sense. Frequence is used for them. / 2015-09-29 / Wethospu
     public double HitFrequency;
-    public readonly List<string> SubEffects = new List<string>();
+    public List<string> SubEffects = new List<string>();
 
     public Effect(string type)
     {
@@ -29,15 +29,6 @@ namespace DataCreator.Enemies
       HitLength = 0.0;
       HitFrequency = 0.0;
       _type = type;
-    }
-
-    public Effect(Effect toCopy)
-    {
-      _type = string.Copy(toCopy._type);
-      HitCount = toCopy.HitCount;
-      HitLength = toCopy.HitLength;
-      foreach (var subeEffect in toCopy.SubEffects)
-        SubEffects.Add(string.Copy(subeEffect));
     }
 
     /***********************************************************************************************
@@ -134,7 +125,7 @@ namespace DataCreator.Enemies
           effectIndex--;
         if (effectIndex - index - 1 < 1)
         {
-          Helper.ShowWarningMessage("Something wrong with line " + original + ". Note: ':' can't be used in text!");
+          Helper.ShowWarningMessage("Enemy " + baseEnemy.Name + ": Something wrong with line '" + original + "'. Note: ':' can't be used in text!");
           effectStr = effectStr.Remove(index, 1);
           continue;
         }

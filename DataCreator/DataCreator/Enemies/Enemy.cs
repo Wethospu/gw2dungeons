@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using DataCreator.Utility;
 using DataCreator.Shared;
+using System.Linq;
 
 namespace DataCreator.Enemies
 {
@@ -18,13 +19,10 @@ namespace DataCreator.Enemies
   {
     public string Name = "";
     public int Index = 0;
-    // Order number of this enemy in the enemy file. Needed for faster/simpler enemy linking. / 2015-08-11 / Wethospu
-    public int FileIndex = 0;
     public string Rank = "";
     // Alternative names for links and search. Guaranteed to be lower case without special marks.
     public List<string> AltNames { get; private set; }
     public List<string> Paths = new List<string>();
-    public string Potion = "";
     public EnemyAttributes Attributes = new EnemyAttributes();
     // This tracks how valid current tactics are. It's needed to pick the best tactics when copying them from encounters. / 2015-08-09 / Wethospu
     public double TacticValidity = 0.0;
@@ -32,24 +30,10 @@ namespace DataCreator.Enemies
     public List<Media> Medias = new List<Media>();
     public SortedSet<string> Tags = new SortedSet<string>();
     public SortedSet<int> InternalIds = new SortedSet<int>();
-    public bool IsCopy = false;
+    public bool IsNameCopied = false;
+    public bool AreAnimationsCopied = false;
+    public int Level = 0;
 
-    private int _level = 0;
-    private bool _useCustomPath = false;
-    public int Level
-    {
-      get
-      {
-        if (_useCustomPath)
-          return _level;
-        return Gw2Helper.PathToLevel(Paths[0]);
-      }
-      set
-      {
-        _useCustomPath = true;
-        _level = value;
-      }
-    }
     public readonly List<Attack> Attacks = new List<Attack>();
     // Scaling variables.
     public string ScalingType = "";
@@ -66,30 +50,6 @@ namespace DataCreator.Enemies
       : this()
     {
       Name = name;
-    }
-
-    public Enemy(Enemy toCopy)
-      : this()
-    {
-      Name = string.Copy(toCopy.Name);
-      foreach (var alt in toCopy.AltNames)
-        AltNames.Add(alt);
-      Rank = string.Copy(toCopy.Rank);
-      foreach (var path in toCopy.Paths)
-        Paths.Add(string.Copy(path));
-      Potion = string.Copy(toCopy.Potion);
-      Level = toCopy.Level;
-      ScalingType = string.Copy(toCopy.ScalingType);
-      ScalingLevel = toCopy.ScalingLevel;
-      ScalingFractal = toCopy.ScalingFractal;
-      foreach (var media in toCopy.Medias)
-        Medias.Add(new Media(media));
-      Tactics = new TacticList(toCopy.Tactics);
-      foreach (var attack in toCopy.Attacks)
-        Attacks.Add(new Attack(attack));
-      foreach (var tag in toCopy.Tags)
-        Tags.Add(tag);
-      IsCopy = true;
     }
 
     /***********************************************************************************************
@@ -125,21 +85,24 @@ namespace DataCreator.Enemies
         Helper.ShowWarningMessage("Unrecognized stuff when sorting enemies. Something is seriously wrong!");
         return 0;
       }
+      // Compare ids.
+      var id1 = InternalIds.Count > 0 ? InternalIds.First() : 0;
+      var id2 = toCompare.InternalIds.Count > 0 ? toCompare.InternalIds.First() : 0;
+      if (id1 != id2)
+        return id1 - id2;
       // Compare name.
       var result = string.Compare(Name, toCompare.Name);
+      if (result != 0)
+        return result;
+      // If same, compare category.
+      result = CategoryToInt(Rank) - CategoryToInt(toCompare.Rank);
+      if (result != 0)
+        return result;
+      // If same, compare level.
+      result = Level - toCompare.Level;
       if (result == 0)
-      {
-        // If same, compare category.
-        result = CategoryToInt(Rank) - CategoryToInt(toCompare.Rank);
-        if (result == 0)
-        {
-          // If same, compare level.
-          result = Level - toCompare.Level;
-          if (result == 0)
-            // If same, compare path.
-            result = string.Compare(string.Join("|", Paths), string.Join("|", toCompare.Paths));
-        }
-      }
+        // If same, compare path.
+        result = string.Compare(string.Join("|", Paths), string.Join("|", toCompare.Paths));
       if (result == 0)
         Helper.ShowWarningMessage("Couldn't figure out order for enemies " + Name + " and " + toCompare.Name + ". Either program failed or there are duplicates.");
       return result;
@@ -188,9 +151,8 @@ namespace DataCreator.Enemies
       htmlBuilder.Append("\"");
       htmlBuilder.Append(" data-category=\"").Append(Helper.Simplify(Rank)).Append("\"");
       htmlBuilder.Append(" data-path=\"").Append(Helper.Simplify(string.Join("|", Paths))).Append("\"");
-      htmlBuilder.Append(" data-potion=\"").Append(Helper.Simplify(Potion)).Append("\"");
       // Only add non-default path info. / 2015-09-39 / Wethospu
-      if (_useCustomPath)
+      if (Level > 0)
         htmlBuilder.Append(" data-level=\"").Append(Level).Append("\"");
       htmlBuilder.Append(Attributes.ToHtml());
       

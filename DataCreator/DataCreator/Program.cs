@@ -290,11 +290,11 @@ namespace DataCreator
       Constants.Initialize(key.Key == ConsoleKey.D4);
       CheckInternetSettings();
       LoadSettings();
-      Dictionary<string, EnemyAttributes> enemyData;
+      Dictionary<string, EnemyAttributes> enemyAttributes;
       using (StreamReader r = new StreamReader(Constants.DataEnemyRaw + "data.json"))
       {
         string json = r.ReadToEnd();
-        enemyData = JsonConvert.DeserializeObject<Dictionary<string, EnemyAttributes>>(json);
+        enemyAttributes = JsonConvert.DeserializeObject<Dictionary<string, EnemyAttributes>>(json);
       }
       Constants.UniqueIndexCounter = 0;
       string[] toGenerate = { "ac", "cm", "ta", "se", "cof", "hotw", "coe", "arah", "fotm" };
@@ -305,9 +305,13 @@ namespace DataCreator
       var indexFile = new StringBuilder();
       indexFile.Append(Constants.InitialdataHtml);
       indexFile.Append(Constants.InitialDataIndex);
+      // Generate enemies with help of datamined information. / 2015-10-05 / Wethospu
+      var enemyData = EnemyGenerator.GenerateEnemies(enemyAttributes);
+      
       var dungeonData = new DataCollector();
       foreach (var dungeon in toGenerate)
         GenerateDungeon(dungeon, indexFile, dungeonData, enemyData);
+      EnemyGenerator.GenerateFile(enemyData, indexFile, dungeonData);
       var fileName = Constants.DataOutput + Constants.DataEnemyResult + "indexfile.htm";
       File.WriteAllText(fileName, indexFile.ToString());
       OtherGenerator.GenerateOthers(dungeonData);
@@ -358,15 +362,13 @@ namespace DataCreator
     *                                                                                              *
     ***********************************************************************************************/
 
-    static void GenerateDungeon(string dungeon, StringBuilder indexFile, DataCollector dungeonData, Dictionary<string, EnemyAttributes> enemyAttributes)
+    static void GenerateDungeon(string dungeon, StringBuilder indexFile, DataCollector dungeonData, List<Enemy> enemyData)
     {
       Console.WriteLine("Dungeon " + dungeon.ToUpper());
       LinkGenerator.CurrentDungeon = dungeon;
       // Read and generate data. / 2015-08-09 / Wethospu
-      var enemyData = EnemyGenerator.GenerateEnemies(dungeon, enemyAttributes);
       var encounterData = EncounterGenerator.GeneratePaths(dungeon, enemyData);     
       EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, enemyData);
-      EnemyGenerator.GenerateFiles(enemyData, dungeon, indexFile, dungeonData);
       if (encounterData.Paths == null)
         return;
       dungeonData.AddDungeon(dungeon, encounterData.Paths);

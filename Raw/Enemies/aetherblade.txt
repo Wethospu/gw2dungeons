@@ -1,0 +1,920 @@
+##################################################################
+# This file contains aetherblade enemies.                        #
+##################################################################
+
+name=Slick
+ID=12750
+path=TAAE
+
+attack=Tar Pool (1)
+ID=21536
+cooldown=15
+animation=knees, glows and aims with weird sound|1
+additional=cannot be blocked, evaded or interrupted
+effect=piercing ranged (hits 3 times)
+count=3
+subeffect=damage:-
+subeffect=crippled:0
+effect=Creates a "Tar Pool".
+#note=Pull enemy=Oil-Absorbing_Ooze:normal to remove
+
+attack=Tar Pool (2)
+additional=Used after 75%. Same as above.
+
+attack="Tar Pool"
+effect=ticking AoE (tick per second)
+subeffect=crippled:1
+subeffect=buff:Tar:5
+effect=huge aura
+subeffect=damage-constant:200| per second
+#note=Actually you get a debuff for one second every two seconds. This debuff does damage at start and end resulting in constant damage but flickering debuffs.
+#note=It doesn't cover entire room. If you get really low health you can attempt to get out of combat (but don't do this if Ooze is following you).
+
+attack="Tar"
+additional=doesn't stack
+effect=debuff
+subeffect=Burning lasts longer
+
+attack=Tranquilizer Dart
+ID=21541
+cooldown=10
+animation=raises gun and aims|0.5|shoots a blue line
+effect=projectile
+subeffect=damage:-
+subeffect=weakness:6
+subeffect=bleeding:5:3
+
+attack=Attraction
+ID=21555
+cooldown=30
+animation=raises gun and aims|0.5|shoots a green gas ball
+effect=piercing ranged attack
+subeffect=Buff (40 s?) which attracts enemy=Oil-Absorbing_Ooze:normal
+
+attack=Fear
+ID=21540
+animation=jumps up|0.5
+additional=Used after 50%.
+
+attack=Enrage
+additional=Used when enemy=Sparki:legendary gets to 25%
+effect=buff
+subeffect=more damage and reduced cooldowns
+
+##################################################################
+
+name=Sparki
+ID=12751
+path=TAAE
+
+attack=Flame Blast
+ID=21530
+animation=jumps little and aims with right arm|0.8|shoots a fireball
+cooldown=4
+additional=Cooldown reduced to 2 s when Enraged.
+effect=projectile with AoE
+count=2
+subeffect=damage:-
+subeffect=Turns "Tar Pools" to "Toxic Flammable Pools".
+effect=when Enraged (30% more damage)
+count=2
+subeffect=damage:0.325
+
+attack="Toxic Flammable Pool"
+effect=ticking AoE
+subeffect=damage:0.2
+subeffect=burning:10
+#note=Actual attack name is "Tar Pool".
+#note=Don't stand in them. Take condition removal.
+
+attack=Backdraft (1)
+ID=21531
+cooldown=20
+animation=raises arms|0.75
+effect=cone
+subeffect=damage:-
+subeffect=pull:1.5
+effect=when Enraged (35% more damage)
+subeffect=damage:0
+#note=If you get pulled prepare to block or evade Punch
+
+attack=Flame Punch (1 / 2)
+ID=21534
+cooldown=7
+animation=bends forward|0.9|jumps and moves arms in air
+effect=leap (0.6 s)
+subeffect=damage:-
+subeffect=burning:5
+subeffect=knockback:1.5
+#note=block or evade
+
+attack=Ground Bloom
+ID=21535
+animation=spreads arms and starts spinning|1.5|spins and shoots orange lines
+additional=Used after 75%. Cannot be blocked.
+effect=~100 projectiles in 8 s (360 degrees)
+count=10
+length=8
+subeffect=damage:0.2
+subeffect=burning:2
+
+attack=Fear
+ID=21532
+animation=jumps up|0.5
+additional=Used after 50%.
+
+attack=Enrage
+additional=Used when enemy=Slick:legendary gets to 25%
+effect=buff
+subeffect=more damage, reduced cooldowns and a fiery glow
+
+attack="Hot Feet"
+additional=Activates when Enrages.
+effect=aura (if not moving)
+frequency=3
+subeffect=burning:3
+#note=Even small stop may cause burning if you stop at right moment
+#note=Mobility skills don't count as moving (needs testing).
+
+##################################################################
+
+name=Oil-Absorbing Ooze
+ID=12752
+path=TAAE
+
+attack=Massive Pummel
+ID=21562
+cooldown=3.5
+animation=spins head|1.75
+additional=Cannot be blocked.
+effect=melee
+subeffect=damage-percent:75
+#note=Keep kiting away
+
+attack=Life Steal
+ID=21563
+effect=???
+subeffect=damage:2799470
+
+attack=Consume Oil
+animation=looks stupid|1
+effect=melee
+subeffect=Removes a "Tar Pool"
+subeffect=buff:energized:35:1:-
+
+attack="Energized"
+effect=buff
+subeffect=???
+
+##################################################################
+
+name=Aetherblade Foreman Spur
+ID=12749
+path=TAAE
+
+attack=Cyclone Axe
+cooldown=2
+effect=2 melee hits in 0.3 s
+count=2
+length=0.3
+subeffect=damage:3143527
+subeffect=swiftness:5
+subeffect=vulnerability:8:2
+
+attack=Dual Strike
+cooldown=2
+effect=2 melee hits
+count=2
+subeffect=damage:3158486
+subeffect=fury:3
+subeffect=crippled:3
+
+attack=Thrown Axe
+cooldown=9
+effect=4 delayed (0.5 s) AoEs
+subeffect=damage:4430001
+effect=after 2 s
+subeffect="Axe Grind"
+
+attack="Axe Grind"
+effect=ticking AoE (hits every second)
+subeffect=damage:13255811
+subeffect=bleeding:5
+subeffect=crippled:5
+subeffect=vulnerability:5
+
+attack=Axe Spin (1)
+cooldown=20
+animation=spins clockwise|1
+effect=during cast and attack
+subeffect=buff:evade
+subeffect=buff:projectile_reflection
+effect=melee
+subeffect=damage-percent:5
+subeffect=pull:1.5
+effect=dash with big PBAoE (12 hits in 1.5 s)
+count=12
+length=1.5
+subeffect=damage-percent:5
+subeffect=bleeding:5
+subeffect=crippled:5
+subeffect=vulnerability:5
+effect=end
+subeffect=damage-percent:5
+subeffect=bleeding:5
+subeffect=crippled:5
+subeffect=vulnerability:5
+subeffect=launch:2.3
+effect=if no target hit
+subeffect=stun:2| on itself
+
+attack=Wind (2)
+additional=used after 75%
+effect=ring
+subeffect=destroys projectiles and prevents moving out (you can get in though).
+#note=Stability doesn't seem to work.
+
+##################################################################
+
+name=Clockheart
+ID=12753
+path=TAAE
+
+attack=Short Jab
+cooldown=2
+animation=raises left/right arm and smashes|0.5
+effect=melee
+subeffect=damage:3310213
+subeffect=vulnerability:10
+
+attack=Long Jab
+cooldown=2
+animation=raises left/right arm and smashes|0.5
+effect=melee
+subeffect=damage:3314487
+subeffect=weakness:10
+
+attack=Gear Grind
+ID=21584
+animation=raises arms a bit and moves head forward|1
+additional=Scales with amount of targets at range. Minimum-range (melee).
+effect=multiple projectiles with delayed ticking AoEs over area
+subeffect=damage:8280875
+subeffect=crippled:2
+subeffect=bleeding:5
+subeffect=vulnerability:5
+#note=Stay close to Clockheart so he won't use this at all.
+#note=Stay away from them. Dodge if one lands on you.
+#note=Revive downed people fast or this may completely kill them.
+#note=Blocking will prevent Gears from appearing. Especially useful when reviving.
+
+attack=Clockheart Bind
+ID=21590
+cooldown=45
+animation=raises both hands and smashes ground with green glow|2.75
+effect=huge PBAoE
+subeffect=damage:4423590
+subeffect=immobilized:8
+subeffect=buff:unbreakable_stun:2:1:-
+subeffect=buff:Aetherized_Shielding
+subeffect=removes all conditions
+
+attack="Aetherized Shielding"
+effect=buff
+subeffect=buff:Aether_Power_Level every second. Immunity to conditions and damage.
+#note=Kill a Hologram near him to remove it and electricity around the room.
+
+attack="Power"
+effect=buff
+subeffect=At 30 stacks it may use Twilight's End
+#note=If he reaches 30 stacks get full health fast. Run out of combat if needed.
+
+attack=Clockwork Toss
+ID=21577
+effect=melee
+subeffect=damage:8620658
+subeffect=launch:2.3| behind Clockheart
+
+attack=Clockwork Toss
+effect=melee
+subeffect=damage:4246219
+subeffect=knockback:1.5
+
+attack=Clockwork Thrash (1)
+ID=21575
+cooldown=34
+animation=red and green effect|0.4
+additional=Doesn't prevent casting.
+effect=3 cones in 2 s
+count=3
+length=2
+subeffect=damage:1884834
+subeffect=torment:10
+
+attack=Clockwork Thrash (2)
+animation=raise right arm and smashes with red and green effect|2|shoots electric cone
+additional=cannot be blocked
+effect=cone
+subeffect=damage:28315250
+subeffect=launch:2.3
+
+attack=Twilight's End
+ID=21592
+animation=glows green, raises both arms and lowers them|1.5
+effect=5 huge PBAoEs in 2.5 s
+count=5
+length=2.5
+subeffect=damage:4998443
+subeffect=launch:2.3
+effect=after 75%
+count=5
+length=2.5
+subeffect=damage:7539336
+subeffect=launch:2.3
+effect=after 25%
+count=5
+length=2.5
+subeffect=damage:27686972
+subeffect=launch:2.3
+effect=Removes "Aetherized Shielding" and all "Power"
+effect=Electrifies one part of the room.
+#note=start evading/blocking when arms lower
+#note=Use immunity, evading and blocking skills
+#note=Use stability to allow dodging even if you get hit
+#note=Interrupting is really effective because he still loses the stacks
+
+##################################################################
+# Aetherblade
+##################################################################
+
+name=Aetherblade Grenadier
+ID=12290|12289
+alt=Aetherblade Grenadiers|Grenadier|Grenadiers
+path=TAAE
+scaling=constant
+
+attack=Shrapnel Grenade
+ID=3197
+cooldown=5
+animation=swings left arm from right|0.75
+effect=slow projectile with AoE
+subeffect=damage:-
+
+attack=Static Grenade
+ID=19277
+animation=swings left arm from right|0.75|red circle
+cooldown=11
+effect=slow projectile with AoE
+subeffect=damage:-
+subeffect=vulnerability:10:5
+
+attack=Freeze Grenade
+ID=19276
+animation=swings left arm from right|0.75|red circle
+cooldown=20
+effect=slow projectile with AoE
+subeffect=damage:-
+subeffect=chilled:5
+
+#############################
+
+copy=12290
+ID=12280|12282
+path=TAAE|Aether
+
+#############################
+
+copy=12290
+ID=12279|12278
+path=TAAE|Aether|Mai
+
+##################################################################
+
+name=Aetherblade Striker
+ID=12298|12297
+alt=Aetherblade Strikers|Striker|Strikers
+path=TAAE|Aether
+scaling=constant
+
+attack=Arc of Lightning
+ID=19286
+cooldown=4.5
+animation=swings right arm from left|0.4|blue lightning
+effect=3 ranged hits in 2 s
+count=3
+length=2
+subeffect=damage:-
+
+attack=Static Field (1)
+ID=19281
+cooldown=20
+animation=swings left arm from right with lightning effect|0.75|creates a lightning ring
+effect=ticking ring (lasts 4 s), when exiting or entering
+subeffect=damage:-
+subeffect=stun:1
+
+attack=Lightning Storm (2)
+cooldown=21
+animation=turns bit right|0.25|lightning effect
+effect=ticking AoE (6 hits in 5 s)
+count=6
+length=5
+subeffect=damage:0.22
+#note=Slightly higher cooldown means this will be skipped about once per 3 Static Fields.
+
+attack=Shocking Aura
+ID=21493
+cooldown=33
+animation=instant
+effect=buff (3 s)
+subeffect=stun:2 if hit at melee range
+
+#############################
+
+copy=12298
+# VERIFY 12740
+ID=12277|12285
+path=TAAE
+
+#############################
+
+copy=12298
+ID=12262|12269
+path=TAAE|Aether|Mai
+
+##################################################################
+
+name=Aetherblade Taskmaster
+ID=12294|12293
+alt=Aetherblade Taskmasters|Taskmaster|Taskmasters
+path=TAAE
+scaling=constant
+
+attack=Lightning Whip
+ID=19285
+animation=swings whip from left with lightning effect|0.3
+cooldown=3
+effect=2 long range melee hits in 0.35 s
+count=2
+length=0.35
+subeffect=damage:-
+
+attack=Lightning Shot
+ID=19279
+cooldown=9
+animation=aims with left pistol with lighting effect|0.75
+effect=piercing projectile
+subeffect=damage:-
+subeffect=confusion:5:2
+
+# Internal: damage scales from 0.1 to 0.8.
+attack=Lightning Shot
+ID=19280
+cooldown=19
+animation=kneels and aims with left pistol with lighting effect|3
+effect=piercing projectile
+subeffect=damage:-
+subeffect=blind:5
+subeffect=confusion:5:5
+
+#############################
+
+copy=12294
+ID=12261|12283
+path=TAAE|Aether
+
+#############################
+
+copy=12294
+ID=12276|12265
+path=TAAE|Aether
+
+##################################################################
+
+name=Aetherblade Thug
+ID=12288|12287
+alt=Aetherblade Thugs|Thug|Thugs
+path=TAAE|Aether
+scaling=constant
+
+attack=Smash (1)
+ID=19262
+cooldown=4.5
+animation=pulls scythe to right and swings overhead|0.65
+effect=melee
+subeffect=damage:-
+
+attack=Smash (2)
+animation=pulls scythe behind back, keeps it there with glow and swings overhead with massive effect|2.3
+additional=Cannot rotate.
+effect=melee
+subeffect=damage:1
+subeffect=knockdown:3
+subeffect=weakness:10
+subeffect=crippled:5
+#note=run behind back or away
+
+attack=Throw Anchor
+ID=19283
+cooldown=12
+animation=pulls scythe to right and spins anti-clockwise|0.65|throws a black anchor
+effect=projectile
+subeffect=damage:-
+subeffect=immobilized:3
+
+attack=Battle Standard
+ID=19282
+cooldown=120
+effect=ticking AoE (20 hits in 57 s)
+count=20
+length=57
+subeffect=fury:5
+subeffect=might:10:2
+subeffect=swiftness:5
+effect=initial hit
+subeffect=damage:-
+subeffect=stability:10
+subeffect=fury:5
+subeffect=might:10:2
+
+#############################
+
+copy=12288
+# Verify 12735
+ID=12271|12281
+path=TAAE|Aether
+
+#############################
+
+copy=12288
+# Fractals use ID 12270 (seems no difference).
+ID=12257
+path=TAAE|Aether|Mai
+
+##################################################################
+
+name=Aetherblade Thumper
+ID=12296|12295
+alt=Aetherblade Thumpers|Thumper|Thumpers
+path=TAAE|Aether|Mai
+scaling=constant
+
+attack=Mace Smash (1)
+ID=19263
+cooldown=5
+animation=swings mace from right|0.35
+effect=melee
+subeffect=damage:-
+
+attack=Crushing Blow (2)
+animation=swings mace from left|0.8
+effect=melee
+subeffect=damage:0.3
+
+attack=Faithful Strike (3)
+animation=keeps mace overhead and swings from below|1.2
+effect=melee
+subeffect=damage:0.4
+subeffect=regeneration:5
+
+attack=Shield Throw
+ID=19275
+cooldown=11
+animation=loses shield, leans back with lightning effect, pulls mace behind back and swings left arm from right|2.5
+effect=bouncing projectile (hits 5 times)
+subeffect=damage:-
+subeffect=stun:1
+
+attack=Aetherized Shielding
+ID=19268
+cooldown=25
+animation=hides behind shield|0.15|green gas
+effect=buff (4 s)
+subeffect=Negates damage and conditions
+
+#############################
+
+copy=12296
+ID=12272|12284
+path=TAAE|Aether
+
+#############################
+
+copy=12296
+ID=12259|12268
+path=TAAE
+
+##################################################################
+
+name=Aetherblade Swashbuckler
+ID=12292|12291
+alt=Aetherblade Swashbucklers|Swashbuckler|Swashbucklers
+path=TAAE|Aether|Mai
+scaling=constant
+
+attack=Slash (1)
+ID=19259
+animation=swings sword|0.5
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:15:2
+
+attack=Kick (2)
+animation=jumps and kicks|0.6
+effect=melee
+subeffect=damage:0.2
+subeffect=crippled:10
+
+attack=Pounce (3)
+animation=leans back and thrusts with sword|0.8
+effect=melee
+subeffect=damage:0.3
+
+attack=Thrown Dagger
+ID=19258
+cooldown=4
+animation=pulls sword behind back, kneels, spins and swings left arm from right|1
+effect=projectile
+subeffect=damage:-
+subeffect=weakness:10
+subeffect=bleeding:15:2
+
+attack=Dagger Fan
+ID=19273
+cooldown=15
+animation=glows, pulls sword behind back, kneels, spins and swings left arm from right|1
+effect=5 low range projectiles (cone)
+subeffect=damage:-
+subeffect=daze:2
+
+attack=Whirling Defense
+ID=19274
+cooldown=32
+animation=glows with whirling effect|1
+effect=8 small PBAoEs in 1.4 s
+count=8
+length=1.4
+subeffect=damage:-
+subeffect=vulnerability:10
+effect=reflects projectiles.
+
+#############################
+
+copy=12292
+ID=12274|12273
+path=TAAE|Aether
+
+#############################
+
+copy=12292
+name=Aetherblade Swashbuckler
+ID=12256|12260
+path=TAAE|Aether
+
+##################################################################
+
+name=Steam Watcher
+ID=12766
+alt=Steam Watchers
+path=TAAE
+
+attack=Alarm
+ID=21611
+cooldown=5.5
+animation=glows blue|3
+effect=Summon a enemy=Thug:veteran, a enemy=Striker:veteran, a enemy=Thumper:veteran, a enemy=Swashbuckler:veteran or enemy=Grenadier:veteran
+
+##################################################################
+
+name=Holographic Aetherblade Striker
+ID=12727
+alt=Holographic Striker
+path=TAAE
+
+attack=Arc of Lightning
+ID=21497
+effect=3 ranged hit over 2 s
+count=3
+length=2
+subeffect=damage:-
+
+attack=On Death
+additional=Used when dying.
+effect=PBAoE
+subeffect=damage:1
+subeffect=confusion:0
+
+##################################################################
+
+name=Holographic Aetherblade Thug
+# VERIFY 12734 (bigger model)
+ID=12726
+alt=Holographic Thug
+path=TAAE
+
+attack=Smash (1)
+ID=21495
+cooldown=4.5
+animation=pulls scythe to right and swings overhead|0.65
+effect=melee
+subeffect=damage:-
+
+attack=Smash (2)
+animation=pulls scythe behind back, keeps it there with glow and swings overhead with massive effect|2.3
+additional=Cannot rotate.
+effect=melee
+subeffect=damage:0.2
+#note=run behind back or away
+
+attack=On Death
+additional=Used when dying.
+effect=PBAoE
+subeffect=damage:1
+subeffect=confusion:0
+
+##################################################################
+
+name=Holographic Aetherblade Taskmaster
+ID=12728
+alt=Holographic Taskmaster
+path=TAAE
+
+attack=Lightning Whip
+ID=21496
+animation=swings whip from left with lightning effect|0.3
+cooldown=3
+effect=2 long range melee hits in 0.35 s
+count=2
+length=0.35
+subeffect=damage:-
+
+attack=On Death
+additional=Used when dying.
+effect=PBAoE
+subeffect=damage:1
+subeffect=confusion:0
+
+##################################################################
+
+name=Twisted Nightmare
+ID=12477
+path=TAAE
+
+attack=Shoot
+ID=20361
+effect=projectile
+subeffect=damage:-
+
+attack=Blastwave
+ID=20398
+effect=PBAOE
+subeffect=damage:-
+
+attack=Shield
+ID=20362
+effect=???
+
+attack=Flame Jet
+ID=20402
+effect=multiples cones
+count=?
+subeffect=damage:-
+
+##################################################################
+
+name=Twisted Horror
+ID=12483
+path=TAAE
+
+attack=Slash
+ID=20345
+effect=melee
+subeffect=damage:-
+
+attack=Pounce
+ID=20369
+effect=leap
+subeffect=damage:-
+
+attack=Shriek
+ID=20347
+effect=PBAoE
+
+##################################################################
+
+Name=Mai Trin
+ID=12266
+alt=Mai
+Path=Mai
+image=http://wiki.guildwars2.com/images/d/d6/Captain_Mai_Trin.jpg
+scaling=legendary
+# TODO: 0.8 + 0.01 scaling.
+# TODO: + 0.0125 damage scaling.
+
+attack=Slice (1)
+ID=19301
+cooldown=1
+animation=swing from right|0.5
+effect=Melee
+subeffect=damage:-
+subeffect=bleeding:15:1
+
+attack=Slash (2)
+animation=swing from left|0.25
+effect=Melee
+subeffect=damage:0.28
+subeffect=bleeding:15:2
+
+attack=Crippling Strike (3)
+animation=swing from right|0.5
+effect=Melee
+subeffect=damage:0.14
+subeffect=bleeding:15:1
+subeffect=crippled:7
+subeffect=weakness:15
+
+attack=Final Thrust (4)
+animation=overhead swing with thrust|0.6|keeps sword forward
+effect=3 melee hits in 0.8 s
+count=3
+length=0.8
+subeffect=bleeding:15:2
+
+attack=Teleporting Shot (1)
+ID=19300
+cooldown=14
+animation=crouches and aims with piston left hand|1.6|shoots a bullet with electric trail
+additional=targeted at the furthest player. Minimum range. Can't be evaded.
+effect=fast homing projectile
+subeffect=teleport to target
+#note=Block or reflect, or stay closer than someone else
+#note=Stay at max melee range
+
+attack=Teleporting Shot (2)
+animation=instant|0|white flash
+additional=can't be evaded
+effect=small PBAOE
+subeffect=damage:0.25
+effect=small PBAOE
+subeffect=damage:0.25
+subeffect=blind:5
+subeffect=crippled:3
+#note=Dodge or use a mobility skill to prevent following melee attacks
+#note=Good timing with a dodge or a mobility skill prevents the second hit
+
+attack=Pistol Spin
+ID=19305
+cooldown=22
+animation=kneels and spins|0.5|shoots energy bolts
+additional=minimum range. Can't be blocked
+effect=projectile at every target
+subeffect=damage:7887667
+#note=Evade or tank
+#note=Good indicator for Pistol Shot because same range requirement
+
+attack="Captain's Shield"
+additional=Stacks up to 10 times. Recharges every 25% health.
+effect=buff
+subeffect=10% less damage, reduced control effects and 20% less condition duration
+#note=Even +100% condition duration isn't enough with full stacks
+#note=Takes no damage with full stacks
+
+##################################################################
+
+Name=First Mate Horrik
+ID=12264
+alt=Horrik
+image=http://wiki.guildwars2.com/images/5/5b/Aetherized_Tonic.jpg
+Path=Mai
+# TODO: 0.75 + 0.01 scaling.
+# TODO: + 0.0125 damage scaling.
+scaling=champion
+
+attack=Cannon Blast
+ID=19292
+cooldown=9
+animation=red circle, raises cannon and glows|1.5
+effect=projectile with AoE
+subeffect=damage:2.7
+subeffect=burning:3
+#note=block or evade
+
+attack=Electric Blast
+ID=19291
+cooldown=17
+animation=aims up and kneels back|1
+effect=projectile with ticking AoE (4 hits in 3 s)
+subeffect=damage:-
+subeffect=removes 1-3 "Shielding" from enemy=Mai:legendary
+#note=On scale 10, 3 stacks are removed
+#note=On scale 49. 1 stack is removed
+
+attack=Cannon Smash
+ID=19290
+animation=glows and holds cannon overhead|2|smashes the ground
+effect=PBAoE
+subeffect=damage:-
+subeffect=knockback:1.5
+#note=block or evade
+
+# Internal: Skill Cannon Barrage also listed.

@@ -16,12 +16,6 @@ namespace DataCreator.Shared
     {
     }
 
-    public TacticList(TacticList toCopy)
-    {
-      foreach (var tactic in toCopy.Tactics)
-        Tactics.Add(new Tactic(tactic));
-    }
-
     /***********************************************************************************************
      * AddTactics / 2014-08-01 / Wethospu                                                          *
      *                                                                                             *

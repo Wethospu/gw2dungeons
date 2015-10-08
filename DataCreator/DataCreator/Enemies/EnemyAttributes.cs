@@ -253,10 +253,10 @@ namespace DataCreator
     public int CastTime { get; set; }
 
     [JsonProperty("min_range")]
-    public int MinimumRange { get; set; }
+    public double MinimumRange { get; set; }
 
     [JsonProperty("max_range")]
-    public int MaxRange { get; set; }
+    public double MaxRange { get; set; }
 
     [JsonProperty("tags")]
     public Tags Tags { get; set; }

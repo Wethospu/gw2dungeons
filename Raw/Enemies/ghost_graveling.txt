@@ -1,6 +1,3 @@
-potion=ascalonian_ghost|none
-
-##################################################################
 
 Name=Gateguard
 ID=6971
@@ -22,7 +19,7 @@ image=http://i.imgur.com/fQWfn6G.gif
 cooldown=10
 Animation=jumps to air|0.5
 effect=PBAoE
-subeffect=Damage:.
+subeffect=Damage:-
 subeffect=launch:3.3
 #note=Try to dodge, bring a stun break.
 
@@ -192,7 +189,7 @@ subeffect=damage:-
 subeffect=bleeding:6
 subeffect=crippled:5
 
-##################################################################
+#############################
 
 copy=9247
 name=Shadow
@@ -272,6 +269,7 @@ subeffect=knockback:1.5
 Name=Bone Minion
 alt=Bone Minions
 Path=ACS
+category=normal
 
 Attack=Shield
 effect=Ranged for 24 seconds
@@ -468,126 +466,6 @@ subeffect=damage:0.4
 
 ##################################################################
 
-Name=Spider Queen
-ID=7039
-Path=AC1|AC2|AC3
-
-attack=Bite
-ID=4012
-#description=Bites close enemies which causes weakness and bleeding.
-cooldown=4
-animation=leans back|0.75
-effect=melee
-subeffect=damage:452832
-subeffect=weakness:5
-subeffect=bleeding:5:6
-#note=Evade or block.
-#note=Tank only if you can remove the conditions
-#note=Run through Queen or away from her (needs good timing and swiftness)
-
-attack=Entangling Web
-ID=4005
-#description=Sprays web which immobilizes nearby enemies.
-cooldown=10
-animation=leans back and raises "tail"|1.5|white webs
-additional=changes direction after initial cast and after the first hit. Used at the target with the lowest health percent.
-effect=5 cones in 2.5 s
-count=5
-length=2.5
-subeffect=damage:0.2
-subeffect=immobilized:5
-#note=Stay at high range or quickly move away from her
-#note=First hit can NOT be avoided by movement. However, you can move around her to avoid rest of the hits
-#note=Block the first attack and move around her to avoid rest of the hits
-#note=Above works with evades too but needs a good timing. It's safer to evade twice.
-#note=If you get hit, remove immobilized after the attack has finished
-
-Attack=Venom Spray
-ID=4006
-#description=Shoots poison wells which deal heavy damage.
-cooldown=13
-animation=glows|1.5|green projectiles
-additional=can't be blocked or evaded
-effect=3 projectiles (cone) with big ticking AoEs (21 hits in 20 s)
-count=21
-length=20
-subeffect=damage:0.4
-subeffect=poison:6
-#note=get quickly out of the red circles, use a mobility skill if needed
-#note=makes reviving very dangerous
-#note=Try to direct the attack away from everyone else (if possible)
-#note=Mesmer can absorb them with untraited wardens
-
-##################################################################
-# Remember to update HOTW1 Icebrood enemy=Troll:Champion too!
-# Verified for nothing.
-
-Name=Cave Troll
-ID=7041
-Path=AC1|AC2|AC3
-
-Attack=Troll Smash
-ID=3945
-cooldown=3
-animation=swings right arm|1|throws a ball
-additional=can't be blocked
-effect=bouncing and homing ranged
-subeffect=damage:-
-subeffect=weakness:5
-subeffect=daze:1
-subeffect=removes 1 boon per hit
-#note=evade
-
-attack=Stomp (1)
-ID=Stomp
-cooldown=17
-animation=crouches, roars up and jumps|2|red circle appears
-additional=can't be blocked
-effect=leap (1.5 s) with PBAoE
-subeffect=damage:-
-subeffect=launch:2.3
-#note=evade
-
-attack=Stomp (2)
-animation=after landing|0.5
-additional=Can't be blocked. Minimum range
-effect=piercing ranged at every target
-subeffect=damage:1
-subeffect=knockdown:2
-subeffect=crippled:6
-subeffect=bleeding:6:3
-#note=sidestep or evade
-#note=stay inside Troll
-
-attack=Shout
-ID=3949
-cooldown=20
-animation=holds head and roars forward|0.75
-additional=Can't be blocked or evaded
-effect=cone
-subeffect=fear:3
-subeffect=weakness:6
-effect=self
-count=15
-length=14
-subeffect=buff:Troll_regeneration:15:1:soothing_mist
-#note=stun break
-
-attack="Troll regeneration"
-effect=buff
-#VERIFY: Might have a small regen.
-subeffect=No effect
-
-##################################################################
-# Remember to update HOTW1 Icebrood enemy=Troll:Champion too!
-# Verified for nothing.
-
-copy=7041
-ID=7020
-Path=ACS
-
-##################################################################
-
 Name=Lieutenant Kholer
 ID=9115
 alt=Kholer
@@ -719,20 +597,6 @@ subeffect=confusion:6:4
 subeffect=crippled:5
 #note=don't stay directly front of him
 
-
-##################################################################
-
-Name=Area
-Path=AC1
-Category=Trap
-
-Attack=Ring of Fire
-effect=multiple ticking AoES
-subeffect=damage:5088
-subeffect=burning:1
-subeffect=Instantly kills elite Gravelings
-#note=Hodgins doesn't need to be alive
-
 ##################################################################
 
 Name=Ghost Eater
@@ -784,21 +648,6 @@ attack=Ghost Shield
 effect=buff
 subeffect=Immunity to conditions and damage
 #note=Trap can remove it for 30 seconds
-
-##################################################################
-
-Name=Ectoplasmic Ooze
-ID=9079
-alt=Ectoplasmic Oozes
-Path=AC2
-
-attack=Ghost Shield
-effect=buff
-subeffect=Immunity to conditions and high damage reduction
-effect=aura
-frequency=0.75
-subeffect=damage:0
-subeffect=vulnerability:1
 
 ##################################################################
 
@@ -882,7 +731,7 @@ length=5
 subeffect=damage:-
 subeffect=Burning:2
 
-##################################################################
+#############################
 
 copy=1933
 ID=6803
@@ -913,7 +762,7 @@ animation=instant cast||purple bubble
 effect=buff (8 s)
 subeffect=reflects projectiles
 
-##################################################################
+#############################
 
 copy=1931
 ID=6804
@@ -948,7 +797,7 @@ effect=Melee
 subeffect=damage:-
 subeffect=Knockback:1.5
 
-##################################################################
+#############################
 
 copy=1932
 ID=6805
@@ -991,7 +840,7 @@ subeffect=poison:10
 subeffect=weakness:10
 subeffect=blind:10
 
-##################################################################
+#############################
 
 copy=1930
 ID=6806
@@ -1050,7 +899,7 @@ subeffect=Immobilized:1
 #note=Block/evade right before it hits the ground
 #note="Disarm" planted traps by moving to them while blocking/evading. This prevents people accidentally walking on them.
 
-##################################################################
+#############################
 
 copy=1918
 ID=6807
@@ -1110,131 +959,11 @@ effect=self buff
 subeffect=Healing-percent:25
 #note=Interrupt or burst before he gets it off
 
-##################################################################
+#############################
 
 copy=1706
 ID=6808
 Path=ACS
-
-##################################################################
-
-name=Flame Jet
-alt=Flame Jets
-Category=Trap
-Path=AC1|AC2|AC3
-condition=80
-
-attack=Flame Jet
-cooldown=5
-animation=when eyes glow|3
-effect=Cone
-subeffect=damage:2774868
-subeffect=burning:3
-#note=Don't take unnecessary risks. Keep dodging if unsure.
-
-##################################################################
-
-name=Flame Jet (Weak)
-alt=Flame Jets (Weak)
-Category=Trap
-Path=AC1
-condition=80
-
-attack=Flame Jet
-cooldown=5
-animation=when eyes glow|3
-effect=Cone
-subeffect=damage:1348320
-subeffect=burning:3
-#note=Don't take unnecessary risks. Keep dodging if unsure.
-
-##################################################################
-
-name=Flame Trap (Jet)
-alt=Flame Traps (Jet)|Flame Jets|Flame Jet
-Category=trap
-Path=ACS
-
-attack=Flame Jet
-cooldown=1
-additional=used when close
-effect=Cone
-subeffect=damage:467928
-subeffect=burning:3
-
-##################################################################
-
-name=Flame Trap
-alt=Flame Traps
-image=http://wiki.guildwars2.com/images/e/ed/Gargoyle_Head.jpg
-Category=Structure
-Path=ACS
-
-attack=Fireball
-image=http://i.imgur.com/XycVkQ0.jpg
-cooldown=6
-animation=when eyes glow|4
-effect=Projectile with AoE
-subeffect=damage:39128
-subeffect=burning:3
-
-##################################################################
-
-name=Gargoyle Head
-image=http://wiki.guildwars2.com/images/e/ed/Gargoyle_Head.jpg
-alt=Gargoyle Heads
-Category=Structure
-health=6840
-toughness=1.1
-Path=AC1|AC2|AC3
-
-attack=Fireball
-image=http://i.imgur.com/XycVkQ0.jpg
-cooldown=4
-animation=when eyes glow|3
-effect=Projectile with AoE
-subeffect=damage:52788
-subeffect=burning:3
-
-##################################################################
-# Levels 35 and 37 exist.
-
-name=Ghastly Ooze
-ID=5953
-alt=Ghastly Oozes|Ooze|Oozes
-image=https://i.imgur.com/nbDt7ik.jpg
-Path=AC1|AC2
-
-attack=Ooze Mace
-ID=2451
-image=https://i.imgur.com/HqHnS28.jpg
-cooldown=5
-animation=spins head|1.75
-effect=melee
-subeffect=damage:-
-
-attack=Ooze Multi
-ID=2452
-cooldown=12
-animation=pulls head behind|1|swings head
-effect=4 melee hits in 2.5 s
-count=4
-length=2.5
-subeffect=damage:-
-
-attack=Power Spit
-ID=2455
-cooldown=29
-animation=bends forward and stretches head|2|shoots a yellow ball
-effect=projectile
-subeffect=damage:-
-subeffect=immobilized:3
-
-##################################################################
-# Levels 35 and 37 exist.
-
-copy=5953
-ID=5956
 
 ##################################################################
 
@@ -1318,8 +1047,7 @@ effect=Summon ~15 enemy=Graveling_Hatchlings:normal in 14.5 s
 #note=Focus Breeder fast or just interrupt
 #note=All die when Breeder dies
 
-##################################################################
-# damage values need to be checked and copy removed
+#############################
 
 copy=5693
 ID=9114
@@ -1441,7 +1169,7 @@ animation=Transparent effect
 effect=buff
 subeffect=Evade all attacks
 
-##################################################################
+#############################
 # Levels 35 and 37 exist.
 copy=7052
 ID=1938
@@ -1500,8 +1228,8 @@ effect=self
 subeffect=stun:2
 #note=sometimes goes straight to this
 
-##################################################################
-# Levels 35 and 37 exist.
+#############################
+
 copy=7051
 # Verify: 11734
 ID=5787
@@ -1528,368 +1256,3 @@ effect=cone
 subeffect=damage:-
 subeffect=burning:3
 
-##################################################################
-# Levels 1, 2, 3, 30 and 35 exist.
-name=Spider Hatchling
-# VERIFY 7045
-ID=6972
-alt=Spider Hatchlings
-image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
-Path=ACS|AC1|AC2|AC3
-
-tactic=normal
-Weak alone but they usually come in big groups.
-
-attack=Venom Spray
-ID=4007
-cooldown=3
-animation=glows|1.5|green projectiles
-additional=only used at distant targets
-effect=3 projectiles in 0.5 s
-count=3
-length=0.5
-subeffect=damage:-
-subeffect=poison:2
-
-attack=Bite
-ID=4008
-cooldown=2.5
-animation=leans back|0.75
-effect=melee
-subeffect=damage:-
-subeffect=bleeding:5
-#note=group of them can easily get 25 stacks of bleeding
-
-##################################################################
-
-name=Spider
-ID=7040
-alt=Spiders
-image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
-Path=AC1|AC2|AC3
-
-attack=Bite
-ID=2917
-cooldown=2.5
-animation=leans back|1
-effect=melee
-subeffect=damage:-
-subeffect=crippled:3
-#note=keep circling to avoid
-
-attack=Venom Spray
-ID=21995
-cooldown=20
-animation=glows|1.25
-additional=only used at distant targets
-effect=3 melee hits in 0.75 s
-count=3
-length=0.75
-subeffect=damage:-
-subeffect=poison:3
-#note=keep circling to avoid
-
-##################################################################
-
-name=Spike Trap
-alt=Spike Traps
-Category=trap
-Path=ACS|AC1|AC2|AC3
-
-attack=Trigger
-cooldown=12
-animation=red circle appears|0.8|spikes come out when triggered
-additional=can't be blocked or evaded. Goes through damage immunity
-effect=AoE
-subeffect=damage-constant:2000
-
-##################################################################
-
-name=Burrow (Start)
-Category=structure
-Path=AC1|AC2|AC3
-health=13680
-
-attack=Summons enemy=graveling_hatchlings:normal
-
-##################################################################
-
-name=Burrow (Scepter)
-alt=Burrows (Scepter)
-Category=structure
-Path=AC1
-health=7695
-
-attack=Summons enemy=graveling_hatchlings:normal and other stuff
-
-##################################################################
-
-name=Burrow (collector)
-alt=Burrows (collector)
-Category=structure
-Path=AC3
-health=7695
-
-attack=Summons enemy=graveling_hatchlings:normal and other stuff
-
-##################################################################
-
-name=Burrow (big)
-alt=Burrows (big)
-Category=structure
-Path=AC3
-health=7695
-
-attack=Summons enemy=graveling_hatchlings:normal and other stuff
-
-##################################################################
-
-name=Graveling Burrow
-Category=structure
-Path=ACS
-
-attack=Summons enemy=graveling_hatchlings:normal
-
-
-##################################################################
-# Not found
-##################################################################
-
-name=Barracuda
-ID=1708
-Path=ACS
-
-
-##################################################################
-# NPCS
-##################################################################
-
-name=Detha Tremblebones
-ID=5852
-Category=ally
-image=http://wiki.guildwars2.com/images/a/a4/Detha_NPC.jpg
-Path=AC2
-
-attack=Stability
-effect=stability:0
-#note=permanent unless stripped by enemies
-
-attack=Smite
-ID=3963
-effect=multiple ranged hits
-count=?
-subeffect=damage:-
-
-attack=Shield of Judgment
-ID=3965
-effect=PBAoE?
-subeffect=damage:-
-
-attack=Symbol of Wrath
-ID=3964
-effect=Ticking AoE
-count=?
-subeffect=damage:-
-
-##################################################################
-
-name=Anti-Spectral Ordnance
-Category=bundle
-Path=AC2
-
-##################################################################
-# Main NPCs                                                      #
-##################################################################
-
-Name=Eir Stegalkin
-ID=6976
-Category=ally
-image=http://wiki.guildwars2.com/images/4/47/Eir_Stegalkin.jpg
-Path=ACS
-
-attack=Concussion Shot
-ID=3905
-effect=projectile
-subeffect=damage:-
-
-attack=Flaming Arrow
-ID=3906
-effect=projectile
-subeffect=damage:-
-
-attack=FBarrage
-ID=3904
-effect=channeled ticking AoE
-subeffect=damage:-
-
-attack=On My Mark
-ID=3907
-effect=ranged
-
-##################################################################
-
-Name=Garm
-ID=5834
-Category=ally
-image=http://wiki.guildwars2.com/images/a/a5/Garm.jpg
-Path=ACS
-
-attack=Bite
-ID=2973
-effect=melee
-subeffect=damage:-
-
-attack=Leap
-ID=2872
-effect=leap
-subeffect=damage:-
-
-attack=Long Leap
-ID=2873
-effect=leap
-subeffect=damage:-
-
-##################################################################
-
-Name=Hodgins
-ID=5766
-Category=ally
-image=http://wiki.guildwars2.com/images/f/ff/Hodgins_Scepter.jpg
-Path=AC1|AC2|AC3
-
-attack=Water Blast
-ID=3960
-effect=projectile
-subeffect=damage:-
-
-attack=Healing Rain
-ID=3691
-effect=Ticking AoE
-count=?
-subeffect=healing:0
-subeffect=lose a condition
-
-
-##################################################################
-
-Name=Rytlock Brimstone
-ID=6978
-Category=ally
-image=http://wiki.guildwars2.com/images/6/67/Rytlock_Brimstone.jpg
-Path=ACS
-
-attack=Head Shot
-ID=3912
-effect=projectile
-subeffect=damage:-
-
-attack=Sever Artery (1)
-ID=3218
-effect=melee
-subeffect=damage:-
-
-attack=Gash (2)
-ID=3220
-effect=melee
-subeffect=damage:-
-
-attack=Final Thrust (3)
-ID=3222
-effect=melee
-subeffect=damage:-
-
-attack=Charging Lunge
-ID=3215
-effect=leap
-subeffect=damage:-
-
-attack=Shout
-ID=30363
-effect=PBAoE
-subeffect=damage:-
-
-##################################################################
-
-Name=Shrill Sunderbark
-Category=ally
-image=http://wiki.guildwars2.com/images/4/43/Shrill_Sunderbark.jpg
-Path=AC1|AC2|AC3
-
-##################################################################
-
-Name=Tzark
-Category=ally
-image=http://wiki.guildwars2.com/images/7/7d/Tzark_NPC.jpg
-Path=AC1|AC2|AC3
-
-##################################################################
-
-Name=Warmaster Grast
-ID=1703
-image=https://i.imgur.com/7fr2Zc1.jpg
-Category=ally
-Path=AC3
-
-attack=Shield
-type=channeled PBAoE
-effect=Protects against falling rocks.
-
-attack=Bash
-ID=4049
-effect=melee
-subeffect=damage:-
-
-##################################################################
-# Other NPCs                                                     #
-##################################################################
-
-Name=Durmand Priory Explorer
-# VERIFY: 5903
-ID=5902
-Category=ally
-Path=AC1|AC2|AC3
-
-##################################################################
-
-Name=Priory Arcanist (Female)
-# VERIFY: 5361 and 5366
-ID=5335
-Category=ally
-Path=AC1|AC2|AC3
-
-##################################################################
-
-Name=Priory Arcanist (Male)
-# VERIFY: 5355 and 5368
-ID=5336
-Category=ally
-Path=AC1|AC2|AC3
-
-##################################################################
-
-Name=Priory Explorer
-# VERFIY: 5350
-ID=4787
-Category=ally
-Path=AC1|AC2|AC3
-
-##################################################################
-
-Name=Priory Scholar (Female)
-ID=1584
-Category=ally
-Path=AC1|AC2|AC3
-
-##################################################################
-
-Name=Priory Scholar (Male)
-ID=1591
-Category=ally
-Path=AC1|AC2|AC3
-
-##################################################################
-
-Name=Sylvan Hound
-ID=9158
-Category=ally
-Path=AC1|AC2|AC3

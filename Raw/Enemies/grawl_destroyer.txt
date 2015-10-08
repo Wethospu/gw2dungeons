@@ -1,0 +1,391 @@
+##################################################################
+# This file contains all grawls, demons and destroyers.          #
+##################################################################
+
+##################################################################
+# Grawl.                                                         #
+##################################################################
+
+Name=Grawl Shaman
+ID=11484
+alt=Shaman
+image=http://wiki.guildwars2.com/images/8/8f/Grawl_Shaman.jpg
+Path=Volc
+scaling=champion
+
+attack=Fireball
+ID=16406
+effect=piercing projectile
+subeffect=damage:-
+subeffect=burning:3
+effect=with ticking AoE
+count=?
+subeffect=burning:3
+effect=first tick
+subeffect=damage:-
+
+attack=Bash
+ID=16423
+animation=instant||spins
+effect=melee
+subeffect=damage:-
+subeffect=crippled:3
+subeffect=knockback:1.5
+effect=channel
+subeffect=buff:projectile_reflection:2
+#note=stay at max melee range to prevent usage
+
+attack=Churning Earth
+ID=16424
+effect=channeled PBAoE
+count=?
+subeffect=crippled:0
+effect=end effect
+subeffect=damage:-
+#note=do not rely on single blocks
+
+attack=Summon Totem
+ID=16407
+effect=summon a enemy=Grawl_Totem:structure
+
+attack=Defiant Interno
+ID=16411
+effect=buff:block:15
+effect=multiple delayed AoEs over the area
+count=?
+subeffect=damage:-
+#note=throw "Infused Stone" to break or wait until it runs out
+
+##################################################################
+
+Name=Imbued Shaman
+ID=11485
+alt=Shaman
+image=http://wiki.guildwars2.com/images/c/cd/Legendary_Imbued_Shaman.jpg
+Path=Volc
+scaling=legendary
+
+attack=Burning Shot
+iD=16414
+animation=uses bow
+cooldown=0
+effect=projectile
+subeffect=damage:-
+subeffect=agony:3
+subeffect=buff:Enveloping_Flames:0:1:-
+#note=block, evade or zig zag at range
+#note=try to avoid wasting AoE anti projectile skills on this
+
+attack="Enveloping Flames"
+animation=flame effect
+effect=aura
+subeffect=burning:0
+
+attack=Dive
+ID=16416
+animation=flies up fast in an arc
+additional=only used on close targets
+effect=3 small ticking AoEs on its feet
+count=?
+subeffect=damage:-
+subeffect=burning:0
+#note=evade back as fast as possible
+#note=attack has bigger range than circles and hits even before circles appear
+#note=stay at range to avoid usage
+
+attack=Wing Buffet
+ID=16413
+animation=rises up slowly with red circle
+additional=only used on close targets
+effect=PBAoE
+subeffect=damage:-
+subeffect=knockback:0
+#note=block, evade or get out of range
+#note=stay at range to avoid usage
+
+attack=Fire Storm
+ID=16422
+animation=instant
+effect=ticking AoE
+count=?
+subeffect=damage:-
+#note=very low after cast, it usually uses another attack very quickly
+#note=evade out
+
+attack=Summon and Shield (1)
+image=http://wiki.guildwars2.com/images/7/72/Imbued_Shaman_Bubble.jpg
+additional=used at 75%/50%/25% health
+effect=summon 15 enemy=Lava_Elementals:normal
+effect=shield (40 charges)
+subeffect=buff:block:0:40 blocks one skill
+#note=the amount of summoned enemy=Elementals:normal depends on difficulty scale
+#note=one skill will remove one charge no matter how many times it hits
+#note=some ground-targeted skills may have no effect
+#note=use area anti projectile skills to protect you from enemy=Elementals:normal
+
+attack=Eat (2)
+animation=rises up in an arc
+effect=melee
+subeffect=healing-percent:25 when eating a Villager
+#note=use unblockable skills to slow it down
+
+##################################################################
+
+Name=Grawl Berserker
+ID=11487
+alt=Grawl Berserkers|Berserkers
+image=http://wiki.guildwars2.com/images/7/7a/Grawl_Berserker.jpg
+scaling=normal
+Path=Volc
+
+attack=Dual Attack
+ID=1510
+animation=swings left and right arm
+cooldown=0
+effect=2 melee hits in 0.5 s
+count=2
+length=0.5
+subeffect=damage:-
+
+attack=Cyclone Spin
+ID=2014
+animation=glows
+effect=melee
+subeffect=damage:-
+
+attack=Axe
+ID=2013
+animation=swings right arm
+effect=Melee
+subeffect=damage:-
+subeffect=knockdown:2
+
+##################################################################
+
+Name=Grawl Raider
+ID=11486
+alt=Grawl Raiders|Raiders
+scaling=normal
+image=http://wiki.guildwars2.com/images/8/8c/Grawl_Raider.jpg
+Path=Volc
+
+attack=Shoot
+ID=1512
+cooldown=0
+effect=projectile
+subeffect=damage:-
+
+attack=Quicksand Trap
+ID=2015
+animation=touches ground
+effect=Trap on its feet
+subeffect=immobilized:5 when walked on
+
+attack=Meteor Arrow
+ID=1513
+animation=glows
+effect=slow projectile with a small AoE
+subeffect=damage:-
+subeffect=vulnerability:5
+
+##################################################################
+
+Name=Grawl Shaman
+ID=11490
+alt=Grawl Shamans
+image=http://wiki.guildwars2.com/images/8/8f/Grawl_Shaman.jpg
+scaling=normal
+Path=Volc
+
+attack=Impale
+ID=2016
+cooldown=0
+animation=raises staff with red glow
+effect=ranged
+subeffect=damage:-
+
+attack=Sandstorm
+ID=2022
+animation=raises staff without glow
+effect=slow, big and piercing projectile (3 hits)
+count=3
+subeffect=damage:-
+subeffect=blind:10
+
+attack=Magnetic Grasp
+ID=2023
+animation=holds staff forward horizontally
+effect=projectile
+subeffect=damage:-
+subeffect=pull:0
+subeffect=immobilized:2.5
+
+attack=Summon Earth Totem
+ID=1521
+effect=summon an enemy=Earth_Totem:structure
+
+#############################
+
+# Internal: Different weapon ID but data looks same.
+copy=11490
+ID=11488
+
+##################################################################
+
+Name=Destroyer of the Worlds
+ID=6450
+level=68
+image=http://wiki.guildwars2.com/images/d/db/Destroyer_of_Worlds.jpg
+Path=SE3
+
+attack=Destroyer Beckon (1)
+ID=4518
+animation=pulls air in
+effect=cone
+subeffect=pull:0
+#note=evade pull, then run behind/away
+
+attack=Devastating Blow (2)
+ID=4524
+animation=glows?
+effect=slow melee
+subeffect=damage:-
+subeffect=knockdown:0
+
+attack=Geyser
+ID=4520
+effect=ticking AoE
+subeffect=damage:-
+subeffect=burning:0
+
+attack=Ignite ground
+animation=charges
+effect=PBAoE
+subeffect=burning
+effect=ticking AoE
+subeffect=burning:0
+#note=block/evade initial hit and avoid ignited ground
+
+attack=Shrapnel Grenade
+ID=4523
+additional=maximum amount of 4
+effect=fast projectile with small AoE
+subeffect=damage:-
+subeffect=launch:0
+subeffect=summon enemy=Destroyer_Of_the_Earth:elite
+#note=decide whether to focus or ignore Destroyers
+
+
+##################################################################
+
+Name=Destroyer of the Earth
+ID=6482
+alt=Destroyers of the Earth
+level=68
+image=http://wiki.guildwars2.com/images/7/7d/Destroyer_Troll.jpg
+Path=SE3
+
+attack=Attack
+ID=2951
+effect=melee
+subeffect=damage:-
+
+attack=Troll Smash
+ID=2953
+effect=melee
+subeffect=damage:-
+
+##################################################################
+
+Name=Destroyer Crab
+ID=9711
+image=http://wiki.guildwars2.com/images/f/fe/Destroyer_Crab.jpg
+Path=CoE3
+
+attack=Claw
+ID=3130
+effect=3 projectiles (cone)
+count=?
+subeffect=damage:-
+subeffect=burning:0
+
+attack=Fire Pit
+effect=2-3 ticking AoEs
+subeffect=damage:0
+subeffect=burning:0
+#note=try to predict. Evade.
+
+# Internal: Skill Fire Trail also listed.
+
+##################################################################
+
+Name=Destroyer Crab
+ID=9710
+alt=Destroyer Crabs
+image=http://wiki.guildwars2.com/images/f/fe/Destroyer_Crab.jpg
+Path=CoE3
+
+##################################################################
+
+Name=Evolved Destroyer
+ID=10404
+level=80
+image=http://wiki.guildwars2.com/images/7/7d/Destroyer_Troll.jpg
+Path=CoeS|CoE3
+
+attack=Tooth of Primordus
+ID=5438
+cooldown=5
+effect=delayed AoE
+subeffect=damage:0
+subeffect=knockback:0
+
+attack=Firy Blast
+ID=5439
+additional=used very rarely
+effect=PBAOE
+subeffect=damage:0
+#note=if you see something weird then dodge
+
+attack=Fire Shield
+effect=buff
+
+##################################################################
+
+Name=Destroyer Harpy
+ID=9716
+level=80
+alt=Destroyer Harpies
+image=http://wiki.guildwars2.com/images/0/05/Destroyer_Harpy.jpg
+Path=CoeS|CoE1|CoE3
+
+attack=Slash
+ID=3750
+effect=melee
+subeffect=damage:-
+
+attack=Fiery Barrage
+ID=3751
+effect=???
+subeffect=damage:-
+
+##################################################################
+
+Name=Destroyer Troll
+ID=9719
+alt=Destroyer Trolls
+image=http://wiki.guildwars2.com/images/7/7d/Destroyer_Troll.jpg
+Path=CoeS|CoE3
+
+attack=Slash
+ID=2460
+effect=melee
+subeffect=damage:-
+
+attack=Burning Shout
+ID=3757
+effect=?
+
+attack=Summon Crablings
+ID=3756
+effect=?

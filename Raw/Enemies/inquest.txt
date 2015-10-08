@@ -1,0 +1,2224 @@
+##################################################################
+# This file contains inquest enemies (asura and golems).         #
+##################################################################
+
+Name=Inspector Snik
+ID=6079
+Path=SES
+
+attack=Swaps to a flamethrower at 50%
+
+attack=Body Shot (Pistol)
+ID=4550
+cooldown=0
+effect=projectile
+subeffect=damage:-
+subeffect=vulnerability:0
+
+attack=Unload (Pistol)
+ID=4551
+effect=channeled projectiles
+subeffect=damage:-
+
+attack=Kick (Pistol)
+ID=4552
+effect=melee
+subeffect=damage:-
+subeffect=knockback:0
+
+attack=Flame Jet (Flamethrower)
+effect=channeled cone
+subeffect=damage:0
+#note=sidestep at melee or evade away
+
+attack=Firewall (Flamethrower)
+effect=ticking AoE
+subeffect=Burning:0
+
+##################################################################
+
+Name=Overseer Kolt
+Path=SES
+# Verified.
+type=inquest
+
+##################################################################
+
+Name=Golem Specialist Noko
+ID=6082
+level=61
+Path=SES
+
+attack=Chain Lightning
+ID=4507
+effect=2 bouncing projectiles
+count=2
+subeffect=damage:-
+#note=evade
+
+attack=Whirling Assault
+ID=4505
+effect=channeled low-range PBAoE
+subeffect=damage:-
+subeffect=bleeding:0
+subeffect=knockback:0
+effect=projectile reflection
+#note=move back if at melee-range
+#note=stop using projectiles
+
+attack=Well of Enfeeblement
+ID=4556
+animation=raises hands
+additional=only used at close targets
+effect=low-range aura
+subeffect=damage:0
+subeffect=buff:Enfeebling_Aura:0:1:-
+#note=visually bugged: effect follows Noko!
+#note=keep distance
+#note=stay at melee-range to trigger (long cast-time)
+
+attack="Enfeebling Aura"
+effect=debuff
+subeffect=lose a Boon every second
+
+##################################################################
+
+Name=Kudu
+ID=3579
+level=62
+image=http://wiki.guildwars2.com/images/9/9a/Kudu.jpg
+Path=SES
+
+Attack=Doesn't regenerate health (even if you wipe)
+
+attack=Grenade Barrage
+ID=4496
+effect=slow projectile with small AoE
+subeffect=damage:-
+
+attack=Snap Shot
+ID=4493
+animation=stops briefly to aim
+effect=projectile (normally)
+subeffect=damage:-
+effect=projectile (if target is immobilized)
+subeffect=damage:1
+#note=zig zag at range or block/evade
+
+attack=Glue Shot
+ID=4492
+animation=jumps back
+effect=slow projectile with big ticking AoE
+subeffect=immobilized:0
+
+attack=Dart Volley
+ID=4491
+animation=green darts
+effect=4 projectiles in 2 s
+count=4
+length=2
+subeffect=damage:-
+subeffect=burning:0
+#note=evade or zig zag
+
+attack=Shield Bash
+ID=4495
+animation=leaps
+effect=dash
+subeffect=damage:-
+subeffect=stun:0
+
+attack=Summon
+additional=used at 75%/50%/25% health
+effect=invulnerability until the golem dies
+effect=at 75% summon enemy=Prototype_E-IV:champion
+effect=at 50% summon enemy=Prototype_F-IV:champion
+effect=at 25% summon enemy=Prototype_T-IV:champion
+
+##################################################################
+
+Name=Prototype E-IV
+ID=10909
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SE1
+
+attack=Living Lightning
+ID=4592
+effect=ranged
+subeffect="Living Lightning"
+
+attack="Living Lightning"
+animation=flashing
+effect=debuff
+subeffect=damage:0| to nearby allies (no damage to itself)
+
+attack=Chain Lightning
+ID=4590
+cooldown=0
+effect=2 bouncing projectiles
+count=2
+subeffect=damage:-
+#note=evade
+#note=stay away from other players to prevent bounces
+
+attack=Short Circuit
+ID=4591
+animation=raises arms
+additional=only used at close targets
+effect=3 PBAoEs 
+count=3
+subeffect=damage:0.65
+subeffect=weakness:0
+subeffect=stun:0
+#note=get out of range
+
+# Internal: Attack called Unstable Shield.
+
+#############################
+
+copy=10909
+ID=10008
+level=62
+Path=SES
+
+##################################################################
+
+Name=Prototype F-IV
+ID=10908
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SE1
+
+attack=System Purge
+ID=4599
+effect=self-heal
+subeffect=remove all Conditions and heal for each removed
+#note=avoid stacking Conditions
+
+attack=Fireball
+ID=4596
+animation=points target
+effect=2 projectiles
+count=2
+subeffect=damage:-
+subeffect=burning:0
+#note=zig zag or evade
+
+attack=Ring of Fire
+ID=4598
+animation=raises hands
+effect=2 projectiles in 0.25 seconds
+count=2
+length=0.25
+subeffect=damage:-
+subeffect=burning:5
+effect=with ticking AoEs (9 hits in 4 s) at every target
+count=9
+length=4
+subeffect=damage:-
+subeffect=burning:5
+#note=zig zag or evade
+#note=may cause 22 stacks of burning per target
+
+attack=Fire Spin
+ID=4597
+animation=spreads hands, spins
+additional=only used at close targets
+# at least 3
+effect=3 PBAoEs
+count=3
+subeffect=damage:-
+subeffect=burning:0
+#note=get out of range, evade/block if needed
+#note=try to trigger this attack even when ranging to reduce pressure
+
+#############################
+
+copy=10908
+ID=10009
+level=62
+Path=SES
+
+##################################################################
+
+Name=Prototype T-IV
+ID=10907
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SE1
+
+attack=Poison Assault
+ID=4600
+cooldown=4
+animation=moves left foot back and swings both arms||1|shoots poison balls
+effect=2 projectiles
+count=2
+subeffect=damage:3605280
+subeffect=poison:5
+subeffect=bleeding:5:2
+#note=evade
+#note=sidestep at high range
+
+attack=Rapid Fire
+ID=4601
+cooldown=16
+animation=moves feet a bit and points arms forward|1.75|shoots poison balls
+effect=~20 projectiles in 2 s
+count=20
+length=2
+subeffect=damage:881118
+subeffect=poison:5
+subeffect=bleeding:5:2
+#note=evade twice or use immunity
+#note=remove intense bleeding quickly if you get hit
+#note=sidestep at high range
+
+attack=Whirlwind Pull
+ID=4602
+animation=spreads arms and starts spinning|2.5|shoots grey balls
+cooldown=20
+effect=4 projectiles at every target in 3 s
+count=4
+length=3
+subeffect=pull:0
+#note=block or evade
+#note=sidestep at high range
+#note=you can also just get pulled
+
+attack=Poisonous Trail
+ID=4603
+effect=ticking PBAoE
+subeffect=vulnerability:0
+subeffect=poison:0
+
+#############################
+
+copy=10907
+ID=10010
+level=62
+Path=SES
+
+##################################################################
+
+Name=Sentry Golem Mark S-IV
+ID=8056
+level=62
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SES
+
+attack=Launch Fist
+ID=1657
+animation=points one arm
+cooldown=0
+additional=hits through walls
+effect=projectile
+subeffect=damage:-
+#note=block/evade
+
+attack=Gatling Fists
+ID=1508
+animation=points both arms
+effect=channeled projectiles
+subeffect=damage:-
+#note=break line of sight or evade twice
+
+attack=Golem Rockets
+ID=2179
+animation=when spinning ends
+effect=few projectiles with AoE
+subeffect=damage:-
+#note=break line of sight or evade
+
+attack=Shocking Aura
+ID=2178
+effect=buff:shocking_aura
+#note=if you melee then disable autoattack and equip a stun break
+
+##################################################################
+
+Name=Impasse Mark IV
+ID=6840
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=SE1
+
+attack=Uppercut
+ID=4529
+cooldown=5
+animation=moves right foot back and swings right arm|1
+effect=melee
+subeffect=damage:-
+subeffect=launch:3.3
+#note=block or evade
+#note=run through (needs good timing)
+
+attack=Punch
+ID=4530
+animation=moves left foot back and swings right arm|1|throws a blue ball
+cooldown=6
+effect=homing and piercing projectile
+subeffect=damage:-
+#note=tank, block or evade
+
+attack=Whirlwind Pull
+ID=4620
+cooldown=19
+animation=spreads arms and start spinning|2.25|shoots browns balls
+additional=20% projectile finisher
+effect=4 projectiles at everyone in 3 s
+count=4
+length=3
+subeffect=damage:-
+subeffect=pull:1.5
+effect=combo (20% chance)
+subeffect=vulnerability:5
+#note=zig zag at range
+#note=at melee use (area) stability or stand behind someone to prevent getting pulled
+#note=don't waste your dodges, just tank them or use an immunity skill
+
+attack=Static Field
+ID=4608
+cooldown=22
+animation=moves right and then left foot a bit, sits down and closes the eye|1|creates an electric field
+additional=lightning field
+effect=area field, when entering
+subeffect=damage:-
+subeffect=daze:3
+effect=area field, when exiting
+subeffect=damage:-
+subeffect=stun:3
+#note=often uses Whirlwind Pull when Field is up so be careful
+
+##################################################################
+
+Name=Nokk
+ID=6839
+Path=SE1
+
+attack=Vapor Blade
+ID=3467
+animation=moves staff forward and then swings it with water effect|0.5
+cooldown=0
+additional=only used at close targets
+effect=returning and piercing medium-range projectile
+count=2
+length=1
+subeffect=damage:-
+subeffect=vulnerability:0
+#note=stay at high range to prevent usage
+#note=stay close to wall or edge so it can't return
+#note=use anti projectile skills
+
+attack=Gravity Shift
+ID=4533
+cooldown=11
+animation=bends forward, kneels, raises up and puts right hand in the air|1.5|multiple red circles
+effect=multiple ticking AoEs (6 hits in 5 s)
+count=6
+length=5
+subeffect=damage:0.2
+subeffect=confusion:6
+subeffect=crippled:1
+
+attack=Gravity Distortion (1)
+ID=4532
+animation=moves staff behind back, kneels, gets up and raises hands in air|1|shoots a black ball
+effect=homing projectile
+subeffect=buff:Gravity_Distortion:8:1:-
+#note=block or evade
+#note=precasting stability prevents the effect
+
+attack="Gravity Distortion"
+effect=debuff (9 s)
+subeffect=unbreakable stun
+#note=stun breaks have no effect
+effect=delayed PBAoE (8 s) (no effect on itself)
+subeffect=damage:0
+subeffect=launch:0
+#note=avoid players with this debuff
+#note=PBAoE removes "Gravity Distortion"
+
+attack=Summon Singularity
+ID=4536
+animation=raises staff over head, spins it, jumps and kneels|1|summons a red ball
+additional=maximum amount of 3
+effect=Summon enemy=Singularity:elite at target
+#note=avoid them (try get them summoned close each other)
+
+##################################################################
+
+Name=Tazza
+ID=9440
+image=http://wiki.guildwars2.com/images/0/0a/Tazza.jpg
+Path=SE1
+
+# Internal: 0-300 range has more damage than 300-600 (typo?).
+attack=Spatial Surge
+ID=4625
+cooldown=0
+effect=3 ranged hits in 1 s (> 900 range)
+count=3
+length=1
+subeffect=damage:0.25
+effect=3 ranged hits in 1 s (> 600 range)
+count=3
+length=1
+subeffect=damage:0.2
+effect=3 ranged hits in 1 s (> 300 range)
+count=3
+length=1
+subeffect=damage:0.15
+effect=3 ranged hits in 1 s
+count=3
+length=1
+subeffect=damage:0.1
+
+attack=Mirror Blade
+ID=4626
+effect=projectile
+subeffect=damage:-
+subeffect=summon enemy=text:a_clone|elementalist|engineer|guardian|mesmer|necromancer|ranger|thief|warrior if it hits
+#note=Summoned clone depends on target profession
+
+attack=Illusionary Wave
+ID=4628
+effect=melee
+subeffect=damage:-
+subeffect=knockback:0
+
+attack=Blink
+effect=teleport
+
+attack=Mind Stab
+ID=4627
+effect=delayed AoE at every target
+subeffect=damage:-
+#note=evade
+#note=seems to do nothing when alone (own AoE won't hit?)
+
+##################################################################
+
+Name=Troop Commander Kaeyi
+ID=10473
+Path=SE1
+
+attack=Swing
+ID=2204
+effect=melee
+subeffect=damage:-
+
+attack=Flanking Strike
+ID=2205
+effect=melee
+subeffect=damage:-
+
+attack=Hornet String
+ID=2206
+effect=melee
+subeffect=damage:-
+
+attack=Caltrops
+ID=2208
+effect=ticking AoE
+subeffect=bleeding:0
+subeffect=crippled:0
+
+attack=Blinding Powder
+ID=2207
+effect=AoE
+subeffect=Blind:0
+subeffect=Stealth:0
+
+attack=Summon
+additional=used at 75%/50%/25%
+effect=summon 2 elite inquest
+
+##################################################################
+
+Name=Inquest Golemcaster
+ID=9673
+Path=SE1|CoES|CoE1|CoE2|CoE3
+
+attack=Stab
+ID=2184
+effect=melee
+subeffect=damage:-
+
+attack=Banish (1)
+ID=2187
+effect=Melee
+subeffect=damage:-
+subeffect=launch:0
+
+attack=Banish (2)
+effect=leap
+subeffect=damage:1
+
+attack=Ice Spike
+ID=2185
+effect=AoE
+subeffect=damage:-
+subeffect=vulnerability:3
+
+attack=Whirling Assault
+ID=2186
+effect=2 melee hits
+subeffect=damage:-
+
+# Internal: Skill Summon Golem also listed.
+
+##################################################################
+
+Name=Inquest Grenadier
+ID=10931
+image=http://wiki.guildwars2.com/images/d/df/Inquest_Grenadier.jpg
+Path=SES|SE1
+
+attack=Throw Bomb
+ID=1549
+image=http://i.imgur.com/AvOU6th.gif
+animation=swings right arm while jumping|0.25|throws a bomb
+effect=projectile with AoE
+subeffect=damage:-
+
+attack=Throw Bomb
+ID=2180
+image=http://i.imgur.com/AvOU6th.gif
+animation=swings right arm while jumping|0.25|throws a bomb
+effect=projectile with AoE
+subeffect=damage:-
+subeffect=chilled:5
+
+attack=Throw Bomb
+ID=2181
+image=http://i.imgur.com/AvOU6th.gif
+animation=swings right arm while jumping|0.25|throws a bomb
+effect=projectile with AoE
+subeffect=damage:-
+subeffect=poison:5
+
+# Internal: Skills Bouncing Bomb and Fan of Bombs also listed.
+
+#############################
+
+copy=10931
+ID=9522
+Path=Aether
+scaling=level
+
+attack=Bouncing Bomb
+ID=2182
+image=http://i.imgur.com/AvOU6th.gif
+animation=pulls right arm behind back|0.5|throws a bomb
+effect=projectile with AoE
+subeffect=damage:-
+
+# Internal: Skill Fan of Bombs also listed.
+
+#############################
+
+copy=10931
+ID=5171|5170
+Path=SES|SE1|CoES|CoE1|CoE2|CoE3
+
+##################################################################
+
+Name=Inquest Engineer
+ID=10308
+image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
+Path=SE1
+
+attack=slash
+ID=3408
+effect=melee
+subeffect=damage:-
+
+attack=Heartseeker
+ID=3312
+effect=leap
+subeffect=damage:-
+
+attack=Viper's Nest
+ID=3411
+effect=???
+subeffect=damage:-
+
+attack=Pounce
+effect=melee
+subeffect=damage:0
+
+attack=Kick
+effect=melee
+subeffect=damage:0
+
+attack=Dagger Storm
+ID=2244
+animation=spins
+effect=multiple projectiles (360 degrees) in 3 s
+subeffect=damage:-
+effect=projectile reflection?
+
+##################################################################
+
+Name=Inquest Technician (Ranged)
+ID=10309
+image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
+Path=SE1
+
+attack=Shoot
+ID=1330
+effect=projectile
+subeffect=damage:-
+
+attack=Chain Shot
+ID=2048
+effect=5 projectiles in 3 s
+count=5
+length=3
+subeffect=damage:-
+
+##################################################################
+
+Name=Inquest Technician (Melee)
+ID=10305
+image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
+Path=SE1
+
+attack=True Strike (1)
+ID=3400
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Pure Strike (2)
+effect=melee
+subeffect=damage:0.5
+
+attack=Faithful Strike (3)
+effect=melee
+subeffect=damage:0.5
+
+attack=Symbol of Faith
+ID=3401
+effect=ticking PBAoE (lasts 5 s)
+length=5
+subeffect=damage:-
+
+attack=Shield of Absorption
+ID=3397
+animation=blue bubble
+effect=area field, when passing
+subeffect=knockback:0
+
+##################################################################
+
+Name=Inquest Worker
+ID=10454
+Path=SE1
+
+attack=Wrench Toss
+ID=2196
+effect=projectile
+subeffect=damage:-
+
+attack=Summon
+ID=2202
+effect=Summon enemy=Thumper_Turret:structure
+
+##################################################################
+
+Name=Mark I Golem
+ID=10456
+image=http://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
+Path=SES|SE1
+
+attack=Launch Fist
+ID=2166
+effect=projectile
+subeffect=damage:-
+subeffect=pull:0
+
+attack=Punch
+ID=1502
+effect=2 melee hits
+count=2
+subeffect=damage:-
+
+attack=Whirling Assault
+ID=1656
+effect=3 melee hits
+count=3
+subeffect=damage:-
+subeffect=knockback:0
+
+# Internal: Skills Rocket and Repair Sequence also listed.
+
+##################################################################
+
+Name=Inquest Assassin
+# SE has 5167 and COE 9653. Latter is slightly bigger but otherwise the same.
+# If SE has less skills that can be controlled with a level requirement.
+ID=5167|9653
+image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assassin.jpg
+Path=SES|SE1|COES|CoE1|CoE2|CoE3
+
+attack=Swing
+ID=2204
+image=http://i.imgur.com/afnrAd3.gif
+cooldown=0
+animation=swing from right|0.5
+effect=melee
+subeffect=damage:-
+
+attack=Blinding Powder
+ID=2207
+image=http://i.imgur.com/lJWAhZY.gif
+effect=AoE
+subeffect=blind:3
+subeffect=stealth:0
+
+attack=Hornet Sting
+ID=2206
+image=http://i.imgur.com/rTMlUM2.gif
+effect=Melee
+subeffect=damage:-
+effect=Dodge back
+subeffect=buff:evade
+
+attack=Flanking Strike (1)
+ID=2205
+image=http://i.imgur.com/mQZLGNF.gif
+effect=melee
+subeffect=damage:-
+
+attack=Flanking Strike (2)
+animation=swing from right with jump|0.66
+effect=melee
+subeffect=damage:0.3
+
+
+#############################
+
+copy=5167
+ID=9548
+Path=Aether
+scaling=level
+
+##################################################################
+
+Name=Inquest Assistant
+ID=9658
+image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
+Path=SES|SE1|COES|CoE1|CoE2|CoE3
+type=inquest
+
+attack=Impale
+ID=2172
+image=http://i.imgur.com/7YhAPwk.gif
+animation=pulls weapon behind back, jumps and smashes ground|0.75|sends a rock line
+effect=returning and piercing projectile
+count=?
+subeffect=damage:-
+
+attack=Ring of Earth
+ID=2173
+image=http://i.imgur.com/ahdZ3sa.gif
+animation=raises left arm with small earth effect|0.2|ring of rocks appears
+effect=PBAoE
+subeffect=damage:-
+
+attack=Magnetic Aura
+ID=2174
+image=http://i.imgur.com/u5aG990.gif
+cooldown=16
+animation=instant|0|a yellow shield
+effect=buff:Invulnerability:3
+effect=buff:Magnetic_Aura:3
+#note=Invulnerability overrides Magnetic Aura
+
+#############################
+
+copy=9658
+ID=9515
+Path=Aether
+scaling=level
+
+##################################################################
+
+Name=Inquest Engineer
+ID=1202|1179
+image=http://wiki.guildwars2.com/images/3/3c/Inquest_Engineer.jpg
+Path=SE1
+
+attack=Summon
+effect=Summon enemy=Flame_Turret:structure
+
+##################################################################
+
+Name=Inquest Extinguisher
+ID=5184
+alt=Inquest Extinguishers|Extinguisher|Extinguishers
+image=http://wiki.guildwars2.com/images/a/a9/Inquest_Extinguisher.jpg
+Path=SE1
+
+attack=Freeze Shot
+ID=1564
+cooldown=2.5
+animation=raises the gun slightly|0.5|shoots an icy line	
+effect=projectile
+subeffect=damage:-
+subeffect=chilled:2
+
+#############################
+
+copy=5184
+ID=9683
+Path=CoES|CoE1|CoE2|CoE3
+
+attack=Freezing Jet
+ID=1564
+cooldown=4.5
+animation=starts spraying ice from the gun and then raises the gun|0.5|shoots an icy spray
+effect=cone
+subeffect=damage:-
+
+attack=Frost Bomb
+ID=2160
+cooldown=39
+animation=gun disappears and swings left arm|0.75
+effect=projectile with AoE
+subeffect=damage:-
+subeffect=chilled:2
+subeffect=knockdown:3
+
+#############################
+
+copy=9683
+# TODO: GET REAL ID
+ID=9683
+scaling=level
+Path=Aether|Thauma
+
+##################################################################
+
+Name=Inquest Technician (Ranged)
+ID=5187
+image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
+Path=SES|SE1
+
+attack=Fire Shot
+effect=projectile
+subeffect=damage:0
+
+attack=Phoenix
+effect=returning projectile with AoE
+count=2
+length=1
+subeffect=damage:0
+
+##################################################################
+
+Name=Inquest Technician
+ID=5188|5187
+alt=Inquest Technicians|Technician|Technicians
+scaling=constant
+image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
+Path=SE1|Mai|Aether
+
+attack=Stab
+ID=1582
+cooldown=2
+animation=moves back and swings from right with a thrust|0.5
+effect=melee
+subeffect=damage:-
+
+attack=Bouncing Electricity
+ID=2161
+cooldown=7
+animation=swings sword from right|0.5|shoots blue balls
+effect=3 projectiles
+subeffect=damage:-
+subeffect=swiftness:0
+
+attack=Shocking Stab
+ID=1583
+cooldown=33
+animation=glows and holds sword behind back|2|leaps
+effect=leap
+subeffect=damage:-
+subeffect=stun:2
+
+# Internal: Skill Shocking Aura listed.
+
+##################################################################
+
+copy=5188
+Name=Inquest Technician
+# TODO: Get ID
+category=veteran
+Path=Aether
+
+##################################################################
+
+copy=5187
+ID=9490
+path=Mai
+
+attack=Shocking Aura
+ID=2163
+cooldown=24
+animation=instant
+effect=self
+subeffect=buff:shocking_aura:4
+
+##################################################################
+
+Name=Mark I Golem
+ID=10957
+Path=SE2
+
+attack=Whirling Assault
+ID=5288
+effect=dash
+subeffect=damage:-
+
+##################################################################
+
+Name=Mark II Golem
+ID=10958
+Path=SE2
+
+attack=Energy Field
+ID=5284
+effect=ticking AoE
+count=?
+subeffect=damage:-
+
+##################################################################
+# Levels 1 and 80 exist.
+name=Inquest Technician
+ID=10516
+alt=Inquest Technicians|Technician|Technicians
+image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
+path=Arah2
+
+attack=Subvert
+ID=5173
+cooldown=17
+animation=raises gun and shoots electricity|1|keeps shooting electricity
+effect=16 ranged hits in 9 s
+count=16
+length=9
+subeffect=damage-percent:2.5
+subeffect=stun:1
+subeffect=buff:Subvert:5:1:soothing_mist
+#note=interrupt to help party members
+#note=use stability to counter it
+#note=not very dangerous ability by itself but makes you very vulnerable
+
+attack="Subvert"
+effect=buff
+subeffect=regenerate health
+
+##################################################################
+
+name=Inquest Handler
+ID=10501
+alt=Inquest Handlers|Handler|Handlers
+path=Arah2
+
+attack=Tranquilizer Dart
+ID=5172
+cooldown=8
+animation=raises gun|0.5|shoots a blue dart
+effect=projectile
+subeffect=damage:-
+subeffect=crippled:6
+
+attack=Blunderbuss
+ID=5816
+cooldown=13
+animation=raises gun|0.3|yellow explosion
+effect=short-range projectile
+subeffect=damage:1
+subeffect=bleeding:4:1
+effect=at closer 1.2
+subeffect=damage:7603446
+subeffect=bleeding:4:2
+effect=at even closer range
+subeffect=damage:1.4
+subeffect=bleeding:4:3
+effect=at melee range
+subeffect=damage:1.6
+subeffect=bleeding:4:4
+
+##################################################################
+
+name=Operative Belka
+ID=10443
+alt=Belka
+image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
+path=Arah2
+
+attack=Immobilized (does not move and can't be moved) and immune to Control
+
+attack=Fan of Fire
+ID=5156
+cooldown=1.75
+animation=aims with bow|0.5
+effect=3 medium range piercing projectiles (cone)
+count=3
+subeffect=damage:-
+subeffect=burning:2
+
+attack=Teleport
+animation=instant||lightning effect
+cooldown=20
+effect=ranged
+subeffect=teleport to "random" predefined location
+
+attack=Point Blank Shot
+ID=5154
+animation=aims with bow|0.5
+cooldown=12
+effect=piercing projectile
+subeffect=damage:-
+subeffect=knockback:1.5
+subeffect=buff:Bubble:5:1:projectile_reflection
+#note=Try to predict
+
+attack="Bubble"
+animation=yellow bubble
+effect=buff
+subeffect=Reflect projectiles
+
+attack=Pulsing Orb
+ID=5155
+cooldown=4
+animation=aims bit higher than normally|0.5
+additional=only used at distant targets
+effect=slow ballistic ranged with AoE
+subeffect=damage:-
+subeffect=blind:0
+#note=May overlap/get mixed with enemy=Suspicious_Pots:structure. Dodge if unsure.
+#note=Attack tracks movement but red circle does not so pay attention.
+#note=Fast movement towards Belka may cause it to hit at very close range
+
+##################################################################
+
+name=Operative Brie
+ID=10580
+alt=Brie
+image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
+path=Arah2
+
+attack=Chain Lightning
+ID=5207
+animation=swings left arm from right with blue effect|0.75|shoots a small lightning
+cooldown=3
+effect=bouncing and homing projectile
+count=2
+subeffect=damage:-
+
+attack=Turbo Laser
+ID=5205
+cooldown=8
+animation=glows purple|1.25
+additional=seems to hit through walls
+effect=ranged
+subeffect=damage:-
+subeffect=burning:1
+#note=side step
+#note=single-blocks also work
+
+attack=Orb of Wrath
+ID=5206
+cooldown=9
+animation=spins scepter over head with blue effect and summons a ball|1|sends the ball towards the target
+additional=only used at distant targets
+effect=slow and homing projectile
+subeffect=damage:-
+#note=block or evade through
+
+attack=Fire Storm
+ID=5204
+cooldown=22
+animation=roars and raises arm|1.5|multiple red circles
+effect=multiple delayed (3 s) ticking AoEs (5 hits in 4 s) over time
+count=4
+length=3
+subeffect=damage:0.2
+subeffect=confusion:3
+effect=first hit
+subeffect=damage:-
+subeffect=confusion:3
+#note=stay out of red circles
+
+##################################################################
+
+Name=Prototype Golem
+ID=3109
+image=http://wiki.guildwars2.com/images/a/a4/Prototype_Golem.jpg
+Path=CMS
+
+attack=Resistant to interrupts
+effect=Daze and stun have no effect
+effect=Knockback, knockdown and launch sometimes work (even though defiance)
+
+Attack=Laser (1)
+ID=4929
+image=http://i.imgur.com/20wQqEc.gif
+Animation=Puts arms behind back
+Additional=channeled. Can't be blocked
+effect=12 ranged attacks
+count=12
+# VERIFY: Real length.
+length=3
+subeffect=vulnerability:0
+
+Attack=Rocket (2)
+ID=4929
+image=http://i.imgur.com/R8UxuDF.gif
+additional=Can't be blocked
+effect=Projectile with small AoE
+subeffect=damage:-
+#note=Evade when Laser ends
+
+Attack=Dual Rockets
+ID=4933
+image=http://i.imgur.com/nubOskm.gif
+additional=Can't be blocked
+effect=2 projectiles with small AoE
+count=2
+subeffect=damage:-
+
+Attack=Fire Spin
+ID=4928
+image=http://i.imgur.com/evoReVz.gif
+Animation=spreads arms
+additional=channeled
+effect=multiples PBAoes
+count=?
+# VERIFY: count & length.
+subeffect=damage:-
+
+Attack=Pull
+ID=4931
+image=http://i.imgur.com/r7a2aNS.gif
+Animation=points right arm at you
+effect=projectile
+subeffect=damage:-
+subeffect=pull:0
+#note=just zig zag (even at melee range)
+
+##################################################################
+
+Name=PWR 935i
+ID=9500
+Path=CM1
+
+attack=Punch
+ID=1502
+effect=melee
+subeffect=damage:-
+
+##################################################################
+
+Name=Head Scientist
+ID=10224
+alt=Head Scientist
+Path=CoES
+
+attack=Lightning Whip
+ID=3395
+animation=leans forward and pulls electrified whip behind back|0.25|whips
+cooldown=2.25
+effect=2 cones hits in 0.35 s
+count=2
+length=0.35
+subeffect=damage:-
+#note=hits when whip is behind back
+#note=deals damage really fast so avoid tanking it
+#note=at melee range keep circling him
+#note=at high range keep kiting
+
+attack=Lightning Leap
+ID=3396
+animation=steps back and puts shield forward|0.15|jumps forward and electrifies the whip
+cooldown=11
+effect=leap (0.6 s)
+subeffect=damage:-
+#note=hits when whip gets electrified
+#note=doesn't deal much damage so can be tanked
+#note=may move out of reset range (can be used to split groups)
+
+attack=Magnetic Aura
+ID=2174
+cooldown=17
+animation=instant|0|gets a orange bubble
+additional=instant cast
+effect=reflects projectiles (3 s)
+#note=watch out for the buff and stop using projectiles
+#note=if you rely on projectiles try to remember the cooldown
+
+attack=Repair Golems
+ID=1576
+animation=raises right arm, bends forward and raises both arms|2-3
+effect=nothing happens
+
+##################################################################
+
+Name=Inquest Technologist
+ID=10225
+level=79
+alt=Technologist
+Path=CoES
+
+attack=Grenade
+ID=3494
+effect=projectile with AoE
+subeffect=damage:-
+
+attack=Flash Grenade
+ID=5419
+effect=projectile with AoE
+subeffect=damage:-
+
+attack=Smoke Grenade
+ID=4927
+effect=projectile with AoE
+subeffect=damage:-
+
+attack=Static Shot
+ID=3493
+effect=projectile
+subeffect=damage:-
+
+##################################################################
+
+Name=Kudu's Power Suit
+ID=9603
+level=80
+image=http://wiki.guildwars2.com/images/f/f4/Kudu%27s_Power_Suit.jpg
+Path=CoES
+
+attack=Mega Punch
+ID=5334
+animation=swings and target with left arm|1|punches with right arm
+effect=4 melee hits in 1 s
+effect=first hit
+subeffect=damage:0.2
+subeffect=stun:2
+effect=other hits
+count=3
+length=1
+subeffect=damage:0.05
+#note=run through him or move away
+#note=evade away
+#note=take a stun break as a back up if you get hit, dodge away immediately
+
+attack=Static Spin
+ID=5331
+cooldown=17
+animation=spreads arms, spins a bit and starts spinning other direction|2.5|shoots spinning electricity
+additional=Field can't be blocked or evaded
+effect=projectile at every target and 8 ballistic projectiles (360 degrees) in 3 s
+effect=if hits a target
+subeffect=stun:3
+effect=if hits ground
+subeffect=Area field (8 s)
+effect=moving out
+subeffect=damage:-
+subeffect=stun:5
+effect=moving in
+subeffect=damage:-
+subeffect=daze:5
+#note=reflects should protect entire party
+#note=use blocks while standing still to absorb the initial projectile
+#note=if you don't have a block stand still to tank the initial projectile
+#note=take a stun break as a back up if you are stunned when Kudu gets close
+#note=you can pretty easily kite him inside a field if needed
+
+##################################################################
+
+Name=Kudu
+ID=4104
+level=80
+image=http://wiki.guildwars2.com/images/9/9a/Kudu.jpg
+Path=CoES
+
+attack=Doesn't regenerate health
+
+attack=Mega Blast
+ID=5340
+cooldown=5.5
+animation=aims with an electrified gun|2.5|shoots an electrified bullet
+additional=can't be blocked
+effect=fast projectile
+subeffect=damage:-
+#note=pay attention to who is being targeted
+#note=evade or break line of sight
+#note=side step at very high range
+
+attack=Teleport
+ID=5341
+animation=leans back a bit|0.5
+cooldown=25
+additional=at least PBAoE can't be blocked
+effect=2 PBAoEs in 0.3 s
+count=2
+length=0.3
+subeffect=damage:-
+subeffect=stun:2
+effect=8 ballistic projectiles (360 degrees)
+subeffect=damage:-
+effect=teleports to one projectile landing spot
+#note=hard to avoid at melee range. Pay attention and attempt to predict if trouble
+#note=Try to locate him as fast as possible so you can be ready evade Mega Blast
+
+##################################################################
+# Levels 78 and 79 exist.
+Name=Inquest Golemaestro
+ID=10927
+alt=Inquest Golemaestros|Golemaestro|Golemaestros
+Path=CoES
+
+attack=Shoot
+ID=5477
+cooldown=3
+animation=crouches and swings wand from right|0.25|shoots 3 lightning balls to air
+effect=3 projectiles
+count=3
+subeffect=damage:-
+#note=this hits almost every time (managed to get hit only once when I tried)
+
+attack=Summon Golem
+ID=5476
+cooldown=12
+animation=kneels forward hands on ground and jumps up with left arm up|1.5
+additional=maximum amount of 1
+effect=enemy=Mark_V_Field_Generator:normal
+#note=If Generator is alive this has no effects
+
+##################################################################
+# Levels 77, 78 and 79 exist.
+Name=Inquest Gunner
+ID=10914
+alt=Inquest Gunners|Gunner|Gunners
+Path=CoES
+
+attack=Trick Shot
+ID=5277
+cooldown=7
+animation=aims with left pistol and shoots with pink glow on right hand|0.25|shoots a bullet
+additional=only used against multiple targets
+effect=fast bouncing projectile (4 hits)
+count=?
+subeffect=damage:-
+effect=second hit
+subeffect=daze:2
+subeffect=vulnerability:3
+effect=third hit
+subeffect=blind:5
+effect=fourth hit
+subeffect=confusion:6
+#note=At close range try to predict
+#note=At high range block or evade quickly when you see a purple glow
+
+attack=Unload
+ID=5274
+cooldown=6
+animation=crosses pistols and points right pistol up|0.3|shoots multiple bullets
+effect=16 projectiles in 3 s
+count=16
+length=3
+subeffect=damage:-
+
+attack=Evasive Trap
+cooldown=10
+animation=frontal flip|instant|leaves a red circle
+effect=Dodge forward
+subeffect=buff:evade
+effect=delayed (2 s) AoE
+subeffect=damage:0.5
+subeffect=confusion:5:3
+#note=Often used instantly when hit at melee range so use autoattack to bait it
+#note=Use ranged control skill and keep stunlocked to prevent usage
+#note=Not targeting him may prevent usage
+#note=Move out of the red circle
+
+##################################################################
+# Levels 77, 78 and 79 exist.
+Name=Inquest Insurgent
+ID=10906
+alt=Inquest Insurgents|Insurgent|Insurgents
+Path=CoES
+
+attack=Death Blossom
+ID=2343
+cooldown=3.5
+animation=leans bit forward and moves in air|0.5|jumps over target
+effect=evade
+effect=3 melee hits in 0.3 s
+count=3
+length=0.3
+subeffect=damage:-
+subeffect=bleeding:4
+subeffect=vulnerability:4
+#note=try to evade
+
+attack=Vial
+cooldown=8
+animation=front flip forward|0.35|throws a ball
+effect=ballistic projectile with AoE
+subeffect=stun:1.5
+#note=try to block or evade
+
+##################################################################
+
+Name=Inquest Magnetizer
+ID=10924
+alt=Inquest Magnetizer|Magnetizer|Magnetizers
+Path=CoES
+
+attack=Swing (1)
+ID=5472
+effect=melee
+subeffect=damage:-
+
+attack=Swing (2)
+ID=5473
+effect=melee
+subeffect=damage:-
+
+attack=Swing (3)
+ID=5474
+effect=melee
+subeffect=damage:-
+
+attack=Pull
+ID=5471
+effect=???
+subeffect=damage:-
+
+##################################################################
+
+Name=Inquest Mega Blaster
+ID=10915
+alt=Inquest Mega Blasters|Mega Blaster|Mega Blasters
+Path=CoES
+
+attack=Orb of Wrath
+ID=5278
+effect=slow homing projectile
+subeffect=damage:-
+
+##################################################################
+
+Name=Subversion Specialist
+ID=7538|9866
+alt=Subversion Specialists
+Path=CoES
+
+attack=Unshakable
+effect=Gains 1 defiance when interrupted
+effect=50% vulnerability reduction
+effect=50% weakness reduction
+effect=blind has 10% chance to work
+
+attack=Subvert
+ID=5358
+effect=multiple ranged hits
+count=?
+subeffect=damage:0
+subeffect=stun:0
+
+##################################################################
+# Golems.                                                        #
+##################################################################
+
+Name=Mark I Golem
+ID=9663
+alt=Mark I Golems|I Golem|I Golems
+image=https://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
+type=inquest
+Path=CoES|CoE1|CoE2|CoE3
+
+attack=Punch
+ID=1502
+effect=melee
+subeffect=damage:-
+
+attack=Whirling Assault
+ID=1656
+effect=Dash with PBAoE
+subeffect=damage:-
+
+##################################################################
+
+Name=Mark II Golem
+ID=9669
+alt=Mark II Golems|II Golem|II Golems
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoES
+
+##################################################################
+
+
+Name=Mark K Assault Golem
+ID=10208
+alt=Mark K Assault Golems|K-A Golem|K-A Golems
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoES|Coe1|Coe2|Coe3
+
+attack=Crystal Shot
+ID=5356
+animation=swings right arm and then left arm|1|shoots two black shards
+cooldown=3
+effect=2 projectiles in 0.25 s
+count=2
+length=0.25
+subeffect=damage:-
+#note=at high range keep side stepping
+#note=at close range can't avoid with movement
+
+attack=Branded Beam
+ID=5357
+cooldown=30
+animation=bends forward, raises arms and then lowers them|1.75|shoots a pink beam
+effect=12 ranged hits in 4.25 s
+count=12
+length=4.25
+subeffect=damage:-
+effect=first hit
+subeffect=stun:2
+#note=hits when arms are at bottom
+#note=break line of sight, interrupt or keep blocking / evading
+
+##################################################################
+
+Name=Mark K Battle Golem
+ID=10207
+alt=Mark K Battle Golems|K-B Golem|K-B Golems
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoES|Coe1|Coe2|Coe3
+
+attack=Sundering Punch
+ID=5352
+animation=swings right arm and then left arm|0.75
+cooldown=3.5
+effect=2 melee hits 0.25 s
+count=2
+length=0.25
+subeffect=damage:-
+subeffect=vulnerability:6
+#note=block, evade or tank
+#note=run through (needs good timing)
+
+attack=Whirling Assault
+ID=5353
+cooldown=38
+animation=spreads arms, glows and spins slightly|2|moves forward while spinning
+effect=slow dash with melee (4 hits in 3 s)
+count=4
+length=3
+subeffect=damage:-
+subeffect=knockback:3
+effect=whirl finisher
+#note=run through behind back
+#note=may move out of reset range (can be used to split groups)
+
+##################################################################
+
+Name=Mark J Assault Golem
+ID=10206
+alt=Mark J Assault Golems|J-A Golem|J-A Golems
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoES|CoE1|CoE2|CoE3
+
+attack=Grenade
+ID=5360
+cooldown=3
+additional=can't be blocked
+animation=swings a glowing right arm|1|throws a white line
+effect=ballistic projectile with delayed (2.5 s) AoE
+subeffect=damage:-
+subeffect=bleeding:10:3
+#note=run out of the circle
+#note=at melee range position yourself properly so you don't run out of space
+
+attack=Grenade Barrage
+ID=5362
+cooldown=20
+animation=spreads arms, spins a bit and starts spinning other direction|2.5|keeps spinning while throwing white lines
+additional=can't be blocked. Minimum range is melee
+effect=4 delayed (2.5 s) AoEs in ~3 s
+subeffect=damage:0.6
+subeffect=bleeding:10:3
+#note=interrupt
+#note=stay at melee range
+#note=at range run out of circles
+
+##################################################################
+
+Name=Mark J Battle Golem
+ID=10205
+alt=Mark J Battle Golems|J-B Golem|J-B Golems
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoES|CoE1|CoE2|CoE3
+
+attack=Punch
+ID=1502
+effect=melee
+subeffect=damage:-
+
+attack=Ice Bomb
+ID=5363
+effect=???
+
+##################################################################
+
+Name=Mark P Battle Golem
+ID=10210
+alt=Mark P Battle Golems|P-B Golem|P-B Golems
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoES|CoE1|CoE2|CoE3
+
+attack=Fireball
+ID=5349
+effect=projectile
+subeffect=damage:-
+
+attack=Gatling Fire
+ID=5348
+effect=multiple projectiles
+count=?
+subeffect=damage:-
+
+##################################################################
+
+Name=Mark P Support Golem
+ID=10209
+alt=Mark P Support Golems|P-S Golem|P-S Golems
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoES|CoE1|CoE2|CoE3
+
+attack=Fire Shield
+animation=sits down|1
+effect=channeled PBAoE?
+count=?
+subeffect=buff:Fire_Aura
+
+##################################################################
+
+name=Unstable Bomb Golem
+ID=10512
+alt=Unstable Bomb Golems
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+path=CoE2
+
+attack=Explode
+ID=5459
+animation=glows and sits down, red circle|4
+effect=PBAoE
+subeffect=damage:0
+subeffect=knockdown:3
+effect=self destruct
+#note=explodes instantly at certain situation (explained at Evolved Husk (Encounter))
+
+##################################################################
+
+Name=Mark V Field Generator
+ID=10910
+level=79
+alt=Mark V Field Generators|V-F Generator|V-F Generators
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoES
+
+attack=Whirling Assault
+ID=5468
+cooldown=6
+animation=shouts and spreads arms with glow then spins slightly|2|moves forward while spinning
+effect=slow dash with melee (4 hits in 3 s)
+count=4
+length=3
+subeffect=damage:-
+subeffect=knockback:3
+effect=whirl finisher
+#note=run through behind back
+
+attack=Protectile Shield
+ID=5464
+animation=glows, sits down, gets up and stands still|5
+effect=randomly
+subeffect=ethereal, fire or smoke field
+
+attack=Healing
+animation=sits down|0.3|keeps sitting
+effect=self heal until over ~ 70%
+frequency=1
+subeffect=healing:1202
+
+##################################################################
+
+Name=Mark XXX Juggernaut
+ID=10922
+alt=Mark XXX Juggernauts|Juggernaut|Juggernauts
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoES|CoE1|CoE2|CoE3
+
+attack=Flurry (1)
+ID=5469
+animation=pulls left arm back|1.5
+effect=melee
+subeffect=damage:0.2
+subeffect=immobilized:1.5
+
+attack=Flurry (2)
+animation=grabs and starts hitting
+effect=3 melee hits in 1 s
+count=3
+length=1
+subeffect=damage:0.1
+
+attack=Protective Shield
+ID=5470
+animation=glows and sits down|5
+effect=PBAoE
+subeffect=protection:15
+subeffect=retaliation:15
+#note=even works when interrupted
+
+##################################################################
+
+Name=Mark S Bomb Golem
+ID=10265
+alt=Mark S Bomb Golems
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoES|CoE1|CoE2|CoE3
+
+attack=Detonate
+ID=5446
+animation=glows and sits down|4|red circle
+effect=ticking PBAoE (5 s)
+subeffect=burning:2.75
+effect=initial effect
+subeffect=damage:-
+subeffect=launch:0
+effect=self destruct
+
+##################################################################
+
+Name=Mark T-B34RC3
+ID=10130
+image=http://wiki.guildwars2.com/images/3/3b/Mark_II_Golem.jpg
+Path=CoE1|CoE2|CoE3
+
+attack=Ultra Beam
+ID=5449
+animation=purple glow and raises arms|1.5
+additional=minimum-range (stack)
+effect=3 high-range projectiles in 2 s
+count=3
+length=2
+subeffect=damage:-
+subeffect=knockdown:3
+#note=block/evade, zig zag at range, interrupt or stay inside golem
+
+attack=Whirling Assault
+ID=1656
+animation=spread hands and glows|2
+effect=4 melee hits in 3 s
+count=4
+length=3
+subeffect=damage:-
+subeffect=knockback:1.5
+#note=get behind back or move out of range
+
+attack=Cage Barrage
+ID=5450
+animation=swings first right and then left arm|1
+additional=field can't be blocked or evaded
+effect=projectile with AoE
+subeffect=damage:-
+effect=with area field, when passing
+subeffect=damage:-
+subeffect=stun:3
+#note=blocking the projectile prevents all effects
+
+attack=Firewall Grenade
+ID=5451
+animation=pulls right arm back|1
+additional=field can't be blocked or evaded
+effect=projectile with AoE
+subeffect=damage:-
+effect=with a delayed (2 s) ticking line-AoE (7 hits in 6 s)
+count=7
+length=6
+subeffect=damage:0.05
+#note=blocking the projectile prevents all effects
+
+##################################################################
+
+Name=Frizz
+ID=12267
+image=http://wiki.guildwars2.com/images/1/19/Frizz.jpg
+Path=Aether
+scaling=constant
+
+attack=Flame Jet
+ID=19394
+animation=instant|0|shoots flame
+cooldown=2.5
+additional=can't rotate
+effect=~10 cones in 2 s
+count=10
+length=2
+subeffect=damage:-
+#note=keep circling at melee range
+#note=keep kiting at high range
+
+attack=Flame Blast
+ID=19395
+cooldown=12
+animation=slightly raises gun|0.5|shoots a orange ball
+effect=piercing projectile
+subeffect=damage:-
+effect=with AoE
+subeffect=damage:1.25
+#note=at close range you won't get hit by the AoE
+#note=at higher range you must evade
+
+attack=Air Blast
+ID=19393
+cooldown=19
+animation=instant|0|shoots white spray
+effect=melee
+subeffect=knockback:1.5
+
+##################################################################
+
+Name=Aetherblade Golem
+ID=12306
+alt=Aetherblade Golems|Golem|Golems
+image=http://wiki.guildwars2.com/images/9/9c/Mark_I_Golemite.jpg
+Path=Aether
+scaling=level
+
+attack=Punch
+ID=1502
+cooldown=3.5
+animation=pulls right arm back|0.66|swings both arms
+effect=2 melee hits in 0.3 s
+count=2
+length=0.3
+subeffect=damage:-
+
+attack=Launch Fist
+ID=19485
+animation=points right arm|0.5|shoots a fist
+additional=only used at distant targets
+effect=fast projectile
+subeffect=damage:-
+subeffect=pull:0
+
+attack=Whirling Assault
+ID=1656
+cooldown=38
+animation=spreads arms, glows and spins slightly|2|moves forward while spinning
+effect=slow dash with melee (4 hits in 3 s)
+count=4
+length=3
+subeffect=damage:-
+subeffect=knockback:3
+
+attack=Gets buffed by enemy:Small_Lasers and enemy:Big_Lasers
+
+attack=Lightning Shot
+ID=19484
+additional=only used when "Boost" buff
+effect=quick projectile
+subeffect=damage:-
+subeffect=blind:0
+subeffect=confusion:5
+
+# Internal: Lightning Shot has damage multipliers 0.4, 0.3, 0.2 and 0.1.
+
+##################################################################
+
+name=Mark I Golemite
+ID=3937
+alt=Mark I Golemites|Golemite|Golemites
+image=http://wiki.guildwars2.com/images/9/9c/Mark_I_Golemite.jpg
+scaling=level
+path=Mai
+
+attack=Punch
+ID=1502
+effect=2 melee hits
+count=2
+subeffect=damage:-
+
+# Internal: Skill Whirling Assault also listed.
+
+################################################################## 
+
+Name=Mark I Golem
+ID=12922
+alt=golems
+image=https://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
+scaling=level
+Path=Thauma
+
+attack=Gatling Fists
+ID=1508
+effect=multiple ranged hits
+count=?
+subeffect=damage:-
+
+attack=Whirling Assault
+ID=1656
+cooldown=38
+animation=spreads arms, glows and spins slightly|2|moves forward while spinning
+effect=slow dash with melee (4 hits in 3 s)
+count=4
+length=3
+subeffect=damage:-
+subeffect=knockback:3
+
+# Internal: Skills Punch, Slash and Rocket also listed.
+
+##################################################################
+
+Name=Old Tom
+ID=11322
+image=http://wiki.guildwars2.com/images/4/46/Old_Tom.jpg
+scaling=champion
+Path=Uncat
+
+tactic=normal
+Uses 2-3 other attacks between spins.
+
+attack=Disrupting Blasts
+ID=16248
+image=http://giant.gfycat.com/TallPerfectKingsnake.gif
+cooldown=30
+animation=spreads arms, sits down and starts spinning|2.25
+additional=can't be blocked
+effect=hundreds of projectiles (360 degrees) in 24 s
+count=?
+subeffect=damage:-
+#note=stay inside Tom, at high-range or behind other players/pets/minions
+
+attack=Chain Lightning
+ID=16244
+image=http://giant.gfycat.com/IncomparableReasonableIraniangroundjay.gif
+cooldown=7
+animation=raises both arms|2|shoots a lightning ball
+effect=bouncing projectile
+count=?
+subeffect=damage:-
+#note=block/evade
+
+attack=Launch Fist
+ID=16239
+image=http://giant.gfycat.com/RegalFarawayCamel.gif
+cooldown=7
+animation=points right arm|1|shoots his fist
+effect=very fast projectile
+subeffect=damage:-
+subeffect=pull:1.5
+#note=block/evade
+
+attack=Poison Gas
+effect=environment
+frequency=1
+subeffect=damage-percent:3
+subeffect=poison:1
+#note=gets reapplied every 30 seconds
+#note=use main console to ventilate the room and remove effect. Console cools down in 30 seconds.
+#note=ventilation removes the effect ONLY for the remaining duration. If you are slow, new poison Gas appears before the console cools down
+#note=at level 10 and higher you need to use tears to power-up secondary consoles
+#note=don't use main console before you take damage from gas or it may not work
+
+# Internal: Skill Triple Mine also listed.
+
+##################################################################
+
+Name=Raving Asura
+ID=11328
+scaling=champion
+Path=Uncat
+
+attack=Determined
+effect=invulnerable
+
+attack=Lightning Bolt
+ID=16231
+image=http://giant.gfycat.com/WhoppingDeadlyKingsnake.gif
+cooldown=3
+animation=points staff forward|0.35|shoots 3 lightning balls
+effect=3 homing projectiles in 0.3 s
+count=3
+length=0.3
+subeffect=damage:-
+subeffect=agony:3
+#note=evade towards to destroy them while evading
+#note=block or use anti projectile skills
+
+attack=Lightning Blast
+ID=16230
+image=http://giant.gfycat.com/FeminineShadowyCob.gif
+cooldown=17
+animation=swings left arm|0.5|throws a lightning ball
+effect=ballistic homing projectile with small AoE
+subeffect=damage:0.3
+subeffect=might:15
+subeffect=protection:15
+
+##################################################################
+
+Name=Snuggles
+ID=11325
+scaling=normal
+image=http://wiki.guildwars2.com/images/5/52/Snuggles.jpg
+Path=Uncat
+
+attack=Static Field
+ID=16219
+image=http://giant.gfycat.com/PassionateGrandioseAndeancat.gif
+cooldown=10
+animation=electric effect on left hand, turns bit right and swings the right arm|0.5|throws an electric ball
+effect=projectile with an area field, when passing through
+subeffect=damage:-
+subeffect=stun:2
+#note=stay inside
+#note=block/evade when going through
+
+attack=Golem Rockets
+ID=16218
+image=http://giant.gfycat.com/WeirdExaltedCats.gif
+cooldown=11
+animation=spreads arms and spins|3|shoots rockets
+effect=2 projectiles with small AoE
+count=2
+subeffect=damage:-
+
+attack=On Death
+additional=only used during the second life
+effect=big PBAoE
+subeffect=buff:Feline_Regeneration:300:1:regeneration for on alive golems
+
+attack="Feline regeneration"
+effect=buff
+subeffect=regenerate health
+
+##################################################################
+
+Name=Mr. Mittens
+ID=11324
+scaling=normal
+Path=Uncat
+
+attack=Smash
+ID=16255
+image=http://giant.gfycat.com/DazzlingFewChickadee.gif
+cooldown=10
+animation=leans bit forward, waves arms and jumps|1|lands left fist against the ground
+effect=leap with PBAoE
+subeffect=damage:-
+#note=block/evade
+
+attack=Whirling Assault
+ID=16252
+image=http://giant.gfycat.com/RigidWaryCockatoo.gif
+animation=glows, spreads arms and starts spinning|2|spins while moving forward
+effect=cone
+subeffect=damage:-
+subeffect=pull:1.5
+#note=block/evade
+
+attack=Punch
+ID=16253
+image=http://giant.gfycat.com/SparklingOrganicJoey.gif
+animation=swings right and then left arm|0.5
+effect=2 melee hits in 0.25 s
+count=2
+length=0.25
+subeffect=damage:-
+
+attack=Slash
+ID=16254
+image=http://giant.gfycat.com/WindyConsciousGalah.gif
+animation=swings right arm|0.75
+effect=melee
+subeffect=damage:-
+subeffect=knockback:1.5
+#note=block/evade
+
+attack=On Death
+additional=only used during the second life
+effect=big PBAoE
+subeffect=buff:Feline_Protection:300:1:protection
+
+attack="Feline protection"
+effect=buff
+subeffect=take 66 % less damage
+
+##################################################################
+
+Name=Professor Mew
+ID=11326
+scaling=normal
+Path=Uncat
+
+attack=Punch
+ID=1502
+image=http://giant.gfycat.com/AccomplishedEasyDuckbillcat.gif
+animation=swings right and then left arm|0.5
+effect=2 melee hits in 0.25 s
+count=2
+length=0.25
+subeffect=damage:-
+
+attack=Aura Blaze
+ID=16227
+image=http://giant.gfycat.com/GargantuanFaroffAmericantoad.gif
+cooldown=8
+animation=spreads arms and spins|3.75|gets hit by lightning and emits white ring
+additional=can't be blocked
+effect=huge PBAoE
+subeffect="Positive Charge" or "Negative Charge" (10 s)
+#note=damage adds up quickly so try to evade if you plan to stay near other players
+
+attack="Positive/Negative Charge"
+effect=debuff
+subeffect=damage-constant:500 when standing close to different charge
+
+##################################################################
+
+Name=Baron von Scrufflebutt
+ID=11327
+scaling=normal
+Path=Uncat
+
+attack=Rocket
+ID=16235
+image=http://giant.gfycat.com/RewardingRipeEastsiberianlaika.gif
+cooldown=6
+animation=swings right arm|0.75|shoots two rockets and swings left arm
+additional=can't be blocked
+effect=2-3 projectiles with small AoE at every target
+count=3
+subeffect=damage:-
+#note=very dangerous, especially when near other players
+#note=interrupt
+
+attack=Golem Rockets
+ID=16236
+image=http://giant.gfycat.com/TornUnsightlyArachnid.gif
+cooldown=17
+animation=spreads arms and spins|3|shoots rockets
+additional=can't be blocked
+effect=2 projectiles with small AoE
+count=2
+subeffect=damage:-
+#note=evade
+#note=keep him controlled

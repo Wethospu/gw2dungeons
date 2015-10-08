@@ -1,0 +1,1288 @@
+##################################################################
+# This file contains ice brood and sons of svanir.               #
+##################################################################
+
+Name=Bjarl the Rampager
+ID=10218
+image=http://wiki.guildwars2.com/images/f/ff/Havram_Girthbinder.jpg
+Path=CoE1|CoE2|CoE3
+
+attack=No unshakeable (or defiance)
+
+attack=Greatsword Swing (1)
+ID=5414
+effect=melee
+subeffect=damage:-
+
+attack=Greatsword Slice (2)
+ID=5415
+effect=melee
+subeffect=damage:-
+
+attack=Rush
+ID=5417
+additional=Only used with Scales of Jormag
+effect=dash
+
+attack=Uppercut
+ID=5416
+animation=glows?
+effect=melee
+subeffect=damage:-
+subeffect=knockback:0
+
+attack=Teeth of Jormag
+ID=5455
+effect=multiple delayed AoEs
+subeffect=damage:-
+subeffect=bleeding:0
+
+attack=Scales of Jormag
+effect=buff
+subeffect=take much less damage
+
+# Internal: Skill Symbo of Wrath also listed.
+
+##################################################################
+
+Name=Kulag the Fallen
+ID=7246
+Path=HotWS
+
+attack=can't be moved
+#note=you can easily run back to get out-of-combat regeneration
+
+attack=Ice Shards
+ID=4850
+animation=points staff forward|0.5
+cooldown=0
+additional=medium-range
+effect=6 projectiles
+count=6
+subeffect=damage:-
+subeffect=knockback:1.5
+
+attack=Ice Storm
+ID=4846
+animation=raises both rams and then left hand|2.5
+additional=can't be blocked
+effect=ranged
+subeffect=damage:-
+subeffect=launch:2.4
+subeffect=summon Corrupted Ice enemy=Crystal:structure
+#note=move a bit to avoid or evade
+#note=visually bugged: looks like delayed AoE
+#note=needs line of sight to hit but is used without
+
+attack=Ice Repel
+ID=4848
+animation=touches ground and raises left arm|1.25
+effect=small PBAoE
+subeffect=damage:0
+subeffect=launch:3.3
+#note=block/evade
+
+##################################################################
+
+Name=Icebrood Goliath
+ID=8907
+image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
+Path=HotWS|HotW3
+
+attack=Smash
+ID=1615
+image=http://i.imgur.com/XXFJoDF.gif
+cooldown=0
+animation=swings right arm|0.75
+additional=low-range
+effect=melee
+subeffect=damage:-
+#note=run through or keep moving back (even if you melee) to avoid
+
+attack=Lunge
+ID=2081
+animation=jumps|1
+effect=melee
+subeffect=damage:-
+subeffect=knockdown:2
+#note=block/evade
+
+# Internal: Skill Point also listed.
+
+
+##################################################################
+
+Name=Hirvela the Lost
+ID=9601
+level=77
+Path=HotWS
+
+attack=Throw Axe
+ID=1890
+cooldown=0
+animation=raises left/right hand|0.5|throws an axe
+effect=projectile
+subeffect=damage:-
+
+attack=Boomerang Axe
+ID=1893
+animation=raises left/right hand|0.5|throws an axe
+effect=slow and returning projectile
+count=2
+subeffect=damage:-
+subeffect=chilled:8
+
+attack=Whirling Defense
+ID=1895
+animation=instant||spins and moves axes fast
+effect=6 PBAoEs in 6 s
+count=6
+length=6
+subeffect=damage:-
+effect=reflect projectiles (6 s)
+subeffect=reflected projectiles inflict "Ice" (2 s)
+#note=stop using projectiles
+
+attack="Ice"
+additional=can be destroyed
+effect=debuff
+subeffect=chilled:3 every second and can't move or use skills
+
+attack=Lunge
+ID=1649
+animation=turns right and glows|1
+effect=leap
+subeffect=damage:-
+
+attack=Transform
+animation=spreads arms and roars|2.5
+additional=used at 50%
+effect=transform to a dog
+#note=melee may interrupt
+#note=if you wipe he remains in dog-form. However, he won't charge and will stop attacking at 50%
+
+attack=Jab
+animation=swings left arm|0.25
+effect=melee
+subeffect=damage:0
+
+attack=lunge
+animation=bites|0.5
+effect=melee
+subeffect=damage:0
+
+attack=Charge
+animation=raises arms and pounds chest|1
+effect=buff
+subeffect=might:1
+effect=dash with PBAoE (~6 hits in ~2 s)
+count=6
+length=2
+subeffect=damage:0
+subeffect=knockback:1.5
+
+##################################################################
+
+Name=Lani Winterfist
+ID=7200
+level=77
+Path=HotWS
+
+attack=Cone of Cold
+ID=6697
+animation=points staff forward|0.25
+effect=6 cones in 1.5
+count=6
+length=1.5
+subeffect=damage:-
+
+attack=Meteor Shower
+ID=6696
+animation=touches ground and raises left hand|2.5
+effect=~15 delayed (2.5 s) AoEs in 7 s
+count=?
+subeffect=damage:-
+#note=keep moving and evade if needed
+
+##################################################################
+
+Name=Honor's Voice
+ID=4281
+level=78
+image=http://wiki.guildwars2.com/images/b/be/Honor%27s_Voice.png
+Path=HotWS
+
+attack=Dragon's Claw
+ID=4840
+animation=moves left arm to right|0.25
+additional=medium-range
+effect=3 projectiles (cone)
+subeffect=damage:-
+
+attack=Lightning Whip
+ID=4844
+animation=swings right arm|0.25|whips
+effect=2 melee hits in 0.3 s
+count=2
+length=0.3
+subeffect=damage:-
+
+attack=Ice Leap
+ID=14960
+cooldown=15
+animation=crouches|0.2
+effect=ranged
+subeffect=damage:-
+subeffect=enemy=Ice_Shard:structure on target (5 s)
+#note=try to predict and block/evade
+#note=destroy Ice Shard fast to free players
+
+# Internal: Skill Corrupted Summon also listed.
+
+##################################################################
+
+Name=The Huntsman
+ID=7337
+level=78
+Path=HotWS
+
+attack=Pounce
+ID=4861
+animation=turns left|0.15
+effect=leap
+subeffect=damage:-
+#note=block/evade
+
+attack=Hornet Sting (1)
+ID=4862
+animation=swings right arm|0.5|hornet effect
+effect=melee
+subeffect=damage:-
+effect=dodge back
+subeffect=buff:evade
+
+attack=Monarch's Leap (2)
+effect=leap (0.5 s)
+subeffect=damage:0.75
+subeffect=crippled:3
+
+attack=Serpent's Strike
+ID=4864
+animation=instant||green effect
+effect=move behind target
+subeffect=buff:evade:1
+effect=melee
+subeffect=damage:-
+subeffect=vulnerability:3
+subeffect=poison:6
+
+attack=Call of the Wild
+ID=4867
+animation=blows horn|0.3
+cooldown=15
+effect=AoE
+subeffect=Fury:45
+subeffect=might:15:3
+subeffect=swiftness:45
+
+attack=Hunter's Call
+ID=4866
+animation=blows horn|1.5
+cooldown=15
+effect=ranged
+subeffect=buff:Birds":4:1:-
+#note=break line of sight
+#note=evade 4 times or use immunity
+
+attack="Birds"
+additional=only hits if line of sight
+effect=debuff (~4 hits every second)
+count=16
+length=4
+subeffect=damage:0.08
+
+##################################################################
+
+Name=Bane's Teeth
+ID=7201
+level=78
+image=http://wiki.guildwars2.com/images/7/72/Ice_Drake.jpg
+Path=HotWS
+
+attack=Bite
+ID=3027
+cooldown=0
+animation=bites|0.15
+effect=melee
+subeffect=damage:-
+
+attack=Tail Swipe
+ID=8109
+animation=raises tail|3|spins
+effect=PBAoE
+subeffect=damage:-
+subeffect=launch:3.4
+
+attack=Swallow (1)
+ID=8102
+animation=glows and bites|1
+effect=channeled single target melee (6 s)
+subeffect=can't move or use skills
+effect=end effect
+subeffect=launch:3.4
+
+attack=Regurgitate (1, 2)
+ID=8098
+animation=pukes|1.5
+effect=ticking AoE (10 hits in 10 s)
+count=10
+length=10
+subeffect=damage:0
+subeffect=poison:3
+
+##################################################################
+# Path 1 bosses
+##################################################################
+
+Name=Aldus Stormbringer
+ID=7428
+image=http://wiki.guildwars2.com/images/e/e4/Aldus_Stormbringer.jpg
+Path=HotW1
+
+attack=Can't be moved
+
+attack=Frostbolt
+ID=4854
+effect=projectile
+subeffect=damage:-
+
+attack=Frostbolt Volley
+ID=4855
+effect=projectile
+subeffect=damage:-
+
+attack=Frozen Ground
+ID=4856
+effect=6 PBAoEs in 5 s
+count=6
+length=5
+subeffect=damage:0.2
+subeffect=chilled:0
+#note=run out, evade if needed
+
+attack=Mass Summon
+cooldown=55
+effect=summon 6 enemy=text:Icebrood|Icebrood_Mauler:normal|Icebrood_Seer:normal|Icebrood_Hunter:normal|Icebrood_Claymore:normal|Icebrood_Berserker:normal
+
+attack=Shielding
+effect=at start
+subeffect=buff:Shield_of_Jormag:0:60:aegis
+effect=at 75%
+subeffect=buff:Shield_of_Jormag:0:30:aegis
+effect=at 50%
+subeffect=buff:Shield_of_Jormag:0:45:aegis
+effect=at 25%
+subeffect=buff:Shield_of_Jormag:0:60:aegis
+
+attack="Shield of Jormag"
+effect=buff
+subeffect=blocks an attack. Projectiles are reflected.
+
+##################################################################
+
+Name=Ginva the Butcher
+ID=4421
+image=http://wiki.guildwars2.com/images/6/6a/Ginva_the_Butcher.jpg
+Path=HotW1
+
+attack=Splitblade
+ID=4877
+effect=3 projectiles (cone)
+subeffect=damage:-
+subeffect=pull:1.5
+#note=evade
+
+attack=Crude Swing
+ID=4876
+effect=cone
+subeffect=damage:-
+#note=block/evade
+
+attack=Whirling Defense
+ID=4879
+cooldown=30
+effect=9 PBAoEs in 4 s
+count=9
+length=4
+subeffect=damage:-
+effect=buff:projectile_reflection:5
+#note=if ranged: stop using projectiles
+#note=if melee: evade away, keep hitting at max melee range
+
+attack=Frozen Ground
+ID=4878
+cooldown=55
+effect=ticking AoE (21 hits in 20 s)
+count=21
+length=20
+subeffect=chilled:5
+
+##################################################################
+# Path 2 bosses
+##################################################################
+
+Name=Torn Fur
+ID=10991
+image=http://wiki.guildwars2.com/images/5/5f/Icebrood_Kodan.jpg
+Path=HotW2
+
+attack=Frost Aura
+ID=4890
+animation=sticks sword to ground
+effect=3 PBAoEs in 5 s
+count=3
+length=5
+subeffect=damage:-
+subeffect=knockback:0
+subeffect=chilled:4
+subeffect=vulnerability:4
+subeffect=might:10
+
+attack=Throw Greatsword
+ID=4891
+additional=can't be blocked
+effect=projectile
+subeffect=damage:-
+subeffect=launch:0
+subeffect=vulnerability:5:3
+
+attack=Flurry (1)
+ID=4889
+effect=channeled melee
+subeffect=damage:-
+subeffect=vulnerability:10
+
+attack=Flurry (2)
+animation=instant
+effect=3 projectiles (cone)
+subeffect=damage:0.3
+
+attack=Leap (1)
+ID=4892
+effect=leap
+subeffect=damage:-
+
+attack=Leap (2)
+animation=instant
+effect=3 projectiles (cone)
+subeffect=damage:0.25
+
+##################################################################
+
+Name=Jaddeor Icefist
+ID=7524
+image=http://wiki.guildwars2.com/images/a/af/Champion_Svanir_Marauder.jpg
+Path=HotW2
+
+attack=Maul
+ID=4903
+animation=moves arm back
+effect=homing projectile
+subeffect=damage:-
+subeffect=bleeding:5:2
+subeffect=vulnerability:15
+
+attack=Jab
+ID=4901
+animation=weird sound
+effect=2 PBAoEs
+count=2
+subeffect=damage:-
+subeffect=bleeding:0:3
+
+attack=Charge (1)
+ID=4902
+animation=glows and pounds chest
+effect=dash with PBAoE (2.5 s)
+subeffect=damage:0.1
+subeffect=launch:0
+effect=leaves a trail of "Icy Ground"
+
+attack=Charge (2)
+effect=melee
+subeffect=damage:0.5
+subeffect=launch:0
+
+attack="Icy Ground"
+effect=ticking AoE
+subeffect=chilled:0
+subeffect=vulnerability:0
+
+##################################################################
+
+Name=Balgren Creedbreaker
+ID=7525
+image=http://wiki.guildwars2.com/images/a/af/Champion_Svanir_Marauder.jpg
+Path=HotW2
+
+attack=Maul
+ID=4903
+animation=moves arm back
+effect=homing projectile
+subeffect=damage:-
+subeffect=bleeding:5:2
+subeffect=vulnerability:15
+
+attack=Jab
+ID=4904
+animation=weird sound
+effect=2 PBAoEs
+count=2
+subeffect=damage:-
+subeffect=bleeding:0:3
+
+attack=Roar
+ID=4905
+animation=glows
+additional=can't be blocked or evaded
+effect=melee
+subeffect=fear:3
+subeffect=protection:15
+subeffect=might:5:3
+#note=get out of range (evade back if on melee)
+#note=stun break
+
+attack=Summon
+effect=Summon
+
+##################################################################
+
+Name=Andal the Thug
+ID=7528
+image=http://wiki.guildwars2.com/images/5/55/Son_of_Svanir_staff.jpg
+Path=HotW2
+
+attack=Cone of Cold
+ID=14961
+#note=able to rotate
+effect=channeled cone
+subeffect=damage:-
+#note=evade twice or out-range
+
+attack=Quaggan Growth
+effect=AoE
+subeffect=damage:0
+subeffect=chilled:4
+subeffect=might:20:2
+
+attack=Meteor Shower
+ID=15064
+animation=instant||falling ice shards
+effect=multiple delayed AoEs
+count=?
+subeffect=damage:-
+subeffect=chilled:0
+#note=walk out of circles, evade if needed
+
+##################################################################
+
+Name=Poroo
+ID=7527
+image=http://wiki.guildwars2.com/images/1/15/Corrupted_Quaggan.jpg
+Path=HotW2
+
+attack=Slash
+ID=1633
+effect=melee
+subeffect=damage:-
+
+attack=Side Stab
+ID=1681
+effect=melee
+subeffect=damage:-
+
+# Interal: Skill Enrange also listed.
+
+##################################################################
+
+Name=Oolon
+ID=7526
+image=http://wiki.guildwars2.com/images/1/15/Corrupted_Quaggan.jpg
+Path=HotW2
+
+attack=Stab
+ID=1629
+effect=melee
+subeffect=damage:-
+
+attack=Throw Javelin
+ID=1631
+effect=slow projectile
+subeffect=damage:-
+
+# Interal: Skill Enrange also listed.
+
+##################################################################
+
+Name=Wollam the Plunderer
+ID=4423
+image=http://wiki.guildwars2.com/images/e/ea/Wollam_the_Plunderer.jpg
+Path=HotW2
+
+attack=Stab
+ID=4912
+effect=melee
+subeffect=damage:-
+
+attack=Fan of Mines
+ID=4918
+effect=multiples mines on area
+count=?
+subeffect=damage:-
+
+attack=Dart
+ID=4915
+effect=channeled PBAoE
+count=?
+subeffect=damage:-
+#note=keep distance and evade, you can go melee after this for a while
+
+##################################################################
+# Path 3 bosses
+##################################################################
+
+Name=Svánigandr
+ID=10937
+image=http://wiki.guildwars2.com/images/6/66/Becomethewolf.jpg
+Path=HotW3
+
+attack=bite
+ID=4906
+cooldown=0
+animation=swings left arm
+effect=short dash
+subeffect=damage:-
+effect=multiple delayed AoEs
+subeffect=damage:-
+
+attack=Leap
+ID=4911
+animation=glows and jumps at target
+effect=short leap with long cone
+subeffect=damage:-
+subeffect=bleeding:4
+#note=block/evade
+
+attack=Swipe (1)
+ID=1254
+effect=melee
+subeffect=damage:0
+
+attack=Brutal Swipe (2)
+ID=1255
+effect=Melee
+subeffect=damage:0
+
+attack=howl
+ID=4907
+animation=howls
+additional=can't be blocked
+effect=huge PBAoE
+subeffect=damage:-
+subeffect=immobilized:4
+subeffect="Stun" (4 s)
+#note=evade
+
+##################################################################
+
+Name=Fimbul
+ID=7475
+level=81
+Path=HotW3
+
+attack=Smash
+ID=4895
+effect=melee with a ticking AoE
+subeffect=damage:-
+effect=final hit
+subeffect=launch:0
+#note=walk out
+
+attack=Ice Leap
+ID=4897
+effect=leap with PBAoE
+subeffect=damage:-
+subeffect=bleeding:0
+
+attack=Iceshard
+ID=4896
+effect=get covered in iceshard
+subeffect=healing:0
+subeffect=invulnerability until destroyed
+
+##################################################################
+
+Name=Sorge the Zealot
+ID=4424
+image=http://wiki.guildwars2.com/images/e/ea/Wollam_the_Plunderer.jpg
+Path=HotW3
+
+attack=Crimson Tide
+ID=4924
+effect=ranged
+subeffect=damage:-
+subeffect=bleeding:0
+#note=block/evade when you see claws on you
+
+attack=Summon
+ID=4925
+effect=Summon a enemy=Giant_Arctic_Jellyfish:elite
+
+attack=Rock Anchor
+ID=14962
+effect=ranged
+subeffect=sink:0
+
+# Internal: Skill Dark Water also listed.
+
+##################################################################
+# Icebrood
+##################################################################
+
+Name=Icebrood Berserker
+ID=9888
+alt=Icebrood Berserkers
+image=http://wiki.guildwars2.com/images/5/50/Icebrood_Berserker.jpg
+Path=HotW1|HotW3
+
+attack=Throw Axe
+ID=1888
+cooldown=2
+animation=swings left/right arm|0.3|throws an axe
+effect=projectile
+subeffect=damage:-
+effect=when buffed up
+subeffect=damage:0.5
+
+attack=Boomerang Axe
+ID=1892
+cooldown=12
+animation=swings left/right arm|0.3|throws an axe
+effect=returning projectile
+count=2
+subeffect=damage:-
+subeffect=crippled:8
+effect=when buffed up
+count=2
+subeffect=damage:0.5
+subeffect=chilled:5
+#note=projectile moves slightly slower than with Throw Axe
+
+attack=Whirling Defense
+ID=1894
+cooldown=24
+animation=moves axes fast with a whirl effect and wind sound|instant|spins around
+effect=6 PBAoEs in 5 s
+count=6
+length=5
+subeffect=damage:-
+effect=reflects projectiles (5 s)
+#note=at melee move away to max melee range
+#note=at range stop using projectiles
+
+attack=Frenzy
+ID=1886
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Skills become stronger.
+#note=Additional usages seem to have no effect
+
+# Internal: Skill Equip Harpoon also listed.
+
+#############################
+
+copy=9888
+ID=1693
+Path=HotWS|HotW1|HotW3
+
+#############################
+
+copy=9888
+name=Son of Svanir Berserker
+ID=9893
+alt=Son of Svanir Berserkers
+path=HotW1
+
+#############################
+
+copy=9888
+Name=Son of Svanir (Axe)
+ID=4653
+alt=Sons of Svanir (axe)
+image=http://wiki.guildwars2.com/images/d/db/Son_of_Svanir_axes.jpg
+Path=HotWS|HotW3
+
+##################################################################
+
+copy=4653
+ID=11334
+scaling=normal
+Path=Snow
+
+##################################################################
+
+Name=Icebrood Claymore
+ID=9890
+alt=Icebrood Claymores
+Path=HotWS|HotW2
+
+attack=Slash
+ID=1563
+cooldown=2
+animation=swings sword|0.4
+effect=2 melee hits in 0.5 s
+count=2
+length=0.5
+subeffect=damage:-
+
+attack=Whirlwind Attack
+ID=1566
+cooldown=24
+animation=glows and sticks sword to the ground|0.6
+effect=4 projectiles (cone)
+subeffect=damage:-
+
+attack=Whirlwind Attack
+ID=1571
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:-
+#note=usually hits only once, may hit twice if you run with him 
+
+attack=Frostwind Attack
+ID=1571
+cooldown=24
+animation=spins|0.5|moves forward while spinning
+additional=only used when buffed up
+effect=dash (2 s) with 2 PBAoEs
+subeffect=damage:-
+effect=leaves 4 delayed (1 s) AoEs
+subeffect=damage:-
+subeffect=bleeding:2
+#note=usually hits only once, may hit twice if you run with him 
+#note=very dangerous when against a wall
+
+attack=Frenzy
+ID=1884
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 25%
+effect=Uses Frostwind Attack instead Whirlwind attack
+#note=Additional usages seem to have no effect
+
+# Internal: Skill Equip Harpoon also listed.
+
+#############################
+
+copy=9890
+ID=6145
+Path=HotW1
+
+#############################
+
+copy=9890
+name=Son of Svanir (Greatsword)
+ID=9895
+alt=Sons of Svanir (Greatsword)
+path=HotW1
+
+#############################
+
+copy=9895
+ID=4655
+Path=HotWS|HotW3
+
+#############################
+
+copy=9895
+ID=11336
+scaling=normal
+Path=Snow
+
+##################################################################
+
+Name=Icebrood Goliath
+ID=9873
+alt=Icebrood Goliaths
+image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
+Path=HotWS|CoE1|CoE2|CoE3
+
+attack=Smash
+ID=4898
+image=http://i.imgur.com/XXFJoDF.gif
+animation=swings right arm|0.75
+cooldown=0
+effect=melee
+subeffect=damage:-
+subeffect=knockback:1.5
+
+attack=Smash
+ID=4899
+image=http://i.imgur.com/SgQDJrV.gif
+animation=glows and pulls right arm back|2.5
+effect=melee
+subeffect=damage:-
+
+attack=Frost Breath
+ID=4900
+image=http://i.imgur.com/sob1GdR.gif
+animation=raises arms and stomps ground|2.5|icy spray
+effect=channeled cone (2.5 s)
+subeffect=damage:-
+subeffect=chilled:1
+effect=first hit
+subeffect=immobilized:3
+
+##################################################################
+
+Name=Icebrood Hunter
+ID=9889
+alt=Icebrood Hunters
+image=http://wiki.guildwars2.com/images/2/22/Icebrood_Hunter.jpg
+Path=HotWS|HotW1|HotW3
+
+attack=Shoot
+ID=1650
+animation=raises bow and aims|0.5|shoots an arrow
+cooldown=2.5
+effect=projectile
+subeffect=damage:-
+
+attack=Volley
+ID=1584
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots arrows
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:-
+
+attack=Frost Volley
+ID=1584
+cooldown=22
+animation=crouches, raises bow and aims|0.75|shoots icy arrows
+additional=only used when buffed up
+effect=5 projectiles in 1.5 s
+count=5
+length=1.5
+subeffect=damage:-
+subeffect=chilled:1
+
+attack=Barrage
+ID=1586
+animation=aims up|0.5|shoots an arrow rain in a big circle
+effect=channeled AoE (10 hits in 3.5 s)
+count=10
+length=3.5
+subeffect=damage:-
+subeffect=crippled:3
+
+attack=Summon
+animation=spreads arms, raises them in the air and shoots a beam to the sky|1|two wolves appear
+additional=only used when buffed up
+effect=Summon 2 enemy=Icebrood_Wolves:normal
+
+attack=Frenzy
+ID=1885
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons
+additional=used when below 25%
+effect=Use Frost Volley instead of Volley.
+#note=Additional usages seem to have no effect
+
+# Internal: Skill Equip Speargun also listed.
+
+#############################
+
+copy=9889
+ID=6143
+Path=HotW1
+
+#############################
+
+copy=9889
+Name=Son of Svanir (Bow)
+ID=4654
+alt=Sons of Svanir (Bow)
+Path=HotWS|HotW1|HotW3
+
+#############################
+
+copy=9889
+Name=Son of Svanir (Bow)
+ID=9894
+alt=Sons of Svanir (Bow)
+Path=HotW1
+
+#############################
+
+copy=4654
+ID=11335
+scaling=normal
+Path=Snow
+
+##################################################################
+
+Name=Icebrood Kodan
+ID=9876
+image=http://wiki.guildwars2.com/images/5/5f/Icebrood_Kodan.jpg
+Path=HotWS|HotW2
+
+attack=Slash
+ID=1338
+effect=melee
+subeffect=damage:-
+
+attack=Retreating Swipe (1)
+ID=1360
+animation=spin
+effect=melee
+subeffect=damage:-
+effect=evade back
+
+attack=Ambush (2)
+animation=glows and leans back
+effect=leap
+subeffect=damage:0
+subeffect=crippled:0.5
+
+attack=Flurry (3)
+effect=channeled melee
+subeffect=damage:0.5
+
+# Internal: Skill Equip Harpoon also listed.
+
+##################################################################
+
+Name=Icebrood Mauler
+ID=9891
+image=http://wiki.guildwars2.com/images/c/c1/Icebrood_Mauler.jpg
+Path=HotWS
+
+attack=Smash
+ID=1653
+cooldown=2.5
+animation=swing from right|0.5|frost effect on hit
+effect=Melee
+subeffect=damage:-
+
+attack=Spin
+ID=1874
+animation=shouts||spins
+effect=PBAoE
+subeffect=damage:-
+
+attack=Leap
+ID=1871
+cooldown=14
+animation=crouches and leaps with hammer above head|0.9
+effect=leap
+subeffect=damage:-
+subeffect=knockdown:2
+#note=block/evade
+
+attack=Ice Leap
+ID=1871
+cooldown=14
+animation=crouches and leaps with hammer above head|0.9
+effect=leap
+subeffect=damage:1
+subeffect=enemy=Ice_Shard:structure on the target
+#note=block/evade
+#note=attack Ice Shard immediately (one hit)
+
+attack=Frenzy
+ID=1872
+cooldown=58
+animation=crouches, raises head and shouts|0.5|gets upgraded glowing weapons, hits have a frost effect
+additional=used when below 50%
+effect=Uses Ice Leap instead Leap.
+#note=Additional usages seem to have no effect
+
+#############################
+
+copy=9891
+Name=Son of Svanir (Hammer)
+ID=9896
+alt=Sons of Svanir (Hammer)
+Path=HotWS|HotW1
+
+#############################
+
+copy=9891
+ID=6146
+Path=HotWS|HotW1
+
+#############################
+
+copy=9896
+ID=11337
+Path=Snow
+
+##################################################################
+
+Name=Icebrood Seer
+ID=6147
+alt=icebrood Seers
+image=http://wiki.guildwars2.com/images/9/92/Icebrood_Seer.jpg
+Path=HotwS
+
+attack=Ice Shards
+ID=1902
+cooldown=7
+animation=ice shard grows on top of the staff and he points it forward|1
+effect=3 medium-range projectiles in 0.1 s
+count=3
+length=0.1
+subeffect=damage:-
+subeffect=chilled:1
+
+attack=Ice Spike
+ID=1713
+cooldown=5
+animation=leans back with ice effect on top of the staff, crouches and raises left arm|1|red circle
+effect=delayed (3 s) AoE
+subeffect=damage:-
+
+attack=Summon Corrupted Elemental
+ID=1903
+animation=leans back, crouches and raises left arm|1
+additional=maximum of 2
+effect=Summon
+subeffect=enemy=Icebrood_Elemental_(Big):normal|Icebrood_Elemental_(Big):normal:79 at target
+
+# Internal: Skill Equip Trident also listed.
+
+#############################
+
+copy=6147
+ID=9892
+path=HotWS|HotW1
+
+#############################
+
+copy=9892
+ID=6148
+
+#############################
+
+copy=6147
+name=Seer
+alt=Seers
+Path=HotW1
+
+#############################
+
+copy=6147
+name=Son of Svanir (Staff)
+ID=11338
+alt=Sons of Svanir (Staff)
+scaling=normal
+Path=Snow
+
+##################################################################
+
+name=Shaman Lornarr Dragonseeker
+ID=11333
+image=http://wiki.guildwars2.com/images/a/a6/Hafdan_the_Black.jpg
+path=Snow
+scaling=legendary
+
+attack=Strike (1)
+ID=16263
+animation=swings sword from right overhead|0.4
+cooldown=0
+effect=melee
+subeffect=damage:-
+subeffect=buff:Frostbite:15
+
+attack=Strike (2)
+ID=16264
+animation=waits and swings sword from right|1.4
+effect=melee
+subeffect=damage:-
+subeffect=buff:Frostbite:15
+
+attack=Strike (3)
+ID=16265
+animation=waits and thrusts sword forward|1.7
+effect=melee
+subeffect=damage:-
+subeffect=buff:Frostbite:15:2
+#note=deals about same damage as previous hits so don't tank it
+#note=block/evade
+
+attack=Icy Breath
+ID=16270
+cooldown=14
+animation=lowers sword, leans back and leans forward|0.5|sprays ice
+additional=able to rotate
+effect=10 cones in 4.5 s
+count=10
+length=4.5
+subeffect=damage:-
+subeffect=buff:Frostbite:15
+#note=evade back to direct away from your party
+#note=usually targets the same player
+
+attack=Heal
+ID=16271
+animation=kneels
+additional=can be destroyed
+effect=covered by enemy=Ice:structure
+subeffect=invulnerability, heal and Ice Spikes around the area
+
+attack=Ice Spike
+effect=delayed (2 s) AoE
+subeffect=damage:0.8
+subeffect=agony:3
+
+attack=Ice Spikes
+cooldown=50
+animation=instant||teleports away and rambles about power of dragon
+effect=leaves the arena
+effect=multiple delayed (2 s) AoEs in line (lasts about 20 s)
+count=?
+subeffect=damage:0.8
+subeffect=agony:3
+#note=used on cooldown (even cancels other skills)
+
+attack="Frostbite"
+additional=stacks up to 10 times
+effect=debuff
+frequency=1
+subeffect=damage-constant:90.5
+effect=at 10 stacks
+subeffect=lose all "Frostbite" and get enemy=Ice_Shard:structure.
+
+##################################################################
+
+Name=Ice Imp
+ID=10851
+alt=Ice Imps
+image=http://wiki.guildwars2.com/images/8/88/Ice_Imp.jpg
+# VERIFY
+scaling=normal
+Path=Snow
+
+attack=Ice Explosion
+ID=2369
+animation=stands still with a red circle, white mist forms up and dives fast to the ground|3
+effect=PBAoE
+subeffect=damage:-
+subeffect=chilled:1
+effect=self destruct
+#note=Either kill or move away
+

@@ -1,0 +1,1303 @@
+##################################################################
+# Contains fire legion, devourers and imps.                      #
+##################################################################
+
+Name=Bolok Firebringer
+ID=1735
+image=http://wiki.guildwars2.com/images/f/fa/Flame_Legion_Lava_Shaman.jpg
+Path=CoFS
+
+attack=Firewall
+ID=5100
+cooldown=0
+animation=pulls right hand back
+additional=can't be blocked
+effect=projectile with ticking AoE
+subeffect=damage:-
+#note=at close range you need to evade to avoid first tick
+#note=evading may prevent AoE (requires good timing, may require everyone to evade)
+#note=walls stack quickly which may kill you instantly
+
+attack=Summon
+additional=used at 75%/50%/25%
+effect=summon 2 normal enemies
+
+##################################################################
+
+Name=Rozgar the Forge
+ID=1737
+image=http://wiki.guildwars2.com/images/8/83/Flame_Legion_Axe_Fiend.jpg
+Path=CoFS
+
+attack=Swaps weapon every 25% (Greatsword, Hammer, Axe, Dagger)
+
+attack=Whirlwind Attack (Greatsword)
+ID=5103
+effect=piercing dash with PBAoE
+subeffect=damage:-
+#note=stay away from walls. Causes extreme damage if used against wall
+#note=careful with crippled, chilled and immobilized. Slower movement means more damage if it hits
+
+attack=Swing (Hammer) (1)
+cooldown=0
+effect=melee
+subeffect=damage:0
+#note=evade or get out of range to break attack-chain
+
+attack=Bash (2)
+effect=melee
+subeffect=damage:0
+#note=evade or get out of range to break attack-chain
+
+attack=Smash (3)
+#note=glows and keeps hammer back for few seconds
+effect=melee
+subeffect=damage:0
+subeffect=knockdown:0
+
+attack=Splitblade (Axe)
+effect=3 projectiles (cone)
+subeffect=damage:0
+subeffect=burning:1
+#note=prevent most of damage with evades
+#note=condition-removal if you get long burning
+
+attack=Stealth (Dagger) (1)
+effect=buff
+subeffect=stealth
+
+attack=Teleport (2)
+effect=teleport
+
+attack=Ember Strike (3)
+effect=slow dash with PBAoE
+subeffect=damage:0
+subeffect=bleeding:0
+#note=keep moving to avoid most of damage, evade if needed
+#note=call Rozgar when he appears for quick focus
+#note=condition-removal if you get intense bleeding
+
+##################################################################
+
+Name=Hierophant Improaster
+ID=6734
+image=http://wiki.guildwars2.com/images/f/fa/Flame_Legion_Lava_Shaman.jpg
+Path=CoFS
+
+attack=Summon Ghostly Minions
+ID=5073
+effect=Summon Fire enemy=Imps:normal
+
+
+##################################################################
+
+Name=Flame Acolyte
+ID=4278
+Path=CoFS
+
+##################################################################
+
+Name=Gaheron Baelfire
+ID=1689
+image=http://wiki.guildwars2.com/images/9/9d/Gaheron_Baelfire.jpg
+Path=CoFS
+
+attack=Takes no damage
+#note=Throw Molten Hearts to damage
+
+attack=Summon Boulder
+effect=Summon 3 Boulders
+subeffect=downed on contact. Leaves burning trail
+#note=usual pattern is 3 on left, 3 on right, 3 on left, etc
+
+attack=Fireball
+effect=delayed AoE
+subeffect=damage:0
+subeffect=launch:0
+
+attack=Vulnerability
+additional=used at 75%/50%/25%
+effect=take damage (~10 s)
+
+attack=Magma Wall
+additional=used after from 75% to 50%
+effect=summon a Magma Wall
+#note=destroy, run around or let Boulders to destroy
+
+attack=Double Magma Wall
+additional=used after from 50% to 25%
+effect=summon 2 Magma Walls
+#note=don't panic if you get trapped between walls. Either fight your way out or wait for Boulders
+
+attack=Triple Magma Wall
+additional=used after 25%
+effect=summon 3 Magma Walls
+
+attack=Iron Beam
+additional=used after 25%
+effect=high-range cone
+subeffect=damage:0
+subeffect=knockdown:0
+
+##################################################################
+
+Name=Slave Driver
+ID=7386
+image=http://wiki.guildwars2.com/images/e/e4/Slave_Driver.jpg
+Path=CoF1
+
+attack=Lightning Whip
+ID=5038
+effect=2 melee hits
+count=2
+subeffect=damage:-
+
+attack=Fire Leap
+ID=5039
+effect=leap (0.75 s)
+subeffect=damage:-
+subeffect=burning:5
+
+attack=Mighty Horn
+ID=5043
+effect=buff
+subeffect=Might:15:5
+
+##################################################################
+
+Name=Prison Warden
+level=76
+ID=7153
+Path=CoF2
+
+attack=Whip
+ID=7606
+effect=melee
+subeffect=damage:-
+
+attack=Kick
+ID=3386
+effect=melee
+subeffect=damage:-
+subeffect=knockback:0
+
+attack=Devourer's Call
+ID=5069
+additional=maximum amounts are 4 for Normals and 1 for Siege
+effect=Summon (when above 75%)
+subeffect=4 enemy=Carrion_Devourers:normal
+effect=Summon (when below 75% and above 50%)
+subeffect=4 enemy=Lashtail_Devourers:normal
+effect=Summon (when below 50% and above 25%)
+subeffect=4 enemy=Whiptail_Devourers:normal
+effect=Summon (when below 25%)
+subeffect=enemy=Siege_Devourer:elite
+
+##################################################################
+
+Name=Siege Commander
+ID=7284
+Path=CoF3
+type=flame legion
+
+attack=Explosive Shot
+ID=3317
+animation=aims with right pistol|0.25
+cooldown=2.25
+effect=projectile
+subeffect=damage:-
+subeffect=bleeding:12
+
+attack=Blowtorch
+ID=5077
+cooldown=20
+additional=only use at close targets
+effect=cone
+subeffect=damage:-
+subeffect=burning:9
+effect=Dodge back
+subeffect=buff:evade
+#note=try to predict, remove burning
+
+attack=Mighty Horn
+ID=5043
+cooldown=30
+animation=blows horn|0.65
+effect=5 PBAoEs in 2 s
+count=5
+length=2
+subeffect=Might:15
+effect=when below 15%
+count=5
+length=2
+subeffect=Quickness:5
+
+attack=Defensive Horn
+ID=5076
+cooldown=40
+animation=blows horn|0.65
+effect=5 PBAoEs in 2 s
+count=5
+length=2
+subeffect=Retaliation:2
+effect=when below 15%
+count=5
+length=2
+subeffect=protection:5
+#note=Strong retaliation, don't kill yourself
+
+##################################################################
+
+Name=Tribune Burntclaw
+ID=7322
+Path=CoF3
+
+attack=Banish
+ID=5118
+cooldown=3
+animation=pulls glowing hammer behind back|0.75
+effect=melee
+subeffect=damage:21780000
+subeffect=launch:2.1
+#note=block/evade
+
+attack=Throw Bolas
+ID=14924
+cooldown=20
+animation=twists right arm|0.33|throws a bolas
+effect=fast projectile
+subeffect=damage:-
+subeffect=immobilized:5
+#note=try to block/evade
+#note=bring something to deal with Banish if you get hit (condition-removal, immunity, block)
+
+attack=Hammer Throw
+ID=7172
+animation=raises hammer in right hand|0.5|throws a hammer
+cooldown=20
+effect=projectile
+subeffect=damage:-
+subeffect=knockback:1.5
+#note=try to block/evade
+
+attack=Run to middle (1)
+cooldown=25
+effect=invulnerable
+#note=don't kite Tribune too far away from middle or he will spend lots of time invulnerable
+
+attack=Stomp (2)
+animation=rises to air|3
+effect=growing circle (hits 1-3 times)
+count=3
+subeffect=damage:0.25
+subeffect=bleeding:5:3
+subeffect=launch:2.3
+effect=invulnerable
+
+attack=Throw (3)
+effect=Hammer or Bolas (unless on cooldown)
+#note=time your evade so you avoid both Stomp and Throw
+
+##################################################################
+
+Name=Flame Legion Shadowblade
+ID=8936
+alt=Flame Legion Shadowblades
+image=http://wiki.guildwars2.com/images/e/e9/Flame_Legion_Shadowblade.jpg
+Path=CoFS|CoF1|CoF2|CoF3
+
+attack=Twisting Fang (1)
+ID=1970
+effect=2 melee hits
+count=2
+subeffect=damage:-
+
+attack=Twisting Fang (2)
+ID=1971
+effect=melee
+subeffect=damage:-
+
+attack=Twisting Fang (3)
+ID=1972
+effect=melee
+subeffect=damage:-
+
+attack=Death Blossom
+ID=1973
+effect=jump over target|0.4
+effect=3 small PBAoes in 0.15 s
+count=3
+length=0.15
+subeffect=damage:-
+subeffect=bleeding:10
+
+# Internal: Skill Caltrops also listed.
+
+#############################
+
+copy=8936
+ID=9137
+Path=CoF3
+
+#############################
+
+# Internal: Different weapon ID but data looks same.
+copy=8936
+Name=Molten Shadowblade
+ID=11687
+alt=Molten Shadowblades|Shadowblade|Shadowblades
+image=http://wiki.guildwars2.com/images/d/d7/Molten_Shadowblade.jpg
+Path=Furn
+scaling=champion
+
+##################################################################
+
+Name=Flame Legion Stalker
+ID=8939
+alt=Flame Legion Stalkers
+image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Stalker.jpg
+Path=CoFS|CoF1|CoF2|CoF3
+
+attack=Shoot
+ID=1966
+animation=raises bow and aims|0.6
+effect=projectile
+subeffect=damage:-
+
+attack=Dual Shot
+ID=1967
+animation=raises bow and aims|0.5
+effect=2 projectiles in 0.1 s
+count=2
+length=0.1
+subeffect=damage:-
+
+attack=Spread Shot
+animation=crouches and aims|1.5
+ID=1978
+animation=aims|1
+effect=5 projectiles (cone)
+subeffect=damage:-
+
+attack=Ignite Arrows
+ID=1969
+animation=touches ground with right hand|0.25
+effect=buff
+subeffect=damage:0.1 (PBAoE) when hitting with attacks
+
+
+#############################
+
+copy=8939
+ID=9356
+
+
+##################################################################
+
+# Internal: Different weapon ID but data seems same.
+copy=8939
+Name=Molten Stalker
+ID=12096
+alt=Molten Stalkers
+image=http://wiki.guildwars2.com/images/1/10/Molten_Stalker.jpg
+Path=Furn
+scaling=level
+
+##################################################################
+
+Name=Godforged Fanatic
+ID=7151
+alt=Godforged Fanatics
+Path=CoF1|CoF2|CoF3
+
+attack=Spell Detonate
+ID=1547
+animation=swings right arm|1
+effect=3 low-range projectiles (cone)
+subeffect=damage:-
+
+attack=Flame Wall
+ID=5011
+animation=smashes ground with fiery right arm|0.75
+additional=fire field
+effect=ticking AoE (7 hits in 6 s)
+count=7
+length=6
+subeffect=damage:-
+
+attack=Dragon Punch
+ID=1463
+animation=roars|1
+additional=leap finisher. Only used at distant targets
+effect=dash with 2 melee hits at end
+count=2
+subeffect=damage:0
+subeffect=launch:0
+
+##################################################################
+
+Name=Godforged Flamecaller
+ID=7152
+alt=Godforged Flamecallers
+Path=CoFS|CoF1|CoF3
+
+attack=Immune to control-skills
+
+attack=Fireball
+ID=5013
+cooldown=3.5
+animation=glows and swings right arm|1.5
+effect=projectile with small AoE
+subeffect=damage:-
+
+attack=Summon Ghostly Minions
+ID=5030
+animation=touches ground|1.5|blue glow
+effect=summon
+subeffect=3 enemy=Fire_Imps:normal
+#note=kill before they explode
+
+# Internal: Skill without name also listed.
+
+##################################################################
+
+Name=Flame Legion Assassin
+ID=11605
+level=77
+alt=Flame Legion Assassins|Assassin|Assassins
+Path=CoF1|CoF2|CoF3
+
+attack=Backstab
+ID=17003
+effect=melee
+subeffect=damage:-
+
+##################################################################
+
+Name=Godforged Smokelord
+ID=7148
+alt=Godforged Smokelords|Smokelord|Smokelords
+Path=CoF1|CoF2|CoF3
+
+attack=Ash Blash
+ID=1460
+effect=projectile
+subeffect=damage:-
+
+attack=PBAOE
+ID=5007
+effect=PBAoE
+count=?
+subeffect=damage:-
+
+attack=Eruption
+ID=5010
+effect=ticking AoE
+count=?
+subeffect=damage:-
+
+attack=Dark Cloud
+ID=5085
+effect=???
+subeffect=damage:-
+
+##################################################################
+
+Name=Molten Smoke Shaman
+ID=12099
+alt=Molten Smoke Shamans|Smoke Shaman|Smoke Shamans
+image=http://wiki.guildwars2.com/images/1/1c/Molten_Smoke_Shaman.jpg
+Path=Furn
+scaling=champion
+
+attack=Ash Blast
+ID=1916
+animation=moves right arm back and forth|1
+effect=projectile with AoE
+subeffect=damage:-
+
+attack=Ash Cloud
+ID=1920
+animation=crouches forward and rises arms|2.5
+effect=Ticking AoE
+count=?
+subeffect=damage:-
+subeffect=blind:3
+
+attack=Smoke Cloud
+animation=crouches forward and rises arms|3
+effect=PBAoE
+subeffect=blind:3
+subeffect=stealth:0
+
+attack=Mark of Immobilization
+ID=1921
+animation=rises right arm and touches ground|2|plants a small mark
+effect=trap
+subeffect=damage:-
+subeffect=immobilized:3
+
+##################################################################
+
+Name=Godforged Hellstorm
+ID=7149
+alt=Godforged Hellstorms
+image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Igniter.jpg
+Path=CoFS|CoF1|CoF2|CoF3
+
+# Internal: Two Flame Spray skills for different ranges.
+
+attack=Flame Spray
+ID=1909
+additional=able to move
+effect=channeled cone (5 hits per sec)
+subeffect=damage:-
+subeffect=burning:1
+subeffect=might:1
+
+attack=Backdraft
+ID=1910
+animation=muscle show off
+effect=buff
+subeffect=damage:-
+subeffect=pull:0 on next attack
+
+# Internal: Skill Reload also listed.
+
+#############################
+
+copy=7149
+Name=Flame Legion Igniter
+ID=8943
+alt=Flame Legion Igniters
+image=http://wiki.guildwars2.com/images/8/81/Flame_Legion_Igniter.jpg
+Path=CoFS
+
+#############################
+
+copy=8943
+ID=9142
+Path=CoFS|CoF3
+
+#############################
+
+copy=7149
+name=Blacklan Firetooth
+path=CoF1
+
+############################# 
+
+copy=8943
+ID=12910
+scaling=level
+Path=Thauma
+
+#############################
+
+copy=8943
+Name=Molten Igniter
+ID=12895
+alt=Igniter
+scaling=normal
+Path=Molten
+
+##################################################################
+
+Name=Flame Legion Fire Shaman
+ID=8940
+alt=Flame Legion Fire Shamans
+image=http://wiki.guildwars2.com/images/6/60/Veteran_Flame_Legion_Fire_Shaman.jpg
+Path=CoFS|CoF3
+
+attack=Spell Detonate
+ID=1547
+cooldown=7
+animation=swings right arm|0.75|throws 3 fire balls
+effect=3 short-range projectiles (cone)
+count=?
+subeffect=damage:0
+#note=Try to direct away from other players
+#note=evade or use area anti projectile
+#note=Run away to get out of range
+#note=Run through (needs good timing) or circle at melee range
+
+attack=Dragon Punch
+ID=1463
+cooldown=9
+animation=raises both arms and head|1.25|dashes quickly
+additional=leap finisher. Only used at distant targets
+effect=dash with a melee hit and a cone
+count=2
+subeffect=damage:0
+subeffect=launch:0
+#note=Run away to make him miss
+#note=evade
+
+#############################
+
+copy=8940
+ID=9139
+level=76
+Path=CoF3
+
+#############################
+
+copy=8940
+ID=11332
+Path=Uncat
+scaling=normal
+
+attack=Lava Font
+ID=16249
+cooldown=7
+animation=swings glowing left arm and raises right arm|0.35
+additional=Firefield
+effect=4 ticking AoEs in 1.5 s (4 hits in 3 s)
+count=4
+length=3
+subeffect=damage:-
+#note=stay mobile, block/evade if needed
+
+##################################################################
+
+Name=Flame Legion Axe Fiend
+ID=9135
+alt=Flame Legion Axe Fiends
+image=http://wiki.guildwars2.com/images/8/83/Flame_Legion_Axe_Fiend.jpg
+Path=CoFS|CoF3
+
+attack=Chop (1)
+ID=1961
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Dual Chop (2)
+ID=1962
+effect=2 melee hits
+count=2
+length=0.5
+subeffect=damage:-
+
+attack=Triple Chop (3)
+ID=1963
+effect=3 melee hits
+count=3
+length=1.6
+subeffect=damage:-
+
+attack=Dual Strike
+ID=1964
+animation=raises axe|0.33
+effect=2 melee hits
+count=2
+subeffect=damage:-
+
+# Internal: Skill Cyclone Axe also listed.
+
+#############################
+
+# Internal: Different weapon ID but data looks same.
+copy=9135
+Name=Molten Axe Fiend
+ID=11685
+alt=Molten Axe Fiends|Axe Fiend|Axe Fiends
+image=http://wiki.guildwars2.com/images/c/c3/Molten_Axe_Fiend.jpg
+scaling=champion
+Path=Furn
+
+attack=Cyclone Axe
+ID=1965
+animation=spins|0.4
+effect=PBAoE
+subeffect=damage:-
+subeffect=crippled:8
+
+#############################
+
+copy=11685
+ID=12896
+scaling=normal
+Path=molten
+
+##################################################################
+
+Name=Flame Legion Bladestorm
+ID=8937
+alt=Flame Legion Bladestorms
+image=http://wiki.guildwars2.com/images/3/3e/Flame_Legion_Blademaster.jpg
+Path=CoFS|CoF1|CoF3
+
+attack=Slash
+ID=1660
+animation=swings blade to right|0.5
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Charge
+ID=1454
+additional=leap finisher
+effect=long dash
+subeffect=damage:-
+
+attack=Hundred Blades
+ID=1661
+animation=swings blade from right behind back and hits overhead|0.75
+effect=melee
+subeffect=damage:-
+#note=try to avoid
+
+#############################
+
+copy=8937
+ID=9138
+path=CoF1|CoF3
+
+
+#############################
+
+copy=8937
+# VERIFY Is name Flame Legion?
+Name=Molten Bladestorm
+ID=8553
+alt=Molten Bladestorms|Bladestorm|Bladestorms
+image=http://wiki.guildwars2.com/images/8/83/Molten_Bladestorm.jpg
+scaling=champion
+Path=Furn
+
+##################################################################
+
+Name=Flame Legion Blademaster
+ID=8938
+alt=Flame Legion Blademasters
+image=http://wiki.guildwars2.com/images/3/3e/Flame_Legion_Blademaster.jpg
+Path=CofS
+
+attack=Sever Artery (1)
+ID=1956
+cooldown=0
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:5
+
+attack=Gash (2)
+ID=1957
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:8
+
+attack=Final Thrust (3)
+ID=1958
+effect=melee
+subeffect=damage:-
+
+attack=Flurry
+ID=1960
+effect=multiple melee hits
+count=?
+subeffect=damage:-
+
+attack=Shield Bash
+ID=1959
+effect=dash
+subeffect=damage:-
+subeffect=stun:2
+
+attack=Shield Stance
+ID=1457
+animation=instant||hides behind shield
+effect=buff:block
+
+#############################
+
+copy=8938
+ID=9143
+Path=CofS|CoF3
+
+############################# 
+
+copy=8938
+ID=12911
+scaling=level
+Path=Thauma
+
+##################################################################
+
+Name=Flame Legion Bladestorm (Hammer)
+ID=9355
+alt=Flame Legion Bladestorms (Hammer)
+image=http://wiki.guildwars2.com/images/d/d7/Flame_Legion_Bladestorm.jpg
+Path=CoFS|CoF2|CoF3
+
+attack=Hammer Swing (1)
+ID=3345
+effect=melee
+subeffect=damage:-
+
+attack=Hammer Bash (2)
+effect=melee
+subeffect=damage:0.5
+
+attack=Hammer Smash (3)
+effect=cone
+subeffect=damage:0.6
+
+attack=Earthshaker
+ID=3348
+effect=leap
+subeffect=damage:-
+subeffect=knockdown:2
+
+# Internal: Skills Endure Pain and Balanced Stance also listed.
+
+##################################################################
+
+Name=Flame Legion Acolyte
+ID=7081
+alt=Flame Legion Acolytes|Acolyte|Acolytes
+Path=CoF1|CoF2
+
+##################################################################
+# Effigies.                                                      #
+##################################################################
+
+Name=Flame Legion Effigy
+ID=10161
+image=http://wiki.guildwars2.com/images/6/6a/Flame_Legion_Effigy.jpg
+Path=CoFS
+
+attack=Immune to knockdown, Pull, Knockback and launch
+#note=Stun and daze probably work
+
+attack=Fireball
+ID=1911
+cooldown=4
+animation=moves left foot back and pulls left hand back|1|throws a fireball
+effect=projectile with small AoE
+subeffect=damage:-
+
+attack=Firestorm
+ID=1912
+cooldown=17
+animation=bends forward and raises arms|3|a red circle appears
+effect=delayed (1 s) ticking AoE (5 hits in 4 s)
+count=5
+length=4
+subeffect=damage:-
+subeffect=burning:0
+
+attack=Fire Aura
+effect=huge aura
+frequency=1
+subeffect=Burning:1
+#note=run out of arena to get out-of-combat regeneration if needed
+
+
+#############################
+
+copy=10161
+Name=Molten Effigy
+ID=12894
+Path=Molten
+scaling=champion
+
+##################################################################
+
+Name=Searing Effigy
+level=77
+ID=7082
+image=http://wiki.guildwars2.com/images/6/6a/Flame_Legion_Effigy.jpg
+Path=CoF1
+
+attack=Double damage on burning targets
+
+attack=Flame Jet
+ID=5023
+animation=pulls right arm back|1|purple spray
+image=https://i.imgur.com/k1W44xl.jpg
+cooldown=0
+effect=5 cones in 2 s
+count=5
+length=2
+subeffect=damage:0
+
+attack=Flame Burst
+ID=5029
+image=https://i.imgur.com/NixR1Sx.jpg
+animation=grabs ground and raises arms|2.5
+effect=PBAoE
+subeffect=damage:0
+subeffect=burning:10
+
+attack=Shock Wave
+ID=5021
+image=https://i.imgur.com/x8a73ma.jpg
+animation=raises right arm and smashes ground with right hand|1
+effect=projectile at every target (360 degrees)
+subeffect=damage:0
+subeffect=knockdown:3
+
+attack=Flame Jet
+ID=5026
+additional=only used at distant targets
+effect=projectile with ticking AoE (21 hits in 20 s)
+count=21
+length=20
+subeffect=damage:0
+
+attack=Searing Crystals
+ID=5031
+animation=raises right arm, glows purple and smashes ground with both hands|1
+effect=multiple delayed AoEs
+count=?
+subeffect=damage:0
+subeffect=launch:2.5
+subeffect=summon Searing enemy=Crystal:structure
+#note=Crystals won't heal much but you should clear up close ones
+#note=You can use poison to lower their effect if you can access it easily
+
+##################################################################
+
+Name=Flame Legion Effigy
+ID=9222
+alt=Flame Legion Effigies
+image=http://wiki.guildwars2.com/images/6/6a/Flame_Legion_Effigy.jpg
+Path=CoFS|CoF1
+
+attack=Fireball
+ID=1911
+animation=swing|1
+effect=projectile
+subeffect=damage:-
+
+attack=Aura
+effect=Aura
+frequency=1
+subeffect=Burning:2
+
+##################################################################
+# Devourers.                                                     #
+##################################################################
+
+Name=Carrion Devourer
+ID=9419
+alt=Carrion Devourers
+image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
+Path=CoF2
+
+attack=Slash
+ID=2863
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Devourer Lurk
+animation=burrows||moves underground
+effect=dash
+subeffect=damage:0
+subeffect=knockdown:2
+
+attack=Tail Swipe (1)
+ID=2868
+effect=melee
+subeffect=damage:-
+subeffect=knockdown;2
+
+attack=Devour (2)
+effect=5 melee hits in 2 s
+count=5
+length=2
+subeffect=damage:0
+subeffect=healing:0
+
+# Internal: Skill Dual Sting also listed.
+
+#############################
+
+copy=9419
+ID=9416
+
+##################################################################
+
+Name=Lashtail Devourer
+ID=9420
+alt=Lashtail Devourers
+image=http://wiki.guildwars2.com/images/a/a9/Lashtail_Devourer.jpg
+Path=CoF2
+
+attack=Slash
+ID=2863
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Tail Lash
+ID=2840
+animation=raises stinger on back
+effect=5 melee hits in 3 s
+count=5
+length=3
+subeffect=damage:-
+subeffect=crippled:5
+subeffect=poison:5
+effect=last hit
+subeffect=immobilized:4
+subeffect=lose crippled
+
+# Internal: Skill Dual String also listed.
+
+#############################
+
+copy=9420
+ID=4955|9417
+
+#############################
+
+copy=9420
+# TODO: Get ID.
+ID=9420
+scaling=normal
+category=veteran
+Path=Furn
+
+##################################################################
+
+Name=Siege Devourer
+ID=11008
+level=76
+image=http://wiki.guildwars2.com/images/1/16/Carrion_Devourer.jpg
+Path=CoF2
+
+# Internal: Doesn't exist.
+attack=Slash
+effect=melee
+subeffect=damage:0
+
+attack=Devourer Siege
+ID=14969
+additional=overlaps
+effect=2 delayed AoEs
+count=2
+subeffect=damage:-
+
+##################################################################
+
+Name=Whiptail Devourer
+ID=9421
+alt=Whiptail Devourers
+image=http://wiki.guildwars2.com/images/3/34/Whiptail_Devourer.jpg
+Path=CoF2
+
+attack=Shoot poison
+ID=2862
+cooldown=0
+effect=projectile
+subeffect=damage:-
+
+attack=Shoot poison
+ID=2865
+animation=glows green
+effect=2 projectiles
+count=2
+subeffect=damage:-
+subeffect=poison:4
+
+# Internal: Skill Dual String also listed.
+
+#############################
+
+copy=9421
+ID=4957
+
+##################################################################
+# Imps.                                                          #
+##################################################################
+
+Name=Fire Imp
+ID=6624
+alt=Fire Imps
+image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
+Path=CoFS|CoF1|CoF3
+
+attack=Putrid Explosion
+ID=5032
+animation=glows and strikes|2.5
+effect=PBAOE
+subeffect=damage:-
+subeffect=burning:0
+subeffect=launch:2.4
+effect=self destruct
+#note=kill or get out of range
+
+##################################################################
+
+Name=Fire Imp
+ID=7276
+level=77
+alt=Fire Imps
+image=http://wiki.guildwars2.com/images/5/56/Fire_Imp.jpg
+Path=CoF2
+
+attack=Fire Bolt
+ID=2498
+animation=glows and swings right arm
+cooldown=0
+effect=projectile
+subeffect=damage:-
+subeffect=burning:2
+
+attack=Fire Blast
+ID=2760
+animation=rises to sky
+effect=projectile
+subeffect=damage:-
+subeffect=burning:3
+
+attack=Summon Imps
+ID=2759
+effect=summon 3 enemy=Fire_Imps:normal
+
+attack=Summon Altar
+ID=2761
+effect=summon enemy=Altar:structure
+effect=buff:invulnerable while Altar is alive
+
+##################################################################
+
+Name=Shadow Imp
+alt=Shadow Imps
+Path=CoF3
+type=imp
+category=normal
+condition=600
+
+attack=Shadow Bolt
+animation=Swings right arm|2.75
+effect=projectile
+subeffect=damage:4356000
+
+attack=Poison Blast
+animation=rises to sky|1.25
+cooldown=9
+effect=during cast
+subeffect=buff:evade:1.25
+effect=PBAoE
+subeffect=damage:6776000
+subeffect=poison:3
+
+##################################################################
+
+Name=Molten Shaman
+ID=12926
+alt=Molten Shamans|Shaman|Shamans
+image=http://wiki.guildwars2.com/images/b/b1/Veteran_Molten_Shaman.jpg
+Path=Furn
+scaling=normal
+
+attack=Fireball
+ID=17913
+cooldown=3
+animation=swings right arm|0.6
+effect=piercing projectile
+subeffect=damage:0.1
+effect=when passing through
+subeffect=damage:0.01
+effect=with ticking AoE (11 hits in 10 s)
+count=11
+length=10
+subeffect=damage:0.1
+subeffect=burning:2
+#note=Move out of red circles
+
+attack=Flame Breath (1)
+ID=17926
+cooldown=10
+animation=leans back with a fiery effect|0.75|sprays flame
+effect=4 cones in 0.6 s
+count=4
+length=0.6
+subeffect=damage:0.25
+#note=evade
+
+attack=Flame Breath (2)
+animation=opens mouth|0.25|shoots fireballs
+additional=randomly stuns itself preventing this attack
+effect=3 projectiles (cone)
+count=?
+subeffect=damage:0.3
+#note=move away or evade
+
+attack=Bouncing Fireball
+ID=17914
+cooldown=21
+animation=moves right arm behind back with a fiery effect and swings right arm|1.75
+additional=bounces once on ground creating another AoE
+effect=piercing projectile
+subeffect=damage:0.1
+effect=when passing through
+subeffect=damage:0.01
+effect=ticking AoE (11 hits in 10 s)
+count=11
+length=10
+subeffect=damage:0.1
+subeffect=burning:2
+#note=Move out of red circles
+
+##################################################################
+
+name=Molten Brawler
+ID=12078
+image=http://wiki.guildwars2.com/images/5/5a/Veteran_Molten_Brawler.jpg
+scaling=level
+path=Furn
+
+attack=Smash (1)
+ID=17919
+animation=swings right arm|0.4
+cooldown=4
+effect=melee
+subeffect=damage:-
+subeffect=vulnerability:3
+
+attack=Bash (2)
+animation=swings right arm left|0.4
+effect=melee
+subeffect=damage:0.2
+subeffect=vulnerability:3
+
+attack=Uppercut (3)
+animation=swings right arm behind|1
+effect=melee
+subeffect=damage:0.6
+subeffect=daze:0.25
+#note=block/evade or use stability
+
+attack=Savage Leap
+ID=17922
+animation=Withdraws and turns bit right|0.75
+effect=leap (0.6 s)
+subeffect=damage:-
+subeffect=knockback:1.5
+subeffect=bleeding:5:3
+#note=block/evade
+
+attack=Getting Closer
+ID=17923
+cooldown=7
+effect=leap (0.5 s)
+subeffect=damage:-
+subeffect=daze:0.25
+
+attack=Pound
+ID=17924
+cooldown=17
+animation=glows and jumps|1|a white ring
+additional=can't be blocked. Can be jumped over. Max range 1200.
+effect=growing PBAoE field, when passing through.
+subeffect=damage:-
+subeffect=crippled:3
+#note=Never run along the wave or you melt in a second
+#note=Evade or jump over
+
+

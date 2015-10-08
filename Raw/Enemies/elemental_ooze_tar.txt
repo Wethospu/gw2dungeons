@@ -1,0 +1,1141 @@
+##################################################################
+# This file contains elementals, oozes and tars.                 #
+##################################################################
+
+Name=Singularity
+ID=6956
+Path=SE1
+
+attack=doesn't move
+
+attack=Kick
+ID=4538
+effect=melee
+subeffect=damage:-
+subeffect=knockdown:0
+#note=breaks "Gravity Distortion" effect 
+
+attack=Aura
+effect=Aura
+frequency=1
+subeffect=weakness:0
+subeffect=crippled:0
+
+##################################################################
+
+name=Vile Ooze
+# VERIFY 11015
+ID=8598
+alt=Vile Oozes|Ooze|Oozes
+image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
+path=Arah1|Arah4
+
+attack=Ooze Multi
+ID=4202
+image=http://giant.gfycat.com/FrigidLeanFrillneckedlizard.gif
+cooldown=0
+effect=channeled melee (4 hits over 3 s?)
+count=4
+length=3
+subeffect=damage:-
+subeffect=weakness:10
+subeffect=crippled:10
+subeffect=poison:10
+subeffect=vulnerability:10:3
+#note=do not stand in front of them
+
+attack=Split
+ID=4158
+image=http://giant.gfycat.com/FeminineSaltyAmericanavocet.gif
+animation=melts and throws 2 brown balls
+additional=used at 20% health. Can't be blocked
+effect=2 ballistic projectiles
+subeffect=enemy=Lesser_Ooze:normal per hit
+effect=self destruct
+#note=Needs a target so if you stealth entire party it can't be used.
+#note=Mesmer can absorb them with untraited wardens
+#note=enemy=Lesser_Oozes:normal try to combine back to a Vile Ooze. Attack brown spots to damage them before they even appear
+#note=Use an interrupt at ~20% health and focus down quickly
+#note=With weak party, focus one Vile Ooze at time to prevent respawns
+
+##################################################################
+
+name=Lesser Ooze
+ID=10748
+alt=Lesser Oozes
+image=http://wiki.guildwars2.com/images/3/3c/Lesser_Ooze.jpg
+path=Arah1|Arah4
+
+attack=Attempts to regroup to form a enemy=Vile_Ooze:elite
+
+##################################################################
+
+name=Lesser Ooze (Fighting)
+ID=8595
+level=81
+alt=Lesser Oozes (Fighting)
+image=http://wiki.guildwars2.com/images/3/3c/Lesser_Ooze.jpg
+path=Arah1|Arah4
+
+attack=Ooze Multi
+ID=4157
+cooldown=0
+effect=melee
+subeffect=damage:-
+subeffect=crippled:10
+
+##################################################################
+
+name=Tar
+ID=10799
+alt=Tars
+path=Arah1
+category=normal
+
+attack=Spit
+ID=4208
+cooldown=0
+effect=projectile
+subeffect=damage:-
+
+##################################################################
+
+name=Ancient Ooze
+ID=9589
+alt=Ooze
+image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
+Path=Arah1
+
+attack=Bounce (moving)
+ID=4205
+cooldown=8
+image=http://giant.gfycat.com/GoodSoulfulFoxhound.gif
+animation=glows|1|starts bouncing
+additional=only used at distant targets
+effect=dash with PBAoE (3 hits in 2 s)
+count=3
+length=2
+subeffect=damage:-
+subeffect=launch:3.5
+#note=If you are ranged, keep it slowed down and stay at distance
+#note=If you are melee, keep chasing and dodge at opposite direction Ooze is moving
+
+attack=Bounce (still)
+ID=4206
+image=http://giant.gfycat.com/EssentialVapidHamadryas.gif
+cooldown=10
+animation=glows|1|starts bouncing
+additional=only used at close targets
+effect=6 PBAoEs in 4 s
+count=6
+length=4
+subeffect=damage:-
+subeffect=launch:3.5
+#note=If you are ranged, relax
+#note=If you are melee, dodge back and get in fast to prevent Ooze from using other skill
+
+attack=Split
+ID=4160
+image=http://giant.gfycat.com/ThesePointlessHypsilophodon.gif
+additional=used at 25%. Can't be blocked
+effect=2 ballistic projectiles
+subeffect=enemy=Vile_Oozes:champion per hit
+effect=self destructs
+subeffect=leaves enemy=Blood_of_the_Ancient
+#note=Needs a target so if you stealth entire party it can't be used.
+
+##################################################################
+
+name=Vile Ooze
+ID=9576
+alt=Vile Oozes|Ooze|Oozes
+image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
+path=Arah1
+
+attack=Reflects projectiles
+
+attack=Ooze Multi
+ID=4203
+cooldown=3
+image=http://giant.gfycat.com/HealthyInexperiencedAchillestang.gif
+additional=channeled
+effect=multiple ballistic projectiles (360 degrees) with small AoE
+count=?
+subeffect=damage:-
+
+##################################################################
+
+name=Shoggroth
+ID=10800
+level=82
+Path=Arah1
+image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
+
+attack=Tar spit (if not burning)
+ID=4209
+effect=multiple area fields
+count=?
+subeffect=damage:-
+subeffect="Covered in tar" (60 s) when passed through
+effect=summon multiple enemy=Tars:normal
+#note=Keep it burning to prevent.
+
+attack=Tar spit (if burning)
+ID=4217
+effect=multiple ticking AoEs
+count=?
+subeffect=damage:-
+subeffect=burning:0
+
+##################################################################
+
+name=Spark
+# VERIFY 3947
+ID=10520
+alt=Sparks
+path=Arah4
+
+attack=Invulnerable
+
+attack=Lightning Bolt
+ID=2545
+effect=projectile
+subeffect=damage:-
+
+##################################################################
+
+Name=Resonance Cascade Field
+ID=9898
+alt=Resonance Cascade Fields
+Path=CoES
+
+attack=Immune to normal damage, conditions and control
+
+attack=When passing through
+effect=Against players
+subeffect=stun:1
+effect=Against enemy=Mr._Sparkles:ally
+subeffect=damage-constant:15345 (24%)
+
+##################################################################
+
+Name=Red Ooze
+ID=6432
+alt=Red Oozes
+image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
+Path=CoF1|CoF2|CoF3
+
+attack=Ooze Multi
+ID=2452
+animation=pulls head behind|1|swings head
+effect=5 melee hits in 2 s
+count=5
+length=2
+subeffect=damage:-
+
+attack=Ooze Mace
+ID=2451
+image=https://i.imgur.com/HqHnS28.jpg
+animation=spins head|1.75
+effect=melee
+subeffect=damage:-
+
+attack=Power Spit
+ID=2455
+animation=bends forward and stretches head|2|shoots a yellow ball
+effect=projectile
+subeffect=damage:-
+subeffect=immobilized:3
+
+#############################
+
+copy=6432
+Name=Fiery Jelly
+ID=1778
+alt=Fiery Jellies
+Path=CoFS|CoF2
+
+#############################
+
+copy=6432
+Name=Royal Jelly
+ID=7134
+Path=CoF1|CoF3
+
+#############################
+
+copy=6432
+name=Ghastly Ooze
+ID=5953
+alt=Ghastly Oozes|Ooze|Oozes
+image=https://i.imgur.com/nbDt7ik.jpg
+Path=AC1|AC2
+
+#############################
+
+copy=5953
+ID=5956
+
+##################################################################
+
+name=Lava Elemental
+ID=12765
+alt=Lava Elementals|Elementals
+image=http://wiki.guildwars2.com/images/d/d4/Lava_Elemental.jpg
+path=TAAE
+
+attack=Spit
+ID=2433
+cooldown=3
+animation=swings head|0.5|shoots a black ball
+effect=projectile
+subeffect=damage:-
+
+attack=Tar Pool
+ID=2434
+cooldown=33
+animation=glows|1.75
+effect=projectile
+subeffect=damage:-
+subeffect=immobilized:0.5
+effect=with ticking AoE (3 hits in 2 s)
+count=3
+length=2
+subeffect=damage:-
+subeffect=immobilized:0.5
+
+##################################################################
+
+copy=12765
+Name=Flame Jelly
+ID=6633
+alt=Flame Jellies
+Path=SES
+
+#############################
+
+copy=12765
+# Internal: Higher power.
+ID=11482
+scaling=normal
+Path=Volc
+
+#############################
+
+copy=12765
+Name=Tar Elemental
+ID=7277
+alt=Tar Elementals
+image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
+Path=CoF3
+
+#############################
+
+copy=7277
+Name=Magma Elemental
+ID=7423
+alt=Magma Elementals
+
+#############################
+
+copy=7277
+ID=1453
+scaling=normal
+Path=Furn
+
+#############################
+
+copy=7277
+Name=Black Essence
+# VERIFY 10086
+ID=10216
+alt=Black Essences
+Path=CoE1|CoE2|CoE3
+
+attack=Sacrifice
+effect=melee
+subeffect=healing:0 to target (Subject Alpha)
+effect=self destruct
+
+##################################################################
+
+Name=Red Ooze
+ID=5417
+alt=Red Oozes
+image=http://wiki.guildwars2.com/images/5/5e/Red_Ooze.jpg
+Path=CoF3
+
+attack=Fireball
+ID=2752
+cooldown=5.5
+animation=waves head
+effect=3 projectiles with small AoE in 1.6 s
+count=3
+length=1.6
+subeffect=damage:-
+
+attack=Belch (1)
+ID=2751
+animation=fiery glow and spins head|0.5
+effect=3 PBAoEs in 0.8 s
+count=3
+length=0.8
+subeffect=damage:-
+subeffect=burning:1
+
+attack=Belch (2)
+ID=2748
+animation=idles|3
+effect=cone
+subeffect=damage:-
+subeffect=burning:1
+#note=sometimes used in reverse order
+
+# Internal: Skill Ooze Shield also listed.
+
+##################################################################
+
+copy=5417
+ID=3423
+scaling=normal
+Path=Furn
+
+attack=Ooze Shield
+ID=2750
+animation=spins weirdly
+effect=buff:block:4.5
+effect=PBAOE at end if blocked anything
+subeffect=damage:-
+
+##################################################################
+
+Name=Ooze King
+ID=10267
+Path=CoF1|CoF3
+
+attack=Ooze Whip
+ID=8366
+effect=???
+subeffect=damage:-
+
+attack=???
+ID=5094
+effect=???
+subeffect=damage:-
+
+##################################################################
+
+Name=Ooze Queen
+ID=10266
+Path=CoF1|CoF3
+
+attack=Spit Junk
+ID=5095
+effect=???
+
+attack=Power Spit
+ID=5097
+effect=???
+subeffect=damage:-
+
+##################################################################
+
+Name=United Ooze
+ID=10268
+image=http://wiki.guildwars2.com/images/3/3c/United_Ooze.jpg
+Path=CoF1|CoF3
+
+attack=Ooze Whip
+ID=8366
+effect=???
+subeffect=damage:-
+
+attack=???
+ID=5094
+effect=???
+subeffect=damage:-
+
+attack=Spit Junk
+ID=5095
+effect=???
+
+attack=Power Spit
+ID=5097
+effect=???
+subeffect=damage:-
+
+##################################################################
+
+name=Slick Ooze
+ID=12764
+path=TAAE
+
+attack=Massive Pummel
+ID=21562
+cooldown=3.5
+animation=spins head|1.75
+additional=Cannot be blocked.
+effect=melee
+subeffect=damage-percent:75
+#note=run away
+
+##################################################################
+
+Name=Ectoplasmic Ooze
+ID=9079
+alt=Ectoplasmic Oozes
+Path=AC2
+
+attack=Ghost Shield
+effect=buff
+subeffect=Immunity to conditions and high damage reduction
+effect=aura
+frequency=0.75
+subeffect=damage:0
+subeffect=vulnerability:1
+
+##################################################################
+
+name=Ember
+# Health and scaling not verified.
+scaling=normal
+health=46061
+type=elemental
+category=veteran
+path=Furn
+
+attack=Immune to burning
+
+attack=Fiery
+effect=buff
+subeffect=burning:2.5 when hit at melee range
+
+attack=Fireball
+animation=rises a bit|0.5
+effect=2 projectiles in 0.3 s
+count=2
+length=0.3
+subeffect=damage:5342500
+
+attack=Lava Fond
+animation=rises to sky or stands still|2
+effect=3 ticking AoEs (6 s) in 2 s
+count=?
+subeffect=damage:4808250
+
+##################################################################
+
+Name=Toxic Ooze
+ID=10854
+alt=Toxic Oozes
+image=http://wiki.guildwars2.com/images/d/d2/Toxic_Ooze.jpg
+scaling=normal
+Path=Furn
+
+attack=Dirt Lob
+ID=2777
+animation=swings head|1
+cooldown=4
+effect=2 projectiles in 0.8 s
+count=2
+length=0.8
+subeffect=damage:-
+
+attack=Ooze Shield
+ID=2780
+cooldown=18
+animation=instant|0|spins as a disc
+effect=2 self buffs in 2.25 s
+count=2
+length=2.25
+subeffect=protection:3
+
+attack=Muddied Ground (1)
+ID=2778
+cooldown=30
+animation=instant|0|blends to the ground
+effect=buff:evade:3.75
+effect=stealth:3 when evade ends
+effect=ticking PBAoE (4 hits in 3 s) when evade ends
+count=4
+length=3
+subeffect=damage:-
+subeffect=crippled:2
+
+attack=Ooze Mark (2)
+effect=melee
+subeffect=damage:0.5
+subeffect=bleeding:5:3
+#note=used instantly when Muddied Ground ends
+
+# Internal: Skill Earth Smash also listed.
+
+##################################################################
+
+Name=Translucent Ooze
+ID=8463
+alt=Translucent Oozes
+image=http://wiki.guildwars2.com/images/e/e8/Translucent_Ooze.jpg
+scaling=normal
+Path=Furn
+
+attack=Vapor Blade (1)
+ID=2773
+animation=waves head|0.5
+additional=Uses Tidal Wave if returning projectiles hit
+effect=Returning and piercing projectile
+count=2
+length=1
+subeffect=damage:-
+effect=when returning
+subeffect=pull:1.5
+#note=stand against a wall to prevent returning projectiles
+
+attack=Stealth Blades (1)
+ID=2775
+animation=moves head|0.75
+additional=Uses Tidal Wave regardless of hits
+effect=4 returning and piercing projectiles (cone)
+count=2
+length=1
+subeffect=damage:-
+effect=when returning
+subeffect=pull:1.5
+subeffect=stealth:0
+
+attack=Tidal Wave (2)
+ID=2774
+animation=jumps|1.5
+effect=PBAoE
+subeffect=damage:-
+subeffect=knockdown:1.5
+subeffect=healing:0
+#note=block or evade
+
+# Internal: Skill Geyser also listed.
+
+##################################################################
+
+Name=Jade Maw
+image=http://wiki.guildwars2.com/images/1/12/Jade_Maw.jpg
+Path=Solid
+scaling=constant
+health=14940
+type=elemental
+category=legendary
+
+attack=Laser
+cooldown=15
+animation=marks target|0|glows yellow and shoots laser with sound
+additional=can't be blocked
+effect=ranged
+subeffect=damage-percent:100
+#note=hold Crystal to absorb
+#note=evade when skull disappears
+
+attack=summon
+effect=summon a enemy=Jade_Colossus:veteran
+
+##################################################################
+
+Name=Jade Maw (Enraged)
+alt=Enraged
+Path=Solid
+scaling=constant
+type=elemental
+health=14940
+category=legendary
+
+attack=Laser
+cooldown=8
+animation=marks target|0|glows yellow and shoots laser with sound
+additional=can't be blocked
+effect=ranged
+subeffect=damage-percent:100
+#note=hold Crystal to absorb
+#note=learn timing for evade (don't rely on sound because it doesn't always make it)
+
+attack=Death
+animation=marks every target
+additional=used on death. Can't be blocked or evaded
+effect=multiple ranged hits at every target
+subeffect=damage-percent:100
+#note=hold Crystal
+
+##################################################################
+
+Name=Giant Irukandji
+ID=11248
+alt=Giant Irukandjis
+image=http://wiki.guildwars2.com/images/6/6f/Veteran_Irukandji.jpg
+scaling=normal
+Path=Solid
+
+attack=Eye Beam
+ID=2416
+animation=glows bright purple
+effect=2 ranged hits
+count=2
+subeffect=damage:0
+subeffect=confusion:1
+
+attack=Shoot
+ID=2799
+animation=glows dark purple
+effect=slow projectile
+subeffect=damage:0
+subeffect=knockback:1.5
+
+attack=The Prestige (1)
+ID=15995
+animation=spins and glows green
+effect=self
+subeffect=stealth:0
+effect=PBAoE
+subeffect=blind:5
+
+attack=The Prestige (2)
+animation=delay|3|purple effect
+effect=PBAoE
+subeffect=???
+
+##################################################################
+
+Name=Irukandji
+ID=11249
+alt=Irukandjis
+image=http://wiki.guildwars2.com/images/6/6f/Veteran_Irukandji.jpg
+scaling=normal
+Path=Solid
+
+attack=Tentacle Slash
+ID=15999
+effect=Melee
+subeffect=damage:0
+subeffect=bleeding:2
+
+attack=Swiftness
+ID=2803
+animation=spins
+effect=PBAoE
+subeffect=swiftness:10
+
+attack=The Prestige (1)
+ID=16000
+animation=spins and glows green
+effect=Stealth
+effect=PBAoE
+subeffect=blind:5
+
+attack=The Prestige (2)
+animation=delay|3|purple effect
+effect=PBAoE
+subeffect=damage:0
+subeffect=poison:3
+subeffect=stun:2
+
+##################################################################
+
+name=Earth Elemental
+ID=8233
+image=https://wiki.guildwars2.com/images/a/a0/Earth_Elemental.jpg
+scaling=normal
+path=Furn
+
+attack=Immune to Control effects
+
+attack=Jab
+ID=1623
+animation=swings right arm|0.5
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Unsteady Ground
+ID=15997
+animation=stands still with arms pointing forward|0.5|earth-line
+effect=ticking AoE (10 hits in 5 s)
+count=10
+length=5
+subeffect=damage:-
+subeffect=crippled:2
+
+attack=Ring of Earth
+ID=15998
+animation=stands still with arms pointing forward|0.5|earth-ring
+effect=PBAoE
+subeffect=damage:-
+subeffect=knockdown:3
+#note=often used immediately at melee-range so prepare to evade/block
+
+attack=Magnetic Aura
+ID=2673
+animation=stands still with arms pointing forward|0.5|yellow bubble
+effect=buff
+subeffect=buff:projectile_reflection:5
+
+#############################
+
+copy=8233
+Name=Jade Colossus
+ID=11250
+alt=Jade Colossi
+scaling=constant
+Path=Solid
+
+attack=Reflects projectiles
+
+##################################################################
+
+Name=Jade Maw Tentacle
+ID=11252
+alt=Tentacle|Tentacles|Jade Maw Tentacles
+scaling=normal
+Path=Solid
+
+tactic=normal
+Cooldowns cause Tentacle to alternate between attacks.
+
+attack=Can't be moved
+
+attack=Whip
+ID=15979
+animation=rises straight up and hits
+cooldown=5
+effect=melee
+subeffect=damage:-
+#note=just sidestep
+
+attack=Swoop
+ID=15983
+animation=twists and then spins
+effect=high-range PBAoE
+subeffect=damage:-
+subeffect=launch:0
+#note=block/evade
+
+################################################################## 
+
+Name=Subject 6
+ID=12904
+image=http://wiki.guildwars2.com/images/d/d2/Toxic_Ooze.jpg
+Path=Thauma
+scaling=constant
+
+attack=Slimey Smash
+ID=22413
+cooldown=0
+effect=melee
+subeffect=damage:-
+subeffect=buff:Corrode_Armor:8
+
+attack=Acid Rain
+ID=22416
+#image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-5_thumb.jpg
+cooldown=26
+animation=waves head and looks stupid|0.5|shoots green balls
+additional=can't be blocked
+effect=multiple projectiles with small AoEs in 8 s
+subeffect=damage:-
+subeffect=agony:1
+subeffect=buff:Corrode_Weapon:3
+subeffect=poison:3
+
+attack=Jump
+ID=22417
+cooldown=22
+animation=glows, jumps and lands with dust effect|1.6|keeps jumping 5 times
+effect=6 PBAoEs in 3.5 s
+count=6
+length=3.5
+subeffect=damage:-
+
+attack="Corrode Weapon"
+additional=stacks ? times. Removed by condition removal.
+effect=debuff
+subeffect=reduces outgoing damage
+
+attack="Corrode Arrmor"
+additional=stacks ? times. Removed by condition removal.
+effect=debuff
+subeffect=increases incoming damage
+
+attack=Shield Form
+ID=22409
+cooldown=59
+#image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-4_thumb.jpg
+animation=looks stupid and spins|0.5|keeps looking stupid
+effect=buff:block:10
+subeffect=buff:Overload for every block
+
+attack="Overload"
+effect=buff
+subeffect=Explodes at 20 stacks
+
+attack=Explode
+effect=big PBAoE
+subeffect=damage:0
+
+attack=Summon
+effect=Summon a enemy=Repair_Ooze:normal
+#note=Oozes heal Subject 6 if they reach him
+
+################################################################## 
+
+Name=Repair Ooze
+ID=12905
+alt=Repair Oozes
+scaling=level
+Path=Thauma
+
+attack=Power Spit
+ID=20719
+effect=projectile
+subeffect=damage:-
+#note=only used when Subject 6 is dead
+
+attack=Heal
+effect=melee
+subeffect=healing:0
+effect=self destruct
+
+# Internal: Skills Ooze Multi and Ooze Mace also listed.
+
+##################################################################
+
+name=Rampaging Ice Elemental
+ID=11240
+scaling=legendary
+image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
+path=Under
+
+attack=Shatterstone
+ID=15950
+animation=jumps||dropping ice
+effect=multiple delayed AoEs
+subeffect=damage:0
+subeffect=launch:2
+subeffect=agony:3
+#note=walk out
+
+attack=Polar Smash
+ID=15949
+animation=slowly pulls right arm back and smashes ground
+effect=big ticking AoE at melee-range (10 hits in 3 s)
+count=10
+length=3
+subeffect=damage:0
+subeffect=chilled:1
+subeffect=agony:3
+#note=get out of range, evade if needed
+
+attack=Freeze Row
+ID=15946
+animation=waves arms with weird sound|1.5
+effect=multiple delayed (2.75 s) tiny AoEs (V-shape)
+count=?
+subeffect=damage:0
+subeffect=launch:2
+#note=walk away (note hit box is much bigger than graphics)
+
+attack=Mending
+ID=15952
+animation=kneels
+additional=maximum amount of 3
+effect=summon 3 enemy=Ice_Elementals_(Melee):veteran
+effect=channeled heal
+subeffect=Healing:0
+#note=interrupt (if "Superheated" damage automatically interrupts)
+#note=can be interrupted with Knockback or launch
+
+##################################################################
+
+name=Ice Elemental (Melee)
+ID=11238
+alt=Ice Elementals (Melee)
+image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
+scaling=normal
+path=Under
+
+attack=Ice Strike
+ID=2652
+animation=swings with right arm
+cooldown=0
+effect=projectile
+subeffect=damage:-
+
+attack=Frozen Ground
+ID=2653
+animation=slowly pulls right arm back and smashes ground
+effect=ticking AoE at melee-range (~5 hits in ~4 s)
+count=5
+length=4
+subeffect=chilled:1
+
+attack=Crashing Wave
+ID=2654
+animation=stands idle and smashes ground
+effect=PBAoE
+subeffect=damage:0
+subeffect=launch:0
+subeffect=healing:0
+subeffect=remove all Conditions
+
+##################################################################
+
+Name=Icebrood Colossus
+ID=10219
+alt=Icebrood Colossi
+image=http://wiki.guildwars2.com/images/3/38/Icebrood_Colossus.jpg
+Path=HotWS|CoE1|CoE2|CoE3
+
+attack=Ice Shards
+ID=2682
+cooldown=3
+image=http://i.imgur.com/1rFMpCn.gif
+animation=points left arm|0.5
+effect=homing projectile
+subeffect=damage:-
+effect=sometimes (target has boons? under 25%?)
+subeffect=chilled:3
+
+attack=Ice Spike
+ID=2683
+image=http://i.imgur.com/OCvINVh.gif
+animation=glows and jumps|1|a red circle with an ice shard
+cooldown=12
+animation=glows and jumps|1
+effect=delayed (2.5 s) AoE
+subeffect=damage:-
+
+attack=Frost Blast
+ID=2684
+image=http://i.imgur.com/fastZ4n.gif
+cooldown=17
+animation=glows and pulls right arm back|1.5
+effect=PBAoE
+subeffect=damage:-
+subeffect=knockback:1.5
+
+#############################
+
+copy=10219
+Name=Ice Elemental
+ID=9290
+alt=Ice Elementals
+image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
+scaling=normal
+Path=Under|Snow
+
+#############################
+
+copy=10219
+Name=Jade Shard
+ID=11251
+alt=Jade Shards
+scaling=normal
+Path=Solid
+
+attack=Reflects projectiles. Immune to Control effects
+
+##################################################################
+
+Name=Icebrood Elemental
+ID=9887
+alt=Icebrood Elementals
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+Path=HotWS|CoE1|CoE2|CoE3
+
+attack=Ice Throw
+ID=4851
+image=http://i.imgur.com/36lhIK0.gif
+animation=grabs ice from chest and throws with right hand|1
+effect=homing projectile
+subeffect=damage:5782722
+subeffect=bleeding:3
+subeffect=chilled:3
+
+attack=Polar Smash
+ID=4853
+image=http://i.imgur.com/XldLxoC.gif
+animation=bends and pulls right arm back|2
+additional=can't be blocked
+effect=melee
+subeffect=damage:17965759
+
+attack=Freeze Row
+ID=4852
+image=http://i.imgur.com/I9d5T6S.gif
+animation=waves arms with weird sound|1.5
+effect=multiple delayed (2.75 s) tiny AoEs (cone)
+subeffect=damage:8798029
+subeffect=launch:3.3
+subeffect=chilled:3
+#note=walk away (note hit box is much bigger than graphics)
+
+##################################################################
+
+Name=Icebrood Elemental
+ID=10992
+alt=Icebrood Elementals
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+Path=HotW2
+
+attack=Ice Strike
+ID=2677
+effect=AoE
+subeffect=damage:0
+effect=delayed AoE
+subeffect=damage:0
+subeffect=bleeding:5:2
+
+attack=Shockwave
+ID=2678
+animation=holds arm back
+effect=homing projectile
+subeffect=damage:-
+
+attack=Summon
+ID=2676
+effect=PBAoE
+subeffect=chilled:2
+effect=Summon 3 enemy=Icebrood_Elementals_(Small):normal
+
+##################################################################
+
+Name=Icebrood Elemental (small)
+ID=9317
+alt=Icebrood Elementals (small)
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+Path=HotWS|HotW2
+
+attack=Punch
+ID=2679
+effect=PBAoE
+subeffect=damage:-
+effect=self destruct
+
+##################################################################
+
+Name=Icebrood Elemental (big)
+ID=11497
+image=http://wiki.guildwars2.com/images/a/a6/Icebrood_Elemental.jpg
+scaling=constant
+Path=HotWS|HotW1|Snow
+
+attack=Ice Strike
+ID=2677
+cooldown=7
+animation=moves left hand and points it forward|0.65|a red circle with ice shard appears
+effect=AoE
+subeffect=damage:0.4
+effect=delayed (2 s) AoE
+subeffect=damage:0.4
+subeffect=bleeding:5:2
+
+attack=Shockwave
+ID=2678
+cooldown=11
+animation=holds right arm behind back with water effect and smashes ground|1.75|sends a frosty shockwave
+effect=homing projectile
+subeffect=damage:-

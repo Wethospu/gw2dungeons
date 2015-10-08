@@ -15,17 +15,17 @@ namespace DataCreator.Enemies
 
   public class Attack
   {
-    private readonly string _name;
-    public readonly List<Effect> Effects = new List<Effect>();
-    private int _minimumRange = -1;
-    private int _maximumRange = -1;
-    private double _coefficient = 0;
-    private double _internalCooldown = -1;
-    private int _requiredLevel = -1;
-    private string _weapon = "";
+    public string _name;
+    public List<Effect> Effects = new List<Effect>();
+    public double _minimumRange = -1;
+    public double _maximumRange = -1;
+    public double _coefficient = 0;
+    public double _internalCooldown = -1;
+    public int _requiredLevel = -1;
+    public string _weapon = "";
     public List<Media> Medias = new List<Media>();
     public double Cooldown = -1;
-    private string _animation = "";
+    public string _animation = "";
     public string Animation
     {
       private get
@@ -59,25 +59,13 @@ namespace DataCreator.Enemies
       }
     }
 
+    public Attack()
+    {
+    }
+
     public Attack(string name)
     {
       _name = name;
-    }
-
-    public Attack(Attack toCopy)
-    {
-      _name = string.Copy(toCopy._name);
-      Cooldown = toCopy.Cooldown;
-      _minimumRange = toCopy._minimumRange;
-      _maximumRange = toCopy._maximumRange;
-      _coefficient = toCopy._coefficient;
-      _requiredLevel = toCopy._requiredLevel;
-      _internalCooldown = toCopy._internalCooldown;
-      Animation = string.Copy(toCopy.Animation);
-      foreach (var media in toCopy.Medias)
-        Medias.Add(new Media(media));
-      foreach (var effect in toCopy.Effects)
-        Effects.Add(new Effect(effect));
     }
 
     /***********************************************************************************************
@@ -93,7 +81,7 @@ namespace DataCreator.Enemies
     {
       if (attributes == null || attributes.Weapons == null)
         return;
-      if (attributes.Weapons.Main != null)
+      if (attributes.Weapons.Main != null && attributes.Weapons.Main.Skills != null)
       {
         foreach (var skill in attributes.Weapons.Main.Skills)
         {
@@ -109,7 +97,7 @@ namespace DataCreator.Enemies
           }
         }
       }
-      if (attributes.Weapons.Offhand != null)
+      if (attributes.Weapons.Offhand != null && attributes.Weapons.Offhand.Skills != null)
       {
         foreach (var skill in attributes.Weapons.Offhand.Skills)
         {
@@ -125,7 +113,7 @@ namespace DataCreator.Enemies
           }
         }
       }
-      if (attributes.Weapons.Underwater != null)
+      if (attributes.Weapons.Underwater != null && attributes.Weapons.Underwater.Skills != null)
       {
         foreach (var skill in attributes.Weapons.Underwater.Skills)
         {
@@ -157,6 +145,8 @@ namespace DataCreator.Enemies
 
     public string AttackToHTML(string path, List<Enemy> enemies, Enemy baseEnemy, int indent)
     {
+      if (_name.Equals(""))
+        Helper.ShowWarningMessage("Enemy " + baseEnemy.Name + " has no attack name.");
       var htmlBuilder = new StringBuilder();
       // Add attack name.
       htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<p class=\"enemy-attack\"><span class=\"enemy-attack-name\">").Append(Helper.ConvertSpecial(Helper.ToUpperAll(LinkGenerator.CreateEnemyLinks(_name, path, enemies))));

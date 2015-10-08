@@ -1,0 +1,1506 @@
+##################################################################
+# This file contains all kind of animals.                        #
+# Includes spiders, wolves, bats, sharks, fishes and so on.      #
+##################################################################
+
+##################################################################
+# Spiders.                                                       #
+##################################################################
+
+Name=Spider Queen
+ID=7039
+Path=AC1|AC2|AC3
+
+attack=Bite
+ID=4012
+#description=Bites close enemies which causes weakness and bleeding.
+cooldown=4
+animation=leans back|0.75
+effect=melee
+subeffect=damage:452832
+subeffect=weakness:5
+subeffect=bleeding:5:6
+#note=Evade or block.
+#note=Tank only if you can remove the conditions
+#note=Run through Queen or away from her (needs good timing and swiftness)
+
+attack=Entangling Web
+ID=4005
+#description=Sprays web which immobilizes nearby enemies.
+cooldown=10
+animation=leans back and raises "tail"|1.5|white webs
+additional=changes direction after initial cast and after the first hit. Used at the target with the lowest health percent.
+effect=5 cones in 2.5 s
+count=5
+length=2.5
+subeffect=damage:0.2
+subeffect=immobilized:5
+#note=Stay at high range or quickly move away from her
+#note=First hit can NOT be avoided by movement. However, you can move around her to avoid rest of the hits
+#note=Block the first attack and move around her to avoid rest of the hits
+#note=Above works with evades too but needs a good timing. It's safer to evade twice.
+#note=If you get hit, remove immobilized after the attack has finished
+
+Attack=Venom Spray
+ID=4006
+#description=Shoots poison wells which deal heavy damage.
+cooldown=13
+animation=glows|1.5|green projectiles
+additional=can't be blocked or evaded
+effect=3 projectiles (cone) with big ticking AoEs (21 hits in 20 s)
+count=21
+length=20
+subeffect=damage:0.4
+subeffect=poison:6
+#note=get quickly out of the red circles, use a mobility skill if needed
+#note=makes reviving very dangerous
+#note=Try to direct the attack away from everyone else (if possible)
+#note=Mesmer can absorb them with untraited wardens
+
+##################################################################
+
+name=Spider Hatchling
+# VERIFY 7045
+ID=6972
+alt=Spider Hatchlings
+image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
+Path=ACS|AC1|AC2|AC3
+
+tactic=normal
+Weak alone but they usually come in big groups.
+
+attack=Venom Spray
+ID=4007
+cooldown=3
+animation=glows|1.5|green projectiles
+additional=only used at distant targets
+effect=3 projectiles in 0.5 s
+count=3
+length=0.5
+subeffect=damage:-
+subeffect=poison:2
+
+attack=Bite
+ID=4008
+cooldown=2.5
+animation=leans back|0.75
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:5
+#note=group of them can easily get 25 stacks of bleeding
+
+##################################################################
+
+name=Spider
+ID=7040
+alt=Spiders
+image=https://wiki.guildwars2.com/images/9/97/Orchard_Spider_Hatchling.jpg
+Path=AC1|AC2|AC3
+
+attack=Bite
+ID=2917
+cooldown=2.5
+animation=leans back|0.5
+effect=melee
+subeffect=damage:-
+subeffect=crippled:3
+#note=keep circling to avoid
+
+attack=Venom Spray
+ID=21995
+cooldown=20
+animation=glows and leans back|1
+additional=only used at distant targets
+effect=3 projectiles in 0.75 s
+count=3
+length=0.75
+subeffect=damage:-
+subeffect=poison:3
+#note=keep circling to avoid
+
+#############################
+
+copy=7040
+name=Cave Spider
+ID=10986
+alt=Cave Spiders
+image=http://wiki.guildwars2.com/images/b/bf/Cave_Spider.jpg
+path=SE3
+
+#############################
+
+copy=10986
+# ID 9230 in Furn.
+ID=5401
+path=SES|Furn
+scaling=normal
+
+#############################
+
+copy=7040
+name=Cave Spider Hatchling
+ID=12067
+image=http://wiki.guildwars2.com/images/b/b1/Cave_Spider_Hatchling.jpg
+path=Furn
+
+#############################
+
+copy=7040
+Name=Jungle Spider
+ID=5092
+alt=Jungle Spiders
+image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
+Path=Swamp
+
+#############################
+
+copy=7040
+Name=Marsh Spider
+ID=11272
+alt=Marsh Spiders
+image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
+Path=Swamp
+
+#############################
+
+copy=7040
+Name=Marsh Spider Hatchling
+ID=11273
+alt=Marsh Spider Hatchlings|Spider Hatchling|Spider Hatchlings
+image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
+Path=Swamp
+
+##################################################################
+
+name=Undergrowth Spider Queen
+ID=3224
+image=http://wiki.guildwars2.com/images/2/23/Undergrowth_Spider_Queen.jpg
+path=TAS
+
+attack=Bite
+ID=4780
+image=http://fat.gfycat.com/ForkedAcrobaticCottonmouth.gif
+animation=withdraws and bites|0.8
+cooldown=3.25
+effect=melee
+subeffect=damage:-
+subeffect=crippled:5
+subeffect=weakness:5
+effect=against immobilized targets
+subeffect=damage:0.5
+
+attack=Charge
+ID=4778
+image=http://giant.gfycat.com/NarrowDishonestBats.gif
+animation=white glow
+effect=leap
+subeffect=damage:-
+
+attack=Entangling Web
+ID=4724
+image=http://giant.gfycat.com/LeftFondCamel.gif
+animation=glows
+effect=3 projectiles (cone)
+subeffect=damage:-
+subeffect=bleeding:5
+subeffect=immobilized:9
+#note=evade
+
+##################################################################
+
+name=Spider Hatchling
+ID=5561
+alt=Spider Hatchlings
+image=http://wiki.guildwars2.com/images/0/02/Spider_Hatchling.jpg
+path=TAS|TAU|TAAE
+
+attack=Bite
+ID=4720
+animation=withdraws and bites|0.8
+cooldown=3.25
+effect=melee
+subeffect=damage:-
+subeffect=poison:6
+subeffect=crippled:6
+
+##################################################################
+
+name=Malrona
+ID=7339
+image=http://wiki.guildwars2.com/images/3/3b/Malrona.jpg
+path=TAU
+
+attack=Alternates between two attacks
+#note=keep in mind which attack she used previously
+
+attack=Venom Spray
+ID=4774
+image=http://giant.gfycat.com/RingedPossibleCony.gif
+animation=glows
+additional=channeled
+effect=multiple cones
+subeffect=damage:-
+subeffect=poison:0
+subeffect=buff:Predator_Swiftness:0:1:- if hits
+#note=side step to avoid
+#note=get hit to make Malrona vulnerable, do not remove poison
+#note=Her poison stacks with other sources of poison.
+
+attack=Venom Blast
+ID=4772
+image=http://giant.gfycat.com/DimCommonArgentinehornedfrog.gif
+animation=glow
+additional=can't be blocked
+effect=multiple projectiles with AoE
+subeffect=damage:-
+#note=stay behind her if not targeted
+#note=evade 1-2 times (melee has to react based on animation)
+
+attack="Predator swiftness"
+effect=buff
+subeffect=moves faster but takes a lot more damage (~5 x) from poisoned players
+
+##################################################################
+
+name=Forest Spider Hatchling
+ID=10519
+alt=Forest Spider Hatchlings
+image=http://wiki.guildwars2.com/images/d/d2/Nightmare_Spider.jpg
+path=TAU
+
+attack=Bite
+ID=3123
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=death
+additional=used upon death
+effect=ticking PBAoE
+subeffect=poison:0
+
+##################################################################
+
+name=Undergrowth Recluse
+ID=3222
+alt=Undergrowth Recluses|Recluse|Recluses
+path=TAS|TAU|TAAE
+
+attack=Bite
+ID=4720
+image=http://fat.gfycat.com/EminentSevereAfricanaugurbuzzard.gif
+animation=withdraws and bites|0.8
+cooldown=3.25
+effect=melee
+subeffect=damage:-
+subeffect=poison:6
+subeffect=crippled:6
+
+attack=Venom Spray
+iD=4723
+cooldown=9
+image=http://giant.gfycat.com/ShockingFakeAssassinbug.gif
+animation=glows and raises back|1.25|shoots green spray
+effect=3 cones in 0.65 s
+count=3
+length=0.65
+subeffect=damage:-
+subeffect=poison:3
+#note=run behind its back
+#note=dodge when tail starts lowering
+
+##################################################################
+
+name=Undergrowth Webber
+ID=3225
+alt=Undergrowth Webbers|Webber|Webbers
+image=http://wiki.guildwars2.com/images/d/d6/Undergrowth_Webber.jpg
+path=TAF|TAU|TAAE
+
+attack=Bite
+ID=4780
+image=http://fat.gfycat.com/EssentialPitifulDragon.gif
+animation=withdraws and bites|0.8
+cooldown=3.25
+effect=melee
+subeffect=damage:-
+subeffect=crippled:5
+subeffect=weakness:5
+#note=circle at close range to avoid
+
+attack=Charge
+ID=4778
+image=http://fat.gfycat.com/BreakableExaltedBrahmancow.gif
+cooldown=12
+animation=raises legs a lot with subtle white glow|1
+effect=leap
+subeffect=damage:-
+effect=against immobilized targets
+subeffect=damage:0.5
+
+attack=Entangling Web
+ID=4724
+image=http://giant.gfycat.com/MemorableUnluckyBuck.gif
+cooldown=23
+animation=raises legs|1.5|shoots 3 webs
+additional=Only used at distant targets.
+effect=3 projectiles (cone)
+subeffect=damage:-
+subeffect=bleeding:5
+subeffect=immobilized:10
+subeffect=buff:"Queen's_Frenzy":10:1:- if hits a target
+#note=block, evade or reflect
+
+attack="Queen's_Frenzy"
+effect=Buff
+subeffect=Deal 66% more damage and recharge skills 66% faster (~40% reduced cooldowns)
+
+##################################################################
+
+name=Undergrowth Stonetouch
+ID=10180
+alt=Undergrowth Stonetouches|Stonetouch|Stonetouches
+image=http://wiki.guildwars2.com/images/1/16/Undergrowth_Stonetouch.jpg
+path=TAU|TAAE
+
+attack=Bite
+ID=4720
+image=http://fat.gfycat.com/HonestWideeyedHalicore.gif
+animation=withdraws and bites|0.8
+cooldown=3.25
+effect=melee
+subeffect=damage:-
+subeffect=crippled:6
+subeffect=poison:6
+#note=circle at close range to avoid
+
+attack=Paralyzing Venom
+ID=4722
+image=http://giant.gfycat.com/CreepyRingedAuk.gif
+cooldown=15
+animation=glows and raises back|1.25|shoots green spray
+effect=3 cones in 0.65 s
+subeffect=damage:-
+subeffect=removes two boons
+subeffect=stun:5, unbreakable
+#note=run behind its back
+#note=dodge when tail starts lowering
+#note=Stability works but you need 4 coverup boons
+
+##################################################################
+
+name=Undergrowth Bloodfang
+ID=10181
+alt=Undergrowth Bloodfangs|Bloodfang|Bloodfangs
+image=http://wiki.guildwars2.com/images/3/33/Undergrowth_Bloodfang.jpg
+path=TAU|TAAE
+
+attack=Bite
+ID=4720
+image=http://giant.gfycat.com/TimelyNecessaryFerret.gif
+animation=withdraws and bites|0.8
+cooldown=3.25
+effect=melee
+subeffect=damage:-
+subeffect=crippled:6
+subeffect=poison:6
+#note=circle at close range to avoid
+
+##################################################################
+
+name=Undead Spider Hatchling
+ID=8334
+alt=Undead Spider Hatchlings
+image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
+path=Arah1|Arah2|Arah3|Arah4
+
+attack=Bite
+ID=4720
+image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
+animation=withdraws and bites|0.75
+cooldown=2.5
+effect=Melee
+subeffect=damage:-
+subeffect=crippled:6
+subeffect=poison:6
+
+#############################
+
+# Levels 80, 82 and 83 exist.
+copy=8334
+name=Orrian Spider
+ID=8332
+alt=Orrian Spiders|Spider|Spiders
+
+#############################
+
+# Levels 80, 82 and 83 exist.
+copy=8334
+name=Orrian Spider
+ID=8335
+alt=Orrian Spiders|Spider|Spiders
+
+##################################################################
+
+name=Orrian Spider (Tunnel)
+ID=10718
+alt=Orrian Spiders (Tunnel)|Spider (Tunnel)|Spiders (Tunnel)
+image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
+path=Arah2
+
+attack=Bite
+ID=5224
+image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
+animation=withdraws and bites|0.75
+cooldown=3
+effect=big PBAoE
+subeffect=damage:-
+subeffect=crippled:5
+
+##################################################################
+# Levels 80 and 83 exist.
+name=Orrian Spider
+ID=8333
+alt=Orrian Spiders|Spider|Spiders
+image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
+path=Arah1|Arah2|Arah3|Arah4
+
+Attack=Alternates between its two attacks
+#note=keep in mind which attack was used first
+
+Attack=Venom Spray
+ID=4774
+cooldown=6
+image=http://giant.gfycat.com/RingedPossibleCony.gif
+animation=glows and leans back|1.5
+effect=3 cones in 0.6 s
+count=3
+length=0.6
+subeffect=damage:-
+subeffect=poison:5
+subeffect=buff:Predator_Swiftness if hits.
+#note=side step to avoid
+#note=get hit to make Malrona vulnerable, do not remove poison
+#note=Her poison stacks with other sources of poison.
+
+attack=Venom Blast
+ID=4772
+image=http://giant.gfycat.com/DimCommonArgentinehornedfrog.gif
+cooldown=6
+animation=glows and leans back|1.25
+additional=can't be blocked
+effect=5 projectiles (cone) with AoE
+count=?
+subeffect=damage:0.9
+#note=stay behind spider if not targeted
+#note=evade 1-2 times (melee user has to react based on animation)
+
+attack="Predator swiftness"
+effect=buff
+subeffect=moves faster but takes a lot more damage (~5 x) from poisoned players
+
+##################################################################
+# Wolves.                                                        #
+##################################################################
+
+Name=Wolf
+ID=11339
+alt=Wolves
+image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
+scaling=normal
+Path=Snow
+
+attack=Bite
+ID=2973
+animation=bites|0.25
+cooldown=2.5
+effect=melee
+subeffect=damage:-
+
+attack=Howl
+ID=16277
+animation=pulls air in, raises head and howls|1.5
+cooldown=24
+effect=PBAoE
+subeffect=might:5:3
+
+##################################################################
+
+Name=Wolf
+ID=11279
+alt=Wolves
+image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
+scaling=constant
+Path=Swamp
+
+attack=Bite
+ID=2973
+cooldown=2.5
+animation=bites|0.25
+effect=melee
+subeffect=damage:-
+
+attack=Howl
+ID=2874
+effect=summon
+subeffect=2 enemy=Wolves:normal
+
+##################################################################
+
+Name=Wolf
+# VERIFY 11270
+ID=4800
+alt=Wolves
+image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
+scaling=constant
+Path=Swamp
+
+attack=Bite
+ID=2973
+cooldown=2.5
+animation=bites|0.25
+effect=melee
+subeffect=damage:-
+
+##################################################################
+
+Name=Icebrood Wolf
+ID=9870
+image=http://wiki.guildwars2.com/images/b/bf/Champion_Icebrood_Wolf.jpg
+Path=CoE1|CoE2|CoE3
+
+attack=Bite
+ID=3033
+image=http://i.imgur.com/q0TdusG.gif
+cooldown=3.5
+animation=bites|0.25
+effect=Melee
+subeffect=damage:-
+
+attack=Frost Leap
+ID=2540
+image=http://i.imgur.com/7bQUYcr.gif
+animation=instant||leaves icy ground
+cooldown=30
+effect=2 PBAoEs
+count=2
+subeffect=damage:-
+subeffect=chilled:3
+#note=use your own cooldowns as a timer
+#note=try to predict, usually uses both Leaps in a row
+#note=keep distance until attack is used
+
+attack=Leap
+ID=2541
+image=http://i.imgur.com/mNIXPon.gif
+animation=instant
+cooldown=30
+effect=short dash (0.25 s) with 2 PBAoEs
+count=2
+subeffect=damage:-
+subeffect=crippled:3
+#note=use your own cooldowns as a timer
+#note=try to predict, usually uses both Leaps in a row
+#note=keep distance until attack is used
+
+##################################################################
+
+copy=9870
+Name=Icebrood Wolf (Rare)
+ID=9875
+alt=Wolf (Rare)
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+Path=HotW1|HotW3|CoE1
+
+################################################################## 
+
+copy=9870
+Name=Icebrood Wolf
+ID=12921
+alt=Wolf|Icebrood Wolves|Wolves
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+scaling=level
+Path=Thauma
+
+##################################################################
+
+Name=Icebrood Wolf
+ID=9869
+alt=Icebrood Wolves
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+Path=HotWS|HotW1|HotW3|CoE1|CoE2|CoE3
+
+attack=Bite
+ID=4886
+image=http://i.imgur.com/kkL8fmR.gif
+cooldown=2.5
+animation=swings arms|0.25
+effect=dash with 2 melee hits in 0.5 s
+count=2
+length=0.5
+subeffect=damage:-
+
+attack=Leap
+ID=4884
+cooldown=19
+image=http://i.imgur.com/i0WYRxZ.gif
+effect=short leap
+subeffect=damage:-
+subeffect=knockdown:3
+effect=summon
+subeffect=enemy=Icebrood_Wolf:normal
+
+##################################################################
+# Internally same as 9870 but don't seem to use all attacks.
+
+Name=Icebrood Wolf
+ID=11708
+alt=Icebrood Wolves
+image=http://wiki.guildwars2.com/images/1/15/Icebrood_Wolf.jpg
+Path=HotWS|HotW1|HotW3|CoE1|CoE2|CoE3|Snow
+
+attack=Bite
+ID=3033
+image=http://i.imgur.com/q0TdusG.gif
+cooldown=3.5
+animation=bites|0.25
+effect=Melee
+subeffect=damage:-
+
+attack=Leap
+ID=2541
+image=http://i.imgur.com/mNIXPon.gif
+animation=instant
+cooldown=30
+effect=short dash (0.25 s) with 2 PBAoEs
+count=2
+subeffect=damage:-
+subeffect=crippled:3
+
+
+##################################################################
+# Fish / krait.                                                  #
+##################################################################
+
+name=Jellyfish Beast
+ID=11402
+image=http://wiki.guildwars2.com/images/b/bd/Jellyfish.jpg
+scaling=legendary
+path=Aqua
+
+attack=Slash
+ID=16295
+animation=swings lower body behind|1
+effect=melee
+subeffect=damage:-
+subeffect=knockback:1.5
+#note=block/evade or outrange
+
+attack=Spin
+ID=16296
+animation=spins anti-clockwise|0.75|spins clockwise
+effect=6 PBAoEs in 5 s
+count=6
+length=5
+subeffect=damage:-
+subeffect=stun:2
+#note=evade away. stability/Stun break if needed
+
+attack=Summon Jellyfish
+ID=16294
+animation=rises a bit, tentacles wave horizontally|2.5
+additional=maximum amount over 25
+effect=summon 7 enemy=Jellyfishes:normal
+
+attack=Swallow (1)
+ID=16297
+animation=spins clockwise and rises up|2
+additional=used when below 75%. Can't be blocked or evaded. Only used at close targets
+effect=ranged
+subeffect=pull:0
+#note=interrupt
+#note=Stability prevents pull but not the attack
+
+attack=Eat (2)
+effect=channeled ranged
+count=?
+subeffect=Agony:1
+subeffect=regeneration:0
+subeffect=might:5
+subeffect=buff:petrify:1
+subeffect=buff:Damage_Resistance:1:1:-
+#note=spam skill 1 to get out
+
+attack=Eat End (3)
+effect=ranged
+subeffect=knockback:2
+
+##################################################################
+
+name=Jellyfish
+ID=11407
+image=http://wiki.guildwars2.com/images/b/bd/Jellyfish.jpg
+alt=Jellyfishes
+scaling=normal
+path=Aqua
+
+attack=Tentacle Slash
+ID=16316
+cooldown=4
+animation=spins clockwise|0.5
+effect=dash with 4 PBAoEs in 1.5 s
+count=4
+length=1.5
+subeffect=damage:-
+subeffect=vulnerability:5
+#note=Used constantly (long ending animation).
+
+##################################################################
+
+name=Krait Damoss
+ID=9064
+image=http://wiki.guildwars2.com/images/a/a3/Krait_Damoss.jpg
+scaling=champion
+path=Aqua
+
+attack=Lunge
+ID=1600
+effect=Melee
+subeffect=damage:-
+subeffect=crippled:6
+effect=dash
+subeffect=damage:-
+subeffect=crippled:6
+
+attack=Slice
+ID=1598
+effect=2 melee hits
+count=2
+subeffect=damage:-
+subeffect=poison:8
+
+attack=Retreating Swipe
+ID=1601
+effect=melee
+subeffect=damage:-
+effect=dodge back
+subeffect=buff:evade
+
+attack=Summon Barracuda
+ID=2063
+effect=summon a enemy=Young_Barracuda:normal
+
+# Internal: Skills Slash, Evade and Tail Lash also listed.
+
+#############################
+
+copy=9064
+ID=6091
+scaling=normal
+
+#############################
+
+copy=9064
+ID=5192
+scaling=normal
+
+##################################################################
+
+name=Krait Hypnoss
+ID=5190
+image=http://wiki.guildwars2.com/images/0/0f/Krait_Hypnoss.jpg
+scaling=normal
+path=Aqua
+
+attack=Putrid Grasp
+ID=2065
+effect=projectile
+subeffect=damage:-
+
+attack=Poison Cloud
+ID=2066
+effect=ticking AoE
+count=?
+subeffect=damage:-
+subeffect=poison:5
+
+attack=Create Blood Idol
+ID=2073
+effect=summon a enemy=Healing_Thingy:structure
+
+# Internal: Skills Poison Trail and Life Blast also listed.
+
+##################################################################
+
+name=Krait Nimross
+ID=1173
+image=http://wiki.guildwars2.com/images/3/30/Krait_Nimross.jpg
+scaling=normal
+path=Aqua
+
+attack=Slash
+ID=1597
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Grappling Throw
+ID=2072
+effect=projectile
+subeffect=damage:-
+subeffect=stun:0
+
+attack=Throw Net
+ID=2071
+effect=trap
+subeffect=immobilized:2
+
+# Internal: Skills Javelin Toss, Savage Throw, Caltrops, Whirling Defense and Evade also listed.
+
+#############################
+
+copy=1173
+ID=5191
+
+##################################################################
+
+name=Krait Slaver
+ID=11401
+alt=Krait Slavers
+scaling=normal
+path=Aqua
+
+attack=Heavy Weight (1)
+animation=spins
+effect=ranged
+subeffect=sink:0
+#note=evade twice (needs good timing)
+
+attack=Heavy Weight (2)
+effect=ranged
+subeffect=damage:0
+subeffect=sink:0
+
+attack=Heavy Weight (3)
+effect=ranged
+subeffect=damage:0
+subeffect=sink:0
+
+##################################################################
+
+Name=Giant Arctic Jellyfish
+ID=10977
+alt=Giant Arctic Jellyfishes|Jellyfish|Jellyfishes
+image=http://wiki.guildwars2.com/images/f/f9/Jellyfish_%28NPC%29.jpg
+Path=HotW3
+
+attack=Detonate
+effect=PBAoE
+subeffect=damage:0
+effect=self destruct
+
+##################################################################
+
+Name=Jellyfish
+ID=11495
+alt=Jellyfish|Jellyfishes
+image=http://wiki.guildwars2.com/images/f/f9/Jellyfish_%28NPC%29.jpg
+Path=HotW3
+
+##################################################################
+
+Name=Ice Shark
+ID=13502
+level=80
+alt=Ice Sharks
+Path=HotWS
+
+attack=Bite
+effect=melee
+subeffect=damage:0
+subeffect=poison:0
+subeffect=bleeding:0
+
+attack=Charge
+effect=dash with PBAoE
+subeffect=damage:0
+subeffect=bleeding:0
+
+##################################################################
+
+name=Mutated Fish
+ID=5562
+image=http://wiki.guildwars2.com/images/2/2d/Mutated_Fish.jpg
+path=TAS
+
+attack=Bite
+ID=3052
+image=http://fat.gfycat.com/DetailedSplendidHydra.gif
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:3.75
+
+attack=Bite
+ID=3051
+effect=melee
+subeffect=damage:-
+
+##################################################################
+
+Name=Barracuda
+ID=6999
+scaling=constant
+alt=Barracudas
+image=http://wiki.guildwars2.com/images/8/8d/Barracuda.jpg
+Path=HotW3|Aqua
+
+attack=Bite
+ID=2898
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:6
+
+attack=Frenzied Attack
+ID=2899
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:4
+
+##################################################################
+
+copy=6999
+name=Young Barracuda
+ID=5981
+path=Aqua
+
+#############################
+
+copy=6999
+name=Barracuda
+ID=3167
+path=TAS|TAF|TAAE
+
+attack=Summon
+# TODO: Check ID of summon.
+effect=Summon enemy=Barracudas:normal
+
+##################################################################
+# Drakes.                                                        #
+##################################################################
+
+Name=Gaheron's Pet Drake
+ID=7166
+level=77
+image=http://wiki.guildwars2.com/images/3/34/Salamander_Drake.jpg
+Path=CoF3
+
+attack=bite
+ID=2884
+cooldown=3.5
+animation=bites|0.25
+effect=melee
+subeffect=damage:-
+
+attack=Fire Breath
+ID=2888
+animation=glows|2.75
+cooldown=20
+effect=4 cones in 2 s
+count=4
+length=2
+subeffect=damage:-
+#note=usually used after 3 Bites
+#note=sidestep
+
+# Internal: Skill Tail Whip also listed.
+
+#############################
+
+copy=7166
+Name=Salamander Drake
+ID=7121
+alt=Salamander Drakes
+
+##################################################################
+
+Name=Marsh Drake
+ID=11276
+scaling=constant
+image=http://wiki.guildwars2.com/images/3/30/Marsh_Drake.jpg
+Path=Swamp
+
+attack=bite
+ID=3030
+cooldown=4
+animation=bites|0.2
+effect=melee
+subeffect=damage:-
+
+attack=Poison Cloud
+ID=2989
+animation=glows and opens mouth|2
+effect=ticking AoE (13 s)
+count=?
+subeffect=poison:5
+
+# Internal: Skills Tail Swipe x 2 and Chomp also listed.
+
+##################################################################
+
+Name=Marsh Drake Hatchling
+ID=11274
+alt=Marsh Drake Hatchlings|Drake Hatchling|Drake Hatchlings
+image=http://wiki.guildwars2.com/images/3/30/Marsh_Drake.jpg
+scaling=normal
+Path=Swamp
+
+attack=bite
+ID=3031
+cooldown=4
+animation=bites|0.2
+effect=melee
+subeffect=damage:-
+
+##################################################################
+# Trolls / Ettins.                                               #
+##################################################################
+
+Name=Cave Troll
+ID=7041
+Path=AC1|AC2|AC3
+
+Attack=Troll Smash
+ID=3945
+cooldown=3
+animation=swings right arm|1|throws a ball
+additional=can't be blocked
+effect=bouncing and homing ranged
+subeffect=damage:-
+subeffect=weakness:5
+subeffect=daze:1
+subeffect=removes 1 boon per hit
+#note=evade
+
+attack=Stomp (1)
+ID=3946
+cooldown=17
+animation=crouches, roars up and jumps|2|red circle appears
+additional=can't be blocked
+effect=leap (1.5 s) with PBAoE
+subeffect=damage:-
+subeffect=launch:2.3
+#note=evade
+
+attack=Stomp (2)
+animation=after landing|0.5
+additional=Can't be blocked. Minimum range
+effect=piercing ranged at every target
+subeffect=damage:1
+subeffect=knockdown:2
+subeffect=crippled:6
+subeffect=bleeding:6:3
+#note=sidestep or evade
+#note=stay inside Troll
+
+attack=Shout
+ID=3949
+cooldown=20
+animation=holds head and roars forward|0.75
+additional=Can't be blocked or evaded
+effect=cone
+subeffect=fear:3
+subeffect=weakness:6
+effect=self
+count=15
+length=14
+subeffect=buff:Troll_regeneration:15:1:soothing_mist
+#note=stun break
+
+attack="Troll regeneration"
+effect=buff
+#VERIFY: Might have a small regen.
+subeffect=No effect
+
+#############################
+
+copy=7041
+ID=7020
+Path=ACS
+
+##################################################################
+
+copy=7041
+Name=Icebrood Troll
+ID=13429
+image=http://wiki.guildwars2.com/images/f/fc/Icebrood_Troll.jpg
+Path=HotW1
+
+##################################################################
+
+Name=Icebrood Troll
+ID=9871
+alt=Icebrood Trolls
+image=http://wiki.guildwars2.com/images/f/fc/Icebrood_Troll.jpg
+Path=HotWS|CoE1|CoE2|CoE3
+
+attack=Troll Smash
+ID=4870
+animation=swings right arm|0.5
+effect=melee
+subeffect=damage:-
+subeffect=bleeding:5:4
+subeffect=chilled:8
+
+attack=Stomp
+ID=4872
+animation=jumps in air|2.5
+effect=PBAoE
+subeffect=damage:-
+subeffect=launch:3.3
+
+attack=Shout
+ID=4871
+animation=roars|1.5
+effect=buff
+subeffect=5 "Troll regeneration" in 5 s
+
+##################################################################
+
+Name=Ettin
+ID=11331
+image=http://wiki.guildwars2.com/images/d/d4/Champion_Ettin.jpg
+scaling=scale
+Path=Uncat
+
+attack=Sweep
+ID=1444
+image=http://fat.gfycat.com/SeparateHeftyBrontosaurus.gif
+animation=swings club|0.75
+cooldown=4
+effect=wide cone
+subeffect=damage:-
+#note=block/evade
+#note=run through (needs good timing)
+
+attack=Shock Wave
+ID=1445
+image=http://giant.gfycat.com/SelfishCharmingAbyssiniangroundhornbill.gif
+cooldown=33
+animation=holds club back and smashes ground|1.25|shoots a tremor
+additional=only used at distant targets
+effect=projectile
+subeffect=damage:-
+subeffect=crippled:3
+#note=block/evade
+#note=at melee range run through him
+#note=at high range sidestep
+
+attack=Massive Smash
+ID=1446
+image=http://giant.gfycat.com/WhisperedInferiorAquaticleech.gif
+cooldown=28
+animation=glows, holds club back and smashes ground|2.25|spikes on ground
+effect=PBAoE
+subeffect=damage:-
+subeffect=bleeding:4
+subeffect=knockdown:3
+#note=block/evade
+#note=run away
+
+attack=Bellow
+ID=16232
+image=http://giant.gfycat.com/UltimateThatGoat.gif
+cooldown=30
+animation=glows, keeps club above head and stomps ground|1.25
+effect=buff
+subeffect=protection:15|fury:15|might:15
+effect=6 short-range projectiles (360 degrees)
+count=?
+subeffect=damage:-
+#note=evade
+#note=use reflects for extreme damage
+
+attack=Break stun
+# Not verified.
+cooldown=60
+effect=break a Control effect
+#note=only used at scale 10 and above
+#note=don't rely on Control
+
+##################################################################
+# Other.                                                        #
+##################################################################
+
+name=Cave Bat
+ID=12062
+image=http://wiki.guildwars2.com/images/8/8b/Bat_%28NPC%29.jpg
+path=Furn
+scaling=normal
+
+attack=Slashing Claws
+ID=2848
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Dive
+ID=2847
+effect=melee
+subeffect=damage:-
+
+# Internal: Skill Swoop also listed.
+
+##################################################################
+
+Name=Vampire Bat
+ID=11477
+alt=Vampire Bats
+image=http://wiki.guildwars2.com/images/6/6f/Vampire_Bat.jpg
+scaling=constant
+Path=Volc
+
+attack=Slashing Claws
+ID=2848
+cooldown=0
+effect=Melee
+subeffect=damage:-
+
+attack=Vampiric Bite
+ID=2982
+animation=flies bit back and dashes
+effect=short dash
+subeffect=damage:-
+subeffect=healing:0
+
+##################################################################
+
+name=Murellow
+ID=12064
+image=http://wiki.guildwars2.com/images/b/b9/Juvenile_Murellow.jpg
+scaling=normal
+path=Furn
+
+attack=Slash
+ID=3102
+animation=Stands up and slashes|0.75
+effect=melee
+subeffect=damage:-
+
+attack=Diseased Bite
+ID=3101
+animation=bites|0.5
+effect=melee
+subeffect=damage:-
+subeffect=poison:8
+
+attack=Screech
+ID=3103
+animation=bends forward|0.1
+effect=cone
+subeffect=damage:-
+subeffect=daze:1
+subeffect=weakness:8
+
+##################################################################
+
+Name=Firefly
+ID=5072
+alt=Fireflies
+image=http://wiki.guildwars2.com/images/f/f2/Firefly.jpg
+Path=Swamp
+
+attack=Neutral
+
+attack=Sting
+ID=2998
+animation=swings body|0.4
+cooldown=3
+effect=melee
+subeffect=damage:-
+
+attack=Charging Sting
+ID=2997
+additional=only used at distant targets
+effect=dash
+subeffect=damage:-
+
+attack=Sting Flurry
+ID=2999
+animation=flies a circle|1.4
+effect=9 melee hits in 5.3 s
+count=9
+length=5.3
+subeffect=damage:-
+
+#############################
+
+copy=5072
+Name=Mosquito
+ID=6521
+alt=Mosquitos
+image=http://wiki.guildwars2.com/images/3/33/Mosquito.jpg
+
+#############################
+
+copy=5072
+Name=Marsh Mosquito
+ID=11271
+alt=Marsh Mosquitos
+image=http://wiki.guildwars2.com/images/3/33/Mosquito.jpg
+
+##################################################################
+
+Name=Jungle Skelk
+ID=4359
+alt=Jungle Skelks|Skelk|Skelks
+image=http://wiki.guildwars2.com/images/e/eb/Jungle_Skelk.jpg
+scaling=normal
+Path=Swamp
+
+attack=Slash
+ID=2397
+animation=swings right arm|0.7
+cooldown=0
+effect=Melee
+subeffect=damage:-
+
+attack=Jab
+ID=2871
+animation=bites|0.25
+effect=melee
+subeffect=damage:-
+
+attack=Stealth (1)
+effect=buff
+subeffect=Stealth:1
+
+attack=Ambush (2)
+ID=2400
+animation=leans forward|0.1
+effect=Melee
+subeffect=damage:-
+
+# Internal: Skill Double Slash also listed.
+
+#############################
+
+copy=4359
+Name=Jungle Skelk Lurker
+ID=1216
+alt=Jungle Skelk 
+image=http://wiki.guildwars2.com/images/3/33/Mosquito.jpg
+
+##################################################################
+
+Name=Siamoth
+ID=5083
+scaling=normal
+image=http://wiki.guildwars2.com/images/4/4c/Siamoth.jpg
+Path=Swamp
+
+attack=Neutral
+
+attack=Horn Strike
+ID=3118
+animation=swings head to right|0.3
+cooldown=2.5
+effect=melee
+subeffect=damage:-
+
+################################################################## 
+
+Name=Skritt Bottle Lobber
+ID=12912
+alt=Bottle Lobber|Skritt Bottle Lobbers|Bottle Lobbers
+image=http://wiki.guildwars2.com/images/7/7d/Skritt_Bottle_Lobber.jpg
+scaling=level
+Path=Thauma
+
+attack=Throw
+ID=11131
+effect=projectile
+subeffect=damage:-
+
+attack=Heave
+ID=1646
+effect=???
+subeffect=damage:-
+subeffect=knockdown:2
+
+################################################################## 
+
+Name=Skritt Gear Lobber
+ID=12913
+alt=Gear Lobber|Skritt Gear Lobbers|Gear Lobbers
+image=http://wiki.guildwars2.com/images/7/74/Veteran_Skritt_Gear_Lobber.jpg
+scaling=level
+Path=Thauma
+
+attack=Stab
+ID=2057
+effect=melee
+subeffect=damage:-
+
+attack=Bomb
+ID=2056
+effect=delayed AoE
+subeffect=damage:-
+
+##################################################################
+
+Name=Harpy Hunter
+ID=11323
+alt=Harpy Hunters
+image=http://wiki.guildwars2.com/images/6/6a/Harpy_Hunter.jpg
+scaling=normal
+Path=Uncat
+
+attack=Shoot
+ID=1529
+image=http://giant.gfycat.com/YearlyBigFallowdeer.gif
+effect=projectile
+subeffect=damage:-
+
+attack=Multi Shot
+ID=16251
+image=http://giant.gfycat.com/MinorGracefulAmericanbadger.gif
+animation=shouts
+effect=5 projectiles in 2 s
+count=5
+length=2
+subeffect=damage:-
+subeffect=crippled:1
+#note=anti projectile skills are very effective
+#note=try to zig zag at range or block
+
+attack=Pulsing Orb
+ID=16250
+additional=used on level 10 and higher
+effect=projectile with AoE
+subeffect=damage:-
+subeffect=launch:3
+#note=use anti projectile, block or stability
+#note=when running zig zag to mess up their aiming
+#note=don't rely on red circle. zig zagging causes it fly somewhere else
+
+##################################################################
+
+Name=Rabbit
+ID=11329
+scaling=scale
+image=http://wiki.guildwars2.com/images/0/0b/Rabbit.jpg
+Path=Uncat
+
+attack=Bite
+ID=16234
+animation=lunges forward|0.5|bites
+effect=melee
+subeffect=damage:-
+
+attack=Jump Kick
+ID=16233
+image=http://fat.gfycat.com/ObedientWhiteIlladopsis.gif
+animation=raises front legs from ground, crouches and jumps up in the air|0.6|kicks player in the face
+effect=melee
+subeffect=damage-percent:110
+#note=Evade fast when you see him in the air

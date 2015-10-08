@@ -288,7 +288,7 @@ name=Save the villagers
 tactic=normal
 You need to kill 3 groups of Krait and interact with cages to rescue enemy=villagers.
 Stack behind a statue to corner the krait and give you a wall for rush-type abilities.
-The first group has only enemy=Nimross:normal. The second group also has enemy=Krait_Hypnosis:normal with their dangerous poison-cloud attack. The last group has Veterans.
+The first group has only enemy=Nimross:normal. The second group also has enemy=Krait_Hypnoss:normal with their dangerous poison-cloud attack. The last group has Veterans.
 After the villagers are saved, the path will split and you will either have to go through Darkness or survive as a Dolphin.
 tactic=warrior
 Use wiki=Tsunami_Slash into a statue to deal high damage.
@@ -1068,7 +1068,7 @@ tactic=north-west
 media=swamp_1.jpg|Map. The wisp is guarded by enemy=Skelks:normal. Stand on any nearby rock while waiting so they can't reach you. You should jump over trees because otherwise you may have to run a very long way.
 Practice the first jump couple of times (tell your team wait a bit if needed). After the jump just run forward and pay attention to the ground as there are multiple traps. If the next passage is open just go through. If not, stay calm and jump over. Don't try to run around because other nearby passages will just close before you.
 tactic=north
-media=swamp_2.jpg|Map. Once you pick the wisp you get attacked by 20 enemy=Marsh_Mosquitos_(weak):normal. They won't deal much damage but if they hit you will get in combat which slows you down.
+media=swamp_2.jpg|Map. Once you pick the wisp you get attacked by 20 enemy=Marsh_Mosquitos:normal. They won't deal much damage but if they hit you will get in combat which slows you down.
 If the closest passage is closed you should jump over it. Practice couple of times if needed. Alternatively you can ask your team to wait (keep in mind that passages change every 50 seconds). Mossman will probably spawn after the passage. If he does and the next one is closed you should run around (either way is fine) unless you have practiced the jump. After the second passage either turn right or jump over the wall (passages will close).
 Alternatively you can immediately turn to right and just follow same way as with media=swamp_1.jpg|the_north-west_wisp.
 tactic=north-east
@@ -1081,7 +1081,7 @@ tactic=east
 media=swamp_5.jpg|Map. The wisp is guarded by a enemy=Marsh_Drake:champion so either stay back or run to a rock at back wall. Once you grab the wisp, about 12 enemy=Marsh_Drake_Hatchlings:normal appear. Just ignore them and keep moving. If the passage is closed then just keep going and jump over the wall near the next passage.
 tactic=south-east
 media=swamp_6.jpg|Map. Be careful when approaching the wisp as there are multiple spider eggs on the ground. When touched they break and 2-3 enemy=Spider_Hatchlings:normal appear. If you break lots of them you will get killed. You can safely get through if you jump on rocks. You can also wait bit further way and rush in once the countdown starts.
-Once you grab the wisp, 7 enemy=Spiders:normal appear. Just ignore them and keep moving. It doesn't really matter if you break eggs at this point (but you can jump on the rocks!). If both the first and the second passage are closed then just keep going and jump over the wall near the next passage.
+Once you grab the wisp, 7 enemy=Marsh_Spiders:normal appear. Just ignore them and keep moving. It doesn't really matter if you break eggs at this point (but you can jump on the rocks!). If both the first and the second passage are closed then just keep going and jump over the wall near the next passage.
 
 
 name=1) enemy=The_Mossman:legendary
@@ -1175,7 +1175,7 @@ name=Main room
 tactic=normal|skip
 The main area is filled with lots of different enemies. enemy=Nightmare_Hounds and enemy=Icebrood_Wolves patrol around the area. At specific points a enemy=portal appears with some enemies. Look at the map for the spots to avoid getting caught off guard.
 Portals occasionally pull someone in which may make you fall down. Remember to keep jumping on toxic water. Try to walk on already cleared places so you don't get ambushed by portals.
-Possible enemies are enemy=flame_legion_igniters, enemy=flame_legion_blademasters, enemy=bandit_riflemen, enemy=bandit_scouts, enemy=aatxes:veteran, enemy=dredge_mining_suits, enemy=dredge_disaggregators, enemy=ascalonian_cultists, enemy=ascalonian_captains and enemy=ascalonian_archers.
+Possible enemies are enemy=flame_legion_igniters, enemy=flame_legion_blademasters, enemy=bandit_riflemen, enemy=bandit_scouts, enemy=aatxes:veteran, enemy=dredge_mining_suits, enemy=dredge_disaggregators:veteran, enemy=ascalonian_cultists, enemy=ascalonian_captains and enemy=ascalonian_archers.
 At the center are of the upper floor there are 2 enemy=skritt_bottle_lobbers and 2 enemy=skritt_gear_lobbers. They have to be killed to proceed.
 tactic=normal
 Stick together so you don't get overrun. It doesn't matter which way you go because all ways lead to the middle platform. The most efficient path to the next objective is to run over the water to the center floor area, and then either blink up, or run up the stairs located to the left and then move to the center area of the upper-floor. However, some groups prefer to go up the right set of stairs as you come out of the broken-wall, even though it is slower, has more mobs and portals, and has no upside other than not having to cross the toxic water.
@@ -1315,7 +1315,7 @@ At end you may not get prompt for the next level. There is no known fix.
 path=Uncat
 name=Uncategorized
 tactic=normal
-The fractal has Inquest (golems) at bosses so use so use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying when you get to enemy=Old_Tom:legendary. If you want to be optimal use oils or wiki=Skale_Venom_(consumable)|Skale_Venom at the start. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils. If you want to be optimal use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty when fighting golems.
+The fractal has Inquest (golems) at bosses so use so use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying when you get to enemy=Old_Tom:champion. If you want to be optimal use oils or wiki=Skale_Venom_(consumable)|Skale_Venom at the start. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils. If you want to be optimal use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty when fighting golems.
 The start is really annoying with invulnerable harpies and last fight may be tough without enough anti projectiles.
 youtube=noCqa2bxPVk|Video_guide [KING].
 Current record: record=47.
@@ -1387,7 +1387,7 @@ You can run up a bit and use wiki=Dagger_Storm to allow whole party get safely t
 tactic=bug
 There is a checkpoint at top of the stairs. Fractal will get stuck if you kill enemy=Old_Tom before triggering it. Checkpoint can be bypassed by blinking over it so have at least one player run normally.
 
-Name=enemy=Old_Tom:legendary
+Name=enemy=Old_Tom:champion
 tactic=ranged|melee
 Don't aggro Tom until everyone is ready and you have done the necessary preparations. Once the combat starts, poison gas will fill the room which will kill everyone quickly. You can activate a console behind Tom to ventilate the gas. Ventilation lasts 30 seconds.
 At level 10 and above you have to power up side batteries in order to activate the console. Batteries can be powered up by bringing a "Tear of Dwayna" to them. When they run out you have to refill them before being able to use the console again.
@@ -1433,7 +1433,7 @@ Use wiki=Flesh_Golem. Harpies have trouble hitting it.
 tactic=elementalist
 Use wiki=Swirling_Winds for protection against harpies.
 
-name=enemy=Raving_Asura:legendary
+name=enemy=Raving_Asura:champion
 tactic=normal
 The fight gets very easy with lots of anti projectile skills. The Asura constantly shoots 3 homing projectiles, and each projectile inflicts agony. If you have to dodge, dodge in towards the Asura to break the other projectiles.
 Four golems will activate. First, they will activate one-by-one, and once all have been defeated individually they will all activate simultaneously.
@@ -1639,7 +1639,7 @@ enemy=Monks should be the top priority to focus because they give lots of might 
 enemy=Mages are very dangerous and can wipe your entire group unless you know how to counter them. Their most dangerous melee attack, Flame Burst, has a distinct "whoosh" sound. Stay alert when you are close to them and dodge when you hear that sound. When pulling them you should break line sight before your ranged attack hits them, so you don't give them a chance to cast Firestorm at your stacking location.
 enemy=Warriors deal high damage but attack somewhat slowly, so keep them blinded in order to mitigate their damage. When engaging them be ready to dodge if they Rush towards you to avoid extremely high damage.
 enemy=Cultists attack quickly so blinds are not very useful, although they do not hurt. Cultists do not deal much damage, and thus should be low on your priority scale.
-enemy=Ascalonian_Archers_(Female) deal high damage but use only projectiles so use antiprojectile skills against them.
+enemy=Ascalonian_Archers_(Igniter) deal high damage but use only projectiles so use antiprojectile skills against them.
 Other enemies such as enemy=Fighters, enemy=Healers, enemy=Assassins, enemy=Enchanters or enemy=Archers_(Condition) are low threat so leave them for last.
 
 name=Start
@@ -1679,7 +1679,7 @@ Use wiki=Glyph_of_Storms in earth attunement and wiki=Lightning_Hammer for mass 
 
 name=Courtyard
 tactic=normal
-The area is filled with 4 enemy groups and on middle there are multiple enemy=Ballistas_(Rapid):structure and enemy=Arrow_Carts_(Strong):structure. Enemy groups contains either enemy=Ascalonian_Mage:veteran, enemy=Ascalonian_Monks:veteran, enemy=Ascalonian_Archers_(Female):veteran or enemy=Ascalonian_Cultists:veteran. Additionally each group has ~3 enemy=Ascalonian_Warriors:veteran with them.
+The area is filled with 4 enemy groups and on middle there are multiple enemy=Ballistas_(Rapid):structure and enemy=Arrow_Carts_(Strong):structure. Enemy groups contains either enemy=Ascalonian_Mage:veteran, enemy=Ascalonian_Monks:veteran, enemy=Ascalonian_Archers_(Igniter):veteran or enemy=Ascalonian_Cultists:veteran. Additionally each group has ~3 enemy=Ascalonian_Warriors:veteran with them.
 To capture the area you have kill the enemy groups. Keep in mind that the area gets captured even with siege weapons so remember to destroy them too. There is a white statue and a tree in the area which can be used to your advantage. They give cover against Ballistas and Arrow Carts and can be used to pull enemies close to you or even split them up.
 Ballistas have a very long range so stay near back wall while getting behind the cover. If NPCs get hit they may engage on their own. One player should get close to the cover while rest wait behind him with NPCs. If everyone is near the cover NPCs will engage pulled enemies before they reach the cover and very likely engage Ballistas after.
 If done properly enemies should safely get behind the cover. At this point rest of the team should come in fast to clear them out. If everyone stays in the cover you won't get hit by Ballistas or Arrow Carts and NPCs should stay with you. If NPCs run off after enemies go help them. If not, run to the other side without aggroing enemies and repeat the pull.

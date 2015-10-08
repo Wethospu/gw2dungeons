@@ -314,7 +314,7 @@ function getAttribute2(level, multiplier) {
 }
 
 function getArmor(level, multiplier) {
-	var bsaeDefense =  [
+	var baseDefense =  [
       123,  128,  134,  138,  143,  148,  153,  158,  162,  167,
       175,  183,  185,  187,  190,  192,  202,  206,  210,  214,
       220,  224,  239,  245,  250,  256,  261,  267,  285,  291,
@@ -327,7 +327,7 @@ function getArmor(level, multiplier) {
       1463, 1487, 1511, 1535, 1559, 1583, 1607, 1631, 1655, 1679,
       1703
 	];
-	return bsaeDefense[level] + getAttribute(level, multiplier);
+	return baseDefense[level] + getAttribute(level, multiplier);
 }
 
 function getHealth(level, multiplier1, multiplier2) {
@@ -430,7 +430,7 @@ function fractalScaleHealth(health, scale, type) {
 		1.66, 1.67, 1.68, 1.70, 1.72, 1.73, 1.74, 1.76, 1.78, 1.79,
 		1.80, 1.82, 1.84, 1.85, 1.86, 1.88, 1.90, 1.91, 1.92, 1.94,
 		1.96, 1.97, 1.98, 2.00, 2.02, 2.03, 2.04, 2.06, 2.08, 2.09,
-		2.10, 2.12, 2.14, 2.15, 2.16, 2.18, 2.20, 2.21, 2.22, 2.24
+		2.10, 2.12, 2.14, 2.15, 2.16, 2.18, 2.20, 2.21, 2.22, 2.24,
 		2.26
     ];
 	var legendaryHealthTable = [

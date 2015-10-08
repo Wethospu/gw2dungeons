@@ -129,18 +129,6 @@ namespace DataCreator.Utility
         foundEnemies = partialNameMatches;
       else
         foundEnemies = partialAltMatches;
-      // Enemies with same level as the path should have a priority.
-      if (foundEnemies.Count > 1)
-      {
-        // Get path specific level.
-        var pathLevel = PathToLevel(paths[0]);
-        // Filter out enemies with different level.
-        for (var index = foundEnemies.Count - 1; index >= 0; index--)
-        {
-          if (foundEnemies[index].Level != pathLevel)
-            foundEnemies.RemoveAt(index);
-        }
-      }
       return foundEnemies;
     }
   }

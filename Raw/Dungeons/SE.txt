@@ -68,7 +68,7 @@ tactic=normal
 After cutscenes immediately run back ~10 meters (~33 ft or ~11 yards) to intercept enemies. This gives you some breathing room and protects enemy=Zojja. Focus enemy=Dredge_Mining_Suits:elite and Inquest. If you get downed kill normal enemies to rally.
 If NPC's were dead when you entered the big room nothing may happen. Wait a few minutes and door should open automatically.
 
-name=enemy=Kudu:legendary
+name=enemy=Kudu:champion
 tactic=ranged|melee
 He doesn't regenerate health at all even if you wipe. So don't stress too much about wiping.
 tactic=ranged
@@ -196,7 +196,7 @@ You are confronted with multiple barriers, similar to the first one you destroye
 There are few hiding spots on the way so, if you don't want to kill patrols, you should run past them. Projectile defense is recommended to mitigate damage.
 Once you reach Nokk, patrols will stop spawning. Try to avoid aggroing Nokk until you have dealt with any remaining Inquests, or lose inquest aggro by running to the end of the line.
 
-name=enemy=Nokk:legendary
+name=enemy=Nokk:champion
 image=http://i.imgur.com/Yl28fos.jpg
 tactic=ranged
 Nokk does a few things - a knockback which can push you into lava (avoid via positioning!), a black projectile which applies "Gravity Distortion", summoned Singularities, and Vapor Blades (mid range hula hoops).
@@ -309,7 +309,7 @@ It may be possible to get an account bound wiki=Recipe:_Shukov's_Launch_Codes fr
 
 name=Start
 tactic=normal
-At start there are 3 enemy=Reverberants:elite; then 2-3 enemy=Bombers:elite; and finally at the door a enemy=Reverberant:elite, enemy=Rifleman:elite and 2 enemy=Bombers:elite.
+At start there are 3 enemy=Reverberants_(Zap):elite; then 2-3 enemy=Bombers:elite; and finally at the door a enemy=Reverberant_(Zap):elite, enemy=Rifleman:elite and 2 enemy=Bombers:elite.
 
 name=enemy=Foreman_Kreutzerova:legendary
 tactic=normal
@@ -323,16 +323,16 @@ tactic=normal
 Focus elite enemies first or pull Overseer away from them to reduce pressure.
 enemy=Foreman_Korov:champion is with 2 enemy=Bombers:elite. His normal ranged attack causes Knockback so use anti projectile skills and stability. He can also cause vulnerability and confusion.
 enemy=Foreman_Zeleoniy:champion is with a enemy=Bomber:elite and an enemy=Oscillator:elite but they can be separated. Foreman burrows which causes knockdown if you fail to dodge. His normal melee attack causes bleeding.
-enemy=Foreman_Tomak:champion is with a enemy=Bomber:elite and a enemy=Reverberant:elite. He doesn't do much damage but melee players have to dodge when he raises staff.
-enemy=Foreman_Webarov:champion is with a enemy=Bomber:elite, a enemy=Reverberant:elite, 2 enemy=Excavators:normal and 2 enemy=Ratniks:normal. He plays gong to cause protection and other boons. Also summons enemy=Ratnik:normal. Hides behind shield and blocks. Also occasional daze.
+enemy=Foreman_Tomak:champion is with a enemy=Bomber:elite and a enemy=Reverberant_(Zap):elite. He doesn't do much damage but melee players have to dodge when he raises staff.
+enemy=Foreman_Webarov:champion is with a enemy=Bomber:elite, a enemy=Reverberant_(Zap):elite, 2 enemy=Excavators_(tunneler):normal and 2 enemy=Ratniks:normal. He plays gong to cause protection and other boons. Also summons enemy=Ratnik:normal. Hides behind shield and blocks. Also occasional daze.
 tactic=bug
 Door may not open after the escort event if champions are killed before elites. There is no known fix.
 
 name=Escort
 tactic=normal
 NPC can die so you don't have to sacrifice yourself trying to save him. If the situation looks bad, you can just run away (preferably as a team).
-At start 4 enemy=Excavators:elite appear and they keep respawning. At some point 2 enemy=Disaggregator:elite, 3 enemy=Bombers:elite, an enemy=Oscillator:elite and a enemy=Reverberant:elite appear. At end a enemy=Reverberant:elite, an enemy=Oscillator:elite and a enemy=Bomber:elite appear.
-After opening the door you will face 4 enemy=Reverberants:elite and a enemy=Disaggregator:elite.
+At start 4 enemy=Excavators:elite appear and they keep respawning. At some point 2 enemy=Disaggregator:elite, 3 enemy=Bombers:elite, an enemy=Oscillator:elite and a enemy=Reverberant_(Zap):elite appear. At end a enemy=Reverberant_(Zap):elite, an enemy=Oscillator:elite and a enemy=Bomber:elite appear.
+After opening the door you will face 4 enemy=Reverberants_(Zap):elite and a enemy=Disaggregator:elite.
 tactic=bug
 Escort may never finish if NPC was dead at some specific points. Also the door may never open for the same reason. Try to keep the NPC alive since there is no known fix.
 
@@ -350,7 +350,7 @@ Keep avoiding the patrols. Equip mobility and survivability. Get ore and deliver
 
 name=End room
 tactic=normal|skip
-The first group has 2 enemy=Oscillators:elite, a enemy=Disaggregator:elite and a enemy=Mortar:structure. The second group has a enemy=Resonator:elite, a enemy=Bomber:elite and a enemy=Mortar:structure. The third group has 2 enemy=Bombers:elite and a enemy=Disaggregator:elite. The fourth group has a enemy=Reverberant:champion, 2 enemy=Disaggregators:elite, a enemy=Bomber:elite and a enemy=Mortar:structure. The fifth and final group has 2 enemy=Oscillators:elite, a enemy=Reverberant:elite and a enemy=Mortar:structure.
+The first group has 2 enemy=Oscillators:elite, a enemy=Disaggregator:elite and a enemy=Mortar:structure. The second group has a enemy=Resonator:elite, a enemy=Bomber:elite and a enemy=Mortar:structure. The third group has 2 enemy=Bombers:elite and a enemy=Disaggregator:elite. The fourth group has a enemy=Reverberant_(Zap):champion, 2 enemy=Disaggregators:elite, a enemy=Bomber:elite and a enemy=Mortar:structure. The fifth and final group has 2 enemy=Oscillators:elite, a enemy=Reverberant_(Zap):elite and a enemy=Mortar:structure.
 tactic=normal
 Kill at least first two groups to reduce the amount of Mortars. They will shoot at you during the end boss making it a bit harder. You may also clear rest of the room (especially if you have problems with the end boss).
 tactic=skip

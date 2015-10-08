@@ -1,10 +1,8 @@
-potion=undead|main
-potion=inquest|none
+##################################################################
+# This file contains most undead enemies.                        #
+# Some animals will be at animals.txt.                           #
+##################################################################
 
-##################################################################
-###                 Explorables - normal enemies               ###
-##################################################################
-# Levels 75, 80 and 82 exist.
 name=Orrian Farmer
 # VERIFY 8290
 ID=8289
@@ -35,20 +33,32 @@ effect=melee
 subeffect=damage:-
 subeffect=poison:5
 
-##################################################################
-# Levels 75, 80 and 82 exist.
+#############################
+
 copy=8289
 name=Orrian Servant
 # VERIFY 8298
 ID=8299
 alt=Orrian Servants
 
-# Level 75, 80 and 82 exist.
+#############################
+
 copy=8289
 name=Orrian Villager
 # VERIFY 8303
 ID=8302
 alt=Orrian Villagers
+
+#############################
+
+copy=8289
+name=Risen Thrall
+ID=9765
+alt=Risen Thralls
+image=http://wiki.guildwars2.com/images/1/1f/Risen_Thrall_Asura.jpg
+image=http://i.imgur.com/zfDZvGP.gif
+path=CoE1|CoE2|CoE3
+
 
 ##################################################################
 # Levels 80 and 80 exist.
@@ -249,12 +259,11 @@ subeffect=Launch:2.8
 subeffect=cure 1 condition
 
 ##################################################################
-# Same enemy: CoE Risen Devastator
 
 name=Risen Devastator
 ID=8727
 alt=Risen Devastators|Devastator|Devastators
-path=Arah3|Arah4
+path=CoE1|Arah3|Arah4
 
 attack=Swing (1)
 ID=4135
@@ -296,7 +305,8 @@ effect=melee
 subeffect=damage:-
 subeffect=launch:2.3
 
-##################################################################
+#############################
+
 copy=8727
 name=Orrian Warrior
 ID=8316
@@ -304,143 +314,13 @@ alt=Warrior
 path=Arah1|Arah2|Arah3|Arah4
 
 
-
-##################################################################
-
-name=Vile Ooze
-# VERIFY 11015
-ID=8598
-alt=Vile Oozes|Ooze|Oozes
-image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
-path=Arah1|Arah4
-
-attack=Ooze Multi
-ID=4202
-image=http://giant.gfycat.com/FrigidLeanFrillneckedlizard.gif
-cooldown=0
-effect=channeled melee (4 hits over 3 s?)
-count=4
-length=3
-subeffect=damage:-
-subeffect=weakness:10
-subeffect=crippled:10
-subeffect=poison:10
-subeffect=vulnerability:10:3
-#note=do not stand in front of them
-
-attack=Split
-ID=4158
-image=http://giant.gfycat.com/FeminineSaltyAmericanavocet.gif
-animation=melts and throws 2 brown balls
-additional=used at 20% health. Can't be blocked
-effect=2 ballistic projectiles
-subeffect=enemy=Lesser_Ooze:normal per hit
-effect=self destruct
-#note=Needs a target so if you stealth entire party it can't be used.
-#note=Mesmer can absorb them with untraited wardens
-#note=enemy=Lesser_Oozes:normal try to combine back to a Vile Ooze. Attack brown spots to damage them before they even appear
-#note=Use an interrupt at ~20% health and focus down quickly
-#note=With weak party, focus one Vile Ooze at time to prevent respawns
-
-##################################################################
-
-name=Lesser Ooze
-ID=10748
-alt=Lesser Oozes
-image=http://wiki.guildwars2.com/images/3/3c/Lesser_Ooze.jpg
-path=Arah1|Arah4
-
-attack=Attempts to regroup to form a enemy=Vile_Ooze:elite
-
-##################################################################
-
-name=Lesser Ooze (Fighting)
-ID=8595
-level=81
-alt=Lesser Oozes (Fighting)
-image=http://wiki.guildwars2.com/images/3/3c/Lesser_Ooze.jpg
-path=Arah1|Arah4
-
-attack=Ooze Multi
-ID=4157
-cooldown=0
-effect=melee
-subeffect=damage:-
-subeffect=crippled:10
-
-##################################################################
-
-name=Orrian Guard Turret
-alt=Orrian Guard Turrets|Turrets
-image=http://wiki.guildwars2.com/images/b/b6/Orrian_Guard_Turret.jpg
-path=Arah1|Arah2|Arah3|Arah4
-health=14940
-category=structure
-
-attack=Machine Gun Fire
-image=http://giant.gfycat.com/CavernousShadyCatfish.gif
-cooldown=0.25
-effect=fast projectile
-subeffect=damage:1241597
-subeffect=blind:2
-#note=zig zag at range or use anti projectiles
-
-##################################################################
-
-name=Undead Spider Hatchling
-ID=8334
-alt=Undead Spider Hatchlings
-image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
-path=Arah1|Arah2|Arah3|Arah4
-
-attack=Bite
-ID=4720
-image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
-animation=withdraws and bites|0.75
-cooldown=2.5
-effect=Melee
-subeffect=damage:-
-subeffect=crippled:6
-subeffect=poison:6
-
-##################################################################
-# Levels 80, 82 and 83 exist.
-copy=8334
-name=Orrian Spider
-ID=8332
-alt=Orrian Spiders|Spider|Spiders
-
-##################################################################
-# Levels 80, 82 and 83 exist.
-copy=8334
-name=Orrian Spider
-ID=8335
-alt=Orrian Spiders|Spider|Spiders
-
-##################################################################
-
-name=Orrian Spider (Tunnel)
-ID=10718
-alt=Orrian Spiders (Tunnel)|Spider (Tunnel)|Spiders (Tunnel)
-image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
-path=Arah2
-
-attack=Bite
-ID=5224
-image=http://giant.gfycat.com/SatisfiedGroundedCaudata.gif
-animation=withdraws and bites|0.75
-cooldown=3
-effect=big PBAoE
-subeffect=damage:-
-subeffect=crippled:5
-
 ###########################################################
 
 name=Undead Abomination
-ID=8282
-alt=Undead Abominations
-path=Arah1|Arah2|Arah3|Arah4
+ID=8281
+alt=Undead Abominations|Abomination|Abominations
 image=http://wiki.guildwars2.com/images/b/bf/Risen_Abomination.jpg
+path=CoE2|CoE3
 
 attack=immune to crippled, chilled, immobilized and Control-skills
 
@@ -491,6 +371,12 @@ subeffect=damage:-
 subeffect=knockback:1
 #note=move out of way, evade if needed
 
+#############################
+
+copy=8281
+ID=8282
+path=Arah1|Arah2|Arah3|Arah4
+
 ##################################################################
 
 name=Orrian Drake
@@ -510,13 +396,13 @@ subeffect=damage:-
 
 
 ##################################################################
-# Levels 80, 81 and 82 exist.
+
 name=Orrian Drake
 ID=8582
 alt=Orrian Drakes|Drake|Drakes
 image=http://wiki.guildwars2.com/images/5/53/Orrian_Drake.jpg
 path=Arah1|Arah2|Arah4
-category=elite
+
 
 attack=Bite
 ID=4237
@@ -540,27 +426,10 @@ subeffect=poison:8
 
 ##################################################################
 
-name=Tar
-ID=10799
-alt=Tars
-path=Arah1
-category=normal
-
-attack=Spit
-ID=4208
-cooldown=0
-effect=projectile
-subeffect=damage:-
-
-##################################################################
-# Same enemy: CoE Risen Berserke4.
-# Levels 80 and 82 exist.
 name=Risen Berserker
 ID=10807
 alt=Risen Berserkers|Berserker|Berserkers
-path=Arah1|Arah2|Arah3
-
-attack=Low armor
+path=CoE2|CoE3|Arah1|Arah2|Arah3
 
 attack=Axe Swing (1)
 ID=5146
@@ -611,7 +480,7 @@ effect=buff
 # ~15% (20% listed on wiki)
 subeffect=deal 20% more damage
 
-##################################################################
+#############################
 
 copy=10807
 name=Dominated Berserker
@@ -638,6 +507,7 @@ subeffect=damage:-
 
 name=Risen Grub (passive)
 ID=10082
+alt=Grub (passive)
 level=82
 path=Arah1|Arah2|Arah3|Arah4
 
@@ -688,7 +558,7 @@ animation=holds anchor behind back and swings over head|0.6
 effect=melee
 subeffect=damage:-
 
-##################################################################
+#############################
 
 copy=10806
 name=Dominated Defiler
@@ -738,25 +608,11 @@ effect=end effect
 subeffect=damage:-
 subeffect=knockdown:1.5
 
-##################################################################
+#############################
 
 copy=10440
 name=Dominated Deadeye
 alt=Dominated Deadeyes
-
-##################################################################
-
-name=Suspicious Pot
-alt=Suspicious Pots|Fire Barrels
-path=Arah2
-category=structure
-condition=0
-
-attack=Flamestrike
-effect=aura
-frequency=1
-subeffect=damage:8280875
-subeffect=burning:6
 
 ##################################################################
 
@@ -821,99 +677,12 @@ effect=buff
 # ~15% (20% listed on wiki)
 subeffect=deal 20% more damage
 
-##################################################################
+#############################
 
 copy=10805
 name=Dominated Sentinel
 ID=10442
 alt=Dominated Sentinels
-
-##################################################################
-
-name=Flying Raptor
-image=http://wiki.guildwars2.com/images/f/f3/Flying_Raptor.jpg
-path=Arah1|Arah2|Arah3|Arah4
-type=no type
-
-attack=???
-effect=???
-subeffect=???
-
-##################################################################
-
-name=Corpse Mine
-alt=Corpse Mines
-image=http://wiki.guildwars2.com/images/5/5b/Corpse_Mine.jpg
-path=Arah1|Arah2|Arah3|Arah4
-category=structure
-
-attack=Plot
-image=http://giant.gfycat.com/FakeGenerousCarpenterant.gif
-additional=triggered on touch
-effect=PBAoE
-subeffect=damage-percent:90
-effect=self destruct
-
-##################################################################
-
-name=Unknown (Land Mine)
-alt=Land Mine|Land Mines
-path=Arah2
-category=structure
-
-attack=cannot be targeted (melee works fine)
-#note=much easier to just walk over
-
-attack=Detonate
-animation=blows (~3 s)
-effect=PBAoE
-subeffect=damage:42165147
-subeffect=burning:5
-subeffect=knockback:1.5
-effect=self-destructs
-#note=keep moving to avoid the attack, do not run behind anyone
-
-##################################################################
-
-name=Unknown (Water Mine)
-alt=Water Mine|Water Mines
-path=Arah2
-category=structure
-
-attack=Detonate
-effect=PBAoE
-subeffect=damage:14183269
-subeffect=crippled:5
-effect=self-destructs
-
-##################################################################
-
-name=Magma Turret
-alt=Magma Turrets
-path=Arah2
-category=structure
-
-attack=Invulnerable
-
-attack=Magma Orb
-effect=projectile
-subeffect=damage:1654038
-
-##################################################################
-
-name=Net Turret
-alt=Net Turrets
-path=Arah2
-category=structure
-
-attack=cannot be targeted
-#note=melee and untargeted attacks can still destroy it
-
-attack=Net
-animation=smoke
-effect=projectile
-subeffect=immobilized:1
-#note=evade bit after smoke effect (weird timing)
 
 ##################################################################
 
@@ -970,64 +739,6 @@ subeffect=knockback:0
 #note=use stability or evade forward
 
 ##################################################################
-# Levels 1 and 80 exist.
-name=Inquest Technician
-ID=10516
-alt=Inquest Technicians|Technician|Technicians
-image=http://wiki.guildwars2.com/images/3/33/Inquest_Technician.jpg
-path=Arah2
-
-attack=Subvert
-ID=5173
-cooldown=17
-animation=raises gun and shoots electricity|1|keeps shooting electricity
-effect=16 ranged hits in 9 s
-count=16
-length=9
-subeffect=damage-percent:2.5
-subeffect=stun:1
-subeffect=buff:Subvert:5:1:soothing_mist
-#note=interrupt to help party members
-#note=use stability to counter it
-#note=not very dangerous ability by itself but makes you very vulnerable
-
-attack="Subvert"
-effect=buff
-subeffect=regenerate health
-
-##################################################################
-
-name=Inquest Handler
-ID=10501
-alt=Inquest Handlers|Handler|Handlers
-path=Arah2
-
-attack=Tranquilizer Dart
-ID=5172
-cooldown=8
-animation=raises gun|0.5|shoots a blue dart
-effect=projectile
-subeffect=damage:-
-subeffect=crippled:6
-
-attack=Blunderbuss
-ID=5816
-cooldown=13
-animation=raises gun|0.3|yellow explosion
-effect=short-range projectile
-subeffect=damage:1
-subeffect=bleeding:4:1
-effect=at closer 1.2
-subeffect=damage:7603446
-subeffect=bleeding:4:2
-effect=at even closer range
-subeffect=damage:1.4
-subeffect=bleeding:4:3
-effect=at melee range
-subeffect=damage:1.6
-subeffect=bleeding:4:4
-
-##################################################################
 
 name=Alphard
 ID=10533
@@ -1055,14 +766,13 @@ length=1.5
 subeffect=damage:-
 #note=block/evade, use an anti projectiles skill or break line of sight
 
-
 ##################################################################
 
 name=Plague Carrier Abomination
 ID=10766
 alt=Plague Carrier Abominations|Plague Carrier|Plague Carriers
 image=http://wiki.guildwars2.com/images/4/41/Bloated_Creeper.jpg
-path=Arah2
+path=CoE2|CoE3|Arah2
 
 attack=Explode
 ID=4248
@@ -1075,7 +785,7 @@ subeffect=vulnerability:8
 subeffect=weakness:8
 subeffect=crippled:8
 effect=summon 10 enemy=Risen_Grubs:normal
-effect=self-destructs
+effect=self-destruct
 #note=you can blind Carrier
 #note=if you go down, rally on enemy=Risen_Grub:normal
 
@@ -1087,7 +797,7 @@ name=Risen Defiler
 ID=10806
 alt=Risen Defilers|Defiler|Defilers
 image=http://wiki.guildwars2.com/images/d/de/Risen_Putrifier.jpg
-path=Arah3
+path=CoE2|CoE3|Arah3
 
 tactic=normal
 Alternates between Throw Anchor and Smash.
@@ -1116,37 +826,6 @@ cooldown=6
 animation=holds anchor behind back and swings over head|0.6
 effect=melee
 subeffect=damage:-
-
-##################################################################
-
-name=Risen Hand
-alt=Risen Hands|Hand|Hands
-path=Arah3|Arah4
-category=structure
-health=14940
-
-attack=Kill to rally
-
-attack=Throw Boulder
-animation=instant|0|hand swings (after rock)
-effect=projectile
-subeffect=damage:3312350
-subeffect=knockdown:3
-
-##################################################################
-
-name=Rotten Mouth
-alt=Rotten Mouths|Mouth|Mouths
-path=Arah3|Arah4
-category=structure
-
-attack=Invulnerable
-
-attack=Putrid Blast
-effect=projectile with small ticking AoE
-count=?
-subeffect=damage:2478920
-subeffect=poison:4
 
 ##################################################################
 
@@ -1193,25 +872,23 @@ animation=swings right arm|1
 effect=melee
 subeffect=damage:-
 
-##################################################################
-# Same enemy: CoE Orrian Gorilla
-# Levels 80 and 82 exist.
+#############################
+
 copy=8325
 name=Orrian Gorilla
 # VERIFY 10823 (smaller).
 ID=8326
 alt=Orrian Gorillas|Gorilla|Gorillas
-path=Arah1|Arah3|Arah4
+path=CoE1|Arah1|Arah3|Arah4
 
 ##################################################################
-# Same enemy: CoE Risen Wraith (Drain)
 
 name=Risen Wraith (Drain)
 # VERIFY 10772
 ID=10770
 alt=Risen Wraiths (Drain)
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
-path=Arah3|Arah4
+path=CoE2|CoE3|Arah3|Arah4
 
 attack=Vampiric Touch
 ID=2534
@@ -1247,24 +924,6 @@ subeffect=target may get downed if Wraith is alive
 
 ##################################################################
 
-name=Undead Tendril
-alt=Undead Tendrils|Tendril|Tendrils
-path=Arah3
-category=structure
-health=14940
-
-attack=Kill to rally
-
-attack=Slash
-effect=slow melee
-subeffect=damage:0
-subeffect=poison:25
-subeffect=bleeding:15
-#note=try to keep some distance
-
-##################################################################
-# Same enemy: CoES Risen enemy=Grub:Normal
-
 name=Undead Grub
 ID=8587
 alt=Undead Grubs|Grub|Grubs
@@ -1289,20 +948,26 @@ length=4
 subeffect=damage:-
 #note=be very careful at melee range
 
-##################################################################
+#############################
+
 copy=8587
-name=Undead Grub
 ID=8327
-alt=Undead Grubs|Grub|Grubs
+
+#############################
+
+copy=8587
+name=Risen Grub
+ID=10079
+alt=Risen Grubs|Grub|Grubs
+Path=CoES
 
 ##################################################################
-# Same enemy: CoE2 Risen Grub.
 
 name=Risen Grub
 ID=10767
 alt=Risen Grubs
 image=http://wiki.guildwars2.com/images/1/19/Risen_Grub.jpg
-path=Arah1|Arah2|Arah3|Arah4
+path=CoE2|CoE3|Arah1|Arah2|Arah3|Arah4
 
 attack=Undead Grub Spit
 ID=4249
@@ -1311,31 +976,29 @@ effect=slow projectile
 subeffect=damage:-
 
 ##################################################################
-# Same enemy: CoE Undead Wraith.
 
-name=Risen Wraith (Corruptor)
-# VERIFY 10772
-ID=10770
-alt=Risen Wraiths (Corruptor)
+name=Undead Wraith
+ID=8313
+alt=Undead Wraiths
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
-path=Arah3|Arah4
+path=CoE2|CoE3|Arah3|Arah4
 
 attack=slash
-ID=18642
+ID=4993
 effect=melee
 subeffect=damage:-
 subeffect=buff:Corruption:25
 
 attack=Life Drain
-ID=2533
-animation=spins around|3.5
+ID=4995
+animation=spins around (3.5 s)
 effect=high-range PBAoE
 subeffect=damage:-
 subeffect=healing:0
 subeffect=buff:Corruption
 
 attack=Teleport
-ID=2536
+ID=4994
 additional=only used at distant targets
 effect=teleport
 
@@ -1346,13 +1009,13 @@ effect=5 stacks
 subeffect=stun:1.5
 effect=10 stacks
 subeffect=stun:1.5
-subeffect=take about twice as much damage
+subeffect=take double damage
 effect=25 stacks
-subeffect=summon enemy=Risen_Wraith_(Drain):elite
+subeffect=summon a enemy=Risen_Wraith_(Drain):elite
 
 ##################################################################
 
-name=Undead Wraith
+name=Undead Wraith (boss)
 # VERIFY 8313
 ID=10508
 path=Arah4
@@ -1473,87 +1136,6 @@ effect=melee
 subeffect=damage:-
 
 ##################################################################
-###                    Explorables - bosses                    ###
-##################################################################
-
-name=Ancient Ooze
-ID=9589
-alt=Ooze
-image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
-Path=Arah1
-
-attack=Bounce (moving)
-ID=4205
-cooldown=8
-image=http://giant.gfycat.com/GoodSoulfulFoxhound.gif
-animation=glows|1|starts bouncing
-additional=only used at distant targets
-effect=dash with PBAoE (3 hits in 2 s)
-count=3
-length=2
-subeffect=damage:-
-subeffect=launch:3.5
-#note=If you are ranged, keep it slowed down and stay at distance
-#note=If you are melee, keep chasing and dodge at opposite direction Ooze is moving
-
-attack=Bounce (still)
-ID=4206
-image=http://giant.gfycat.com/EssentialVapidHamadryas.gif
-cooldown=10
-animation=glows|1|starts bouncing
-additional=only used at close targets
-effect=6 PBAoEs in 4 s
-count=6
-length=4
-subeffect=damage:-
-subeffect=launch:3.5
-#note=If you are ranged, relax
-#note=If you are melee, dodge back and get in fast to prevent Ooze from using other skill
-
-attack=Split
-ID=4160
-image=http://giant.gfycat.com/ThesePointlessHypsilophodon.gif
-additional=used at 25%. Can't be blocked
-effect=2 ballistic projectiles
-subeffect=enemy=Vile_Oozes:champion per hit
-effect=self destructs
-subeffect=leaves enemy=Blood_of_the_Ancient
-#note=Needs a target so if you stealth entire party it can't be used.
-
-##################################################################
-
-name=Blood of the Ancient
-image=http://wiki.guildwars2.com/images/0/08/Blood_of_the_Ancient.jpg
-path=Arah1
-category=bundle
-
-attack=Slows down
-#note=Use dodges and teleports to move faster
-
-attack=Summons enemy=Vile_Oozes:elite
-#note=Try to move fast
-#note=Use stealth to prevent aggro
-
-##################################################################
-
-name=Vile Ooze
-ID=9576
-alt=Vile Oozes|Ooze|Oozes
-image=http://wiki.guildwars2.com/images/a/ac/Ancient_Ooze.jpg
-path=Arah1
-
-attack=Reflects projectiles
-
-attack=Ooze Multi
-ID=4203
-cooldown=3
-image=http://giant.gfycat.com/HealthyInexperiencedAchillestang.gif
-additional=channeled
-effect=multiple ballistic projectiles (360 degrees) with small AoE
-count=?
-subeffect=damage:-
-
-##################################################################
 
 name=Crystalline Entity
 ID=9610
@@ -1570,48 +1152,6 @@ cooldown=0
 effect=melee
 subeffect=damage:-
 #note=keep moving in circles to avoid most of the attacks
-
-##################################################################
-# Levels 80 and 83 exist.
-name=Orrian Spider
-ID=8333
-alt=Orrian Spiders|Spider|Spiders
-image=http://wiki.guildwars2.com/images/3/3d/Orrian_Spider.jpg
-path=Arah1|Arah2|Arah3|Arah4
-
-Attack=Alternates between its two attacks
-#note=keep in mind which attack was used first
-
-Attack=Venom Spray
-ID=4774
-cooldown=6
-image=http://giant.gfycat.com/RingedPossibleCony.gif
-animation=glows and leans back|1.5
-effect=3 cones in 0.6 s
-count=3
-length=0.6
-subeffect=damage:-
-subeffect=poison:5
-subeffect=buff:Predator_Swiftness if hits.
-#note=side step to avoid
-#note=get hit to make Malrona vulnerable, do not remove poison
-#note=Her poison stacks with other sources of poison.
-
-attack=Venom Blast
-ID=4772
-image=http://giant.gfycat.com/DimCommonArgentinehornedfrog.gif
-cooldown=6
-animation=glows and leans back|1.25
-additional=can't be blocked
-effect=5 projectiles (cone) with AoE
-count=?
-subeffect=damage:0.9
-#note=stay behind spider if not targeted
-#note=evade 1-2 times (melee user has to react based on animation)
-
-attack="Predator swiftness"
-effect=buff
-subeffect=moves faster but takes a lot more damage (~5 x) from poisoned players
 
 ##################################################################
 
@@ -1651,30 +1191,6 @@ subeffect=poison:10
 
 ##################################################################
 
-name=Shoggroth
-ID=10800
-level=82
-Path=Arah1
-image=http://wiki.guildwars2.com/images/6/61/Tar_Elemental.jpg
-
-attack=Tar spit (if not burning)
-ID=4209
-effect=multiple area fields
-count=?
-subeffect=damage:-
-subeffect="Covered in tar" (60 s) when passed through
-effect=summon multiple enemy=Tars:normal
-#note=Keep it burning to prevent.
-
-attack=Tar spit (if burning)
-ID=4217
-effect=multiple ticking AoEs
-count=?
-subeffect=damage:-
-subeffect=burning:0
-
-##################################################################
-
 name=Giganticus Lupicus
 ID=7931
 level=82
@@ -1711,10 +1227,10 @@ attack="Green cloud"
 effect=debuff, when expires
 subeffect=knockdown:3
 subeffect=summon a enemy=Grub_(passive):normal
-#note=focus enemy=Grub:normal down
+#note=focus enemy=Grub_(passive):normal down
 
 attack=Eat
-animation=raises both arms|0.5|grabs an enemy=Grub:normal
+animation=raises both arms|0.5|grabs an enemy=Grub_(passive)
 additional=stacks 25 times
 effect=melee
 subeffect=Take 2% less damage and do more damage (10 hours) per stack
@@ -1747,7 +1263,7 @@ attack=Immune to blind and crippled. 100% resistance to control skills.
 #note=you can interrupt it with wiki=Sigil_of_Paralyzation|Sigil_of_Paralyzation
 
 attack=Eat
-animation=raises both arms|0.5|grabs a enemy=Grub:normal
+animation=raises both arms|0.5|grabs a enemy=Grub_(passive)
 additional=stacks 25 times
 effect=melee
 subeffect=Take 2% less damage and do more damage (10 hours) per stack
@@ -1961,58 +1477,6 @@ subeffect=damage-percent:100 when passing through
 
 ##################################################################
 
-name=Operative Belka
-ID=10443
-alt=Belka
-image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
-path=Arah2
-
-attack=Immobilized (does not move and can't be moved) and immune to Control
-
-attack=Fan of Fire
-ID=5156
-cooldown=1.75
-animation=aims with bow|0.5
-effect=3 medium range piercing projectiles (cone)
-count=3
-subeffect=damage:-
-subeffect=burning:2
-
-attack=Teleport
-animation=instant||lightning effect
-cooldown=20
-effect=ranged
-subeffect=teleport to "random" predefined location
-
-attack=Point Blank Shot
-ID=5154
-animation=aims with bow|0.5
-cooldown=12
-effect=piercing projectile
-subeffect=damage:-
-subeffect=knockback:1.5
-subeffect=buff:Bubble:5:1:projectile_reflection
-#note=Try to predict
-
-attack="Bubble"
-animation=yellow bubble
-effect=buff
-subeffect=Reflect projectiles
-
-attack=Pulsing Orb
-ID=5155
-cooldown=4
-animation=aims bit higher than normally|0.5
-additional=only used at distant targets
-effect=slow ballistic ranged with AoE
-subeffect=damage:-
-subeffect=blind:0
-#note=May overlap/get mixed with enemy=Suspicious_Pots:structure. Dodge if unsure.
-#note=Attack tracks movement but red circle does not so pay attention.
-#note=Fast movement towards Belka may cause it to hit at very close range
-
-##################################################################
-
 name=Berserker Abomination
 ID=10499
 alt=Abomination
@@ -2158,56 +1622,6 @@ additional=activates at 75% health
 effect=buff
 # ~15% (20% listed on wiki)
 subeffect=deal 20% more damage
-
-##################################################################
-
-name=Operative Brie
-ID=10580
-alt=Brie
-image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
-path=Arah2
-
-attack=Chain Lightning
-ID=5207
-animation=swings left arm from right with blue effect|0.75|shoots a small lightning
-cooldown=3
-effect=bouncing and homing projectile
-count=2
-subeffect=damage:-
-
-attack=Turbo Laser
-ID=5205
-cooldown=8
-animation=glows purple|1.25
-additional=seems to hit through walls
-effect=ranged
-subeffect=damage:-
-subeffect=burning:1
-#note=side step
-#note=single-blocks also work
-
-attack=Orb of Wrath
-ID=5206
-cooldown=9
-animation=spins scepter over head with blue effect and summons a ball|1|sends the ball towards the target
-additional=only used at distant targets
-effect=slow and homing projectile
-subeffect=damage:-
-#note=block or evade through
-
-attack=Fire Storm
-ID=5204
-cooldown=22
-animation=roars and raises arm|1.5|multiple red circles
-effect=multiple delayed (3 s) ticking AoEs (5 hits in 4 s) over time
-count=4
-length=3
-subeffect=damage:0.2
-subeffect=confusion:3
-effect=first hit
-subeffect=damage:-
-subeffect=confusion:3
-#note=stay out of red circles
 
 ##################################################################
 
@@ -2368,7 +1782,8 @@ effect=projectile
 subeffect=damage:-
 subeffect=???
 
-##################################################################
+#############################
+
 copy=8285
 name=Giant
 ID=8286
@@ -2586,19 +2001,6 @@ subeffect=damage:0
 
 ##################################################################
 
-name=Vahid's Flora
-ID=10901
-alt=Vahid's Floras|Tree|Trees
-path=Arah4
-
-attack=Binding Roots
-ID=19442
-effect=debuff
-subeffect=Immobilized:0
-#note=Can be destroyed
-
-##################################################################
-
 name=Farnaz, High Priestess of Lyssa
 ID=10437
 alt=Farnaz
@@ -2763,287 +2165,496 @@ subeffect=buff:Petrified:20
 #note=can be cured with "Tears of Dwayna"
 #note=bug: if "Dead Eyed Stare" ends while "Petrified" you can just attack to break effect
 
-##################################################################
-
-name=Corrupted Light
-path=Arah3|Arah4
-category=bundle
-
-attack="Corruption"
-effect=buff (every second)
-subeffect=damage-percent:15
 
 ##################################################################
-
-name=Spark
-# VERIFY 3947
-ID=10520
-alt=Sparks
-path=Arah4
-
-attack=Invulnerable
-
-attack=Lightning Bolt
-ID=2545
-effect=projectile
-subeffect=damage:-
-
+# Subject Alpha.                                                 #
+# All are slightly different so copying doesn't really help.     #
 ##################################################################
 
-name=Orrian Air Tower
-alt=Orrian Air Towers
-path=Arah4
-category=structure
+Name=Subject Alpha (first)
+ID=7611
+image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
+Path=CoE1
 
-##################################################################
-# Bundles                                                        #
-##################################################################
+attack=Teeth of Mordremoth
+ID=5372
+additional=can't be blocked. Minimum-range (stack)
+effect=multiple AoEs in a line (hits 1-2 times)
+subeffect=damage:0
+#note=evade or stay behind if not targeted
+#note=disable melee-assist and stay inside Alpha
 
-Name=Reflecting Crystal
-Category=bundle
-image=http://wiki.guildwars2.com/images/d/d2/Reflecting_Crystal.jpg
-Path=Arah1|Arah2|Arah3|Arah4
+attack=Teeth of Primordus
+ID=5368
+image=http://i.imgur.com/1TPSikP.gif
+animation=raises arm||flames/molten shard above head
+effect=PBAoE
+subeffect=damage:0
+subeffect=burning:5
+#note=block/evade or just remove burning
+effect=delayed AoE (2.5 s) at every distant target
+subeffect=damage:0
+#note=walk out
+effect=self buff
+subeffect=remove all Conditions
+#note=don't rely on Conditions
 
-##################################################################
-# Main NPCs                                                      #
-##################################################################
+attack=Summon
+additional=used at 75%
+effect=Summon 4 enemy=Risen_Thralls:normal
+effect=revive NPC
 
-Name=Chicken
-ID=1195
-level=1
-Category=ally
-Path=Arah3
+attack=Escape
+additional=used at 50%
 
 ##################################################################
 
-Name=Inquest Power Suit
-ID=6448
-Category=ally
-Path=Arah2
+Name=Subject Alpha (first)
+ID=7611
+image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
+Path=CoE2
+
+attack=Teeth of Primordus
+ID=5368
+image=http://i.imgur.com/1TPSikP.gif
+animation=raises arm||flames/molten shard above head
+effect=PBAoE
+subeffect=damage:0
+subeffect=burning:5
+#note=block/evade or just remove burning
+effect=delayed AoE (2.5 s) at every distant target
+subeffect=damage:0
+#note=walk out
+effect=self buff
+subeffect=remove all Conditions
+#note=don't rely on Conditions
+
+attack=Teeth of Jormag
+ID=5381
+image=http://i.imgur.com/mzwm4wQ.gif
+image=http://i.imgur.com/q8u24Rf.gif
+animation=raises arm||two circles (blue mist forming on primary target)
+effect=delayed AoE (2.5 s) at primary target
+subeffect=damage:0
+subeffect=bleeding:10:6
+#note=block/evade or run out of inner circle
+effect=delayed ring (2.5 s) at every other target
+subeffect=damage:0
+#note=block/evade or stay inside inner circle
+#note=circles easily get mixed, evade if unsure
+#note=avoid mixing circles, either stack with other people or keep some distance
+#note=learn to distinguish different version to act properly
+#note=avoid using minions/clones to prevent extra circles
+
+attack=Summon
+additional=used at 75%
+effect=Summon 4 enemy=Risen_Thralls:normal
+effect=revive NPC
+
+attack=Escape
+additional=used at 50%
 
 ##################################################################
 
-Name=Odgen Stonehealer
-ID=4648
-Category=ally
-image=http://wiki.guildwars2.com/images/e/e3/Ogden_Stonehealer.jpg
-Path=Arah1|Arah2|Arah3|Arah4
+Name=Subject Alpha (first)
+ID=7611
+image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
+Path=CoE3
+
+attack=Teeth of Mordremoth
+ID=5372
+additional=can't be blocked. Minimum-range (stack)
+effect=multiple AoEs in a line (hits 1-2 times)
+subeffect=damage:0
+#note=evade or stay behind if not targeted
+#note=disable melee-assist and stay inside Alpha
+
+attack=Teeth of Jormag
+ID=5381
+image=http://i.imgur.com/mzwm4wQ.gif
+image=http://i.imgur.com/q8u24Rf.gif
+animation=raises arm||two circles (blue mist forming on primary target)
+effect=delayed AoE (2.5 s) at primary target
+subeffect=damage:0
+subeffect=bleeding:10:6
+#note=block/evade or run out of inner circle
+effect=delayed ring (2.5 s) at every other target
+subeffect=damage:0
+#note=block/evade or stay inside inner circle
+#note=circles easily get mixed, evade if unsure
+#note=avoid mixing circles, either stack with other people or keep some distance
+#note=learn to distinguish different version to act properly
+#note=avoid using minions/clones to prevent extra circles
+
+attack=Summon
+additional=used at 75%
+effect=Summon 4 enemy=Risen_Thralls:normal
+effect=revive NPC
 
 ##################################################################
 
-Name=Orrian Chicken
-ID=8321
-level=10
-Category=ally
-Path=Arah3
+Name=Subject Alpha (second)
+ID=7611
+image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
+Path=CoE1
+
+attack=Teeth of Mordremoth
+ID=5372
+additional=can't be blocked. Minimum-range (stack)
+effect=multiple AoEs in a line (hits 1-2 times)
+subeffect=damage:0
+#note=evade or stay behind if not targeted
+#note=disable melee-assist and stay inside Alpha
+
+attack=Teeth of Primordus
+ID=5368
+image=http://i.imgur.com/1TPSikP.gif
+animation=raises arm||flames/molten shard above head
+effect=PBAoE
+subeffect=damage:0
+subeffect=burning:5
+#note=block/evade or just remove burning
+effect=delayed AoE (2.5 s) at every distant target
+subeffect=damage:0
+#note=walk out
+effect=self buff
+subeffect=remove all Conditions
+#note=don't rely on Conditions
+
+attack=Orrian Trendril
+ID=5407
+animation=raises left arm without glow|1|green effect
+effect=Summon 2 enemy=Undead_Tendrils:structure
+#note=rally from these if you get downed
+
+attack=Summon
+additional=used at 75%
+effect=Summon 4 enemy=Risen_Thralls:normal
+effect=revive NPC
+
+attack=Tooth of Kralkatorrik
+ID=5366
+cooldown=20
+animation=jumps in air|0.5
+additional=can't be blocked or evaded
+effect=ranged
+subeffect=enemy=Imprisonment_Crystal:structure on target
+
+attack=Berserk
+additional=activates when hit below 75% health
+effect=buff
+# Based on wiki page.
+subeffect=deal 20% more damage
+
+attack=Escape
+additional=used at 25% health
 
 ##################################################################
 
-Name=Randall Greyston
-ID=8339
-Category=ally
-image=http://wiki.guildwars2.com/images/8/8e/Randall_Greyston.jpg
-Path=Arah4
+Name=Subject Alpha (second)
+ID=7611
+image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
+Path=CoE2
 
-attack=Slash
-ID=3175
-effect=melee
-subeffect=damage:-
+attack=Teeth of Primordus
+ID=5368
+image=http://i.imgur.com/1TPSikP.gif
+animation=raises arm||flames/molten shard above head
+effect=PBAoE
+subeffect=damage:0
+subeffect=burning:5
+#note=block/evade or just remove burning
+effect=delayed AoE (2.5 s) at every distant target
+subeffect=damage:0
+#note=walk out
+effect=self buff
+subeffect=remove all Conditions
+#note=don't rely on Conditions
 
-##################################################################
+attack=Teeth of Jormag
+ID=5381
+image=http://i.imgur.com/mzwm4wQ.gif
+image=http://i.imgur.com/q8u24Rf.gif
+animation=raises arm||two circles (blue mist forming on primary target)
+effect=delayed AoE (2.5 s) at primary target
+subeffect=damage:0
+subeffect=bleeding:10:6
+#note=block/evade or run out of inner circle
+effect=delayed ring (2.5 s) at every other target
+subeffect=damage:0
+#note=block/evade or stay inside inner circle
+#note=circles easily get mixed, evade if unsure
+#note=avoid mixing circles, either stack with other people or keep some distance
+#note=learn to distinguish different version to act properly
+#note=avoid using minions/clones to prevent extra circles
 
-Name=Scholar Yissa
-ID=8336
-Category=ally
-image=http://wiki.guildwars2.com/images/7/71/Scholar_Yissa.jpg
-Path=Arah2
+attack=Orrian Trendril
+ID=5407
+animation=raises left arm without glow|1|green effect
+effect=Summon 2 enemy=Undead_Tendrils:structure
+#note=rally from these if you get downed
 
-attack=Shoot
-ID=3160
-effect=projectile
-subeffect=damage:-
+attack=Tooth of Kralkatorrik
+ID=5366
+cooldown=20
+animation=jumps in air|0.5
+additional=can't be blocked or evaded
+effect=ranged
+subeffect=enemy=Imprisonment_Crystal:structure on target
 
-##################################################################
+attack=Berserk
+additional=activates when hit below 75% health
+effect=buff
+# Based on wiki page.
+subeffect=deal 20% more damage
 
-Name=Surratt, Whispers Agent
-ID=10497
-Category=ally
-Path=Arah4
-
-attack=Slash
-ID=1416
-effect=melee
-subeffect=damage:-
-
-
-attack=Slash
-ID=3443
-effect=melee
-subeffect=damage:-
-
-attack=Shadow SHot
-ID=3447
-effect=projectile
-subeffect=damage:-
-
-##################################################################
-
-Name=Varra Skylark
-ID=8338
-Category=ally
-image=http://wiki.guildwars2.com/images/5/5c/Varra_Skylark.jpg
-Path=Arah1
-
-attack=Shoot
-ID=3170
-effect=projectile
-subeffect=damage:-
-
-##################################################################
-
-Name=Warden Illyra
-ID=8337
-Category=ally
-image=http://wiki.guildwars2.com/images/5/50/Warden_Illyra.jpg
-Path=Arah3
-
-attack=Shoot
-ID=3160
-effect=projectile
-subeffect=damage:-
-
-##################################################################
-# Other NPCs                                                     #
-##################################################################
-
-Name=Durmand Priory Researcher
-ID=8359
-ID=8358
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
+attack=Escape
+additional=used at 25% health
 
 ##################################################################
 
-Name=Durmand Priory Scholar
-ID=8395
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
+Name=Subject Alpha (second)
+ID=7611
+image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
+Path=CoE3
+
+attack=Teeth of Mordremoth
+ID=5372
+additional=can't be blocked. Minimum-range (stack)
+effect=multiple AoEs in a line (hits 1-2 times)
+subeffect=damage:0
+#note=evade or stay behind if not targeted
+#note=disable melee-assist and stay inside Alpha
+
+attack=Teeth of Jormag
+ID=5381
+image=http://i.imgur.com/mzwm4wQ.gif
+image=http://i.imgur.com/q8u24Rf.gif
+animation=raises arm||two circles (blue mist forming on primary target)
+effect=delayed AoE (2.5 s) at primary target
+subeffect=damage:0
+subeffect=bleeding:10:6
+#note=block/evade or run out of inner circle
+effect=delayed ring (2.5 s) at every other target
+subeffect=damage:0
+#note=block/evade or stay inside inner circle
+#note=circles easily get mixed, evade if unsure
+#note=avoid mixing circles, either stack with other people or keep some distance
+#note=learn to distinguish different version to act properly
+#note=avoid using minions/clones to prevent extra circles
+
+attack=Orrian Trendril
+ID=5407
+animation=raises left arm without glow|1|green effect
+effect=Summon 2 enemy=Undead_Tendrils:structure
+#note=rally from these if you get downed
+
+attack=Tooth of Kralkatorrik
+ID=5366
+cooldown=20
+animation=jumps in air|0.5
+additional=can't be blocked or evaded
+effect=ranged
+subeffect=enemy=Imprisonment_Crystal:structure on target
+
+attack=Berserk
+additional=activates when hit below 75% health
+effect=buff
+# Based on wiki page.
+subeffect=deal 20% more damage
+
+attack=Escape
+additional=used at 25%
 
 ##################################################################
 
-Name=Priory Explorer
-# VERIFY 4788, 5334
-ID=4787
-# VERIFY 5349, 5360
-ID=5333
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
+Name=Subject Alpha (third)
+ID=7611
+image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
+Path=CoE1
+
+attack=Teeth of Mordremoth
+ID=5372
+additional=can't be blocked. Minimum-range (stack)
+effect=multiple AoEs in a line (hits 1-2 times)
+subeffect=damage:0
+#note=evade or stay behind if not targeted
+#note=disable melee-assist and stay inside Alpha
+
+attack=Teeth of Primordus
+ID=5368
+image=http://i.imgur.com/1TPSikP.gif
+animation=raises arm||flames/molten shard above head
+effect=PBAoE
+subeffect=damage:0
+subeffect=burning:5
+#note=block/evade or just remove burning
+effect=delayed AoE (2.5 s) at every distant target
+subeffect=damage:0
+#note=walk out
+effect=self buff
+subeffect=remove all Conditions
+#note=don't rely on Conditions
+
+attack=Orrian Trendril
+ID=5407
+animation=raises left arm without glow|1|green effect
+effect=Summon 2 enemy=Undead_Tendrils:structure
+#note=rally from these if you get downed
+
+attack=Tooth of Kralkatorrik
+ID=5366
+cooldown=20
+animation=jumps in air|0.5
+additional=can't be blocked or evaded
+effect=ranged
+subeffect=enemy=Imprisonment_Crystal:structure on target
+
+attack=Summon Essence
+additional=used every 15%
+effect=summon ~10 enemy=Black_Essences:normal
+#note=try to destroy Essences to prevent healing
+#note=Alpha may stop attacking when killing Essences (use Control-skill to break)
+#note=only summons Essences once at particular health (if you wipe he will only use this when "new" health is reached)
+
+attack=Berserk
+additional=activates when hit below 75% health
+effect=buff
+# Based on wiki page.
+subeffect=deal 20% more damage
 
 ##################################################################
 
-Name=Priory Historian
-ID=5352
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
+Name=Subject Alpha (third)
+ID=7611
+image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
+Path=CoE2
+
+attack=Teeth of Primordus
+ID=5368
+image=http://i.imgur.com/1TPSikP.gif
+animation=raises arm||flames/molten shard above head
+effect=PBAoE
+subeffect=damage:0
+subeffect=burning:5
+#note=block/evade or just remove burning
+effect=delayed AoE (2.5 s) at every distant target
+subeffect=damage:0
+#note=walk out
+effect=self buff
+subeffect=remove all Conditions
+#note=don't rely on Conditions
+
+attack=Teeth of Jormag
+ID=5381
+image=http://i.imgur.com/mzwm4wQ.gif
+image=http://i.imgur.com/q8u24Rf.gif
+animation=raises arm||two circles (blue mist forming on primary target)
+effect=delayed AoE (2.5 s) at primary target
+subeffect=damage:0
+subeffect=bleeding:10:6
+#note=block/evade or run out of inner circle
+effect=delayed ring (2.5 s) at every other target
+subeffect=damage:0
+#note=block/evade or stay inside inner circle
+#note=circles easily get mixed, evade if unsure
+#note=avoid mixing circles, either stack with other people or keep some distance
+#note=learn to distinguish different version to act properly
+#note=avoid using minions/clones to prevent extra circles
+
+attack=Orrian Trendril
+ID=5407
+animation=raises left arm without glow|1|green effect
+effect=Summon 2 enemy=Undead_Tendrils:structure
+#note=rally from these if you get downed
+
+attack=Tooth of Kralkatorrik
+ID=5366
+cooldown=20
+animation=jumps in air|0.5
+additional=can't be blocked or evaded
+effect=ranged
+subeffect=enemy=Imprisonment_Crystal:structure on target
+
+attack=Summon Essence
+additional=used every 15%
+effect=summon ~10 enemy=Black_Essences:normal
+#note=try to destroy Essences to prevent healing
+#note=Alpha may stop attacking when killing Essences (use Control-skill to break)
+#note=only summons Essences once at particular health (if you wipe he will only use this when "new" health is reached)
+
+attack=Berserk
+additional=activates when hit below 75% health
+effect=buff
+# Based on wiki page.
+subeffect=deal 20% more damage
 
 ##################################################################
 
-Name=Priory Scholar
-ID=1592
-# VERIFY 1590, 1593
-ID=1586
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
+Name=Subject Alpha (third)
+ID=7611
+image=http://wiki.guildwars2.com/images/b/bd/Subject_Alpha.png
+Path=CoE3
 
-##################################################################
+attack=Teeth of Mordremoth
+ID=5372
+additional=can't be blocked. Minimum-range (stack)
+effect=multiple AoEs in a line (hits 1-2 times)
+subeffect=damage:0
+#note=evade or stay behind if not targeted
+#note=disable melee-assist and stay inside Alpha
 
-Name=Researcher
-ID=5389
-ID=5279
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
+attack=Teeth of Jormag
+ID=5381
+image=http://i.imgur.com/mzwm4wQ.gif
+image=http://i.imgur.com/q8u24Rf.gif
+animation=raises arm||two circles (blue mist forming on primary target)
+effect=delayed AoE (2.5 s) at primary target
+subeffect=damage:0
+subeffect=bleeding:10:6
+#note=block/evade or run out of inner circle
+effect=delayed ring (2.5 s) at every other target
+subeffect=damage:0
+#note=block/evade or stay inside inner circle
+#note=circles easily get mixed, evade if unsure
+#note=avoid mixing circles, either stack with other people or keep some distance
+#note=learn to distinguish different version to act properly
+#note=avoid using minions/clones to prevent extra circles
 
-##################################################################
+attack=Orrian Trendril
+ID=5407
+animation=raises left arm without glow|1|green effect
+effect=Summon 2 enemy=Undead_Tendrils:structure
+#note=rally from these if you get downed
 
-Name=Vigil Crusader
-# VERIFY 8055, 9940
-ID=1567
-# VERIFY 1565
-ID=1250
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
+attack=Tooth of Kralkatorrik
+ID=5366
+cooldown=20
+animation=jumps in air|0.5
+additional=can't be blocked or evaded
+effect=ranged
+subeffect=enemy=Imprisonment_Crystal:structure on target
 
-##################################################################
+attack="Crystal"
+cooldown=20
+additional=can be destroyed
+effect=debuff
+subeffect=can't move or use skills
+#note=some classes can easily teleport out of it
+#note=quickly break it for everyone else
+#note=stability prevents but won't break (either precast or have good reflexes)
+effect=when expires
+subeffect=bleeding:13500:30:5
 
-Name=Vigil Marksman
-# VERIFY 9235, 9237, 9241
-ID=9233
-# VERIFY 9238, 9240
-ID=9232
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
+attack=Summon Essence
+additional=used every 15%
+effect=summon ~10 enemy=Black_Essences:normal
+#note=try to destroy Essences to prevent healing
+#note=Alpha may stop attacking when killing Essences (use Control-skill to break)
+#note=only summons Essences once at particular health (if you wipe he will only use this when "new" health is reached)
 
-##################################################################
-
-Name=Vigil Recruit
-ID=9905
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
-
-##################################################################
-
-Name=Vigil Tactician
-# VERIFY 9917
-ID=9909
-ID=9913
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
-
-##################################################################
-
-Name=Vigil Warmaster
-ID=4404
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
-
-##################################################################
-
-Name=Whispers Agent
-# VERIFY 4490
-ID=1583
-# VERIFY 3384, 3511
-ID=1576
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
-
-##################################################################
-
-Name=Whispers Creator
-ID=5426
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
-
-##################################################################
-
-Name=Whispers Designer
-ID=3438
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
-
-##################################################################
-
-Name=Whispers Lightbringer
-# VERIFY 3461, 10051
-ID=3426
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
-
-##################################################################
-
-Name=Wounded Seraph Soldier
-ID=3131
-ID=3128
-Category=ally
-Path=Arah1|Arah2|Arah3|Arah4
-
-
+attack=Berserk
+additional=activates when hit below 75% health
+effect=buff
+# Based on wiki page.
+subeffect=deal 20% more damage

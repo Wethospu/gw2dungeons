@@ -371,7 +371,7 @@ function openEnemyOverlay() {
 	}
     var enemyDiv = $("<div />");
 	var dungeon = $(this).attr("data-dungeon");
-    $(enemyDiv).load('enemies/' + dungeon + '.htm', function () {
+    $(enemyDiv).load('enemies/enemies.htm', function () {
 		// Find enemies one by one. / 2015-09-28 / Wethospu
 		// This is pretty inefficient but order shouldn't be changed. Also multiple enemies are loaded rarely.
 		for (var i = 0; i < enemyIndexes.length; i++) {

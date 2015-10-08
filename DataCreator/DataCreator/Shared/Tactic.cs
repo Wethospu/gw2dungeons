@@ -14,8 +14,8 @@ namespace DataCreator.Shared
 
   public class Tactic
   {
-    public string Name { get; private set; }
-    public List<string> Lines { get; private set; }
+    public string Name { get; set; }
+    public List<string> Lines { get; set; }
     private bool _isActive;
 
     public Tactic(string type)
@@ -26,17 +26,9 @@ namespace DataCreator.Shared
       Lines = new List<string>();
     }
 
-    public Tactic(string type, Tactic baseTactic) : this(type)
+    public Tactic()
     {
-      foreach (var line in baseTactic.Lines)
-        Lines.Add(string.Copy(line));
-    }
 
-    public Tactic(Tactic baseTactic)
-      : this(baseTactic.Name)
-    {
-      foreach (var line in baseTactic.Lines)
-        Lines.Add(string.Copy(line));
     }
 
     /***********************************************************************************************

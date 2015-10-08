@@ -25,17 +25,11 @@ namespace DataCreator.Encounters
 
 
     /***********************************************************************************************
-     * ToHtml / 2014-08-01 / Wethospu                                                              * 
-     *                                                                                             * 
-     * Converts this encounter object to html representration.                                     *
-     *                                                                                             *
-     * Returns representation.                                                                     *
-     * counter: Running number to link tactics to encounter.                                       *
-     * currentPath: Name of current path. Needed for enemy links.                                  *
-     * first: Whether this is the first encounter. Causes bigger label.                            *
-     * enemies: List of enemies in the path. Needed for enemy links.                               *
-     *                                                                                             *
-     ***********************************************************************************************/
+    * UpdateEnemyTactics / 2014-08-01 / Wethospu                                                   * 
+    *                                                                                              * 
+    * Updates enemy specific tactics with the tactics from this encounter.                         *
+    *                                                                                              *
+    ***********************************************************************************************/
 
     public void UpdateEnemyTactics(List<Enemy> enemies)
     {
@@ -44,11 +38,11 @@ namespace DataCreator.Encounters
       foreach (var enemy in enemiesToUpdate)
       {
         // Longer the encounter name, less valid its tactics are. / 2015-08-09 / Wethospu
-        var tacticValidity = (double)enemy.Name.Length / (double)cleaned.Length;
+        var tacticValidity = (double)enemy.Name.Length / cleaned.Length;
         if (enemy.TacticValidity < tacticValidity)
         {
           enemy.TacticValidity = tacticValidity;
-          enemy.Tactics = new TacticList(Tactics);
+          enemy.Tactics = Helper.CloneJson(Tactics);
         }
       }
     }

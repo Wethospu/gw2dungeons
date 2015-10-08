@@ -549,7 +549,7 @@ path=TAAE
 name=Start
 tactic=normal|coordinated
 At the start there are lots of respawning enemy=Volatile_Blossoms:structure. Just run through them dodging and remove poison at the end.
-You will encounter a patrol that consists of 2 enemy=Hounds:elite and 3 enemy=Pups:normal as well as a enemy=Nightmare_Husk:elite and a enemy=torrential_Husk:elite. On back of the area a group of a enemy=Stonetouch:elite, a enemy=Bloodfang:elite and 3 enemy=Hatchlings:normal and a group of a enemy=Webber:elite, a enemy=Recluse:elite and 3 enemy=Hatchlings:normal appear when Husks die (sometimes earlier).
+You will encounter a patrol that consists of 2 enemy=Hounds:elite and 3 enemy=Pups:normal as well as a enemy=Nightmare_Husk:elite and a enemy=torrential_Husk:elite. On back of the area a group of a enemy=Stonetouch:elite, a enemy=Bloodfang:elite and 3 enemy=Spider_Hatchlings:normal and a group of a enemy=Webber:elite, a enemy=Recluse:elite and 3 enemy=Spider_Hatchlings:normal appear when Husks die (sometimes earlier).
 tactic=coordinated
 Stack behind a tree on the left side or on the right side and line of sight the mobs, so they run to you. Make sure you have stability or a stun break to counter control from Hounds and Husks.
 tactic=normal

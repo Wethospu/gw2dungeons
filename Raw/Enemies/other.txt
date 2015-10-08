@@ -1,0 +1,805 @@
+##################################################################
+# This file contains various enemies like clones.                #
+##################################################################
+
+Name=Iron Forgeman
+image=http://wiki.guildwars2.com/images/c/cc/Iron_Forgeman.jpg
+Path=SES
+category=legendary
+
+attack=Attacks have specific pattern
+
+attack=Vulnerable to Boulders
+#note=kill enemy=Flame_Jellies:normal to get
+
+attack=Flamespray
+effect=multiple ticking AoEs
+subeffect=damage:0
+subeffect=burning:0
+#note=pay attention to its head and see where it is aiming
+#note=hide behind barricades
+
+attack=Chain
+animation=pull chains
+effect=ticking AoE at safe-spots
+effect=summon enemy=Flame_Jellies:normal at safe-spots
+
+##################################################################
+
+Name=Elementalist
+ID=10781
+Path=SE1|Arah4
+
+attack=Fireball
+ID=5491
+effect=Projectile with AoE
+subeffect=damage:-
+
+attack=Flame Burst
+ID=5679
+effect=PBAoE
+subeffect=damage:-
+
+##################################################################
+
+Name=engineer
+# TODO: ID
+ID=10780
+Path=SE1|Arah4
+
+##################################################################
+
+Name=Guardian
+ID=10780
+Path=SE1|Arah4
+
+attack=Strike (1)
+ID=9137
+effect=melee
+subeffect=damage:-
+
+attack=Vengeful Strike (2)
+ID=9138
+effect=melee
+subeffect=damage:-
+
+attack=Wrathful Strike (3)
+ID=9139
+effect=melee
+subeffect=damage:-
+
+attack=Leap of Faith
+ID=9080
+effect=leap
+subeffect=damage:-
+
+##################################################################
+
+Name=mesmer
+# TODO: ID
+ID=10780
+Path=SE1|Arah4
+
+##################################################################
+
+Name=necromancer
+# TODO: ID
+ID=10780
+Path=SE1|Arah4
+
+##################################################################
+
+Name=ranger
+# TODO: ID
+ID=10780
+Path=SE1|Arah4
+
+##################################################################
+
+Name=thief
+# TODO: ID
+ID=10780
+Path=SE1|Arah4
+
+##################################################################
+
+Name=warrior
+# TODO: ID
+ID=10780
+Path=SE1|Arah4
+
+attack=Chop (1)
+effect=melee
+subeffect=damage:986790
+
+attack=Double Chop (2)
+effect=2 melee hits
+count=2
+subeffect=damage:1016316
+
+attack=Dual Strike
+effect=2 melee hits
+count=2
+subeffect=damage:1277388
+subeffect=fury:3
+
+attack=Cyclone Axe
+effect=melee
+subeffect=damage:1554000
+subeffect=crippled:3
+
+attack=Whirling Axe
+effect=~20 PBAoEs in ~2 s
+count=20
+length=2
+subeffect=damage:615384
+
+
+##################################################################
+
+name=Flying Raptor
+image=http://wiki.guildwars2.com/images/f/f3/Flying_Raptor.jpg
+path=Arah1|Arah2|Arah3|Arah4
+type=no type
+category=legendary
+
+attack=???
+effect=???
+subeffect=???
+
+##################################################################
+
+Name=Sword of Justice
+ID=6381
+Path=CM2
+
+attack=Strike
+ID=9169
+effect=melee
+subeffect=damage:-
+
+##################################################################
+# Tested for inquest, elemental, demon, undead, outlaw, scarlet, icebrood, svanir, flame legion, grawl
+
+Name=Kudu's Monster
+ID=4103
+level=80
+image=http://wiki.guildwars2.com/images/e/ec/Kudu%27s_Monster.jpg
+Path=CoES
+
+attack=Attunement Swap
+ID=5321
+animation=bends forward, puts arms to head, bends backward and lowers arms|1|explosion effect depending on the element
+effect=Attunes to a random element
+subeffect=fire, ice, crystal or corruption
+#note=attacks and their casting animations stay same while effects change
+#note=current attunement can be seen on particle effects around Monster
+
+########################
+# Corruption attacks.  #
+########################
+
+attack=Giant Stomp (corruption)
+ID=5373
+# Based on fire.
+cooldown=13
+animation=raises arms and right foot and steps forward smashing ground|1.25
+effect=PBAoE
+subeffect=damage:-
+effect=summon ~5 enemy=Undead_tendrils:structure over the area
+#note=at melee range block or evade
+#note=stay at medium range
+#note=burst down tendrils if they are close you
+
+attack=Corrupted Shout
+ID=5374
+# Based on ice.
+cooldown=7
+animation=raises hands a bit and bends forward roaring|1.25|sprays toxic
+additional=can't be blocked or evaded
+effect=3 cones in 2.4 s
+count=3
+length=2.4
+subeffect=weakness:0
+effect=3 summons in 2.4 s
+count=3
+length=2.4
+subeffect=enemy=risen_grub:normal
+#note=at melee get behind back
+#note=stay at medium range
+#note=burst down grubs to reduce pressure
+
+attack=Giant Stomp (Corruption) (1)
+ID=5376
+animation=moves right foot back, raises arms and left foot and then smashes ground with left foot|1.5
+# Based on crystal.
+cooldown=11
+effect=PBAoE
+subeffect=damage:-
+subeffect=poison:1
+subeffect=knockdown:3
+#note=at melee range run away or block and evade 3 times
+#note=stay at medium range
+
+attack=Giant Stomp (Corruption) (2)
+animation=raises left foot and steps forward smashing ground|0.8
+effect=PBAoE
+subeffect=damage:0.9
+subeffect=poison:1
+#note=at melee range run away or block and evade 3 times
+#note=stay at medium range
+
+attack=Giant Stomp (Corruption) (3)
+animation=raises right hand in air and smashes ground|1.6
+effect=big PBAoE
+subeffect=damage:0.9
+subeffect=poison:1
+#note=at melee range run away or block and evade 3 times
+#note=stay at medium range
+
+########################
+# Crystal attacks.     #
+########################
+
+attack=Crystal Imprisonment
+ID=5394
+# Based on fire.
+cooldown=13
+animation=raises arms and right foot and steps forward smashing ground|1.25|ground explodes with crystals
+additional=crystal can't be blocked or evaded. Used at primary target.
+effect=PBAoE
+subeffect=damage (maybe)
+effect=ranged
+subeffect=enemy=Imprisonment_Crystal:structure on target
+#note=break down the crystal as fast as possible
+#note=stun breaks won't break it
+#note=precast stability to prevent crystal or use a teleport to get out
+
+attack=Wilting Shout
+ID=5393
+# Based on ice.
+cooldown=7
+animation=raises hands a bit and bends forward roaring|1.25|sprays crystal dust
+additional=can't be blocked or evaded
+effect=3 cones in 2.4 s
+count=3
+length=2.4
+subeffect=vulnerability:5:3
+#note=can be safely ignored. Stacks will expire before next attack.
+#note=if you want to avoid it get behind his back or stay at medium range
+
+attack=Giant Stomp (Crystal) (1)
+ID=5392
+cooldown=11
+animation=moves right foot back, raises arms and left foot and then smashes ground with left foot|1.5
+effect=PBaoE
+subeffect=damage:-
+#note=at melee range run away or block and evade 3 times
+#note=stay at medium range
+
+attack=Giant Stomp (Crystal) (2)
+animation=raises left foot and steps forward smashing ground|0.8
+effect=PBAoE
+subeffect=damage:0.7
+
+attack=Giant Stomp (Crystal) (3)
+animation=raises right hand in air and smashes ground|1.6
+effect=big PBAoE
+subeffect=damage:0.7
+
+########################
+# Fire attacks.        #
+########################
+
+attack=Giant Stomp (Fire)
+ID=5383
+cooldown=13
+animation=raises arms and right foot and steps forward smashing ground|1.25
+effect=PBAoE
+subeffect=damage:-
+effect=multiple ticking AoEs (11 hits in 15 s) over area
+count=11
+length=15
+subeffect=damage:0.3
+#note=at melee range block or evade and be ready to move out of circles
+#note=at medium range be ready to move out of circles
+
+attack=Fiery Shout
+ID=5385
+# Based on ice.
+cooldown=7
+animation=raises hands a bit and bends forward roaring|1.25|sprays flame
+additional=can't be blocked or evaded
+effect=3 ticking aoes on front of him in 2.4 s
+count=3
+length=2.4
+subeffect=burning:1
+#note=at melee get behind back
+#note=stay at medium range
+
+attack=Giant Stomp (Fire) (1)
+ID=5386
+# Based on crystal.
+cooldown=11
+animation=moves right foot back, raises arms and left foot and then smashes ground with left foot|1.5|fiery explosion
+effect=3 projectiles (cone)
+count=3
+subeffect=damage:-
+subeffect=burning:0
+#note=stay at melee range
+#note=at medium range either go closer or further
+#note=at high range side step between projectiles
+
+attack=Giant Stomp (Fire) (2)
+animation=raises left foot and steps forward smashing ground|0.8|fiery explosion
+effect=3 projectiles (cone)
+subeffect=burning:0
+
+attack=Giant Stomp (Fire) (3)
+animation=raises right hand in air and smashes ground|1.6|fiery explosion
+effect=8 projectiles (cone, 2 projectiles stacked at middle)
+subeffect=damage:0.3
+subeffect=burning:0
+
+########################
+# Ice attacks.         #
+########################
+
+attack=Giant Stomp (Ice)
+ID=5367
+# Based on fire.
+cooldown=13
+animation=raises arms and right foot and steps forward smashing ground|1.25
+effect=PBAoE
+subeffect=damage:-
+subeffect=launch:3.3
+#note=at melee range block or evade
+#note=stay at medium range
+
+attack=Frozen Shout
+ID=5365
+cooldown=7
+animation=raises hands a bit and bends forward roaring|1.25|sprays ice
+additional=can't be blocked or evaded
+effect=3 ticking aoes on front of him in 2.4 s
+count=3
+length=2.4
+# estimate
+subeffect=chilled:2
+#note=at melee get behind back
+#note=stay at medium range
+
+attack=Giant Stomp (ice) (1)
+ID=5364
+# Based on crystal.
+cooldown=11
+animation=moves right foot back, raises arms and left foot and then smashes ground with left foot|1.5|explosion with ice
+effect=PBAoE
+subeffect=damage:-
+effect=ticking delayed (2.5 s) AoE
+subeffect=damage:-
+subeffect=launch:3.3
+effect=ticks (7 hits in 3 s)
+count=7
+length=3
+subeffect=chilled:0.5
+#note=at melee range run away or block and evade 3 times, then be ready to move out of circles
+#note=at medium range be ready to move out of circles
+
+attack=Giant Stomp (ice) (2)
+animation=raises left foot and steps forward smashing ground|0.8|explosion with ice
+effect=PBAoE
+subeffect=damage:0.7
+effect=~3 ticking delayed (2.5 s) AoEs
+subeffect=damage:0.7
+subeffect=launch:3.3
+effect=ticks (7 hits in 3 s)
+count=7
+length=3
+subeffect=chilled:0.5
+
+attack=Giant Stomp (ice) (3)
+animation=raises right hand in air and smashes ground|1.6|explosion with ice and multiple red circles
+effect=PBAoE
+subeffect=damage:0.7
+effect=~5 ticking delayed (2.5 s) AoEs
+subeffect=damage:0.7
+subeffect=launch:3.3
+effect=ticks (7 hits in 3 s)
+count=7
+length=3
+subeffect=chilled:0.5
+
+##################################################################
+
+Name=Bloomhunger
+ID=11265
+Path=Swamp
+image=http://wiki.guildwars2.com/images/1/16/Veteran_Willowheart.jpg
+scaling=legendary
+
+attack=cant be moved
+#note=easy to get out of combat
+
+attack=Shoot
+ID=16145
+cooldown=0
+image=http://giant.gfycat.com/WarpedHilariousBlackbuck.gif
+animation=swings left/right arm|0.75|green gas
+effect=3 projectiles (cone) with ticking AoE (4 hits in 3 s)
+count=4
+length=3
+subeffect=damage:0.1
+subeffect=poison:6
+#note=AoEs only start ticking if not blocked/evaded. Visually they still stay so try stay out if possible to be on safe side.
+
+attack=Entangle
+ID=16149
+image=http://giant.gfycat.com/GlitteringThreadbareDragonfly.gif
+animation=smashes ground with left/right hand|1
+additional=minimum-range (stack)
+effect=3 projectiles (cone)
+subeffect=damage:-
+subeffect=immobilized:3
+subeffect=Summon "Binding Roots" (2.5 s)
+#note=block/evade if at range. Stay inside him if at melee.
+#note=can be reflected for great damage
+
+attack=Poison Rain
+ID=16146
+image=http://giant.gfycat.com/WeepyBewitchedBison.gif
+animation=shakes leaves|0.75
+effect=~20 ballistic projectiles with AoE in 4 s
+count=?
+subeffect=damage:-
+subeffect=vulnerability:10
+subeffect=agony:3
+effect=frontal cone
+subeffect=damage:-
+subeffect=vulnerability:10
+subeffect=agony:3
+#note=use area anti projectile skills (you have stand inside them).
+#note=At lower range projectiles land fast so you have to react faster
+#note=At higher range projectiles land slower so you have to remember where circles were
+
+attack=Summon Spirits
+image=http://giant.gfycat.com/TalkativeWavyFossa.gif
+additional=maximum amount of 3
+effect=summon a enemy=Sun_Spirit:normal, a enemy=Spirit_of_Frost:normal and a enemy=Storm_Spirit:normal
+#note=Storm Spirit causes quite strong retaliation so destroy it if needed.
+#note=Because of the spawning order, Storm Spirit won't spawn if any other Spirit is still alive
+
+##################################################################
+
+Name=Sun Spirit
+ID=11266
+scaling=constant
+Path=Swamp
+
+attack=Sun Spirit Aura
+effect=channeled ranged
+frequency=5
+subeffect=might:5
+subeffect=buff:Sun_Spirit's_Essence:5:5:1:sun_spirit
+
+attack="Sun Spirit's Essence"
+effect=buff
+subeffect=burning:5 caused by Entangle.
+
+##################################################################
+
+Name=Spirit of Frost
+ID=11269
+scaling=constant
+Path=Swamp
+
+attack=Frost Spirit Aura
+effect=channeled ranged
+frequency=5
+subeffect=fury:5
+subeffect=buff:Frost_Spirit's_Essence:5:1:frost_spirit
+
+attack="Frost  Spirit's Essence"
+animation=white projectiles
+effect=buff
+subeffect=chilled:5 caused by poison Rain.
+
+##################################################################
+
+Name=Storm Spirit
+ID=11267
+scaling=constant
+Path=Swamp
+
+attack=Storm Spirit Aura
+effect=channeled ranged
+frequency=5
+subeffect=retaliation:5
+subeffect=buff:Storm_Spirit's_Essence:5:1:storm_spirit
+
+attack="Storm Spirit's Essence"
+animation=lightning circle
+effect=buff
+subeffect=daze:5 caused by Shoot
+#note=doesn't seem to have any effect
+################################################################## 
+
+Name=Thaumanova Anomaly
+ID=12906
+alt=Anomaly
+image=http://wiki.guildwars2.com/images/b/b6/Thaumanova_Anomaly.jpg
+scaling=legendary
+Path=Thauma
+
+attack=Binding Bolt
+ID=22448
+animation=swings left arm|0.5|shoots a white bolt
+cooldown=1.5
+effect=piercing projectile
+subeffect=damage:-
+subeffect=crippled:2
+
+attack=Gaze
+cooldown=12
+#image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-laser-beam_thumb.jpg
+animation=kneels and shoots white beam|1|keeps channelling the beam
+effect=12 ranged hits in 6.6 s
+count=12
+length=6.6
+subeffect=damage-constant:275
+subeffect=causes platforms disappear below the target
+#note=run away from others
+
+attack=Flux Bomb
+ID=22449
+cooldown=10
+effect=debuff (4 s)
+subeffect=damage:-
+subeffect=causes platforms disappear when ends
+#note=run away from others
+
+attack=Cosmic Barrage
+ID=22452
+#image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-attacks_thumb.jpg
+animation=starts spinning|0.5|spins and makes white orbs appear over area
+effect=multiple delayed AoEs (2.5 s) over area
+subeffect=damage:-
+subeffect=agony:3
+subeffect=causes platforms disappear
+effect=PBAoE
+subeffect=knockback:0
+
+attack=Star Smash
+ID=22447
+cooldown=5
+animation=instant|0|white orb appears
+effect=delayed AoE (2 s)
+subeffect=damage:-
+subeffect=agony:3
+#note=just move a bit
+
+#attack=Cosmic Anomaly
+#effect=??
+#subeffect=damage:0
+#subeffect=platforms disappear
+
+attack=Cosmic Instability
+#image=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-ball.jpg
+additional=activates when below 50%
+effect=huge aura
+frequency=30
+subeffect=buff:Cosmic_Instability:6
+#note=hits every player
+
+attack="Cosmic Instability"
+effect=debuff
+subeffect=causes platforms disappear below
+#note=run together if possible to reduce amount of disappearing platforms
+
+################################################################## 
+
+Name=Aatxe
+ID=12908
+alt=Aatxes
+image=http://wiki.guildwars2.com/images/a/ae/Aatxe.jpg
+scaling=level
+Path=Thauma
+
+attack=Lunge
+ID=2438
+effect=Melee
+subeffect=damage:-
+
+attack=Charge
+ID=2439
+effect=dash
+subeffect=damage:-
+
+attack=Leap
+ID=21354
+effect=leap
+subeffect=damage:-
+subeffect=knockdown:3
+
+#############################
+
+copy=12908
+ID=1286
+
+################################################################## 
+
+name=Molten Berserker
+ID=12898
+alt=Berserker
+image=http://wiki.guildwars2.com/images/3/34/Molten_Berserker.jpg
+scaling=legendary
+path=Molten
+
+attack=Smash (1)
+ID=18724
+animation=swings left arm|0.2
+cooldown=0
+effect=melee
+subeffect=damage:2137000
+#note=does full combo even if it doesn't hit
+#note=can be quite easily tanked
+effect=enraged
+subeffect=damage:2564400
+subeffect=knockdown:1.5
+#note=if kiting try to bait this to force him to do entire combo
+
+attack=Bash (2)
+animation=swings left arm|0.5
+effect=2 melee hits in 0.8 s
+count=2
+length=0.8
+subeffect=damage:2137000
+effect=enraged
+count=2
+length=0.8
+subeffect=damage:2564400
+subeffect=knockdown:1.5
+
+attack=Uppercut (3)
+animation=hugs hands and raises them|1
+effect=cone
+subeffect=damage:4274000
+#note=block, evade or just tank
+effect=enraged
+subeffect=damage:4915100
+subeffect=launch:2.3
+
+attack=Charge
+ID=18715
+animation=turns right and leaps|0.5
+additional=can't be blocked or evaded. Only used at distant targets
+effect=ranged
+subeffect=teleport to target
+#note=If Clap is active this attack may cause it to hit (bug). Try to evade in that case
+
+attack=Shockwave
+ID=22153
+animation=glows and jumps|1
+effect=Uses "Pound"/"Clap" once
+subeffect="Pound" if target is at distance and "Clap" if target is close (bit random)
+#note=Never run along the wave or you melt in a second
+effect=when Enraged
+subeffect=Used twice
+effect=when enemy=Firestorm:legendary is below 25%
+subeffect=Used 3-4 times
+effect=when alone
+subeffect=Used 4 times
+
+attack="Pound"
+animation=jumps||a white ring
+additional=can't be blocked. Can be jumped over. Max-range 1200.
+effect=growing PBarea field, when passing through
+subeffect=damage:9082250
+#note=Dodge, jump over or out range
+
+attack="Clap"
+animation=claps||a blue ring
+additional=can't be blocked. Only hits when jumping. Max-range 1200.
+effect=growing PBarea field, when passing through
+subeffect=damage:9082250
+subeffect=launch:2.3
+#note=Bit different hit box than "Pound" so evade needs different timing
+#note=Dodge or out range
+
+attack=Shield (1)
+ID=22155
+animation=hands down|0.5
+additional=only used when alone
+effect=buff:evade
+effect=area field, when passing through
+subeffect=burning:1
+effect=with ticking AoE
+subeffect=buff:Shielding:2:1:fire_shield every 2 seconds
+
+attack=Jetpack Pound (2)
+animation=Rises to air, laughs and drops to the ground|5|a fiery ring
+additional=can't be blocked. Can be jumped over. Max-range 1200.
+effect=Growing PBAoE field, when passing through
+subeffect=damage:0
+subeffect=knockdown:0
+#note=Dodge or out range. Jump only if you are confident
+
+attack=Frost Siege (3)
+additional=not channeled.
+effect=~30 delayed (2 s) AoEs in area during 15.5 s
+count=?
+subeffect=damage:0
+subeffect=knockdown:3
+
+attack="Shielding"
+effect=buff
+subeffect=take no damage
+
+##################################################################
+
+name=Molten Firestorm
+ID=12897
+alt=Firestorm
+image=http://wiki.guildwars2.com/images/5/5a/Molten_Firestorm.jpg
+path=molten
+scaling=legendary
+
+attack=Fireball
+ID=22158
+effect=projectile
+subeffect=damage:0
+subeffect=burning:2
+effect=with ticking AoE
+count=?
+subeffect=damage:0
+subeffect=burning:2
+#note=Impossible to distinguish from the other Fireball so avoid every circle.
+effect=when Enraged
+subeffect=bigger radius
+
+attack=Fireball
+ID=22158
+effect=projectile
+subeffect=damage:7479500
+subeffect=burning:2
+effect=with ticking AoE
+count=?
+subeffect=damage:7479500
+subeffect=burning:2
+effect=when Enraged
+subeffect=bigger radius
+
+attack=Bouncing Fireball
+ID=18722
+effect=projectile with a bounce on ground
+count=?
+subeffect=damage:2137000
+effect=when Enraged
+count=?
+subeffect=damage:0
+subeffect=launch:2.3
+effect=with ticking AoE (11 hits in 10 s)
+count=11
+length=10
+subeffect=damage:2137000
+subeffect=burning:1
+effect=when Enraged
+subeffect=bigger radius
+
+attack=Retreat
+ID=18745
+effect=ticking AoE
+count=?
+subeffect=damage:2137000
+subeffect=burning:1.4
+effect=dodge back
+subeffect=buff:evade
+
+attack=Sonic Vortex
+effect=permanent AoE ring
+subeffect=damage:1602750
+subeffect=launch:0
+#note=Effect basically halves radius of fighting area (you have to stay near center)
+#note=Firestorm may enter it making melee impossible until he moves back
+
+# Internal: Skill Close Up also listed.

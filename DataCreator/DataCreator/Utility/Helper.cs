@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -545,6 +546,23 @@ namespace DataCreator.Utility
           Helper.ShowWarningMessage("Value " + str + " is not an integer.");
       }
       return 0;
+    }
+
+    /***********************************************************************************************
+    * CloneJson / 2015-10-05 / Wethospu                                                            * 
+    *                                                                                              * 
+    * Deep copies an object.                                                                       *
+    *                                                                                              * 
+    ***********************************************************************************************/
+    public static T CloneJson<T>(this T source)
+    {
+      // Don't serialize a null object, simply return the default for that object
+      if (ReferenceEquals(source, null))
+      {
+        return default(T);
+      }
+
+      return JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(source));
     }
   }
 }

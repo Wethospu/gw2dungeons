@@ -160,7 +160,7 @@ namespace DataCreator.Enemies
         return "4";
       if (scalingType.Equals("level"))
         return "5";
-      Helper.ShowWarning("Scaling type " + scalingType + " is not recognized! Use 'normal', 'champion', 'level', 'constant' or 'legendary'!");
+      Helper.ShowWarningMessage("Scaling type " + scalingType + " is not recognized! Use 'normal', 'champion', 'level', 'constant' or 'legendary'!");
       return "0";
     }
   }
