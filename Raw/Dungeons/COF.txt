@@ -118,7 +118,7 @@ Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
 tactic=rewards
 First run per day gives 1.31 gold and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
-There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wilfire_Talisman from enemies and chests. All can be traded but aren't valuable.
+There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wildfire_Talisman from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Ashes_of_the_Effigy from the final chest. The recipe allows you to craft wiki=Ashes_of_the_Effigy which gives no extra gold return for your tokens.
 
 name=Start
@@ -242,7 +242,7 @@ Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
 tactic=rewards
 First run per day gives 1.31 gold and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
-There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wilfire_Talisman from enemies and chests. All can be traded but aren't valuable.
+There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wildfire_Talisman from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Eternal_Flame from the final chest. The recipe allows you to craft wiki=Eternal_Flame which gives no extra gold return for your tokens.
 
 name=Start
@@ -323,7 +323,7 @@ Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
 tactic=rewards
 First run per day gives 1.31 gold and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
-There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wilfire_Talisman from enemies and chests. All can be traded but aren't valuable.
+There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wildfire_Talisman from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Burntclaw's_Brace from the final chest. It's account bound so it's not valuable.
 
 name=Start

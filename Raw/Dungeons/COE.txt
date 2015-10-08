@@ -230,7 +230,7 @@ tactic=rewards
 First run per day gives 1.81 gold and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Charged_Band, wiki=Diffraction_Crystal or wiki=Fiber_Splice from enemies and chests. All can be traded but aren't valuable.
-There is a very low chance to get an account bound wiki=Prototype_Sheat from the final chest. It's account bound so it's not valuable.
+There is a very low chance to get an account bound wiki=Prototype_Sheath from the final chest. It's account bound so it's not valuable.
 
 path=CoE1|CoE2|CoE3
 name=Start
@@ -640,5 +640,5 @@ tactic=bug
 Destroying a crystal may make the affected player / NPC get stuck for a while. This happens if you destroy the crystal very fast before it fully appears. The effect will wear of automatically after a while or you can use wiki=Ogre_Pet_Whistle. If you want to prevent it use stability or stop attacking for a second when you see Alpha jump.
 If enemy=Spire gets stuck you have to wait a while until you get the end reward.
 tactic=rewards
-There is a very low chance to get an account bound wiki=Prototype_Sheat from the final chest. It's account bound so it's not valuable.
+There is a very low chance to get an account bound wiki=Prototype_Sheath from the final chest. It's account bound so it's not valuable.
 
