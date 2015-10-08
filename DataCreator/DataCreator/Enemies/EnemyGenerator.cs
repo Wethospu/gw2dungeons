@@ -661,23 +661,29 @@ namespace DataCreator.Enemies
 
     public static void GenerateFile(List<Enemy> enemies, StringBuilder indexFile, DataCollector dungeonData)
     {
-      // Add enemies to the index file and build html.
+      // Separate enemies (100 enemies per file) to reduce the initial loading time. / 2015-10-08 / Wethospu
       var enemyFile = new StringBuilder();
       enemyFile.Append(Constants.InitialdataHtml).Append(Constants.LineEnding);
-      foreach (var enemy in enemies)
-        enemyFile.Append(enemy.ToHtml(enemies));
-
-      var fileName = Constants.DataOutput + Constants.DataEnemyResult + "enemies.htm";
-      var dirName = Path.GetDirectoryName(fileName);
-      if (dirName != null)
-        Directory.CreateDirectory(dirName);
-      try
+      for (var i = 0; i < enemies.Count; i++)
       {
-        File.WriteAllText(fileName, enemyFile.ToString());
-      }
-      catch (UnauthorizedAccessException)
-      {
-        Helper.ShowWarningMessage("File " + fileName + " in use.");
+        enemyFile.Append(enemies[i].ToHtml(enemies));
+        if ((i + 1) % 100 == 0)
+        {
+          var fileName = Constants.DataOutput + Constants.DataEnemyResult + "enemies" + (i/100) + ".htm";
+          var dirName = Path.GetDirectoryName(fileName);
+          if (dirName != null)
+            Directory.CreateDirectory(dirName);
+          try
+          {
+            File.WriteAllText(fileName, enemyFile.ToString());
+          }
+          catch (UnauthorizedAccessException)
+          {
+            Helper.ShowWarningMessage("File " + fileName + " in use.");
+          }
+          enemyFile = new StringBuilder();
+          enemyFile.Append(Constants.InitialdataHtml).Append(Constants.LineEnding);
+        }
       }
       for (var i = 0; i < enemies.Count; i++)
       {

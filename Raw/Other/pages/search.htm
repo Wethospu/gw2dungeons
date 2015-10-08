@@ -285,7 +285,7 @@ function displayResults(elements, htmlList) {
 	}
 	var dungeonToCheck = elements[0].dungeon;
 	var view = $("#search-view").val();
-	var fileLocation = "enemies/" + dungeonToCheck + ".htm";
+	var fileLocation = "enemies/enemies.htm";
 	var fileDiv = $("<div />");
 	$(fileDiv).load(fileLocation, function () {
 		// Find enemies.

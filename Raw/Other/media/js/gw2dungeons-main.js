@@ -370,44 +370,21 @@ function dungeonToPages(dungeon) {
 
 // Finds a clicked enemy and loads details about it.
 function openEnemyOverlay() {
-    var enemyIndexes = String($(this).attr("data-index")).split(":");
+    var enemyNumbers = String($(this).attr("data-index")).split(":");
 	var enemyLevels = String($(this).attr("data-level")).split(":"); 
 	if (!$("#data-overlay").hasClass("in")) {
 		$('#data-overlay').modal();
 		$('#data-overlay').css('padding-right', '');
 		$(".modal-content").html(overlayHtml);
 	}
-    var enemyDiv = $("<div />");
 	var path = $(this).attr("data-path");
-    $(enemyDiv).load('enemies/enemies.htm', function () {
-		// Find enemies one by one. / 2015-09-28 / Wethospu
-		// This is pretty inefficient but order shouldn't be changed. Also multiple enemies are loaded rarely.
-		for (var i = 0; i < enemyIndexes.length; i++) {
-			var counter = -1;
-			$(enemyDiv).find(".enemy").each(function () {
-				counter++;
-				if (enemyIndexes[i] != counter)
-					return;
-				overlayRemoveOld(counter);
-				// Create a new tab. / 2015-07-31 / Wethospu
-				var content = $(this)[0].outerHTML;
-				var name =  $(content).find(".enemy-name").html();
-				$("#overlay-nav").append('<li><a class="set-event" href="#tab-' + counter + '" data-toggle="tab" data-description="' + counter + '" data-width="1250" data-height="0">' + name + '</a></li>');
-				$("#overlay-pane").append('<div class="tab-pane" id="tab-' + counter + '">' + content + '</div>');
-				var enemy = $("#overlay-pane #tab-" + counter + " .enemy");
-				// Set enemy level dynamically based on enemy link. / 2015-09-28 / Wethospu
-				if (enemyLevels[i] > 0)
-					$(enemy).attr("data-level", enemyLevels[i]);
-				// Set the enemy path to have a correct base level. / 2015-10-08 / Wethospu
-				$(enemy).attr("data-current-path", path);
-				// Activate the new tab. / 2015-09-16 / Wethospu
-				$('#overlay-nav a[data-toggle="tab"]').each(function () {
-					if (counter == $(this).attr("data-description"))
-						$(this).tab('show');		
-				});
-				setOverlaySize(1250, 0);
-			});
-		}	
+	openEnemySub(0, enemyNumbers, enemyLevels, path);
+}
+
+// Finds one enemy (index).
+// Enemy files are split to pieces to make loading faster.
+function openEnemySub(index, enemyNumbers, enemyLevels, path) {
+	if (index >= enemyNumbers.length) {
 		applyEnemySettings(false);
 		handleOverlayLinks();
 		loadThumbs();
@@ -416,7 +393,38 @@ function openEnemyOverlay() {
 		$('#overlay-nav a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 			setOverlaySize($(e.target).attr("data-width"), $(e.target).attr("data-height"));
 		});
-            
+		return;
+	}	
+	var numberToFind = enemyNumbers[index];
+	var fileNumber = Math.floor(numberToFind / 100);
+	numberToFind -= fileNumber * 100;
+	var enemyDiv = $("<div />");
+	$(enemyDiv).load('enemies/enemies' + fileNumber + '.htm', function () {	
+		var counter = -1;
+		$(enemyDiv).find(".enemy").each(function () {
+			counter++;
+			if (numberToFind != counter)
+				return;
+			overlayRemoveOld(counter);
+			// Create a new tab. / 2015-07-31 / Wethospu
+			var content = $(this)[0].outerHTML;
+			var name =  $(content).find(".enemy-name").html();
+			$("#overlay-nav").append('<li><a class="set-event" href="#tab-' + counter + '" data-toggle="tab" data-description="' + counter + '" data-width="1250" data-height="0">' + name + '</a></li>');
+			$("#overlay-pane").append('<div class="tab-pane" id="tab-' + counter + '">' + content + '</div>');
+			var enemy = $("#overlay-pane #tab-" + counter + " .enemy");
+			// Set enemy level dynamically based on enemy link. / 2015-09-28 / Wethospu
+			if (enemyLevels[index] > 0)
+				$(enemy).attr("data-level", enemyLevels[index]);
+			// Set the enemy path to have a correct base level. / 2015-10-08 / Wethospu
+			$(enemy).attr("data-current-path", path);
+			// Activate the new tab. / 2015-09-16 / Wethospu
+			$('#overlay-nav a[data-toggle="tab"]').each(function () {
+				if (counter == $(this).attr("data-description"))
+					$(this).tab('show');		
+			});
+			setOverlaySize(1250, 0);
+			openEnemySub(index + 1, enemyNumbers, enemyLevels, path);
+		});   
     }).error(function (jqXHR, textStatus, errorThrown) {
         console.log("error " + textStatus);
         console.log("incoming Text " + jqXHR.responseText);
