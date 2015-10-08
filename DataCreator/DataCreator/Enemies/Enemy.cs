@@ -185,20 +185,14 @@ namespace DataCreator.Enemies
       htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-left level-minus\"></span><span class=\"level\"></span>");
       htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-right level-plus\"></span> </span>").Append(Constants.LineEnding);
       // Add a dynamic target level for dungeons and a dynamic fractal level for fractals. / 2015-09-39 / Wethospu
-      if (LinkGenerator.CurrentDungeon.Equals("fotm"))
-      {
-        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"fractal-level-unit\">Fractal level").Append(Constants.Space);
-        // Level can be changed dynamically. / 2015-09-27 / Wethospu
-        htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-left fractal-level-minus\"></span><span class=\"fractal-level\"></span>");
-        htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-right fractal-level-plus\"></span> </span>").Append(Constants.LineEnding);
-      }
-      else
-      {
-        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"target-level-unit\">Player level").Append(Constants.Space);
-        // Level can be changed dynamically. / 2015-09-27 / Wethospu
-        htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-left target-level-minus\"></span><span class=\"target-level\"></span>");
-        htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-right target-level-plus\"></span> </span>").Append(Constants.LineEnding);
-      }
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"fractal-level-unit\">Fractal level").Append(Constants.Space);
+      // Level can be changed dynamically. / 2015-09-27 / Wethospu
+      htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-left fractal-level-minus\"></span><span class=\"fractal-level\"></span>");
+      htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-right fractal-level-plus\"></span> </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"target-level-unit\">Player level").Append(Constants.Space);
+      // Level can be changed dynamically. / 2015-09-27 / Wethospu
+      htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-left target-level-minus\"></span><span class=\"target-level\"></span>");
+      htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-right target-level-plus\"></span> </span>").Append(Constants.LineEnding);
 
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<br>").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"health-unit\"><span class=").Append(Constants.IconClass).Append("title=\"health\">Health</span>:").Append(Constants.Space).Append("<span class=\"health\"></span> </span>").Append(Constants.LineEnding);

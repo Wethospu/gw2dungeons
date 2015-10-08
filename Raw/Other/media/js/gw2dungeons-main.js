@@ -370,7 +370,7 @@ function openEnemyOverlay() {
 		$(".modal-content").html(overlayHtml);
 	}
     var enemyDiv = $("<div />");
-	var dungeon = $(this).attr("data-dungeon");
+	var path = $(this).data("path");
     $(enemyDiv).load('enemies/enemies.htm', function () {
 		// Find enemies one by one. / 2015-09-28 / Wethospu
 		// This is pretty inefficient but order shouldn't be changed. Also multiple enemies are loaded rarely.
@@ -385,6 +385,8 @@ function openEnemyOverlay() {
 				// Set enemy level dynamically based on enemy link. / 2015-09-28 / Wethospu
 				if (enemyLevels[i] > 0)
 					$(this).data('level', enemyLevels[i]);
+				// Set the enemy path to have a correct base level. / 2015-10-08 / Wethospu
+				$(this).data('current-path', path);
 				// Create a new tab. / 2015-07-31 / Wethospu
 				var content = $(this)[0].outerHTML;
 				var name =  $(content).find(".enemy-name").html();

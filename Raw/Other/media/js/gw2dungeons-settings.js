@@ -223,14 +223,16 @@ function handleEnemy(enemy) {
         potionStrength = 0;
 	var scalingType = $(enemy).data("scaling");
 	var rank = $(enemy).data("category");
-    var dungeonLevel = getPathLevel($(enemy).data("path"));
+	var currentPath = $(enemy).data("current-path");
+	var gameMode = pathToGameMode(currentPath);
+    var dungeonLevel = getPathLevel($(enemy).data("current-path"));
 	// Set attributes and visibility.
 	var playerLevel = $(enemy).data("target-level");
 	if (playerLevel == null) {
-		playerLevel = getPlayerLevel($(enemy).data("path"), getSetting("level"));
+		playerLevel = getPlayerLevel($(enemy).data("current-path"), getSetting("level"));
 		$(enemy).data("target-level", playerLevel);
 	}
-	if (getSetting("showTargetLevel")) {
+	if (getSetting("showTargetLevel") && gameMode == "dungeon") {
 		$(enemy).find(".target-level-unit").show();
 		$(enemy).find(".target-level").html(playerLevel);
 	}	
@@ -244,7 +246,7 @@ function handleEnemy(enemy) {
 	}
 	if (fractalLevel != getSetting("fractal"))
 		saveSetting("fractal", fractalLevel);
-	if (getSetting("showFractalLevel")) {
+	if (getSetting("showFractalLevel") && gameMode == "fractal") {
 		$(enemy).find(".fractal-level-unit").show();
 		$(enemy).find(".fractal-level").html(fractalLevel);
 	}	
@@ -587,4 +589,13 @@ function getPlayerLevel(path, maxLevel) {
 			pathLevel = maxLevel;
 	}
 	return pathLevel;	
+}
+
+function pathToGameMode(path) {
+	if (path.substring(0, 2) == "ac" || path.substring(0, 2) == "cm" || path.substring(0, 2) == "ta"
+	|| path.substring(0, 2) == "se" || path.substring(0, 3) == "cof" || path.substring(0, 4) == "hotw"
+	|| path.substring(0, 3) == "coe" || path.substring(0, 4) == "arah") {
+		return "dungeon":
+	}
+	return fractal;
 }

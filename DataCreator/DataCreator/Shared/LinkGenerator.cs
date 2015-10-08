@@ -290,8 +290,8 @@ namespace DataCreator.Shared
         if (index + 1 < enemiesToLink.Count)
           link.Append(':');
       }
-      // Add the dungeon
-      link.Append("\" data-dungeon=\"").Append(_currentDungeon).Append("\"");
+      // Add the path to load correct level. / 2015-10-08 / Wethospu
+      link.Append("\" data-path=\"").Append(path).Append("\"");
       // Add enemy levels to allow changing enemy level dynamically. / 2015-09-28 / Wethospu
       link.Append(" data-level=\"");
       for (var index = 0; index < enemyLevels.Count; index++)
