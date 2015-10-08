@@ -43,7 +43,7 @@ function loadThumbs() {
 	var width = $(window).width();
 	$('.thumb-image').each(function(){
 		// Load thumb based on screen size. / 2015-07-31 / Wethospu
-		var imageName = $(this).data("name");
+		var imageName = $(this).attr("data-name");
 		if (width > 1500) {
 			$(this).attr("src", "media/thumbs/" + imageName);
 			$(this).css("display", "initial");
@@ -163,18 +163,18 @@ function loadPage() {
 	});
 	$("#main-container, #data-overlay").on( "click", "span.fractal-level-minus", function() {
 		// Reset enemy level to let it scale normally. / 2015-09-30 / Wethospu
-		$($(this).parents('.enemy')[0]).data('level', '');
+		$($(this).parents('.enemy')[0]).attr("data-level", '');
 		levelMinus(this, 'fractal-level');
 	});
 	$("#main-container, #data-overlay").on( "click", "span.fractal-level-plus", function() {
-		$($(this).parents('.enemy')[0]).data('level', '');
+		$($(this).parents('.enemy')[0]).attr("data-level", '');
 		levelPlus(this, 'fractal-level');
 	});
 	$("#main-container, #data-overlay").on( "click", "span.path-button", function() {
 		var enemy = $($(this).parents('.enemy')[0]);
-		$(enemy).data('level', '');
-		$(enemy).data('target-level', '');
-		$(enemy).data('current-path', $(this).html().toLowerCase());
+		$(enemy).attr("data-level", '');
+		$(enemy).attr("data-target-level", '');
+		$(enemy).attr("data-current-path", $(this).html().toLowerCase());
 		handleEnemy(enemy);
 	});
 	
@@ -243,10 +243,10 @@ function handleOverlayLinks() {
 		overlayRemoveOld(url);
 		// Create a new tab. / 2015-07-31 / Wethospu
 		var content = '<div class="embed-responsive embed-responsive-16by9" style="';
-		var width = $(this).data("width");
+		var width = $(this).attr("data-width");
 		if (width > 0)
 			content += ' width:' + width + 'px;';
-		var height = $(this).data("height");
+		var height = $(this).attr("data-height");
 		if (height > 0)
 			content += ' height:' + height + 'px;';
 		content += '">';
@@ -263,13 +263,13 @@ function handleOverlayLinks() {
 		setOverlaySize(width, height);
 		// Activate the new tab. / 2015-09-16 / Wethospu
 		$($('#overlay-nav a[data-toggle="tab"]')).each(function () {
-			if (url == $(this).data('description'))
+			if (url == $(this).attr("data-description"))
 				$(this).tab('show');		
 		});
 		overlayHtml = $(".modal-content").html();
 		$(".modal-backdrop").height($(document).height());
 		$('#overlay-nav a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-			setOverlaySize($(e.target).data("width"), $(e.target).data("height"));
+			setOverlaySize($(e.target).attr("data-width"), $(e.target).attr("data-height"));
 		});
 		// Prevent default behavior. / 2015-07-31 / Wethospu
 		return false;
@@ -370,15 +370,15 @@ function dungeonToPages(dungeon) {
 
 // Finds a clicked enemy and loads details about it.
 function openEnemyOverlay() {
-    var enemyIndexes = String($(this).data("index")).split(":");
-	var enemyLevels = String($(this).data("level")).split(":"); 
+    var enemyIndexes = String($(this).attr("data-index")).split(":");
+	var enemyLevels = String($(this).attr("data-level")).split(":"); 
 	if (!$("#data-overlay").hasClass("in")) {
 		$('#data-overlay').modal();
 		$('#data-overlay').css('padding-right', '');
 		$(".modal-content").html(overlayHtml);
 	}
     var enemyDiv = $("<div />");
-	var path = $(this).data("path");
+	var path = $(this).attr("data-path");
     $(enemyDiv).load('enemies/enemies.htm', function () {
 		// Find enemies one by one. / 2015-09-28 / Wethospu
 		// This is pretty inefficient but order shouldn't be changed. Also multiple enemies are loaded rarely.
@@ -394,15 +394,15 @@ function openEnemyOverlay() {
 				var name =  $(content).find(".enemy-name").html();
 				$("#overlay-nav").append('<li><a class="set-event" href="#tab-' + counter + '" data-toggle="tab" data-description="' + counter + '" data-width="1250" data-height="0">' + name + '</a></li>');
 				$("#overlay-pane").append('<div class="tab-pane" id="tab-' + counter + '">' + content + '</div>');
-				var enemy = $("#overlay-pane #tab-" + counter + " .enemy")[0];
+				var enemy = $("#overlay-pane #tab-" + counter + " .enemy");
 				// Set enemy level dynamically based on enemy link. / 2015-09-28 / Wethospu
 				if (enemyLevels[i] > 0)
-					$(enemy).data('level', enemyLevels[i]);
+					$(enemy).attr("data-level", enemyLevels[i]);
 				// Set the enemy path to have a correct base level. / 2015-10-08 / Wethospu
-				$(enemy).data('current-path', path);
+				$(enemy).attr("data-current-path", path);
 				// Activate the new tab. / 2015-09-16 / Wethospu
 				$('#overlay-nav a[data-toggle="tab"]').each(function () {
-					if (counter == $(this).data('description'))
+					if (counter == $(this).attr("data-description"))
 						$(this).tab('show');		
 				});
 				setOverlaySize(1250, 0);
@@ -414,7 +414,7 @@ function openEnemyOverlay() {
 		overlayHtml = $(".modal-content").html();
 		$(".modal-backdrop").height($(document).height());
 		$('#overlay-nav a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-			setOverlaySize($(e.target).data("width"), $(e.target).data("height"));
+			setOverlaySize($(e.target).attr("data-width"), $(e.target).attr("data-height"));
 		});
             
     }).error(function (jqXHR, textStatus, errorThrown) {
@@ -428,7 +428,7 @@ function overlayRemoveOld(id) {
 	var count = 0;
 	// Remove any existing tabs so they get moved to the end. / 2015-09-21 / Wethospu
 	$('#overlay-nav a[data-toggle="tab"]').each(function () {
-		if (id == $(this).data('description'))
+		if (id == $(this).attr("data-description"))
 		{
 			// Remove the content. / 2015-09-16 / Wethospu
 			$('#overlay-nav #tab-' + id).replaceWith("");
@@ -445,7 +445,7 @@ function overlayRemoveOld(id) {
 	$('#overlay-pane a[data-toggle="tab"]').each(function () {
 		if (count > maxTabs)
 		{
-			$('#overlay-pane #tab-' + $(this).data('description')).replaceWith("");
+			$('#overlay-pane #tab-' + $(this).attr("data-description")).replaceWith("");
 			$(this).replaceWith("");
 			count--;
 		}

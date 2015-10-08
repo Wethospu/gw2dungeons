@@ -219,19 +219,19 @@ function handleEnemy(enemy) {
 	var healingView = getSetting("healingView");
     var potionUsage = getSetting("potionUsage");
     var potionStrength = (Number)(getSetting("potionStrength")) / 100;
-	var enemyPotion = $(enemy).data("potion");
+	var enemyPotion = $(enemy).attr("data-potion");
     if (enemyPotion == "" || potionUsage == "" || enemyPotion == "none" || potionUsage == "none" || (potionUsage == "main" && enemyPotion == "side"))
         potionStrength = 0;
-	var scalingType = $(enemy).data("scaling");
-	var rank = $(enemy).data("category");
-	var currentPath = $(enemy).data("current-path");
+	var scalingType = $(enemy).attr("data-scaling");
+	var rank = $(enemy).attr("data-category");
+	var currentPath = $(enemy).attr("data-current-path");
 	var gameMode = pathToGameMode(currentPath);
     var dungeonLevel = getPathLevel(currentPath);
 	// Set attributes and visibility.
-	var playerLevel = $(enemy).data("target-level");
+	var playerLevel = $(enemy).attr("data-target-level");
 	if (playerLevel == null || playerLevel == '') {
 		playerLevel = getPlayerLevel(currentPath, getSetting("level"));
-		$(enemy).data("target-level", playerLevel);
+		$(enemy).attr("data-target-level", playerLevel);
 	}
 	if (getSetting("showTargetLevel") && gameMode == "dungeon") {
 		$(enemy).find(".target-level-unit").show();
@@ -240,10 +240,10 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".target-level-unit").hide();
 	
-	var fractalLevel = $(enemy).data("fractal-level");
+	var fractalLevel = $(enemy).attr("data-fractal-level");
 	if (fractalLevel == null) {
 		fractalLevel = getSetting("fractal");
-		$(enemy).data("fractal-level", fractalLevel);
+		$(enemy).attr("data-fractal-level", fractalLevel);
 	}
 	if (fractalLevel != getSetting("fractal"))
 		saveSetting("fractal", fractalLevel);
@@ -254,12 +254,12 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".fractal-level-unit").hide();
 	
-	var level = $(enemy).data("level");
+	var level = $(enemy).attr("data-level");
 	if (level == null || level == '') {
 		level = dungeonLevel;
 		// Without set level, allow fractal scale to affect it. / 2015-09-30 / Wethospu
 		level = fractalScaleLevel(level, fractalLevel, scalingType, rank)[0];
-		$(enemy).data("level", level);
+		$(enemy).attr("data-level", level);
 	}
 		
 	if (getSetting("showLevel")) {
@@ -303,8 +303,8 @@ function handleEnemy(enemy) {
 	if (getSetting("showCooldowns")) {
 		$(enemy).find(".cooldown-unit").show();
 		$(enemy).find(".cooldown").each(function () {
-			var cooldown = $(this).data("amount");
-			var internal = $(this).data("internal");
+			var cooldown = $(this).attr("data-amount");
+			var internal = $(this).attr("data-internal");
 			if (cooldown != null && (internal == null || !getSetting("properCooldowns")))
 				$(this).html(cooldown);
 			else
@@ -314,7 +314,7 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".cooldown-unit").hide();
 	
-	var power = getAttribute(level, $(enemy).data("power"));
+	var power = getAttribute(level, $(enemy).attr("data-power"));
 	if (getSetting("showPower")) {
 		$(enemy).find(".power-unit").show();
 		$(enemy).find(".power").html(power);
@@ -322,7 +322,7 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".power-unit").hide();
 	
-	var criticalChance = getCriticalChance(level, $(enemy).data("precision"), playerLevel);
+	var criticalChance = getCriticalChance(level, $(enemy).attr("data-precision"), playerLevel);
 	if (rank == "elite" || rank == "champion" || rank == "legendary")
 		criticalChance = 0;
 	if (getSetting("showPrecision")) {
@@ -332,7 +332,7 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".precision-unit").hide();
 	
-	var armor = getArmor(level, $(enemy).data("toughness"));
+	var armor = getArmor(level, $(enemy).attr("data-toughness"));
 	if (getSetting("showArmor")) {
 		$(enemy).find(".armor-unit").show();
 		$(enemy).find(".armor").html(armor);
@@ -340,7 +340,7 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".armor-unit").hide();
 	
-	var health = getHealth(level, $(enemy).data("vitality"), $(enemy).data("health"));
+	var health = getHealth(level, $(enemy).attr("data-vitality"), $(enemy).attr("data-health"));
 	health = fractalScaleHealth(health, fractalLevel, scalingType);
 	if (getSetting("showHealth")) {
 		$(enemy).find(".health-unit").show();
@@ -349,7 +349,7 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".health-unit").hide();
 	
-	var criticalDamage = getCriticalDamage(level, $(enemy).data("ferocity"));
+	var criticalDamage = getCriticalDamage(level, $(enemy).attr("data-ferocity"));
 	if (getSetting("showFerocity")) {
 		$(enemy).find(".ferocity-unit").show();
 		$(enemy).find(".ferocity").html(criticalDamage);
@@ -357,7 +357,7 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".ferocity-unit").hide();
 	
-	var conditionDamage = getAttribute2(level, $(enemy).data("condition"));
+	var conditionDamage = getAttribute2(level, $(enemy).attr("data-condition"));
 	if (getSetting("showCondition")) {
 		$(enemy).find(".condition-unit").show();
 		$(enemy).find(".condition").html(conditionDamage);
@@ -365,7 +365,7 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".condition-unit").hide();
 	
-	var healingPower = getAttribute2(level, $(enemy).data("healing"));
+	var healingPower = getAttribute2(level, $(enemy).attr("data-healing"));
 	if (getSetting("showHealing")) {
 		$(enemy).find(".healing-unit").show();
 		$(enemy).find(".healing-power").html(healingPower);
@@ -373,11 +373,11 @@ function handleEnemy(enemy) {
 	else
 		$(enemy).find(".healing-unit").hide();
 
-	var weaponStrengthMain = getWeaponStrength(level, $(enemy).data("weapon-main-level"), $(enemy).data("weapon-main-rarity"), $(enemy).data("weapon-main-type"), $(enemy).data("weapon-main-scale"));
-	if ($(enemy).data("weapon-off-level") != null)
-		var weaponStrengthOff = getWeaponStrength(level, $(enemy).data("weapon-off-level"), $(enemy).data("weapon-off-rarity"), $(enemy).data("weapon-off-type"), $(enemy).data("weapon-off-scale"));
-	if ($(enemy).data("weapon-water-level") != null)
-		var weaponStrengthWater = getWeaponStrength(level, $(enemy).data("weapon-water-level"), $(enemy).data("weapon-water-rarity"), $(enemy).data("weapon-water-type"), $(enemy).data("weapon-water-scale"));
+	var weaponStrengthMain = getWeaponStrength(level, $(enemy).attr("data-weapon-main-level"), $(enemy).attr("data-weapon-main-rarity"), $(enemy).attr("data-weapon-main-type"), $(enemy).attr("data-weapon-main-scale"));
+	if ($(enemy).attr("data-weapon-off-level") != null)
+		var weaponStrengthOff = getWeaponStrength(level, $(enemy).attr("data-weapon-off-level"), $(enemy).attr("data-weapon-off-rarity"), $(enemy).attr("data-weapon-off-type"), $(enemy).attr("data-weapon-off-scale"));
+	if ($(enemy).attr("data-weapon-water-level") != null)
+		var weaponStrengthWater = getWeaponStrength(level, $(enemy).attr("data-weapon-water-level"), $(enemy).attr("data-weapon-water-rarity"), $(enemy).attr("data-weapon-water-type"), $(enemy).attr("data-weapon-water-scale"));
 	if (getSetting("showWeaponStrength")) {
 		$(enemy).find(".weapon-unit").show();
 		$(enemy).find(".weapon").html(weaponStrengthMain.min + "-" + weaponStrengthMain.max);
@@ -409,8 +409,8 @@ function handleEnemy(enemy) {
     }
 
     $(enemy).find(".damage-value").each(function () {
-		var damage = fractalScaleDamage($(this).data('amount') * power, fractalLevel, scalingType)
-		var weaponSlot = $(this).data('weapon');
+		var damage = fractalScaleDamage($(this).attr("data-amount") * power, fractalLevel, scalingType)
+		var weaponSlot = $(this).attr("data-weapon");
 		if (weaponSlot == "water")
 			var damages = getDamage(damage, weaponStrengthWater, potionStrength, dungeonLevel);
 		else if (weaponSlot == "off")
@@ -420,12 +420,12 @@ function handleEnemy(enemy) {
         insertDamageRange(this, damages, damageView, damageRange, dungeonLevel);
     });
     $(enemy).find(".percent-value").each(function () {
-        var damage = getPercentage((Number)($(this).data('amount')), dungeonLevel);
+        var damage = getPercentage((Number)($(this).attr("data-amount")), dungeonLevel);
         insertDamage(this, damage, damageView, dungeonLevel);
     });
     $(enemy).find(".effect-value").each(function () {
-        var damage = (Number)($(this).data('amount'));
-		var effect = $(this).data('effect');
+        var damage = (Number)($(this).attr("data-amount"));
+		var effect = $(this).attr("data-effect");
 		var attribute = conditionDamage;
 		if (effect == "regeneration")
 			attribute = healingPower;
@@ -440,19 +440,19 @@ function handleEnemy(enemy) {
 			insertDamage(this, damage, damageView, dungeonLevel);
     });
     $(enemy).find(".agony-value").each(function () {
-        var second = (Number)($(this).data('amount'));
+        var second = (Number)($(this).attr("data-amount"));
         insertDamage(this, getAgonyDamage(second), damageView, dungeonLevel);
     });
     $(enemy).find(".fixed-value").each(function () {
-        var damage = (Number)($(this).data('amount'));
+        var damage = (Number)($(this).attr("data-amount"));
         insertDamage(this, damage, damageView, dungeonLevel);
     });
 	$(enemy).find(".healing-value").each(function () {
-        var healing = (Number)($(this).data('amount'));
+        var healing = (Number)($(this).attr("data-amount"));
 		insertHealing(this, healing, healingView, health);
     });
 	$(enemy).find(".healing-percent-value").each(function () {
-        var healing = Math.floor($(this).data('amount') * health / 100);
+        var healing = Math.floor($(this).attr("data-amount") * health / 100);
 		insertHealing(this, healing, healingView, health);
     });
 }
