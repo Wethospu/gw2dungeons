@@ -46,7 +46,7 @@ namespace DataCreator.Enemies
     public string ToHtml(string path, double coefficient, string weapon, List<Enemy> enemies, Enemy baseEnemy, int indent)
     {
       var htmlBuilder = new StringBuilder();
-      _type = HandleEffect(LinkGenerator.CreateEnemyLinks(_type, path, enemies), 0, weapon, 1, 0, 0, baseEnemy);
+      _type = LinkGenerator.CreateEnemyLinks(HandleEffect(_type, 0, weapon, 1, 0, 0, baseEnemy), path, enemies);
       // Replace end dot with double dot if the effect has sub effects (visually looks better). / 2015-10-01 / Wethospu
       if (_type[_type.Length - 1] == '.' && SubEffects.Count > 0)
         _type = _type.Substring(0, _type.Length - 1) + ':';
@@ -55,7 +55,7 @@ namespace DataCreator.Enemies
       foreach (var subEffect in SubEffects)
       {
         htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<li>");
-        htmlBuilder.Append(HandleEffect(LinkGenerator.CreateEnemyLinks(subEffect, path, enemies), coefficient, weapon, HitCount, HitLength, HitFrequency, baseEnemy));
+        htmlBuilder.Append(LinkGenerator.CreateEnemyLinks(HandleEffect(subEffect, coefficient, weapon, HitCount, HitLength, HitFrequency, baseEnemy), path, enemies));
         htmlBuilder.Append("</li>").Append(Constants.LineEnding);
       }
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("</ul>").Append(Constants.LineEnding);
