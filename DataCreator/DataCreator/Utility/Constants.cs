@@ -93,9 +93,10 @@ namespace DataCreator.Utility
     public static readonly SortedSet<string> AttackTypeTags = new SortedSet<string>(){ "pbaoe", "melee", "ranged", "projectile", "homing", "bouncing", "aoe", "dash", "leap",  "delayed", "field",
       "summon", "aura", "ticking", "cone", "piercing", "evade", "buff", "trap" };
 
-    public static readonly SortedSet<string> EffectTags = new SortedSet<string>(){ "alacrity, condition", "bleeding", "burning", "chilled", "confusion", "crippled", "fear", "immobilized", "poison",
-      "slow", "torment", "vulnerability", "weakness", "boon", "aegis", "fury", "might", "protection", "regeneration", "resistance", "retaliation", "stability", "swiftness", "quickness", 
-      "vigor", "control", "daze", "float", "knockback", "knockdown", "launch", "pull", "sink", "stun", "taunt", "agony", "invulnerability", "revealed", "stealth", "buff" };
+    public static readonly SortedSet<string> EffectTags = new SortedSet<string>(){ "alacrity", "condition", "bleeding", "blind", "burning", "chilled", "confusion", "crippled", "fear", "immobilized",
+      "poison", "slow", "torment", "vulnerability", "weakness", "boon", "aegis", "fury", "might", "protection", "regeneration", "resistance", "retaliation", "stability", "swiftness", "quickness",
+      "vigor", "control", "daze", "float", "knockback", "knockdown", "launch", "pull", "sink", "stun", "taunt", "agony", "invulnerability", "revealed", "stealth", "buff",
+      "damage", "fixed damage", "healing", "percent damage"  };
 
     public static string JSFiles { get; private set; }
     public static string CSSFiles { get; private set; }

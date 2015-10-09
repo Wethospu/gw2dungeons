@@ -57,8 +57,7 @@ function handleSearch() {
 	var names = $("#search-name").val().toLowerCase().split(" ");
 	loadSettings(false, false);
 	var searchObject = readParameters();
-	var paths = dungeonsToPaths(searchObject.dungeons);
-	searchIndex(names, searchObject.dungeons, paths, searchObject.categories, searchObject.races, searchObject.tags, $("#search-amount").val());
+	searchIndex(names, dungeonsToPaths(searchObject.dungeons), searchObject.categories, searchObject.races, searchObject.tags, $("#search-amount").val());
 	searchDone = true;
 }
 
@@ -128,7 +127,7 @@ function dungeonsToPaths(dungeons) {
 }
 
 // Performance: Takes up to 250 ms.
-function searchIndex(parameters, dungeons, paths, categories, races, tags, resultCount) {
+function searchIndex(parameters, paths, categories, races, tags, resultCount) {
 	var resultsTop = new Array();
 	var resultsHigh = new Array();
 	var resultsMedium = new Array();
@@ -144,7 +143,7 @@ function searchIndex(parameters, dungeons, paths, categories, races, tags, resul
 				continue;
 			// display name|search name|category|dungeon|path|index
 			var elements = lines[i].split("|");
-			if (elements.length < 8)
+			if (elements.length < 7)
 				continue;
 			// Check category.
 			if (categories.length > 0 && categories.indexOf(elements[2]) == -1)
@@ -152,24 +151,19 @@ function searchIndex(parameters, dungeons, paths, categories, races, tags, resul
 			// Check race.
 			if (races.length > 0 && races.indexOf(elements[3]) == -1)
 				continue;
-			// Check dungeon.
-			if (dungeons.length > 0) {
-				if (dungeons.indexOf(elements[4]) == -1)
-					continue;
-				// Check paths (dungeon -> paths so not relevant at the moment).
-				var elementPaths = elements[5].split(" ");
-				var match = false;
-				for (var j = 0; j < elementPaths.length; j++) {
-					if (paths.indexOf(elementPaths[j]) > -1) {
-						match = true;
-						break;
-					}
+			// Check paths.
+			var elementPaths = elements[4].split(":");
+			var match = paths.length == 0;
+			for (var j = 0; j < elementPaths.length; j++) {
+				if (paths.indexOf(elementPaths[j]) > -1) {
+					match = true;
+					break;
 				}
-				if (!match)
-					continue;
 			}
+			if (!match)
+				continue;
 			// Check tags (all must exist!).
-			if ($(elements[7].split('')).filter(tags).length != tags.length)
+			if ($(elements[6].split('')).filter(tags).length != tags.length)
 				continue;
 			// Check name for relevancy.
 			var namesArray = elements[1].split("_");
@@ -256,8 +250,7 @@ function processResults(results) {
 		var element = {
 			display: dataArray[0],
 			category: dataArray[2],
-			dungeon: dataArray[4],
-			index: dataArray[6],
+			index: dataArray[5],
 			order: i
 		};
 		elements.push(element);
@@ -283,37 +276,31 @@ function displayResults(elements, htmlList) {
 		loadPage();
 		return;
 	}
-	var dungeonToCheck = elements[0].dungeon;
 	var view = $("#search-view").val();
-	var fileLocation = "enemies/enemies.htm";
+	
+	var numberToFind = elements[0].index;
+	var fileNumber = Math.floor(numberToFind / 100);
+	numberToFind -= fileNumber * 100;
 	var fileDiv = $("<div />");
-	$(fileDiv).load(fileLocation, function () {
+	$(fileDiv).load('enemies/enemies' + fileNumber + '.htm', function () {	
 		// Find enemies.
-		var indexCounter = -1;
-		var elementCounter = 0;
+		var counter = -1;
 		$(fileDiv).find(".enemy").each(function () {
-			indexCounter++;
-			if (elementCounter >= elements.length)
+			counter++;
+			if (counter != numberToFind)
 				return;
-			if (indexCounter != elements[elementCounter].index)
-				return;
-			// Verify the dungeon.
-			if (elements[elementCounter].dungeon != dungeonToCheck)
-				return;
-			
 			// Build enemy link.
-			var str = '<span class="' + elements[elementCounter].category + ' enemy-button" data-dungeon="' + elements[elementCounter].dungeon
-				+ '" data-index="' + elements[elementCounter].index + '"><h3>' + elements[elementCounter].display + '</h3></span>\n';
+			var str = '<span class="' + elements[0].category + ' enemy-button" data-dungeon="' + elements[0].dungeon
+				+ '" data-index="' + elements[0].index + '"><h3>' + elements[0].display + '</h3></span>\n';
 			if (view == "All")
 				str += '<br/>\n' + $(this).html();
 			else if (view == "Info")
 				str += '<br/>\n' + $(".in-line", this).html();
 			str += '\n<br/><hr/>\n';
-			htmlList[elements[elementCounter].order] = str;
-			elementCounter++;
+			htmlList[elements[0].order] = str;
 		});
 		// Remove loaded elements.
-		elements.splice(0, elementCounter);
+		elements.splice(0, 1);
 		displayResults(elements, htmlList);
 	}).error(function (jqXHR, textStatus, errorThrown) {
 		console.log("error " + textStatus);

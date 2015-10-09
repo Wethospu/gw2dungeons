@@ -635,7 +635,7 @@ namespace DataCreator.Enemies
       foreach (var enemy in enemies)
       {
         indexFile.Append(enemy.Name).Append("|").Append(Helper.Simplify(enemy.Name)).Append("|").Append(enemy.Rank);
-        indexFile.Append("|").Append(enemy.Attributes.Family).Append("|").Append(LinkGenerator.CurrentDungeon.ToLower()).Append("|").Append(string.Join(":", enemy.Paths));
+        indexFile.Append("|").Append(enemy.Attributes.Family.GetDisplay()).Append("|").Append(string.Join(":", enemy.Paths));
         // Store index so that the enemy can be found faster when searching.
         indexFile.Append("|").Append(enemy.Index);
         // Generate tag string. / 2015-07-18 / Wethospu

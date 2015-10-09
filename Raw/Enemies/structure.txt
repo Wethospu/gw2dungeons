@@ -216,6 +216,7 @@ subeffect=protection:6
 Name=Crystal
 alt=Crystals
 type=no type
+category=structure
 # Scaling not verified.
 scaling=constant
 health=7470

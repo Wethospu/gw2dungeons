@@ -160,6 +160,29 @@ namespace DataCreator
         display = "Undead";
       if (display.Equals("Scarlet Minion"))
         display = "Aetherblade";
+      if (display.Equals("Fleshreaver"))
+        display = "Demon";
+      if (display.Equals("Icebrood Minion"))
+        display = "Icebrood";
+      if (display.Equals("Flame Legion Charr"))
+        display = "Flame Legion";
+      if (display.StartsWith("Twisted Watchwork"))
+        display = "Twisted Watchwork";
+      if (display.Equals("") && !Guid.Equals(""))
+      {
+        if (Guid.Equals("e36b4acd-94fc-4710-94d7-b5b7176a5925"))
+          display = "Ambient";
+        else if (Guid.Equals("2dbe609b-56fd-4cae-9f9a-ba44430713b9"))
+          display = "Robot";
+        else if (Guid.Equals("59ba03e5-fb06-4f56-bfc4-846e1f07135b"))
+          display = "Soldier";
+        else if (Guid.Equals("0867b7c7-e5e6-4481-80ae-43c0ed9243be") || Guid.Equals("c49acb88-bd59-462d-acd1-bb196d998490"))
+          display = "Other";
+        else if (Guid.Equals("4294cd11-911b-47bc-b3b1-2cc6ad435f28"))
+          display = "Molten";
+        else
+          Helper.ShowWarningMessage("Race with guid " + Guid + " not handled.");
+      }       
       return display.Replace(" ", Constants.Space);
     }
   }
