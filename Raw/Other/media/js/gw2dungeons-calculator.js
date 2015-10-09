@@ -259,7 +259,14 @@ function getDamage(damage, weapon, potion, dungeonLevel) {
         min: Math.floor(damage * weapon.min / armor * (1 - potion)),
 		avg: Math.floor(damage * weapon.avg / armor * (1 - potion)),
         max: Math.floor(damage * weapon.max / armor * (1 - potion))
-    };;
+    };
+}
+
+function getDamageWithoutWeapon(damage, potion, dungeonLevel) {
+    // Not accurate because of weird armor scaling.
+	var armor = Math.floor(getArmorScale(dungeonLevel) * playerArmor);
+	// Damage gets floored.
+	return Math.floor(damage / armor * (1 - potion));
 }
 
 function getAgonyDamage(second) {

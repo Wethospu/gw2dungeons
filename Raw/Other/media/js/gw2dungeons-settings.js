@@ -412,15 +412,23 @@ function handleEnemy(enemy) {
     }
 
     $(enemy).find(".damage-value").each(function () {
-		var damage = fractalScaleDamage($(this).attr("data-amount") * power, fractalLevel, scalingType)
-		var weaponSlot = $(this).attr("data-weapon");
-		if (weaponSlot == "water")
-			var damages = getDamage(damage, weaponStrengthWater, potionStrength, dungeonLevel);
-		else if (weaponSlot == "off")
-			var damages = getDamage(damage, weaponStrengthOff, potionStrength, dungeonLevel);
-		else
-			var damages = getDamage(damage, weaponStrengthMain, potionStrength, dungeonLevel);
-        insertDamageRange(this, damages, damageView, damageRange, dungeonLevel);
+		var damage = $(this).attr("data-amount");
+		// Check is damage hard coded (over 100).
+		if (damage < 100) {
+			damage = fractalScaleDamage(damage * power, fractalLevel, scalingType)
+			var weaponSlot = $(this).attr("data-weapon");
+			if (weaponSlot == "water")
+				var damages = getDamage(damage, weaponStrengthWater, potionStrength, dungeonLevel);
+			else if (weaponSlot == "off")
+				var damages = getDamage(damage, weaponStrengthOff, potionStrength, dungeonLevel);
+			else
+				var damages = getDamage(damage, weaponStrengthMain, potionStrength, dungeonLevel);
+			insertDamageRange(this, damages, damageView, damageRange, dungeonLevel);
+		}
+		else {
+			damage = getDamageWithoutWeapon(fractalScaleDamage(damage, fractalLevel, scalingType), potionStrength, dungeonLevel);
+			insertDamage(this, damage, damageView, dungeonLevel);
+		}
     });
     $(enemy).find(".percent-value").each(function () {
         var damage = getPercentage((Number)($(this).attr("data-amount")), dungeonLevel);
