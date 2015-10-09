@@ -395,13 +395,9 @@ subeffect=Healing:0
 # Other.                                                         #
 ##################################################################
 
-Name=Dredge Soldier (Weapon)
+name=Dredge Weapon Bundle
 ID=10006
-alt=Dredge Soldiers (Weapon)|Soldier (Weapon)|Soldiers (Weapon)
 Path=SES
-
-tactic=normal
-Becomes a normal enemy=Soldier:elite after attacking enough times.
 
 attack=immune to blind
 
@@ -435,6 +431,24 @@ subeffect=damage:0.5
 subeffect=launch:3.3
 effect=moves back
 #note=be ready to block or evade at close range
+
+#############################
+
+copy=Dredge Weapon Bundle
+Name=Dredge Reverberant (Weapon)
+alt=Dredge Reverberant (Weapon)|Reverberant (Weapon)|Reverberant (Weapon)
+
+attack=Becomes a normal enemy=Reverberant_(Sonic):elite after attacking enough times.
+
+
+#############################
+
+copy=Dredge Weapon Bundle
+Name=Dredge Soldier (Weapon)
+alt=Dredge Soldiers (Weapon)|Soldier (Weapon)|Soldiers (Weapon)
+
+attack=Becomes a normal enemy=Soldier:elite after attacking enough times.
+
 
 ##################################################################
 
@@ -538,7 +552,6 @@ name=Molten Oscillator
 ID=12089
 alt=Molten Oscillators
 image=http://wiki.guildwars2.com/images/c/cb/Molten_Oscillator.jpg
-type=molten
 scaling=level
 path=Furn
 
@@ -546,7 +559,7 @@ path=Furn
 
 name=Dredge Reverberant (Sonic)
 ID=13626
-alt=Dredge Reverberants (Sonic)
+alt=Dredge Reverberants (Sonic)|Reverberant (Sonic)|Reverberants (Sonic)
 image=http://wiki.guildwars2.com/images/c/c3/Veteran_Dredge_Reverberant.jpg
 scaling=normal
 path=Under
@@ -582,7 +595,7 @@ subeffect=vulnerability:8
 copy=13626
 # Internal: Different skill ID (no difference).
 ID=10006
-Path=SE2|SE3
+Path=SES|SE2|SE3
 
 #############################
 

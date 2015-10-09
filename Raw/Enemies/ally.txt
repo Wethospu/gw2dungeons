@@ -787,14 +787,14 @@ path=HotW1|HotW2|HotW3
 name=Kodan Snowcaller
 category=ally
 path=HotW1|HotW2|HotW3
-health=15774
+health=0.8
 
 ##################################################################
 
 name=Kodan Icehammer
 category=ally
 path=HotW1|HotW2|HotW3
-health=15774
+health=0.8
 
 ##################################################################
 # NPCS
@@ -1341,7 +1341,7 @@ category=ally
 image=http://wiki.guildwars2.com/images/5/5b/Rox.jpg
 # Scaling not verified.
 scaling=constant
-health=68817
+health=3,5
 path=Furn|Molten
 
 ##################################################################
@@ -1351,7 +1351,7 @@ category=ally
 image=http://wiki.guildwars2.com/images/b/b8/Braham_Eirsson.jpg
 # Scaling not verified.
 scaling=constant
-health=68817
+health=3,5
 path=Furn|Molten
 
 ##################################################################
@@ -1361,5 +1361,5 @@ category=ally
 image=http://wiki.guildwars2.com/images/9/9d/Frostbite.jpg
 # Scaling not verified.
 scaling=constant
-health=39327
+health=2
 path=Furn|Molten

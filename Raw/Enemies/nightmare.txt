@@ -759,8 +759,8 @@ name=Nightmare Tree
 alt=Tree
 image=http://wiki.guildwars2.com/images/6/63/Nightmare_Tree.jpg
 path=TAF
-health=519000
-type=nightmare court
+health=62.7266
+race=other
 category=legendary
 
 attack=cannot be moved
@@ -794,8 +794,8 @@ name=Nightmare Tree
 alt=Tree
 image=http://wiki.guildwars2.com/images/6/63/Nightmare_Tree.jpg
 path=TAU
-health=519000
-type=nightmare court
+health=62.7266
+race=other
 category=legendary
 
 attack=cannot be moved

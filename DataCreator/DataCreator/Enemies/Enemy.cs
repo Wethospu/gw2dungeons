@@ -177,7 +177,7 @@ namespace DataCreator.Enemies
       var genders = Attributes.Gender.Split('|');
       for (int i = 0; i < genders.Length; i++)
       {
-        if (genders[i].Equals("none"))
+        if (genders[i].Equals("none") || genders[i].Equals(""))
           continue;
         htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"gender-unit\"><span class=").Append(Constants.IconClass).Append("title=\"").Append(genders[i]).Append("\">").Append(Helper.ToUpper(genders[i])).Append("</span></span>").Append(Constants.LineEnding);
       }
@@ -209,7 +209,8 @@ namespace DataCreator.Enemies
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"ferocity-unit\"><span class=").Append(Constants.IconClass).Append("title=\"ferocity\">Critical damage</span>:").Append(Constants.Space).Append("<span class=\"ferocity\"></span>%  </span>").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"condition-unit\"><span class=").Append(Constants.IconClass).Append("title=\"condition\">Condition damage</span>:").Append(Constants.Space).Append("<span class=\"condition\"></span> </span>").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"healing-unit\"><span class=").Append(Constants.IconClass).Append("title=\"healing_power\">Healing power</span>:").Append(Constants.Space).Append("<span class=\"healing-power\"></span> </span>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"size-unit\"><span class=").Append(Constants.IconClass).Append("title=\"size\">Size</span>:").Append(Constants.Space).Append(Math.Round(Attributes.Size * 100)).Append("%</span>").Append(Constants.LineEnding);
+      if (Attributes.Size > 0)
+        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"size-unit\"><span class=").Append(Constants.IconClass).Append("title=\"size\">Size</span>:").Append(Constants.Space).Append(Math.Round(Attributes.Size * 100)).Append("%</span>").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(3)).Append("</div>").Append(Constants.LineEnding);
       // Add tactics. / 2015-08-09 / Wethospu
       htmlBuilder.Append(Tactics.ToHtml(Index, string.Join("|", Paths), enemies, 3));

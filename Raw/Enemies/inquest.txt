@@ -6,6 +6,8 @@ Name=Inspector Snik
 ID=6079
 Path=SES
 
+attack=Can't move or be moved.
+
 attack=Swaps to a flamethrower at 50%
 
 attack=Body Shot (Pistol)
@@ -38,10 +40,53 @@ subeffect=Burning:0
 ##################################################################
 
 Name=Overseer Kolt
+ID=10454
 Path=SES
-# Verified.
-category=champion
-type=inquest
+
+attack=Wrench Toss
+ID=2196
+effect=projectile
+subeffect=damage:-
+
+attack=Summon
+ID=2202
+effect=Summon enemy=Thumper_Turret:structure
+
+#############################
+
+copy=10454
+Name=Inquest Worker
+Path=SE1
+
+##################################################################
+
+Name=Inquest Advanced Defense Golem
+ID=8425
+Path=SES
+
+attack=Can't move or be moved.
+
+attack=Snik Guardian Golem Bubble
+ID=4545
+effect=buff:projectile_reflection for nearby allies
+
+attack=Launch Fist
+ID=11745
+effect=projectile
+subeffect=damage:-
+subeffect=pull:0
+
+attack=Whirling Assault
+ID=4651
+effect=3 melee hits in 3 s
+count=4
+length=3
+subeffect=damage:-
+subeffect=knockback:1.5
+
+attack=Self-Repair
+ID=4559
+effect=healing:0
 
 ##################################################################
 
@@ -710,21 +755,6 @@ subeffect=knockback:0
 
 ##################################################################
 
-Name=Inquest Worker
-ID=10454
-Path=SE1
-
-attack=Wrench Toss
-ID=2196
-effect=projectile
-subeffect=damage:-
-
-attack=Summon
-ID=2202
-effect=Summon enemy=Thumper_Turret:structure
-
-##################################################################
-
 Name=Mark I Golem
 ID=10456
 image=http://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
@@ -808,7 +838,6 @@ Name=Inquest Assistant
 ID=9658
 image=http://wiki.guildwars2.com/images/4/4e/Inquest_Assistant.jpg
 Path=SES|SE1|COES|CoE1|CoE2|CoE3
-type=inquest
 
 attack=Impale
 ID=2172
@@ -1539,7 +1568,6 @@ Name=Mark I Golem
 ID=9663
 alt=Mark I Golems|I Golem|I Golems
 image=https://wiki.guildwars2.com/images/a/a9/Mark_I_Golem.jpg
-type=inquest
 Path=CoES|CoE1|CoE2|CoE3
 
 attack=Punch

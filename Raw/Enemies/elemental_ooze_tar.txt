@@ -497,11 +497,10 @@ subeffect=vulnerability:1
 ##################################################################
 
 name=Ember
-# Health and scaling not verified.
+# TODO Get real ID.
+ID=10854
 scaling=normal
-health=46061
-type=elemental
-category=veteran
+race=elemental
 path=Furn
 
 attack=Immune to burning
@@ -620,8 +619,7 @@ Name=Jade Maw
 image=http://wiki.guildwars2.com/images/1/12/Jade_Maw.jpg
 Path=Solid
 scaling=constant
-health=14940
-type=elemental
+health=0.76
 category=legendary
 
 attack=Laser
@@ -642,8 +640,7 @@ Name=Jade Maw (Enraged)
 alt=Enraged
 Path=Solid
 scaling=constant
-type=elemental
-health=14940
+health=0.76
 category=legendary
 
 attack=Laser

@@ -336,10 +336,53 @@ namespace DataCreator.Enemies
         if (data.Length > 0)
           _currentEnemy.Tactics.AddTactics(data);
         else
-          Helper.ShowWarning("Missing info. Use \"tactic='tactic1'|'tactic2'|'tacticN'\"!");
+          Helper.ShowWarning("Missing info. Use \"tactic='tactic1'|'tactic2'|'tacticN'\".");
       }
-      else if (tag.Equals("type") || tag.Equals("health") || tag.Equals("armor") || tag.Equals("condition") || tag.Equals("toughness"))
+      else if (tag.Equals("health"))
       {
+        if (data.Length > 0)
+        {
+          _currentEnemy.Attributes.Multipliers.HealthMultiplier = Helper.ParseD(data);
+          if (Helper.ParseD(data) > 1000)
+            Helper.ShowWarning("Health values should be multipliers. Calculate the multiplier.");
+        }
+        else
+          Helper.ShowWarning("Missing info. Use \"health='amount'.");
+      }
+      else if (tag.Equals("toughness"))
+      {
+        if (data.Length > 0)
+        {
+          _currentEnemy.Attributes.Multipliers.Toughness = Helper.ParseD(data);
+          if (Helper.ParseD(data) > 100)
+            Helper.ShowWarning("Toughness values should be multipliers. Calculate the multiplier.");
+        }
+        else
+          Helper.ShowWarning("Missing info. Use \"toughness='amount'.");
+      }
+      else if (tag.Equals("armor"))
+      {
+        Helper.ShowWarning("Armor values shouldn't be used. Calculate the toughness multiplier.");
+      }
+      else if (tag.Equals("condition"))
+      {
+        if (data.Length > 0)
+        {
+          _currentEnemy.Attributes.Multipliers.ConditionDamage = Helper.ParseD(data);
+          if (Helper.ParseD(data) > 100)
+            Helper.ShowWarning("Condition damage values should be multipliers. Calculate the multiplier.");
+        }
+        else
+          Helper.ShowWarning("Missing info. Use \"condition='amount'.");
+      }
+      else if (tag.Equals("race"))
+      {
+        if (data.Length > 0)
+        {
+          _currentEnemy.Attributes.Family.Name = data;
+        }
+        else
+          Helper.ShowWarning("Missing info. Use \"race='value'.");
       }
       else if (tag.Equals("tag"))
       {

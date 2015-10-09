@@ -198,7 +198,6 @@ subeffect=enemy=Siege_Devourer:elite
 Name=Siege Commander
 ID=7284
 Path=CoF3
-type=flame legion
 
 attack=Explosive Shot
 ID=3317
@@ -1168,9 +1167,9 @@ effect=buff:invulnerable while Altar is alive
 Name=Shadow Imp
 alt=Shadow Imps
 Path=CoF3
-type=imp
+race=imp
 category=normal
-condition=600
+condition=8
 
 attack=Shadow Bolt
 animation=Swings right arm|2.75

@@ -724,19 +724,18 @@ ID=8880
 
 Name=Bandit Enforcer
 alt=Bandit Enforcers|Enforcer|Enforcers
-# Not verified.
-health=43416
+# TODO ID
+ID=8879
 Path=CM1|CM2|CM3
-type=outlaw
 category=elite
 
 ##################################################################
 
 Name=Bandit Enforcer
 # TODO ID
+ID=8878
 alt=Bandit Enforcers|Enforcer|Enforcers
 Path=CM1|CM2|CM3
-type=outlaw
 category=normal
 
 ##################################################################
@@ -1049,10 +1048,7 @@ ID=11290|11289
 alt=Novices (Dagger)
 image=http://wiki.guildwars2.com/images/9/91/Novice.jpg
 path=Cliff
-# Scaling unverified.
 scaling=normal
-health=11516
-type=outlaw
 
 attack=Runs away when at low health
 
@@ -1969,9 +1965,7 @@ Name=Ascalonian Squire
 ID=11409
 alt=Squire
 scaling=normal
-health=46061
 Path=Urban
-type=no type
 
 attack=Stab
 ID=14494

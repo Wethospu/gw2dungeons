@@ -745,7 +745,6 @@ ID=10533
 alt=Alphards
 image=http://wiki.guildwars2.com/images/4/43/Risen_Prince_Nekandezzar.jpg
 path=Arah2
-health=15774
 
 attack=Vital Shot
 ID=5195
@@ -1847,8 +1846,6 @@ name=Wraithlord
 ID=8515
 path=Arah3
 image=http://wiki.guildwars2.com/images/0/04/Risen_Wraith.jpg
-health=1376340
-type=undead
 
 attack=Slash
 ID=4245
@@ -1979,8 +1976,6 @@ ID=10438
 alt=Vahid
 image=http://wiki.guildwars2.com/images/a/a2/Legendary_Risen_Priest_of_Melandru.jpg
 path=Arah4
-health=1376340
-type=undead
 
 attack=cannot be moved
 
@@ -2040,7 +2035,6 @@ effect=summons illusion based on target profession
 name=Farnaz, High Priestess of Lyssa (clone)
 ID=10782
 path=Arah4
-type=undead
 
 attack=Winds of Chaos
 ID=11157

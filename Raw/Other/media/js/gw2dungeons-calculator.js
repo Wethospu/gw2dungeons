@@ -344,7 +344,7 @@ function getHealth(level, multiplier1, multiplier2) {
       8580, 8780, 8980, 9180, 9380, 9580, 9780, 9980,10180,10380,
       10580
 	];
-	return Math.ceil(multiplier2 * Math.ceil(0.9 * baseHealth[level] - 0.001) + getAttribute(level, multiplier1) - 0.001);
+	return Math.ceil(multiplier2 * Math.ceil(0.9 * baseHealth[level] - 0.001) + 10 * getAttribute(level, multiplier1) - 0.001);
 }
 
 function getCriticalChance(level, multiplier, targetLevel) {

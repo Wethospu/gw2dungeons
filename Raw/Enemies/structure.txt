@@ -9,7 +9,7 @@
 name=Weapon Testing Core
 alt=Core|Crushers
 scaling=constant
-health=59760
+health=3.03936
 category=structure
 path=Furn
 toughness=5.3
@@ -63,7 +63,7 @@ name=Elemental Source
 category=structure
 path=Snow
 scaling=constant
-health=272655
+health=13.8671
 toughness=0.67
 
 attack=May target lit bonfires
@@ -113,7 +113,7 @@ effect=summon 5 enemy=Ice_Elementals:veteran
 #category=structure
 #path=Snow
 #scaling=constant
-#health=7470
+#health=0.3799
 #toughness=0.67
 
 #attack=May target lit bonfires
@@ -141,7 +141,7 @@ name=Undead Tendril
 alt=Undead Tendrils|Tendril|Tendrils
 path=Arah3
 category=structure
-health=14940
+health=0.7598
 
 attack=Kill to rally
 
@@ -158,7 +158,7 @@ Name=Undead Tendril
 alt=Undead Tendrils
 Category=structure
 Path=CoES
-health=14940
+health=0.7598
 
 attack=Fling
 animation=straightens up, bends to other side and tilts to side|2.25
@@ -190,7 +190,7 @@ Category=structure
 Path=Volc
 # Scaling unverified.
 scaling=constant
-health=7470
+health=0.3799
 
 attack=Aura
 effect=aura
@@ -204,7 +204,7 @@ Name=Earth Totem
 Category=structure
 Path=Volc
 scaling=constant
-health=7470
+health=0.3799
 
 attack=Aura
 effect=aura
@@ -215,11 +215,10 @@ subeffect=protection:6
 
 Name=Crystal
 alt=Crystals
-type=no type
 category=structure
 # Scaling not verified.
 scaling=constant
-health=7470
+health=0.3799
 Path=Snow
 toughness=0.67
 
@@ -240,7 +239,7 @@ name=Razorthorn Patch
 alt=Razorthorn Patches
 path=CoE2
 category=structure
-condition=70
+condition=1
 
 attack=Touching
 effect=when touched
@@ -250,9 +249,8 @@ subeffect=bleeding:20 per tick. Instantly explodes any subverted enemy=Unstable_
 
 Name=Ice Shard
 Category=structure
-# Scaling not verified.
 scaling=constant
-health=50
+health=0.0025
 Path=HotWS|HotW1|Snow
 
 attack=Effect
@@ -282,8 +280,8 @@ subeffect=buff:Soothing_Mist per tick (stacks 25 times)
 Name=Imprisonment Crystal
 Category=structure
 Path=CoES|CoE1|CoE2|CoE3
-health=7470
-condition=960
+health=0.3799
+condition=12
 
 attack=Effect
 effect=debuff (30 s)
@@ -302,13 +300,13 @@ subeffect=bleeding:30:5
 Name=Barrier Turret
 Category=structure
 Path=SE1
-health=10200
+health=0.86719
 
 ##################################################################
 
 Name=Flame Turret
 Category=structure
-health=6120
+health=0.5203
 Path=SE1
 
 attack=Flame On
@@ -322,8 +320,8 @@ Name=Flame Turret
 alt=Flame Turrets
 Category=Structure
 Path=CM1|CM2|CM3
-health=5260
-condition=160
+health=0.9742
+condition=3.5
 
 Attack=Can't rotate
 
@@ -338,7 +336,7 @@ subeffect=burning:4
 
 Name=Rifle Turret
 alt=Rifle Turrets|Rifle
-health=5260
+health=0.9742
 Category=Structure
 Path=CM1|CM2|CM3
 
@@ -353,8 +351,8 @@ subeffect=damage:724632
 
 Name=Thumper Turret
 Category=structure
-Path=SE1
-health=8160
+Path=SES|SE1
+health=0.6937
 
 attack=Smash
 effect=PBAoE
@@ -393,7 +391,7 @@ subeffect=immobilized:1
 
 Name=Net Turret
 alt=Net Turrets
-health=8650
+health=1.602
 Category=Structure
 Path=CM1|CM2|CM3
 
@@ -409,7 +407,7 @@ name=Orrian Guard Turret
 alt=Orrian Guard Turrets|Turrets
 image=http://wiki.guildwars2.com/images/b/b6/Orrian_Guard_Turret.jpg
 path=Arah1|Arah2|Arah3|Arah4
-health=14940
+health=0.7598
 category=structure
 
 attack=Machine Gun Fire
@@ -442,7 +440,7 @@ subeffect=burning:3
 
 Name=Corrupted Ice Turret
 alt=Corrupted Ice Turrets
-health=44820
+health=2.2795
 Category=structure
 Path=HotWS|HotW1|HotW3
 
@@ -469,7 +467,7 @@ subeffect=chilled:4
 copy=Corrupted Ice Turret
 Name=Corrupted Ice Turret (Weak)
 alt=Corrupted Ice Turretss (Weak)
-health=29880
+health=1.51968
 Category=structure
 Path=HotWS|HotW1|HotW3
 
@@ -560,7 +558,7 @@ alt=Spell Blossoms
 category=structure
 image=http://wiki.guildwars2.com/images/b/bf/Spell_Blossom.jpg
 path=TAS
-health=1590
+health=0.2355
 
 attack=Nightmare Mortar
 image=http://fat.gfycat.com/DefensiveEthicalDogfish.gif
@@ -591,7 +589,7 @@ name=Risen Hand
 alt=Risen Hands|Hand|Hands
 path=Arah3|Arah4
 category=structure
-health=14940
+health=0.7598
 
 attack=Kill to rally
 
@@ -607,7 +605,7 @@ Name=Mortar
 alt=Mortars
 Category=structure
 Path=SES|SE2|SE3
-health=10510
+health=0.8935
 
 ##################################################################
 
@@ -654,7 +652,7 @@ name=Gargoyle Head
 image=http://wiki.guildwars2.com/images/e/ed/Gargoyle_Head.jpg
 alt=Gargoyle Heads
 Category=Structure
-health=6840
+health=1.9437
 toughness=1.1
 Path=AC1|AC2|AC3
 
@@ -672,9 +670,9 @@ name=Volatile Blossom
 alt=Volatile Blossoms|Blossom|Blossoms
 image=http://wiki.guildwars2.com/images/2/20/Volatile_Blossom.jpg
 category=structure
-path=TAS|TAF|TAU|TAAE
-health=173
-condition=200
+path=TAS|TAF|TAU|TAAE|CoE2
+health=0.0256
+condition=4
 
 attack=Poison Cloud
 image=http://fat.gfycat.com/OpulentPalatableBlueandgoldmackaw.gif
@@ -689,26 +687,6 @@ effect=self destruct
 #note=respawns periodically
 #note=use to rally
 
-##################################################################
-
-name=Volatile Blossom
-alt=Volatile Blossoms
-image=http://wiki.guildwars2.com/images/2/20/Volatile_Blossom.jpg
-path=CoE2
-category=structure
-condition=200
-
-attack=Poison Cloud
-additional=used when stepped
-# Verify.
-effect=6 PBAoEs in 0.5 s
-count=6
-length=0.5
-subeffect=damage-percent:3
-subeffect=poison:1
-
-effect=self destruct
-#note=regenerates?
 
 ##################################################################
 
@@ -727,7 +705,7 @@ subeffect=regeneration
 Name=Arrow Cart
 alt=Arrow Carts
 scaling=constant
-health=14940
+health=0.7598
 toughness=0.67
 Category=structure
 Path=Urban
@@ -742,7 +720,7 @@ subeffect=damage:0
 Name=Arrow Cart (Strong)
 alt=Arrow Carts (Strong)
 scaling=constant
-health=14940
+health=0.7598
 toughness=0.67
 Category=structure
 Path=Urban
@@ -757,7 +735,7 @@ subeffect=damage:0
 Name=Ballista
 alt=Ballistas
 scaling=constant
-health=14940
+health=0.7598
 toughness=0.67
 Category=structure
 Path=Urban
@@ -775,7 +753,7 @@ Name=Ballista (Rapid)
 alt=Ballistas (Rapid)
 scaling=constant
 toughness=0.67
-health=14940
+health=0.7598
 Category=structure
 Path=Urban
 
@@ -793,7 +771,7 @@ subeffect=knockback:1.5
 Name=Burning Oil
 alt=Burning Oils
 scaling=constant
-health=14940
+health=0.7598
 toughness=0.67
 condition=0
 Category=structure
@@ -1100,7 +1078,7 @@ alt=Boulders
 Category=trap
 # Scaling unverified.
 scaling=normal
-health=11516
+health=0.58569
 Path=Volc
 
 attack=Invulnerable
@@ -1280,7 +1258,7 @@ Name=Environment
 alt=traps
 Category=trap
 Path=Swamp
-condition=250
+condition=3
 
 attack=Tripwire
 image=http://giant.gfycat.com/BigSadDrever.gif
@@ -1392,7 +1370,7 @@ subeffect=resurrect dead allies and teleport them to your location
 name=Cultist Hammer
 category=bundle
 path=Cliff
-condition=250
+condition=3
 
 attack=Picking up
 effect=at 0 stacks
@@ -1456,7 +1434,7 @@ Name=Dredge Carrier
 Category=structure
 image=http://wiki.guildwars2.com/images/6/60/Dredge_Personnel_Carrier.jpg
 Path=SE3
-health=329000
+health=27.9714
 
 ##################################################################
 
@@ -1484,7 +1462,7 @@ effect=summon enemy=text:Devourer|Carrion_Devourer:normal|Lashtail_Devourer:norm
 name=Burrow (Start)
 Category=structure
 Path=AC1|AC2|AC3
-health=13680
+health=3.8874
 
 attack=Summons enemy=graveling_hatchlings:normal
 
@@ -1494,7 +1472,7 @@ name=Burrow (Scepter)
 alt=Burrows (Scepter)
 Category=structure
 Path=AC1
-health=7695
+health=2.1867
 
 attack=Summons enemy=graveling_hatchlings:normal and other stuff
 
@@ -1504,7 +1482,7 @@ name=Burrow (collector)
 alt=Burrows (collector)
 Category=structure
 Path=AC3
-health=7695
+health=2.1867
 
 attack=Summons enemy=graveling_hatchlings:normal and other stuff
 
@@ -1514,7 +1492,7 @@ name=Burrow (big)
 alt=Burrows (big)
 Category=structure
 Path=AC3
-health=7695
+health=2.1867
 
 attack=Summons enemy=graveling_hatchlings:normal and other stuff
 
@@ -1540,7 +1518,7 @@ path=TAAE
 Name=Blockade
 Category=structure
 Path=SE3
-health=10510
+health=0.8935
 
 ##################################################################
 
@@ -1554,7 +1532,7 @@ category=structure
 Name=Proximity Alarm Device
 Category=structure
 Path=CoES
-health=14940
+health=0.819
 
 ##################################################################
 
@@ -1589,9 +1567,8 @@ attack=Does nothing
 name=Cage
 category=structure
 path=Cliff
-# Scaling unverified.
 scaling=constant
-health=4482
+health=0.22795
 
 ##################################################################
 
@@ -1599,9 +1576,9 @@ name=Seal
 alt=Seals
 category=structure
 path=Cliff
-# Scaling unverified.
 scaling=constant
-health=14940
+health=0.7598
+
 
 attack=Takes no damage from normal attacks
 #note=Use Hammer skill 4.
@@ -1613,7 +1590,7 @@ alt=Unstable portals|portal|portals
 category=structure
 Path=Thauma
 scaling=constant
-health=14940
+health=0.7598
 
 attack=Gravity Well
 effect=PBAoE
@@ -1626,7 +1603,7 @@ Name=Power Generator
 alt=Generator
 Category=structure
 scaling=constant
-health=14940
+health=0.7598
 toughness=0.67
 Path=Uncat
 
@@ -1634,7 +1611,7 @@ Path=Uncat
 
 Name=Gate
 scaling=constant
-health=149400
+health=7.5984
 toughness=0.67
 Category=structure
 Path=Urban

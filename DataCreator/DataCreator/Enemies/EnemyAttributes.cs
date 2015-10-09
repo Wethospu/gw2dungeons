@@ -17,7 +17,7 @@ namespace DataCreator
       Flag = 0;
       Multipliers = new Multipliers();
       Gender = "";
-      Size = 1.0;
+      Size = 0.0;
       Family = new Family();
       Passive = new Passive();
       Weapons = new Weapons();
@@ -85,6 +85,17 @@ namespace DataCreator
 
   public class Multipliers
   {
+    public Multipliers()
+    {
+      Power = 1.0;
+      Precision = 1.0;
+      Toughness = 1.0;
+      Vitality = 1.0;
+      Ferocity = 0.0;
+      HealingPower = 1.0;
+      ConditionDamage = 1.0;
+      HealthMultiplier = 1.0;
+    }
 
     [JsonProperty("power")]
     public double Power { get; set; }

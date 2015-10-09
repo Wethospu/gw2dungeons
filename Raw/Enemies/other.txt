@@ -140,7 +140,7 @@ subeffect=damage:615384
 name=Flying Raptor
 image=http://wiki.guildwars2.com/images/f/f3/Flying_Raptor.jpg
 path=Arah1|Arah2|Arah3|Arah4
-type=no type
+race=other
 category=legendary
 
 attack=???
