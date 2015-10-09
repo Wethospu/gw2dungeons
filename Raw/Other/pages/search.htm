@@ -277,7 +277,6 @@ function displayResults(elements, htmlList) {
 		return;
 	}
 	var view = $("#search-view").val();
-	
 	var numberToFind = elements[0].index;
 	var fileNumber = Math.floor(numberToFind / 100);
 	numberToFind -= fileNumber * 100;
@@ -292,10 +291,12 @@ function displayResults(elements, htmlList) {
 			// Build enemy link.
 			var str = '<span class="' + elements[0].category + ' enemy-button" data-dungeon="' + elements[0].dungeon
 				+ '" data-index="' + elements[0].index + '"><h3>' + elements[0].display + '</h3></span>\n';
-			if (view == "All")
-				str += '<br/>\n' + $(this).html();
-			else if (view == "Info")
-				str += '<br/>\n' + $(".in-line", this).html();
+			if (view == "Info") {
+				$(this).find("div").remove(":not(.in-line)");
+				$(this).find("p").remove("p");
+			}
+			if (view == "All" || view == "Info")	
+				str += '<br/>\n' + $(this)[0].outerHTML;
 			str += '\n<br/><hr/>\n';
 			htmlList[elements[0].order] = str;
 		});
