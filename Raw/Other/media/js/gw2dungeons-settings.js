@@ -318,7 +318,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".cooldown-unit").hide();
 	
 	var power = getAttribute(level, $(enemy).attr("data-power"));
-	if (getSetting("showPower")) {
+	if (getSetting("showPower") && !isNaN(power)) {
 		$(enemy).find(".power-unit").show();
 		$(enemy).find(".power").html(power);
 	}	
@@ -328,7 +328,7 @@ function handleEnemy(enemy) {
 	var criticalChance = getCriticalChance(level, $(enemy).attr("data-precision"), playerLevel);
 	if (rank == "elite" || rank == "champion" || rank == "legendary")
 		criticalChance = 0;
-	if (getSetting("showPrecision")) {
+	if (getSetting("showPrecision") && !isNaN(criticalChance)) {
 		$(enemy).find(".precision-unit").show();
 		$(enemy).find(".precision").html(criticalChance);
 	}	
@@ -336,7 +336,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".precision-unit").hide();
 	
 	var armor = getArmor(level, $(enemy).attr("data-toughness"));
-	if (getSetting("showArmor")) {
+	if (getSetting("showArmor") && !isNaN(armor)) {
 		$(enemy).find(".armor-unit").show();
 		$(enemy).find(".armor").html(armor);
 	}	
@@ -345,7 +345,7 @@ function handleEnemy(enemy) {
 	
 	var health = getHealth(level, $(enemy).attr("data-vitality"), $(enemy).attr("data-health"));
 	health = fractalScaleHealth(health, fractalLevel, scalingType);
-	if (getSetting("showHealth")) {
+	if (getSetting("showHealth") && !isNaN(health)) {
 		$(enemy).find(".health-unit").show();
 		$(enemy).find(".health").html(health);
 	}
@@ -353,7 +353,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".health-unit").hide();
 	
 	var criticalDamage = getCriticalDamage(level, $(enemy).attr("data-ferocity"));
-	if (getSetting("showFerocity")) {
+	if (getSetting("showFerocity") && !isNaN(criticalDamage)) {
 		$(enemy).find(".ferocity-unit").show();
 		$(enemy).find(".ferocity").html(criticalDamage);
 	}
@@ -361,7 +361,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".ferocity-unit").hide();
 	
 	var conditionDamage = getAttribute2(level, $(enemy).attr("data-condition"));
-	if (getSetting("showCondition")) {
+	if (getSetting("showCondition") && !isNaN(conditionDamage)) {
 		$(enemy).find(".condition-unit").show();
 		$(enemy).find(".condition").html(conditionDamage);
 	}
@@ -369,7 +369,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".condition-unit").hide();
 	
 	var healingPower = getAttribute2(level, $(enemy).attr("data-healing"));
-	if (getSetting("showHealing")) {
+	if (getSetting("showHealing") && !isNaN(healingPower)) {
 		$(enemy).find(".healing-unit").show();
 		$(enemy).find(".healing-power").html(healingPower);
 	}
@@ -381,14 +381,14 @@ function handleEnemy(enemy) {
 		var weaponStrengthOff = getWeaponStrength(level, $(enemy).attr("data-weapon-off-level"), $(enemy).attr("data-weapon-off-rarity"), $(enemy).attr("data-weapon-off-type"), $(enemy).attr("data-weapon-off-scale"));
 	if ($(enemy).attr("data-weapon-water-level") != null)
 		var weaponStrengthWater = getWeaponStrength(level, $(enemy).attr("data-weapon-water-level"), $(enemy).attr("data-weapon-water-rarity"), $(enemy).attr("data-weapon-water-type"), $(enemy).attr("data-weapon-water-scale"));
-	if (getSetting("showWeaponStrength")) {
+	if (getSetting("showWeaponStrength") && !isNaN(weaponStrengthMain.min) && !isNaN(weaponStrengthMain.max)) {
 		$(enemy).find(".weapon-unit").show();
 		$(enemy).find(".weapon").html(weaponStrengthMain.min + "-" + weaponStrengthMain.max);
 	}
 	else
 		$(enemy).find(".weapon-unit").hide();
 	
-	if (getSetting("showOffense")) {
+	if (getSetting("showOffense") && !isNaN(power) && !isNaN(weaponStrengthMain.avg)) {
 		var offense = Math.round(100 * power * weaponStrengthMain.avg / getArmor(level, 1) / getPlayerHealth(80, "elementalist"));
 		$(enemy).find(".offense-unit").show();
 		$(enemy).find(".offense").html(offense);

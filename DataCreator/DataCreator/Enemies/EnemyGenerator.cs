@@ -343,6 +343,9 @@ namespace DataCreator.Enemies
         if (data.Length > 0)
         {
           _currentEnemy.Attributes.Multipliers.HealthMultiplier = Helper.ParseD(data);
+          // If vitality is not set, initialize it with something sensible so the page can calculate something. / 2015-09-10 / Wethospu
+          if (_currentEnemy.Attributes.Multipliers.Vitality < 0.1)
+            _currentEnemy.Attributes.Multipliers.Vitality = 1;
           if (Helper.ParseD(data) > 1000)
             Helper.ShowWarning("Health values should be multipliers. Calculate the multiplier.");
         }

@@ -87,14 +87,14 @@ namespace DataCreator
   {
     public Multipliers()
     {
-      Power = 1.0;
-      Precision = 1.0;
-      Toughness = 1.0;
-      Vitality = 1.0;
-      Ferocity = 0.0;
-      HealingPower = 1.0;
-      ConditionDamage = 1.0;
-      HealthMultiplier = 1.0;
+      Power = -1.0;
+      Precision = -1.0;
+      Toughness = -1.0;
+      Vitality = -1.0;
+      Ferocity = -1.0;
+      HealingPower = -1.0;
+      ConditionDamage = -1.0;
+      HealthMultiplier = -1.0;
     }
 
     [JsonProperty("power")]
@@ -124,14 +124,22 @@ namespace DataCreator
     public string ToHtml()
     {
       var htmlBuilder = new StringBuilder();
-      htmlBuilder.Append(" data-power=\"").Append(Power).Append("\"");
-      htmlBuilder.Append(" data-precision=\"").Append(Precision).Append("\"");
-      htmlBuilder.Append(" data-toughness=\"").Append(Toughness).Append("\"");
-      htmlBuilder.Append(" data-vitality=\"").Append(Vitality).Append("\"");
-      htmlBuilder.Append(" data-ferocity=\"").Append(Ferocity).Append("\"");
-      htmlBuilder.Append(" data-condition=\"").Append(ConditionDamage).Append("\"");
-      htmlBuilder.Append(" data-healing=\"").Append(HealingPower).Append("\"");
-      htmlBuilder.Append(" data-health=\"").Append(HealthMultiplier).Append("\"");
+      if (Power > -0.1)
+        htmlBuilder.Append(" data-power=\"").Append(Power).Append("\"");
+      if (Precision > -0.1)
+        htmlBuilder.Append(" data-precision=\"").Append(Precision).Append("\"");
+      if (Toughness > -0.1)
+        htmlBuilder.Append(" data-toughness=\"").Append(Toughness).Append("\"");
+      if (Vitality > -0.1)
+        htmlBuilder.Append(" data-vitality=\"").Append(Vitality).Append("\"");
+      if (Ferocity > -0.1)
+        htmlBuilder.Append(" data-ferocity=\"").Append(Ferocity).Append("\"");
+      if (ConditionDamage > -0.1)
+        htmlBuilder.Append(" data-condition=\"").Append(ConditionDamage).Append("\"");
+      if (HealingPower > -0.1)
+        htmlBuilder.Append(" data-healing=\"").Append(HealingPower).Append("\"");
+      if (HealthMultiplier > -0.1)
+        htmlBuilder.Append(" data-health=\"").Append(HealthMultiplier).Append("\"");
       return htmlBuilder.ToString();
     }
   }
