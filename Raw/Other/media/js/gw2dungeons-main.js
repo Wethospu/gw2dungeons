@@ -198,27 +198,27 @@ function loadPage() {
 
 function levelMinus(element, target) {
 	var enemy = $(element).parents('.enemy')[0];
-	var level = $(enemy).data(target);
+	var level = Number($(enemy).attr("data-" + target));
 	if (cntrlIsPressed)
 		level -= 10;
 	else
 		level -= 1;
 	if (level < 0)
 		level = 0;
-	$(enemy).data(target, level);
+	$(enemy).attr("data-" + target, level);
 	handleEnemy(enemy);
 }
 
 function levelPlus(element, target) {
 	var enemy = $(element).parents('.enemy')[0];
-	var level = $(enemy).data(target);
+	var level = Number($(enemy).attr("data-" + target));
 	if (cntrlIsPressed)
 		level += 10;
 	else
 		level += 1;
 	if (level > 100)
 		level = 100;
-	$(enemy).data(target, level);
+	$(enemy).attr("data-" + target, level);
 	handleEnemy(enemy);
 }
 
