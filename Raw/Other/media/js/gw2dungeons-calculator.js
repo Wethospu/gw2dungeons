@@ -475,7 +475,7 @@ function fractalScaleDamage(damage, scale, type) {
 
 //// LEVEL SCALING /////
 function fractalScaleLevel(level, scale, type, rank) {
-	if (type == null || type < 1 || rank == "champion" || rank == "legendary")
+	if (type == null || type < 2 || rank == "champion" || rank == "legendary")
 		return [ level ];
     if (scale == 1)
 		return [ 80 ];
