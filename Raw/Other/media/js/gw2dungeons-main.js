@@ -12,7 +12,7 @@ function loadAd(side) {
 	// Load ads based on ad setting and margin size. / 2015-07-31 / Wethospu
 	var ads = getSetting("adSetting");
 	var size = $('#' + side + '-ad').width();
-	if (ads == "full" && size >= 300) {
+	if (ads == "big" && size >= 300) {
 		$('#' + side + '-ad').html('<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\
 							<!-- gw2dungeons-main-big -->\
 							<ins class="adsbygoogle"\
@@ -23,7 +23,7 @@ function loadAd(side) {
 							(adsbygoogle = window.adsbygoogle || []).push({});\
 							</script>');
 	}
-	else if ((ads == "medium" || ads == "full") && size >= 160) {
+	else if ((ads == "small" || ads == "big") && size >= 160) {
 		$('#' + side + '-ad').html('<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\
 							<!-- gw2dungeons-main -->\
 							<ins class="adsbygoogle"\

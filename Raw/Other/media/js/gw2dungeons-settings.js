@@ -72,7 +72,7 @@ var settings = {
 	// General settings.
     settingsVisited: false,
     comments: true,
-    adSetting: "medium",
+    adSetting: "big",
 	defaultFilters: "18EvyA4",
 	// Daily tracker memory.
 	donePaths: [],

@@ -385,7 +385,10 @@ namespace DataCreator
     {
       Console.WriteLine("Other page " + dungeon);
       LinkGenerator.CurrentDungeon = dungeon;
-      EncounterGenerator.GeneratePaths(dungeon, null);
+      var encounterData = EncounterGenerator.GeneratePaths(dungeon, null);
+      EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, null);
+      if (encounterData.Paths == null)
+        return;
     }
   }
 }
