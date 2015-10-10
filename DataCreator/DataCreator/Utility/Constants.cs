@@ -35,9 +35,9 @@ namespace DataCreator.Utility
     public static string BackupLocation { get { return "Planning\\Backup\\"; } }
 
 
-    public static string InitialdataHtml { get { return "<!-- Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST! -->" + LineEnding; } }
-    public static string InitialdataPhp { get { return "// Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding; } }
-    public static string InitialdataText { get { return "# Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding; } }
+    public static string InitialdataHtml { get; set; }
+    public static string InitialdataPhp { get; set; }
+    public static string InitialdataText { get; set; }
     public static string InitialDataIndex { get { return "<!-- display name|search name|category|race|dungeon|path|index|tags -->" + LineEnding; } }
     public static string LineEnding { get; private set; }
     public static string ForcedLineEnding { get { return "\n"; } }
@@ -114,6 +114,9 @@ namespace DataCreator.Utility
         LineEnding = "";
         JSFiles = "    <script src=\"./media/gw2dungeons.js\"></script>\n";
         CSSFiles = "    <link rel=\"stylesheet\" href=\"./media/gw2dungeons.css\">\n";
+        InitialdataHtml = "";
+        InitialdataPhp = "";
+        InitialdataText = "";
       }
       else
       {
@@ -130,6 +133,10 @@ namespace DataCreator.Utility
 
         CSSFiles = Tab + "<link rel=\"stylesheet\" href=\"./media/css/gw2dungeons.css\">" + LineEnding;
         CSSFiles += Tab + "<link rel=\"stylesheet\" href=\"./media/css/bootstrap-tagsinput.css\">" + LineEnding;
+
+        InitialdataHtml = "<!-- Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST! -->" + LineEnding;
+        InitialdataPhp = "// Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding;
+        InitialdataText = "# Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding;
       }
     }
 

@@ -5,6 +5,7 @@ using System.Text;
 using DataCreator.Utility;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Text.RegularExpressions;
 
 namespace DataCreator.Shared
 {
@@ -65,6 +66,11 @@ namespace DataCreator.Shared
       for (var row = 0; row < lines.Length; row++)
       {
         var line = lines[row];
+        if (Constants.IsRelease)
+          line = line.Trim(new char[] { '\t', ' ' });
+        // Ignore comments on release mode. / 2015-10-10 / Wethospu
+        if (Constants.IsRelease && line.StartsWith("//"))
+          continue;
         // Ignore empty lines.
         if (line == "")
           continue;
@@ -99,7 +105,7 @@ namespace DataCreator.Shared
           else
             Helper.ShowWarning("Data for dungeon \"" + id + "\" not found!");
         }
-        toSave.Append(line).Append(Constants.LineEnding);
+        toSave.Append(line).Append(Constants.ForcedLineEnding);
       }
       // Save file.
       File.WriteAllText(fileName, toSave.ToString());
@@ -127,6 +133,11 @@ namespace DataCreator.Shared
       for (var row = 0; row < lines.Length; row++)
       {
         var line = lines[row];
+        if (Constants.IsRelease)
+          line = line.Trim(new char[] { '\t', ' ' });
+        // Ignore comments on release mode. / 2015-10-10 / Wethospu
+        if (Constants.IsRelease && line.StartsWith("//"))
+          continue;
         // Ignore empty lines.
         if (line == "")
           continue;
@@ -136,7 +147,7 @@ namespace DataCreator.Shared
           continue;
         // Apply dictionary.
         line = line.Replace("ID_DATE", DateTime.Today.ToString("yyyy-MM-dd"));
-        toSave.Append(line).Append(Constants.LineEnding);
+        toSave.Append(line).Append(Constants.ForcedLineEnding);
       }
       // Save file.
       File.WriteAllText(fileName, toSave.ToString());
@@ -162,6 +173,11 @@ namespace DataCreator.Shared
       for (var row = 0; row < lines.Length; row++)
       {
         var line = lines[row];
+        if (Constants.IsRelease)
+          line = line.Trim(new char[] { '\t', ' ' });
+        // Ignore comments on release mode. / 2015-10-10 / Wethospu
+        if (Constants.IsRelease && line.StartsWith("//"))
+          continue;
         // Ignore empty lines.
         if (line == "")
           continue;
@@ -179,7 +195,7 @@ namespace DataCreator.Shared
           line = line.Replace("ID_TAGS", dungeonData.GenerateTagHtml());
         if (line.Contains("ID_EFFECT_TAGS"))
           line = line.Replace("ID_EFFECT_TAGS", dungeonData.GenerateEffectTagHtml());
-        toSave.Append(line).Append(Constants.LineEnding);
+        toSave.Append(line).Append(Constants.ForcedLineEnding);
       }
       // Save file.
       File.WriteAllText(fileName, toSave.ToString());
@@ -192,7 +208,7 @@ namespace DataCreator.Shared
     *                                                                                              *
     ***********************************************************************************************/
 
-    private static async void MergeFiles()
+    private static void MergeFiles()
     {
       var files = Directory.GetFiles(Constants.DataOtherRaw, "*", SearchOption.AllDirectories);
       var jsBuilder = new StringBuilder();
