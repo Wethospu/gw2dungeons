@@ -27,7 +27,7 @@ function getBaseHealth(level, profession) {
     var lastDifference = values[values.length - 1] - values[values.length - 2];
 
     // Downlevel player to -1 to allow using loop (= 20 level ups for level 19 like with other tiers).
-    levelUps = level + 1;
+    levelUps = 1 + level;
     var health = -values[0];
     // Level up tier by tier (20 levels at time).
     for (var tier = 0; levelUps > 0; tier++) {
@@ -225,7 +225,7 @@ function updateValues(playerArmorNew, playerHealth, playerLevel, playerClass, pl
 		if (dungeonLevel == 30 || dungeonLevel == 40 || dungeonLevel == 50 || dungeonLevel == 60 || dungeonLevel == 70
 			|| dungeonLevel == 76 || dungeonLevel == 78)
 		{
-			if (playerLevel + 1 == dungeonLevel)
+			if (1 + playerLevel == dungeonLevel)
 				dungeonLevel += 1;
 			else if (playerLevel > dungeonLevel)
 				dungeonLevel += 2;
@@ -234,7 +234,7 @@ function updateValues(playerArmorNew, playerHealth, playerLevel, playerClass, pl
 		if (dungeonLevel == 55)
 		{
 			if (playerLevel > dungeonLevel)
-				dungeonLevel += 1;
+				dungeonLevel = 1 + dungeonLevel;
 		}
         // Calculate base health for player in the dungeon.
         var health = getBaseHealth(dungeonLevel, playerClass);
@@ -378,6 +378,7 @@ function getCriticalDamage(level, multiplier) {
 
 
 function getWeaponStrength(level, internalLevel, rarity, type, scale) {
+	level = Number(level);
 	// Weapon level gets calculated quite weird way. / 2015-10-01 / Wethospu
 	var weaponLevel = Math.min(Math.max(1, Math.min(rarity, 5)) - 1 + internalLevel, 100);
 	if (scale == 2)
@@ -456,7 +457,7 @@ function fractalScaleHealth(health, scale, type) {
 	// Custom scaling (used in some special cases).
 	var split = type.split(":");
 	if (split.length > 1)
-		return Math.ceil(health * (split[0] + scale * split[1]));
+		return Math.ceil(health * (Number(split[0]) + scale * Number(split[1])));
     return health;
 }
 
