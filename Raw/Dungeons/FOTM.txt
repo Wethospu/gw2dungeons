@@ -116,11 +116,13 @@ Keep in mind that currently there is no way to progress so getting required resi
 path=Aether
 name=Aetherblade
 tactic=normal
-Enemies: Aetherblade and some Inquest.
+Enemies: Aetherblade and Inquest.
 Time: Day.
-Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies for extra damage and damage reduction. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
+Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=ZaO3Uzz62GM|Video_guide [KING].
 Current record: record=35.
+tactic=coordinated
+To be optimal, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty against the final enemy=Aetherblade_Golems.
 
 name=Water tunnel
 tactic=normal
@@ -278,11 +280,15 @@ Make use of any unblockable skills on your weapon set as-needed.
 path=Aqua
 name=Aquatic Ruins
 tactic=normal
-This fractal has a mix of Krait and Jellyfish. If you want to be optimal use wiki=Powerful_Potion_of_Krait_Slaying|Potion_of_Krait_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies at the start against the Krait. However use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom against the boss. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
+Enemies: Krait and fish.
+Time: Day.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 Remember that your wiki=Agony_Resistance will drop up to 15 points from a lack of helmet or land weapons.
 youtube=qcSFQaJdHVU|Video_guide [KING].
 Current record (Dolphin): record=36.
 Current record (Ruins): record=37.
+tactic=coordinated
+Against the krait, use wiki=Powerful_Potion_of_Krait_Slaying|Potion_of_Krait_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies and wiki=Superior_Sigil_of_Serpent_Slaying|Sigil_Of_Serpent_Slaying.
 
 name=Save the villagers
 tactic=normal
@@ -360,9 +366,13 @@ Use wiki=Air_Bubble and wiki=Rock_Anchor to interrupt agony attack.
 path=Cliff
 name=Cliffside
 tactic=normal
-The fractal is full of Outlaws so use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying for extra damage and damage reduction, or wiki=Skale_Venom_(consumable) for weakness if your party is low on blinds. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils. If you want to be optimal use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
+Enemies: Bandits.
+Time: Day.
+Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=gYhTcr_KByo|Video_guide [KING].
 Current record: record=38.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
 tactic=warrior
 Pay extra attention to banner placement when stacking so that people can easily pick the hammer instead of your banners.
 
@@ -575,9 +585,13 @@ Use an Earth Elemental from wiki=Glyph_of_Elementals to hold boss aggro and allo
 path=Furn
 name=Molten Furnace
 tactic=normal
-The fractal has mostly Molten so use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies for extra damage and damage reduction. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils. If you want to be optimal use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying and wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Frailty against the end boss.
+Enemies: Molten and others.
+Time: Day.
+Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=QjJMBIXvftQ|Video_guide [KING].
 Current record: record=39.
+tactic=coordinated
+If you want to be optimal against enemy=Earth_Elementals, enemy=Embers or enemy=Tar_Elementals, use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying and wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Frailty.
 
 name=Start
 tactic=normal
@@ -667,10 +681,13 @@ Use stability (party wide if possible) to prevent numerous Control effects. Stac
 path=Mai
 name=Captain Mai Trin
 tactic=normal
-The fractal is full of Aetherblade so use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies for extra damage and damage reduction. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
-Needs plenty of coordination.
+Enemies: Aetherblade and few Inquest.
+Time: Day.
+Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=iQozEONbKxY|Video_guide [KING].
 Current record: record=40.
+tactic=coordinated
+Against enemy=Inquest_Technician:champion, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty.
 
 name=Start
 tactic=normal
@@ -725,8 +742,9 @@ Use wiki=Tool_Kit to give yourself a block, and also give yourself the ability t
 path=Molten
 name=Molten Boss
 tactic=normal
-The fractal is full of Molten so use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies for extra damage and damage reduction. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
-Quite tough boss fight. Bosses deal lots of damage and reviving is dangerous.
+Enemies: Molten.
+Time: Day.
+Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=QjJMBIXvftQ|Video_guide [KING].
 Current record: record=41.
 
@@ -805,11 +823,13 @@ Use wiki=Toss_Elixir_U to provide projectile defense.
 path=Snow
 name=Snowblind
 tactic=normal
-Enemies: Elementals and Sons of Svanir.
+Enemies: Sons of Svanir and some elementals.
 Time: Night.
-Use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying or/and wiki=Powerful_Potion_of_Sons_of_Svanir_Slaying|Potion_of_Sons_of_Svanir_Slaying for extra damage and damage reduction. Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force for damage sigils. If you want to be optimal use wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying or/and wiki=Superior_Sigil_of_Wrath|Sigil_of_Wrath instead of Force.
+Use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying,  wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=UO1-C1EwAgY|Video_guide by [KING].
 Current record: record=42.
+tactic=coordinated
+Against enemy=Shaman_Lornarr_Dragonseeker, use wiki=Powerful_Potion_of_Sons_of_Svanir_Slaying|Potion_of_Sons_of_Svanir_Slaying and wiki=Superior_Sigil_of_Wrath|Sigil_of_Wrath instead of Force.
 
 name=Start
 tactic=normal|skip
@@ -955,8 +975,9 @@ You can keep damaging him with wiki=Dragon's_Tooth even when he is away.
 path=Solid
 name=Solid Ocean
 tactic=normal
-The fractal has no standard enemy type so you can use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom. However, the Colossi are elementals, so you may want to use an Elemental Slaying potion instead. Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force for damage sigils.
-Very easy with sufficient agony Resist.
+Enemies: Wind riders and elementals.
+Time: Night.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=zG-oTjatPfQ|Video_guide [KING].
 Current record: record=43.
 
@@ -1024,9 +1045,9 @@ wiki=Defiant_Stance works against Maw's laser healing you to full health.
 path=Swamp
 name=Swampland
 tactic=normal
-Enemies: No type.
+Enemies: A plant, a norn and various others.
 Time: Night.
-Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom. Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force for damage sigils.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=eb47RZU_F28|Video_guide [KING].
 Current record (Bloomhunger): record=44.
 Current record (Mossman): record=45.
@@ -1150,9 +1171,9 @@ You can easily get out of combat if you just run away. Once you are out of comba
 path=Thauma
 name=Thaumanova Reactor
 tactic=normal
-Enemies: Mix of enemies.
+Enemies: A human, an ooze and various others.
 Time: Day.
-Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=n4m2sEZ5x4M|Video_guide [KING].
 Current record: record=46.
 
@@ -1315,10 +1336,14 @@ At end you may not get prompt for the next level. There is no known fix.
 path=Uncat
 name=Uncategorized
 tactic=normal
-The fractal has Inquest (golems) at bosses so use so use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying when you get to enemy=Old_Tom:champion. If you want to be optimal use oils or wiki=Skale_Venom_(consumable)|Skale_Venom at the start. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils. If you want to be optimal use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty when fighting golems.
-The start is really annoying with invulnerable harpies and last fight may be tough without enough anti projectiles.
+Enemies: Inquest, a flame legion, an ogre and harpies.
+Time: Day.
+Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=noCqa2bxPVk|Video_guide [KING].
 Current record: record=47.
+tactic=coordinated
+Against enemy=Flame_Legion_Fire_Shaman, use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying.
+Against Inquest, use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Force.
 
 name=enemy=Harpy_Hunters:veteran
 image=http://a.pomf.se/rmlcbz.webm
@@ -1469,10 +1494,15 @@ Use wiki=Swirling_Winds for protection against projectiles.
 path=Under
 name=Underground Facility
 tactic=normal
-The fractal is full of Dredge so use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying. Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force for damage sigils. If you get the enemy=Rampaging_Ice_Elemental:legendary at end you can use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying. If you want to be optimal use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow or wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Force.
+Enemies: Dredge and some elementals.
+Time: Night.
+Use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=ALGpASCQMz4|Video_guide [KING].
 Current record (Bombs): record=48.
 Current record (Turret): record=49.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Force.
+Against enemy=Rampaging_Ice_Elemental, use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying and Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Force.
 
 name=Start
 tactic=normal
@@ -1623,6 +1653,10 @@ Take wiki=Withdraw for extra evade to avoid agony attack.
 path=Urban
 name=Urban Battleground
 tactic=normal
+Enemies: Humans.
+Time: Day.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+
 Enemies: No type.
 Time: Day.
 Use use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
@@ -1745,11 +1779,14 @@ Take wiki=Feedback and/or trait wiki=Temporal_Curtain to provide projectile defe
 path=Volc
 name=Volcanic
 tactic=normal
-Enemies: Grawls, Demons and Elementals.
+Enemies: Grawl, a demon and some elementals.
 Time: Night.
-Use wiki=Powerful_Potion_of_Grawl_Slaying|Potion_of_Grawl_Slaying at start and either wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying or wiki=Powerful_Potion_of_Demon_Slaying|Potion_of_Demon_Slaying at end for extra damage and damage reduction. Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force for damage sigils. If you want to be optimal use wiki=Superior_Sigil_of_Grawl_Slaying|Sigil_of_Grawl_Slaying, wiki=Superior_Sigil_of_Demon_Slaying|Sigil_of_Demon_Slaying or wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Force.
+Use wiki=Powerful_Potion_of_Grawl_Slaying|Potion_of_Dredge_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=q041QdWMrMk|Video_guide [KING].
 Current record: record=51.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Grawl_Slaying|Sigil_of_Grawl_Slaying instead of Force.
+Against enemy=Imbued_Shaman, use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying or wiki=Powerful_Potion_of_Demon_Slaying|Potion_of_Demon_Slaying amd wiki=Superior_Sigil_of_Demon_Slaying|Sigil_of_Demon_Slaying or wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Force.
 
 name=Start
 tactic=normal

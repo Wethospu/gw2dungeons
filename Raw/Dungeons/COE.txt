@@ -11,7 +11,7 @@ Level: 78.
 Reward: 0.73g.
 Average length: 39 minutes.
 Difficulty: Medium.
-Enemies: Inquest and Outlaw.
+Enemies: Inquest, a bandit and a giant.
 Time: Day.
 Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=dfu2rhXp50c|Cutscenes.

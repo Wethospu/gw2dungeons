@@ -499,6 +499,7 @@ subeffect=vulnerability:1
 name=Ember
 # TODO Get real ID.
 ID=10854
+alt=Embers
 scaling=normal
 race=elemental
 path=Furn
@@ -735,6 +736,7 @@ subeffect=stun:2
 
 name=Earth Elemental
 ID=8233
+alt=Earth Elementals
 image=https://wiki.guildwars2.com/images/a/a0/Earth_Elemental.jpg
 scaling=normal
 path=Furn
