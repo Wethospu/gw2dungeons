@@ -256,7 +256,7 @@ Path=HotWS|HotW1|Snow
 attack=Effect
 effect=debuff (5 s)
 subeffect=chilled:3 every second
-subeffect=buff:petrify
+subeffect=buff:petrified
 #note=Stability prevents effect
 #note=stun breaks have no effect
 #note=use a teleport to get out
@@ -994,7 +994,7 @@ effect=On hit (5 hits per second)
 subeffect=damage:5156581
 subeffect=stun:1|
 subeffect=agony:3
-subeffect=buff:lighting_boost:8
+subeffect=buff:lightning_boost:8
 subeffect=might:8:3
 #note=Buffs a enemy=Golem:elite to 25 might in one second
 #note=If you get in bad spot dodge or use mobility to try get through fast

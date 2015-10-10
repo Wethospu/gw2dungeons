@@ -727,7 +727,7 @@ count=?
 subeffect=Agony:1
 subeffect=regeneration:0
 subeffect=might:5
-subeffect=buff:petrify:1
+subeffect=buff:petrified:1
 subeffect=buff:Damage_Resistance:1:1:-
 #note=spam skill 1 to get out
 
