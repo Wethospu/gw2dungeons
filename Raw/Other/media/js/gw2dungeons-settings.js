@@ -65,6 +65,7 @@ var settings = {
 	showPathSelection : true,
 	showTargetLevel: true,
 	showFractalLevel: true,
+	showScalingMode: true,
 	showCooldowns: true,
 	properCooldowns: false,
 	showRanges: true,
@@ -256,6 +257,11 @@ function handleEnemy(enemy) {
 	}	
 	else
 		$(enemy).find(".fractal-level-unit").hide();
+	
+	if (getSetting("showScalingMode") && gameMode == "fractal")
+		$(enemy).find(".scaling-unit").show();
+	else
+		$(enemy).find(".scaling-unit").hide();
 	
 	var level = $(enemy).attr("data-level");
 	if (level == null || level == '') {

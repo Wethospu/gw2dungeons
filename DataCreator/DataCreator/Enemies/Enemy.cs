@@ -159,7 +159,7 @@ namespace DataCreator.Enemies
       htmlBuilder.Append(Attributes.ToHtml());
       
       if (ScalingType.Length > 0)
-        htmlBuilder.Append(" data-scaling=\"").Append(Scaling.ScalingTypeToMode(Helper.Simplify(ScalingType))).Append("\"");
+        htmlBuilder.Append(" data-scaling=\"").Append(Gw2Helper.ScalingTypeToMode(ScalingType)).Append("\"");
       htmlBuilder.Append(">").Append(Constants.LineEnding);
       //// Identifiers added.
       htmlBuilder.Append(Gw2Helper.AddTab(1)).Append("<table>").Append(Constants.LineEnding);
@@ -211,6 +211,9 @@ namespace DataCreator.Enemies
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"healing-unit\"><span class=").Append(Constants.IconClass).Append("title=\"healing_power\">Healing power</span>:").Append(Constants.Space).Append("<span class=\"healing-power\"></span> </span>").Append(Constants.LineEnding);
       if (Attributes.Size > 0)
         htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"size-unit\"><span class=").Append(Constants.IconClass).Append("title=\"size\">Size</span>:").Append(Constants.Space).Append(Math.Round(Attributes.Size * 100)).Append("%</span>").Append(Constants.LineEnding);
+      // Add information about scaling mode so people understand when things shouldn't scale. / 2015-10-10 / Wethospu
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"scaling-unit\">Scaling:").Append(Constants.Space).Append(Gw2Helper.ScalingTypeToString(ScalingType)).Append(" </span>").Append(Constants.LineEnding);
+
       htmlBuilder.Append(Gw2Helper.AddTab(3)).Append("</div>").Append(Constants.LineEnding);
       // Add tactics. / 2015-08-09 / Wethospu
       htmlBuilder.Append(Tactics.ToHtml(Index, string.Join("|", Paths), enemies, 3));

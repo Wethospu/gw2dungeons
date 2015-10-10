@@ -131,5 +131,40 @@ namespace DataCreator.Utility
         foundEnemies = partialAltMatches;
       return foundEnemies;
     }
+
+    // 1: no scaling, 2 = normal scaling, 3 = champion, 4 = legendary, 5: only level scales
+    // Anything else: custom.
+    static public string ScalingTypeToMode(string scalingType)
+    {
+      if (scalingType.Equals("") || scalingType.Equals("constant"))
+        return "1";
+      if (scalingType.Equals("normal"))
+        return "2";
+      if (scalingType.Equals("champion"))
+        return "3";
+      if (scalingType.Equals("legendary"))
+        return "4";
+      if (scalingType.Equals("level"))
+        return "5";
+      if (scalingType.Contains(":"))
+        return scalingType;
+      Helper.ShowWarningMessage("Scaling type " + scalingType + " is not recognized! Use 'normal', 'champion', 'level', 'constant' or 'legendary'!");
+      return scalingType;
+    }
+
+    static public string ScalingTypeToString(string scalingType)
+    {
+      if (scalingType.Equals("") || scalingType.Equals("constant"))
+        return "None";
+      if (scalingType.Equals("normal"))
+        return "Normal";
+      if (scalingType.Equals("champion"))
+        return "Champion";
+      if (scalingType.Equals("legendary"))
+        return "Legendary";
+      if (scalingType.Equals("level"))
+        return "Only level";
+      return "Custom";
+    }
   }
 }
