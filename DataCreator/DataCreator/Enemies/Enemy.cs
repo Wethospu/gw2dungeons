@@ -156,6 +156,8 @@ namespace DataCreator.Enemies
       // Only add non-default path info. / 2015-09-39 / Wethospu
       if (Level > 0)
         htmlBuilder.Append(" data-level=\"").Append(Level).Append("\"");
+      if (Attributes.Family.GetInternal().Length > 0)
+        htmlBuilder.Append(" data-race=\"").Append(Attributes.Family.GetInternal()).Append("\"");
       htmlBuilder.Append(Attributes.ToHtml());
       
       if (ScalingType.Length > 0)

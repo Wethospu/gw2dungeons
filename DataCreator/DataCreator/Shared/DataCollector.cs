@@ -181,7 +181,7 @@ namespace DataCreator.Shared
       var builder = new StringBuilder();
       foreach (var race in Races)
       {
-        builder.Append(Gw2Helper.AddTab(3)).Append("<option value=\"").Append(race).Append("\">");
+        builder.Append(Gw2Helper.AddTab(3)).Append("<option value=\"").Append(race.ToLower().Replace(Constants.Space, "_")).Append("\">");
         builder.Append(race).Append("</option>").Append(Constants.LineEnding);
       }
       return builder.ToString();

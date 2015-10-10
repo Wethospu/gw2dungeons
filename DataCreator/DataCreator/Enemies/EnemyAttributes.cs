@@ -168,7 +168,7 @@ namespace DataCreator
     [JsonProperty("guid")]
     public string Guid { get; set; }
 
-    public string GetDisplay()
+    private string ProcessRace()
     {
       string display = Helper.ToUpperAll(Name.Replace('_', ' '));
       if (display.Equals("Ghost"))
@@ -201,8 +201,18 @@ namespace DataCreator
           display = "Molten";
         else
           Helper.ShowWarningMessage("Race with guid " + Guid + " not handled.");
-      }       
-      return display.Replace(" ", Constants.Space);
+      }
+      return display;
+    }
+
+    public string GetInternal()
+    {
+      return ProcessRace().ToLower().Replace(' ', '_');
+    }
+
+    public string GetDisplay()
+    {
+      return ProcessRace().Replace(" ", Constants.Space);
     }
   }
 

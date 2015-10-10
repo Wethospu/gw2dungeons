@@ -218,17 +218,20 @@ function handleEnemy(enemy) {
 	var damageView = getSetting("damageView");
 	var damageRange = getSetting("damageRange")
 	var healingView = getSetting("healingView");
-    var potionUsage = getSetting("potionUsage");
-    var potionStrength = (Number)(getSetting("potionStrength")) / 100;
-	var enemyPotion = $(enemy).attr("data-potion");
-    if (enemyPotion == "" || potionUsage == "" || enemyPotion == "none" || potionUsage == "none" || (potionUsage == "main" && enemyPotion == "side"))
-        potionStrength = 0;
 	var scalingType = $(enemy).attr("data-scaling");
 	var rank = $(enemy).attr("data-category");
 	var currentPath = $(enemy).attr("data-current-path");
 	// Without current path, default to the first one available. / 2015-10-09 / Wethospu
 	if (!currentPath)
 		currentPath = $(enemy).attr("data-path").split("|")[0];
+	
+	// Check potion settings and whether they apply to this enemy. / 2015-10-10 / Wethospu
+	var potionUsage = getSetting("potionUsage");
+    var potionStrength = (Number)(getSetting("potionStrength")) / 100;
+	var enemyPotion = getPotionStrength(currentPath, $(enemy).attr("data-race"));
+    if (enemyPotion == "" || potionUsage == "" || enemyPotion == "none" || potionUsage == "none" || (potionUsage == "main" && enemyPotion == "side"))
+        potionStrength = 0;
+	
 	var gameMode = pathToGameMode(currentPath);
     var dungeonLevel = getPathLevel(currentPath);
 	// Set attributes and visibility.
@@ -622,3 +625,116 @@ function pathToGameMode(path) {
 	}
 	return "fractal";
 }
+
+// Returns potion usage for every dungeon. Very inefficient! / 2015-10-10 / Wethospu
+function getPotionStrength(path, race) {
+	if (path.substring(0, 2) == "ac")
+		return "none";
+	if (path.substring(0, 2) == "cm")
+		return race == "bandit" ? "main" : "none";
+	if (path == "tas" || path == "taf" || path == "tau")
+		return race == "nightmare_court" ? "main" : "none";
+	if (path == "taae") {
+		if (race == "aetherblade" || race == "nightmare_court")
+			return "main";
+		return "none";
+	}
+	if (path == "ses" || path == "ses1")
+		return race == "inquest" ? "main" : "none";
+	if (path == "se2" || path == "ses3") {
+		if (race == "dredge")
+			return "main";
+		if (race == "inquest" || race == "destroyer")
+			return "side";
+		return "none";
+	}
+	if (path.substring(0, 3) == "cof")
+		return race == "flame_legion" ? "main" : "none";
+	if (path.substring(0, 4) == "hotw") {
+		if (race == "icebrood")
+			return "main";
+		if (race == "sons_of_svanir")
+			return "side";
+		return "none";
+	}
+	if (path == "coes") {
+		if (race == "inquest")
+			return "main";
+		if (race == "bandit")
+			return "side";
+		return "none";
+	}
+	if (path.substring(0, 3) == "coe") {
+		if (race == "undead")
+			return "main";
+		if (race == "inquest" || race == "destroyer" || race == "icebrood")
+			return "side";
+		return "none";
+	}
+	if (path.substring(0, 4) == "arah")
+		return race == "undead" ? "main" : "none";
+	if (path == "aether")
+		return race == "aetherblade" ? "main" : "none";
+	if (path == "aqua")
+		return race == "krait" ? "side" : "none";
+	if (path == "cliff")
+		return race == "bandit" ? "main" : "none";
+	if (path == "furn")
+		return race == "molten" ? "main" : "none";
+	if (path == "mai") {
+		if (race == "aetherblade")
+			return "main";
+		if (race == "inquest")
+			return "side";
+		return "none";
+	}
+	if (path == "snow") {
+		if (race == "sons_of_svanir")
+			return "main";
+		if (race == "elemental")
+			return "side";
+		return "none";
+	}
+	if (path == "solid")
+		return "none";
+	if (path == "swamp")
+		return "none";
+	if (path == "thauma")
+		return "none";
+	if (path == "uncat") {
+		if (race == "inquest")
+			return "main";
+		if (race == "flame_legion")
+			return "side";
+		return "none";
+	}
+	if (path == "under") {
+		if (race == "dredge")
+			return "main";
+		if (race == "elemental")
+			return "side";
+		return "none";
+	}
+	if (path == "urban")
+		return "none";
+	if (path == "volc") {
+		if (race == "grawl")
+			return "main";
+		if (race == "demon" || race == "elemental")
+			return "side";
+		return "none";
+	}
+	return "none";
+}
+
+
+
+
+
+
+
+
+
+
+
+
