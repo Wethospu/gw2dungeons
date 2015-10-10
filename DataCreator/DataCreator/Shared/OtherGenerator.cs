@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using DataCreator.Utility;
-using System.Linq;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace DataCreator.Shared
 {
@@ -191,7 +192,7 @@ namespace DataCreator.Shared
     *                                                                                              *
     ***********************************************************************************************/
 
-    private static void MergeFiles()
+    private static async void MergeFiles()
     {
       var files = Directory.GetFiles(Constants.DataOtherRaw, "*", SearchOption.AllDirectories);
       var jsBuilder = new StringBuilder();
@@ -214,7 +215,35 @@ namespace DataCreator.Shared
       }
       if (Constants.IsRelease)
       {
+        /*using (var client = new HttpClient())
+        {
+          var values = new Dictionary<string, string>
+          {
+            { "input", jsBuilder.ToString() }
+          };
+          var jsonString = JsonConvert.SerializeObject(values);
+          var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
+          var response = await client.PostAsync("http://javascript-minifier.com/raw", content);
+
+          var responseString = await response.Content.ReadAsStringAsync();
+          File.WriteAllText(Constants.DataOutput + Constants.DataMediaResult + "gw2dungeons.js", responseString);
+        }*/
         File.WriteAllText(Constants.DataOutput + Constants.DataMediaResult + "gw2dungeons.js", jsBuilder.ToString());
+        /*using (var client = new HttpClient())
+        {
+          var values = new Dictionary<string, string>
+          {
+            { "input", cssBuilder.ToString() }
+          };
+          var jsonString = JsonConvert.SerializeObject(values);
+          var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
+
+          var response = await client.PostAsync("http://cssminifier.com/raw", content);
+
+          var responseString = await response.Content.ReadAsStringAsync();
+          File.WriteAllText(Constants.DataOutput + Constants.DataMediaResult + "gw2dungeons.css", responseString);
+        }*/
         File.WriteAllText(Constants.DataOutput + Constants.DataMediaResult + "gw2dungeons.css", cssBuilder.ToString());
       }
     }
