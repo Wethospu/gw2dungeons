@@ -6,6 +6,7 @@ RewriteRule ^(.*)$ http://gw2dungeons\.net/$1 [R=301,L]
 # These allow syntax without ? in the beginning.
 RewriteRule ^(\w+)$  ?$1
 RewriteRule ^dev/(\w+)$  dev/?$1
+RewriteRule ^test/(\w+)$  test/?$1
 # Disables directory listing.
 Options -Indexes
 
