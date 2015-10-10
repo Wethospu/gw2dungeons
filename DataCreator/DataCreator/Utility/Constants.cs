@@ -30,7 +30,7 @@ namespace DataCreator.Utility
     public static string DataEnemyResult { get { return "enemies\\"; } }
     public static string DataMediaResult { get { return "media\\"; } }
     public static string DataEncounterResult { get { return "pages\\"; } }
-    public static string DataThumbsResult { get { return "thumbs\\"; } }
+    public static string DataThumbsResult { get { return "thumbs"; } }
 
     public static string BackupLocation { get { return "Planning\\Backup\\"; } }
 
@@ -47,6 +47,8 @@ namespace DataCreator.Utility
 
     public static int ThumbWidth { get { return 350; } }
     public static int ThumbHeight { get { return 350; } }
+    public static int ThumbWidthSmall { get { return 250; } }
+    public static int ThumbHeightSmall { get { return 250; } }
 
     public static string Gw2Wiki { get { return "wiki.guildwars2.com/wiki/"; } }
     public static string And { get { return "and"; } }

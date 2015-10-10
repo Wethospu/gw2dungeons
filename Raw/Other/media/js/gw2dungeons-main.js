@@ -45,7 +45,7 @@ function loadThumbs() {
 		// Load thumb based on screen size. / 2015-07-31 / Wethospu
 		var imageName = $(this).attr("data-name");
 		if (width > 1500) {
-			$(this).attr("src", "media/thumbs/" + imageName);
+			$(this).attr("src", "media/thumbs_350px/" + imageName);
 			$(this).css("display", "initial");
 		}
 		else if (width > 1200) {

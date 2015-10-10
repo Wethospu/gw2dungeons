@@ -1524,3 +1524,9 @@ http://wiki.guildwars2.com/wiki/Operative's_Creed
 http://wiki.guildwars2.com/wiki/Wraithlord_Chains
 http://wiki.guildwars2.com/wiki/Recipe:_Bloodstone_Fragment
 http://wiki.guildwars2.com/wiki/Bloodstone_Fragment
+http://wiki.guildwars2.com/wiki/Wildfire_Talisman
+http://wiki.guildwars2.com/wiki/Symbol_of_Koda
+http://wiki.guildwars2.com/wiki/Svanir_Talisman
+http://wiki.guildwars2.com/wiki/Svanir_Talisman_(masterwork)
+http://wiki.guildwars2.com/wiki/Prototype_Sheath
+http://wiki.guildwars2.com/wiki/Superior_Sigil_of_Serpent_Slaying
