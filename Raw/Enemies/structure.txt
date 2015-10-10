@@ -929,6 +929,31 @@ subeffect=damage-constant:2000
 
 ##################################################################
 
+name=Lightning
+path=Insta
+category=trap
+
+attack=Effect
+effect=small AoE (120 range)
+subeffect=damage:7479500
+subeffect=stun:3
+
+##################################################################
+
+name=Frosty
+path=Insta
+category=trap
+
+attack=Icy Ground
+animation=red circle appears and ice shard falls to it|0.75|leaves icy ground
+effect=ticking AoE (10 hits in 9 s)
+count=10
+length=9
+subeffect=damage:463729
+subeffect=chilled:3
+
+##################################################################
+
 name=Corpse Mine
 alt=Corpse Mines
 image=http://wiki.guildwars2.com/images/5/5b/Corpse_Mine.jpg
