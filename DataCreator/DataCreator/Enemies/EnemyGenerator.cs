@@ -148,6 +148,8 @@ namespace DataCreator.Enemies
 
     private static int EnemyLoop(string tag, string data, List<Enemy> enemies, Dictionary<string, EnemyAttributes> enemyAttributes)
     {
+      if (!tag.Equals("name") && !tag.Equals("id") && _currentEnemy != null & _currentEnemy.IsNameCopied)
+        Helper.ShowWarning("ID or name not explicitly set for a copied enemy.");
       if (tag.Equals("copy"))
       {
         if (_currentEnemy != null)
