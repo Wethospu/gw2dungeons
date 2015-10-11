@@ -565,7 +565,6 @@ subeffect=knockback:1.5
 #note=try to predict when going close
 
 ##################################################################
-# Same enemy: Thauma Bandit Scout
 
 Name=Bandit Cutpurse
 ID=8876
@@ -666,7 +665,6 @@ subeffect=Damage:2
 subeffect=knockdown:3
 
 #############################
-# Same enemy: Thauma Bandit Rifleman
 
 copy=3218
 Name=Bandit Rifleman
@@ -1475,7 +1473,7 @@ subeffect=increased movement speed
 
 #############################
 
-copy=11475
+copy=11472
 Name=Ascalonian Warrior (Respawn)
 alt=Ascalonian Warriors (Respawn)|Warrior (Respawn)|Warriors (Respawn)
 scaling=level
@@ -1483,7 +1481,8 @@ Path=Urban
 
 #############################
 
-copy=11475
+copy=11472
+ID=11472
 scaling=level
 Path=Thauma
 

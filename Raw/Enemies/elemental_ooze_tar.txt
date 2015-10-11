@@ -195,7 +195,7 @@ ID=10520
 alt=Sparks
 path=Arah4
 
-attack=Invulnerable
+attack=buff:invulnerability
 
 attack=Lightning Bolt
 ID=2545

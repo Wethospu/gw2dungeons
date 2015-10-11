@@ -668,7 +668,7 @@ effect=summons a banner
 subeffect=Increased Power and Condition Damage
 effect=area field
 subeffect=knockback:0 when passing through
-subeffect=buff:reflect also while inside.
+subeffect=buff:projectile_reflection also while inside.
 #note=use stability or invulnerability to get out
 
 attack=Berserk
@@ -1245,6 +1245,7 @@ effect=summons 0-4 enemy=Locust_Swarms:elite
 attack=Phase 2
 animation=turns invulnerable|5
 additional=used at 75% health
+effect=buff:invulnerability
 effect=ranged
 subeffect=buff:"Green_Cloud":6 on closest target (doesn't prioritize players)
 #note=does not work on players in downed state
@@ -1322,6 +1323,7 @@ attack=Phase 3
 image=http://i.imgur.com/y60cIru.gif
 animation=turns invulnerable
 additional=used at 50% health
+effect=buff:invulnerability
 effect=multiple ballistic projectiles (360 degrees) with small AoE (Frenzied Blast)
 subeffect=damage:19421056
 effect=multiple ballistic projectiles (360 degrees) with small AoE (Mighty Blast)

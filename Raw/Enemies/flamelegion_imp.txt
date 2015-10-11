@@ -281,7 +281,7 @@ subeffect=knockback:1.5
 
 attack=Run to middle (1)
 cooldown=25
-effect=invulnerable
+effect=buff:invulnerability
 #note=don't kite Tribune too far away from middle or he will spend lots of time invulnerable
 
 attack=Stomp (2)
@@ -291,7 +291,7 @@ count=3
 subeffect=damage:0.25
 subeffect=bleeding:5:3
 subeffect=launch:2.3
-effect=invulnerable
+effect=buff:invulnerability
 
 attack=Throw (3)
 effect=Hammer or Bolas (unless on cooldown)

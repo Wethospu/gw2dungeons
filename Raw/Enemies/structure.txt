@@ -365,7 +365,7 @@ alt=Magma Turrets
 path=Arah2
 category=structure
 
-attack=Invulnerable
+attack=buff:invulnerability
 
 attack=Magma Orb
 effect=projectile
@@ -815,7 +815,7 @@ alt=Rotten Mouths|Mouth|Mouths
 path=Arah3|Arah4
 category=structure
 
-attack=Invulnerable
+attack=buff:invulnerability
 
 attack=Putrid Blast
 effect=projectile with small ticking AoE
@@ -1106,7 +1106,7 @@ scaling=normal
 health=0.58569
 Path=Volc
 
-attack=Invulnerable
+attack=buff:invulnerability
 
 attack=Leaves a fiery trail
 

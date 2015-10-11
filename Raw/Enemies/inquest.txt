@@ -2077,7 +2077,7 @@ scaling=champion
 Path=Uncat
 
 attack=Determined
-effect=invulnerable
+effect=buff:invulnerability
 
 attack=Lightning Bolt
 ID=16231

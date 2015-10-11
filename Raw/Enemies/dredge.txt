@@ -221,7 +221,7 @@ effect=projectile
 subeffect=damage:0
 
 attack=Gong
-effect=buff:burning_aura
+effect=buff:fire_aura
 
 ##################################################################
 

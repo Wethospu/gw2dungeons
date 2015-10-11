@@ -714,7 +714,7 @@ effect=buff:evade
 effect=area field, when passing through
 subeffect=burning:1
 effect=with ticking AoE
-subeffect=buff:Shielding:2:1:fire_shield every 2 seconds
+subeffect=buff:Shielding:2:1:fire_aura every 2 seconds
 
 attack=Jetpack Pound (2)
 animation=Rises to air, laughs and drops to the ground|5|a fiery ring
