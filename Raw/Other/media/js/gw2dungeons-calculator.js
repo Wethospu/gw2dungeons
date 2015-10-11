@@ -1,19 +1,61 @@
 ﻿;
 "use strict";
-// Returns val1 / val 2 as a percent value.
+// Returns val1 / val2 as a percent value.
 function toPercent(val1, val2) {
 	return Math.ceil(1000 * val1 / val2) / 10;
 }
 
+//// PLAYER ATTRIBUTE CALCULATIONS ////
+
 var STAT_MAX = 1000;
 
-// Calculates base health at given level and profession.
-function getPlayerHealth(level, profession) {
-    return getBaseHealth(level, profession) + STAT_MAX * 10 * getStatScale(level);
+// This is based on how many stats you get on level up.
+// Additionally attributes from gear have increased downscaling based on level.
+function getPlayerAttribute(attribute, playerLevel, targetLevel) {
+	var playerBaseAttribute = [
+		0.030, 0.037, 0.044, 0.051, 0.058, 0.065, 0.072, 0.079, 0.086, 0.093,
+		0.100, 0.100, 0.110, 0.110, 0.120, 0.120, 0.130, 0.130, 0.140, 0.140,
+		0.150, 0.150, 0.164, 0.164, 0.178, 0.178, 0.193, 0.193, 0.209, 0.209,
+		0.225, 0.225, 0.245, 0.245, 0.265, 0.265, 0.285, 0.285, 0.305, 0.305,
+		0.325, 0.325, 0.349, 0.349, 0.373, 0.373, 0.398, 0.398, 0.424, 0.424,
+		0.450, 0.450, 0.480, 0.480, 0.510, 0.510, 0.540, 0.540, 0.570, 0.570,
+		0.600, 0.600, 0.634, 0.634, 0.668, 0.668, 0.703, 0.703, 0.739, 0.739,
+		0.775, 0.775, 0.819, 0.819, 0.863, 0.863, 0.908, 0.908, 0.954, 0.954,
+		1.000
+	]
+	var playerGearAttribute = [
+		0.100, 0.100, 0.100, 0.100, 0.100, 0.100, 0.115, 0.130, 0.145, 0.160,
+		0.175, 0.190, 0.205, 0.220, 0.235, 0.250, 0.265, 0.280, 0.305, 0.310,
+		0.325, 0.340, 0.360, 0.380, 0.400, 0.420, 0.440, 0.460, 0.480, 0.500,
+		0.520, 0.530, 0.540, 0.550, 0.560, 0.570, 0.580, 0.590, 0.600, 0.610,
+		0.620, 0.630, 0.640, 0.650, 0.660, 0.670, 0.680, 0.690, 0.700, 0.710,
+		0.720, 0.730, 0.740, 0.750, 0.760, 0.770, 0.780, 0.800, 0.820, 0.840,
+		0.860, 0.880, 0.900, 0.920, 0.940, 0.960, 0.970, 0.980, 0.990, 1.000,
+		1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000,
+		1.000
+	]
+	var fromGear = attribute - STAT_MAX * playerBaseAttribute[playerLevel];
+	fromGear = fromGear / playerBaseAttribute[playerLevel] * playerBaseAttribute[targetLevel] / playerGearAttribute[playerLevel] * playerGearAttribute[targetLevel];
+	return fromGear + STAT_MAX * playerBaseAttribute[targetLevel];
 }
 
 // Calculates base health at given level and profession.
-function getBaseHealth(level, profession) {
+function getPlayerBaseHealth(level, profession) {
+    return getProfessionHealth(level, profession) + 10 * getPlayerAttribute(STAT_MAX, 80, level);
+}
+
+function getPlayerHealth(targetLevel) {
+	var health = getSetting("health");
+	var playerLevel = getSetting("level");
+	var profession = getSetting("profession");
+	// Separate base health and vitality health.
+	health -= getProfessionHealth(playerLevel, profession);
+	health = 10 * getPlayerAttribute(health / 10, playerLevel, targetLevel) + getProfessionHealth(targetLevel, profession);
+	return  Math.ceil((1 + getSetting("healthMultiplier") / 100) * health);
+}
+
+// Calculates base health at given level and profession.
+function getProfessionHealth(level, profession) {
     // Base health gained per level.
     // Groups are: 0-19, 20-39, 40-59, 60-79, 80.
     var values;
@@ -47,213 +89,50 @@ function getBaseHealth(level, profession) {
     return health;
 }
 
-// Calculates base armor at given level and profession.
-function getBaseArmor(level, profession) {
-    var armor = STAT_MAX;
+// Calculates base defense at given level and profession.
+function getPlayerBaseDefense(level, profession) {
     if (profession == "elementalist" || profession == "mesmer" || profession == "necromancer")
-        armor += 920;
+        var armor = 920;
     else if (profession == "ranger" || profession == "thief" || profession == "engineer")
-        armor += 1064;
+        var armor = 1064;
     else // Warrior,  Guardian and Revenant.
-        armor += 1211;
-    return Math.round(getArmorScale(level) * armor);
-}
-
-// Returns how stats scale.
-// This is based on how many stats you get on level up.
-/*
-1: 24	0.02591792656
-4: 54	0.05831533477
-10: 89	0.09611231101
-16: 124	0.13390928725
-22: 164	0.17710583153
-28: 219	0.23650107991
-34: 279	0.30129589632
-40: 349	0.37688984881
-46: 422	0.45572354211
-52: 502	0.54211663067
-58: 582	0.62850971922
-64: 664	0.71706263498
-70: 746	0.80561555075
-76: 831	0.89740820734
-80: 926 1
-*/
-function getStatScale(targetLevel) {
-	var stat = 0;
-	if (targetLevel < 4)
-		stat = 24;
-	else if (targetLevel < 10)
-		stat = 54;
-	else if (targetLevel < 16)
-		stat = 89
-	else if (targetLevel < 22)
-		stat = 124;
-	else if (targetLevel < 28)
-		stat = 164;
-	else if (targetLevel < 34)
-		stat = 219;
-	else if (targetLevel < 40)
-		stat = 279;
-	else if (targetLevel < 46)
-		stat = 349;
-	else if (targetLevel < 52)
-		stat = 422;
-	else if (targetLevel < 58)
-		stat = 502;
-	else if (targetLevel < 64)
-		stat = 582;
-	else if (targetLevel < 70)
-		stat = 664;
-	else if (targetLevel < 76)
-		stat = 746;
-	else if (targetLevel < 80)
-		stat = 831;
-	else
-		stat = STAT_MAX;
-    return stat / STAT_MAX;
-}
-
-// Defense scales differently than toughness.
-// No difference between armor classes.
-
-// These cause weird behavior:
-// Level 80 masterwork has less armor than level 35 masterwork
-// Level 35 masterwork breatplate has 107/26 = 4.12 defense/stat ratio
-// Level 80 masterwork breatplate has 298/82 = 3.63 defense/stat ratio
-// Level 80 exotic breatplate has 363/101 = 3.59 defense/stat ratio
-// TODO: Use ((2127*armorscale)-(916*statscale))/1211 to get right armor scale.
-// TODO: Add extra setting for toughness to separate defense and toughness.
-
-function getArmorScale(level) {
-    if (level > 78)
-        return 1;
-    if (level > 76)
-        return 0.960;
-    if (level == 76)
-        return 0.925;
-    if (level > 70)
-        return 0.906;
-    if (level > 65)
-        return 0.811;
-    if (level > 60)
-        return 0.727;
-    if (level > 55)
-        return 0.646;
-    if (level > 50)
-        return 0.539;
-    if (level > 45)
-        return 0.469;
-    if (level > 40)
-        return 0.408;
-    if (level > 35)
-        return 0.351;
-    if (level > 30)
-        return 0.299;
-    else
-        return 0.252
-}
-
-function getTooltipArmor(level) {
-    if (level > 78)
-        return 2597;
-    if (level > 76)
-        return 2432;
-    if (level == 76)
-        return 2275;
-    if (level > 70)
-        return 2224;
-    if (level > 65)
-        return 1923;
-    if (level > 60)
-        return 1563;
-    if (level > 55)
-        return 1446
-    if (level > 50)
-        return 1241;
-    if (level > 45)
-        return 1047;
-    if (level > 40)
-        return 882;
-    if (level > 35)
-        return 727;
-    if (level > 30)
-        return 617;
-    else
-        return 516
+        var armor = 1211;
+    return Math.round(getDefenseScale(level) * armor);
 }
 
 
-// Returns how agony scales.
-function getAgonyScale(level, resist) {
-    if (level > 49)
-        var base = 0.84;
-    else if (level > 39)
-        var base = 0.66;
-    else if (level > 29)
-        var base = 0.48;
-    else if (level > 19)
-        var base = 0.3;
-    else if (level > 9)
-        var base = 0.12;
-    else
-        return 0;
-    if (resist < 0)
-        resist = 0;
-    base -= resist * 0.012;
-    if (base < 0.01)
-        base = 0.01;
-    return base;
+// Item level doesn't matter.
+function getDefenseScale(defense, targetLevel, playerLevel) {
+	// Whole things to seem bugged so just use attribute scaling values.
+	var playerDefense = [
+		0.030, 0.037, 0.044, 0.051, 0.058, 0.065, 0.072, 0.079, 0.086, 0.093,
+		0.100, 0.100, 0.110, 0.110, 0.120, 0.120, 0.130, 0.130, 0.140, 0.140,
+		0.150, 0.150, 0.164, 0.164, 0.178, 0.178, 0.193, 0.193, 0.209, 0.209,
+		0.225, 0.225, 0.245, 0.245, 0.265, 0.265, 0.285, 0.285, 0.305, 0.305,
+		0.325, 0.325, 0.349, 0.349, 0.373, 0.373, 0.398, 0.398, 0.424, 0.424,
+		0.450, 0.450, 0.480, 0.480, 0.510, 0.510, 0.540, 0.540, 0.570, 0.570,
+		0.600, 0.600, 0.634, 0.634, 0.668, 0.668, 0.703, 0.703, 0.739, 0.739,
+		0.775, 0.775, 0.819, 0.819, 0.863, 0.863, 0.908, 0.908, 0.954, 0.954,
+		1.000
+	]
+	return  Math.ceil(defense * playerDefense[targetLevel] / playerDefense[playerLevel]);
 }
 
-var healthValues;
-var dungeonLevels = [30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 76, 78, 80];
-var agonyPerSecond;
-var playerArmor = 2137;
-
-// Updates all character values.
-function updateValues(playerArmorNew, playerHealth, playerLevel, playerClass, playerAgony, playerFractal, wvwDefense, wvwHealth) {
-	// Armor gets ceiled.
-    playerArmor = Math.ceil(playerArmorNew * (1 + wvwDefense / 100));
-    // Separate base health and vitality health.
-    var playerBaseHealth = getBaseHealth(playerLevel, playerClass);
-    var playerVitality = playerHealth - playerBaseHealth;
-    healthValues = new Array();
-    // Down/upscale for each dungeon.
-    for (var i = 0; i < dungeonLevels.length; i++) {
-        var dungeonLevel = dungeonLevels[i];
-		// High levels players get +2 to their level at story dungeons.
-		if (dungeonLevel == 30 || dungeonLevel == 40 || dungeonLevel == 50 || dungeonLevel == 60 || dungeonLevel == 70
-			|| dungeonLevel == 76 || dungeonLevel == 78)
-		{
-			if (1 + playerLevel == dungeonLevel)
-				dungeonLevel += 1;
-			else if (playerLevel > dungeonLevel)
-				dungeonLevel += 2;
-		}
-		// High level players get +1 to their level at TA exp.
-		if (dungeonLevel == 55)
-		{
-			if (playerLevel > dungeonLevel)
-				dungeonLevel = 1 + dungeonLevel;
-		}
-        // Calculate base health for player in the dungeon.
-        var health = getBaseHealth(dungeonLevel, playerClass);
-        // Add scaled vitality health.
-        health = health + playerVitality / getStatScale(playerLevel) * getStatScale(dungeonLevel);
-        // Add wvw bonus.
-        health = (1 + wvwHealth / 100) * health;
-        healthValues.push(Math.ceil(health));
-    }
-    agonyPerSecond = getAgonyScale(playerFractal, playerAgony);
+function getPlayerArmor(targetLevel) {
+	var toughness = getSetting("toughness");
+	var defense = getSetting("armor") - toughness;
+	var playerLevel = getSetting("level");
+	var armor = getPlayerAttribute(toughness, playerLevel, targetLevel) + getDefenseScale(defense, targetLevel, playerLevel);
+	return  Math.ceil((1 + getSetting("armorMultiplier") / 100) * armor);
 }
 
 function getPercentage(damage, dungeonLevel) {
-	return toPercent(damage, healthValues[dungeonLevels.indexOf(dungeonLevel)]);
+	return toPercent(damage, getPlayerHealth(dungeonLevel));
 }
 
 function getDamage(damage, weapon, potion, dungeonLevel) {
     // Not accurate because of weird armor scaling.
-	var armor = Math.floor(getArmorScale(dungeonLevel) * playerArmor);
+	var armor = Math.floor(getPlayerArmor(dungeonLevel));
 	// Damage gets floored.
 	return {
         min: Math.floor(damage * weapon.min / armor * (1 - potion)),
@@ -263,15 +142,35 @@ function getDamage(damage, weapon, potion, dungeonLevel) {
 }
 
 function getDamageWithoutWeapon(damage, potion, dungeonLevel) {
-    // Not accurate because of weird armor scaling.
-	var armor = Math.floor(getArmorScale(dungeonLevel) * playerArmor);
 	// Damage gets floored.
-	return Math.floor(damage / armor * (1 - potion));
+	return Math.floor(damage / getPlayerArmor(dungeonLevel) * (1 - potion));
 }
 
-function getAgonyDamage(second) {
+function getAgonyPerSecond(scale) {
+	var resist = getSetting("resist");
+	if (scale > 49)
+        var base = 0.84;
+    else if (scale > 39)
+        var base = 0.66;
+    else if (scale > 29)
+        var base = 0.48;
+    else if (scale > 19)
+        var base = 0.3;
+    else if (scale > 9)
+        var base = 0.12;
+    else
+        return 0;
+    if (resist < 0)
+        resist = 0;
+    scale -= resist * 0.012;
+    if (scale < 0.01)
+        scale = 0.01;
+    return scale;
+}
+
+function getAgonyDamage(duration, scale) {
 	// Agony probably gets floored.
-    return Math.floor(healthValues[dungeonLevels.indexOf(80)] * agonyPerSecond * second);
+    return Math.floor(getPlayerHealth(80) * getAgonyPerSecond(scale) * duration);
 }
 
 function getEffectDamage(effect, level, attribute, count) {

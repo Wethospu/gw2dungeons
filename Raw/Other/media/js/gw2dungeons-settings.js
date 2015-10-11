@@ -3,30 +3,34 @@
 // default settings
 var placeholders = {
     level: 80,
-    armor: 2211,
+    armor: 2137,
+	toughness: 1000,
     health: 19212,
     resist: 0,
     fractal: 10,
-    defenseMultiplier: 0,
+    armorMultiplier: 0,
     healthMultiplier: 0,
 }
 
 // Find correct starting values from statcalculator.
 function updatePlaceholderValues() {
-    placeholders.health = getPlayerHealth(getSetting("level"), getSetting("profession"));
-    placeholders.armor = getBaseArmor(getSetting("level"), getSetting("profession"));
+    placeholders.health = getPlayerBaseHealth(getSetting("level"), getSetting("profession"));
+	placeholders.toughness = getPlayerAttribute(STAT_MAX, getSetting("level"));
+    placeholders.armor = getPlayerBaseDefense(getSetting("level"), getSetting("profession")) + placeholders.toughness;
     $("#armorSetting").attr("placeholder", placeholders.armor);
     $("#healthSetting").attr("placeholder", placeholders.health);
+	$("#toughnessSetting").attr("placeholder", placeholders.toughness);
 }
 
 var settings = {
     // Values with a placeholder. //
     armor: null,                  //
+	toughness: null,              //
     health: null,                 //
     level: null,                  //
     resist: null,                 //
     fractal: null,                //
-    defenseMultiplier: null,      //
+    armorMultiplier: null,        //
     healthMultiplier: null,       //
     ////////////////////////////////
 	profession: "warrior",
@@ -201,9 +205,6 @@ function applyEncounterSettings() {
 
 function applyEnemySettings(updateMain) {
 	applyEncounterSettings();
-    // Calculating values.
-    updateValues(getSetting("armor"), getSetting("health"), getSetting("level"), getSetting("profession"), getSetting("resist"), getSetting("fractal"), getSetting("defenseMultiplier"), getSetting("healthMultiplier"));
-    // Updates every enemy.
 	var divId = "";
 	if (updateMain)
 		divId = "#main-container";
@@ -233,7 +234,6 @@ function handleEnemy(enemy) {
         potionStrength = 0;
 	
 	var gameMode = pathToGameMode(currentPath);
-    var dungeonLevel = getPathLevel(currentPath);
 	// Set attributes and visibility.
 	var playerLevel = $(enemy).attr("data-target-level");
 	if (playerLevel == null || playerLevel == '') {
@@ -268,7 +268,7 @@ function handleEnemy(enemy) {
 	
 	var level = $(enemy).attr("data-level");
 	if (level == null || level == '') {
-		level = dungeonLevel;
+		level = getPathLevel(currentPath);
 		// Without set level, allow fractal scale to affect it. / 2015-09-30 / Wethospu
 		level = fractalScaleLevel(level, fractalLevel, scalingType, rank)[0];
 		$(enemy).attr("data-level", level);
@@ -416,7 +416,7 @@ function handleEnemy(enemy) {
     if (getSetting("showArmor") && getSetting("simplifyArmor")) {
         $(enemy).find(".armor").each(function () {
             var baseArmor = (Number)($(this).html());
-            $(this).html(simplifyArmor(baseArmor, dungeonLevel));
+            $(this).html(simplifyArmor(baseArmor, playerLevel));
         });
     }
 
@@ -427,21 +427,21 @@ function handleEnemy(enemy) {
 			damage = fractalScaleDamage(damage * power, fractalLevel, scalingType)
 			var weaponSlot = $(this).attr("data-weapon");
 			if (weaponSlot == "water")
-				var damages = getDamage(damage, weaponStrengthWater, potionStrength, dungeonLevel);
+				var damages = getDamage(damage, weaponStrengthWater, potionStrength, playerLevel);
 			else if (weaponSlot == "off")
-				var damages = getDamage(damage, weaponStrengthOff, potionStrength, dungeonLevel);
+				var damages = getDamage(damage, weaponStrengthOff, potionStrength, playerLevel);
 			else
-				var damages = getDamage(damage, weaponStrengthMain, potionStrength, dungeonLevel);
-			insertDamageRange(this, damages, damageView, damageRange, dungeonLevel);
+				var damages = getDamage(damage, weaponStrengthMain, potionStrength, playerLevel);
+			insertDamageRange(this, damages, damageView, damageRange, playerLevel);
 		}
 		else {
-			damage = getDamageWithoutWeapon(fractalScaleDamage(damage, fractalLevel, scalingType), potionStrength, dungeonLevel);
-			insertDamage(this, damage, damageView, dungeonLevel);
+			damage = getDamageWithoutWeapon(fractalScaleDamage(damage, fractalLevel, scalingType), potionStrength, playerLevel);
+			insertDamage(this, damage, damageView, playerLevel);
 		}
     });
     $(enemy).find(".percent-value").each(function () {
-        var damage = getPercentage((Number)($(this).attr("data-amount")), dungeonLevel);
-        insertDamage(this, damage, damageView, dungeonLevel);
+        var damage = getPercentage((Number)($(this).attr("data-amount")), playerLevel);
+        insertDamage(this, damage, damageView, playerLevel);
     });
     $(enemy).find(".effect-value").each(function () {
         var damage = (Number)($(this).attr("data-amount"));
@@ -457,15 +457,15 @@ function handleEnemy(enemy) {
 		else if (effect == "healingPower")
 			insertHealing(this, damage, healingView, health);
 		else
-			insertDamage(this, damage, damageView, dungeonLevel);
+			insertDamage(this, damage, damageView, playerLevel);
     });
     $(enemy).find(".agony-value").each(function () {
         var second = (Number)($(this).attr("data-amount"));
-        insertDamage(this, getAgonyDamage(second), damageView, dungeonLevel);
+        insertDamage(this, getAgonyDamage(second, fractalLevel), damageView, playerLevel);
     });
     $(enemy).find(".fixed-value").each(function () {
         var damage = (Number)($(this).attr("data-amount"));
-        insertDamage(this, damage, damageView, dungeonLevel);
+        insertDamage(this, damage, damageView, playerLevel);
     });
 	$(enemy).find(".healing-value").each(function () {
         var healing = (Number)($(this).attr("data-amount"));

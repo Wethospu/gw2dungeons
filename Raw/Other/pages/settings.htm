@@ -4,8 +4,10 @@
 		loadSettings(true, true);
 		loadPage();
         saveSetting("settingsVisited", true);
+		updatePlaceholderValues();
         // Add default-values as placeholders.
         $("#armor-setting").attr("placeholder", placeholders.armor);
+		$("#toughness-setting").attr("placeholder", placeholders.toughness);
         $("#health-setting").attr("placeholder", placeholders.health);
         $("#level-setting").attr("placeholder", placeholders.level);
         $("#agony-setting").attr("placeholder", placeholders.resist);
@@ -15,6 +17,7 @@
         $("#search-amount-setting").attr("placeholder", placeholders.searchamount);
         // Put values (needed done like this because of placeholders).
         $("#armor-setting").attr("value", settings.armor);
+		$("#toughness-setting").attr("value", settings.toughness);
         $("#health-setting").attr("value", settings.health);
         $("#level-setting").attr("value", settings.level);
         $("#class-setting").val(getSetting("profession"));
@@ -22,7 +25,6 @@
         $("#fractal-setting").attr("value", settings.fractal);
         $("#defense-multiplier-setting").attr("value", settings.wvwdefense);
         $("#health-multiplier-setting").attr("value", settings.wvwhealth);
-		updatePlaceholderValues();
 		
         // Get value for every checkbox.
         $('input[type="checkbox"]').each(function () {
@@ -177,10 +179,16 @@
         <p>
             <label for="health-setting">Health</label>
             <input type="text" name="number" id="health-setting" data-setting="health">
+			<span class="forms-desc">Without any health boosts (like WvW).</span>
         </p>
         <p>
             <label for="armor-setting">Armor</label>
             <input type="text" name="number" id="armor-setting" data-setting="armor">
+        </p>
+		<p>
+            <label for="toughness-setting">Toughness</label>
+            <input type="text" name="number" id="toughness-setting" data-setting="toughness">
+			<span class="forms-desc">Needed to scale armor correctly.</span>
         </p>
         <p>
             <label for="agony-setting">Agony Resistance</label>
@@ -205,8 +213,8 @@
             </select>
         </p>
         <p class="forms-inline">
-            <label for="defense-multiplier-setting">Defence boost</label>
-            <input type="text" name="number" id="defense-multiplier-setting" data-setting="defenseMultiplier"><span class="input-append">%</span><br>
+            <label for="armor-multiplier-setting">Armor boost</label>
+            <input type="text" name="number" id="armor-multiplier-setting" data-setting="armorMultiplier"><span class="input-append">%</span><br>
             <span class="forms-desc">WvW and others.</span>
         </p>
         <p class="forms-inline">
