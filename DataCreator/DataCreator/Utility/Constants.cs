@@ -38,7 +38,7 @@ namespace DataCreator.Utility
     public static string InitialdataHtml { get; set; }
     public static string InitialdataPhp { get; set; }
     public static string InitialdataText { get; set; }
-    public static string InitialDataIndex { get { return "<!-- display name|search name|category|race|dungeon|path|index|tags -->" + LineEnding; } }
+    public static string InitialDataIndex { get; set; }
     public static string LineEnding { get; private set; }
     public static string ForcedLineEnding { get { return "\n"; } }
     public static string Space { get { return "&nbsp;"; } }
@@ -117,6 +117,7 @@ namespace DataCreator.Utility
         InitialdataHtml = "";
         InitialdataPhp = "";
         InitialdataText = "";
+        InitialDataIndex = "";
       }
       else
       {
@@ -137,6 +138,7 @@ namespace DataCreator.Utility
         InitialdataHtml = "<!-- Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST! -->" + LineEnding;
         InitialdataPhp = "// Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding;
         InitialdataText = "# Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding;
+        InitialDataIndex = "<!-- display name|search name|category|race|dungeon|path|index|tags -->" + LineEnding;
       }
     }
 

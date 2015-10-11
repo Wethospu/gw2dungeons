@@ -692,7 +692,7 @@ namespace DataCreator.Enemies
           builder.Append(dungeonData.ConvertTag(tag));
         indexFile.Append("|").Append(builder.ToString());
         
-        indexFile.Append(Constants.LineEnding);
+        indexFile.Append(Constants.ForcedLineEnding);
       }
     }
 
