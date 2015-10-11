@@ -713,7 +713,7 @@ namespace DataCreator.Enemies
       for (var i = 0; i < enemies.Count; i++)
       {
         enemyFile.Append(enemies[i].ToHtml(enemies));
-        if ((i + 1) % 100 == 0)
+        if ((i + 1) % 100 == 0 || i == enemies.Count - 1)
         {
           var fileName = Constants.DataOutput + Constants.DataEnemyResult + "enemies" + (i/100) + ".htm";
           var dirName = Path.GetDirectoryName(fileName);
