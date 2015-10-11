@@ -157,18 +157,18 @@ namespace DataCreator.Enemies
         htmlBuilder.Append("<i>").Append(Helper.ConvertSpecial(Helper.ToUpper(LinkGenerator.CreateEnemyLinks(Animation, path, enemies)))).Append("</i>. ");
       if (Cooldown > -1 || _internalCooldown > -1)
       {
-        htmlBuilder.Append("<span class=\"cooldown-unit\"><span class=\"cooldown\"");
+        htmlBuilder.Append("<span class=\"cooldown-unit\" title=\"Skill cooldown\"><span class=\"cooldown\"");
         if (Cooldown > -1)
           htmlBuilder.Append(" data-amount=\"").Append(Cooldown).Append("\"");
         if (_internalCooldown > -1)
           htmlBuilder.Append(" data-internal=\"").Append(_internalCooldown / 1000).Append("\"");
-        htmlBuilder.Append("></span>").Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" title=\"cooldown\">CD</span> </span>");
+        htmlBuilder.Append("></span>").Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" data-src=\"cooldown\">CD</span> </span>");
       }
       if (_minimumRange > -1 || _maximumRange > -1)
       {
-        htmlBuilder.Append("<span class=\"range-unit\">");
+        htmlBuilder.Append("<span class=\"range-unit\" title=\"Activation range\">");
         htmlBuilder.Append(_minimumRange > -1 ? "" + _minimumRange : "?").Append("-").Append(_maximumRange > -1 ? "" + _maximumRange : "?");
-        htmlBuilder.Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" title=\"range\">range</span> </span>");
+        htmlBuilder.Append(Constants.Space).Append("<span class=").Append(Constants.IconClass).Append(" data-src=\"range\">range</span> </span>");
       }
       htmlBuilder.Append("</p>").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<div class=\"enemy-attack-effect\">").Append(Constants.LineEnding);
