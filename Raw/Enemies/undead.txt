@@ -1247,7 +1247,7 @@ animation=turns invulnerable|5
 additional=used at 75% health
 effect=buff:invulnerability
 effect=ranged
-subeffect=buff:"Green_Cloud":6 on closest target (doesn't prioritize players)
+subeffect=buff:Green_Cloud:6:1:- on closest target (doesn't prioritize players)
 #note=does not work on players in downed state
 
 ##################################################################

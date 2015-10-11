@@ -480,7 +480,7 @@ attack=Sun Spirit Aura
 effect=channeled ranged
 frequency=5
 subeffect=might:5
-subeffect=buff:Sun_Spirit's_Essence:5:5:1:sun_spirit
+subeffect=buff:Sun_Spirit's_Essence:5:1:sun_spirit
 
 attack="Sun Spirit's Essence"
 effect=buff
@@ -522,6 +522,7 @@ animation=lightning circle
 effect=buff
 subeffect=daze:5 caused by Shoot
 #note=doesn't seem to have any effect
+
 ################################################################## 
 
 Name=Thaumanova Anomaly

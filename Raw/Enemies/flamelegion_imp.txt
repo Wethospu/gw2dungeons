@@ -1160,7 +1160,7 @@ effect=summon 3 enemy=Fire_Imps:normal
 attack=Summon Altar
 ID=2761
 effect=summon enemy=Altar:structure
-effect=buff:invulnerable while Altar is alive
+effect=buff:invulnerability while Altar is alive
 
 ##################################################################
 

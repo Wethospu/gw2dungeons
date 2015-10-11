@@ -348,7 +348,7 @@ effect=3 projectiles (cone)
 subeffect=damage:-
 subeffect=bleeding:5
 subeffect=immobilized:10
-subeffect=buff:"Queen's_Frenzy":10:1:- if hits a target
+subeffect=buff:Queen's_Frenzy:10:1:- if hits a target
 #note=block, evade or reflect
 
 attack="Queen's_Frenzy"

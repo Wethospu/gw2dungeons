@@ -92,7 +92,7 @@ namespace DataCreator.Enemies
         toReturn.Append(Helper.ConvertSpecial(Helper.ToUpper(Amount)));
       }
       // Add icon.
-      toReturn.Append(" <span class=").Append(Constants.IconClass).Append(" title=\"").Append(Type.ToLower()).Append("\">").Append(Helper.ToUpper(Type)).Append("</span>");
+      toReturn.Append(" <span class=").Append(Constants.IconClass).Append(" data-src=\"").Append(Type.ToLower()).Append("\">").Append(Helper.ToUpper(Type)).Append("</span>");
       HandleStacksAndDuration(toReturn);
       return toReturn.ToString();
     }

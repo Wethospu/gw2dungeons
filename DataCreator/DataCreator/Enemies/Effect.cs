@@ -200,7 +200,8 @@ namespace DataCreator.Enemies
             stacks = Helper.ParseI(effectData[2]);
           if (effectData.Length > 3 && effectData[3].Length > 0)
             icon = effectData[3];
-          stacksAdditively = effectData.Length > 4;
+          if (effectData.Length > 4)
+            stacksAdditively = Helper.ParseI(effectData[4]) > 0 ? true : false;
         }
 
         var totalAmount = 0.0;

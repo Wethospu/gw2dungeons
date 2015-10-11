@@ -290,7 +290,7 @@ ID=4866
 animation=blows horn|1.5
 cooldown=15
 effect=ranged
-subeffect=buff:Birds":4:1:-
+subeffect=buff:Birds:4:1:-
 #note=break line of sight
 #note=evade 4 times or use immunity
 

@@ -1053,8 +1053,6 @@ Current record (Bloomhunger): record=44.
 Current record (Mossman): record=45.
 
 name=Start
-image=http://webmup.com/a69a4/vid.webm
-image=http://webmup.com/fcab0/vid.webm
 tactic=normal
 Whole starting area is filled with all kind of traps crippling, immobilizing or knocking you down. There are also 10 passages which will open and close randomly. At all times 3 of them will be closed. Closed ones rotate every 50 seconds. Mossman may also appear for 20 seconds at some spots.
 Walk to marked spot on map to release 3 wisps. They will get randomly put to 6 pre-defined locations on the map. Once someone grabs one, you have 33 seconds to bring them all back. When carrying a wisp, some passages will always close when you get near (scales with level). To counter this, you can jump over walls at many points (only way to reliably do it). Remember to drop off from walls instead of jumping to prevent getting in combat.
