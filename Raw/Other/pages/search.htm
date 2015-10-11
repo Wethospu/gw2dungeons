@@ -226,11 +226,18 @@ function searchIndex(parameters, paths, categories, races, tags, resultCount) {
 			}
 		}
 		results = processResults(results);
-		$("#search-page").html("Found " + results.length + " results.");
-		if (results.length == 0)
+		
+		if (results.length == 0) {
+			$("#search-page").html("Found " + results.length + " results.");
 			$("#instructions").css("display", "initial");
+		}	
 		else
 		{
+			if (results.length > 99)
+				$("#search-page").html("Found " + results.length + " results. Please wait, this may take a while.");
+			else
+				$("#search-page").html("Found " + results.length + " results.");
+			$("#instructions").css("display", "none");
 			var htmlList = [];
 			displayResults(results, htmlList);
 		}
@@ -270,7 +277,7 @@ function displayResults(elements, htmlList) {
 		for (var i = 0; i < htmlList.length; i++)
 			html += htmlList[i];
 		// Display them.
-		$("#instructions").css("display", "none");
+		$("#search-page").html("Found " + results.length + " results.");
 		$("#search-page").append(html);
 		applySettings(true, true);
 		loadPage();
@@ -309,97 +316,6 @@ function displayResults(elements, htmlList) {
 	});
 }
 
-function pathsToName(paths) {
-	// Find dungeon.
-	var pathArray = paths.split(":");
-	var startSmall = pathArray[0].substring(0, 2);
-	var startMedium = pathArray[0].substring(0, 3);
-	var startBig = pathArray[0].substring(0, 4);
-	var name = "";
-	if (startSmall == "ac")
-		name = "Ascalonian Catacombs: ";
-	else if (startSmall == "cm")
-		name = "Caudecus's Manor: ";
-	else if (startSmall == "ta")
-		name = "Twilight Arbor: ";
-	else if (startSmall == "se")
-		name = "Sorrows Embrace: ";
-	else if (startMedium == "cof")
-		name = "Citadel of Flame: ";
-	else if (startBig == "hotw")
-		name = "Honor of the Waves: ";
-	else if (startMedium == "coe")
-		name = "Crucible of Eternity: ";
-	else if (startBig == "arah")
-		name = "The Ruined City of Arah: ";
-	else
-	{
-	    for (var i = 0; i < pathArray.length; i++) {
-	        if (pathArray[i] == "insta")
-	            name = "Instability, ";
-	        else if (pathArray[i] == "aether")
-	            name = "Aetherblade, ";
-			else if (pathArray[i] == "aqua")
-				name = "Aquatic Ruins, ";
-			else if (pathArray[i] == "cliff")
-			    name += "Cliffside, ";
-			else if (pathArray[i] == "furn")
-			    name += "Molten Furnace, ";
-			else if (pathArray[i] == "mai")
-			    name = "Captain Mai Trin, ";
-			else if (pathArray[i] == "molten")
-			    name = "Molten Boss, ";
-			else if (pathArray[i] == "snow")
-				name = "Snowblind, ";
-			else if (pathArray[i] == "solid")
-				name = "Solid Ocean, ";
-			else if (pathArray[i] == "swamp")
-			    name = "Swampland, ";
-			else if (pathArray[i] == "thauma")
-			    name = "Thaumanova Reactor, ";
-			else if (pathArray[i] == "uncat")
-				name = "Uncategorized, ";
-			else if (pathArray[i] == "under")
-				name = "Underground Facility, ";
-			else if (pathArray[i] == "urban")
-				name = "Urban Battleground, ";
-			else if (pathArray[i] == "volc")
-				name = "Volcanic, ";
-		}
-		if (name != "")
-			name = "Fractals of the Mists: " + name.substring(0, name.length - 2);
-		return name;
-	}
-	// Paths for normal dungeons.
-	for (var i = 0; i < pathArray.length; i++) {
-		var end = pathArray[i][pathArray[i].length - 1];
-		if (end == "s")
-			name += "Story, ";
-		else if (end == "1")
-			name += "Path 1, ";
-		else if (end == "2")
-			name += "Path 2, ";
-		else if (end == "3")
-			name += "Path 3, ";
-		else if (end == "4")
-			name += "Path 4, ";
-	}
-	if (name == "Twilight Arbor: ")
-	{
-		for (var i = 0; i < pathArray.length; i++) {
-			if (pathArray[i] == "tau")
-				name = "Path Up, ";
-			else if (pathArray[i] == "taf")
-				name += "Path Forward, ";
-			else if (pathArray[i] == "taae")
-				name += "Path Assault, ";
-		}
-	}
-	if (name != "")
-		name = name.substring(0, name.length - 2);
-	return name;
-}
-	
 </script>
 <br>
 <label for="search-name">Name</label>
