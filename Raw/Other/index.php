@@ -3,7 +3,7 @@
 $title_glue = ' - ';
 
 // redirect search to search page as anchor
-if(!empty($_POST['search'])) {
+if(isset($_POST['search'])) {
     $search = urlencode($_POST['search']);
     header(sprintf('Location: ./%s#%s', 'Search', $search));
     exit();
