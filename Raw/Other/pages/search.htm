@@ -243,7 +243,7 @@ function searchIndex(searchID, parameters, paths, categories, races, tags, resul
 				$("#search-page").html("Found " + results.length + " results.");
 			$("#instructions").css("display", "none");
 			var htmlList = [];
-			displayResults(searchID, results, htmlList);
+			displayResults(searchID, 0, results, htmlList);
 		}
 		
 	}).error(function (jqXHR, textStatus, errorThrown) {
@@ -273,11 +273,11 @@ function processResults(results) {
 // Finds found enemies from content files and displays them.
 // Note: Load is asynchonous. This means we have to use recursive callback way instead of a loop.
 // Performance: Takes up to 3000 ms if enemy pages not cached. Otherwise up to 500 ms.
-function displayResults(searchID, elements, htmlList) {
+function displayResults(searchID, elementID, elements, htmlList) {
 	if (currentSearchID != searchID)
 		return;
 	// Check is this the last call.
-	if (elements.length == 0) {
+	if (elementID >= elements.length) {
 		// Build the html.
 		var html = "";
 		for (var i = 0; i < htmlList.length; i++)
@@ -290,7 +290,7 @@ function displayResults(searchID, elements, htmlList) {
 		return;
 	}
 	var view = $("#search-view").val();
-	var numberToFind = elements[0].index;
+	var numberToFind = elements[elementID].index;
 	var fileNumber = Math.floor(numberToFind / 100);
 	numberToFind -= fileNumber * 100;
 	var fileDiv = $("<div />");
@@ -304,20 +304,26 @@ function displayResults(searchID, elements, htmlList) {
 			// Build enemy link.
 			var str = '';
 			if (view != "All" && view != "Info")
-				str = '<span class="' + elements[0].category + ' enemy-button" data-index="' + elements[0].index + '"><h3>' + elements[0].display + '</h3></span>\n';
+				str = '<span class="' + elements[elementID].category + ' enemy-button" data-index="' + elements[elementID].index + '"><h3>' + elements[elementID].display + '</h3></span>\n';
 			if (view == "Info") {
 				$(this).find("div").remove(":not(.in-line)");
 				$(this).find("p").remove("p");
-				$(this).find(".enemy-name").html('<span class="' + elements[0].category + ' enemy-button" data-index="' + elements[0].index + '">' + elements[0].display + '</span>');
+				$(this).find(".enemy-name").html('<span class="' + elements[elementID].category + ' enemy-button" data-index="' + elements[elementID].index + '">' + elements[elementID].display + '</span>');
 			}
 			if (view == "All" || view == "Info")	
 				str += '<br/>\n' + $(this)[0].outerHTML;
 			str += '\n<br/><hr/>\n';
-			htmlList[elements[0].order] = str;
+			htmlList[elements[elementID].order] = str;
+			// Check whether enemy can be found.
+			elementID++;
+			if (elementID >= elements.length)
+				return;
+			numberToFind = elements[elementID].index;
+			if (fileNumber != Math.floor(numberToFind / 100))
+				return;
+			numberToFind -= fileNumber * 100;
 		});
-		// Remove loaded elements.
-		elements.splice(0, 1);
-		displayResults(searchID, elements, htmlList);
+		displayResults(searchID, elementID, elements, htmlList);
 	}).error(function (jqXHR, textStatus, errorThrown) {
 		console.log("error " + textStatus);
 		console.log("incoming Text " + jqXHR.responseText);
