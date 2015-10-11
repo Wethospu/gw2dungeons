@@ -192,7 +192,7 @@ function applyEncounterSettings() {
     if (getSetting("showIcons"))
 	{
 		$('.icon').each(function () {
-			$(this).css('background-image', 'url(media/img/' + $(this).attr('title') + '.png)');
+			$(this).css('background-image', 'url(media/img/' + $(this).attr('data-src') + '.png)');
 		});
 	}
 	else

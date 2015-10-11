@@ -26,7 +26,7 @@ namespace DataCreator.Utility
 
     public static Dictionary<string, string> ReadLanguageData(string language)
     {
-      var dataLocation = Constants.DataLanguageRaw + "language";
+      var dataLocation = Constants.DataRaw + "language";
       if (!language.Equals("en"))
         dataLocation += "_" + language;
       dataLocation += ".txt";

@@ -343,7 +343,7 @@ namespace DataCreator.Enemies
           if (icon.Equals("-") && effectType == EffectType.Buff)
             startIcon = "Buff";
           else
-            startIcon = "<span class=" + Constants.IconClass + " title=\"" + icon.ToLower() + "\"></span>";
+            startIcon = "<span class=" + Constants.IconClass + " data-src=\"" + icon.ToLower() + "\" title=\"" + Helper.ToUpper(category.Replace('_', ' ')) + "\"></span>";
           firstType = category;
           firstStacks = stacks;
         }

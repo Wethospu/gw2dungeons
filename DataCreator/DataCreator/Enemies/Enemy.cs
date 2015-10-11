@@ -181,18 +181,18 @@ namespace DataCreator.Enemies
       {
         if (genders[i].Equals("none") || genders[i].Equals(""))
           continue;
-        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"gender-unit\"><span class=").Append(Constants.IconClass).Append("title=\"").Append(genders[i]).Append("\">").Append(Helper.ToUpper(genders[i])).Append("</span></span>").Append(Constants.LineEnding);
+        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"gender-unit\"><span class=").Append(Constants.IconClass).Append("data-src=\"").Append(genders[i]).Append("\">").Append(Helper.ToUpper(genders[i])).Append("</span></span>").Append(Constants.LineEnding);
       }
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<br>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"level-unit\">Level").Append(Constants.Space);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"level-unit\" title=\"Hold ctrl to change 10 levels\">Level").Append(Constants.Space);
       // Level can be changed dynamically. / 2015-09-27 / Wethospu
       htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-left level-minus\"></span><span class=\"level\"></span>");
       htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-right level-plus\"></span> </span>").Append(Constants.LineEnding);
       // Add a dynamic target level for dungeons and a dynamic fractal level for fractals. / 2015-09-39 / Wethospu
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"fractal-level-unit\">Fractal level").Append(Constants.Space);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"fractal-level-unit\" title=\"Hold ctrl to change 10 levels\">Fractal level").Append(Constants.Space);
       htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-left fractal-level-minus\"></span><span class=\"fractal-level\"></span>");
       htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-right fractal-level-plus\"></span> </span>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"target-level-unit\">Player level").Append(Constants.Space);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"target-level-unit\" title=\"Hold ctrl to change 10 levels\">Player level").Append(Constants.Space);
       htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-left target-level-minus\"></span><span class=\"target-level\"></span>");
       htmlBuilder.Append("<span class=\"glyphicon glyphicon-chevron-right target-level-plus\"></span> </span>").Append(Constants.LineEnding);
       // Add a link for every path to dynamically change the current path (and base level). / 2015-09-27 / Wethospu
@@ -202,19 +202,19 @@ namespace DataCreator.Enemies
       htmlBuilder.Append(" </span>").Append(Constants.LineEnding);
 
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<br>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"health-unit\"><span class=").Append(Constants.IconClass).Append("title=\"health\">Health</span>:").Append(Constants.Space).Append("<span class=\"health\"></span> </span>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"armor-unit\"><span class=").Append(Constants.IconClass).Append("title=\"armor\">Armor</span>:").Append(Constants.Space).Append("<span class=\"armor\"></span> </span>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"offense-unit\"><span class=").Append(Constants.IconClass).Append("title=\"offense\">Offense</span>:").Append(Constants.Space).Append("<span class=\"offense\"></span> </span>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"weapon-unit\"><span class=").Append(Constants.IconClass).Append("title=\"weapon\">Weapon strength</span>:").Append(Constants.Space).Append("<span class=\"weapon\"></span> </span>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"power-unit\"><span class=").Append(Constants.IconClass).Append("title=\"power\">Power</span>:").Append(Constants.Space).Append("<span class=\"power\"></span> </span>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"precision-unit\"><span class=").Append(Constants.IconClass).Append("title=\"precision\">Critical chance</span>:").Append(Constants.Space).Append("<span class=\"precision\"></span>% </span>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"ferocity-unit\"><span class=").Append(Constants.IconClass).Append("title=\"ferocity\">Critical damage</span>:").Append(Constants.Space).Append("<span class=\"ferocity\"></span>%  </span>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"condition-unit\"><span class=").Append(Constants.IconClass).Append("title=\"condition\">Condition damage</span>:").Append(Constants.Space).Append("<span class=\"condition\"></span> </span>").Append(Constants.LineEnding);
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"healing-unit\"><span class=").Append(Constants.IconClass).Append("title=\"healing_power\">Healing power</span>:").Append(Constants.Space).Append("<span class=\"healing-power\"></span> </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"health-unit\" title=\"Health\"><span class=").Append(Constants.IconClass).Append("data-src=\"health\">Health</span>:").Append(Constants.Space).Append("<span class=\"health\"></span> </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"armor-unit\" title=\"Armor\"><span class=").Append(Constants.IconClass).Append("data-src=\"armor\">Armor</span>:").Append(Constants.Space).Append("<span class=\"armor\"></span> </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"offense-unit\" title=\"Relative offensive power\"><span class=").Append(Constants.IconClass).Append("data-src=\"offense\">Offense</span>:").Append(Constants.Space).Append("<span class=\"offense\"></span> </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"weapon-unit\" title=\"Main weapon strength\"><span class=").Append(Constants.IconClass).Append("data-src=\"weapon\">Weapon strength</span>:").Append(Constants.Space).Append("<span class=\"weapon\"></span> </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"power-unit\" title=\"Power\"><span class=").Append(Constants.IconClass).Append("data-src=\"power\">Power</span>:").Append(Constants.Space).Append("<span class=\"power\"></span> </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"precision-unit\" title=\"Critical chance\"><span class=").Append(Constants.IconClass).Append("data-src=\"precision\">Critical chance</span>:").Append(Constants.Space).Append("<span class=\"precision\"></span>% </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"ferocity-unit\" title=\"Critical damage\"><span class=").Append(Constants.IconClass).Append("data-src=\"ferocity\">Critical damage</span>:").Append(Constants.Space).Append("<span class=\"ferocity\"></span>%  </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"condition-unit\" title=\"Condition damage\"><span class=").Append(Constants.IconClass).Append("data-src=\"condition\">Condition damage</span>:").Append(Constants.Space).Append("<span class=\"condition\"></span> </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"healing-unit\" title=\"Healing power\"><span class=").Append(Constants.IconClass).Append("data-src=\"healing_power\">Healing power</span>:").Append(Constants.Space).Append("<span class=\"healing-power\"></span> </span>").Append(Constants.LineEnding);
       if (Attributes.Size > 0)
-        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"size-unit\"><span class=").Append(Constants.IconClass).Append("title=\"size\">Size</span>:").Append(Constants.Space).Append(Math.Round(Attributes.Size * 100)).Append("%</span>").Append(Constants.LineEnding);
+        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"size-unit\" title=\"Relative size\"><span class=").Append(Constants.IconClass).Append("data-src=\"size\">Size</span>:").Append(Constants.Space).Append(Math.Round(Attributes.Size * 100)).Append("%</span>").Append(Constants.LineEnding);
       // Add information about scaling mode so people understand when things shouldn't scale. / 2015-10-10 / Wethospu
-      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"scaling-unit\">Scaling:").Append(Constants.Space).Append(Gw2Helper.ScalingTypeToString(ScalingType)).Append(" </span>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"scaling-unit\" title=\"Internal scaling mode\">Scaling:").Append(Constants.Space).Append(Gw2Helper.ScalingTypeToString(ScalingType)).Append(" </span>").Append(Constants.LineEnding);
 
       htmlBuilder.Append(Gw2Helper.AddTab(3)).Append("</div>").Append(Constants.LineEnding);
       // Add tactics. / 2015-08-09 / Wethospu
