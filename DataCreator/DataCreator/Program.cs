@@ -290,12 +290,18 @@ namespace DataCreator
       Constants.Initialize(key.Key == ConsoleKey.D4);
       CheckInternetSettings();
       LoadSettings();
-      Dictionary<string, EnemyAttributes> enemyAttributes;
-      using (StreamReader r = new StreamReader(Constants.DataEnemyRaw + "data.json"))
+      Dictionary<string, EnemyAttributes> enemyAttributes = new Dictionary<string, EnemyAttributes>();
+      if (File.Exists(Constants.DataRaw + "data.json"))
       {
-        string json = r.ReadToEnd();
-        enemyAttributes = JsonConvert.DeserializeObject<Dictionary<string, EnemyAttributes>>(json);
+        using (StreamReader r = new StreamReader(Constants.DataRaw + "data.json"))
+        {
+          string json = r.ReadToEnd();
+          enemyAttributes = JsonConvert.DeserializeObject<Dictionary<string, EnemyAttributes>>(json);
+        }
       }
+      else
+        Helper.ShowWarningMessage("File " + Constants.DataRaw + "data.json" + " doesn't exist. No enemy data loaded.");
+      
       Constants.UniqueIndexCounter = 0;
       string[] toGenerate = { "ac", "cm", "ta", "se", "cof", "hotw", "coe", "arah", "fotm" };
       // File containing all enemies and encounters for searching.

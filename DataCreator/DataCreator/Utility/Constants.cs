@@ -22,7 +22,7 @@ namespace DataCreator.Utility
     // Uses more complicated notation to keep flexibility for future.
     public static string DataEnemyRaw { get { return "Raw\\Enemies\\"; } }
     public static string DataEncounterRaw { get { return "Raw\\Dungeons\\"; } }
-    public static string DataLanguageRaw { get { return "Raw\\"; } }
+    public static string DataRaw { get { return "Raw\\"; } }
     public static string DataOtherRaw { get { return "Raw\\Other\\"; } }
     public static string DataEnemySuffix { get { return "_e"; } }
 
