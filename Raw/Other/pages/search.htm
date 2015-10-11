@@ -49,6 +49,9 @@
         }
     });
 
+// Track current search ID to stop previous search if use overwrites. / 2015-10-11 / Wethospu
+var currentSearchID = 0;
+
 // Attempts to find dungeon, path and category from parameters. Data must match all of these.
 // Rest of the parameters are considered as a partial names. Data must contain at least one parameter.
 function handleSearch() {
@@ -57,7 +60,8 @@ function handleSearch() {
 	var names = $("#search-name").val().toLowerCase().split(" ");
 	loadSettings(false, false);
 	var searchObject = readParameters();
-	searchIndex(names, dungeonsToPaths(searchObject.dungeons), searchObject.categories, searchObject.races, searchObject.tags, $("#search-amount").val());
+	currentSearchID = currentSearchID + 1;
+	searchIndex(currentSearchID, names, dungeonsToPaths(searchObject.dungeons), searchObject.categories, searchObject.races, searchObject.tags, $("#search-amount").val());
 	searchDone = true;
 }
 
@@ -127,7 +131,7 @@ function dungeonsToPaths(dungeons) {
 }
 
 // Performance: Takes up to 250 ms.
-function searchIndex(parameters, paths, categories, races, tags, resultCount) {
+function searchIndex(searchID, parameters, paths, categories, races, tags, resultCount) {
 	var resultsTop = new Array();
 	var resultsHigh = new Array();
 	var resultsMedium = new Array();
@@ -239,7 +243,7 @@ function searchIndex(parameters, paths, categories, races, tags, resultCount) {
 				$("#search-page").html("Found " + results.length + " results.");
 			$("#instructions").css("display", "none");
 			var htmlList = [];
-			displayResults(results, htmlList);
+			displayResults(searchID, results, htmlList);
 		}
 		
 	}).error(function (jqXHR, textStatus, errorThrown) {
@@ -269,7 +273,9 @@ function processResults(results) {
 // Finds found enemies from content files and displays them.
 // Note: Load is asynchonous. This means we have to use recursive callback way instead of a loop.
 // Performance: Takes up to 3000 ms if enemy pages not cached. Otherwise up to 500 ms.
-function displayResults(elements, htmlList) {
+function displayResults(searchID, elements, htmlList) {
+	if (currentSearchID != searchID)
+		return;
 	// Check is this the last call.
 	if (elements.length == 0) {
 		// Build the html.
@@ -311,7 +317,7 @@ function displayResults(elements, htmlList) {
 		});
 		// Remove loaded elements.
 		elements.splice(0, 1);
-		displayResults(elements, htmlList);
+		displayResults(searchID, elements, htmlList);
 	}).error(function (jqXHR, textStatus, errorThrown) {
 		console.log("error " + textStatus);
 		console.log("incoming Text " + jqXHR.responseText);
