@@ -285,7 +285,7 @@ function displayResults(searchID, elementID, elements, htmlList) {
 		// Display them.
 		$("#search-page").html("Found " + htmlList.length + " results.");
 		$("#search-page").append(html);
-		applySettings(true, true);
+		applySettings(true, "search");
 		loadPage();
 		return;
 	}

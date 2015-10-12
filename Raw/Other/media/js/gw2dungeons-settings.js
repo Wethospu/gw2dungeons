@@ -41,43 +41,79 @@ var settings = {
 	searchAmountInfo: 100,
 	searchAmountAll: 10,
 	searchView: 'Info',
+	// General settings.
+	properCooldowns: false,
+    settingsVisited: false,
+    comments: true,
+	useSidebar: true,
+    adSetting: "big",
+	defaultFilters: "18EvyA4",
     // Tab settings.
     tactics: [],
 	tips: [],
 	tabAmount: 10,
-	// Enemy settings.
-	showIcons: true,
-    damageView: "number",
-	healingView: "number",
-	damageRange: "maximum",
-    simplifyHealth: true,
-    simplifyArmor: true,
-	showHealth: true,
-	showArmor: true,
-	showWeaponStrength: true,
-	showPower: true,
-	showOffense: false,
-	showPrecision: true,
-	showFerocity: true,
-	showCondition: true,
-	showHealing: true,
-	showRace: true,
-    showSize: true,
-	showRank: true,
-	showGender: true,
-	showLevel: true,
-	showPathSelection : true,
-	showTargetLevel: true,
-	showFractalLevel: true,
-	showScalingMode: true,
-	showCooldowns: true,
-	properCooldowns: false,
-	showRanges: true,
-	// General settings.
-    settingsVisited: false,
-    comments: true,
-    adSetting: "big",
-	defaultFilters: "18EvyA4",
+	// Enemy overlay settings.
+	mainShowIcons: true,
+    mainDamageView: "number",
+	mainHealingView: "number",
+	mainDamageRange: "range",
+	mainShowAllInfo: true,
+	mainShowAnimations: true,
+	mainShowTactics: true,
+	mainShowImages: true,
+    mainSimplifyHealth: true,
+    mainSimplifyArmor: true,
+	mainShowHealth: true,
+	mainShowArmor: true,
+	mainShowWeaponStrength: true,
+	mainShowPower: true,
+	mainShowOffense: false,
+	mainShowPrecision: true,
+	mainShowFerocity: true,
+	mainShowCondition: true,
+	mainShowHealing: true,
+	mainShowRace: true,
+    mainShowSize: true,
+	mainShowRank: true,
+	mainShowGender: true,
+	mainShowLevel: true,
+	mainShowPathSelection : true,
+	mainShowTargetLevel: true,
+	mainShowFractalLevel: true,
+	mainShowScalingMode: true,
+	mainShowCooldowns: true,
+	mainShowRanges: true,
+	// Enemy sidebar settings.
+	sideShowIcons: true,
+    sideDamageView: "number",
+	sideHealingView: "number",
+	sideDamageRange: "maximum",
+	sideShowAllInfo: false,
+	sideShowAnimations: false,
+	sideShowTactics: false,
+	sideShowImages: false,
+    sideSimplifyHealth: true,
+    sideSimplifyArmor: true,
+	sideShowHealth: true,
+	sideShowArmor: true,
+	sideShowWeaponStrength: false,
+	sideShowPower: false,
+	sideShowOffense: false,
+	sideShowPrecision: false,
+	sideShowFerocity: false,
+	sideShowCondition: false,
+	sideShowHealing: false,
+	sideShowRace: true,
+    sideShowSize: true,
+	sideShowRank: true,
+	sideShowGender: false,
+	sideShowLevel: true,
+	sideShowPathSelection : false,
+	sideShowTargetLevel: false,
+	sideShowFractalLevel: false,
+	sideShowScalingMode: false,
+	sideShowCooldowns: true,
+	sideShowRanges: true,
 	// Daily tracker memory.
 	donePaths: [],
 	dailyPaths: [],
@@ -113,18 +149,18 @@ function saveSetting(setting, value) {
 }
 
 // load settings from localstorage
-function loadSettings(loadEncounters, loadEnemies) {
+function loadSettings(loadEncounters, enemyLocation) {
     for (var setting in settings) {
         var value = $.localStorage(setting);
         if (value != null)
             settings[setting] = value;
     }
-    applySettings(loadEncounters, loadEnemies);
+    applySettings(loadEncounters, enemyLocation);
 }
 
-function applySettings(loadEncounters, loadEnemies) {
-	if (loadEnemies)
-		applyEnemySettings(true);
+function applySettings(loadEncounters, enemyLocation) {
+	if (enemyLocation)
+		applyEnemySettings(enemyLocation);
 	else if (loadEncounters)
 		applyEncounterSettings();
 
@@ -187,9 +223,21 @@ function chooseCorrectTab() {
 }
 
 function applyEncounterSettings() {
-    chooseCorrectTab();
-    // Whether to show icons.
-    if (getSetting("showIcons"))
+    chooseCorrectTab(); 
+}
+
+function applyEnemySettings(location) {
+	applyEncounterSettings();
+	var divId = "";
+	if (location == "search") {
+		divId = "#main-container";
+		location = "main";
+	}
+	else if (location == "main")
+		divId = "#data-overlay";	
+	else
+		divId = "#detail-container";
+	if (getSetting(location + "ShowIcons"))
 	{
 		$('.icon').each(function () {
 			$(this).css('background-image', 'url(media/img/' + $(this).attr('data-src') + '.png)');
@@ -201,24 +249,15 @@ function applyEncounterSettings() {
 			$(this).removeClass('icon');
 		});
 	}
-}
-
-function applyEnemySettings(updateMain) {
-	applyEncounterSettings();
-	var divId = "";
-	if (updateMain)
-		divId = "#main-container";
-	else
-		divId = "#data-overlay";
     $(divId + " .enemy").each(function () {
-        handleEnemy(this);
+        handleEnemy(this, location);
     });
 }
 
-function handleEnemy(enemy) {
-	var damageView = getSetting("damageView");
-	var damageRange = getSetting("damageRange")
-	var healingView = getSetting("healingView");
+function handleEnemy(enemy, location) {
+	var damageView = getSetting(location + "DamageView");
+	var damageRange = getSetting(location + "DamageRange")
+	var healingView = getSetting(location + "HealingView");
 	var scalingType = $(enemy).attr("data-scaling");
 	var rank = $(enemy).attr("data-category");
 	var currentPath = $(enemy).attr("data-current-path");
@@ -240,7 +279,7 @@ function handleEnemy(enemy) {
 		playerLevel = getPlayerLevel(currentPath, getSetting("level"));
 		$(enemy).attr("data-target-level", playerLevel);
 	}
-	if (getSetting("showTargetLevel") && gameMode == "dungeon") {
+	if (getSetting(location + "ShowTargetLevel") && gameMode == "dungeon") {
 		$(enemy).find(".target-level-unit").show();
 		$(enemy).find(".target-level").html(playerLevel);
 	}	
@@ -254,14 +293,14 @@ function handleEnemy(enemy) {
 	}
 	if (fractalLevel != getSetting("fractal"))
 		saveSetting("fractal", fractalLevel);
-	if (getSetting("showFractalLevel") && gameMode == "fractal") {
+	if (getSetting(location + "ShowFractalLevel") && gameMode == "fractal") {
 		$(enemy).find(".fractal-level-unit").show();
 		$(enemy).find(".fractal-level").html(fractalLevel);
 	}	
 	else
 		$(enemy).find(".fractal-level-unit").hide();
 	
-	if (getSetting("showScalingMode") && gameMode == "fractal")
+	if (getSetting(location + "ShowScalingMode") && gameMode == "fractal")
 		$(enemy).find(".scaling-unit").show();
 	else
 		$(enemy).find(".scaling-unit").hide();
@@ -274,7 +313,7 @@ function handleEnemy(enemy) {
 		$(enemy).attr("data-level", level);
 	}
 		
-	if (getSetting("showLevel")) {
+	if (getSetting(location + "ShowLevel")) {
 		$(enemy).find(".level-unit").show();
 		$(enemy).find(".level").html(level);
 	}	
@@ -282,37 +321,62 @@ function handleEnemy(enemy) {
 		$(enemy).find(".level-unit").hide();
 	
 	
-	if (getSetting("showGender"))
+	if (getSetting(location + "ShowGender"))
 		$(enemy).find(".gender-unit").show();
 	else
 		$(enemy).find(".gender-unit").hide();
 	
-	if (getSetting("showRace"))
+	if (getSetting(location + "ShowRace"))
 		$(enemy).find(".race-unit").show();
 	else
 		$(enemy).find(".race-unit").hide();
 	
-	if (getSetting("showRank"))
+	if (getSetting(location + "ShowRank"))
 		$(enemy).find(".rank-unit").show();
 	else
 		$(enemy).find(".rank-unit").hide();
 	
-	if (getSetting("showSize"))
+	if (getSetting(location + "ShowSize"))
 		$(enemy).find(".size-unit").show();
 	else
 		$(enemy).find(".size-unit").hide();
 	
-	if (getSetting("showRanges"))
+	if (getSetting(location + "ShowRanges"))
 		$(enemy).find(".range-unit").show();
 	else
 		$(enemy).find(".range-unit").hide();
 	
-	if (getSetting("showPathSelection"))
+	if (getSetting(location + "ShowPathSelection"))
 		$(enemy).find(".current-path-unit").show();
 	else
 		$(enemy).find(".current-path-unit").hide();
 	
-	if (getSetting("showCooldowns")) {
+	if (getSetting(location + "ShowAllInfo"))
+		$(enemy).find(".secondary-info").show();
+	else
+		$(enemy).find(".secondary-info").hide();
+	
+	if (getSetting(location + "ShowTactics"))
+		$(enemy).find(".tactics").show();
+	else
+		$(enemy).find(".tactics").hide();
+	
+	if (getSetting(location + "ShowTactics"))
+		$(enemy).find(".tips").show();
+	else
+		$(enemy).find(".tips").hide();
+	
+	if (getSetting(location + "ShowImages"))
+		$(enemy).find(".enemy-media").show();
+	else
+		$(enemy).find(".enemy-media").hide();
+	
+	if (getSetting(location + "ShowAnimations"))
+		$(enemy).find(".animation-unit").show();
+	else
+		$(enemy).find(".animation-unit").hide();
+	
+	if (getSetting(location + "ShowCooldowns")) {
 		$(enemy).find(".cooldown-unit").show();
 		$(enemy).find(".cooldown").each(function () {
 			var cooldown = $(this).attr("data-amount");
@@ -327,7 +391,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".cooldown-unit").hide();
 	
 	var power = getAttribute(level, $(enemy).attr("data-power"));
-	if (getSetting("showPower") && !isNaN(power)) {
+	if (getSetting(location + "ShowPower") && !isNaN(power)) {
 		$(enemy).find(".power-unit").show();
 		$(enemy).find(".power").html(power);
 	}	
@@ -337,7 +401,7 @@ function handleEnemy(enemy) {
 	var criticalChance = getCriticalChance(level, $(enemy).attr("data-precision"), playerLevel);
 	if (rank == "elite" || rank == "champion" || rank == "legendary")
 		criticalChance = 0;
-	if (getSetting("showPrecision") && !isNaN(criticalChance)) {
+	if (getSetting(location + "ShowPrecision") && !isNaN(criticalChance)) {
 		$(enemy).find(".precision-unit").show();
 		$(enemy).find(".precision").html(criticalChance);
 	}	
@@ -345,7 +409,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".precision-unit").hide();
 	
 	var armor = getArmor(level, $(enemy).attr("data-toughness"));
-	if (getSetting("showArmor") && !isNaN(armor)) {
+	if (getSetting(location + "ShowArmor") && !isNaN(armor)) {
 		$(enemy).find(".armor-unit").show();
 		$(enemy).find(".armor").html(armor);
 	}	
@@ -354,7 +418,7 @@ function handleEnemy(enemy) {
 	
 	var health = getHealth(level, $(enemy).attr("data-vitality"), $(enemy).attr("data-health"));
 	health = fractalScaleHealth(health, fractalLevel, scalingType);
-	if (getSetting("showHealth") && !isNaN(health)) {
+	if (getSetting(location + "ShowHealth") && !isNaN(health)) {
 		$(enemy).find(".health-unit").show();
 		$(enemy).find(".health").html(health);
 	}
@@ -362,7 +426,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".health-unit").hide();
 	
 	var criticalDamage = getCriticalDamage(level, $(enemy).attr("data-ferocity"));
-	if (getSetting("showFerocity") && !isNaN(criticalDamage)) {
+	if (getSetting(location + "ShowFerocity") && !isNaN(criticalDamage)) {
 		$(enemy).find(".ferocity-unit").show();
 		$(enemy).find(".ferocity").html(criticalDamage);
 	}
@@ -370,7 +434,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".ferocity-unit").hide();
 	
 	var conditionDamage = getAttribute2(level, $(enemy).attr("data-condition"));
-	if (getSetting("showCondition") && !isNaN(conditionDamage)) {
+	if (getSetting(location + "ShowCondition") && !isNaN(conditionDamage)) {
 		$(enemy).find(".condition-unit").show();
 		$(enemy).find(".condition").html(conditionDamage);
 	}
@@ -378,7 +442,7 @@ function handleEnemy(enemy) {
 		$(enemy).find(".condition-unit").hide();
 	
 	var healingPower = getAttribute2(level, $(enemy).attr("data-healing"));
-	if (getSetting("showHealing") && !isNaN(healingPower)) {
+	if (getSetting(location + "ShowHealing") && !isNaN(healingPower)) {
 		$(enemy).find(".healing-unit").show();
 		$(enemy).find(".healing-power").html(healingPower);
 	}
@@ -390,14 +454,14 @@ function handleEnemy(enemy) {
 		var weaponStrengthOff = getWeaponStrength(level, $(enemy).attr("data-weapon-off-level"), $(enemy).attr("data-weapon-off-rarity"), $(enemy).attr("data-weapon-off-type"), $(enemy).attr("data-weapon-off-scale"));
 	if ($(enemy).attr("data-weapon-water-level") != null)
 		var weaponStrengthWater = getWeaponStrength(level, $(enemy).attr("data-weapon-water-level"), $(enemy).attr("data-weapon-water-rarity"), $(enemy).attr("data-weapon-water-type"), $(enemy).attr("data-weapon-water-scale"));
-	if (getSetting("showWeaponStrength") && !isNaN(weaponStrengthMain.min) && !isNaN(weaponStrengthMain.max)) {
+	if (getSetting(location + "ShowWeaponStrength") && !isNaN(weaponStrengthMain.min) && !isNaN(weaponStrengthMain.max)) {
 		$(enemy).find(".weapon-unit").show();
 		$(enemy).find(".weapon").html(weaponStrengthMain.min + "-" + weaponStrengthMain.max);
 	}
 	else
 		$(enemy).find(".weapon-unit").hide();
 	
-	if (getSetting("showOffense") && !isNaN(power) && !isNaN(weaponStrengthMain.avg)) {
+	if (getSetting(location + "ShowOffense") && !isNaN(power) && !isNaN(weaponStrengthMain.avg)) {
 		var offense = Math.round(100 * power * weaponStrengthMain.avg / getArmor(level, 1) / getPlayerHealth(80, "elementalist"));
 		$(enemy).find(".offense-unit").show();
 		$(enemy).find(".offense").html(offense);
@@ -406,14 +470,14 @@ function handleEnemy(enemy) {
 		$(enemy).find(".offense-unit").hide();
 	
     // Simplify health if needed.
-    if (getSetting("showHealth") && getSetting("simplifyHealth")) {
+    if (getSetting(location + "ShowHealth") && getSetting(location + "SimplifyHealth")) {
         $(enemy).find(".health").each(function () {
             var baseHealth = (Number)($(this).html());
             $(this).html(simplifyHealth(baseHealth));
         });
     }
     // Simplify armor if needed.
-    if (getSetting("showArmor") && getSetting("simplifyArmor")) {
+    if (getSetting(location + "ShowArmor") && getSetting(location + "SimplifyArmor")) {
         $(enemy).find(".armor").each(function () {
             var baseArmor = (Number)($(this).html());
             $(this).html(simplifyArmor(baseArmor, playerLevel));
@@ -497,8 +561,7 @@ function simplifyHealth(baseHealth) {
 }
 
 function simplifyArmor(armor, dungeonLevel) {
-    // Level scaling probably works really bad.
-    var normalArmor = getTooltipArmor(dungeonLevel);
+    var normalArmor = getArmor(dungeonLevel, 1);
     var ratio = armor / normalArmor;
     var type = "Medium";
     if (ratio > 2)

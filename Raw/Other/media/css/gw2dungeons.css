@@ -3,6 +3,11 @@ html, body {
     height:100%;
 	font-size: 100%;
 }
+
+.my-bar {
+	border-radius: 0px;
+}
+
 nav:after,
 ul:after {
     height:0;
@@ -69,8 +74,6 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
     -moz-box-sizing:border-box;
     box-sizing:border-box;
 	position: fixed;
-	/* Makes ad attach to top bar. */
-	margin-top: -20px;
 }
 
 #left-ad {
@@ -512,3 +515,16 @@ div.ally {
 	vertical-align: text-top;
 	background-size: cover;
 }
+
+
+#detail-container {
+	position:fixed;
+    border-radius:5px;
+    background-color: #EFEFEF;
+    overflow:auto;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+	display: none;
+}
+

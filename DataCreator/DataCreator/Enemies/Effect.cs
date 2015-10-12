@@ -258,7 +258,7 @@ namespace DataCreator.Enemies
         if (hitCount > 1 && (amount > 0 || duration > 0))
         {
           // Same as above but for a single hit. / 2015-09-27 / Wethospu
-          replace.Append(" (");
+          replace.Append("<span class=\"secondary-info\"> (");
           if (amount > 0)
           {
             // All amounts need clientside formatting. / 2015-09-27 / Wethospu
@@ -277,7 +277,7 @@ namespace DataCreator.Enemies
             if (totalDuration != 1.0)
               replace.Append("s");
           }
-          replace.Append(" per hit)");
+          replace.Append(" per hit)</span>");
         }
         if (category.Equals("confusion"))
         {
@@ -300,7 +300,7 @@ namespace DataCreator.Enemies
           replace.Append(HitLengthStr(hitLength));
           if (hitCount > 1)
           {
-            replace.Append(" (");
+            replace.Append("<span class=\"secondary-info\"> (");
             if (amount > 0)
             {
               replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\" data-effect=\"").Append(category).Append("2");
@@ -317,7 +317,7 @@ namespace DataCreator.Enemies
               if (duration != 1.0)
                 replace.Append("s");
             }
-            replace.Append(" per hit)");
+            replace.Append(" per hit)</span>");
           }
         }
         // Some effects can have variable or unknown hit count. Just add " per hit" in those cases. / 2015-09-29 / Wethospu
@@ -344,7 +344,7 @@ namespace DataCreator.Enemies
           if (icon.Equals("-") && effectType == EffectType.Buff)
             startIcon = "Buff";
           else
-            startIcon = "<span class=" + Constants.IconClass + " data-src=\"" + icon.ToLower() + "\" title=\"" + Helper.ToUpper(category.Replace('_', ' ')) + "\"></span>";
+            startIcon = "<span class=" + Constants.IconClass + " data-src=\"" + icon.ToLower() + "\" title=\"" + Helper.ToUpper(category.Replace('_', ' ')) + "\">" + Helper.ToUpper(category.Replace('_', ' ')) + "</span>";
           firstType = category;
           firstStacks = stacks;
         }
@@ -366,7 +366,7 @@ namespace DataCreator.Enemies
         if (effectBuilder.Length > 0 && effectBuilder[effectBuilder.Length - 1] != '.')
           effectBuilder.Append(".");
         if (firstType.Equals("torment"))
-          effectBuilder.Append(" Double damage when moving.");
+          effectBuilder.Append("<span class=\"secondary-info\"> Double damage when moving.</span>");
         if (effectChance.Length > 0)
           effectBuilder.Append(" ").Append(effectChance).Append(" chance per hit.");
       }  

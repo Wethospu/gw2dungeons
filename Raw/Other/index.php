@@ -83,7 +83,7 @@ ID_JS
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse my-bar">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -127,6 +127,8 @@ ID_JS
 		<div class="row">
 			<div class="col-md-12" id="main-container">
 				<?php echo $content; ?>
+			</div>
+			<div id="detail-container">
 			</div>
         </div>
 		<div class="row">

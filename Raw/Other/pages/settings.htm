@@ -156,6 +156,15 @@
     });
 </script>
 <div>
+    <ul class="nav nav-tabs">
+		<li class="active"><a href="#tab-general" data-toggle="tab">General</a></li>
+        <li><a href="#tab-tactics" data-toggle="tab">Tactics</a></li>
+		<li><a href="#tab-enemy-main" data-toggle="tab">Enemy overlay</a></li>
+		<li><a href="#tab-enemy-side" data-toggle="tab">Enemy sidebar</a></li>
+    </ul>
+
+<div class="tab-content">
+<div class="tab-pane active" id="tab-general">
     <form class="forms forms-columnar">
         <h1 class="forms-section">Character Settings</h1>
         <p>
@@ -229,6 +238,13 @@
         </p>
 		<input type="checkbox" id="comments-setting" data-setting="comments">
         <label for="comments-setting">Show comments at bottom</label>
+		<label>
+			<input type="checkbox" data-setting="properCooldowns">
+        Add skill cast times to cooldowns (EXPERIMENTAL)</label>
+		<label>
+			<input type="checkbox" data-setting="useSidebar">
+        Open enemy info on sidebar</label>
+		<span class="forms-desc">Hold ctrl to reverse this.</span>
         <p class="forms-inline">
             <label for="ad-setting">Advertisements</label>
             <select class="dropdown" id="ad-setting" data-setting="adSetting">
@@ -238,10 +254,28 @@
             </select>
             <span class="forms-desc">For extra supporting, please consider donating.</span>
         </p>
-        <h1 class="forms-section">Enemy page</h1>
+	</form>
+</div>
+<div class="tab-pane" id="tab-tactics">
+    <form class="forms forms-columnar">
+        <span class="forms-desc">Highest tactic in the list below will be displayed first.
+        <br>
+            Drag and drop to change the order.</span>
+        <ol id="tactic-setting" class="forms-list sortable">
+        </ol>
+		<br>
+        <span class="forms-desc">Highest tip in the list below will be displayed first.
+        <br>
+            Drag and drop to change the order.</span>
+        <ol id="tip-setting" class="forms-list sortable">
+        </ol>
+	</form>
+</div>
+<div class="tab-pane" id="tab-enemy-main">
+    <form class="forms forms-columnar">
         <p>
             <label>Damage as
-				<select class="dropdown" data-setting="damageView">
+				<select class="dropdown" data-setting="mainDamageView">
 					<option value="number">number</option>
 					<option value="percent">percent</option>
 					<option value="both">both number and percent</option>
@@ -250,7 +284,7 @@
         </p>
 		<p>
             <label>Damage as
-				<select class="dropdown" data-setting="damageRange">
+				<select class="dropdown" data-setting="mainDamageRange">
 					<option value="maximum">maximum</option>
 					<option value="minimum">minimum</option>
 					<option value="average">average</option>
@@ -260,7 +294,7 @@
         </p>
 		<p>
             <label>Healing as
-				<select class="dropdown" data-setting="healingView">
+				<select class="dropdown" data-setting="mainHealingView">
 					<option value="number">number</option>
 					<option value="percent">percent</option>
 					<option value="both">both number and percent</option>
@@ -268,133 +302,301 @@
 			</label>
         </p>
         <ul class="forms-list" style="list-style:none;padding-left:0;">
+			<li>
+				<label>
+					<input type="checkbox" data-setting="mainShowAllInfo">
+                Show all effect info.</label>
+            </li>
+			<li>
+				<label>
+					<input type="checkbox" data-setting="mainShowAnimations">
+                Show animation descriptions.</label>
+            </li>
+			<li>
+				<label>
+					<input type="checkbox" data-setting="mainShowTactics">
+                Show tactics.</label>
+            </li>
+			<li>
+				<label>
+					<input type="checkbox" data-setting="mainShowImages">
+                Show images.</label>
+            </li>
             <li>
 				<label>
-					<input type="checkbox" data-setting="showIcons">
+					<input type="checkbox" data-setting="mainShowIcons">
                 Shows effects as icons</label>
             </li>
 			<li>
 				<label>
-					<input type="checkbox" data-setting="simplifyHealth">
+					<input type="checkbox" data-setting="mainSimplifyHealth">
                 Simplify enemy health</label>
             </li>
 			<li>
 				<label>
-					<input type="checkbox" data-setting="simplifyArmor">
+					<input type="checkbox" data-setting="mainSimplifyArmor">
                 Simplify enemy armor</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showHealth">
+					<input type="checkbox" data-setting="mainShowHealth">
                 Show enemy health</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showArmor">
+					<input type="checkbox" data-setting="mainShowArmor">
                 Show enemy armor</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showOffense">
+					<input type="checkbox" data-setting="mainShowOffense">
                 Show enemy relative offensive strength (EXPERIMENTAL)</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showPower">
+					<input type="checkbox" data-setting="mainShowPower">
                 Show enemy power</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showWeaponStrength">
+					<input type="checkbox" data-setting="mainShowWeaponStrength">
                 Show enemy weapon strength</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showPrecision">
+					<input type="checkbox" data-setting="mainShowPrecision">
                 Show enemy critical chance</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showFerocity">
+					<input type="checkbox" data-setting="mainShowFerocity">
                 Show enemy critical damage</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showCondition">
+					<input type="checkbox" data-setting="mainShowCondition">
                 Show enemy condition damage</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showHealing">
+					<input type="checkbox" data-setting="mainShowHealing">
                 Show enemy healing power</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showSize">
+					<input type="checkbox" data-setting="mainShowSize">
                 Show enemy size</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showRace">
+					<input type="checkbox" data-setting="mainShowRace">
                 Show enemy race</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showLevel">
+					<input type="checkbox" data-setting="mainShowLevel">
                 Show enemy level</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showRank">
+					<input type="checkbox" data-setting="mainShowRank">
                 Show enemy rank</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showGender">
+					<input type="checkbox" data-setting="mainShowGender">
                 Show enemy gender</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showTargetLevel">
+					<input type="checkbox" data-setting="mainShowTargetLevel">
                 Show player level</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showFractalLevel">
+					<input type="checkbox" data-setting="mainShowFractalLevel">
                 Show fractal level</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showScalingMode">
+					<input type="checkbox" data-setting="mainShowScalingMode">
                 Show fractal scaling mode</label>
             </li>
             <li>
                 <label>
-					<input type="checkbox" data-setting="showPathSelection">
+					<input type="checkbox" data-setting="mainShowPathSelection">
                 Show path selection</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="showCooldowns">
+					<input type="checkbox" data-setting="mainShowCooldowns">
                 Show skill cooldowns</label>
+            </li>
+        </ul>
+    </form>
+</div>
+<div class="tab-pane" id="tab-enemy-side">
+    <form class="forms forms-columnar">
+		<p>
+            <label>Damage as
+				<select class="dropdown" data-setting="sideDamageView">
+					<option value="number">number</option>
+					<option value="percent">percent</option>
+					<option value="both">both number and percent</option>
+				</select>
+			</label>
+        </p>
+		<p>
+            <label>Damage as
+				<select class="dropdown" data-setting="sideDamageRange">
+					<option value="maximum">maximum</option>
+					<option value="minimum">minimum</option>
+					<option value="average">average</option>
+					<option value="range">range</option>
+				</select>
+			</label>
+        </p>
+		<p>
+            <label>Healing as
+				<select class="dropdown" data-setting="sideHealingView">
+					<option value="number">number</option>
+					<option value="percent">percent</option>
+					<option value="both">both number and percent</option>
+				</select>
+			</label>
+        </p>
+        <ul class="forms-list" style="list-style:none;padding-left:0;">
+			<li>
+				<label>
+					<input type="checkbox" data-setting="sideShowAllInfo">
+                Show all effect info.</label>
+            </li>
+			<li>
+				<label>
+					<input type="checkbox" data-setting="sideShowAnimations">
+                Show animation descriptions.</label>
+            </li>
+			<li>
+				<label>
+					<input type="checkbox" data-setting="sideShowTactics">
+                Show tactics.</label>
+            </li>
+			<li>
+				<label>
+					<input type="checkbox" data-setting="sideShowImages">
+                Show images.</label>
+            </li>
+            <li>
+				<label>
+					<input type="checkbox" data-setting="sideShowIcons">
+                Shows effects as icons</label>
+            </li>
+			<li>
+				<label>
+					<input type="checkbox" data-setting="sideSimplifyHealth">
+                Simplify enemy health</label>
+            </li>
+			<li>
+				<label>
+					<input type="checkbox" data-setting="sideSimplifyArmor">
+                Simplify enemy armor</label>
             </li>
 			<li>
                 <label>
-					<input type="checkbox" data-setting="properCooldowns">
-                Add skill cast times to cooldowns (EXPERIMENTAL)</label>
+					<input type="checkbox" data-setting="sideShowHealth">
+                Show enemy health</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowArmor">
+                Show enemy armor</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowOffense">
+                Show enemy relative offensive strength (EXPERIMENTAL)</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowPower">
+                Show enemy power</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowWeaponStrength">
+                Show enemy weapon strength</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowPrecision">
+                Show enemy critical chance</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowFerocity">
+                Show enemy critical damage</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowCondition">
+                Show enemy condition damage</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowHealing">
+                Show enemy healing power</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowSize">
+                Show enemy size</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowRace">
+                Show enemy race</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowLevel">
+                Show enemy level</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowRank">
+                Show enemy rank</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowGender">
+                Show enemy gender</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowTargetLevel">
+                Show player level</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowFractalLevel">
+                Show fractal level</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowScalingMode">
+                Show fractal scaling mode</label>
+            </li>
+            <li>
+                <label>
+					<input type="checkbox" data-setting="sideShowPathSelection">
+                Show path selection</label>
+            </li>
+			<li>
+                <label>
+					<input type="checkbox" data-setting="sideShowCooldowns">
+                Show skill cooldowns</label>
             </li>
         </ul>
-        <h1 class="forms-section">Tactic preferences</h1>
-        <span class="forms-desc">Highest tactic in the list below will be displayed first.
-        <br>
-            Drag and drop to change the order.</span>
-        <ol id="tactic-setting" class="forms-list sortable">
-        </ol>
-        <h1 class="forms-section">Tip preferences</h1>
-        <span class="forms-desc">Highest tip in the list below will be displayed first.
-        <br>
-            Drag and drop to change the order.</span>
-        <ol id="tip-setting" class="forms-list sortable">
-        </ol>
-    </form>
+	</form>
+</div>
 </div>
