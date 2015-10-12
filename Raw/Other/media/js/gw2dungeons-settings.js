@@ -45,7 +45,7 @@ var settings = {
 	properCooldowns: false,
     settingsVisited: false,
     comments: true,
-	useSidebar: true,
+	useSidebar: false,
     adSetting: "big",
 	defaultFilters: "18EvyA4",
 	fontSize: 100,
@@ -164,12 +164,12 @@ function loadSettings(loadEncounters, loadEnemies) {
 		applyEncounterSettings("#main-container");
 
     if (settings.settingsVisited) {
-        $('#topsetting').css("font-weight", "normal");
-        $('#topsetting').css("color", "");
+        $('#nav-setting').css("font-weight", "normal");
+        $('#nav-setting').css("color", "");
     }
     else {
-        $('#topsetting').css("font-weight", "bold");
-        $('#topsetting').css("color", "red");
+        $('#nav-setting').css("font-weight", "bold");
+        $('#nav-setting').css("color", "red");
     }
 }
 

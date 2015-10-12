@@ -99,7 +99,7 @@ ID_JS
             <ul class="nav navbar-nav">
 				<li><a href="./General">General</a></li>
 				<li><a href="./Records">Records</a></li>
-                <li><a href="./Settings">Settings</a></li>
+                <li><a id="nav-setting" href="./Settings">Settings</a></li>
                 <li><a href="./About">About</a></li>		
 			</ul>
 			<form class="navbar-form navbar-left" method="post" action="./">
