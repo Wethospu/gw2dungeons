@@ -191,7 +191,7 @@ function loadPage() {
 		$(enemy).attr("data-level", '');
 		$(enemy).attr("data-target-level", '');
 		$(enemy).attr("data-current-path", $(this).html().toLowerCase());
-		handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "main");
+		handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "over");
 	});
 	
 	
@@ -222,7 +222,7 @@ function levelMinus(element, target, minLevel) {
 	if (level < minLevel)
 		level = minLevel;
 	$(enemy).attr("data-" + target, level);
-	handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "main");
+	handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "over");
 }
 
 function levelPlus(element, target, maxLevel) {
@@ -235,7 +235,7 @@ function levelPlus(element, target, maxLevel) {
 	if (level > maxLevel)
 		level = maxLevel;
 	$(enemy).attr("data-" + target, level);
-	handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "main");
+	handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "over");
 }
 
 
@@ -420,7 +420,7 @@ function openEnemyOverlay() {
 // Enemy files are split to pieces to make loading faster.
 function openEnemySub(index, enemyNumbers, enemyLevels, path, useOverlay) {
 	if (index >= enemyNumbers.length) {
-		applyEnemySettings(useOverlay ? "main" : "side");
+		applyEnemySettings(useOverlay ? "over" : "side");
 		handleOverlayLinks();
 		loadThumbs();
 		if (useOverlay) {
@@ -463,8 +463,23 @@ function openEnemySub(index, enemyNumbers, enemyLevels, path, useOverlay) {
 				setOverlaySize(1250, 0);
 			}
 			else {
-				var content = $(this)[0].outerHTML;
-				$('#detail-container').append(content);
+				// Add an overlay link for more info. / 2015-10-12 / Wethospu
+				var name = $(this).find(".enemy-name").html();
+				$(this).find(".enemy-name").html('<span class="enemy-button" data-index="' + enemyNumbers[index] + '" data-force="1">' + name + '</span>');
+				// Prevent a clash with overlay tactics. / 2015-10-12 / Wethospu
+				$(this).find(".tactics a").each(function() {
+					$(this).attr('href', $(this).attr('href') + 'a');
+				});
+				$(this).find(".tactics .tab-pane").each(function() {
+					$(this).attr('id', $(this).attr('id') + 'a');
+				});
+				$(this).find(".tips a").each(function() {
+					$(this).attr('href', $(this).attr('href') + 'a');
+				});
+				$(this).find(".tips .tab-pane").each(function() {
+					$(this).attr('id', $(this).attr('id') + 'a');
+				});
+				$('#detail-container').append(this);
 			}
 			openEnemySub(index + 1, enemyNumbers, enemyLevels, path, useOverlay);
 		});   

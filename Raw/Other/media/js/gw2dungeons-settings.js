@@ -54,37 +54,37 @@ var settings = {
 	tips: [],
 	tabAmount: 10,
 	// Enemy overlay settings.
-	mainFontSize: 100,
-	mainShowIcons: true,
-    mainDamageView: "number",
-	mainHealingView: "number",
-	mainDamageRange: "range",
-	mainShowAllInfo: true,
-	mainShowAnimations: true,
-	mainShowTactics: true,
-	mainShowImages: true,
-    mainSimplifyHealth: true,
-    mainSimplifyArmor: true,
-	mainShowHealth: true,
-	mainShowArmor: true,
-	mainShowWeaponStrength: true,
-	mainShowPower: true,
-	mainShowOffense: false,
-	mainShowPrecision: true,
-	mainShowFerocity: true,
-	mainShowCondition: true,
-	mainShowHealing: true,
-	mainShowRace: true,
-    mainShowSize: true,
-	mainShowRank: true,
-	mainShowGender: true,
-	mainShowLevel: true,
-	mainShowPathSelection : true,
-	mainShowTargetLevel: true,
-	mainShowFractalLevel: true,
-	mainShowScalingMode: true,
-	mainShowCooldowns: true,
-	mainShowRanges: true,
+	overFontSize: 100,
+	overShowIcons: true,
+    overDamageView: "number",
+	overHealingView: "number",
+	overDamageRange: "range",
+	overShowAllInfo: true,
+	overShowAnimations: true,
+	overShowTactics: true,
+	overShowImages: true,
+    overSimplifyHealth: true,
+    overSimplifyArmor: true,
+	overShowHealth: true,
+	overShowArmor: true,
+	overShowWeaponStrength: true,
+	overShowPower: true,
+	overShowOffense: false,
+	overShowPrecision: true,
+	overShowFerocity: true,
+	overShowCondition: true,
+	overShowHealing: true,
+	overShowRace: true,
+    overShowSize: true,
+	overShowRank: true,
+	overShowGender: true,
+	overShowLevel: true,
+	overShowPathSelection : true,
+	overShowTargetLevel: true,
+	overShowFractalLevel: true,
+	overShowScalingMode: true,
+	overShowCooldowns: true,
+	overShowRanges: true,
 	// Enemy sidebar settings.
 	sideFontSize: 80,
 	sideShowIcons: true,
@@ -152,20 +152,16 @@ function saveSetting(setting, value) {
 }
 
 // load settings from localstorage
-function loadSettings(loadEncounters, enemyLocation) {
+function loadSettings(loadEncounters, loadEnemies) {
     for (var setting in settings) {
         var value = $.localStorage(setting);
         if (value != null)
             settings[setting] = value;
     }
-    applySettings(loadEncounters, enemyLocation);
-}
-
-function applySettings(loadEncounters, enemyLocation) {
-	if (enemyLocation)
-		applyEnemySettings(enemyLocation);
+    if (loadEnemies)
+		applyEnemySettings("main");
 	else if (loadEncounters)
-		applyEncounterSettings();
+		applyEncounterSettings("#main-container");
 
     if (settings.settingsVisited) {
         $('#topsetting').css("font-weight", "normal");
@@ -178,8 +174,8 @@ function applySettings(loadEncounters, enemyLocation) {
 }
 
 // Performance: Takes up to 400 ms.
-function chooseCorrectTab() {
-    $('.tactics').each(function () {
+function chooseCorrectTab(location) {
+    $(location + ' .tactics').each(function () {
 		// Get tactics.
 		var tactics = $(this).find('a[href^=#s]').toArray();
 		if (tactics.length == 0)
@@ -201,7 +197,7 @@ function chooseCorrectTab() {
         $(tactics[0]).on('shown', function (e) {return false;});
 		$(tactics[0]).tab('show');
     });
-	$('.tips').each(function () {
+	$(location + ' .tips').each(function () {
         // Get tips.
 		var tips = $(this).find('a[href^=#t]').toArray();
 		if (tips.length == 0)
@@ -225,26 +221,25 @@ function chooseCorrectTab() {
     });
 }
 
-function applyEncounterSettings() {
-    chooseCorrectTab();
+function applyEncounterSettings(location) {
+    chooseCorrectTab(location);
 	$('#main-container').css('font-size', '' + getSetting('fontSize') + '%')
-	$('#data-overlay').css('font-size', '' + getSetting('mainFontSize') + '%')
+	$('#data-overlay').css('font-size', '' + getSetting('overFontSize') + '%')
 	$('#detail-container').css('font-size', '' + getSetting('sideFontSize') + '%')
 	
 }
 
-function applyEnemySettings(location) {
-	applyEncounterSettings();
-	var divId = "";
-	if (location == "search") {
-		divId = "#main-container";
-		location = "main";
+function applyEnemySettings(setting) {
+	if (setting == "main") {
+		var location = "#main-container";
+		setting = "over";
 	}
-	else if (location == "main")
-		divId = "#data-overlay";	
+	else if (setting == "over")
+		var location = "#data-overlay";	
 	else
-		divId = "#detail-container";
-	if (getSetting(location + "ShowIcons"))
+		var location = "#detail-container";
+	applyEncounterSettings(location);
+	if (getSetting(setting + "ShowIcons"))
 	{
 		$('.icon').each(function () {
 			$(this).css('background-image', 'url(media/img/' + $(this).attr('data-src') + '.png)');
@@ -256,15 +251,15 @@ function applyEnemySettings(location) {
 			$(this).removeClass('icon');
 		});
 	}
-    $(divId + " .enemy").each(function () {
-        handleEnemy(this, location);
+    $(location + " .enemy").each(function () {
+        handleEnemy(this, setting);
     });
 }
 
-function handleEnemy(enemy, location) {
-	var damageView = getSetting(location + "DamageView");
-	var damageRange = getSetting(location + "DamageRange")
-	var healingView = getSetting(location + "HealingView");
+function handleEnemy(enemy, setting) {
+	var damageView = getSetting(setting + "DamageView");
+	var damageRange = getSetting(setting + "DamageRange")
+	var healingView = getSetting(setting + "HealingView");
 	var scalingType = $(enemy).attr("data-scaling");
 	var rank = $(enemy).attr("data-category");
 	var currentPath = $(enemy).attr("data-current-path");
@@ -286,7 +281,7 @@ function handleEnemy(enemy, location) {
 		playerLevel = getPlayerLevel(currentPath, getSetting("level"));
 		$(enemy).attr("data-target-level", playerLevel);
 	}
-	if (getSetting(location + "ShowTargetLevel") && gameMode == "dungeon") {
+	if (getSetting(setting + "ShowTargetLevel") && gameMode == "dungeon") {
 		$(enemy).find(".target-level-unit").show();
 		$(enemy).find(".target-level").html(playerLevel);
 	}	
@@ -300,14 +295,14 @@ function handleEnemy(enemy, location) {
 	}
 	if (fractalLevel != getSetting("fractal"))
 		saveSetting("fractal", fractalLevel);
-	if (getSetting(location + "ShowFractalLevel") && gameMode == "fractal") {
+	if (getSetting(setting + "ShowFractalLevel") && gameMode == "fractal") {
 		$(enemy).find(".fractal-level-unit").show();
 		$(enemy).find(".fractal-level").html(fractalLevel);
 	}	
 	else
 		$(enemy).find(".fractal-level-unit").hide();
 	
-	if (getSetting(location + "ShowScalingMode") && gameMode == "fractal")
+	if (getSetting(setting + "ShowScalingMode") && gameMode == "fractal")
 		$(enemy).find(".scaling-unit").show();
 	else
 		$(enemy).find(".scaling-unit").hide();
@@ -320,7 +315,7 @@ function handleEnemy(enemy, location) {
 		$(enemy).attr("data-level", level);
 	}
 		
-	if (getSetting(location + "ShowLevel")) {
+	if (getSetting(setting + "ShowLevel")) {
 		$(enemy).find(".level-unit").show();
 		$(enemy).find(".level").html(level);
 	}	
@@ -328,62 +323,62 @@ function handleEnemy(enemy, location) {
 		$(enemy).find(".level-unit").hide();
 	
 	
-	if (getSetting(location + "ShowGender"))
+	if (getSetting(setting + "ShowGender"))
 		$(enemy).find(".gender-unit").show();
 	else
 		$(enemy).find(".gender-unit").hide();
 	
-	if (getSetting(location + "ShowRace"))
+	if (getSetting(setting + "ShowRace"))
 		$(enemy).find(".race-unit").show();
 	else
 		$(enemy).find(".race-unit").hide();
 	
-	if (getSetting(location + "ShowRank"))
+	if (getSetting(setting + "ShowRank"))
 		$(enemy).find(".rank-unit").show();
 	else
 		$(enemy).find(".rank-unit").hide();
 	
-	if (getSetting(location + "ShowSize"))
+	if (getSetting(setting + "ShowSize"))
 		$(enemy).find(".size-unit").show();
 	else
 		$(enemy).find(".size-unit").hide();
 	
-	if (getSetting(location + "ShowRanges"))
+	if (getSetting(setting + "ShowRanges"))
 		$(enemy).find(".range-unit").show();
 	else
 		$(enemy).find(".range-unit").hide();
 	
-	if (getSetting(location + "ShowPathSelection"))
+	if (getSetting(setting + "ShowPathSelection"))
 		$(enemy).find(".current-path-unit").show();
 	else
 		$(enemy).find(".current-path-unit").hide();
 	
-	if (getSetting(location + "ShowAllInfo"))
+	if (getSetting(setting + "ShowAllInfo"))
 		$(enemy).find(".secondary-info").show();
 	else
 		$(enemy).find(".secondary-info").hide();
 	
-	if (getSetting(location + "ShowTactics"))
+	if (getSetting(setting + "ShowTactics"))
 		$(enemy).find(".tactics").show();
 	else
 		$(enemy).find(".tactics").hide();
 	
-	if (getSetting(location + "ShowTactics"))
+	if (getSetting(setting + "ShowTactics"))
 		$(enemy).find(".tips").show();
 	else
 		$(enemy).find(".tips").hide();
 	
-	if (getSetting(location + "ShowImages"))
+	if (getSetting(setting + "ShowImages"))
 		$(enemy).find(".enemy-media").show();
 	else
 		$(enemy).find(".enemy-media").hide();
 	
-	if (getSetting(location + "ShowAnimations"))
+	if (getSetting(setting + "ShowAnimations"))
 		$(enemy).find(".animation-unit").show();
 	else
 		$(enemy).find(".animation-unit").hide();
 	
-	if (getSetting(location + "ShowCooldowns")) {
+	if (getSetting(setting + "ShowCooldowns")) {
 		$(enemy).find(".cooldown-unit").show();
 		$(enemy).find(".cooldown").each(function () {
 			var cooldown = $(this).attr("data-amount");
@@ -398,7 +393,7 @@ function handleEnemy(enemy, location) {
 		$(enemy).find(".cooldown-unit").hide();
 	
 	var power = getAttribute(level, $(enemy).attr("data-power"));
-	if (getSetting(location + "ShowPower") && !isNaN(power)) {
+	if (getSetting(setting + "ShowPower") && !isNaN(power)) {
 		$(enemy).find(".power-unit").show();
 		$(enemy).find(".power").html(power);
 	}	
@@ -408,7 +403,7 @@ function handleEnemy(enemy, location) {
 	var criticalChance = getCriticalChance(level, $(enemy).attr("data-precision"), playerLevel);
 	if (rank == "elite" || rank == "champion" || rank == "legendary")
 		criticalChance = 0;
-	if (getSetting(location + "ShowPrecision") && !isNaN(criticalChance)) {
+	if (getSetting(setting + "ShowPrecision") && !isNaN(criticalChance)) {
 		$(enemy).find(".precision-unit").show();
 		$(enemy).find(".precision").html(criticalChance);
 	}	
@@ -416,7 +411,7 @@ function handleEnemy(enemy, location) {
 		$(enemy).find(".precision-unit").hide();
 	
 	var armor = getArmor(level, $(enemy).attr("data-toughness"));
-	if (getSetting(location + "ShowArmor") && !isNaN(armor)) {
+	if (getSetting(setting + "ShowArmor") && !isNaN(armor)) {
 		$(enemy).find(".armor-unit").show();
 		$(enemy).find(".armor").html(armor);
 	}	
@@ -425,7 +420,7 @@ function handleEnemy(enemy, location) {
 	
 	var health = getHealth(level, $(enemy).attr("data-vitality"), $(enemy).attr("data-health"));
 	health = fractalScaleHealth(health, fractalLevel, scalingType);
-	if (getSetting(location + "ShowHealth") && !isNaN(health)) {
+	if (getSetting(setting + "ShowHealth") && !isNaN(health)) {
 		$(enemy).find(".health-unit").show();
 		$(enemy).find(".health").html(health);
 	}
@@ -433,7 +428,7 @@ function handleEnemy(enemy, location) {
 		$(enemy).find(".health-unit").hide();
 	
 	var criticalDamage = getCriticalDamage(level, $(enemy).attr("data-ferocity"));
-	if (getSetting(location + "ShowFerocity") && !isNaN(criticalDamage)) {
+	if (getSetting(setting + "ShowFerocity") && !isNaN(criticalDamage)) {
 		$(enemy).find(".ferocity-unit").show();
 		$(enemy).find(".ferocity").html(criticalDamage);
 	}
@@ -441,7 +436,7 @@ function handleEnemy(enemy, location) {
 		$(enemy).find(".ferocity-unit").hide();
 	
 	var conditionDamage = getAttribute2(level, $(enemy).attr("data-condition"));
-	if (getSetting(location + "ShowCondition") && !isNaN(conditionDamage)) {
+	if (getSetting(setting + "ShowCondition") && !isNaN(conditionDamage)) {
 		$(enemy).find(".condition-unit").show();
 		$(enemy).find(".condition").html(conditionDamage);
 	}
@@ -449,7 +444,7 @@ function handleEnemy(enemy, location) {
 		$(enemy).find(".condition-unit").hide();
 	
 	var healingPower = getAttribute2(level, $(enemy).attr("data-healing"));
-	if (getSetting(location + "ShowHealing") && !isNaN(healingPower)) {
+	if (getSetting(setting + "ShowHealing") && !isNaN(healingPower)) {
 		$(enemy).find(".healing-unit").show();
 		$(enemy).find(".healing-power").html(healingPower);
 	}
@@ -461,14 +456,14 @@ function handleEnemy(enemy, location) {
 		var weaponStrengthOff = getWeaponStrength(level, $(enemy).attr("data-weapon-off-level"), $(enemy).attr("data-weapon-off-rarity"), $(enemy).attr("data-weapon-off-type"), $(enemy).attr("data-weapon-off-scale"));
 	if ($(enemy).attr("data-weapon-water-level") != null)
 		var weaponStrengthWater = getWeaponStrength(level, $(enemy).attr("data-weapon-water-level"), $(enemy).attr("data-weapon-water-rarity"), $(enemy).attr("data-weapon-water-type"), $(enemy).attr("data-weapon-water-scale"));
-	if (getSetting(location + "ShowWeaponStrength") && !isNaN(weaponStrengthMain.min) && !isNaN(weaponStrengthMain.max)) {
+	if (getSetting(setting + "ShowWeaponStrength") && !isNaN(weaponStrengthMain.min) && !isNaN(weaponStrengthMain.max)) {
 		$(enemy).find(".weapon-unit").show();
 		$(enemy).find(".weapon").html(weaponStrengthMain.min + "-" + weaponStrengthMain.max);
 	}
 	else
 		$(enemy).find(".weapon-unit").hide();
 	
-	if (getSetting(location + "ShowOffense") && !isNaN(power) && !isNaN(weaponStrengthMain.avg)) {
+	if (getSetting(setting + "ShowOffense") && !isNaN(power) && !isNaN(weaponStrengthMain.avg)) {
 		var offense = Math.round(100 * power * weaponStrengthMain.avg / getArmor(level, 1) / getPlayerHealth(80, "elementalist"));
 		$(enemy).find(".offense-unit").show();
 		$(enemy).find(".offense").html(offense);
@@ -477,14 +472,14 @@ function handleEnemy(enemy, location) {
 		$(enemy).find(".offense-unit").hide();
 	
     // Simplify health if needed.
-    if (getSetting(location + "ShowHealth") && getSetting(location + "SimplifyHealth")) {
+    if (getSetting(setting + "ShowHealth") && getSetting(setting + "SimplifyHealth")) {
         $(enemy).find(".health").each(function () {
             var baseHealth = (Number)($(this).html());
             $(this).html(simplifyHealth(baseHealth));
         });
     }
     // Simplify armor if needed.
-    if (getSetting(location + "ShowArmor") && getSetting(location + "SimplifyArmor")) {
+    if (getSetting(setting + "ShowArmor") && getSetting(setting + "SimplifyArmor")) {
         $(enemy).find(".armor").each(function () {
             var baseArmor = (Number)($(this).html());
             $(this).html(simplifyArmor(baseArmor, playerLevel));
