@@ -241,15 +241,23 @@
             <label for="tab-amount-setting">Amount of maximum overlay tabs</label>
             <input type="text" name="number" id="tab-amount-setting" data-setting="tabAmount">
         </p>
-		<input type="checkbox" id="comments-setting" data-setting="comments">
-        <label for="comments-setting">Show comments at bottom</label>
-		<label>
-			<input type="checkbox" data-setting="properCooldowns">
-        Add skill cast times to cooldowns (EXPERIMENTAL)</label>
-		<label>
-			<input type="checkbox" data-setting="useSidebar">
-        Open enemy info on sidebar</label>
-		<span class="forms-desc">Hold ctrl to reverse this.</span>
+		<ul class="forms-list" style="list-style:none;padding-left:0;">
+			<li>
+				<input type="checkbox" id="comments-setting" data-setting="comments">
+				<label for="comments-setting">Show comments at bottom</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" data-setting="properCooldowns">
+				Add skill cast times to cooldowns (EXPERIMENTAL)</label>
+			</li>
+			<li>
+			<label>
+				<input type="checkbox" data-setting="useSidebar">
+			Open enemy info on sidebar</label>
+			<span class="forms-desc">Hold ctrl to reverse this.</span>
+			</li>
+		</ul>
         <p class="forms-inline">
             <label for="ad-setting">Advertisements</label>
             <select class="dropdown" id="ad-setting" data-setting="adSetting">
@@ -262,6 +270,7 @@
 	</form>
 </div>
 <div class="tab-pane" id="tab-tactics">
+	<br>
     <form class="forms forms-columnar">
         <span class="forms-desc">Highest tactic in the list below will be displayed first.
         <br>
@@ -277,6 +286,7 @@
 	</form>
 </div>
 <div class="tab-pane" id="tab-enemy-main">
+	<br>
     <form class="forms forms-columnar">
 		<p class="forms-inline">
             <label>Font size
@@ -446,6 +456,7 @@
     </form>
 </div>
 <div class="tab-pane" id="tab-enemy-side">
+	<br>
     <form class="forms forms-columnar">
 		<p class="forms-inline">
             <label>Font size

@@ -15,7 +15,7 @@ var placeholders = {
 // Find correct starting values from statcalculator.
 function updatePlaceholderValues() {
     placeholders.health = getPlayerBaseHealth(getSetting("level"), getSetting("profession"));
-	placeholders.toughness = getPlayerAttribute(STAT_MAX, getSetting("level"));
+	placeholders.toughness = getPlayerAttribute(STAT_MAX, 80, getSetting("level"));
     placeholders.armor = getPlayerBaseDefense(getSetting("level"), getSetting("profession")) + placeholders.toughness;
     $("#armorSetting").attr("placeholder", placeholders.armor);
     $("#healthSetting").attr("placeholder", placeholders.health);
