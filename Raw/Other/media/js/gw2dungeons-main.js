@@ -170,7 +170,8 @@ function loadPage() {
 	// Remove no-js since js obviously works. / 2015-07-31 / Wethospu
     $('html').removeClass('no-js');
 	// Activate enemy links. / 2015-07-31 / Wethospu
-	$('#detail-container, #main-container, #data-overlay').on("click", "span.enemy-button", openEnemyOverlay);
+	$('#detail-container, #main-container').on("click", "span.enemy-button", openEnemyOverlay);
+	$('#data-overlay').on("click", "span.enemy-button", openEnemyOverlayForce);
 	$('#detail-container, #main-container, #data-overlay').on( "click", "span.level-minus", function() {
 		levelMinus(this, 'level', 0);
 	});
@@ -392,9 +393,7 @@ function dungeonToPages(dungeon) {
 
 // Finds a clicked enemy and loads details about it.
 function openEnemyOverlay() {
-    var enemyNumbers = String($(this).attr("data-index")).split(":");
-	var enemyLevels = String($(this).attr("data-level")).split(":");
-	// Determine where to open the enemy. / 2015-10-12 / Wethospu
+    // Determine where to open the enemy. / 2015-10-12 / Wethospu
 	var useOverlay = $(this).attr("data-force");
 	if (useOverlay)
 		useOverlay = useOverlay > 0 ? true : false;
@@ -403,6 +402,16 @@ function openEnemyOverlay() {
 		if (cntrlIsPressed)
 			useOverlay = !useOverlay;
 	}
+	openEnemyOverlaySub(this, useOverlay);
+}
+
+function openEnemyOverlayForce() {
+	openEnemyOverlaySub(this, true);
+}
+
+function openEnemyOverlaySub(enemy, useOverlay) {
+    var enemyNumbers = String($(enemy).attr("data-index")).split(":");
+	var enemyLevels = String($(enemy).attr("data-level")).split(":");
 	if (useOverlay) {
 		if (!$("#data-overlay").hasClass("in")) {
 			$('#data-overlay').modal();
@@ -416,9 +425,8 @@ function openEnemyOverlay() {
 			$('#detail-container').show();
 			$('#right-ad').hide();
 		}
-	}
-		
-	var path = $(this).attr("data-path");
+	}	
+	var path = $(enemy).attr("data-path");
 	openEnemySub(0, enemyNumbers, enemyLevels, path, useOverlay);
 }
 
