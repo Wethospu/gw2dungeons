@@ -48,11 +48,13 @@ var settings = {
 	useSidebar: true,
     adSetting: "big",
 	defaultFilters: "18EvyA4",
+	fontSize: 100,
     // Tab settings.
     tactics: [],
 	tips: [],
 	tabAmount: 10,
 	// Enemy overlay settings.
+	mainFontSize: 100,
 	mainShowIcons: true,
     mainDamageView: "number",
 	mainHealingView: "number",
@@ -84,6 +86,7 @@ var settings = {
 	mainShowCooldowns: true,
 	mainShowRanges: true,
 	// Enemy sidebar settings.
+	sideFontSize: 80,
 	sideShowIcons: true,
     sideDamageView: "number",
 	sideHealingView: "number",
@@ -223,7 +226,11 @@ function chooseCorrectTab() {
 }
 
 function applyEncounterSettings() {
-    chooseCorrectTab(); 
+    chooseCorrectTab();
+	$('#main-container').css('font-size', '' + getSetting('fontSize') + '%')
+	$('#data-overlay').css('font-size', '' + getSetting('mainFontSize') + '%')
+	$('#detail-container').css('font-size', '' + getSetting('sideFontSize') + '%')
+	
 }
 
 function applyEnemySettings(location) {
