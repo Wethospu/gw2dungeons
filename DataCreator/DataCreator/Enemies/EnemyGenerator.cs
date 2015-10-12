@@ -238,7 +238,7 @@ namespace DataCreator.Enemies
         else
           _currentEnemy.Paths = new List<string>(data.ToLower().Split('|'));
       }
-      else if (tag.Equals("category"))
+      else if (tag.Equals("rank"))
       {
         if (_currentEnemy == null)
           Helper.ShowWarning("Enemy not initialized with name.");
@@ -246,10 +246,10 @@ namespace DataCreator.Enemies
         {
           _currentEnemy.Rank = data.ToLower();
           if (!LinkGenerator.EnemyCategories.Contains(_currentEnemy.Rank))
-            Helper.ShowWarning("Category " + _currentEnemy.Rank + " not recognized. Check syntax for correct categories.");
+            Helper.ShowWarning("Rank " + _currentEnemy.Rank + " not recognized. Check syntax for correct categories.");
         }
         else
-          Helper.ShowWarning("Missing info. Use \"category='category'\"!");
+          Helper.ShowWarning("Missing info. Use \"rank='rank'\"!");
       }
       else if (tag.Equals("alt"))
       {
@@ -328,7 +328,7 @@ namespace DataCreator.Enemies
         if (_currentEnemy == null)
           Helper.ShowWarning("Enemy not initialized with name.");
         else if (_currentEnemy.Rank.Length == 0)
-          Helper.ShowWarningMessage("Category not set for enemy " + _currentEnemy.Name + ". Please fix!");
+          Helper.ShowWarningMessage("Rank not set for enemy " + _currentEnemy.Name + ". Please fix!");
         return 1;
       }
       else if (tag.Equals("tactic"))
@@ -624,7 +624,7 @@ namespace DataCreator.Enemies
     {
       if (data.Length == 0)
       {
-        Helper.ShowWarning("Missing info. Use syntax \"copy" + Constants.TagSeparator + "'name'|'category'|'path1':'path2':'pathN'\"");
+        Helper.ShowWarning("Missing info. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
         return null;
       }
       // Check whether copy by id is used. / 2015-10-02 / Wethospu
@@ -641,20 +641,20 @@ namespace DataCreator.Enemies
       catch { }
 
       if (data.Contains(Constants.TagSeparator))
-        Helper.ShowWarning("'" + Constants.TagSeparator + "' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'category'|'path1':'path2':'pathN'\"");
+        Helper.ShowWarning("'" + Constants.TagSeparator + "' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
       var dataSplit = data.Split('|');
       var name = dataSplit[0];
-      var category = "";
+      var rank = "";
       var path = "";
       if (dataSplit.Length > 1)
-        category = dataSplit[1];
+        rank = dataSplit[1];
       if (dataSplit.Length > 2)
       {
         if (dataSplit[2].Contains(' '))
-          Helper.ShowWarning("' ' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'category'|'path1':'path2':'pathN'\"");
+          Helper.ShowWarning("' ' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
         path = dataSplit[2].Replace(':', '|');
       }
-      var foundEnemies = Gw2Helper.FindEnemies(enemies, name, category, path);
+      var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, path);
       if (foundEnemies.Count == 0)
       {
         Helper.ShowWarning("No enemy found for copy. Change parameters, add missing enemy, change order of enemies or check syntax file.");
@@ -739,7 +739,7 @@ namespace DataCreator.Enemies
         if (dungeonData != null)
         {
           dungeonData.AddRace(enemies[i].Attributes.Family.GetDisplay());
-          dungeonData.AddCategory(enemies[i].Rank);
+          dungeonData.AddRank(enemies[i].Rank);
           foreach (var tag in enemies[i].Tags)
             dungeonData.AddTag(tag);
         }

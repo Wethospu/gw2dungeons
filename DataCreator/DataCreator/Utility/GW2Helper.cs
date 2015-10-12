@@ -54,10 +54,10 @@ namespace DataCreator.Utility
     *                                                                                              *
     * Returns enemies matching the requirements.                                                   *
     * enemies: List of enemies to search.                                                          *
-    * name, category, path: Requirements. Use "" if you want to exclude a requirement.             *
+    * name, rank, path: Requirements. Use "" if you want to exclude a requirement.                 *
     *                                                                                              * 
     ***********************************************************************************************/
-    public static List<Enemy> FindEnemies(List<Enemy> enemies, string name, string category, string path)
+    public static List<Enemy> FindEnemies(List<Enemy> enemies, string name, string rank, string path)
     {
       if (enemies == null)
       {
@@ -67,7 +67,7 @@ namespace DataCreator.Utility
       // Ensure requirements are lowercase.
       // Name should also be simplified because javascript can't handle special characters.
       name = Helper.Simplify(name);
-      category = category.ToLower();
+      rank = rank.ToLower();
       path = path.ToLower();
       var paths = path.Split('|');
       // Enemies whos base name matches exactly.
@@ -80,9 +80,9 @@ namespace DataCreator.Utility
       var partialAltMatches = new List<Enemy>();
       foreach (var enemy in enemies)
       {
-        if (category.Length > 0)
+        if (rank.Length > 0)
         {
-          if (!enemy.Rank.ToLower().Equals(category))
+          if (!enemy.Rank.ToLower().Equals(rank))
             continue;
         }
         if (path.Length > 0)

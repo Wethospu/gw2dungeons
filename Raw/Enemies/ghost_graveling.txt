@@ -269,7 +269,7 @@ subeffect=knockback:1.5
 Name=Bone Minion
 alt=Bone Minions
 Path=ACS
-category=normal
+rank=normal
 
 Attack=Shield
 effect=Ranged for 24 seconds

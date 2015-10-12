@@ -261,7 +261,7 @@ function handleEnemy(enemy, setting) {
 	var damageRange = getSetting(setting + "DamageRange")
 	var healingView = getSetting(setting + "HealingView");
 	var scalingType = $(enemy).attr("data-scaling");
-	var rank = $(enemy).attr("data-category");
+	var rank = $(enemy).attr("data-rank");
 	var currentPath = $(enemy).attr("data-current-path");
 	// Without current path, default to the first one available. / 2015-10-09 / Wethospu
 	if (!currentPath)

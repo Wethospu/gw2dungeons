@@ -251,19 +251,19 @@ namespace DataCreator.Shared
       {
         var subSplit = enemyStr.Split(':');
         var name = subSplit[0].ToLower();
-        var category = "";
+        var rank = "";
         var level = 0;
         // Ignore shown texts.
         if (name.Equals("text"))
           continue;
         // Get enemy data.
         if (subSplit.Length > 1)
-          category = subSplit[1].ToLower();
+          rank = subSplit[1].ToLower();
         if (subSplit.Length > 2)
           level = Helper.ParseI(subSplit[2].ToLower());
         enemyLevels.Add(level);
         // Find enemy.
-        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, category, path);
+        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, path);
         if (foundEnemies.Count == 0)
         {
           Helper.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + path + ". Change parameters, add missing enemy or check syntax file.");
@@ -280,7 +280,7 @@ namespace DataCreator.Shared
         return shownText;
       // Linkable enemies found. Start building the link.
       // Syntax:
-      // <span class="'main category' enemy-button" data-name="'enemy names'" data-category="'enemy categories" data-level="'enemy levels'" data-path="'path'" data-level"'level'">'shown text'</span>
+      // <span class="'main rank' enemy-button" data-name="'enemy names'" data-rank="'enemy categories" data-level="'enemy levels'" data-path="'path'" data-level"'level'">'shown text'</span>
       var link = new StringBuilder();
       link.Append("<span class=\"").Append(enemiesToLink[0].Rank).Append(" enemy-button\" data-index=\"");
       // Add enemy names.
@@ -327,15 +327,15 @@ namespace DataCreator.Shared
       {
         var subSplit = enemyStr.Split(':');
         var name = subSplit[0].ToLower();
-        var category = "";
+        var rank = "";
         // Ignore shown texts.
         if (name.Equals("text"))
           continue;
         // Get enemy data.
         if (subSplit.Length > 1)
-          category = subSplit[1].ToLower();
+          rank = subSplit[1].ToLower();
         // Find enemy.
-        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, category, path);
+        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, path);
         if (foundEnemies.Count == 0)
         {
           Helper.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + path + ". Change parameters, add missing enemy or check syntax file.");
@@ -355,11 +355,11 @@ namespace DataCreator.Shared
     /***********************************************************************************************
      * FindNextLink / 2014-07-24 / Wethospu                                                        * 
      *                                                                                             * 
-     * Finds next enemy category from the string.                                                  *
+     * Finds next enemy rank from the string.                                                      *
      *                                                                                             *
      * Returns found link type and data. Returns null if nothing good was found.                   *
      * str: String to search from.                                                                 *
-     * startIndex: In/Out. Index to start search -> end index of found category.                   *
+     * startIndex: In/Out. Index to start search -> end index of found rank.                       *
      *                                                                                             * 
      ***********************************************************************************************/
 

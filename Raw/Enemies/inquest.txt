@@ -982,7 +982,7 @@ subeffect=stun:2
 copy=5188
 Name=Inquest Technician
 # TODO: Get ID
-category=veteran
+rank=veteran
 Path=Aether
 
 ##################################################################

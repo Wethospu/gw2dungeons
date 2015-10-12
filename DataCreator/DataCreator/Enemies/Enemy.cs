@@ -94,8 +94,8 @@ namespace DataCreator.Enemies
       var result = string.Compare(Name, toCompare.Name);
       if (result != 0)
         return result;
-      // If same, compare category.
-      result = CategoryToInt(Rank) - CategoryToInt(toCompare.Rank);
+      // If same, compare rank.
+      result = RankToInt(Rank) - RankToInt(toCompare.Rank);
       if (result != 0)
         return result;
       // If same, compare level.
@@ -109,23 +109,23 @@ namespace DataCreator.Enemies
     }
 
     /***********************************************************************************************
-     * CategoryToInt / 2014-08-01 / Wethospu                                                       * 
+     * RankToInt / 2014-08-01 / Wethospu                                                           * 
      *                                                                                             * 
      * Helper function to make category properly comparable.                                       *
      *                                                                                             *
      ***********************************************************************************************/
 
-    private static int CategoryToInt(string category)
+    private static int RankToInt(string rank)
     {
-      if (category.ToLower().Equals("normal"))
+      if (rank.ToLower().Equals("normal"))
         return 0;
-      if (category.ToLower().Equals("veteran"))
+      if (rank.ToLower().Equals("veteran"))
         return 1;
-      if (category.ToLower().Equals("elite"))
+      if (rank.ToLower().Equals("elite"))
         return 3;
-      if (category.ToLower().Equals("champion"))
+      if (rank.ToLower().Equals("champion"))
         return 4;
-      if (category.ToLower().Equals("legendary"))
+      if (rank.ToLower().Equals("legendary"))
         return 5;
       return 0;
     }
@@ -144,14 +144,14 @@ namespace DataCreator.Enemies
     {
       var htmlBuilder = new StringBuilder();
       htmlBuilder.Append("<div class=\"enemy\"");
-      //// Add identifier data (name, category, path, race, potion and level).
+      //// Add identifier data (name, rank, path, race, potion and level).
       htmlBuilder.Append(" data-name=\"").Append(Helper.Simplify(Name));
       foreach (var altName in AltNames)
         htmlBuilder.Append(" ").Append(Helper.Simplify(altName));
       htmlBuilder.Append("\"");
       if (Rank.Equals(""))
         Helper.ShowWarningMessage("Rank not set for enemy " + Name + ".");
-      htmlBuilder.Append(" data-category=\"").Append(Helper.Simplify(Rank)).Append("\"");
+      htmlBuilder.Append(" data-rank=\"").Append(Helper.Simplify(Rank)).Append("\"");
       htmlBuilder.Append(" data-path=\"").Append(Helper.Simplify(string.Join("|", Paths))).Append("\"");
       // Only add non-default path info. / 2015-09-39 / Wethospu
       if (Level > 0)
@@ -169,7 +169,7 @@ namespace DataCreator.Enemies
       // Add name.
       htmlBuilder.Append(Gw2Helper.AddTab(3)).Append("<div class=\"in-line\">").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"enemy-name\">").Append(Helper.ConvertSpecial(Helper.ToUpperAll(Name.Replace(" ", Constants.Space)))).Append("</span>").Append(Constants.LineEnding);
-      // Add details like category, race, level, health and armor. / 2015-08-09 / Wethospu   
+      // Add details like rank, race, level, health and armor. / 2015-08-09 / Wethospu   
       if (!Rank.Equals(""))
         htmlBuilder.Append(Gw2Helper.AddTab(4)).Append("<span class=\"rank-unit\">").Append(Helper.ToUpper(Helper.ConvertSpecial(Rank)).Replace(" ", Constants.Space)).Append(Constants.Space).Append("</span>").Append(Constants.LineEnding);
       var family = Attributes.Family.GetDisplay();

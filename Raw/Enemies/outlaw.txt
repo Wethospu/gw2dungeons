@@ -725,7 +725,7 @@ alt=Bandit Enforcers|Enforcer|Enforcers
 # TODO ID
 ID=8879
 Path=CM1|CM2|CM3
-category=elite
+rank=elite
 
 ##################################################################
 
@@ -734,7 +734,7 @@ Name=Bandit Enforcer
 ID=8878
 alt=Bandit Enforcers|Enforcer|Enforcers
 Path=CM1|CM2|CM3
-category=normal
+rank=normal
 
 ##################################################################
 

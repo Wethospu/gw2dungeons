@@ -10,7 +10,7 @@ name=Weapon Testing Core
 alt=Core|Crushers
 scaling=constant
 health=3.03936
-category=structure
+rank=structure
 path=Furn
 toughness=5.3
 
@@ -60,7 +60,7 @@ subeffect=healing:1
 ##################################################################
 
 name=Elemental Source
-category=structure
+rank=structure
 path=Snow
 scaling=constant
 health=13.8671
@@ -110,7 +110,7 @@ effect=summon 5 enemy=Ice_Elementals:veteran
 # Can't be attacked any more so doesn't "exist" anymore.
 
 #name=Elemental Source (Top)
-#category=structure
+#rank=structure
 #path=Snow
 #scaling=constant
 #health=0.3799
@@ -121,7 +121,7 @@ effect=summon 5 enemy=Ice_Elementals:veteran
 ##################################################################
 
 Name=Stone
-Category=structure
+rank=structure
 Path=CoF2
 
 ###########################################################
@@ -129,7 +129,7 @@ Path=CoF2
 name=Undead Tendril
 alt=Undead Tendrils
 path=CoE1|CoE2|CoE3
-category=structure
+rank=structure
 
 attack=Fling
 effect=slow melee
@@ -140,7 +140,7 @@ subeffect=damage:0
 name=Undead Tendril
 alt=Undead Tendrils|Tendril|Tendrils
 path=Arah3
-category=structure
+rank=structure
 health=0.7598
 
 attack=Kill to rally
@@ -156,7 +156,7 @@ subeffect=bleeding:15
 
 Name=Undead Tendril
 alt=Undead Tendrils
-Category=structure
+rank=structure
 Path=CoES
 health=0.7598
 
@@ -186,7 +186,7 @@ subeffect=Immobilized:0
 ##################################################################
 
 Name=Grawl Totem
-Category=structure
+rank=structure
 Path=Volc
 # Scaling unverified.
 scaling=constant
@@ -201,7 +201,7 @@ subeffect=fury:6
 ##################################################################
 
 Name=Earth Totem
-Category=structure
+rank=structure
 Path=Volc
 scaling=constant
 health=0.3799
@@ -215,7 +215,7 @@ subeffect=protection:6
 
 Name=Crystal
 alt=Crystals
-category=structure
+rank=structure
 # Scaling not verified.
 scaling=constant
 health=0.3799
@@ -225,7 +225,7 @@ toughness=0.67
 ##################################################################
 
 name=Healing Thingy
-category=structure
+rank=structure
 path=Aqua
 
 attack=Aura
@@ -238,7 +238,7 @@ subeffect=regeneration:3
 name=Razorthorn Patch
 alt=Razorthorn Patches
 path=CoE2
-category=structure
+rank=structure
 condition=1
 
 attack=Touching
@@ -248,7 +248,7 @@ subeffect=bleeding:20 per tick. Instantly explodes any subverted enemy=Unstable_
 ##################################################################
 
 Name=Ice Shard
-Category=structure
+rank=structure
 scaling=constant
 health=0.0025
 Path=HotWS|HotW1|Snow
@@ -266,7 +266,7 @@ subeffect=buff:petrified
 
 Name=Searing Crystal
 alt=Searing Crystals
-Category=structure
+rank=structure
 Path=CoF1
 
 attack=lasts 30 seconds
@@ -278,7 +278,7 @@ subeffect=buff:Soothing_Mist per tick (stacks 25 times)
 ##################################################################
 
 Name=Imprisonment Crystal
-Category=structure
+rank=structure
 Path=CoES|CoE1|CoE2|CoE3
 health=0.3799
 condition=12
@@ -298,14 +298,14 @@ subeffect=bleeding:30:5
 ##################################################################
 
 Name=Barrier Turret
-Category=structure
+rank=structure
 Path=SE1
 health=0.86719
 
 ##################################################################
 
 Name=Flame Turret
-Category=structure
+rank=structure
 health=0.5203
 Path=SE1
 
@@ -318,7 +318,7 @@ subeffect=burning:2
 
 Name=Flame Turret
 alt=Flame Turrets
-Category=Structure
+rank=Structure
 Path=CM1|CM2|CM3
 health=0.9742
 condition=3.5
@@ -337,7 +337,7 @@ subeffect=burning:4
 Name=Rifle Turret
 alt=Rifle Turrets|Rifle
 health=0.9742
-Category=Structure
+rank=Structure
 Path=CM1|CM2|CM3
 
 Attack=Shoot
@@ -350,7 +350,7 @@ subeffect=damage:724632
 ##################################################################
 
 Name=Thumper Turret
-Category=structure
+rank=structure
 Path=SES|SE1
 health=0.6937
 
@@ -363,7 +363,7 @@ subeffect=damage:0
 name=Magma Turret
 alt=Magma Turrets
 path=Arah2
-category=structure
+rank=structure
 
 attack=buff:invulnerability
 
@@ -376,7 +376,7 @@ subeffect=damage:1654038
 name=Net Turret
 alt=Net Turrets
 path=Arah2
-category=structure
+rank=structure
 
 attack=cannot be targeted
 #note=melee and untargeted attacks can still destroy it
@@ -392,7 +392,7 @@ subeffect=immobilized:1
 Name=Net Turret
 alt=Net Turrets
 health=1.602
-Category=Structure
+rank=Structure
 Path=CM1|CM2|CM3
 
 Attack=Net
@@ -408,7 +408,7 @@ alt=Orrian Guard Turrets|Turrets
 image=http://wiki.guildwars2.com/images/b/b6/Orrian_Guard_Turret.jpg
 path=Arah1|Arah2|Arah3|Arah4
 health=0.7598
-category=structure
+rank=structure
 
 attack=Machine Gun Fire
 image=http://giant.gfycat.com/CavernousShadyCatfish.gif
@@ -422,7 +422,7 @@ subeffect=blind:2
 
 Name=Flame Legion Turret
 alt=Flame Legion Turrets|Flame Turret|Flame Turrets
-Category=structure
+rank=structure
 image=http://wiki.guildwars2.com/images/8/8a/Flame_Legion_Turret.jpg
 Path=CoF1|CoF2|CoF3
 condition=0
@@ -441,7 +441,7 @@ subeffect=burning:3
 Name=Corrupted Ice Turret
 alt=Corrupted Ice Turrets
 health=2.2795
-Category=structure
+rank=structure
 Path=HotWS|HotW1|HotW3
 
 # This enemy should be split to two enemies.
@@ -468,14 +468,14 @@ copy=Corrupted Ice Turret
 Name=Corrupted Ice Turret (Weak)
 alt=Corrupted Ice Turretss (Weak)
 health=1.51968
-Category=structure
+rank=structure
 Path=HotWS|HotW1|HotW3
 
 ##################################################################
 
 name=Sylvari Mortar Turret
 alt=Sylvari Mortar Turrets
-category=structure
+rank=structure
 image=http://wiki.guildwars2.com/images/6/6c/Sylvari_Mortar_Turret.jpg
 path=TAU
 
@@ -490,7 +490,7 @@ subeffect=damage
 
 name=Dredge Mining Turret (Fire)
 alt=Turret (Fire)
-category=structure
+rank=structure
 path=Under
 condition=0
 
@@ -507,7 +507,7 @@ subeffect=burning:3
 
 name=Dredge Mining Turret (Ice)
 alt=Turret (Ice)
-category=structure
+rank=structure
 path=Under
 
 attack=Ice Mortar
@@ -523,7 +523,7 @@ subeffect=chilled:2
 
 name=Dredge Mining Turret (Shock)
 alt=Turret (Shock)
-category=structure
+rank=structure
 path=Under
 
 attack=Shock Mortar
@@ -535,7 +535,7 @@ subeffect=stun:2 when passing through
 ################################################################## 
 
 Name=Repulsor Turret
-category=trap
+rank=trap
 Path=Thauma
 
 attack=Repulsor Bolt
@@ -555,7 +555,7 @@ subeffect=damage-constant:200
 
 name=Spell Blossom
 alt=Spell Blossoms
-category=structure
+rank=structure
 image=http://wiki.guildwars2.com/images/b/bf/Spell_Blossom.jpg
 path=TAS
 health=0.2355
@@ -568,7 +568,7 @@ subeffect=damage:0
 ##################################################################
 
 Name=Ice Spike
-Category=structure
+rank=structure
 Path=HotWS
 
 attack=Corrupt Spike
@@ -588,7 +588,7 @@ effect=summon an enemy=Icebrood_Elemental:Elite
 name=Risen Hand
 alt=Risen Hands|Hand|Hands
 path=Arah3|Arah4
-category=structure
+rank=structure
 health=0.7598
 
 attack=Kill to rally
@@ -603,14 +603,14 @@ subeffect=knockdown:3
 
 Name=Mortar
 alt=Mortars
-Category=structure
+rank=structure
 Path=SES|SE2|SE3
 health=0.8935
 
 ##################################################################
 
 Name=Ice dragon Totem (PBAoE)
-Category=structure
+rank=structure
 image=http://wiki.guildwars2.com/images/9/90/Dragon_Totem.jpg
 Path=HotW1
 
@@ -621,7 +621,7 @@ subeffect=Chilled:0 ?
 ##################################################################
 
 Name=Ice dragon Totem (Shooting)
-Category=structure
+rank=structure
 Path=HotW1
 image=http://wiki.guildwars2.com/images/9/90/Dragon_Totem.jpg
 
@@ -636,7 +636,7 @@ subeffect=knockdown:3
 
 Name=Svanir Ballista
 alt=Svanir Ballistas
-Category=structure
+rank=structure
 Path=HotW1
 
 attack=Ice Dart
@@ -651,7 +651,7 @@ subeffect=knockback:1.5
 name=Gargoyle Head
 image=http://wiki.guildwars2.com/images/e/ed/Gargoyle_Head.jpg
 alt=Gargoyle Heads
-Category=Structure
+rank=Structure
 health=1.9437
 toughness=1.1
 Path=AC1|AC2|AC3
@@ -669,7 +669,7 @@ subeffect=burning:3
 name=Volatile Blossom
 alt=Volatile Blossoms|Blossom|Blossoms
 image=http://wiki.guildwars2.com/images/2/20/Volatile_Blossom.jpg
-category=structure
+rank=structure
 path=TAS|TAF|TAU|TAAE|CoE2
 health=0.0256
 condition=4
@@ -692,7 +692,7 @@ effect=self destruct
 
 name=Healing Seed
 alt=Healing Seeds
-category=structure
+rank=structure
 image=http://wiki.guildwars2.com/images/8/8b/Healing_Seed_Ingame.png
 path=TAU
 
@@ -707,7 +707,7 @@ alt=Arrow Carts
 scaling=constant
 health=0.7598
 toughness=0.67
-Category=structure
+rank=structure
 Path=Urban
 
 attack=Volley
@@ -722,7 +722,7 @@ alt=Arrow Carts (Strong)
 scaling=constant
 health=0.7598
 toughness=0.67
-Category=structure
+rank=structure
 Path=Urban
 
 attack=Volley
@@ -737,7 +737,7 @@ alt=Ballistas
 scaling=constant
 health=0.7598
 toughness=0.67
-Category=structure
+rank=structure
 Path=Urban
 
 attack=Ballista Bolt
@@ -754,7 +754,7 @@ alt=Ballistas (Rapid)
 scaling=constant
 toughness=0.67
 health=0.7598
-Category=structure
+rank=structure
 Path=Urban
 
 attack=Ballista Bolt
@@ -774,7 +774,7 @@ scaling=constant
 health=0.7598
 toughness=0.67
 condition=0
-Category=structure
+rank=structure
 Path=Urban
 
 attack=Boiling Oil
@@ -791,7 +791,7 @@ subeffect=burning:2.5
 
 Name=Svanir Ice Bomb
 alt=Svanir Ice Bombs
-Category=structure
+rank=structure
 Path=HotW1
 
 attack=Ice Bomb Explosion
@@ -805,7 +805,7 @@ subeffect=chilled:2
 
 Name=cannon
 alt=cannons
-Category=structure
+rank=structure
 Path=CM2
 
 ##################################################################
@@ -813,7 +813,7 @@ Path=CM2
 name=Rotten Mouth
 alt=Rotten Mouths|Mouth|Mouths
 path=Arah3|Arah4
-category=structure
+rank=structure
 
 attack=buff:invulnerability
 
@@ -825,7 +825,7 @@ subeffect=poison:4
 
 name=Flame Jet
 alt=Flame Jets
-Category=Trap
+rank=Trap
 Path=AC1|AC2|AC3
 condition=80
 
@@ -841,7 +841,7 @@ subeffect=burning:3
 
 name=Flame Jet (Weak)
 alt=Flame Jets (Weak)
-Category=Trap
+rank=Trap
 Path=AC1
 condition=80
 
@@ -857,7 +857,7 @@ subeffect=burning:3
 
 name=Flame Trap (Jet)
 alt=Flame Traps (Jet)|Flame Jets|Flame Jet
-Category=trap
+rank=trap
 Path=ACS
 
 attack=Flame Jet
@@ -872,7 +872,7 @@ subeffect=burning:3
 name=Flame Trap
 alt=Flame Traps
 image=http://wiki.guildwars2.com/images/e/ed/Gargoyle_Head.jpg
-Category=Structure
+rank=Structure
 Path=ACS
 
 attack=Fireball
@@ -887,7 +887,7 @@ subeffect=burning:3
 
 Name=Cannon
 alt=Cannons
-Category=trap
+rank=trap
 Path=Aether
 
 attack=Cannon Blast
@@ -904,7 +904,7 @@ subeffect=agony:3
 name=Suspicious Pot
 alt=Suspicious Pots|Fire Barrels
 path=Arah2
-category=structure
+rank=structure
 condition=0
 
 attack=Flamestrike
@@ -917,7 +917,7 @@ subeffect=burning:6
 
 name=Spike Trap
 alt=Spike Traps
-Category=trap
+rank=trap
 Path=ACS|AC1|AC2|AC3
 
 attack=Trigger
@@ -931,7 +931,7 @@ subeffect=damage-constant:2000
 
 name=Lightning
 path=Insta
-category=trap
+rank=trap
 
 attack=Effect
 effect=small AoE (120 range)
@@ -942,7 +942,7 @@ subeffect=stun:3
 
 name=Frosty
 path=Insta
-category=trap
+rank=trap
 
 attack=Icy Ground
 animation=red circle appears and ice shard falls to it|0.75|leaves icy ground
@@ -958,7 +958,7 @@ name=Corpse Mine
 alt=Corpse Mines
 image=http://wiki.guildwars2.com/images/5/5b/Corpse_Mine.jpg
 path=Arah1|Arah2|Arah3|Arah4
-category=structure
+rank=structure
 
 attack=Plot
 image=http://giant.gfycat.com/FakeGenerousCarpenterant.gif
@@ -971,7 +971,7 @@ effect=self destruct
 
 Name=The Trap
 alt=Trap|Traps|square|squares
-Category=trap
+rank=trap
 Path=Aether
 
 attack=Energy Field
@@ -983,7 +983,7 @@ subeffect=teleport to start of the trap area
 
 Name=Small Laser
 alt=Small Lasers
-Category=trap
+rank=trap
 Path=Aether
 
 tactic=normal
@@ -1007,7 +1007,7 @@ subeffect=daze:2 when blocking a melee attack
 
 Name=Big Laser
 alt=Big Lasers
-Category=trap
+rank=trap
 Path=Aether
 
 tactic=normal
@@ -1032,7 +1032,7 @@ subeffect=Enables Lightning Shot
 
 Name=Spinning Laser
 alt=Spinning Lasers
-Category=trap
+rank=trap
 Path=Aether
 
 # This enemy should perhaps be split to two?
@@ -1056,7 +1056,7 @@ subeffect=agony:3
 name=Unknown (Land Mine)
 alt=Land Mine|Land Mines
 path=Arah2
-category=structure
+rank=structure
 
 attack=cannot be targeted (melee works fine)
 #note=much easier to just walk over
@@ -1075,7 +1075,7 @@ effect=self-destructs
 name=Unknown (Water Mine)
 alt=Water Mine|Water Mines
 path=Arah2
-category=structure
+rank=structure
 
 attack=Detonate
 effect=PBAoE
@@ -1086,7 +1086,7 @@ effect=self-destructs
 ##################################################################
 
 name=Lava
-category=trap
+rank=trap
 path=Volc|Thauma
 condition=0
 
@@ -1100,7 +1100,7 @@ subeffect=burning:1.25
 
 Name=Boulder
 alt=Boulders
-Category=trap
+rank=trap
 # Scaling unverified.
 scaling=normal
 health=0.58569
@@ -1117,7 +1117,7 @@ subeffect=damage:213700000
 ##################################################################
 
 Name=Mine
-Category=trap
+rank=trap
 Path=SE1
 
 attack=Detonate
@@ -1129,13 +1129,13 @@ effect=self destructs
 
 Name=Spike Trap
 alt=Spike Traps
-Category=trap
+rank=trap
 Path=CM3
 
 ##################################################################
 
 Name=Radiation
-Category=trap
+rank=trap
 Path=CoES
 
 attack=Effect
@@ -1145,7 +1145,7 @@ subeffect=damage-constant:2730
 ##################################################################
 
 name=Lava
-category=trap
+rank=trap
 path=TAAE
 condition=0
 
@@ -1158,7 +1158,7 @@ subeffect=burning:1.25
 
 Name=Area
 Path=AC1
-Category=Trap
+rank=Trap
 
 Attack=Ring of Fire
 effect=multiple ticking AoES
@@ -1171,7 +1171,7 @@ subeffect=Instantly kills elite Gravelings
 
 name=Spike Trap
 alt=Spike Traps
-category=trap
+rank=trap
 path=Cliff
 condition=0
 
@@ -1187,7 +1187,7 @@ subeffect=bleeding:4.8
 
 name=Wind Trap
 alt=Wind Traps
-category=trap
+rank=trap
 path=Cliff
 
 attack=Wind
@@ -1203,7 +1203,7 @@ subeffect=launch:0
 
 name=Fire Trap
 alt=Fire Traps
-category=trap
+rank=trap
 path=Cliff
 
 attack=Flamestrike
@@ -1220,7 +1220,7 @@ subeffect=burning:5.75
 
 name=Exploding Trap
 alt=Exploding Traps
-category=trap
+rank=trap
 path=Cliff
 
 attack=Small Fire Explosion
@@ -1232,7 +1232,7 @@ subeffect=launch:2
 
 name=Environment
 alt=Steam Walls|Fire Lobs
-category=trap
+rank=trap
 path=Furn
 
 attack=Steam
@@ -1248,7 +1248,7 @@ subeffect=burning:2
 ##################################################################
 
 name=Tunnel
-category=Trap
+rank=Trap
 path=Furn
 
 attack=Drill
@@ -1263,7 +1263,7 @@ subeffect=knockdown:3
 ##################################################################
 
 name=Tunnel Enemies
-category=Trap
+rank=Trap
 path=Furn
 
 attack=List
@@ -1281,7 +1281,7 @@ effect=enemy=Toxic_Ooze:veteran
 
 Name=Environment
 alt=traps
-Category=trap
+rank=trap
 Path=Swamp
 condition=3
 
@@ -1329,7 +1329,7 @@ image=http://giant.gfycat.com/ScaredGlumAnteater.gif
 name=Blood of the Ancient
 image=http://wiki.guildwars2.com/images/0/08/Blood_of_the_Ancient.jpg
 path=Arah1
-category=bundle
+rank=bundle
 
 attack=Slows down
 #note=Use dodges and teleports to move faster
@@ -1342,7 +1342,7 @@ attack=Summons enemy=Vile_Oozes:elite
 
 name=Corrupted Light
 path=Arah3|Arah4
-category=bundle
+rank=bundle
 
 attack="Corruption"
 effect=buff
@@ -1352,25 +1352,25 @@ subeffect=damage-percent:15
 ##################################################################
 
 Name=Reflecting Crystal
-Category=bundle
+rank=bundle
 image=http://wiki.guildwars2.com/images/d/d2/Reflecting_Crystal.jpg
 Path=Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
 
 name=Anti-Spectral Ordnance
-Category=bundle
+rank=bundle
 Path=AC2
 ##################################################################
 
 Name=Resonatic Defrequencyizenator
-Category=bundle
+rank=bundle
 Path=CoES
 
 ##################################################################
 
 Name=Dolphin
-Category=Bundle
+rank=Bundle
 Path=Aqua
 
 Attack=Echo
@@ -1393,7 +1393,7 @@ subeffect=resurrect dead allies and teleport them to your location
 ##################################################################
 
 name=Cultist Hammer
-category=bundle
+rank=bundle
 path=Cliff
 condition=3
 
@@ -1456,7 +1456,7 @@ subeffect=knockback:0
 ##################################################################
 
 Name=Dredge Carrier
-Category=structure
+rank=structure
 image=http://wiki.guildwars2.com/images/6/60/Dredge_Personnel_Carrier.jpg
 Path=SE3
 health=27.9714
@@ -1464,7 +1464,7 @@ health=27.9714
 ##################################################################
 
 Name=Devourer Burrow
-Category=structure
+rank=structure
 Path=CoF2
 
 attack=Summon
@@ -1475,7 +1475,7 @@ effect=summon enemy=text:Devourer|Carrion_Devourer:elite|Lashtail_Devourer:elite
 
 Name=Devourer Egg Nest
 alt=Devourer Egg Nests
-Category=structure
+rank=structure
 Path=CoF2
 
 attack=Summon
@@ -1485,7 +1485,7 @@ effect=summon enemy=text:Devourer|Carrion_Devourer:normal|Lashtail_Devourer:norm
 ##################################################################
 
 name=Burrow (Start)
-Category=structure
+rank=structure
 Path=AC1|AC2|AC3
 health=3.8874
 
@@ -1495,7 +1495,7 @@ attack=Summons enemy=graveling_hatchlings:normal
 
 name=Burrow (Scepter)
 alt=Burrows (Scepter)
-Category=structure
+rank=structure
 Path=AC1
 health=2.1867
 
@@ -1505,7 +1505,7 @@ attack=Summons enemy=graveling_hatchlings:normal and other stuff
 
 name=Burrow (collector)
 alt=Burrows (collector)
-Category=structure
+rank=structure
 Path=AC3
 health=2.1867
 
@@ -1515,7 +1515,7 @@ attack=Summons enemy=graveling_hatchlings:normal and other stuff
 
 name=Burrow (big)
 alt=Burrows (big)
-Category=structure
+rank=structure
 Path=AC3
 health=2.1867
 
@@ -1524,7 +1524,7 @@ attack=Summons enemy=graveling_hatchlings:normal and other stuff
 ##################################################################
 
 name=Graveling Burrow
-Category=structure
+rank=structure
 Path=ACS
 
 attack=Summons enemy=graveling_hatchlings:normal
@@ -1533,7 +1533,7 @@ attack=Summons enemy=graveling_hatchlings:normal
 
 name=Holographic Generator
 alt=Holographic Generators
-category=structure
+rank=structure
 path=TAAE
 
 ##################################################################
@@ -1541,7 +1541,7 @@ path=TAAE
 ##################################################################
 
 Name=Blockade
-Category=structure
+rank=structure
 Path=SE3
 health=0.8935
 
@@ -1550,38 +1550,38 @@ health=0.8935
 name=Orrian Air Tower
 alt=Orrian Air Towers
 path=Arah4
-category=structure
+rank=structure
 
 ##################################################################
 
 Name=Proximity Alarm Device
-Category=structure
+rank=structure
 Path=CoES
 health=0.819
 
 ##################################################################
 
 Name=Altar
-Category=structure
+rank=structure
 Path=CoF2
 
 ##################################################################
 
 Name=Gate Lock
-Category=structure
+rank=structure
 Path=CoF1
 
 ##################################################################
 
 Name=Corrupted Ice Crystal
 alt=Corrupted Ice Crystals
-Category=structure
+rank=structure
 Path=HotWS
 
 ##################################################################
 
 Name=Icedragon Totem
-Category=structure
+rank=structure
 image=http://wiki.guildwars2.com/images/9/90/Dragon_Totem.jpg
 Path=HotWS
 
@@ -1590,7 +1590,7 @@ attack=Does nothing
 ##################################################################
 
 name=Cage
-category=structure
+rank=structure
 path=Cliff
 scaling=constant
 health=0.22795
@@ -1599,7 +1599,7 @@ health=0.22795
 
 name=Seal
 alt=Seals
-category=structure
+rank=structure
 path=Cliff
 scaling=constant
 health=0.7598
@@ -1612,7 +1612,7 @@ attack=Takes no damage from normal attacks
 
 Name=Unstable portal
 alt=Unstable portals|portal|portals
-category=structure
+rank=structure
 Path=Thauma
 scaling=constant
 health=0.7598
@@ -1626,7 +1626,7 @@ subeffect=pull:1.5
 
 Name=Power Generator
 alt=Generator
-Category=structure
+rank=structure
 scaling=constant
 health=0.7598
 toughness=0.67
@@ -1638,5 +1638,5 @@ Name=Gate
 scaling=constant
 health=7.5984
 toughness=0.67
-Category=structure
+rank=structure
 Path=Urban

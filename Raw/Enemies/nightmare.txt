@@ -384,7 +384,7 @@ subeffect=damage:0
 ##################################################################
 
 name=NightmareCourtArcherBase
-category=elite
+rank=elite
 
 attack=Poison Volley
 ID=4786
@@ -825,7 +825,7 @@ image=http://wiki.guildwars2.com/images/6/63/Nightmare_Tree.jpg
 path=TAF
 health=62.7266
 race=other
-category=legendary
+rank=legendary
 
 attack=cannot be moved
 
@@ -860,7 +860,7 @@ image=http://wiki.guildwars2.com/images/6/63/Nightmare_Tree.jpg
 path=TAU
 health=62.7266
 race=other
-category=legendary
+rank=legendary
 
 attack=cannot be moved
 

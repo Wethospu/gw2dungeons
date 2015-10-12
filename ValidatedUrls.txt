@@ -1530,3 +1530,7 @@ http://wiki.guildwars2.com/wiki/Svanir_Talisman
 http://wiki.guildwars2.com/wiki/Svanir_Talisman_(masterwork)
 http://wiki.guildwars2.com/wiki/Prototype_Sheath
 http://wiki.guildwars2.com/wiki/Superior_Sigil_of_Serpent_Slaying
+http://wiki.guildwars2.com/wiki/Invigorating_Precision
+http://wiki.guildwars2.com/wiki/Nine-Tailed_Strike
+http://wiki.guildwars2.com/wiki/Stab
+http://wiki.guildwars2.com/wiki/Infiltrator's_Signet

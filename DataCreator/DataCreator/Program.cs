@@ -305,7 +305,7 @@ namespace DataCreator
       Constants.UniqueIndexCounter = 0;
       string[] toGenerate = { "ac", "cm", "ta", "se", "cof", "hotw", "coe", "arah", "fotm" };
       // File containing all enemies and encounters for searching.
-      // Name|Category|Dungeon|Path
+      // Name|Rank|Category|Dungeon|Path
       // Some special values must also be translated.
       GeneratePage("General");
       var indexFile = new StringBuilder();

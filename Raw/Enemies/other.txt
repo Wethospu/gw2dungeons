@@ -5,7 +5,7 @@
 Name=Iron Forgeman
 image=http://wiki.guildwars2.com/images/c/cc/Iron_Forgeman.jpg
 Path=SES
-category=legendary
+rank=legendary
 
 attack=Attacks have specific pattern
 
@@ -141,7 +141,7 @@ name=Flying Raptor
 image=http://wiki.guildwars2.com/images/f/f3/Flying_Raptor.jpg
 path=Arah1|Arah2|Arah3|Arah4
 race=other
-category=legendary
+rank=legendary
 
 attack=???
 effect=???

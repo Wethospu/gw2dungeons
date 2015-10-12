@@ -90,7 +90,7 @@ name=Tar
 ID=10799
 alt=Tars
 path=Arah1
-category=normal
+rank=normal
 
 attack=Spit
 ID=4208
@@ -621,7 +621,7 @@ image=http://wiki.guildwars2.com/images/1/12/Jade_Maw.jpg
 Path=Solid
 scaling=constant
 health=0.76
-category=legendary
+rank=legendary
 
 attack=Laser
 cooldown=15
@@ -642,7 +642,7 @@ alt=Enraged
 Path=Solid
 scaling=constant
 health=0.76
-category=legendary
+rank=legendary
 
 attack=Laser
 cooldown=8

@@ -136,16 +136,16 @@ If you need anything else just add them to AvailableTactics.txt or AvailableTips
 
 
 == Enemy links ==
-Enemies can be linked so that clicking opens their info on detail box. To create a link write "enemy=" and then enemy name, category and level separared with ':*.
-Category and level are optional. DataCreator attempts to find a single enemy from enemy data. If successful, it will fill the missing data. If not, warning will be given (either enemy missing or too many matches).
+Enemies can be linked so that clicking opens their info on detail box. To create a link write "enemy=" and then enemy name, rank and level separared with ':*.
+Rank and level are optional. DataCreator attempts to find a single enemy from enemy data. If successful, it will fill the missing data. If not, warning will be given (either enemy missing or too many matches).
 
 You can link multiple enemies to one link. These enemies will appear at the same time on the detail box. Separate enemies with '|'.
 
 By default link will have the first enemy's name as its shown text. If you want to change it just add "text:" with wanted text as a one enemy.
 
 syntax
-	enemy="enemy_name":"enemy_category":"enemy_level"|"enemy2_name":"enemy2_category":"enemy2_level"|"enemy3_name":"enemy3_category":"enemy3_level"
-	eneme=text:"text"|"enemy_name":"enemy_category":"enemy_level"|"enemy2_name":"enemy2_category":"enemy2_level"
+	enemy="enemy_name":"enemy_rank":"enemy_level"|"enemy2_name":"enemy2_rank":"enemy2_level"|"enemy3_name":"enemy3_rank":"enemy3_level"
+	eneme=text:"text"|"enemy_name":"enemy_rank":"enemy_level"|"enemy2_name":"enemy2_rank":"enemy2_level"
 	
 example
 	enemy=lupicus
@@ -207,8 +207,8 @@ example:
 
 	
 == Identifiers ==
-Along with the name you need to add path and category to identify and distinguish enemy properly.
-Valid categories: "normal", "veteran", "elite", "champion", "legendary", "structure", "trap"
+Along with the name you need to add path and rank to identify and distinguish enemy properly.
+Valid ranks: "normal", "veteran", "elite", "champion", "legendary", "structure", "trap"
 
 syntax:
 	path="path1"|"path2"|"pathN"
@@ -216,9 +216,9 @@ example:
 	path=AC1|AC2|AC3
 	
 syntax:
-	category="category"
+	rank="rank"
 example:
-	category="elite"
+	rank="elite"
 
 	
 == Scaling ==
@@ -349,12 +349,12 @@ At the moment you also have to add an entry to gw2dungeons.css found in Raw\Othe
 
 
 ==== Copy ====
-You can copy data of previously introduced enemy (within same dungeon). Category and path are optional. Use them to clarify selection if there are enemies with same name.
+You can copy data of previously introduced enemy (within same dungeon). Rank and path are optional. Use them to clarify selection if there are enemies with same name.
 This will copy everything except name and alternative names. You can overwrite/add stuff as usually.
 This should be used when exactly same enemies appear with different names or to quickly add filler enemies (like normal/champion versions from elite enemies).
 
 syntax:
-	copy="name"|"category"|"path1":"path2:"pathN"
+	copy="name"|"rank"|"path1":"path2:"pathN"
 example:
 	copy=wolf|elite
 	

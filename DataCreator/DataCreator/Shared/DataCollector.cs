@@ -11,7 +11,7 @@ namespace DataCreator.Shared
   public class DataCollector
   {
     private Dictionary<string, List<PathData>> Paths { get; set; }
-    private SortedSet<string> Categories { get; set; }
+    private SortedSet<string> Ranks { get; set; }
     private string CurrentTag;
     private SortedDictionary<string, string> Tags { get; set; }
     private SortedDictionary<string, string> EffectTags { get; set; }
@@ -20,14 +20,14 @@ namespace DataCreator.Shared
     public DataCollector()
     {
       Paths = new Dictionary<string, List<PathData>>();
-      Categories = new SortedSet<string>();
+      Ranks = new SortedSet<string>();
       CurrentTag = "0";
       Tags = new SortedDictionary<string, string>();
       EffectTags = new SortedDictionary<string, string>();
       Races = new SortedSet<string>();
 
-      Categories.Add("boss");
-      Categories.Add("thrash");
+      Ranks.Add("boss");
+      Ranks.Add("thrash");
     }
 
     /***********************************************************************************************
@@ -41,9 +41,9 @@ namespace DataCreator.Shared
       Paths.Add(dungeon, paths);
     }
 
-    public void AddCategory(string category)
+    public void AddRank(string rank)
     {
-      Categories.Add(category);
+      Ranks.Add(rank);
     }
 
     public void AddTag(string tag)
@@ -152,19 +152,19 @@ namespace DataCreator.Shared
     }
 
     /***********************************************************************************************
-   * GenerateCategoryHtml / 2015-08-14 / Wethospu                                                *
-   *                                                                                             *
-   * Converts categories to usable html.                                                         *
-   *                                                                                             *
-   ***********************************************************************************************/
+    * GenerateRankHtml / 2015-08-14 / Wethospu                                                     *
+    *                                                                                              *
+    * Converts ranks to usable html.                                                               *
+    *                                                                                              *
+    ***********************************************************************************************/
 
-    public string GenerateCategoryHtml()
+    public string GenerateRankHtml()
     {
       var builder = new StringBuilder();
-      foreach (var category in Categories)
+      foreach (var rank in Ranks)
       {
-        builder.Append(Gw2Helper.AddTab(3)).Append("<option value=\"").Append(category).Append("\">");
-        builder.Append(Helper.ToUpper(category)).Append("</option>").Append(Constants.LineEnding);
+        builder.Append(Gw2Helper.AddTab(3)).Append("<option value=\"").Append(rank).Append("\">");
+        builder.Append(Helper.ToUpper(rank)).Append("</option>").Append(Constants.LineEnding);
       }
       return builder.ToString();
     }

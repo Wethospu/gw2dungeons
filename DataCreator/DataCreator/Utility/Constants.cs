@@ -138,7 +138,7 @@ namespace DataCreator.Utility
         InitialdataHtml = "<!-- Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST! -->" + LineEnding;
         InitialdataPhp = "// Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding;
         InitialdataText = "# Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding;
-        InitialDataIndex = "<!-- display name|search name|category|race|dungeon|path|index|tags -->" + LineEnding;
+        InitialDataIndex = "<!-- display name|search name|rank|race|dungeon|path|index|tags -->" + LineEnding;
       }
     }
 

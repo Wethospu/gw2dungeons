@@ -11,7 +11,7 @@
 			tagClass: function(item) {
 				switch (item.type) {
 					case 'tag'   : return 'label label-primary';
-					case 'category'  : return 'label label-danger label-important';
+					case 'rank'  : return 'label label-danger label-important';
 					case 'dungeon': return 'label label-success';
 					//case 'Africa'   : return 'label label-default';
 					case 'race'     : return 'label label-warning';
@@ -52,7 +52,7 @@
 // Track current search ID to stop previous search if use overwrites. / 2015-10-11 / Wethospu
 var currentSearchID = 0;
 
-// Attempts to find dungeon, path and category from parameters. Data must match all of these.
+// Attempts to find dungeon, path and rank from parameters. Data must match all of these.
 // Rest of the parameters are considered as a partial names. Data must contain at least one parameter.
 function handleSearch() {
 	$("#search-page").html("");
@@ -61,17 +61,17 @@ function handleSearch() {
 	loadSettings(false, false);
 	var searchObject = readParameters();
 	currentSearchID = currentSearchID + 1;
-	searchIndex(currentSearchID, names, dungeonsToPaths(searchObject.dungeons), searchObject.categories, searchObject.races, searchObject.tags, $("#search-amount").val());
+	searchIndex(currentSearchID, names, dungeonsToPaths(searchObject.dungeons), searchObject.ranks, searchObject.races, searchObject.tags, $("#search-amount").val());
 	searchDone = true;
 }
 
 function readParameters() {
 	var tagArray = $("#tag-display").tagsinput('items');
 	if (tagArray == null)
-		return { dungeons: [], categories: [], races: [], tags: [] };
+		return { dungeons: [], ranks: [], races: [], tags: [] };
 	var dungeons = [];
 	var races = [];
-	var categories = [];
+	var ranks = [];
 	var tags = [];
 	// Separate tags.
 	for (var i = 0; i < tagArray.length; i++) {
@@ -79,28 +79,28 @@ function readParameters() {
 			dungeons.push(tagArray[i].value);
 		if (tagArray[i].type == "race")
 			races.push(tagArray[i].value);
-		if (tagArray[i].type == "category")
+		if (tagArray[i].type == "rank")
 		{
 			var value = tagArray[i].value;
-			// Special categories.
+			// Special ranks.
 			if (value == "boss")
 			{
-				if (categories.indexOf("champion") == -1)
-					categories.push("champion");
-				if (categories.indexOf("legendary") == -1)
-					categories.push("legendary");
+				if (ranks.indexOf("champion") == -1)
+					ranks.push("champion");
+				if (ranks.indexOf("legendary") == -1)
+					ranks.push("legendary");
 			}
 			else if (value == "thrash")
 			{
-				if (categories.indexOf("normal") == -1)
-					categories.push("normal");
-				if (categories.indexOf("veteran") == -1)
-					categories.push("veteran");
-				if (categories.indexOf("elite") == -1)
-					categories.push("elite");
+				if (ranks.indexOf("normal") == -1)
+					ranks.push("normal");
+				if (ranks.indexOf("veteran") == -1)
+					ranks.push("veteran");
+				if (ranks.indexOf("elite") == -1)
+					ranks.push("elite");
 			}
 			else
-				categories.push(value);
+				ranks.push(value);
 		}
 			
 		if (tagArray[i].type == "tag")
@@ -108,7 +108,7 @@ function readParameters() {
 	}
 	return {
         dungeons: dungeons,
-        categories: categories,
+        ranks: ranks,
 		races: races,
 		tags: tags
     };  
@@ -131,7 +131,7 @@ function dungeonsToPaths(dungeons) {
 }
 
 // Performance: Takes up to 250 ms.
-function searchIndex(searchID, parameters, paths, categories, races, tags, resultCount) {
+function searchIndex(searchID, parameters, paths, ranks, races, tags, resultCount) {
 	var resultsTop = new Array();
 	var resultsHigh = new Array();
 	var resultsMedium = new Array();
@@ -145,12 +145,12 @@ function searchIndex(searchID, parameters, paths, categories, races, tags, resul
 			// Ignore comments.
 			if (lines[i][0] == '<')
 				continue;
-			// display name|search name|category|dungeon|path|index
+			// display name|search name|rank|dungeon|path|index
 			var elements = lines[i].split("|");
 			if (elements.length < 7)
 				continue;
-			// Check category.
-			if (categories.length > 0 && categories.indexOf(elements[2]) == -1)
+			// Check ranks.
+			if (ranks.length > 0 && ranks.indexOf(elements[2]) == -1)
 				continue;
 			// Check race.
 			if (races.length > 0 && races.indexOf(elements[3]) == -1)
@@ -260,7 +260,7 @@ function processResults(results) {
 		var dataArray = results[i].split("|");
 		var element = {
 			display: dataArray[0],
-			category: dataArray[2],
+			rank: dataArray[2],
 			index: dataArray[5],
 			order: i
 		};
@@ -304,11 +304,11 @@ function displayResults(searchID, elementID, elements, htmlList) {
 			// Build enemy link.
 			var str = '';
 			if (view != "All" && view != "Info")
-				str = '<span class="' + elements[elementID].category + ' enemy-button" data-index="' + elements[elementID].index + '"><h3>' + elements[elementID].display + '</h3></span>\n';
+				str = '<span class="' + elements[elementID].rank + ' enemy-button" data-index="' + elements[elementID].index + '"><h3>' + elements[elementID].display + '</h3></span>\n';
 			if (view == "Info") {
 				$(this).find("div").remove(":not(.in-line)");
 				$(this).find("p").remove("p");
-				$(this).find(".enemy-name").html('<span class="' + elements[elementID].category + ' enemy-button" data-index="' + elements[elementID].index + '">' + elements[elementID].display + '</span>');
+				$(this).find(".enemy-name").html('<span class="' + elements[elementID].rank + ' enemy-button" data-index="' + elements[elementID].index + '">' + elements[elementID].display + '</span>');
 			}
 			if (view == "All" || view == "Info")	
 				str += '<br/>\n' + $(this)[0].outerHTML;
@@ -348,9 +348,9 @@ ID_PATHS
 		</select>
 	</li>
 	<li>
-		<select id="search-category" class="search-changer form-control" data-type="category">
-			<option value ="">Category</option>
-ID_CATEGORIES
+		<select id="search-rank" class="search-changer form-control" data-type="rank">
+			<option value ="">Rank</option>
+ID_RANKS
 		</select>
 	</li>
 	<li>
@@ -395,7 +395,7 @@ ID_EFFECT_TAGS
 <div id="search-page"></div>
 <div id="instructions">
 	<p>Filter results by selecting options from dropdowns. Active filters are displayed on "Filters". You can remove filters by clicking on the "x" button on them.</p>
-	<p>Different type of filters are colored differently. Green is for dungeons, red is for categories, orange is for races and blue is for both tags.</p>
-	<p>Tag and effect tag filters are exclusive. Enemies must match all active tags. Dungeon, category and race are inclusive. If multiple same type is active enemies must match only one of them.</p>
+	<p>Different type of filters are colored differently. Green is for dungeons, red is for ranks, orange is for races and blue is for both tags.</p>
+	<p>Tag and effect tag filters are exclusive. Enemies must match all active tags. Dungeon, rank and race are inclusive. If multiple same type is active enemies must match only one of them.</p>
 	<p>You can change amount of displayed information and results by changing view and results dropdowns. Amount of results automatically changes when you change amount of displayed information based on your previous selection.</p>
 </div>

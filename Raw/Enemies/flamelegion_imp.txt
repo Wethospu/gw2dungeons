@@ -1057,7 +1057,7 @@ copy=9420
 # TODO: Get ID.
 ID=9420
 scaling=normal
-category=veteran
+rank=veteran
 Path=Furn
 
 ##################################################################
@@ -1168,7 +1168,7 @@ Name=Shadow Imp
 alt=Shadow Imps
 Path=CoF3
 race=imp
-category=normal
+rank=normal
 condition=8
 
 attack=Shadow Bolt
