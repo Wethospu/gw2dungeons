@@ -156,18 +156,28 @@ ID=7396
 image=http://wiki.guildwars2.com/images/3/3f/Nightmare_Warder.jpg
 path=TAF
 
+tactic=ranged
+Keep him immobilized or at least crippled at all times. If he gets close you will get killed.
+tactic=melee
+He deals extreme damage at close range so melee is not suggested unless you can burst him down fast.
+tactic=melee|ranged
+Be ready to dodge if he leaps towards you with Earthshaker. Dodge again after 1 second to avoid the follow up attack.
+Don't worry about the red circle caused by Well of Corruption. It's harmless because the effect actually follows the knight.
+tactic=melee
+His base melee hits are fast and (seem to) hit all around him.
+
 attack=Hammer Swing (1)
 ID=5262
 image=http://fat.gfycat.com/AdmiredImmaterialElver.gif
-effect=melee
+effect=wide melee
 subeffect=damage:-
 
 attack=Hammer Bash (2)
-effect=melee
+effect=wide melee
 subeffect=damage:0.3
 
 attack=Hammer Smash (3)
-effect=melee
+effect=wide melee
 subeffect=damage:0.5
 
 attack=Earthshaker (1)
@@ -203,6 +213,16 @@ ID=3210
 alt=Nightmare Court Knights|Knight|Knights
 image=http://wiki.guildwars2.com/images/3/3b/Elite_Nightmare_Court_Knight.jpg
 path=TAS|TAF|TAU
+
+tactic=ranged
+Keep him blinded, immobilized or at least crippled at all times and focus him down. If he gets close you will get killed.
+tactic=melee
+Keep him blinded and controlled at all times. Focus him down before he kills you.
+tactic=melee|ranged
+Be ready to dodge if he leaps towards you with Earthshaker. Dodge again after 1 second to avoid the follow up attack.
+Don't worry about the red circle caused by Well of Corruption. It's harmless because the effect actually follows the knight.
+tactic=melee
+His base melee hits are fast and (seem to) hit all around him.
 
 ##################################################################
 
@@ -363,14 +383,8 @@ subeffect=damage:0
 
 ##################################################################
 
-name=Nightmare Court Archer (Fire)
-ID=10078
-alt=Nightmare Court Archers (Fire)|Archer (Fire)|Archers (Fire)
-image=http://wiki.guildwars2.com/images/e/e2/Elite_Nightmare_Court_Archer.jpg
-path=TAF
-
-attack=cannot move
-#note=the ones that are part of random groups can move
+name=NightmareCourtArcherBase
+category=elite
 
 attack=Poison Volley
 ID=4786
@@ -390,20 +404,38 @@ effect=projectile
 subeffect=damage:-
 #note=stack on him to prevent usage
 
+#############################
+
+copy=NightmareCourtArcherBase
+name=Nightmare Court Archer (Fire)
+ID=10078
+alt=Nightmare Court Archers (Fire)|Archer (Fire)|Archers (Fire)
+image=http://wiki.guildwars2.com/images/e/e2/Elite_Nightmare_Court_Archer.jpg
+path=TAF
+
+attack=cannot move
+#note=the ones that are part of random groups can move
+
 attack=Fire Shield
 additional=can't be evaded
 effect=AoE field, when crossing
 subeffect=damage-percent:100
 #note=blocking and blinding works
 
-##################################################################
+#############################
 
-copy=10078
+copy=NightmareCourtArcherBase
 name=Nightmare Court Archer
 ID=3178
 alt=Nightmare Court Archers|Archer|Archers
 image=http://wiki.guildwars2.com/images/e/e2/Elite_Nightmare_Court_Archer.jpg
 path=TAS|TAF|TAU
+
+tactic=ranged
+At high range you only have to worry about Binding Shot which can be easily avoided by strafing left and right.
+tactic=melee
+Her ranged attacks have a minimum range. If you manage to corner her you, she won't attack you if you stand inside her.
+She will use Evasive Trap only if you have her targetted. This shouldn't be a problem because most melee attacks don't require a target. Only target her if evade was triggered recently because otherwise she will just evade your attack.
 
 attack=Evasive Trap
 image=http://fat.gfycat.com/WellgroomedTanDairycow.gif
@@ -413,6 +445,23 @@ subeffect=bleeding:4:3
 subeffect=immobilized:3
 effect=buff:evade:0
 #note=only used when hit within melee range while being targetted
+
+#############################
+
+copy=NightmareCourtArcherBase
+name=Nightmare Court Archer (stable)
+ID=10078
+alt=Nightmare Court Archers (stable)|Archer (stable)|Archers (stable)
+image=http://wiki.guildwars2.com/images/e/e2/Elite_Nightmare_Court_Archer.jpg
+path=TAS|TAF|TAU
+
+tactic=ranged
+At high range you only have to worry about Binding Shot which can be easily avoided by strafing left and right.
+tactic=melee
+All her attacks have a minimum range so as long as you stand inside her, she won't attack you. Keep in mind that if she attempts to attack other players you will still get hit.
+
+
+attack=can't move and immune to control
 
 ##################################################################
 
@@ -492,10 +541,19 @@ alt=Nightmare Court Sorcerers|Sorcerer|Sorcerers
 image=http://wiki.guildwars2.com/images/8/84/Nightmare_Court_Sorcerer.jpg
 path=TAS|TAF|TAU
 
+tactic=ranged
+Try to stay at lower height to make his base attack overshoot. Don't get too close so you won't get hit by Fear.
+
+tactic=melee
+The biggest priority is to avoid Fear. It can't be blocked or evaded so you need to get out of the red circle on time.
+Stay at max melee range and dodge away from as soon as you see a red circle. If you have trouble, stand sideways to give your melee attacks bit higher range. Take a condition removal just in case.
+Try to stay at lower height to make his base attack overshoot.
+
 attack=Well
 ID=4799
 image=http://giant.gfycat.com/LegalMajesticDairycow.gif
-effect=ticking AoE (10 ticks in 5 s)
+additional=cannot be blocked
+effect=piercing projectile ticking AoE (10 ticks in 5 s)
 count=10
 length=5
 subeffect=damage:-
@@ -504,7 +562,7 @@ subeffect=regeneration:0
 attack=Fear
 ID=4800
 image=http://giant.gfycat.com/PitifulAgonizingGalapagosdove.gif
-additional=cannot be blocked or evaded
+additional=cannot be blocked, evaded or blinded
 effect=PBAoE
 subeffect=fear:6
 #note=stunbreak or use stability before
@@ -596,6 +654,12 @@ ID=3230
 alt=Nightmare Hounds|Hound|Hounds
 image=http://wiki.guildwars2.com/images/3/37/Nightmare_Hound.jpg
 path=TAS|TAU|TAF|TAAE|COE2
+
+tactic=ranged
+Keep him crippled and kite. Dodge when he leaps towards you.
+tactic=melee
+His Bite can be avoided by running through him. This requires precise timing.
+Kiting at max-melee range doesn't work because he hits fast.
 
 attack=Bite
 ID=4801

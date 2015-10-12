@@ -28,16 +28,24 @@ image=http://i.imgur.com/JaGjijB.jpg
 image=http://i.imgur.com/B6rfqo1.jpg
 image=http://i.imgur.com/8SMoxDn.jpg
 tactic=normal
-You will be ambushed by spiders.
-After you kill the spiders, you can open pods to save prisoners. There's about 50% chance to get an enemy instead of a prisoner so it saves time to leave them there. If you choose to open them you should do it one by one.
-Then you have to kill some nightmare court.
+2 enemy=Recluses spawn right before the first door. After them there are 2 more enemy=Recluses, 12 enemy=Spider_Hatchlings and 5 enemy=Sylvari_Prisoners.
+Prisoners can be rescued by activating their pod. There is a high chance (~50%) that they are already corrupted which makes a random enemy=text:Nightmare_Court_Initiate|knight|duelist|sorcerer|archer appear. If they are not corrupt, they will give you a buff which heals you right before you get downed.
+Unfortunately you shouldn't save any prisoners because most of them are corrupted and the gained buff is neglible. If you want to save them, do it after all other enemies are dead so you won't get overrun.
+After the area there is a enemy=Duelist and a enemy=Sorcerer. After them there is an enemy=Archer, a enemy=Knight and a enemy=Sylvari_Prisoner. At end of the corridor there are 3 enemy=Spell_Blossoms and 2 enemy=Archers_(Stable).
+After them there are 4 enemy=Volatile_Blossoms. They are traps which will kill you fast if you stand on them. Use ranged multitarget attacks to clear them in few hits. Keep in mind that Blossoms will respawn after a short time so don't wait near them.
+After blossoms, enemy=Undergrowth_Spider_Queen:champion will spawn so wait for others right after blossoms.
 tactic=skip
 Just run through.
+tactic=thief
+media=tas_skip1.jpg|Watch out for the 2 spawning enemy=Undergrowth_Recluses. Stack a short stealth with a wiki=Black_Powder and 3 wiki=Cluster_Bomb|Cluster_Bombs before you trigger them. At the big area, stack a longer stealth with a wiki=Smoke_Screen and 6 wiki=Cluster_Bomb|Cluster_Bombs.
+Stack more stealth after first nightmare court enemies with a wiki=Black_Powder and 3 wiki=Cluster_Bomb|Cluster_Bombs. If no one helps with blasting, use also wiki=Blinding_Powder. The stealth should last almost to end which is enough to get everyone through.
+Take also wiki=Shadow_Refuge so you can use it for stealth if people aggro enemies. It's possible to stand between enemy groups even media=tas_skip2.jpg|without_stealth if you need to wait for cooldowns.
+
 
 name=enemy=Undergrowth_Spider_Queen:champion
 image=http://i.imgur.com/qv13tku.jpg
 tactic=ranged|melee
-4 enemy=Spider_Hatchlings:normal constantly respawn on the area.
+Watch out for nearby enemy=Volatile_Blossoms on the area. 4 enemy=Spider_Hatchlings:normal constantly respawn on the area.
 tactic=ranged
 | Use area attacks to bring them down while attacking Queen.
 tactic=melee
@@ -50,35 +58,62 @@ tactic=melee
 Stay behind her back so you know when she is going to attack you. Try to block or evade her melee attack.
 Be ready to dodge when she glows. She will shoot 3 projectiles in a cone each immobilize for a long time. At close range you may get hit by all of them and take lots of damage.
 Take 1-2 condition removals to remove immobilize if you get hit. Also remove weakness from her melee Bite if possible.
+tactic=ranged|melee
+If you get downed, rally off from a Hatchling or Blossom.
+tactic=thief
+wiki=Pistol_Whip with wiki=Invigorating_Precision and wiki=Signet_of_Malice allows you to solo her easily. Use wiki=Smoke_Screen to reduce pressure if you get low health.
 
 name=Spell Blossoms
 image=http://i.imgur.com/Pcq4xXe.jpg
 tactic=normal
-One Nightmare Court in middle of enemy=Spell_Blossoms:structure. If it is a enemy=Knight:elite you should pull it back. Otherwise just go in and destroy everything.
+After enemy=Undergrowth_Spider_Queen:champion, there are 4 enemy=Volatile_Blossoms, a enemy=Archer and a enemy=Sylvari_Prisoner.
+After them, there is a random enemy=text:Nightmare_Court|knight|duelist|sorcerer|archer, 6 enemy=Spell_Blossoms and lots of enemy=Volatile_Blossoms.
+If the random enemy is a enemy=Knight:elite, pull him back to kill him safely. Otherwise just go in and destroy everything. Once Spell Blossoms are destroyed, Volatile Blossoms stop respawning.
+At the tunnel, there is a enemy=Hound and 4 enemy=Pups. Focus on Hound as Pups will die very quickly. After them you will face enemy=Sariel in a room with 3 enemy=Sylvari_Prisoners.
 
 name=enemy=Sariel:champion
 image=http://i.imgur.com/USpAXrn.jpg
-tactic=normal
-She is a melee attacker so you can easily run around kiting. Jump down from ledges to create more distance if needed.
-Be ready to dodge when she dashes because it is a very high damage attack which may instantly down you if you are hit.
+tactic=ranged
+Keep her crippled and kite. Dodge when she dashes towards you. When she gets close, just jump down from ledges to create some distance.
+tactic=melee
+She hits pretty hard so try to avoid damage by staying behind her back. Stay at max-melee range to give you more time dodge when she dashes towards you.
+tactic=exploit
+She can be safespotted by standing on media=tas_sariel_exploit.jpg|a_ledge. Her dash will still hit you but can be easily healed.
 
 name=Lake of Fear (after water tunnel)
 image=http://i.imgur.com/UvF8k9l.jpg
 tactic=normal
-There are ;ots of enemies in the area, so don't aimlessly run around. Kill 2 Archers near the entrance and then just walk forward through the water. Don't cross the bridge on left because there's an extremely strong enemy group of foes (lots of enemy=Hounds:elite).
-Kill 2 Nightmare Cours in front of you. Caithe needs 3 items to create a bridge. Look at the map and go together while avoiding unnecessary enemies.
-One item is guarded by enemy=Hounds:elite and enemy=Pups:normal. The second item is guarded by a enemy=Archer:elite. The third item is guarded by enemy=Mutated_Fish:champion.
+After enemy=Sariel there is a tunnel of water with 7 enemy=Barracudas. They are harmless and can be killed for experience. After tunnel, there is a huge area with lots of enemies. Don't aimlessly wander around or you will get yourself killed.
+There are 4 enemy=Archers_(Stable) and 2 enemy=Sylvari_Prisoners near the entrance. On the right there are 2 enemy=Hounds and 6 enemy=pups. On the left there are 2 enemy=Cultists:elite, 1 enemy=Sorcerer and few enemy=Volatile_Blossoms.
+In the middle there is an inactive enemy=Spell_Blossom and 4 enemy=Volatile_Blossoms. On the far left there are 4 enemy=Hounds, 4 ianctive enemy=Spell_Blossoms and lots of enemy=Volatile_Blossoms. At the end there is a enemy=Sorcerer, an enemy=Archer and 2 enemy=Sylvari_Prisoners.
+Kill the archers at the entrance so you can observe the area without any disturbance. Move straight forward through the water towards the archer and the sorcerer and kill them. After that Caithe needs 3 items to build a bridge. At this point Spell Blossoms also activate.
+Look at the map and go together while avoiding unnecessary enemies. The spring water is guarded by Hounds and Pups. The bundle of seeds is guarded by an enemy=Archer_(Stable). The third item can be acquired by killing enemy=Mutated_Fish. He is located in a water with about enemy=Barracudas.
+Once you get the items, head back to Caithe and wait for him to build the bridge so you can take cre of enemy=Brangoire.
 tactic=skip|coordinated
 Run through everything. Split up to complete the tasks faster. You will generally want 3-4 players to take on the Mutated Fish, while the others deal with the Hounds and Archer.
+tactic=thief
+Stack stealth before the water tunnel so people won't get combat with enemy=Barracudas. Use a wiki=Smoke_Screen with 6 wiki=Cluster_Bomb|Cluster_Bombs. After tunnel stack bit more stealth with wiki=Black_Powder and wiki=Cluster_Bomb if needed.
+When gathering ingredients you can get the spring water very fast with wiki=Shadowstep, wiki=Signet_of_Shadows, wiki=Infiltrator's_Arrow and wiki=Hide_in_Shadows. Don't use Shadowstep too early so it won't run out before you ge the water.
+
+name=enemy=Mutated_Fish
+tactic=ranged
+He has only melee attacks so just keep kiting.
+tactic=melee
+He attacks frequently but won't deal much damage. With some sustain you should be able to tank him.
+tactic=thief
+Try to aggro him first to hopefully make him attack you. wiki=Nine-Tailed_Strike allows you block most of his attacks while dealing lots of damage. Use one wiki=Stab between every Strike.
+Manage your initiative with wiki=Steal and wiki=Infiltrator's_Signet.
 
 name=enemy=Brangoire:champion
 image=http://i.imgur.com/DgnscLA.jpg
-tactic=normal
-He summons lots of enemy=Living_Nightmares:normal which explode as a poison gas. Bring AoE/Cleave to kill Nightmares before they release the gas. Stay mobile and don't stand in the gas. Bring condition-removal if you get poisoned.
-Dodge when he jumps in the air to evade his Fear (which may put you straight into a poison gas!). Get a stun break just in case.
+tactic=ranged|melee
+He summons lots of enemy=Living_Nightmares:normal which explode as a poison gas.
+tactic=ranged
+| Stay mobile so you don't caught in it.
+tactic=melee
+| Circle him at max-melee range so you will avoid most damage. Bring lots of damage to kill Nightmare before they get close.
+Dodge when he jumps in the air to evade his Terrifying Blast. Getting feared may cause lots of damage if you move towards Nightmare. Get a stun break just in case.
 Reviving is extremely hard so don't get downed.
-tactic=exploit
-You can bind "Walk" and use that when he jumps into the air. This will cause you to travel very little distance when feared.
 
 name=enemy=Cadeyrn:champion
 image=http://i.imgur.com/G4eGEoK.jpg

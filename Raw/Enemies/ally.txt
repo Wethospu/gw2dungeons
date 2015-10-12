@@ -957,6 +957,7 @@ Path=AC1|AC2|AC3|CoF1|CoF2|CoF3
 
 Name=Sylvari Prisoner
 ID=1979|1978
+alt=Sylvari Prisoners
 image=http://wiki.guildwars2.com/images/3/37/Prisoner.jpg
 Category=ally
 Path=TAS|TAU|TAF
