@@ -184,7 +184,7 @@ namespace DataCreator.Encounters
       var navigation = GenerateNavigationInfo(paths);
       foreach (var dungeonPath in paths)
       {
-        var first = true;
+        var counter = 0;
         var encounterFile = new StringBuilder();
         encounterFile.Append("GUIDE:").Append(Helper.ConvertSpecial(dungeonPath.DungeonName)).Append(Constants.Delimiter).Append(Helper.ConvertSpecial(dungeonPath.PathName)).Append(Constants.ForcedLineEnding);
         encounterFile.Append(navigation);
@@ -193,8 +193,8 @@ namespace DataCreator.Encounters
         {
           if (encr.Path.ToUpper().Contains(dungeonPath.PathTag.ToUpper()))
           {
-            encounterFile.Append(encr.ToHtml(dungeonPath, first, enemies));
-            first = false;
+            encounterFile.Append(encr.ToHtml(dungeonPath, encounters, counter, enemies));
+            counter++;
           }
         }
         var fileName = Constants.DataOutput + Constants.DataEncounterResult + dungeonPath.PathTag.ToLower() + ".htm";

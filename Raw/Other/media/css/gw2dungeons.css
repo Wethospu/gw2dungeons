@@ -8,6 +8,11 @@ html, body {
 	border-radius: 0px;
 }
 
+.table-of-contents {
+	list-style-type: none;
+	padding: 0;
+}
+
 nav:after,
 ul:after {
     height:0;

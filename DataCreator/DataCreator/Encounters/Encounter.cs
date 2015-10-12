@@ -54,18 +54,42 @@ namespace DataCreator.Encounters
      *                                                                                             *
      * Returns representation.                                                                     *
      * currentPath: Name of current path. Needed for enemy links.                                  *
-     * first: Whether this is the first encounter. Causes bigger label.                            *
+     * encounters: Needed to create table of contents.                                             *
+     * counter: Number of the encounter. Needed for table of content linking.                      *
      * enemies: List of enemies in the path. Needed for enemy links.                               *
      *                                                                                             *
      ***********************************************************************************************/
 
-    public string ToHtml(PathData currentPath, bool first, List<Enemy> enemies)
+    public string ToHtml(PathData currentPath, List<Encounter> encounters, int counter, List<Enemy> enemies)
     {
       UpdateEnemyTactics(enemies);
       var htmlBuilder = new StringBuilder();
       htmlBuilder.Append("<table class=\"encounter\"><tr>");
       //// Add thumbs.
       htmlBuilder.Append("<td class=\"encounter-left\">").Append(Constants.LineEnding);
+      // Generate table of contents to the first encounter. / 2015-10-11 / Wethospu
+      if (counter == 0)
+      {
+        htmlBuilder.Append("<div>").Append(Constants.LineEnding);
+        htmlBuilder.Append("<ul class=\"table-of-contents\">").Append(Constants.LineEnding);
+        htmlBuilder.Append("<li><h3>Table of contents</h3></li>");
+        var tableCounter = 0;
+        foreach (var encounter in encounters)
+        {
+          if (!encounter.Path.ToUpper().Contains(currentPath.PathTag.ToUpper()))
+            continue;
+          // Ignpre the dungeon name because it's long and doesn't add anything. / 2015-10-11 / Wethospu
+          if (tableCounter > 0)
+          {
+            htmlBuilder.Append("<li><a href=\"#").Append(tableCounter).Append("\">");
+            htmlBuilder.Append(Helper.ConvertSpecial(LinkGenerator.RemoveLinks(encounter.Name))).Append("</a></li>");
+          }
+          tableCounter++;
+        }
+        htmlBuilder.Append("</ul>").Append(Constants.LineEnding);
+        htmlBuilder.Append("</div>").Append(Constants.LineEnding);
+        htmlBuilder.Append(Constants.LineEnding);
+      }
       foreach (var media in Medias)
       {
         htmlBuilder.Append("<div>").Append(Constants.LineEnding);
@@ -75,7 +99,7 @@ namespace DataCreator.Encounters
       }
       htmlBuilder.Append("</td>");
       //// Encounters.
-      htmlBuilder.Append("<td class=\"encounter-main\">");
+      htmlBuilder.Append("<td id=\"").Append(counter).Append("\" class=\"encounter-main\">");
       // Add identifer data to main-div.
       htmlBuilder.Append("<div data-name=\"").Append(Helper.Simplify(Name));
       htmlBuilder.Append("\" ");
@@ -83,10 +107,10 @@ namespace DataCreator.Encounters
       // Name added (color-codes get replaced with colors).
       //builder.Append("    <p class=\"EncounterName\">");
       htmlBuilder.Append(Gw2Helper.AddTab(1)).Append("<div class=\"in-line\">");
-      htmlBuilder.Append(Gw2Helper.AddTab(2)).Append(first ? "<h1>" : "<h2>");
+      htmlBuilder.Append(Gw2Helper.AddTab(2)).Append(counter == 0 ? "<h1>" : "<h2>");
       // Because of index file, links have to be added this late to the encounter name.
       htmlBuilder.Append(Helper.ConvertSpecial(LinkGenerator.CreateEnemyLinks(LinkGenerator.CreatePageLinks(Name), Path, enemies)));
-      htmlBuilder.Append(first ? "</h1>" : "</h2>");
+      htmlBuilder.Append(counter == 0 ? "</h1>" : "</h2>");
       // Add map link if needed.
       if (currentPath.PathMap.Length > 0)
         htmlBuilder.Append(Constants.Space).Append(Constants.Space).Append("<a class=\"overlay-link\" href=\"").Append(currentPath.PathMap).Append("\"><span class=\"glyphicon glyphicon-picture\"></span></a>");
