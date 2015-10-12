@@ -4,11 +4,17 @@ var cntrlIsPressed = false;
 
 function resizeSidebar() {
 	var position = $(".encounter-right").offset();
-	if (!position)
-		return;
+	if (!position) {
+		// Fix for the search page. / 2015-10-12 / Wethospu
+		position = $("#main-container").offset();
+		if (position)
+			position.left += $("#main-container").width();
+		else
+			return;
+	}
 	$("#detail-container").css("top", "" + position.top + "px");
 	$("#detail-container").css("left", "" + (position.left + 10) + "px");
-	$("#detail-container").css("right", "" + ($(window).width() - position.left - $(".encounter-right").width()) + "px");
+	$("#detail-container").css("right", "5px");
 	$("#detail-container").css("max-height", "" + ($(window).height() - position.top - 5) + "px");
 }
 
