@@ -713,6 +713,7 @@ If there is a thief in the party, one player can solo kite Mai to get her stacks
 tactic=exploit
 If you have trouble killing her one person may just stay outside. If people revive fast after wiping she won't heal up at all allowing you to eventually kill her. The exploit method described in the "Start" section is most commonly used, however. It is also possible to get back in by switching to a character that has not entered this Mai Trin fractal instance before, and then running to the wooden door and back down the hill.
 You can stealth the entire party during the cannon phase, but only for the duration of 1 traited Shadow Refuge (or less). Otherwise, Mai Trin will begin to reset.
+As long as you haven't hit or got hit by enemy=Horrik, you can get out of combat during the cannon phase in the far right corner from the entrance.
 tactic=bug
 Mai may not teleport back after a cannon phase. This can be fixed by killing Horrik. However Mai can't walk any more after this.
 During the cannon phase, there are numerous bugs. The time from a red circle being drawn to the time you will receive damage is inconsistent. The red circles do not accurately indicate where you will receive damage. You can be "headshot" by the cannon projectiles (both during cannon phase, and by Horrik), meaning you will get hit because they collide with you, even if you are not in a red circle. The camera during the cannon phase can, especially in certain spots, be prone to going into the ceiling; be ready to quickly zoom in so you can see what is happening if this occurs.
