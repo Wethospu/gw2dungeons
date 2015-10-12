@@ -201,6 +201,10 @@ function loadPage() {
 		handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "over");
 	});
 	
+	$('#data-overlay').on("click", "span.overlay-close", function() {
+		$('#data-overlay').modal('hide');
+	});
+	
 	
 	$(document).keydown(function(event){
 		if (event.which == "17")
@@ -246,7 +250,7 @@ function levelPlus(element, target, maxLevel) {
 }
 
 
-var overlayHtml = '<ul id="overlay-nav" class="nav nav-tabs"></ul><div id="overlay-pane" class="tab-content"></div>';
+var overlayHtml = '<span class="glyphicon glyphicon-remove overlay-close clickable"></span><ul id="overlay-nav" class="nav nav-tabs"></ul><div id="overlay-pane" class="tab-content"></div>';
 
 function handleOverlayLinks() {
 	// Load links on overlay unless ctrl is clicked. / 2015-07-31 / Wethospu
