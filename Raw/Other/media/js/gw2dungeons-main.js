@@ -164,34 +164,34 @@ function loadPage() {
 	// Remove no-js since js obviously works. / 2015-07-31 / Wethospu
     $('html').removeClass('no-js');
 	// Activate enemy links. / 2015-07-31 / Wethospu
-	$("#main-container, #data-overlay").on("click", "span.enemy-button", openEnemyOverlay);
-	$("#main-container, #data-overlay").on( "click", "span.level-minus", function() {
+	$('#detail-container, #main-container, #data-overlay').on("click", "span.enemy-button", openEnemyOverlay);
+	$('#detail-container, #main-container, #data-overlay').on( "click", "span.level-minus", function() {
 		levelMinus(this, 'level', 0);
 	});
-	$("#main-container, #data-overlay").on( "click", "span.level-plus", function() {
+	$('#detail-container, #main-container, #data-overlay').on( "click", "span.level-plus", function() {
 		levelPlus(this, 'level', 100);
 	});
-	$("#main-container, #data-overlay").on( "click", "span.target-level-minus", function() {
+	$('#detail-container, #main-container, #data-overlay').on( "click", "span.target-level-minus", function() {
 		levelMinus(this, 'target-level', 0);
 	});
-	$("#main-container, #data-overlay").on( "click", "span.target-level-plus", function() {
+	$('#detail-container, #main-container, #data-overlay').on( "click", "span.target-level-plus", function() {
 		levelPlus(this, 'target-level', 80);
 	});
-	$("#main-container, #data-overlay").on( "click", "span.fractal-level-minus", function() {
+	$('#detail-container, #main-container, #data-overlay').on( "click", "span.fractal-level-minus", function() {
 		// Reset enemy level to let it scale normally. / 2015-09-30 / Wethospu
 		$($(this).parents('.enemy')[0]).attr("data-level", '');
 		levelMinus(this, 'fractal-level', 0);
 	});
-	$("#main-container, #data-overlay").on( "click", "span.fractal-level-plus", function() {
+	$('#detail-container, #main-container, #data-overlay').on( "click", "span.fractal-level-plus", function() {
 		$($(this).parents('.enemy')[0]).attr("data-level", '');
 		levelPlus(this, 'fractal-level', 100);
 	});
-	$("#main-container, #data-overlay").on( "click", "span.path-button", function() {
+	$('#detail-container, #main-container, #data-overlay').on( "click", "span.path-button", function() {
 		var enemy = $($(this).parents('.enemy')[0]);
 		$(enemy).attr("data-level", '');
 		$(enemy).attr("data-target-level", '');
 		$(enemy).attr("data-current-path", $(this).html().toLowerCase());
-		handleEnemy(enemy);
+		handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "main");
 	});
 	
 	
@@ -222,7 +222,7 @@ function levelMinus(element, target, minLevel) {
 	if (level < minLevel)
 		level = minLevel;
 	$(enemy).attr("data-" + target, level);
-	handleEnemy(enemy);
+	handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "main");
 }
 
 function levelPlus(element, target, maxLevel) {
@@ -235,7 +235,7 @@ function levelPlus(element, target, maxLevel) {
 	if (level > maxLevel)
 		level = maxLevel;
 	$(enemy).attr("data-" + target, level);
-	handleEnemy(enemy);
+	handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "main");
 }
 
 
