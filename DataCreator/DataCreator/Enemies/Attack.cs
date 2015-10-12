@@ -154,7 +154,7 @@ namespace DataCreator.Enemies
       htmlBuilder.Append("</span>").Append(" ");
       // Add other data.
       if (!Animation.Equals(""))
-        htmlBuilder.Append("<span class\"animation-unit\"><i>").Append(Helper.ConvertSpecial(Helper.ToUpper(LinkGenerator.CreateEnemyLinks(Animation, path, enemies)))).Append("</i>. </span>");
+        htmlBuilder.Append("<span class=\"animation-unit\"><i>").Append(Helper.ConvertSpecial(Helper.ToUpper(LinkGenerator.CreateEnemyLinks(Animation, path, enemies)))).Append("</i>. </span>");
       if (Cooldown > -1 || _internalCooldown > -1)
       {
         htmlBuilder.Append("<span class=\"cooldown-unit\" title=\"Skill cooldown\"><span class=\"cooldown\"");

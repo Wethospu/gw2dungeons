@@ -1040,6 +1040,7 @@ subeffect=weakness:5
 effect=buff:evade:0
 
 attack=Aggro Barf
+ID=3936
 image=media=ac_breeder_summon.jpg
 animation=glows and pukes|3
 additional=maximum amount of 10
