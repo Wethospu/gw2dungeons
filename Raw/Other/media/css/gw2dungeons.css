@@ -9,10 +9,23 @@ html, body {
 }
 
 .table-of-contents {
+	margin: auto;
+	display: table;
 	list-style-type: none;
 	padding: 0;
+	border-width: 1px;
+	border-style: solid;
 	margin-top: -45px;
 }
+
+.table-of-contents li {
+	margin: 5px;
+}
+
+.table-of-contents h3 {
+	margin: 10px;
+}
+
 
 .overlay-close {
 	float: right;
