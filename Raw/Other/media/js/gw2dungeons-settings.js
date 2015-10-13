@@ -792,7 +792,14 @@ function getPotionStrength(path, race) {
 	return "none";
 }
 
-
+function getWeaponName(id) {
+	var weapons = ['Sword', 'Hammer', 'Longbow', 'Shortbow', 'Axe', 'Dagger', 'Greatsword', 'Mace',
+				   'Pistol', 'Polearm', 'Rifle', 'Scepter', 'Staff', 'Focus', 'Torch', 'Warhorn',
+				   'Shield', 'SmallBundle', 'LargeBundle', 'Spear', 'HarpoonGun', 'Trident', 'ToyWeapon',
+				   'ToyVisual', 'MaxItemWeaponType'
+	];
+	return weapons[id];
+}
 
 
 
