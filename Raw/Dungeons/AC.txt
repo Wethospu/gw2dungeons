@@ -63,6 +63,8 @@ tactic=coordinated
 You don't need boulder to get through. One player can link=http://i.imgur.com/h8it1nB.gif|stand on the pressure plate to open the gate. Then you can either use Portal, link=http://i.imgur.com/oX2a7kv.gif|teleport or leap to get past the gate.
 tactic=warrior
 Use wiki=Savage_Leap to jump over the gate.
+tactic=thief
+You can stand on the pressure plate, let your party enter and then use wiki=Infiltrator's_Arrow to teleport through before it closes.
 
 name=Fire Room
 tactic=normal
@@ -259,9 +261,8 @@ Watch out for enemy=Spike_Traps:trap on ground in front of a enemy=Breeder:elite
 Escort nearby NPCs to the camp. Use area swiftness to make them run faster.
 tactic=coordinated
 One player escorts NPCs while giving them area swiftness. Everyone else proceeds to enemy=Spider_Queen:legendary.
-tactic=normal|coordinated
 tactic=warrior
-Use wiki=Charge_(warrior_skill)|Charge_(Warhorn) and wiki=Inspire for area swiftness.
+Use wiki=Charge_(warrior_skill)|Charge_(Warhorn) and wiki=Inspire for area swiftness to make the NPC move faster.
 
 name=Stairs
 image=http://i.imgur.com/eMVwZgf.jpg
@@ -281,8 +282,6 @@ image=http://i.imgur.com/1yG7iJ9.jpg
 tactic=normal
 Watch out for enemy=Spike_Traps:trap on ground and enemy=Flame_Jets:trap on walls (especially when going down stairs).
 You can either stick to left and jump over a gap or stick to right and jump over enemy=Flame_Jets:trap. Melee players should use latter so they can easily melee enemy=gargoyle_heads:structure.
-tactic=coordinated
-Don't bother with enemy=Gargoyle_Heads:structure. If it's not your job to pull the spiders then stack behind media=ac_spider.jpg|a_corner near the stairs. If not already decided, decide who goes to pull.
 
 name=Spider room
 image=https://i.imgur.com/elQXXEb.jpg
@@ -322,24 +321,17 @@ Learn the jump timing to make Venom Spray overshoot. This makes the fight much e
 Then learn how to avoid Entangling Web with a single dodge. This is easy to do as long as you don't dodge too early. Take lots of condition removal and stay bith further than melee range so she won't Bite. This also allows you to train jumping against Venom Spray. If you have an access to a block, practice also using it. Activate the block and just keep circling around her.
 For an easy way, let the NPC tank it. Web doesn't deal much damage so NPCs can survive against it for a long time, as long as you direct Venom Spray and Bite away from them.
 If you can deal with her other attacks, practising Bite isn't needed because you can dodge most and afford getting hit few times. It's possible to avoid the attack by running through or away from her. This needs a really good timing and/or swiftness but improves your survivability a lot.
-tactic=warrior
-wiki=Charge_(warrior_skill)|Charge_(Warhorn) is very useful against Entangling Web allowing you clear entire party.
-tactic=warrior
-Use wiki=Call_to_Arms to improve survivability of entire party and to weaken Spider Queen.
-tactic=warrior
-Use wiki=Riposte or wiki=Counter_Blow as a short cooldown single block.
+Some examples in a quickly made youtube=LVT_hUDQXB0|video.
 tactic=coordinated
 Start with a long lasting interrupt to prevent her using Venom Spray and to give you few more extra seconds. Burst her down in the open as fast as possible. If she manages to use Venom Spray move out of the AoEs immediately unless you can burst her down.
 Stay behind her back to avoid her melee and web attack. If your team lacks damage use the statue in the middle to move Spider Queen out of her AoEs. Try to strip down Defiance stacks to interrupt Venom Spray.
 Reflection/absorption is effective at mitigating hatchlings' attacks if any remain.
-tactic=warrior
-Use wiki=Fear_Me for a long disable if you don't have access to a wiki=Conjure_Frost_Bow|Frost_Bow_(Elementalist).
-tactic=warrior
-Use wiki=Tremor to strip down Defiance and to interrupt Venom Spray.
 tactic=elementalist
-Use wiki=Ice_Storm and wiki=Frost_Fan for massive burst, then drop it.
-tactic=elementalist
-Use wiki=Deep_Freeze for a very long disable.
+Use wiki=Deep_Freeze to freeze Queen so your party can burst her down. Use wiki=Ice_Storm and wiki=Frost_Fan for a burst, then drop it.
+tactic=warrior
+Use wiki=Tremor to interrupt Venom Spray, unless an elementalist drops an wiki=Ice_Bow.
+If you need defense, take warhorn for wiki=Charge_(warrior_skill)|Charge_(Warhorn) and wiki=Call_to_Arms to remove immobilized and improve survivability of whole party.
+Use wiki=Riposte or wiki=Counter_Blow as a short cooldown single block.
 
 name=Corridor with spikes
 image=https://i.imgur.com/PRuABN0.jpg
