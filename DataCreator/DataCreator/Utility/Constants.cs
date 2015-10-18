@@ -24,7 +24,6 @@ namespace DataCreator.Utility
     public static string DataEncounterRaw { get { return "Raw\\Dungeons\\"; } }
     public static string DataRaw { get { return "Raw\\"; } }
     public static string DataOtherRaw { get { return "Raw\\Other\\"; } }
-    public static string DataEnemySuffix { get { return "_e"; } }
 
     public static string DataOutput { get { return "Output\\"; } }
     public static string DataEnemyResult { get { return "enemies\\"; } }

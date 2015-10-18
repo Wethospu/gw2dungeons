@@ -189,7 +189,7 @@ namespace DataCreator.Shared
           line = line.Replace("ID_PATHS", dungeonData.GenerateDungeonHtml());
         if (line.Contains("ID_RACES"))
           line = line.Replace("ID_RACES", dungeonData.GenerateRaceHtml());
-        if (line.Contains("ID_CATEGORIES"))
+        if (line.Contains("ID_RANKS"))
           line = line.Replace("ID_RANKS", dungeonData.GenerateRankHtml());
         if (line.Contains("ID_TAGS"))
           line = line.Replace("ID_TAGS", dungeonData.GenerateTagHtml());
