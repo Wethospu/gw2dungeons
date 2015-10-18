@@ -212,7 +212,7 @@ function getAttribute(level, multiplier) {
       1786, 1829, 1873, 1917, 1961, 2006, 2052, 2098, 2144, 2190,
       2237
 	];
-	return Math.ceil(attributes[level] * multiplier - 0.001);
+	return Math.round(attributes[level] * multiplier - 0.01);
 }
 
 function getAttribute2(level, multiplier) {
@@ -250,7 +250,7 @@ function getHealth(level, multiplier1, multiplier2) {
       8580, 8780, 8980, 9180, 9380, 9580, 9780, 9980,10180,10380,
       10580
 	];
-	return Math.ceil(multiplier2 * Math.ceil(0.9 * baseHealth[level] - 0.001) + 10 * getAttribute(level, multiplier1) - 0.001);
+	return Math.round(multiplier2 * (Math.round(0.9 * baseHealth[level] - 0.01) + 10 * getAttribute(level, multiplier1)) - 0.01);
 }
 
 function getCriticalChance(level, multiplier, targetLevel) {
