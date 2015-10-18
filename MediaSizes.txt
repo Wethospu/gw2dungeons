@@ -886,3 +886,6 @@ http://i.imgur.com/Jd17SJI.gif|640|360
 http://i.imgur.com/Azyha0a.gif|640|360
 http://i.imgur.com/jcAkRpw.gif|640|360
 http://i.imgur.com/WFHQDlI.gif|640|361
+http://gw2dungeons.net/media/dungeonimages/tas_skip1.jpg|960|540
+http://gw2dungeons.net/media/dungeonimages/tas_skip2.jpg|960|540
+http://gw2dungeons.net/media/dungeonimages/tas_sariel_exploit.jpg|960|540
