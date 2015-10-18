@@ -239,6 +239,7 @@ function dungeonsToPaths(dungeons) {
 	return newDungeons;
 }
 
+var currentOutput = '';
 // Performance: Takes up to 250 ms.
 function searchIndex(searchID, parameters, paths, ranks, races, tags, resultCount) {
 	var resultsTop = new Array();
@@ -309,6 +310,7 @@ function searchIndex(searchID, parameters, paths, ranks, races, tags, resultCoun
 			else
 				continue;
 		}
+		var totalSize = resultsTop.length + resultsHigh.length + resultsMedium.length + resultsLow.length;
 		// Take only most relevant.
 		var results = new Array();
 		var size = resultsTop.length;
@@ -345,11 +347,14 @@ function searchIndex(searchID, parameters, paths, ranks, races, tags, resultCoun
 			$("#instructions").css("display", "initial");
 		}	
 		else
-		{
+		{	
+			var output = 'Found ' + totalSize + ' results.';
+			if (results.length != totalSize)
+				output += ' Showing ' + results.length + ' results.';
+			currentOutput = output;
 			if (results.length > 99)
-				$("#search-page").html("Found " + results.length + " results. Please wait, this may take a while.");
-			else
-				$("#search-page").html("Found " + results.length + " results.");
+				output += ' Please wait, this may take a while.';
+			$("#search-page").html(output);
 			$("#instructions").css("display", "none");
 			var htmlList = [];
 			displayResults(searchID, 0, results, htmlList);
@@ -392,7 +397,7 @@ function displayResults(searchID, elementID, elements, htmlList) {
 		for (var i = 0; i < htmlList.length; i++)
 			html += htmlList[i];
 		// Display them.
-		$("#search-page").html("Found " + htmlList.length + " results.");
+		$("#search-page").html(currentOutput);
 		$("#search-page").append(html);
 		applyEnemySettings("main");
 		loadPage();
@@ -416,12 +421,15 @@ function displayResults(searchID, elementID, elements, htmlList) {
 				str = '<span class="' + elements[elementID].rank + ' enemy-button" data-index="' + elements[elementID].index + '"><h3>' + elements[elementID].display + '</h3></span>\n';
 			if (view == "Info") {
 				$(this).find("div").remove(":not(.in-line)");
+				$(this).find(".enemy-media").remove();
 				$(this).find("p").remove("p");
 				$(this).find(".enemy-name").html('<span class="' + elements[elementID].rank + ' enemy-button" data-index="' + elements[elementID].index + '">' + elements[elementID].display + '</span>');
 			}
 			if (view == "All" || view == "Info")	
-				str += '<br/>\n' + $(this)[0].outerHTML;
-			str += '\n<br/><hr/>\n';
+				str += $(this)[0].outerHTML;
+			if (view == "All")	
+				str += '<br><br>';
+			str += '<hr/>';
 			htmlList[elements[elementID].order] = str;
 			// Check whether enemy can be found.
 			elementID++;
