@@ -1,10 +1,12 @@
 ﻿<script type="text/javascript">
 	"use strict";
-	
+	// Some settings automatically cause a new search when they are changed. / 2015-10-18 / Wethospu
+	// This prevents above if a search hasn't been done. / 2015-10-18 / Wethospu
 	var searchDone = false;
 	
     $(document).ready(function () {
 		loadSettings(false, false);
+		// Initialize tag plugin. / 2015-10-18 / Wethospu
 		$('#tag-display').tagsinput({
 			itemValue: 'value',
 			itemText: 'text',
@@ -18,45 +20,152 @@
 				}
 			}
 		});
+		// Prevent users from directly creating tags. / 2015-10-18 / Wethospu
 		$('.bootstrap-tagsinput input').attr("readonly", true);
+		// Add a new tag when one is selected. / 2015-10-18 / Wethospu
 		$(".search-changer").change(function () {
 			var type = $(this).attr("data-type");
 			var value = $(this).val();
 			var text = $("option:selected", this).text()
             $('#tag-display').tagsinput('add', { text: text, value: value, type: type });
+			// Restore <select> to its original state. / 2015-10-18 / Wethospu
 			$(this).val("");
+			storeSearchValues();
         });
+		// Change how results are shown. / 2015-10-18 / Wethospu
+		$('#search-view').change(function () {
+			saveSetting("searchView", $(this).val());
+			// Automatically select previously used search amount value. / 2015-10-18 / Wethospu
+			$('#search-amount').val(getSetting("searchAmount" + $(this).val()));
+			storeSearchValues();
+			if (searchDone)
+				doSearch();
+        });
+		// Change how many results are shown. / 2015-10-18 / Wethospu
 		$('#search-amount').change(function () {
             saveSetting("searchAmount" + $('#search-view').val(), $(this).val());
 			if (searchDone)
-				handleSearch();
+				doSearch();
         });
-		$('#search-view').change(function () {
-			$('#search-amount').val(getSetting("searchAmount" + $(this).val()));
-			saveSetting("searchView", $(this).val());
-			if (searchDone)
-				handleSearch();
-        });
+		$("#search-name").on('input', function () {
+			storeSearchValues();
+		});
+		$('#tag-display').on('itemRemoved', function() {
+			storeSearchValues();
+		});
+		// Initialize search values from settings. / 2015-10-18 / Wethospu
 		$('#search-view').val(getSetting("searchView"));
 		$('#search-amount').val(getSetting("searchAmount" + $("#search-view").val()));
-		// Page should be loaded after search.
-        var page = $(location).attr('href').split("#");
-        if (page.length > 1) {
-            page = page[1];
-			$("#search-name").val(page.replace(/\+/g, ' '));
-            handleSearch();
+		// Initialize search values from the address bar. / 2015-10-18 / Wethospu
+		var hashArr = getHashArray();
+        if (hashArr.length > 0 && hashArr[0] != "")
+            $("#search-name").val(hashArr[0].replace(/\+/g, ' '));
+		if (hashArr.length > 1 && hashArr[1] != "")
+			readTags(hashArr[1], '#search-path');
+		if (hashArr.length > 2 && hashArr[2] != "")
+			readTags(hashArr[2], '#search-rank');
+		if (hashArr.length > 3 && hashArr[3] != "")
+			readTags(hashArr[3], '#search-race');
+		if (hashArr.length > 4 && hashArr[4] != "") {
+			for (var i = 0; i < hashArr[4].length; i++) {
+				var tag = hashArr[4][i];
+				var name = '';
+				$('#search-tag option').each(function(){
+					if ($(this).val() == tag)
+						name = $(this).text();
+				});
+				$('#search-tag-effect option').each(function(){
+					if ($(this).val() == tag)
+						name = $(this).text();
+				});
+				$('#tag-display').tagsinput('add', { text: name, value: tag, type: 'tag' });
+			}
+		}
+		if (hashArr.length > 5 && hashArr[5] != "")
+			$("#search-view").prop('selectedIndex', hashArr[5] - 1);
+			
+		if (hashArr.length > 0) {
+			doSearch();
 			// Search doesn't block the site from loading so don't add any code below.
-        }
+		}
     });
 
-// Track current search ID to stop previous search if use overwrites. / 2015-10-11 / Wethospu
+// Loads stored tag elements for a single select. / 2015-10-18 / Wethospu
+function readTags(hash, element) {
+	// Convert has to select indexes. / 2015-10-18 / Wethospu
+	var amount = $(element + ' option').length - 1;
+	var maxValues = [];
+	for (var i = 0; i < amount; i++)
+		maxValues.push(amount + 1);
+	var IDs = readValuesFromString(hash, maxValues);
+	// Create a tag element for each. / 2015-10-18 / Wethospu
+	for (var i = 0; i < IDs.length; i++) {
+		if (IDs[i] == 0)
+			continue;
+		$('#tag-display').tagsinput('add', { text: $(element + ' option').eq(IDs[i]).text(), value: $(element + ' option').eq(IDs[i]).val(), type: $(element).attr('data-type') });
+	}		
+}
+
+// Saves selected tags to the address bar. / 2015-10-18 / Wethospu
+function storeSearchValues() {
+	// Get selected tags. / 2015-10-18 / Wethospu
+	var tagArray = $("#tag-display").tagsinput('items');
+	var dungeons = [];
+	var races = [];
+	var ranks = [];
+	var tags = [];
+	// Separate them based on the type. / 2015-10-18 / Wethospu
+	for (var i = 0; i < tagArray.length; i++) {
+		if (tagArray[i].type == "dungeon")
+			dungeons.push(tagArray[i].value);
+		else if (tagArray[i].type == "race")
+			races.push(tagArray[i].value);
+		else if (tagArray[i].type == "rank")
+			ranks.push(tagArray[i].value);
+		else if (tagArray[i].type == "tag")
+			tags.push(tagArray[i].value);
+	}
+	// Find the view type index. / 2015-10-18 / Wethospu
+	var viewType = getSetting('searchView');
+	var amount = $('#search-view option').length;
+	for (var i = 0; i < amount; i++) {
+		if (viewType == $('#search-view option').eq(i).val()) {
+			viewType = i + 1;
+			break;
+		}		
+	}
+	// Store them to the address bar. / 2015-10-18 / Wethospu
+	setHash($("#search-name").val().replace(/\ /g, '+'), 0);
+	setHash(storeTagValues(dungeons, '#search-path'), 1);
+	setHash(storeTagValues(ranks, '#search-rank'), 2);
+	setHash(storeTagValues(races, '#search-race'), 3);
+	setHash(tags.join(''), 4);
+	setHash('' + viewType, 5);
+}
+
+// Converts a list of tags to their corresponding list indexes and encodes it to a string. / 2015-10-18 / Wethospu
+function storeTagValues(values, element) {
+	var amount = $(element + ' option').length - 1;
+	for (var i = 1; i <= amount; i++) {
+		var value = $(element + ' option').eq(i).val()
+		for (var j = 0; j < values.length; j++) {
+			if (values[j] == value)
+				values[j] = i;
+		}
+	}
+	var maxValues = [];
+	for (var i = 0; i < values.length; i++)
+		maxValues.push(amount + 1);
+	return storeValuesToString(values, maxValues);
+}
+
+// Track current search ID to stop the previous search if user overwrites. / 2015-10-11 / Wethospu
 var currentSearchID = 0;
 
 // Attempts to find dungeon, path and rank from parameters. Data must match all of these.
 // Rest of the parameters are considered as a partial names. Data must contain at least one parameter.
-function handleSearch() {
+function doSearch() {
 	$("#search-page").html("");
-	setHash($("#search-name").val().replace(/\ /g, '+'));
 	var names = $("#search-name").val().toLowerCase().split(" ");
 	loadSettings(false, false);
 	var searchObject = readParameters();
@@ -111,7 +220,7 @@ function readParameters() {
         ranks: ranks,
 		races: races,
 		tags: tags
-    };  
+    };
 }
 
 function dungeonsToPaths(dungeons) {
@@ -334,7 +443,7 @@ function displayResults(searchID, elementID, elements, htmlList) {
 <br>
 <label for="search-name">Name</label>
 <input id="search-name" type="text">
-<button type="button" onclick="handleSearch()">Search</button>
+<button type="button" onclick="doSearch()">Search</button>
 <br><br>
 <label for="tag-display">Active filters</label>
 <select multiple id="tag-display" readonly>

@@ -150,39 +150,26 @@ function buildPathStr(path, paths, instances) {
     return str;
 }
 
-function getHash() {
-	var hash = document.location.hash.split("#");
-	if (hash.length < 2)
+function getHash(index) {
+	var hash = $(location).attr('href').split('#');
+	if (hash.length < index + 2)
 		return "";
-	return hash[1];
+	return hash[index + 1];
 }
 
-function setHash(filter) {
-	var hash = document.location.hash.split("#");
-	if (hash.length < 2)
-		hash.push(filter);
-	else
-		hash[1] = filter;
-	document.location.hash = hash.join("#");
+function getHashArray() {
+	return $(location).attr('href').split('#').slice(1);
 }
 
-function getSecondaryFilter() {
-	var hash = document.location.hash.split("#");
-	if (hash.length < 3)
-		return "";
-	return hash[2];
-}
 
-function setSecondaryFilter(filter) {
-	var hash = document.location.hash.split("#");
-	if (hash.length < 2)
+function setHash(filter, index) {
+	var hash = $(location).attr('href').split('#');
+	while (hash.length < index + 2)
 		hash.push("");
-	if (hash.length < 3)
-		hash.push(filter);
-	else
-		hash[2] = filter;
-	document.location.hash = hash.join("#");
+	hash[index + 1] = filter;
+	$(location).attr('href', hash.join("#"));
 }
+
 
 	// Filter encoding.
 	// Version 1: first value
@@ -263,11 +250,11 @@ function setSecondaryFilter(filter) {
 		values.push($("#column-category").hasClass('active') ? 1 : 0);
 		maxValues.push(2);
 		// Add version number.
-		setHash("1" + storeValuesToString(values, maxValues));
+		setHash("1" + storeValuesToString(values, maxValues), 0);
 	}
 
 	function storeValuesToString(values, maxValues) {
-		if (values.length != maxValues.length)
+		if (values.length != maxValues.length || values.length == 0)
 			return "";
 		// Uses only numbers (48 - 57) and letters (65 - 90, 97 - 122).
 		// These convert to: 0 - 9, 10 - 35, 36 - 61.

@@ -14,8 +14,8 @@
 	var dontReadRecords = true;
 	$(document).ready(function() {
 		loadSettings(false, false);
-		loadPage();
 		generateSubNavigation(["Records", "Rules", "Guilds", "Players"], ["Records", "Rules", "Guilds", "Players"]);
+		loadPage();
 		$("#record-date-pre").datepicker({dateFormat: "yyyy-mm-dd"});
 		$("#record-date-after").datepicker({dateFormat: "yyyy-mm-dd"});
 
@@ -52,7 +52,7 @@
 	});
 	
 	function saveDefaultFilters() {
-		var filters = getHash();
+		var filters = getHash(0);
 		// If filters haven't been changed then there is nothing to change.
 		if (filters == "")
 			return;
@@ -142,7 +142,7 @@
 					players = data.players;
 					updatePlayerSelect();
 					// Get filter settings (if given).
-					var filters = getHash();
+					var filters = getHash(0);
 					if (filters == "")
 						filters = getSetting("defaultFilters");
 					if (filters != "")
@@ -227,7 +227,7 @@
 		if (!groups)
 			return;
 		// Select a group automatically if given.
-		var filter = getSecondaryFilter();
+		var filter = getHash(1);
 		if (filter == "")
 			return;
 		filter = filter.replace(/_/g, ' ');
@@ -258,7 +258,7 @@
 		if (!players)
 			return;
 		// Select a player automatically if given.
-		var filter = getSecondaryFilter();
+		var filter = getHash(1);
 		if (filter == "")
 			return;
 		filter = filter.replace(/_/g, ' ');
@@ -574,7 +574,7 @@
 					return;
 				content += "<tr>";
 				// Add link to player profile.
-				content += '<td><a href="Players#' + getHash() + '#' + this.name + '">' + this.name + '</a></td>';
+				content += '<td><a href="Players#' + getHash(0) + '#' + this.name + '">' + this.name + '</a></td>';
 				content += "<td>" + buildCharacterStr(this.characters, professions) + "</td>";
 				content += "</tr>";
 			});
@@ -584,7 +584,7 @@
 		// Update url.
 		var parts = $('#record-group option:selected').text().split(" ");
 		// Last part is the tag.
-		setSecondaryFilter(parts[parts.length - 1]);
+		setHash(parts[parts.length - 1], 1);
 	}
 	
 	function updatePlayerTable(characters, groups) {
@@ -617,7 +617,7 @@
 			content += '<table class=\"table table-striped\"><tbody>';
 			$.each(groups, function() {
 				content += "<tr>";
-				content += '<td><a href="Guilds#' + getHash() + '#' + this.tag + '">' + this.name + ' ' + this.tag + '</a></td>';
+				content += '<td><a href="Guilds#' + getHash(0) + '#' + this.tag + '">' + this.name + ' ' + this.tag + '</a></td>';
 				content += "</tr>";
 			});
 			content += "</tbody></table>";
@@ -625,7 +625,7 @@
 		$("#info-table").html(content);
 		// Update url.
 		var text = $('#record-player option:selected').text().replace(/ /g, '_');
-		setSecondaryFilter(text);
+		setHash(text, 1);
 	}
 	
 	function createGuildRankings() {
