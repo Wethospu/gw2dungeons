@@ -2,8 +2,8 @@
 	"use strict";
 	$(document).ready(function() {
 		loadSettings(false, false);
-		loadPage();
 		generateSubNavigation(["Records", "Rules", "Guilds", "Players"], ["Records", "Rules", "Guilds", "Players"]);
+		loadPage();
 		$("#ruleset").change(function () {
 			loadRules($(this).val());
 		});
