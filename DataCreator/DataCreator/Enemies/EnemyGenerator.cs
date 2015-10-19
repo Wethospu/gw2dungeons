@@ -36,6 +36,11 @@ namespace DataCreator.Enemies
     public static List<Enemy> GenerateEnemies(Dictionary<string, EnemyAttributes> enemyAttributes)
     {
       var enemyData = new List<Enemy>();
+      if (!Directory.Exists(Constants.DataEnemyRaw))
+      {
+        Helper.ShowWarning("Directory " + Constants.DataEnemyRaw + " doesn't exist.");
+        return enemyData;
+      }
       var enemyFiles = Directory.GetFiles(Constants.DataEnemyRaw);
       foreach (var file in enemyFiles)
       {

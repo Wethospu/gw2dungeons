@@ -25,6 +25,8 @@ namespace DataCreator
     {
       Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
       Console.OutputEncoding = Constants.Encoding;
+      Directory.SetCurrentDirectory("..");
+      var dir = Directory.GetCurrentDirectory();
       while (true)
       {
         Console.Clear();
@@ -319,6 +321,11 @@ namespace DataCreator
         GenerateDungeon(dungeon, indexFile, dungeonData, enemyData);
       EnemyGenerator.GenerateFile(enemyData, indexFile, dungeonData);
       var fileName = Constants.DataOutput + Constants.DataEnemyResult + "indexfile.htm";
+      if (!Directory.Exists(Constants.DataOutput + Constants.DataEnemyResult))
+      {
+        Helper.ShowWarning("Directory " + Constants.DataOutput + Constants.DataEnemyResult + " doesn't exist.");
+        return true;
+      }
       File.WriteAllText(fileName, indexFile.ToString());
       OtherGenerator.GenerateOthers(dungeonData);
       Console.WriteLine("");
@@ -373,7 +380,9 @@ namespace DataCreator
       Console.WriteLine("Dungeon " + dungeon.ToUpper());
       LinkGenerator.CurrentDungeon = dungeon;
       // Read and generate data. / 2015-08-09 / Wethospu
-      var encounterData = EncounterGenerator.GeneratePaths(dungeon, enemyData);     
+      var encounterData = EncounterGenerator.GeneratePaths(dungeon, enemyData);
+      if (encounterData == null)
+        return; 
       EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, enemyData);
       if (encounterData.Paths == null)
         return;
@@ -392,6 +401,8 @@ namespace DataCreator
       Console.WriteLine("Other page " + dungeon);
       LinkGenerator.CurrentDungeon = dungeon;
       var encounterData = EncounterGenerator.GeneratePaths(dungeon, null);
+      if (encounterData == null)
+        return;
       EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, null);
       if (encounterData.Paths == null)
         return;
