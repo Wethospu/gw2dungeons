@@ -5,9 +5,9 @@ using DataCreator.Enemies;
 using System.IO;
 using System.Net;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using DataCreator.Utility;
+using System.Drawing.Drawing2D;
 
 namespace DataCreator.Shared
 {
@@ -665,9 +665,14 @@ namespace DataCreator.Shared
       }
       if (Path.GetExtension(fileName).Equals(".webm"))
       {
-        // Assume 640 x 320 for all cases.
-        width = 640;
-        height = 320;
+        var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
+        var jpgFileName = Path.GetDirectoryName(fileName) + "\\" +  Path.GetFileNameWithoutExtension(fileName) + ".jpg";
+        ffMpeg.GetVideoThumbnail(fileName, jpgFileName);
+        Image image = Image.FromFile(jpgFileName);
+        width = image.Width;
+        height = image.Height;
+        GenerateThumbs(jpgFileName, Constants.ThumbWidth, Constants.ThumbHeight);
+        GenerateThumbs(jpgFileName, Constants.ThumbWidthSmall, Constants.ThumbHeightSmall);
       }
       if (Constants.MediaSizes.ContainsKey(url))
         Constants.MediaSizes[url] = new int[] { width, height };
@@ -702,7 +707,6 @@ namespace DataCreator.Shared
         Directory.CreateDirectory(dirName);
       var row = Console.CursorTop;
       Console.Write("Generating a thumb for " + filename);
-
 
       Image image;
       try
