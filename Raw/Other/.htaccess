@@ -15,5 +15,5 @@ ExpiresByType image/jpg "access plus 2 month"
 ExpiresByType image/jpeg "access plus 2 month"
 ExpiresByType image/gif "access plus 2 month"
 ExpiresByType image/png "access plus 2 month"
-ExpiresDefault "access plus 7 day"
+ExpiresDefault "access plus 2 month"
 

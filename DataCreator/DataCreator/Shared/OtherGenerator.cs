@@ -213,17 +213,24 @@ namespace DataCreator.Shared
       var files = Directory.GetFiles(Constants.DataOtherRaw, "*", SearchOption.AllDirectories);
       var jsBuilder = new StringBuilder();
       var cssBuilder = new StringBuilder();
+      // Check which file has modified last and use it for the merged file. / 2015-10-19 / Wethospu
+      var jsLastTime = 0L;
+      var cssLastTime = 0L;
       foreach (var file in files)
       {
         var outputFile = Constants.DataOutput + file.Replace(Constants.DataOtherRaw, "");
         if (Constants.IsRelease && Path.GetExtension(file) == ".js" && !Path.GetFileNameWithoutExtension(file).Equals("html5shiv"))
         {
           jsBuilder.Append(File.ReadAllText(file));
+          if (File.GetLastWriteTimeUtc(file).Ticks > jsLastTime)
+            jsLastTime = File.GetLastWriteTimeUtc(file).Ticks;
           continue;
         }
         if (Constants.IsRelease && Path.GetExtension(file) == ".css")
         {
           cssBuilder.Append(File.ReadAllText(file));
+          if (File.GetLastWriteTimeUtc(file).Ticks > cssLastTime)
+            cssLastTime = File.GetLastWriteTimeUtc(file).Ticks;
           continue;
         }
         Directory.CreateDirectory(Path.GetDirectoryName(outputFile));
@@ -246,6 +253,7 @@ namespace DataCreator.Shared
           File.WriteAllText(Constants.DataOutput + Constants.DataMediaResult + "gw2dungeons.js", responseString);
         }*/
         File.WriteAllText(Constants.DataOutput + Constants.DataMediaResult + "gw2dungeons.js", jsBuilder.ToString());
+        Constants.JSFiles = Constants.JSFiles.Replace(".js", ".js?" + jsLastTime);
         /*using (var client = new HttpClient())
         {
           var values = new Dictionary<string, string>
@@ -261,6 +269,7 @@ namespace DataCreator.Shared
           File.WriteAllText(Constants.DataOutput + Constants.DataMediaResult + "gw2dungeons.css", responseString);
         }*/
         File.WriteAllText(Constants.DataOutput + Constants.DataMediaResult + "gw2dungeons.css", cssBuilder.ToString());
+        Constants.CSSFiles = Constants.CSSFiles.Replace(".css", ".css?" + cssLastTime);
       }
     }
 

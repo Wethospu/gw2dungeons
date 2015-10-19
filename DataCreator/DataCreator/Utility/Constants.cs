@@ -99,8 +99,8 @@ namespace DataCreator.Utility
       "vigor", "control", "daze", "float", "knockback", "knockdown", "launch", "pull", "sink", "stun", "taunt", "agony", "invulnerability", "revealed", "stealth", "buff",
       "damage", "fixed damage", "healing", "percent damage"  };
 
-    public static string JSFiles { get; private set; }
-    public static string CSSFiles { get; private set; }
+    public static string JSFiles { get; set; }
+    public static string CSSFiles { get; set; }
 
     public static bool IsRelease { get; private set; }
 
@@ -122,18 +122,20 @@ namespace DataCreator.Utility
       {
         Tab = "    ";
         LineEnding = "\n";
-        JSFiles = Tab + "<script src=\"./media/js/bootstrap-tagsinput.min.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src=\"./media/js/jquery-sortable-min.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src=\"./media/js/commentsection.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src=\"./media/js/jquery.storage.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-main.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-settings.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-calculator.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-sql.js\"></script>" + LineEnding;
-        JSFiles += Tab + "<script src=\"./media/js/gfycat.min.js\"></script>" + LineEnding;
+        // Add date to prevent caching on dev environment. / 2015-10-19 / Wethospu
+        var date = DateTime.UtcNow.Ticks;
+        JSFiles = Tab + "<script src=\"./media/js/bootstrap-tagsinput.min.js?" + date + "\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/jquery-sortable-min.js?" + date + "\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/commentsection.js?" + date + "\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/jquery.storage.js?" + date + "\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-main.js?" + date + "\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-settings.js?" + date + "\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-calculator.js?" + date + "\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-sql.js?" + date + "\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/gfycat.min.js?" + date + "\"></script>" + LineEnding;
 
-        CSSFiles = Tab + "<link rel=\"stylesheet\" href=\"./media/css/gw2dungeons.css\">" + LineEnding;
-        CSSFiles += Tab + "<link rel=\"stylesheet\" href=\"./media/css/bootstrap-tagsinput.css\">" + LineEnding;
+        CSSFiles = Tab + "<link rel=\"stylesheet\" href=\"./media/css/gw2dungeons.css?" + date + "\">" + LineEnding;
+        CSSFiles += Tab + "<link rel=\"stylesheet\" href=\"./media/css/bootstrap-tagsinput.css?" + date + "\">" + LineEnding;
 
         InitialdataHtml = "<!-- Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST! -->" + LineEnding;
         InitialdataPhp = "// Automatically generated file from raw data. ALL YOUR CHANGES WILL BE LOST!" + LineEnding;
