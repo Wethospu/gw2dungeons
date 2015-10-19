@@ -130,6 +130,7 @@ namespace DataCreator.Utility
         JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-settings.js\"></script>" + LineEnding;
         JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-calculator.js\"></script>" + LineEnding;
         JSFiles += Tab + "<script src=\"./media/js/gw2dungeons-sql.js\"></script>" + LineEnding;
+        JSFiles += Tab + "<script src=\"./media/js/gfycat.min.js\"></script>" + LineEnding;
 
         CSSFiles = Tab + "<link rel=\"stylesheet\" href=\"./media/css/gw2dungeons.css\">" + LineEnding;
         CSSFiles += Tab + "<link rel=\"stylesheet\" href=\"./media/css/bootstrap-tagsinput.css\">" + LineEnding;

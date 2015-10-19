@@ -1,5 +1,6 @@
 ;
 "use strict";
+
 var cntrlIsPressed = false;
 
 function resizeSidebar() {
@@ -218,6 +219,8 @@ function loadPage() {
 	$('#data-overlay').on('hide.bs.modal', function () {
 		$('.modal-content').html('');
 	});
+	gfyCollection.init();
+	
 	handleOverlayLinks();
 	loadRecordRun();
 	initScreenResize();
@@ -277,12 +280,20 @@ function handleOverlayLinks() {
 		if (height > 0)
 			content += ' height:' + height + 'px;';
 		content += '">';
-		content += '<iframe class="embed-responsive-item" src="' + handleUrl(this.href) + '"';
-		if (width > 0)
-			content += ' width="' + width + '"';
-		if (height > 0)
-		content += ' height="' + height + '"';
-		content += ' frameborder="0" scrolling="no" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);"></iframe>';
+		if (this.href.indexOf("gfycat") > -1) {
+			// Special gfycat embed solution (normal embed causes extra margins). / 2015-10-19 / Wethospu
+			// NOTE: Solution adds 'position: relative;'. This was manually removed from gfycat.min to make this work. / 2015-10-19 / Wethospu
+			content += '<div class="gfyitem" data-id="' + url + '"></div>';
+		}
+		else
+		{
+			content += '<iframe class="embed-responsive-item" src="' + handleUrl(this.href) + '"';
+			if (width > 0)
+				content += ' width="' + width + '"';
+			if (height > 0)
+				content += ' height="' + height + '"';
+			content += ' frameborder="0" margin="0" scrolling="no" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);"></iframe>';
+		}	
 		content += '</div>';
 		$("#overlay-nav").append('<li><a href="#tab-' + url + '" data-toggle="tab" data-description="' + url + '" data-width="' + width + '" data-height="' + height + '">' + shortenUrl(this.href) + '</a></li>');
 		$("#overlay-pane").append('<div class="tab-pane" id="tab-' + url + '">' + content + '</div>');
@@ -298,6 +309,9 @@ function handleOverlayLinks() {
 		$('#overlay-nav a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 			setOverlaySize($(e.target).attr("data-width"), $(e.target).attr("data-height"));
 		});
+		// Generat gfycat objects. / 2015-10-19 / Wethospu
+		if (this.href.indexOf("gfycat") > -1)
+			gfyCollection.scan();
 		// Prevent default behavior. / 2015-07-31 / Wethospu
 		return false;
 	});
@@ -307,6 +321,8 @@ function handleOverlayLinks() {
 
 function setOverlaySize(width, height)
 {
+	width = Number(width);
+	height = Number(height);
 	if (height > 0)
 	{
 		$("#overlay-pane").width(width + 'px');
@@ -317,8 +333,8 @@ function setOverlaySize(width, height)
 		$("#overlay-pane").width('');
 		$("#overlay-pane").height('');
 	}
-	$(".modal-dialog").css('max-width', width + 'px');
-	$(".modal-content").css('max-width', width + 'px');
+	$(".modal-dialog").css('max-width', width + 2 + 'px');
+	$(".modal-content").css('max-width', width + 2 + 'px');
 	scaleElement("#overlay-pane");
 	if (height > 0)
 	{
