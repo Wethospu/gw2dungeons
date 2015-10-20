@@ -224,14 +224,16 @@ toughness=0.67
 
 ##################################################################
 
-name=Healing Thingy
+name=Blood Idol
 rank=structure
+image=http://giant.gfycat.com/UnimportantFavoriteKouprey.gif
 path=Aqua
 
 attack=Aura
 effect=aura
 frequency=3
 subeffect=regeneration:3
+subeffect=summmon enemy=Barracuda (~10% chance)
 
 ###########################################################
 

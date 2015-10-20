@@ -759,28 +759,35 @@ subeffect=vulnerability:5
 
 name=Krait Damoss
 ID=9064
-image=http://wiki.guildwars2.com/images/a/a3/Krait_Damoss.jpg
+alt=Krait Damosses|Damoss|Damosses
+image=http://wiki.guildwars2.com/images/3/37/Damoss_Water.jpg
 scaling=champion
 path=Aqua
 
 attack=Lunge
 ID=1600
-effect=Melee
-subeffect=damage:-
-subeffect=crippled:6
-effect=dash
+image=http://giant.gfycat.com/ElegantZealousCornsnake.gif
+cooldown=7
+animation=does a back flip and hits with the left sword|0.85|moves to right and hits with the right sword
+effect=dash with 2 melee hits in 0.8 s
+count=2
+length=0.8
 subeffect=damage:-
 subeffect=crippled:6
 
 attack=Slice
 ID=1598
-effect=2 melee hits
+animation=does a back flip and hits with the left sword|0.85|moves to right and hits with the right sword
+effect=dash with 2 melee hits in 0.8 s
 count=2
+length=0.8
 subeffect=damage:-
 subeffect=poison:8
 
 attack=Retreating Swipe
 ID=1601
+image=http://giant.gfycat.com/DampEasyAdder.gif
+animation=moves back and charges forward swinging a sword from right|0.75|dodges back
 effect=melee
 subeffect=damage:-
 effect=dodge back
@@ -788,6 +795,8 @@ subeffect=buff:evade
 
 attack=Summon Barracuda
 ID=2063
+image=http://giant.gfycat.com/ImpishCompetentJumpingbean.gif
+animation=rotates a bit clockwise and then a full spin anti-clockwise|2.5
 effect=summon a enemy=Young_Barracuda:normal
 
 # Internal: Skills Slash, Evade and Tail Lash also listed.
@@ -808,25 +817,33 @@ scaling=normal
 
 name=Krait Hypnoss
 ID=5190
-image=http://wiki.guildwars2.com/images/0/0f/Krait_Hypnoss.jpg
+alt=Krait Hypnosses|Hypnoss|Hypnosses
+image=http://wiki.guildwars2.com/images/0/03/Hypnoss_Water.jpg
 scaling=normal
 path=Aqua
 
 attack=Putrid Grasp
 ID=2065
-effect=projectile
+animation=swings right arm|0.75|shoots a black hand
+image=http://giant.gfycat.com/MeatyTiredHawaiianmonkseal.gif
+effect=slow projectile
 subeffect=damage:-
 
 attack=Poison Cloud
 ID=2066
-effect=ticking AoE
-count=?
+animation=rotates a bit clockwise and then a full spin anti-clockwise with green glow on hands|2.5
+image=http://giant.gfycat.com/JollyOccasionalBee.gif
+effect=ticking AoE (7 hits in 6 s)
+count=7
+length=6
 subeffect=damage:-
 subeffect=poison:5
 
 attack=Create Blood Idol
 ID=2073
-effect=summon a enemy=Healing_Thingy:structure
+animation=rotates a bit clockwise and then a full spin anti-clockwise|2.5
+image=http://giant.gfycat.com/IcyOfficialAngelwingmussel.gif
+effect=summon a enemy=Blood_Idol:structure
 
 # Internal: Skills Poison Trail and Life Blast also listed.
 
@@ -834,26 +851,36 @@ effect=summon a enemy=Healing_Thingy:structure
 
 name=Krait Nimross
 ID=1173
-image=http://wiki.guildwars2.com/images/3/30/Krait_Nimross.jpg
+alt=Krait Nimrosses|Nimross|Nimrosses
+image=http://wiki.guildwars2.com/images/c/ca/Nimross_Water.jpg
 scaling=normal
 path=Aqua
 
 attack=Slash
 ID=1597
+image=http://giant.gfycat.com/TallUnlawfulAustraliancurlew.gif
+animation=moves bit back and swings right arm|0.8
 cooldown=0
 effect=melee
 subeffect=damage:-
 
 attack=Grappling Throw
 ID=2072
+animation=swings right arm|0.6|throws a spear
+image=http://giant.gfycat.com/AgonizingImpressionableLabradorretriever.gif
 effect=projectile
 subeffect=damage:-
 subeffect=stun:0
 
 attack=Throw Net
 ID=2071
+image=http://giant.gfycat.com/MarriedCooperativeBighornedsheep.gif
+animation=swings right arm to left side|1|throws a spear
+additional=can't be blocked or evaded
 effect=trap
 subeffect=immobilized:2
+effect=dodge back
+subeffect=buff:evade
 
 # Internal: Skills Javelin Toss, Savage Throw, Caltrops, Whirling Defense and Evade also listed.
 
@@ -954,17 +981,15 @@ alt=Barracudas
 image=http://wiki.guildwars2.com/images/8/8d/Barracuda.jpg
 Path=HotW3|Aqua
 
-attack=Bite
-ID=2898
-effect=melee
-subeffect=damage:-
-subeffect=bleeding:6
-
 attack=Frenzied Attack
 ID=2899
-effect=melee
+animation=moves bit back and turns sideways|0.5|starts moving back and forth
+image=http://giant.gfycat.com/RichSevereCalf.gif
+effect=4 melee hits in 2.8 s
+count=4
+length=2.8
 subeffect=damage:-
-subeffect=bleeding:4
+# Caused bleeding for 8 seconds (random??)
 
 ##################################################################
 
@@ -972,6 +997,20 @@ copy=6999
 name=Young Barracuda
 ID=5981
 path=Aqua
+
+attack=Passive
+effect=On hit
+subeffect=bleeding:0 (~25% chance)
+subeffect=Summon enemy=Barracuda (~10% chance)
+
+attack=Bite
+ID=2898
+animation=moves bit back and thrusts forward|0.4
+image=http://zippy.gfycat.com/ThirstyHideousHorsemouse.gif
+effect=melee
+subeffect=damage:-
+effect=if the target is moving (or maybe randomly)
+subeffect=bleeding:6
 
 #############################
 

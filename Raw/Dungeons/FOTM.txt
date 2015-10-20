@@ -294,7 +294,7 @@ name=Save the villagers
 tactic=normal
 You need to kill 3 groups of Krait and interact with cages to rescue enemy=villagers.
 Stack behind a statue to corner the krait and give you a wall for rush-type abilities.
-The first group has only enemy=Nimross:normal. The second group also has enemy=Krait_Hypnoss:normal with their dangerous poison-cloud attack. The last group has Veterans.
+The first group has a enemy=Damoss:veteran and 4 enemy=Damosses:normal. The second group has a enemy=Damoss:normal, 2 enemy=Nimrosses:normal and 2 enemy=Hypnosses:normal with their dangerous poison-cloud attack. The last group has 2 enemy=Damosses:veteran and 2 enemy=Nimrosses:veteran.
 After the villagers are saved, the path will split and you will either have to go through Darkness or survive as a Dolphin.
 tactic=warrior
 Use wiki=Tsunami_Slash into a statue to deal high damage.
