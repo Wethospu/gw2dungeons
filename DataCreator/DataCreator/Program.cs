@@ -26,7 +26,6 @@ namespace DataCreator
       Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
       Console.OutputEncoding = Constants.Encoding;
       Directory.SetCurrentDirectory("..");
-      var dir = Directory.GetCurrentDirectory();
       while (true)
       {
         Console.Clear();

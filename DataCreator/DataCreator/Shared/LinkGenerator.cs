@@ -666,8 +666,8 @@ namespace DataCreator.Shared
       if (Path.GetExtension(fileName).Equals(".webm"))
       {
         var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
-        var jpgFileName = Path.GetDirectoryName(fileName) + "\\" +  Path.GetFileNameWithoutExtension(fileName) + ".jpg";
-        ffMpeg.GetVideoThumbnail(fileName, jpgFileName);
+        var jpgFileName = Directory.GetCurrentDirectory() + "\\" + Path.GetDirectoryName(fileName) + "\\" +  Path.GetFileNameWithoutExtension(fileName) + ".jpg";
+        ffMpeg.GetVideoThumbnail(Directory.GetCurrentDirectory() + "\\" + fileName, jpgFileName);
         Image image = Image.FromFile(jpgFileName);
         width = image.Width;
         height = image.Height;
