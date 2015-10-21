@@ -1,7 +1,7 @@
 init=TAS|Twilight Arbor|Story|Story
+init=TAAE|Twilight Arbor|Aetherpath (path&nbsp;AE)|Path AE
 init=TAF|Twilight Arbor|Forward (path&nbsp;F)|Path F
 init=TAU|Twilight Arbor|Up (path&nbsp;UP)|Path U
-init=TAAE|Twilight Arbor|Aetherpath (path&nbsp;AE)|Path AE
 
 path=TAS
 tactic=normal
