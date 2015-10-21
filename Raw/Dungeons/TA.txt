@@ -1,7 +1,7 @@
 init=TAS|Twilight Arbor|Story|Story
 init=TAF|Twilight Arbor|Forward (path&nbsp;F)|Path F
 init=TAU|Twilight Arbor|Up (path&nbsp;UP)|Path U
-init=TAAE|Twilight Arbor|Twilight Assault (path&nbsp;AE)|Path AE
+init=TAAE|Twilight Arbor|Aetherpath (path&nbsp;AE)|Path AE
 
 path=TAS
 tactic=normal
@@ -582,14 +582,13 @@ There is a very low chance to get wiki=Aetherized_Nightmare_weapons from the fin
 
 path=TAAE
 name=Start
-tactic=normal|coordinated
-At the start there are lots of respawning enemy=Volatile_Blossoms:structure. Just run through them dodging and remove poison at the end.
-You will encounter a patrol that consists of 2 enemy=Hounds:elite and 3 enemy=Pups:normal as well as a enemy=Nightmare_Husk:elite and a enemy=torrential_Husk:elite. On back of the area a group of a enemy=Stonetouch:elite, a enemy=Bloodfang:elite and 3 enemy=Spider_Hatchlings:normal and a group of a enemy=Webber:elite, a enemy=Recluse:elite and 3 enemy=Spider_Hatchlings:normal appear when Husks die (sometimes earlier).
-tactic=coordinated
-Stack behind a tree on the left side or on the right side and line of sight the mobs, so they run to you. Make sure you have stability or a stun break to counter control from Hounds and Husks.
 tactic=normal
-Wait for the patrolling Hounds to come so you can aggro and fight them without aggroing the Husks. Take a stun break if you fail to avoid their leap. After the Hounds are dead continue with the Husks; lure them a bit towards dungeon entrance, so you don't have to deal with the spiders before you are ready. Use stability.
-You can even split the Spiders if you desire. Simply hit the closest spider with a long range ability and move a bit back. If done correctly the second Spider spawn should not aggro with the first. Keep an eye on Stonetouch to move away or behind him when he glows to avoid long unbreakable stun.
+Use area ranged attacks to clear respawning enemy=Volatile_Blossoms:structure in the first corridor. After them there is a patrol of 2 enemy=Hounds:elite and 3 enemy=Pups:normal. On the open area there are respawning enemy=Volatile_Blossoms:structure on the sides and a enemy=Nightmare_Husk:elite and a enemy=torrential_Husk:elite in the middle. On back of the area, a group of a enemy=Stonetouch:elite, a enemy=Bloodfang:elite and 3 enemy=Spider_Hatchlings:normal and a group of a enemy=Webber:elite, a enemy=Recluse:elite and 3 enemy=Spider_Hatchlings:normal appear when a Husk dies.
+Stay in middle of the area so you don't have to worry about Blossoms. If you get downed attack a nearby Blossom to rally easily. Wait for the patrolling Hounds to come so you can fight them without aggroing the Husks. After the Hounds are dead continue with the Husks; lure them a bit towards dungeon entrance, so you don't have to deal with the spiders before you are ready. Make sure you have stability or a stun break to counter control from Hounds and Husks.
+You can even split the Spiders if you desire. Simply hit the closest spider with a long range ability and move a bit back. If done correctly the second Spider spawn should not aggro with the first. Keep an eye on Stonetouch to move away or behind him when he glows to avoid a long unbreakable stun.
+tactic=coordinated
+Use area ranged attacks to clear respawning enemy=Volatile_Blossoms:structure in the first corridor.
+Stack behind a tree on the left side or on the right side and line of sight the mobs, so they run to you. Make sure you have stability or a stun break to counter control from Hounds and Husks.
 tactic=thief
 Use wiki=Black_Powder to negate a lot of damage for your party if you melee.
 tactic=guardian
@@ -614,7 +613,7 @@ Use cc to knock the lava elementals away from the Ooze / interrupt their spit at
 Remember that killing the Lava Elementals only helps briefly because they respawn quickly after. Focus on cc or if you kill them, keep an eye out for respawning ones.
 tactic=alternative
 2 players run ahead to grab aggro from all 6 Lava Elementals and try to not die to them and stay away from the paths.
-As long as you don't kill any Lava Elemental, no new ones will respawn because the number is limited to 6 overall (3 per side). You can lower their health though and finish them off when Oozes get close if needed.
+As long as you don't kill any Lava Elemental, no new ones will respawn because the number is limited to 6 overall (3 per side). You can lower their health and finish them off when Oozes get close if needed.
 With Lava Elementals out of the way it is easier to keep Ooze alive - just move quickly with pheromones through the path and don't lure them through lava.
 
 name=Way to Slick and Spark
@@ -627,16 +626,17 @@ Before third hologram there is small pond with half naked enemy=Thumper:elite an
 
 name=enemy=Slick:legendary and enemy=Sparki:legendary
 tactic=normal
-Blossoms won't do anything so you don't have to care about those. Before entering the room you should decide which one to focus. Both options have their own advantages so you should change your plan if you have trouble. It's also possible to kill them but they will get stronger every 25% which will be too much for most groups.
-Killing Slick first is suggested because killing him last requires everyone to work together (oil puddles need to be cleaned really fast). Killing Sparki last doesn't need any coordination and you can easily get out of combat to get your health back. If your group knows how to handle the oil you should kill Sparki first to reduce lots of pressure.
-The key mechanic is to keep pulling enemy=Oil-Absorbing_Ooze:normal to oil puddles which Slick create (don't kill it or you will be in trouble). Ooze follows a player with the Pheromone buff (with multiple players seems to follow the closest). Buff can be gained either occasionally from Slick or from a nearby plant. The plant should only be used if absolutely needed because it just wastes time and makes Ooze pulling more confusing.
-Most importantly if you have the buff and Ooze is following you then your job is to pull it to the oil puddles. Don't hesitate to run through puddles if needed (dodge if they are on fire). If you fail to do your job correctly then the puddles will slowly kill your whole team. Also remember to stay mobile because you will lose 75% of your health if Ooze manages to hit you. However stay close to everyone else for faster cleaning because puddles are aimed at players.
-At start Slick has 3 ranged attacks. If he kneels, shouts and glows he is going to shoot a puddle. Otherwise he will either shoot a green ball which applies Pheromone or a blue dart which applies weakness and bleeding. After 75% he will use puddle attack two times in a row. After 50% he starts jumping which causes fear on a target. After 25% Sparki (not Slick!) enrages which causes him to attack more often and deal more damage. Also everyone gets "Hot Foot" debuff which causes burning if you not moving.
-The main reason why the puddles are so dangerous is that they deal unavoidable damage on huge area every second. If you let the puddles to stack there's literally nothing you can do. His other attacks aren't big deal but you should have a stun break against fear. You should also have condition removal to remove weakness and long burning (if you get from Sparki).
-Unlike Slick, Sparki can do some direct damage. Pay attention to him and try to learn his animations. His basic ranged attack deals good damage and lits puddles so try to dodge it. But more importantly be ready to dodge when he raises his arms (hard to see because of his size). He will pull you in and then leap with knockback and burning resulting in lots of damage. Leap is also on melee range so pay attention.
-After 75% he occasionally starts spinning and shoot unblockable projectiles all around the area. You should get some distance to reduce amount of projectiles hitting you. Alternatively go stand behind someone else so you don't take any damage. After 50% he will also jump like Slick but with fear and burning (really hard to see because of his size). After 25% Slick (not Sparki!) enrages which causes him to attack more often and deal more damage.
-If you killed Slick first then just clean up remaining puddles and start playing safe. Run away to get out of combat if needed. Don't kill Ooze or he will release lots of (10?) oil puddles.
-If you for some reason killed Sparki first then everyone should immediately get close to Slick (feel free to clean up puddles though). If people are far away then the puddles will also appear far away and you will get overrun. Slick can easily stack 10+ puddles quite fast resulting in 2000+ damage per second.
+Blossoms won't do anything so you don't have to care about those. Before entering the room you should decide which one to focus. Both options have their own advantages so you should change your plan if you have trouble. It's also possible to kill them both at the same time but they will get stronger every 25% which will be too much for most groups.
+Most groups kill Sparki first because she has 50% less health and deals lots of direct damage. However Slick takes ~21% more damage than Sparki and can deal much more damage if your party doesn't know how to handle his oil puddles. If you have trouble with the oil, consider killing Slick first. Once he is dead you can easily get out of combat which makes finishing Sparki extremely easy.
+The key mechanic is to keep enemy=Oil-Absorbing_Ooze:normal alive and pull him to oil puddles which Slick creates. Watch your area damage, accidentally killing the ooze creates 10 oil puddles which will kill your party in few seconds. Ooze follows a player with the Pheromone buff. If multiple players have the buff, he will follow the closest. Buff can be gained either occasionally from Slick or from a nearby plant. The plant should only be used if absolutely needed because it just wastes time and makes Ooze pulling more confusing when multiple players have the buff.
+The most importang thing is to stay close to each other. Oil puddles are shot at players so if everyone spreads you won't be able to clean them on time. You have to also stay mobile because you will take damage equal to 75% of your maximum health if the ooze manages to hit you. His attack can be easily avoided by just moving away but dodge if needed.
+If you have the buff and Ooze is following you then your job is to pull it to the oil puddles. Run through the puddles if needed, just dodge if they are on fire. If you fail to do your job correctly then the puddles will slowly kill your whole party. Don't attempt to revive downed players unless you can get them up before ooze kills them.
+At start Slick has 3 ranged attacks. If he kneels, shouts and glows he is going to shoot a puddle. Otherwise he will either shoot a green ball which applies Pheromone or a blue dart which applies weakness and bleeding. After 75% he will use puddle attack two times in a row. After 50% he starts jumping which causes fear on a target. After 25% Sparki (not Slick!) enrages which causes her to attack more often and deal more damage. Also everyone gets "Hot Foot" debuff which causes burning if you not moving.
+Unlike Slick, Sparki can do some direct damage. Pay attention to her and try to learn her animations. Her basic ranged attack deals good damage and lits puddles so try to dodge it. But more importantly be ready to dodge when she raises his arms (hard to see because of her size). She will pull you in and then leap with a knockback and burning resulting in lots of damage. Leap happens also on melee range so pay attention.
+After 75% she occasionally starts spinning and shoot unblockable projectiles all around the area. You should get some distance to reduce amount of projectiles hitting you. Alternatively go stand behind someone else so you don't take any damage. After 50% she will also jump like Slick but with fear and burning (really hard to see because of her size). After 25% Slick (not Sparki!) enrages which causes him to attack more often and deal more damage.
+The main reason why the puddles are so dangerous is that they deal unavoidable damage on a huge area every second. If you let the puddles to stack there's literally nothing you can do. His other attacks aren't big deal but you should have a stun break against the fear. You should also have condition removal to remove weakness and long burning (if you get from Sparki).
+If you killed Sparki first it's really important to stick together. He can easily put 10 puddles which results in 2000 damage per second. Focus on cleaning the oil and avoiding the ooze.
+If you killed Slick first then just clean up remaining puddles and start playing safe. Run away to get out of combat if needed.
 
 name=Way to Foreman Spur
 tactic=normal
@@ -647,7 +647,7 @@ They also inflict 1 stack of confusion on players and low-medium damage. Be care
 After destroying 3 generators, you reach the room where enemy=Foreman_Spur:legendary and his troops are stationed. You don't have to fight them all at once. Instead move either to the right and LOS pull a few Aetherblades to kill them or walk to the other side of the room and LOS behind the pillar there.
 Make sure to burst/cc the patrolling enemy=Steam_Watcher:veteran as soon as he notices you - he will summon additional Aetherblades if left alive.
 tactic=warrior
-Use Whirlwind Attack (Greatsword) to kill multiple holograms while evading their explosion damage.
+Use wiki=Whirlwind_Attack to kill multiple holograms while evading their explosion damage.
 
 name=enemy=Foreman_Spur:legendary
 #tactic=melee
@@ -657,6 +657,7 @@ name=enemy=Foreman_Spur:legendary
 #Keep some distance so you won't hit by his melee attacks. Pay attention when he throws axes in air to move away from red circles. If you stay there you will die in seconds.
 #At high range you will be his most likely target for Axe Spin. If you see him coming after you run away. Use immunity or dodges to prevent most of the damage. If you know you can't handle it then get closer so that he targets someone else. 
 tactic=normal
+Clear the enemies before you aggro him. Pull about 33% of enemies behind a nearby corner. Then move to the other side of them room and pull 50% of remaining enemies behind a piller. Then finish of last enemies. There is a enemy=Steam_Watcher patrolling on the area. Take him down when he is alone.
 His most notable move is the Axe Spin. He roars, removes cripple, chill and immobilize on him and moves quickly spinning towards his target. He prefers targeting most distant players which you should use at your advantage. If you have a immunity ready you can move away from him and vice versa.
 Be careful to not use projectiles during his Axe spin, as he is not only evading, but reflecting it back to you or your allies. If he does not have defiant up, you can interrupt his Axe spin with instantly casted cc (second part of guardian's binding blade for example). If you cant interrupt it, move away from him/dodge/use invulnerability skills as it deals a lot of AoE damage while inflicting bleeding, crippled and vulnerability on you.
 When he throws axes, they leave high damaging areas which you should avoid. The axe throw can be reflected. He hits quite hard and fast on close range so stay behind him.
@@ -679,6 +680,8 @@ tactic=warrior
 If you have problems with aggro you can try to use wiki="Fear_Me!" to move Thug to the proper direction (doesn't always work). Stand as close to to the closed door as you can to get Thug on the proper position.
 tactic=optional
 If you want to get the achievement easily you should inform your team about it (some groups may expect you to do your part of the puzzle). All you have to do is let someone reach the first platform, wait for all electricity to go off, run to the platform and then just wait there until everything is clear.
+tactic=exploit
+The electrified floor damages you periodically. If you jump at the right time you can stand on it without getting damage or the debuff.
 
 name=Freeing the Clockheart
 tactic=normal
