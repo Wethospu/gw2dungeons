@@ -1,0 +1,165 @@
+init=Uncat|Fractals of the Mists|Uncategorized|Uncategorized|4
+init=Uncat|Fractals of the Mists|Uncategorized|Uncategorized|12
+init=Uncat|Fractals of the Mists|Uncategorized|Uncategorized|36
+init=Uncat|Fractals of the Mists|Uncategorized|Uncategorized|44
+init=Uncat|Fractals of the Mists|Uncategorized|Uncategorized|62
+init=Uncat|Fractals of the Mists|Uncategorized|Uncategorized|79
+init=Uncat|Fractals of the Mists|Uncategorized|Uncategorized|91
+
+#########################################################################
+
+path=Uncat
+name=Uncategorized
+tactic=normal
+Enemies: Inquest, a flame legion, an ogre and harpies.
+Time: Day.
+Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+youtube=noCqa2bxPVk|Video_guide [KING].
+Current record: record=47.
+tactic=coordinated
+Against enemy=Flame_Legion_Fire_Shaman, use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying.
+Against Inquest, use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Force.
+
+name=enemy=Harpy_Hunters:veteran
+image=http://a.pomf.se/rmlcbz.webm
+tactic=normal
+You need to jump on platforms while killing or stealthing past harpies. Anti projectiles skills are extremely effective. At lower levels or with long-lasting stealth you can just run through them. There are several spots where your party can stop to re-stack stealth, providing you are still stealthed while you are stacking additional stealth.
+On level 10 and above they shoot a glowing ball which launches anyone within its target area to their likely death. You should have access to a stability or immunity skill, a multiple block, or an in-place evade in order to deal with this attack. Jump-dodging to another platform, or simply moving to another platform early enough can also be effective.
+Focus on keeping and getting people back alive. If someone falls and gets downed/defeated then regroup and get them up.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect your team.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" or wiki=Virtue_of_Courage against glowing balls if no other protection.
+tactic=thief
+Use wiki=Smoke_Screen and stack stealth with wiki=Cluster_Bomb. Skip harpies and use wiki=Shadow_Refuge when stealth is about to run out.
+tactic=mesmer
+Use wiki=Feedback and Focus with wiki=Warden's_Feedback for good anti projectile coverage.
+tactic=mesmer
+Use wiki=Mirror and wiki=Mantra_of_Concentration if you can't rely on your team.
+tactic=necromancer
+Use wiki=Flesh_Golem. Harpies have trouble hitting it.
+tactic=elementalist
+Use wiki=Swirling_Winds for protection against harpies.
+
+name=Holding Area
+tactic=normal
+Break the enemy=Power_Generator:structure to free the enemy=Rabbit:champion, enemy=Bandit_Saboteur:veteran, enemy=Flame_Legion_Fire_Shaman:champion and enemy=Ettin:champion.
+The rabbit has the lowest health so focus it first. Its special attack kills any target so burst it down fast. It doesn't matter if you get downed because you can easily rally from it.
+The next squishiest target is the saboteur so focus her next. She throws poison at ranged targets which you can just ignore. At melee range she will either evade an attack and leave a red circle or put down a barrel. Both explode shortly after being placed, causing launch or a condition. Pay attention and move out of the area. Use control to keep her disabled.
+Next, kill the Fire Shaman. He cycles between high-damaging ticking AoEs and short-range projectiles. Pay attention and move out of red circles if needed. Projectiles can be avoided by circling him, dodging or staying at range. If you are at range he may dash which deals very high damage at the end of the dash, and may grant him a fire shield if he dashes through his own AoE. Either dodge or run away from him if he dashes. One good melee-player can easily handle him. Just move out of the circles and keep circling.
+The Ettin is quite tough to kill and has very annoying reach on his melee attack. You literally have to stand right behind it to avoid the attack; if unsure then dodge because it deals high damage. Whenever it glows you want to get out of melee-range. When club is above head he does some projectiles at melee-range. When club is behind back he will do a very large PBAoE.
+Ettin also has a ranged attack which is used when he holds club behind back but without glow. He also breaks stuns, but only does so once every 60 seconds.
+tactic=coordinated
+Most coordinated groups designate a player to kite the Ettin around. The aggro of the Ettin can be manipulated by having higher toughness than other party members, as well as getting the first few hits in. A Guardian is an excellent choice for this role. Depending on the experience of the person kiting, and the experience of other party members, you may want to assign a player to get the aggro of the bandit and fire shaman at the start as well, to ensure they do not aggro to whoever is kiting the ettin. The aggro of the bandit and fire shaman is mostly based on who is currently hitting them.
+Highly coordinated groups may want to kill both the Ettin and the Shaman with cleave. These groups will generally use an Earth Elemental to manage aggro.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against the Shaman. Try predict the Ettin's attacks to reflect his projectiles.
+tactic=guardian
+Use wiki=Indomitable_Courage to counter the Bandit's bombs.
+tactic=guardian
+Use wiki="Retreat!" for the additional Aegis.
+tactic=thief
+Use wiki=Smoke_Screen to protect your team (especially against the Shaman). You may have to predict because of cast time.
+tactic=mesmer
+You can reflect damage done by Ettin's smaller PBAoE and his shockwave. Make sure to trait wiki=Temporal_Curtain aginst the Shaman.
+tactic=elementalist
+An Earth Elemental from wiki=Glyph_of_Elementals is excellent at holding aggro of the Ettin and Shaman.
+
+name=Pulsing Orbs
+image=http://a.pomf.se/anpont.webm
+image=http://a.pomf.se/emmdbc.webm
+image=http://a.pomf.se/erckxm.webm
+image=http://a.pomf.se/hwiuyi.webm
+tactic=normal
+First kill or skip 1-3 enemy=Harpy_Hunters:veteran.
+On the next set of stairs there are 4 beacons at the top. Each randomly shoots a projectile down the stairs. If you get hit you take damage (1-2 hits kill you), once you become downed you get teleported to start of the stairs.
+You can easily avoid most of them by just moving left and right. You can dodge through them too but you should save one evade for the end. Near the top it's really hard to react fast enough so just dodge. You can also use long lasting blocks, immunities or projectile defense.
+If you have trouble you can use the slope on the left side as a media=uncat_pulsing_safe.jpg|safespot (especially useful near the end).
+After stairs there are 3 consoles. You need to activate them all within ~5 seconds to disable beacons. Activating a console prevents movement for ~5 seconds. You can still move and activate other consoles with blinks and shadowsteps. However, don't waste utility skill cooldowns if there are people nearby to help deactivating the consoles.
+tactic=elementalist
+wiki=Magnetic_Wave, wiki=Obsidian_Flesh, wiki=Mist_Form and wiki=Arcane_Shield, they all grant short invulnerability to those projectiles.
+tactic=guardian
+You can use wiki=Shield_of_Wrath and wiki=Shelter for additional blocks.
+tactic=guardian
+You can place wiki=Wall_of_Reflection at the very top of the stairs to prevent any projectiles from going down. Be careful, as if you place it too early, the reflected projectiles will go back up the stairs, and make things much harder for your team.
+tactic=thief
+You can run up a bit and use wiki=Dagger_Storm to allow whole party get safely through.
+tactic=bug
+There is a checkpoint at top of the stairs. Fractal will get stuck if you kill enemy=Old_Tom before triggering it. Checkpoint can be bypassed by blinking over it so have at least one player run normally.
+
+Name=enemy=Old_Tom:champion
+tactic=ranged|melee
+Don't aggro Tom until everyone is ready and you have done the necessary preparations. Once the combat starts, poison gas will fill the room which will kill everyone quickly. You can activate a console behind Tom to ventilate the gas. Ventilation lasts 30 seconds.
+At level 10 and above you have to power up side batteries in order to activate the console. Batteries can be powered up by bringing a "Tear of Dwayna" to them. When they run out you have to refill them before being able to use the console again.
+Stay at sides of the room to avoid aggroing Tom. Power up batteries and gather several tears in front of both batteries. This allows you to quickly refill them. DO NOT touch the main console before starting the combat and getting hit by poison or it won't have any effect.
+Also decide who uses the console and who fills left or right battery. Ranged players are more suitable for this but melee players can do it as well. In any event, be ready to improvise as players may get downed.
+Most of the time Tom will be spinning which shoots unblockable projectiles in all directions. Try to stay behind other players so you won't get hit. If not possible, stay at high range to reduce amount of projectiles hitting you.
+tactic=ranged
+| Try to stay behind other players so you won't get hit. If not possible, stay at high range to reduce amount of projectiles hitting you.
+tactic=melee
+| Try to stay behind other players or pets so you won't get hit. You can also stay inside Tom to prevent getting hit. It needs precise positioning or you will take lots of damage so consider taking a backup immunity skill.
+tactic=ranged|melee
+When Tom stops he may use two different attacks. If he points his arm he will shoot a pulling projectile. Otherwise he will shoot a bouncing projectile. Dodge/block at both cases.
+tactic=melee
+| If you are standing inside him don't dodge or you have to position yourself again.
+tactic=ranged|melee
+When poison gas fills the room either finish off Tom or power up batteries and use the console.
+tactic=elementalist
+wiki=Earth_Elemental from wiki=Glyph_of_Elementals is very tanky and survives a long time. You can stay behind it.
+tactic=guardian
+Use wiki=Wall_of_Reflection against the few projectile attacks that Old Tom uses.
+tactic=warrior
+Use wiki=Defiant_Stance to tank poison and Tom for very good healing. Also useful when trying to get inside him.
+tactic=coordinated
+For coordinated groups with middling DPS, don't bother gathering extra tears. Power up the batteries, aggro Tom and activate the console, then burst tom down.
+For coordinated groups with high DPS, stack behind an Earth Elemental, a bear pet, or a necromancer that is prepared to tank his spin.
+
+name=enemy=Harpy_Hunters:veteran
+image=http://a.pomf.se/tctiik.webm
+tactic=normal
+Again more harpies. Use same tactics as at the start.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect your team.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" or wiki=Virtue_of_Courage against glowing balls if no other protection.
+tactic=thief
+Kill first few harpiers and then Use wiki=Smoke_Screen and stack stealth with wiki=Cluster_Bomb. Skip harpies and use wiki=Shadow_Refuge when stealth is about to run out.
+tactic=mesmer
+Use wiki=Feedback and Focus with wiki=Warden's_Feedback for good anti projectile coverage.
+tactic=mesmer
+Use wiki=Mirror and wiki=Mantra_of_Concentration if you can't rely on your team.
+tactic=necromancer
+Use wiki=Flesh_Golem. Harpies have trouble hitting it.
+tactic=elementalist
+Use wiki=Swirling_Winds for protection against harpies.
+
+name=enemy=Raving_Asura:champion
+tactic=normal
+The fight gets very easy with lots of anti projectile skills. The Asura constantly shoots 3 homing projectiles, and each projectile inflicts agony. If you have to dodge, dodge in towards the Asura to break the other projectiles.
+Four golems will activate. First, they will activate one-by-one, and once all have been defeated individually they will all activate simultaneously.
+First you have to kill enemy=Snuggles:veteran. He either spins and shoots rockets at everyone or throws an area field which stuns when passing through.
+Then you have to kill enemy=Mr._Mittens:veteran. He does decent damage with melee attacks. Dodge when he starts spinning to prevent getting pulled.
+The next one is enemy=Professor_Mew:veteran. He mostly spins and debuffs people. If you stand near people with different buffs you will take some damage each second. At higher levels, if your team lacks sustain or DPS, try to interrupt his spin to avoid getting debuffed. He also has a melee attack.
+And lastly enemy=Baron_von_Scrufflebutt:veteran. He is actually fairly dangerous with unblockable projectiles. His normal attack shoots 2 rockets at few people. At end of spinning he will shoot 2 rockets at everyone. Use Control skills and dodge.
+Once Scrufflebutt is dead all the golems activate. Focus Scrufflebutt. Mittens is then the most dangerous, however killing him gives 66% damage reduction to all golems. If he doesn't feel like a threat then leave him last. Kill Snuggles and then Mew (killing gives golems regeneration). It can be very beneficial to group to golems up, either while they have activated individually, and/or when they activate together.
+tactic=exploit
+One player (with high toughness) may aggro and pull Asura away. You can easily kite it around a nearby column with just swiftness. Pull him back before your team kills last golem or it may reset.
+Any golems killed after they all wake up get scaled back to level 1 making them extremely easy to kill (please verify).
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against Asura's agony.
+tactic=guardian
+Use wiki=Binding_Blade to pull golems (especially when all activate).
+tactic=guardian
+Grant Stability when all golems activate to prevent your team from possibly getting CCed.
+tactic=mesmer
+Use wiki=Temporal_Curtain to pull golems (especially when all activate).
+tactic=mesmer
+Use wiki=Feedback and Focus with wiki=Warden's_Feedback for good anti projectile coverage.
+tactic=necromancer
+Use wiki=Spectral_Grasp to pull a golem.
+tactic=thief
+Use wiki=Scorpion_Wire to pull a golem.
+tactic=thief
+Use wiki=Smoke_Screen on top of the golems to blind them and provide anti projectile.
+tactic=elementalist
+Use wiki=Swirling_Winds for protection against projectiles.

@@ -432,6 +432,7 @@ function openEnemyOverlayForce() {
 function openEnemyOverlaySub(enemy, useOverlay) {
     var enemyNumbers = String($(enemy).attr("data-index")).split(":");
 	var enemyLevels = String($(enemy).attr("data-level")).split(":");
+	var enemyScale = $(enemy).attr("data-scale");
 	if (useOverlay) {
 		if (!$("#data-overlay").hasClass("in")) {
 			$('#data-overlay').modal();
@@ -447,12 +448,12 @@ function openEnemyOverlaySub(enemy, useOverlay) {
 		}
 	}	
 	var path = $(enemy).attr("data-path");
-	openEnemySub(0, enemyNumbers, enemyLevels, path, useOverlay);
+	openEnemySub(0, enemyNumbers, enemyLevels, enemyScale, path, useOverlay);
 }
 
 // Finds one enemy (index).
 // Enemy files are split to pieces to make loading faster.
-function openEnemySub(index, enemyNumbers, enemyLevels, path, useOverlay) {
+function openEnemySub(index, enemyNumbers, enemyLevels, enemyScale, path, useOverlay) {
 	if (index >= enemyNumbers.length) {
 		applyEnemySettings(useOverlay ? "over" : "side");
 		handleOverlayLinks();
@@ -487,6 +488,8 @@ function openEnemySub(index, enemyNumbers, enemyLevels, path, useOverlay) {
 				// Set enemy level dynamically based on enemy link. / 2015-09-28 / Wethospu
 				if (enemyLevels[index] > 0)
 					$(enemy).attr("data-level", enemyLevels[index]);
+				if (enemyScale && enemyScale > 0)
+					$(enemy).attr("data-fractal-level", enemyScale);
 				// Set the enemy path to have a correct base level. / 2015-10-08 / Wethospu
 				$(enemy).attr("data-current-path", path);
 				// Activate the new tab. / 2015-09-16 / Wethospu
@@ -515,7 +518,7 @@ function openEnemySub(index, enemyNumbers, enemyLevels, path, useOverlay) {
 				});
 				$('#detail-container').append(this);
 			}
-			openEnemySub(index + 1, enemyNumbers, enemyLevels, path, useOverlay);
+			openEnemySub(index + 1, enemyNumbers, enemyLevels, enemyScale, path, useOverlay);
 		});   
     }).error(function (jqXHR, textStatus, errorThrown) {
         console.log("error " + textStatus);

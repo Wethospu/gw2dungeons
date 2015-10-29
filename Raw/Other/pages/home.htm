@@ -4,8 +4,13 @@
 		loadSettings(false, false);
 		loadPage();
 		loadDailyPaths();
+		var page = getSetting('homePage');
+		$(this).find('a[href^=#tab-' + page + ']').tab('show');
+		$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+			saveSetting('homePage', $(e.target).attr('href').split('-')[1]);
+		});
 	});
-		
+	
 	function loadDailyPaths() {
 		// Load tracking info.
 		verifyDailyPaths();
@@ -50,42 +55,56 @@
 <div class="alert alert-info">
      Please report any bugs/ideas in comment boxes, forums, reddit or my email (<a href="mailto:wethospu@gmail.com">wethospu@gmail.com</a>).
 </div>
+<div>
+    <ul class="nav nav-tabs">
+		<li><a href="#tab-fractals" data-toggle="tab">Fractals</a></li>
+        <li><a href="#tab-raids" data-toggle="tab">Raids</a></li>
+		<li><a href="#tab-dungeons" data-toggle="tab">Dungeons</a></li>
+    </ul>
+
+<div class="tab-content">
+<div class="tab-pane" id="tab-fractals">
+	<ul class="fractal-list">
+ID_FRACTAL
+</ul>
+</div>
+<div class="tab-pane" id="tab-raids">
+</div>
+<div class="tab-pane" id="tab-dungeons">
 <ul class="dungeon-list">
-    <li style="float:left;">
-        <img class="dungeon-image" src="./media/img/dungeon_fotm.jpg" alt="">
-DUNGEON_FOTM
-    </li>
     <li>
         <img class="dungeon-image" src="./media/img/dungeon_ac.jpg" alt="">
-DUNGEON_AC
+ID_AC
     </li>
     <li>
         <img class="dungeon-image" src="./media/img/dungeon_cm.jpg" alt="">
-DUNGEON_CM
+ID_CM
     </li>
     <li>
         <img class="dungeon-image" src="./media/img/dungeon_ta.jpg" alt="">
-DUNGEON_TA
+ID_TA
     </li>
     <li>
         <img class="dungeon-image" src="./media/img/dungeon_se.jpg" alt="">
-DUNGEON_SE
+ID_SE
     </li>
     <li>
         <img class="dungeon-image" src="./media/img/dungeon_cof.jpg" alt="">
-DUNGEON_COF
+ID_COF
     </li>
     <li>
         <img class="dungeon-image" src="./media/img/dungeon_hotw.jpg" alt="">
-DUNGEON_HOTW
+ID_HOTW
     </li>
     <li>
         <img class="dungeon-image" src="./media/img/dungeon_coe.jpg" alt="">
-DUNGEON_COE
+ID_COE
     </li>
     <li>
         <img class="dungeon-image" src="./media/img/dungeon_arah.jpg" alt="">
-DUNGEON_ARAH
+ID_ARAH
     </li>
 </ul>
-<br style="clear:both;"/>
+</div>
+</div>
+</div>

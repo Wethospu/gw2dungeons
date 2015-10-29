@@ -304,7 +304,8 @@ namespace DataCreator
         Helper.ShowWarningMessage("File " + Constants.DataRaw + "data.json" + " doesn't exist. No enemy data loaded.");
       
       Constants.UniqueIndexCounter = 0;
-      string[] toGenerate = { "ac", "cm", "ta", "se", "cof", "hotw", "coe", "arah", "fotm" };
+      string[] dungeonsToGenerate = { "ac", "cm", "ta", "se", "cof", "hotw", "coe", "arah" };
+      string[] fractalsToGenerate = { "Aether", "Aqua", "Cliff", "Furn", "Mai", "Molten", "Snow", "Solid", "Swamp", "Thauma", "Uncat", "Under", "Urban", "Volc" };
       // File containing all enemies and encounters for searching.
       // Name|Rank|Category|Dungeon|Path
       // Some special values must also be translated.
@@ -316,8 +317,18 @@ namespace DataCreator
       var enemyData = EnemyGenerator.GenerateEnemies(enemyAttributes);
       
       var dungeonData = new DataCollector();
-      foreach (var dungeon in toGenerate)
-        GenerateDungeon(dungeon, indexFile, dungeonData, enemyData);
+      foreach (var dungeon in dungeonsToGenerate)
+      {
+        var encounterData = GenerateDungeon("dungeon", dungeon, indexFile, dungeonData, enemyData);
+        EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, enemyData, encounterData.Paths);
+      }
+      // Gather fractals to merge their path info. / 2015-10-29 / Wethospu.
+      var fractals = new List<EncounterData>();
+      foreach (var fractal in fractalsToGenerate)
+        fractals.Add(GenerateDungeon("fractal", fractal, indexFile, dungeonData, enemyData));
+      foreach (var fractal in fractals)
+        EncounterGenerator.GenerateFiles(fractal.Paths, fractal.Encounters, enemyData, dungeonData.FractalPaths);
+
       EnemyGenerator.GenerateFile(enemyData, indexFile, dungeonData);
       var fileName = Constants.DataOutput + Constants.DataEnemyResult + "indexfile.htm";
       if (!Directory.Exists(Constants.DataOutput + Constants.DataEnemyResult))
@@ -374,18 +385,26 @@ namespace DataCreator
     *                                                                                              *
     ***********************************************************************************************/
 
-    static void GenerateDungeon(string dungeon, StringBuilder indexFile, DataCollector dungeonData, List<Enemy> enemyData)
+    static EncounterData GenerateDungeon(string type, string file, StringBuilder indexFile, DataCollector dungeonData, List<Enemy> enemyData)
     {
-      Console.WriteLine("Dungeon " + dungeon.ToUpper());
-      LinkGenerator.CurrentDungeon = dungeon;
+      Console.WriteLine(Helper.ToUpper(type) + " " + file);
+      LinkGenerator.CurrentDungeon = file;
       // Read and generate data. / 2015-08-09 / Wethospu
-      var encounterData = EncounterGenerator.GeneratePaths(dungeon, enemyData);
+      var location = Constants.DataGuidesRaw;
+      if (type.Equals("fractal"))
+        location = Constants.DataFractalsRaw;
+      if (type.Equals("dungeon"))
+        location = Constants.DataDungeonsRaw;
+      var encounterData = EncounterGenerator.GeneratePaths(location, file, enemyData);
       if (encounterData == null)
-        return; 
-      EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, enemyData);
+        return encounterData; 
       if (encounterData.Paths == null)
-        return;
-      dungeonData.AddDungeon(dungeon, encounterData.Paths);
+        return encounterData;
+      if (type.Equals("dungeon"))
+        dungeonData.AddDungeon(file, encounterData.Paths);
+      if (type.Equals("fractal"))
+        dungeonData.AddFractal(encounterData.Paths);
+      return encounterData;
     }
 
     /***********************************************************************************************
@@ -397,12 +416,12 @@ namespace DataCreator
 
     static void GeneratePage(string dungeon)
     {
-      Console.WriteLine("Other page " + dungeon);
+      Console.WriteLine("Guide " + dungeon);
       LinkGenerator.CurrentDungeon = dungeon;
-      var encounterData = EncounterGenerator.GeneratePaths(dungeon, null);
+      var encounterData = EncounterGenerator.GeneratePaths(Constants.DataGuidesRaw, dungeon, null);
       if (encounterData == null)
         return;
-      EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, null);
+      EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, null, encounterData.Paths);
       if (encounterData.Paths == null)
         return;
     }

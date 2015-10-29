@@ -1,0 +1,77 @@
+init=Solid|Fractals of the Mists|Solid Ocean|Solid|20
+init=Solid|Fractals of the Mists|Solid Ocean|Solid|30
+init=Solid|Fractals of the Mists|Solid Ocean|Solid|35
+init=Solid|Fractals of the Mists|Solid Ocean|Solid|45
+init=Solid|Fractals of the Mists|Solid Ocean|Solid|60
+init=Solid|Fractals of the Mists|Solid Ocean|Solid|70
+init=Solid|Fractals of the Mists|Solid Ocean|Solid|98
+
+#########################################################################
+
+path=Solid
+name=Solid Ocean
+tactic=normal
+Enemies: Wind riders and elementals.
+Time: Night.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+youtube=zG-oTjatPfQ|Video_guide [KING].
+Current record: record=43.
+
+name=Way to boss
+tactic=normal
+You will face enemy=Irukandjis:veteran, enemy=Giant_Irukandjis:veteran and enemy=Jade_Shards:veteran.
+tactic=normal
+| Sometimes killed at lower levels because of good loot.
+tactic=normal|skip
+Take one stun break to prevent nasty situations.
+tactic=skip
+If someone falls down he will teleport back downed. Monsters will very likely finish him/her so go help him/her up to prevent unnecessary delay.
+
+name=Awakening
+image=http://i.imgur.com/QuxhBdH.jpg
+tactic=normal
+To wake up Jade Maw you have to kill 2 enemy=Jade_Maw_Tentacles:veteran. Area is filled with respawning enemy=Irukandjis:veteran and enemy=Giant_Irukandjis:veteran.
+At lower levels you can kill Irukandji but your focus should be on Tentacles. Tentacles alternate between slap and spin. You can just sidestep slap but spin has to be blocked/dodged. Animations are easy to recognize but dodge if unsure.
+When Tentacles are killed, all Irukandjis disappear (except on level 50, where they only disappear once all the Colossi are dead), enemy=Jade_Maw:legendary wakes up, you get 10 seconds of agony and lots of Tentacles appear.
+At level 50 people kill further Tentacle, gather up on front-left corner, kill aggroed Irukandji, prepare for agony (full health, healing/reviving skills ready) and then use ranged to kill final Tentacle.
+Front-left area is a good spot to stay because you will be safe from Tentacles.
+tactic=coordinated
+Melee both tentacles. Coordinate the use of projectile defense at each tentacle (due to Irukandji), and interrupt/blind against each tentacle.
+tactic=exploit
+By sticking to left-side and jumping you can get behind all enemies and safely use ranged to destroy further Tentacle.
+If no one can survive agony you can use 99% trick. One player gets defeated, people resurrect him up to 99%. Once agony hits everyone quickly gets him up, he won't get agony and can get other people up.
+
+name=enemy=Jade_Maw:legendary
+image=http://i.imgur.com/QuxhBdH.jpg
+tactic=normal
+Stick together. It is easy to get downed if you fail to absorb or evade Maws laser attack. It is also hard to revive people middle of Tentacles.
+Maw will occasionally mark a target with a skull. When it disappears evade to avoid getting downed. To attack Maw, you need to hold a Crystal, absorb its laser attack and throw it back. Avoid using clones/minions because they get targeted and slow down the fight.
+To get crystals, you have to kill enemy=Jade_Maw_Tentacles:veteran or enemy=Jade_Colossi:veteran. Colossi reflect projectiles and they can knockdown at melee-range (try to predict and dodge).
+Unused Crystals will disappear after a while, you can grab and drop them to reset the timer.
+Crystals can absorb unlimited amount of attacks so don't throw it away if you need to revive someone.
+When you have killed all Colossi (keep an eye at the progress bar to prepare properly), the Maw becomes enemy=Enraged:legendary. Again you get 10 seconds of agony and Tentacles appear (this time they respawn though).
+Now Maw will attack much more often which allows you to kill it faster.
+When Maw is at ~10% all Tentacles will disappear and leave a Crystal. Maws final attack will hit entire area defeating any player who doesn't have a Crystal. Make sure you have a Crystal ready.
+Don't leave after looting the first chest (unless you are certain you won't get daily chest). It takes some time but every day you will get one special chest at each tier.
+tactic=coordinated
+Melee everything by coordinating blocks, blinds, interrupts, and projectile defense (if at level 50).
+tactic=coordinated|exploit
+The Jade Maw can be life leeched. This can be accomplished via a sigil of leeching, vampiric aura (very slow), or via combining a dark field with projectile finishers. All of these methods can be combined.
+tactic=guardian
+Use blinds (wiki=Leap_of_Faith, wiki=Flashing_Blade, traited Virtue of Justice) or Aegis to protect team from Tentacles spin.
+tactic=guardian
+Use wiki=Wall_of_Reflection and/or wiki=Shield_of_the_Avenger to proect your team from the Irukandji's projectile attacks.
+tactic=mesmer
+Use wiki=Mantra_of_Distraction to interrupt Tentacles spin.
+tactic=necromancer
+Use wiki=Doom to interrupt Tentacles spin.
+tactic=necromancer
+Use wells that are Dark fields in combination with projectile finishers to life leech the Jade Maw.
+tactic=thief
+Use Sword/Pistol in unorganized groups or on swap from Dagger/Pistol. wiki=Pistol_Whip allows you to evade laser. wiki=Shadow_Return can be used to quickly get Crystal. wiki=Black_Powder can keep enemies blinded.
+tactic=thief
+wiki=Shadow_Refuge is a Dark field, and can be used in combination with projectile finishers to life leech the Jade Maw.
+tactic=elementalist
+wiki=Lightning_Hammer blinds tentacles frequently enough to be completely invulnerable. Just remember that if you kill a tentacle during his attack he will remove all conditions and might kill you.
+tactic=warrior
+wiki=Defiant_Stance works against Maw's laser healing you to full health.

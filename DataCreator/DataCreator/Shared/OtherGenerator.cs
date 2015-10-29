@@ -81,7 +81,7 @@ namespace DataCreator.Shared
         // Apply dungeon data.
         for (var index = 0; index < line.Length; )
         {
-          var startIndex = line.IndexOf("DUNGEON_", index, StringComparison.Ordinal);
+          var startIndex = line.IndexOf("ID_", index, StringComparison.Ordinal);
           if (startIndex == -1)
             break;
           var endIndex = startIndex;

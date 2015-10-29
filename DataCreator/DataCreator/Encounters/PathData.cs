@@ -13,11 +13,13 @@ namespace DataCreator.Encounters
 
   public class PathData
   {
-    public string PathTag = "";
+    public string Tag = "";
     public string DungeonName = "";
-    public string PathNameLong = "";
-    public string PathName = "";
-    public string PathMap = "";
+    public string NameLong = "";
+    public string Name = "";
+    public string Map = "";
+    public string Filename = "";
+    public int Scale = 0;
 
 
     public PathData(string str)
@@ -38,22 +40,30 @@ namespace DataCreator.Encounters
       if (elements.Length > 1)
       {
         elements = elements[1].Split(Constants.Delimiter);
-        if (elements.Length != 4)
-          Helper.ShowWarning("Missing info. Use \"init='pathTag'|'dungeon name'|'long path name'|'short path name'\"!");
-        PathTag = elements[0];
+        if (elements.Length != 4 && elements.Length != 5)
+          Helper.ShowWarning("Missing info. Use \"init='pathTag'|'dungeon name'|'long path name'|'short path name'|'scale'\".");
+        Tag = elements[0];
         if (elements.Length > 1)
           DungeonName = elements[1];
         if (elements.Length > 2)
-          PathNameLong = elements[2];
+          NameLong = elements[2];
         if (elements.Length > 3)
-          PathName = elements[3];
+          Name = elements[3];
+        Filename = Tag;
+        if (elements.Length > 4)
+        {
+          Scale = Helper.ParseI(elements[4]);
+          Filename = "f" + Scale;
+        }
+          
       }
       else if (str.IndexOf(Constants.TagSeparator) > -1)
       {
-        PathTag = str;
+        Tag = str;
+        Filename = Tag;
       }
       else
-        Helper.ShowWarning("Missing info. Use \"init='pathTag'|'dungeon name'|'long path name'|'short path name'\"!");
+        Helper.ShowWarning("Missing info. Use \"init='pathTag'|'dungeon name'|'long path name'|'short path name'|'scale'\".");
       CheckPathMap();
     }
 
@@ -66,8 +76,8 @@ namespace DataCreator.Encounters
 
     private void CheckPathMap()
     {
-      if (File.Exists(Constants.DataOtherRaw + "media/dungeonimages/" + PathTag.ToLower() + "_map.jpg"))
-        PathMap = "media/dungeonimages/" + PathTag.ToLower() + "_map.jpg";
+      if (File.Exists(Constants.DataOtherRaw + "media/dungeonimages/" + Tag.ToLower() + "_map.jpg"))
+        Map = "media/dungeonimages/" + Tag.ToLower() + "_map.jpg";
     }
   }
 }

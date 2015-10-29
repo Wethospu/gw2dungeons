@@ -44,6 +44,7 @@ var settings = {
 	// General settings.
 	properCooldowns: false,
     settingsVisited: false,
+	homePage: "fractals",
     comments: true,
 	useSidebar: false,
     adSetting: "big",

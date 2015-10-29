@@ -1,0 +1,228 @@
+init=Cliff|Fractals of the Mists|Cliffside|Cliff|7
+init=Cliff|Fractals of the Mists|Cliffside|Cliff|13
+init=Cliff|Fractals of the Mists|Cliffside|Cliff|22
+init=Cliff|Fractals of the Mists|Cliffside|Cliff|33
+init=Cliff|Fractals of the Mists|Cliffside|Cliff|47
+init=Cliff|Fractals of the Mists|Cliffside|Cliff|59
+init=Cliff|Fractals of the Mists|Cliffside|Cliff|69
+init=Cliff|Fractals of the Mists|Cliffside|Cliff|82
+init=Cliff|Fractals of the Mists|Cliffside|Cliff|94
+
+###########################################################
+
+path=Cliff
+name=Cliffside
+tactic=normal
+Enemies: Bandits.
+Time: Day.
+Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+youtube=gYhTcr_KByo|Video_guide [KING].
+Current record: record=38.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
+tactic=warrior
+Pay extra attention to banner placement when stacking so that people can easily pick the hammer instead of your banners.
+
+name=enemy=Archdiviner_(Start):legendary
+tactic=melee
+All his attacks do lots of damage which makes melee very risky unless you know his animations. Try to stay at max melee range to prevent him from using melee attacks. If he does you have to block or dodge very quickly. Ideally, you should stay to the front of him if you are targeted (which may include backpedaling), and stay behind him if you are not being targeted.
+tactic=ranged
+All his attacks do lots of damage so pay attention. Try to learn animations for his special attacks and be ready to dodge. Keep some distance to avoid his melee attacks.
+tactic=melee|ranged
+He often initiates by channeling delayed AoEs near one player. Run away from other players if you think you are targeted. Try avoid them but they won't be a threat, other than stripping Aegis, unless you lack agony resistance. Remember to keep attacking him if you are in a good spot.
+His first special attack is a leap with AoE damage. He may turn in mid-air if targeted player moves. If you are being targeted avoid turning him towards others players (dodge directly away from him or use a block). If you are close to his target just block or dodge even if he isn't facing you.
+His second special attack is a spin which consists of two components - six projectiles evenly distributed around him (reflectable, with the ideal reflect placement in the center of the Archdiviner's hitbox) and an invisible AoE around his target. It's best to just dodge or use an invulnerability skill since single use blocks (Aegis) will only absorb one part of the attack.
+tactic=melee
+After 50% he will start using Backbreaker which also inflicts agony. Stay at max melee range so he won't use it. Backbreaker is quite slow so just block or dodge if you see a different animation.
+tactic=ranged|melee
+When he dies he will drop a Cultist Hammer which you need to proceed.
+tactic=coordinated
+In an organized group, you can use Earth Elementals or a Guardian (who has some Knight's gear equipped, thus giving them higher toughness than the rest of the party) to take aggro, thus allowing the rest of the team to safely melee the boss from behind.
+tactic=mesmer
+Use wiki=Feedback when Archdiviner is about to spin to protect your party and deal lots of damage.
+tactic=guardian
+Use wiki=Wall_of_Reflection when Archdiviner is about to spin to protect close players and deal some damage. You can deal lots of damage if you place the Wall of Reflection in the center of his hitbox.
+tactic=guardian
+Use wiki="Retreat!" and wiki=Virtue_of_Courage to protect yourself and team mates from his attacks.
+tactic=thief
+Use wiki=Signet_of_Agility to give extra dodges to team mates.
+tactic=elementalist
+Use an Earth Elemental from wiki=Glyph_of_Elementals to hold boss aggro and allow your team some relative safety from his melee attacks.
+
+name=Cultist Hammer
+tactic=normal
+The Hammer is needed to damage and destroy enemy=Seals:structure. The death of an enemy you have recently attacked charges skill 4 of the hammer. Skill 4 is used to hit seals. Skill 1 should be used for attacking while skill 3 should be used at ~26 stacks to counter stun. Skill 2 shouldn't be used at all.
+Picking up the Hammer deals 30% damage and some conditions based on wiki=Hammer_Corruption. Wielding the Hammer generates Corruption which gives conditions every 10 stacks, stuns at 30 stacks and downs at 40 stacks.
+You need teamwork to move the Hammer efficiently. Pay attention to the player carrying it because the Hammer has to be dropped before 40 stacks. If you don't have any Corruption be ready to pick the Hammer up because without conditions you will quickly heal up. Use area swiftness and mobility skills to move faster while wielding the hammer.
+Also pay attention to who has the hammer, corruption stacks, and health when assaulting Seals. Picking up the Hammer during a fight is risky because you lose lots of health and may die before being able to hit a Seal. If you have full health and little Corruption it's your job to pick it up. Also make sure to help and protect the player with the Hammer, since it does poor damage and makes surviving harder.
+The biggest priority is to not die with the Hammer. If you fall off the map the Hammer may disappear and everyone has to wipe to make it appear. If you die during a fight the Hammer will be on your body which makes it very hard to be picked up. Also people may accidentally pick it up when trying to revive you,  so pay attention to your stacks and don't pick it up if you can't make it.
+tactic=exploit
+The wiki=Hammer_Corruption stacks last just long enough to get to 40 stacks. If you need to carry the hammer though you're at high stacks drop it for a few seconds then pick it up again. The old stacks will disappear while the new ones are applied and the number will stay fixed.
+Warning: This will give you very little time to react once your time is about to run out again, and does a lot of damage when you pick it up a second time. Consider bringing condition removal.
+tactic=bug
+If you use a skill that grants you other skills (such as an engineer kit) while wielding the hammer, it may disappear entirely and not reappear during a death reset. Similarly, using consumables which grant you additional skills may have the same effect.
+
+name=Way to first enemy=Seal:structure set / Ankle Seals
+tactic=normal
+Just run through the enemies. They won't follow you to the first seal.
+tactic=fight
+There are multiple enemy=Spike_Traps:trap on the way. Pay attention to the ground and dodge/jump on suspicious parts (until you learn actual trap locations).
+On levels 1-9 you will have an easy route with no enemies. On level 10 and above you will have some veteran enemies. Either way, take it slowly enough to avoid falling.
+
+name=First enemy=Seal:structure set / Ankle Seals
+tactic=normal
+Initially there are 4 enemy=Novices_(Dagger):normal. There's no point trying to kill them fast because you need to charge the Hammer (more will spawn though). Try to only kill the Novice that the person with the hammer is attacking, while avoiding damaging the others.
+When they are dead enemy=Novice_(Dagger):veteran and 2 enemy=Novices_(Dagger):normal spawn.
+When they are dead enemy=Novice_(Dagger):veteran and enemy=Novice_(Dagger):normal spawn. They keep respawning when both are dead.
+Destroy both Seals to proceed. Charge the hammer and hit them on front with skill 4. Remember to take the hammer with you.
+
+name=Way to second enemy=Seal:structure / Chest Seal
+tactic=normal
+There are more enemy=Spike_Traps:trap on the way, and on the walls there will be heads blowing air. Getting hit by the gusts of air will cause a launch effect, which will likely lead to your death.
+Don't rush in (especially if you are carrying the Hammer). Pay attention to walls and wait for air gusts to go off. Also you can use stability or dodge through. Single blocks are usually effective, however they are not 100% effective as you can be moving slow enough, at the wrong angle, or with unlucky timing and catch two pulses of the air gust from one head and then be launched.
+tactic=mesmer
+Use wiki=Blink to get up and skip whole thing.
+tactic=elementalist
+Use wiki=Lightning_Flash to get up and skip whole thing.
+tactic=thief
+Use wiki=Infiltrator's_Arrow to get up and skip whole thing.
+tactic=guardian
+Use wiki="Stand_Your_Ground!"|"Stand_Your_Ground!"_(Utility) and Aegis to protect everyone.
+tactic=necromancer
+Use wiki=Necrotic_Traversal to skip some of it (straight line).
+
+name=Second enemy=seal:structure / Chest Seal
+tactic=normal
+On the second Seal there are ticking AoEs which deal damage and inflict burning. Don't stand in fire. There are safe-spots between AoEs where you can stack.
+Initially there are 3 enemy=Novices_(Dagger):veteran and 2 enemy=Novices_(Shortbow):normal. When they are dead 2 enemy=Novices_(Dagger):veteran, 5 enemy=Novices_(Dagger):normal and enemy=Novice_(Shortbow):normal start respawning.
+Try to make each kill yield a hammer charge in order to avoid fighting against constantly respawning enemies. Of course survivability comes first so kill enemies to reduce pressure if needed.
+tactic=struggling
+If your team is struggling, you can run or ideally stealth past the seal and stack behind the brazier on the far side. From there, enemies can be strategically pulled in order to gain hammer charges. Since the first group of enemies is often the hardest, you should consider stacking near the seal after they are defeated, as this will speed up the encounter considerably.
+tactic=warrior
+wiki=Endure_Pain is useful for hit&run when your team is struggling.
+tactic=mesmer
+wiki=Portal and wiki=Mass_Invisibility are useful for hit&run when your team is struggling.
+Use: wiki=Temporal_Curtain (traited) , wiki=Illusionary_Warden and wiki=Feedback against Novices with Shortbow. You can also use Temporal Curtain to pull enemies in.
+tactic=necromancer
+wiki=Spectral_Walk is useful for hit&run when your team is struggling.
+tactic=necromancer
+Use Spectral Grasp to pull an enemy.
+tactic=guardian
+Use wiki=Binding_Blade to pull enemies.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against Novices with Shortbow.
+tactic=thief
+wiki=Scorpion_Wire can pull enemies that are not immediately coming to your team when stacked.
+wiki=Smoke_Screen can provide blinds asgainst melee enemies, and projectile defense against ranged enemies.
+wiki=Shadowstep is useful for hit&run when your team is struggling.
+
+name=Way to third enemy=Seal:structure set / Arm Seals
+tactic=normal
+Walk carefully on the wooden platforms (especially with the Hammer).
+
+name=Third enemy=Seal:structure set / Arm Seals
+tactic=normal
+There are two Seals. Hitting a Seal makes it become invulnerable and the other one vulnerable so you have alternate between them.
+Initially both seals have 2 enemy=Chanters:normal. When they die, enemy=Chanter:veteran and 5 enemy=Chanters:normal will start respawning. All Chanters will heal the Seal while they are not attacking.
+At lower levels it doesn't matter much what you do. You can for example do a 2-1-2 split where one guy runs between the seals while others kill (keep cycling the roles).
+When it gets harder, the common tactic is to leave one Chanter alive at one Seal and charge the Hammer at the corridor near other Seal. With just one chanter alive at the one seal, the healing will be minimal, and it will be very easy for a single player to run to that seal and hit it with the hammer.
+Don't fight in the open. Stay behind a corner while one player goes to pull to make them all come at you. Keep pulling enemies all the time to prevent healing. Try keep one target low for when the player with the Hammer gets back for quick charge.
+Remember to support the Hammer guy if there are many enemies. If necessary, go along with the hammer carrier to get aggro and from the enemies.
+Once one Seal is destroyed the other should be quick to finish. You don't have to carry the Hammer after this section is complete.
+Always make sure your team is on the same page with regards to strategy before starting the arm seals. Serious errors here, such as killing both starting chanters on both sides, can make this event nearly impossible to complete for even the most organized teams on higher levels.
+A simple procedure for the normal strategy is as follows. The first seal players encounter (called the left seal in-game, although it is on the right arm of the colossus) will be called the "near" seal, and the second seal players encounter (called the right seal in-game, although it is on the left arm of the colossus) will be called the "far" seal.
+Strategy:
+1. Kill chanter at the near seal. Hit the near seal.
+2. Kill chanter at the far seal. Hit the far seal.
+3. Kill another chanter at the far seal. Run to hit the near seal.
+4. Stack at the far seal hallway stack spot. Continuously pull chanters that spawn at the far seal and kill them.
+5. Alternate hitting seals. The near seal will die first.
+tactic=coordinated
+A coordinated without a thief, necromancer, or mesmer will generally use the following strategy:
+Strategy:
+1. Kill chanter at the near seal. Hit the near seal.
+2. Kill chanter at the far seal. Hit the far seal.
+3. Kill chanter at the near seal. Hit the near seal again.
+4. Move to the near seal hallway stack spot. Continuously pull chanters that spawn at the near seal and kill them.
+5. Alternate hitting seals. The far seal will die first. After which, continue to focus on the near seal.
+6. If the lone chanter from the far seal follows you to the stack spot, your team needs to immediately move around the corner to break LoS and lose its aggro. Do not kill this chanter.
+A coordinated group with a necromancer or a thief will generally use the following strategy:
+Strategy:
+1. Kill chanter at the near seal. Hit the near seal.
+2. Kill chanter at the far seal. Hit the far seal. Thief/Necro drops Shadow Trap/Flesh Wurm out of the way of the remaining chanter.
+3. Kill chanter at the near seal. Put up reflects and pull mobs in (fight in the open). Drop hammer for Thief/Necro to pick up; Thief/Necro picks up hammer.
+4. Thief/Necro gets a charge, activates Destroy Shadow Trap/Necrotic Transversal, and hits far seal. Team holds a chanter or two at low health; team may need to retreat to the near seal hallway stack spot.
+5. Thief/Necro returns to near seal as quickly as possible, gets a charge, and hits the seal.
+6. Run to the other side.
+7. Kill the chanter and hit the far seal. If executed too slowly, you may need to drop reflects and hit the seal an additional time.
+A coordinated group with a mesmer will generally use the following strategy:
+Strategy:
+1. Kill chanter at the near seal. Hit the near seal.
+2. Kill chanter at the far seal. Hit the far seal.
+3. Kill chanter at the near seal. Put up reflects and pull mobs in (fight in the open). Drop hammer for Mesmer to pick up; Mesmer picks up hammer.
+4. Mesmer gets a charge, drops portal, enters portal, and hits far seal. Team holds a chanter or two at low health.
+5. Mesmer returns to near seal, gets a charge, and hits the seal.
+6. Team spasms interact in case the portal is still open. If done properly, the portal should still be open. Otherwise, run to the other side.
+7. Kill the chanter and hit the far seal.
+tactic=warrior
+At high levels use wiki=Defiant_Stance or wiki=Endure_Pain when doing hit&run.
+tactic=mesmer
+Use wiki=Mass_Invisibility or/and wiki=Veil for hit&run.
+Use wiki=Portal for hit&run or organized tactics.
+tactic=necromancer
+At high levels use wiki=Spectral_Walk and wiki=Summon_Flesh_Wurm for hit&run or organized tactics.
+tactic=guardian
+Use wiki=Line_of_Warding or wiki=Ring_of_Warding when hiding behind corner (needs good placement).
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to protect against projectiles, especially with coordinated tactics.
+tactic=engineer
+Use wiki=Smoke_Bomb to blind when hiding behind the corner.
+tactic=necromancer
+Use wiki=Well_of_Darkness to blind when hiding behind the corner.
+tactic=thief
+wiki=Black_Powder and wiki=Smoke_Screen can be used to almost nullify damage output of chanters if you pull them behind the corner.
+wiki=Shadow_Trap and wiki=Shadowstep are useful for hit&run or coordinated tactics.
+
+name=Way to Archdiviner
+tactic=normal
+There are small explosions on the platforms. Proceed slowly and wait for explosions to go off before going in.
+Avoid changing utility just for this so you don't have to wait for cooldown.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" to protect everyone.
+
+name=Archdiviner
+tactic=normal
+At the start both enemy=Archdiviner_(Phase_1):legendary and Seal are invulnerable. You should pull 4 enemy=Chanters:normal behind one of the platform with torches (near the boss) and kill them without much trouble. After that just walk close Archdiviner to get stunned and to wake him up.
+During the first phase he will use wells just like the first archdiviner. His only other attack in this phase is just basic melee with high damage and Knockback (again melee players should try to stay at max melee-range as well as behind his back if not targeted).
+At 75% Archdiviner will drop his Hammer, get invulnerability and become permanently stunned. The Seal goes vulnerable and 4 enemy=Chanters:normal spawn around the seal. After some time, 4 enemy=Fanatics:normal start to respawn.
+At lower levels, enemies disappear when you hit the Seal so just focus one enemy and hit the Seal. At higher levels, enemies stay so try to kill as many as possible before hitting the Seal (if you are slow and Fanatics start to spawn then hit Seal immediately, otherwise you might get overrun).
+For easier killing you can stack behind one of the platforms or pull the chanters to the middle with wiki=Binding_Blade or wiki=Into_the_Void.
+When the Seal is hit it gets invulnerability, Archdiviner wakes up, the Hammer disappears and you get unavoidable and unbreakable stun. Archdiviner starts attacking while you are stunned if no-one is near him, so have someone stand in melee range of him.
+At 50% same thing happens as at 75%. However, next time he wakes up you will be facing enemy=Archdiviner_(Phase_2):legendary.
+He won't be using wells any more but the melee auto-attack stays the same.
+At this point, he points at one person which shortly after teleports him to a enemy=Cage:structure and summons 2 enemy=Bone_Fiends:normal. Destroy the cage to get out and try cleave/AoE Bone Fiends.
+His most dangerous attack is when he sends 3 pulling projectiles. After that he reflects projectiles (Protection-icon) and casts huge while flash which causes agony. Stop using projectiles and dodge the agony attack.
+On top of this, he starts to use Backbreaker similarly to the first fight.
+At 25% the same thing happens. At 0% the same thing happens except you have to hit the seal twice.
+tactic=coordinated
+Whenever the seal is damaged, Archdiviner gets stunned based on nearby players (about 240 range) and amount of players in the instance with formula 2 * nearby players * players in instance. So in a full group, each player generates 10 stuns. This can be used to control defiant on Archdiviner. You always want to have at least one player near him so he also gets stunned.
+With 0-1 defiant stacks, have 3 players near him. With 2-3 defiant stacks, have 2 players near him. With 4-5 defiant stacks, have 1 player near him.
+In an organized group, you can use Earth Elementals or a Guardian (who has some Knight's gear equipped, thus giving them higher toughness than the rest of the party) to take aggro, thus allowing the rest of the team to safely melee the boss from behind.
+When beginning the encounter, the use of group stability along with someone running to the archdiviner will prevent any stun from occurring. If you don't want to use group stability, someone can teleport to the archdiviner, thus stunning him at the same time as the whole party is stunned.
+tactic=exploit
+You can leave a player outside of the room and the boss won't reset if you wipe.
+If you are only player alive after 50% you can get out of combat. When he puts you into a cage wait until he loses aggro and then quickly break the cage and run back to the entrance. If you are fast enough only Bone Fiends will follow you. Kill them and your team can resurrect at the checkpoint (Archdiviner or Seal won't reset).
+tactic=optional
+At the end use /bow at the Colossus when the Colossus link=http://i.imgur.com/8DmBbCk.png|bows at you to get an achievement.
+tactic=mesmer
+Use wiki=Temporal_Curtain to pull chanters together.
+Use wiki=Feedback to provide projectile defense against chanters.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger in phase 2 and versus chanter spawns to protect yourself and team mates from projectile attacks.
+tactic=guardian
+Use wiki="Retreat!" and wiki=Virtue_of_Courage to protect yourself and team mates from his attacks.
+Use wiki=Binding_Blade to pull chanters together.
+tactic=thief
+Use wiki=Signet_of_Agility to give extra dodges to team mates.
+tactic=elementalist
+Use an Earth Elemental from wiki=Glyph_of_Elementals to hold boss aggro and allow your team some relative safety from his melee attacks.

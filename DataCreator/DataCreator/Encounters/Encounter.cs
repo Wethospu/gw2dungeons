@@ -76,7 +76,7 @@ namespace DataCreator.Encounters
         var tableCounter = 0;
         foreach (var encounter in encounters)
         {
-          if (!encounter.Path.ToUpper().Contains(currentPath.PathTag.ToUpper()))
+          if (!encounter.Path.ToUpper().Contains(currentPath.Tag.ToUpper()))
             continue;
           // Ignpre the dungeon name because it's long and doesn't add anything. / 2015-10-11 / Wethospu
           if (tableCounter > 0)
@@ -109,15 +109,19 @@ namespace DataCreator.Encounters
       htmlBuilder.Append(Gw2Helper.AddTab(1)).Append("<div class=\"in-line\">");
       htmlBuilder.Append(Gw2Helper.AddTab(2)).Append(counter == 0 ? "<h1>" : "<h2>");
       // Because of index file, links have to be added this late to the encounter name.
-      htmlBuilder.Append(Helper.ConvertSpecial(LinkGenerator.CreateEnemyLinks(LinkGenerator.CreatePageLinks(Name), Path, enemies)));
+      htmlBuilder.Append(Helper.ConvertSpecial(LinkGenerator.CreateEnemyLinks(LinkGenerator.CreatePageLinks(Name), Path, enemies, currentPath.Scale)));
       htmlBuilder.Append(counter == 0 ? "</h1>" : "</h2>");
       // Add map link if needed.
-      if (currentPath.PathMap.Length > 0)
-        htmlBuilder.Append(Constants.Space).Append(Constants.Space).Append("<a class=\"overlay-link\" href=\"").Append(currentPath.PathMap).Append("\"><span class=\"glyphicon glyphicon-picture\"></span></a>");
+      if (currentPath.Map.Length > 0)
+        htmlBuilder.Append(Constants.Space).Append(Constants.Space).Append("<a class=\"overlay-link\" href=\"").Append(currentPath.Map).Append("\"><span class=\"glyphicon glyphicon-picture\"></span></a>");
       htmlBuilder.Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(1)).Append("</div>");
       // Add tactics. / 2015-08-09 / Wethospu
-      htmlBuilder.Append(Tactics.ToHtml(Index, Path, enemies, 1));
+      var tacticHtml = Tactics.ToHtml(Index, Path, currentPath.Scale, enemies, 1);
+      // Check that the encounter is relevant (has something for this scale). / 2015-10-29 / Wethospu
+      if (tacticHtml.Length == 0)
+        return "";
+      htmlBuilder.Append(tacticHtml);
       htmlBuilder.Append("</div></td>");
       // Space for ads. / 2015-08-04 / Wethospu
       htmlBuilder.Append("<td class=\"encounter-right\">").Append(Constants.LineEnding);

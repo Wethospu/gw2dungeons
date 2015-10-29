@@ -1,0 +1,103 @@
+init=Furn|Fractals of the Mists|Molten Facility|Molten|9
+init=Furn|Fractals of the Mists|Molten Facility|Molten|23
+init=Furn|Fractals of the Mists|Molten Facility|Molten|39
+init=Furn|Fractals of the Mists|Molten Facility|Molten|58
+init=Furn|Fractals of the Mists|Molten Facility|Molten|73
+init=Furn|Fractals of the Mists|Molten Facility|Molten|89
+init=Furn|Fractals of the Mists|Molten Facility|Molten|93
+
+#########################################################################
+
+path=Furn
+name=Molten Furnace
+tactic=normal
+Enemies: Molten and others.
+Time: Day.
+Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+youtube=QjJMBIXvftQ|Video_guide [KING].
+Current record: record=39.
+tactic=coordinated
+If you want to be optimal against enemy=Earth_Elementals, enemy=Embers or enemy=Tar_Elementals, use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying and wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Frailty.
+
+name=Start
+tactic=normal
+A group of 2 enemy=Molten_Oscillators:veteran, a enemy=Molten_Resonator:veteran and a enemy=Molten_Stalker:veteran appear from a portal. When one of them dies a enemy=Molten_Brawler:elite appears. Kill all to proceed. You may stack near cliff.Although it is not necessary, you can line of sight the enemies behind a nearby cliff.
+tactic=coordinated
+Fight the mobs where they spawn. You can use Binding Blades or Into The Void to pull them together, although it is not necessary to use either skill to group them. See bug section.
+tactic=bug
+Don't kill any enemies until the progress bar appears on the corner. If you do, the bar won't fill and progress will be blocked.
+Additionally, progress will be blocked if you kill the initial enemies too slowly, pull them too far away and/or NPCs are dead (not sure which one). Don't try any fancy things.
+tactic=mesmer
+Use wiki=Temporal_Curtain to pull the mobs together.
+tactic=guardian
+Use wiki=Binding_Blade to pull the mobs together.
+Use wiki=Ring_of_Warding or wiki=Line_of_Warding if stacking to CC the mobs as they run in. This is generally as unnecessary as stacking in the first place, but can be useful for struggling groups.
+
+name=Tunnel
+tactic=normal
+The tunnel has 5 pockets, with each pocket containing a random group of 3 enemies. Wait until the drill reveals the pockets, kill the enemies, and then plug the geyser with a boulder.
+The first pocket has 3 Veterans. The second and third pockets have a Elite and 2 Veterans. The fourth and fifth pockets have 2 Elites and a Veteran. Possible enemies are enemy=Tunnel_Enemies:trap.
+After tunnel there is a large group of Molten enemies. 2 enemy=Bladestorms:veteran, 2 enemy=Axe_Fiends:veteran, 2 enemy=Disaggregators:veteran and a enemy=Smoke_Shaman:veteran. At lower levels Fiends are replaced with a enemy=Shadowblade:veteran. Most groups run to the right, past the enemies, and stack behind a rock near the steam wall in order to LoS the mobs.
+tactic=coordinated
+If there is a Guardian in the party, they can use the Staff autoattack to tag mobs while still in the tunnel. Stack might before reaching the pockets, and quickly burst the mobs down. Alternatively, you can pull most of the mobs together using Binding Blades or Into The Void, or in some of the rooms, use inbuilt LoS spots.
+The Molten enemies can be fought by running straight to them and fighting on top of them, so long as your party has high DPS and sufficient access to blinds and stability.
+tactic=bug
+Boulders may reset if you spend too much time on this section, especially if your party wipes. If you for some reason can't progress to steam traps go check the geysers. Similarly, if your party wipes you may want to check the geysers as you run past them to avoid having to run back.
+tactic=mesmer
+Use wiki=Temporal_Curtain to pull mobs together.
+Use wiki=Feedback to provide projectile defense.
+Use wiki=Mantra_of_Concentration to provide stability to your group.
+tactic=guardian
+Use wiki=Binding_Blade to pull mobs together.
+Use wiki=Wall_of_Reflection to provide projectile defese.
+Use wiki=Wave_of_Wrath to attack mobs in pockets from the tunnel, pulling them to pocket entrances to burst down (coordinated).
+Use wiki="Stand_Your_Ground!" and wiki=Indomitable_Courage to provide stability to your group. wiki=Hallowed_Ground is useful against the large trash pack.
+Use wiki=Ring_of_Warding if LoSing the large trash pack, to give your team some extra time to freely DPS.
+tactic=thief
+Use wiki=Smoke_Screen to blind dangerous enemies and provide projectile defenses.
+tactic=elementalist
+Use wiki=Sandstorm to blind dangerous enemies.
+
+name=Steam traps
+tactic=normal
+Wait for enemy=Steam:trap to go off and run past quickly. Don't try any fancy shortcuts or you risk the fractal getting stuck. Don't mind enemy=Fire_Lobs:trap jumping from the lava because they barely do any damage.
+tactic=coordinated
+Stack swiftness on the NPCs during their long dialog stop. Additionally, it is possible to abuse their pathing via some clever leaps that risk bugging out the fractal if done improperly.
+tactic=bug
+Make sure Frostbite, Braham and Rox are alive and with you before proceeding. Otherwise the fractal may get stuck and you have to restart. If anyone of them is missing go search for them or wipe.
+
+name=Weapon testing
+tactic=normal
+While in the area you have Stressed debuff which deals and heals 1 damage every few seconds. This prevents getting out-of-combat regeneration and switching traits, weapons and skills.
+During this section you must pass three separate tests, which alternate between burn phases. Each test occurs in a non-repeating random order. Either crushers activate at corners and send shockwaves around the area, fire tornadoes appear at side and move over the area or lots of Fireballs get shot on the area. Shockwaves can easily be avoid by just jumping but you can also dodge. Tornadoes can be avoided by movement, standing opposite side of Core, reflecting them or just dodging through. Fireballs can be avoided with mobility, dodges and area anti projectile skills.
+After the first test 4 enemy=Molten_Shamans:veteran aappear at the sides (they respawn if killed). You must damage  the Core to 75% to proceed, at which point the enemies disappear.
+After the second test a enemy=Molten_Protector:veteran appears at the middle of the room, on the the side of the Core nearest to the entrance to the room. The protector respawns if killed. Damage the Core to 50% to proceed, at which point the protector disappears. Use control skills to move the protector away from the core to start damaging it immediately.
+After the third test all previous enemies appear. Damage the Core to 25% to proceed, at which point all enemies again disappear.
+At which point there is a final test phase, where all the previous test elements are simultaneously combined. Destroy the Core to proceed.
+tactic=engineer
+If your team has trouble surviving the weapon test use wiki=Healing_Turret and wiki=Supply_Crate with trait wiki=Fortified_Turrets to reflect tornadoes and fireballs.
+tactic=coordinated|exploit
+Stack near the core on the exit-side and use reflects and projectile absorption to tank defend against the fireball/cannon trap as well as, optionally, the fire tornado trap.
+tactic=bug
+The event may not start if Frostbite, Braham or Rox is missing. Ensure they are alive and with you before entering the room.
+tactic=elementalist
+Use wiki=Conjure_Frost_Bow to do extreme damage to the power core.
+Use wiki=Conjure_Lightning_Hammer to knock back the molten protector.
+Use wiki=Swirling_Winds or wiki=Ring_of_Earth or wiki=Magnetic_Aura or wiki=Magnetic_Wave to provide projectile defense against mobs, the cannon trap, and the fire tornado trap.
+tactic=thief
+Use wiki=Smoke_Screen to provide projectile defense against mobs, the cannon trap, and the fire tornado trap.
+Use wiki=Scorpion_Wire to pull the protector far away from the core.
+tactic=guardian
+Use Wall_of_Reflection and/or Shield_of_the_Avenger and/or wiki=Sanctuary to provide projectile defense against mobs, the cannon trap, and the fire tornado trap.
+Use wiki=Banish to knock the protector away from the core.
+
+name=enemy=Weapons_Test_Engineer
+tactic=melee
+Stay mobile and keep circling to automatically avoid his powerful melee attack. Use a stun break and dodge if you get hit to prevent an equally powerful second hit.
+When he channels a fire on the ground be ready to dodge at the right moment. If you think you will die move away so you can dodge easier.
+Try to keep an eye on the ground to avoid shockwaves from Crushers. stability is really helpful because there are lots of action. Projectile defense is also useful.
+tactic=ranged
+Try to stay between two enemy=Crushers:structure so you can jump over both waves when needed. Keep side stepping to avoid most attacks.
+If you see fiery tornadoes coming your way just dodge.
+tactic=coordinated
+Use stability (party wide if possible) to prevent numerous Control effects. Stack at melee but stay mobile to avoid his powerful melee hit. Be ready to dodge when he channels fire on the ground. Projectile defense and Aegis can reduce your need to react to certain mechanics.

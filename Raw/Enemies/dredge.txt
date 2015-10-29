@@ -305,7 +305,7 @@ name=Rabsovich
 ID=11241
 scaling=champion
 image=http://wiki.guildwars2.com/images/6/6d/Dredge_Oscillator.jpg
-path=Under
+path=UnderGun|UnderBomb
 
 attack=Shock Wave
 ID=15962
@@ -340,7 +340,7 @@ name=Dredge Powersuit
 ID=11239
 scaling=legendary
 image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
-path=Under
+path=UnderGun|UnderBomb
 
 attack=15955
 ID=1437
@@ -493,7 +493,7 @@ subeffect=bleeding:8.5
 copy=10004
 ID=7593
 scaling=normal
-path=Under
+path=UnderGun|UnderBomb
 
 #############################
 
@@ -534,7 +534,7 @@ subeffect=knockback:1.5
 copy=10003
 ID=4297
 scaling=normal
-path=Under
+path=UnderGun|UnderBomb
 
 #############################
 
@@ -542,7 +542,7 @@ copy=10003
 # Internal: ID 13633 has a weapon with higher rarity.
 ID=11233
 scaling=normal
-path=Under
+path=UnderGun|UnderBomb
 
 ##################################################################
 
@@ -562,7 +562,7 @@ ID=13626
 alt=Dredge Reverberants (Sonic)|Reverberant (Sonic)|Reverberants (Sonic)
 image=http://wiki.guildwars2.com/images/c/c3/Veteran_Dredge_Reverberant.jpg
 scaling=normal
-path=Under
+path=UnderGun|UnderBomb
 
 attack=Immune to blind
 
@@ -612,7 +612,7 @@ name=Dredge Ratnik
 ID=13628
 alt=Dredge Ratniks|Ratnik|Ratniks
 image=http://wiki.guildwars2.com/images/d/d4/Dredge_Ratnik.jpg
-path=Under|Thauma|SES|SE2
+path=UnderBomb|UnderGun|Thauma|SES|SE2
 
 #############################
 
@@ -718,7 +718,7 @@ subeffect=knockdown:2
 copy=10005
 ID=1898
 scaling=normal
-path=Under
+path=UnderGun|UnderBomb
 
 #############################
 
@@ -726,7 +726,7 @@ copy=10005
 # VERIFY 5046
 ID=13631
 scaling=normal
-path=Under
+path=UnderGun|UnderBomb
 
 ##################################################################
 
@@ -801,7 +801,7 @@ copy=10007
 # ID 11243 has different stats (summoned by Rabsovich?).
 ID=11234
 scaling=normal
-path=Under
+path=UnderGun|UnderBomb
 
 #############################
 
@@ -809,7 +809,7 @@ copy=10007
 # Internal: Different level requirement on Gong.
 ID=13625
 scaling=normal
-path=Under
+path=UnderGun|UnderBomb
 
 #############################
 
@@ -915,7 +915,7 @@ name=Dredge Excavator (Pickaxe)
 ID=13627
 alt=Dredge Excavators (Pickaxe)
 image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
-path=Under
+path=UnderGun|UnderBomb
 scaling=normal
 
 attack=Immune to blind
@@ -957,7 +957,7 @@ name=Dredge Excavator (Tunneler)
 ID=8637
 alt=Dredge Excavators (Tunneler)
 image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
-path=Under
+path=UnderGun|UnderBomb
 scaling=normal
 
 attack=Immune to blind
@@ -997,7 +997,7 @@ name=Dredge Strazar
 ID=11236
 alt=Dredge Strazars
 scaling=normal
-path=Under
+path=UnderGun|UnderBomb
 
 attack=Immune to blind
 

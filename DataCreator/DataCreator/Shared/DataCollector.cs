@@ -10,7 +10,8 @@ namespace DataCreator.Shared
   // This data is used to generate some stuff on the pages. / 2015-08-14 / Wethospu
   public class DataCollector
   {
-    private Dictionary<string, List<PathData>> Paths { get; set; }
+    private Dictionary<string, List<PathData>> DungeonPaths { get; set; }
+    public List<PathData> FractalPaths { get; private set; }
     private SortedSet<string> Ranks { get; set; }
     private string CurrentTag;
     private SortedDictionary<string, string> Tags { get; set; }
@@ -19,7 +20,8 @@ namespace DataCreator.Shared
 
     public DataCollector()
     {
-      Paths = new Dictionary<string, List<PathData>>();
+      DungeonPaths = new Dictionary<string, List<PathData>>();
+      FractalPaths = new List<PathData>();
       Ranks = new SortedSet<string>();
       CurrentTag = "0";
       Tags = new SortedDictionary<string, string>();
@@ -38,7 +40,20 @@ namespace DataCreator.Shared
     ***********************************************************************************************/
     public void AddDungeon(string dungeon, List<PathData> paths)
     {
-      Paths.Add(dungeon, paths);
+      DungeonPaths.Add(dungeon, paths);
+    }
+
+    public void AddFractal(List<PathData> paths)
+    {
+      foreach (PathData path in paths)
+      {
+        var index = path.Scale - 1;
+        while (FractalPaths.Count <= index)
+          FractalPaths.Add(null);
+        if (FractalPaths[index] != null)
+          Helper.ShowWarningMessage("Fractal F" + (index + 1) + " is already defined. (" + FractalPaths[index].Tag + ", " + path.Tag + ")");
+        FractalPaths[index] = path;
+      }
     }
 
     public void AddRank(string rank)
@@ -90,14 +105,13 @@ namespace DataCreator.Shared
      * Generates "dungeon translation" to generate main page.                                      *
      *                                                                                             *
      * Returns generated translation data.                                                         *
-     * pathData: Information for generated paths.                                                  *
      *                                                                                             *
      ***********************************************************************************************/
     
     public Dictionary<string, string> GenerateDungeonData()
     {
       var dungeonData = new Dictionary<string, string>();
-      foreach (var dungeon in Paths.Keys)
+      foreach (var dungeon in DungeonPaths.Keys)
       {
         // Generate entry for dungeon.
         // Format:
@@ -106,28 +120,60 @@ namespace DataCreator.Shared
         //     <li><a href="./'page'">'Long path name'</a><span class="tracker" data-tag="'Path id'"></span></li>
         //     <li><a href="./'page'">'Long path name'</a><span class="tracker" data-tag="'Path id'"></span></li>
         // </ul>
-        if (Paths[dungeon] == null || Paths[dungeon].Count == 0)
+        if (DungeonPaths[dungeon] == null || DungeonPaths[dungeon].Count == 0)
         {
           Helper.ShowWarningMessage("Dungeon \"" + dungeon + "\" had no path data!");
           continue;
         }
         var entry = new StringBuilder();
-        entry.Append(Gw2Helper.AddTab(3)).Append("<h2>").Append(Paths[dungeon][0].DungeonName).Append("</h2>").Append(Constants.LineEnding);
+        entry.Append(Gw2Helper.AddTab(3)).Append("<h2>").Append(DungeonPaths[dungeon][0].DungeonName).Append("</h2>").Append(Constants.LineEnding);
         entry.Append(Gw2Helper.AddTab(3)).Append("<ul class=\"nav nav-stacked\">").Append(Constants.LineEnding);
-        foreach (var path in Paths[dungeon])
+        foreach (var path in DungeonPaths[dungeon])
         {
-          entry.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./").Append(path.PathTag).Append("\">").Append(path.PathNameLong).Append("</a>");
-          // Only add completion status to dungeons. / 2015-07-11 / Wethospu
-          if (!dungeon.ToLower().Equals("fotm"))
-            entry.Append("<span class=\"tracker\" data-tag=\"").Append(path.PathTag).Append("\"></span>");
-          entry.Append("</li>").Append(Constants.LineEnding);
+          entry.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./").Append(path.Tag).Append("\">").Append(path.NameLong).Append("</a>");
+          entry.Append("<span class=\"tracker\" data-tag=\"").Append(path.Tag).Append("\"></span></li>").Append(Constants.LineEnding);
         }
         entry.Append(Gw2Helper.AddTab(3)).Append("</ul>").Append(Constants.LineEnding);
-        dungeonData.Add("DUNGEON_" + dungeon.ToUpper(), entry.ToString());
+        dungeonData.Add("ID_" + dungeon.ToUpper(), entry.ToString());
       }
+      dungeonData.Add("ID_FRACTAL", GenerateFractalData());
       return dungeonData;
     }
 
+    /***********************************************************************************************
+     * GenerateFractalData / 2015-10-28 / Wethospu                                                 *
+     *                                                                                             *
+     * Generates "fractal translation" to generate main page.                                      *
+     *                                                                                             *
+     * Returns generated translation data.                                                         *
+     *                                                                                             *
+     ***********************************************************************************************/
+
+    public string GenerateFractalData()
+    {
+      var fractalData = new StringBuilder();
+      for (var i = 0; i < FractalPaths.Count; i++)
+      {
+        if (i%20 == 0)
+          fractalData.Append(Gw2Helper.AddTab(3)).Append("<li><ul class=\"nav nav-stacked\">").Append(Constants.LineEnding);
+        var path = FractalPaths[i];
+        // Generate an entry for a fractal.
+        // Format:
+        // <ul>
+        //     <li><a href="./'page'">'Long path name'</a</li>
+        //     <li><a href="./'page'">'Long path name'</a></li>
+        // </ul>
+        if (path == null)
+        {
+          Helper.ShowWarningMessage("Fractal F" + (i + 1) + " had no path data!");
+          continue;
+        }
+        fractalData.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./F").Append(path.Scale).Append("\">").Append(path.Scale).Append(". ").Append(path.NameLong).Append("</a></li>").Append(Constants.LineEnding);
+        if ((i+1)%20 == 0)
+          fractalData.Append(Gw2Helper.AddTab(3)).Append("</ul></li>").Append(Constants.LineEnding);
+      }
+      return fractalData.ToString();
+    }
 
     /***********************************************************************************************
     * GeneratePathHtml / 2015-08-14 / Wethospu                                                    *
@@ -139,9 +185,9 @@ namespace DataCreator.Shared
     public string GenerateDungeonHtml()
     {
       var builder = new StringBuilder();
-      foreach (var dungeon in Paths.Keys)
+      foreach (var dungeon in DungeonPaths.Keys)
       {
-        var paths = Paths[dungeon];
+        var paths = DungeonPaths[dungeon];
         if (paths.Count == 0)
           continue;
         // Add only dungeons. / 2015-08-19 / Wethospu

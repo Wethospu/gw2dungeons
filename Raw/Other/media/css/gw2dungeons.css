@@ -128,21 +128,21 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
     width:1em;
 }
 
-.dungeon-list {
+.dungeon-list, .fractal-list {
     padding-left:0;
     list-style:none;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
 }
-.dungeon-list:after {
+.dungeon-list:after, .fractal-list:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
 }
-.dungeon-list > li {
+.dungeon-list > li, .fractal-list > li {
     display:inline-block;
     height: auto;
     margin-bottom: 1.65em;
@@ -153,6 +153,11 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.fractal-list {
+	font-size: 1em;
+}
+
 .dungeon-image {
     height:125px;
     opacity:0.75;
@@ -235,10 +240,6 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
 	.enemy-attack-effect ul {
         list-style-type: none;
     } 
-}
-
-p.note {
-    font-size: smaller;
 }
 
 .encounter {

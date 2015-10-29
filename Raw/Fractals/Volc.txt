@@ -1,0 +1,191 @@
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|6
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|19
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|28
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|46
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|52
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|63
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|72
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|87
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|92
+
+#######################################################################################
+
+path=Volc
+name=Volcanic
+tactic=normal
+Enemies: Grawl, a demon and some elementals.
+Time: Night.
+Use wiki=Powerful_Potion_of_Grawl_Slaying|Potion_of_Dredge_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+youtube=q041QdWMrMk|Video_guide [KING].
+Current record: record=51.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Grawl_Slaying|Sigil_of_Grawl_Slaying instead of Force.
+Against enemy=Imbued_Shaman, use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying or wiki=Powerful_Potion_of_Demon_Slaying|Potion_of_Demon_Slaying amd wiki=Superior_Sigil_of_Demon_Slaying|Sigil_of_Demon_Slaying or wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Force.
+
+name=Start
+tactic=normal
+The starting area is filled with enemy=Grawl_Berserkers:normal, enemy=Grawl_Raiders:normal and enemy=Grawl_Shamans:normal. To proceed you need to kill enough enemies to fill the progress bar. When enough initial enemies are killed more enemies spawn.
+Don't engage the whole group. Instead jump up to the rock formation on your right side. The rock will give you cover and allow pulling grawl in small numbers. One player should use long range attacks to pull grawl while other players wait.
+Pulling is dangerous because enemy=Shamans:normal can pull and immobilize you, enemy=Raiders:normal plant immobilizing traps, and random rockfalls knock you down. The puller should have a way to remove a immobilization and break a stun to prevent getting killed. Both rockfalls and pulls can be dodged but you need good reflexes.
+Once the progress bar is filled remaining grawl will start running away. You can try killing them for more loot but watch out for the boulders.
+#######################################
+tactic=guardian
+Use wiki=Line_of_Warding or wiki=Ring_of_Warding when hiding behind corner.
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against ranged attacks.
+Use wiki="Stand_Your_Ground!" or wiki=Hallowed_Ground to negate pulls or rockfalls.
+tactic=coordinated
+Less coordinated groups can stack behind the cage on the left, and pull waves of grawl inward. To make this work, your party must have access to stability, blind, and projectile defense, in addition to decent DPS.
+More coordinated groups can stack on the rock pillar that is essentially between the cage and ledge spots (but much closer to the ledge spot than the cage spot). You need everything the cage spot requires, but you also need to be able to pay attention to where the grawl are and move slightly around the pillar to ensure they all LoS properly, or you need to pull uncooperative grawl in with Binding Blades or Into The Void.
+
+name=Boulders
+tactic=normal
+Burning boulders roll down the path while leaving fiery trails behind them. Touching a boulder will instantly down you and unless your team can revive you fast the next boulder will defeat you. Try to avoid the fiery trail to stay out of combat so you move faster. Use mobility skills and swiftness to move faster and use dodges if you get in a bad spot.
+Boulders will break at a certain point. If in a less coordinated group, wait for rest of the team bit after that point so you don't trigger the next event. Use condition removal to clear any long duration burning from your team.
+
+name=Breaking the Bubble
+image=media=volc_throne.jpg
+tactic=normal
+You need to throw eight "Infused Stones" at the bubble around the enemy=Shaman:champion to break it. Stones will appear on rockfalls. Either wait until the rockfall ends or dodge in to grab the stone. enemy=Grawl_Shamans:veteran constantly spawn on the other side of the area. They attempt to reach any of the 4 villagers near the ledge in order to push them over the side. If they succeed in pushing over all of the villagers, your team will wipe and you have to try again. If you manage to save every villager you will get a bonus chest.
+The shamans won't attack you so bring lots of damage and control skills. The whole team should focus on killing and slowing shamans down with conditions and control. When stones appear anyone can throw them at the bubble. When throwing stones stay at middle of the area to prevent hitting the sides of the throne.
+When the bubble breaks all remaining shamans will attack you. Run to the back of the area and kill remaining shamans. Wait until you get out of combat to heal up and change skills, or engage the champion immediately depending on group preference.
+tactic=coordinated
+Kill shamans together. Focus on breaking the bubble because shamans won't be a threat with good damage. When the bubble breaks focus down remaining shamans and engage the boss immediately.
+tactic=exploit
+If you have severe problems (like when soloing) you can unequip armor and use melee attacks to push enemy=Shaman:champion to the middle of the area. You will wipe several times while doing this but throwing stones is much easier when the boss is closer.
+It's possible to regain a Stone right after throwing it by gaining different skill bar instantly without any animation. For example switching a weapon from inventory should work allowing you to destroy the bubble really fast. However you have to stay out of combat.
+Trick also works with kits, even when in combat. Using Death Shroud may also work, even when in combat.
+#######################################
+tactic=ranger
+Keep your pet on leash so it doesn't attack Shaman and push it behind the throne.
+tactic=elementalist
+Use wiki=Signet_of_Earth and wiki=Signet_of_Water to slow shamans down.
+wiki=Conjure_Lightning_Hammer|Lightning_Hammer_(utility) offers a launch and a stun field.
+tactic=engineer
+Use wiki=Magnet to pull shamans) back.
+tactic=guardian
+Use wiki=Banish_ to knock shamans to the wall. Keep them in place with wiki=Zealot's_Embrace or wiki=Ring_of_Warding.
+Use active wiki=Signet_of_Wrath or wiki=Bane_Signet if your group lacks control.
+tactic=thief
+Use wiki=Scorpion_Wire to pull shamans back.
+tactic=necromancer
+Use wiki=Spectral_Grasp to pull shamans back.
+tactic=warrior
+wiki=Throw_Bolas for immobilize.
+
+name=enemy=Grawl_Shaman:champion
+tactic=ranged|melee
+His melee attack, Bash, is his most dangerous attack. On top of dealing lots of damage it will also give him a short projectile reflection.
+tactic=ranged
+| Keep some distance and watch out for the reflection if you have inexperienced melee players in the team.
+tactic=melee
+| Stay at max melee range and never dodge through him to prevent him from using it.
+tactic=melee|ranged
+His basic projectile attack, Fireball, deals decent damage especially if your team is stacked. Take area anti projectile skills to protect your team against it.
+tactic=melee
+| Without them try to spread a bit to avoid taking unnecessary hits. Use blocks to prevent area effects from appearing.
+tactic=ranged
+| Without them keep some distance so you can easily dodge incoming Fireballs.
+tactic=melee|ranged
+Occasionally he throws a totem which gives him fury and protection. If you see him with those buffs call it as a target so your team can focus it down fast. Ignoring the totem will keep protection up permanently which slows down the kill.
+On scale 10 and above he also uses Churning Earth which is a PBAoE with extreme damage.
+tactic=ranged
+| It has a short radius so you don't have to worry about it as long as you keep your distance.
+tactic=melee
+| It has a long cast time so you can easily walk out of it. However learn to dodge it based on the animation so you can keep attacking few more seconds. Keep in mind that while Shaman is casting he cripples around him which removes single-block effects like Aegis. However, with excellent timing and low latency, Aegis can be applied to the high damage component of Churning Earth.
+tactic=ranged|melee
+At 75% health (every 25%?) he gets his bubble back and delayed AoEs with high damage appear all around the area. You should spend this time reviving and healing up. If everything is ok, throw a Stone at him to break it.
+tactic=coordinated
+Stack at max melee range and chain anti projectile skills so you don't have to care about his Bash or Fireballs. Keep attacking during Chunning Earth and dodge when the white dust ring reaches the Shaman. Focus down the totem as soon as it appears.
+tactic=necromancer
+Use Axe/Focus to keep protection down if your team won't focus the totem.
+tactic=guardian
+Use wiki=Wall_of_Reflection against ranged attacks.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" to negate rockfalls.
+tactic=thief
+Use wiki=Smoke_Screen to protect your team.
+tactic=mesmer
+Use wiki=Feedback and traited wiki=Temporal_Curtain and wiki=Phantasmal_Warden to protect your team and do some damage.
+
+name=To Imbued Shaman
+tactic=normal
+Run through enemy=Vampire_Bats:veteran. Don't fall down. Wait for your team on the bridge right before enemy=Imbued_Shaman.
+tactic=skip
+Use media=volc_skip.jpg|a_shortcut. Go to bit right from where Shaman jumped down. Use swiftness and jump down to the ledge below. Then jump towards the corner on next ledge. If you are too far away from the corner you will slip, fall down and die. If you get there safely then just run to the island while jumping to prevent most damage. You can use leaps or teleports for slight boost.
+This takes some practice and you will most likely die few times before you learn it. Once mastered, you can get down extremely fast and reliably.
+tactic=optional
+To complete the "The Floor Is Lava. Don't Step In It" achievement be extra careful. If you fall down even once it's over.
+
+name=enemy=Imbued_Shaman:legendary
+tactic=ranged|melee
+It has a long cast time so you can easily walk out of it. However learn to dodge it based on the animation so you can keep attacking few more seconds. Keep in mind that while Shaman is casting he cripples around him which removes single-block effects like Aegis. However, with excellent timing and low latency, Aegis can be applied to the high damage component of Churning Earth.
+tactic=melee
+Melee is very dangerous because most players in uncoordinated groups will stay at range and leave you without support. One mistake may get you defeated because people are afraid to come revive you. You have to stay alert at all times because Imbued Shaman has melee only skills which will be only used against you. With that said, a skilled player can melee the Imbued Shaman even if the rest of the team is ranging.
+tactic=ranged|melee
+His basic projectile attack, Flaming Arrow, deals lots of damage, as well as inflicts agony and burning. If you get hit consider backing away so you don't die near him. The animation is quite hard to see so stay at range and dodge when something flies towards you. Arrows can also be avoided with strafing but it's unreliable without lots of practice.
+tactic=ranged
+| The animation is quite hard to see so stay at range and dodge when something flies towards you. Arrow can also be avoided with strafing but it's unreliable without lots of practice.
+tactic=melee
+| Stay behind him at all times. If he turns towards you he will very likely shoot you so be ready to dodge or block. The animation is very small so it's hard to rely on it.
+It's important to learn animations for his two melee only attacks, Wing Buffet and Dive. Dive is extremely dangerous as it's fast and creates multiple area effects with bugged hitboxes. If you are too slow even dodging may not save you. Consider using special skills against this attack. Wing Buffet is slower and creates a red circle in advance so you can just walk out of it or dodge.
+Making the Imbued Shaman use Wing Buffet helps your team because the long casting time means 1-2 less arrows. However Dive makes him evade so it doesn't help at all. Wing Buffet is generally used before Dive so a hybrid melee/range tactic can be very effective, as it will be faster and somewhat easier than full ranged and easier than full melee, although it will not be as fast as full melee. If using a hybrid melee/range tactic, once Wing Buffet is used back off for ~15 seconds.
+tactic=ranged
+The Imbued Shaman has melee only attacks so don't be surprised if he does different moves when someone melees him. You generally don't have to worry about these attacks but stay alert if you have to go near him.
+tactic=ranged|melee
+Imbued Shaman casts peridiocally a ticking AoE, Firestorm, which deals lots of damage if you stay on it. Stay mobile at all times so you only get hit once or twice before moving out of it. Dodge if you have low health or full endurance. It's often used at the same target so stay away from others if you are the target. It has no cast time so it can be freely used while using other attacks. Try to learn its recharge so you can dodge right before it gets used.
+The real difficulty starts when Imbued Shaman reaches 75%, 50%, and 25% health. This gives him a bubble which blocks attacks until 40 skills have been used on him. He stops attacking and starts slowly moving towards a random villager who cries in fear. If he reaches his target he will heal ~20% of his maximum health which means he can't be killed unless you can break the bubble on time. Additionally 10-30 enemy=Lava_Elementals:normal spawn which can easily wipe the entire team.
+The goal is to kill as many elementals as possible while breaking the bubble on time. Chain area reflections and absorptions to defend your team against the elementals and to make them kill themselves. Use cleave and area attacks on the Imbued Shaman to reduce stacks and to kill elementals. You can use unblockable attacks to slow him down which buys you more time. If he is far away from his target don't break the bubble until most elementals have been killed. Once the bubble breaks he enrages for several seconds and deals more damage. If most elementals are alive this will get you killed.
+Keep in mind that multi-hitting skills only remove one bubble stack so if you need to break the bubble fast use quick single skills. Also don't enter the bubble phase until your team is in a good shape. Keep the Shaman's health bit above the limit until the whole team is alive with most of their health and skills recharged. Remember to save your reflections for the bubble phase and don't waste them against arrows unless absolutely needed.
+Try to keep the Shaman in the middle of the area so you have time to break the bubble regardless of his choice. However if you have trouble breaking the bubble on time pull him to one corner and hope you get lucky.
+tactic=coordinated
+Coordinated groups will full melee the shaman. When a bubble phase approaches, they will have a standard order for reflects, they will have a player or players assigned to ensure the shaman is chilled, crippled, or immobilized, and they will attempt to group the elementals together to cleave them down more rapidly. Coordinated groups often frequently blind the elementals, to further reduce their potential threat level. Coordinated groups will not trigger a new bubble phase unless all group members have the important skills up, which need to be up to ensure the next bubble phase goes smoothly and without any issues.
+tactic=coordinated|exploit
+The bubble phase has a cooldown. If you keep the Imbued Shaman chilled and do a huge amount of damage you can skip bubble phases.
+tactic=optional
+To complete the "The Floor Is Lava. Don't Step In It" achievement be extra careful. Lava pools in middle of the area also count and they may harm you even when not lit. Play safe and stay out of them at all times. Use ranged attacks instead of melee.
+If you have trouble getting this and have a friendly party you can ask them if you can stay out of the fight. However most teams will struggle with this fight so doing this may result you getting kicked.
+tactic=exploit
+It can be possible to get out of combat during the encounter, providing the shaman is far enough away from you. This can be used to allow dead players to resurrect.
+When stripping bubble stacks, the skill does not need to connect with the shaman. Instead, the skill can connect with any target (i.e. the shaman OR the elementals), so long as the shaman remains selected.
+tactic=bug
+The floor may repeatedly set you on fire even though you are moving and not standing in the lava. This occurs randomly, and there is no fix other than to hope it eventually stops. This "mechanic" often adds considerable random difficulty to the encounter.
+The lava pits may be active even when their animation suggests they are inactive. There is no reliable way to tell when they are active.
+The lava pits may remain permanently active. When this occurs, the lava pit animation may continue to cycle on/off, or it may be permanently off despite the lava pit being active.
+The Dive attack from the Shaman is very unreliable with respect to use of evades, multiple blocks, and invulnerability skills. If you do not react early enough in the animation, you can sometimes still be hit through all of these effects, even though no damage occurs until you are, for example, in the middle of a dodge frame. For evades, this behaves very similar to a "fumble" dodge. You will sometimes get a message suggesting that you did evade/block the attack on your screen, or you were invulnerable to the attack, even though you were hit with the damage.
+The AoEs created by the Dive attack are unreliable, and are often not in the place their indicator suggests they are. Be careful, and if you receive damage from them, move.
+tactic=warrior
+Use wiki=Signet_of_Might with wiki=Throw_Bolas or wiki=Pin_Down to slow down Shaman. You can usually use it twice.
+tactic=mesmer
+wiki=Feedback is excellent against Elementals.
+tactic=mesmer
+Use wiki=Null_Field to remove immobilized from the team.
+tactic=mesmer
+wiki=Temporal_Curtain can be used to cripple Shaman during the bubble phase.
+tactic=elementalist
+wiki=Swirling_Winds is very effective against Elementals. But only use it after reflections.
+tactic=elementalist
+wiki=Ice_Storm|(Frost Bow), Fiery Greatsword and wiki=Lightning_Hammer are all very effect at killing Elementals.
+tactic=elementalist
+wiki=Frozen_Ground can Chill Shaman for some time during the bubble phase.
+tactic=guardian
+When Elementals appear use wiki=Shield_of_the_Avenger. Use wiki=Wall_of_Reflection when it ends or if Shield would break immediately (AoE).
+tactic=guardian
+Use wiki=Binding_Blade to pull Elementals together.
+tactic=thief
+wiki=Dagger_Storm is excellent against Elementals.
+tactic=thief
+wiki=Double_Strike is really good for breaking bubble because it stays on first skill of the chain and hits really fast.
+tactic=thief
+Take Shortbow if you believe you have to kite around the area when people resurrect someone.
+tactic=thief
+Use wiki=Smoke_Screen to protect your team (save for Elementals unless you have people with bigger anti projectile skills).
+tactic=thief
+wiki=Needle_Trap and wiki=Tripwire deal movement impairment condition and are unblockable. Use them to slow down Shaman during bubble phase.
+tactic=necromancer
+With unblockable Marks you can Chill or even Fear (if he doesn't have defiance stacks) Shaman during bubble phase. Also you can spread Conditions from elementals to Shaman or from Shaman to elementals with wiki=Epidemic.
+tactic=ranger
+Use wiki=Entangle right before he enters bubble. Vines can't be blocked and will keep him still a long time.
+tactic=ranger
+wiki=Frost_Trap and wiki=Spike_Trap deal movement impairment condition and are unblockable. Use them to slow down Shaman during bubble phase.
+tactic=engineer
+wiki=Toss_Elixir_U can be used for projectile protection.

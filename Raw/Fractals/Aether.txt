@@ -1,0 +1,172 @@
+init=Aether|Fractals of the Mists|Aetherblade|Aether|14
+init=Aether|Fractals of the Mists|Aetherblade|Aether|24
+init=Aether|Fractals of the Mists|Aetherblade|Aether|49
+init=Aether|Fractals of the Mists|Aetherblade|Aether|54
+init=Aether|Fractals of the Mists|Aetherblade|Aether|65
+init=Aether|Fractals of the Mists|Aetherblade|Aether|71
+init=Aether|Fractals of the Mists|Aetherblade|Aether|88
+init=Aether|Fractals of the Mists|Aetherblade|Aether|96
+
+###########################################################
+
+path=Aether
+name=Aetherblade
+tactic=normal
+Enemies: Aetherblade and Inquest.
+Time: Day.
+Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+youtube=ZaO3Uzz62GM|Video_guide [KING].
+Current record: record=35.
+tactic=coordinated
+To be optimal, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty against the final enemy=Aetherblade_Golems.
+
+name=Water tunnel
+tactic=normal
+The tunnel is filled with mines. They explode on touch defeating you instantly. Try to avoid most of them but you can double dodge towards one to destroy it.The tunnel is filled with mines which explode on touch and instantly defeat you. You should attempt to avoid most of the mines, however you can dodge (or more safely, double dodge) through them. If you are stealthed, the mines will not explode as you pass them.
+After the tunnel wait for your team before proceeding. There are 2 enemy=Thugs:elite and 2 enemy=Swashbucklers:veteran which will aggro from far away. You may stack behind a nearby boulder on left to group them up. In a coordinated group, you can run at the mobs and group them together using Binding Blades or Into The Void. The Thug's Battle Standard deals lots of damage.
+tactic=warrior
+wiki=Defiant_Stance or wiki=Endure_Pain won't help against the mines.
+tactic=elementalist
+Use wiki=Glyph_of_Storms to keep Thugs blinded.
+tactic=warrior
+Use wiki=Tremor to help CC the mobs.
+tactic=guardian
+Use wiki=Ring_of_Warding or wiki=Line_of_Warding if stacking to CC the mobs.
+tactic=guardian
+Use wiki=Binding_Blade to group the mobs together if not stacking, or as an additional CC on the mobs if stacking.
+tactic=guardian
+Use wiki=Wall_of_Reflection to defend against projectiles.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" or wiki=Hallowed_Ground to grant Stability so your group can avoid being CCed.
+tactic=guardian
+You can try to provide Aegis or Blinds when you see Thugs about to drop Battle Standard or about to use Smash (2).
+tactic=thief
+Provide stealth for your team so they can safely pass the mines without worrying.
+tactic=thief
+Use wiki=Black_Powder and/or wiki=Smokescreen to keep mobs blinded.
+tactic=engineer
+Use wiki=Smoke_Bomb_(engineer_skill) to help blast stealth for the mines, and/or to blind foes.
+tactic=mesmer
+Use wiki=Into_the_Void to group mobs together.
+tactic=elementalist
+You can use wiki=Magnetic_Shield_(elementalist_skill) on  wiki=Magnetic_Shield_(environmental_weapon) to pull the mobs together if not stacking.
+tactic=coordinated
+Use stealth to pass the mines. Run straight at the mobs and fight them on the spot.
+
+name=Laser Squares
+#One console at scale 10!
+tactic=normal
+Before the traps there are 2 enemy=Strikers:elite and 2 enemy=Technicians:veteran. You may stack behind rocks to group them up.
+After the enemies you see a bridge filled with glowing enemy=squares:trap. You will get killed if you walk on them while they are charged. Traps turn off periodically and different ones light up. This follows media=aether_trapfloor.png|a_pattern so memorize where the safe spots are. Quickly move to the next spot when the traps turn off.
+Use swiftness, teleports and mobility skills to move faster. With some practice you can skip some safe spots. At the beginning you can climb up on nearby boxes and use a leap or a normal jump to move over some of the traps. You can also use damage immunity or invulnerability skills to walk over charged traps.
+At the end of the bridge there is an enemy=Extinguisher:elite. He chills which may get you killed on last few traps. In his room there are 1-4 consoles which can be used to disable the traps, depending on fractal level. Using a console immobilizes you for 5.5 s but with teleports and condition removal you can activate multiple consoles. Then simply proceed and kill another enemy=Extinguisher:elite.
+tactic=warrior
+Use wiki=Defiant_Stance and wiki=Endure_Pain, wiki=Rush and wiki=Bull's_Charge to just run through.
+tactic=warrior
+Use wiki=Berserker_Stance to activate consoles without getting immobilized.
+tactic=elementalist
+Use wiki=Lightning_Flash to blink over the floor or to activate multiple consoles. You can easily activate all consoles with wiki=Obsidian_Flesh.
+tactic=elementalist
+Use wiki=Glyph_of_Storms to keep Thugs blinded.
+tactic=warrior
+Use wiki=Tremor to help CC the mobs.
+tactic=guardian
+Use wiki=Ring_of_Warding or wiki=Line_of_Warding if stacking to CC the mobs.
+tactic=guardian
+Use wiki=Binding_Blade to group the mobs together if not stacking, or as an additional CC on the mobs if stacking.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" or wiki=Hallowed_Ground to grant Stability so your group can avoid being CCed.
+tactic=thief
+Use wiki=Black_Powder and/or wiki=Smokescreen to keep mobs blinded.
+tactic=engineer
+Use wiki=Smoke_Bomb_(engineer_skill) to help blind foes.
+tactic=mesmer
+Use wiki=Into_the_Void to group mobs together.
+Use wiki=Mantra_of_Concentration to grant stability to allies.
+tactic=elementalist
+You can use wiki=Magnetic_Shield_(elementalist_skill) on  wiki=Magnetic_Shield_(environmental_weapon) to pull the mobs together if not stacking.
+tactic=coordinated
+Group the mobs up using wiki=Binding_Blade or wiki=Into_the_Void.
+While still fighting the mobs, send ahead one party member who can use movement skills and invulnerability skills to pass the traps and then turn them off using condition immunity, teleports, and/or condition clears.
+tactic=optional
+Dance in front of a hologram to do the first part of an achievement.
+
+name=Spinning Lasers
+#One console at scale 10!
+tactic=normal
+Area is filled with enemy=Spinning_Lasers:trap. Use swiftness and try to get through without getting hit. If you get in bad spot then try to dodge through (you may still get hit). Stability will prevent the stun when the walls hit you, and invulnerability skills will prevent any effect.
+At the end of the room there are 1-4 consoles (activating immobilizes for 5.5 s), depending on the fractal level. You either need enough players or condition removal / teleports to use multiple consoles (equip before going in because hard to get out of combat).
+tactic=warrior
+Use wiki=Defiant_Stance, wiki=Balanced_Stance and mobility to run through the room.
+tactic=warrior
+Use wiki=Berserker_Stance to activate consoles without getting immobilized.
+tactic=exploit|coordinated
+Instead of fighting enemies one player can blink through the floor to skip the traps and turn them off. See the profession section for recommended skills.
+tactic=bug
+Do not turn off all the panels before the spinning lasers activate, as this can cause the fractal to bug and the spinning lasers to remain active.
+In some cases, this bug can be worked around by getting all players to the exit to the room (leading to the gate event), and using resurrection skills to revive Ellen thus allowing her to eventually reach the other side. In other cases, the breach the gate event will not activate no matter what you do, or you are able to "finish" the path but will not receive a fractal transit prompt upon completion.
+tactic=thief
+Use wiki=Infiltrator's_Arrow to teleport through the floor and to activate consoles with help of wiki=Signet_of_Agility.
+tactic=elementalist
+Use wiki=Lightning_Flash to blink over the floor or to activate multiple consoles. You can easily activate all consoles with wiki=Obsidian_Flesh.
+tactic=optional
+Once the traps are disabled, dance in front of a hologram to finish the achievement.
+
+name=Breach the gate
+tactic=normal
+You have to keep killing enemies until gates open while avoiding powerful shots from enemy=Cannons:trap. Stay at left side or behind wooden structure to group enemies up and prevent getting hit by Cannons.
+There are multiple enemy waves which consist of 0-2 enemy=text:enemies|Grenadier:normal|Taskmaster:normal|Swashbuckler:normal and 2 enemy=text:enemies|Thug:veteran|Taskmaster:veteran|Swashbuckler:veteran|Grenadier:veteran. Final wave also has a enemy=Thug:elite.
+Once the gates are breached last enemy group comes with 2 enemy=Thumpers:veteran and 3 enemy=text:enemies|Grenadier:normal|Taskmaster:normal|Swashbuckler:normal.
+tactic=elementalist
+You can use wiki=Magnetic_Shield_(elementalist_skill) on  wiki=Magnetic_Shield_(environmental_weapon) to pull mobs that don't quickly LoS.
+tactic=guardian
+Use wiki=Binding_Blade to pull mobs that don't quickly LoS.
+tactic=ranger
+Use wiki=Path_of_Scars to pull mobs that don't quickly LoS.
+tactic=engineer
+Use wiki=Magnet to pull mobs that don't quickly LoS.
+tactic=mesmer
+Use wiki=Into_the_Void to pull mobs that don't quickly LoS.
+tactic=coordinated
+Every other group spawns 2 enemy=text:enemies|Thug:veteran|Taskmaster:veteran|Swashbuckler:veteran|Grenadier:veteran at an angle that makes them hard to group. Pull them into the corner to kill them.
+tactic=exploit
+Stop killing any enemies when the gate opens. If you leave enemies alive the dungeon gets stuck in a good way which prevents final room from resetting. Just run through the enemies and get inside the final room.
+
+name=Final room
+tactic=normal
+Initially there are enemy=Frizz:champion, a enemy=Thumper:veteran and an enemy=Inquest_Assassin:veteran in the room. Killing the Assassin causes an enemy=Inquest_Assistant:veteran to spawn. Similarly killing the Thumper causes an Inquest_Grenadier to spawn. When Frizz reaches 75% he will turn invulnerable and teleport to the middle. After about 5 seconds the first enemy=Aetherblade_Golem:elite will wake up and two enemy=small_lasers:trap will start spinning. If struggling, try to avoid hitting Frizz until the other enemies have been cleared as this makes the start bit easier allowing you to burst first Golem down.
+If the lasers hit you, you take lots of damage, become stunned, and are inflicted with agony. If the lasers are about to reach you jump on a box and then jump over the lasers (Warning: Golems may pull you!). If the laser hits a Golem they block all attacks for 4 seconds. Once the first Golem dies 2 enemy=big_lasers:trap activate and two more Golems wake up. You can't jump over the big lasers but they are slow enough so you can outrun them. If the big lasers hit a Golem it will get a strong lightning attack with blind and confusion.
+Once those 2 Golems are dead, 2 final Golems activate and both lasers small and large lasers will power up. This may be a very difficult section because the Golems are hard to kill when laser are hitting them almost constantly. and it is very easy to die during this section. Focus on surviving, moving, and dodging Golem's pull attack. Eventually you will get a window of opportunity to deal some damage.
+Keep angular velocity in your mind. Lasers move slower near middle and faster near edges. You will take less damage near edges because lasers stay less time on you.
+Note that most teams with a Guardian will stack as described in the "Coordinated" section for the part with the Golems.
+tactic=coordinated
+Stack behind media=aether_laser_stack.jpg|dark_grey_things on the walls to pull enemies close when Frizz disappears. With enough agony resistance, offensive capabilities and area stability you can stay at the stack spot all the time. The golems will run to you and you can just take them down. Most PUG groups with a Guardian will employ this strategy.
+Highly coordinated groups may fight on top of Frizz instead of stacking behind a box. Additionally, highly coordinated groups typically stack on top of the set of boxes located to the left (as would be seen when one enters the room). In order to make the top of the box stack spot more efficient, golems are often pulled in using skills.
+tactic=exploit
+Don't kill all enemies during the previous gate encounter. If any enemies are alive the final room won't reset and you don't have to kill any of the enemies again.
+tactic=warrior
+Use wiki=Signet_of_Might to make some of your attacks unblockable.
+tactic=guardian
+Use wiki=Binding_Blade to group the mobs together or to pull mobs in.
+tactic=guardian
+Use wiki="Stand_Your_Ground!", wiki=Hallowed_Ground, and wiki=Indomitable_Courage to grant Stability so your group can avoid being CCed.
+tactic=guardian
+Use wiki=Wall_of_Reflection to defend against projectiles.
+tactic=mesmer
+Use wiki=Into_the_Void to group mobs together or to pull mobs in.
+Use wiki=Mantra_of_Concentration to grant stability to allies.
+tactic=engineer
+Use wiki=Magnet to pull mobs that don't quickly LoS.
+tactic=engineer
+Because wiki=Acid_Bomb is unblockable, it can be extremely useful here.
+tactic=engineer
+Use wiki=Toss_Elixir_U to grant projectile defense. If you get lucky and get a Smokescreen, you will also blind the mobs because the blind is unblockable.
+tactic=thief
+Use wiki=Smoke_Screen to blind mobs and provide projectile defense.
+Use wiki=Needle_Trap to reduce pressure if your team is struggling.
+tactic=elementalist
+You can use wiki=Magnetic_Shield_(elementalist_skill) on  wiki=Magnetic_Shield_(environmental_weapon) to pull mobs in.
+tactic=elementalist
+You can ues wiki=Shocking_Aura to reduce the pressure on your team, as it will stun golems when they strike you.
+tactic=elementalist
+Make use of any unblockable skills on your weapon set as-needed.

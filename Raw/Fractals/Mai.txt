@@ -1,0 +1,65 @@
+init=Mai|Fractals of the Mists|Aetherblade Retreat Boss|Mai Trin|25
+init=Mai|Fractals of the Mists|Aetherblade Retreat Boss|Mai Trin|50
+init=Mai|Fractals of the Mists|Aetherblade Retreat Boss|Mai Trin|100
+
+#########################################################################
+
+path=Mai
+name=Captain Mai Trin
+tactic=normal
+Enemies: Aetherblade and few Inquest.
+Time: Day.
+Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+youtube=iQozEONbKxY|Video_guide [KING].
+Current record: record=40.
+tactic=coordinated
+Against enemy=Inquest_Technician:champion, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty.
+
+name=Start
+tactic=normal
+A group of enemy=Inquest_Technician:champion, enemy=Swashbuckler:elite, enemy=Striker:normal, enemy=Grenadier:normal, enemy=Thug:normal, enemy=Technician:normal and 2 enemy=Golemites:normal.
+Stack on corner and kill enemies. Champion has a stunning shield so party wide stability helps with killing.
+tactic=coordinated
+You can run at the enemies and fight directly on top of them. Party wide stability is useful.
+tactic=exploit
+Let Ellen die and resurrect her. This will allow you to character select, log back into the same character, and be resurrected be Ellen after loading back in. You can then run along the path towards where you enter Mai Trin's arena, staying to the right instead of entering, and continuing until you reach a wooden gate. Once at the gate, turn around and run down the hill. You will be teleported into Main Trin's arena.
+
+name=enemy=Mai_Trin:legendary
+tactic=normal
+Once you enter the area you will be inflicted with unavoidable agony. Venturing too close to the arena walls may cause you to be inflicted with agony again. Mai is protected by a shield which reduces the damage she takes as well as reducing her susceptibility to conditions (at high stacks, she is immune to conditions, at lower stacks, conditions have a reduced duration). To remove the shield she has to stand on electric fields shot by Horrik. Horrik shouldn't be targeted at all, as if you kill him her shield stacks will reset and Horrik will simply respawn. Horrik also shoots fire fields which should be avoided if possible.
+Mai stacks lots of bleeding in melee so take plenty of condition removal (party wide if stacking). When you do not have aggro, try to be behind Mai so that you are not susceptible to her melee cleave.
+Occasionally she will equip her pistol and aim at the furthest player (you can usually predict who will get targeted). She will shoot a homing bullet which causes her to teleport the target and deal massive damage. The only way to avoid is by blocking or reflecting the shot. If you don't have anything ready don't be the furthest player. If you are about to get hit without protection dodge away or use a mobility skill to prevent some of the damage.
+She will also shoot close range energy bolts at each player. These can't be blocked so dodge when you see her kneel. One bolt won't deal much damage but if you are close to her you may get hit multiple times.
+The key to beat Mai is to control her position. Everyone should stay relatively close each other so electric fields appear close. Then just keep Mai in there until her shield goes down. At 6 stacks you can start attacking her, although you will do the most damage when she has 3 or less stacks.
+Every 25%, Mai and Horrik disappear and cannons start shooting at every player and pet. Split up so your circles won't overlap and stay calm; only move if needed. If you are stuck just dodge through an AoE. Stealth can be used to prevent getting shot at, although one player stealthing means other players will be targeted more by the cannons.
+If someone gets defeated they can be resurrected during the fight because one person can easily kite Mai. Revivers should keep an eye on Mai to react when she equips her pistol.
+tactic=coordinated
+The lightning field from Horrik occurs every three shots. Be mindful of positioning to ensure Mai makes it into every shot. Get her to a low amount of stacks as quickly as possible (generally 2-3), CC her, and then burst her down.
+If there is a thief in the party, one player can solo kite Mai to get her stacks down, while the other players perma-stealth on the other side of the arena. When stacks are low, those players can stack might and quickly burst Mai down. One player can solo-kite during the cannon phase, using ~75% of the arena to run in, while the rest of the team stealths near the wall on the far side of the arena.
+tactic=exploit
+If you have trouble killing her one person may just stay outside. If people revive fast after wiping she won't heal up at all allowing you to eventually kill her. The exploit method described in the "Start" section is most commonly used, however. It is also possible to get back in by switching to a character that has not entered this Mai Trin fractal instance before, and then running to the wooden door and back down the hill.
+You can stealth the entire party during the cannon phase, but only for the duration of 1 traited Shadow Refuge (or less). Otherwise, Mai Trin will begin to reset.
+As long as you haven't hit or got hit by enemy=Horrik, you can get out of combat during the cannon phase in the far right corner from the entrance.
+tactic=bug
+Mai may not teleport back after a cannon phase. This can be fixed by killing Horrik. However Mai can't walk any more after this.
+During the cannon phase, there are numerous bugs. The time from a red circle being drawn to the time you will receive damage is inconsistent. The red circles do not accurately indicate where you will receive damage. You can be "headshot" by the cannon projectiles (both during cannon phase, and by Horrik), meaning you will get hit because they collide with you, even if you are not in a red circle. The camera during the cannon phase can, especially in certain spots, be prone to going into the ceiling; be ready to quickly zoom in so you can see what is happening if this occurs.
+Sometimes Mai Trin stops doing any animations for certain players. Her arms remain fixed. This is fixable for those players by logging out and back in (using the exploit to re-enter the arena), or sometimes fixable by CCing Mai Trin.
+Sometimes, Mai Trin's teleporting shot sends her to the far side of the arena, instead of to the player she targeted.
+Do not use any consumable items such as Hylek Potions while entering Mai Trin's arena, or before she turns hostile. This can cause Mai to never turn hostile.
+tactic=warrior
+Use offhand sword to give yourself the ability to block.
+tactic=guardian
+Give Aegis to your team when she uses her teleporting shot, if you think the target can't block it, or it is unclear who the target is.
+Use wiki=Purging_Flames and wiki=Absolute_Resolution to clear conditions on allies.
+tactic=mesmer
+Use wiki=Mantra_of_Resolve to clear conditions on allies.
+You can easily stand at range and block all of Mai Trin's teleporting shots by using Scepter.
+tactic=elementalist
+Use wiki=Swirling_Winds to block Mai Trin's teleporting shot.
+Use wiki=Deep_Freeze when Mai has low shield stacks to very safely DPS her.
+tactic=thief
+Use wiki=Signet_of_Agility to give your party extra dodges.
+Use wiki=Smoke_Screen to block the teleporting shot and to blast for stealth if needed.
+Use wiki=Shadow_Refuge to stealth downed allies if needed.
+tactic=engineer
+Use wiki=Tool_Kit to give yourself a block, and also give yourself the ability to pull Mai into lightning fields if your group is uncoordinated.

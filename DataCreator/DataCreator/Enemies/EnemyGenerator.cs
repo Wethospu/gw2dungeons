@@ -341,7 +341,7 @@ namespace DataCreator.Enemies
         // Set validity to over max so custom tactics never get overridden. / 2015-08-09 / Wethospu
         _currentEnemy.TacticValidity = 2.0;
         if (data.Length > 0)
-          _currentEnemy.Tactics.AddTactics(data);
+          _currentEnemy.Tactics.AddTactics(data, "", null);
         else
           Helper.ShowWarning("Missing info. Use \"tactic='tactic1'|'tactic2'|'tacticN'\".");
       }

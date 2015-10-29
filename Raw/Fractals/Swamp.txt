@@ -1,0 +1,132 @@
+init=SwampBloom|Fractals of the Mists|Swampland [Bloom]|Swamp|2
+init=SwampMoss|Fractals of the Mists|Swampland [Moss]|Swamp|21
+init=SwampBloom|Fractals of the Mists|Swampland [Bloom]|Swamp|32
+init=SwampMoss|Fractals of the Mists|Swampland [Moss]|Swamp|41
+init=SwampBloom|Fractals of the Mists|Swampland [Bloom]|Swamp|56
+init=SwampMoss|Fractals of the Mists|Swampland [Moss]|Swamp|67
+init=SwampBloom|Fractals of the Mists|Swampland [Bloom]|Swamp|77
+init=SwampMoss|Fractals of the Mists|Swampland [Moss]|Swamp|83
+
+#########################################################################
+
+path=SwampBloom|SwampMoss
+name=Swampland
+tactic=normal
+Enemies: A plant, a norn and various others.
+Time: Night.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+youtube=eb47RZU_F28|Video_guide [KING].
+Current record (Bloomhunger): record=44.
+Current record (Mossman): record=45.
+
+name=Start
+tactic=normal
+Whole starting area is filled with all kind of traps crippling, immobilizing or knocking you down. There are also 10 passages which will open and close randomly. At all times 3 of them will be closed. Closed ones rotate every 50 seconds. Mossman may also appear for 20 seconds at some spots.
+Walk to marked spot on map to release 3 wisps. They will get randomly put to 6 pre-defined locations on the map. Once someone grabs one, you have 33 seconds to bring them all back. When carrying a wisp, some passages will always close when you get near (scales with level). To counter this, you can jump over walls at many points (only way to reliably do it). Remember to drop off from walls instead of jumping to prevent getting in combat.
+If anyone drops his/her wisp (weapon swap, downed or transformation) or the timer runs out then every wisp will disappear and get placed at new locations. This can be abused by dropping them until you get favorable locations). To maximise your time you should coordinate the start. Wait until there is someone near every wisp and then either just say "go!" or count "3, 2, 1, go!".
+If you are running the wisp you should stack swiftness and use mobility skills. Also take condition removal, stability and stun breaks if you get hit by traps. Remaining 2 players should be supporting others. Give them swiftness, clear conditions and control following enemies.
+Try to memorize location of the traps. Jump over tripwires while avoiding beartraps and red circles. There are lots of ways to jump over walls even if entrances get blocked. This is something you can and should practice alone.
+tactic=warrior
+Use wiki=Mending for extra condition removal.
+tactic=warrior
+Use wiki=Balanced_Stance while running if you expect to hit a trap.
+tactic=mesmer
+Use wiki=Portal for group wide mobility.
+tactic=mesmer
+Use wiki=Mantra_of_Resolve or wiki=Mantra_of_Recovery (if Mender's Purity-trait) to remove conditions.
+tactic=mesmer
+Use wiki=Mantra_of_Concentration for stability and stun breaks.
+tactic=guardian
+Use wiki="Stand_Your_Ground!", wiki="Save_Yourselves!" and wiki="Retreat!" with Pure of Voice-trait or Soldier-runes for swiftness, stun breaks and condition removal.
+tactic=necromancer
+Use wiki=Spectral_Walk / wiki=Summon_Flesh_Wurm to skip most of the obstacles.
+tactic=necromancer
+Use wiki=Well_of_Power (works on caster even when not standing inside) and wiki=Consume_Conditions to clear conditions.
+tactic=thief
+Use wiki=Shadowstep and wiki=Steal on a critter (to not get in combat) when running a Wisp.
+tactic=thief
+Set a wiki=Shadow_Trap and use it to teleport back after grabbing the wisp.
+tactic=guardian
+Use wiki=Judge's_Intervention on a critter (to not get in combat) when running a Wisp.
+tactic=engineer
+Use wiki=Super_Speed and wiki=Rocket_Boots for mobility.
+tactic=north-west
+media=swamp_1.jpg|Map. The wisp is guarded by enemy=Skelks:normal. Stand on any nearby rock while waiting so they can't reach you. You should jump over trees because otherwise you may have to run a very long way.
+Practice the first jump couple of times (tell your team wait a bit if needed). After the jump just run forward and pay attention to the ground as there are multiple traps. If the next passage is open just go through. If not, stay calm and jump over. Don't try to run around because other nearby passages will just close before you.
+tactic=north
+media=swamp_2.jpg|Map. Once you pick the wisp you get attacked by 20 enemy=Marsh_Mosquitos:normal. They won't deal much damage but if they hit you will get in combat which slows you down.
+If the closest passage is closed you should jump over it. Practice couple of times if needed. Alternatively you can ask your team to wait (keep in mind that passages change every 50 seconds). Mossman will probably spawn after the passage. If he does and the next one is closed you should run around (either way is fine) unless you have practiced the jump. After the second passage either turn right or jump over the wall (passages will close).
+Alternatively you can immediately turn to right and just follow same way as with media=swamp_1.jpg|the_north-west_wisp.
+tactic=north-east
+media=swamp_3.jpg|Map. Be careful when approaching the wisp as there are multiple traps on the ground. Once you pick it up, binding roots will appear on you every 6 seconds. Keep moving at all times to not get caught (especially during jumps). If you get hit you get will constantly immobilized and may have to use multiple condition removals to get out (you can't attack roots with the wisp).
+The closest passage will close when you get near (practice jumping). Alternatively you can just turn right and use the next passage. After that just run forward. If that passage is closed turn right to jump over the wall near the next passage.
+tactic=west
+media=swamp_4.jpg|Map. Be careful when approaching the wisp as there are multiple traps on the ground. There is one trap directly beneath the wisp. Wait few seconds for it to go off if needed. Be ready to remove conditions if you get hit.
+Just run south and jump over the wall if needed (plenty of time so no rush).
+tactic=east
+media=swamp_5.jpg|Map. The wisp is guarded by a enemy=Marsh_Drake:champion so either stay back or run to a rock at back wall. Once you grab the wisp, about 12 enemy=Marsh_Drake_Hatchlings:normal appear. Just ignore them and keep moving. If the passage is closed then just keep going and jump over the wall near the next passage.
+tactic=south-east
+media=swamp_6.jpg|Map. Be careful when approaching the wisp as there are multiple spider eggs on the ground. When touched they break and 2-3 enemy=Spider_Hatchlings:normal appear. If you break lots of them you will get killed. You can safely get through if you jump on rocks. You can also wait bit further way and rush in once the countdown starts.
+Once you grab the wisp, 7 enemy=Marsh_Spiders:normal appear. Just ignore them and keep moving. It doesn't really matter if you break eggs at this point (but you can jump on the rocks!). If both the first and the second passage are closed then just keep going and jump over the wall near the next passage.
+
+path=SwampMoss
+name=enemy=The_Mossman:legendary
+tactic=normal
+He aggros immediately when you land from the water. If you get back and try to attack him in the water invulnerable enemy=Skelk:normal appear. However, if you pull him far enough out in the water tunnel, the skelk will not be there.
+Mossman is a very dangerous enemy because of his stealth and high damage attacks. The most important thing is to remember to rally from enemy=Wolves:normal.
+His normal melee attack does lots of damage and has high range. The high range causes him to often kill unaware secondary targets. Keep him crippled and/or chilled and kite at least at max melee range to prevent him from using it.
+His ranged attack bounces few times and causes agony (you may get double agony). If you get hit you can easily get other people killed so do what you can to counter it (block, dodge, anti projectile skills).
+Once in a while he stealths which makes his attacks hard to avoid because you can't see him or his animations. Keep looking at mini-map to get some idea about his location. He also summons a Wolf.
+In a less coordinated group, the most important thing is to not kill the Wolf. There's a high chance that someone will become downed, and that Wolf could be used to rally off of. Everyone should tag Wolves with low damage attacks if possible (don't kill it). In a more coordinated group that is relying on Aegis or other blocks to mitigate some of Mossman's attacks, you should seek to kill wolves quickly, so they do not eat blocks.
+There are two ways to end his stealth. Wait until it expires or get hit. If you keep kiting and waiting until it expires he will spend lots of time stealthed. It's safer but makes the fight last longer.
+If you can afford it get hit. Mossman always attempts to focus one target (the person he is following and trying to melee). If he is following you, tag the Wolf, stand still and let him hit you. Even if you get downed you can kill the Wolf to rally. Pets/clones can also be used to do this to some extent.
+After 75% he will start to throw his axe which also inflicts agony. Then he will spawn 2 Wolves, start chasing his primary target, teleport to him when close enough and do his lethal dual melee attack. The Melee attack again has huge range, so dodge away from him to avoid him from turning and potentially killing other players.
+He literally won't do any other attacks when chasing his target, which allows other players to attack him freely. However after ~10 seconds he will stealth which makes it much harder to avoid his lethal attack. Also it will cause him to be stealthed pretty much all the time because he still has his normal stealth.
+After 25% he may transform (rare) to different enemy=animal_forms:legendary with very dangerous leaps and melee attacks. He won't stealth or use ranged attacks though.
+tactic=coordinated
+Stack might and stealth before getting aggro, and then fight directly on top of Mossman. Chain anti-projectile skills and CC, make use of Aegis if you have it, and stay behind Mossman unless he is aggroed on you. In a coordinated group, Mossman's aggro can be manipulated by a combination of first hit and higher toughness than the rest of the group; it's ideal to let a Guardian or an Earth Elemental take the aggro.
+tactic=low man
+Mossman has a maximum number of wolves that he can spawn, and the wolves have a limited aggro radius. As such, it is possible to spawn out all of the wolves on one side of the arena, die, and then fight Mossman on the other side of the arena without any wolves being spawned. Because it takes a lot of time to spawn the wolves, this method is only helpful if you are looking for a speed kill (timed from first hit until death), or don't think you can defeat Mossman along with the adds he spawns.
+tactic=exploit
+A player who is out of combat can prevent Mossman from resetting while everyone else resurrects at a checkpoint (don't attack him and keep avoiding his attacks). This is useful when only 2 players are alive (thus allowing one to get back to the water).
+It is possible to pull Mossman into the water. Unlike the version of Mossman from the Mist Stalker instability (level 31), the Mossman in the Swamp fractal does not use underwater skills. This effectively permanently disables the boss. Because this method results in exceedingly slow kill times, it is generally only used by groups incapable of fighting Mossman normally.
+tactic=bug
+Sometimes, Mossman's stealth does not expire based on its time limit as it should, and you must take a hit in order to have it expire. This can be extremely problematic in solo/duo situations.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to negate agony projectile. Use wiki="Retreat!" and Virtue of Courage to keep Aegis up.
+tactic=thief
+Use wiki=Smoke_Screen to block his projectiles.
+tactic=thief
+In unorganized groups, you can use sword/pistol to greatly increase your survivability via wiki=Pistol_Whip .
+tactic=elementalist
+Use an Earth Elemental to partially take his aggro, giving your team some additional safety.
+tactic=elementalist
+Use wiki=Swirling_Winds to block projectiles.
+tactic=necromancer
+Use marks around the area when he stealths to see him more easily.
+tactic=mesmer
+Use wiki=Feedback and wiki=Temporal_Curtain (traited) to reflect projectiles.
+
+path=SwampBloom
+name=enemy=Bloomhunger:legendary
+tactic=normal
+Much easier than Mossman. All attacks can be easily avoided. He summons spirits but you usually don't have to care about them. If retaliation causes too much damage then kill enemy=Storm_Spirit:normal.
+His normal attack shoots 3 projectiles. Each will leave a poison cloud unless blocked or absorbed/reflected by an antiprojectile skill. Poison clouds quickly stack up at melee-range so prevent them from appearing.
+When he smashes ground he will shoot 6 projectiles around him. They deal high damage and cause Binding Roots (attack to destroy). Melee players can stay inside Bloomhunger and they won't get hit.
+His most dangerous attack is when he shakes leaves and shoots multiple ballistic projectiles. Landing spots get marked with red rings so stay out of them and dodge if needed. Each hit deals high damage and agony.
+tactic=coordinated
+Chain anti-projectile skills and assign a player to kill the Storm Spirit as soon as it spawns.
+tactic=normal|coordinated
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to reflect and negate all his attacks. Use wiki="Retreat!" and Virtue of Courage to keep Aegis up if people are out of anti projectile skills.
+tactic=mesmer
+Use wiki=Feedback to reflect all his attacks.
+tactic=mesmer
+Use wiki=Temporal_Curtain (traited) to reflect some of his attacks.
+Use wiki=Illusionary_Warden to block or reflect his attacks.
+tactic=necromancer
+Use wiki=Well_of_Power to remove conditions (if you team gets hit a lot).
+tactic=elementalist
+wiki=Swirling_Winds can absorb all of his attacks.
+tactic=exploit
+You can easily get out of combat if you just run away. Once you are out of combat, immediately run back and re-engage to prevent Bloomhunger from resetting. This works even when you are the only remaining person, allowing others to resurrect at a checkpoint and rejoin the fight.

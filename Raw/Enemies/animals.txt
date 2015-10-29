@@ -150,7 +150,7 @@ Name=Jungle Spider
 ID=5092
 alt=Jungle Spiders
 image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
-Path=Swamp
+path=SwampBloom|SwampMoss
 
 #############################
 
@@ -159,7 +159,7 @@ Name=Marsh Spider
 ID=11272
 alt=Marsh Spiders
 image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
-Path=Swamp
+path=SwampBloom|SwampMoss
 
 #############################
 
@@ -168,7 +168,7 @@ Name=Marsh Spider Hatchling
 ID=11273
 alt=Marsh Spider Hatchlings|Spider Hatchling|Spider Hatchlings
 image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
-Path=Swamp
+path=SwampBloom|SwampMoss
 
 ##################################################################
 
@@ -531,7 +531,7 @@ ID=11279
 alt=Wolves
 image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
 scaling=constant
-Path=Swamp
+path=SwampBloom|SwampMoss
 
 attack=Bite
 ID=2973
@@ -553,7 +553,7 @@ ID=4800
 alt=Wolves
 image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
 scaling=constant
-Path=Swamp
+path=SwampBloom|SwampMoss
 
 attack=Bite
 ID=2973
@@ -686,7 +686,7 @@ name=Jellyfish Beast
 ID=11402
 image=http://wiki.guildwars2.com/images/b/bd/Jellyfish.jpg
 scaling=legendary
-path=Aqua
+path=AquaDolphin|AquaDark
 
 attack=Slash
 ID=16295
@@ -742,7 +742,7 @@ ID=11407
 image=http://wiki.guildwars2.com/images/b/bd/Jellyfish.jpg
 alt=Jellyfishes
 scaling=normal
-path=Aqua
+path=AquaDolphin|AquaDark
 
 attack=Tentacle Slash
 ID=16316
@@ -762,7 +762,7 @@ ID=9064
 alt=Krait Damosses|Damoss|Damosses
 image=http://wiki.guildwars2.com/images/3/37/Damoss_Water.jpg
 scaling=champion
-path=Aqua
+path=AquaDolphin|AquaDark
 
 attack=Lunge
 ID=1600
@@ -820,7 +820,7 @@ ID=5190
 alt=Krait Hypnosses|Hypnoss|Hypnosses
 image=http://wiki.guildwars2.com/images/0/03/Hypnoss_Water.jpg
 scaling=normal
-path=Aqua
+path=AquaDolphin|AquaDark
 
 attack=Putrid Grasp
 ID=2065
@@ -854,7 +854,7 @@ ID=1173
 alt=Krait Nimrosses|Nimross|Nimrosses
 image=http://wiki.guildwars2.com/images/c/ca/Nimross_Water.jpg
 scaling=normal
-path=Aqua
+path=AquaDolphin|AquaDark
 
 attack=Slash
 ID=1597
@@ -895,7 +895,7 @@ name=Krait Slaver
 ID=11401
 alt=Krait Slavers
 scaling=normal
-path=Aqua
+path=AquaDolphin|AquaDark
 
 attack=Heavy Weight (1)
 animation=spins
@@ -996,7 +996,7 @@ subeffect=damage:-
 copy=6999
 name=Young Barracuda
 ID=5981
-path=Aqua
+path=AquaDolphin|AquaDark
 
 attack=Passive
 effect=On hit
@@ -1066,7 +1066,7 @@ Name=Marsh Drake
 ID=11276
 scaling=constant
 image=http://wiki.guildwars2.com/images/3/30/Marsh_Drake.jpg
-Path=Swamp
+path=SwampBloom|SwampMoss
 
 attack=bite
 ID=3030
@@ -1091,7 +1091,7 @@ ID=11274
 alt=Marsh Drake Hatchlings|Drake Hatchling|Drake Hatchlings
 image=http://wiki.guildwars2.com/images/3/30/Marsh_Drake.jpg
 scaling=normal
-Path=Swamp
+path=SwampBloom|SwampMoss
 
 attack=bite
 ID=3031
@@ -1346,7 +1346,7 @@ Name=Firefly
 ID=5072
 alt=Fireflies
 image=http://wiki.guildwars2.com/images/f/f2/Firefly.jpg
-Path=Swamp
+path=SwampBloom|SwampMoss
 
 attack=Neutral
 
@@ -1394,7 +1394,7 @@ ID=4359
 alt=Jungle Skelks|Skelk|Skelks
 image=http://wiki.guildwars2.com/images/e/eb/Jungle_Skelk.jpg
 scaling=normal
-Path=Swamp
+path=SwampBloom|SwampMoss
 
 attack=Slash
 ID=2397
@@ -1435,7 +1435,7 @@ Name=Siamoth
 ID=5083
 scaling=normal
 image=http://wiki.guildwars2.com/images/4/4c/Siamoth.jpg
-Path=Swamp
+path=SwampBloom|SwampMoss
 
 attack=Neutral
 

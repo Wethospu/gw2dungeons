@@ -21,7 +21,10 @@ namespace DataCreator.Utility
 
     // Uses more complicated notation to keep flexibility for future.
     public static string DataEnemyRaw { get { return "Raw\\Enemies\\"; } }
-    public static string DataEncounterRaw { get { return "Raw\\Dungeons\\"; } }
+    public static string DataGuidesRaw { get { return "Raw\\Guides\\"; } }
+    public static string DataDungeonsRaw { get { return "Raw\\Dungeons\\"; } }
+    public static string DataRaidsRaw { get { return "Raw\\Raids\\"; } }
+    public static string DataFractalsRaw { get { return "Raw\\Fractals\\"; } }
     public static string DataRaw { get { return "Raw\\"; } }
     public static string DataOtherRaw { get { return "Raw\\Other\\"; } }
 

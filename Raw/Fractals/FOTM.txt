@@ -1,0 +1,112 @@
+init=Insta|Fractals of the Mists|Instabilities|Insta
+init=Aether|Fractals of the Mists|Aetherblade|Aether
+init=Aqua|Fractals of the Mists|Aquatic Ruins (Krait)|Aquatic
+init=Cliff|Fractals of the Mists|Cliffside (Colossus)|Cliff
+init=Furn|Fractals of the Mists|Molten Furnace (Weapontest)|Molten
+init=Mai|Fractals of the Mists|Captain Mai Trin|Mai Trin
+init=Molten|Fractals of the Mists|Molten Boss|Molten Boss
+init=Snow|Fractals of the Mists|Snowblind (Svanir)|Snow
+init=Solid|Fractals of the Mists|Solid Ocean (Jade Maw)|Solid
+init=Swamp|Fractals of the Mists|Swampland|Swamp
+init=Thauma|Fractals of the Mists|Thaumanova Reactor|Reactor
+init=Uncat|Fractals of the Mists|Uncategorized (Asura/Harpy)|Uncategorized
+init=Under|Fractals of the Mists|Underground Facility (Dredge)|Underground
+init=Urban|Fractals of the Mists|Urban Battlegrounds (Ascalon/Charr)|Urban
+init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic
+
+###########################################################
+
+path=Insta
+name=General info
+tactic=normal
+Instabilities start from scale 31 and each scale has a different instability (except 40 and 50).
+They aren't really ordered by difficulty while some scales are much harder than others. This means you can skip harder ones if you have someone who can open higher scales.
+
+name=Scale 31: Mist Stalker
+tactic=normal
+enemy=Mossman_(stalk):legendary occasionally appears and attacks for several seconds. May cause deaths but generally harmless.
+
+name=Scale 32: Impaired Immunity
+tactic=normal
+Conditions last longer on players. Barely any effect.
+
+name=Scale 33: Outflanked
+tactic=normal
+You take much more damage when getting hit from behind or sides. AoE seems to always to get buffed which makes some attacks very lethal.
+
+name=Scale 34: Fleeting Precision
+tactic=normal
+25% less critical chance. Reduces damage so stuff takes bit longer.
+
+name=Scale 35: Stormy Weather
+tactic=normal
+Someone gets hit randomly by a enemy=Lightning:trap. Barely any effect.
+
+name=Scale 36: Losing Control
+tactic=normal
+Stun duration reduced by 66%. daze duration reduced by ~90%. Knockbacks, knockdowns and launches (?) unaffected. Barely any effect so usually farmed.
+
+name=Scale 37: Keep Them in Line
+tactic=normal
+Enemies gain random boons when not attacked for a while. Only real effect is on Mai Trin because she will heal up during cannon barrage so the fight lasts longer.
+
+name=Scale 38: Ill and Chill
+tactic=normal
+Poison, Chill and confusion dealt to enemies become regeneration, protection and fury instead. This may cause some issues if you rely on those conditions. Obviously do what you can to not inflict them.
+
+name=Scale 39: Last Laugh
+tactic=normal
+Enemies killed by players will explode after 1 second causing nearby players (and NPCs) to lose 15% of their maximum health and get launched for 3.3 seconds. This can't be blocked or evaded.
+Stay mobile to back off whenever something dies or use stability. This can be really tough on some encounters like dual Seals on Cliffside.
+
+name=Scale 40: Agonizing Expedition
+tactic=normal
+Every 10 seconds all players in combat get 3 seconds of agony. This is basically a gear check. Unless you have 55 AR and lose 1% per tick you will melt really fast.
+
+name=Scale 41: Playing Favorites
+tactic=normal
+Untargeted enemies take half damage. Makes thrash fights take bit longer. Also make sure you target stuff!
+
+name=Scale 42: Lethargic
+tactic=normal
+Normal endurance regeneration reduced by ~85%. Use Vigor to get back to normal rate. If you don't have access to Vigor, use other endurance regeneration boosts like wiki=Orrian_Truffle|Orrian_Truffles.
+tactic=warrior
+Use wiki=Call_to_Arms for AoE Vigor.
+# Not very consistent results!
+
+name=Scale 43: Bloodlust
+tactic=normal
+Whenever you hit something you get an invisible stack and lose 0.1% of your maximum health per stack. Stacks reset when you kill something or stay out of combat for a while. Respawning enemies don't count which makes this really tough in some cases (Cliffside, Dredge). Some rapidly hitting skills can't be used at all.
+I personally suggest skipping this unless you play for the challenge.
+
+name=Scale 44: Overextended
+tactic=normal
+Lose 3 % of your maximum health whenever you deal a critical hit. With decent critical chance you will take plenty of damage and some rapidly hitting skills can't be used at all. You should have a condition specced player for safe damage.
+I personally suggest skipping this unless you play for the challenge.
+
+name=Scale 45: Frosty
+tactic=normal
+Every 30 seconds couple of enemy=text:ticking_AoEs|Frosty:trap appear around you. Barely any effect.
+
+name=Scale 46: Social Awkwardness
+tactic=normal
+More allies you have near, less healing you get. With whole party near you get barely any healing so don't rely on healing skills, utilities or gear. Remember to move away from everyone before using your healing skill.
+This also affects downed players. Two or more players trying to revive someone will get him killed.
+
+name=Scale 47: Antielitism
+tactic=normal
+Using your elite skill instantly defeats you which breaks armor. Just unbind your elite skill button.
+
+name=Scale 48: Tainted Renewal
+tactic=normal
+Regeneration, protection and Vigor become poison, vulnerability and weakness on players. Obviously don't use skills  or traits with these effects.
+
+name=Scale 49: Stamina
+tactic=normal
+Deal less damage based on your endurance. Missing 20 endurance reduces damage by 20%. Missing 40 endurance reduces damage by 40%. Missing 60 endurance reduces damage by 60%. Missing 80 endurance reduces damage by 80%.
+Keep your endurance above half to avoid getting bigger reductions. Use vigor to fill endurance faster and rely on other active defenses. This instability is often used for daily runs because of its easy difficulty.
+
+name=Scale 50 Agonizing Expedition
+tactic=normal
+Every 10 seconds all players in combat get 3 seconds of agony. This is basically a gear check. Unless you have 70 AR and lose 1% per tick you will melt really fast.
+Keep in mind that currently there is no way to progress so getting required resist and doing this is pointless.

@@ -16,6 +16,7 @@ namespace DataCreator.Shared
   {
     public string Name { get; set; }
     public List<string> Lines { get; set; }
+    public int Scale { get; set; }
     private bool _isActive;
 
     public Tactic(string type)
@@ -23,7 +24,13 @@ namespace DataCreator.Shared
       // Tactics are often added when they are needed so make them active by default. / 2015-06-30 / Wethospu
       _isActive = true;
       Name = type;
+      Scale = 0;
       Lines = new List<string>();
+    }
+
+    public Tactic(string type, int scale) : this(type)
+    {
+      Scale = scale;
     }
 
     public Tactic()
@@ -66,16 +73,22 @@ namespace DataCreator.Shared
      * Activates or deactivates this tactic based on whether it was found on given tactic types.   *
      *                                                                                             *
      * tacticTypes: Tactic types to activate.                                                      *
+     * minScale-maxScale: Scales to activate.                                                      *
      *                                                                                             *
      ***********************************************************************************************/
 
-    public void Activate(string tacticTypes)
+    public void Activate(string tacticTypes, int minScale, int maxScale)
     {
       var splitTypes = tacticTypes.Split('|');
+      // Check that name matches. / 2015-10-29 / Wethospu
       if (splitTypes.Any(str => Name == str))
       {
-        _isActive = true;
-        return;
+        // Check that scale matches (if any). / 2015-10-29 / Wethospu
+        if (Scale == 0 || (Scale >= minScale && Scale <= maxScale))
+        {
+          _isActive = true;
+          return;
+        }  
       }
       _isActive = false;
     }

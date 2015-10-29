@@ -1,0 +1,86 @@
+init=Molten|Fractals of the Mists|Molten Boss|Molten Boss|10
+init=Molten|Fractals of the Mists|Molten Boss|Molten Boss|40
+init=Molten|Fractals of the Mists|Molten Boss|Molten Boss|80
+init=Molten|Fractals of the Mists|Molten Boss|Molten Boss|90
+init=Molten|Fractals of the Mists|Molten Boss|Molten Boss|99
+
+#########################################################################
+
+path=Molten
+name=Molten Boss
+tactic=normal
+Enemies: Molten.
+Time: Day.
+Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+youtube=QjJMBIXvftQ|Video_guide [KING].
+Current record: record=41.
+
+name=enemy=Molten_Effigy:champion
+tactic=normal
+At around 60% a group of an enemy=Axe_Fiend:veteran, a enemy=Disaggregator:veteran, an enemy=Igniter:veteran and a enemy=Reverberant:veteran appear behind you. With enough damage you can kill Effigy before enemies become a threat. Alternative one player can go kite them until Effigy has been killed.
+tactic=coordinated
+The Effigy's firestorm attack can be interrupted (albeit not by knockbacks, pulls, knockdowns, or launches), which allows the team to safely melee. Projectile defense can be used against the fireball attack.
+Use Binding Blades or Into The Void to group additional enemies together.
+tactic=warrior
+Use wiki=Pommel_Bash to interrupt the Firestorm.
+tactic=ranger
+Use wiki=Hilt_Bash to interrupt the Firestorm.
+tactic=thief
+Use wiki=Headshot to interrupt the Firestorm.
+Use wiki=Smoke_Screen to provide projectile defense.
+tactic=mesmer
+Use wiki=Magic_Bullet or wiki=Power_Lock to interrupt the Firestorm.
+Use wiki=Illusionary_Warden or wiki=Temporal_Curtain (traited) or wiki=Feedback to provide projectile defense.
+Use wiki=Temporal_Curtain to group the adds together.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to provide projectile defense.
+Use wiki=Binding_Blade to group the adds together.
+tactic=elementalist
+Use wiki=Swirling_Winds to provide projectile defnese.
+tactic=asura
+Use wiki=Technobabble to interrupt the Firestorm.
+
+name=End Fight
+tactic=normal
+You have to fight both the enemy=Molten_Berserker:legendary and the enemy=Molten_Firestorm:legendary at the same time. You should decide which target to kill first. When one dies the other one will fully heal up so you can't kill both at the same time. It is standard practice to kill the Berserker first, and kill the Firestorm second.
+Damaging one of them to 75%, 50% or 25% will enrage the other causing more dangerous attacks. Hitting the enraged target 50 times removes the enrage. You should decide whether to completely ignore enrage or wear it down together (if you split then enrage will be reapplied fast). It is standard practice to focus the Berserker, and ignore enrage on the Firestorm.
+Focusing the Firestorm makes the Berserker to do more AoEs which can be devastating if your team fails to avoid them. Remember to stay mobile and keep distance. Focusing the Berserker makes the Firestorm shoot more rapidly and as well as causes bigger AoEs (probably easier to avoid).
+Never try to pull them away from the arena because killing them separated will get you stuck (they may follow NPCs). Also stay away from the bridges because you will constantly get agony if you are too near to them.
+tactic=bug
+Every AoE effect from Firestorm may not get drawn. Stay alert if you suddenly take damage and move a bit.
+
+name=enemy=Molten_Berserker:legendary
+tactic=normal
+His normal melee hits won't do much damage but they will knock you down if he is enraged. Occasionally he teleports to a distant target so stay prepared.
+His most dangerous attack is his shockwave which is a growing PBAoE. Normal white ones can be jumped over but you have to evade blue ones. Never run along the wave or you will die in a second. Waves won't reach high range (~1200) so stay back if you think you will get hit. At start he will do only one shockwave but later when he gets enraged he will do 2-4 depending on Firestorm's health.
+When Firestorm dies his attacks no longer knock down. Instead he occasionally raises to air while being invulnerable. When he lands he releases fiery shockwave with extreme damage. Jump if you think you can do it reliably, otherwise dodge or out-range. Also rocks keep falling from the roof. Try stay away from red circles and use a stun break if you get knocked down in a bad spot.
+tactic=coordinated
+Stack at the spawn of the Berserker (in melee), have whoever Bhram is on stay back prior to the cutscene to prevent Bram CCing the Berserker, stack might after the cutscene, and burst the Berserker down. Projectile defense to protect against the Firestorm's attacks is very useful. If there is a Guardian, they should use Aegis for the third hit of the autoattack chain, as it is the most damaging. You can damage the berserker immediately after the cutscene ends.
+tactic=mesmer
+Use wiki=Illusionary_Warden or wiki=Temporal_Curtain (traited) or wiki=Feedback to provide projectile defense.
+Use wiki=Time_Warp to help burn this boss down faster.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to provide projectile defense.
+Use wiki="Feel_My_Wrath!" to help burn this boss down faster.
+Try to provide an Aegis on the third hit of the autoattack chain from this boss.
+tactic=elementalist
+Use wiki=Conjure_Frost_Bow to do extreme damage to this boss, as well as CC the boss for a long period of time.
+Use wiki=Swirling_Winds to provide projectile defense.
+tactic=engineer
+Use wiki=Toss_Elixir_U to provide projectile defense.
+
+name=enemy=Molten_Firestorm:legendary
+tactic=normal
+Stay mobile so you don't stand in his ticking AoEs. Dodge if you see something flying towards you or if you end up in AoE. When he is enraged his AoEs are bigger and some of his projectile launch.
+When Berserker dies he will fill outer area with vortex which prevents entering. Basically it significantly reduces the area which makes avoiding AoEs bit harder. Firestorm probably stands inside it preventing melee hits so consider a ranged weapon.
+tactic=coordinated
+Use projectile defense to protect against the Firestorm's attacks. If the Firestorm is too far into the vortex to be attacked in melee, either pull it back into the arena or have the entire party move to the opposite side of the arena and the firestorm will jump back in.
+tactic=mesmer
+Use wiki=Illusionary_Warden or wiki=Temporal_Curtain (traited) or wiki=Feedback to provide projectile defense.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to provide projectile defense.
+tactic=elementalist
+Use wiki=Conjure_Frost_Bow to do extreme damage to this boss, as well as CC the boss for a long period of time.
+Use wiki=Swirling_Winds to provide projectile defense.
+tactic=engineer
+Use wiki=Toss_Elixir_U to provide projectile defense.

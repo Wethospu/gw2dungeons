@@ -48,12 +48,13 @@ namespace DataCreator.Shared
      *                                                                                             *
      * Returns processed string.                                                                   *
      * str: String to edit.                                                                        *
-     * path: Needed for enemy links.                                                               *
+     * path: Information about the enemy link origin.                                              *
+     * scale: Fractal scale.                                                                       *
      * enemyData: List of enemies.                                                                 *
      *                                                                                             * 
      ***********************************************************************************************/
 
-    public static string CreateEnemyLinks(string str, string path, List<Enemy> enemyData)
+    public static string CreateEnemyLinks(string str, string path, List<Enemy> enemyData, int scale = 0)
     {
       // Iterator over the string and look for links.
       for (var iterator = 0; iterator < str.Length; iterator++)
@@ -65,7 +66,7 @@ namespace DataCreator.Shared
         if (!link[0].ToLower().Equals(Constants.LinkEnemy))
           continue;
 
-        var replaceWith = CreateEnemyLink(link[1], path, enemyData);
+        var replaceWith = CreateEnemyLink(link[1], path, scale, enemyData);
         var toReplace = link[0] + Constants.LinkChar + link[1];
         // Replace all doesn't work because some links are found partially in other links.
         str = Helper.ReplaceFirst(str, toReplace, replaceWith);
@@ -234,12 +235,11 @@ namespace DataCreator.Shared
      *                                                                                             *
      * Returns created link.                                                                       *
      * linkData: Data for the link.                                                                *
-     * path: Dungeon path. Needed to separate some enemies.                                        *
      * enemies: List of enemies to verify links and filling missing data.                          *
      *                                                                                             * 
      ***********************************************************************************************/
 
-    private static string CreateEnemyLink(string linkData, string path, List<Enemy> enemies)
+    private static string CreateEnemyLink(string linkData, string path, int scale, List<Enemy> enemies)
     {
       var shownText = CreateEnemyLinkText(linkData);
 
@@ -290,7 +290,7 @@ namespace DataCreator.Shared
         if (index + 1 < enemiesToLink.Count)
           link.Append(':');
       }
-      // Add the path to load correct level. / 2015-10-08 / Wethospu
+      // Add the path to load correct map. / 2015-10-08 / Wethospu
       link.Append("\" data-path=\"").Append(path).Append("\"");
       // Add enemy levels to allow changing enemy level dynamically. / 2015-09-28 / Wethospu
       link.Append(" data-level=\"");
@@ -300,6 +300,8 @@ namespace DataCreator.Shared
         if (index + 1 < enemiesToLink.Count)
           link.Append(':');
       }
+      if (scale > 0)
+        link.Append("\" data-scale=\"").Append(scale);
       link.Append("\"> ");
       // Add shown text.
       link.Append(shownText).Append("</span>");

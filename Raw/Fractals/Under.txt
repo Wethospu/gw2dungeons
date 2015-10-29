@@ -1,0 +1,173 @@
+init=UnderGun|Fractals of the Mists|Underground Facility [Gun]|Underground|8
+init=UnderBomb|Fractals of the Mists|Underground Facility [Bomb]|Underground|17
+init=UnderBomb|Fractals of the Mists|Underground Facility [Bomb]|Underground|29
+init=UnderGun|Fractals of the Mists|Underground Facility [Gun]|Underground|38
+init=UnderGun|Fractals of the Mists|Underground Facility [Gun]|Underground|43
+init=UnderBomb|Fractals of the Mists|Underground Facility [Bomb]|Underground|53
+init=UnderBomb|Fractals of the Mists|Underground Facility [Bomb]|Underground|68
+init=UnderGun|Fractals of the Mists|Underground Facility [Gun]|Underground|76
+init=UnderGun|Fractals of the Mists|Underground Facility [Gun]|Underground|81
+init=UnderBomb|Fractals of the Mists|Underground Facility [Bomb]|Underground|95
+
+#######################################################################################
+
+path=UnderBomb|UnderGun
+name=Underground Facility
+tactic=normal
+Enemies: Dredge and some elementals.
+Time: Night.
+Use wiki=Powerful_Potion_of_Dredge_Slaying|Potion_of_Dredge_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+youtube=ALGpASCQMz4|Video_guide [KING].
+Current record (Bombs): record=48.
+Current record (Turret): record=49.
+tactic=coordinated
+Use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Force.
+Against enemy=Rampaging_Ice_Elemental, use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying and Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Force.
+
+name=Start
+tactic=normal
+Clear all the enemies in your way so you don't have to worry about them, especially if you wipe multiple times. The enemies inside the cages respawn so don't bother clearing them.
+At start you face couple of normal and veteran enemies. Once they are cleared discuss roles (explained on next section). The third cage is quite brutal so ensure that you have the strongest players there.
+tactic=skip
+Only do this if your party knows what they are doing, or doesn't mind repeatedly wiping while they figure things out. See the coordinated subsection under the Locked Gates section.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" against daze.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against enemies until the final boss.
+tactic=guardian
+Use wiki=Line_of_Warding and wiki=Ring_of_Warding when hiding behind corners.
+tactic=guardian
+Use wiki=Binding_Blade if you need to group up enemies.
+tactic=thief
+Sword/Dagger and Bountiful Theft-trait are really good for stealing long boons from Dredge.
+tactic=mesmer
+Use wiki=Arcane_Thievery to steal long boons and wiki=Signet_of_Inspiration to share them with your whole team.
+tactic=mesmer
+Use wiki=Feedback against the enemies until the final boss.
+
+name=Locked Gates
+tactic=normal
+There are 3 cages, each separated from each other by one locked gate (thus there are 2 total gates). To open the gates someone must stand on a pressure plate. The plate in the first cage opens the first gate. The plate in the second cage opens the first and the second gates. The two plates in the final cage, when pressed both are depressed, open the first and the second gates, as well as open the gate for a console which you need to hack for 10 seconds to open the final gate and progress in the fractal. All plates must remain depressed for their effects to remain active; if a player steps off, the effect of that plate will immediately end.
+One player runs to the first cage to open the gate. Once the gate opens, the other players can run in and that one player can come back to wait. Killing all nearby enemies will make this part easier.
+Then one player runs to the second cage to activate the switch. When the gates open the 3 players who are in between the first and second gates should wait until the 4th player, who opened the first gate, catches up with them before proceeding into the drill room. However at low difficulty scales the 3 players can just enter on their own. Once those 4 players are in the drill room (the third cage), the last player must lose aggro either with stealth or by jumping down so he won't pull enemies to the drill room. The last player should go wait at the second gate, and enter the drill room when the door opens.
+The rest of the players should enter the drill room carefully to avoid aggroing everything. Clear at least half of the enemies as that will significantly increase your chances of success (ignore any Veterans as they have champion-level health, and thus take way too much time to kill). Two players must stand on the plates for a long time, which is difficult because these players are not able to dodge since dodging would require them to move off of the plate. Enemies will respawn eventually.
+The two remaining players go to the console at the back of the room. While one player hacks, the other must protect him as getting hit will interrupt the hack process. At about 75% hack progress a veteran enemy appears. The non-hacking non-panel player must attack it immediately to get aggro and be ready to interrupt if needed. Then he should go interrupt other enemies to help people on the plates. This player can run around the drill room in a circle, trying to tag all the enemies and keep them off the person on the console (most important), and also try to keep them off the people on the switches (less important).
+Take defensive utilities if you stand on a plate. Also take mobility if you go to the first or the second gate. Use stealth or invulnerability while hacking. Take control skills when protecting people.
+tactic=coordinated
+There are several different ways that coordinated teams can approach this, based on their team composition and level of comfort with the situation.
+The first strategy can be accomplished by any party that has a thief, and does not require an extreme amount of coordination. It goes as follows.
+Stack stealth and swiftness at the start then the entire party drops down and runs up the ramp to the first switch. Kill the patrolling mobs, and the first player runs to the switch. Thief drops SR or the party blasts stealth, and the party moves through the first gate. Kill both groups of mobs inside the gated area. Stack stealth for the Thief, who will blink up to the second switch and then return via Shadow Trap. Players in the drill room go to kite and switches, Thief goes to panel once they are in the room.
+The second strategy is a variation of the first, and requires both a Thief and a Mesmer. It works exactly the same way, however the Mesmer drops a portal entrance on the first ramp (before the party goes to move through the first gate), and then drops the portal exit between the first and second gates to allow the player who went to the first switch to rejoin the team with greater ease, as well as rejoin before a player reaches the second switch.
+The final strategy, the suicide strategy, requires a highly coordinated group with a Thief and ideally one other party member who has access to a blink skill. It goes as follows.
+Stack stealth and swiftness at the start. One party member runs to the first switch. Everyone else stays put, and re-stacks stealth when the first party member is about halfway to the switch. The party member on the first switch should stay alive long enough to let everyone through the gate, and then promptly suicide.
+Once inside the first gate, the party should re-stealth and a non-thief player with a blink should blink to the second switch. If no non-thief player with a blink is present, the thief can use Shadow Trap to return.
+Inside the drill room, two party members get on the switches immediately, and the Thief gets on the panel, throwing down SR on themselves. Everyone except the Thief should die after the door opens.
+tactic=warrior
+Use wiki=Defiant_Stance, wiki=Shield_Stance and wiki=Endure_Pain when standing on a plate.
+tactic=warrior
+Use wiki=Savage_Leap, wiki=Rush and wiki=Bull's_Charge to quickly get in and out of a cage. Don't run against fences or you may fall down.
+tactic=warrior
+Use wiki="Fear_Me!", wiki=Stomp and wiki=Tremor when protecting people.
+tactic=thief
+Use wiki=Shadow_Refuge at the console to keep you stealthed most of the time.
+tactic=necromancer
+Use wiki=Spectral_Walk before going to a pressure plate to quickly get out.
+tactic=mesmer
+Use wiki=Portal to get everyone through on the first and the second gate. Put portal entrance between gate and plate. Run back to gate, wait for it to open and get in. Put another portal entrance when the guy running gets near the first entrance.
+
+
+name=Next part
+tactic=normal
+Once hacking is done everyone should just run forward through the exit. Regroup and kill enemy=Dredge_Mining_Suit:veteran and some normal-Dredge. Then you have to go either left or right (random).
+tactic=coordinated
+Stealth past the dredge.
+If you executed the suicide strategy, wait until your Thief tells you to respawn, and then quickly stealth.
+
+path=UnderGun
+name=Turrets
+tactic=normal
+Pick up a laser rifle near the left wall and get through without getting hit by the turrets. Turrets shoot in a pattern so take a while to observe them. When carrying a rifle you lose all your Endurance so you won't be able to dodge. Additionally, using a Portal or any teleports drops the rifle.
+If you get hit, the rifle will break and can't be used. If you get through, wait for 2 other players because you need 3 rifles to deal any damage to the door. If you attack alone then your rifle just gets wasted. You need about 5 successful attempts to destroy the door.
+Whenever the door gets hit some Dredge spawn. Kill them and go get a new rifle. Ideally, only two players need to kill the dredge, and the rest can go get additional rifles.
+
+path=UnderBomb
+name=2) Bombing
+tactic=normal
+Clear the enemy group of ~4 Veterans and ~4 Normals.
+You need to deliver 9 bombs to the door in order to destroy it. The door is guarded by Turrets which will quickly destroy anyone who becomes revealed.
+Stand on Concealing Dust until you get over 1 minute of stealth. Then pick up a bomb and move to the door. Don't use Portal or teleports because they make you drop the bomb. Avoid Security Contractors as they will reveal you if you get close and then Turrets will kill you. More Contractors appear after delivering bombs.
+Once you have 9 bombs at the door, use the detonator nearby and blow it up!.
+Once using the detonator you will be revealed, and need to kill the dredge trash. You can run into the next room and LoS them on the left, or you can simply stand at the detonator and fight them there. Fighting at the detonator is more efficient, although it is slightly more difficult if you cannot pull them together.
+tactic=exploit
+Although specifically what causes it is unclear, if you spam the interact function to pick up the bombs, and then spam it again to place the bombs, you can sometimes deliver multiple bombs with just a single bomb that you are holding. In many cases, this allows you to drop of all 9 bombs.
+
+name=enemy=Rabsovich:champion
+tactic=normal
+He is with a dredge cart that causes additional Dredge to occasionally spawn. Just focus on Rabsovich while using cleave/AoE to take down normal Dredge.
+Rabsovich has two attacks, which are his ranged attack (shockwave), and typical melee attack though he uses the later attack rarely. The former attacl can't be blocked or reflected so you have to dodge. Keep an eye on him and look when he pulls his arm behind back. If he is facing you prepare to dodge forward/backward (never side to not direct it at other players).
+His melee hit does some damage but you can easily stay at least at max melee-range. Occasionally he hides behind shield and blocks all attacks; when he does this, just stop attacking. He also self-heals (weird sound effect) and summons a enemy=Dredge_Disaggregator:veteran. The heal can be interrupted, sometimes even through defiance although interrupting through defiance is unreliable.
+tactic=exploit
+If you have trouble you can try pulling Rabsovich away from the dredge cart.
+tactic=thief
+Use wiki=Larcenous_Strike to steal long boons.
+
+name=Way to the final boss
+tactic=skip
+Once the door opens you will see either Dredge or Ice Elementals. The last boss will be same type as the enemies you see. Run or stealth past these mobs, then turn left so you won't aggro the boss until the party is ready.
+
+
+name=The Final Boss
+tactic=ranged
+Both bosses normally take very little damage. You have to pour lava on them to make them "Superheated" which allows you to damage them. It also makes their strong self-healing easily interruptable (any attack which connects with the boss will interrupt the heal while they have the debuff).
+One player should be on lava-duty. Their job is to activate the lever when boss is below the lava. The rest of the players should pull the boss to the spot and keep him there while dealing damage to the boss. Immobilize is useful to keep the boss in place so that the lava will definitely hit the boss.
+When ranging, you want to pull boss to next bucket before "Superheated" wears out. As such, avoid slowing the boss down with unnecessary cripple, chill, immobilize, or CC. When primarily ranging, ~5 seconds of melee burst is possible right after lava has been poured, although this may force you to deal with the mechanics the boss has during this period of time.
+The most common tactic is to run around the map and use all the bucket spots. It is also possible to alternate between two bucket spots. It is important your team is clear on what strategy you are going to employ.
+If someone becomes defeated one player should run out of combat, and then return to resurrect the dead player. The rest of the team should keep going in order to keep boss "Superheated".
+Should "Superheated" not be maintained, launches and knockbacks are able to interrupt the heal even with defiance stacks present. However, there is no reason to unnecessarily add defiant stacks to the boss. It is often a good idea to keep defiant off of the boss, so they can be CCed or interrupted if necessary.
+tactic=melee
+Like the ranged strategy, you want to keep the bosses superheated. You may need to move the boss between several bucket spots to maintain the debuff, however you can melee on the way to the new bucket spot as there is a decent amount of leeway between one pour and the next time you need to pour.
+In order to melee, you will need to know the mechanics of the boss, as well as be able to react to the mechanics. Melee is much faster than ranged, providing your party does not wipe multiple times.
+Be prepared to interrupt the heal in the event that "Superheated" runs out.
+tactic=coordinated
+Pull the boss to a bucket spot and burst him down. The boss should be dead in under 30 seconds, no matter what fractal level you are playing on.
+tactic=thief
+Take wiki=Basilisk_Venom along with offhand pistol for wiki=Headshot to manage defiance and interrupt the heal.
+tactic=guardian
+Use wiki=Chains_of_Light or wiki=Signet_of_Wrath to keep it under lava.
+tactic=warrior
+Use wiki=Throw_Bolas to keep it under lava.
+tactic=thief
+You can use wiki=Infiltrator's_Arrow or wiki=Shadowstep to get up to the console (doesn't work on South West for some reason).
+tactic=thief
+Use wiki=Needle_Trap to easily keep boss under lava.
+
+path=UnderBomb
+name=enemy=Rampaging_Ice_Elemental:legendary
+tactic=normal
+Easier than the Powersuit. This boss has well telegraphed and easily avoidable attacks.
+At melee he uses two different attacks. The first attack is a fist smash. When the fist hits the ground, a large AoE circle appears. The circle is bigger than it appears. You can simply step out of this attack, or dodge out of it if you are slow to react. The other attack is a stomp, which leaves a V-shaped frost pattern on the ground radiating outwards from the location of the stomp. Again, you can simply walk out of this attack, or you can dodge if you are slow to react.
+His only dangerous attack is when he jumps and puts multiple delayed AoEs (which inflict Agony). Usually it's easy to avoid but you may get into a bad spot. Just keep your head cool and dodge at right time.
+When he kneels he summons 3 enemy=Ice_Elementals_(Melee):veteran and heals. Kite Elementals and keep him "Superheated" to interrupt healing. Dealing with the adds is the hardest part of this fight.
+tactic=thief
+Use the stolen Ice Shard Stab/Throw Gunk to chill/crippled it under the lava.
+tactic=guardian
+Take wiki=Indomitable_Courage and wiki=Hallowed_Ground and wiki="Stand_Your_Ground!" to provide stability to your team.
+tactic=guardian
+Take wiki="Save_Yourselves!" as a personal stunbreak.
+
+path=UnderGun
+name=enemy=Dredge_Powersuit:legendary
+tactic=normal
+Harder than the Ice Elemental due to a variety of attacks which require proper reaction from the player, with some of the attacks requiring a somewhat fast reaction time.
+His melee hit hits twice and hits hard; this is easily his most dangerous attack. It has a large range and radius, so remember to dodge even if you think you are out of range, or think you are behind the back of the boss. At close range he may also jump which shoots short range projectiles around him. The Jump is not really dangerous but you should still try to avoid being struck.
+When he raises both arms he will shoot 2 waves of bombs. They don't always draw a circle, so pay attention to where they land. Try run out of their area and dodge only if needed. Don't dodge during first wave because you may dodge right into a bomb! Bombs can be reflected or absorbed but they won't deal any damage to the Powersuit. Bombs will 1-shot a player, however they will not deal any damage to a downed player.
+His final attack is when he gains stability and glows. He will smash ground and send 3 shockwaves which hit the whole room. Each hit deals agony and moderate damage. You can avoid any damage with two dodges if you have good timing, however one dodge is usually sufficient to mitigate enough damage from the attack. Use blocks or immunity if needed.
+When he sits he will heal. Keep him "Superheated".
+tactic=mesmer
+Use wiki=Feedback to protect your team from bombs.
+tactic=elementalist
+wiki=Arcane_Shield, wiki=Obsidian_Flesh and wiki=Mist_Form is excellent against agony attack.
+tactic=guardian
+Use wiki=Wall_of_Reflection for defense against the bombs or the jump attack.
+tactic=thief
+Take wiki=Withdraw for extra evade to avoid agony attack.

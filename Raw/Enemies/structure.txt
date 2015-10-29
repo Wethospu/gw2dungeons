@@ -227,7 +227,7 @@ toughness=0.67
 name=Blood Idol
 rank=structure
 image=http://giant.gfycat.com/UnimportantFavoriteKouprey.gif
-path=Aqua
+path=AquaDolphin|AquaDark
 
 attack=Aura
 effect=aura
@@ -493,7 +493,7 @@ subeffect=damage
 name=Dredge Mining Turret (Fire)
 alt=Turret (Fire)
 rank=structure
-path=Under
+path=UnderGun|UnderBomb
 condition=0
 
 attack=Fire Mortar
@@ -510,7 +510,7 @@ subeffect=burning:3
 name=Dredge Mining Turret (Ice)
 alt=Turret (Ice)
 rank=structure
-path=Under
+path=UnderGun|UnderBomb
 
 attack=Ice Mortar
 effect=projectile
@@ -526,7 +526,7 @@ subeffect=chilled:2
 name=Dredge Mining Turret (Shock)
 alt=Turret (Shock)
 rank=structure
-path=Under
+path=UnderGun|UnderBomb
 
 attack=Shock Mortar
 effect=projectile
@@ -1284,7 +1284,7 @@ effect=enemy=Toxic_Ooze:veteran
 Name=Environment
 alt=traps
 rank=trap
-Path=Swamp
+path=SwampBloom|SwampMoss
 condition=3
 
 attack=Tripwire
@@ -1373,7 +1373,7 @@ Path=CoES
 
 Name=Dolphin
 rank=Bundle
-Path=Aqua
+path=AquaDolphin|AquaDark
 
 Attack=Echo
 effect=PBAoE

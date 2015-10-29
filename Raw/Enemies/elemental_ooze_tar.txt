@@ -906,7 +906,7 @@ name=Rampaging Ice Elemental
 ID=11240
 scaling=legendary
 image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
-path=Under
+path=UnderGun|UnderBomb
 
 attack=Shatterstone
 ID=15950
@@ -954,7 +954,7 @@ ID=11238
 alt=Ice Elementals (Melee)
 image=http://wiki.guildwars2.com/images/6/6f/Ice_Elemental.jpg
 scaling=normal
-path=Under
+path=UnderGun|UnderBomb
 
 attack=Ice Strike
 ID=2652

@@ -1,0 +1,95 @@
+init=AquaDark|Fractals of the Mists|Aquatic Ruins [Dark]|Aquatic|3
+init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dolphin]|Aquatic|18
+init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dolphin]|Aquatic|26
+init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dark]|Aquatic|42
+init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dark]|Aquatic|61
+init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dolphin]|Aquatic|75
+
+###########################################################
+
+path=AquaDark|AquaDolphin
+name=Aquatic Ruins
+tactic=normal
+Enemies: Krait and fish.
+Time: Day.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+Remember that your wiki=Agony_Resistance will drop up to 15 points from a lack of helmet or land weapons.
+youtube=qcSFQaJdHVU|Video_guide [KING].
+Current record (Dolphin): record=36.
+Current record (Ruins): record=37.
+tactic=coordinated
+Against the krait, use wiki=Powerful_Potion_of_Krait_Slaying|Potion_of_Krait_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies and wiki=Superior_Sigil_of_Serpent_Slaying|Sigil_Of_Serpent_Slaying.
+
+name=Save the villagers
+tactic=normal
+You need to kill 3 groups of Krait and interact with cages to rescue enemy=villagers.
+Stack behind a statue to corner the krait and give you a wall for rush-type abilities.
+The first group has a enemy=Damoss:veteran and 4 enemy=Damosses:normal. The second group has a enemy=Damoss:normal, 2 enemy=Nimrosses:normal and 2 enemy=Hypnosses:normal with their dangerous poison-cloud attack. The last group has 2 enemy=Damosses:veteran and 2 enemy=Nimrosses:veteran.
+After the villagers are saved, the path will split and you will either have to go through Darkness or survive as a Dolphin.
+tactic=warrior
+Use wiki=Tsunami_Slash into a statue to deal high damage.
+tactic=mesmer
+Use wiki=Vortex to pull Krait together and wiki=Feigned_Surge into a statue to deal high damage.
+tactic=elementalist
+Use wiki=Tidal_Wave into a statue to deal high damage.
+
+path=AquaDark
+name=Darkness
+tactic=normal
+Staying in darkness quickly kills you. Carry a link=http://wiki.guildwars2.com/images/0/01/Luminous_Plant.jpg|Luminous_Plant to protect you and nearby players.
+The plant doesn't last very long so start moving once you pick it up. You can drop a plant early to pick up a new one and refresh your timer.
+Once someone reaches Jellyfish Beast you get a new checkpoint so you can just die if you can't get through.
+tactic=skip
+After the descent take a left between the stalactites and stalagmites and cross through the center of the room.
+Have one person run through solo and the rest of the party res at the checkpoint.
+
+path=AquaDolphin
+name=Dolphin
+tactic=normal
+Unequip your all armor (including Breather) to prevent repair costs. Armor has no effect and you die pretty easily. Buffs will stay after transformation so stack swiftness and aegis before starting.
+The area is filled with Krait (most hidden) which can easily kill a lone Dolphin. Surviving is easier if you go as a group (wait for slower people when possible).
+Your first skill scans the area and reveals hidden Krait so spam it as much as possible.
+Your second skill summons a clone which you should use to distract Krait (use the skill again to make your clone stop and start "distracting").
+Your third skill gives you a slight speed boost but it isn't that useful.
+Your fourth skill resurrects all nearby players which is extremely strong when in a group. Use it as soon as someone dies.
+Use your dodges wisely. You need to dodge twice to prevent sink from the Krait.
+Once someone reaches Jellyfish Beast you get a new checkpoint so you can just die if you can't get through, but don't ressurect before you get the checkpoint or your party will have to wait for you to die again.
+tactic=coordinated
+Stack swiftness and aegis before entering. Hug the bottom right through the whole run. Stick together and ressurect whenever someone goes down.
+tactic=normal|coordinated
+tactic=warrior
+Use a banner so all your party members can use wiki=Inspire.
+
+path=AquaDark|AquaDolphin
+name=enemy=Jellyfish_Beast:legendary
+tactic=normal|coordinated
+Lure the beast to the electrified cages for extra damage.
+tactic=coordinated
+Designate one player to pick a cage and have the rest of the party follow him.
+tactic=normal
+The boss summons enemy=Jellyfishes:normal. Kite them while killing the beast. Tag them to rally if downed.
+After 75% the boss starts using its agony attack. He pulls the target inside of him, gets 5 stacks of might every second, and applies agony on the target. Interrupting is the only way to avoid the agony attack. Try get rid of his defiance stacks (or use sink and float which ignore defiance).
+If you get pulled inside of the boss, start spamming skill 1 to get out. Start using skill 1 as fast possible to reduce time the boss is resistant to damage.
+tactic=alternative
+Full melee the boss while ignoring cages.
+tactic=normal|coordinated|alternative
+tactic=warrior
+Use wiki=Balanced_Stance to attack him during his spin.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" to protect your team from his electric spin.
+tactic=guardian
+Use Aegis against normal melee.
+tactic=guardian
+Use wiki=Weight_of_Justice (trait with Two-Handed Mastery) to interrupt agony attack.
+tactic=necromancer
+Use wiki=Sinking_Tomb to interrupt agony attack.
+tactic=necromancer
+Remember to corrupt his 25 might stacks after using agony attack.
+tactic=thief
+Use wiki=Basilisk_Venom to interrupt agony attack.
+tactic=mesmer
+Use wiki=Arcane_Thievery to steal 25 might and wiki=Signet_of_Inspiration to give them to your team (unless your team interrupts agony attack most of the time).
+tactic=mesmer
+Use wiki=Illusion_of_Drowning to interrupt agony attack.
+tactic=elementalist
+Use wiki=Air_Bubble and wiki=Rock_Anchor to interrupt agony attack.

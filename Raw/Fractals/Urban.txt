@@ -1,0 +1,133 @@
+init=Urban|Fractals of the Mists|Urban Battlegrounds|Urban|1
+init=Urban|Fractals of the Mists|Urban Battlegrounds|Urban|11
+init=Urban|Fractals of the Mists|Urban Battlegrounds|Urban|31
+init=Urban|Fractals of the Mists|Urban Battlegrounds|Urban|57
+init=Urban|Fractals of the Mists|Urban Battlegrounds|Urban|66
+init=Urban|Fractals of the Mists|Urban Battlegrounds|Urban|78
+init=Urban|Fractals of the Mists|Urban Battlegrounds|Urban|85
+
+#######################################################################################
+
+path=Urban
+name=Urban Battleground
+tactic=normal
+Enemies: Humans.
+Time: Day.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+
+Enemies: No type.
+Time: Day.
+Use use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom. Use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty for damage sigils.
+youtube=nNGYS5oMaOI|Video_guide [KING].
+Current record: record=50.
+tactic=guardian
+Use wiki=Line_of_Warding or wiki=Ring_of_Warding when hiding behind corners.
+tactic=guardian
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against ranged attacks.
+
+name=Enemies
+tactic=normal
+enemy=Monks should be the top priority to focus because they give lots of might to all foes around them. Their basic attack also deals high damage, so keep them blinded and controlled.
+enemy=Mages are very dangerous and can wipe your entire group unless you know how to counter them. Their most dangerous melee attack, Flame Burst, has a distinct "whoosh" sound. Stay alert when you are close to them and dodge when you hear that sound. When pulling them you should break line sight before your ranged attack hits them, so you don't give them a chance to cast Firestorm at your stacking location.
+enemy=Warriors deal high damage but attack somewhat slowly, so keep them blinded in order to mitigate their damage. When engaging them be ready to dodge if they Rush towards you to avoid extremely high damage.
+enemy=Cultists attack quickly so blinds are not very useful, although they do not hurt. Cultists do not deal much damage, and thus should be low on your priority scale.
+enemy=Ascalonian_Archers_(Igniter) deal high damage but use only projectiles so use antiprojectile skills against them.
+Other enemies such as enemy=Fighters, enemy=Healers, enemy=Assassins, enemy=Enchanters or enemy=Archers_(Condition) are low threat so leave them for last.
+
+name=Start
+tactic=normal
+You spawn in a tent as a charr so don't be surprised if you look different. You have a group of powerful charr NPCs with you. They are pretty dumb but are very tanky and deal lots of damage so you need to babysit them through. They usually only attack when you do but sometimes engage on their own. After engaged they fight to the death.
+The starting area contains lots of enemies from which 2 enemy=Cultists_(Respawn):veteran, 2 enemy=Mages_(Respawn):veteran and 2 enemy=Warriors_(Respawn):veteran respawn when killed. If NPCs get in the fight they will either die or take a long time to kill the enemies so keep NPCs away from the enemies.
+Most groups will immediately turn left and hug the wall until they reach the gate. Turning right is also possible but easier to mess up. Either way, follow your team and don't split up or you risk losing the NPCs.
+Before you attack any enemy groups make sure all players and NPCs are with you. If enemies are near the gate pull them away. Try to get NPCs hit so they aggro on the enemies. This can be done easily by pulling enemies behind a corner.
+tactic=coordinated
+If you plan to stealth through the town turn right because you will lose the NPCs anyway. Stack behind a rock near the gate. Attack a enemy=ballista:structure to aggro the enemy group with enemy=monks:veteran. Keep them blinded and burst them down.
+tactic=optional
+To get the achievement "Out of Cluck" you have to kill every chicken. This requires either lots of unnecessary killing or running around which will slow your team down. Make sure your team is ok with what you are doing. It's unsure which chickens count so better kill them all.
+The best way to get the achievement is to specifically create a team for it. Since Urban Battleground is a tier 1 fractal you can keep rerolling until you get it. On scale 1 you can even solo it quite easily with help of NPCs but additional players make it faster.
+tactic=bug
+NPCs may not appear at any point. Proceed normally since they may appear later.
+
+name=enemy=Siegemaster_Dulfy:champion
+tactic=normal
+At the enemy=gate:structure focus the 3 enemy=burning_Oils:structure at the top. They put ticking AoEs at an unexpectedly far range so don't be fooled by their weak look. Once they are destroyed attack the gate and Dulfy. Make sure NPCs also attack her. Ignore the enemy=Ballistas:structure because Dulfy will just repair them.
+Once Dulfy dies destroy any remaining siege weapons and focus the gate down.
+tactic=coordinated
+Focus 3 the enemy=burning_Oils:structure with ranged attacks and then burst down Dulfy and the gate.
+
+name=After the first gate
+tactic=normal
+There are randomly placed blockades around the town which is filled with enemy groups. If the way is blocked there is no point killing the enemies so scout the area and only kills enemies when necessary.
+To utilize NPCs properly you should attempt to pull every enemy group behind a corner. Hitting an enemy causes NPCs to engage and they will usually get enemy aggro. If not, they will take lots of damage from NPCs while running towards you.
+When you reach a smaller gate you should ignore the enemies, focus down the gate in a few seconds, go in and stack behind a corner. This allows you to ignore the enemy=burning_Oil:structure on the top. However lots of groups will start ranging the Burning Oil so be prepared.
+tactic=coordinated
+Stealth past all of the enemies as well as the ballistae. When you reach a gate to the courtyard, quickly burst it down (without killing the oil), and then stack on the other side of the gate and kill the mobs which guard the gate. For the longest path, the mobs will not follow and you will not need to stack on the other side.
+tactic=thief
+Use blinds to protect your team (especially when pulling behind corner).
+tactic=necromancer
+Use wiki=Plague for mass-blind.
+tactic=elementalist
+Use wiki=Glyph_of_Storms in earth attunement and wiki=Lightning_Hammer for mass blinds.
+
+name=Courtyard
+tactic=normal
+The area is filled with 4 enemy groups and on middle there are multiple enemy=Ballistas_(Rapid):structure and enemy=Arrow_Carts_(Strong):structure. Enemy groups contains either enemy=Ascalonian_Mage:veteran, enemy=Ascalonian_Monks:veteran, enemy=Ascalonian_Archers_(Igniter):veteran or enemy=Ascalonian_Cultists:veteran. Additionally each group has ~3 enemy=Ascalonian_Warriors:veteran with them.
+To capture the area you have kill the enemy groups. Keep in mind that the area gets captured even with siege weapons so remember to destroy them too. There is a white statue and a tree in the area which can be used to your advantage. They give cover against Ballistas and Arrow Carts and can be used to pull enemies close to you or even split them up.
+Ballistas have a very long range so stay near back wall while getting behind the cover. If NPCs get hit they may engage on their own. One player should get close to the cover while rest wait behind him with NPCs. If everyone is near the cover NPCs will engage pulled enemies before they reach the cover and very likely engage Ballistas after.
+If done properly enemies should safely get behind the cover. At this point rest of the team should come in fast to clear them out. If everyone stays in the cover you won't get hit by Ballistas or Arrow Carts and NPCs should stay with you. If NPCs run off after enemies go help them. If not, run to the other side without aggroing enemies and repeat the pull.
+If NPCs end up dead you have two choices. Either everyone dies and they revive with you or you try to revive them one by one. Dying is usually much faster and simpler as you can just unequip your gear and go die. But if there aren't lots of enemies nearby you can try reviving them. Just keep in mind that often they just charge to the enemies and get killed really quick.
+When all enemies are dead quickly focus down remaining siege weapons before the area gets captured.
+tactic=exploit
+If you have trouble killing the enemies you can just pull them out of the area. Split up and pull enemies back while wearing defensive skills.
+tactic=coordinated
+If you skipped the town you won't have any NPCs. Use the normal tactic but after clearing a side move to the other side without aggroing anything. Once enemies are cleared focus down siege weapons with help of stability.
+tactic=warrior
+wiki=Battle_Standard is extremely strong because you can resurrect 5 NPCs.
+tactic=guardian
+Use wiki="Stand_Your_Ground!" when pulling to counter Ballistas.
+tactic=thief
+Use blinds to protect your team (especially when pulling behind corner).
+tactic=necromancer
+Use wiki=Plague for mass-blind.
+tactic=elementalist
+Use wiki=Glyph_of_Storms in earth attunement and wiki=Lightning_Hammer for mass blinds.
+
+name=The ritual
+tactic=normal
+Once the area is captured a Flame Legion Shaman appears. You need to protect him from 6 groups of a enemy=Ascalonian_Cultist:veteran and 2 enemy=Ascalonian_Monks:veteran while he does his ritual. Revive any dead NPCs fast before enemies appear. If Shaman dies your team wipes and you have to retry.
+Attack groups before they reach Shaman so they don't damage him. Bring lots of damage to kill a group before next one arrives.
+tactic=exploit
+If you know you will have trouble with the ritual, for example when soloing, don't destroy every enemy=Ballista_(Rapid):structure. Run back so they target Shaman and knock him back away from the middle. You should ideally leave the Ballista that is nearest to where the shaman runs up alive; if you live this Ballista alive and fail the event multiple times (resurrecting the shaman after each failure), you will not need to deal with any other enemy groups. If you leave another Ballista alive, you may need to deal with only a single enemy group. You can also achieve the same effect as in the ideal case if you do not kill any of the siege, however, this will make things more difficult when it comes time to fight Captain Ashym.
+
+name=enemy=Captain_Ashym:legendary
+tactic=ranged
+At the beginning get close to him so NPCs attack him and then back off.
+He starts with a enemy=Sword_and_Shield:legendary. He only has melee attacks so you can safely range him. Keep in mind that he occasionally blocks all attacks so time your burst attacks.
+tactic=melee
+Unless in a somewhat coordinated group, take a ranged weapon on swap. When Ashym reaches 25% health you can get whole team killed if you melee him, as he may switch to his Fiery Greatsword. Also after he reaches 75% health you may have trouble meleeing him unless you are aware of his mechanics.
+He starts with a enemy=Sword_and_Shield:legendary. NPCs will absorb most of his attacks so you can melee him safely. Keep in mind that he occasionally blocks all attacks so time your burst attacks.
+tactic=ranged|melee
+He will keep re-summoning an enemy=Ascalonian_Squire:veteran throughout the fight. There is no point killing him because he will be summoned pretty fast again. Stay mobile and run away from him while attacking Ashym.
+tactic=ranged
+At 75% health Ashym swaps to a enemy=Staff:legendary. As long as you stay mobile at high range he won't be a threat. You will automatically move out of any red circles or rectangles before they can deal any real damage. Just be ready to dodge when you see a fire blast to avoid the incoming bigger fire blast.
+At 25 health he will shout "We will never surrender!". As long as everything stays at distance nothing changes. But if someone is at melee range he may switch to a enemy=Fiery_Greatsword:legendary.
+tactic=melee
+At 75% health Ashym swaps to a enemy=Staff:legendary. His most dangerous attack is Meteor Shower which causes meteors to fall on a huge area. Even one hit will deal lots of damage so you generally can't stay on the area. This may prevent you from using melee attacks at all for the duration of the AoE.
+He also has another attack named Meteor Shower but it causes two PBAoE blasts instead. At melee range you have to dodge both, which requires good timing to evade with only one dodge, however is easy to evade using two dodges. Single blocks can be used on one part of the attack. Getting hit will do lots of damage and agony so learn the casting animation fast. His final attack Firewall is a ticking AoE with low damage so just walk out of it.
+At 25% health he will shout "We will never surrender!". At this point you should go full ranged if Ashym is not CCed. If his current target is on melee range he will instantly switch to a enemy=Fiery_Greatsword:legendary.
+tactic=ranged|melee
+| In that case he becomes extremely lethal and probably kills your entire team. You may have a small chance if NPCs are alive.
+tactic=coordinated
+Full melee is only possible with huge amount of damage. wiki=Deep_Freeze Ashym at 25% health and burst him down.
+tactic=warrior
+Use wiki=Battle_Standard to revive NPCs and players if needed.
+tactic=thief
+Use wiki=Smoke_Screen to provide projectile defense against FGS-Ashym.
+tactic=thief
+Use wiki=Signet_of_Agility to provide extra dodges to your team.
+tactic=guardian
+Use wiki=Wall_of_Reflection to provide projectile defense against FGS-Ashym.
+tactic=guardian
+Take wiki="Retreat!" for an extra Aegis.
+tactic=mesmer
+Take wiki=Feedback and/or trait wiki=Temporal_Curtain to provide projectile defense against FGS-Ashym.

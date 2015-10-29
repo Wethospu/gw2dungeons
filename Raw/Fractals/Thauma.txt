@@ -1,0 +1,172 @@
+init=Thauma|Fractals of the Mists|Thaumanova Reactor|Reactor|15
+init=Thauma|Fractals of the Mists|Thaumanova Reactor|Reactor|34
+init=Thauma|Fractals of the Mists|Thaumanova Reactor|Reactor|48
+init=Thauma|Fractals of the Mists|Thaumanova Reactor|Reactor|55
+init=Thauma|Fractals of the Mists|Thaumanova Reactor|Reactor|64
+init=Thauma|Fractals of the Mists|Thaumanova Reactor|Reactor|84
+init=Thauma|Fractals of the Mists|Thaumanova Reactor|Reactor|97
+
+#########################################################################
+
+path=Thauma
+name=Thaumanova Reactor
+tactic=normal
+Enemies: A human, an ooze and various others.
+Time: Day.
+Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
+youtube=n4m2sEZ5x4M|Video_guide [KING].
+Current record: record=46.
+
+name=Start
+tactic=normal
+You have to wait a bit at the start until the detonator becomes interactable. Activate it to blow up the wall.
+Immediately after the wall a enemy=portal opens with a enemy=flame_legion_blademaster:veteran, a enemy=nightmare_hound:veteran and an enemy=icebrood_wolf:veteran.
+tactic=fight
+| Kill them and then look around to get some idea of the map layout. The water at the bottom is toxic and deals lots of damage. If you want to move through the water keep jumping to reduce damage taken. The most efficient path to the next objective is to run over the water to the center floor area, and then either blink up, or run up the stairs located to the left and then move to the center area of the upper-floor.
+tactic=skip
+| Ignore them and run straight through to the toxic water while jumping to reduce damage taken. Stealth is an excellent way to get past the mobs without any hassles. The most efficient path to the next objective is to run over the water to the center floor area, and then either blink up, or run up the stairs located to the left and then move to the center area of the upper-floor.
+tactic=bug
+At some point the whole party may crash to the desktop. This will make you lose the instance unless someone keeps the error report window open until others get back.
+Keep in mind that some groups may kick you after they reconnect because they are impatient. Don't wait for too long!
+
+# south place filled with: enemy=mark_i_golem:normal
+
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-2_thumb.jpg|
+name=Main room
+tactic=normal|skip
+The main area is filled with lots of different enemies. enemy=Nightmare_Hounds and enemy=Icebrood_Wolves patrol around the area. At specific points a enemy=portal appears with some enemies. Look at the map for the spots to avoid getting caught off guard.
+Portals occasionally pull someone in which may make you fall down. Remember to keep jumping on toxic water. Try to walk on already cleared places so you don't get ambushed by portals.
+Possible enemies are enemy=flame_legion_igniters, enemy=flame_legion_blademasters, enemy=bandit_riflemen, enemy=bandit_scouts, enemy=aatxes:veteran, enemy=dredge_mining_suits, enemy=dredge_disaggregators:veteran, enemy=ascalonian_cultists, enemy=ascalonian_captains and enemy=ascalonian_archers.
+At the center are of the upper floor there are 2 enemy=skritt_bottle_lobbers and 2 enemy=skritt_gear_lobbers. They have to be killed to proceed.
+tactic=normal
+Stick together so you don't get overrun. It doesn't matter which way you go because all ways lead to the middle platform. The most efficient path to the next objective is to run over the water to the center floor area, and then either blink up, or run up the stairs located to the left and then move to the center area of the upper-floor. However, some groups prefer to go up the right set of stairs as you come out of the broken-wall, even though it is slower, has more mobs and portals, and has no upside other than not having to cross the toxic water.
+tactic=skip
+The most efficient path to the next objective is to run over the water to the center floor area, and then either blink up, or run up the stairs located to the left and then move to the center area of the upper-floor. Use stealth to avoid aggroing enemy groups. With a good group you can run straight to the skritt and clear any following enemies. With weaker groups consider killing necessary enemy groups to avoid getting overrun.
+tactic=mesmer
+Use wiki=blink to teleport up through the platform and then use wiki=portal to get your group up (like in [KING] video).
+tactic=thief
+Use wiki=Infiltrator's_Arrow or wiki=Shadowstep to teleport to the platform.
+tactic=elementalist
+Use wiki=Lightning_Flash to teleport to the platform.
+tactic=guardian
+Use wiki=Merciful_Intervention to teleport to the platform if an ally has already teleported up.
+
+name=Disabling the colliders
+tactic=normal
+To proceed you have to disable the colliders. There are 4 rooms around the main area. Each of them has a console which can be used to disable one collider. At scale 1-39 you only have to disable 3 colliders so you can skip one room.
+The rooms can be done in any order but you may want to go to the dormitories first because researches may die if you are too slow. If this happens at scale 1-39 you can't complete the room and have to do a harder one. At scale 40 and above you can complete the room even if researches die.
+Superheated room should can be skipped or done last because you can bring cooling rods from other rooms to make it easier. However, if a player in your group knows how to solo this room without any cooling rods, there is no reason to skip it. It's also possible to split up because all rooms don't benefit from 5 players.
+Keep in mind that untriggered enemy=portals will still appear so move together or be ready to skip the enemies. Check map for the room locations. Suggested order for a less coordinated group is Ooze Room, Dormitories, Turret Room and Superheated room.
+tactic=coordinated
+Split up. It is possible to low-man all of the objectives. The superheated room can be soloed without any cooling rods by many classes. The turret room can be duoed by any classes or soloed by a thief, mesmer, or necromancer. The dormitories can easily be soloed by any class, especially an elementalist. Subject 6 can be very easily low-manned by immobilizing it before it reaches its trigger point, or easily low-manned by fighting it normally so long as your party has sufficient DPS.
+For anything other than a highly coordinated group, it's recommended the whole team does Subject 6 first, and then splits as needed. Highly coordinated groups may 4-man or 3-man Subject 6, while other players split off to accomplish other objectives.
+
+name=Ooze room
+tactic=melee|ranged
+Wait a bit until enemy=Subject_6 appears. You need to kill it so you can activate link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-6_thumb.jpg|the_console and get a cooling rod.
+Most importantly focus down any blue enemy=Repair_Oozes because Subject 6 gets healed a lot if they reach him. They appear at sides of the room when you deal damage to Subject 6. Also immediately stop attacking when Subject 6 link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-4_thumb.jpg|starts_blocking. If you hit him 20 times he will explode dealing extreme damage on a huge area. Keep an eye on the stack counter and be ready to dodge twice if your group doesn't stop attacking.
+Some of his attacks inflict special debuffs which either reduce damage dealt or increase damage taken. The effects seem to be quite minor and won't last long so you shouldn't have to worry about them. If they feel like a problem then use a condition removal.
+tactic=melee
+To survive melee you need enough agony resist. His most dangerous attack, link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-5_thumb.jpg|Acid_Rain, shoots lots of unblockable projectiles around the area. At close range it's very hard to avoid them all so you will very likely get multiple agony stacks. Even with agony resist it deals some damage so keep an eye on your health.
+His basic melee attack deals low damage so you don't have to care about it. However be ready to dodge twice or move away when he glows. He will jump multiple times in a row dealing lots of area damage.
+tactic=ranged
+Playing at range is extremely easy because Subject 6 has only one ranged attack, link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-5_thumb.jpg|Acid_Rain, which shoots lots of unblockable projectiles around the area. If you have enough agony resist you can just ignore the whole attack. If not then focus on dodging.
+tactic=coordinated
+Burst enemy=Subject_6:champion down before enemy=Repair_Oozes:normal reach him. Keep his defiance down so you can interrupt his blocking with unblockable control skills. If lots of Oozes get near use area control to keep them away.
+To move him away from Repair Oozes and give you bit more time you can pull him towards the entrance and then use a control pull to move him bit further.
+tactic=struggling
+It is possible to pull the ooze nearly into the corridor that leads into the room. This increases the distance the repair oozes need to travel, making the encounter somewhat easier for teams with low DPS.
+tactic=exploit
+Immobilize or otherwise chain-CC Subject 6 before he reaches his trigger point. He does not perform any attacks before reaching the trigger point.
+tactic=optional
+Talk to your group if you want to complete the "Subject 6 Deep-Sixer" achievement. You have to give him 19 Overload stacks when he is blocking by hitting him exactly 19 times. Ask your group's help to reach 15 stacks and then tell them you will handle the rest. Keep an eye on the stack counter so you don't go over.
+You should get the achievement if Subject 6 reaches 19 stacks without exploding during the fight. It shouldn't matter whether he explodes before or after that (needs verification).
+tactic=warrior
+With wiki=Signet_of_Might you can use control to interrupt his blocking. Inform your team so they understand to keep defiance stacks down.
+tactic=warrior
+You can use wiki=Flurry and wiki=Throw_Bolas to immobilize the Ooze before it has reached its trigger point.
+tactic=guardian
+You can use wiki=Chains_of_Light and/or wiki=Zealot's_Embrace and/or wiki=Signet_of_Wrath to immobilize the Ooze before it has reached its trigger point.
+tactic=engineer
+You can use wiki=Supply_Crate and wiki=Net_Turret along with wiki=Net_Shot to immobilize the Ooze before it has reached its trigger point.
+tactic=thief
+You can use wiki=Needle_Trap and wiki=Devourer_Venom and wiki=Infiltrator's_Strike to immobilize the Ooze before it has reached its trigger point.
+tactic=ranger
+You can use wiki=Entangle to immobilize the Ooze before it has reached its trigger point.
+tactic=human
+You can use wiki=Avatar_of_Melandru to use wiki=Entangle in order to immobilize the Ooze before it has reached its trigger point.
+
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-15_thumb.jpg|
+name=Researcher Dormitories
+tactic=normal
+You need to save some researches from 2 enemy=Aatxes:normal and 2 enemy=Aatxes:veteran. Destroy and kill stuff. Saving the researchers will help with killing the end boss by providing you a damage boost. You only need to kill the doors and the portals to complete this event, you do not need to kill any of the mobs.
+Once you get to the console, activate it and move on.
+tactic=coordinated
+When splitting this room can be with 1-2 players.
+tactic=bug
+On some levels, the door to the console is open by default. Pressing it allows you to easily finish this room, although you still need to save the researchers if you want the damage boost against the final boss.
+
+name=Turret room
+tactic=warrior
+Use wiki=Berserker_Stance to activate consoles without getting immobilized.
+tactic=normal
+Turret room is a maze filled with turrets. Their shots knock you down and deal lots of damage. You can grab a wiki=Safety_Shield at the entrance to counter them. However shots can easily be avoided by moving cautiously and dodging. There are also some enemy=Golems running around which can be killed when at a safe spot.
+There are total of 4 consoles. One is at left side and one player has to use it to shortly open second console on right side. Another player has to go to this second console and use it to open 2 main consoles at the end of the room. Using a console immobilizes so you either need two players, a conditional removal or a teleport.
+tactic=coordinated
+When splitting this can be done with 2 players of any class. The first player goes to left side and helps the other player get to the right side. Then the other player helps the first player get to the main consoles. Use a condition removal or a teleport to activate both consoles.
+This room can be soloed by a Necromancer, Thief, or Mesmer. However, Thieves and Necromancers may need to kill some golems in order to solo the room.
+tactic=bug
+Using an exit teleporter may make your character invisible. Relogging or briefly entering the superheated room fixes this.
+
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-17.jpg|
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-18_thumb.jpg|
+#
+name=Superheated room
+tactic=normal
+Whole room is filled with an environmental effect which slows you down, inflicts agony and deals lots of damage. Cooling rods can be used to reduce these effects but are not necessary. They can be placed on left and right sides of the room. The first one is easy and quick to put in so consider doing that.
+While in the room your weapon skills get replaced by wiki=Meltdown. Use the first skill repeatedly to increase your speed. Other skills won't do anything useful so don't use them. Mobility skills from weapons can still be used right before the entrance for a small advantage. Additionally, skills such as transforms or bundles which replace your skills will still work.
+Before going in prepare as much as possible because getting to the end is difficult. Equip mobility, healing and immunity skills and stack swiftness and vigor. Dodging makes you move faster so dodge whenever possible.
+At the end there is a safe area with two consoles. Activating a console immobilizes so you either need two players, a conditional removal, or a teleport.
+If your group struggles then have one player focus on running and rest of the team focus on area healing. If you are a healer change traits and utilities to maximise your healing capability. Run together and focus on keeping the main runner up.
+tactic=coordinated
+When splitting you can do this with only one player. With most classes you can do this room without any rods.
+tactic=exploit
+Stand in middle of the consoles to activate them both at the same time.
+tactic=bug
+Using an exit teleporter may make your character invisible. Relogging or briefly entering the superheated room fixes this. Similarly, entering and exiting the superheated room may make your character invisible, which can only be fixed by relogging.
+tactic=warrior
+You can solo the room with one cooling rod. You will get downed near end but you are able to stay alive until skills recharge. Use wiki=Vengeance and activate consoles.
+tactic=warrior
+Use wiki=Bull's_Charge and either wiki=Signet_of_Rage or wiki=Rampage (also boosts health) for mobility.
+tactic=warrior
+Use wiki=Berserker_Stance to activate consoles without getting immobilized.
+tactic=warrior
+Use wiki=Defiant_Stance to tank and heal a lot.
+tactic=thief
+You can use a combination of wiki=Infiltrator's_Arrow, wiki=Shadowstep, and wiki=Shadow_Trap to easily reach the other side without any cooling rods.
+
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-12_thumb.jpg|
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-attacks_thumb.jpg|
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-lightning-ball.jpg|
+#link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-anomaly-laser-beam_thumb.jpg|
+name=enemy=Anomaly
+tactic=melee|ranged
+Once all colliders are disabled go back to the middle where you killed the skritt. Wait until Scarlet finishes her monologue and then activate the nearby console to get teleported up.
+Anomaly does barely any damage on her own. Instead she temporarily destroys platforms to make you fall down. Platforms don't get destroyed instantly. To give you some time to escape platforms flash for few seconds before disappearing. Focus on surviving because if you fall down you will get instantly defeated without any way for a resurrection.
+tactic=melee
+Consider taking a ranged weapon swap because disappearing platforms may make attacking impossible. Also keep in mind that you can't enter that platform where Anomaly is standing.
+tactic=melee|ranged
+Her two basic attacks won't make platforms disappears. Her projectile attack does low damage but cripples briefly. Keep this in mind because a cripple in wrong moment can get you killed. She also makes white orbs appear which deal high damage and agony after 2 seconds. Just stay away from them.
+Her other attacks will cause platforms to disappear. It's important to recognize them so you know when to stay away from others. Most notable is the white Beam which causes platforms disappear below the target. She also puts debuffs on targets which is marked by a bomb icon. "Bomb" explodes after 4 seconds dealing low damage and making nearby platforms disappear so it's quite harmless.
+Occasionally she uses Cosmic Barrage and starts spinning causing multiple white orbs appear over the area. After 2.5 seconds they explode making nearby platforms disappear and dealing damage and agony. As usually, move away from them.
+tactic=melee
+| At end of her spin she will knock back nearby targets. Either move away from her or to a position where you can safely get knocked back.
+tactic=melee|ranged
+After losing 50% health she puts a 6 second debuff, Cosmic Instability, on each player every 30 seconds. This debuff causes platforms below to disappear and can easily be recognized by everyone flashing. Move together if possible to reduce amount of platforms disappearing.
+tactic=coordinated
+Stack at melee range. Either move together when someone gets targeted or have the targeted player back away and kite.
+tactic=exploit
+The Safety Shields from the turret room can be used to block the Flux Bomb attack, and also possibly the Cosmic Instability attack.
+Having a player stay down and then teleport up once Cosmic Instability begins to occur can, with proper timing, cause the floor to remain solid.
+tactic=bug
+At end you may not get prompt for the next level. There is no known fix.

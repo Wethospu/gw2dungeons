@@ -218,7 +218,7 @@ namespace DataCreator.Enemies
 
       htmlBuilder.Append(Gw2Helper.AddTab(3)).Append("</div>").Append(Constants.LineEnding);
       // Add tactics. / 2015-08-09 / Wethospu
-      htmlBuilder.Append(Tactics.ToHtml(Index, string.Join("|", Paths), enemies, 3));
+      htmlBuilder.Append(Tactics.ToHtml(Index, string.Join("|", Paths), 0, enemies, 3));
       htmlBuilder.Append(Gw2Helper.AddTab(2)).Append("</td>").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(2)).Append("<td class=\"enemy-media\">").Append(Constants.LineEnding);
       // Add thumbs.
