@@ -92,12 +92,12 @@ function getProfessionHealth(level, profession) {
 // Calculates base defense at given level and profession.
 function getPlayerBaseDefense(level, profession) {
     if (profession == "elementalist" || profession == "mesmer" || profession == "necromancer")
-        var armor = 920;
+        var defense = 920;
     else if (profession == "ranger" || profession == "thief" || profession == "engineer")
-        var armor = 1064;
+        var defense = 1064;
     else // Warrior,  Guardian and Revenant.
-        var armor = 1211;
-    return Math.round(getDefenseScale(level) * armor);
+        var defense = 1211;
+    return Math.round(getDefenseScale(defense, level, 80));
 }
 
 
