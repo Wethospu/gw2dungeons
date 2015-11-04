@@ -50,6 +50,7 @@ var settings = {
     adSetting: "big",
 	defaultFilters: "18EvyA4",
 	fontSize: 100,
+	mainShowIcons: true,
     // Tab settings.
     tactics: [],
 	tips: [],
@@ -174,6 +175,21 @@ function loadSettings(loadEncounters, loadEnemies) {
     }
 }
 
+function loadIcons(setting) {
+	if (getSetting(setting + "ShowIcons"))
+	{
+		$('.icon').each(function () {
+			$(this).css('background-image', 'url(media/img/' + $(this).attr('data-src') + '.png)');
+		});
+	}
+	else
+	{
+		$('.icon').each(function () {
+			$(this).removeClass('icon');
+		});
+	}
+}
+
 // Performance: Takes up to 400 ms.
 function chooseCorrectTab(location) {
     $(location + ' .tactics').each(function () {
@@ -240,18 +256,7 @@ function applyEnemySettings(setting) {
 	else
 		var location = "#detail-container";
 	applyEncounterSettings(location);
-	if (getSetting(setting + "ShowIcons"))
-	{
-		$('.icon').each(function () {
-			$(this).css('background-image', 'url(media/img/' + $(this).attr('data-src') + '.png)');
-		});
-	}
-	else
-	{
-		$('.icon').each(function () {
-			$(this).removeClass('icon');
-		});
-	}
+	loadIcons(setting);
     $(location + " .enemy").each(function () {
         handleEnemy(this, setting);
     });

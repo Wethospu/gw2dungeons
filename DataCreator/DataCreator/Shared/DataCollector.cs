@@ -131,7 +131,8 @@ namespace DataCreator.Shared
         foreach (var path in DungeonPaths[dungeon])
         {
           entry.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./").Append(path.Tag).Append("\">").Append(path.NameLong).Append("</a>");
-          entry.Append("<span class=\"tracker\" data-tag=\"").Append(path.Tag).Append("\"></span></li>").Append(Constants.LineEnding);
+          //entry.Append("<span class=\"tracker\" data-tag=\"").Append(path.Tag).Append("\"></span>");
+          entry.Append("</li>").Append(Constants.LineEnding);
         }
         entry.Append(Gw2Helper.AddTab(3)).Append("</ul>").Append(Constants.LineEnding);
         dungeonData.Add("ID_" + dungeon.ToUpper(), entry.ToString());
@@ -154,8 +155,9 @@ namespace DataCreator.Shared
       var fractalData = new StringBuilder();
       for (var i = 0; i < FractalPaths.Count; i++)
       {
+        // Note: No tabs or linebrakes used to prevent a space between fractal tables. / 2015-11-14 / Wethospu
         if (i%20 == 0)
-          fractalData.Append(Gw2Helper.AddTab(3)).Append("<li><ul class=\"nav nav-stacked\">").Append(Constants.LineEnding);
+          fractalData.Append("<li><ul class=\"nav nav-stacked\">").Append(Constants.LineEnding);
         var path = FractalPaths[i];
         // Generate an entry for a fractal.
         // Format:
@@ -168,9 +170,13 @@ namespace DataCreator.Shared
           Helper.ShowWarningMessage("Fractal F" + (i + 1) + " had no path data!");
           continue;
         }
-        fractalData.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./F").Append(path.Scale).Append("\">").Append(path.Scale).Append(". ").Append(path.NameLong).Append("</a></li>").Append(Constants.LineEnding);
+        fractalData.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./F").Append(path.Scale).Append("\"><span class=\"list-icon\">");
+        fractalData.Append(Gw2Helper.RecommendedAgonyResist[i + 1]).Append(" <span class=").Append(Constants.IconClass).Append(" data-src=\"ar\" title=\"Agony Resistance\">AR</span>");
+        fractalData.Append("</span>").Append(path.Scale).Append(". ").Append(path.NameLong).Append("</a></li>").Append(Constants.LineEnding);
+
+        //"<span class=" + Constants.IconClass + " data-src=\"" + icon.ToLower() + "\" title=\""
         if ((i+1)%20 == 0)
-          fractalData.Append(Gw2Helper.AddTab(3)).Append("</ul></li>").Append(Constants.LineEnding);
+          fractalData.Append(Gw2Helper.AddTab(3)).Append("</ul></li>");
       }
       return fractalData.ToString();
     }

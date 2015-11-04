@@ -4,6 +4,7 @@
 		loadSettings(false, false);
 		loadPage();
 		loadDailyPaths();
+		loadIcons("main");
 		var page = getSetting('homePage');
 		$(this).find('a[href^=#tab-' + page + ']').tab('show');
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -52,9 +53,6 @@
 	}
 	
 </script>
-<div class="alert alert-info">
-     Please report any bugs/ideas in comment boxes, forums, reddit or my email (<a href="mailto:wethospu@gmail.com">wethospu@gmail.com</a>).
-</div>
 <div>
     <ul class="nav nav-tabs">
 		<li><a href="#tab-fractals" data-toggle="tab">Fractals</a></li>

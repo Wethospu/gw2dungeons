@@ -142,7 +142,7 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
   clear: both;
   visibility: hidden;
 }
-.dungeon-list > li, .fractal-list > li {
+.dungeon-list > li {
     display:inline-block;
     height: auto;
     margin-bottom: 1.65em;
@@ -154,8 +154,30 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
     box-sizing: border-box;
 }
 
+.fractal-list > li {
+    display:inline-block;
+    height: auto;
+    margin-bottom: 1.65em;
+    vertical-align: top;
+    width: 300px;
+	border-style: groove;
+	border-width: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fractal-list > li > ul > li > a {
+	padding-top: 5px;
+}
+
 .fractal-list {
-	font-size: 1em;
+	font-size: 0.9em;
+}
+
+.list-icon {
+	float: right;
+	color: black;
 }
 
 .dungeon-image {
