@@ -6,10 +6,10 @@ var placeholders = {
     armor: 2137,
 	toughness: 1000,
     health: 19212,
-    resist: 0,
-    fractal: 10,
+    agonyResist: 0,
+	agonyResistAqua: 0,
     armorMultiplier: 0,
-    healthMultiplier: 0,
+    healthMultiplier: 0
 }
 
 // Find correct starting values from statcalculator.
@@ -28,11 +28,12 @@ var settings = {
 	toughness: null,              //
     health: null,                 //
     level: null,                  //
-    resist: null,                 //
-    fractal: null,                //
+    agonyResist: null,            //
+	agonyResistAqua: null,        //
     armorMultiplier: null,        //
     healthMultiplier: null,       //
     ////////////////////////////////
+	fractal: 10,
 	profession: "warrior",
     potionStrength: "10",
     potionUsage: "none",
@@ -531,9 +532,12 @@ function handleEnemy(enemy, setting) {
 		else
 			insertDamage(this, damage, damageView, playerLevel);
     });
+	var resist = getSetting("agonyResistance");
+	if (currentPath == "aqua")
+		resist = getSetting("agonyResistanceAqua");
     $(enemy).find(".agony-value").each(function () {
         var second = (Number)($(this).attr("data-amount"));
-        insertDamage(this, getAgonyDamage(second, fractalLevel), damageView, playerLevel);
+        insertDamage(this, getAgonyDamage(second, fractalLevel, resist), damageView, playerLevel);
     });
     $(enemy).find(".fixed-value").each(function () {
         var damage = (Number)($(this).attr("data-amount"));

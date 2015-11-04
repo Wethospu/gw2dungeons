@@ -5,6 +5,7 @@
 		loadPage();
 		loadDailyPaths();
 		loadIcons("main");
+		loadAgonyDamage();
 		var page = getSetting('homePage');
 		$(this).find('a[href^=#tab-' + page + ']').tab('show');
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -12,11 +13,55 @@
 		});
 	});
 	
+	function loadAgonyDamage() {
+		$('.list-sub-fractal').each(function(){
+			var scale = $(this).attr("data-scale");
+			var type = $(this).attr("data-type");
+			var resist = getSetting('agonyResist');
+			if (type == "1")
+				resist = getSetting('agonyResistAqua');
+			var damage = getAgonyPerSecond(scale, resist);
+			$(this).html(Math.round(100 * damage) + "% damage per second");
+			// Boss fractals have unavoidable 10 seconds of agony (much more dangerous). / 2015-11-04 / Wethospu
+			// No color: 1% or less damage.
+			// Pale red: 5% or less damage, 3% for bosses.
+			// Bright red: 10% or less damage, 5% for bosses.
+			// Red: 20% or less damage, 10% for bosses.
+			// Darker red: 33% or less damage, 10% for bosses.
+			// Dark red: Rest.
+			var parent = $(this).parent();
+			if (type == "2") {
+				if (damage > 0.15)
+					$(parent).addClass('agony-6');
+				else if (damage > 0.10)
+					$(parent).addClass('agony-4');
+				else if (damage > 0.5)
+					$(parent).addClass('agony-3');
+				else if (damage > 0.3)
+					$(parent).addClass('agony-2');
+				else if (damage > 0.01)
+					$(parent).addClass('agony-1');
+			}
+			else {
+				if (damage > 0.33)
+					$(parent).addClass('agony-5');
+				else if (damage > 0.2)
+					$(parent).addClass('agony-4');
+				else if (damage > 0.1)
+					$(parent).addClass('agony-3');
+				else if (damage > 0.5)
+					$(parent).addClass('agony-2');
+				else if (damage > 0.01)
+					$(parent).addClass('agony-1');
+			}
+		});
+	}
+	
 	function loadDailyPaths() {
 		// Load tracking info.
 		verifyDailyPaths();
-		$(".tracker").each(function(event){
-			var path = $(this).data("tag");
+		$(".tracker").each(function(){
+			var path = $(this).attr("data-tag");
 			if (settings.dailyPaths.indexOf(path) > -1)
 				$(this).html('<img class="profession-icon" src="media/img/gold_star.png">');		
 			else if (settings.donePaths.indexOf(path) > -1)
@@ -28,8 +73,8 @@
 		// Not completed -> Completed.
 		// Completed before -> Completed.
 		// Completed -> Not completed.
-		$(".tracker").on('click',function(event){
-			var path = $(this).data("tag");
+		$(".tracker").on('click',function(){
+			var path = $(this).attr("data-tag");
 			if (settings.dailyPaths.indexOf(path) > -1) {
 				// Remove the path completely.
 				settings.dailyPaths.splice( $.inArray(path, settings.dailyPaths), 1 );

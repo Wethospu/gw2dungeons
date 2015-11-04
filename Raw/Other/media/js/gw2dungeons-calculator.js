@@ -146,31 +146,32 @@ function getDamageWithoutWeapon(damage, potion, dungeonLevel) {
 	return Math.floor(damage / getPlayerArmor(dungeonLevel) * (1 - potion));
 }
 
-function getAgonyPerSecond(scale) {
-	var resist = getSetting("resist");
-	if (scale > 49)
-        var base = 0.84;
-    else if (scale > 39)
-        var base = 0.66;
-    else if (scale > 29)
-        var base = 0.48;
-    else if (scale > 19)
-        var base = 0.3;
-    else if (scale > 9)
-        var base = 0.12;
-    else
-        return 0;
-    if (resist < 0)
-        resist = 0;
-    scale -= resist * 0.012;
-    if (scale < 0.01)
-        scale = 0.01;
-    return scale;
+function getAgonyPerSecond(scale, resist) {
+	var baseAgony = [
+		0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000,
+		0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000,
+		0.09720, 0.11856, 0.13992, 0.16128, 0.18264, 0.20400, 0.22536, 0.24672, 0.26808, 0.28944,
+		0.31080, 0.33216, 0.35352, 0.37488, 0.39624, 0.41760, 0.43896, 0.46032, 0.48168, 0.50304,
+		0.52440, 0.54576, 0.56712, 0.58848, 0.60984, 0.63120, 0.65256, 0.67392, 0.69528, 0.71664,
+		0.73800, 0.75936, 0.78072, 0.80208, 0.82344, 0.84480, 0.86616, 0.88752, 0.90888, 0.93024,
+		0.95160, 0.97296, 0.99432, 1.01568, 1.03704, 1.05840, 1.07976, 1.10112, 1.12248, 1.14384,
+		1.16520, 1.18656, 1.20792, 1.22928, 1.25064, 1.27200, 1.29336, 1.31472, 1.33608, 1.35744,
+		1.37880, 1.40016, 1.42152, 1.44288, 1.46424, 1.48560, 1.50696, 1.52832, 1.54968, 1.57104,
+		1.59240, 1.61376, 1.63512, 1.65648, 1.67784, 1.69920, 1.72056, 1.74192, 1.76328, 1.78464,
+		1.80600
+	]
+	if (scale > baseAgony.length)
+		var base = baseAgony[100] + (scale - 100) * 0.02136;
+	else
+		var base = baseAgony[scale];
+	if (base < 0.01)
+		return base;
+	return Math.max(0.01, base - 0.012 * resist);
 }
 
-function getAgonyDamage(duration, scale) {
+function getAgonyDamage(duration, scale, resist) {
 	// Agony probably gets floored.
-    return Math.floor(getPlayerHealth(80) * getAgonyPerSecond(scale) * duration);
+    return Math.floor(getPlayerHealth(80) * getAgonyPerSecond(scale, resist) * duration);
 }
 
 function getEffectDamage(effect, level, attribute, count) {

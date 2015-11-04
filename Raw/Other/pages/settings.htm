@@ -10,21 +10,20 @@
 		$("#toughness-setting").attr("placeholder", placeholders.toughness);
         $("#health-setting").attr("placeholder", placeholders.health);
         $("#level-setting").attr("placeholder", placeholders.level);
-        $("#agony-setting").attr("placeholder", placeholders.resist);
-        $("#fractal-setting").attr("placeholder", placeholders.fractal);
-        $("#defense-multiplier-setting").attr("placeholder", placeholders.wvwdefense);
-        $("#health-multiplier-setting").attr("placeholder", placeholders.wvwhealth);
-        $("#search-amount-setting").attr("placeholder", placeholders.searchamount);
+        $("#agony-resist-setting").attr("placeholder", placeholders.agonyResist);
+		$("#agony-resist-aqua-setting").attr("placeholder", placeholders.agonyResistAqua);
+        $("#defense-multiplier-setting").attr("placeholder", placeholders.armorMultiplier);
+        $("#health-multiplier-setting").attr("placeholder", placeholders.healthMultiplier);
         // Put values (needed done like this because of placeholders).
         $("#armor-setting").attr("value", settings.armor);
 		$("#toughness-setting").attr("value", settings.toughness);
         $("#health-setting").attr("value", settings.health);
         $("#level-setting").attr("value", settings.level);
         $("#class-setting").val(getSetting("profession"));
-        $("#agony-setting").attr("value", settings.resist);
-        $("#fractal-setting").attr("value", settings.fractal);
-        $("#defense-multiplier-setting").attr("value", settings.wvwdefense);
-        $("#health-multiplier-setting").attr("value", settings.wvwhealth);
+        $("#agony-resist-setting").attr("value", settings.agonyResist);
+		$("#agony-resist-aqua-setting").attr("value", settings.agonyResistAqua);
+        $("#defense-multiplier-setting").attr("value", settings.armorMultiplier);
+        $("#health-multiplier-setting").attr("value", settings.healthMultiplier);
 		
         // Get value for every checkbox.
         $('input[type="checkbox"]').each(function () {
@@ -200,8 +199,12 @@
 			<span class="forms-desc">Needed to scale armor correctly.</span>
         </p>
         <p>
-            <label for="agony-setting">Agony Resistance</label>
-            <input type="text" name="number" id="agony-setting" data-setting="resist">
+            <label for="agony-resist-setting">Agony resistance</label>
+            <input type="text" name="number" id="agony-resist-setting" data-setting="agonyResist">
+        </p>
+		<p>
+            <label for="agony-resist-setting">Agony resistance underwater</label>
+            <input type="text" name="number" id="agony-resist-aqua-setting" data-setting="agonyResistAqua">
         </p>
         <p>
             <label for="potion-usage-setting">Slaying potion usage</label>
@@ -626,3 +629,4 @@
 	</form>
 </div>
 </div>
+<br><br><br><br><br><br><br><br><br>

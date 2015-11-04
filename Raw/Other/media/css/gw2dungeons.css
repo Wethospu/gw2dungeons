@@ -167,8 +167,16 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
     box-sizing: border-box;
 }
 
+.fractal-list > li > ul > li {
+	margin: 0;
+}
+
 .fractal-list > li > ul > li > a {
 	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 5px;
+	color: black;
 }
 
 .fractal-list {
@@ -180,6 +188,11 @@ p, p *, h1, h1 *, h2, h2 *, td, td * {
 	color: black;
 }
 
+.list-sub {
+	font-size: 0.9em;
+	color: black;
+	margin-left: 20px;
+}
 .dungeon-image {
     height:125px;
     opacity:0.75;
@@ -575,3 +588,21 @@ div.ally {
 	display: none;
 }
 
+.agony-1 {
+	background-color: #FFE5E5;
+}
+.agony-2 {
+	background-color: #FFCCCC;
+}
+.agony-3 {
+	background-color: #FFB3B3;
+}
+.agony-4 {
+	background-color: #FF9999;
+}
+.agony-5 {
+	background-color: #FF8080;
+}
+.agony-6 {
+	background-color: #FF6666;
+}
