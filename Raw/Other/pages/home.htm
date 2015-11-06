@@ -21,7 +21,7 @@
 			if (type == "1")
 				resist = getSetting('agonyResistAqua');
 			var damage = getAgonyPerSecond(scale, resist);
-			$(this).html(Math.round(100 * damage) + "% damage per second");
+			$(this).html(Math.round(100 * damage));
 			// Boss fractals have unavoidable 10 seconds of agony (much more dangerous). / 2015-11-04 / Wethospu
 			// No color: 1% or less damage.
 			// Pale red: 5% or less damage, 3% for bosses.

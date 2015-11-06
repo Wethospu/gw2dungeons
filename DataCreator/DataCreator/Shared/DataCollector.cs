@@ -173,14 +173,22 @@ namespace DataCreator.Shared
         fractalData.Append("<li><a href=\"./F").Append(path.Scale).Append("\"><span class=\"list-icon\">");
         fractalData.Append(Gw2Helper.RecommendedAgonyResist[i + 1]).Append(" <span class=").Append(Constants.IconClass).Append(" data-src=\"ar\" title=\"Agony Resistance\">AR</span>");
         fractalData.Append("</span>").Append(path.Scale).Append(". ").Append(path.NameLong).Append("<br>");
-        fractalData.Append("<span class=\"list-sub list-sub-fractal\" data-scale=\"").Append(i + 1).Append("\" ");
-        if (path.Tag.ToLower().StartsWith("aqua"))
-          fractalData.Append(" data-type=\"1\"");
-        if (path.Tag.ToLower().StartsWith("mai") || path.Tag.ToLower().StartsWith("solid") || path.Tag.ToLower().StartsWith("molten"))
-          fractalData.Append(" data-type=\"2\"");
+        if (i > 18)
+        {
+          fractalData.Append("<span class=\"list-sub list-sub-fractal\" data-scale=\"").Append(i + 1).Append("\" ");
+          if (path.Tag.ToLower().StartsWith("aqua"))
+            fractalData.Append(" data-type=\"1\"");
+          if (path.Tag.ToLower().StartsWith("mai") || path.Tag.ToLower().StartsWith("solid") || path.Tag.ToLower().StartsWith("molten"))
+            fractalData.Append(" data-type=\"2\"");
+          else
+            fractalData.Append(" data-type=\"0\"");
+          fractalData.Append("></span>% <span class=").Append(Constants.IconClass).Append(" data-src=\"agony\" title=\"Agony\">Agony:</span>");
+        }
         else
-          fractalData.Append(" data-type=\"0\"");
-        fractalData.Append("></span></a></li>");
+        {
+          fractalData.Append(Constants.Space);
+        }
+        fractalData.Append("</a></li>");
 
         //"<span class=" + Constants.IconClass + " data-src=\"" + icon.ToLower() + "\" title=\""
         if ((i+1)%20 == 0)
