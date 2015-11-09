@@ -261,10 +261,10 @@ namespace DataCreator
     public int Scale { get; set; }
 
     [JsonProperty("type")]
-    public int Type { get; set; }
+    public string Type { get; set; }
 
     [JsonProperty("rarity")]
-    public int Rarity { get; set; }
+    public string Rarity { get; set; }
 
     [JsonProperty("internalLevel")]
     public int InternalLevel { get; set; }
@@ -276,11 +276,45 @@ namespace DataCreator
     {
       var htmlBuilder = new StringBuilder();
       htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-scale =\"").Append(Scale).Append("\"");
-      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-type=\"").Append(Type).Append("\"");
-      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-rarity=\"").Append(Rarity).Append("\"");
+      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-type=\"").Append(TypeToInt()).Append("\"");
+      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-rarity=\"").Append(RarityToInt()).Append("\"");
       htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-level=\"").Append(InternalLevel).Append("\"");
       return htmlBuilder.ToString();
     }
+
+    private int RarityToInt()
+    {
+      if (Rarity.Equals("basic"))
+        return 1;
+      if (Rarity.Equals("fine"))
+        return 2;
+      if (Rarity.Equals("masterwork"))
+        return 3;
+      if (Rarity.Equals("rare"))
+        return 4;
+      if (Rarity.Equals("exotic"))
+        return 5;
+      if (Rarity.Equals("ascended") || Rarity.Equals("legendary"))
+        return 6;
+      return 0;
+    }
+
+    private List<string> WeaponTypes = new List<string>() {
+      "sword", "hammer", "longbow", "shortbow", "axe", "dagger", "greatsword", "mace",
+      "pistol", "polearm", "rifle", "scepter", "staff", "focus", "torch", "warhorn",
+      "shield", "small_bundle", "large_bundle", "spear", "harpoon_gun", "trident", "toyweapon",
+      "toyvisual", "maxitemweapontype"
+    };
+
+    private int TypeToInt()
+    {
+      var index = WeaponTypes.IndexOf(Type);
+      if (index > -1)
+        return index;
+      Helper.ShowWarningMessage("Weapon type " + Type + " not recognized.");
+      return 0;
+    }
+
   }
 
   public class SkillPalette
