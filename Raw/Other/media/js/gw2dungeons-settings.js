@@ -400,6 +400,7 @@ function handleEnemy(enemy, setting) {
 		$(enemy).find(".cooldown-unit").hide();
 	
 	var power = getAttribute(level, $(enemy).attr("data-power"));
+	power = fractalScaleDamage(power, fractalLevel, scalingType);
 	if (getSetting(setting + "ShowPower") && !isNaN(power)) {
 		$(enemy).find(".power-unit").show();
 		$(enemy).find(".power").html(power);
@@ -497,7 +498,8 @@ function handleEnemy(enemy, setting) {
 		var damage = $(this).attr("data-amount");
 		// Check is damage hard coded (over 100).
 		if (damage < 100) {
-			damage = fractalScaleDamage(damage * power, fractalLevel, scalingType)
+			// Power is already scaled for fractals.
+			damage = damage * power;
 			var weaponSlot = $(this).attr("data-weapon");
 			if (weaponSlot == "water")
 				var damages = getDamage(damage, weaponStrengthWater, potionStrength, playerLevel);
