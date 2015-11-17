@@ -23,6 +23,35 @@ if (empty($page)) {
 $to_load = $page;
 if (strtolower($page) == 'guilds' || strtolower($page) == 'players')
 	$to_load = 'Records';
+// Redirect for old fractal pages (prevents old links from breaking).
+else if (strtolower($page) == 'urban')
+	$to_load = 'F1';
+else if (strtolower($page) == 'swamp')
+	$to_load = 'F2';
+else if (strtolower($page) == 'aqua')
+	$to_load = 'F3';
+else if (strtolower($page) == 'uncat')
+	$to_load = 'F4';
+else if (strtolower($page) == 'snow')
+	$to_load = 'F5';
+else if (strtolower($page) == 'volc')
+	$to_load = 'F6';
+else if (strtolower($page) == 'cliff')
+	$to_load = 'F7';
+else if (strtolower($page) == 'under')
+	$to_load = 'F8';
+else if (strtolower($page) == 'furn')
+	$to_load = 'F9';
+else if (strtolower($page) == 'molten')
+	$to_load = 'F10';
+else if (strtolower($page) == 'aether')
+	$to_load = 'F14';
+else if (strtolower($page) == 'thauma')
+	$to_load = 'F15';
+else if (strtolower($page) == 'solid')
+	$to_load = 'F20';
+else if (strtolower($page) == 'mai')
+	$to_load = 'F25';
 // attempt to read the page file, ignore failure as it is handled below
 $content = @file_get_contents(sprintf('./pages/%s.htm', strtolower($to_load)));
 
