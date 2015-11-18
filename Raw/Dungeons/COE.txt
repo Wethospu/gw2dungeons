@@ -109,7 +109,7 @@ name=enemy=Kudu's_Power_Suit:legendary
 tactic=ranged|melee
 Unlike most enemies, Power Suit is considered as an outlaw so if you want to be optimal then use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying and wiki=Superior_Sigil_of_Justice|Sigil_of_Justice for extra damage and damage reduction.
 tactic=ranged
-Stay at range to avoid his extremely damaging melee attack. Use crippled, chilled and immobilized to keep him away.
+Stay at range to avoid his extremely damaging melee attack.
 tactic=melee
 Pay attention to your positioning. His melee attack will one shot you but can be easily avoided by moving behind his back. If unsure dodge away from him. If you get hit you have to use a stun break and dodge away immediately.
 tactic=melee|ranged
@@ -417,8 +417,6 @@ tactic=thief
 Use wiki=Smoke_Screen to absorb projectiles from turrets to prevent boons.
 tactic=thief
 Use wiki=Larcenous_Strike to steal boons.
-tactic=thief
-You can use wiki=Headshot|(Offhand Pistol) to manage defiance stacks.
 tactic=necromancer
 Use wiki=Charge_(necromancer_skill)|Charge_(Flesh_Golem) to deal lots of damage to turrets (focus protection).
 

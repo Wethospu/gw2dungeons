@@ -7,7 +7,7 @@ ID=10218
 image=http://wiki.guildwars2.com/images/f/ff/Havram_Girthbinder.jpg
 Path=CoE1|CoE2|CoE3
 
-attack=No unshakeable (or defiance)
+attack=No defiance
 
 attack=Greatsword Swing (1)
 ID=5414

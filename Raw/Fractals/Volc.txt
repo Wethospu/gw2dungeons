@@ -153,8 +153,6 @@ The lava pits may be active even when their animation suggests they are inactive
 The lava pits may remain permanently active. When this occurs, the lava pit animation may continue to cycle on/off, or it may be permanently off despite the lava pit being active.
 The Dive attack from the Shaman is very unreliable with respect to use of evades, multiple blocks, and invulnerability skills. If you do not react early enough in the animation, you can sometimes still be hit through all of these effects, even though no damage occurs until you are, for example, in the middle of a dodge frame. For evades, this behaves very similar to a "fumble" dodge. You will sometimes get a message suggesting that you did evade/block the attack on your screen, or you were invulnerable to the attack, even though you were hit with the damage.
 The AoEs created by the Dive attack are unreliable, and are often not in the place their indicator suggests they are. Be careful, and if you receive damage from them, move.
-tactic=warrior
-Use wiki=Signet_of_Might with wiki=Throw_Bolas or wiki=Pin_Down to slow down Shaman. You can usually use it twice.
 tactic=mesmer
 wiki=Feedback is excellent against Elementals.
 tactic=mesmer
@@ -165,8 +163,6 @@ tactic=elementalist
 wiki=Swirling_Winds is very effective against Elementals. But only use it after reflections.
 tactic=elementalist
 wiki=Ice_Storm|(Frost Bow), Fiery Greatsword and wiki=Lightning_Hammer are all very effect at killing Elementals.
-tactic=elementalist
-wiki=Frozen_Ground can Chill Shaman for some time during the bubble phase.
 tactic=guardian
 When Elementals appear use wiki=Shield_of_the_Avenger. Use wiki=Wall_of_Reflection when it ends or if Shield would break immediately (AoE).
 tactic=guardian
@@ -179,13 +175,5 @@ tactic=thief
 Take Shortbow if you believe you have to kite around the area when people resurrect someone.
 tactic=thief
 Use wiki=Smoke_Screen to protect your team (save for Elementals unless you have people with bigger anti projectile skills).
-tactic=thief
-wiki=Needle_Trap and wiki=Tripwire deal movement impairment condition and are unblockable. Use them to slow down Shaman during bubble phase.
-tactic=necromancer
-With unblockable Marks you can Chill or even Fear (if he doesn't have defiance stacks) Shaman during bubble phase. Also you can spread Conditions from elementals to Shaman or from Shaman to elementals with wiki=Epidemic.
-tactic=ranger
-Use wiki=Entangle right before he enters bubble. Vines can't be blocked and will keep him still a long time.
-tactic=ranger
-wiki=Frost_Trap and wiki=Spike_Trap deal movement impairment condition and are unblockable. Use them to slow down Shaman during bubble phase.
 tactic=engineer
 wiki=Toss_Elixir_U can be used for projectile protection.

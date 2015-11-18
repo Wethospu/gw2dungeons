@@ -1547,12 +1547,6 @@ ID=7538|9866
 alt=Subversion Specialists
 Path=CoES
 
-attack=Unshakable
-effect=Gains 1 defiance when interrupted
-effect=50% vulnerability reduction
-effect=50% weakness reduction
-effect=blind has 10% chance to work
-
 attack=Subvert
 ID=5358
 effect=multiple ranged hits

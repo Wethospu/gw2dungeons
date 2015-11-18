@@ -72,29 +72,13 @@ His basic melee attack deals low damage so you don't have to care about it. Howe
 tactic=ranged
 Playing at range is extremely easy because Subject 6 has only one ranged attack, link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-5_thumb.jpg|Acid_Rain, which shoots lots of unblockable projectiles around the area. If you have enough agony resist you can just ignore the whole attack. If not then focus on dodging.
 tactic=coordinated
-Burst enemy=Subject_6:champion down before enemy=Repair_Oozes:normal reach him. Keep his defiance down so you can interrupt his blocking with unblockable control skills. If lots of Oozes get near use area control to keep them away.
+Burst enemy=Subject_6:champion down before enemy=Repair_Oozes:normal reach him. If lots of Oozes get near use area control to keep them away.
 To move him away from Repair Oozes and give you bit more time you can pull him towards the entrance and then use a control pull to move him bit further.
 tactic=struggling
 It is possible to pull the ooze nearly into the corridor that leads into the room. This increases the distance the repair oozes need to travel, making the encounter somewhat easier for teams with low DPS.
-tactic=exploit
-Immobilize or otherwise chain-CC Subject 6 before he reaches his trigger point. He does not perform any attacks before reaching the trigger point.
 tactic=optional
 Talk to your group if you want to complete the "Subject 6 Deep-Sixer" achievement. You have to give him 19 Overload stacks when he is blocking by hitting him exactly 19 times. Ask your group's help to reach 15 stacks and then tell them you will handle the rest. Keep an eye on the stack counter so you don't go over.
 You should get the achievement if Subject 6 reaches 19 stacks without exploding during the fight. It shouldn't matter whether he explodes before or after that (needs verification).
-tactic=warrior
-With wiki=Signet_of_Might you can use control to interrupt his blocking. Inform your team so they understand to keep defiance stacks down.
-tactic=warrior
-You can use wiki=Flurry and wiki=Throw_Bolas to immobilize the Ooze before it has reached its trigger point.
-tactic=guardian
-You can use wiki=Chains_of_Light and/or wiki=Zealot's_Embrace and/or wiki=Signet_of_Wrath to immobilize the Ooze before it has reached its trigger point.
-tactic=engineer
-You can use wiki=Supply_Crate and wiki=Net_Turret along with wiki=Net_Shot to immobilize the Ooze before it has reached its trigger point.
-tactic=thief
-You can use wiki=Needle_Trap and wiki=Devourer_Venom and wiki=Infiltrator's_Strike to immobilize the Ooze before it has reached its trigger point.
-tactic=ranger
-You can use wiki=Entangle to immobilize the Ooze before it has reached its trigger point.
-tactic=human
-You can use wiki=Avatar_of_Melandru to use wiki=Entangle in order to immobilize the Ooze before it has reached its trigger point.
 
 #link=http://dulfy.net/wp-content/uploads/2013/11/gw2-thaumanova-reactor-fractal-guide-15_thumb.jpg|
 name=Researcher Dormitories

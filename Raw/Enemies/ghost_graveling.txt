@@ -290,9 +290,6 @@ ID=1705
 image=https://wiki.guildwars2.com/images/b/be/Ralena_Stormbringer.jpg
 path=ACS
 
-attack=No unshakeable or defiant
-#note=Control skills are very effective
-
 attack=Lightning Orb
 ID=4092
 image=http://i.imgur.com/4GlYVA7.gif
@@ -338,9 +335,6 @@ name=Vassar
 ID=1704
 image=https://wiki.guildwars2.com/images/e/ec/Vassar.jpg
 path=ACS
-
-attack=No unshakable
-#note=Control skills are very effective
 
 attack=Shared Burden
 ID=4090

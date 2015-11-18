@@ -68,7 +68,7 @@ tactic=coordinated
 Designate one player to pick a cage and have the rest of the party follow him.
 tactic=normal
 The boss summons enemy=Jellyfishes:normal. Kite them while killing the beast. Tag them to rally if downed.
-After 75% the boss starts using its agony attack. He pulls the target inside of him, gets 5 stacks of might every second, and applies agony on the target. Interrupting is the only way to avoid the agony attack. Try get rid of his defiance stacks (or use sink and float which ignore defiance).
+After 75% the boss starts using its agony attack. He pulls the target inside of him, gets 5 stacks of might every second, and applies agony on the target. Interrupting is the only way to avoid the agony attack. Use sink and float which ignores the defiance.
 If you get pulled inside of the boss, start spamming skill 1 to get out. Start using skill 1 as fast possible to reduce time the boss is resistant to damage.
 tactic=alternative
 Full melee the boss while ignoring cages.

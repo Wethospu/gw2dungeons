@@ -105,7 +105,7 @@ name=enemy=Rabsovich:champion
 tactic=normal
 He is with a dredge cart that causes additional Dredge to occasionally spawn. Just focus on Rabsovich while using cleave/AoE to take down normal Dredge.
 Rabsovich has two attacks, which are his ranged attack (shockwave), and typical melee attack though he uses the later attack rarely. The former attacl can't be blocked or reflected so you have to dodge. Keep an eye on him and look when he pulls his arm behind back. If he is facing you prepare to dodge forward/backward (never side to not direct it at other players).
-His melee hit does some damage but you can easily stay at least at max melee-range. Occasionally he hides behind shield and blocks all attacks; when he does this, just stop attacking. He also self-heals (weird sound effect) and summons a enemy=Dredge_Disaggregator:veteran. The heal can be interrupted, sometimes even through defiance although interrupting through defiance is unreliable.
+His melee hit does some damage but you can easily stay at least at max melee-range. Occasionally he hides behind shield and blocks all attacks; when he does this, just stop attacking. He also self-heals (weird sound effect) and summons a enemy=Dredge_Disaggregator:veteran. The heal can be interrupted, sometimes even through defiance bar.
 tactic=exploit
 If you have trouble you can try pulling Rabsovich away from the dredge cart.
 tactic=thief
@@ -119,11 +119,11 @@ Once the door opens you will see either Dredge or Ice Elementals. The last boss 
 name=The Final Boss
 tactic=ranged
 Both bosses normally take very little damage. You have to pour lava on them to make them "Superheated" which allows you to damage them. It also makes their strong self-healing easily interruptable (any attack which connects with the boss will interrupt the heal while they have the debuff).
-One player should be on lava-duty. Their job is to activate the lever when boss is below the lava. The rest of the players should pull the boss to the spot and keep him there while dealing damage to the boss. Immobilize is useful to keep the boss in place so that the lava will definitely hit the boss.
+One player should be on lava-duty. Their job is to activate the lever when boss is below the lava. The rest of the players should pull the boss to the spot and keep him there while dealing damage to the boss.
 When ranging, you want to pull boss to next bucket before "Superheated" wears out. As such, avoid slowing the boss down with unnecessary cripple, chill, immobilize, or CC. When primarily ranging, ~5 seconds of melee burst is possible right after lava has been poured, although this may force you to deal with the mechanics the boss has during this period of time.
 The most common tactic is to run around the map and use all the bucket spots. It is also possible to alternate between two bucket spots. It is important your team is clear on what strategy you are going to employ.
 If someone becomes defeated one player should run out of combat, and then return to resurrect the dead player. The rest of the team should keep going in order to keep boss "Superheated".
-Should "Superheated" not be maintained, launches and knockbacks are able to interrupt the heal even with defiance stacks present. However, there is no reason to unnecessarily add defiant stacks to the boss. It is often a good idea to keep defiant off of the boss, so they can be CCed or interrupted if necessary.
+Should "Superheated" not be maintained, launches and knockbacks are able to interrupt the heal even with defiance.
 tactic=melee
 Like the ranged strategy, you want to keep the bosses superheated. You may need to move the boss between several bucket spots to maintain the debuff, however you can melee on the way to the new bucket spot as there is a decent amount of leeway between one pour and the next time you need to pour.
 In order to melee, you will need to know the mechanics of the boss, as well as be able to react to the mechanics. Melee is much faster than ranged, providing your party does not wipe multiple times.
@@ -131,15 +131,7 @@ Be prepared to interrupt the heal in the event that "Superheated" runs out.
 tactic=coordinated
 Pull the boss to a bucket spot and burst him down. The boss should be dead in under 30 seconds, no matter what fractal level you are playing on.
 tactic=thief
-Take wiki=Basilisk_Venom along with offhand pistol for wiki=Headshot to manage defiance and interrupt the heal.
-tactic=guardian
-Use wiki=Chains_of_Light or wiki=Signet_of_Wrath to keep it under lava.
-tactic=warrior
-Use wiki=Throw_Bolas to keep it under lava.
-tactic=thief
 You can use wiki=Infiltrator's_Arrow or wiki=Shadowstep to get up to the console (doesn't work on South West for some reason).
-tactic=thief
-Use wiki=Needle_Trap to easily keep boss under lava.
 
 path=UnderBomb
 name=enemy=Rampaging_Ice_Elemental:legendary

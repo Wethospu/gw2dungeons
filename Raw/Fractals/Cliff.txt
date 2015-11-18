@@ -205,8 +205,7 @@ His most dangerous attack is when he sends 3 pulling projectiles. After that he 
 On top of this, he starts to use Backbreaker similarly to the first fight.
 At 25% the same thing happens. At 0% the same thing happens except you have to hit the seal twice.
 tactic=coordinated
-Whenever the seal is damaged, Archdiviner gets stunned based on nearby players (about 240 range) and amount of players in the instance with formula 2 * nearby players * players in instance. So in a full group, each player generates 10 stuns. This can be used to control defiant on Archdiviner. You always want to have at least one player near him so he also gets stunned.
-With 0-1 defiant stacks, have 3 players near him. With 2-3 defiant stacks, have 2 players near him. With 4-5 defiant stacks, have 1 player near him.
+Whenever the seal is damaged, Archdiviner gets stunned based on players within 240 range and amount of players in the instance with formula 2 * nearby players * players in instance. Stunning him prevents him from attacking you while you are stunned but prevents you from taking advantage of wiki=Exposed.
 In an organized group, you can use Earth Elementals or a Guardian (who has some Knight's gear equipped, thus giving them higher toughness than the rest of the party) to take aggro, thus allowing the rest of the team to safely melee the boss from behind.
 When beginning the encounter, the use of group stability along with someone running to the archdiviner will prevent any stun from occurring. If you don't want to use group stability, someone can teleport to the archdiviner, thus stunning him at the same time as the whole party is stunned.
 tactic=exploit

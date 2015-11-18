@@ -370,7 +370,7 @@ Otherwise, enemies could be pulled one by one. Try to start with the Knight sinc
 After you deal with Leurent's guard, you may proceed to fight the boss himself.
 ################################################################
 tactic=coordinated
-Wait until dialogue between Fyonna and Leurent ends, stack might, drop stability (e.g. wiki=Hallowed_Ground|Hallowed_Ground), drop reflects (e.g. Wall_of_Reflection), and pull the elites together with wiki=Binding_Blade or wiki=Temporal_Curtain. Burst the mobs down. Ideally, you should CC Leurent after he activates--you should ensure that you pull the elites immediately after they activate, so as not to put defiance on Leurent.
+Wait until dialogue between Fyonna and Leurent ends, stack might, drop stability (e.g. wiki=Hallowed_Ground|Hallowed_Ground), drop reflects (e.g. Wall_of_Reflection), and pull the elites together with wiki=Binding_Blade or wiki=Temporal_Curtain. Burst the mobs down.
 ################################################################
 tactic=normal|coordinated
 | He likes to rotate entangle with bladetrail. Since you cannot block entangle, you have to pay attention to him and dodge when he pierces the ground. When he starts to glow, prepare to evade or block as his throw deals significant amount of damage. Try not to tank his autoattacks and watch out for his leap.
@@ -476,10 +476,10 @@ The fight starts after a short dialogue between Fyonna and Vevina and takes plac
 Every attack of her is considered as a projectile which means that with enough projectile defense you can trivialize most of the fight. Even if you don't, her attacks apply relatively low pressure, if someone dies just revive him and continue the fight. After some time, she transforms into a spider form that no longer use projectiles but is still relatively easy to dispatch.
 When she dies, move through the room while avoiding spider eggs.
 tactic=coordinated
-Fight on top of Fyonna. Begin the fight with a hard CC (e.g. Deep Freeze) to put defiance on her and keep her from moving a bit. Then maintain reflects and DPS her down.
+Fight on top of Fyonna. Begin the fight by stunning her to keep her from moving a bit. Then maintain reflects and DPS her down.
 ################################################################
 tactic=rewards
-There is a very low chanc3 get an account bound wiki=Recipe:_Tortured_Root from enemy=Fyonna_the_Countess_of_Spiders:legendary. The recipe allows you to craft wiki=Tortured_Root which gives a better gold return for your tokens.
+There is a very low chance get an account bound wiki=Recipe:_Tortured_Root from enemy=Fyonna_the_Countess_of_Spiders:legendary. The recipe allows you to craft wiki=Tortured_Root which gives a better gold return for your tokens.
 tactic=elementalist
 Use wiki=Swirling_Winds to protect your team from Fyonna's attacks.
 tactic=engineer
@@ -659,7 +659,7 @@ name=enemy=Foreman_Spur:legendary
 tactic=normal
 Clear the enemies before you aggro him. Pull about 33% of enemies behind a nearby corner. Then move to the other side of them room and pull 50% of remaining enemies behind a piller. Then finish of last enemies. There is a enemy=Steam_Watcher patrolling on the area. Take him down when he is alone.
 His most notable move is the Axe Spin. He roars, removes cripple, chill and immobilize on him and moves quickly spinning towards his target. He prefers targeting most distant players which you should use at your advantage. If you have a immunity ready you can move away from him and vice versa.
-Be careful to not use projectiles during his Axe spin, as he is not only evading, but reflecting it back to you or your allies. If he does not have defiant up, you can interrupt his Axe spin with instantly casted cc (second part of guardian's binding blade for example). If you cant interrupt it, move away from him/dodge/use invulnerability skills as it deals a lot of AoE damage while inflicting bleeding, crippled and vulnerability on you.
+Be careful to not use projectiles during his Axe spin, as he is not only evading, but reflecting it back to you or your allies. If he has less than 25% defiance, you can interrupt his Axe spin with most instantly casted cc (second part of guardian's binding blade for example). If you cant interrupt it, move away from him/dodge/use invulnerability skills as it deals a lot of AoE damage while inflicting bleeding, crippled and vulnerability on you.
 When he throws axes, they leave high damaging areas which you should avoid. The axe throw can be reflected. He hits quite hard and fast on close range so stay behind him.
 After 75% his Axe Spin creates a windy area at end of the channel. You cannot leave this area (even with stability) and it will destroy all projectiles. If you are outside get in so you can deal damage.  The area will disappear before he uses Axe Spin giving you time to move away.
 tactic=warrior

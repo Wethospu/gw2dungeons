@@ -118,7 +118,7 @@ At 25% health he will shout "We will never surrender!". At this point you should
 tactic=ranged|melee
 | In that case he becomes extremely lethal and probably kills your entire team. You may have a small chance if NPCs are alive.
 tactic=coordinated
-Full melee is only possible with huge amount of damage. wiki=Deep_Freeze Ashym at 25% health and burst him down.
+Full melee is only possible with huge amount of damage. Stun him when he is at 25% health and burst him down.
 tactic=warrior
 Use wiki=Battle_Standard to revive NPCs and players if needed.
 tactic=thief

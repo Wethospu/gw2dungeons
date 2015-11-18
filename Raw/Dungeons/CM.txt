@@ -159,14 +159,12 @@ tactic=melee
 | She won't hit very hard but if you aren't durable you can try to stay at max melee range. She often alternates between her faster and slower attack. The latter can be avoided by just moving away from her.
 tactic=melee|ranged
 Occasionally she will stealth and either stun with Backstab or jump over her target with Death Blossom. To reduce her time in stealth don't run away if you can afford getting hit (pretty much all the time unless you are only one alive). You can still see her on mini map and attack her with untargeted attacks.
-Stun will hit through block so the only way to avoid getting one shot is to have a stun break, stability or Aegis. Take as many as you may need unless you can rely on your team. Keep her defiance stacks down to interrupt Backstab. If people get hit and go down, ressurecting them should be your first priority.
+Stun will hit through block so the only way to avoid getting one shot is to have a stun break, stability or Aegis. Take as many as you may need unless you can rely on your team. If people get hit and go down, ressurecting them should be your first priority.
 If she uses Death Blossom you should dodge immediately to prevent most of the damage. Remove bleeding if someone gets 6 stacks.
 tactic=warrior
 Take wiki="Shake_It_Off!" for a low cooldown stun break and condition removal. Consider taking wiki=Stomp for a backup and an interrupt.
-tactic=warrior
-Use wiki=Tremor as a high damage interrupt.
 tactic=coordinated
-Take only 0-1 stun breaks. Keep defiance stacks down and interrupt every Backstab. If you have Guardians then use Aegis appropriately.
+Take only 0-1 stun breaks. Stun her only to interrupt Backstab unless you have Guardians for Aegis.
 
 name=Big area with lots of enemies
 tactic=fight

@@ -56,7 +56,6 @@ Use wiki=Mantra_of_Resolve to clear conditions on allies.
 You can easily stand at range and block all of Mai Trin's teleporting shots by using Scepter.
 tactic=elementalist
 Use wiki=Swirling_Winds to block Mai Trin's teleporting shot.
-Use wiki=Deep_Freeze when Mai has low shield stacks to very safely DPS her.
 tactic=thief
 Use wiki=Signet_of_Agility to give your party extra dodges.
 Use wiki=Smoke_Screen to block the teleporting shot and to blast for stealth if needed.

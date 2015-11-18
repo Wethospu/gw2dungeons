@@ -157,7 +157,7 @@ image=http://wiki.guildwars2.com/images/3/3f/Nightmare_Warder.jpg
 path=TAF
 
 tactic=ranged
-Keep him immobilized or at least crippled at all times. If he gets close you will get killed.
+If he gets close you will get killed.
 tactic=melee
 He deals extreme damage at close range so melee is not suggested unless you can burst him down fast.
 tactic=melee|ranged
@@ -214,11 +214,8 @@ alt=Nightmare Court Knights|Knight|Knights
 image=http://wiki.guildwars2.com/images/3/3b/Elite_Nightmare_Court_Knight.jpg
 path=TAS|TAF|TAU
 
-tactic=ranged
-Keep him blinded, immobilized or at least crippled at all times and focus him down. If he gets close you will get killed.
-tactic=melee
-Keep him blinded and controlled at all times. Focus him down before he kills you.
 tactic=melee|ranged
+Stun and burst him down before he kills you.
 Be ready to dodge if he leaps towards you with Earthshaker. Dodge again after 1 second to avoid the follow up attack.
 Don't worry about the red circle caused by Well of Corruption. It's harmless because the effect actually follows the knight.
 tactic=melee

@@ -113,7 +113,7 @@ What the exact "meta builds" and "meta team composition" is can change with each
 
 path=Combat
 name=Combat
-This section explains what you should generally be doing if you want to clear enemies fast. In all cases switching weapons, traits and utilities frequently results in better performance.
+This section explains what you should generally be doing if you want to clear enemies fast. In all cases switching weapons, traits and utilities frequently results in a better performance.
 To deal lots of damage you need a high damage gear, traits and weapons, a good skill rotation and teamwork to stack might. Buffs and boons have a limited range so the whole party should stay near each other. This doesn't mean stacking on top of each other which most groups do nowadays.
 To survive you need just enough active defenses to counter enemy attacks. This includes anti projectile skills, boons, conditions and control. For more info check local=Defense section.
 
@@ -136,7 +136,7 @@ Projectiles can be sidestepped at high range which can be useful in some situati
 
 name=Summoned bundles
 So far only elementalists and warriors can summon bundles. Elementalists can conjure weapons which deal lots of damage or give mobility. Warriors can summon banners which give buffs and have some utility skills.
-Elementalists often conjure 3 different weapons: wiki=Fiery_Greatsword, wiki=Ice_Bow and wiki=Lightning_Hammer. Fiery Greatsword has a decent burst with skills wiki=Firestorm and wiki=Fiery_Whirl but is generally used for mobility during skipping. Ice Bow has huge amount of burst with wiki=Ice_Storm followed by wiki=Frost_Fang if on close range. Additionally wiki=Deep_Freeze will stun target for 5 seconds. After done, just drop the bow. Lightning Hammer shouldn't be picked up because Elementalists need it for their own damage. If you do, the basic attack chain does the most damage.
+Elementalists often conjure 3 different weapons: wiki=Fiery_Greatsword, wiki=Ice_Bow and wiki=Lightning_Hammer. Fiery Greatsword has a decent burst with skills wiki=Firestorm and wiki=Fiery_Whirl but is generally used for mobility during skipping. Ice Bow has a decent burst with wiki=Ice_Storm followed by wiki=Frost_Fang if on close range. wiki=Deep_Freeze can be used to remove 50% defiance but the long cast time makes it weak.. After done, just drop the bow. Lightning Hammer shouldn't be picked up because Elementalists need it for their own damage. If you do, the basic attack chain does the most damage.
 Warriors often use 3 different banners: wiki=Banner_of_Discipline, wiki=Banner_of_Strength and in some cases wiki=Battle_Standard. To keep up the buffs from fight to fight, it's important that you help with carrying the banners. All banners also have wiki=Inspire which gives swiftness and wiki=Plant_Standard which gives a blast finisher. Additionally Banner of Discipline has wiki=Furious_Rally which gives fury. Keep this in mind if you need any of those.
 
 name=Elementalist
@@ -160,8 +160,8 @@ name=Guardian
 For dungeons equip a greatsword, a sword and a focus. Use link=http://gw2skills.net/editor/?fVAQNAR8dlsApUo9CxZI8DNR8Ql7Y8i2+BtQlBQDA-TxRBABXt/o8DPdPLcAEy7KCAwDLgS1fMTJYAgDgf/Nf7bf/93ff+5nf+5n3v/+7v/+bpAiYXF-e|45004 with wiki=Fiery_Wrath|II, wiki=Zealous_Blade|VII, wiki=Blind_Exposure|VI, wiki=Powerful_Blades|X, wiki=Master_of_Consecrations|VI, wiki=Absolute_Resolution|IX.
 For fractals equip a hammer and a greatsword. Use link=http://gw2skills.net/editor/?fVAQJASRlsApUo9CxOI8DRR8gk1Yb/8quAY+cLA-TxRBABXt/o8DPdNLcAEy7SCAwTKgS1fMTJYAgDgf/Nf/Nf/93ff+5nf+5n3v/+7v/+bpAiYXF-e|35042 with wiki=Fiery_Wrath|II, wiki=Blind_Exposure|VI, wiki=Radiant_Fire|VII, wiki=Superior_Aria|II, wiki=Writ_of_Persistence|VII and wiki=Master_of_Consecrations|VI.
 For healing take wiki=Shelter or wiki=Shelter against conditions. For utilities take wiki=Wall_of_Reflection against projectiles, wiki=Shield_of_the_Avenger against projectiles, wiki="Stand_Your_Ground" against control, wiki=Hallowed_Ground against control, wiki=Purging_Flames against conditions or wiki="Retreat!" against attacks. If you have space you can also take wiki="Save_Yourselves!" or wiki=Bane_Signet for more damage. For elite take wiki=Renewed_Focus.
-With a hammer, keep autoattacking to trigger wiki=Symbol_of_Protection. Use wiki=Mighty_Blow to only blast fire or water fields. Use wiki=Banish to remove defiant if needed but don't push enemies away.
-Use wiki=Flashing_Blade, wiki=Leap_of_Faith, wiki=Ray_of_Judgement and wiki=Virtue_of_Justice to blind thrash enemies. Use wiki=Binding_Blade to pull enemies together, remove defiant or just do damage. Against big enemies use the attack inside them to hit multiple times. Also use wiki=Shield_of_Wrath to block attacks or deals lots of damage.
+With a hammer, keep autoattacking to trigger wiki=Symbol_of_Protection. Use wiki=Mighty_Blow to only blast fire or water fields. Use wiki=Banish to remove defiance.
+Use wiki=Flashing_Blade, wiki=Leap_of_Faith, wiki=Ray_of_Judgement and wiki=Virtue_of_Justice to blind thrash enemies. Use wiki=Binding_Blade to pull enemies together, remove defiance or just do damage. Against big enemies use the attack inside them to hit multiple times. Also use wiki=Shield_of_Wrath to block attacks or deals lots of damage.
 Use wiki=Virtue_of_Courage and recharge it with Renewed Focus to keep aegis up.
 For 44 seconds of projectile defenses, start with Wall of Reflection. When it ends at 22 seconds of cooldow remaining, use Shield of the Avenger and then use Wall of Reflection again.
 If you see a fire field before combat, blast it with wiki=Mighty_Blow and wiki=Shield_of_Wrath. If not, consider using wiki=Purging_Flames if you expect someone to help with blasting. If there is no might, equip a staff, use wiki=Empower and equip something else before enemies arrive.
@@ -183,7 +183,7 @@ Equip a dagger, a focus and a warhorn. Use link=http://gw2skills.net/editor/?fRA
 For healing take wiki=Consume_Conditions. For utilities take wiki=Signet_of_Spite and wiki=Well_of_Suffering. For the last utility take wiki=Well_of_Darkness against thrash, wiki=Well_of_Power agains conditions or wiki=Blood_Is_Power if team doesn't give you might.
 When someone is pulling enemies, equip a staff, put wiki=Mark_of_Blood and wiki=Putrid_Mark behind the corner and equip a different weapon. Don't use wiki=Chillblains or wiki=Reaper's_Mark so you don't prevent might stacking or fear the enemies away. If you use wiki=Summon_Flesh_Golem, cast it right before enemies arrive.
 For area damage use wiki=Locust_Swarm, wiki=Well_of_Suffering, wiki=Well_of_Corruption, wiki=Life_Transfer and wiki=Tainted_Shackles.
-Use wiki=Doom, wiki=Reaper's_Mark and wiki=Wail_of_Doom to remove stacks of defiance from bosses. When using a fear, make sure the enemies will run towards a corner instead of scattering.
+Use wiki=Doom, wiki=Reaper's_Mark and wiki=Wail_of_Doom to remove defiance.
 If you see a fire field before combat, use wiki=Summon_Bone_Minions and blast it 1-2 times with wiki=Putrid_Explosion. If you blast only once then change the utility after usage.
 For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/12498059|Build_guide and link=http://dulfy.net/2014/06/30/gw2-necromancer-pve-guide-by-spoj/|Profession_guide.
 
@@ -202,7 +202,7 @@ name=Thief
 Equip two daggers against bosses, a sword and a pistol against thrash and a shortbow if you need a ranged weapon. Use link=http://gw2skills.net/editor/?fZAQRAoY8al8MpxpFOx6JsPNRLRtdHsBfgXnh2XQAEiA-TBCBABVq+zZKBxa/R5HAPBg80/wwBQIgTWgeHQgAAHA/23+23++7v/+8zP/8zPvf/93f/93SBExuK-e|66002 build with wiki=Sundering_Strikes|VI, wiki=Dagger_Training|IX, wiki=Revealed_Training|XIII, wiki=Side_Strike|III, wiki=Critical_Haste|X, wiki=Executioner|X and wiki=Flanking_Strikes|IV.
 For healing take wiki=Hide_in_Shadows, wiki=Withdraw or wiki=Signet_of_Malice depending on the situation. For utilities take wiki=Signet_of_Agility, wiki=Smoke_Screen and wiki=Assassin's_Signet. For elite take wiki=Dagger_Storm against projectiles or wiki=Thieves_Guild for a damage boost.
 Against bosses use wiki=Cloak_and_Dagger and wiki=Backstab when wiki=Revealed wears off. Use Smoke Screen against projectiles or save it when boss is at 50% health. Use wiki=Heartseeker on it to stealth followed by Backstab. Use Assassin's Signet for final Heartseeker burst when the boss is at 25%-50% health.
-Against thrash use wiki=Black_Powder to keep them blinded and spam wiki=Pistol_Whip to stun, evade and deal damage. Use Smoke Screen for extra blinds. If you need to manage wiki=Defiant, use Pistol Whip and wiki=Headshot against bosses.
+Against thrash use wiki=Black_Powder to keep them blinded and spam wiki=Pistol_Whip to stun, evade and deal damage. Use Smoke Screen for extra blinds.
 If you see a fire field before combat, equip a shortbow and blast it few times with wiki=Cluster_Bomb to stack might.
 For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/12497961|Build_guide and link=http://dulfy.net/2014/07/10/gw2-thief-pve-class-guide/|Profession_guide.
 
@@ -347,14 +347,13 @@ name=wiki=Aegis
 A boon which automatically blocks the next attack. It often lasts a long time so you should rely on other defenses and keep it as a safety net.
 
 name=wiki=Blind
-Most bosses have wiki=Unshakable which makes blind only work 10% of the time. This means blind is not a reliable way to avoid boss attacks.
+Most bosses have a wiki=Breakbar which prevents blind from working.
 Against weaker enemies blind is very effective because it protects the entire team. It's also easy to use because it often lasts a long time.
 
 name=wiki=Control_effect
-Most bosses have wiki=Unshakable which protects them against control effects. Interrupting a boss gives it at least 5 stacks of wiki=Defiant. Each stack will absorb one control effect. This means you have to use 6 control skills to get a single disable.
-On top of this, interrupts don't put most skills on full cooldown so the enemy may use the interrupt attack as its next attack. This means you should favour other defenses instead of interrupting except in some special cases.
-Despite this, disabling enemies is useful with long disables. For example starting the fight with wiki=Deep_Freeze disable the boss for 5 seconds which prevents 1-2 attacks. Short disables like wiki=Headshot can be used to strip Defiant to use Deep Freeze again.
-Against weaker enemies effects like Pull can be used to group them up for better area damage.
+Most bosses have a wiki=Breakbar which makes them resistant against soft and hard crowd control. This resistance is called defiance. Instead of applying their normal effect, crowd control removes defiance.
+Once it's deplete the breakbar breaks and the enemy gets stunned and 50% more damage taken for 5 seconds. See the wiki link for more info.
+Without breakbar, effects like Pull can be used to group enemies up for better area damage.
 
 name=wiki=Invulnerability
 Invulnerability prevents getting hit by any means which makes it the strongest kind of a defense. However these often have a long cooldown so save them for special cases.

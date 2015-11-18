@@ -340,7 +340,7 @@ name=enemy=Taskmaster:champion
 tactic=normal
 Go to left and jump down. Pull the Taskmaster away from the patrols. Make sure you don't pull any patrols while fighting him or you will probably wipe.
 When he points at you he is going to pull you, so try to dodge. He also occasionally does multiple PBAoEs which cause up to 12 stacks of bleeding (+ other stuff) so bring condition removal.
-Try to keep him under/close to a crusher so you can remove his protective bubble fast. Use immobilize to keep him at the spot.
+Try to keep him under/close to a crusher so you can remove his protective bubble fast.
 tactic=coordinated
 Stack behind media=se2_taskmaster.jpg|a_corner.
 
@@ -398,7 +398,7 @@ There is a very low chance to get an account bound wiki=Recipe:_Husk_of_the_Dest
 
 name=enemy=General_Volkov:champion
 tactic=ranged
-Use crippled, chilled and immobilized to kite him more easily (this also helps melee players). Take group wide condition removal to remove bleeding from melee players.
+Take group wide condition removal to remove bleeding from melee players.
 When he glows he will reflect projectiles for 5 seconds so stop attacking if needed.
 tactic=melee
 His normal melee attack inflicts 6 stacks of bleeding so take plenty of condition removals. Keep evading and blocking as much as you can. Don't let him hit you with 10 stacks of bleeding or he will gain swiftness and Quickness.

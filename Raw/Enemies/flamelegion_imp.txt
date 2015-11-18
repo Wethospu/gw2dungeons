@@ -36,7 +36,6 @@ ID=5103
 effect=piercing dash with PBAoE
 subeffect=damage:-
 #note=stay away from walls. Causes extreme damage if used against wall
-#note=careful with crippled, chilled and immobilized. Slower movement means more damage if it hits
 
 attack=Swing (Hammer) (1)
 cooldown=0

@@ -72,7 +72,7 @@ tactic=ranged|melee
 Try to pull the boss closer to the Jotun NPC but remember the locations of the enemies that you skipped. The enemy=Ooze:legendary has two very similar attacks. If no one is at close range, it will bounce thrice, launching and dealing high damage to everyone around its position.
 #######################################
 tactic=ranged
-| Try to keep the boss immobilized, chilled or crippled and dodge backward. If it is not slowed down, one dodge might not be enough. stability will protect you from the launch effect, but remember that the attack itself still deals significant damage. If the boss targets an ally at close range, it will use a slightly different version of its bounce attack. The enemy=Ooze:legendary will bounce six times instead of three, but will remain stationary when channeling. One skilled melee player can trivialize the whole fight by making it only use this attack.
+| Dodge backward. If it is not slowed down, one dodge might not be enough. stability will protect you from the launch effect, but remember that the attack itself still deals significant damage. If the boss targets an ally at close range, it will use a slightly different version of its bounce attack. The enemy=Ooze:legendary will bounce six times instead of three, but will remain stationary when channeling. One skilled melee player can trivialize the whole fight by making it only use this attack.
 #######################################
 tactic=melee
 | If the boss targets an ally at close range, it will use a slightly different version of its bounce attack. The enemy=Ooze:legendary will bounce six times instead of three, but will remain stationary when channeling. stability will protect you from the launch effect, but remember that the attack itself still deals significant damage. Try to get back into melee range as soon as possible to force it to only use its stationary version of the attack.
@@ -154,11 +154,9 @@ Use wiki=Zealot's_Flame and don't activate wiki=Virtue_of_Justice for burning.
 #######################################
 tactic=coordinated
 When Shoggroth appears, move back and pull him behind a corner. If you can't keep burning permanently up, time it right before he attacks.
-When Shoggroth stars moving back, keep him permanently immobilized. Immobilization stacks only 3 times so use it only when it's about to run out. You don't have to care about burning any more since he won't fight back while trying to escape.
 If Shoggroth manages to escape quickly move to geysers and pull him again. If he has less than 25% health you can just kill him on spot.
-Check wiki=Immobilized|wiki for a list of skills and traits which cause immobilization. Coordinate with your party.
 tactic=warrior
-Use wiki=Combustive_Shot and wiki=Fan_of_Fire for burning and wiki=Pin_Down and wiki=Throw_Bolas for immobilization.
+Use wiki=Combustive_Shot and wiki=Fan_of_Fire for burning.
 
 #################################################################################################################################
 
@@ -329,7 +327,7 @@ Use Aegis when it jumps to protect your team.
 tactic=guardian
 Use wiki=Binding_Blade to pull the Handlers if needed.
 tactic=thief
-wiki=Basilisk_Venom interrupts its berserkering even with defiance stacks.
+wiki=Basilisk_Venom interrupts its berserkering even with defiance.
 tactic=bug
 Sometimes its Stomp may deal damage at start of the animation. There is nothing you can do about it. This should happen only once.
 

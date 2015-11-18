@@ -285,8 +285,6 @@ name=enemy=Fimbul:legendary
 tactic=normal
 Very easy to kill as long as you don't stand in AoEs. When he turns into an Ice-shard just destroy it fast to prevent him from healing.
 Immediately a group of elites will spawn. Line of sight behind the door that just opened to make a quick kill of them. Reflection and blinds would help.
-tactic=exploit
-You can permanently immobilize Fimbul to prevent him from reachinng his trigger point, thus preventing him from doing any attacks while he attempts to reach said trigger point.
 
 name=enemy=Sorge_the_Zealot:legendary
 tactic=normal
