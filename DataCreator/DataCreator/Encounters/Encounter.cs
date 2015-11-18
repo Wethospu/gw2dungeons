@@ -78,6 +78,9 @@ namespace DataCreator.Encounters
         {
           if (!encounter.Path.ToUpper().Contains(currentPath.Tag.ToUpper()))
             continue;
+          // Verify that the encounter isn't empty for the current scale. / 2015-11-18 / Wethospu
+          if (encounter.Tactics.ToHtml(encounter.Index, encounter.Path, currentPath.Scale, enemies, 1).Length == 0)
+            continue;
           // Ignpre the dungeon name because it's long and doesn't add anything. / 2015-10-11 / Wethospu
           if (tableCounter > 0)
           {

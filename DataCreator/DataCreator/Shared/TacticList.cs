@@ -128,6 +128,8 @@ namespace DataCreator.Shared
       //// Build tactics. / 2015-06-28 / Wethospu
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("<div class=\"tactics\" id=\"s").Append(index).Append("\">").Append(Constants.LineEnding);
       var relevantTactics = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTactics.Contains(tactic.Name) && tactic.Scale == scale));
+      if (relevantTactics.Count > 0 && relevantTactics[0].Lines.Count == 0)
+        return "";
       // Add navigation only when more than one tactic. / 2015-07-22 / Wethospu
       if (relevantTactics.Count > 1)
       {
