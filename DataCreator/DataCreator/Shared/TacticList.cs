@@ -67,7 +67,7 @@ namespace DataCreator.Shared
       var maxScale = 100;
       if (scale.Length > 0)
       {
-        var split = scale.Split(':');
+        var split = scale.Split('-');
         minScale = Helper.ParseI(split[0]);
         maxScale = Helper.ParseI(split[split.Length - 1]);
       }
@@ -153,8 +153,8 @@ namespace DataCreator.Shared
             Helper.ShowWarningMessage("Extra dot detected at end of '" + str + "'. Remove it.");
           if (char.IsLower(str[0]))
             Helper.ShowWarningMessage("Line '" + str + "' starts with a lower character. Fix it.");
-          if (!str.EndsWith(".") && !str.EndsWith(":") && !str.EndsWith("!") && !str.EndsWith("\""))
-            Helper.ShowWarningMessage("No '.', ':', '!' or '\"' at the end of line '" + str + "'. Add it.");
+          if (!str.EndsWith(".") && !str.EndsWith(":") && !str.EndsWith("!") && !str.EndsWith("\"") && !str.EndsWith("?"))
+            Helper.ShowWarningMessage("No '.', ':', '!', '?' or '\"' at the end of line '" + str + "'. Add it.");
           htmlBuilder.Append(Gw2Helper.AddTab(1));
           htmlBuilder.Append(Gw2Helper.AddTab(2)).Append("<p>");
           htmlBuilder.Append(Helper.ConvertSpecial(str));

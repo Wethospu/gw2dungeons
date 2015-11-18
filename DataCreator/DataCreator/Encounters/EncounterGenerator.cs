@@ -159,7 +159,8 @@ namespace DataCreator.Encounters
           var scales = "";
           // Check is the last tactic scale information. / 2015-10-29 / Wethospu
           var useless = 0;
-          if (split[split.Count - 1].Contains(":") ||  int.TryParse(split[split.Count - 1], out useless))
+          var subSplit = split[split.Count - 1].Split('-');
+          if (int.TryParse(subSplit[0], out useless) && (subSplit.Length == 1 || int.TryParse(subSplit[1], out useless)))
           {
             scales = split[split.Count - 1];
             split.RemoveAt(split.Count - 1);
