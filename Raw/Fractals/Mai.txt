@@ -15,6 +15,38 @@ Current record: record=40.
 tactic=coordinated
 Against enemy=Inquest_Technician:champion, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty.
 
+# Note: Any changes should be copypasted to every fractal.
+name=Instability
+tactic=normal|31-40
+wiki=Boon_Fumbler: When you dodge roll, you lose all your boons.
+Losing both might and fury is a big damage loss so rely on other active defense. Enemies won't hit hard so take bit more sustain and tank attacks instead of dodging.
+Don't dodge when running around so you don't lose swiftness.
+tactic=normal|41-50
+wiki=No_Pain,_No_Gain: Enemies recieve random boons when you hit them for critical damage.
+Possible boons are aegis, fury, might, protection, regeneration, retaliation and stability.
+If eveyone has a high critical chance your party will generate a huge amount of boons. Boon removal can help but the gain is questionable if you sacrifice lots of damage.
+Control skills are not effective because enemies will have stability. Condition damage is more effective because enemies will have protection. Take more sustain to counter damage from retaliation.
+Bosses can't deal critical hits so fury has no effect. Bosses have a high power and a low healing power so might and regeneration don't have a big effect.
+tactic=normal|51-60
+wiki=Last_Laugh: Enemies explode when killed.
+Dodge?
+tactic=normal|61-70
+wiki=Sluggish: The recharge time of skills you use is increased if you have a condition on you.
+You will pretty much always have a condition on you so your skills recharge slower all the time. This will mess up any rotations so to stay effective make sure you know which skills are important to use on cooldown.
+tactic=normal|61-80
+wiki=Afflicted: Enemies apply random conditions.
+Be prepated to get immobilized or feared, especially when fighting enemy groups. Use stability if needed.
+tactic=normal|71-90
+wiki=Boon_Fumbler: When you dodge roll, you lose all your boons.
+Losing both might and fury is a big damage loss so rely on other active defense. Consider taking bit more sustain and tank weaker attacks instead of dodging.
+Don't dodge when running around so you don't lose swiftness.
+tactic=normal|81-100
+wiki=Boon_Thieves: Enemies steal boons when they hit you.
+Don't use retaliation or you will get everyone killed. Avoid using swiftness to make bosses easier to handle. Be careful with using quickness or resistance.
+tactic=normal|91-100
+wiki=Social_Awkwardness: Nearby allies receive agony.
+Don't stack as a full group. 4 stacks of agony kills you in 25 seconds even with a max agony resist. If you don't have max agony resist stay away from everyone else.
+
 name=Start
 tactic=normal
 A group of enemy=Inquest_Technician:champion, enemy=Swashbuckler:elite, enemy=Striker:normal, enemy=Grenadier:normal, enemy=Thug:normal, enemy=Technician:normal and 2 enemy=Golemites:normal.
@@ -35,10 +67,9 @@ Every 25%, Mai and Horrik disappear and cannons start shooting at every player a
 If someone gets defeated they can be resurrected during the fight because one person can easily kite Mai. Revivers should keep an eye on Mai to react when she equips her pistol.
 tactic=coordinated
 The lightning field from Horrik occurs every three shots. Be mindful of positioning to ensure Mai makes it into every shot. Get her to a low amount of stacks as quickly as possible (generally 2-3), CC her, and then burst her down.
-If there is a thief in the party, one player can solo kite Mai to get her stacks down, while the other players perma-stealth on the other side of the arena. When stacks are low, those players can stack might and quickly burst Mai down. One player can solo-kite during the cannon phase, using ~75% of the arena to run in, while the rest of the team stealths near the wall on the far side of the arena.
+If there is a thief in the party, one player can solo kite Mai to get her stacks down, while the other players perma-stealth on the other side of the arena. When stacks are low, those players can stack might and quickly burst Mai down.
 tactic=exploit
 If you have trouble killing her one person may just stay outside. If people revive fast after wiping she won't heal up at all allowing you to eventually kill her. The exploit method described in the "Start" section is most commonly used, however. It is also possible to get back in by switching to a character that has not entered this Mai Trin fractal instance before, and then running to the wooden door and back down the hill.
-You can stealth the entire party during the cannon phase, but only for the duration of 1 traited Shadow Refuge (or less). Otherwise, Mai Trin will begin to reset.
 As long as you haven't hit or got hit by enemy=Horrik, you can get out of combat during the cannon phase in the far right corner from the entrance.
 tactic=bug
 Mai may not teleport back after a cannon phase. This can be fixed by killing Horrik. However Mai can't walk any more after this.
