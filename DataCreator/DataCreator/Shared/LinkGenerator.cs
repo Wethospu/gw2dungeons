@@ -390,9 +390,9 @@ namespace DataCreator.Shared
         dataEndIndex = Helper.FirstIndexOf(str, new[] { '.', ',', ';', ' ', ')', ']' }, separator + 1);
       else
       {
-        // With just link, '.', or ',' at end shouldn't be included.
+        // With just link, '.', ':', ';' or ',' at end shouldn't be included.
         dataEndIndex = sentenceEnd;
-        if (str[dataEndIndex - 1] == '.' || str[dataEndIndex - 1] == ',' || str[dataEndIndex - 1] == ';')
+        if (str[dataEndIndex - 1] == '.' || str[dataEndIndex - 1] == ':' || str[dataEndIndex - 1] == ',' || str[dataEndIndex - 1] == ';')
           dataEndIndex--;
       }
       var data = str.Substring(linkIndex + 1, dataEndIndex - linkIndex - 1);
