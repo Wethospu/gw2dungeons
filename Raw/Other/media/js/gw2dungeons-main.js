@@ -566,7 +566,7 @@ function handleUrl(url) {
 
 function simplifyUrl(url) {
 	var urlSplit = url.split("/");
-	var url = urlSplit[urlSplit.length - 1].split(".")[0].replace(/%22/g, '').replace(/\(|\)/g, '').replace(/!/g, '');
+	var url = urlSplit[urlSplit.length - 1].split(".")[0].replace(/%22/g, '').replace(/\(|\)/g, '').replace(/!/g, '').replace(/:/g, '');
 	return url;
 }
 
