@@ -311,7 +311,7 @@ subeffect=burning:0
 
 attack=Fire Pit
 effect=2-3 ticking AoEs
-subeffect=damage:0
+subeffect=damage:?
 subeffect=burning:0
 #note=try to predict. Evade.
 
@@ -337,14 +337,14 @@ attack=Tooth of Primordus
 ID=5438
 cooldown=5
 effect=delayed AoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockback:0
 
 attack=Firy Blast
 ID=5439
 additional=used very rarely
 effect=PBAOE
-subeffect=damage:0
+subeffect=damage:?
 #note=if you see something weird then dodge
 
 attack=Fire Shield

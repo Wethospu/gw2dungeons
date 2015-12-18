@@ -149,8 +149,6 @@ namespace DataCreator.Enemies
       foreach (var altName in AltNames)
         htmlBuilder.Append(" ").Append(Helper.Simplify(altName));
       htmlBuilder.Append("\"");
-      if (Rank.Equals(""))
-        Helper.ShowWarningMessage("Rank not set for enemy " + Name + ".");
       htmlBuilder.Append(" data-rank=\"").Append(Helper.Simplify(Rank)).Append("\"");
       htmlBuilder.Append(" data-path=\"").Append(Helper.Simplify(string.Join("|", Paths))).Append("\"");
       // Only add non-default path info. / 2015-09-39 / Wethospu

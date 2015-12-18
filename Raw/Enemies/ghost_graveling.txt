@@ -493,7 +493,7 @@ additional=reflects projectiles
 effect=~5 PBAoes in ~2 s (extreme damage)
 count=5
 length=2
-subeffect=damage:0
+subeffect=damage:?
 subeffect=crippled:0
 subeffect=poison:0
 subeffect=vulnerability:0
@@ -1250,4 +1250,160 @@ animation=glows|1.5
 effect=cone
 subeffect=damage:-
 subeffect=burning:3
+
+##################################################################
+#
+# RAID
+#
+##################################################################
+
+name=Gorsevel the Multifarious
+image=http://wiki.guildwars2.com/images/8/83/Gorseval_the_Multifarious.jpg
+alt=Gorseval
+Path=vale
+
+attack=Haunting Aura
+effect=aura
+# Independed from raid timer.
+frequency=3
+# About 1.5k
+subeffect=damage:?
+
+attack=Revealing Aura
+effect=aura
+subeffect=Reveals stealthed targets instantly for 24 hours
+
+attack=Wicked Swipe
+animation=puts the left hand on ground and swings with the left arm|1
+effect=melee
+# About 3.5k.
+subeffect=damage:?
+
+# Usual pattern: Swipe -> Impact -> Swipe -> Swipe -> Impact. Sometimes Impact->>> (different range or something?).
+attack=Spectral Impact
+animation=touches ground briefly with both hands, stands up with the left arm in the air, jumps and and hits ground with the left hand|1.1|causes two small blue shockwaves
+effect=AoE
+# About 5.7k. Knockback distance seems to be 150 unless between AoEs (testing needed).
+subeffect=damage:?
+subeffect=knockback:1.5 (up to 150)
+subeffect=torment:3:3
+effect=PBAoE
+# About 3.5k.
+subeffect=damage:?
+subeffect=knockback:1.5 (up to 150)
+subeffect=torment:3:3
+
+# 6:50 (starts), 6:47 (buff appears), 6:21 (ends if not broken)
+attack=Ghastly Rampage
+animation=Says a one liner, stands up with both arms in the air, puts hands down, then head down and teleports to the middle|2.8|gets a debuff and starts smashing the ground
+additional=can't be blocked or evaded
+effect=defiance:45
+subeffect=buff:vivid_echo:35:1:- (unremovable retaliation)
+subeffect=retaliation:0
+effect=6 delayed (2.9 s) AoE patterns over 22.25 seconds
+subeffect=damage-percent:50
+subeffect=vulnerability:10:25
+effect=pattern from the closest to the furthest (0 = safe, 1 = AoE)
+subeffect=After 2.3 s: 01101
+subeffect=After 6.3 s: 01110
+subeffect=After 10.3 s 10011
+subeffect=After 14.3 s: 11001
+subeffect=After 18.3 s: 10101
+subeffect=After 21.4 s: 11111
+effect=After 5? usages
+subeffect=After 2.3 s: 10011
+subeffect=After 6.3 s: 11001
+subeffect=After 10.3 s 01101
+subeffect=After 14.3 s: ?????
+subeffect=After 18.3 s: ?????
+subeffect=After 21.4 s: ?????
+
+# 6:15-6:14
+attack=Summon
+animation=Says a one liner, raises arms briefly, lowers head and digs the ground.|2.25
+effect=Summon 2? enemy=Enraged_Spirits and 2? enemy=Angered_Spirits
+
+# 5:55-5:54
+attack=World Eater
+animation=Displays a message on the chat and the screen, says a one liner, raises both arms in air, orange circle starts expanding from the middle and screaming sound starts. AoE disappears 1.5 s before the end.|11.9|Teal explosion at the middle with a black effect.
+additional=can't be blocked, evaded or tanked in any way
+effect=PBAoE
+subeffect=Defeats targets instantly
+subeffect=Consume spirits for a damage buff.
+
+attack=Spectral Darkness
+additional=Only used after 66%
+effect=Summon enemy=Spectral_Darkness
+
+attack=Egg Encasement
+additional=Only used after 33%. Can't be blocked or evaded
+effect=Delayed AoE on every target
+subeffect=Egg on the target
+
+##################################################################
+
+name=Deranged Spirit
+alt=Deranged Spirits
+Path=vale
+
+##################################################################
+
+name=Enraged Spirit
+alt=Enraged Spirits
+Path=vale
+
+attack=Slash
+effect=melee
+subeffect=damage:?
+
+attack=Slice
+effect=melee
+subeffect=damage:?
+
+attack=Kick
+effect=melee
+subeffect=damage:?
+subeffect=knockback:0
+
+# DAMAGE SHIELD
+
+##################################################################
+
+name=Angered Spirit
+alt=Angered Spirits
+Path=vale
+
+attack=Ectoplasmic Blob
+effect=projectile
+subeffect=damage:?
+
+# AOE Cripple and REGEN
+
+##################################################################
+
+name=Spectral Darkness
+Path=vale
+
+attack=AoE
+effect=Growing AoE
+subeffect=buff:Spectral_Darkness?:0:10:-
+
+attack="Spectral Darkness"
+effect=buff
+subeffect=1% less damage dealt
+subeffect=1% more damage taken
+subeffect=damage:?
+
+
+
+
+
+
+
+
+
+
+
+
+
 

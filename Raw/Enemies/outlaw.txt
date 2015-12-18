@@ -78,7 +78,7 @@ subeffect=damage:-
 
 attack=Flurry (2)
 effect=multiple melee hits
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Cyclone Attack
 ID=4460
@@ -113,7 +113,7 @@ subeffect=damage:-
 attack=Combustive Shot
 ID=3459
 effect=projectile with ticking AoE
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Smoke Grenade
 ID=4927
@@ -837,10 +837,10 @@ attack=Ring of Warding
 ID=16203
 additional=used at primary target
 effect=AoE
-subeffect=damage:0
+subeffect=damage:?
 #note=evade if unsure who is being targeted or target is close
 effect=6 projectiles (cone)
-subeffect=damage:0
+subeffect=damage:?
 subeffect=confusion:3
 #note=evade
 
@@ -907,7 +907,7 @@ path=Cliff
 attack=Swing
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockback:0
 
 attack=Cursed Grasp (1)
@@ -1370,7 +1370,7 @@ subeffect=damage:0.3
 attack=Lotus Strike (3)
 animation=waits and thrusts right dagger from above|1
 effect=single target melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=poison:2
 
 attack=Life Siphon
@@ -1532,7 +1532,7 @@ attack=Chain Shot
 ID=1332
 effect=multiple projectiles
 count=?
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Bonfire
 ID=1784
@@ -1592,12 +1592,12 @@ subeffect=bleeding:0
 
 attack=Gash (2)
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:0
 
 attack=Final Thrust (3)
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:0
 
 attack=Fire Shield
@@ -1735,7 +1735,7 @@ attack=Flamewave
 animation=sticks sword to the ground|1
 effect=2 melee hits
 count=2
-subeffect=damage:0
+subeffect=damage:?
 effect=ticking AoE
 count=?
 subeffect=burning:3.5
@@ -1843,12 +1843,12 @@ subeffect=bleeding:0
 
 attack=Gash (2)
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:0
 
 attack=Final Thrust (3)
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:0
 
 attack=Fire Shield
@@ -1986,4 +1986,167 @@ effect=PBAoE
 subeffect=swiftness:10
 
 # Internal: Skills Sprint and Plant Standard also listed.
+
+##################################################################
+#
+# RAID
+#
+##################################################################
+
+Name=Sabetha the Saboteur
+image=http://wiki.guildwars2.com/images/4/47/Sabetha_the_Saboteur.png
+alt=Sabetha
+Path=vale
+
+attack=Heat
+effect=cone
+# 2k
+subeffect=damage:?
+
+attack=Flak Shot
+additional=targeted at the furthest target
+effect=4 ballistic projectiles ticking AoEs
+frequency=1
+# 1.7k
+subeffect=damage:?
+subeffect=burning:4
+
+attack=Big Bomb
+additional=can't be evaded
+effect=debuff (3 s), end effect PBAoE
+# 3k
+subeffect=damage:0 to self
+# 9k
+subeffect=damage:0 to others
+
+# 8:29, 7:44
+attack=Firewall
+animation=Says "Burn!", red arrow appears and disappears.|2.5|shoots a flamewall
+additional=Rotates a full circle (phase 1)
+effect=rotating AoE wall for 10 seconds
+subeffect=defeated
+
+attack=Heavy Bomb
+effect=delayed AoE
+subeffect=heavy damage to the platform
+
+##################################################################
+
+Name=Kernan
+Path=vale
+
+attack=???
+effect=3 cones over time (30d, 60d, 90d)
+subeffect=damage:?
+
+##################################################################
+
+Name="Knuckles"
+image=http://wiki.guildwars2.com/images/6/6c/%22Knuckles%22.jpg
+Path=vale
+
+##################################################################
+
+Name=Karde
+Path=vale
+
+##################################################################
+
+Name=Bandit Arsonist
+Path=vale
+
+attack=Heat
+effect=cone
+# 700
+subeffect=damage:?
+
+attack=Flame Blast
+# 0.6 s hits?
+effect=multiple cones over time
+count=?
+# 1.6k
+subeffect=damage:?
+
+##################################################################
+
+Name=Bandit Sapper
+Path=vale
+
+# Throwing at Kernane did 10% damage to self and 3 allies??
+attack=Sapper Bomb
+effect=debuff (~5 s), end effect PBAoE
+subeffect=launches launchpads
+# 1921, 19212 health. 30k cap?
+subeffect=damage-percent:10
+
+attack=Quickshot
+effect=fast projectile
+subeffect=damage:?
+
+attack=Unload
+effect=multiple fast projectiles
+count=?
+# 600
+subeffect=damage:?
+
+##################################################################
+
+Name=Bandit Sniper
+Path=vale
+
+attack=Snipe
+cooldown=2
+effect=fast projectile
+# 863
+subeffect=damage:?
+# 5 stacks
+subeffect=buff:damageincrease:10
+
+##################################################################
+
+Name=Bandit Thug
+Path=vale
+
+attack=Kick
+effect=melee
+# 610
+subeffect=damage:?
+subeffect=knockback:0
+
+##################################################################
+
+Name=West Cannon
+Path=vale
+
+attack=Cannon Barrage
+additional=takes about 3 seconds to hit
+effect=slow ballistic projectile with AoE
+# 9k
+subeffect=damage:?
+subeffect=platform damage
+
+##################################################################
+
+Name=East Cannon
+Path=vale
+
+##################################################################
+
+Name=South Cannon
+Path=vale
+
+##################################################################
+
+Name=North Cannon
+Path=vale
+
+
+
+
+
+
+
+
+
+
 

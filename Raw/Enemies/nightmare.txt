@@ -38,7 +38,7 @@ effect=piercing dash (hits up to 5 times, extreme damage)
 count=5
 # Verify.
 length=0.2
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockback
 #note=evade or use immunity
 
@@ -47,7 +47,7 @@ ID=4981
 image=http://fat.gfycat.com/PortlyNaiveAmericanredsquirrel.gif
 animation=shield forward, shouts
 effect=dash
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockdown:0
 #note=block or evade
 
@@ -62,7 +62,7 @@ attack=Summon Living Nightmare
 ID=4984
 image=http://giant.gfycat.com/OrdinaryBelatedHarpyeagle.gif
 effect=~7 piercing projectiles (cone)
-subeffect=damage:0
+subeffect=damage:?
 subeffect=summon enemy=Living_Nightmare:normal
 
 attack=Summon Fiendish Nightmare
@@ -75,7 +75,7 @@ ID=12225
 image=http://fat.gfycat.com/NaughtyWelldocumentedArcticseal.gif
 animation=rises to air
 effect=PBAoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=fear:2
 #note=block or evade
 #note=bring stunbreaker to avoid getting Feared to enemy=Living_Nightmares:normal
@@ -317,7 +317,7 @@ subeffect="Binding Roots"
 attack="Binding Roots"
 additional=can be destroyed
 effect=debuff
-subeffect=damage:0
+subeffect=damage:?
 subeffect=immobilized:0
 subeffect=bleeding:0
 #note=break with damage
@@ -371,12 +371,12 @@ path=TAU
 attack=Bite
 image=http://fat.gfycat.com/TerrificSmoothEuropeanfiresalamander.gif
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Bite2
 image=http://giant.gfycat.com/LateCleanArachnid.gif
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 
 ##################################################################
 
@@ -437,7 +437,7 @@ She will use Evasive Trap only if you have her targetted. This shouldn't be a pr
 attack=Evasive Trap
 image=http://fat.gfycat.com/WellgroomedTanDairycow.gif
 effect=Trap
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:4:3
 subeffect=immobilized:3
 effect=buff:evade:0
@@ -796,14 +796,14 @@ Path=CoE2
 
 attack=Husk Swipe
 effect=cone
-subeffect=damage:0
+subeffect=damage:?
 subeffect=vulnerability:12
 #note=doesn't attempt to get on range so stay at max melee-range
 
 attack=Thump
 additional=leap finisher
 effect=PBaoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:0
 #note=doesn't attempt to get on range so stay at max melee-range
 
@@ -830,7 +830,7 @@ attack=Consume
 additional=used at the beginning
 effect=2 melee hits
 count=2
-subeffect=damage:0
+subeffect=damage:?
 #note=keep some distance until used
 
 attack=Buff1
@@ -866,14 +866,14 @@ image=http://giant.gfycat.com/AdorableQuarterlyCamel.gif
 additional=used at the beginning
 effect=2 melee hits
 count=2
-subeffect=damage:0
+subeffect=damage:?
 #note=keep some distance until used
 
 attack=Slam
 image=http://giant.gfycat.com/RipeImpeccableIndigowingedparrot.gif
 animation=slowly raises right arm and smashes the ground
 effect=AoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:0:10
 #note=block or evade
 
@@ -881,7 +881,7 @@ attack=Root spike
 image=http://giant.gfycat.com/NeatTotalGrouper.gif
 animation=touches the ground with both hands
 effect=1 s delayed AoE at all the targets
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:0:10
 #note=step out of the red cirles
 
@@ -933,7 +933,7 @@ subeffect="Binding Roots"
 attack="Binding Roots"
 additional=can be destroyed
 effect=debuff
-subeffect=damage:0
+subeffect=damage:?
 subeffect=immobilized:0
 subeffect=bleeding:0
 #note=break with damage

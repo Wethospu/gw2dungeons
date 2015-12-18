@@ -30,7 +30,7 @@ subeffect=knockback:0
 
 attack=Flame Jet (Flamethrower)
 effect=channeled cone
-subeffect=damage:0
+subeffect=damage:?
 #note=sidestep at melee or evade away
 
 attack=Firewall (Flamethrower)
@@ -117,7 +117,7 @@ ID=4556
 animation=raises hands
 additional=only used at close targets
 effect=low-range aura
-subeffect=damage:0
+subeffect=damage:?
 subeffect=buff:Enfeebling_Aura:0:1:-
 #note=visually bugged: effect follows Noko!
 #note=keep distance
@@ -476,7 +476,7 @@ effect=debuff (9 s)
 subeffect=unbreakable stun
 #note=stun breaks have no effect
 effect=delayed PBAoE (8 s) (no effect on itself)
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:0
 #note=avoid players with this debuff
 #note=PBAoE removes "Gravity Distortion"
@@ -688,11 +688,11 @@ subeffect=damage:-
 
 attack=Pounce
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Kick
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Dagger Storm
 ID=2244
@@ -935,13 +935,13 @@ Path=SES|SE1
 
 attack=Fire Shot
 effect=projectile
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Phoenix
 effect=returning projectile with AoE
 count=2
 length=1
-subeffect=damage:0
+subeffect=damage:?
 
 ##################################################################
 
@@ -1551,7 +1551,7 @@ attack=Subvert
 ID=5358
 effect=multiple ranged hits
 count=?
-subeffect=damage:0
+subeffect=damage:?
 subeffect=stun:0
 
 ##################################################################
@@ -1741,7 +1741,7 @@ attack=Explode
 ID=5459
 animation=glows and sits down, red circle|4
 effect=PBAoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockdown:3
 effect=self destruct
 #note=explodes instantly at certain situation (explained at Evolved Husk (Encounter))

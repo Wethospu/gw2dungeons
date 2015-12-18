@@ -78,7 +78,7 @@ attack=Ice Repel
 ID=4848
 animation=touches ground and raises left arm|1.25
 effect=small PBAoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:3.3
 #note=block/evade
 
@@ -164,12 +164,12 @@ effect=transform to a dog
 attack=Jab
 animation=swings left arm|0.25
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 
 attack=lunge
 animation=bites|0.5
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Charge
 animation=raises arms and pounds chest|1
@@ -178,7 +178,7 @@ subeffect=might:1
 effect=dash with PBAoE (~6 hits in ~2 s)
 count=6
 length=2
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockback:1.5
 
 ##################################################################
@@ -337,7 +337,7 @@ animation=pukes|1.5
 effect=ticking AoE (10 hits in 10 s)
 count=10
 length=10
-subeffect=damage:0
+subeffect=damage:?
 subeffect=poison:3
 
 ##################################################################
@@ -571,7 +571,7 @@ subeffect=damage:-
 
 attack=Quaggan Growth
 effect=AoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=chilled:4
 subeffect=might:20:2
 
@@ -676,12 +676,12 @@ subeffect=bleeding:4
 attack=Swipe (1)
 ID=1254
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Brutal Swipe (2)
 ID=1255
 effect=Melee
-subeffect=damage:0
+subeffect=damage:?
 
 attack=howl
 ID=4907
@@ -1055,7 +1055,7 @@ effect=evade back
 attack=Ambush (2)
 animation=glows and leans back
 effect=leap
-subeffect=damage:0
+subeffect=damage:?
 subeffect=crippled:0.5
 
 attack=Flurry (3)

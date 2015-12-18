@@ -147,6 +147,8 @@ namespace DataCreator.Enemies
         {
           if (effectData[0].Equals("-"))
             amount = coefficient;
+          else if (effectData[0].Equals("?"))
+            amount = -1;
           else
             amount = Helper.ParseD(effectData[0]);
           icon = "damage";
@@ -154,7 +156,12 @@ namespace DataCreator.Enemies
         }
         else if (effectType == EffectType.Healing || effectType == EffectType.HealingPercent)
         {
-          amount = Helper.ParseD(effectData[0]);
+          if (effectData[0].Equals("-"))
+            amount = coefficient;
+          else if (effectData[0].Equals("?"))
+            amount = -1;
+          else
+            amount = Helper.ParseD(effectData[0]);
           suffix = "healing";
           icon = "healing";
           stacks = 1;
@@ -165,7 +172,12 @@ namespace DataCreator.Enemies
         }
         if (effectType == EffectType.Agony || effectType == EffectType.Boon || effectType == EffectType.Condition)
         {
-          duration = Helper.ParseD(effectData[0]);
+          if (effectData[0].Equals("-"))
+            duration = coefficient;
+          else if (effectData[0].Equals("?"))
+            duration = -1;
+          else
+            duration = Helper.ParseD(effectData[0]);
           if (effectType == EffectType.Agony || category.Equals("bleeding") || category.Equals("torment") || category.Equals("burning")
             || category.Equals("poison") || category.Equals("confusion") || category.Equals("regeneration") || category.Equals("might"))
             amount = duration;
@@ -236,7 +248,7 @@ namespace DataCreator.Enemies
         // Syntax: <span class="TAGValue">VALUE</span>
         var replace = new StringBuilder();
         //// Put both total and damage per hit. / 2015-09-08 / Wethospu
-        if (amount > 0)
+        if (amount > -1)
         {
           // All amounts need clientside formatting. / 2015-09-27 / Wethospu
           // Add information as data values so it can be recalculated in the browser when enemy level changes. / 2015 - 09 - 27 / Wethospu
@@ -248,18 +260,18 @@ namespace DataCreator.Enemies
         }
         if (totalDuration > 0)
         {
-          if (amount > 0)
+          if (amount > -1)
             replace.Append(" over ");
           replace.Append(totalDuration).Append(" second");
           if (totalDuration != 1.0)
             replace.Append("s");
         }
         replace.Append(HitLengthStr(totalLength));
-        if (hitCount > 1 && (amount > 0 || duration > 0))
+        if (hitCount > 1 && (amount > -1 || duration > 0))
         {
           // Same as above but for a single hit. / 2015-09-27 / Wethospu
           replace.Append("<span class=\"secondary-info\"> (");
-          if (amount > 0)
+          if (amount > -1)
           {
             // All amounts need clientside formatting. / 2015-09-27 / Wethospu
             // Add information as data values so it can be recalculated in the browser when enemy level changes. / 2015 - 09 - 27 / Wethospu
@@ -271,7 +283,7 @@ namespace DataCreator.Enemies
           }
           if (duration > 0)
           {
-            if (amount > 0)
+            if (amount > -1)
               replace.Append(" over ");
             replace.Append(duration).Append(" second");
             if (totalDuration != 1.0)
@@ -283,7 +295,7 @@ namespace DataCreator.Enemies
         {
           suffix = "damage per skill usage";
           replace.Append(". ");
-          if (amount > 0)
+          if (amount > -1)
           {
             replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\" data-effect=\"").Append(category).Append("2");
             replace.Append("\" data-amount=\"").Append(totalAmount).Append("\"></span>");
@@ -291,7 +303,7 @@ namespace DataCreator.Enemies
           }
           if (duration > 0)
           {
-            if (amount > 0)
+            if (amount > -1)
               replace.Append(" over ");
             replace.Append(totalLength).Append(" second");
             if (totalLength != 1.0)
@@ -301,7 +313,7 @@ namespace DataCreator.Enemies
           if (hitCount > 1)
           {
             replace.Append("<span class=\"secondary-info\"> (");
-            if (amount > 0)
+            if (amount > -1)
             {
               replace.Append("<span class=\"").Append(EffectTypeToClass(effectType)).Append("\" data-effect=\"").Append(category).Append("2");
               if (category.Equals("confusion"))
@@ -311,7 +323,7 @@ namespace DataCreator.Enemies
             }
             if (duration > 0)
             {
-              if (amount > 0)
+              if (amount > -1)
                 replace.Append(" over ");
               replace.Append(duration).Append(" second");
               if (duration != 1.0)
@@ -399,7 +411,7 @@ namespace DataCreator.Enemies
         return EffectType.Agony;
       if (str.Equals("buff"))
         return EffectType.Buff;
-      if (str.Equals("daze") || str.Equals("float") || str.Equals("knockback") || str.Equals("knockdown")
+      if (str.Equals("daze") || str.Equals("float") || str.Equals("knockback") || str.Equals("knockdown") || str.Equals("displacement")
           || str.Equals("launch") || str.Equals("pull") || str.Equals("sink") || str.Equals("stun") || str.Equals("taunt"))
         return EffectType.Control;
       if (str.Equals("blind") || str.Equals("chilled") || str.Equals("crippled")
@@ -408,7 +420,7 @@ namespace DataCreator.Enemies
         return EffectType.Condition;
       if (str.Equals("aegis") || str.Equals("fury") || str.Equals("might")
           || str.Equals("protection") || str.Equals("resistance") || str.Equals("stability") || str.Equals("swiftness")
-           || str.Equals("quickness") || str.Equals("vigor") || str.Equals("stealth"))
+           || str.Equals("quickness") || str.Equals("vigor") || str.Equals("stealth") || str.Equals("defiance"))
         return EffectType.Boon;
       if (str.Equals("bleeding") || str.Equals("burning") || str.Equals("confusion")
            || str.Equals("poison") || str.Equals("torment"))
@@ -466,7 +478,7 @@ namespace DataCreator.Enemies
     {
       if (type == EffectType.Agony)
         return "agony-value";
-      if (type == EffectType.Condition || type == EffectType.Boon)
+      if (type == EffectType.Condition || type == EffectType.Boon || type == EffectType.Control || type == EffectType.Buff)
         return "effect-value";
       if (type == EffectType.Damage)
         return "damage-value";

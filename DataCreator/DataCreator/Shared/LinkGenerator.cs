@@ -198,7 +198,7 @@ namespace DataCreator.Shared
       for (var iterator = 0; iterator < str.Length; iterator++)
       {
         var link = FindNextLink(str, ref iterator);
-        if (link == null)
+        if (link == null || link[0].Length == 0)
           continue;
 
         var shownText = "";

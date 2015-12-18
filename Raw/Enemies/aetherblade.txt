@@ -95,7 +95,7 @@ effect=cone
 subeffect=damage:-
 subeffect=pull:1.5
 effect=when Enraged (35% more damage)
-subeffect=damage:0
+subeffect=damage:?
 #note=If you get pulled prepare to block or evade Punch
 
 attack=Flame Punch (1 / 2)

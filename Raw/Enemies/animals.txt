@@ -905,12 +905,12 @@ subeffect=sink:0
 
 attack=Heavy Weight (2)
 effect=ranged
-subeffect=damage:0
+subeffect=damage:?
 subeffect=sink:0
 
 attack=Heavy Weight (3)
 effect=ranged
-subeffect=damage:0
+subeffect=damage:?
 subeffect=sink:0
 
 ##################################################################
@@ -923,7 +923,7 @@ Path=HotW3
 
 attack=Detonate
 effect=PBAoE
-subeffect=damage:0
+subeffect=damage:?
 effect=self destruct
 
 ##################################################################
@@ -944,13 +944,13 @@ Path=HotWS
 
 attack=Bite
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=poison:0
 subeffect=bleeding:0
 
 attack=Charge
 effect=dash with PBAoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:0
 
 ##################################################################

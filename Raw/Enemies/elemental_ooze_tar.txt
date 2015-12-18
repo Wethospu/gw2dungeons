@@ -491,7 +491,7 @@ effect=buff
 subeffect=Immunity to conditions and high damage reduction
 effect=aura
 frequency=0.75
-subeffect=damage:0
+subeffect=damage:?
 subeffect=vulnerability:1
 
 ##################################################################
@@ -674,14 +674,14 @@ ID=2416
 animation=glows bright purple
 effect=2 ranged hits
 count=2
-subeffect=damage:0
+subeffect=damage:?
 subeffect=confusion:1
 
 attack=Shoot
 ID=2799
 animation=glows dark purple
 effect=slow projectile
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockback:1.5
 
 attack=The Prestige (1)
@@ -709,7 +709,7 @@ Path=Solid
 attack=Tentacle Slash
 ID=15999
 effect=Melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:2
 
 attack=Swiftness
@@ -728,7 +728,7 @@ subeffect=blind:5
 attack=The Prestige (2)
 animation=delay|3|purple effect
 effect=PBAoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=poison:3
 subeffect=stun:2
 
@@ -741,7 +741,9 @@ image=https://wiki.guildwars2.com/images/a/a0/Earth_Elemental.jpg
 scaling=normal
 path=Furn
 
-attack=Immune to Control effects
+attack=Stability
+additional=Probably only 1 stack.
+effect=Immune to a control effect
 
 attack=Jab
 ID=1623
@@ -774,15 +776,51 @@ effect=buff
 subeffect=buff:projectile_reflection:5
 
 #############################
-
-copy=8233
+# Copied from above.
 Name=Jade Colossus
 ID=11250
 alt=Jade Colossi
 scaling=constant
 Path=Solid
 
+tactic=normal
+Their reflecting shield and control immunity gets removed by any control effect. If your party has ranged attackers remove the shield immediately so they can attack too.
+Ring of Earth is hard to dodge and very dangerous since it makes you vulnerable to Beam from enemy=Jade_Maw. Keep Jade Colossi controlled and take a stunbreak.
+
 attack=Reflects projectiles
+additional=Only 1 stack (removed by a control effect).
+effect=Immune to a control effect
+effect=Reflects projectiles
+
+attack=Jab
+ID=1623
+animation=swings right arm|0.5
+cooldown=0
+effect=melee
+subeffect=damage:-
+
+attack=Unsteady Ground
+ID=15997
+animation=stands still with arms pointing forward|0.5|earth-line
+effect=ticking AoE (10 hits in 5 s)
+count=10
+length=5
+subeffect=damage:-
+subeffect=crippled:2
+
+attack=Ring of Earth
+ID=15998
+animation=stands still with arms pointing forward|0.5|earth-ring
+effect=PBAoE
+subeffect=damage:-
+subeffect=knockdown:3
+#note=often used immediately at melee-range so prepare to evade/block
+
+attack=Magnetic Aura
+ID=2673
+animation=stands still with arms pointing forward|0.5|yellow bubble
+effect=buff
+subeffect=buff:projectile_reflection:5
 
 ##################################################################
 
@@ -793,7 +831,9 @@ scaling=normal
 Path=Solid
 
 tactic=normal
-Cooldowns cause Tentacle to alternate between attacks.
+Tentacles alternate between their two attacks so you can easily counter them. Blind is very effective against tentacles because of their slow attack rate.
+The first attack is often Swoop so be ready to evade, block or blind immediately. After Swoop keep sidestepping around the tentacle to automatically avoid the incoming Whip attack.
+Keep in mind that tentacles briefly turn invulnerable before dying. This often allows them to do one more attack which can't be countered by blind because of the invulnerability.
 
 attack=Can't be moved
 
@@ -873,7 +913,7 @@ subeffect=Explodes at 20 stacks
 
 attack=Explode
 effect=big PBAoE
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Summon
 effect=Summon a enemy=Repair_Ooze:normal
@@ -912,7 +952,7 @@ attack=Shatterstone
 ID=15950
 animation=jumps||dropping ice
 effect=multiple delayed AoEs
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:2
 subeffect=agony:3
 #note=walk out
@@ -923,7 +963,7 @@ animation=slowly pulls right arm back and smashes ground
 effect=big ticking AoE at melee-range (10 hits in 3 s)
 count=10
 length=3
-subeffect=damage:0
+subeffect=damage:?
 subeffect=chilled:1
 subeffect=agony:3
 #note=get out of range, evade if needed
@@ -933,7 +973,7 @@ ID=15946
 animation=waves arms with weird sound|1.5
 effect=multiple delayed (2.75 s) tiny AoEs (V-shape)
 count=?
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:2
 #note=walk away (note hit box is much bigger than graphics)
 
@@ -975,7 +1015,7 @@ attack=Crashing Wave
 ID=2654
 animation=stands idle and smashes ground
 effect=PBAoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:0
 subeffect=healing:0
 subeffect=remove all Conditions
@@ -1083,9 +1123,9 @@ Path=HotW2
 attack=Ice Strike
 ID=2677
 effect=AoE
-subeffect=damage:0
+subeffect=damage:?
 effect=delayed AoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:5:2
 
 attack=Shockwave
@@ -1138,3 +1178,113 @@ cooldown=11
 animation=holds right arm behind back with water effect and smashes ground|1.75|sends a frosty shockwave
 effect=homing projectile
 subeffect=damage:-
+
+##################################################################
+#
+# RAID
+#
+##################################################################
+
+name=Vale Guardian
+Path=vale
+
+attack=Bullet Storm
+effect=multiple slowly moving blue balls appearing all over the area
+# 3k
+subeffect=damage:?
+subeffect=self destruct
+
+attack=Distributed Magic
+additional=can't be blocked or evaded. Can be prevented by having 4 players on the green circle.
+effect=delayed (6.5 s) AoE
+subeffect=damage-percent:90 on a huge area
+# 4200
+subeffect=damage:? on the circle
+
+##################################################################
+
+name=Red Guardian
+Path=vale
+
+attack=Magic Aura
+additional=1500 range
+effect=Aura
+frequency=3
+# 1.5k
+subeffect=damage:?
+
+attack=Punch
+animation=raises the right arm slightly and swings with the left arm|0.75
+cooldown=2.5
+effect=melee
+subeffect=damage:?
+
+##################################################################
+
+name=Blue Guardian
+Path=vale
+
+attack=Magic Aura
+additional=1500 range
+effect=Aura
+frequency=3
+# 1.5k
+subeffect=damage:?
+
+attack=Punch
+animation=raises the right arm slightly and swings with the left arm|0.75
+cooldown=2.5
+effect=melee
+subeffect=damage:?
+
+attack=Distributed Magic
+additional=can't be blocked or evaded. Can be prevented by having 4 players on the green circle.
+effect=delayed (6.5 s) AoE
+subeffect=damage-percent:90 on a huge area
+# 700 - 1050?
+subeffect=damage:? on the circle
+
+##################################################################
+
+name=Green Guardian
+Path=vale
+
+attack=Magic Aura
+additional=1500 range
+effect=Aura
+frequency=3
+# 1.5k
+subeffect=damage:?
+
+attack=Punch
+image=http://zippy.gfycat.com/ZigzagVictoriousFirebelliedtoad.gif
+animation=raises the right arm slightly and swings with the left arm|0.75
+cooldown=2.5
+effect=melee
+subeffect=damage:?
+
+attack=Unstable Magic Spike
+image=http://giant.gfycat.com/ValidDisloyalEastrussiancoursinghounds.gif
+cooldown=10
+animation=stops or rotates towards the target|instant|red circle with rocks and blue lights appear
+effect=delayed (1.9 s) AoE for every target
+# 2.9k
+subeffect=damage:?
+subeffect=displacement:0 to random location
+
+##################################################################
+
+name=Seeker
+Path=vale
+
+
+
+
+
+
+
+
+
+
+
+

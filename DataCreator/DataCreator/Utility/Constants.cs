@@ -98,8 +98,8 @@ namespace DataCreator.Utility
       "summon", "aura", "ticking", "cone", "piercing", "evade", "buff", "trap" };
 
     public static readonly SortedSet<string> EffectTags = new SortedSet<string>(){ "alacrity", "condition", "bleeding", "blind", "burning", "chilled", "confusion", "crippled", "fear", "immobilized",
-      "poison", "slow", "torment", "vulnerability", "weakness", "boon", "aegis", "fury", "might", "protection", "regeneration", "resistance", "retaliation", "stability", "swiftness", "quickness",
-      "vigor", "control", "daze", "float", "knockback", "knockdown", "launch", "pull", "sink", "stun", "taunt", "agony", "invulnerability", "revealed", "stealth", "buff",
+      "poison", "slow", "torment", "vulnerability", "weakness", "boon", "aegis", "fury", "defiance", "might", "protection", "regeneration", "resistance", "retaliation", "stability", "swiftness", "quickness",
+      "vigor", "control", "daze", "float", "knockback", "knockdown", "launch", "pull", "displacement", "sink", "stun", "taunt", "agony", "invulnerability", "revealed", "stealth", "buff",
       "damage", "fixed damage", "healing", "percent damage"  };
 
     public static string JSFiles { get; set; }

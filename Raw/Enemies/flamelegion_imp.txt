@@ -40,23 +40,23 @@ subeffect=damage:-
 attack=Swing (Hammer) (1)
 cooldown=0
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 #note=evade or get out of range to break attack-chain
 
 attack=Bash (2)
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 #note=evade or get out of range to break attack-chain
 
 attack=Smash (3)
 #note=glows and keeps hammer back for few seconds
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockdown:0
 
 attack=Splitblade (Axe)
 effect=3 projectiles (cone)
-subeffect=damage:0
+subeffect=damage:?
 subeffect=burning:1
 #note=prevent most of damage with evades
 #note=condition-removal if you get long burning
@@ -70,7 +70,7 @@ effect=teleport
 
 attack=Ember Strike (3)
 effect=slow dash with PBAoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:0
 #note=keep moving to avoid most of damage, evade if needed
 #note=call Rozgar when he appears for quick focus
@@ -111,7 +111,7 @@ subeffect=downed on contact. Leaves burning trail
 
 attack=Fireball
 effect=delayed AoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:0
 
 attack=Vulnerability
@@ -135,7 +135,7 @@ effect=summon 3 Magma Walls
 attack=Iron Beam
 additional=used after 25%
 effect=high-range cone
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockdown:0
 
 ##################################################################
@@ -429,7 +429,7 @@ animation=roars|1
 additional=leap finisher. Only used at distant targets
 effect=dash with 2 melee hits at end
 count=2
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:0
 
 ##################################################################
@@ -613,7 +613,7 @@ cooldown=7
 animation=swings right arm|0.75|throws 3 fire balls
 effect=3 short-range projectiles (cone)
 count=?
-subeffect=damage:0
+subeffect=damage:?
 #note=Try to direct away from other players
 #note=evade or use area anti projectile
 #note=Run away to get out of range
@@ -626,7 +626,7 @@ animation=raises both arms and head|1.25|dashes quickly
 additional=leap finisher. Only used at distant targets
 effect=dash with a melee hit and a cone
 count=2
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:0
 #note=Run away to make him miss
 #note=evade
@@ -918,14 +918,14 @@ cooldown=0
 effect=5 cones in 2 s
 count=5
 length=2
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Flame Burst
 ID=5029
 image=https://i.imgur.com/NixR1Sx.jpg
 animation=grabs ground and raises arms|2.5
 effect=PBAoE
-subeffect=damage:0
+subeffect=damage:?
 subeffect=burning:10
 
 attack=Shock Wave
@@ -933,7 +933,7 @@ ID=5021
 image=https://i.imgur.com/x8a73ma.jpg
 animation=raises right arm and smashes ground with right hand|1
 effect=projectile at every target (360 degrees)
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockdown:3
 
 attack=Flame Jet
@@ -942,14 +942,14 @@ additional=only used at distant targets
 effect=projectile with ticking AoE (21 hits in 20 s)
 count=21
 length=20
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Searing Crystals
 ID=5031
 animation=raises right arm, glows purple and smashes ground with both hands|1
 effect=multiple delayed AoEs
 count=?
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:2.5
 subeffect=summon Searing enemy=Crystal:structure
 #note=Crystals won't heal much but you should clear up close ones
@@ -993,7 +993,7 @@ subeffect=damage:-
 attack=Devourer Lurk
 animation=burrows||moves underground
 effect=dash
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockdown:2
 
 attack=Tail Swipe (1)
@@ -1006,7 +1006,7 @@ attack=Devour (2)
 effect=5 melee hits in 2 s
 count=5
 length=2
-subeffect=damage:0
+subeffect=damage:?
 subeffect=healing:0
 
 # Internal: Skill Dual Sting also listed.
@@ -1070,7 +1070,7 @@ Path=CoF2
 # Internal: Doesn't exist.
 attack=Slash
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Devourer Siege
 ID=14969

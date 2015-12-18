@@ -23,7 +23,7 @@ Path=SE2
 attack=Mace Smash
 ID=4512
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockback:0
 
 attack=Shock Wave
@@ -75,7 +75,7 @@ subeffect=damage:-
 attack=Tunnel
 ID=4622
 effect=dash
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockdown:0
 
 ##################################################################
@@ -155,9 +155,9 @@ ID=4577
 animation=burrows and moves underground
 additional=only used at distant targets
 effect=dash with PBAoE
-subeffect=damage:0
+subeffect=damage:?
 effect=end effect
-subeffect=damage:0
+subeffect=damage:?
 #note=evade
 
 ##################################################################
@@ -183,7 +183,7 @@ subeffect=buff:Wreath_of_Flame:0:1:-
 
 attack="Wreath of Flame"
 effect=aura
-subeffect=damage:0
+subeffect=damage:?
 subeffect=Breath_of_Flame
 #note=spreads to allies
 #note=stand at water-spring to extinguish
@@ -211,14 +211,14 @@ Path=SE3
 attack=Slash
 ID=4612
 effect=3 projectiles (cone)
-subeffect=damage:0
+subeffect=damage:?
 #note=only one will hit as long as you don't hug him
 
 attack=Obliterate
 ID=4610
 animation=glows
 effect=projectile
-subeffect=damage:0
+subeffect=damage:?
 
 attack=Gong
 effect=buff:fire_aura
@@ -348,7 +348,7 @@ animation=pulls right arm back
 effect=2 wide melee hits
 count=2
 length=0.25
-subeffect=damage:0
+subeffect=damage:?
 subeffect=bleeding:4
 #note=evade
 
@@ -361,7 +361,7 @@ subeffect=stability:3
 effect=3 huge growing PBAoEs in 3 s
 count=3
 length=3
-subeffect=damage:0
+subeffect=damage:?
 subeffect=agony:3
 #note=evade twice (needs proper timing)
 
@@ -370,7 +370,7 @@ ID=15956
 animation=raises both arms
 effect=2 waves of multiple projectiles with delayed AoE
 count=?
-subeffect=damage:0
+subeffect=damage:?
 #note=try to walk out, evade if needed
 #note=area anti projectile skills are very effective
 #note=reflected projectiles deal no damage to Powersuit
@@ -380,7 +380,7 @@ ID=15959
 animation=jumps
 additional=can't be blocked
 effect=multiple short-range projectile (360 degrees)
-subeffect=damage:0
+subeffect=damage:?
 #note=evade, tank or out-range
 
 attack=Mending
@@ -973,9 +973,9 @@ attack=Tunnel
 ID=1704
 effect=dash with small PBAoE
 count=?
-subeffect=damage:0
+subeffect=damage:?
 effect=end effect
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockdown:2
 
 #############################

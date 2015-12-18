@@ -133,7 +133,7 @@ rank=structure
 
 attack=Fling
 effect=slow melee
-subeffect=damage:0
+subeffect=damage:?
 
 ##################################################################
 
@@ -147,7 +147,7 @@ attack=Kill to rally
 
 attack=Slash
 effect=slow melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=poison:25
 subeffect=bleeding:15
 #note=try to keep some distance
@@ -313,7 +313,7 @@ Path=SE1
 
 attack=Flame On
 effect=cone
-subeffect=damage:0
+subeffect=damage:?
 subeffect=burning:2
 
 ##################################################################
@@ -358,7 +358,7 @@ health=0.6937
 
 attack=Smash
 effect=PBAoE
-subeffect=damage:0
+subeffect=damage:?
 
 ##################################################################
 
@@ -498,11 +498,11 @@ condition=0
 
 attack=Fire Mortar
 effect=projectile
-subeffect=damage:0
+subeffect=damage:?
 effect=with ticking AoE (30 ticks in 10 s)
 count=30
 length=10
-subeffect=damage:0
+subeffect=damage:?
 subeffect=burning:3
 
 ##################################################################
@@ -514,11 +514,11 @@ path=UnderGun|UnderBomb
 
 attack=Ice Mortar
 effect=projectile
-subeffect=damage:0
+subeffect=damage:?
 effect=with ticking AoE (6 ticks in 5 s)
 count=6
 length=5
-subeffect=damage:0
+subeffect=damage:?
 subeffect=chilled:2
 
 ##################################################################
@@ -530,7 +530,7 @@ path=UnderGun|UnderBomb
 
 attack=Shock Mortar
 effect=projectile
-subeffect=damage:0
+subeffect=damage:?
 effect=with area field (4 s)
 subeffect=stun:2 when passing through
 
@@ -565,7 +565,7 @@ health=0.2355
 attack=Nightmare Mortar
 image=http://fat.gfycat.com/DefensiveEthicalDogfish.gif
 effect=projectile with AoE
-subeffect=damage:0
+subeffect=damage:?
 
 ##################################################################
 
@@ -576,7 +576,7 @@ Path=HotWS
 attack=Corrupt Spike
 additional=maximum-range (900)
 effect=multiple projectiles (360 degrees)
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:2
 subeffect=chilled:2
 
@@ -715,7 +715,7 @@ Path=Urban
 attack=Volley
 effect=multiple delayed (1 s) AoEs
 count=?
-subeffect=damage:0
+subeffect=damage:?
 
 ##################################################################
 
@@ -730,7 +730,7 @@ Path=Urban
 attack=Volley
 effect=multiple delayed (1 s) AoEs
 count=?
-subeffect=damage:0
+subeffect=damage:?
 
 ##################################################################
 
@@ -746,7 +746,7 @@ attack=Ballista Bolt
 animation=side-thingies flap
 additional=can't be blocked
 effect=piercing projectile
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockback:1.5
 
 ##################################################################
@@ -765,7 +765,7 @@ additional=can't be blocked
 effect=4 piercing projectiles in 6.5 s
 count=4
 length=6.5
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockback:1.5
 
 ##################################################################
@@ -800,7 +800,7 @@ attack=Ice Bomb Explosion
 additional=used on death
 effect=2 PBAoEs
 count=2
-subeffect=damage:0
+subeffect=damage:?
 subeffect=chilled:2
 
 ##################################################################
@@ -1181,7 +1181,7 @@ attack=Trap
 cooldown=0
 effect=trap (2 hits)
 count=2
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockdown:3
 subeffect=bleeding:4.8
 
@@ -1198,7 +1198,7 @@ animation=instant||wind blown
 effect=7 cones in 3 s
 count=7
 length=3
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:0
 
 ##################################################################
@@ -1214,7 +1214,7 @@ cooldown=12
 effect=delayed (6 s) ticking AoE (7 hits in 12 s)
 count=7
 length=12
-subeffect=damage:0
+subeffect=damage:?
 subeffect=burning:5.75
 #note=AoEs stack which means old one is still there doing damage while new one is pulsing (unless Water extinguishes)
 
@@ -1227,7 +1227,7 @@ path=Cliff
 
 attack=Small Fire Explosion
 effect=multiple AoEs in line
-subeffect=damage:0
+subeffect=damage:?
 subeffect=launch:2
 
 ##################################################################
@@ -1308,7 +1308,7 @@ attack=Spike Trap
 animation=red circle
 additional=can't be blocked or evaded
 effect=trap
-subeffect=damage:0
+subeffect=damage:?
 subeffect=crippled:3.5
 subeffect=bleeding:7:6
 #note=avoid
@@ -1437,7 +1437,7 @@ subeffect=damage
 
 attack=Hammer Smash
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockback:0
 #note=not much reason to use. Puts all skills on 3 s cooldown and does poor damage
 
@@ -1450,7 +1450,7 @@ subeffect=Stability:1
 attack=Seal Breaker
 additional=Charges by being near a dying enemy. Also does damage to Seals
 effect=melee
-subeffect=damage:0
+subeffect=damage:?
 subeffect=knockback:0
 
 ##################################################################
