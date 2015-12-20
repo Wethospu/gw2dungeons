@@ -9,6 +9,7 @@ init=Glossary|General|Glossary|Glossary
 
 path=General
 name=What's this?
+Note: These pages are outdated.
 If you are interested of dungeon or fractals then you are in a good place. Whether you have just started, have already few runs behind or consider yourself a pro this site should be useful for you.
 If you have just started you should keep reading this page as it will contain general information about dungeons or fractals.
 If you already know the basics feel free to skip to actual guides or other sections.
@@ -53,6 +54,7 @@ link=http://gw2skills.net|<b>Build_editor:</b>  A site to create and share build
 
 path=Meta
 name=What Does 'Meta' Mean?
+Note: These pages are outdated.
 When players refer to the "meta" they can mean multiple things. In regards to individual player character builds, they are referring to builds that are understood by the community to be optimal by providing terrific support capabilities along with good DPS. In regards to team compositions, they are referring to a composition that is generally accepted to be the one that provides the most efficient way to complete a dungeon.
 These are not definite concepts, but an ever-changing zeitgeist based on the most up to date build ideas and strategies. What is "meta" one day could easily be outside the meta the next simply as a result of changing tastes and approaches. Additionally, there are multiple metas. There is a meta for record runs, a meta for casual daily speed clears and a meta for pick up groups. These all vary from each in important ways, but in some respect they are each "meta".
 For example, in a record run meta team Mesmer is often favored over Guardian due to access to Portal despite having lower defensive utility; whereas in a daily speed clear team Guardian is preferred for exactly the same reason. In a record run speed is preferred to smoothness since the run can be reset in case of a mistake, in a daily run a little speed is worth sacrificing for a smooth run. As a result, it is important to know when someone refers to a meta, which meta he is actually discussing.
@@ -113,6 +115,7 @@ What the exact "meta builds" and "meta team composition" is can change with each
 
 path=Combat
 name=Combat
+Note: These pages are outdated.
 This section explains what you should generally be doing if you want to clear enemies fast. In all cases switching weapons, traits and utilities frequently results in a better performance.
 To deal lots of damage you need a high damage gear, traits and weapons, a good skill rotation and teamwork to stack might. Buffs and boons have a limited range so the whole party should stay near each other. This doesn't mean stacking on top of each other which most groups do nowadays.
 To survive you need just enough active defenses to counter enemy attacks. This includes anti projectile skills, boons, conditions and control. For more info check local=Defense section.
@@ -221,6 +224,7 @@ For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/1249
 
 path=Skipping
 name=Skipping
+Note: These pages are outdated.
 The main purpose of skipping is to save time. Faster you get to the end, faster you get the big end reward. While enemies drop loot, you are facing elite enemies which are much tougher than normal enemies in open world.
 Another reason is that some elite enemy groups are quite hard to take down. There are also encounters where you have run instead of fighting.
 Nowadays most of the groups will be skipping enemies. If you wish to clear the enemies you should specifically mention it on your LFG message and repeat it on party chat few times before starting the run.
@@ -296,6 +300,7 @@ If you expect to die you should retrait to (20633) to get toughness, vitality, w
 
 path=Other
 name=Other
+Note: These pages are outdated.
 This section has mechanics which don't really fit any of the topics.
 
 name=Combat debuff
@@ -323,6 +328,7 @@ Example of pathing different enemies in youtube=NhNDGqJe6iA|The_Ruined_City_of_A
 
 path=Defense
 name=Defense
+Note: These pages are outdated.
 There are multiple ways to survive an attack but different defensive methods excel at different situations. Passive defense is good against continuous pressure while active defense is good against spike damage. Most bosses hit hard but not very often which means additional passive defense is rarely needed. It's still helpful when learning to play because actively avoiding takes some skill.
 Active defense comes in many forms. All professions have access to dodges which allow evading attacks. On top of that there are evading skills, blocking skills, invulnerability, aegis, blind, interrupts, reflects and projectile absorption.
 
@@ -366,6 +372,7 @@ Similar to reflect but doesn't send projectiles back. It's useful against projec
 
 path=Combos
 name=wiki=Combo
+Note: These pages are outdated.
 Combos are very useful for both combat and skipping. While not required, they allow you to clear the content faster and safer while making the game more interesting. Once you learn to use them it's hard to look back. To do a combo, you need to use a finisher on a field. There are different finishers and fields and you get a different effect based on which were used.
 Comboing is fast when the whole party helps because each party member has to only use 1-2 finishers which takes only a few seconds. Some professions have a better access to these but everyone can contribute.
 Different skills excel at different situations. When out of combat, fields and finishers on unused weapons are the best because you can equip the main weapons and have no skills on cooldown. In combat, switching to a weak weapon for a combo will actually reduce your damage.
