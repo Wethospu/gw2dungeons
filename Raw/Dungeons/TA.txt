@@ -7,7 +7,7 @@ path=TAS
 tactic=normal
 name=Twilight Arbor Story
 Level: 50.
-Reward: 0.73g.
+Reward: 0.26 g.
 Average length: 26 minutes.
 Difficulty: Easy.
 Enemies: Nightmare Court.
@@ -19,8 +19,7 @@ tactic=coordinated
 Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force.
 tactic=rewards
 First run per character gives a level 50 rare head armor.
-First run per day gives 73 silvers. Next runs give only 23 silvers.
-Every run gives 70% of your next level which makes dungeons very good for leveling up.
+First run per day gives 26 silvers.
 
 name=Pod Area
 image=http://i.imgur.com/Oq5p9dm.jpg
@@ -142,7 +141,7 @@ path=TAF
 name=Twilight Arbor Path 1: Forward
 tactic=normal
 Level: 55.
-Reward: 1.31g + 60 tokens.
+Reward: 0.61 g + 60 tokens.
 Average length: 14 minutes.
 Difficulty: Easy.
 Enemies: Nightmare Court.
@@ -153,8 +152,8 @@ Current record: record=10.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force.
 tactic=rewards
-First run per day gives 1.31 gold and 60 tokens, wiki=Deadly_Bloom|Deadly_Blooms. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
-Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+First run per day gives 61 silvers and 60 tokens, wiki=Deadly_Bloom|Deadly_Blooms. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Forest_Brace, wiki=Darkened_Vine or wiki=Twisted_Tendril from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Arbor's_Embrace from enemies and chests. It's account bound so it's not valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Nightmare_Coil from the second last boss, enemy=Leurent. The recipe allows you to craft wiki=Nightmare_Coil which gives a much better gold return for your tokens.
@@ -163,7 +162,7 @@ path=TAU
 name=Twilight Arbor Path 2: Up
 tactic=normal
 Level: 55.
-Reward: 1.31g + 60 tokens.
+Reward: 0.61 g + 60 tokens.
 Average length: 14 minutes.
 Difficulty: Easy.
 Enemies: Nightmare Court.
@@ -174,8 +173,8 @@ Current record: record=11.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force.
 tactic=rewards
-First run per day gives 1.31 gold and 60 tokens, wiki=Deadly_Bloom|Deadly_Blooms. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
-Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+First run per day gives 61 silvers and 60 tokens, wiki=Deadly_Bloom|Deadly_Blooms. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Forest_Brace, wiki=Darkened_Vine or wiki=Twisted_Tendril from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Arbor's_Embrace from enemies and chests. It's account bound so it's not valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Tortured_Root from the second last boss, enemy=Fyonna_the_Countess_of_Spiders:legendary. The recipe allows you to craft wiki=Tortured_Root which gives a better gold return for your tokens.
@@ -566,7 +565,7 @@ path=TAAE
 name=Twilight Arbor Path 3: Aetherblade
 tactic=normal
 Level: 80.
-Reward: 2.31g + 60 tokens.
+Reward: 0.92 g + 60 tokens.
 Average length: 37 minutes.
 Difficulty: Hard.
 Enemies: Nightmare Court and Aetherblade.
@@ -576,8 +575,8 @@ Current record: record=12.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Dreams|Sigil_of_Dreams instead of Force in the beginning. Switch back to Force after escorting the ooze.
 tactic=rewards
-First run per day gives 2.31 gold and 60 tokens, wiki=Deadly_Bloom|Deadly_Blooms. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
-Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+First run per day gives 92 silvers and 60 tokens, wiki=Deadly_Bloom|Deadly_Blooms. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a very low chance to get wiki=Aetherized_Nightmare_weapons from the final chest after enemy=Clockheart. These can be traded and are extremely valuable.
 
 path=TAAE

@@ -8,7 +8,7 @@ path=CoES
 name=Crucible of Eternity Story: Stop Kudu
 tactic=normal
 Level: 78.
-Reward: 0.73g.
+Reward: 0.26 g.
 Average length: 39 minutes.
 Difficulty: Medium.
 Enemies: Inquest, a bandit and a giant.
@@ -22,8 +22,7 @@ Against enemy=Kudu's_Power_Suit, use wiki=Powerful_Potion_of_Outlaw_Slaying|Poti
 Against enemy=Kudu's_Monster, use wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 tactic=rewards
 First run per character gives a level 80 rare head armor.
-First run per day gives 73 silvers. Next runs give only 23 silvers.
-Every run gives 70% of your next level which makes dungeons very good for leveling up.
+First run per day gives 26 silvers.
 
 name=Crucible Access Platform
 tactic=normal
@@ -161,7 +160,7 @@ path=CoE1
 name=Crucible of Eternity Path 1: Escape with the submarine
 tactic=normal
 Level: 80.
-Reward: 1.81g + 60 tokens.
+Reward: 0.61 g + 60 tokens.
 Average length: 18 minutes.
 Difficulty: Medium.
 Enemies: Undead, Icebrood and Inquest.
@@ -177,8 +176,8 @@ Against the second enemy=Subject_Alpha_(second), use wiki=Powerful_Potion_of_Und
 Against enemy=Bjarl_the_Rampager, use wiki=Powerful_Potion_of_Ice_Brood_Slaying|Potion_of_Ice_Brood_Slaying and wiki=Superior_Sigil_of_Icebrood_Slaying|Sigil_of_Icebrood_Slaying.
 Against the final enemy=Subject_Alpha_(third), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 tactic=rewards
-First run per day gives 1.81 gold and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
-Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+First run per day gives 61 silvers and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Charged_Band, wiki=Diffraction_Crystal or wiki=Fiber_Splice from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Infinity_Loop from the final chest. The recipe allows you to craft wiki=Infinity_Loop which gives no extra gold return for your tokens.
 
@@ -186,7 +185,7 @@ path=CoE2
 Name=Crucible of Eternity Path 2: Use teleporter
 tactic=normal
 Level: 80.
-Reward: 1.81g + 60 tokens.
+Reward: 0.61 g + 60 tokens.
 Average length: 19 minutes.
 Difficulty: Medium.
 Enemies: Undead, Icebrood, Inquest and Nightmare Court.
@@ -202,8 +201,8 @@ Against the second enemy=Subject_Alpha_(second), use wiki=Powerful_Potion_of_Und
 Against enemy=Evolved_Husk, use wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 Against the final enemy=Subject_Alpha_(second), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 tactic=rewards
-First run per day gives 1.81 gold and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
-Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+First run per day gives 61 silvers and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Charged_Band, wiki=Diffraction_Crystal or wiki=Fiber_Splice from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Alpha_Conduit from the final chest. The recipe allows you to craft wiki=Alpha_Conduit which gives no extra gold return for your tokens.
 
@@ -211,7 +210,7 @@ path=CoE3
 name=Crucible of Eternity Path 3: Go through the front door
 tactic=normal
 Level: 80.
-Reward: 1.81g + 60 tokens.
+Reward: 0.61 g + 60 tokens.
 Average length: 19 minutes.
 Difficulty: Medium.
 Enemies: Undead, Icebrood, Inquest and Destroyer.
@@ -227,8 +226,8 @@ Against the second enemy=Subject_Alpha_(second), use wiki=Powerful_Potion_of_Und
 Against enemy=Evolved_Destroyer, use wiki=Powerful_Potion_of_Destroyer_Slaying|Potion_of_Destroyer_Slaying and wiki=Superior_Sigil_of_Destroyer_Slaying|Sigil_of_Destroyer_Slaying.
 Against the final enemy=Subject_Alpha_(second), use wiki=Powerful_Potion_of_Undead_Slaying|Potion_of_Undead_Slaying and wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying.
 tactic=rewards
-First run per day gives 1.81 gold and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
-Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+First run per day gives 61 silvers and 60 tokens, wiki=Knowledge_Crystal|Knowledge_Crystals. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Charged_Band, wiki=Diffraction_Crystal or wiki=Fiber_Splice from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Prototype_Sheath from the final chest. It's account bound so it's not valuable.
 

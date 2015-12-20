@@ -7,7 +7,7 @@ path=CoFS
 tactic=normal
 name=Citadel of Flame Story: Assault the Flame Legion Citadel
 Level: 70.
-Reward: 0.73g.
+Reward: 0.26 g.
 Average length: 30 minutes.
 Difficulty: Easy.
 Enemies: Flame Legion.
@@ -19,8 +19,7 @@ tactic=coordinated
 Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
 tactic=rewards
 First run per character gives a level 70 rare head armor.
-First run per day gives 73 silvers. Next runs give only 23 silvers.
-Every run gives 70% of your next level which makes dungeons very good for leveling up.
+First run per day gives 26 silvers.
 
 name=Start
 tactic=normal
@@ -105,7 +104,7 @@ path=CoF1
 name=Citadel of Flame Path 1: Destroy the superweapon
 tactic=normal
 Level: 75.
-Reward: 1.31 g + 60 tokens.
+Reward: 0.61 g + 60 tokens.
 Average length: 8 minutes.
 Difficulty: Easy.
 Enemies: Flame Legion.
@@ -116,8 +115,8 @@ Current record: record=19.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
 tactic=rewards
-First run per day gives 1.31 gold and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
-Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+First run per day gives 61 silvers and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wildfire_Talisman from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Ashes_of_the_Effigy from the final chest. The recipe allows you to craft wiki=Ashes_of_the_Effigy which gives no extra gold return for your tokens.
 
@@ -229,7 +228,7 @@ path=CoF2
 name=Citadel of Flame Path 2: Prevent the resurrection of Gaheron
 tactic=normal
 Level: 75.
-Reward: 1.31 g + 60 tokens.
+Reward: 0.61 g + 60 tokens.
 Average length: 17 minutes.
 Difficulty: Easy.
 Enemies: Flame Legion.
@@ -240,8 +239,8 @@ Current record: record=20.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
 tactic=rewards
-First run per day gives 1.31 gold and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
-Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+First run per day gives 61 silvers and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wildfire_Talisman from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Eternal_Flame from the final chest. The recipe allows you to craft wiki=Eternal_Flame which gives no extra gold return for your tokens.
 
@@ -310,7 +309,7 @@ path=CoF3
 name=Citadel of Flame Path 3: Kill the new Tribune
 tactic=normal
 Level: 75.
-Reward: 1.31 g + 60 tokens.
+Reward: 0.61 g + 60 tokens.
 Average length: 24 minutes.
 Difficulty: Medium.
 Enemies: Flame Legion.
@@ -321,8 +320,8 @@ Current record: record=21.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Smothering|Sigil_of_Smothering instead of Force.
 tactic=rewards
-First run per day gives 1.31 gold and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
-Every run gives 70% experience towards your next level and 30 wiki=Empyreal_Fragments.
+First run per day gives 61 silvers and 60 tokens, wiki=Flame_Legion_Charr_Carving|Flame_Legion_Charr_Carvings. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual_Book or wiki=Wildfire_Talisman from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Burntclaw's_Brace from the final chest. It's account bound so it's not valuable.
 
