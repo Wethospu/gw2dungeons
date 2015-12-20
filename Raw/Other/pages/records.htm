@@ -16,8 +16,8 @@
 		loadSettings(false, false);
 		generateSubNavigation(["Records", "Rules", "Guilds", "Players"], ["Records", "Rules", "Guilds", "Players"]);
 		loadPage();
-		$("#record-date-pre").datepicker({dateFormat: "yyyy-mm-dd"});
-		$("#record-date-after").datepicker({dateFormat: "yyyy-mm-dd"});
+		$("#record-date-pre").datepicker({dateFormat: "yy/mm/dd"});
+		$("#record-date-after").datepicker({dateFormat: "yy/mm/dd"});
 
 		$("#record-instance-type").change(function () {
             updateInstanceSelect();
