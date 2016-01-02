@@ -234,13 +234,13 @@ namespace DataCreator.Enemies
           amount = amount * stacks;
           totalAmount = hitCount * amount;
           totalDuration = 0;
+          totalLength = hitLength + duration;
           // Without damage don't do "over X seconds". Instead, just add the duration (makes control work properly). / 2015-10-01 / Wethospu
           if (amount == 0)
           {
             totalDuration = duration;
             duration = 0;
           }
-          totalLength = hitLength + duration;
           stacks = hitCount * stacks;
         }
 
