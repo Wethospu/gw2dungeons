@@ -94,34 +94,36 @@ Use a banner so all your party members can use wiki=Inspire.
 
 path=AquaDark|AquaDolphin
 name=enemy=Jellyfish_Beast:legendary
-tactic=normal|coordinated
-Lure the beast to the electrified cages for extra damage.
+tactic=bug
+Swallow attack removes all agony resist while you are inside him. This means its agony will cause much higher damage or even instantly defeat players at higher scales. You may have (needs verification) to re-equip your gear to get agony resist back which can't be done when in combat.
+tactic=ranged
+Stay at range at all times to avoid Beast's melee attacks, especially his agony attack. Keep up swiftness if you can for a better mobility and dodge away from him if he gets close.
+Try to pull Beast to electrified cages and break his defiance there for a decent damage. Keep moving at all times to avoid attacks from summoned enemy=Jellyfishes.
+tactic=melee
+Melee is not recommended without support from your party. His Swallow attack is bugged and removes your agony resist which means you will get instantly defeated on higher scales. The attack can only be avoided by breaking his defiance which is tricky to do alone. Also if he focuses you won't get the damage from electrified cages.
+Learn his animations so you can dodge away when he starts spinning. If you get hit you get constantly stunned which makes you an easy target for summoned enemy=Jellyfishes. Consider taking stability when practising.
+His basic Slash attack deals lots of damage and knocks you away. It can be avoided by sidestepping but dodge when uncertain.
 tactic=coordinated
-Designate one player to pick a cage and have the rest of the party follow him.
-tactic=normal
-The boss summons enemy=Jellyfishes:normal. Kite them while killing the beast. Tag them to rally if downed.
-After 75% the boss starts using its agony attack. He pulls the target inside of him, gets 5 stacks of might every second, and applies agony on the target. Interrupting is the only way to avoid the agony attack. Use sink and float which ignores the defiance.
-If you get pulled inside of the boss, start spamming skill 1 to get out. Start using skill 1 as fast possible to reduce time the boss is resistant to damage.
-tactic=alternative
-Full melee the boss while ignoring cages.
-tactic=normal|coordinated|alternative
+Go full melee to maximise your damage and ignore cages. Try to cleave summoned enemy=Jellyfishes to kill them before more appear. Use area stability or self stability to counter his spinning.
+Keep his defiance below 50% at all times. Don't push it too low or it might break from conditions. Break the defiance when he uses Swallow to prevent someone getting killed.
+tactic=exploit
+There are multiple different tactics. You should verify which one your party is planning to use.
+All exploits rely on two mechanics. The first is that your character gets teleported to the boss area entrance if you go to character selection screen and then back to the game. This is often referred as "relogging". The second is that you can retry the fight without Beast resetting if you are able to attack him fast enough.
+The most effective tactic is graveyard rushing. Idea is to go melee and maximise your damage. When there are only 1-2 players alive they pull Beast to the area entrance. Once they get defeated, everyone immediately respawns and someone uses a ranged attack to aggro Beast again. Beast won't regain any health if done properly which means you will be able to eventually kill him.
+There is also a less coordinated tactic. You can simply get out of combat during the fight by moving away from Beast fast enough. This is much easier to do when Beast is aggroed to someone else. So when there are only 2 players left they should split up. When one of the player gets out of combat he should immediately move back and be ready to attack Beast when the other player gets killed. This is still bit unreliable because summoned enemy=Jellyfishes may follow you. If this happens burst them down.
+Tactics relying on "relogging" are less efficient because you often have to manually resurrect players. But if you switch to a character who hasn't been killed yet, they will appear at the area entrance with full health. If you have multiple characters available you can use this even when your party is using a different tactic.
+Resurrecting "relogged" characters can be done in two ways. You can either permanently have one player waiting at the entrance or just go resurrect when needed. The former is slower because you have to 4-man the fight but safer. If players move to resurrect it's possible that enemies follow you which complicates the situation.
+Keep in mind that resurrecting a player when in out of combat takes up to 20 seconds. When in combat the time is doubled. The time can be reduced with quickness and increased revive speed.
 tactic=warrior
-Use wiki=Balanced_Stance to attack him during his spin.
+Use wiki=Balanced_Stance to attack him during electric spin when meleeing.
+When using the "relog"-exploit, you should stay at the entrance if needed. With wiki=Determined_Revival and wiki=Frenzy you can resurrect people faster. You can also help the party by using wiki=Banner_of_Strength and wiki=Banner_of_Discipline with wiki=Inspiring_Battle_Standard.
 tactic=guardian
-Use wiki="Stand_Your_Ground!" to protect your team from his electric spin.
-tactic=guardian
-Use Aegis against normal melee.
-tactic=guardian
-Use wiki=Weight_of_Justice (trait with Two-Handed Mastery) to interrupt agony attack.
+Use wiki="Stand_Your_Ground!" to protect your team from electric spin.
+Use Aegis against Slash melee attack.
 tactic=necromancer
-Use wiki=Sinking_Tomb to interrupt agony attack.
-tactic=necromancer
-Remember to corrupt his 25 might stacks after using agony attack.
-tactic=thief
-Use wiki=Basilisk_Venom to interrupt agony attack.
+Being in wiki=Death_Shroud completely counters his Swallow attack. You will get out of the shroud instead of being eaten. As long as everyone else stays at range you will get Swallowed every time which simplifies the fight, especially if Beast stays aggroed on you. Your party can melee for up to 15 seconds after Swallow is used because it has a cooldown of 20 seconds.
+Remember to corrupt his 25 might stacks after people get Swallowed.
 tactic=mesmer
-Use wiki=Arcane_Thievery to steal 25 might and wiki=Signet_of_Inspiration to give them to your team (unless your team interrupts agony attack most of the time).
-tactic=mesmer
-Use wiki=Illusion_of_Drowning to interrupt agony attack.
-tactic=elementalist
-Use wiki=Air_Bubble and wiki=Rock_Anchor to interrupt agony attack.
+If you expect people to constantly get Swallowed, use wiki=Arcane_Thievery to steal 25 might and wiki=Signet_of_Inspiration to give them to your team.
+tactic=ranger
+Use your pets to tank Beast if your party is using ranged attacks. This often keeps him in place which simplifies the fight.
