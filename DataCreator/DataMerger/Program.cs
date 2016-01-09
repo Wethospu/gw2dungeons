@@ -4,22 +4,24 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace DataMerger
 {
+  // Merges multiple enemy id json files to a single file. / 2016-09-01 / Wethospu
+  // A single file is easier to manage because all info is in the single place. / 2016-09-01 / Wethospu
   class Program
   {
     static void Main(string[] args)
     {
       Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
-      Dictionary<string, EnemyData> combined = new Dictionary<string, EnemyData>();
+      // Custom comparer is needed to sort json ids correctly. / 2016-09-01 / Wethospu
+      SortedDictionary<string, EnemyData> combined = new SortedDictionary<string, EnemyData>(new Comparer());
 
       var dataFiles = Directory.GetFiles(".\\");
       foreach (var file in dataFiles)
       {
+        // Result.json is the output file so don't include it again. / 2016-01-09 / Wethospu
         if (Path.GetExtension(file) != ".json" || Path.GetFileNameWithoutExtension(file).Equals("result"))
           continue;
         if (!File.Exists(file))
@@ -92,7 +94,7 @@ namespace DataMerger
             combined.Add(key, enemyData[key]);
         }
       }
-      // Initialize all positions and check stuff. / 2015-10-11 / Wethospu
+      // Initialize all values and check for errors. / 2015-10-11 / Wethospu
       foreach (var value in combined.Values)
       {
         for (var i = 0; i < value.Occurrences.Length; i++)
@@ -111,8 +113,15 @@ namespace DataMerger
       // Save the result. / 2015-10-11 / Wethospu
       using (StreamWriter r = new StreamWriter("result.json"))
       {
-        var data = JsonConvert.SerializeObject(combined, Formatting.Indented);
-        r.Write(data);
+        using (JsonTextWriter jw = new JsonTextWriter(r))
+        {
+          jw.Formatting = Formatting.Indented;
+          jw.IndentChar = ' ';
+          jw.Indentation = 4;
+
+          JsonSerializer serializer = new JsonSerializer();
+          serializer.Serialize(jw, combined);
+        }
       }
     }
   }
