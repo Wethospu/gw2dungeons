@@ -12,6 +12,7 @@ namespace DataCreator.Shared
   {
     private Dictionary<string, List<PathData>> DungeonPaths { get; set; }
     public List<PathData> FractalPaths { get; private set; }
+    private Dictionary<string, List<PathData>> RaidPaths { get; set; }
     private SortedSet<string> Ranks { get; set; }
     private string CurrentTag;
     private SortedDictionary<string, string> Tags { get; set; }
@@ -22,6 +23,7 @@ namespace DataCreator.Shared
     {
       DungeonPaths = new Dictionary<string, List<PathData>>();
       FractalPaths = new List<PathData>();
+      RaidPaths = new Dictionary<string, List<PathData>>();
       Ranks = new SortedSet<string>();
       CurrentTag = "0";
       Tags = new SortedDictionary<string, string>();
@@ -54,6 +56,11 @@ namespace DataCreator.Shared
           Helper.ShowWarningMessage("Fractal F" + (index + 1) + " is already defined. (" + FractalPaths[index].Tag + ", " + path.Tag + ")");
         FractalPaths[index] = path;
       }
+    }
+
+    public void AddRaid(string raid, List<PathData> paths)
+    {
+      RaidPaths.Add(raid, paths);
     }
 
     public void AddRank(string rank)
@@ -138,7 +145,7 @@ namespace DataCreator.Shared
         dungeonData.Add("ID_" + dungeon.ToUpper(), entry.ToString());
       }
       dungeonData.Add("ID_FRACTAL", GenerateFractalData());
-      return dungeonData;
+      return GenerateRaidData(dungeonData);
     }
 
     /***********************************************************************************************
@@ -195,6 +202,47 @@ namespace DataCreator.Shared
           fractalData.Append(Gw2Helper.AddTab(3)).Append("</ul></li>");
       }
       return fractalData.ToString();
+    }
+
+    /***********************************************************************************************
+     * GenerateRaidData / 2016-11-01 / Wethospu                                                    *
+     *                                                                                             *
+     * Generates "raid translation" to generate main page.                                         *
+     *                                                                                             *
+     * Returns generated translation data.                                                         *
+     *                                                                                             *
+     ***********************************************************************************************/
+
+    public Dictionary<string, string> GenerateRaidData(Dictionary<string, string> translationData)
+    {
+      var raidData = new StringBuilder();
+      foreach (var raid in RaidPaths.Keys)
+      {
+        // Generate entry for dungeon.
+        // Format:
+        // <h2>The Ruined City of Arah</h2>
+        // <ul>
+        //     <li><a href="./'page'">'Long path name'</a><span class="tracker" data-tag="'Path id'"></span></li>
+        //     <li><a href="./'page'">'Long path name'</a><span class="tracker" data-tag="'Path id'"></span></li>
+        // </ul>
+        if (RaidPaths[raid] == null || RaidPaths[raid].Count == 0)
+        {
+          Helper.ShowWarningMessage("Raid \"" + raid + "\" had no path data!");
+          continue;
+        }
+        var entry = new StringBuilder();
+        entry.Append(Gw2Helper.AddTab(3)).Append("<h2>").Append(RaidPaths[raid][0].DungeonName).Append("</h2>").Append(Constants.LineEnding);
+        entry.Append(Gw2Helper.AddTab(3)).Append("<ul class=\"nav nav-stacked\">").Append(Constants.LineEnding);
+        foreach (var path in RaidPaths[raid])
+        {
+          entry.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./").Append(path.Tag).Append("\">").Append(path.NameLong).Append("</a>");
+          //entry.Append("<span class=\"tracker\" data-tag=\"").Append(path.Tag).Append("\"></span>");
+          entry.Append("</li>").Append(Constants.LineEnding);
+        }
+        entry.Append(Gw2Helper.AddTab(3)).Append("</ul>").Append(Constants.LineEnding);
+        translationData.Add("ID_" + raid.ToUpper(), entry.ToString());
+      }
+      return translationData;
     }
 
     /***********************************************************************************************

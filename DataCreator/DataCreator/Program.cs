@@ -25,6 +25,7 @@ namespace DataCreator
     {
       Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
       Console.OutputEncoding = Constants.Encoding;
+      Console.WriteLine(Directory.GetCurrentDirectory());
       Directory.SetCurrentDirectory("..");
       while (true)
       {
@@ -306,6 +307,7 @@ namespace DataCreator
       Constants.UniqueIndexCounter = 0;
       string[] dungeonsToGenerate = { "ac", "cm", "ta", "se", "cof", "hotw", "coe", "arah" };
       string[] fractalsToGenerate = { "Aether", "Aqua", "Cliff", "Furn", "Mai", "Molten", "Snow", "Solid", "Swamp", "Thauma", "Uncat", "Under", "Urban", "Volc" };
+      string[] raidsToGenerate = { "vale" };
       // File containing all enemies and encounters for searching.
       // Name|Rank|Category|Dungeon|Path
       // Some special values must also be translated.
@@ -316,20 +318,32 @@ namespace DataCreator
       // Generate enemies with help of datamined information. / 2015-10-05 / Wethospu
       var enemyData = EnemyGenerator.GenerateEnemies(enemyAttributes);
       
-      var dungeonData = new DataCollector();
+      var instanceData = new DataCollector();
       foreach (var dungeon in dungeonsToGenerate)
       {
-        var encounterData = GenerateDungeon("dungeon", dungeon, indexFile, dungeonData, enemyData);
-        EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, enemyData, encounterData.Paths);
+        var encounterData = GenerateDungeon("dungeon", dungeon, indexFile, instanceData, enemyData);
+        if (encounterData != null)
+          EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, enemyData, encounterData.Paths);
       }
       // Gather fractals to merge their path info. / 2015-10-29 / Wethospu.
       var fractals = new List<EncounterData>();
       foreach (var fractal in fractalsToGenerate)
-        fractals.Add(GenerateDungeon("fractal", fractal, indexFile, dungeonData, enemyData));
+      {
+        var encounterData = GenerateDungeon("fractal", fractal, indexFile, instanceData, enemyData);
+        if (encounterData != null)
+          fractals.Add(encounterData);
+      }
       foreach (var fractal in fractals)
-        EncounterGenerator.GenerateFiles(fractal.Paths, fractal.Encounters, enemyData, dungeonData.FractalPaths);
+        EncounterGenerator.GenerateFiles(fractal.Paths, fractal.Encounters, enemyData, instanceData.FractalPaths);
+      foreach (var raid in raidsToGenerate)
+      {
+        var encounterData = GenerateDungeon("raid", raid, indexFile, instanceData, enemyData);
+        if (encounterData != null)
+          EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, enemyData, encounterData.Paths);
+      }
 
-      EnemyGenerator.GenerateFile(enemyData, indexFile, dungeonData);
+
+      EnemyGenerator.GenerateFile(enemyData, indexFile, instanceData);
       var fileName = Constants.DataOutput + Constants.DataEnemyResult + "indexfile.htm";
       if (!Directory.Exists(Constants.DataOutput + Constants.DataEnemyResult))
       {
@@ -337,7 +351,7 @@ namespace DataCreator
         return true;
       }
       File.WriteAllText(fileName, indexFile.ToString());
-      OtherGenerator.GenerateOthers(dungeonData);
+      OtherGenerator.GenerateOthers(instanceData);
       Console.WriteLine("");
       return true;
     }
@@ -395,15 +409,19 @@ namespace DataCreator
         location = Constants.DataFractalsRaw;
       if (type.Equals("dungeon"))
         location = Constants.DataDungeonsRaw;
+      if (type.Equals("raid"))
+        location = Constants.DataRaidsRaw;
       var encounterData = EncounterGenerator.GeneratePaths(location, file, enemyData);
       if (encounterData == null)
-        return encounterData; 
+        return null; 
       if (encounterData.Paths == null)
         return encounterData;
       if (type.Equals("dungeon"))
         dungeonData.AddDungeon(file, encounterData.Paths);
       if (type.Equals("fractal"))
         dungeonData.AddFractal(encounterData.Paths);
+      if (type.Equals("raid"))
+        dungeonData.AddRaid(file, encounterData.Paths);
       return encounterData;
     }
 
