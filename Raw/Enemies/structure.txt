@@ -1325,6 +1325,19 @@ attack=Binding Roots
 image=http://giant.gfycat.com/ScaredGlumAnteater.gif
 
 ##################################################################
+
+name=Spectral Rift
+path=vale2
+rank=trap
+
+tactic=normal
+Damage can be avoided by closing the rift before it explodes.
+
+attack=Explosion
+effect=delayed (~20 s) huge AoE
+subeffect=damage-percent:10000
+
+##################################################################
 # Bundles.                                                       #
 ##################################################################
 
@@ -1642,3 +1655,9 @@ health=7.5984
 toughness=0.67
 rank=structure
 Path=Urban
+
+##################################################################
+
+name=Ethereal Barrier
+rank=structure
+path=vale2

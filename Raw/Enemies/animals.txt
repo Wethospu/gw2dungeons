@@ -1543,3 +1543,13 @@ animation=raises front legs from ground, crouches and jumps up in the air|0.6|ki
 effect=melee
 subeffect=damage-percent:110
 #note=Evade fast when you see him in the air
+
+##################################################################
+# Raid.                                                          #
+##################################################################
+
+Name=Pocket Raptor
+ID=14535
+image=https://wiki.guildwars2.com/images/2/29/Pocket_Raptor.jpg
+Path=vale
+

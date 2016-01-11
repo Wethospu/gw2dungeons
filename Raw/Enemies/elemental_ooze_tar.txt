@@ -1186,7 +1186,21 @@ subeffect=damage:-
 ##################################################################
 
 name=Vale Guardian
-Path=vale
+Path=vale1
+
+attack=Magic Aura
+additional=1500 range
+effect=Aura
+frequency=3
+# 1.5k
+subeffect=damage:?
+
+attack=Punch
+animation=raises the right arm slightly and swings with the left arm|0.75
+cooldown=2.5
+effect=melee
+# 600
+subeffect=damage:?
 
 attack=Bullet Storm
 effect=multiple slowly moving blue balls appearing all over the area
@@ -1197,14 +1211,29 @@ subeffect=self destruct
 attack=Distributed Magic
 additional=can't be blocked or evaded. Can be prevented by having 4 players on the green circle.
 effect=delayed (6.5 s) AoE
-subeffect=damage-percent:90 on a huge area
+subeffect=damage-percent:80 on a huge area
 # 4200
 subeffect=damage:? on the circle
+
+attack=Magic Storm
+additional=can't be blocked
+effect=defiance:2000
+effect=multiple ballistic projectiles with AoE over time
+# 6k
+subeffect=damage:?
+
+
+attack=Unstable Pylon
+additional=Partial ticks cause reduced damage (like conditions)
+effect=debuff when on the area
+frequency=1
+subeffect=damage-constant:2000
 
 ##################################################################
 
 name=Red Guardian
-Path=vale
+ID=15393
+Path=vale1
 
 attack=Magic Aura
 additional=1500 range
@@ -1217,12 +1246,22 @@ attack=Punch
 animation=raises the right arm slightly and swings with the left arm|0.75
 cooldown=2.5
 effect=melee
+# 600
 subeffect=damage:?
+
+attack=Summon
+effect=2 enemy=Seekers:normal:81
+
+attack=Defiance
+additional=Used at 0 health
+effect=defiance:1000
+effect=immune to all damage
 
 ##################################################################
 
 name=Blue Guardian
-Path=vale
+ID=15406
+Path=vale1
 
 attack=Magic Aura
 additional=1500 range
@@ -1235,19 +1274,27 @@ attack=Punch
 animation=raises the right arm slightly and swings with the left arm|0.75
 cooldown=2.5
 effect=melee
+# 600
 subeffect=damage:?
 
 attack=Distributed Magic
+cooldown=14
 additional=can't be blocked or evaded. Can be prevented by having 4 players on the green circle.
 effect=delayed (6.5 s) AoE
-subeffect=damage-percent:90 on a huge area
+subeffect=damage-percent:80 on a huge area
 # 700 - 1050?
 subeffect=damage:? on the circle
+
+attack=Defiance
+additional=Used at 0 health
+effect=defiance:1000
+effect=immune to all damage
 
 ##################################################################
 
 name=Green Guardian
-Path=vale
+ID=15382
+Path=vale1
 
 attack=Magic Aura
 additional=1500 range
@@ -1261,6 +1308,7 @@ image=http://zippy.gfycat.com/ZigzagVictoriousFirebelliedtoad.gif
 animation=raises the right arm slightly and swings with the left arm|0.75
 cooldown=2.5
 effect=melee
+# 600
 subeffect=damage:?
 
 attack=Unstable Magic Spike
@@ -1272,10 +1320,16 @@ effect=delayed (1.9 s) AoE for every target
 subeffect=damage:?
 subeffect=displacement:0 to random location
 
+attack=Defiance
+additional=Used at 0 health
+effect=defiance:1000
+effect=immune to all damage
+
 ##################################################################
 
 name=Seeker
-Path=vale
+ID=15426
+Path=vale1
 
 
 

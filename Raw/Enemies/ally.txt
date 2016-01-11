@@ -951,7 +951,7 @@ Path=CoES
 Name=Sylvan Hound
 ID=9158
 rank=ally
-Path=AC1|AC2|AC3|CoF1|CoF2|CoF3
+Path=AC1|AC2|AC3|CoF1|CoF2|CoF3|Vale
 
 ##################################################################
 
@@ -1090,3 +1090,87 @@ ID=4391|4390
 level=20
 rank=ally
 Path=TAAE
+
+##################################################################
+# RAID NPCs.                                                     #
+# Most generic ones could be merged with previous ones?          #
+##################################################################
+
+Name=Squad Leader Falgeir
+ID=15054
+rank=ally
+Path=vale
+
+##################################################################
+
+Name=Priory Explorer
+ID=15081
+rank=ally
+Path=vale
+
+##################################################################
+
+# Sells rewards for Magnetite Shards.
+Name=Priory Scholar
+ID=15014
+rank=ally
+Path=vale
+
+##################################################################
+
+Name=Veteran Vigil Medic
+ID=14520
+rank=ally
+Path=vale
+
+##################################################################
+
+Name=Vigil Crusader
+ID=15007|15026
+rank=ally
+Path=vale
+
+##################################################################
+
+Name=Vigil Recruit
+ID=15136|15124
+rank=ally
+Path=vale
+
+##################################################################
+
+Name=Vigil Warmaster
+ID=14683
+rank=ally
+Path=vale
+
+##################################################################
+
+Name=Whispers Agent
+ID=15087
+rank=ally
+Path=vale
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

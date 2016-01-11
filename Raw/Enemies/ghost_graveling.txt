@@ -1258,9 +1258,10 @@ subeffect=burning:3
 ##################################################################
 
 name=Gorsevel the Multifarious
+ID=15429
 image=http://wiki.guildwars2.com/images/8/83/Gorseval_the_Multifarious.jpg
 alt=Gorseval
-Path=vale
+Path=vale3
 
 attack=Haunting Aura
 effect=aura
@@ -1297,7 +1298,7 @@ subeffect=torment:3:3
 attack=Ghastly Rampage
 animation=Says a one liner, stands up with both arms in the air, puts hands down, then head down and teleports to the middle|2.8|gets a debuff and starts smashing the ground
 additional=can't be blocked or evaded
-effect=defiance:45
+effect=defiance:4500
 subeffect=buff:vivid_echo:35:1:- (unremovable retaliation)
 subeffect=retaliation:0
 effect=6 delayed (2.9 s) AoE patterns over 22.25 seconds
@@ -1343,14 +1344,21 @@ subeffect=Egg on the target
 ##################################################################
 
 name=Deranged Spirit
+ID=15419
 alt=Deranged Spirits
-Path=vale
+Path=vale2|vale3
+
+#############################
+
+copy=15419
+ID=15390
 
 ##################################################################
 
 name=Enraged Spirit
+ID=15416
 alt=Enraged Spirits
-Path=vale
+Path=vale2|vale3
 
 attack=Slash
 effect=melee
@@ -1367,11 +1375,17 @@ subeffect=knockback:0
 
 # DAMAGE SHIELD
 
+#############################
+
+copy=15416
+ID=15414
+
 ##################################################################
 
 name=Angered Spirit
+ID=15377
 alt=Angered Spirits
-Path=vale
+Path=vale2|vale3
 
 attack=Ectoplasmic Blob
 effect=projectile
@@ -1379,10 +1393,15 @@ subeffect=damage:?
 
 # AOE Cripple and REGEN
 
+#############################
+
+copy=15377
+ID=15389
+
 ##################################################################
 
 name=Spectral Darkness
-Path=vale
+Path=vale3
 
 attack=AoE
 effect=Growing AoE

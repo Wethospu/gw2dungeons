@@ -1,0 +1,83 @@
+# This includes mini-guardians and Vale Guardian.
+init=vale1|Spirit Vale Part 1|Vale1|Vale1
+init=vale2|Spirit Vale Part 2|Vale2|Vale2
+init=vale3|Spirit Vale Part 3|Vale3|Vale3
+init=vale4|Spirit Vale Part 4|Vale4|Vale4
+init=vale5|Spirit Vale Part 5|Vale5|Vale5
+
+# Some notes about the fights.
+
+path=vale1
+name=Vale Guardian
+tactic=normal
+Some initial stuff.
+
+name=Guardians
+tactic=normal
+You need to kill enemy=Red_Guardian, enemy=Green_Guardian and enemy=Blue_Guardian to make enemy=Vale_Guardian to appear. These mini guardians are in random order and contain some mechanics from Vale Guardian.
+Green Guardian is the easiest to kill and can even be done solo. If your squad is still missing people you should take him down while waiting. If he isn't the first one you can go around the others from their right side. Just stay out of any red circles so you don't aggro them.
+Other guardians can also be low manned but you need condition damage dealers for Red Guardian and at least 4 players for Blue Guardian.
+In all fights there are blue orbs called Bullet Storm moving around the area. These deal moderate damage on hit but can be easily avoided. Orbs are caused by Vale Guardian and they disappear after all guardians are killed.
+tactic=coordinated
+Pull all guardians to the middle one and take them down together.
+
+name=enemy=Red_Guardian
+Red Guardian is immune to all control and has an extremely high armor so your group needs condition damage to get him down. When he reaches 0 health he gets a damage immunity and a 1000 unit defiance. Remove defiance to finally kill it.
+His Magic Aura deals low damage every 3 seconds in a 1500 area. This can be avoided or blocked but you need to keep track of the timing. His basic melee attack Punch deals low damage and can be ignored.
+He occasionally spawns 2 enemy=Seekers:normal:81 which follow players and deal heavy damage if they get near. They have high health and disappear bit after next ones spawn so there is no point trying to kill them. Slow them down with immobilize and use knockbacks or launches to move them away from the party.
+
+name=enemy=Green_Guardian
+Green Guardian is immune to all control but has no special defenses so he can be quite easily killed even alone. When he reaches 0 health he gets a damage immunity and a 1000 unit defiance. Remove defiance to finally kill it.
+His Magic Aura deals low damage every 3 seconds in a 1500 area. This can be avoided or blocked but you need to keep track of the timing. His basic melee attack Punch deals low damage and can be ignored.
+He uses Unstable Magic Spike every 10 seconds. The attack spawns a blue circle at each player. After 1.9 seconds circles explode dealing some damage and displacing you away. You can easily avoid this by moving or dodging away. Displace is a very fast knockback so you will get hit by everything on the way. This means you can get hit by multiple AoEs and take a huge amount of damage. Displace may also aggro nearby guardian which can get your squad killed.
+
+name=enemy=Blue_Guardian
+Blue Guardian is immune to all control and has a boon which makes him immune to all damage so you need boon removal to take him down. The boon refreshes every 10 seconds.  When he reaches 0 health he gets a damage immunity and a 1000 unit defiance. Remove defiance to finally kill it.
+His Magic Aura deals low damage every 3 seconds in a 1500 area. This can be avoided or blocked but you need to keep track of the timing. His basic melee attack Punch deals low damage and can be ignored.
+He uses Distributed Magic every 14 seconds which spawns a green circle nearby. After 6.5 seconds the circle explodes dealing 80% max health damage in a huge area which will down most players. This can be prevented by having at least 4 players on the green circle when it explodes. Players on the circle suffer some damage.
+
+# Verify phase 2 start timings for CC and green AoE.
+name=enemy=Vale_Guardian
+Vale Guardian is standing on middle of the circular arena. The arena is split to 3 sections each of them having a pylon at the edge. Each pylon has a Speed Boost Mushroom on it. Pylons and sections are very important for the fight so take a good look at the arena before going in.
+The first phase combines attacks from enemy=Red_Guardian, enemy=Green_Guardian and enemy=Blue_Guardian. Vale Guardian is immune to control. His Magic Aura deals low damage every 3 seconds in a 1500 area. This can be avoided or blocked but you need to keep track of the timing. His basic melee attack Punch deals moderate damage so stay behind his back unless you are the tank. There is a circle in front of him to show the direction he is facing.
+A enemy=Seeker:normal:81 spawns a bit front of each pylon every 20 seconds and disappear after 20 seconds. A green circle appears in the same section where Vale Guardian is every ~15 seconds. Blue circles appear at every player every 10? seconds.
+When Vale Guardian reaches 66% health, he turns invulnerable and runs to the middle. Once he gets there he will disappear after 1 second which causes Red Guardian, Green Guardian and Blue Guardian appear on front similarly colored pylon after 7 seconds. Bullet Storm also activates so it will be very similar to the initial guardian fights.
+The big difference is that you will get attuned to the color of your the nearest pylon. This causes Magic Aura from other colored guardian deals 5 times as much damage so if you pull all guardians together you will take very high damage every 3 seconds. Also you only need 3 players on the green circle.
+Once all guardians are killed, Bullet Storm ends and Vale Guardian reappears invulnerable in the middle. After 3 seconds he loses the invulnerability. After 1 more second he turns active and phase 2 starts. Vale Guardian gains 2 new attacks, Magic Storm and Unstable Pylon.
+Unstable Pylon lits one of the sections causing a debuff when standing on it. The debuff deals 2000 damage per second. Partial ticks deal reduced damage so briefly entering the section barely deals any damage. The section stays lit for ~19 seconds and after 1 second the next one lits up. The first section is always the green one and then it rotates clockwise to blue, then red and so on.
+This means you need to constantly rotate around the arena. If Vale Guardian is in a lit section then the green AoE will also appear on it. This is extremely dangerous because people very easily get downed before the green AoE explodes. Also your melee attackers will take lots of damage while attacking him.
+Magic Storm is a channeled attack which makes him stand still and give him a 2000 unit defiance. Removing defiance stops the attack. While channeling, he shoots ballistic orbs all over the area. Each orb deals heavy damage which makes this attack dangerous. Most orbs will land on medium so you should stay near him if possible. Keep in mind that he is standing still so you can't move him. Breaking the defiance too slowly may make you unable to reach a safe section on time. 
+First Magic Storm is used about 10 seconds after he turns active. Next one will be used about 30 seconds the previous one ends. The exact timing depends on how fast you break the defiance but on average it's about every 35 seconds. This means the second defiance gets up after 5 seconds the red section lits up. Third defiance gets up same time as the blue section lits up. Fourth defiance gets up 5 seconds before the green section lits up.
+When Value Guardian reaches 33% he will do exactly same thing as he did at 66% health. Once guardians are dead he will return exactly same as at 66% health and phase 3 starts. The only difference is that 2 sections are now lit. Sections stay up for 14 seconds and next ones lit up after 6 seconds. The first two sections are green and blue which then rotate to blue and red and so on. It's important to break defiance fast so you can move him fast.
+
+name=Phase 1
+The most common tactic is to pull enemy=Vale_Guardian to the blue pylon which has several advantages. By being near a pylon people can easily get the Speed Boost Mushroom. Ranged players can stay at the center of the section so they can easily reach the green AoEs. 2 enemy=Seekers:normal:81 will disappear before you they can even reach you because they are so far away. Specifically staying at the blue pylon ensures that when he splits you will have people around enemy=Blue_Guardian to stand on his green circle.
+The timer starts when someone attacks him. You can save few seconds by not attacking him before he is in the position. The first phase is about 3 things. Keeping the Seeker away so people don't get downed, avoiding blue AoEs to keep damage up and reaching green AoEs on time to prevent a wipe.
+The ranged team does most of the work so it's important for the main group to focus on maximising their damage output. Avoid dodging away from Vale Guardian. Just move out of the blue AoEs or learn the timing to dodge towards the wall. Be ready to control the Seeker if it gets close.
+The ranged team should stay near center of the section but be mobile at the same time. You shouldn't have to waste dodges on blue AoEs. Keep the seeker controlled and move in a circle if it's following you. Be ready to move to green AoEs at all times. However don't enter the AoE too early to prevent blue AoEs or seekers getting inside it.
+
+name=Split 1
+When enemy=Vale_Guardian turns invulnerable people should run immediately towards their pylon. There are two common tactics, splitting to 2 or 3 groups. Splitting to 2 groups is faster.
+With 3 groups, 3 condition damage dealers go to enemy=Red_Guardian, 3 players go to enemy=Green_Guardian and 4 players go to enemy=Blue_Guardian. Groups should be able to take down their guardian about at the same time.
+With 2 groups, 4 condition damage dealers go to Red Guardian, the tank pulls Green Guardian to Blue Guardian and 5 remaining players go to Blue Guardian. The blue group take lots of damage from Green Guardian's Magic Aura but healer is able to heal that. This tactic is also doable with 3 condition damage dealers but it won't really be faster than the first tactic.
+When dealing with Green Guardian it's important to not get displaced. If you do, there is a risk that Green Guardian follows you which means his aura will mess up the other groups.
+When dealing with Blue Guardian it's important to have 3 people on the green AoE. When dealing with Red Guardian there will be multiple enemy=Seekers:normal:81 so stay mobile and control them.
+
+name=Phase 2
+Phase 2 relies on the tank moving Vale Guardian properly. The tank has two choices, either wait until the next area is safe or pull a few seconds early. Pulling early makes your squad to take more damage but makes the green AoE appear on a better sector. In this phase it doesn't make much diffence so either way is fine.
+When guardians die go immediately to the red section. The ranged group should be ready for a green AoE 6 seconds after Vale Guardian starts moving. The main group should be ready to break defiance 10 seconds after Vale Guardian starts moving. The green sector will turn safe about 5 seconds after breaking the defiance. When the green sector turns safe the tank has only a few seconds to move him before the next green AoE so the tank should move him early.
+The third green AoE appears right before the blue sector turns safe. If the tank pulls him early then the ranged group has to move fast but can attack him the whole time. The second defiance activates about 5 seconds after the blue sector turns safe. The fourth green AoE appears about 5 seconds after breaking defiance on the blue sector. The fifth green AoE appears about 10 seconds after the red turns safe on the red sector.
+The third defiance activates about when the green sector turns safe. The sixth green AoE appears about same time as the defiance breaks so it may appear either on the red or the green sector. The seventh green AoE appears when the blue sector turns safe so depending on your tank it will either on the green or the blue section. 5 seconds before the red sector turns safe both defiance and green AoE appear on the blue sector.
+
+name=Split 2
+Exactly same as on the split 1.
+
+name=Phase 3
+Mostly same as phase 2 but there sector transition happens earlier and is longer. This means the green AoEs appear on the correct sector as long as Vale Guardian is moved right after the sector turns safe. However mistakes happen so the healer has to stay alert and be ready to heal if the ranged group has to stay on the danger zone.
+
+
+
+
+
+
+

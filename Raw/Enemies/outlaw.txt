@@ -1996,7 +1996,7 @@ subeffect=swiftness:10
 Name=Sabetha the Saboteur
 image=http://wiki.guildwars2.com/images/4/47/Sabetha_the_Saboteur.png
 alt=Sabetha
-Path=vale
+Path=vale4
 
 attack=Heat
 effect=cone
@@ -2033,7 +2033,7 @@ subeffect=heavy damage to the platform
 ##################################################################
 
 Name=Kernan
-Path=vale
+Path=vale4
 
 attack=???
 effect=3 cones over time (30d, 60d, 90d)
@@ -2043,17 +2043,17 @@ subeffect=damage:?
 
 Name="Knuckles"
 image=http://wiki.guildwars2.com/images/6/6c/%22Knuckles%22.jpg
-Path=vale
+Path=vale4
 
 ##################################################################
 
 Name=Karde
-Path=vale
+Path=vale4
 
 ##################################################################
 
 Name=Bandit Arsonist
-Path=vale
+Path=vale4
 
 attack=Heat
 effect=cone
@@ -2070,7 +2070,7 @@ subeffect=damage:?
 ##################################################################
 
 Name=Bandit Sapper
-Path=vale
+Path=vale4
 
 # Throwing at Kernane did 10% damage to self and 3 allies??
 attack=Sapper Bomb
@@ -2092,7 +2092,7 @@ subeffect=damage:?
 ##################################################################
 
 Name=Bandit Sniper
-Path=vale
+Path=vale4
 
 attack=Snipe
 cooldown=2
@@ -2105,7 +2105,7 @@ subeffect=buff:damageincrease:10
 ##################################################################
 
 Name=Bandit Thug
-Path=vale
+Path=vale4
 
 attack=Kick
 effect=melee
@@ -2116,7 +2116,7 @@ subeffect=knockback:0
 ##################################################################
 
 Name=West Cannon
-Path=vale
+Path=vale4
 
 attack=Cannon Barrage
 additional=takes about 3 seconds to hit
@@ -2128,17 +2128,17 @@ subeffect=platform damage
 ##################################################################
 
 Name=East Cannon
-Path=vale
+Path=vale4
 
 ##################################################################
 
 Name=South Cannon
-Path=vale
+Path=vale4
 
 ##################################################################
 
 Name=North Cannon
-Path=vale
+Path=vale4
 
 
 
