@@ -2053,6 +2053,7 @@ Path=vale4
 ##################################################################
 
 Name=Bandit Arsonist
+alt=Bandit Arsonists|Arsonist|Arsonists
 Path=vale4
 
 attack=Heat
@@ -2070,6 +2071,7 @@ subeffect=damage:?
 ##################################################################
 
 Name=Bandit Sapper
+alt=Bandit Sappers|Sapper|Sappers
 Path=vale4
 
 # Throwing at Kernane did 10% damage to self and 3 allies??
@@ -2092,6 +2094,7 @@ subeffect=damage:?
 ##################################################################
 
 Name=Bandit Sniper
+alt=Bandit Snipers|Sniper|Snipers
 Path=vale4
 
 attack=Snipe
@@ -2105,6 +2108,7 @@ subeffect=buff:damageincrease:10
 ##################################################################
 
 Name=Bandit Thug
+alt=Bandit Thugs|Thug|Thugs
 Path=vale4
 
 attack=Kick

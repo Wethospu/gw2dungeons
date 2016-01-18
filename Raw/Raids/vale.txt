@@ -76,6 +76,102 @@ name=Phase 3
 Mostly same as phase 2 but there sector transition happens earlier and is longer. This means the green AoEs appear on the correct sector as long as Vale Guardian is moved right after the sector turns safe. However mistakes happen so the healer has to stay alert and be ready to heal if the ranged group has to stay on the danger zone.
 
 
+path=Vale2
+name=Ghostly side events
+
+name=Closing the rifts
+tactic=normal
+Kill the enemies to launch the event. Initial enemies are very easy to kill but try to learn their attacks for later.
+The goal of the event is to close enough rifts before the timer runs out. Rifts can be closed by having players near them. If not closed within 20? seconds they explode dealing lethal damage in a huge area, Initially there will be only one rift but after a while there will be two rifts at the same time.
+Enemies constantly respawn at the area so you don't have to kill them. Focus on closing the rifts and kill weaker whenever possible to reduce pressure. Keep in mind that there are two rifts so move to the other one if most people are in the other one.
+If you have trouble split your squad to 2 groups and take care of different rifts. Additionally you can equip tanky gear to handle the pressure.
+tactic=warrior
+Take wiki=Battle_Standard and wiki=Defiant_Stance. Use Defiant Stance if you get in a bad spot to get in full health and Battle Standard to save people who get downed in a bad spot.
+Additionally both wiki=Defiant_Stance and wiki=Dead_or_Alive allow you to survive a rift explosion. You can then use wiki=Battle_Standard to recover the situation. Also if you get downed, use wiki=Vengeance as soon as possible if you have Battle Standard ready.
+
+name=The escape
+tactic=normal
+First clear some enemies to proceed. After them when you get on a balcony/ledge, don't jump down! Jumping down starts the next event and you will fail if people aren't ready.
+The event is about escaping angry spirits. Instead of a timer there will be big AoE moving slowly towards which will kill you instantly. You must destroy barriers and close rifts fast enough before it gets to you. Additionally enemies are appearing to slow you down.
+Commander should do a ready check before jumping down. While it's on quickly stack some swiftness and be ready to jump down when the squad is ready.
+The first barrier has 1 rift. Your ranged group should close it because they can simultaneously attack the barrier. Focus the barrier while ignoring the enemies. The second barrier has two rifts. Ranged group should close the first one while melee group closes the second one. Melee can attack the barrier by turning their character sideways for a slightly longer range.
+Use area stability, control or blind right before the barrier breaks. There is a canyon right after the barrier and enemies may kick players down. Also don't rush in when the barrier breaks or you will fall down there on your own. There isn't a big rush so spend few seconds to ensure you can take the glide safely.
+The last barrier has 3? rifts. The ranged group closes two of them and the melee group one of them. The order probably? doesn't really matter. Then destroy the last barrier to end the event.
+
+name=The graveyard
+tactic=normal
+First clear some enemies to proceed. After them you need to have someone standing on every hidden pressure plate to open the gate.
+Some enemies respawn at the area. Just ignore them unless they become a problem.
+
+path=Vale3
+name=enemy=Gorseval
+tactic=normal
+Gorseval is the second boss and has a much tighter enrage timer.
+He appears on an arena surrounded by depths. You need to use an updraft to reach him so wiki=Updraft_Use is required. If your squad needs to restart you can jump down to save time and prevent armor damage.
+He will aggro as soon as you land so don't start gliding before your squad is ready. However the timer only starts after someone attacks him. If you are the first to land and want to save few seconds don't attack him first.
+There are 4 updrafts around the arena. You need to use them during the fight. They can only be used once so plan the order you are going to use them.
+
+name=Phase 1
+The phase 1 starts when someone attacks enemy=Gorseval. He gets a Ghostly Aura which deals low damage every 3 to all players.
+His basic melee attack chain has two attacks, Wicked Swipe and Spectral Impact. Usually he uses two Swipes and then Impact but be also prepared for just a one Swipe. Swipe deals only a moderate damage so it's not something you have to worry about it. Try to still stay behind Gorseval at all times to prevent unnecessary damage.
+Try to learn the animation for Spectral Impact as soon as possible. The attack causes an AoE at the target and PBAoE at the Gorseval. It's very easy to get hit by both AoEs and take lots of damage. Additionally the attack knocksback for 1.5 seconds so it's always better to spend 0.75 seconds to dodge it.
+After one rotation Gorseval teleports to the middle and starts doing his Ghastly Rampage. During the attack he has a 4500 unit defiance bar and an unremovable retaliation buff. The attack causes an AoE pattern which consists of multiple black rings centered on the middle. AoE explodes after few seconds dealing lots of damage. It can't be blocked or evaded so you need to move out of it.
+You should break the defiance as fast as possible to end the retaliation. The attack itself isn't very dangerous because it takes a while before AoE appears on the melee range. Fast hitting characters will have a trouble with the retaliation.
+Gorseval will be knocked down briefly after the defiance is broken. Once he gets up he will summon 4 spirits which can be enemy=Enraged_Spirits:veteran or enemy=Deranged_Spirits:veteran. After few melee attack chains he will start channeling World Eater.
+During World Eater, Gorseval will be inactive so you can attack him freely. However at the same time a orange circle starts expanding from the middle. When it reaches the edge everyone in the arena will be instantly defeated after a few seconds. Additionally Gorseval consumes all spirits for a stacking 10% damage increase. You need to destroy "a wall", jump to an updraft and stay in the air until it happens. Keep in mind that the updraft disappears so you need to use another next time.
+World Eater takes a long time to finish so you want to keep attacking Gorseval as long as you can. The best way to do this is pulling him towards the updraft right after the defiance gets broken. Once he starts channeling you can attack both him and the wall so you don't lose any damage. Also try to cleave spirits and focus them down if needed. You should try to kill them all but letting one live is acceptable.
+Once World Eater ends he will do 1-2? attack chains, Ghastly Rampage, summoning, 2 attack chains and finally World Eater again. This time you must get him 66% health before World Eater ends. At 66% health the phase 2 starts which automatically ends the attack. Technically using an updraft is an option but you will run out of them if you do this.
+
+name=Phase 2
+The phase 2 starts with Gorseval being invulnerable. 4 enemy=Charged_Souls appear near each updraft and start slowly moving to Gorseval. Gorseval will restart World Eater if any Souls reach him which is really bad (unrecoverable?). 
+Souls are immune to control but you can use conditions like immobilize, chill and crippled to slow them down. The usual tactic is to have 3 players immobilizing 3 of the souls (1 for each) while remaining 7 players kill the last one. Once the soul is dead they move to the next one and so on.
+Souls have a short aura which causes weakness so stay at range if you can. Also pay attention to other souls because people may need help, especially if they are getting attacked by previously summoned spirits. Gorseval becomes active when all souls have been killed so make sure everyone is near full health before you do that.
+Gorseval behaves exactly same as in the phase 1. During the first World Eater you use an updraft and during the second you damage him to 33% health. The only difference is that traps called enemy=Spectral_Darkness appear all around the arena. Initially they don't do anything but over time they get a larger and larger circle around them. Walking to the circle causes 10 stacks of Spectral Darkness which equals 2000 damage per second along with other effects. You need to collect 2 golden droplets to get rid of it. Droplets appear on the arena when orbs are destroyed?
+You need to have 1-2 ranged players to take care of Spectral Darkness. You don't have to destroy every single one of them. Instead the players should destroy them if they are nearby or are in a way to an updraft. Other players should help them if possible. For example melee players can destroy them as long as the circle is small.
+
+name=Phase 3
+The phase 3 starts exactly same as the phase 2. The only difference is that there might be enemy=Spectral_Darkness in a way to a enemy=Charged_Soul. Improvise as needed. If you can't attack the Soul and your squad can't destroy the Darkness, just go to another Soul. As before, ensure everyone is in good health before killing the last Soul.
+Gorseval behaves almost same as in the phase 1. The only difference is that he will summon Ghostly Traps (delayed AoEs) at each player. If you get hit you will be encased in an egg which means a huge DPS loss because you won't be able to attack and people have to destroy the egg. You can get out by spamming the special action key or having people to destroy the egg. People getting egged is the biggest reason why squads fail killing Gorseval.
+Ghostly traps can't be blocked or evaded so you have to move out. You can easily move out by just movement but dodging is recommended as it's slightly faster. The biggest threat are traps from other players. You can easily get surrounded if you don't watch out. This can be solved by either spreading out or stacking when you expect traps to spawn soon. Spreading is easier but results in a slight DPS loss because some players have to move out of melee range.
+First traps appear after one melee chain. Second traps appear after Ghostly Rampage and summoning. Third traps appear after using an updraft.
+If everything goes well you only need to use 3 updrafts. However if you have people defeated at the end you may need to use the last updraft. Using the updraft usually means that Gorseval enrages so don't use it unless you absolutely need it. Remember to communicate with your squad about the option you take.
+
+path=Vale4
+name=The bandits
+You must clear some bandits before enemy=Sabetha appears. There are about 30 enemy=Arsonists, enemy=Sappers and enemy=Thugs. This is extremely easy and can done even alone. But try to learn their moves to make Sabetha slightly easier.
+Arsonists deal heavy damage with their flamethrower but you can just move out of it. Thugs can knock you back. Sappers can plant a bomb on you which deals decent damage. However you can use special action to throw it back at the enemies dealing heavy damage. Throwing it also explodes launch pads which is vital when killing Sabetha.
+After about 66% of the enemies are killed you will see the first launchpad. One player must stand on it while someone throws a sapper bomb on it. Keep in mind that you can also launch yourself. The player who gets launched should quickly activate the nearby level to lower wooden platforms. This let's other players come without having to use the launchpad.
+There is also one enemy=Sniper who is tougher than the rest. His attacks cause a stacking debuff which increases damage taken. However snipers deal so low damage this is nothing to worry about. Clear out the remaining enemies and prepare for the final challenge.
+
+name=enemy=Sabetha_the_Saboteur
+Sabetha stands on middle of an arena surrounded by depths just like enemy=Gorseval. She won't and can't be moved. In this case wiki=Glider_Basics isn't strictly required but is extremely useful. Get also wiki=Explosive_Launch when you can.
+The arena is surrounded by 4 platforms on north, west, south and east directions. The arena has 4 corresponding launchpads which can be used to get launched to the platforms. Each platform has a inactive cannon and a enemy=Sniper.
+Cannons peridiocally activate during the fight and have to be destroyed. If not, they will keep bombarding the arena which deals damage to players and may eventually destroy the whole platform. If that happens you will fall to your death.
+Using a launchpad places a debuff on you which prevents using launchpads for a while. This means one player can't handle every cannon. The usual tactic is to dedicate 1 player to take care of 1 cannon. Since each of the players has their own cannon everyone knows where they are supposed to be. Alternative tactics are having only 2 persons or whoever gets the bomb goes. Both are very vulnerable to errors.
+
+name=Phase 1
+Sabetha has 3 common attacks. Her basic attack Heat does a low damage on a cone. The damage is quite similar to the auras from other bosses so you need a little bit of sustain to deal with it.
+Her ranged attack Flak is more dangerous. It creates multiple ticking AoEs which cause both damage and burning. Standing inside one makes you take lots of damage. This attack will generally target the farthest player so you should have one player at range who moves around the arena.
+Her last common attack is Big Bomb which places a debuff at the closest player. After few seconds the debuff expires dealing some damage to self but huge damage to everyone else. When you get the bomb it's vital to move out of the melee stack.
+After 30 seconds (8:30) the first cannon appears, other bandits appear and she uses Flamewall. She rotates towards one of the players and places an AoE line after 2.5 seconds. Then she starts rotating anti-clockwise which also moves the AoE. She stops after the AoE has swept over the entire arena. Getting hit by the wall instantly defeats you so it's important to avoid it. It can't be blocked or dodged so you need to move around her or blink over.
+You should try to use the launchpad during the Flamewall. This is risky without coordination. Bit before 8:30, everyone should stack at the south side to ensure that Flamewall starts from there. Once Sabetha starts the attack everyone can just sidestep to the left. When someone gets a sapper bomb the wall has already moved past the south launchpad so there is plenty of time.
+Firewall will be used every 45 seconds so with the next cannon you don't have to care about it. However the player taking care of the cannon should watch out for the flamewall when he is coming back. With a good DPS you can get Sabetha to 75% and make her disappear before she manages to use Flamewall the second time.
+
+name=Phase 2
+The phase 2 starts with enemy=Sabetha away. While away, she throws Heavy Bombs at the platform. If they manage to explode the arena takes heavy damage. Interact with them to kick them out of the arena. You don't have to dedicate anyone to do this because there is plenty of time. The player at range should take care of ones in the range while rest take care of the ones close to melee range.
+Instead of Sabetha, you have to fight enemy=Kernan. Her basic attack is a cone which does low damage. After two basic attacks she does 3 cones. The first one has a narrow cone, the second one has a normal cone and the third one has a wide cone. Dodge through if you are going to get hit to avoid lots of damage.
+Once Kernan reaches about 15% health Sabetha comes back. She will initiate with Firewall so be ready. Focus Kernan down to reduce pressure. Sabetha behaves exactly same as in phase 1. At 50% health she disappears again.
+
+name=Phase 3
+The phase 3 starts like the phase 2. Instead of fighting enemy=Sabetha, you fight enemy="Knuckles". You should have control against him so make sure your team has some.
+His attacks do low damage so you don't have to worry about it. However he gets a defiance bar once in a while. If you don't break it on time he will launch and then knockback everyone out of the arena. This can be avoided by quickly activating your glider but it's safer to break it on time, especially when he gets exposed and takes 50% more damage.
+Again Sabetha comes back when "Knuckles" gets low health and initiates with Firewall. The only difference to the phase 2 is that there will be 2 Big Bombs. The second appears about 1 second after the first one. This just means you need to be more focused so you don't blow up your team. At 25% health Sabetha disappears again.
+
+name=Phase 4
+The phase 3 starts like the phase 2. Instead of fighting enemy=Sabetha, you fight enemy=Karde.
+His basic attack does low damage but his flamethrower does plenty. Just move out of it. Occasionally he summons a enemy=Flame_Turret ?. Focus it down as soon as possible to reduce pressure?
+Again Sabetha comes back when Kerda gets low health and initiates with Firewall. The only difference to the phase 3 is that there will multiple delayed AoEs called Platform Crush appearing all around the arena. These deal some damage which adds up to the all pressure.
+The most important thing is to take care of cannons. Squads often try to burst her down which means the whole arena gets covered with AoEs. The enrage timer is lenient so play it safe. However if she enrages all cannons appear and she deals 500% more damage so you will get killed really soon.
 
 
 
