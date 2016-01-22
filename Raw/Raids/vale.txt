@@ -10,7 +10,7 @@ init=vale5|Spirit Vale Part 5|Vale5|Vale5
 path=vale1
 name=Vale Guardian
 tactic=normal
-Some initial stuff.
+WORK IN PROGRESS! Lots of guessing and incomplete data. Proper version will take a while because I'm really busy with IRL stuff. If you wish to help please let me know.
 
 name=Guardians
 tactic=normal
@@ -46,7 +46,7 @@ The big difference is that you will get attuned to the color of your the nearest
 Once all guardians are killed, Bullet Storm ends and Vale Guardian reappears invulnerable in the middle. After 3 seconds he loses the invulnerability. After 1 more second he turns active and phase 2 starts. Vale Guardian gains 2 new attacks, Magic Storm and Unstable Pylon.
 Unstable Pylon lits one of the sections causing a debuff when standing on it. The debuff deals 2000 damage per second. Partial ticks deal reduced damage so briefly entering the section barely deals any damage. The section stays lit for ~19 seconds and after 1 second the next one lits up. The first section is always the green one and then it rotates clockwise to blue, then red and so on.
 This means you need to constantly rotate around the arena. If Vale Guardian is in a lit section then the green AoE will also appear on it. This is extremely dangerous because people very easily get downed before the green AoE explodes. Also your melee attackers will take lots of damage while attacking him.
-Magic Storm is a channeled attack which makes him stand still and give him a 2000 unit defiance. Removing defiance stops the attack. While channeling, he shoots ballistic orbs all over the area. Each orb deals heavy damage which makes this attack dangerous. Most orbs will land on medium so you should stay near him if possible. Keep in mind that he is standing still so you can't move him. Breaking the defiance too slowly may make you unable to reach a safe section on time. 
+Magic Storm is a channeled attack which makes him stand still and give him a 2000 unit defiance. Removing defiance stops the attack. While channeling, he shoots ballistic orbs all over the area. Each orb deals heavy damage which makes this attack dangerous. Most orbs will land on medium so you should stay near him if possible. Keep in mind that he is standing still so you can't move him. Breaking the defiance too slowly may make you unable to reach a safe section on time.
 First Magic Storm is used about 10 seconds after he turns active. Next one will be used about 30 seconds the previous one ends. The exact timing depends on how fast you break the defiance but on average it's about every 35 seconds. This means the second defiance gets up after 5 seconds the red section lits up. Third defiance gets up same time as the blue section lits up. Fourth defiance gets up 5 seconds before the green section lits up.
 When Value Guardian reaches 33% he will do exactly same thing as he did at 66% health. Once guardians are dead he will return exactly same as at 66% health and phase 3 starts. The only difference is that 2 sections are now lit. Sections stay up for 14 seconds and next ones lit up after 6 seconds. The first two sections are green and blue which then rotate to blue and red and so on. It's important to break defiance fast so you can move him fast.
 
@@ -58,7 +58,7 @@ The ranged team should stay near center of the section but be mobile at the same
 
 name=Split 1
 When enemy=Vale_Guardian turns invulnerable people should run immediately towards their pylon. There are two common tactics, splitting to 2 or 3 groups. Splitting to 2 groups is faster.
-With 3 groups, 3 condition damage dealers go to enemy=Red_Guardian, 3 players go to enemy=Green_Guardian and 4 players go to enemy=Blue_Guardian. Groups should be able to take down their guardian about at the same time.
+With 3 groups, 3 condition damage dealers go to enemy=Red_Guardian_[Split], 3 players go to enemy=Green_Guardian_[Split] and 4 players go to enemy=Blue_Guardian_[Split]. Groups should be able to take down their guardian about at the same time.
 With 2 groups, 4 condition damage dealers go to Red Guardian, the tank pulls Green Guardian to Blue Guardian and 5 remaining players go to Blue Guardian. The blue group take lots of damage from Green Guardian's Magic Aura but healer is able to heal that. This tactic is also doable with 3 condition damage dealers but it won't really be faster than the first tactic.
 When dealing with Green Guardian it's important to not get displaced. If you do, there is a risk that Green Guardian follows you which means his aura will mess up the other groups.
 When dealing with Blue Guardian it's important to have 3 people on the green AoE. When dealing with Red Guardian there will be multiple enemy=Seekers:normal:81 so stay mobile and control them.
@@ -78,6 +78,7 @@ Mostly same as phase 2 but there sector transition happens earlier and is longer
 
 path=Vale2
 name=Ghostly side events
+WORK IN PROGRESS! Lots of guessing and incomplete data. Proper version will take a while because I'm really busy with IRL stuff. If you wish to help please let me know.
 
 name=Closing the rifts
 tactic=normal
@@ -106,6 +107,7 @@ Some enemies respawn at the area. Just ignore them unless they become a problem.
 path=Vale3
 name=enemy=Gorseval
 tactic=normal
+WORK IN PROGRESS! Lots of guessing and incomplete data. Proper version will take a while because I'm really busy with IRL stuff. If you wish to help please let me know.
 Gorseval is the second boss and has a much tighter enrage timer.
 He appears on an arena surrounded by depths. You need to use an updraft to reach him so wiki=Updraft_Use is required. If your squad needs to restart you can jump down to save time and prevent armor damage.
 He will aggro as soon as you land so don't start gliding before your squad is ready. However the timer only starts after someone attacks him. If you are the first to land and want to save few seconds don't attack him first.
@@ -123,7 +125,7 @@ World Eater takes a long time to finish so you want to keep attacking Gorseval a
 Once World Eater ends he will do 1-2? attack chains, Ghastly Rampage, summoning, 2 attack chains and finally World Eater again. This time you must get him 66% health before World Eater ends. At 66% health the phase 2 starts which automatically ends the attack. Technically using an updraft is an option but you will run out of them if you do this.
 
 name=Phase 2
-The phase 2 starts with Gorseval being invulnerable. 4 enemy=Charged_Souls appear near each updraft and start slowly moving to Gorseval. Gorseval will restart World Eater if any Souls reach him which is really bad (unrecoverable?). 
+The phase 2 starts with Gorseval being invulnerable. 4 enemy=Charged_Souls appear near each updraft and start slowly moving to Gorseval. Gorseval will restart World Eater if any Souls reach him which is really bad (unrecoverable?).
 Souls are immune to control but you can use conditions like immobilize, chill and crippled to slow them down. The usual tactic is to have 3 players immobilizing 3 of the souls (1 for each) while remaining 7 players kill the last one. Once the soul is dead they move to the next one and so on.
 Souls have a short aura which causes weakness so stay at range if you can. Also pay attention to other souls because people may need help, especially if they are getting attacked by previously summoned spirits. Gorseval becomes active when all souls have been killed so make sure everyone is near full health before you do that.
 Gorseval behaves exactly same as in the phase 1. During the first World Eater you use an updraft and during the second you damage him to 33% health. The only difference is that traps called enemy=Spectral_Darkness appear all around the arena. Initially they don't do anything but over time they get a larger and larger circle around them. Walking to the circle causes 10 stacks of Spectral Darkness which equals 2000 damage per second along with other effects. You need to collect 2 golden droplets to get rid of it. Droplets appear on the arena when orbs are destroyed?
@@ -138,13 +140,14 @@ If everything goes well you only need to use 3 updrafts. However if you have peo
 
 path=Vale4
 name=The bandits
+WORK IN PROGRESS! Lots of guessing and incomplete data. Proper version will take a while because I'm really busy with IRL stuff. If you wish to help please let me know.
 You must clear some bandits before enemy=Sabetha appears. There are about 30 enemy=Arsonists, enemy=Sappers and enemy=Thugs. This is extremely easy and can done even alone. But try to learn their moves to make Sabetha slightly easier.
 Arsonists deal heavy damage with their flamethrower but you can just move out of it. Thugs can knock you back. Sappers can plant a bomb on you which deals decent damage. However you can use special action to throw it back at the enemies dealing heavy damage. Throwing it also explodes launch pads which is vital when killing Sabetha.
 After about 66% of the enemies are killed you will see the first launchpad. One player must stand on it while someone throws a sapper bomb on it. Keep in mind that you can also launch yourself. The player who gets launched should quickly activate the nearby level to lower wooden platforms. This let's other players come without having to use the launchpad.
 There is also one enemy=Sniper who is tougher than the rest. His attacks cause a stacking debuff which increases damage taken. However snipers deal so low damage this is nothing to worry about. Clear out the remaining enemies and prepare for the final challenge.
 
 name=enemy=Sabetha_the_Saboteur
-Sabetha stands on middle of an arena surrounded by depths just like enemy=Gorseval. She won't and can't be moved. In this case wiki=Glider_Basics isn't strictly required but is extremely useful. Get also wiki=Explosive_Launch when you can.
+Sabetha stands on middle of an arena surrounded by depths. She won't and can't be moved. In this case wiki=Glider_Basics isn't strictly required but is extremely useful. Get also wiki=Explosive_Launch when you can.
 The arena is surrounded by 4 platforms on north, west, south and east directions. The arena has 4 corresponding launchpads which can be used to get launched to the platforms. Each platform has a inactive cannon and a enemy=Sniper.
 Cannons peridiocally activate during the fight and have to be destroyed. If not, they will keep bombarding the arena which deals damage to players and may eventually destroy the whole platform. If that happens you will fall to your death.
 Using a launchpad places a debuff on you which prevents using launchpads for a while. This means one player can't handle every cannon. The usual tactic is to dedicate 1 player to take care of 1 cannon. Since each of the players has their own cannon everyone knows where they are supposed to be. Alternative tactics are having only 2 persons or whoever gets the bomb goes. Both are very vulnerable to errors.
@@ -173,6 +176,10 @@ His basic attack does low damage but his flamethrower does plenty. Just move out
 Again Sabetha comes back when Kerda gets low health and initiates with Firewall. The only difference to the phase 3 is that there will multiple delayed AoEs called Platform Crush appearing all around the arena. These deal some damage which adds up to the all pressure.
 The most important thing is to take care of cannons. Squads often try to burst her down which means the whole arena gets covered with AoEs. The enrage timer is lenient so play it safe. However if she enrages all cannons appear and she deals 500% more damage so you will get killed really soon.
 
+path=Vale5
+name=The camp
+WORK IN PROGRESS! Lots of guessing and incomplete data. Proper version will take a while because I'm really busy with IRL stuff. If you wish to help please let me know.
+Achievements and stuff.
 
 
 

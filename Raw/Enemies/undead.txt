@@ -1363,6 +1363,7 @@ count=8
 length=3
 subeffect=damage:-
 subeffect=healing:0
+subeffect=removes a condition
 #note=try to get out as fast as possible
 #note=time your evades
 #note=single blocks are ineffective because attack hits twice every second
@@ -1384,6 +1385,7 @@ count=4
 length=1.5
 subeffect=damage:-
 subeffect=healing:0
+subeffect=removes a condition
 #note=evade twice (needs proper timing to not get hit)
 
 attack=Frenzied Blast

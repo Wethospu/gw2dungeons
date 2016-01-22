@@ -1186,6 +1186,7 @@ subeffect=damage:-
 ##################################################################
 
 name=Vale Guardian
+ID=15438
 Path=vale1
 
 attack=Magic Aura
@@ -1257,6 +1258,12 @@ additional=Used at 0 health
 effect=defiance:1000
 effect=immune to all damage
 
+#############################
+
+copy=15393
+name=Red Guardian [Split]
+ID=15433
+
 ##################################################################
 
 name=Blue Guardian
@@ -1289,6 +1296,12 @@ attack=Defiance
 additional=Used at 0 health
 effect=defiance:1000
 effect=immune to all damage
+
+#############################
+
+copy=15406
+name=Blue Guardian [Split]
+ID=15431
 
 ##################################################################
 
@@ -1325,10 +1338,17 @@ additional=Used at 0 health
 effect=defiance:1000
 effect=immune to all damage
 
+#############################
+
+copy=15382
+name=Green Guardian [Split]
+ID=15420
+
 ##################################################################
 
 name=Seeker
 ID=15426
+alt=Seekers
 Path=vale1
 
 

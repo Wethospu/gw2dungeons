@@ -1305,19 +1305,19 @@ effect=6 delayed (2.9 s) AoE patterns over 22.25 seconds
 subeffect=damage-percent:50
 subeffect=vulnerability:10:25
 effect=pattern from the closest to the furthest (0 = safe, 1 = AoE)
-subeffect=After 2.3 s: 01101
-subeffect=After 6.3 s: 01110
-subeffect=After 10.3 s 10011
-subeffect=After 14.3 s: 11001
-subeffect=After 18.3 s: 10101
-subeffect=After 21.4 s: 11111
+subeffect=After 2.3 s\: 01101
+subeffect=After 6.3 s\: 01110
+subeffect=After 10.3 s\: 10011
+subeffect=After 14.3 s\: 11001
+subeffect=After 18.3 s\: 10101
+subeffect=After 21.4 s\: 11111
 effect=After 5? usages
-subeffect=After 2.3 s: 10011
-subeffect=After 6.3 s: 11001
-subeffect=After 10.3 s 01101
-subeffect=After 14.3 s: ?????
-subeffect=After 18.3 s: ?????
-subeffect=After 21.4 s: ?????
+subeffect=After 2.3 s\: 10011
+subeffect=After 6.3 s\: 11001
+subeffect=After 10.3 s\: 01101
+subeffect=After 14.3 s\: ?????
+subeffect=After 18.3 s\: ?????
+subeffect=After 21.4 s\: ?????
 
 # 6:15-6:14
 attack=Summon
@@ -1351,7 +1351,7 @@ Path=vale2|vale3
 #############################
 
 copy=15419
-ID=15390
+ID=15390|15425
 
 ##################################################################
 
@@ -1378,7 +1378,12 @@ subeffect=knockback:0
 #############################
 
 copy=15416
-ID=15414
+ID=16024
+
+#############################
+
+copy=15416
+ID=15414|15410
 
 ##################################################################
 
@@ -1396,22 +1401,19 @@ subeffect=damage:?
 #############################
 
 copy=15377
+ID=16005
+
+#############################
+
+copy=15377
 ID=15389
 
 ##################################################################
 
-name=Spectral Darkness
+name=Charged Soul
+ID=15434
+alt=Charged Souls
 Path=vale3
-
-attack=AoE
-effect=Growing AoE
-subeffect=buff:Spectral_Darkness?:0:10:-
-
-attack="Spectral Darkness"
-effect=buff
-subeffect=1% less damage dealt
-subeffect=1% more damage taken
-subeffect=damage:?
 
 
 

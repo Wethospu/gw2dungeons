@@ -552,6 +552,44 @@ frequency=1
 subeffect=damage-constant:200
 
 ##################################################################
+
+Name=West Cannon
+rank=structure
+Path=vale4
+
+attack=Cannon Barrage
+additional=takes about 3 seconds to hit
+effect=slow ballistic projectile with AoE
+# 9k
+subeffect=damage:?
+subeffect=platform damage
+
+#############################
+
+copy=West Cannon
+Name=East Cannon
+
+#############################
+
+copy=West Cannon
+Name=South Cannon
+
+#############################
+
+copy=West Cannon
+Name=North Cannon
+
+##################################################################
+
+Name=Flame Turret
+rank=structure
+Path=vale4
+
+attack=?
+effect=projectile in every direction
+subeffect=damage:?
+
+##################################################################
 # Other weaponry.                                                #
 ##################################################################
 
@@ -1336,6 +1374,22 @@ Damage can be avoided by closing the rift before it explodes.
 attack=Explosion
 effect=delayed (~20 s) huge AoE
 subeffect=damage-percent:10000
+
+##################################################################
+
+name=Spectral Darkness
+Path=vale3
+rank=trap
+
+attack=AoE
+effect=Growing AoE
+subeffect=buff:Spectral_Darkness?:0:10:-
+
+attack="Spectral Darkness"
+effect=buff
+subeffect=1% less damage dealt
+subeffect=1% more damage taken
+subeffect=damage:?
 
 ##################################################################
 # Bundles.                                                       #
