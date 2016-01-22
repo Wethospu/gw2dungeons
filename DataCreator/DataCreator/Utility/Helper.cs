@@ -241,7 +241,7 @@ namespace DataCreator.Utility
       else if (message.Equals(""))
         Console.Error.WriteLine("(" + _lineNumber + ") " + CurrentFile + ": Warning in line \"" + _line + "\"");
       else
-        Console.Error.WriteLine("(" + _lineNumber + ") " + CurrentFile + ": Warning in line \"" + _line + "\"):\n" + message);
+        Console.Error.WriteLine("(" + _lineNumber + ") " + CurrentFile + ": Warning in line \"" + _line + "\":\n" + message);
       Console.Error.WriteLine("");
     }
 

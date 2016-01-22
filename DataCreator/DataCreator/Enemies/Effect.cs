@@ -55,7 +55,9 @@ namespace DataCreator.Enemies
       foreach (var subEffect in SubEffects)
       {
         htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<li>");
-        htmlBuilder.Append(LinkGenerator.CreateEnemyLinks(HandleEffect(subEffect, coefficient, weapon, HitCount, HitLength, HitFrequency, baseEnemy), path, enemies));
+        var str = LinkGenerator.CreateEnemyLinks(HandleEffect(subEffect, coefficient, weapon, HitCount, HitLength, HitFrequency, baseEnemy), path, enemies);
+        // Replace special characters with normal ones. / 2016-01-22 / Wethospu
+        htmlBuilder.Append(str.Replace("\\:", ":"));
         htmlBuilder.Append("</li>").Append(Constants.LineEnding);
       }
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("</ul>").Append(Constants.LineEnding);
@@ -113,6 +115,9 @@ namespace DataCreator.Enemies
       var startIcon = "";
       for (var index = Helper.FirstIndexOf(effectStr, new[] { ':' }); index < effectStr.Length && index > 0; index = Helper.FirstIndexOf(effectStr, new[] { ':' }, index + 1))
       {
+        // Allows using ":" in the text. / 2016-01-22 / Wethospu
+        if (index > 0 && effectStr[index - 1] == '\\')
+          continue;
         // Effect format is 'tag':'info'. / 2015-08-09 / Wethospu
         var tagIndex = Helper.LastIndexOf(effectStr, new[] { ' ', '|', '(' }, index);
         var tag = effectStr.Substring(tagIndex + 1, index - tagIndex - 1);
@@ -125,7 +130,7 @@ namespace DataCreator.Enemies
           effectIndex--;
         if (effectIndex - index - 1 < 1)
         {
-          Helper.ShowWarningMessage("Enemy " + baseEnemy.Name + ": Something wrong with line '" + original + "'. Note: ':' can't be used in text!");
+          Helper.ShowWarningMessage("Enemy " + baseEnemy.Name + ": Something wrong with line '" + original + "'. Note: Use '\\:' instead of ':' in the text!");
           effectStr = effectStr.Remove(index, 1);
           continue;
         }
