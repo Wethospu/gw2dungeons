@@ -39,10 +39,9 @@
 
 <h3>List of approvers</h3>
 <ul>
-	<li>Rising Dusk (Rising Dusk.2408)</li>
-	<li>Deathly (ShadowRX.9024)</li>
-	<li>Spoj (spoj.9672)</li>
-	<li>Jerem (jeremlloyd.6837)</li>
-	<li>Fennec (Fennec.2961)</li>
-	<li>Zui (Zui.9245)</li>
+	<li>Fennec (Fennec.2961) vC</li>
+	<li>Deathly (ShadowRX.9024) qT</li>
+	<li>Enko (Enko.6123) LOD</li>
+	<li>Jerem (jeremlloyd.6837) SC</li>
+	<li>Rising Dusk (Rising Dusk.2408) VZ</li>
 </ul>
