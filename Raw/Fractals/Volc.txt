@@ -84,8 +84,6 @@ tactic=coordinated
 Kill shamans together. Focus on breaking the bubble because shamans won't be a threat with good damage. When the bubble breaks focus down remaining shamans and engage the boss immediately.
 tactic=exploit
 If you have severe problems (like when soloing) you can unequip armor and use melee attacks to push enemy=Shaman:champion to the middle of the area. You will wipe several times while doing this but throwing stones is much easier when the boss is closer.
-It's possible to regain a Stone right after throwing it by gaining different skill bar instantly without any animation. For example switching a weapon from inventory should work allowing you to destroy the bubble really fast. However you have to stay out of combat.
-Trick also works with kits, even when in combat. Using Death Shroud may also work, even when in combat.
 #######################################
 tactic=ranger
 Keep your pet on leash so it doesn't attack Shaman and push it behind the throne.
@@ -102,7 +100,7 @@ Use wiki=Scorpion_Wire to pull shamans back.
 tactic=necromancer
 Use wiki=Spectral_Grasp to pull shamans back.
 tactic=warrior
-wiki=Throw_Bolas for immobilize.
+Use wiki=Throw_Bolas for immobilize.
 
 name=enemy=Grawl_Shaman:champion
 tactic=ranged|melee

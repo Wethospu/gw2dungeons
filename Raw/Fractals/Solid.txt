@@ -87,7 +87,7 @@ When Maw is at ~10% all Tentacles will disappear and leave a Crystal. Maws final
 Don't leave after looting the first chest (unless you are certain you won't get daily chest). It takes some time but every day you will get one special chest at each tier.
 tactic=coordinated
 Melee everything by coordinating blocks, blinds, interrupts, and projectile defense (if at level 50).
-tactic=coordinated|exploit
+tactic=exploit
 The Jade Maw can be life leeched. This can be accomplished via a sigil of leeching, vampiric aura (very slow), or via combining a dark field with projectile finishers. All of these methods can be combined.
 tactic=guardian
 Use blinds (wiki=Leap_of_Faith, wiki=Flashing_Blade, traited Virtue of Justice) or Aegis to protect team from Tentacles spin.
