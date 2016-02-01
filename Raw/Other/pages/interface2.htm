@@ -27,18 +27,18 @@
 		exec("readData", "");
 	});
 		
-	function addgroup() {
+	function addGroup() {
 		var website = encodeURIComponent($("#group-website").val());
-		exec("addGroup", "&name=" + $("#group.name").val() + "&tag=" + $("#group-tag").val() + "&website=" + website);
+		exec("addGroup", "&name=" + $("#group-name").val() + "&tag=" + $("#group-tag").val() + "&website=" + website);
 	}
 
-	function deletegroup()	{
+	function deleteGroup()	{
 		exec("deleteGroup", "&id=" + $("#group-id").val());
 	}
 
-	function editgroup() {
+	function editGroup() {
 		var website = encodeURIComponent($("#group-website").val());
-		exec("editGroup", "&name=" + $("#group.name").val() + "&tag=" + $("#group-tag").val() + "&website=" + website + "&id=" + $("#group-id").val());
+		exec("editGroup", "&name=" + $("#group-name").val() + "&tag=" + $("#group-tag").val() + "&website=" + website + "&id=" + $("#group-id").val());
 	}
 
 	function addPlayer() {
@@ -335,7 +335,7 @@
 			console.log(data)
 			return;
 		}
-		$("#group.name").val(data[0]);
+		$("#group-name").val(data[0]);
 		$("#group-tag").val(data[1]);
 		$("#group-website").val(data[2]);
 		$("#group-id").val(data[3]);
@@ -838,16 +838,16 @@
 	<div style="overflow:auto;height:600px;" id="record-table"></div>
 </div>
 <div class="tab-pane" id="tab-group">
-	<label for="group.name">Name :</label>
-	<input id="group.name" type="text">
+	<label for="group-name">Name :</label>
+	<input id="group-name" type="text">
 	<label for="group-tag">Tag :</label>
 	<input id="group-tag" type="text">
 	<label for="group-website">Website :</label>
 	<input id="group-website" type="text">
-	<button type="button" onclick="addgroup()">Add</button>
+	<button type="button" onclick="addGroup()">Add</button>
 	<br>
-	<button type="button" onclick="deletegroup()">Delete</button>
-	<button type="button" onclick="editgroup()">Edit</button>
+	<button type="button" onclick="deleteGroup()">Delete</button>
+	<button type="button" onclick="editGroup()">Edit</button>
 	<label for="group-id">ID :</label>
 	<input id="group-id" type="text">
 	<br>
