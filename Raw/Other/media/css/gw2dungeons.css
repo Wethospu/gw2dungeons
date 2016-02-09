@@ -47,7 +47,7 @@ ul:after {
     user-select: none;
 }
 
-p, p *, h1, h1 *, h2, h2 *, td, td *, ol * {
+p, p *, h1, h1 *, h2, h2 *, h3, td, td *, ol *, .allow * {
     -webkit-user-select: text;
     -khtml-user-select: text;
     -moz-user-select: text;

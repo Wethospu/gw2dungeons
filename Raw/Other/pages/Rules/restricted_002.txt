@@ -1,6 +1,6 @@
-Date: 31th January 2015
+<p>Date: 31th January 2015</p>
 
-These rules are used for trio, quadro and full party runs.
+<p>These rules are used for trio, quadro and full party runs.</p>
 
 <h2>Rules</h2>
 <ol>
@@ -36,7 +36,7 @@ These rules are used for trio, quadro and full party runs.
 	<li>Have fun, and good luck.</li>
 	<li>Fractal must be played in scale 50.</li>
 </ol>
-*** These rules are subject to change at any time so it is advised you brief yourself with them each time before you post a record. ***
+<p>*** These rules are subject to change at any time so it is advised you brief yourself with them each time before you post a record. ***</p>
 
 
 <h2>Path Specific Rules</h2>

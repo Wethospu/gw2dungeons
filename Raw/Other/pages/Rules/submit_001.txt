@@ -23,7 +23,7 @@
 </ol>
 
 <h3>Example</h3>
-<ul>
+<ul class="allow">
 	<li>The Ruined City of Arah: Path 4</li>
 	<li>25th January 2015, game build 44039</li>
 	<li>Restricted time: 20 m, 12 s</li>
@@ -37,7 +37,7 @@
 </ul>
 
 <h3>List of approvers</h3>
-<ul>
+<ul class="allow">
 	<li>Iris (Iris Ng.9845)</li>
 	<li>Particlar (Snowball.3497)</li>
 	<li>Ravi (Saix.4126)</li>

@@ -1,4 +1,4 @@
-Date: 13th October 2014
+<p>Date: 13th October 2014</p>
 
 <h2>Rules</h2>
 <ol>
@@ -33,4 +33,4 @@ Date: 13th October 2014
 	<li>Any disputes will be handled at GWSCR staffs discretion. Staff decisions are final.</li>
 	<li>Have fun, and good luck</li>
 </ol>
-*** These rules are subject to change at any time so it is advised you brief yourself with them each time before you post a record. ***
+<p>*** These rules are subject to change at any time so it is advised you brief yourself with them each time before you post a record. ***</p>

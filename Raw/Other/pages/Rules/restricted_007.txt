@@ -1,6 +1,6 @@
-Date: 10th August 2015
+<p>Date: 10th August 2015</p>
 
-These rules are used for trio, quadro and full party runs. Ruleset is to showcase excellent gameplay and achieve the best times possible while completing dungeon or fractal content.
+<p>These rules are used for trio, quadro and full party runs. Ruleset is to showcase excellent gameplay and achieve the best times possible while completing dungeon or fractal content.</p>
 
 <h2>Timer</h2>
 <ol>

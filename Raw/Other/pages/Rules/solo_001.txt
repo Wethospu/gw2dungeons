@@ -1,1 +1,1 @@
-No ruleset available.
+<p>No ruleset available.</p>
