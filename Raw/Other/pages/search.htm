@@ -170,7 +170,7 @@ function doSearch() {
 	loadSettings(false, false);
 	var searchObject = readParameters();
 	currentSearchID = currentSearchID + 1;
-	searchIndex(currentSearchID, names, dungeonsToPaths(searchObject.dungeons), searchObject.ranks, searchObject.races, searchObject.tags, $("#search-amount").val());
+	searchIndex(currentSearchID, names, searchObject.dungeons, searchObject.ranks, searchObject.races, searchObject.tags, $("#search-amount").val());
 	searchDone = true;
 }
 
@@ -185,7 +185,7 @@ function readParameters() {
 	// Separate tags.
 	for (var i = 0; i < tagArray.length; i++) {
 		if (tagArray[i].type == "dungeon")
-			dungeons.push(tagArray[i].value);
+			dungeons = dungeons.concat(tagArray[i].value.split("|"));
 		if (tagArray[i].type == "race")
 			races.push(tagArray[i].value);
 		if (tagArray[i].type == "rank")
@@ -221,22 +221,6 @@ function readParameters() {
 		races: races,
 		tags: tags
     };
-}
-
-function dungeonsToPaths(dungeons) {
-	var newDungeons = new Array();
-	for (var i = 0; i < dungeons.length; i++) {
-		if (dungeons[i] == "fotm")
-		    newDungeons.push("insta", "aether", "aqua", "cliff", "furn", "mai", "molten", "snow", "solid", "swamp", "thauma", "uncat", "under", "urban", "volc");
-		else if (dungeons[i] == "ta")
-			newDungeons.push("tas", "taf", "taae", "tau");
-		else {
-			newDungeons.push(dungeons[i] + "s", dungeons[i] + "1", dungeons[i] + "2", dungeons[i] + "3");
-			if (dungeons[i] == "arah")
-				newDungeons.push("arah4");
-		}
-	}
-	return newDungeons;
 }
 
 var currentOutput = '';
@@ -460,7 +444,7 @@ function displayResults(searchID, elementID, elements, htmlList) {
 <ul class="list-inline">
 	<li>
 		<select id="search-path" class="search-changer form-control" data-type="dungeon">
-			<option value ="">Dungeon</option>
+			<option value ="">Instance</option>
 ID_PATHS
 		</select>
 	</li>

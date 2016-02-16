@@ -133,7 +133,7 @@ namespace DataCreator.Shared
           continue;
         }
         var entry = new StringBuilder();
-        entry.Append(Gw2Helper.AddTab(3)).Append("<h2>").Append(DungeonPaths[dungeon][0].DungeonName).Append("</h2>").Append(Constants.LineEnding);
+        entry.Append(Gw2Helper.AddTab(3)).Append("<h2>").Append(DungeonPaths[dungeon][0].InstanceName).Append("</h2>").Append(Constants.LineEnding);
         entry.Append(Gw2Helper.AddTab(3)).Append("<ul class=\"nav nav-stacked\">").Append(Constants.LineEnding);
         foreach (var path in DungeonPaths[dungeon])
         {
@@ -231,7 +231,7 @@ namespace DataCreator.Shared
           continue;
         }
         var entry = new StringBuilder();
-        entry.Append(Gw2Helper.AddTab(3)).Append("<h2>").Append(RaidPaths[raid][0].DungeonName).Append("</h2>").Append(Constants.LineEnding);
+        entry.Append(Gw2Helper.AddTab(3)).Append("<h2>").Append(RaidPaths[raid][0].InstanceName).Append("</h2>").Append(Constants.LineEnding);
         entry.Append(Gw2Helper.AddTab(3)).Append("<ul class=\"nav nav-stacked\">").Append(Constants.LineEnding);
         foreach (var path in RaidPaths[raid])
         {
@@ -255,15 +255,39 @@ namespace DataCreator.Shared
     public string GenerateDungeonHtml()
     {
       var builder = new StringBuilder();
+      foreach (var raid in RaidPaths.Keys)
+      {
+        var paths = RaidPaths[raid];
+        if (paths.Count == 0)
+          continue;
+        builder.Append(Gw2Helper.AddTab(3)).Append("<option value=\"");
+        foreach (var path in paths)
+          builder.Append(path.Tag.ToLower()).Append("|");
+        builder.Remove(builder.Length - 1, 1).Append("\">");
+        builder.Append(paths[0].InstanceName).Append("</option>").Append(Constants.LineEnding);
+      }
+      // Sorting has no practical purpose but looks better.
+      var FractalTags = new SortedSet<string>();
+      foreach (var fractal in FractalPaths)
+        FractalTags.Add(fractal.Tag.ToLower());
+      builder.Append(Gw2Helper.AddTab(3)).Append("<option value=\"");
+      foreach (var tag in FractalTags)
+        builder.Append(tag).Append("|");
+      builder.Remove(builder.Length - 1, 1).Append("\">");
+      builder.Append(FractalPaths[0].InstanceName).Append("</option>").Append(Constants.LineEnding);
+
       foreach (var dungeon in DungeonPaths.Keys)
       {
         var paths = DungeonPaths[dungeon];
         if (paths.Count == 0)
           continue;
-        // Add only dungeons. / 2015-08-19 / Wethospu
-        builder.Append(Gw2Helper.AddTab(3)).Append("<option value=\"").Append(dungeon).Append("\">");
-        builder.Append(paths[0].DungeonName).Append("</option>").Append(Constants.LineEnding);
+        builder.Append(Gw2Helper.AddTab(3)).Append("<option value=\"");
+        foreach (var path in paths)
+          builder.Append(path.Tag.ToLower()).Append("|");
+        builder.Remove(builder.Length - 1, 1).Append("\">");
+        builder.Append(paths[0].InstanceName).Append("</option>").Append(Constants.LineEnding);
       }
+      
       return builder.ToString();
     }
 

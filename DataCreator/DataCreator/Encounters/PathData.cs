@@ -14,7 +14,7 @@ namespace DataCreator.Encounters
   public class PathData
   {
     public string Tag = "";
-    public string DungeonName = "";
+    public string InstanceName = "";
     public string NameLong = "";
     public string Name = "";
     public string Map = "";
@@ -44,7 +44,7 @@ namespace DataCreator.Encounters
           Helper.ShowWarning("Missing info. Use \"init='pathTag'|'dungeon name'|'long path name'|'short path name'|'scale'\".");
         Tag = elements[0];
         if (elements.Length > 1)
-          DungeonName = elements[1];
+          InstanceName = elements[1];
         if (elements.Length > 2)
           NameLong = elements[2];
         if (elements.Length > 3)

@@ -202,7 +202,7 @@ namespace DataCreator.Encounters
         var navigation = GenerateNavigationInfo(dungeonPath, navPaths);
         var counter = 0;
         var encounterFile = new StringBuilder();
-        encounterFile.Append("GUIDE:").Append(Helper.ConvertSpecial(dungeonPath.DungeonName)).Append(Constants.Delimiter).Append(Helper.ConvertSpecial(dungeonPath.Name)).Append(Constants.ForcedLineEnding);
+        encounterFile.Append("GUIDE:").Append(Helper.ConvertSpecial(dungeonPath.InstanceName)).Append(Constants.Delimiter).Append(Helper.ConvertSpecial(dungeonPath.Name)).Append(Constants.ForcedLineEnding);
         encounterFile.Append(navigation);
         encounterFile.Append(Constants.InitialdataHtml);
         foreach (var encr in encounters)
