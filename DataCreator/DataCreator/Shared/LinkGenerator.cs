@@ -31,7 +31,7 @@ namespace DataCreator.Shared
       get
       {
         if (_currentDungeon.Length == 0)
-          Helper.ShowWarning("Dungeon isn't defined! Something is seriously wrong.");
+          ErrorHandler.ShowWarning("Dungeon isn't defined! Something is seriously wrong.");
         return _currentDungeon;
       }
       set
@@ -207,7 +207,7 @@ namespace DataCreator.Shared
         var index = Array.IndexOf(Constants.LinkTypes, link[0].ToLower());
         if (index < 0 || index >= Constants.LinkTypes.Length)
         {
-          Helper.ShowWarning("Link type " + link[0] + " not recognized. Please fix!");
+          ErrorHandler.ShowWarning("Link type " + link[0] + " not recognized. Please fix!");
         }
         else
         {
@@ -266,11 +266,11 @@ namespace DataCreator.Shared
         var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, path);
         if (foundEnemies.Count == 0)
         {
-          Helper.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + path + ". Change parameters, add missing enemy or check syntax file.");
+          ErrorHandler.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + path + ". Change parameters, add missing enemy or check syntax file.");
           continue;
         }
         if (foundEnemies.Count > 1)
-          Helper.ShowWarningMessage("Multiple enemies found for enemy " + name + " with link " + linkData + " and path " + path + ". Add more parameters or check syntax file.");
+          ErrorHandler.ShowWarningMessage("Multiple enemies found for enemy " + name + " with link " + linkData + " and path " + path + ". Add more parameters or check syntax file.");
         // Use data from the first enemy.
         // Note: While this could be used to for example link every elite enemy, it would be extremely inefficient.
         // Instead, new link type should be added and link loading function in javascript should be expanded to allow jokers.
@@ -340,11 +340,11 @@ namespace DataCreator.Shared
         var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, path);
         if (foundEnemies.Count == 0)
         {
-          Helper.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + path + ". Change parameters, add missing enemy or check syntax file.");
+          ErrorHandler.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + path + ". Change parameters, add missing enemy or check syntax file.");
           continue;
         }
         if (foundEnemies.Count > 1)
-          Helper.ShowWarningMessage("Multiple enemies found for enemy " + name + " with link " + linkData + " and path " + path + ". Add more parameters or check syntax file.");
+          ErrorHandler.ShowWarningMessage("Multiple enemies found for enemy " + name + " with link " + linkData + " and path " + path + ". Add more parameters or check syntax file.");
         // Use data from the first enemy.
         // Note: While this could be used to for example link every elite enemy, it would be extremely inefficient.
         // Instead, new link type should be added and link loading function in javascript should be expanded to allow jokers.
@@ -425,7 +425,7 @@ namespace DataCreator.Shared
       linkType = linkType.ToLower();
       if (linkType.Equals(Constants.LinkEnemy))
       {
-        Helper.ShowWarning("Critical program error.");
+        ErrorHandler.ShowWarning("Critical program error.");
         return "";
       }
 
@@ -512,7 +512,7 @@ namespace DataCreator.Shared
         if (subSplit[0].ToLower().Equals("text") && subSplit.Length > 1)
         {
           if (checkErrors && !shownText.Equals(""))
-            Helper.ShowWarning("Multiple \"text\" tags on enemy link data. Remove extra ones!");
+            ErrorHandler.ShowWarning("Multiple \"text\" tags on enemy link data. Remove extra ones!");
           shownText = subSplit[1];
         }
       }
@@ -543,13 +543,13 @@ namespace DataCreator.Shared
       var linkText = subSplit[0];
       if (checkErrors && linkText.Length == 0)
       {
-        Helper.ShowWarning("Link is empty. Please fix!");
+        ErrorHandler.ShowWarning("Link is empty. Please fix!");
         return "";
       }
       if (subSplit.Length > 1)
       {
         if (checkErrors && subSplit[1].Length == 0)
-          Helper.ShowWarning("Extra link text is empty. Please fix!");
+          ErrorHandler.ShowWarning("Extra link text is empty. Please fix!");
 
         if (subSplit[1][0] == '(')
           linkText += "_" + subSplit[1];
@@ -585,7 +585,7 @@ namespace DataCreator.Shared
         Constants.ValidatedUrls.Add(url);
         return;
       }
-      Helper.ShowWarningMessage("Link \"" + url + "\" can't be reached.");
+      ErrorHandler.ShowWarningMessage("Link \"" + url + "\" can't be reached.");
     }
 
     /***********************************************************************************************
@@ -634,7 +634,7 @@ namespace DataCreator.Shared
           catch (WebException)
           {
             Helper.ClearConsoleLine(row);
-            Helper.ShowWarningMessage("File \"" + url + "\" can't be downloaded.");
+            ErrorHandler.ShowWarningMessage("File \"" + url + "\" can't be downloaded.");
           }
         }
       }
@@ -717,7 +717,7 @@ namespace DataCreator.Shared
       }
       catch (OutOfMemoryException)
       {
-        Helper.ShowWarning("File " + filename + " might be corrupted. Remove it and run this again.");
+        ErrorHandler.ShowWarning("File " + filename + " might be corrupted. Remove it and run this again.");
         return;
       }
       ScaleImageSize(ref maxWidth, ref maxHeight, image.Width, image.Height);

@@ -47,7 +47,7 @@ namespace DataCreator
         return "champion";
       if (Rank.Equals("rank_legendary"))
         return "legendary";
-      Helper.ShowWarning("Rank " + Rank + " not recognized.");
+      ErrorHandler.ShowWarning("Rank " + Rank + " not recognized.");
       return "normal";
     }
 
@@ -200,7 +200,7 @@ namespace DataCreator
         else if (Guid.Equals("4294cd11-911b-47bc-b3b1-2cc6ad435f28"))
           display = "Molten";
         else
-          Helper.ShowWarningMessage("Race with guid " + Guid + " not handled.");
+          ErrorHandler.ShowWarningMessage("Race with guid " + Guid + " not handled.");
       }
       return display;
     }
@@ -311,7 +311,7 @@ namespace DataCreator
       var index = WeaponTypes.IndexOf(Type);
       if (index > -1)
         return index;
-      Helper.ShowWarningMessage("Weapon type " + Type + " not recognized.");
+      ErrorHandler.ShowWarningMessage("Weapon type " + Type + " not recognized.");
       return 0;
     }
 

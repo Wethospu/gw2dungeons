@@ -53,7 +53,7 @@ namespace DataCreator.Shared
         while (FractalPaths.Count <= index)
           FractalPaths.Add(null);
         if (FractalPaths[index] != null)
-          Helper.ShowWarningMessage("Fractal F" + (index + 1) + " is already defined. (" + FractalPaths[index].Tag + ", " + path.Tag + ")");
+          ErrorHandler.ShowWarningMessage("Fractal F" + (index + 1) + " is already defined. (" + FractalPaths[index].Tag + ", " + path.Tag + ")");
         FractalPaths[index] = path;
       }
     }
@@ -89,13 +89,13 @@ namespace DataCreator.Shared
         CurrentTag = char.ToString((char)((int)CurrentTag[0] + 1));
     }
 
-    public string ConvertTag(string tag)
+    public string GetCompactTag(string tag)
     {
       if (Tags.ContainsKey(tag))
         return Tags[tag];
       if (EffectTags.ContainsKey(tag))
         return EffectTags[tag];
-      Helper.ShowWarningMessage("Internal error. Tag " + tag + " isn't recognized.");
+      ErrorHandler.ShowWarningMessage("Internal error. Tag " + tag + " isn't recognized.");
       return "";
     }
 
@@ -129,7 +129,7 @@ namespace DataCreator.Shared
         // </ul>
         if (DungeonPaths[dungeon] == null || DungeonPaths[dungeon].Count == 0)
         {
-          Helper.ShowWarningMessage("Dungeon \"" + dungeon + "\" had no path data!");
+          ErrorHandler.ShowWarningMessage("Dungeon \"" + dungeon + "\" had no path data!");
           continue;
         }
         var entry = new StringBuilder();
@@ -174,7 +174,7 @@ namespace DataCreator.Shared
         // </ul>
         if (path == null)
         {
-          Helper.ShowWarningMessage("Fractal F" + (i + 1) + " had no path data!");
+          ErrorHandler.ShowWarningMessage("Fractal F" + (i + 1) + " had no path data!");
           continue;
         }
         fractalData.Append("<li><a href=\"./F").Append(path.Scale).Append("\"><span class=\"list-icon\">");
@@ -227,7 +227,7 @@ namespace DataCreator.Shared
         // </ul>
         if (RaidPaths[raid] == null || RaidPaths[raid].Count == 0)
         {
-          Helper.ShowWarningMessage("Raid \"" + raid + "\" had no path data!");
+          ErrorHandler.ShowWarningMessage("Raid \"" + raid + "\" had no path data!");
           continue;
         }
         var entry = new StringBuilder();

@@ -3,64 +3,43 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using DataCreator.Utility;
-using System.Net.Http;
-using Newtonsoft.Json;
-using System.Text.RegularExpressions;
 
 namespace DataCreator.Shared
 {
-
-  /***********************************************************************************************
-   * OtherGenerator / 2014-08-01 / Wethospu                                                       *
-   *                                                                                             *
-   * Functions to generate other pages like main page, builds, css, js, etc.                     *
-   *                                                                                             *
-   ***********************************************************************************************/
-
+  /// <summary>
+  /// Functions to generate non-instance files.
+  /// </summary>
   static class OtherGenerator
   {
-    /***********************************************************************************************
-     * GenerateOthers / 2014-08-01 / Wethospu                                                      *
-     *                                                                                             *
-     * Generates main page and other files.                                                        *
-     *                                                                                             *
-     * pathData: Information about generated paths.                                                *
-     *                                                                                             *
-     ***********************************************************************************************/
-
+    /// <summary>
+    /// Main function to generate everything.
+    /// </summary>
     public static void GenerateOthers(DataCollector dungeonData)
     {
       Console.WriteLine("Generating pages");
       MergeFiles();
       // Generate main page to dynamically create the dungeon listing.
-      ApplyDungeonData(Constants.DataOtherRaw + "pages\\home.htm", dungeonData.GenerateDungeonData());
+      GenerateMainPage(dungeonData.GenerateDungeonData());
       // Generate about page to dynamically update date of the last update.
       ApplyDate(Constants.DataOtherRaw + "pages\\about.htm");
-      // Generate search page filters based on actual enemies. / 2015-08-14 / Wethospu
+      // Generate search page filters based on actual enemies.
       ApplyData(Constants.DataOtherRaw + "pages\\search.htm", dungeonData);
-      // Generate includes based on release mode. / 2015-09-24 / Wethospu
+      // Generate includes based on release mode.
       ApplyIncludes(Constants.DataOtherRaw + "index.php");
     }
 
-    /***********************************************************************************************
-     * ApplyDungeonData / 2015-07-06 / Wethospu                                                    *
-     *                                                                                             *
-     * Replaces dungeon IDs with metadata from the content pages.                                  *
-     * Used to generate the main page "dynamically".                                               *
-     *                                                                                             *
-     * file: Location of the base file.                                                            *
-     * dungeonData: Dictionary for replacing.                                                      *
-     *                                                                                             *
-     ***********************************************************************************************/
-
-    private static void ApplyDungeonData(string file, Dictionary<string, string> dungeonData)
+    /// <summary>
+    /// Generates an instance list for the main page.
+    /// </summary>
+    private static void GenerateMainPage(string file, Dictionary<string, string> instanceData)
     {
-      var fileName = Constants.DataOutput + file.Replace(Constants.DataOtherRaw, "");
-      var dirName = Path.GetDirectoryName(fileName);
+      var source = Constants.DataOtherRaw + "pages\\home.htm";
+      var target = Constants.DataOutput + source.Replace(Constants.DataOtherRaw, "");
+      var dirName = Path.GetDirectoryName(target);
       if (dirName != null)
         Directory.CreateDirectory(dirName);
       var lines = File.ReadAllLines(file, Constants.Encoding);
-      Helper.CurrentFile = file;
+      ErrorHandler.CurrentFile = file;
       var toSave = new StringBuilder();
       toSave.Append(Constants.InitialdataHtml);
       for (var row = 0; row < lines.Length; row++)
@@ -68,17 +47,14 @@ namespace DataCreator.Shared
         var line = lines[row];
         if (Constants.IsRelease)
           line = line.Trim(new char[] { '\t', ' ' });
-        // Ignore comments on release mode. / 2015-10-10 / Wethospu
+        // Ignore comments on release mode to reduce size file.
         if (Constants.IsRelease && line.StartsWith("//"))
           continue;
-        // Ignore empty lines.
         if (line == "")
           continue;
-        Helper.InitializeWarningSystem(row + 1, line);
-        // Ignore whitespace.
+        ErrorHandler.InitializeWarningSystem(row + 1, line);
         if (string.IsNullOrWhiteSpace(line))
           continue;
-        // Apply dungeon data.
         for (var index = 0; index < line.Length; )
         {
           var startIndex = line.IndexOf("ID_", index, StringComparison.Ordinal);
@@ -95,20 +71,20 @@ namespace DataCreator.Shared
           }
           index = endIndex;
           var id = line.Substring(startIndex, endIndex - startIndex);
-          if (dungeonData.ContainsKey(id))
+          if (instanceData.ContainsKey(id))
           {
             // Use length to position index properly.
             index -= line.Length;
-            line = line.Replace(id, dungeonData[id]);
+            line = line.Replace(id, instanceData[id]);
             index += line.Length;
           }
           else
-            Helper.ShowWarning("Data for dungeon \"" + id + "\" not found!");
+            ErrorHandler.ShowWarning("Data for dungeon \"" + id + "\" not found!");
         }
         toSave.Append(line).Append(Constants.ForcedLineEnding);
       }
       // Save file.
-      File.WriteAllText(fileName, toSave.ToString());
+      File.WriteAllText(target, toSave.ToString());
     }
 
     /***********************************************************************************************
@@ -127,7 +103,7 @@ namespace DataCreator.Shared
       if (dirName != null)
         Directory.CreateDirectory(dirName);
       var lines = File.ReadAllLines(file, Constants.Encoding);
-      Helper.CurrentFile = file;
+      ErrorHandler.CurrentFile = file;
       var toSave = new StringBuilder();
       toSave.Append(Constants.InitialdataHtml);
       for (var row = 0; row < lines.Length; row++)
@@ -141,7 +117,7 @@ namespace DataCreator.Shared
         // Ignore empty lines.
         if (line == "")
           continue;
-        Helper.InitializeWarningSystem(row + 1, line);
+        ErrorHandler.InitializeWarningSystem(row + 1, line);
         // Ignore whitespace.
         if (string.IsNullOrWhiteSpace(line))
           continue;
@@ -167,7 +143,7 @@ namespace DataCreator.Shared
       if (dirName != null)
         Directory.CreateDirectory(dirName);
       var lines = File.ReadAllLines(file, Constants.Encoding);
-      Helper.CurrentFile = file;
+      ErrorHandler.CurrentFile = file;
       var toSave = new StringBuilder();
       toSave.Append(Constants.InitialdataHtml);
       for (var row = 0; row < lines.Length; row++)
@@ -181,7 +157,7 @@ namespace DataCreator.Shared
         // Ignore empty lines.
         if (line == "")
           continue;
-        Helper.InitializeWarningSystem(row + 1, line);
+        ErrorHandler.InitializeWarningSystem(row + 1, line);
         // Ignore whitespace.
         if (string.IsNullOrWhiteSpace(line))
           continue;

@@ -45,7 +45,7 @@ namespace DataCreator.Enemies
           afterCast = dataSplit[2];
         // If any data exist, cast animation should also exist.
         if (value.Length > 0 && preCast.Length == 0)
-          Helper.ShowWarning("Animation " + value + " is missing casting animation. Please fix!");
+          ErrorHandler.ShowWarning("Animation " + value + " is missing casting animation. Please fix!");
         //// Build animation string.
         var builder = new StringBuilder();
         builder.Append(preCast);
@@ -146,7 +146,7 @@ namespace DataCreator.Enemies
     public string AttackToHTML(string path, List<Enemy> enemies, Enemy baseEnemy, int indent)
     {
       if (_name.Equals(""))
-        Helper.ShowWarningMessage("Enemy " + baseEnemy.Name + " has no attack name.");
+        ErrorHandler.ShowWarningMessage("Enemy " + baseEnemy.Name + " has no attack name.");
       var htmlBuilder = new StringBuilder();
       // Add attack name.
       htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<p class=\"enemy-attack\"><span class=\"enemy-attack-name\">").Append(Helper.ConvertSpecial(Helper.ToUpperAll(LinkGenerator.CreateEnemyLinks(_name, path, enemies))));
@@ -196,7 +196,7 @@ namespace DataCreator.Enemies
       foreach (var media in Medias)
       {
         htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<div>").Append(Constants.LineEnding);
-        htmlBuilder.Append(Gw2Helper.AddTab(indent + 2)).Append(media.ToHtml()).Append(Constants.LineEnding);
+        htmlBuilder.Append(Gw2Helper.AddTab(indent + 2)).Append(media.GetThumbnailHTML()).Append(Constants.LineEnding);
         htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("</div>").Append(Constants.LineEnding);
         htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<br>").Append(Constants.LineEnding);
       }

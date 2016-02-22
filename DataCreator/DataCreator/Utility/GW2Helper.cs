@@ -6,31 +6,14 @@ using DataCreator.Enemies;
 
 namespace DataCreator.Utility
 {
-  /***********************************************************************************************
-   * GW2Helper / 2014-08-01 / Wethospu                                                           *
-   *                                                                                             *
-   * Project specific helper functions (GW2 and website stuff).                                  *
-   *                                                                                             *
-   ***********************************************************************************************/
-
+  /// <summary>
+  /// Project specific helper functions (GW2 and website stuff).
+  /// </summary>
   public static class Gw2Helper
   {
-    /***********************************************************************************************
-     * PathToLevel / 2014-08-01 / Wethospu                                                         *
-     *                                                                                             *
-     * Returns level for given path.                                                               *
-     *                                                                                             *
-     ***********************************************************************************************/
-    private static Dictionary<string, int> pathToLevel = new Dictionary<string, int>
-    {
-        { "acs", 30 }, { "ac1", 35 }, { "ac2", 35 }, { "ac3", 35 },
-        { "cms", 40 }, { "cm1", 45 }, { "cm2", 45 }, { "cm3", 45 },
-        { "tas", 50 }, { "taf", 55 }, { "tau", 55 }, { "taae", 80 },
-        { "ses", 60 }, { "se1", 65 }, { "se2", 65 }, { "se3", 65 },
-        { "cofs", 70 }, { "cof1", 75 }, { "cof2", 75 }, { "cof3", 75 },
-        { "hotws", 76 }, { "coes", 78 }
-    };
-
+    /// <summary>
+    /// Pre-generated list for recommended agony resist.
+    /// </summary>
     public static List<int> RecommendedAgonyResist = new List<int>()
     {
       0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
@@ -46,13 +29,9 @@ namespace DataCreator.Utility
       150
     };
 
-    public static int PathToLevel(string path)
-    {
-      if (pathToLevel.ContainsKey(path))
-        return pathToLevel[path];
-      return 80;
-    }
-
+    /// <summary>
+    /// Adds a HTML tab.
+    /// </summary>
     public static string AddTab(int amount)
     {
       var toReturn = new StringBuilder();
@@ -61,36 +40,28 @@ namespace DataCreator.Utility
       return toReturn.ToString();
     }
 
-    /***********************************************************************************************
-    * FindEnemies / 2014-07-27 / Wethospu                                                          * 
-    *                                                                                              * 
-    * Finds enemies based on given requirements. Empty requirements are excluded.                  *
-    *                                                                                              *
-    * Returns enemies matching the requirements.                                                   *
-    * enemies: List of enemies to search.                                                          *
-    * name, rank, path: Requirements. Use "" if you want to exclude a requirement.                 *
-    *                                                                                              * 
-    ***********************************************************************************************/
+    /// <summary>
+    /// Find enemies based on given requirements. Empty requirements are excluded.
+    /// </summary>
+    // Needed to generate enemy links.
     public static List<Enemy> FindEnemies(List<Enemy> enemies, string name, string rank, string path)
     {
       if (enemies == null)
       {
-        Helper.ShowWarning("Critical error while finding enemies. No enemy data!");
+        ErrorHandler.ShowWarning("Critical error while finding enemies. No enemy data!");
         return new List<Enemy>();
       }
-      // Ensure requirements are lowercase.
+      // Ensure requirements are lowercase to remove case sensitivity.
       // Name should also be simplified because javascript can't handle special characters.
       name = Helper.Simplify(name);
       rank = rank.ToLower();
       path = path.ToLower();
       var paths = path.Split('|');
-      // Enemies whos base name matches exactly.
+      // Name matches have a different priority.
+      // This is needed to allow partial matches without them interfering with perfect matches.
       var nameMatches = new List<Enemy>();
-      // Enemies whos any alt name matches exactly.
       var altMatches = new List<Enemy>();
-      // Enemies who have partial base name match.
       var partialNameMatches = new List<Enemy>();
-      // Enemies who have partial alt name match.
       var partialAltMatches = new List<Enemy>();
       foreach (var enemy in enemies)
       {
@@ -105,8 +76,6 @@ namespace DataCreator.Utility
           if (fail)
             continue;
         }
-        // Name matches have a different priority.
-        // This is needed to allow partial matches without them interfering with perfect matches.
         var match = -1;
         if (name.Length > 0)
         {
@@ -146,8 +115,10 @@ namespace DataCreator.Utility
       return foundEnemies;
     }
 
-    // 1: no scaling, 2 = normal scaling, 3 = champion, 4 = legendary, 5: only level scales
-    // Anything else: custom.
+    /// <summary>
+    /// Returns scaling id for a given scaling type.
+    /// </summary>
+    // Common scalings have pre-calculated multipliers.
     static public string ScalingTypeToMode(string scalingType)
     {
       if (scalingType.Equals("") || scalingType.Equals("constant"))
@@ -160,12 +131,16 @@ namespace DataCreator.Utility
         return "4";
       if (scalingType.Equals("level"))
         return "5";
+      // Some enemies have customized scaling which has to be calculated manually.
       if (scalingType.Contains(":"))
         return scalingType;
-      Helper.ShowWarningMessage("Scaling type " + scalingType + " is not recognized! Use 'normal', 'champion', 'level', 'constant' or 'legendary'!");
+      ErrorHandler.ShowWarningMessage("Scaling type " + scalingType + " is not recognized! Use 'normal', 'champion', 'level', 'constant' or 'legendary'!");
       return scalingType;
     }
 
+    /// <summary>
+    /// Returns output string for a given scaling type.
+    /// </summary>
     static public string ScalingTypeToString(string scalingType)
     {
       if (scalingType.Equals("") || scalingType.Equals("constant"))

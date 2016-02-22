@@ -130,7 +130,7 @@ namespace DataCreator.Enemies
           effectIndex--;
         if (effectIndex - index - 1 < 1)
         {
-          Helper.ShowWarningMessage("Enemy " + baseEnemy.Name + ": Something wrong with line '" + original + "'. Note: Use '\\:' instead of ':' in the text!");
+          ErrorHandler.ShowWarningMessage("Enemy " + baseEnemy.Name + ": Something wrong with line '" + original + "'. Note: Use '\\:' instead of ':' in the text!");
           effectStr = effectStr.Remove(index, 1);
           continue;
         }
@@ -433,7 +433,7 @@ namespace DataCreator.Enemies
       if (str.Equals("regeneration") || str.Equals("retaliation"))
         return EffectType.Boon;
 
-      Helper.ShowWarningMessage("Effect type " + str + " not recognized.");
+      ErrorHandler.ShowWarningMessage("Effect type " + str + " not recognized.");
       return EffectType.None;
     }
 
@@ -467,7 +467,7 @@ namespace DataCreator.Enemies
       else if (type == EffectType.Healing || type == EffectType.HealingPercent)
         baseEnemy.Tags.Add("healing");
       else if (type != EffectType.None)
-        Helper.ShowWarningMessage("Internal error. Effect type not implemented.");
+        ErrorHandler.ShowWarningMessage("Internal error. Effect type not implemented.");
     }
 
     /***********************************************************************************************
@@ -497,7 +497,7 @@ namespace DataCreator.Enemies
         return "healing-percent-value";
       if (type == EffectType.None)
         return "";
-      Helper.ShowWarningMessage("Internal error. Effect type not implemented.");
+      ErrorHandler.ShowWarningMessage("Internal error. Effect type not implemented.");
       return "";
     }
 

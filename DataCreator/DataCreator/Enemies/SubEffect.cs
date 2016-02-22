@@ -126,7 +126,7 @@ namespace DataCreator.Enemies
         }
         else
         {
-          Helper.ShowWarningMessage("Stack amount " + Stacks + " is not a number. Critical program error (should have been detected earlier)");
+          ErrorHandler.ShowWarningMessage("Stack amount " + Stacks + " is not a number. Critical program error (should have been detected earlier)");
         }
       }
       if (!Duration.Equals(""))

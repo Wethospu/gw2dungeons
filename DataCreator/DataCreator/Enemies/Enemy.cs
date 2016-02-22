@@ -82,7 +82,7 @@ namespace DataCreator.Enemies
       var toCompare = (Enemy)(obj);
       if (toCompare == null)
       {
-        Helper.ShowWarningMessage("Unrecognized stuff when sorting enemies. Something is seriously wrong!");
+        ErrorHandler.ShowWarningMessage("Unrecognized stuff when sorting enemies. Something is seriously wrong!");
         return 0;
       }
       // Compare ids.
@@ -104,7 +104,7 @@ namespace DataCreator.Enemies
         // If same, compare path.
         result = string.Compare(string.Join("|", Paths), string.Join("|", toCompare.Paths));
       if (result == 0)
-        Helper.ShowWarningMessage("Couldn't figure out order for enemies " + Name + " and " + toCompare.Name + ". Either program failed or there are duplicates.");
+        ErrorHandler.ShowWarningMessage("Couldn't figure out order for enemies " + Name + " and " + toCompare.Name + ". Either program failed or there are duplicates.");
       return result;
     }
 
@@ -223,7 +223,7 @@ namespace DataCreator.Enemies
       foreach (var media in Medias)
       {
         htmlBuilder.Append(Gw2Helper.AddTab(3)).Append("<div>").Append(Constants.LineEnding);
-        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append(media.ToHtml()).Append(Constants.LineEnding);
+        htmlBuilder.Append(Gw2Helper.AddTab(4)).Append(media.GetThumbnailHTML()).Append(Constants.LineEnding);
         htmlBuilder.Append(Gw2Helper.AddTab(3)).Append("</div>").Append(Constants.LineEnding);
         htmlBuilder.Append(Gw2Helper.AddTab(3)).Append("<br>").Append(Constants.LineEnding);
       }

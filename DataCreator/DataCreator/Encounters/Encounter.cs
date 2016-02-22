@@ -96,7 +96,7 @@ namespace DataCreator.Encounters
       foreach (var media in Medias)
       {
         htmlBuilder.Append("<div>").Append(Constants.LineEnding);
-        htmlBuilder.Append(media.ToHtml()).Append(Constants.LineEnding);
+        htmlBuilder.Append(media.GetThumbnailHTML()).Append(Constants.LineEnding);
         htmlBuilder.Append("</div>").Append(Constants.LineEnding);
         htmlBuilder.Append(Constants.LineEnding);
       }

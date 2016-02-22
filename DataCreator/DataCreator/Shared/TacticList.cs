@@ -1,13 +1,15 @@
 ﻿using DataCreator.Encounters;
 using DataCreator.Enemies;
 using DataCreator.Utility;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace DataCreator.Shared
 {
+  /// <summary>
+  /// Wrapper for a list of tactics. Provides needed functionality.
+  /// </summary>
   public class TacticList
   {
     public List<Tactic> Tactics = new List<Tactic>();
@@ -29,13 +31,13 @@ namespace DataCreator.Shared
     public void AddTactics(string types, string scale, List<PathData> paths)
     {
       if (types.Contains(':'))
-        Helper.ShowWarning("Potentially wrong syntax. Use \"tactic='tactic1'|'tactic2'|'tacticN'\"!");
+        ErrorHandler.ShowWarning("Potentially wrong syntax. Use \"tactic='tactic1'|'tactic2'|'tacticN'\"!");
       // Check validity of the tactic.
       var splitTypes = types.Split('|');
       foreach (var str in splitTypes)
       {
         if (!Constants.AvailableTactics.Contains(str.ToLower()) && !Constants.AvailableTips.Contains(str.ToLower()))
-          Helper.ShowWarning("Tactic or tip " + str + " wasn't found!. Either fix or add to AvailableTactics.txt or AvailableTips.txt!");
+          ErrorHandler.ShowWarning("Tactic or tip " + str + " wasn't found!. Either fix or add to AvailableTactics.txt or AvailableTips.txt!");
         // Check whether that tactic should be added. / 2015-06-28 / Wethospu
         var found = false;
         foreach (var tactic in Tactics)
@@ -90,11 +92,14 @@ namespace DataCreator.Shared
       bool isAnythingActive = false;
       foreach (var tactic in Tactics)
       {
-        if (tactic.AddLine(line))
+        if (tactic.IsActive)
+        {
+          tactic.AddLine(line);
           isAnythingActive = true;
+        }
       }
       if (!isAnythingActive)
-        Helper.ShowWarning("No tactic or tip active!");
+        ErrorHandler.ShowWarning("No tactic or tip active!");
     }
 
     /***********************************************************************************************
@@ -127,7 +132,7 @@ namespace DataCreator.Shared
        */
       //// Build tactics. / 2015-06-28 / Wethospu
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("<div class=\"tactics\" id=\"s").Append(index).Append("\">").Append(Constants.LineEnding);
-      var relevantTactics = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTactics.Contains(tactic.Name) && tactic.Scale == scale));
+      var relevantTactics = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTactics.Contains(tactic.Name) && tactic.FractalScale == scale));
       if (relevantTactics.Count > 0 && relevantTactics[0].Lines.Count == 0)
         return "";
       // Add navigation only when more than one tactic. / 2015-07-22 / Wethospu
@@ -152,11 +157,11 @@ namespace DataCreator.Shared
           var str = line;
           str = LinkGenerator.CreateEnemyLinks(str, path, enemies, scale);
           if (str.EndsWith(".."))
-            Helper.ShowWarningMessage("Extra dot detected at end of '" + str + "'. Remove it.");
+            ErrorHandler.ShowWarningMessage("Extra dot detected at end of '" + str + "'. Remove it.");
           if (char.IsLower(str[0]))
-            Helper.ShowWarningMessage("Line '" + str + "' starts with a lower character. Fix it.");
+            ErrorHandler.ShowWarningMessage("Line '" + str + "' starts with a lower character. Fix it.");
           if (!str.EndsWith(".") && !str.EndsWith(":") && !str.EndsWith("!") && !str.EndsWith("\"") && !str.EndsWith("?"))
-            Helper.ShowWarningMessage("No '.', ':', '!', '?' or '\"' at the end of line '" + str + "'. Add it.");
+            ErrorHandler.ShowWarningMessage("No '.', ':', '!', '?' or '\"' at the end of line '" + str + "'. Add it.");
           htmlBuilder.Append(Gw2Helper.AddTab(1));
           htmlBuilder.Append(Gw2Helper.AddTab(2)).Append("<p>");
           htmlBuilder.Append(Helper.ConvertSpecial(str));
@@ -170,7 +175,7 @@ namespace DataCreator.Shared
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("</div>").Append(Constants.LineEnding);
       //// End of tactics.
       //// Build tips. / 2015-06-28 / Wethospu
-      var relevantTips = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTips.Contains(tactic.Name) && tactic.Scale == scale));
+      var relevantTips = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTips.Contains(tactic.Name) && tactic.FractalScale == scale));
       if (relevantTips.Count > 0)
       {
         htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("<div class=\"tips\" id=\"t").Append(index).Append("\">").Append(Constants.LineEnding);
@@ -191,11 +196,11 @@ namespace DataCreator.Shared
             var str = line;
             str = LinkGenerator.CreateEnemyLinks(str, path, enemies, scale);
             if (str.EndsWith(".."))
-              Helper.ShowWarningMessage("Extra dot detected at end of '" + str + "'. Remove it.");
+              ErrorHandler.ShowWarningMessage("Extra dot detected at end of '" + str + "'. Remove it.");
             if (char.IsLower(str[0]))
-              Helper.ShowWarningMessage("Line '" + str + "' starts with a lower character. Fix it.");
+              ErrorHandler.ShowWarningMessage("Line '" + str + "' starts with a lower character. Fix it.");
             if (!str.EndsWith(".") && !str.EndsWith(":") && !str.EndsWith("!") && !str.EndsWith("\""))
-              Helper.ShowWarningMessage("No '.', ':', '!' or '\"' at the end of line '" + str + "'. Add it.");      
+              ErrorHandler.ShowWarningMessage("No '.', ':', '!' or '\"' at the end of line '" + str + "'. Add it.");      
             htmlBuilder.Append(Gw2Helper.AddTab(indent));
             htmlBuilder.Append(Gw2Helper.AddTab(indent + 2)).Append("<p>");
             htmlBuilder.Append(Helper.ConvertSpecial(str));

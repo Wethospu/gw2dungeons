@@ -38,21 +38,21 @@ namespace DataCreator.Encounters
         lines = File.ReadAllLines(rawDataLocation, Constants.Encoding);
       else
       {
-        Helper.ShowWarningMessage("File " + rawDataLocation + " doesn't exist!");
+        ErrorHandler.ShowWarningMessage("File " + rawDataLocation + " doesn't exist!");
         return null;
       }
       var encounterData = new EncounterData();
       var currentEncounter = new Encounter();
-      Helper.CurrentFile = rawDataLocation;
+      ErrorHandler.CurrentFile = rawDataLocation;
       for (var row = 0; row < lines.Length; row++)
       {
-        Helper.InitializeWarningSystem(row + 1, lines[row]);
+        ErrorHandler.InitializeWarningSystem(row + 1, lines[row]);
         HandleLine(lines[row], ref currentEncounter, encounterData.Encounters, encounterData.Paths);
       }
       if (!currentEncounter.Name.Equals(""))
         encounterData.Encounters.Add(currentEncounter);
 
-      Helper.InitializeWarningSystem(-1, "");
+      ErrorHandler.InitializeWarningSystem(-1, "");
 
       
       if (encounterData.Paths.Count == 0)
@@ -84,17 +84,17 @@ namespace DataCreator.Encounters
         return;
       if (string.IsNullOrWhiteSpace(line))
       {
-        Helper.ShowWarning("Line contains only whitespace (ignored). Please remove!");
+        ErrorHandler.ShowWarning("Line contains only whitespace (ignored). Please remove!");
         return;
       }
       // Check for weird characters but allow "|" to skip next line.
       if (!char.IsLetterOrDigit(line[0]) && line[0] != '|' && line[0] != '~')
       {
-        Helper.ShowWarning("Line starts with a weird character. Please remove!");
+        ErrorHandler.ShowWarning("Line starts with a weird character. Please remove!");
         return;
       }
       if (line[0] == ' ')
-        Helper.ShowWarning("Extra space detected. Please remove!");
+        ErrorHandler.ShowWarning("Extra space detected. Please remove!");
 
       //// Split row to tag and data.
       var tagIndex = line.IndexOf(Constants.TagSeparator);
@@ -118,13 +118,13 @@ namespace DataCreator.Encounters
         {
           if (data.Contains(" "))
           {
-            Helper.ShowWarning("' ' found. Use syntax \"path='path1'|'path2'|'pathN'\"");
+            ErrorHandler.ShowWarning("' ' found. Use syntax \"path='path1'|'path2'|'pathN'\"");
             data = data.Replace(' ', '|');
           }
           _currentPath = data.ToLower();
         }
         else
-          Helper.ShowWarning("Missing info. Use \"path='path1'|'path2'|'pathN'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"path='path1'|'path2'|'pathN'\"!");
       }
       else if (tag.Equals("name"))
       {
@@ -140,7 +140,7 @@ namespace DataCreator.Encounters
           currentEncounter.Path = _currentPath;
         }
         else
-          Helper.ShowWarning("Missing info. Use \"name='name'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"name='name'\"!");
       }
       else if (tag.Equals("image"))
       {
@@ -149,7 +149,7 @@ namespace DataCreator.Encounters
           currentEncounter.Medias.Add(new Media(data));
         }
         else
-          Helper.ShowWarning("Missing info. Use \"image='image'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"image='image'\"!");
       }
       else if (tag.Equals("tactic"))
       {
@@ -170,7 +170,7 @@ namespace DataCreator.Encounters
         }
           
         else
-          Helper.ShowWarning("Missing info. Use \"tactic='tactic1'|'tactic2'|'tacticN'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"tactic='tactic1'|'tactic2'|'tacticN'\"!");
       }
       // Normal content.
       else
@@ -223,7 +223,7 @@ namespace DataCreator.Encounters
         }
         catch (UnauthorizedAccessException)
         {
-          Helper.ShowWarningMessage("File " + fileName + " in use.");
+          ErrorHandler.ShowWarningMessage("File " + fileName + " in use.");
         }
       }
     }

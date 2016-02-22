@@ -1,25 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Text;
 
 namespace DataCreator.Utility
 {
-
-  /***********************************************************************************************
-   * Constants / 2014-08-01 / Wethospu                                                           *
-   *                                                                                             *
-   * List of constants used in program. Also contains some rarely set values like settings.      *
-   *                                                                                             *
-   ***********************************************************************************************/
-
+  /// <summary>
+  /// Contains constants, global values and rarely changed values like settings.
+  /// </summary>
+  // Constants could be stored in a text file but currently there is no real need for that.
+  // Globals should be refactored but too lazy for that.
   public static class Constants
   {
+    /// <summary>
+    /// Encoding needs to be fixed to ensure numbers get right formatting and so on.
+    /// </summary>
+    // This doesn't really do anything at the moment because the encoding is set globally during the startup.
+    // TODO: Remove this.
     public static Encoding Encoding { get { return Encoding.Default; } }
 
+    /// <summary>
+    /// Needed to give every encounter an unique index so their tactics don't get mixed up.
+    /// </summary>
+    // TODO: Refactor this.
     public static int UniqueIndexCounter { get; set;  }
 
     // Uses more complicated notation to keep flexibility for future.
+    // TODO: Clean this up. Let's stick to the fact that all input is in Raw folder.
     public static string DataEnemyRaw { get { return "Raw\\Enemies\\"; } }
     public static string DataGuidesRaw { get { return "Raw\\Guides\\"; } }
     public static string DataDungeonsRaw { get { return "Raw\\Dungeons\\"; } }
@@ -36,22 +42,36 @@ namespace DataCreator.Utility
 
     public static string BackupLocation { get { return "Planning\\Backup\\"; } }
 
+    public static string LocalMediaLocation { get { return "http://gw2dungeons.net/media/dungeonimages/"; } }
 
+    // This site is used to verify internet connection.
+    // Google was chosen because of reliability.
+    public static string URLToVerifyInternet { get { return "http://google.com"; } }
+
+    // Initial data for all generated files.
+    // Mainly used to warn people that the file is generated so they don't make changes to it.
+    // Not used in release mode for slightly smaller file sizes.
     public static string InitialdataHtml { get; set; }
     public static string InitialdataPhp { get; set; }
     public static string InitialdataText { get; set; }
     public static string InitialDataIndex { get; set; }
+    // Variable characters. Used to reduce file sizes during release mode.
     public static string LineEnding { get; private set; }
+    public static string Tab { get; private set; }
+    // Special characters to ensure everyone uses the same ones.
     public static string ForcedLineEnding { get { return "\n"; } }
     public static string Space { get { return "&nbsp;"; } }
     public static char Delimiter { get { return '|'; } }
     public static char LinkChar { get {return '='; } }
+    public static char TagSeparator { get { return '='; } }
 
     public static int ThumbWidth { get { return 350; } }
     public static int ThumbHeight { get { return 350; } }
     public static int ThumbWidthSmall { get { return 250; } }
     public static int ThumbHeightSmall { get { return 250; } }
 
+    // Language specific constants. These were needed when there were multiple translations.
+    // Currently used to normalize the language and to keep some support for translations.
     public static string Gw2Wiki { get { return "wiki.guildwars2.com/wiki/"; } }
     public static string And { get { return "and"; } }
     public static string Stack { get { return "stack"; } }
@@ -59,16 +79,27 @@ namespace DataCreator.Utility
     public static string Stacks { get { return "stacks"; } }
     public static string Second { get { return "s"; } }
 
-    // Special characters must be converted to html format so that they show properly.
+    /// <summary>
+    /// Special characters must be converted to html format so that they show properly.
+    /// </summary>
     public static readonly Dictionary<string, string> CharacterConversions = new Dictionary<string, string>();
+    /// <summary>
+    /// Special characters must be converted to simpler versions so they can be used in stuff like html ids.
+    /// </summary>
     public static readonly Dictionary<string, string> CharacterSimplifications = new Dictionary<string, string>();
 
-    public static char TagSeparator { get { return '='; } }
-    public static string Tab { get; private set; }
+    // Run-time settings.
     public static bool ValidateUrls { get; set; }
-
     public static bool DownloadData { get; set; }
 
+    /* Tags for different link types.
+         Media: used for internal media. Assumes that they are in "media/dungeonimages/".
+         Local: general link for stuff inside of the page.
+         Link: general link for stuff outside of the page.
+         Youtube: used for youtube. Assumes url of "youtu.be/".
+         Wiki: used for gw2wiki. Assumes url of "wiki.guildwars2.com/wiki/".
+         Record: used to read records from the record database.
+    */
     public static string LinkMedia { get { return "media"; } }
     public static string LinkLocal { get { return "local"; } }
     public static string LinkYoutube { get { return "youtube"; } }
@@ -77,23 +108,32 @@ namespace DataCreator.Utility
     public static string LinkEnemy { get { return "enemy"; } }
     public static string LinkRecord { get { return "record"; } }
     public static readonly string[] LinkTypes = { LinkMedia, LinkLocal, LinkYoutube, LinkLink, LinkWiki, LinkEnemy, LinkRecord };
-    // Image: used for internal images. Assumes that they are in "media/dungeonimages/".
-    // Local: general link for stuff inside of the page.
-    // Link: general link for stuff outside of the page.
-    // Youtube: used for youtube. Assumes url of "youtu.be/".
-    // Wiki: used for gw2wiki. Assumes url of "wiki.guildwars2.com/wiki/".
-    // Record: used to read records from the record database.
 
+    /// <summary>
+    /// Use a pre-defined tactics to catch typing mistakes.
+    /// </summary>
+    // Technically any name is possible so just add more if needed.
     public static readonly HashSet<string> AvailableTactics = new HashSet<string>();
+    /// <summary>
+    /// Use a pre-defined tips to catch typing mistakes.
+    /// </summary>
     public static readonly HashSet<string> AvailableTips = new HashSet<string>();
-    // List of media sizes. Allows resizing the layout properly without having to download and/or check file size each time.
+    // The website uses iframes which prevent getting size information directly from the file.
+    // This means the overlay can't be scaled according to the shown content.
+    // Insert media sizes to the media links during the generation as a workaround.
+    // This takes very long because over 1GB of data has to be downloaded to check the sizes.
+    // So store the results to prevent doing this again and again.
     public static readonly Dictionary<string, int[]> MediaSizes = new Dictionary<string, int[]>();
-    // List of urls which have already been validated. Makes the validating faster when you don't have to check already validated links.
+    // Typing mistakes on links are very common. Also links may disappear at any moment.
+    // Checking all these manually would be cumbersome so it's better to do it automatically.
+    // However this takes a while so store the results.
     public static readonly HashSet<string> ValidatedUrls = new HashSet<string>();
     
     // Html classes.
     public static string IconClass { get { return "\"icon\""; } }
 
+    // Tags which are recognized by this program.
+    // These can be used to filter enemies in the website's search.
     public static readonly SortedSet<string> AttackTypeTags = new SortedSet<string>(){ "pbaoe", "melee", "ranged", "projectile", "homing", "bouncing", "aoe", "dash", "leap",  "delayed", "field",
       "summon", "aura", "ticking", "cone", "piercing", "evade", "buff", "trap" };
 
@@ -102,11 +142,17 @@ namespace DataCreator.Utility
       "vigor", "control", "daze", "float", "knockback", "knockdown", "launch", "pull", "displacement", "sink", "stun", "taunt", "agony", "invulnerability", "revealed", "stealth", "buff",
       "damage", "fixed damage", "healing", "percent damage"  };
 
+    // Dynamic include for js and css based on the release mode.
     public static string JSFiles { get; set; }
     public static string CSSFiles { get; set; }
 
+    // Program can generate the pages as optimized release or more informative developer version.
+    // Release removes some useless characters and also merges js/css files.
     public static bool IsRelease { get; private set; }
 
+    /// <summary>
+    /// Set up values based on relese mode.
+    /// </summary>
     public static void Initialize(bool release)
     {
       IsRelease = release;
@@ -125,7 +171,7 @@ namespace DataCreator.Utility
       {
         Tab = "    ";
         LineEnding = "\n";
-        // Add date to prevent caching on dev environment. / 2015-10-19 / Wethospu
+        // Add a date to prevent caching on the developer environment.
         var date = DateTime.UtcNow.Ticks;
         JSFiles = Tab + "<script src=\"./media/js/bootstrap-tagsinput.min.js?" + date + "\"></script>" + LineEnding;
         JSFiles += Tab + "<script src=\"./media/js/jquery-sortable-min.js?" + date + "\"></script>" + LineEnding;

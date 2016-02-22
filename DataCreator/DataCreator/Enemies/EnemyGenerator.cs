@@ -38,7 +38,7 @@ namespace DataCreator.Enemies
       var enemyData = new List<Enemy>();
       if (!Directory.Exists(Constants.DataEnemyRaw))
       {
-        Helper.ShowWarning("Directory " + Constants.DataEnemyRaw + " doesn't exist.");
+        ErrorHandler.ShowWarning("Directory " + Constants.DataEnemyRaw + " doesn't exist.");
         return enemyData;
       }
       var enemyFiles = Directory.GetFiles(Constants.DataEnemyRaw);
@@ -51,13 +51,13 @@ namespace DataCreator.Enemies
           lines = File.ReadAllLines(file, Constants.Encoding);
         else
         {
-          Helper.ShowWarningMessage("File " + file + " doesn't exist!");
+          ErrorHandler.ShowWarningMessage("File " + file + " doesn't exist!");
           return null;
         }
-        Helper.CurrentFile = file;
+        ErrorHandler.CurrentFile = file;
         for (var row = 0; row < lines.Length; row++)
         {
-          Helper.InitializeWarningSystem(row + 1, lines[row]);
+          ErrorHandler.InitializeWarningSystem(row + 1, lines[row]);
           HandleLine(lines[row], enemyData, enemyAttributes);
         }
       }
@@ -69,7 +69,7 @@ namespace DataCreator.Enemies
       if (_currentEnemy != null)
         enemyData.Add(_currentEnemy);
       // Reset internal state.
-      Helper.InitializeWarningSystem(-1, "");
+      ErrorHandler.InitializeWarningSystem(-1, "");
       _currentEnemy = null;
       _currentAttack = null;
       _currentEffect = null;
@@ -100,11 +100,11 @@ namespace DataCreator.Enemies
         return;
       if (string.IsNullOrWhiteSpace(line))
       {
-        Helper.ShowWarning("Line contains only whitespace (ignored). Please remove!");
+        ErrorHandler.ShowWarning("Line contains only whitespace (ignored). Please remove!");
         return;
       }
       if (line[0] == ' ')
-        Helper.ShowWarning("Extra space detected. Please remove!");
+        ErrorHandler.ShowWarning("Extra space detected. Please remove!");
 
       //// Split row to tag and data.
       var tagIndex = line.IndexOf(Constants.TagSeparator);
@@ -154,7 +154,7 @@ namespace DataCreator.Enemies
     private static int EnemyLoop(string tag, string data, List<Enemy> enemies, Dictionary<string, EnemyAttributes> enemyAttributes)
     {
       if (!tag.Equals("name") && !tag.Equals("id") && _currentEnemy != null & _currentEnemy.IsNameCopied)
-        Helper.ShowWarning("ID or name not explicitly set for a copied enemy.");
+        ErrorHandler.ShowWarning("ID or name not explicitly set for a copied enemy.");
       if (tag.Equals("copy"))
       {
         if (_currentEnemy != null)
@@ -167,7 +167,7 @@ namespace DataCreator.Enemies
           _currentEnemy.AreAnimationsCopied = true;
         }
         else
-          Helper.ShowWarning("Copying failed. Enemy not found!");
+          ErrorHandler.ShowWarning("Copying failed. Enemy not found!");
       }
       else if (tag.Equals("name"))
       {
@@ -177,10 +177,10 @@ namespace DataCreator.Enemies
           {
             enemies.Add(_currentEnemy);
             if (_currentEnemy.Paths.Count == 0)
-              Helper.ShowWarning("Path not set for enemy " + _currentEnemy.Name);
+              ErrorHandler.ShowWarning("Path not set for enemy " + _currentEnemy.Name);
           }
           if (data.Contains('_'))
-            Helper.ShowWarning("Enemy name " + data + "  containts '_'. Replace them with ' '!");
+            ErrorHandler.ShowWarning("Enemy name " + data + "  containts '_'. Replace them with ' '!");
           // For copies only set the name. / 2015-10-05 / Wethospu
           if (_currentEnemy != null && _currentEnemy.IsNameCopied)
             _currentEnemy.Name = data;
@@ -191,12 +191,12 @@ namespace DataCreator.Enemies
           _currentEffect = null;
         }
         else
-          Helper.ShowWarning("Missing info. Use \"name='name'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"name='name'\"!");
       }
       else if (tag.Equals("id"))
       {
         if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
+          ErrorHandler.ShowWarning("Enemy not initialized with name.");
         else if (data.Length > 0)
         {
           _currentEnemy.IsNameCopied = false;
@@ -223,59 +223,59 @@ namespace DataCreator.Enemies
               oldGenders = _currentEnemy.Attributes.Gender;
             }
             else
-              Helper.ShowWarning("Id " + data + " not found in enemy attributes.");
+              ErrorHandler.ShowWarning("Id " + data + " not found in enemy attributes.");
           }
         }
         else
-          Helper.ShowWarning("Missing info. Use \"id='id'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"id='id'\"!");
       }
       else if (tag.Equals("path"))
       {
         if (data.Length == 0)
-          Helper.ShowWarning("Missing info. Use \"path='path1'|'path2'|'pathN'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"path='path1'|'path2'|'pathN'\"!");
         if (data.Contains(" "))
         {
-          Helper.ShowWarning("' ' found. Use syntax \"path='path1'|'path2'|'pathN'\"");
+          ErrorHandler.ShowWarning("' ' found. Use syntax \"path='path1'|'path2'|'pathN'\"");
           data = data.Replace(' ', '|');
         }
         if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
+          ErrorHandler.ShowWarning("Enemy not initialized with name.");
         else
           _currentEnemy.Paths = new List<string>(data.ToLower().Split('|'));
       }
       else if (tag.Equals("rank"))
       {
         if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
+          ErrorHandler.ShowWarning("Enemy not initialized with name.");
         else if (data.Length > 0)
         {
           _currentEnemy.Rank = data.ToLower();
           if (!LinkGenerator.EnemyCategories.Contains(_currentEnemy.Rank))
-            Helper.ShowWarning("Rank " + _currentEnemy.Rank + " not recognized. Check syntax for correct categories.");
+            ErrorHandler.ShowWarning("Rank " + _currentEnemy.Rank + " not recognized. Check syntax for correct categories.");
         }
         else
-          Helper.ShowWarning("Missing info. Use \"rank='rank'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"rank='rank'\"!");
       }
       else if (tag.Equals("alt"))
       {
         if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
+          ErrorHandler.ShowWarning("Enemy not initialized with name.");
         else if (data.Length > 0)
         {
           if (data.Contains('_'))
-            Helper.ShowWarning("Alt names " + data + "  containts '_'. Replace them with ' '!");
+            ErrorHandler.ShowWarning("Alt names " + data + "  containts '_'. Replace them with ' '!");
           var altNames = data.Split('|');
           _currentEnemy.AltNames.Clear();
           foreach (var altName in altNames)
             _currentEnemy.AddAlt(altName);
         }
         else
-          Helper.ShowWarning("Missing info. Use \"alt='alt1'|'alt2'|'altN'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"alt='alt1'|'alt2'|'altN'\"!");
       }
       else if (tag.Equals("image"))
       {
         if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
+          ErrorHandler.ShowWarning("Enemy not initialized with name.");
         else if (data.Length > 0)
         {
           if (_currentEnemy.AreAnimationsCopied)
@@ -286,23 +286,23 @@ namespace DataCreator.Enemies
           _currentEnemy.Medias.Add(new Media(data));
         }
         else
-          Helper.ShowWarning("Missing info. Use \"image='imagelink'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"image='imagelink'\"!");
       }
       else if (tag.Equals("level"))
       {
         if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
+          ErrorHandler.ShowWarning("Enemy not initialized with name.");
         else if (data.Length > 0)
         {
           _currentEnemy.Level = Helper.ParseI(data);
         }
         else
-          Helper.ShowWarning("Missing info. Use \"level='amount'\"");
+          ErrorHandler.ShowWarning("Missing info. Use \"level='amount'\"");
       }
       else if (tag.Equals("scaling"))
       {
         if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
+          ErrorHandler.ShowWarning("Enemy not initialized with name.");
         else if (data.Length > 0)
         {
           var scalingSplit = data.Split('|');
@@ -313,27 +313,27 @@ namespace DataCreator.Enemies
             if (int.TryParse(scalingSplit[1], out result))
               _currentEnemy.ScalingFractal = result;
             else
-              Helper.ShowWarning("Fractal scale " + scalingSplit[1] + " is not an integer!");
+              ErrorHandler.ShowWarning("Fractal scale " + scalingSplit[1] + " is not an integer!");
             if (scalingSplit.Length > 2)
             {
               if (int.TryParse(scalingSplit[2], out result))
                 _currentEnemy.ScalingLevel = result;
               else
-                Helper.ShowWarning("Enemy level " + scalingSplit[2] + " is not an integer!");
+                ErrorHandler.ShowWarning("Enemy level " + scalingSplit[2] + " is not an integer!");
 
             }
           }
         }
 
         else
-          Helper.ShowWarning("Missing info. Use \"scaling='type'|'fractal scale'|'enemy level'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"scaling='type'|'fractal scale'|'enemy level'\"!");
       }
       else if (tag.Equals("attack"))
       {
         if (_currentEnemy == null)
-          Helper.ShowWarning("Enemy not initialized with name.");
+          ErrorHandler.ShowWarning("Enemy not initialized with name.");
         else if (_currentEnemy.Rank.Length == 0)
-          Helper.ShowWarningMessage("Rank not set for enemy " + _currentEnemy.Name + ". Please fix!");
+          ErrorHandler.ShowWarningMessage("Rank not set for enemy " + _currentEnemy.Name + ". Please fix!");
         return 1;
       }
       else if (tag.Equals("tactic"))
@@ -343,7 +343,7 @@ namespace DataCreator.Enemies
         if (data.Length > 0)
           _currentEnemy.Tactics.AddTactics(data, "", null);
         else
-          Helper.ShowWarning("Missing info. Use \"tactic='tactic1'|'tactic2'|'tacticN'\".");
+          ErrorHandler.ShowWarning("Missing info. Use \"tactic='tactic1'|'tactic2'|'tacticN'\".");
       }
       else if (tag.Equals("health"))
       {
@@ -354,10 +354,10 @@ namespace DataCreator.Enemies
           if (_currentEnemy.Attributes.Multipliers.Vitality < 0.1)
             _currentEnemy.Attributes.Multipliers.Vitality = 1;
           if (Helper.ParseD(data) > 1000)
-            Helper.ShowWarning("Health values should be multipliers. Calculate the multiplier.");
+            ErrorHandler.ShowWarning("Health values should be multipliers. Calculate the multiplier.");
         }
         else
-          Helper.ShowWarning("Missing info. Use \"health='amount'.");
+          ErrorHandler.ShowWarning("Missing info. Use \"health='amount'.");
       }
       else if (tag.Equals("toughness"))
       {
@@ -365,14 +365,14 @@ namespace DataCreator.Enemies
         {
           _currentEnemy.Attributes.Multipliers.Toughness = Helper.ParseD(data);
           if (Helper.ParseD(data) > 100)
-            Helper.ShowWarning("Toughness values should be multipliers. Calculate the multiplier.");
+            ErrorHandler.ShowWarning("Toughness values should be multipliers. Calculate the multiplier.");
         }
         else
-          Helper.ShowWarning("Missing info. Use \"toughness='amount'.");
+          ErrorHandler.ShowWarning("Missing info. Use \"toughness='amount'.");
       }
       else if (tag.Equals("armor"))
       {
-        Helper.ShowWarning("Armor values shouldn't be used. Calculate the toughness multiplier.");
+        ErrorHandler.ShowWarning("Armor values shouldn't be used. Calculate the toughness multiplier.");
       }
       else if (tag.Equals("condition"))
       {
@@ -380,10 +380,10 @@ namespace DataCreator.Enemies
         {
           _currentEnemy.Attributes.Multipliers.ConditionDamage = Helper.ParseD(data);
           if (Helper.ParseD(data) > 100)
-            Helper.ShowWarning("Condition damage values should be multipliers. Calculate the multiplier.");
+            ErrorHandler.ShowWarning("Condition damage values should be multipliers. Calculate the multiplier.");
         }
         else
-          Helper.ShowWarning("Missing info. Use \"condition='amount'.");
+          ErrorHandler.ShowWarning("Missing info. Use \"condition='amount'.");
       }
       else if (tag.Equals("race"))
       {
@@ -392,7 +392,7 @@ namespace DataCreator.Enemies
           _currentEnemy.Attributes.Family.Name = data;
         }
         else
-          Helper.ShowWarning("Missing info. Use \"race='value'.");
+          ErrorHandler.ShowWarning("Missing info. Use \"race='value'.");
       }
       else if (tag.Equals("tag"))
       {
@@ -403,7 +403,7 @@ namespace DataCreator.Enemies
             _currentEnemy.Tags.Add(str.ToLower());
         }
         else
-          Helper.ShowWarning("Missing info. Use \"tag='tactic1'|'tactic2'|'tacticN'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"tag='tactic1'|'tactic2'|'tacticN'\"!");
       }
       // Normal content.
       else if (tag.Equals(""))
@@ -412,9 +412,9 @@ namespace DataCreator.Enemies
         _currentEnemy.Tactics.AddLine(LinkGenerator.CreatePageLinks(LinkGenerator.CheckLinkSyntax(data)));
       }
       else if (tag.Equals("type") || tag.Equals("effect") || tag.Equals("cooldown") || tag.Equals("additional") || tag.Equals("animation"))
-        Helper.ShowWarning("Missing attack name (\"attack='name'\")!");
+        ErrorHandler.ShowWarning("Missing attack name (\"attack='name'\")!");
       else
-        Helper.ShowWarning("Unrecognized tag: " + tag);
+        ErrorHandler.ShowWarning("Unrecognized tag: " + tag);
       return 0;
     }
 
@@ -435,7 +435,7 @@ namespace DataCreator.Enemies
       if (tag.Equals("attack"))
       {
         if (data.Length == 0)
-          Helper.ShowWarning("Missing info. Use \"attack='name'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"attack='name'\"!");
 
         if (_currentAttack != null)
           _currentEnemy.Attacks.Add(_currentAttack);
@@ -458,7 +458,7 @@ namespace DataCreator.Enemies
           _currentAttack.LoadAttributes(Helper.ParseI(data), _currentEnemy.Attributes);
         }
         else
-          Helper.ShowWarning("Missing info. Use \"id=number\".");
+          ErrorHandler.ShowWarning("Missing info. Use \"id=number\".");
       }
       // Tags from effect loop. Exit immediately.
       else if (tag.Equals("effect"))
@@ -470,13 +470,13 @@ namespace DataCreator.Enemies
         if (data.Length > 0)
           _currentAttack.Cooldown = Helper.ParseD(data);
         else
-          Helper.ShowWarning("Missing info. Use \"cooldown='number'\".");
+          ErrorHandler.ShowWarning("Missing info. Use \"cooldown='number'\".");
       }
       else if (tag.Equals("additional"))
       {
         // Treat additional as an effect. / 2015-09-22 / Wethospu
         if (data.Length == 0)
-          Helper.ShowWarning("Missing info. Use \"additional='text'\".");
+          ErrorHandler.ShowWarning("Missing info. Use \"additional='text'\".");
         if (_currentEffect != null)
           _currentAttack.Effects.Add(_currentEffect);
         var lower = data.ToLower();
@@ -492,11 +492,11 @@ namespace DataCreator.Enemies
         if (data.Length > 0)
         {
           if (data.Contains(':') && !data.Contains('='))
-            Helper.ShowWarning("Potentially use of wrong syntax. Use \"animation='pre cast'|'time'|'after cast'\" !");
+            ErrorHandler.ShowWarning("Potentially use of wrong syntax. Use \"animation='pre cast'|'time'|'after cast'\" !");
           _currentAttack.Animation = data;
         }
         else
-          Helper.ShowWarning("Missing info. Use \"animation='pre cast'|'time'|'after cast'\" !");
+          ErrorHandler.ShowWarning("Missing info. Use \"animation='pre cast'|'time'|'after cast'\" !");
       }
       else if (tag.Equals("image"))
       {
@@ -505,14 +505,14 @@ namespace DataCreator.Enemies
           _currentAttack.Medias.Add(new Media(data));
         }
         else
-          Helper.ShowWarning("Missing info. Use \"image='imagelink'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"image='imagelink'\"!");
       }
       else if (tag.Equals("subeffect"))
-        Helper.ShowWarning("Missing attack effect (\"effect='type'\")!");
+        ErrorHandler.ShowWarning("Missing attack effect (\"effect='type'\")!");
       else if (tag.Equals(""))
-        Helper.ShowWarning("Something wrong with line " + data + ".");
+        ErrorHandler.ShowWarning("Something wrong with line " + data + ".");
       else
-        Helper.ShowWarning("Unrecognized tag: " + tag);
+        ErrorHandler.ShowWarning("Unrecognized tag: " + tag);
 
       return 0;
     }
@@ -534,7 +534,7 @@ namespace DataCreator.Enemies
       if (tag.Equals("effect"))
       {
         if (data.Length == 0)
-          Helper.ShowWarning("Missing info. Use \"effect='type'\"!");
+          ErrorHandler.ShowWarning("Missing info. Use \"effect='type'\"!");
         if (_currentEffect != null)
           _currentAttack.Effects.Add(_currentEffect);
         var type = data.ToLower();
@@ -574,25 +574,25 @@ namespace DataCreator.Enemies
           else
             _currentEffect.HitCount = Helper.ParseI(data);
           if (_currentEffect.HitCount == 0)
-            Helper.ShowWarning("Hit count can't be zero.");
+            ErrorHandler.ShowWarning("Hit count can't be zero.");
         }
          
         else
-          Helper.ShowWarning("Missing info. Use \"count='number'\"");
+          ErrorHandler.ShowWarning("Missing info. Use \"count='number'\"");
       }
       else if (tag.Equals("length"))
       {
         if (data.Length > 0)
           _currentEffect.HitLength = Helper.ParseD(data);
         else
-          Helper.ShowWarning("Missing info. Use \"length='number'\"");
+          ErrorHandler.ShowWarning("Missing info. Use \"length='number'\"");
       }
       else if (tag.Equals("frequency"))
       {
         if (data.Length > 0)
           _currentEffect.HitFrequency = Helper.ParseD(data);
         else
-          Helper.ShowWarning("Missing info. Use \"frequency='number'\"");
+          ErrorHandler.ShowWarning("Missing info. Use \"frequency='number'\"");
       }
       // Add subeffects to the effect.
       else if (tag.Equals("subeffect"))
@@ -603,15 +603,15 @@ namespace DataCreator.Enemies
           _currentEffect.SubEffects.Add(data);
         }
         else
-          Helper.ShowWarning("Missing info. Use TODO!");
+          ErrorHandler.ShowWarning("Missing info. Use TODO!");
       }
       // Error handling for wrongly placed tags.
       else if (tag.Equals("additional") || tag.Equals("cooldown") || tag.Equals("animation"))
-        Helper.ShowWarning("Wrong position for tag " + tag + ". Move above any type-tags.");
+        ErrorHandler.ShowWarning("Wrong position for tag " + tag + ". Move above any type-tags.");
       else if (tag.Equals(""))
-        Helper.ShowWarning("Something wrong with line " + data + ".");
+        ErrorHandler.ShowWarning("Something wrong with line " + data + ".");
       else
-        Helper.ShowWarning("Unrecognized tag: " + tag);
+        ErrorHandler.ShowWarning("Unrecognized tag: " + tag);
       return 0;
     }
 
@@ -629,7 +629,7 @@ namespace DataCreator.Enemies
     {
       if (data.Length == 0)
       {
-        Helper.ShowWarning("Missing info. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
+        ErrorHandler.ShowWarning("Missing info. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
         return null;
       }
       // Check whether copy by id is used. / 2015-10-02 / Wethospu
@@ -641,12 +641,12 @@ namespace DataCreator.Enemies
           if (enemy.InternalIds.Contains(id))
             return enemy;
         }
-        Helper.ShowWarning("No enemy found for copy " + data + ". Change parameters, add the missing enemy, change order of enemies or check the readme.");
+        ErrorHandler.ShowWarning("No enemy found for copy " + data + ". Change parameters, add the missing enemy, change order of enemies or check the readme.");
       }
       catch { }
 
       if (data.Contains(Constants.TagSeparator))
-        Helper.ShowWarning("'" + Constants.TagSeparator + "' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
+        ErrorHandler.ShowWarning("'" + Constants.TagSeparator + "' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
       var dataSplit = data.Split('|');
       var name = dataSplit[0];
       var rank = "";
@@ -656,50 +656,21 @@ namespace DataCreator.Enemies
       if (dataSplit.Length > 2)
       {
         if (dataSplit[2].Contains(' '))
-          Helper.ShowWarning("' ' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
+          ErrorHandler.ShowWarning("' ' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
         path = dataSplit[2].Replace(':', '|');
       }
       var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, path);
       if (foundEnemies.Count == 0)
       {
-        Helper.ShowWarning("No enemy found for copy. Change parameters, add missing enemy, change order of enemies or check syntax file.");
+        ErrorHandler.ShowWarning("No enemy found for copy. Change parameters, add missing enemy, change order of enemies or check syntax file.");
         return null;
       }
       if (foundEnemies.Count > 1)
-        Helper.ShowWarning("Multiple enemies found for copy. Add more parameters or check syntax file.");
+        ErrorHandler.ShowWarning("Multiple enemies found for copy. Add more parameters or check syntax file.");
       return foundEnemies[0];
     }
 
-    /***********************************************************************************************
-     * HandleIndexFile / 2014-08-01 / Wethospu                                                     *
-     *                                                                                             *
-     * Adds generated enemies to the index file.                                                   *
-     *                                                                                             *
-     * enemies: Generated enemies.                                                                 *
-     * dungeon: Current dungeon.                                                                   *
-     * indexFile: Output.                                                                          *
-     *                                                                                             *
-     ***********************************************************************************************/
-
-    private static void HandleIndexFile(IReadOnlyList<Enemy> enemies, StringBuilder indexFile, DataCollector dungeonData)
-    {
-      if (indexFile == null)
-        return;
-      foreach (var enemy in enemies)
-      {
-        indexFile.Append(enemy.Name).Append("|").Append(Helper.Simplify(enemy.Name)).Append("|").Append(enemy.Rank);
-        indexFile.Append("|").Append(enemy.Attributes.Family.GetInternal()).Append("|").Append(string.Join(":", enemy.Paths));
-        // Store index so that the enemy can be found faster when searching.
-        indexFile.Append("|").Append(enemy.Index);
-        // Generate tag string. / 2015-07-18 / Wethospu
-        var builder = new StringBuilder();
-        foreach (var tag in enemy.Tags)
-          builder.Append(dungeonData.ConvertTag(tag));
-        indexFile.Append("|").Append(builder.ToString());
-        
-        indexFile.Append(Constants.ForcedLineEnding);
-      }
-    }
+   
 
     /***********************************************************************************************
      * GenerateFile / 2015-10-05 / Wethospu                                                        *
@@ -712,7 +683,7 @@ namespace DataCreator.Enemies
      *                                                                                             *
      ***********************************************************************************************/
 
-    public static void GenerateFile(List<Enemy> enemies, StringBuilder indexFile, DataCollector dungeonData)
+    public static void GenerateFile(List<Enemy> enemies, DataCollector dungeonData)
     {
       // Separate enemies (100 enemies per file) to reduce the initial loading time. / 2015-10-08 / Wethospu
       var enemyFile = new StringBuilder();
@@ -732,7 +703,7 @@ namespace DataCreator.Enemies
           }
           catch (UnauthorizedAccessException)
           {
-            Helper.ShowWarningMessage("File " + fileName + " in use.");
+            ErrorHandler.ShowWarningMessage("File " + fileName + " in use.");
           }
           enemyFile = new StringBuilder();
           enemyFile.Append(Constants.InitialdataHtml).Append(Constants.LineEnding);
@@ -749,7 +720,6 @@ namespace DataCreator.Enemies
             dungeonData.AddTag(tag);
         }
       }
-      HandleIndexFile(enemies, indexFile, dungeonData);
     }
   }
 }

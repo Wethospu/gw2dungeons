@@ -41,7 +41,7 @@ namespace DataCreator.Encounters
       {
         elements = elements[1].Split(Constants.Delimiter);
         if (elements.Length != 4 && elements.Length != 5)
-          Helper.ShowWarning("Missing info. Use \"init='pathTag'|'dungeon name'|'long path name'|'short path name'|'scale'\".");
+          ErrorHandler.ShowWarning("Missing info. Use \"init='pathTag'|'dungeon name'|'long path name'|'short path name'|'scale'\".");
         Tag = elements[0];
         if (elements.Length > 1)
           InstanceName = elements[1];
@@ -63,7 +63,7 @@ namespace DataCreator.Encounters
         Filename = Tag;
       }
       else
-        Helper.ShowWarning("Missing info. Use \"init='pathTag'|'dungeon name'|'long path name'|'short path name'|'scale'\".");
+        ErrorHandler.ShowWarning("Missing info. Use \"init='pathTag'|'dungeon name'|'long path name'|'short path name'|'scale'\".");
       CheckPathMap();
     }
 
