@@ -225,7 +225,7 @@ namespace DataCreator
         location = Constants.DataDungeonsRaw;
       if (type == InstanceType.raid)
         location = Constants.DataRaidsRaw;
-      var encounterData = EncounterGenerator.GeneratePaths(location, file, enemyData);
+      var encounterData = EncounterGenerator.ReadInstance(location, file, enemyData);
       if (encounterData == null)
         return null; 
       if (encounterData.Paths == null)
@@ -248,7 +248,7 @@ namespace DataCreator
     {
       Console.WriteLine("Guide " + dungeon);
       LinkGenerator.CurrentDungeon = dungeon;
-      var encounterData = EncounterGenerator.GeneratePaths(Constants.DataGuidesRaw, dungeon, null);
+      var encounterData = EncounterGenerator.ReadInstance(Constants.DataGuidesRaw, dungeon, null);
       if (encounterData == null)
         return;
       EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, null, encounterData.Paths);

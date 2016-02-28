@@ -70,6 +70,8 @@ namespace DataCreator.Utility
     public static int ThumbWidthSmall { get { return 250; } }
     public static int ThumbHeightSmall { get { return 250; } }
 
+    public static int FractalNavPathCount { get { return 7; } }
+
     // Language specific constants. These were needed when there were multiple translations.
     // Currently used to normalize the language and to keep some support for translations.
     public static string Gw2Wiki { get { return "wiki.guildwars2.com/wiki/"; } }

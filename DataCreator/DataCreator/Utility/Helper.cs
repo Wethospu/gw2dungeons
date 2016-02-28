@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -330,6 +331,18 @@ namespace DataCreator.Utility
         return default(T);
 
       return JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(source));
+    }
+
+    /// <summary>
+    /// Reads a file. Shows an error if it doesn't exist.
+    /// </summary>
+    public static string[] ReadFile(string fileName)
+    {
+      ErrorHandler.CurrentFile = fileName;
+      if (File.Exists(fileName))
+        return File.ReadAllLines(fileName, Constants.Encoding);
+      ErrorHandler.ShowWarningMessage("File " + fileName + " doesn't exist!");
+      return null;
     }
   }
 }
