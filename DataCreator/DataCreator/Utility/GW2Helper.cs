@@ -119,7 +119,7 @@ namespace DataCreator.Utility
     /// Returns scaling id for a given scaling type.
     /// </summary>
     // Common scalings have pre-calculated multipliers.
-    static public string ScalingTypeToMode(string scalingType)
+    public static string ScalingTypeToMode(string scalingType)
     {
       if (scalingType.Equals("") || scalingType.Equals("constant"))
         return "1";
@@ -141,7 +141,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Returns output string for a given scaling type.
     /// </summary>
-    static public string ScalingTypeToString(string scalingType)
+    public static string ScalingTypeToString(string scalingType)
     {
       if (scalingType.Equals("") || scalingType.Equals("constant"))
         return "None";

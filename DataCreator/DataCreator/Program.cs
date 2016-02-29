@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading;
 
@@ -18,9 +19,9 @@ namespace DataCreator
   /// <summary>
   /// Contains top level functions. Functionality should be split when the size grows too big.
   /// </summary>
-  static class Program
+  public static class Program
   {
-    static void Main()
+    public static void Main()
     {
       Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
       Console.OutputEncoding = Constants.Encoding;
@@ -117,7 +118,7 @@ namespace DataCreator
     /// <summary>
     /// Verify internet by attempting to reach a common internet site (google.com).
     /// </summary>
-    static void CheckInternetSettings()
+    public static void CheckInternetSettings()
     {
       if (Constants.ValidateUrls && Constants.DownloadData)
         Console.WriteLine("Checking internet connection for url validating and data download.");
@@ -163,7 +164,7 @@ namespace DataCreator
       var enemies = EnemyGenerator.GenerateEnemies(enemyData);
       
       var instanceData = new DataCollector();
-      foreach (var dungeon in Directory.GetFileSystemEntries(Constants.DataDungeonsRaw))
+      foreach (var dungeon in Directory.EnumerateFiles(Constants.DataDungeonsRaw).Select(Path.GetFileNameWithoutExtension))
       {
         var encounterData = GenerateInstance(InstanceType.dungeon, dungeon, instanceData, enemies);
         if (encounterData != null)
@@ -171,7 +172,7 @@ namespace DataCreator
       }
       // Gather fractals to merge their path information.
       var fractals = new List<EncounterData>();
-      foreach (var fractal in Directory.GetFileSystemEntries(Constants.DataFractalsRaw))
+      foreach (var fractal in Directory.EnumerateFiles(Constants.DataFractalsRaw).Select(Path.GetFileNameWithoutExtension))
       {
         var encounterData = GenerateInstance(InstanceType.fractal, fractal, instanceData, enemies);
         if (encounterData != null)
@@ -179,7 +180,7 @@ namespace DataCreator
       }
       foreach (var fractal in fractals)
         EncounterGenerator.GenerateFiles(fractal.Paths, fractal.Encounters, enemies, instanceData.FractalPaths);
-      foreach (var raid in Directory.GetFileSystemEntries(Constants.DataRaidsRaw))
+      foreach (var raid in Directory.EnumerateFiles(Constants.DataRaidsRaw).Select(Path.GetFileNameWithoutExtension))
       {
         var encounterData = GenerateInstance(InstanceType.raid, raid, instanceData, enemies);
         if (encounterData != null)
@@ -274,7 +275,7 @@ namespace DataCreator
         // Compact tags take less space (especially important for search URLs).
         var builder = new StringBuilder();
         foreach (var tag in enemy.Tags)
-          builder.Append(dungeonData.GetCompactTag(tag));
+          builder.Append(dungeonData.GetShortTag(tag));
         indexFile.Append("|").Append(builder.ToString());
         indexFile.Append(Constants.ForcedLineEnding);
       }

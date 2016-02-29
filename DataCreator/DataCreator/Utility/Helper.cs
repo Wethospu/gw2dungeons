@@ -18,7 +18,7 @@ namespace DataCreator.Utility
     /// Returns whether the program manages to connect to a given URL.
     /// </summary>
     // Warning: Slow operation!
-    static public bool IsValidUrl(string url)
+    public static bool IsValidUrl(string url)
     {
       var row = Console.CursorTop;
       Console.Write("Validating " + url);
@@ -51,7 +51,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Changes the first character to upper case.
     /// </summary>
-    static public string ToUpper(string str)
+    public static string ToUpper(string str)
     {
       if (str.Length > 0)
         return str[0].ToString().ToUpper() + str.Substring(1);
@@ -74,7 +74,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Changes the first character of every word to upper case. Ignores filler words.
     /// </summary>
-    static public string ToUpperAll(string str)
+    public static string ToUpperAll(string str)
     {
       if (str.Length == 0)
         return str;
@@ -121,7 +121,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Replaces single substring with another, unlike the standard function which replaces every substring.
     /// </summary>
-    static public string ReplaceFirst(string str, string toReplace, string replacement)
+    public static string ReplaceFirst(string str, string toReplace, string replacement)
     {
       var pos = str.IndexOf(toReplace, StringComparison.Ordinal);
       if (pos < 0)
@@ -135,7 +135,7 @@ namespace DataCreator.Utility
     /// </summary>
     /// <param name="startIndex">Right side of the first character to check.</param>
     // Example: "goldfish" with startIndex of 4 puts iterator to "gold|fish".
-    static public int LastIndexOf(string str, char[] charactersToFind, int startIndex)
+    public static int LastIndexOf(string str, char[] charactersToFind, int startIndex)
     {
 	    if (startIndex < 0 || startIndex >= str.Length)
       {
@@ -171,7 +171,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Overload which automatically starts at end of the string.
     /// </summary>
-    static public int LastIndexOf(string str, char[] characters)
+    public static int LastIndexOf(string str, char[] characters)
     {
       return LastIndexOf(str, characters, str.Length);
     }
@@ -180,7 +180,7 @@ namespace DataCreator.Utility
     /// Returns the index of the first given character starting from a given index. Returns string size if nothing is found.
     /// Pairs of brackets are ignored.
     /// </summary>
-    static public int FirstIndexOf(string str, char[] characters, int startIndex)
+    public static int FirstIndexOf(string str, char[] characters, int startIndex)
     {
       // Pairs of brackets are ignored for some reason.
       // TODO: Move it somewhere else.
@@ -211,7 +211,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Overload which automatically starts at start of the string.
     /// </summary>
-    static public int FirstIndexOf(string str, char[] characters)
+    public static int FirstIndexOf(string str, char[] characters)
     {
       return FirstIndexOf(str, characters, 0);
     }
@@ -221,7 +221,7 @@ namespace DataCreator.Utility
     /// </summary>
     // This should be called at the end of conversion to make them program more debuggable.
     // Based on SpecialCharacters.txt
-    static public string ConvertSpecial(string str)
+    public static string ConvertSpecial(string str)
     {
       // Check that no already converted characters exists.
       // Can be caused by either original data using already converted characters (reduces readability) or programming working inccorrectly (this function already called).
@@ -241,7 +241,7 @@ namespace DataCreator.Utility
     /// </summary>
     // This is needed to create valid links and html ids.
     // Based on SpecialCharacters.txt
-    static public string Simplify(string str)
+    public static string Simplify(string str)
     {
       return ReplaceSpecial(str).Replace(' ', '_').Replace("(", "").Replace(")", "").Replace("[", "").Replace("]", "").ToLower();
     }
@@ -257,7 +257,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Simpler interface for a common function.
     /// </summary>
-    static public bool IsInteger(string str)
+    public static bool IsInteger(string str)
     {
       int result;
       return int.TryParse(str, out result);
@@ -266,7 +266,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Clears console up to a given row.
     /// </summary>
-    static public void ClearConsoleLine(int targetRow)
+    public static void ClearConsoleLine(int targetRow)
     {
       int currentPosition = Console.CursorTop;
       if (currentPosition < targetRow)
@@ -283,7 +283,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Removes characters from a given string between delimiters.
     /// </summary>
-    static public string RemoveBetween(string s, string begin, string end)
+    public static string RemoveBetween(string s, string begin, string end)
     {
       Regex regex = new Regex(begin + ".*" + end);
       return regex.Replace(s, begin + end);
@@ -292,7 +292,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Double parsing with an error check.
     /// </summary>
-    static public double ParseD(string str)
+    public static double ParseD(string str)
     {
       try
       {
@@ -308,7 +308,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Int parsing with an error check.
     /// </summary>
-    static public int ParseI(string str)
+    public static int ParseI(string str)
     {
       try
       {

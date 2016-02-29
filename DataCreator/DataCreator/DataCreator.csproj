@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Encounters\EncounterData.cs" />
     <Compile Include="Enemies\Attack.cs" />
+    <Compile Include="Enemies\EffectHandler.cs" />
     <Compile Include="Enemies\EnemyAttributes.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Shared\DataCollector.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Shared\LinkGenerator.cs" />
     <Compile Include="Shared\Tactic.cs" />
     <Compile Include="Utility\ErrorHandler.cs" />
+    <Compile Include="Utility\TagData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

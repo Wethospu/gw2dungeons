@@ -19,7 +19,7 @@ namespace DataCreator.Shared
    *                                                                                             *
    ***********************************************************************************************/
 
-  public class LinkGenerator
+  class LinkGenerator
   {
     public static string[] EnemyCategories = { "normal", "veteran", "elite", "champion", "legendary", "structure", "trap", "skill", "ally", "bundle" };
 

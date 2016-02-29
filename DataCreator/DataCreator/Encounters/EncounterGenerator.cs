@@ -64,34 +64,32 @@ namespace DataCreator.Encounters
       if (line[0] == ' ')
         ErrorHandler.ShowWarning("Extra space detected. Please remove!");
 
-      //// Split row to tag and data.
-      var tagIndex = line.IndexOf(Constants.TagSeparator);
-      // No data found. This will be handled later when tag has been analyzed.
-      if (tagIndex < 0)
-        tagIndex = line.Length - 1;
-      var tag = line.Substring(0, tagIndex);
-      tag = tag.ToLower();
-      var data = "";
-      if (tagIndex < line.Length)
-        data = line.Substring(tagIndex + 1);
-      //// Tag and data separated.
-
-      if (tag.Equals("init"))
+      TagData text = TagData.FromLine(line, Constants.TagSeparator);
+      text.Tag = text.Tag.ToLower();
+      if (text.Tag.Equals("init"))
         paths.Add(new PathData(line));
-      else if (tag.Equals("path"))
-        HandlePath(data);
-      else if (tag.Equals("name"))
+      else if (text.Tag.Equals("path"))
+        HandlePath(text.Data);
+      else if (text.Tag.Equals("name"))
       {
         encounters.Add(new Encounter());
         currentEncounter = encounters[encounters.Count - 1];
-        HandleName(data, currentEncounter);
+        HandleName(text.Data, currentEncounter);
       }
-      else if (tag.Equals("image"))
-        HandleMedia(data, currentEncounter);
-      else if (tag.Equals("tactic"))
-        HandleTactic(data, currentEncounter, paths);
       else
-        HandleNormalLine(line, currentEncounter, paths); 
+      {
+        if (currentEncounter == null)
+        {
+          ErrorHandler.ShowWarning("Ignoring the line because there is no active encounter");
+          return;
+        }
+        if (text.Tag.Equals("image"))
+          HandleMedia(text.Data, currentEncounter);
+        else if (text.Tag.Equals("tactic"))
+          HandleTactic(text.Data, currentEncounter, paths);
+        else
+          HandleNormalLine(line, currentEncounter, paths);
+      }
     }
 
     /// <summary>
@@ -199,7 +197,7 @@ namespace DataCreator.Encounters
         encounterFile.Append("GUIDE:").Append(Helper.ConvertSpecial(path.InstanceName)).Append(Constants.Delimiter).Append(Helper.ConvertSpecial(path.Name)).Append(Constants.ForcedLineEnding);
         encounterFile.Append(GenerateNavigationInfo(path, allInstances));
         encounterFile.Append(Constants.InitialdataHtml);
-        var filtered = encounters.Where(encounter => encounter.Path.Contains(path.Tag) && encounter.Tactics.IsAvailableForScale(path.Scale));
+        var filtered = encounters.Where(encounter => encounter.Path.Contains(path.Tag.ToLower()) && encounter.Tactics.IsAvailableForScale(path.Scale));
         foreach (var encounter in filtered)
         {
           encounterFile.Append(encounter.ToHtml(encounterCounter, filtered, enemies, path.Scale, path.Map));

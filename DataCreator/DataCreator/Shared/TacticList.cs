@@ -107,7 +107,7 @@ namespace DataCreator.Shared
     /// </summary>
     public bool IsAvailableForScale(int fractalScale)
     {
-      return Tactics.Where(tactic => tactic.FractalScale == fractalScale).Any();
+      return Tactics.Where(tactic => tactic.FractalScale == fractalScale && tactic.Lines.Count > 0).Any();
     }
 
     /// <summary>
@@ -135,46 +135,51 @@ namespace DataCreator.Shared
       return htmlBuilder.ToString();
     }
 
-    private StringBuilder GenerateTactics(int index, string path, int scale, List<Enemy> enemies, int indent)
+    private StringBuilder GenerateTactics(int index, string path, int scale, List<Enemy> enemies, int baseIndent)
     {
       var htmlBuilder = new StringBuilder();
-      htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("<div class=\"tactics\">").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("<div class=\"tactics\">").Append(Constants.LineEnding);
 
       var availableTactics = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTactics.Contains(tactic.Name) && tactic.FractalScale == scale));
       if (availableTactics.Count > 0 && availableTactics[0].Lines.Count == 0)
       {
         throw new System.Exception("GenerateTactics: Encounter has no available tactics. This should be checked earlier in the code.");
       }
-      // Tab-navigation system is useless with only one tactic.
-      if (availableTactics.Count > 1)
-        htmlBuilder.Append(GenerateNavigation(index, indent + 1, availableTactics));
-      htmlBuilder.Append(GenerateStuff(index, path, scale, enemies, indent + 1, availableTactics));
-      htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("</div>").Append(Constants.LineEnding);
+      htmlBuilder.Append(GenerateNavigation(index, baseIndent + 1, availableTactics, false));
+      htmlBuilder.Append(GenerateStuff(index, path, scale, enemies, baseIndent + 1, availableTactics));
+      htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("</div>").Append(Constants.LineEnding);
       //// End of tactics.
       return htmlBuilder;
     }
 
-    private StringBuilder GenerateTips(int index, string path, int scale, List<Enemy> enemies, int indent)
+    private StringBuilder GenerateTips(int index, string path, int scale, List<Enemy> enemies, int baseIndent)
     {
       var htmlBuilder = new StringBuilder();
       var availableTips = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTips.Contains(tactic.Name) && tactic.FractalScale == scale));
       if (availableTips.Count == 0)
         return htmlBuilder;
 
-      htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("<div class=\"tips\">").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("<div class=\"tips\">").Append(Constants.LineEnding);
 
-      htmlBuilder.Append(GenerateNavigation(index, indent + 1, availableTips));
-      htmlBuilder.Append(GenerateStuff(index, path, scale, enemies, indent + 1, availableTips));
-      htmlBuilder.Append("</div>").Append(Constants.LineEnding);
+      htmlBuilder.Append(GenerateNavigation(index, baseIndent + 1, availableTips, true));
+      htmlBuilder.Append(GenerateStuff(index, path, scale, enemies, baseIndent + 1, availableTips));
+      htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("</div>").Append(Constants.LineEnding);
       return htmlBuilder;
     }
 
-    private StringBuilder GenerateNavigation(int index, int indent, List<Tactic> availableTactics)
+    private StringBuilder GenerateNavigation(int index, int indent, List<Tactic> availableTactics, bool useImages)
     {
       var htmlBuilder = new StringBuilder();
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("<ul class=\"nav nav-tabs\">").Append(Constants.LineEnding);
       foreach (var tactic in availableTactics)
-        htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<li><a href=\"#t").Append(index).Append(Helper.Simplify(tactic.Name)).Append("\" data-toggle=\"tab\">").Append("<img class=\"professionIcon\" src=\"media/img/" + Helper.Simplify(tactic.Name) + ".png\">").Append("</a></li>").Append(Constants.LineEnding);
+      {
+       htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<li><a href=\"#t").Append(index).Append(Helper.Simplify(tactic.Name)).Append("\" data-toggle=\"tab\">");
+        if (useImages)
+          htmlBuilder.Append("<img class=\"professionIcon\" src=\"media/img/" + Helper.Simplify(tactic.Name) + ".png\">");
+        else
+          htmlBuilder.Append(Helper.ToUpperAll(tactic.Name));
+       htmlBuilder.Append("</a></li>").Append(Constants.LineEnding);
+      }
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("</ul>").Append(Constants.LineEnding);
       return htmlBuilder;
     }

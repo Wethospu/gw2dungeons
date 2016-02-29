@@ -429,7 +429,7 @@ namespace DataCreator.Enemies
      *                                                                                             *
      ***********************************************************************************************/
 
-    static int AttackLoop(string tag, string data)
+    public static int AttackLoop(string tag, string data)
     {
       // Add old attack and start a new one.
       if (tag.Equals("attack"))

@@ -195,7 +195,7 @@ function loadIcons(setting) {
 function chooseCorrectTab(location) {
     $(location + ' .tactics').each(function () {
 		// Get tactics.
-		var tactics = $(this).find('a[href^=#s]').toArray();
+		var tactics = $(this).find('a[href^=#t]').toArray();
 		if (tactics.length == 0)
 			return;
         for (var i = 0; i < settings['tactics'].length; i++) {

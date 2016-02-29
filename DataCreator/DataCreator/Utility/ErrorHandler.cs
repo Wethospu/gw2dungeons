@@ -6,7 +6,7 @@ namespace DataCreator.Utility
   /// <summary>
   /// Warning/error message generation and printing.
   /// </summary>
-  public class ErrorHandler
+  class ErrorHandler
   {
 
     // Currently processed line number, line and file.
@@ -20,7 +20,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Sets up the warning system so it can show correct warning messages.
     /// </summary>
-    static public void InitializeWarningSystem(int lineNumber, string lineBeingProcessed)
+    public static void InitializeWarningSystem(int lineNumber, string lineBeingProcessed)
     {
       _lineNumber = lineNumber;
       _line = lineBeingProcessed;
@@ -30,7 +30,7 @@ namespace DataCreator.Utility
     /// Prints a generic warning message. Additional message can be given.
     /// </summary>
     // Requires correct line number, current file and line to work properly.
-    static public void ShowWarning(string additionalMessage = "")
+    public static void ShowWarning(string additionalMessage = "")
     {
       string message;
       if (_lineNumber < 0)
@@ -49,7 +49,7 @@ namespace DataCreator.Utility
     /// <summary>
     /// Prints a given warning message.
     /// </summary>
-    static public void ShowWarningMessage(string message)
+    public static void ShowWarningMessage(string message)
     {
       WarningCounter++;
       if (message.Length == 0)
@@ -61,11 +61,11 @@ namespace DataCreator.Utility
     /// <summary>
     /// Returns a message which says how warnings were counted.
     /// </summary>
-    static public string WarningCounterMessage()
+    public static string WarningCounterMessage()
     {
       if (WarningCounter == 0)
         return "";
-      return " with" + WarningCounter + " warnings";
+      return " with " + WarningCounter + " warnings";
     }
   }
 }

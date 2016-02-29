@@ -234,7 +234,7 @@ namespace DataCreator.Enemies
       var mediaHTMLs = new List<string>();
       foreach (var attack in Attacks)
       {
-        attackHTMLs.Add(attack.AttackToHTML(string.Join("|", Paths), enemies, this, 2));
+        attackHTMLs.Add(attack.ToHTML(string.Join("|", Paths), enemies, this, 2));
         mediaHTMLs.Add(attack.MediaToHTML(2));
       }
       // Generate rows. / 2015-09-15 / Wethospu

@@ -9,7 +9,7 @@ namespace DataCreator.Shared
   /// <summary>
   /// Functions to generate non-instance files.
   /// </summary>
-  static class OtherGenerator
+  public static class OtherGenerator
   {
     /// <summary>
     /// Main function to generate everything.
@@ -19,7 +19,7 @@ namespace DataCreator.Shared
       Console.WriteLine("Generating pages");
       MergeFiles();
       // Generate main page to dynamically create the dungeon listing.
-      GenerateMainPage(dungeonData.GenerateDungeonData());
+      GenerateMainPage(dungeonData.GenerateInstanceData());
       // Generate about page to dynamically update date of the last update.
       ApplyDate(Constants.DataOtherRaw + "pages\\about.htm");
       // Generate search page filters based on actual enemies.
@@ -31,15 +31,15 @@ namespace DataCreator.Shared
     /// <summary>
     /// Generates an instance list for the main page.
     /// </summary>
-    private static void GenerateMainPage(string file, Dictionary<string, string> instanceData)
+    private static void GenerateMainPage(Dictionary<string, string> instanceData)
     {
       var source = Constants.DataOtherRaw + "pages\\home.htm";
       var target = Constants.DataOutput + source.Replace(Constants.DataOtherRaw, "");
       var dirName = Path.GetDirectoryName(target);
       if (dirName != null)
         Directory.CreateDirectory(dirName);
-      var lines = File.ReadAllLines(file, Constants.Encoding);
-      ErrorHandler.CurrentFile = file;
+      var lines = File.ReadAllLines(source, Constants.Encoding);
+      ErrorHandler.CurrentFile = source;
       var toSave = new StringBuilder();
       toSave.Append(Constants.InitialdataHtml);
       for (var row = 0; row < lines.Length; row++)
@@ -162,7 +162,7 @@ namespace DataCreator.Shared
         if (string.IsNullOrWhiteSpace(line))
           continue;
         if (line.Contains("ID_PATHS"))
-          line = line.Replace("ID_PATHS", dungeonData.GenerateDungeonHtml());
+          line = line.Replace("ID_PATHS", dungeonData.GenerateInstanceHtml());
         if (line.Contains("ID_RACES"))
           line = line.Replace("ID_RACES", dungeonData.GenerateRaceHtml());
         if (line.Contains("ID_RANKS"))
