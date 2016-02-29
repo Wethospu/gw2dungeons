@@ -696,7 +696,6 @@ namespace DataCreator.Shared
       var OutputFile = Constants.DataOutput + Constants.DataThumbsResult + "_" + maxWidth + "px\\" + Path.GetFileNameWithoutExtension(filename) + ".jpg";
       // Replace common html special characters. / 2015-07-21 / Wethospu
       OutputFile = OutputFile.Replace("%20", " ");
-      OutputFile = OutputFile.Replace("%22", "\"");
       OutputFile = OutputFile.Replace("%27", "'");
       OutputFile = OutputFile.Replace("%28", "(");
       OutputFile = OutputFile.Replace("%29", ")");

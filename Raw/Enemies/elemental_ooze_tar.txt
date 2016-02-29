@@ -1319,7 +1319,7 @@ frequency=3
 subeffect=damage:?
 
 attack=Punch
-image=http://zippy.gfycat.com/ZigzagVictoriousFirebelliedtoad.gif
+image=http://giant.gfycat.com/ZigzagVictoriousFirebelliedtoad.gif
 animation=raises the right arm slightly and swings with the left arm|0.75
 cooldown=2.5
 effect=melee
