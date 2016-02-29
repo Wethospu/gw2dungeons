@@ -4,8 +4,8 @@ init=TAF|Twilight Arbor|Forward (path&nbsp;F)|Path F
 init=TAU|Twilight Arbor|Up (path&nbsp;UP)|Path U
 
 path=TAS
-tactic=normal
 name=Twilight Arbor Story
+tactic=normal
 Level: 50.
 Reward: 0.26 g.
 Average length: 26 minutes.

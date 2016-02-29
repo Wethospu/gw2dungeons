@@ -1201,7 +1201,7 @@ Path=AC1
 rank=Trap
 
 Attack=Ring of Fire
-effect=multiple ticking AoES
+effect=multiple ticking AoEs
 subeffect=damage:5088
 subeffect=burning:1
 subeffect=Instantly kills elite Gravelings

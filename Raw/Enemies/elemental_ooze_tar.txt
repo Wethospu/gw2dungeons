@@ -1197,11 +1197,12 @@ frequency=3
 subeffect=damage:?
 
 attack=Punch
+ID=31442
 animation=raises the right arm slightly and swings with the left arm|0.75
 cooldown=2.5
 effect=melee
 # 600
-subeffect=damage:?
+subeffect=damage:-
 
 attack=Bullet Storm
 effect=multiple slowly moving blue balls appearing all over the area
@@ -1244,11 +1245,12 @@ frequency=3
 subeffect=damage:?
 
 attack=Punch
+ID=31636
 animation=raises the right arm slightly and swings with the left arm|0.75
 cooldown=2.5
 effect=melee
 # 600
-subeffect=damage:?
+subeffect=damage:-
 
 attack=Summon
 effect=2 enemy=Seekers:normal:81

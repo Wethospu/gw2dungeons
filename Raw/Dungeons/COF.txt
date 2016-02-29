@@ -4,8 +4,8 @@ init=CoF2|Citadel of Flame|Help Magg (path&nbsp;2)|Path 2
 init=CoF3|Citadel of Flame|Help Rhiannon (path&nbsp;3)|Path 3
 
 path=CoFS
-tactic=normal
 name=Citadel of Flame Story: Assault the Flame Legion Citadel
+tactic=normal
 Level: 70.
 Reward: 0.26 g.
 Average length: 30 minutes.

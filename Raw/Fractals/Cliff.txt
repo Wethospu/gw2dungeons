@@ -257,3 +257,7 @@ tactic=thief
 Use wiki=Signet_of_Agility to give extra dodges to team mates.
 tactic=elementalist
 Use an Earth Elemental from wiki=Glyph_of_Elementals to hold boss aggro and allow your team some relative safety from his melee attacks.
+tactic=bug
+The hammer may disappear if multiple players try to pick it up at the same time. If this happens you have to reset the fight. To prevent this from happening, don't try to pick up the hammer if you think someone else is going to do it.
+Bringing the previous hammer with you won't help much because both hammers disappear when you hit the seal first time.
+
