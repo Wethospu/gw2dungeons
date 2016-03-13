@@ -4,11 +4,6 @@ using System.Text;
 
 namespace DataCreator.Enemies
 {
-  public enum EffectType
-  {
-    Damage, Condition, Boon, Control, Agony, None, DamageFixed, DamagePercent, Buff, Healing, HealingPercent
-  }
-
   public struct SubEffectInformation
   {
     public string name;
@@ -23,7 +18,6 @@ namespace DataCreator.Enemies
     public int stacks;
     public string buff;
     public string icon ;
-    public bool stacksAdditively;
     public string suffix;
     public bool variableHitCount;
   }
@@ -100,12 +94,20 @@ namespace DataCreator.Enemies
           effectStr = effectStr.Remove(index, 1);
           continue;
         }
-        var effectType = GetEffectType(text.Tag);
+        if (!SubEffect.EffectTypes.ContainsKey(text.Tag.ToLower()))
+        {
+          ErrorHandler.ShowWarningMessage("Skipping an effect. Effect " + text.Tag + " not recognized.");
+          continue;
+        }
+        var subEffect = SubEffect.EffectTypes[text.Tag.ToLower()];
+        var effectType = subEffect.Name;
         // Effect info format varies based on tag (separated by :). / 2015-08-09 / Wethospu
-        information = ExtractInformation(information, effectType, text, baseAttack, baseEnemy);
-        AddTags(effectType, baseEnemy);
-        information = HandleStackingRules(information);
-        StringBuilder replace = GenerateReplace(information, effectType, baseAttack);
+        information = ExtractInformation(information, subEffect, text, baseAttack, baseEnemy);
+        var tag = SubEffect.GetTag(effectType);
+        if (tag.Length > 0)
+          baseEnemy.Tags.Add(tag);
+        information = HandleStackingRules(information, subEffect);
+        StringBuilder replace = GenerateReplace(information, subEffect, baseAttack);
         var toReplace = text.Tag + ":" + text.Data;
         effectStr = effectStr.Replace(toReplace, replace.ToString());
         index = index - toReplace.Length + replace.Length;
@@ -123,8 +125,9 @@ namespace DataCreator.Enemies
       return BuildHTML(firstType, startIcon, firstStacks, effectStr, effectChance).ToString();
     }
 
-    private static SubEffectInformation ExtractInformation(SubEffectInformation effect, EffectType effectType, TagData text, Attack baseAttack, Enemy baseEnemy)
+    private static SubEffectInformation ExtractInformation(SubEffectInformation effect, SubEffect subEffect, TagData text, Attack baseAttack, Enemy baseEnemy)
     {
+      var effectType = subEffect.Name;
       var effectData = text.Data.Split(':');
       effect.name = text.Tag.ToLower();
       effect.amount = -1;
@@ -132,7 +135,6 @@ namespace DataCreator.Enemies
       effect.stacks = 1;
       effect.buff = "";
       effect.icon = effect.name;
-      effect.stacksAdditively = true;
       effect.suffix = "damage";
       if (effectType == EffectType.Damage || effectType == EffectType.DamageFixed || effectType == EffectType.DamagePercent)
       {
@@ -174,8 +176,7 @@ namespace DataCreator.Enemies
           effect.amount = effect.duration;
         if (effectData.Length > 1)
           effect.stacks = Helper.ParseI(effectData[1]);
-        effect.stacksAdditively = EffectStacksDuration(effect.name);
-        if (effect.stacksAdditively || effectType == EffectType.Boon)
+        if (subEffect.StacksDuration || effectType == EffectType.Boon)
           effect.suffix = "seconds";
         if (effect.name.Equals("regeneration"))
           effect.suffix = "healing";
@@ -188,7 +189,6 @@ namespace DataCreator.Enemies
       }
       if (effectType == EffectType.Control)
       {
-        effect.stacksAdditively = false;
         effect.duration = Helper.ParseD(effectData[0]);
         if (effectData.Length > 1)
           effect.stacks = Helper.ParseI(effectData[1]);
@@ -204,14 +204,14 @@ namespace DataCreator.Enemies
         if (effectData.Length > 3 && effectData[3].Length > 0)
           effect.icon = effectData[3];
         if (effectData.Length > 4)
-          effect.stacksAdditively = Helper.ParseI(effectData[4]) > 0 ? true : false;
+          subEffect.StacksDuration = Helper.ParseI(effectData[4]) > 0 ? true : false;
       }
       return effect;
     }
 
-    private static SubEffectInformation HandleStackingRules(SubEffectInformation effectInformation)
+    private static SubEffectInformation HandleStackingRules(SubEffectInformation effectInformation, SubEffect subEffect)
     {
-      if (effectInformation.stacksAdditively)
+      if (subEffect.StacksDuration)
       {
         effectInformation.totalAmount = effectInformation.hitCount * effectInformation.amount * effectInformation.stacks;
         effectInformation.totalDuration = effectInformation.hitCount * effectInformation.duration * effectInformation.stacks;
@@ -238,11 +238,11 @@ namespace DataCreator.Enemies
       return effectInformation;
     }
 
-    private static StringBuilder GenerateReplace(SubEffectInformation effect, EffectType effectType, Attack baseAttack)
+    private static StringBuilder GenerateReplace(SubEffectInformation effect, SubEffect subEffect, Attack baseAttack)
     {
       // Syntax: <span class="TAGValue">VALUE</span>
       var replace = new StringBuilder();
-      var HTMLClass = GetHTMLClass(effectType);
+      var HTMLClass = SubEffect.GetHTMLClass(subEffect.Name);
       //// Put both total and damage per hit. / 2015-09-08 / Wethospu
       if (effect.amount > -1)
       {
@@ -337,7 +337,7 @@ namespace DataCreator.Enemies
         if (effect.hitFrequency != 1.0)
           replace.Append("s");
       }
-      if (effectType == EffectType.Buff)
+      if (subEffect.Name == EffectType.Buff)
       {
         // Add the buff name (people probably won't recognize all icons). / 2015-09-23 / Wethospu
         replace.Append(" (").Append(effect.buff.Replace('_', ' ')).Append(")");
@@ -372,99 +372,6 @@ namespace DataCreator.Enemies
     }
 
     /// <summary>
-    /// Converts a given string to EffectType.
-    /// </summary>
-    private static EffectType GetEffectType(string str)
-    {
-      str = str.ToLower();
-      if (str.Equals("damage"))
-        return EffectType.Damage;
-      if (str.Equals("damage-constant"))
-        return EffectType.DamageFixed;
-      if (str.Equals("damage-percent"))
-        return EffectType.DamagePercent;
-      if (str.Equals("healing"))
-        return EffectType.Healing;
-      if (str.Equals("healing-percent"))
-        return EffectType.HealingPercent;
-      if (str.Equals("agony"))
-        return EffectType.Agony;
-      if (str.Equals("buff"))
-        return EffectType.Buff;
-      if (str.Equals("daze") || str.Equals("float") || str.Equals("knockback") || str.Equals("knockdown") || str.Equals("displacement")
-          || str.Equals("launch") || str.Equals("pull") || str.Equals("sink") || str.Equals("stun") || str.Equals("taunt"))
-        return EffectType.Control;
-      if (str.Equals("blind") || str.Equals("chilled") || str.Equals("crippled")
-           || str.Equals("fear") || str.Equals("immobilized") || str.Equals("slow")
-           || str.Equals("vulnerability") || str.Equals("weakness") || str.Equals("revealed"))
-        return EffectType.Condition;
-      if (str.Equals("aegis") || str.Equals("fury") || str.Equals("might")
-          || str.Equals("protection") || str.Equals("resistance") || str.Equals("stability") || str.Equals("swiftness")
-           || str.Equals("quickness") || str.Equals("vigor") || str.Equals("stealth") || str.Equals("defiance"))
-        return EffectType.Boon;
-      if (str.Equals("bleeding") || str.Equals("burning") || str.Equals("confusion")
-           || str.Equals("poison") || str.Equals("torment"))
-        return EffectType.Condition;
-      if (str.Equals("regeneration") || str.Equals("retaliation"))
-        return EffectType.Boon;
-
-      ErrorHandler.ShowWarningMessage("Effect type " + str + " not recognized.");
-      return EffectType.None;
-    }
-
-    /// <summary>
-    /// Adds necessary tags to a given enemy based on a given effect type.
-    /// </summary>
-    private static void AddTags(EffectType type, Enemy baseEnemy)
-    {
-      if (type == EffectType.Agony)
-        baseEnemy.Tags.Add("agony");
-      else if (type == EffectType.Boon)
-        baseEnemy.Tags.Add("boon");
-      else if (type == EffectType.Buff)
-        baseEnemy.Tags.Add("buff");
-      else if (type == EffectType.Condition)
-        baseEnemy.Tags.Add("condition");
-      else if (type == EffectType.Control)
-        baseEnemy.Tags.Add("control");
-      else if (type == EffectType.Damage)
-        baseEnemy.Tags.Add("damage");
-      else if (type == EffectType.DamageFixed)
-        baseEnemy.Tags.Add("fixed damage");
-      else if (type == EffectType.DamagePercent)
-        baseEnemy.Tags.Add("percent damage");
-      else if (type == EffectType.Healing || type == EffectType.HealingPercent)
-        baseEnemy.Tags.Add("healing");
-      else if (type != EffectType.None)
-        ErrorHandler.ShowWarningMessage("Internal error. Effect type not implemented.");
-    }
-
-    /// <summary>
-    /// Returns HTML class for a given effect type.
-    /// </summary>
-    private static string GetHTMLClass(EffectType type)
-    {
-      if (type == EffectType.Agony)
-        return "agony-value";
-      if (type == EffectType.Condition || type == EffectType.Boon || type == EffectType.Control || type == EffectType.Buff)
-        return "effect-value";
-      if (type == EffectType.Damage)
-        return "damage-value";
-      if (type == EffectType.DamageFixed)
-        return "fixed-value";
-      if (type == EffectType.DamagePercent)
-        return "percent-value";
-      if (type == EffectType.Healing)
-        return "healing-value";
-      if (type == EffectType.HealingPercent)
-        return "healing-percent-value";
-      if (type == EffectType.None)
-        return "";
-      ErrorHandler.ShowWarningMessage("Internal error. Effect type not implemented.");
-      return "";
-    }
-
-    /// <summary>
     /// Returns string representation for a given hit length.
     /// </summary>
     private static string HitLengthStr(double hitLength)
@@ -474,29 +381,6 @@ namespace DataCreator.Enemies
       if (hitLength == 1.0)
         return " over 1 second";
       return " over " + hitLength + " seconds";
-    }
-
-    /// <summary>
-    /// Returns whether a given effect stacks additively or intensively.
-    /// </summary>
-    private static bool EffectStacksDuration(string str)
-    {
-      if (str.Equals("daze") || str.Equals("float") || str.Equals("knockback") || str.Equals("knockdown")
-          || str.Equals("launch") || str.Equals("pull") || str.Equals("sink") || str.Equals("stun") || str.Equals("taunt"))
-        return false;
-      if (str.Equals("blind") || str.Equals("chilled") || str.Equals("crippled") || str.Equals("fear") || str.Equals("immobilized") || str.Equals("slow")
-            || str.Equals("weakness") || str.Equals("revealed"))
-        return true;
-      if (str.Equals("aegis") || str.Equals("fury") || str.Equals("retaliation") || str.Equals("regeneration")
-          || str.Equals("protection") || str.Equals("resistance") || str.Equals("swiftness")
-           || str.Equals("quickness") || str.Equals("vigor") || str.Equals("stealth"))
-        return true;
-      if (str.Equals("bleeding") || str.Equals("burning") || str.Equals("confusion")
-           || str.Equals("poison") || str.Equals("torment") || str.Equals("vulnerability"))
-        return false;
-      if (str.Equals("might") || str.Equals("stability"))
-        return false;
-      return true;
     }
   }
 }

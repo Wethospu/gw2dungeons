@@ -1,4 +1,5 @@
-﻿using DataCreator.Utility;
+﻿using DataCreator.Enemies;
+using DataCreator.Utility;
 using System;
 using System.IO;
 using System.Text;
@@ -90,6 +91,7 @@ namespace DataCreator
     /// </summary>
     public static void ReadCacheFiles()
     {
+      SubEffect.CreateEffectTypes();
       try
       {
         Console.WriteLine("Reading media sizes.");

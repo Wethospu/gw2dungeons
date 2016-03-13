@@ -58,6 +58,7 @@
     <Compile Include="Encounters\EncounterData.cs" />
     <Compile Include="Enemies\Attack.cs" />
     <Compile Include="Enemies\EffectHandler.cs" />
+    <Compile Include="Enemies\SubEffect.cs" />
     <Compile Include="Enemies\EnemyAttributes.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Shared\DataCollector.cs" />
@@ -66,7 +67,6 @@
     <Compile Include="Utility\Constants.cs" />
     <Compile Include="Enemies\Enemy.cs" />
     <Compile Include="Enemies\EnemyGenerator.cs" />
-    <Compile Include="Enemies\SubEffect.cs" />
     <Compile Include="Enemies\Effect.cs" />
     <Compile Include="Encounters\Encounter.cs" />
     <Compile Include="Encounters\EncounterGenerator.cs" />

@@ -1,11 +1,30 @@
 BACKLOG:
  - remove/fix blocking css (google analyzed)
  - options to change page style (font size, etc)
- - would a condition toolbar be useful? (to alter enemy numbers on fly)
- - group up fractals based on their order (bosses last and so on) -> add coloured rectangles to group them up
  - organize research data (figure out what has been documented, create research todo for open questions / data needs)
+ - https://redd.it/47qvxg Daily fractal info from api to the site.
 
- 
+LINKS TO ANALYZE:
+https://redd.it/4a6b0t Tactical Overlay, "locational timers for the Matthias fight and numbered markers for important locations throughout the map".
+https://redd.it/49l96o Salvation boss first kills
+https://redd.it/4a3tq4 Wing 2, boss 2, question about oil.
+https://redd.it/4a2vha Wing 2, boss 1, problem with 5%-10%
+https://redd.it/4a08ev Wing 2, boss 1, buffing enemies as a slub
+https://redd.it/49xbm7 Wing 2, boss 3, guide
+https://redd.it/49uoai How druid healing works
+https://redd.it/49temh Wing 2, boss 1, guide
+https://redd.it/49wtt6 Wing 2, boss 1, problem with last 5%
+https://redd.it/49ppxp Wing 2, boss 1, poison notification problem
+https://redd.it/49tao0 Budget raiding
+https://forum-en.guildwars2.com/forum/game/dungeons/No-boons/first Wing 2, boss 1, No boons questions
+https://forum-en.guildwars2.com/forum/game/dungeons/feedback-on-wing-2-sloth Wing 2, boss 1, some feedback
+https://forum-en.guildwars2.com/forum/game/dungeons/Slothasor-Mp3-alert-for-the-Volatile-Poison/first Wing 2, boss 1, mp3 alert for poison
+https://forum-en.guildwars2.com/forum/game/dungeons/Forsaken-Thicket-Wing-2-Discussion/first Wing 2, discussion
+https://forum-en.guildwars2.com/forum/game/dungeons/Killing-slublings/first Wing 2, boss 1, killing slublings
+https://forum-en.guildwars2.com/forum/game/dungeons/LOD-Wing-2-cleared/first Wing 2, cleared by LOD
+https://forum-en.guildwars2.com/forum/game/dungeons/ROID-World-first-Slothasaur-kill/first Wing 2, boss 1, kill by ROID
+
+
 (BAD) IDEAS:
  - general description for a dungeon explaining where it is, what to get there, what's usually and so on
    * Wiki should explain this pretty well
