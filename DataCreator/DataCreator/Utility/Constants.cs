@@ -43,6 +43,7 @@ namespace DataCreator.Utility
     public static string BackupLocation { get { return "Planning\\Backup\\"; } }
 
     public static string LocalMediaLocation { get { return "http://gw2dungeons.net/media/dungeonimages/"; } }
+    public static string LocalIconLocation { get { return "http://gw2dungeons.net/media/img/"; } }
 
     // This site is used to verify internet connection.
     // Google was chosen because of reliability.
@@ -133,6 +134,7 @@ namespace DataCreator.Utility
     
     // Html classes.
     public static string IconClass { get { return "\"icon\""; } }
+    public static string HelpIconClass { get { return "\"icon-help\""; } }
 
     // Tags which are recognized by this program.
     // These can be used to filter enemies in the website's search.

@@ -191,7 +191,10 @@ p, p *, h1, h1 *, h2, h2 *, h3, td, td *, ol *, .allow * {
 .list-sub {
 	font-size: 0.9em;
 	color: black;
-	margin-left: 20px;
+	margin-left: 10px;
+	display: inline-block;
+	min-width: 40px;
+	text-align: right;
 }
 .dungeon-image {
     height:125px;
@@ -576,6 +579,13 @@ div.ally {
 	background-size: cover;
 }
 
+.icon-help {
+    display: inline-block;
+    height: 16px;
+    text-indent: -9999px;
+    width: 16px;
+	cursor: help;
+}
 
 #detail-container {
 	position:fixed;
@@ -605,4 +615,7 @@ div.ally {
 }
 .agony-6 {
 	background-color: #FF6666;
+}
+.daily-fractal {
+	background-color: #9999ff;
 }

@@ -155,5 +155,13 @@ namespace DataCreator.Utility
         return "Only level";
       return "Custom";
     }
+
+    /// <summary>
+    /// Generates an small icon which gives additional information when hovered over.
+    /// </summary>
+    public static string GenerateHelpIcon(string imageLink, string helpText)
+    {
+      return "<img class=" + Constants.HelpIconClass + " src =\"" + imageLink + "\" title=\"" + helpText + "\">";
+    }
   }
 }

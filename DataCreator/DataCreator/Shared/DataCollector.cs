@@ -216,30 +216,79 @@ namespace DataCreator.Shared
           ErrorHandler.ShowWarningMessage("Fractal F" + (i + 1) + " had no path data!");
           continue;
         }
-        fractalData.Append("<li><a href=\"./F").Append(path.Scale).Append("\"><span class=\"list-icon\">");
+        fractalData.Append("<li><a href=\"./F").Append(path.Scale).Append("\" data-scale=\"").Append(path.Scale).Append("\"><span class=\"list-icon\">");
         fractalData.Append(Gw2Helper.RecommendedAgonyResist[i + 1]).Append(" <span class=").Append(Constants.IconClass).Append(" data-src=\"ar\" title=\"Agony Resistance\">AR</span>");
         fractalData.Append("</span>").Append(path.Scale).Append(". ").Append(path.NameLong).Append("<br>");
-        if (i > 18)
+        if (path.Scale > 19)
         {
-          fractalData.Append("<span class=\"list-sub list-sub-fractal\" data-scale=\"").Append(i + 1).Append("\" ");
+          // Dynamic agony resistance value.
+          fractalData.Append("<span class=\"list-sub list-sub-agony\"");
           if (path.Tag.ToLower().StartsWith("aqua"))
             fractalData.Append(" data-type=\"1\"");
           if (path.Tag.ToLower().StartsWith("mai") || path.Tag.ToLower().StartsWith("solid") || path.Tag.ToLower().StartsWith("molten"))
             fractalData.Append(" data-type=\"2\"");
           else
             fractalData.Append(" data-type=\"0\"");
-          fractalData.Append("></span>% <span class=").Append(Constants.IconClass).Append(" data-src=\"agony\" title=\"Agony\">Agony:</span>");
+          fractalData.Append("></span>").Append(Gw2Helper.GenerateHelpIcon(Constants.LocalIconLocation + "agony.png", "Agony damage based on your maximum health"));
         }
         else
         {
           fractalData.Append(Constants.Space);
         }
+        fractalData.Append(GenerateInstabilities(path.Scale));
+        // Dynamic achievement information.
+        fractalData.Append("<span class=\"list-sub list-sub-daily-fractal\"></span>");
         fractalData.Append("</a></li>");
         if ((i+1)%20 == 0)
           fractalData.Append(Gw2Helper.AddTab(3)).Append("</ul></li>");
       }
       instanceData.Add("ID_FRACTAL", fractalData.ToString());
       return instanceData;
+    }
+
+    private List<Instability> instabilities = new List<Instability>()
+    {
+      new Instability("Boon Fumbler", "When you dodge roll, you lose all your boons.", "https://wiki.guildwars2.com/images/thumb/7/7a/Zephyr%27s_Speed_%28elementalist%29.png/25px-Zephyr%27s_Speed_%28elementalist%29.png"),
+      new Instability("No Pain, No Gain", "Enemies recieve random boons when you hit them for critical damage.", "https://wiki.guildwars2.com/images/thumb/2/2c/Arcane_Fury.png/25px-Arcane_Fury.png"),
+      new Instability("Last Laugh", "Enemies explode when killed.", "https://wiki.guildwars2.com/images/thumb/8/82/Impact_Savant.png/25px-Impact_Savant.png"),
+      new Instability("Sluggish", "The recharge time of skills you use is increased if you have a condition on you.", "https://wiki.guildwars2.com/images/thumb/4/47/Alpha_Training.png/25px-Alpha_Training.png"),
+      new Instability("Afflicted", "Enemies apply random conditions.", "https://wiki.guildwars2.com/images/thumb/5/5c/Lotus_Poison.png/25px-Lotus_Poison.png"),
+      new Instability("Boon Thieves", "Enemies steal boons when they hit you.", "https://wiki.guildwars2.com/images/thumb/d/d5/Master_of_Misdirection.png/25px-Master_of_Misdirection.png"),
+      new Instability("Social Awkwardness", "Nearby allies receive agony.", "https://wiki.guildwars2.com/images/thumb/7/73/Driven_Fortitude.png/25px-Driven_Fortitude.png")
+    };
+
+    private StringBuilder GenerateInstabilities(int scale)
+    {
+      var builder = new StringBuilder();
+      if (scale > 30 && scale < 41)
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[0].Icon, instabilities[0].Description));
+      else if (scale > 40 && scale < 51)
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[1].Icon, instabilities[1].Description));
+      else if (scale > 50 && scale < 61)
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[2].Icon, instabilities[2].Description));
+      else if (scale > 60 && scale < 71)
+      {
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[3].Icon, instabilities[3].Description));
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[4].Icon, instabilities[4].Description));
+      }
+      else if (scale > 70 && scale < 81)
+      {
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[4].Icon, instabilities[4].Description));
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[0].Icon, instabilities[0].Description));
+      }
+      else if (scale > 80 && scale < 91)
+      {
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[0].Icon, instabilities[0].Description));
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[5].Icon, instabilities[5].Description));
+      }
+      else if (scale > 90 && scale < 101)
+      {
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[5].Icon, instabilities[5].Description));
+        builder.Append(Gw2Helper.GenerateHelpIcon(instabilities[6].Icon, instabilities[6].Description));
+      }
+      else if (scale > 100)
+        ErrorHandler.ShowWarningMessage("Scale " + scale + " not supported.");
+      return builder;
     }
 
     /// <summary>

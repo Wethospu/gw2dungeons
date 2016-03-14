@@ -62,6 +62,7 @@
     <Compile Include="Enemies\EnemyAttributes.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Shared\DataCollector.cs" />
+    <Compile Include="Shared\Instability.cs" />
     <Compile Include="Shared\TacticList.cs" />
     <Compile Include="Utility\Media.cs" />
     <Compile Include="Utility\Constants.cs" />

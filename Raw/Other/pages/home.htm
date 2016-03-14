@@ -3,9 +3,11 @@
 	$(document).ready(function() {	
 		loadSettings(false, false);
 		loadPage();
-		loadDailyPaths();
+		loadDailyDungeonPaths();
 		loadIcons("main");
 		loadAgonyDamage();
+		loadDailyFractals();
+		setDailyTimer();
 		var page = getSetting('homePage');
 		$(this).find('a[href^=#tab-' + page + ']').tab('show');
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -13,23 +15,24 @@
 		});
 	});
 	
+	// Agony damage is based on character's agony resist so actual values have to be calculated dynamically.
 	function loadAgonyDamage() {
-		$('.list-sub-fractal').each(function(){
-			var scale = $(this).attr("data-scale");
+		$('.list-sub-agony').each(function(){
+			var parent = $(this).parent();
+			var scale = $(parent).attr("data-scale");
 			var type = $(this).attr("data-type");
 			var resist = getSetting('agonyResist');
 			if (type == "1")
 				resist = getSetting('agonyResistAqua');
 			var damage = getAgonyPerSecond(scale, resist);
-			$(this).html(Math.round(100 * damage));
+			$(this).html(Math.round(100 * damage) + "%");
 			// Boss fractals have unavoidable 10 seconds of agony (much more dangerous). / 2015-11-04 / Wethospu
 			// No color: 1% or less damage.
 			// Pale red: 5% or less damage, 3% for bosses.
 			// Bright red: 10% or less damage, 5% for bosses.
 			// Red: 20% or less damage, 10% for bosses.
 			// Darker red: 33% or less damage, 10% for bosses.
-			// Dark red: Rest.
-			var parent = $(this).parent();
+			// Dark red: Rest.	
 			if (type == "2") {
 				if (damage > 0.15)
 					$(parent).addClass('agony-6');
@@ -56,8 +59,62 @@
 			}
 		});
 	}
+	// Keep track of the last daily to detect when a new information is received.
+	// NOTE: No idea whether the daily is guaranteed to change. Fail-safe below.
+	var lastDaily = 0;
+	var dailyRecursionLevel = 0;
+	function loadDailyFractals() {
+		$.get("https://api.guildwars2.com/v2/achievements?ids=2238,2189", function( data ) {
+			var dailyScales = [ data[0].name.split(" ").pop(), data[1].name.split(" ").pop()];
+			$('.list-sub-daily-fractal').each(function() {
+				if (dailyScales.indexOf($(this).parent().attr("data-scale")) > -1) {
+					$(this).parent().addClass('daily-fractal');
+					$(this).html("Daily!");
+				}
+				else {
+					$(this).parent().removeClass('daily-fractal');
+					$(this).html("");
+				}	
+			});
+			if (dailyScales[0] == lastDaily) {
+				// Fail-safe: Same daily. Can't be sure that a new info was actually received. Load dailies multiple times, just in case.
+				dailyRecursionLevel++;
+				if (dailyRecursionLevel == 1)
+					setTimeout(loadDailyFractals, 5000);
+				else if (dailyRecursionLevel == 2)
+					setTimeout(loadDailyFractals, 60000);
+				else if (dailyRecursionLevel == 3)
+					setTimeout(loadDailyFractals, 120000);
+				else if (dailyRecursionLevel == 4)
+					setTimeout(loadDailyFractals, 300000);
+				else if (dailyRecursionLevel == 5)
+					setTimeout(loadDailyFractals, 600000);
+			}
+			lastDaily = dailyScales[0];
+		});
+	}
 	
-	function loadDailyPaths() {
+	// Keep track of current day to figure out when the day has actually changed.
+	var currentUtcDay = 0;
+	function setDailyTimer() {
+		var date = new Date();
+		currentUtcDay = date.getUTCDate();
+		// Calculate the time to the next day to prevent unnecessary timeouts.
+		var timeToNextDay = Date.UTC(date.getFullYear(), date.getMonth(), currentUtcDay + 1) - Date.UTC(date.getFullYear(), date.getMonth(), currentUtcDay);
+		// Add some extra time to ensure the date has actually changed.
+		setTimeout(refreshDailies, timeToNextDay + 5000);
+	}
+	
+	function refreshDailies() {
+		if (currentUtcDay != new Date().getUTCDate()) {
+			dailyRecursionLevel = 0;
+			loadDailyFractals();
+		}
+		setDailyTimer();
+	}
+	
+	// Not in use. Allows tracking completed dungeon paths manually. No one just does dungeons anymore...
+	function loadDailyDungeonPaths() {
 		// Load tracking info.
 		verifyDailyPaths();
 		$(".tracker").each(function(){
@@ -96,7 +153,6 @@
 			saveSetting("donePaths", settings.donePaths);
 		});
 	}
-	
 </script>
 <div>
     <ul class="nav nav-tabs">
