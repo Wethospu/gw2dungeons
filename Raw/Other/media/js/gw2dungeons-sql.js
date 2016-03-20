@@ -123,7 +123,7 @@ function buildCharacterStr(characters, professions) {
         var professionID = this.profession;
         $.each(professions, function() {
             if (this.ID == professionID)
-               str += '&nbsp;<img class="profession-icon" src="media/img/' + this.image + '">';
+               str += '&nbsp;<img class="profession-icon" src="PATH_ICON' + this.image + '">';
         });
 		if (this.link && this.link.length > 0)
             str += '</a>';

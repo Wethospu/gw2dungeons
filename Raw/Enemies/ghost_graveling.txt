@@ -397,7 +397,7 @@ subeffect=retaliation:3
 
 name=King Adelbern
 ID=1691
-image=http://wiki.guildwars2.com/images/a/ad/Legendary_King_Adelbern.jpg
+image=http://wiki.guildwars2.com/images/4/4a/King_Adelbern.jpg
 path=ACS
 
 attack=Fire Swing (1)
@@ -1035,7 +1035,7 @@ effect=buff:evade:0
 
 attack=Aggro Barf
 ID=3936
-image=media=ac_breeder_summon.jpg
+image=ac_breeder_summon.jpg
 animation=glows and pukes|3
 additional=maximum amount of 10
 effect=Summon ~15 enemy=Graveling_Hatchlings:normal in 14.5 s
@@ -1233,7 +1233,7 @@ ID=5787
 
 name=Grub
 ID=4085
-image=http://wiki.guildwars2.com/images/c/ca/Grub_Yellow.jpg
+image=http://wiki.guildwars2.com/images/1/18/Grub_yellow.jpg
 alt=Grubs
 Path=AC1
 

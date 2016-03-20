@@ -109,20 +109,20 @@ namespace DataCreator
           if (split.Length != 3)
           {
             if (!Constants.DownloadData)
-              ErrorHandler.ShowWarningMessage("Media size file corrupted. Consider using parameter back.");
+              ErrorHandler.ShowWarningMessage("Media size file corrupted. Consider using backuping media files.");
             continue;
           }
           int height, width;
           if (!int.TryParse(split[1], out width))
           {
             if (!Constants.DownloadData)
-              ErrorHandler.ShowWarningMessage("Media size file corrupted. Consider using parameter back.");
+              ErrorHandler.ShowWarningMessage("Media size file corrupted. Consider using backuping media files.");
             continue;
           }
           if (!int.TryParse(split[2], out height))
           {
             if (!Constants.DownloadData)
-              ErrorHandler.ShowWarningMessage("Media size file corrupted. Consider using parameter back.");
+              ErrorHandler.ShowWarningMessage("Media size file corrupted. Consider using backuping media files.");
             continue;
           }
           Constants.MediaSizes.Add(split[0], new int[] { width, height });
@@ -130,7 +130,7 @@ namespace DataCreator
       }
       catch (FileNotFoundException)
       {
-        ErrorHandler.ShowWarningMessage("File 'AvailableTactics.txt' not found!");
+        ErrorHandler.ShowWarningMessage("File 'MediaSizes.txt' not found!");
       }
       if (Constants.ValidateUrls)
       {

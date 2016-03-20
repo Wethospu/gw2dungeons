@@ -229,7 +229,7 @@ namespace DataCreator.Shared
             fractalData.Append(" data-type=\"2\"");
           else
             fractalData.Append(" data-type=\"0\"");
-          fractalData.Append("></span>").Append(Gw2Helper.GenerateHelpIcon(Constants.LocalIconLocation + "agony.png", "Agony damage based on your maximum health"));
+          fractalData.Append("></span>").Append(Gw2Helper.GenerateHelpIcon(Constants.WebsiteIconLocation + "agony.png", "Agony damage based on your maximum health"));
         }
         else
         {

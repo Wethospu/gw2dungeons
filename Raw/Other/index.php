@@ -86,7 +86,7 @@ $class = strtolower($class);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo $title; ?></title>
-    <meta name="description" content="A complete guide to Guild Wars 2 dungeons.">
+    <meta name="description" content="A guide to Guild Wars 2 dungeons and fractals.">
     <meta name="keywords" content="guild wars,gw2,dungeon,fractals,guide,walkthrough,ac,cm,ta,se,cof,hotw,coe,arah,fotm">
     <meta name="author" content="Jere Kuusela">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -101,7 +101,7 @@ ID_CSS
 	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 ID_JS
     <!--[if lt IE 9]>
-        <script src="/media/js/html5shiv.js"></script>
+        <script src="/media/html5shiv.js"></script>
     <![endif]-->
 	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
 	<script type="text/javascript">

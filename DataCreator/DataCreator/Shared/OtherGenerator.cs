@@ -81,6 +81,10 @@ namespace DataCreator.Shared
           else
             ErrorHandler.ShowWarning("Data for dungeon \"" + id + "\" not found!");
         }
+        line = line.Replace("PATH_ICON", Constants.WebsiteIconLocation);
+        line = line.Replace("PATH_MEDIA", Constants.WebsiteMediaLocation);
+        line = line.Replace("PATH_THUMB_BIG", Constants.WebsiteThumbBigLocation);
+        line = line.Replace("PATH_THUMB_SMALL", Constants.WebsiteThumbSmallLocation);
         toSave.Append(line).Append(Constants.ForcedLineEnding);
       }
       // Save file.
@@ -161,16 +165,15 @@ namespace DataCreator.Shared
         // Ignore whitespace.
         if (string.IsNullOrWhiteSpace(line))
           continue;
-        if (line.Contains("ID_PATHS"))
-          line = line.Replace("ID_PATHS", dungeonData.GenerateInstanceHtml());
-        if (line.Contains("ID_RACES"))
-          line = line.Replace("ID_RACES", dungeonData.GenerateRaceHtml());
-        if (line.Contains("ID_RANKS"))
-          line = line.Replace("ID_RANKS", dungeonData.GenerateRankHtml());
-        if (line.Contains("ID_TAGS"))
-          line = line.Replace("ID_TAGS", dungeonData.GenerateTagHtml());
-        if (line.Contains("ID_EFFECT_TAGS"))
-          line = line.Replace("ID_EFFECT_TAGS", dungeonData.GenerateEffectTagHtml());
+        line = line.Replace("ID_PATHS", dungeonData.GenerateInstanceHtml());
+        line = line.Replace("ID_RACES", dungeonData.GenerateRaceHtml());
+        line = line.Replace("ID_RANKS", dungeonData.GenerateRankHtml());
+        line = line.Replace("ID_TAGS", dungeonData.GenerateTagHtml());
+        line = line.Replace("ID_EFFECT_TAGS", dungeonData.GenerateEffectTagHtml());
+        line = line.Replace("PATH_ICON", Constants.WebsiteIconLocation);
+        line = line.Replace("PATH_MEDIA", Constants.WebsiteMediaLocation);
+        line = line.Replace("PATH_THUMB_BIG", Constants.WebsiteThumbBigLocation);
+        line = line.Replace("PATH_THUMB_SMALL", Constants.WebsiteThumbSmallLocation);
         toSave.Append(line).Append(Constants.ForcedLineEnding);
       }
       // Save file.
@@ -194,23 +197,31 @@ namespace DataCreator.Shared
       var cssLastTime = 0L;
       foreach (var file in files)
       {
+        // Don't copy media files since it just slows down the process for no reason.
+        if (file.Contains(Constants.LocalMediaFolder) || file.Contains(Constants.LocalIconFolder))
+          continue;
         var outputFile = Constants.DataOutput + file.Replace(Constants.DataOtherRaw, "");
+        var text = File.ReadAllText(file);
+        text = text.Replace("PATH_ICON", Constants.WebsiteIconLocation);
+        text = text.Replace("PATH_MEDIA", Constants.WebsiteMediaLocation);
+        text = text.Replace("PATH_THUMB_BIG", Constants.WebsiteThumbBigLocation);
+        text = text.Replace("PATH_THUMB_SMALL", Constants.WebsiteThumbSmallLocation);
         if (Constants.IsRelease && Path.GetExtension(file) == ".js" && !Path.GetFileNameWithoutExtension(file).Equals("html5shiv"))
         {
-          jsBuilder.Append(File.ReadAllText(file));
+          jsBuilder.Append(text);
           if (File.GetLastWriteTimeUtc(file).Ticks > jsLastTime)
             jsLastTime = File.GetLastWriteTimeUtc(file).Ticks;
           continue;
         }
         if (Constants.IsRelease && Path.GetExtension(file) == ".css")
         {
-          cssBuilder.Append(File.ReadAllText(file));
+          cssBuilder.Append(text);
           if (File.GetLastWriteTimeUtc(file).Ticks > cssLastTime)
             cssLastTime = File.GetLastWriteTimeUtc(file).Ticks;
           continue;
         }
         Directory.CreateDirectory(Path.GetDirectoryName(outputFile));
-        File.Copy(file, outputFile, true);
+        File.WriteAllText(outputFile, text);
       }
       if (Constants.IsRelease)
       {

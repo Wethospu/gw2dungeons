@@ -913,7 +913,7 @@ attack=Double damage on burning targets
 attack=Flame Jet
 ID=5023
 animation=pulls right arm back|1|purple spray
-image=https://i.imgur.com/k1W44xl.jpg
+image=k1W44xl.jpg
 cooldown=0
 effect=5 cones in 2 s
 count=5
@@ -922,7 +922,7 @@ subeffect=damage:?
 
 attack=Flame Burst
 ID=5029
-image=https://i.imgur.com/NixR1Sx.jpg
+image=NixR1Sx.jpg
 animation=grabs ground and raises arms|2.5
 effect=PBAoE
 subeffect=damage:?
@@ -930,7 +930,7 @@ subeffect=burning:10
 
 attack=Shock Wave
 ID=5021
-image=https://i.imgur.com/x8a73ma.jpg
+image=x8a73ma.jpg
 animation=raises right arm and smashes ground with right hand|1
 effect=projectile at every target (360 degrees)
 subeffect=damage:?

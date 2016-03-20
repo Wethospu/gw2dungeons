@@ -22,9 +22,9 @@ namespace DataCreator.Encounters
     public int Scale = 0;
 
 
-    public PathData(string str)
+    public PathData(string str, string instance)
     {
-      Load(str);
+      Load(str, instance);
     }
 
     /***********************************************************************************************
@@ -34,7 +34,7 @@ namespace DataCreator.Encounters
      *                                                                                             *
      ***********************************************************************************************/
 
-    private void Load(string str)
+    private void Load(string str, string instance)
     {
       var elements = str.Split(Constants.TagSeparator);
       if (elements.Length > 1)
@@ -64,7 +64,7 @@ namespace DataCreator.Encounters
       }
       else
         ErrorHandler.ShowWarning("Missing info. Use \"init='pathTag'|'dungeon name'|'long path name'|'short path name'|'scale'\".");
-      CheckPathMap();
+      CheckPathMap(instance);
     }
 
     /***********************************************************************************************
@@ -74,10 +74,11 @@ namespace DataCreator.Encounters
      *                                                                                             *
      ***********************************************************************************************/
 
-    private void CheckPathMap()
+    private void CheckPathMap(string instance)
     {
-      if (File.Exists(Constants.DataOtherRaw + "media/dungeonimages/" + Tag.ToLower() + "_map.jpg"))
-        Map = "media/dungeonimages/" + Tag.ToLower() + "_map.jpg";
+      string fileName = Constants.LocalMediaFolder + instance + "\\" + Tag.ToLower() + "_map.jpg";
+      if (File.Exists(Constants.DataOtherRaw + fileName))
+        Map = fileName;
     }
   }
 }

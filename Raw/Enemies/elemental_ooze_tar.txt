@@ -235,7 +235,7 @@ subeffect=damage:-
 
 attack=Ooze Mace
 ID=2451
-image=https://i.imgur.com/HqHnS28.jpg
+image=HqHnS28.jpg
 animation=spins head|1.75
 effect=melee
 subeffect=damage:-
@@ -268,7 +268,7 @@ copy=6432
 name=Ghastly Ooze
 ID=5953
 alt=Ghastly Oozes|Ooze|Oozes
-image=https://i.imgur.com/nbDt7ik.jpg
+image=nbDt7ik.jpg
 Path=AC1|AC2
 
 #############################
@@ -1211,6 +1211,8 @@ subeffect=damage:?
 subeffect=self destruct
 
 attack=Distributed Magic
+ID=31750
+cooldown=15.45
 additional=can't be blocked or evaded. Can be prevented by having 4 players on the green circle.
 effect=delayed (6.5 s) AoE
 subeffect=damage-percent:80 on a huge area
@@ -1218,12 +1220,18 @@ subeffect=damage-percent:80 on a huge area
 subeffect=damage:? on the circle
 
 attack=Magic Storm
+cooldown=35
 additional=can't be blocked
 effect=defiance:2000
 effect=multiple ballistic projectiles with AoE over time
 # 6k
 subeffect=damage:?
 
+attack=Summon
+ID=31626
+effect=3 enemy=Seekers:normal:81 (1 at each pylon)
+effect=When below 33%
+subeffect=enemy=Seeker:normal:81 at middle
 
 attack=Unstable Pylon
 additional=Partial ticks cause reduced damage (like conditions)

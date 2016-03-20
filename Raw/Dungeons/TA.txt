@@ -22,10 +22,10 @@ First run per character gives a level 50 rare head armor.
 First run per day gives 26 silvers.
 
 name=Pod Area
-image=http://i.imgur.com/Oq5p9dm.jpg
-image=http://i.imgur.com/JaGjijB.jpg
-image=http://i.imgur.com/B6rfqo1.jpg
-image=http://i.imgur.com/8SMoxDn.jpg
+image=Oq5p9dm.jpg
+image=JaGjijB.jpg
+image=B6rfqo1.jpg
+image=8SMoxDn.jpg
 tactic=normal
 2 enemy=Recluses spawn right before the first door. After them there are 2 more enemy=Recluses, 12 enemy=Spider_Hatchlings and 5 enemy=Sylvari_Prisoners.
 Prisoners can be rescued by activating their pod. There is a high chance (~50%) that they are already corrupted which makes a random enemy=text:Nightmare_Court_Initiate|knight|duelist|sorcerer|archer appear. If they are not corrupt, they will give you a buff which heals you right before you get downed.
@@ -42,7 +42,7 @@ Take also wiki=Shadow_Refuge so you can use it for stealth if people aggro enemi
 
 
 name=enemy=Undergrowth_Spider_Queen:champion
-image=http://i.imgur.com/qv13tku.jpg
+image=qv13tku.jpg
 tactic=ranged|melee
 Watch out for nearby enemy=Volatile_Blossoms on the area. 4 enemy=Spider_Hatchlings:normal constantly respawn on the area.
 tactic=ranged
@@ -63,7 +63,7 @@ tactic=thief
 wiki=Pistol_Whip with wiki=Invigorating_Precision and wiki=Signet_of_Malice allows you to solo her easily. Use wiki=Smoke_Screen to reduce pressure if you get low health.
 
 name=Spell Blossoms
-image=http://i.imgur.com/Pcq4xXe.jpg
+image=Pcq4xXe.jpg
 tactic=normal
 After enemy=Undergrowth_Spider_Queen:champion, there are 4 enemy=Volatile_Blossoms, a enemy=Archer and a enemy=Sylvari_Prisoner.
 After them, there is a random enemy=text:Nightmare_Court|knight|duelist|sorcerer|archer, 6 enemy=Spell_Blossoms and lots of enemy=Volatile_Blossoms.
@@ -71,7 +71,7 @@ If the random enemy is a enemy=Knight:elite, pull him back to kill him safely. O
 At the tunnel, there is a enemy=Hound and 4 enemy=Pups. Focus on Hound as Pups will die very quickly. After them you will face enemy=Sariel in a room with 3 enemy=Sylvari_Prisoners.
 
 name=enemy=Sariel:champion
-image=http://i.imgur.com/USpAXrn.jpg
+image=USpAXrn.jpg
 tactic=ranged
 Keep her crippled and kite. Dodge when she dashes towards you. When she gets close, just jump down from ledges to create some distance.
 tactic=melee
@@ -80,7 +80,7 @@ tactic=exploit
 She can be safespotted by standing on media=tas_sariel_exploit.jpg|a_ledge. Her dash will still hit you but can be easily healed.
 
 name=Lake of Fear (after water tunnel)
-image=http://i.imgur.com/UvF8k9l.jpg
+image=UvF8k9l.jpg
 tactic=normal
 After enemy=Sariel there is a tunnel of water with 7 enemy=Barracudas. They are harmless and can be killed for experience. After tunnel, there is a huge area with lots of enemies. Don't aimlessly wander around or you will get yourself killed.
 There are 4 enemy=Archers_(Stable) and 2 enemy=Sylvari_Prisoners near the entrance. On the right there are 2 enemy=Hounds and 6 enemy=pups. On the left there are 2 enemy=Cultists:elite, 1 enemy=Sorcerer and few enemy=Volatile_Blossoms.
@@ -104,7 +104,7 @@ Try to aggro him first to hopefully make him attack you. wiki=Nine-Tailed_Strike
 Manage your initiative with wiki=Steal and wiki=Infiltrator's_Signet.
 
 name=enemy=Brangoire:champion
-image=http://i.imgur.com/DgnscLA.jpg
+image=DgnscLA.jpg
 tactic=ranged|melee
 He summons lots of enemy=Living_Nightmares:normal which explode as a poison gas.
 tactic=ranged
@@ -115,20 +115,20 @@ Dodge when he jumps in the air to evade his Terrifying Blast. Getting feared may
 Reviving is extremely hard so don't get downed.
 
 name=enemy=Cadeyrn:champion
-image=http://i.imgur.com/G4eGEoK.jpg
-image=http://i.imgur.com/kQYKvIa.jpg
+image=G4eGEoK.jpg
+image=kQYKvIa.jpg
 tactic=normal
 He reflects projectiles so pay attention. Occasionally he morphs someone into a cat. Kill a enemy=Pup:normal to break the transform.
 
 name=Nursery
-image=http://i.imgur.com/OlxkAFl.jpg
+image=OlxkAFl.jpg
 tactic=normal
 You need to throw 4 Volatile Essences at the enemy=Husk:champion to make it vulnerable. To get essences, you have to open pods, kill the enemy=Volatile_Nightmare:elite inside of them and throw their essence.
 Open pods one by one to avoid getting overrun. Nightmares can stack serious area Bleeding which can easily kill you, and as such it is a good idea to bring condition removal.
 The husk is a melee attacker with plenty of launches. Try avoid all of it's attacks and get a stun break if you get in trouble. Group stability such as wiki=Hallowed_Ground is extremely useful.
 
 name=enemy=Faolain:champion and the clones
-image=http://i.imgur.com/M9kDctu.jpg
+image=M9kDctu.jpg
 tactic=normal
 You have to kill 4 clones. enemy=Eir:elite, enemy=zojja:elite, enemy=Rytlock:elite and enemy=Logan:elite. Once one is dead Faolain teleports in and attempts to resurrect them. You must either damage her enough (safer) or kill another clone (if any is low) in order to break her resurrection attempt.
 Once resurrection fails that clone won't be resurrected even if you wipe so focusing is extremely important.
@@ -183,11 +183,11 @@ There is a very low chance to get an account bound wiki=Recipe:_Tortured_Root fr
 
 path=TAF|TAU
 name=Reception Hall
-image=http://i.imgur.com/1OQ0LWo.jpg
-image=http://i.imgur.com/4UkHJez.jpg
-image=http://i.imgur.com/JY5lmeH.jpg
-image=http://i.imgur.com/0PnJWwJ.jpg
-image=http://i.imgur.com/uQUf6K7.jpg
+image=1OQ0LWo.jpg
+image=4UkHJez.jpg
+image=JY5lmeH.jpg
+image=0PnJWwJ.jpg
+image=uQUf6K7.jpg
 tactic=skip|fight
 At the start there are some enemy=Volatile_Blossoms:structure. They respawn after some time. Use ranged weapons, preferably with AoE capabilities to destroy them with ease.
 ################################################################
@@ -222,7 +222,7 @@ Dungeon may not start if multiple people talk to Morrigu or choose something els
 
 path=TAF|TAU
 name=Chamber of Envy
-image=http://i.imgur.com/bdMiwSc.jpg
+image=bdMiwSc.jpg
 tactic=normal|exploit
 To make the enemy=Greater_Vine:champion appear you need to kill 5 enemy=Nightmare_Vines:elite. After you kill the first Vine, 2 more will appear on the right side. Killing any of them will make another spawn, this time on the left side. Similarly, killing another Vine will cause the 5th one to spawn. Finally, after killing the 5th one, the boss will spawn.
 ################################################################
@@ -236,7 +236,7 @@ Send one person, preferably with ranged weapon, to the right on the left side. I
 
 path=TAF
 name=Peatrot Gallery
-image=http://i.imgur.com/9twqfZH.jpg
+image=9twqfZH.jpg
 tactic=normal
 After reaching the dead Sylvari at the end of the area you are ambushed by 6 enemy=Nightmare_Court_Archers:elite. Focus one side first and remember to rally from enemy=Volatile_Blossoms:structure. If you attack the left side first, you can cleave the two closest Archers with melee attacks if you stand between them. Bring condition removal against poison.
 After you dispose of the enemies enter the underwater tunnel at the end of the area, swim it through ignoring or killing 4 enemy=Barracudas:normal.
@@ -256,7 +256,7 @@ tactic=thief
 wiki=Smoke_Screen should be used to protect your team from projectiles.
 
 name=Lake of Fear
-image=http://i.imgur.com/ULrXUNT.jpg
+image=ULrXUNT.jpg
 tactic=skip
 All the enemies can be easily skipped by sticking to the right side after you leave the underwater tunnel. enemy=Nightmare_Warder_(Sword):champion can either be skipped by running to the end of the next room or just killed since this champion does not present much of a challenge.
 When killing people usually cross the bridge and stack media=taf_bubble_stack.jpg|on right but some teams go under the bridge and then media=taf_bubble_stack_alt.jpg|turn_right.
@@ -267,7 +267,7 @@ This area is filled with enemies. First, you will get ambushed by 3 enemy=Nightm
 Fighting is not recommended because of the abundance of the enemies and champions.
 
 name=Leurent's Elite Guard
-image=http://i.imgur.com/78aG6x9.jpg
+image=78aG6x9.jpg
 tactic=normal
 To proceed further you need to dispose of 4 enemy=Nightmare_Court_Archer_(Fire):elite protected. They are protected by fire shields which absorb projectiles and kill anyone trying to get through. If you want to use ranged weapons, use only those that do not involve any projectiles. Melee players should use blocks, blinds or invulnerability (evading does not work) to enter shields or pay attention to the mini-map and use portals at sides of the area to enter the appropriate bubbles.
 Each bubble remains active few seconds after killing an Archer even when it visually disappears, so wait a second, use a block, or use the portals.
@@ -281,10 +281,10 @@ Use wiki=Signet_of_Shadows to blind an archer so you or someone else can pass th
 
 
 name=The Arboretum
-image=http://i.imgur.com/nIw5UQa.jpg
-image=http://i.imgur.com/FmA91yV.jpg
-image=http://i.imgur.com/VrCZTun.jpg
-image=http://i.imgur.com/yYzYoaW.jpg
+image=nIw5UQa.jpg
+image=FmA91yV.jpg
+image=VrCZTun.jpg
+image=yYzYoaW.jpg
 tactic=skip|fight
 Shortly after leaving the previous area you will encounter the first group of enemies comprising of 5 enemy=Nightmare_Hounds:elite. Bring stability or avoid their leaps, use a stunbreaker in case you miss a dodge or block.
 ################################################################
@@ -325,7 +325,7 @@ tactic=warrior
 Take wiki="Shake_It_Off!" for a stun break and to cleanse crippled.
 
 name=Verdure Gallery
-image=http://i.imgur.com/q9deDaA.jpg
+image=q9deDaA.jpg
 tactic=skip
 There are 3 groups of Nightmare Court enemy=text:enemies|Archer:elite|Cultist:elite|Duelist:elite|Knight:elite|Sorcerer:elite to skip. The skip is only hard if those groups have Knights. The first group has also a hidden enemy=Nightmare_Vine:elite but since it is immobile it does not present much of a threat.
 Stick to the right side, you should be able to avoid most of the enemy=Volatile_Blossoms:structure that way. After the third group, you will enter a tunnel filled with Blossoms. If you die there because of them or mobs that are chasing you, quickly rally on the nearest blossom and continue forwards. Try not to die and rally continuously as this will increase your death penalty.
@@ -423,7 +423,7 @@ tactic=thief
 wiki=Blinding_Powder increases your stealth duration.
 
 name=enemy=Malrona:legendary
-image=http://i.imgur.com/K1p1qJF.jpg
+image=K1p1qJF.jpg
 tactic=normal|coordinated
 Malrona has only two attacks, Venom Spray and Blast, and she alternates between them. This makes her very predictable to fight. Both of her attacks have similar but not identical animations, so try to remember which one she used previously.
 Venom Spray, is a frontal cone attack that hits 4 times and inflicts poison with every hit. Moreover, if anyone gets hit by it, Malrona will gain Predator swiftness buff that makes her moving fast. At the same time, any party member that is poisoned will deal much more damage. You should use this fact to your advantage and get hit by this attack on purpose. If you do so, keep in mind that you cannot remove poison, do not use any whirl or projectile finishers in conjunction with a light field as they are able to remove conditions either from your allies or from yourself.
@@ -436,8 +436,8 @@ She usually starts the combat with Venom Blast so prepare accordingly before you
 ################################################################
 
 name=Spinneret Creche
-image=http://i.imgur.com/Yan8nA4.jpg
-image=http://i.imgur.com/Ft9NCL8.jpg
+image=Yan8nA4.jpg
+image=Ft9NCL8.jpg
 tactic=skip
 First part of this skip consists of 2 small groups of 2 enemy=Undergrowth_Stonetouch:elite and then 2 enemy=Undergrowth_Bloodfangs:elite. The only difficulty that comes with skipping is to avoid Stonetouches' petrify and not getting downed because of triggering too many enemy=Volatile_Blossoms:structure. Fortunately, you can use Blossoms for your advantage. Send a person with decent capabilities for destroying them, such as a guardian or preferably use stealth. Shortly after, 3 enemy=Nightmare_Vines:elite spawns, just turn left while avoiding their AoE fields and most importantly their stomps.
 After Vines, you will enter a corridor filled with 2 groups of spiders. Try not to run close to them as they might cripple you. As always, avoid Stonetouches.
@@ -469,7 +469,7 @@ tactic=warrior
 Take wiki="Shake_It_Off!" for a stun break and to cleanse crippled.
 
 name=enemy=Fyonna_the_Countess_of_Spiders:legendary
-image=http://i.imgur.com/AHmMryU.jpg
+image=AHmMryU.jpg
 tactic=normal
 The fight starts after a short dialogue between Fyonna and Vevina and takes place in a room full of spider eggs. Anyone stepping on one of those eggs will spawn a random elite spider. Fyonna is primarily an archer with skills that either push or pull you which means that without stability you will probably be sent on one of those eggs. However, you can simply pull her outside the whole room to a corridor from where you came from and simply defeat her without worrying about additional spiders.
 Every attack of her is considered as a projectile which means that with enough projectile defense you can trivialize most of the fight. Even if you don't, her attacks apply relatively low pressure, if someone dies just revive him and continue the fight. After some time, she transforms into a spider form that no longer use projectiles but is still relatively easy to dispatch.
@@ -493,7 +493,7 @@ tactic=thief
 wiki=Smoke_Screen should be used to protect your team from Fyonna's attacks.
 
 name=Boleshian Pit
-image=http://i.imgur.com/kcnWjNN.jpg
+image=kcnWjNN.jpg
 tactic=skip
 The skip is rather short and easy.
 ################################################################
@@ -526,7 +526,7 @@ tactic=warrior
 Take wiki="Shake_It_Off!" for a stun break and to cleanse crippled.
 
 name=The Arboretum
-image=http://i.imgur.com/R0BTKZr.jpg
+image=R0BTKZr.jpg
 tactic=normal
 An unskippable fight before the last boss. A small group of two enemies composed of enemy=Nightmare_Warder_(Sword):champion and enemy=Nightmare_Court_Knight:elite. As always, focus the Knight first, then move your attention to the champion.
 ################################################################
@@ -542,7 +542,7 @@ tactic=thief
 Use wiki=Scorpion_Wire if you want to split enemies.
 
 name=Faolain's Lair
-image=http://i.imgur.com/6D82xdl.jpg
+image=6D82xdl.jpg
 tactic=melee|ranged
 After the cinematic ends do not come close to Leurent until he is dead, otherwise you will die. The enemy=Nightmare_Tree:legendary is considered an epic boss which means you cannot critically hit it but conditions work as if that would be normal enemy. That means you can easily keep it blinded completely negating its attacks. The Tree always starts by slamming the ground, prepare to evade it or try to blind it.
 This boss has 4 attacks, the first one, mentioned just before, hits a target and everyone around him. Received damage is high enough to kill glass cannons. The second attack targets everyone and after a slight delay root spikes come from the ground. You can either dodge when the boss touches the ground or when red circles already appeared. Like in the case of the previous attack, you can simply blind the boss to nullify this attack. The two remaining attacks summon either Sylvari Mortar Turret or Healing Seed. The former attacks rather slowish but hits for considerable amount of damage. Fortunately, those are projectiles and you can block them with an anti projectile skill. Healing Seed periodically applies regeneration to the Nightmare Tree but the heals are rather negligible.

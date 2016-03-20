@@ -24,15 +24,15 @@ There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shar
 There is a very low chance to get an account bound wiki=Recipe:_Stargazer_Pendant from the final chest. The recipe allows you to craft wiki=Stargazer_Pendant which gives no extra gold return for your tokens.
 
 name=Start
-image=http://i.imgur.com/I87OBqE.jpg
-image=http://i.imgur.com/KU3nTfu.jpg
+image=I87OBqE.jpg
+image=KU3nTfu.jpg
 tactic=normal
 Use the nearby waypoint immediately. If you want to walk, watch your step because there is a hole right front of you with full of enemy=Orrian_Spiders:normal and enemy=Spider_Hatchlings. If you fall down keep running while dodging until you reach allied NPCs.
 Talk to enemy=Odgen_Stonehealer to start the path selection. Choose enemy=Varra_Skylark to find secrets of Jotun. After the selection, go through the debris and turn left. Don't bother with enemy=Servants, enemy=Farmers or enemy=Villagers because they constantly respawn.
 
 name=Way to enemy=Ancient_Ooze
-image=http://i.imgur.com/EegetpK.jpg
-image=http://i.imgur.com/KjNYb2F.jpg
+image=EegetpK.jpg
+image=KjNYb2F.jpg
 tactic=skip|fight
 The first door is guarded by 2 enemy=text:Risen|elementalist:elite|hunter:elite|illusionist:elite|mage:elite.
 After those two, 4 enemy=Vile_Oozes:elite will ambush you. Their only ability is a channeled attack which strikes four times,
@@ -66,8 +66,8 @@ tactic=consumable
 Use wiki=Order_of_Whispers_Spy_Kit to make sure you do not aggro the first group of Risen.
 
 name=enemy=Ancient_Ooze:legendary
-image=http://i.imgur.com/EQWOK6n.jpg
-image=http://i.imgur.com/rX5UiVy.jpg
+image=EQWOK6n.jpg
+image=rX5UiVy.jpg
 tactic=ranged|melee
 Try to pull the boss closer to the Jotun NPC but remember the locations of the enemies that you skipped. The enemy=Ooze:legendary has two very similar attacks. If no one is at close range, it will bounce thrice, launching and dealing high damage to everyone around its position.
 #######################################
@@ -101,7 +101,7 @@ tactic=warrior
 Use wiki=Rush and wiki=Whirlwind_Attack for hit-and-run tactics.
 
 name=Way to Crystalline Entities
-image=http://i.imgur.com/guTFPHK.jpg
+image=guTFPHK.jpg
 tactic=skip
 The enemy=Oozes:champion  will chase you, making it difficult to kill enemies unless you are able to lose aggro. Most teams will decide to skip everything anyway. If you manage to leave combat, equip condition removal skills.
 Guarding the exit from the open area are 4 enemy=text:Risen|Elementalist:elite|Hunter:elite|Illusionist:elite|Risen_Mage:elite.
@@ -123,8 +123,8 @@ tactic=guardian
 wiki=Virtue_of_Resolve traited with wiki=Absolute_Resolution is able to quickly remove three conditions from your team.
 
 name=enemy=Crystalline_Entities:champion
-image=http://i.imgur.com/YuEDYVU.jpg
-image=http://i.imgur.com/EfXyuLr.jpg
+image=YuEDYVU.jpg
+image=EfXyuLr.jpg
 tactic=normal
 The objective is to kill the nine enemy=Crystalline_Entities:champion wandering around the area. They are resistant to damage and conditions.
 In order to be able to damage them, you need a debuff which is acquired by standing in the spots where a green light is shining through the roof of the cave. The more stacks you have, the more damage you will deal, be advised, however, that each stack deals damage to you every second.
@@ -134,7 +134,7 @@ If you take too much damage and the stacks are about to kill you, just step out 
 Once they are dead, do not forget to get your chest near the Jotun spirit NPC.
 
 name=To Tar
-image=http://i.imgur.com/Lg0K6ty.jpg
+image=Lg0K6ty.jpg
 tactic=skip|fight
 All enemies are often skipped, there is no incentive to kill them as this skip is very straightforward. When you drop down from the ledge you will see 3 enemy=Orrian_Drakes:elite. Run forward until you see a Detonator. Use it to kill about thirty normal Risen further down the path.
 If you stick to the right near the wreck of the ship, you will be ambushed by 3 enemy=Orrian_Spiders:elite, 5 enemy=Orrian_Spiders:normal and an enemy=Orrian_Spider:champion.
@@ -181,14 +181,14 @@ There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shar
 There is a very low chance to get an account bound wiki=Recipe:_Operative's_Creed from the final chest. The recipe allows you to craft wiki=Operative's_Creed which gives a better gold return for your tokens.
 
 name=Start
-image=http://i.imgur.com/I87OBqE.jpg
-image=http://i.imgur.com/KU3nTfu.jpg
+image=I87OBqE.jpg
+image=KU3nTfu.jpg
 tactic=normal
 Use the nearby waypoint immediately. If you want to walk, watch your step because there is a hole right front of you with full of enemy=Orrian_Spiders:normal and enemy=Spider_Hatchlings. If you fall down keep running while dodging until you reach allied NPCs.
 Talk to enemy=Odgen_Stonehealer to start the path selection. Choose enemy=Scholar_Yissa to find secrets of Mursaat. After the selection, go through the debris and go forward. Don't bother with enemy=Servants, enemy=Farmers or enemy=Villagers because they constantly respawn.
 
 name=Way to Belka
-image=http://i.imgur.com/4DO0aOe.jpg
+image=4DO0aOe.jpg
 tactic=skip
 At the start you will get ambushed by lots of enemy=Orrian_Spiders:normal. You should kill them for loot and sigil stacks.
 After you pass the gate, you will face a enemy=Risen_Defiler:elite. Its poison aura is a high-damage poison DoT, try to either stick to the wall as much as possible, dodge through it or use condition removal if you get poisoned as fast as possible before you enter combat due to the damage. This mob also has a pull skill, dodge when you see it whirl. After the single enemy=Risen_Defiler:elite there are two groups of 2 enemy=Risen_Berserkers:elite with one or 2 enemy=Risen_Defiler:elite. Run past the enemy=Risen_Berserkers:elite avoiding their melee-only attacks and avoid poison clouds/pulls from enemy=Risen_Defilers:elite.
@@ -274,7 +274,7 @@ tactic=thief
 wiki=Smoke_Screen with wiki=Cluster_Bomb and wiki=Shadow_Refuge allow you to easily get through undetected.
 
 name=Way to Abomination
-image=http://i.imgur.com/Lg0K6ty.jpg
+image=Lg0K6ty.jpg
 tactic=skip
 The open area is filled with enemy=Risen_Sentinels:elite and enemy=Risen_Deadeyes:elite. They form a very dangerous combo because enemy=Sentinels:elite stun and put down rings of warding while enemy=Deadeyes:elite kill you at range.
 Stick to the right side all the time to avoid most of the enemies. Apart from typical skills for skipping prepare 1 or 2 different sources of stability or even teleports, mostly against enemy=Sentinels:elite and their rings of warding. Take damage immunity or invulnerability if you have trouble evading Killshot from Deadeyes.
@@ -386,14 +386,14 @@ There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shar
 There is a very low chance to get an account bound wiki=Wraithlord_Chains from the final chest. It's account bound so it's not valuable.
 
 name=Start
-image=http://i.imgur.com/I87OBqE.jpg
-image=http://i.imgur.com/KU3nTfu.jpg
+image=I87OBqE.jpg
+image=KU3nTfu.jpg
 tactic=normal
 Use the nearby waypoint immediately. If you want to walk, watch your step because there is a hole right front of you with full of enemy=Orrian_Spiders:normal and enemy=Spider_Hatchlings. If you fall down keep running while dodging until you reach allied NPCs.
 Talk to enemy=Odgen_Stonehealer to start the path selection. Choose enemy=Warden_Illyra to find secrets of Forgotten. After the selection, go through the debris and turn right. Don't bother with enemy=Servants, enemy=Farmers or enemy=Villagers because they constantly respawn.
 
 name=Way to enemy=Wraithlord's_Crusher
-image=http://i.imgur.com/7Fb42Wf.jpg
+image=7Fb42Wf.jpg
 tactic=normal
 You could pull first sizeable group that includes 2 enemy=Risen_Mages:elite and lots of normal Risen to the camp to get some help from NPCs and to stack mobs together. Stand in the corner in the right exit of the camp to los them.
 When you approach circular gate, it closes and 4 elite Risen appear (includes randomly one of enemy=Risen_Berserker:elite, enemy=Risen_Defiler:elite, enemy=Risen_Devastator:elite, enemy=Risen_Elementalist:elite, enemy=Risen_Hunter:elite, enemy=Risen_Sentinel:elite). Focus enemy=Hunter:elite or enemy=Elementalist:elite (if any) because they deal the most amount of damage. People often stand behind corner to stack them together but you ought to have projectile reflections or at least absorptions. After them keep sticking to left side to avoid enemy patrols.
@@ -527,14 +527,14 @@ There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shar
 There is a very low chance to get an account bound wiki=Recipe:_Bloodstone_Fragment from the final chest. The recipe allows you to craft wiki=Bloodstone_Fragment which gives a much better gold return for your tokens.
 
 name=Start
-image=http://i.imgur.com/I87OBqE.jpg
-image=http://i.imgur.com/KU3nTfu.jpg
+image=I87OBqE.jpg
+image=KU3nTfu.jpg
 tactic=normal
 Use the nearby waypoint immediately. If you want to walk, watch your step because there is a hole right front of you with full of enemy=Orrian_Spiders:normal and enemy=Spider_Hatchlings. If you fall down keep running while dodging until you reach allied NPCs.
 Talk to enemy=Odgen_Stonehealer to start the path selection. Choose enemy=Randall_Greyston to find secrets of Seer. After the selection, go through the debris and go forward. Don't bother with enemy=Servants, enemy=Farmers or enemy=Villagers because they constantly respawn.
 
 name=Way to enemy=Kaisar,_High_Priest_of_Balthazar
-image=http://i.imgur.com/4DO0aOe.jpg
+image=4DO0aOe.jpg
 tactic=normal
 At the start you will get ambushed by lots of enemy=Orrian_Spiders:normal. You should kill them for loot and sigil stacks.
 After gate you will face lots of normal Risen. Just kill them. After that wait a bit for enemy=Undead_Knight:champion to appear. Just do not tank his melee attacks and he should be easy to kill.

@@ -29,7 +29,7 @@ tactic=normal
 If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=Toil_for_the_Coil. Alternatively you can leave party and try relogging until you get to another instance.
 Talk with enemy=zojja:ally to begin. enemy=Logan_Thackeray:ally and enemy=Rytlock_Brimstone:ally will join you.
 tactic=exploit
-You can enter the dungeon even when it's closed by link=http://i.imgur.com/WFHQDlI.gif|a_little_jump.
+You can enter the dungeon even when it's closed by link=i.imgur.com/WFHQDlI.gif|a_little_jump.
 
 name=Security Checkpoint
 tactic=normal
@@ -252,7 +252,7 @@ Use wiki=Wall_of_Reflection to protect your team and deal massive damage (Freeze
 tactic=guardian
 Use wiki="Stand_Your_Ground!" when skipping or fighting Wolves.
 tactic=exploit
-You can enter the dungeon even when it's closed by link=http://i.imgur.com/WFHQDlI.gif|a_little_jump.
+You can enter the dungeon even when it's closed by link=i.imgur.com/WFHQDlI.gif|a_little_jump.
 
 ###############################################################################################################
 
@@ -364,7 +364,7 @@ You can use wiki=Battle_Standard if you expect people to go down.
 
 path=CoE1|CoE2|CoE3
 name=Golems
-image=http://i.imgur.com/i2E4Umv.jpg
+image=i2E4Umv.jpg
 tactic=normal
 When you get close 5 different elite Golems wake up. enemy=Mark_K_Assault_Golem:elite, enemy=Mark_J_Assault_Golem:elite, enemy=Mark_K_Battle_Golem:elite, enemy=Mark_P_Support_Golem:elite, enemy=Mark_XXX_Juggernaut:elite.
 You should pull and get behind corner for better cleave/area attack damage.
@@ -374,8 +374,8 @@ tactic=guardian
 Use wiki=Binding_Blade to pull golems faster.
 
 name=Laser Field
-image=http://i.imgur.com/DqZVVCY.jpg
-image=http://i.imgur.com/gh2zNAn.jpg
+image=DqZVVCY.jpg
+image=gh2zNAn.jpg
 tactic=mesmer
 Use wiki=Blink at end to skip some parts.
 tactic=elementalist
@@ -423,7 +423,7 @@ Use wiki=Charge_(necromancer_skill)|Charge_(Flesh_Golem) to deal lots of damage 
 
 path=CoE1
 name=Security Room
-image=http://i.imgur.com/Q68jDH4.jpg
+image=Q68jDH4.jpg
 tactic=engineer
 Use wiki=Bomb_Kit with wiki=Forceful_Explosives at console to kill every nearby Bomb.
 tactic=normal

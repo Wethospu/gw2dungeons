@@ -283,6 +283,8 @@ namespace DataCreator.Enemies
             _currentEnemy.Medias.Clear();
             _currentEnemy.AreAnimationsCopied = false;
           }
+          if (!data.StartsWith("http"))
+            data = Constants.WebsiteMediaLocation + Constants.EnemyMediaFolder + "/" + data;
           _currentEnemy.Medias.Add(new Media(data));
         }
         else
@@ -502,6 +504,8 @@ namespace DataCreator.Enemies
       {
         if (data.Length > 0)
         {
+          if (!data.StartsWith("http"))
+            data = Constants.WebsiteMediaLocation + Constants.EnemyMediaFolder + "/" + data;
           _currentAttack.Medias.Add(new Media(data));
         }
         else

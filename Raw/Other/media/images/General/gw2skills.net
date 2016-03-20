@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/2001/REC-xhtml11-20010531/DTD/xhtml11-flat.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Guild Wars 2 Skills :: Everything You Always Wanted to Know About Guild Wars 2 Skills But Were Afraid to Ask</title>
+<meta name="description" content="Guild Wars 2 Skills :: Everything You Always Wanted to Know About Guild Wars 2 Skills But Were Afraid to Ask" />
+<meta name="keywords" content="guild wars 2 skills" />
+<base target="_top" />
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<link href="http://css.gw2skills.net/gw2skills_6.css" rel="stylesheet" type="text/css" />
+<link href="http://css.gw2skills.net/skilllist_11.css" rel="stylesheet" type="text/css" />
+<link href="http://css.gw2skills.net/traits_6.css" rel="stylesheet" type="text/css" />
+<link href="http://css.gw2skills.net/search.css" rel="stylesheet" type="text/css" />
+<link href="http://css.gw2skills.net/lang/en.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://js.gw2skills.net/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://js.gw2skills.net/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('.editor-banner-slider').bxSlider({
+        mode: 'fade',
+        infiniteLoop: true,
+        controls: false,
+	speed: 500,
+	auto: true,
+	pause: 3000,
+    });
+});
+</script>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+document.location="/errors/ie6.html";
+</script>
+<![endif]-->
+
+<link href="http://css.gw2skills.net/css/mysetup.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://js.gw2skills.net/base.2.1.js"></script>
+<script type="text/javascript" src="http://js.gw2skills.net/skill_info.4.2.min.js"></script>
+<script type="text/javascript" src="http://js.gw2skills.net/setup.3.1.js"></script>
+<script type="text/javascript" src="http://js.gw2skills.net/overlib/overlib.js"></script>
+
+
+
+
+<script type="text/javascript" src="http://js.gw2skills.net/locale.4.3/init.js"></script>
+<script type="text/javascript" src="http://js.gw2skills.net/locale.4.3/en.js"></script>
+
+
+<script type="text/javascript">
+window.onload=autoexec;
+window.onresize=mainAnounceCenter;
+
+var isMSIE = /*@cc_on!@*/false;
+var mySETUP = getCookie('GW2S_mysetup') ? getCookie('GW2S_mysetup') : '1';
+var BALANCE_VER = '2016/02/09 rev.1';
+var myLOCALE = 'en';
+var AJAX_CHARSET = 'utf-8';
+var EDIT_MODE = false;
+var myLANG = myLOCALE;
+var myLOCALNAMES = false;
+
+// Распределение нагрузки
+var CLOUDS   = ['cloud2','cloud3','cloud4','cloud5']; var curCLOUD = 0;
+function cloud()
+{
+	curCLOUD++; curCLOUD = curCLOUD >= CLOUDS.length ? 0 : curCLOUD;
+	return 'http://' + CLOUDS[curCLOUD] + '.gw2skills.net';
+}
+
+var curCtrl = false;
+document.onkeydown=function(event){
+if (event.keyCode && event.keyCode == 17 && getSetupProp(10)) { curCtrl = 1; switchLanguage(1); return false; }
+}
+
+document.onkeyup=function(event){
+if (event.keyCode && event.keyCode == 17 && getSetupProp(10)) { curCtrl = false; switchLanguage(); return false; }
+}
+
+document.onblur=function(event){ curCtrl = false; switchLanguage(); return false; }
+</script>
+
+</head>
+
+<body>
+
+<div id="selector_frame" onmouseout="return nd();"></div>
+
+<!-- Перекрытие -->
+<div class="for_liora"></div>
+
+<div class="overlay" id="overlaymenu_opened">
+<div class="ocontainer">
+
+<div class="setup_button" onclick="setupMenuOpen();" onmouseover="return showHint('Preferences',1);"  onmouseout="return nd();"></div>
+
+<div class="search">
+<form action="/search/" method="post">
+<input type="text" class="query" name="q" value="" />
+<input type="submit" class="submit" name="" value="" />
+</form>
+</div>
+
+</div>
+
+<div class="donate_reminder"><a href="/donate/">Donate to Our Project</a></div>
+
+<div class="shadow"></div>
+</div>
+<!-- Перекрытие - Конец -->
+
+
+<!-- Верхний фон -->
+<div class="topbackground">
+<div class="left"></div>
+
+<div class="prof">
+<div id="topprof_en" class="en_off"></div><div id="topprof_rv" class="rv_off"></div><div id="topprof_th" class="th_off"></div><div id="topprof_m" class="m_off"></div><div id="topprof_g" class="g_off"></div>
+<div id="topprof_w" class="w_off"></div><div id="topprof_r" class="r_off"></div><div id="topprof_n" class="n_off"></div><div id="topprof_el" class="el_off"></div>
+</div>
+
+</div>
+<div class="xpbar"></div>
+<!-- Верхний фон - Конец -->
+
+
+<!-- Главное меню -->
+<div class="menucontainer">
+
+<div class="logo"><h1><a href="/"><span>Guild Wars 2</span></a></h1></div>
+
+<!-- Языки -->
+<div class="langmenu">
+<div class="current_lang en"></div>
+<div class="all_lang">
+<a class="ru" href="http://ru.gw2skills.net/" onmouseover="showHint('Русский');" onmouseout="nd();"><span>RU</span></a>
+<a class="de" href="http://de.gw2skills.net/" onmouseover="showHint('Deutsch');" onmouseout="nd();"><span>DE</span></a>
+<a class="fr" href="http://fr.gw2skills.net/" onmouseover="showHint('Français');" onmouseout="nd();"><span>FR</span></a>
+</div>
+</div>
+<!-- Языки - Конец -->
+
+<div class="icons">
+<ul><li class="s1"></li><li class="s2"></li><li class="s3"></li><li class="s4"></li><li class="s5"></li><li class="s6"></li><li class="s7"></li><li class="s8"></li><li class="s9"></li><li class="s0"></li></ul>
+</div>
+
+<div class="links">
+<ul>
+	<li class="s1" id="menu_s1"><a href="/skills/"  onmouseover="toogleMenu('s1');" onmouseout="toogleMenu('s1');"><span>Skills</span></a></li>
+	<li class="s2" id="menu_s2"><a href="/professions/"  onmouseover="toogleMenu('s2');" onmouseout="toogleMenu('s2');"><span>Professions</span></a></li>
+	<li class="s3" id="menu_s3"><a href="/races/"  onmouseover="toogleMenu('s3');" onmouseout="toogleMenu('s3');"><span>Races</span></a></li>
+	<li class="s4" id="menu_s4"><a href="/game/"  onmouseover="toogleMenu('s4');" onmouseout="toogleMenu('s4');"><span>Mechanics</span></a></li>
+	<li class="s5" id="menu_s5"><a href="/combo/"  onmouseover="toogleMenu('s5');" onmouseout="toogleMenu('s5');"><span>Combo</span></a></li>
+<li class="gw2"><a href="/"><span>Guild Wars 2</span></a></li>
+	<li class="s6" id="menu_s6"><a href="/news/"  onmouseover="toogleMenu('s6');" onmouseout="toogleMenu('s6');"><span>About Us</span></a></li>
+		<li class="s7" id="menu_s7"></li><li class="s8" id="menu_s8"></li>	<li class="s9" id="menu_s9"><a href="/editor/"  onmouseover="toogleMenu('s9');" onmouseout="toogleMenu('s9');"><span>Build Editor</span></a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="profmap">
+<img src="http://cloud.gw2skills.net/img/null.gif" usemap="#profmap" alt="" />
+<p><map name="profmap">
+<area href="/" shape="circle" coords="0,200,85" />
+<area onmouseover="profToggle('en');return showHint('Engineer');" onmouseout="profToggle('en');return nd();" href="/professions/engineer/" shape="poly" coords="75,152,62,129,67,117,27,102,43,81,71,91,81,81,71,59,86,44,107,40,121,49,135,40,146,58,147,75,157,104,161,116,140,125,119,138,121,159,87,157,77,153" />
+<area onmouseover="profToggle('rv');return showHint('Revenant');" onmouseout="profToggle('rv');return nd();" href="/professions/revenant/" shape="poly" coords="167,99,153,82,157,64,137,24,143,0,166,3,210,16,224,2,246,8,231,21,239,31,248,43,248,62,232,77,217,79,217,90,199,82,182,86,173,93" />
+<area onmouseover="profToggle('n');return showHint('Necromancer');"  onmouseout="profToggle('n');return nd();"  href="/professions/necromancer/" shape="poly" coords="199,179,178,152,178,137,150,127,128,133,120,141,123,162,84,159,83,168,94,191,110,203,201,203,201,188" />
+<area onmouseover="profToggle('th');return showHint('Thief');" onmouseout="profToggle('th');return nd();" href="/professions/thief/" shape="poly" coords="226,132,217,114,230,99,198,81,182,87,163,104,160,129,181,137,180,152,202,178,227,151" />
+<area onmouseover="profToggle('el');return showHint('Elementalist',1);" onmouseout="profToggle('el');return nd();" href="/professions/elementalist/" shape="poly" coords="256,62,263,64,273,77,285,124,292,140,284,151,293,201,212,202,213,176,230,149,228,127,220,113,234,97,220,90,220,81,233,78,250,64" />
+<area onmouseover="profToggle('w');return showHint('Warrior',1);"  onmouseout="profToggle('w');return nd();" href="/professions/warrior/" shape="poly" coords="252,60,250,30,234,23,251,7,353,8,362,44,362,65,370,116,365,135,346,134,326,159,310,175,294,148,291,128,274,73,265,62" />
+<area onmouseover="profToggle('r');return showHint('Ranger',1);"  onmouseout="profToggle('r');return nd();" href="/professions/ranger/" shape="poly" coords="300,202,404,201,399,167,378,165,369,139,357,128,345,137,320,168,306,175,286,145,286,154"/>
+<area onmouseover="profToggle('m');return showHint('Mesmer',1);"  onmouseout="profToggle('m');return nd();" href="/professions/mesmer/" shape="poly" coords="387,32,398,39,410,4,417,13,417,78,411,102,402,116,377,136,365,129,369,89,363,72,361,53,375,31" />
+<area onmouseover="profToggle('g');return showHint('Guardian',1);"  onmouseout="profToggle('g');return nd();" href="/professions/guardian/" shape="poly" coords="431,61,455,50,463,61,462,86,470,110,464,144,481,161,494,197,404,201,404,158,378,140,409,112,421,73" />
+</map></p>
+</div>
+
+<!-- Главное меню - Конец -->
+
+
+<!-- Контент -->
+<div class="content">
+
+<!-- Навигатор -->
+<div class="navigator">
+
+<a href="/">Guild Wars 2 Skills</a>
+
+<div class="slogan">Everything You Always Wanted to Know About Guild Wars 2 Skills But Were Afraid to Ask</div>
+</div>
+<!-- Навигатор - Конец -->
+
+<!-- Две колонки -->
+<div class="cols2">
+
+<!-- Правое меню -->
+<div class="right" id="content_right_column">
+
+<div class="banners">
+<div class="slider">
+<ul class="editor-banner-slider">
+<li><a href="/editor/?vFAQFhQkAAAuA"><img src="http://cloud5.gw2skills.net/img/banners/en/editor4_tempest.jpg" alt="" /></a></li>
+<li><a href="/editor/?vJAQFgPSAAgXA"><img src="http://cloud5.gw2skills.net/img/banners/en/editor4_berserker.jpg" alt="" /></a></li>
+<li><a href="/editor/?vNAQFAGSAAAYA"><img src="http://cloud5.gw2skills.net/img/banners/en/editor4_druid.jpg" alt="" /></a></li>
+<li><a href="/editor/?vRAQFABSAAgYA"><img src="http://cloud5.gw2skills.net/img/banners/en/editor4_reaper.jpg" alt="" /></a></li>
+<li><a href="/editor/?vVAQFADSAAAZA"><img src="http://cloud5.gw2skills.net/img/banners/en/editor4_dragonhunter.jpg" alt="" /></a></li>
+<li><a href="/editor/?vZAQFAGSAAgZA"><img src="http://cloud5.gw2skills.net/img/banners/en/editor4_daredevil.jpg" alt="" /></a></li>
+<li><a href="/editor/?vdAQFACSAAAaA"><img src="http://cloud5.gw2skills.net/img/banners/en/editor4_scrapper.jpg" alt="" /></a></li>
+<li><a href="/editor/?vhAQFgOSAAgaA"><img src="http://cloud5.gw2skills.net/img/banners/en/editor4_chronomancer.jpg" alt="" /></a></li>
+<li><a href="/editor/?vlAQFgun3gichCthi9hCOiCciiEAAwGA"><img src="http://cloud5.gw2skills.net/img/banners/en/editor4_herald.jpg" alt="" /></a></li>
+</ul>
+</div>
+
+<a href="/donate/"><img src="http://cloud5.gw2skills.net/img/banners/en/donate.png" alt="" /></a>
+<a href="http://buy.guildwars2.com/" target="_blank"><img src="http://cloud5.gw2skills.net/img/banners/en/hot_buy.jpg" alt="" /></a></div>
+</div>
+<!-- Правое меню - Конец -->
+
+
+<!-- Левая колонка -->
+<div class="left" id="content_left_column"><h2>Guild Wars 2 Skills</h2>
+
+<!-- Список новостей -->
+<div class="newsbrief">
+
+
+<!-- Новость -->
+<div class="item">
+<div class="date">Nov 6, 2015</div>
+<h3>Version 4.3 of Build Editor<span class="group"><a href="/news/site/">Project News</a></span></h3>
+<p><p>Version 4.3 of Build Editor has been released. List of changes and fixes:</p>
+<ul>
+<li>Attributes <b>Expertise</b> and <b>Concentration</b> have been added to character's attributes section</li>
+<li>Descriptions of attributes <b>Condition Duration</b> and <b>Boon Duration</b> are expanded with list of all conditions and boons that have got increasing of their duration from traits, upgrades and buffs</li>
+<li>Attributes <b>Agony Resistance</b> and <b>Magic Find</b> are only visible at tabs <i>Specialization</i> and <i>Armor</i> now</li>
+<li>Added new 4-stats combinations for weapons and armor of <i>Ascended</i> and <i>Exotic</i> rarity, trinkets of <i>Exotic</i> rarity, upgrades of <i>Exotic</i> and <i>Rare</i> rarity - <b>Commander</b>, <b>Crusader</b>, <b>Marauder</b>, <b>Minstrel</b>, <b>Trailblazer</b>, <b>Vigilant</b>, <b>Viper</b> and <b>Wanderer</b></li>
+</ul>
+
+<p>We also added new runes, sigils and PvP-amulets from Heart of Thorns expansion. Revision of German and French texts for all Heart of Thorns skills and traits will be made during next week.</p></p>
+<p class="link">
+<a href="/news/?id=31">read more</a> |
+<a href="/news/?id=31#comments">comments (15)</a>
+</p>
+</div>
+<!-- Новость -->
+
+
+<!-- Новость -->
+<div class="item">
+<div class="date">Oct 1, 2015</div>
+<h3>Version 4.2 of Build Editor<span class="group"><a href="/news/site/">Project News</a></span></h3>
+<p><p>Version 4.2 of Build Editor has been released. List of changes and fixes:</p>
+<ul>
+<li>Added new elite specializations – <b>Scrapper</b> and <b>Druid</b></li>
+<li>Added elite profession icons for elite specializations</li>
+<li>Added new pets for Ranger - <b>Electric Wyvern</b>, <b>Fire Wyvern</b>, <b>Bristleback</b> and <b>Tiger</b> (with placeholder for F2 skill for the last one)</li>
+</ul>
+<p>All data about damage and healing coefficients for new specializations will be updated after BWE-3.</p></p>
+<p class="link">
+<a href="/news/?id=30">read more</a> |
+<a href="/news/?id=30#comments">comments (11)</a>
+</p>
+</div>
+<!-- Новость -->
+
+
+<!-- Новость -->
+<div class="item">
+<div class="date">Aug 31, 2015</div>
+<h3>Version 4.1 of Build Editor<span class="group"><a href="/news/site/">Project News</a></span></h3>
+<p><p>Version 4.1 of Build Editor has been released. List of changes and fixes:</p>
+<ul>
+<li>Added new elite specializations – <b>Herald</b>, <b>Berserker</b> and <b>Daredevil</b></li>
+<li>Added Berserk mode for Warrior with Berserker specialization</li>
+<li>Small fixes and improvements of selection interface for items and upgrades</li>
+</ul>
+<p>Due to lack of data about new elite specialization now we calculate only damage facts for Daredevil. All other data about damage and healing coefficients for new specializations will be updated after BWE-2.</p></p>
+<p class="link">
+<a href="/news/?id=28">read more</a> |
+<a href="/news/?id=28#comments">comments (5)</a>
+</p>
+</div>
+<!-- Новость -->
+
+
+<!-- Новость -->
+<div class="item last">
+<div class="date">Aug 13, 2015</div>
+<h3>Version 4.0 of Build Editor – Choose the Specialization<span class="group"><a href="/news/site/">Project News</a></span></h3>
+<p><p>Version 4.0 of Build Editor has been released. List of changes and fixes:</p>
+<ul>
+<li>Added the possibility to use elite specializations. Now you can use the following specializations: Tempest, Reaper, Dragonhunter and Chronomancer</li>
+<li>Added a new profession – Revenant</li>
+<li>Function “Show skill action” has been changed – now this action blocks other skills according to in-game behavior of used skill</li>
+<li>Necromancer’s shroud skills now available upon using “Show skill action” button</li>
+<li>Downed and drowned skills have been added</li>
+<li>“Specialization” tab supports preview mode now – you can use three additional slots to preview specializations (these specializations do not affect your build)</li>
+<li>“Current Effects” section supplemented control effects “Taunt” and “Pull”</li>
+<li>Changed menu for Ranger’s pets – now all pets are grouped by families</li>
+<li>Maximum level for condition duration and boon duration bonuses is limited by 100%</li>
+<li>Slot F2 has been added for Thief – now you can choose a skill stolen from a foe of any profession. This skill is not saved in the quick link code</li>
+</ul>
+<p>All previously created quick links are still valid. Please do not remember to press Ctrl+F5 to be sure you work with the latest version of editor.</p></p>
+<p class="link">
+<a href="/news/?id=27">read more</a> |
+<a href="/news/?id=27#comments">comments (5)</a>
+</p>
+</div>
+<!-- Новость -->
+
+
+</div>
+<!-- Список новостей - Конец -->
+
+
+<div class="backhref"><a href="/news/">all news</a></div>
+<p class="subscribe rss32"><a href="/news/rss/">Subcribe at RSS-feed</a></p></div>
+<!-- Левая колонка - Конец -->
+
+</div>
+<!-- Две колонки - Конец -->
+
+</div>
+<!-- Контент - Конец -->
+
+<!-- Быстрые линки -->
+<div class="quicklinks">
+
+<div>
+<h4><a href="/skills/">Skills</a></h4>
+<ul><li><a href="/skills/weapon/">Weapon Skills</a></li>
+<li><a href="/skills/healing/">Healing Skills</a></li>
+<li><a href="/skills/utility/">Utility Skills</a></li>
+<li><a href="/skills/elite/">Elite Skills</a></li>
+<li><a href="/skills/downed/">Downed Skills</a></li>
+<li><a href="/editor/">Build Editor</a></li>
+</ul></div>
+<div><h4><a href="/professions/">Professions</a></h4>
+<ul><li><a href="/professions/elementalist/">Elementalist</a></li>
+<li><a href="/professions/warrior/">Warrior</a></li>
+<li><a href="/professions/ranger/">Ranger</a></li>
+<li><a href="/professions/necromancer/">Necromancer</a></li>
+<li><a href="/professions/guardian/">Guardian</a></li>
+<li><a href="/professions/thief/">Thief</a></li>
+<li><a href="/professions/engineer/">Engineer</a></li>
+<li><a href="/professions/mesmer/">Mesmer</a></li>
+<li><a href="/professions/revenant/">Revenant</a></li>
+</ul></div>
+<div><h4><a href="/races/">Races</a></h4>
+<ul><li><a href="/races/human/">Human</a></li>
+<li><a href="/races/charr/">Charr</a></li>
+<li><a href="/races/norn/">Norn</a></li>
+<li><a href="/races/asura/">Asura</a></li>
+<li><a href="/races/sylvari/">Sylvari</a></li>
+</ul></div>
+<div><h4><a href="/game/">Mechanics</a></h4>
+<ul><li><a href="/game/attributes/">Character Attributes</a></li>
+<li><a href="/game/weapon/">Weapons</a></li>
+<li><a href="/game/armor/">Armor</a></li>
+<li><a href="/game/upgrades/">Upgrades</a></li>
+<li><a href="/game/boons/">Boons</a></li>
+<li><a href="/game/conditions/">Conditions</a></li>
+<li><a href="/game/control/">Control</a></li>
+<li><a href="/game/healing/">Healing and Death</a></li>
+</ul></div>
+<div><h4><a href="/combo/">Combo</a></h4>
+<ul><li><a href="/combo/fields/">Combo Fields</a></li>
+<li><a href="/combo/finishers/">Combo Finishers</a></li>
+<li><a href="/combo/generator/">Combo Generator</a></li>
+
+</ul></div>
+
+<div class="clear"></div>
+
+</div>
+<!-- Быстрые линки - Конец -->
+
+
+<div class="footer">
+
+<div>
+Site development: <a href="mailto:info@gw2skills.net">Connor McLeoud</a><br /><br />
+All posted materials are freely distributed.<br />
+Link to this site is required when using a translation.<br /><br />
+
+<a href="/credits/">Credits</a> | <a href="/donate/">Donate</a><br /><br />
+<!-- Счетчик -->
+<!--Openstat-->
+<span id="openstat2255789"></span>
+<script type="text/javascript">
+var openstat = { counter: 2255789, image: 89, color: "000000", next: openstat };
+(function(d, t, p) {
+var j = d.createElement(t); j.async = true; j.type = "text/javascript";
+j.src = ("https:" == p ? "https:" : "http:") + "//openstat.net/cnt.js";
+var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
+})(document, "script", document.location.protocol);
+</script>
+<!--/Openstat-->
+
+<!--Openstat-->
+<span id="openstat2280420"></span>
+<script type="text/javascript">
+var openstat = { counter: 2280420, next: openstat };
+(function(d, t, p) {
+var j = d.createElement(t); j.async = true; j.type = "text/javascript";
+j.src = ("https:" == p ? "https:" : "http:") + "//openstat.net/cnt.js";
+var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
+})(document, "script", document.location.protocol);
+</script>
+<!--/Openstat-->
+</div>
+
+<div class="right">
+<a href="http://guildwars2.com/" target="_blank"><img src="http://cloud.gw2skills.net/img/logo/gw2.png" alt="Guild Wars 2" /></a>
+<a href="http://www.arena.net/" target="_blank"><img src="http://cloud.gw2skills.net/img/logo/arenanet.png" alt="ArenaNet" /></a>
+<a href="http://us.ncsoft.com/" target="_blank"><img src="http://cloud.gw2skills.net/img/logo/ncsoft.png" alt="NCsoft" /></a>
+<br /><br />
+&copy; 2010-2016 ArenaNet, Inc. and NC Interactive, Inc. All rights reserved. Guild Wars, Guild Wars 2, ArenaNet, NCsoft, the Interlocking NC Logo, and all associated logos and designs are trademarks or registered trademarks of NCsoft Corporation. All other trademarks are the property of their respective owners.</div>
+
+</div>
+
+
+<!-- Настройки -->
+<noindex>
+<div class="setup_container" id="setup_container">
+<div class="blocker"></div>
+
+<div class="setuprow">
+<div class="setup">
+<div class="closebutton" onclick="setupMenuClose();"></div>
+
+<h2>Preferences</h2>
+<p class="comm">To be able to use preferences, please enable cookies support in your browser.</p>
+
+<div class="section firstsection english_no">
+<h3>Show in English</h3>
+<dl>
+<dt id="sm_1" onmouseover="smHover(1);" onmouseout="smHover(1);" onclick="smSet(1);"></dt><dd id="sm_text_1" onmouseover="smHover(1);" onmouseout="smHover(1);" onclick="smSet(1);">Skill names</dd>
+<dt id="sm_2" onmouseover="smHover(2);" onmouseout="smHover(2);" onclick="smSet(2);"></dt><dd id="sm_text_2" onmouseover="smHover(2);" onmouseout="smHover(2);" onclick="smSet(2);">Skill descriptions</dd>
+<dt id="sm_3" onmouseover="smHover(3);" onmouseout="smHover(3);" onclick="smSet(3);"></dt><dd id="sm_text_3" onmouseover="smHover(3);" onmouseout="smHover(3);" onclick="smSet(3);">Skill tooltips</dd>
+</dl>
+<dl>
+<dt id="sm_4" onmouseover="smHover(4);" onmouseout="smHover(4);" onclick="smSet(4);"></dt><dd id="sm_text_4" onmouseover="smHover(4);" onmouseout="smHover(4);" onclick="smSet(4);">Trait names</dd>
+<dt id="sm_5" onmouseover="smHover(5);" onmouseout="smHover(5);" onclick="smSet(5);"></dt><dd id="sm_text_5" onmouseover="smHover(5);" onmouseout="smHover(5);" onclick="smSet(5);">Trait descriptions</dd>
+<dt id="sm_6" onmouseover="smHover(6);" onmouseout="smHover(6);" onclick="smSet(6);"></dt><dd id="sm_text_6" onmouseover="smHover(6);" onmouseout="smHover(6);" onclick="smSet(6);">Ranger pets</dd>
+</dl>
+</div>
+
+
+<div class="section english_yes">
+<h3>Skills Lists</h3>
+<dl>
+<dt id="sm_7" onmouseover="smHover(7);" onmouseout="smHover(7);" onclick="smSet(7);"></dt><dd id="sm_text_7" onmouseover="smHover(7);" onmouseout="smHover(7);" onclick="smSet(7);">Remember my choice</dd>
+<dt id="sm_8" onmouseover="smHover(8);" onmouseout="smHover(8);" onclick="smSet(8);"></dt><dd id="sm_text_8" onmouseover="smHover(8);" onmouseout="smHover(8);" onclick="smSet(8);">Always short list</dd>
+<dt id="sm_9" onmouseover="smHover(9);" onmouseout="smHover(9);" onclick="smSet(9);"></dt><dd id="sm_text_9" onmouseover="smHover(9);" onmouseout="smHover(9);" onclick="smSet(9);">Always full list</dd>
+</dl>
+</div>
+
+<div class="section lastsection english_no">
+<h3>Additional</h3>
+<dl>
+<dt id="sm_10" onmouseover="smHover(10);" onmouseout="smHover(10);" onclick="smSet(10);"></dt><dd id="sm_text_10" onmouseover="smHover(10);" onmouseout="smHover(10);" onclick="smSet(10);">Hold Ctrl key to see English descriptions</dd>
+</dl>
+</div>
+
+<div class="bottom_buttons">
+<div class="default_button" onclick="smDefault();"></div>
+<div class="save_button" onclick="setupMenuClose();"></div>
+</div>
+
+</div>
+</div>
+</div>
+</noindex>
+<!-- Настройки - Конец -->
+
+
+<div id="total_blocker"></div>
+
+<script type="text/javascript">switchLanguage();</script>
+</body>
+</html>

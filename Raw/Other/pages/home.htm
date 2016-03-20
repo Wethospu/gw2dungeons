@@ -120,11 +120,11 @@
 		$(".tracker").each(function(){
 			var path = $(this).attr("data-tag");
 			if (settings.dailyPaths.indexOf(path) > -1)
-				$(this).html('<img class="profession-icon" src="media/img/gold_star.png">');		
+				$(this).html('<img class="profession-icon" src="PATH_ICONgold_star.png">');		
 			else if (settings.donePaths.indexOf(path) > -1)
-				$(this).html('<img class="profession-icon" src="media/img/silver_star.png">');
+				$(this).html('<img class="profession-icon" src="PATH_ICONsilver_star.png">');
 			else
-				$(this).html('<img class="profession-icon" src="media/img/empty_star.png">');
+				$(this).html('<img class="profession-icon" src="PATH_ICONempty_star.png">');
 		});
 		// Clicking tracker should update the completion status.
 		// Not completed -> Completed.
@@ -136,18 +136,18 @@
 				// Remove the path completely.
 				settings.dailyPaths.splice( $.inArray(path, settings.dailyPaths), 1 );
 				settings.donePaths.splice( $.inArray(path, settings.donePaths), 1 );
-				$(this).html('<img class="profession-icon" src="media/img/empty_star.png">');
+				$(this).html('<img class="profession-icon" src="PATH_ICONempty_star.png">');
 			}
 			else if (settings.donePaths.indexOf(path) > -1) {
 				// Add the path.
 				settings.dailyPaths.push(path);
-				$(this).html('<img class="profession-icon" src="media/img/gold_star.png">');		
+				$(this).html('<img class="profession-icon" src="PATH_ICONgold_star.png">');		
 			}
 			else {
 				// Add the path.
 				settings.dailyPaths.push(path);
 				settings.donePaths.push(path);
-				$(this).html('<img class="profession-icon" src="media/img/gold_star.png">');		
+				$(this).html('<img class="profession-icon" src="PATH_ICONgold_star.png">');		
 			}
 			saveSetting("dailyPaths", settings.dailyPaths);
 			saveSetting("donePaths", settings.donePaths);
@@ -178,35 +178,35 @@ ID_VALE
 <div class="tab-pane" id="tab-dungeons">
 <ul class="dungeon-list">
     <li>
-        <img class="dungeon-image" src="./media/img/dungeon_ac.jpg" alt="">
+        <img class="dungeon-image" src="PATH_ICONdungeon_ac.jpg" alt="">
 ID_AC
     </li>
     <li>
-        <img class="dungeon-image" src="./media/img/dungeon_cm.jpg" alt="">
+        <img class="dungeon-image" src="PATH_ICONdungeon_cm.jpg" alt="">
 ID_CM
     </li>
     <li>
-        <img class="dungeon-image" src="./media/img/dungeon_ta.jpg" alt="">
+        <img class="dungeon-image" src="PATH_ICONdungeon_ta.jpg" alt="">
 ID_TA
     </li>
     <li>
-        <img class="dungeon-image" src="./media/img/dungeon_se.jpg" alt="">
+        <img class="dungeon-image" src="PATH_ICONdungeon_se.jpg" alt="">
 ID_SE
     </li>
     <li>
-        <img class="dungeon-image" src="./media/img/dungeon_cof.jpg" alt="">
+        <img class="dungeon-image" src="PATH_ICONdungeon_cof.jpg" alt="">
 ID_COF
     </li>
     <li>
-        <img class="dungeon-image" src="./media/img/dungeon_hotw.jpg" alt="">
+        <img class="dungeon-image" src="PATH_ICONdungeon_hotw.jpg" alt="">
 ID_HOTW
     </li>
     <li>
-        <img class="dungeon-image" src="./media/img/dungeon_coe.jpg" alt="">
+        <img class="dungeon-image" src="PATH_ICONdungeon_coe.jpg" alt="">
 ID_COE
     </li>
     <li>
-        <img class="dungeon-image" src="./media/img/dungeon_arah.jpg" alt="">
+        <img class="dungeon-image" src="PATH_ICONdungeon_arah.jpg" alt="">
 ID_ARAH
     </li>
 </ul>

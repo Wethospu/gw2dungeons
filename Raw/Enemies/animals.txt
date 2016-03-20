@@ -506,7 +506,7 @@ subeffect=moves faster but takes a lot more damage (~5 x) from poisoned players
 Name=Wolf
 ID=11339
 alt=Wolves
-image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
+image=http://wiki.guildwars2.com/images/9/97/Wolf.jpg
 scaling=normal
 Path=Snow
 
@@ -529,7 +529,7 @@ subeffect=might:5:3
 Name=Wolf
 ID=11279
 alt=Wolves
-image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
+image=http://wiki.guildwars2.com/images/9/97/Wolf.jpg
 scaling=constant
 path=SwampBloom|SwampMoss
 
@@ -551,7 +551,7 @@ Name=Wolf
 # VERIFY 11270
 ID=4800
 alt=Wolves
-image=http://wiki.guildwars2.com/images/8/84/Wolf29.png
+image=http://wiki.guildwars2.com/images/9/97/Wolf.jpg
 scaling=constant
 path=SwampBloom|SwampMoss
 
@@ -1392,7 +1392,7 @@ image=http://wiki.guildwars2.com/images/3/33/Mosquito.jpg
 Name=Jungle Skelk
 ID=4359
 alt=Jungle Skelks|Skelk|Skelks
-image=http://wiki.guildwars2.com/images/e/eb/Jungle_Skelk.jpg
+image=http://wiki.guildwars2.com/images/e/e6/Jungle_Skelk_Lurker.jpg
 scaling=normal
 path=SwampBloom|SwampMoss
 

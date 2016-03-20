@@ -38,9 +38,6 @@ namespace DataCreator.Utility
     public Media(string data)
     {
       Link = data;
-      // Allows using relative local media links.
-      if (Link.Contains("media="))
-        Link = Link.Replace("media=", Constants.LocalMediaLocation);
       LinkGenerator.VerifyLink(Link);
       LinkGenerator.BackupAndUpdateSize(Link);
       if (Constants.MediaSizes.ContainsKey(Link))

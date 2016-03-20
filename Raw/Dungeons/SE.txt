@@ -163,9 +163,9 @@ There is a high chance to get wiki=Band_of_the_Moliarchy, wiki=Dissonance_Amplif
 There is a very low chance to get an account bound wiki=Recipe:_The_Replicator from the last boss, enemy=Tazza, if you kill enemy=Kaeyi first. The recipe allows you to craft wiki=The_Replicator which gives a much better gold return for your tokens.
 
 name=Start
-image=http://i.imgur.com/6SZvjVt.jpg
-image=http://i.imgur.com/TWTLvPU.jpg
-image=http://i.imgur.com/IP7f6VR.jpg
+image=6SZvjVt.jpg
+image=TWTLvPU.jpg
+image=IP7f6VR.jpg
 tactic=normal
 Do not use the second waypoint until Fergg activates and walks through the portal. It causes the dungeon to get stuck.
 After the cinematic, enemy patrols will spawn and run towards the portal. You can choose to kill or hide from the first group.
@@ -174,7 +174,7 @@ tactic=coordinated
 Burst down the barrier and then stealth to hide from the patrols.
 
 name=enemy=Impasse_Mark_IV:champion
-image=http://i.imgur.com/q9jzmNQ.jpg
+image=q9jzmNQ.jpg
 tactic=normal
 The general strategy is to focus down the golem while trying to cleave/AoE the Inquest.
 The golem isn't very dangerous by itself but patrols quickly add up if you can't kill them fast enough.
@@ -196,7 +196,7 @@ There are few hiding spots on the way so, if you don't want to kill patrols, you
 Once you reach Nokk, patrols will stop spawning. Try to avoid aggroing Nokk until you have dealt with any remaining Inquests, or lose inquest aggro by running to the end of the line.
 
 name=enemy=Nokk:champion
-image=http://i.imgur.com/Yl28fos.jpg
+image=Yl28fos.jpg
 tactic=ranged
 Nokk does a few things - a knockback which can push you into lava (avoid via positioning!), a black projectile which applies "Gravity Distortion", summoned Singularities, and Vapor Blades (mid range hula hoops).
 Gravity Distortion is an *unbreakable* stun but can be *prevented* with stability, reflection or evasion. When the debuff ends all nearby players will take high damage and get launched. Avoid players with this debuff, and/or use group stability when it is about to end.
@@ -233,7 +233,7 @@ tactic=coordinated
 Stealth through the mine field. This will prevent the mines from exploding, as well as the golems from aggroing.
 
 name=Mini Golems
-image=http://i.imgur.com/I8ehUEr.jpg
+image=I8ehUEr.jpg
 tactic=ranged|melee
 You will face enemy=Prototype_E-IV:champion, enemy=Prototype_F-IV:champion and enemy=Prototype_T-IV:champion simultaneously.
 E golem spams static discharge (repeat aoe stun/damage), F golem has a fire spin and ranged fire attack that creates lava fonts, T golem has a pull, conditions and rapid fire poison attack.
@@ -266,8 +266,8 @@ tactic=exploit
 Golems have different leash ranges so they can be easily separated by pulling them to the tunnel.
 
 name=enemy=Tazza:legendary and enemy=Troop_Commander_Kaeyi:champion
-image=http://i.imgur.com/bHr3Msf.jpg
-image=http://i.imgur.com/DKU24n2.jpg
+image=bHr3Msf.jpg
+image=DKU24n2.jpg
 tactic=normal
 You want to focus Tazza and avoid hitting Kaeyi. Once Tazza is dead the dungeon will end. Kaeyi will summon 2 elite Inquest whenever he loses 25% health. If you fight Kaeyi and Tazza together, try to cleave the summoned Inquest while you attack Tazza - they may become an issue if ignored.
 They aren't very dangerous as long as you evade Tazza's Mind Stab which casts a delayed AoE at every target.

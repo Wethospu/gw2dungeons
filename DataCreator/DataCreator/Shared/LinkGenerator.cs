@@ -404,7 +404,6 @@ namespace DataCreator.Shared
 
     private static string Http { get { return "http://"; } }
     private static string Https { get { return "https://"; } }
-    private static string Images { get { return "media/dungeonimages/"; } }
     private static string Youtube { get { return "youtu.be/"; } }
     private static string LinkClass { get { return "overlay-link"; } }
     private static string RecordStart { get { return "<span class=\"record-run\">";  } }
@@ -435,7 +434,7 @@ namespace DataCreator.Shared
       var url = linkData.Split('|')[0];
       // Build link to a proper one based on link type.
       if (linkType.Equals(Constants.LinkMedia))
-        url = Images + url;
+        url = Constants.WebsiteMediaLocation + CurrentDungeon + "/" + url;
       else if (linkType.Equals(Constants.LinkYoutube))
       {
         // Check what url contains. Three cases:
@@ -467,10 +466,10 @@ namespace DataCreator.Shared
       {
         return RecordStart + url + RecordEnd;
       }
+      else if (linkType.Equals(Constants.LinkLocal))
+        url = "http://gw2dungeons.net/" + url;
       // Url properly created. Test that it exists.
       var fullUrl = url;
-      if (linkType.Equals(Constants.LinkLocal) || linkType.Equals(Constants.LinkMedia))
-        fullUrl = "http://gw2dungeons.net/" + url;
       VerifyLink(fullUrl);
       BackupAndUpdateSize(fullUrl);
       
@@ -605,7 +604,18 @@ namespace DataCreator.Shared
       var split = url.Split('/');
       var fileName = split[split.Length - 1];
       fileName = fileName.Replace("\\", "").Replace("\"", "");
-      fileName = Constants.BackupLocation + fileName;
+      if (Path.GetExtension(fileName).Equals(".gif"))
+      {
+        if (url.Contains("gfycat"))
+          fileName = Constants.BackupLocation + "gfycat\\" + fileName;
+        else if(url.Contains("imgur"))
+          fileName = Constants.BackupLocation + "imgur\\" + fileName;
+        else
+          fileName = Constants.BackupLocation + fileName;
+      }
+        
+      else
+        fileName = Constants.DataOtherRaw + Constants.LocalMediaFolder + CurrentDungeon + "\\" + fileName;
       // Check whether to download the file.
       if (Path.GetExtension(fileName).Length == 0)
         return;
@@ -621,12 +631,14 @@ namespace DataCreator.Shared
       // Download the file if it doesn't exist.
       if (!File.Exists(fileName))
       {
-        using (var client = new WebClient())
+        var timeOut = 10000;
+        if (Path.GetExtension(fileName).Equals(".gif"))
+          timeOut = 30000;
+        using (var client = new WebDownload(timeOut))
         {
           var row = Console.CursorTop;
           try
           {
-
             Console.Write("Downloading " + url);
             client.DownloadFile(url, fileName);
             Helper.ClearConsoleLine(row);

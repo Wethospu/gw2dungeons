@@ -175,7 +175,7 @@ namespace DataCreator.Shared
       {
        htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<li><a href=\"#t").Append(index).Append(Helper.Simplify(tactic.Name)).Append("\" data-toggle=\"tab\">");
         if (useImages)
-          htmlBuilder.Append("<img class=\"professionIcon\" src=\"media/img/" + Helper.Simplify(tactic.Name) + ".png\">");
+          htmlBuilder.Append("<img class=\"professionIcon\" src=\"" + Constants.WebsiteIconLocation + Helper.Simplify(tactic.Name) + ".png\">");
         else
           htmlBuilder.Append(Helper.ToUpperAll(tactic.Name));
        htmlBuilder.Append("</a></li>").Append(Constants.LineEnding);

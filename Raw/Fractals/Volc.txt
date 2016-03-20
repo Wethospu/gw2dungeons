@@ -75,7 +75,7 @@ Burning boulders roll down the path while leaving fiery trails behind them. Touc
 Boulders will break at a certain point. If in a less coordinated group, wait for rest of the team bit after that point so you don't trigger the next event. Use condition removal to clear any long duration burning from your team.
 
 name=Breaking the Bubble
-image=media=volc_throne.jpg
+image=volc_throne.jpg
 tactic=normal
 You need to throw eight "Infused Stones" at the bubble around the enemy=Shaman:champion to break it. Stones will appear on rockfalls. Either wait until the rockfall ends or dodge in to grab the stone. enemy=Grawl_Shamans:veteran constantly spawn on the other side of the area. They attempt to reach any of the 4 villagers near the ledge in order to push them over the side. If they succeed in pushing over all of the villagers, your team will wipe and you have to try again. If you manage to save every villager you will get a bonus chest.
 The shamans won't attack you so bring lots of damage and control skills. The whole team should focus on killing and slowing shamans down with conditions and control. When stones appear anyone can throw them at the bubble. When throwing stones stay at middle of the area to prevent hitting the sides of the throne.

@@ -160,7 +160,7 @@ namespace DataCreator
       var enemyData = ReadEnemyDataminedData();
       Constants.UniqueIndexCounter = 0;
       GeneratePage("General");
-
+      LinkGenerator.CurrentDungeon = Constants.EnemyMediaFolder;
       var enemies = EnemyGenerator.GenerateEnemies(enemyData);
       
       var instanceData = new DataCollector();

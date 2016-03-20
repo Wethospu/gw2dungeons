@@ -60,19 +60,19 @@ Path=CMS
 
 attack=Slash (1)
 ID=4458
-image=https://i.imgur.com/dJPuBts.gif
+image=http://i.imgur.com/dJPuBts.gif
 effect=melee
 subeffect=damage:-
 
 attack=Slash (2)
 ID=4459
-image=https://i.imgur.com/dJPuBts.gif
+image=http://i.imgur.com/dJPuBts.gif
 effect=melee
 subeffect=damage:-
 
 attack=Ambush (1)
 ID=4461
-image=https://i.imgur.com/lcPLJNl.gif
+image=http://i.imgur.com/lcPLJNl.gif
 effect=leap
 subeffect=damage:-
 
@@ -82,13 +82,13 @@ subeffect=damage:?
 
 attack=Cyclone Attack
 ID=4460
-image=https://i.imgur.com/RgxCsUg.gif
+image=http://i.imgur.com/RgxCsUg.gif
 effect=PBAoE
 subeffect=damage:-
 
 attack=Envenom
 ID=4456
-image=https://i.imgur.com/9xRWZR7.gif
+image=http://i.imgur.com/9xRWZR7.gif
 effect=buff, hits cause
 subeffect=poison:0
 
@@ -132,7 +132,7 @@ Attack=Starts with pistols, swaps to shotgun at 95% health
 
 Attack=Shoot (pistol)
 ID=4476
-image=https://i.imgur.com/0snvwDr.gif
+image=http://i.imgur.com/0snvwDr.gif
 animation=aims with right pistol|0.5
 cooldown=1.5
 effect=projectile
@@ -140,7 +140,7 @@ subeffect=damage:-
 
 Attack=Chain Shot (pistol)
 ID=4477
-image=https://i.imgur.com/yhK2dCt.gif
+image=http://i.imgur.com/yhK2dCt.gif
 cooldown=29
 animation=glows and raises pistols|0.25
 effect=12 projectiles in 2.5 s
@@ -149,7 +149,7 @@ length=2.5
 subeffect=Damage:0.15
 
 Attack=Shrapnel Blast (shotgun)
-image=https://i.imgur.com/kzl5lvu.gif
+image=http://i.imgur.com/kzl5lvu.gif
 cooldown=3
 animation=stops and aims|0.85
 additional=medium range
@@ -433,7 +433,7 @@ Path=CM3
 
 Attack=Throw Bomb
 ID=4448
-image=https://i.imgur.com/929kjyQ.gif
+image=http://i.imgur.com/929kjyQ.gif
 cooldown=0
 effect=slow projectile with aoe
 subeffect=damage:-
@@ -442,7 +442,7 @@ subeffect=vulnerability:0:4
 
 Attack=Throw Bomb
 ID=4449
-image=https://i.imgur.com/jlHJUlc.gif
+image=http://i.imgur.com/jlHJUlc.gif
 animation=spins (instant)
 additional=only used at close targets
 effect=multiple slow projectiles with aoe
@@ -467,7 +467,7 @@ Path=CM3
 
 Attack=Earth Spikes
 ID=4943
-image=https://i.imgur.com/9HsKVVn.gif
+image=http://i.imgur.com/9HsKVVn.gif
 animation=hops around
 effect=small PBAoE
 subeffect=damage:-
@@ -477,7 +477,7 @@ subeffect=knockback:0
 
 Attack=Fireball
 ID=4944
-image=https://i.imgur.com/0T4uCvW.gif
+image=http://i.imgur.com/0T4uCvW.gif
 animation=fiery effect
 effect=projectile with small AoE
 subeffect=damage:-
@@ -486,7 +486,7 @@ subeffect=burning:0
 
 Attack=Swirling Winds
 ID=4945
-image=https://i.imgur.com/HNshgjQ.gif
+image=http://i.imgur.com/HNshgjQ.gif
 animation=air effect
 effect=area field
 subeffect=reflects projectiles
@@ -573,7 +573,7 @@ Path=CM1|CM2|CM3
 
 Attack=Slash (1)
 ID=4453
-image=https://i.imgur.com/CiA1iXz.gif
+image=http://i.imgur.com/CiA1iXz.gif
 animation=swing from right|0.5
 cooldown=2
 effect=melee
@@ -606,7 +606,7 @@ subeffect=bleeding:8:4
 Attack=Envenom
 ID=4456
 cooldown=19
-image=https://i.imgur.com/mYv6Bgt.gif
+image=http://i.imgur.com/mYv6Bgt.gif
 effect=buff (15 s), on hits
 subeffect=Poison:6
 
@@ -905,9 +905,10 @@ scaling=legendary
 path=Cliff
 
 attack=Swing
+ID=16197
 cooldown=0
 effect=melee
-subeffect=damage:?
+subeffect=damage:-
 subeffect=knockback:0
 
 attack=Cursed Grasp (1)
@@ -2053,6 +2054,8 @@ Path=vale4
 Name=Karde
 ID=15430
 Path=vale4
+
+attack=Takes 50% more damage from conditions
 
 ##################################################################
 

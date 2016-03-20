@@ -82,6 +82,9 @@
     <Compile Include="Shared\Tactic.cs" />
     <Compile Include="Utility\ErrorHandler.cs" />
     <Compile Include="Utility\TagData.cs" />
+    <Compile Include="Utility\WebDownload.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

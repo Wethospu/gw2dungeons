@@ -60,7 +60,7 @@ tactic=skip
 If someone falls down he will teleport back downed. Monsters will very likely finish him/her so go help him/her up to prevent unnecessary delay.
 
 name=Awakening
-image=http://i.imgur.com/QuxhBdH.jpg
+image=QuxhBdH.jpg
 tactic=normal
 To wake up Jade Maw you have to kill 2 enemy=Jade_Maw_Tentacles:veteran. Area is filled with respawning enemy=Irukandjis:veteran and enemy=Giant_Irukandjis:veteran.
 At lower levels you can kill Irukandji but your focus should be on Tentacles. Tentacles alternate between slap and spin. You can just sidestep slap but spin has to be blocked/dodged. Animations are easy to recognize but dodge if unsure.
@@ -74,7 +74,7 @@ By sticking to left-side and jumping you can get behind all enemies and safely u
 If no one can survive agony you can use 99% trick. One player gets defeated, people resurrect him up to 99%. Once agony hits everyone quickly gets him up, he won't get agony and can get other people up.
 
 name=enemy=Jade_Maw:legendary
-image=http://i.imgur.com/QuxhBdH.jpg
+image=QuxhBdH.jpg
 tactic=normal
 Stick together. It is easy to get downed if you fail to absorb or evade Maws laser attack. It is also hard to revive people middle of Tentacles.
 Maw will occasionally mark a target with a skull. When it disappears evade to avoid getting downed. To attack Maw, you need to hold a Crystal, absorb its laser attack and throw it back. Avoid using clones/minions because they get targeted and slow down the fight.

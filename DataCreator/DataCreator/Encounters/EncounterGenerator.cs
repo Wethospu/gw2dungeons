@@ -26,13 +26,13 @@ namespace DataCreator.Encounters
       for (var row = 0; row < lines.Length; row++)
       {
         ErrorHandler.InitializeWarningSystem(row + 1, lines[row]);
-        HandleLine(lines[row], encounterData.Encounters, encounterData.Paths);
+        HandleLine(lines[row], encounterData.Encounters, encounterData.Paths, instance);
       }
       // This code is also used for non-instances which don't have paths.
       // So add a fake path to make everything work correctly.
       // TODO: Figure out why this is necessary and refactor.
       if (encounterData.Paths.Count == 0)
-        encounterData.Paths.Add(new PathData(instance));
+        encounterData.Paths.Add(new PathData(instance, instance));
       // Set unique indexes so HTML tabs get unique IDs.
       for (var i = 0; i < encounterData.Encounters.Count; i++)
         encounterData.Encounters[i].Index = i + Constants.UniqueIndexCounter;
@@ -43,7 +43,7 @@ namespace DataCreator.Encounters
     /// <summary>
     /// Processes one line of data.
     /// </summary>
-    private static void HandleLine(string line, List<Encounter> encounters, List<PathData> paths)
+    private static void HandleLine(string line, List<Encounter> encounters, List<PathData> paths, string instance)
     {
       Encounter currentEncounter = null;
       if (encounters.Count > 0)
@@ -67,7 +67,7 @@ namespace DataCreator.Encounters
       TagData text = TagData.FromLine(line, Constants.TagSeparator);
       text.Tag = text.Tag.ToLower();
       if (text.Tag.Equals("init"))
-        paths.Add(new PathData(line));
+        paths.Add(new PathData(line, instance));
       else if (text.Tag.Equals("path"))
         HandlePath(text.Data);
       else if (text.Tag.Equals("name"))
@@ -84,7 +84,7 @@ namespace DataCreator.Encounters
           return;
         }
         if (text.Tag.Equals("image"))
-          HandleMedia(text.Data, currentEncounter);
+          HandleMedia(text.Data, currentEncounter, instance);
         else if (text.Tag.Equals("tactic"))
           HandleTactic(text.Data, currentEncounter, paths);
         else
@@ -132,10 +132,14 @@ namespace DataCreator.Encounters
     /// <summary>
     /// Adds media data to a given encounter.
     /// </summary>
-    private static void HandleMedia(string data, Encounter encounter)
+    private static void HandleMedia(string data, Encounter encounter, string instance)
     {
       if (data.Length > 0)
+      {
+        if (!data.StartsWith("http://"))
+          data = Constants.WebsiteMediaLocation + instance + "/" + data;
         encounter.Medias.Add(new Media(data));
+      }
       else
         ErrorHandler.ShowWarning("Missing info. Use \"image='image'\"!");
     }

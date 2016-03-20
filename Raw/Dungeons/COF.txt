@@ -121,7 +121,7 @@ There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual
 There is a very low chance to get an account bound wiki=Recipe:_Ashes_of_the_Effigy from the final chest. The recipe allows you to craft wiki=Ashes_of_the_Effigy which gives no extra gold return for your tokens.
 
 name=Start
-image=https://i.imgur.com/LWyum24.jpg
+image=LWyum24.jpg
 tactic=normal
 If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=The_Battle_for_the_Flame_Citadel_and_Senecus_Castrum. Alternatively you can leave party and try relogging until you get to another instance.
 Talk to Explorer Mallon to start the dungeon.
@@ -181,8 +181,8 @@ tactic=engineer
 Jump shot followed by Grenade Barrage will burst down an acolyte in a high damage build.
 
 name=Flaming Boulders
-image=https://i.imgur.com/7k0ZOqb.jpg
-image=http://i.imgur.com/ISTMHuG.jpg
+image=7k0ZOqb.jpg
+image=ISTMHuG.jpg
 tactic=normal
 You need to get 3 flames past Boulders and put them on pedestals (be quick they won't last long).
 Don't mindlessly rush in. Look for a good moment and dodge if needed (a bit risky but better than dying).
@@ -193,8 +193,8 @@ You can solo this part with wiki=Shadow_Trap, wiki=Shadowstep and wiki=Steal as 
 Use Shadow Trap at the start, deliver a flame and then destroy the trap to teleport to the start. Take another one, use Shadowstep to teleport over boulders, deliver the flame and again teleport back to the start. Pick the last flame, use Steal on a boulder and quickly activate the last pedestal.
 
 name=Gate and four braziers
-image=https://i.imgur.com/Ir8zaHT.jpg
-image=https://i.imgur.com/HykK5cN.jpg
+image=Ir8zaHT.jpg
+image=HykK5cN.jpg
 tactic=normal
 4 players need to stand close to braziers to open the gate and make enemy=Gate_Lock:structure vulnerable. Last player (with good DPS) destroys the Lock which is guarded by 1 enemy=Godforged_Hellstorm:elite.
 While each brazier is activated, few Normal Flame Legion enemies constantly respawn. They are very easy to deal with as long as you can do damage.
@@ -206,7 +206,7 @@ tactic=necromancer
 Flesh Golem's charge is very effective against the Lock.
 
 name=enemy=Searing_Effigy:legendary
-image=https://i.imgur.com/VmZ8B3w.jpg
+image=VmZ8B3w.jpg
 tactic=normal
 Very easy to kill as long as you stay close (he has a powerful ranged attack).
 He summons Searing Crystal which give him regeneration. You can use poison if you have easy access to it but keep in mind that Crystals won't make much difference so don't try to hunt them down. However, the crystals can be used to rally.
@@ -245,7 +245,7 @@ There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual
 There is a very low chance to get an account bound wiki=Recipe:_Eternal_Flame from the final chest. The recipe allows you to craft wiki=Eternal_Flame which gives no extra gold return for your tokens.
 
 name=Start
-image=https://i.imgur.com/LWyum24.jpg
+image=LWyum24.jpg
 tactic=normal
 If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=The_Battle_for_the_Flame_Citadel_and_Senecus_Castrum. Alternatively you can leave party and try relogging until you get to another instance.
 After first gate you will face 3 enemy=Godforged_Hellstorms:elite.
@@ -326,7 +326,7 @@ There is a high chance to get wiki=Charred_Back_Warmer, wiki=Flame_Legion_Ritual
 There is a very low chance to get an account bound wiki=Burntclaw's_Brace from the final chest. It's account bound so it's not valuable.
 
 name=Start
-image=https://i.imgur.com/LWyum24.jpg
+image=LWyum24.jpg
 tactic=normal
 If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=The_Battle_for_the_Flame_Citadel_and_Senecus_Castrum. Alternatively you can leave party and try relogging until you get to another instance.
 Talk to NPC.

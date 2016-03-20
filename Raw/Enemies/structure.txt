@@ -343,7 +343,7 @@ rank=Structure
 Path=CM1|CM2|CM3
 
 Attack=Shoot
-image=https://i.imgur.com/g67IvEl.gif
+image=http://i.imgur.com/g67IvEl.gif
 animation=instant
 cooldown=1
 effect=projectile
@@ -398,7 +398,7 @@ rank=Structure
 Path=CM1|CM2|CM3
 
 Attack=Net
-image=https://i.imgur.com/ZtTwAid.gif
+image=http://i.imgur.com/ZtTwAid.gif
 cooldown=3
 effect=projectile
 subeffect=immobilized:3
@@ -697,7 +697,7 @@ toughness=1.1
 Path=AC1|AC2|AC3
 
 attack=Fireball
-image=http://i.imgur.com/XycVkQ0.jpg
+image=XycVkQ0.jpg
 cooldown=4
 animation=when eyes glow|3
 effect=Projectile with AoE
@@ -916,7 +916,7 @@ rank=Structure
 Path=ACS
 
 attack=Fireball
-image=http://i.imgur.com/XycVkQ0.jpg
+image=XycVkQ0.jpg
 cooldown=6
 animation=when eyes glow|4
 effect=Projectile with AoE

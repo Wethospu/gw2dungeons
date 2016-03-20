@@ -575,7 +575,7 @@ subeffect=damage:-
 
 Name=Warmaster Grast
 ID=1703
-image=https://i.imgur.com/7fr2Zc1.jpg
+image=7fr2Zc1.jpg
 rank=ally
 Path=AC3
 

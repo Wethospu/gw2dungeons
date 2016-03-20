@@ -244,7 +244,7 @@ tactic=exploit
 You can leave a player outside of the room and the boss won't reset if you wipe.
 If you are only player alive after 50% you can get out of combat. When he puts you into a cage wait until he loses aggro and then quickly break the cage and run back to the entrance. If you are fast enough only Bone Fiends will follow you. Kill them and your team can resurrect at the checkpoint (Archdiviner or Seal won't reset).
 tactic=optional
-At the end use /bow at the Colossus when the Colossus link=http://i.imgur.com/8DmBbCk.png|bows at you to get an achievement.
+At the end use /bow at the Colossus when the Colossus media=8DmBbCk.png|bows at you to get an achievement.
 tactic=mesmer
 Use wiki=Temporal_Curtain to pull chanters together.
 Use wiki=Feedback to provide projectile defense against chanters.

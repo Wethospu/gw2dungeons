@@ -180,7 +180,7 @@ function loadIcons(setting) {
 	if (getSetting(setting + "ShowIcons"))
 	{
 		$('.icon').each(function () {
-			$(this).css('background-image', 'url(media/img/' + $(this).attr('data-src') + '.png)');
+			$(this).css('background-image', 'url(PATH_ICON' + $(this).attr('data-src') + '.png)');
 		});
 	}
 	else

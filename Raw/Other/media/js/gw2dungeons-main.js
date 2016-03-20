@@ -66,11 +66,11 @@ function loadThumbs() {
 		// Load thumb based on screen size. / 2015-07-31 / Wethospu
 		var imageName = $(this).attr("data-name");
 		if (width > 1500) {
-			$(this).attr("src", "media/thumbs_350px/" + imageName);
+			$(this).attr("src", "PATH_THUMB_BIG" + imageName);
 			$(this).css("display", "initial");
 		}
 		else if (width > 1200) {
-			$(this).attr("src", "media/thumbs_250px/" + imageName);
+			$(this).attr("src", "PATH_THUMB_SMALL" + imageName);
 			$(this).css("display", "initial");
 		}
 		else
