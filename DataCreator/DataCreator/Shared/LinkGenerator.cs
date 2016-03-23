@@ -661,8 +661,8 @@ namespace DataCreator.Shared
         Image image = Image.FromFile(fileName);
         width = image.Width;
         height = image.Height;
-        GenerateThumbs(fileName, Constants.ThumbWidth, Constants.ThumbHeight);
-        GenerateThumbs(fileName, Constants.ThumbWidthSmall, Constants.ThumbHeightSmall);
+        GenerateThumbs(fileName, url, Constants.ThumbWidth, Constants.ThumbHeight);
+        GenerateThumbs(fileName, url, Constants.ThumbWidthSmall, Constants.ThumbHeightSmall);
       }
       if (Path.GetExtension(fileName).Equals(".gif"))
       {
@@ -674,8 +674,8 @@ namespace DataCreator.Shared
         }
         width = bytes[6] | bytes[7] << 8; // byte 6 and 7 contain the width but in network byte order so byte 7 has to be left-shifted 8 places and bit-masked to byte 6
         height = bytes[8] | bytes[9] << 8; // same for height
-        GenerateThumbs(fileName, Constants.ThumbWidth, Constants.ThumbHeight);
-        GenerateThumbs(fileName, Constants.ThumbWidthSmall, Constants.ThumbHeightSmall);
+        GenerateThumbs(fileName, url, Constants.ThumbWidth, Constants.ThumbHeight);
+        GenerateThumbs(fileName, url, Constants.ThumbWidthSmall, Constants.ThumbHeightSmall);
       }
       if (Path.GetExtension(fileName).Equals(".webm"))
       {
@@ -685,8 +685,8 @@ namespace DataCreator.Shared
         Image image = Image.FromFile(jpgFileName);
         width = image.Width;
         height = image.Height;
-        GenerateThumbs(jpgFileName, Constants.ThumbWidth, Constants.ThumbHeight);
-        GenerateThumbs(jpgFileName, Constants.ThumbWidthSmall, Constants.ThumbHeightSmall);
+        GenerateThumbs(jpgFileName, url, Constants.ThumbWidth, Constants.ThumbHeight);
+        GenerateThumbs(jpgFileName, url, Constants.ThumbWidthSmall, Constants.ThumbHeightSmall);
       }
       if (Constants.MediaSizes.ContainsKey(url))
         Constants.MediaSizes[url] = new int[] { width, height };
@@ -703,9 +703,15 @@ namespace DataCreator.Shared
     *                                                                                             * 
     ***********************************************************************************************/
 
-    public static void GenerateThumbs(string filename, int maxWidth, int maxHeight)
+    public static void GenerateThumbs(string filename, string baseUrl, int maxWidth, int maxHeight)
     {
-      var OutputFile = Constants.DataOutput + Constants.DataThumbsResult + "_" + maxWidth + "px\\" + Path.GetFileNameWithoutExtension(filename) + ".jpg";
+      var OutputFile = Constants.DataOutput + Constants.DataThumbsResult + "_" + maxWidth + "px\\";
+      var folder = "";
+      if (baseUrl.Contains("wiki"))
+        folder = "wiki\\";
+      else if (baseUrl.Contains("gfycat"))
+        folder = "gfycat\\";
+      OutputFile += folder + Path.GetFileNameWithoutExtension(filename) + ".jpg";
       // Replace common html special characters. / 2015-07-21 / Wethospu
       OutputFile = OutputFile.Replace("%20", " ");
       OutputFile = OutputFile.Replace("%27", "'");

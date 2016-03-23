@@ -273,7 +273,7 @@ name=enemy=Icebrood_Goliath:champion
 tactic=normal
 Kill the elite enemies first. He is trivial to kill. Dodge when he jumps.
 
-name=enemy=Svánigandr:legendary
+name=enemy=Svï¿½nigandr:legendary
 tactic=normal
 Most of his attacks do high damage so pay attention. Try stay at least at max melee range to prevent him using his melee attacks.
 When he glows and leaps just dodge or block. That attack has huge range so there is a good chance to get hit.

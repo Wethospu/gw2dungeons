@@ -29,7 +29,7 @@ tactic=normal
 If the entrance to the dungeon is closed, you need to open it by doing an event called wiki=Toil_for_the_Coil. Alternatively you can leave party and try relogging until you get to another instance.
 Talk with enemy=zojja:ally to begin. enemy=Logan_Thackeray:ally and enemy=Rytlock_Brimstone:ally will join you.
 tactic=exploit
-You can enter the dungeon even when it's closed by link=i.imgur.com/WFHQDlI.gif|a_little_jump.
+You can enter the dungeon even when it's closed by link=http://giant.gfycat.com/NeglectedPositiveFugu.gif|a_little_jump.
 
 name=Security Checkpoint
 tactic=normal
@@ -252,7 +252,7 @@ Use wiki=Wall_of_Reflection to protect your team and deal massive damage (Freeze
 tactic=guardian
 Use wiki="Stand_Your_Ground!" when skipping or fighting Wolves.
 tactic=exploit
-You can enter the dungeon even when it's closed by link=i.imgur.com/WFHQDlI.gif|a_little_jump.
+You can enter the dungeon even when it's closed by link=http://giant.gfycat.com/NeglectedPositiveFugu.gif|a_little_jump.
 
 ###############################################################################################################
 

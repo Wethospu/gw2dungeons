@@ -56,7 +56,7 @@ name=Risen Thrall
 ID=9765
 alt=Risen Thralls
 image=http://wiki.guildwars2.com/images/1/1f/Risen_Thrall_Asura.jpg
-image=http://i.imgur.com/zfDZvGP.gif
+image=http://fat.gfycat.com/EdibleFineEwe.gif
 path=CoE1|CoE2|CoE3
 
 
@@ -1202,7 +1202,7 @@ attack=Immune to blind and crippled. 100% resistance to control skills.
 
 attack=Mighty Kick
 ID=4973
-image=http://i.imgur.com/OLZFceF.gif
+image=http://fat.gfycat.com/CharmingMajesticIberianlynx.gif
 animation=leans a bit on left and kicks with left foot|0.75
 cooldown=8
 effect=melee
@@ -1213,7 +1213,7 @@ subeffect=launch:3.3
 
 attack=Summon Grub
 ID=4958
-image=http://i.imgur.com/o66R5AX.gif
+image=http://giant.gfycat.com/AntiqueDisgustingBandicoot.gif
 cooldown=15
 animation=waves hand in a big circle with green effect|2.5
 additional=cannot be blocked. Prioritizes players.
@@ -1237,7 +1237,7 @@ subeffect=Take 2% less damage and do more damage (10 hours) per stack
 
 attack=Summon Locusts
 ID=4959
-image=http://i.imgur.com/uY1LA3s.gif
+image=http://giant.gfycat.com/ThunderousBrokenHerculesbeetle.gif
 cooldown=15
 animation=looks up and roars forward|2
 effect=summons 0-4 enemy=Locust_Swarms:elite
@@ -1271,7 +1271,7 @@ subeffect=Take 2% less damage and do more damage (10 hours) per stack
 
 attack=Lupine Blast
 ID=4963
-image=http://i.imgur.com/EPWX7vF.gif
+image=http://fat.gfycat.com/DistantThickChafer.gif
 cooldown=2
 animation=raises left hand|0.5|shoots a green ball
 effect=projectile with small AoE
@@ -1293,7 +1293,7 @@ subeffect=knockdown:3
 
 attack=Vicious Slash
 ID=4964
-image=http://i.imgur.com/6o26zs1.gif
+image=http://giant.gfycat.com/PlumpPassionateHyena.gif
 animation=turns right and swings right arm|1
 effect=melee
 subeffect=damage:-
@@ -1305,7 +1305,7 @@ subeffect=bleeding:30:3
 
 attack=Frenzied Blast
 ID=4965
-image=http://i.imgur.com/uDYhcMA.gif
+image=http://giant.gfycat.com/UntidyFarawayBillygoat.gif
 cooldown=16
 animation=Puts hands on its chest and leans bit forward|1.25
 additional=Scales based on amount of targets.
@@ -1320,7 +1320,7 @@ subeffect=damage:-
 #note=may use Lupine Blast very quickly after this
 
 attack=Phase 3
-image=http://i.imgur.com/y60cIru.gif
+image=http://giant.gfycat.com/CheapImaginativeAdeliepenguin.gif
 animation=turns invulnerable
 additional=used at 50% health
 effect=buff:invulnerability
@@ -1343,7 +1343,7 @@ attack=Immune to blind and crippled. 100% resistance to control skills.
 
 attack=Lupine Blast
 ID=4946
-image=http://i.imgur.com/EPWX7vF.gif
+image=http://fat.gfycat.com/DistantThickChafer.gif
 cooldown=2
 animation=turns bit left/right and shoots from left/right hand|0.5|shoots a green ball
 effect=projectile with small AoE
@@ -1354,7 +1354,7 @@ subeffect=poison:2
 
 attack=Life Drain (1)
 ID=4949
-image=http://i.imgur.com/ouLI3xA.gif
+image=http://giant.gfycat.com/BiodegradableSophisticatedAmethystgemclam.gif
 cooldown=18
 animation=Raises its arm and start rising to air|1.5|big red circle
 effect=Channeled
@@ -1377,7 +1377,7 @@ subeffect=knockback:1.5
 
 attack=Life Drink
 ID=4948
-image=http://i.imgur.com/Bxr7cMh.gif
+image=http://giant.gfycat.com/WindingNegativeEasternnewt.gif
 cooldown=15
 animation=Moves right arm to very left and starts pointing at you|1.25
 effect=4 ranged hits in 1.5 s (1 hit every 0.5 s)
@@ -1390,7 +1390,7 @@ subeffect=removes a condition
 
 attack=Frenzied Blast
 ID=4947
-image=http://i.imgur.com/Jd17SJI.gif
+image=http://giant.gfycat.com/DismalColorlessEwe.gif
 cooldown=6
 animation=Shakes both hands pointed at you and leans bit forward|0.5|shoots multiple small green balls
 additional=Used in melee range.
@@ -1402,7 +1402,7 @@ subeffect=damage:-
 
 attack=Necrid Trap
 ID=4950
-image=http://i.imgur.com/Azyha0a.gif
+image=http://giant.gfycat.com/AcidicMajesticIndianrockpython.gif
 cooldown=5
 animation=Leans bit forward and raises both arms|0.9|green dome
 effect=Used at close targets except when stacking. Tracks movement except at melee range.
@@ -1418,7 +1418,7 @@ subeffect=knockback:0 when passing through (prevents escape)
 #note=if trapped and without a way to escape, try to block or evade inside it
 
 attack=Lupine Death
-image=http://i.imgur.com/jcAkRpw.gif
+image=http://giant.gfycat.com/LivelyAgreeableItaliangreyhound.gif
 additional=used upon dying
 effect=multiple ballistic projectiles with small AoE (360 degrees)
 count=?
@@ -2184,7 +2184,7 @@ subeffect=damage:?
 
 attack=Teeth of Primordus
 ID=5368
-image=http://i.imgur.com/1TPSikP.gif
+image=http://giant.gfycat.com/TestyLinearArrowana.gif
 animation=raises arm||flames/molten shard above head
 effect=PBAoE
 subeffect=damage:?
@@ -2214,7 +2214,7 @@ Path=CoE2
 
 attack=Teeth of Primordus
 ID=5368
-image=http://i.imgur.com/1TPSikP.gif
+image=http://giant.gfycat.com/TestyLinearArrowana.gif
 animation=raises arm||flames/molten shard above head
 effect=PBAoE
 subeffect=damage:?
@@ -2229,8 +2229,8 @@ subeffect=remove all Conditions
 
 attack=Teeth of Jormag
 ID=5381
-image=http://i.imgur.com/mzwm4wQ.gif
-image=http://i.imgur.com/q8u24Rf.gif
+image=http://giant.gfycat.com/OilyDifferentDotterel.gif
+image=http://giant.gfycat.com/BruisedEssentialGermanshorthairedpointer.gif
 animation=raises arm||two circles (blue mist forming on primary target)
 effect=delayed AoE (2.5 s) at primary target
 subeffect=damage:?
@@ -2269,8 +2269,8 @@ subeffect=damage:?
 
 attack=Teeth of Jormag
 ID=5381
-image=http://i.imgur.com/mzwm4wQ.gif
-image=http://i.imgur.com/q8u24Rf.gif
+image=http://giant.gfycat.com/OilyDifferentDotterel.gif
+image=http://giant.gfycat.com/BruisedEssentialGermanshorthairedpointer.gif
 animation=raises arm||two circles (blue mist forming on primary target)
 effect=delayed AoE (2.5 s) at primary target
 subeffect=damage:?
@@ -2306,7 +2306,7 @@ subeffect=damage:?
 
 attack=Teeth of Primordus
 ID=5368
-image=http://i.imgur.com/1TPSikP.gif
+image=http://giant.gfycat.com/TestyLinearArrowana.gif
 animation=raises arm||flames/molten shard above head
 effect=PBAoE
 subeffect=damage:?
@@ -2356,7 +2356,7 @@ Path=CoE2
 
 attack=Teeth of Primordus
 ID=5368
-image=http://i.imgur.com/1TPSikP.gif
+image=http://giant.gfycat.com/TestyLinearArrowana.gif
 animation=raises arm||flames/molten shard above head
 effect=PBAoE
 subeffect=damage:?
@@ -2371,8 +2371,8 @@ subeffect=remove all Conditions
 
 attack=Teeth of Jormag
 ID=5381
-image=http://i.imgur.com/mzwm4wQ.gif
-image=http://i.imgur.com/q8u24Rf.gif
+image=http://giant.gfycat.com/OilyDifferentDotterel.gif
+image=http://giant.gfycat.com/BruisedEssentialGermanshorthairedpointer.gif
 animation=raises arm||two circles (blue mist forming on primary target)
 effect=delayed AoE (2.5 s) at primary target
 subeffect=damage:?
@@ -2426,8 +2426,8 @@ subeffect=damage:?
 
 attack=Teeth of Jormag
 ID=5381
-image=http://i.imgur.com/mzwm4wQ.gif
-image=http://i.imgur.com/q8u24Rf.gif
+image=http://giant.gfycat.com/OilyDifferentDotterel.gif
+image=http://giant.gfycat.com/BruisedEssentialGermanshorthairedpointer.gif
 animation=raises arm||two circles (blue mist forming on primary target)
 effect=delayed AoE (2.5 s) at primary target
 subeffect=damage:?
@@ -2481,7 +2481,7 @@ subeffect=damage:?
 
 attack=Teeth of Primordus
 ID=5368
-image=http://i.imgur.com/1TPSikP.gif
+image=http://giant.gfycat.com/TestyLinearArrowana.gif
 animation=raises arm||flames/molten shard above head
 effect=PBAoE
 subeffect=damage:?
@@ -2530,7 +2530,7 @@ Path=CoE2
 
 attack=Teeth of Primordus
 ID=5368
-image=http://i.imgur.com/1TPSikP.gif
+image=http://giant.gfycat.com/TestyLinearArrowana.gif
 animation=raises arm||flames/molten shard above head
 effect=PBAoE
 subeffect=damage:?
@@ -2545,8 +2545,8 @@ subeffect=remove all Conditions
 
 attack=Teeth of Jormag
 ID=5381
-image=http://i.imgur.com/mzwm4wQ.gif
-image=http://i.imgur.com/q8u24Rf.gif
+image=http://giant.gfycat.com/OilyDifferentDotterel.gif
+image=http://giant.gfycat.com/BruisedEssentialGermanshorthairedpointer.gif
 animation=raises arm||two circles (blue mist forming on primary target)
 effect=delayed AoE (2.5 s) at primary target
 subeffect=damage:?
@@ -2604,8 +2604,8 @@ subeffect=damage:?
 
 attack=Teeth of Jormag
 ID=5381
-image=http://i.imgur.com/mzwm4wQ.gif
-image=http://i.imgur.com/q8u24Rf.gif
+image=http://giant.gfycat.com/OilyDifferentDotterel.gif
+image=http://giant.gfycat.com/BruisedEssentialGermanshorthairedpointer.gif
 animation=raises arm||two circles (blue mist forming on primary target)
 effect=delayed AoE (2.5 s) at primary target
 subeffect=damage:?

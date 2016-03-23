@@ -343,7 +343,7 @@ rank=Structure
 Path=CM1|CM2|CM3
 
 Attack=Shoot
-image=http://i.imgur.com/g67IvEl.gif
+image=http://giant.gfycat.com/LeanSoupyHousefly.gif
 animation=instant
 cooldown=1
 effect=projectile
@@ -398,7 +398,7 @@ rank=Structure
 Path=CM1|CM2|CM3
 
 Attack=Net
-image=http://i.imgur.com/ZtTwAid.gif
+image=http://giant.gfycat.com/AfraidUniqueIberianchiffchaff.gif
 cooldown=3
 effect=projectile
 subeffect=immobilized:3

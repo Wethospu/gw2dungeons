@@ -1031,7 +1031,7 @@ Path=HotWS|CoE1|CoE2|CoE3
 attack=Ice Shards
 ID=2682
 cooldown=3
-image=http://i.imgur.com/1rFMpCn.gif
+image=http://fat.gfycat.com/ScentedAmpleKarakul.gif
 animation=points left arm|0.5
 effect=homing projectile
 subeffect=damage:-
@@ -1040,7 +1040,7 @@ subeffect=chilled:3
 
 attack=Ice Spike
 ID=2683
-image=http://i.imgur.com/OCvINVh.gif
+image=http://giant.gfycat.com/UnlinedSoreCockatiel.gif
 animation=glows and jumps|1|a red circle with an ice shard
 cooldown=12
 animation=glows and jumps|1
@@ -1049,7 +1049,7 @@ subeffect=damage:-
 
 attack=Frost Blast
 ID=2684
-image=http://i.imgur.com/fastZ4n.gif
+image=http://giant.gfycat.com/WarmheartedFlippantGoldenretriever.gif
 cooldown=17
 animation=glows and pulls right arm back|1.5
 effect=PBAoE
@@ -1087,7 +1087,7 @@ Path=HotWS|CoE1|CoE2|CoE3
 
 attack=Ice Throw
 ID=4851
-image=http://i.imgur.com/36lhIK0.gif
+image=http://giant.gfycat.com/FragrantBoringAndeancat.gif
 animation=grabs ice from chest and throws with right hand|1
 effect=homing projectile
 subeffect=damage:5782722
@@ -1096,7 +1096,7 @@ subeffect=chilled:3
 
 attack=Polar Smash
 ID=4853
-image=http://i.imgur.com/XldLxoC.gif
+image=http://giant.gfycat.com/SnivelingExcellentAkitainu.gif
 animation=bends and pulls right arm back|2
 additional=can't be blocked
 effect=melee
@@ -1104,7 +1104,7 @@ subeffect=damage:17965759
 
 attack=Freeze Row
 ID=4852
-image=http://i.imgur.com/I9d5T6S.gif
+image=http://giant.gfycat.com/ScaredVerifiableFeline.gif
 animation=waves arms with weird sound|1.5
 effect=multiple delayed (2.75 s) tiny AoEs (cone)
 subeffect=damage:8798029

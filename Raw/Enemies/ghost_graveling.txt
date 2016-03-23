@@ -6,7 +6,7 @@ Path=ACS
 
 Attack=Charged Backbreaker
 ID=4049
-image=http://i.imgur.com/KMKdoV3.gif
+image=http://giant.gfycat.com/HorribleTestyAngora.gif
 cooldown=3
 Animation=Holds glowing hammer behind back|2.25
 effect=Melee
@@ -15,7 +15,7 @@ subeffect=Damage:-
 
 Attack=Stomp
 ID=4056
-image=http://i.imgur.com/fQWfn6G.gif
+image=http://fat.gfycat.com/GreenPaltryHummingbird.gif
 cooldown=10
 Animation=jumps to air|0.5
 effect=PBAoE
@@ -25,7 +25,7 @@ subeffect=launch:3.3
 
 Attack=Earthshaker
 ID=4051
-image=http://i.imgur.com/0nuec45.gif
+image=http://giant.gfycat.com/InexperiencedCrazyAngelwingmussel.gif
 cooldown=27
 Animation=leaps with hammer above head|0.5
 effect=PBAoE
@@ -42,7 +42,7 @@ Path=ACS
 
 Attack=Spread Shot
 ID=4088
-image=http://i.imgur.com/fsLrfi3.gif
+image=http://fat.gfycat.com/EmotionalValuableGemsbok.gif
 cooldown=3
 animation=aims|0.25|white projectile
 effect=homing projectile
@@ -52,7 +52,7 @@ subeffect=knockback:1.5
 attack=Stomp
 ID=4056
 cooldown=11
-image=http://i.imgur.com/NU4UMSI.gif
+image=http://fat.gfycat.com/BlindUncomfortableLangur.gif
 animation=jumps|0.5
 effect=PBAoE
 subeffect=damage:-
@@ -67,7 +67,7 @@ Path=ACS
 
 Attack=Greatsword Swing (1)
 ID=3368
-image=http://i.imgur.com/La0ekiP.gif
+image=http://fat.gfycat.com/ViciousHardDassie.gif
 cooldown=1
 animation=swings sword from right|0.5
 effect=melee
@@ -86,7 +86,7 @@ subeffect=vulnerability:10
 
 attack=Slash
 ID=3250
-image=http://i.imgur.com/TTAj7Fj.gif
+image=http://giant.gfycat.com/AmpleAdorableElk.gif
 cooldown=22
 animation=spins around|0.5|keeps spinning
 effect=slow dash with PBAoE (3 hits in 0.7 s)
@@ -96,7 +96,7 @@ subeffect=damage:-
 
 attack=Rush (1)
 ID=3403
-image=http://i.imgur.com/0IWIkGp.gif
+image=http://fat.gfycat.com/SoftSoftIndiancow.gif
 cooldown=22
 animation=instant|0|runs while leaning forward with sword behind back
 effect=dash
@@ -118,7 +118,7 @@ image=http://wiki.guildwars2.com/images/8/8c/Champion_Master_Ranger_Nente.jpg
 Path=ACS
 
 Attack=Flaming Arrow
-image=http://i.imgur.com/95bGHBA.gif
+image=http://giant.gfycat.com/MintyBigheartedAustraliancurlew.gif
 cooldown=3
 effect=Projectile with AoE
 subeffect=damage:332856
@@ -137,7 +137,7 @@ Path=ACS
 
 Attack=Hammer Swing (1)
 ID=4101
-image=http://i.imgur.com/4sXDrJJ.gif
+image=http://giant.gfycat.com/TangibleGoodnaturedAmericanredsquirrel.gif
 animation=raises hammer behind back|0.75
 cooldown=3
 effect=small PBAoE
@@ -146,7 +146,7 @@ subeffect=knockdown:3
 
 attack=Hammer Bash (2)
 ID=2102
-image=http://i.imgur.com/HJkvnjE.gif
+image=http://giant.gfycat.com/FatalUnknownArcticfox.gif
 animation=jumps hammer above head|0.5
 effect=melee
 subeffect=damage:0.6
@@ -156,7 +156,7 @@ subeffect=damage:0.6
 
 attack=Crude Swing
 ID=4103
-image=http://i.imgur.com/Wd8KxCj.gif
+image=http://giant.gfycat.com/WellmadeEdibleEeve.gif
 cooldown=11
 animation=swings from right with a spin|0.7
 effect=small PBAoE
@@ -204,7 +204,7 @@ Path=ACS
 
 Attack=Corrupted Ground
 ID=4122
-image=http://i.imgur.com/JYXa2zQ.gif
+image=http://giant.gfycat.com/SkeletalDenseCommongonolek.gif
 animation=raises staff horizontally|1.5|red circles
 effect=5 delayed (2 s) AoE fields in 3.2 s
 subeffect=Weakness:5
@@ -220,12 +220,12 @@ subeffect=bleeding:5
 
 Attack=Summon Flesh Golem
 ID=4126
-image=http://i.imgur.com/2QPxUkY.gif
+image=http://fat.gfycat.com/IdleWaryKittiwake.gif
 animation=kneels and raises left arm|0.6|shoots 1 blue ball
 effect=summon enemy=Flesh_Golem:normal
 
 Attack=Phase1
-image=http://i.imgur.com/JgVpKNG.gif
+image=http://giant.gfycat.com/BronzeFirsthandAkitainu.gif
 cooldown=40
 animation=kneels and raises left arm|0.6
 effect=Ranged
@@ -234,7 +234,7 @@ subeffect=Fear:3
 #note=Use a stun break
 
 Attack=Summon
-image=http://i.imgur.com/5r87xGV.gif
+image=http://giant.gfycat.com/AlertMeanFlee.gif
 cooldown=70
 animation=rises in air|0.6|shoots 4 blue balls
 effect=summon 4 enemy=Bone_Minions:normal
@@ -292,7 +292,7 @@ path=ACS
 
 attack=Lightning Orb
 ID=4092
-image=http://i.imgur.com/4GlYVA7.gif
+image=http://fat.gfycat.com/IckyFlawedChinesecrocodilelizard.gif
 cooldown=2
 animation=swings left arm|1.1|throws a blue ball
 effect=projectile with small AoE
@@ -300,7 +300,7 @@ subeffect=damage:-
 
 attack=Branded Lightning Strike
 ID=4091
-image=http://i.imgur.com/Go6XNVo.gif
+image=http://fat.gfycat.com/ElasticTatteredBeardedcollie.gif
 animation=swings left arm from right|0.6
 cooldown=17
 effect=ranged
@@ -309,7 +309,7 @@ subeffect=blind:5
 
 attack=Lightning Storm
 ID=4095
-image=http://i.imgur.com/VCFqo8M.gif
+image=http://fat.gfycat.com/SlimComplexElephantbeetle.gif
 animation=spins and raises arm|1.75
 cooldown=10
 effect=ticking PBAoE (10 hits in 4.5 s)
@@ -338,7 +338,7 @@ path=ACS
 
 attack=Shared Burden
 ID=4090
-image=http://i.imgur.com/ZbCtTY9.gif
+image=http://fat.gfycat.com/ShimmeringSphericalFrilledlizard.gif
 animation=swings right arm|0.25|throws brown ball
 cooldown=2
 effect=bouncing projectile
@@ -347,7 +347,7 @@ subeffect=crippled:2
 
 attack=Chaos Storm
 ID=4107
-image=http://i.imgur.com/UCvA8YJ.gif
+image=http://giant.gfycat.com/RareTalkativeArawana.gif
 cooldown=15
 animation=swings left arm|0.25|purple circle
 effect=ticking AoE (6 hits in 5 s)
@@ -366,7 +366,7 @@ subeffect=swiftness:5|33%
 #note=dodge out
 
 attack=Summon
-image=http://i.imgur.com/TbMQM0H.gif
+image=http://fat.gfycat.com/NervousWeightyChrysalis.gif
 animation=raises left arm|0.3
 effect=summon enemy=Illusionary_Mages:normal
 #note=kill them fast
@@ -402,7 +402,7 @@ path=ACS
 
 attack=Fire Swing (1)
 ID=4087
-image=http://i.imgur.com/IoI5CGg.gif
+image=http://giant.gfycat.com/InfatuatedKlutzyAmericanshorthair.gif
 cooldown=1
 animation=swings sword from right|0.8
 effect=melee
@@ -424,7 +424,7 @@ subeffect=Burning:3
 
 attack=Draw Spirit
 ID=4066
-image=http://i.imgur.com/cOfEl4N.gif
+image=http://giant.gfycat.com/OrnateConsiderateArawana.gif
 cooldown=21
 animation=pulls sword behind back and pulls air in|0.25
 additional=Only used at distant targets. Can't be evaded.
@@ -433,7 +433,7 @@ subeffect=pull:1.5
 
 attack=Foefire
 ID=4065
-image=http://i.imgur.com/x2vo8xA.gif
+image=http://giant.gfycat.com/TornTallHumpbackwhale.gif
 animation=pulls sword behind back|0.5
 cooldown=10
 additional=only used at distant targets
@@ -447,7 +447,7 @@ subeffect=knockback:2.3
 
 attack=Foefire
 ID=4068
-image=http://i.imgur.com/gyqIAcW.gif
+image=http://giant.gfycat.com/ImpoliteOrneryBergerpicard.gif
 cooldown=9
 animation=bends forward and raises right arm|1.25
 additional=only used at distant targets
@@ -708,7 +708,7 @@ Path=ACS|AC1|AC2|AC3
 
 Attack=Fireball
 ID=4064
-image=http://i.imgur.com/ZlKuwOS.gif
+image=http://fat.gfycat.com/FailingCheapAnnelid.gif
 Animation=raises left arm|0.2
 Cooldown=2
 effect=Projectile with small AoE
@@ -716,7 +716,7 @@ subeffect=damage:-
 
 Attack=Fire Storm
 ID=4062
-image=http://i.imgur.com/MlSW6US.gif
+image=http://fat.gfycat.com/OrderlyBrightIndianhare.gif
 cooldown=21
 Animation=Kneels and raises arm|0.75
 effect=Ticking AoE (6 hits in 5 s)
@@ -741,7 +741,7 @@ Path=ACS|AC1|AC2|AC3
 
 Attack=Blackout
 ID=4075
-image=http://i.imgur.com/NSZxiFp.gif
+image=http://fat.gfycat.com/WarmRashAlligator.gif
 cooldown=3
 animation=swings left arm|0.75
 effect=melee
@@ -750,7 +750,7 @@ subeffect=daze:1
 
 attack=Veil of Deflection
 ID=4081
-image=http://i.imgur.com/Ht2AI3G.gif
+image=http://zippy.gfycat.com/CarefreeAchingAfricanclawedfrog.gif
 cooldown=12
 animation=instant cast||purple bubble
 effect=buff (8 s)
@@ -773,7 +773,7 @@ Path=ACS|AC1|AC2|AC3
 Attack=Ray of Judgement
 ID=4078
 #description=Bouncing base attack which heals allies.
-image=http://i.imgur.com/CaUELnu.gif
+image=http://fat.gfycat.com/IdolizedFrigidAnnashummingbird.gif
 cooldown=3
 animation=raises left arm|0.25
 additional=Hits only once. Also bounces on allies.
@@ -784,7 +784,7 @@ subeffect=healing-percent:20
 Attack=Kick
 ID=4079
 #description=Kicks close enemies back.
-image=http://i.imgur.com/EZDSgcW.gif
+image=http://fat.gfycat.com/ConsciousAccomplishedEastsiberianlaika.gif
 animation=jumps and kicks|0.25
 cooldown=6
 effect=Melee
@@ -807,7 +807,7 @@ Path=ACS|AC1|AC2|AC3
 
 Attack=Life Siphon
 ID=4077
-image=http://i.imgur.com/oLyFphc.gif
+image=http://giant.gfycat.com/DesertedWeeklyGuanaco.gif
 cooldown=5
 effect=8 ranged hits in 2.5 s
 count=8
@@ -816,14 +816,14 @@ subeffect=damage:-
 
 attack=Well
 ID=4083
-image=http://i.imgur.com/eZOUKQ6.gif
+image=http://fat.gfycat.com/WarlikeAnyAlabamamapturtle.gif
 cooldown=12
 effect=ticking AoE (20 s)
 subeffect=Poison:6
 
 attack=Fear
 ID=4076
-image=http://i.imgur.com/TPyADQZ.gif
+image=http://giant.gfycat.com/RealCourteousAstarte.gif
 cooldown=22
 animation=swings left arm|0.25
 effect=PBAoE
@@ -853,7 +853,7 @@ They will do lots of damage, control and pressure so kill them fast.
 
 Attack=Spread Shot
 ID=4067
-image=http://i.imgur.com/TyclCNN.gif
+image=http://fat.gfycat.com/RemoteFixedBighorn.gif
 Cooldown=2
 animation=aims|0.15
 effect=Homing projectile
@@ -863,7 +863,7 @@ subeffect=Poison:18
 
 Attack=Kick
 ID=4079
-image=http://i.imgur.com/fpYOEqi.gif
+image=http://fat.gfycat.com/PoisedBlackAgama.gif
 cooldown=10
 animation=kicks with right foot|0.25
 effect=Melee
@@ -881,7 +881,7 @@ subeffect=Knockback:1.5
 
 Attack=Spike Trap
 ID=4112
-image=http://i.imgur.com/FJv6HDY.gif
+image=http://fat.gfycat.com/GleefulAthleticBengaltiger.gif
 animation=throws a ball
 effect=Projectile
 subeffect=plants a trap
@@ -912,7 +912,7 @@ More durable than other Ghosts because of selfhealing.
 
 attack=Sever Artery (1)
 ID=4070
-image=http://i.imgur.com/McqsMZG.gif
+image=http://giant.gfycat.com/ExcellentNaughtyBetafish.gif
 cooldown=1
 animation=swings sword from right|0.2
 effect=melee
@@ -936,7 +936,7 @@ subeffect=bleeding:5:3
 
 attack=Shield Bash
 ID=4080
-image=http://i.imgur.com/doIdALP.gif
+image=http://fat.gfycat.com/DelightfulCluelessHusky.gif
 cooldown=12
 animation=dashes shield on front|0.5
 effect=dash
@@ -946,7 +946,7 @@ subeffect=stun:1
 
 attack=Healing Signet
 ID=4074
-image=http://i.imgur.com/gdb4ygj.gif
+image=http://giant.gfycat.com/UnawareAgitatedCoqui.gif
 cooldown=30
 additional=used when below 50%
 effect=self buff

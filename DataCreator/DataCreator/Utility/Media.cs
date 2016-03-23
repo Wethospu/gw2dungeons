@@ -77,7 +77,12 @@ namespace DataCreator.Utility
         return "";
       var builder = GetBaseLinkHTML();
       builder.Append("<img class=\"thumb-image\" border=\"0\" alt=\"Thumb\" src=\"\" data-name=\"");
-      builder.Append(Path.GetFileNameWithoutExtension(Link)).Append(".jpg");
+      var folder = "";
+      if (Link.Contains("wiki"))
+        folder = "wiki/";
+      else if (Link.Contains("gfycat"))
+        folder = "gfycat/";
+      builder.Append(folder).Append(Path.GetFileNameWithoutExtension(Link)).Append(".jpg");
       builder.Append("\"></a>");
       return builder.ToString();
     }

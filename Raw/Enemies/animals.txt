@@ -571,7 +571,7 @@ Path=CoE1|CoE2|CoE3
 
 attack=Bite
 ID=3033
-image=http://i.imgur.com/q0TdusG.gif
+image=http://fat.gfycat.com/WeeWindyAfricanwildcat.gif
 cooldown=3.5
 animation=bites|0.25
 effect=Melee
@@ -579,7 +579,7 @@ subeffect=damage:-
 
 attack=Frost Leap
 ID=2540
-image=http://i.imgur.com/7bQUYcr.gif
+image=http://fat.gfycat.com/DeepDirectLarva.gif
 animation=instant||leaves icy ground
 cooldown=30
 effect=2 PBAoEs
@@ -592,7 +592,7 @@ subeffect=chilled:3
 
 attack=Leap
 ID=2541
-image=http://i.imgur.com/mNIXPon.gif
+image=http://fat.gfycat.com/EsteemedBrightLaughingthrush.gif
 animation=instant
 cooldown=30
 effect=short dash (0.25 s) with 2 PBAoEs
@@ -632,7 +632,7 @@ Path=HotWS|HotW1|HotW3|CoE1|CoE2|CoE3
 
 attack=Bite
 ID=4886
-image=http://i.imgur.com/kkL8fmR.gif
+image=http://fat.gfycat.com/SillyIdealDragonfly.gif
 cooldown=2.5
 animation=swings arms|0.25
 effect=dash with 2 melee hits in 0.5 s
@@ -643,7 +643,7 @@ subeffect=damage:-
 attack=Leap
 ID=4884
 cooldown=19
-image=http://i.imgur.com/i0WYRxZ.gif
+image=http://fat.gfycat.com/PepperyIllinformedGrosbeak.gif
 effect=short leap
 subeffect=damage:-
 subeffect=knockdown:3
@@ -661,7 +661,7 @@ Path=HotWS|HotW1|HotW3|CoE1|CoE2|CoE3|Snow
 
 attack=Bite
 ID=3033
-image=http://i.imgur.com/q0TdusG.gif
+image=http://fat.gfycat.com/WeeWindyAfricanwildcat.gif
 cooldown=3.5
 animation=bites|0.25
 effect=Melee
@@ -669,7 +669,7 @@ subeffect=damage:-
 
 attack=Leap
 ID=2541
-image=http://i.imgur.com/mNIXPon.gif
+image=http://fat.gfycat.com/EsteemedBrightLaughingthrush.gif
 animation=instant
 cooldown=30
 effect=short dash (0.25 s) with 2 PBAoEs

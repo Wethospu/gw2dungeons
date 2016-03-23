@@ -91,7 +91,7 @@ Path=HotWS|HotW3
 
 attack=Smash
 ID=1615
-image=http://i.imgur.com/XXFJoDF.gif
+image=http://fat.gfycat.com/SinfulAnotherArthropods.gif
 cooldown=0
 animation=swings right arm|0.75
 additional=low-range
@@ -651,7 +651,7 @@ subeffect=damage:-
 # Path 3 bosses
 ##################################################################
 
-Name=Svánigandr
+Name=Svï¿½nigandr
 ID=10937
 image=http://wiki.guildwars2.com/images/6/66/Becomethewolf.jpg
 Path=HotW3
@@ -921,7 +921,7 @@ Path=HotWS|CoE1|CoE2|CoE3
 
 attack=Smash
 ID=4898
-image=http://i.imgur.com/XXFJoDF.gif
+image=http://fat.gfycat.com/SinfulAnotherArthropods.gif
 animation=swings right arm|0.75
 cooldown=0
 effect=melee
@@ -930,14 +930,14 @@ subeffect=knockback:1.5
 
 attack=Smash
 ID=4899
-image=http://i.imgur.com/SgQDJrV.gif
+image=http://giant.gfycat.com/SpiritedQualifiedDevilfish.gif
 animation=glows and pulls right arm back|2.5
 effect=melee
 subeffect=damage:-
 
 attack=Frost Breath
 ID=4900
-image=http://i.imgur.com/sob1GdR.gif
+image=http://giant.gfycat.com/PoliticalClutteredDromedary.gif
 animation=raises arms and stomps ground|2.5|icy spray
 effect=channeled cone (2.5 s)
 subeffect=damage:-

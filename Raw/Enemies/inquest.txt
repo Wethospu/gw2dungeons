@@ -619,14 +619,14 @@ Path=SES|SE1
 
 attack=Throw Bomb
 ID=1549
-image=http://i.imgur.com/AvOU6th.gif
+image=http://giant.gfycat.com/DeepTameDalmatian.gif
 animation=swings right arm while jumping|0.25|throws a bomb
 effect=projectile with AoE
 subeffect=damage:-
 
 attack=Throw Bomb
 ID=2180
-image=http://i.imgur.com/AvOU6th.gif
+image=http://giant.gfycat.com/DeepTameDalmatian.gif
 animation=swings right arm while jumping|0.25|throws a bomb
 effect=projectile with AoE
 subeffect=damage:-
@@ -634,7 +634,7 @@ subeffect=chilled:5
 
 attack=Throw Bomb
 ID=2181
-image=http://i.imgur.com/AvOU6th.gif
+image=http://giant.gfycat.com/DeepTameDalmatian.gif
 animation=swings right arm while jumping|0.25|throws a bomb
 effect=projectile with AoE
 subeffect=damage:-
@@ -651,7 +651,7 @@ scaling=level
 
 attack=Bouncing Bomb
 ID=2182
-image=http://i.imgur.com/AvOU6th.gif
+image=http://giant.gfycat.com/DeepTameDalmatian.gif
 animation=pulls right arm behind back|0.5|throws a bomb
 effect=projectile with AoE
 subeffect=damage:-
@@ -792,7 +792,7 @@ Path=SES|SE1|COES|CoE1|CoE2|CoE3
 
 attack=Swing
 ID=2204
-image=http://i.imgur.com/afnrAd3.gif
+image=http://fat.gfycat.com/VengefulEmbarrassedDoe.gif
 cooldown=0
 animation=swing from right|0.5
 effect=melee
@@ -800,14 +800,14 @@ subeffect=damage:-
 
 attack=Blinding Powder
 ID=2207
-image=http://i.imgur.com/lJWAhZY.gif
+image=http://giant.gfycat.com/LividEnlightenedGermanspaniel.gif
 effect=AoE
 subeffect=blind:3
 subeffect=stealth:0
 
 attack=Hornet Sting
 ID=2206
-image=http://i.imgur.com/rTMlUM2.gif
+image=http://fat.gfycat.com/WeightySerpentineAfricanjacana.gif
 effect=Melee
 subeffect=damage:-
 effect=Dodge back
@@ -815,7 +815,7 @@ subeffect=buff:evade
 
 attack=Flanking Strike (1)
 ID=2205
-image=http://i.imgur.com/mQZLGNF.gif
+image=http://giant.gfycat.com/EvenRemoteBrownbear.gif
 effect=melee
 subeffect=damage:-
 
@@ -841,7 +841,7 @@ Path=SES|SE1|COES|CoE1|CoE2|CoE3
 
 attack=Impale
 ID=2172
-image=http://i.imgur.com/7YhAPwk.gif
+image=http://giant.gfycat.com/MarriedRecentClownanemonefish.gif
 animation=pulls weapon behind back, jumps and smashes ground|0.75|sends a rock line
 effect=returning and piercing projectile
 count=?
@@ -849,14 +849,14 @@ subeffect=damage:-
 
 attack=Ring of Earth
 ID=2173
-image=http://i.imgur.com/ahdZ3sa.gif
+image=http://fat.gfycat.com/LinearQuerulousBorer.gif
 animation=raises left arm with small earth effect|0.2|ring of rocks appears
 effect=PBAoE
 subeffect=damage:-
 
 attack=Magnetic Aura
 ID=2174
-image=http://i.imgur.com/u5aG990.gif
+image=http://zippy.gfycat.com/RadiantHandyBlackcrappie.gif
 cooldown=16
 animation=instant|0|a yellow shield
 effect=buff:Invulnerability:3
@@ -1194,7 +1194,7 @@ effect=Knockback, knockdown and launch sometimes work (even though defiance)
 
 Attack=Laser (1)
 ID=4929
-image=http://i.imgur.com/20wQqEc.gif
+image=http://giant.gfycat.com/PlainFittingCougar.gif
 Animation=Puts arms behind back
 Additional=channeled. Can't be blocked
 effect=12 ranged attacks
@@ -1205,7 +1205,7 @@ subeffect=vulnerability:0
 
 Attack=Rocket (2)
 ID=4929
-image=http://i.imgur.com/R8UxuDF.gif
+image=http://giant.gfycat.com/ShowyMammothBluefish.gif
 additional=Can't be blocked
 effect=Projectile with small AoE
 subeffect=damage:-
@@ -1213,7 +1213,7 @@ subeffect=damage:-
 
 Attack=Dual Rockets
 ID=4933
-image=http://i.imgur.com/nubOskm.gif
+image=http://giant.gfycat.com/ImpishSpiffyAltiplanochinchillamouse.gif
 additional=Can't be blocked
 effect=2 projectiles with small AoE
 count=2
@@ -1221,7 +1221,7 @@ subeffect=damage:-
 
 Attack=Fire Spin
 ID=4928
-image=http://i.imgur.com/evoReVz.gif
+image=http://giant.gfycat.com/GlassPotableBlackbuck.gif
 Animation=spreads arms
 additional=channeled
 effect=multiples PBAoes
@@ -1231,7 +1231,7 @@ subeffect=damage:-
 
 Attack=Pull
 ID=4931
-image=http://i.imgur.com/r7a2aNS.gif
+image=http://giant.gfycat.com/BewitchedBewitchedChameleon.gif
 Animation=points right arm at you
 effect=projectile
 subeffect=damage:-
