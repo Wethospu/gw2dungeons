@@ -263,11 +263,6 @@ function handleOverlayLinks() {
 			return true;
 		if (cntrlIsPressed)
 			return true;
-		if (!$("#data-overlay").hasClass("in")) {
-			$('#data-overlay').modal();
-			$('#data-overlay').css('padding-right', '');
-			$(".modal-content").html(overlayHtml);
-		}	
 		// Check is the url already loaded. / 2015-09-16 / Wethospu
 		var url = simplifyUrl(this.href);
 		overlayRemoveOld(url);
@@ -281,20 +276,40 @@ function handleOverlayLinks() {
 			content += ' height:' + height + 'px;';
 		content += '">';
 		if (this.href.indexOf("gfycat") > -1) {
-			// Special gfycat embed solution (normal embed causes extra margins). / 2015-10-19 / Wethospu
-			// NOTE: Solution adds 'position: relative;'. This was manually removed from gfycat.min to make this work. / 2015-10-19 / Wethospu
+			// Special gfycat embed solution (normal embed causes extra margins).
+			// NOTE: Solution adds 'position: relative;'. This was manually removed from gfycat.min to make this work.
 			content += '<div class="gfyitem" data-id="' + url + '"></div>';
 		}
-		else
+		else if (this.href.indexOf(".jpg") > -1 || this.href.indexOf(".png") > -1) {
+			// Direct image handling to prevet SAMEORIGIN errors.
+			content += '<img src="' + handleUrl(this.href) + '"';
+			if (width > 0)
+				content += ' width="' + width + '"';
+			if (height > 0)
+				content += ' height="' + height + '"';
+			content += '></img>';
+		}
+		else if (this.href.indexOf("youtu") > -1)
 		{
+			// Youtube suggest iframes for their videos (https://developers.google.com/youtube/player_parameters).
 			content += '<iframe class="embed-responsive-item" src="' + handleUrl(this.href) + '"';
 			if (width > 0)
 				content += ' width="' + width + '"';
 			if (height > 0)
 				content += ' height="' + height + '"';
 			content += ' frameborder="0" margin="0" scrolling="no" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);"></iframe>';
-		}	
+		}
+		else
+		{
+			// Other links (like gw2 wiki pages) have to be opened normally because of SAMEORIGIN policy.
+			return true;
+		}
 		content += '</div>';
+		if (!$("#data-overlay").hasClass("in")) {
+			$('#data-overlay').modal();
+			$('#data-overlay').css('padding-right', '');
+			$(".modal-content").html(overlayHtml);
+		}	
 		$("#overlay-nav").append('<li><a href="#tab-' + url + '" data-toggle="tab" data-description="' + url + '" data-width="' + width + '" data-height="' + height + '">' + shortenUrl(this.href) + '</a></li>');
 		$("#overlay-pane").append('<div class="tab-pane" id="tab-' + url + '">' + content + '</div>');
 		
