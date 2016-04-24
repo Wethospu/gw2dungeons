@@ -470,6 +470,8 @@ namespace DataCreator.Shared
         url = "http://gw2dungeons.net/" + url;
       // Url properly created. Test that it exists.
       var fullUrl = url;
+      if (linkType.Equals(Constants.LinkYoutube))
+        fullUrl = "http://www.youtube.com/embed/" + linkData.Split('|')[0];
       VerifyLink(fullUrl);
       BackupAndUpdateSize(fullUrl);
       

@@ -77,7 +77,7 @@ Videos: link=https://www.youtube.com/channel/UCVadvC5qJzP9umIHOyNjxUg/videos|Abe
 
 name=Engineer
 Engineer can produce the most sustained Vulnerability stacks in the game. Additionally they are one of the few professions capable of creating a smoke field to generate Stealth. The same smoke field can assist defensively by blinding trash mobs. They also have access to many blast finishers to assist in overall utility. Lastly they have strong condition cleansing capabilities. Engineer can also provide Might generation for the party.  A skilled Engineer is an effective Jack of All Trades for a dungeon party. Very high personal DPS.
-Guides: link=http://www.dtguilds.com/forum/m/6563292/viewthread/15457607|Build_guide, link=http://dulfy.net/2014/10/24/gw2-engineer-class-guide-by-doomblade-and-element/|Profession_guide, link=http://www.wolfineer.com/the-engineer-handbook/|Alternative_guide.
+Guides: link=http://www.dtguilds.com/forum/m/6563292/viewthread/15457607|Build_guide, link=http://dulfy.net/2014/10/24/gw2-engineer-class-guide-by-doomblade-and-element/|Profession_guide, link=http://www.sheriffsauer.com/|Alternative_guide.
 Videos: link=https://www.youtube.com/channel/UCP9VaQTvRQD_qW20WvjIZhw|Tom.
 
 name=Guardian
@@ -156,7 +156,7 @@ For healing take wiki=Healing_Turret. For utilities take wiki=Flamethrower, wiki
 You need to rotate high damage attacks on your weapon and kits to deal good damage. Use wiki=Grenade_Barrage, wiki=Napalm, wiki=Flame_Blast, wiki=Acid_Bomb, weaponswap to interrupt the leap, wiki=Blunderbuss, wiki=Jump_Shot, wiki=Freeze_Grenade, wiki=Shrapnel_Grenade and wiki=Grenade to deal lots of damage. Try to switch to appropriate kit when skills come off cooldown.
 Use wiki=Fumigate and wiki=Super_Elixir to remove conditions and wiki=Healing_Mist to break a stun.
 If you see a fire field before combat, use skills like wiki=Big_Ol'_Bomb, wiki=Rumble, wiki=Flame_Blast, wiki=Acid_Bomb to blast it. If not, create your own with a wiki=Fire_Bomb or Napalm.
-For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/15457607|Build_guide, link=http://dulfy.net/2014/10/24/gw2-engineer-class-guide-by-doomblade-and-element/|Profession_guide and link=http://www.wolfineer.com/the-engineer-handbook/|Alternative_guide.
+For more info check link=http://www.dtguilds.com/forum/m/6563292/viewthread/15457607|Build_guide, link=http://dulfy.net/2014/10/24/gw2-engineer-class-guide-by-doomblade-and-element/|Profession_guide and link=http://www.sheriffsauer.com/|Alternative_guide.
 
 
 name=Guardian
@@ -315,7 +315,7 @@ Normally NPCs follow someone by walking which can either put them in danger or s
 
 name=Pathing
 # Some info: https://forum-en.guildwars2.com/forum/game/dungeons/About-pathing/first
-This youtube:_F7kgM52aus|video_tutorial explains the concept and shows lots of examples where it happens.
+This youtube=_F7kgM52aus|video_tutorial explains the concept and shows lots of examples where it happens.
 Some enemies get a scripted order "Move to target" or "Move to location". These can be triggered by reaching a certain location or starting an event. Orders break when enemies are aggroed or when their reach their location.
 The most important part is that order "Move to target" ignores stealth. This means enemies may follow stealthed players very far even if they don't aggro them. This makes stealth pointless because you often have to kill the enemies.
 However this can be prevented with a little practice and coordination. If enemies follow you while stealthed you should simply stop. Once they reach your location, their order expires and you are free to move. wiki=Shadow_Refuge is the best skill for this because it forces you to stand still and ensures the stealth won't run out.
