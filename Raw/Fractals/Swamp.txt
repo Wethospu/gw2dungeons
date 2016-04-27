@@ -112,7 +112,7 @@ He literally won't do any other attacks when chasing his target, which allows ot
 After 25% he may transform (rare) to different enemy=animal_forms:legendary with very dangerous leaps and melee attacks. He won't stealth or use ranged attacks though.
 tactic=coordinated
 Stack might and stealth before getting aggro, and then fight directly on top of Mossman. Chain anti-projectile skills and CC, make use of Aegis if you have it, and stay behind Mossman unless he is aggroed on you. In a coordinated group, Mossman's aggro can be manipulated by a combination of first hit and higher toughness than the rest of the group; it's ideal to let a Guardian or an Earth Elemental take the aggro.
-tactic=low man
+tactic=exploit
 Mossman has a maximum number of wolves that he can spawn, and the wolves have a limited aggro radius. As such, it is possible to spawn out all of the wolves on one side of the arena, die, and then fight Mossman on the other side of the arena without any wolves being spawned. Because it takes a lot of time to spawn the wolves, this method is only helpful if you are looking for a speed kill (timed from first hit until death), or don't think you can defeat Mossman along with the adds he spawns.
 tactic=bug
 Sometimes, Mossman's stealth does not expire based on its time limit as it should, and you must take a hit in order to have it expire. This can be extremely problematic in solo/duo situations.

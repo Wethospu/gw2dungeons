@@ -821,56 +821,6 @@ ID=5982
 
 ##################################################################
 
-name=Archdiviner (Start)
-ID=11286
-image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
-scaling=legendary
-path=Cliff
-
-attack=Swing
-ID=16191
-cooldown=0
-effect=melee
-subeffect=damage:-
-
-attack=Ring of Warding
-ID=16203
-additional=used at primary target
-effect=AoE
-subeffect=damage:?
-#note=evade if unsure who is being targeted or target is close
-effect=6 projectiles (cone)
-subeffect=damage:?
-subeffect=confusion:3
-#note=evade
-
-attack=Thundering Leap
-ID=16201
-effect=leap with small PBAoE
-subeffect=damage:-
-
-attack=Corrupted Ground
-ID=16194
-effect=7 delayed (1 s) AoEs in 6 s at target
-count=?
-subeffect=Agony:3
-subeffect=weakness:5
-subeffect=poison:5
-subeffect=vulnerability:5
-subeffect=bleeding:5
-subeffect=strip a boon
-#note=targeted player should run away from others
-
-attack=Backbreaker
-ID=16193
-additional=used when below 50%
-effect=single target melee
-subeffect=damage:-
-subeffect=knockdown:2
-subeffect=agony:3
-
-##################################################################
-
 name=Archdiviner (Phase 1)
 ID=11296
 image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
@@ -884,34 +834,14 @@ effect=melee
 subeffect=damage:-
 subeffect=knockback:0
 
-attack=Corrupted Ground
-ID=16194
-effect=7 delayed (1 s) AoEs in 6 s at target
-count=?
-subeffect=Agony:3
-subeffect=weakness:5
-subeffect=poison:5
-subeffect=vulnerability:5
-subeffect=bleeding:5
-subeffect=strip a boon
-#note=targeted player should run away from others
+attack=Backbreaker
+additional=Replaces Swing when below 50%.
+effect=single target melee
+subeffect=damage:0.5
+subeffect=knockdown:2
+subeffect=agony:3
 
-##################################################################
-
-name=Archdiviner (Phase 2)
-ID=11296
-image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
-scaling=legendary
-path=Cliff
-
-attack=Swing
-ID=16197
-cooldown=0
-effect=melee
-subeffect=damage:-
-subeffect=knockback:0
-
-attack=Cursed Grasp (1)
+attack=Cursed Grasp
 ID=16195
 effect=3 projectiles (cone)
 count=?
@@ -919,26 +849,42 @@ subeffect=damage:-
 subeffect=pull:0
 #note=evade
 
-attack=Nova (2)
-animation=raises left arm||white flash
-effect=buff:projectile_reflection:5:1:protection
-effect=high-range PBAoE
-subeffect=damage:0.3
-subeffect=agony:3
-#note=keep eye on boss all the time on for protection-icon to block/evade Nova
-#note=be careful with single-blocks (Bone Fiends may waste them)
+attack=Teleport
+additional=Used after scale 25.
+effect=Teleport to target
 
-attack=Backbreaker
-effect=single target melee
-subeffect=damage:0.5
-subeffect=knockdown:2
-subeffect=agony:3
+attack=Wall
+additional=Reflects after scale 50.
+effect=AoE line
+subeffect=Destroys projectiles.
+
+attack=Conic Smash
+additional=Window time reduced at higher scales.
+effect=defiance
+
+attack=Corrupted Ground
+additional=Window time reduced at higher scales.
+effect=defiance
 
 attack=Summon & Cage
-additional=can't be blocked or evaded
-effect=teleport target to a enemy=Cage:structure
+effect=AoE
+subeffect=teleport target to a enemy=Cage:structure
 effect=summon 2 enemy=Bone_Fiends:normal
 #note=break cage to get free, help other players if they need help
+
+attack=Protection
+subeffect=Activates when below 50%.
+effect=aura
+subeffect=protection:?
+
+attack=Swiftness
+subeffect=Activates when below 25%.
+effect=aura
+subeffect=swiftness:?
+
+attack=Transform
+subeffect=Activates after scale 75 when below 25%.
+effect=demon form
 
 ##################################################################
 

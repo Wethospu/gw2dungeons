@@ -388,6 +388,7 @@ ID=15960
 animation=sits down
 effect=channeled heal
 subeffect=Healing:0
+subeffect=removes conditions
 #note=interrupt (if "Superheated" damage automatically interrupts)
 #note=can be interrupted with Knockback or launch
 

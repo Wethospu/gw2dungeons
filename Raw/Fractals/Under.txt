@@ -165,7 +165,7 @@ tactic=normal
 Easier than the Powersuit. This boss has well telegraphed and easily avoidable attacks.
 At melee he uses two different attacks. The first attack is a fist smash. When the fist hits the ground, a large AoE circle appears. The circle is bigger than it appears. You can simply step out of this attack, or dodge out of it if you are slow to react. The other attack is a stomp, which leaves a V-shaped frost pattern on the ground radiating outwards from the location of the stomp. Again, you can simply walk out of this attack, or you can dodge if you are slow to react.
 His only dangerous attack is when he jumps and puts multiple delayed AoEs (which inflict Agony). Usually it's easy to avoid but you may get into a bad spot. Just keep your head cool and dodge at right time.
-When he kneels he summons 3 enemy=Ice_Elementals_(Melee):veteran and heals. Kite Elementals and keep him "Superheated" to interrupt healing. Dealing with the adds is the hardest part of this fight.
+When he kneels he summons 3 enemy=Ice_Elementals_(Melee):veteran and heals. Kite Elementals and keep him "Superheated" to interrupt healing and prevent condition removal. Dealing with the adds is the hardest part of this fight.
 tactic=thief
 Use the stolen Ice Shard Stab/Throw Gunk to chill/crippled it under the lava.
 tactic=guardian
@@ -180,7 +180,7 @@ Harder than the Ice Elemental due to a variety of attacks which require proper r
 His melee hit hits twice and hits hard; this is easily his most dangerous attack. It has a large range and radius, so remember to dodge even if you think you are out of range, or think you are behind the back of the boss. At close range he may also jump which shoots short range projectiles around him. The Jump is not really dangerous but you should still try to avoid being struck.
 When he raises both arms he will shoot 2 waves of bombs. They don't always draw a circle, so pay attention to where they land. Try run out of their area and dodge only if needed. Don't dodge during first wave because you may dodge right into a bomb! Bombs can be reflected or absorbed but they won't deal any damage to the Powersuit. Bombs will 1-shot a player, however they will not deal any damage to a downed player.
 His final attack is when he gains stability and glows. He will smash ground and send 3 shockwaves which hit the whole room. Each hit deals agony and moderate damage. You can avoid any damage with two dodges if you have good timing, however one dodge is usually sufficient to mitigate enough damage from the attack. Use blocks or immunity if needed.
-When he sits he will heal. Keep him "Superheated".
+When he sits he will heal. Keep him "Superheated" to interrupt healing and prevent condition removal.
 tactic=mesmer
 Use wiki=Feedback to protect your team from bombs.
 tactic=elementalist

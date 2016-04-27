@@ -50,33 +50,11 @@ tactic=normal|91-100
 wiki=Mistlock_Instability:_Social_Awkwardness|Social_Awkwardness: Nearby allies receive agony when in combat.
 Don't stack as a full group. 4 stacks of agony kills you in 25 seconds even with a max agony resist. If you don't have max agony resist stay away from everyone else.
 
-name=enemy=Archdiviner_(Start):legendary
-tactic=melee
-All his attacks do lots of damage which makes melee very risky unless you know his animations. Try to stay at max melee range to prevent him from using melee attacks. If he does you have to block or dodge very quickly. Ideally, you should stay to the front of him if you are targeted (which may include backpedaling), and stay behind him if you are not being targeted.
-tactic=ranged
-All his attacks do lots of damage so pay attention. Try to learn animations for his special attacks and be ready to dodge. Keep some distance to avoid his melee attacks.
-tactic=melee|ranged
-He often initiates by channeling delayed AoEs near one player. Run away from other players if you think you are targeted. Try avoid them but they won't be a threat, other than stripping Aegis, unless you lack agony resistance. Remember to keep attacking him if you are in a good spot.
-His first special attack is a leap with AoE damage. He may turn in mid-air if targeted player moves. If you are being targeted avoid turning him towards others players (dodge directly away from him or use a block). If you are close to his target just block or dodge even if he isn't facing you.
-His second special attack is a spin which consists of two components - six projectiles evenly distributed around him (reflectable, with the ideal reflect placement in the center of the Archdiviner's hitbox) and an invisible AoE around his target. It's best to just dodge or use an invulnerability skill since single use blocks (Aegis) will only absorb one part of the attack.
-tactic=melee
-After 50% he will start using Backbreaker which also inflicts agony. Stay at max melee range so he won't use it. Backbreaker is quite slow so just block or dodge if you see a different animation.
-tactic=ranged|melee
-When he dies he will drop a Cultist Hammer which you need to proceed.
-tactic=coordinated
-In an organized group, you can use Earth Elementals or a Guardian (who has some Knight's gear equipped, thus giving them higher toughness than the rest of the party) to take aggro, thus allowing the rest of the team to safely melee the boss from behind.
-tactic=mesmer
-Use wiki=Feedback when Archdiviner is about to spin to protect your party and deal lots of damage.
-tactic=guardian
-Use wiki=Wall_of_Reflection when Archdiviner is about to spin to protect close players and deal some damage. You can deal lots of damage if you place the Wall of Reflection in the center of his hitbox.
-tactic=guardian
-Use wiki="Retreat!" and wiki=Virtue_of_Courage to protect yourself and team mates from his attacks.
-tactic=thief
-Use wiki=Signet_of_Agility to give extra dodges to team mates.
-tactic=elementalist
-Use an Earth Elemental from wiki=Glyph_of_Elementals to hold boss aggro and allow your team some relative safety from his melee attacks.
+name=Start
+tactic=normal
+Kill enemies to acquire enemy=Cultist_Hammer which you need to proceed.
 
-name=Cultist Hammer
+name=enemy=Cultist_Hammer
 tactic=normal
 The Hammer is needed to damage and destroy enemy=Seals:structure. The death of an enemy you have recently attacked charges skill 4 of the hammer. Skill 4 is used to hit seals. Skill 1 should be used for attacking while skill 3 should be used at ~26 stacks to counter stun. Skill 2 shouldn't be used at all.
 Picking up the Hammer deals 30% damage and some conditions based on wiki=Hammer_Corruption. Wielding the Hammer generates Corruption which gives conditions every 10 stacks, stuns at 30 stacks and downs at 40 stacks.
@@ -219,7 +197,8 @@ Use wiki="Stand_Your_Ground!" to protect everyone.
 
 name=Archdiviner
 tactic=normal
-At the start both enemy=Archdiviner_(Phase_1):legendary and Seal are invulnerable. You should pull 4 enemy=Chanters:normal behind one of the platform with torches (near the boss) and kill them without much trouble. After that just walk close Archdiviner to get stunned and to wake him up.
+FIGHT HAS BEEN REWORKED, THIS IS NO LONGER TRUE!
+At the start both enemy=Archdiviner_(Phase_1):legendary and Seal are invulnerable. You should pull 4 enemy=Chanters:normal behind one of the platform with torches (near the boss) and burst them down fast
 During the first phase he will use wells just like the first archdiviner. His only other attack in this phase is just basic melee with high damage and Knockback (again melee players should try to stay at max melee-range as well as behind his back if not targeted).
 At 75% Archdiviner will drop his Hammer, get invulnerability and become permanently stunned. The Seal goes vulnerable and 4 enemy=Chanters:normal spawn around the seal. After some time, 4 enemy=Fanatics:normal start to respawn.
 At lower levels, enemies disappear when you hit the Seal so just focus one enemy and hit the Seal. At higher levels, enemies stay so try to kill as many as possible before hitting the Seal (if you are slow and Fanatics start to spawn then hit Seal immediately, otherwise you might get overrun).

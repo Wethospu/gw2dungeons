@@ -101,12 +101,12 @@ After the first test 4 enemy=Molten_Shamans:veteran aappear at the sides (they r
 After the second test a enemy=Molten_Protector:veteran appears at the middle of the room, on the the side of the Core nearest to the entrance to the room. The protector respawns if killed. Damage the Core to 50% to proceed, at which point the protector disappears. Use control skills to move the protector away from the core to start damaging it immediately.
 After the third test all previous enemies appear. Damage the Core to 25% to proceed, at which point all enemies again disappear.
 At which point there is a final test phase, where all the previous test elements are simultaneously combined. Destroy the Core to proceed.
-tactic=engineer
-If your team has trouble surviving the weapon test use wiki=Healing_Turret and wiki=Supply_Crate with trait wiki=Fortified_Turrets to reflect tornadoes and fireballs.
 tactic=coordinated|exploit
 Stack near the core on the exit-side and use reflects and projectile absorption to tank defend against the fireball/cannon trap as well as, optionally, the fire tornado trap.
 tactic=bug
 The event may not start if Frostbite, Braham or Rox is missing. Ensure they are alive and with you before entering the room.
+tactic=engineer
+If your team has trouble surviving the weapon test use wiki=Healing_Turret and wiki=Supply_Crate with trait wiki=Fortified_Turrets to reflect tornadoes and fireballs.
 tactic=elementalist
 Use wiki=Conjure_Frost_Bow to do extreme damage to the power core.
 Use wiki=Conjure_Lightning_Hammer to knock back the molten protector.

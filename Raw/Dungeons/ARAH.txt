@@ -7,7 +7,7 @@ path=Arah1
 name=The Ruined City of Arah Path 1: Jotun
 tactic=normal
 Level: 80.
-Reward: 1.26 g + 60 tokens.
+Reward: 1.26 g + 100 tokens.
 Average length: 29 minutes.
 Difficulty: Hard.
 Enemies: Undead.
@@ -18,7 +18,7 @@ Current record: record=31.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty.
 tactic=rewards
-First run per day gives 1.26 gold and 60 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 1.26 gold and 100 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shards or wiki=Risen_Spineguard from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Stargazer_Pendant from the final chest. The recipe allows you to craft wiki=Stargazer_Pendant which gives no extra gold return for your tokens.
@@ -164,7 +164,7 @@ path=Arah2
 name=The Ruined City of Arah Path 2: Mursaat
 tactic=normal
 Level: 80.
-Reward: 1.26 g + 60 tokens.
+Reward: 1.26 g + 100 tokens.
 Average length: 28 minutes.
 Difficulty: Hard.
 Enemies: Undead.
@@ -175,7 +175,7 @@ Current record: record=32.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty.
 tactic=rewards
-First run per day gives 1.26 gold and 60 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 1.26 gold and 100 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shards or wiki=Risen_Spineguard from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Operative's_Creed from the final chest. The recipe allows you to craft wiki=Operative's_Creed which gives a better gold return for your tokens.
@@ -369,7 +369,7 @@ path=Arah3
 name=The Ruined City of Arah Path 3: Forgotten
 tactic=normal
 Level: 80.
-Reward: 0.76 g + 60 tokens.
+Reward: 0.76 g + 100 tokens.
 Average length: 25 minutes.
 Difficulty: Hard.
 Enemies: Undead.
@@ -380,7 +380,7 @@ Current record: record=33.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty.
 tactic=rewards
-First run per day gives 76 silvers and 60 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 76 silvers and 100 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shards or wiki=Risen_Spineguard from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Wraithlord_Chains from the final chest. It's account bound so it's not valuable.
@@ -510,7 +510,7 @@ path=Arah4
 name=The Ruined City of Arah Path 4: Seer
 tactic=normal
 Level: 80.
-Reward: 1.26 g + 60 tokens.
+Reward: 1.26 g + 100 tokens.
 Average length: 45 minutes.
 Difficulty: Hard.
 Enemies: Undead.
@@ -521,7 +521,7 @@ Current record: record=34.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Undead_Slaying|Sigil_of_Undead_Slaying instead of Frailty.
 tactic=rewards
-First run per day gives 1.26 gold and 60 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 1.26 gold and 100 tokens, wiki=Shard_of_Zhaitan|Shards_of_Zhaitan. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Amulet_of_the_Dead, wiki=Orrian_Artifact_Shards or wiki=Risen_Spineguard from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Bloodstone_Fragment from the final chest. The recipe allows you to craft wiki=Bloodstone_Fragment which gives a much better gold return for your tokens.

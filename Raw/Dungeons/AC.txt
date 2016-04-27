@@ -201,7 +201,7 @@ path=AC1
 name=Ascalonian Catacombs Path 1: Defeat the Howling King
 tactic=normal
 Level: 35.
-Reward: 0.76 g + 60 tokens.
+Reward: 0.76 g + 100 tokens.
 Average length: 13 minutes.
 Difficulty: Easy.
 Enemies: Graveling, Spider and Ghost.
@@ -210,7 +210,7 @@ Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_
 youtube=RF0anqwVcu8|Video_guide (Banter Bill).
 Current record: record=2.
 tactic=rewards
-First run per day gives 76 silvers and 60 tokens, wiki=Ascalonian_Tear|Ascalonian_Tears. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 76 silvers and 100 tokens, wiki=Ascalonian_Tear|Ascalonian_Tears. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Foefire_Amulet, wiki=Foefire_Amulet_(masterwork), wiki=Ghostly_Spineguard or wiki=Ring_of_the_Catacombs from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Claw_of_the_Howling_King from the end boss, enemy=Howling_King. The recipe allows you to craft wiki=Claw_of_the_Howling_King which gives a much better gold return for your tokens.
@@ -219,7 +219,7 @@ path=AC2
 name=Ascalonian Catacombs Path 2: Trap and kill the Ghost Eater
 tactic=normal
 Level: 35.
-Reward: 0.76 g + 60 tokens.
+Reward: 0.76 g + 100 tokens.
 Average length: 15 minutes.
 Difficulty: Easy.
 Enemies: Graveling, Spider and Ghost.
@@ -228,7 +228,7 @@ Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_
 youtube=zfz67k5hr34|Video_guide (Banter Bill).
 Current record: record=3.
 tactic=rewards
-First run per day gives 76 silvers and 60 tokens, wiki=Ascalonian_Tear|Ascalonian_Tears. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 76 silvers and 100 tokens, wiki=Ascalonian_Tear|Ascalonian_Tears. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Foefire_Amulet, wiki=Foefire_Amulet_(masterwork), wiki=Ghostly_Spineguard or wiki=Ring_of_the_Catacombs from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Ghost_Eater's_Hide from the end boss, enemy=Ghost_Eater. It's account bound so it's not valuable.
@@ -237,7 +237,7 @@ path=AC3
 name=Ascalonian Catacombs Path 3: Defeat the Colossus Rumblus
 tactic=normal
 Level: 35.
-Reward: 0.76 g + 60 tokens.
+Reward: 0.76 g + 100 tokens.
 Average length: 16 minutes.
 Difficulty: Easy.
 Enemies: Graveling, Spider and Ghost.
@@ -246,7 +246,7 @@ Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_
 youtube=N91aCxfHLJA|Video_guide (Banter Bill).
 Current record: record=4.
 tactic=rewards
-First run per day gives 76 silvers and 60 tokens, wiki=Ascalonian_Tear|Ascalonian_Tears. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 76 silvers and 100 tokens, wiki=Ascalonian_Tear|Ascalonian_Tears. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Foefire_Amulet, wiki=Foefire_Amulet_(masterwork), wiki=Ghostly_Spineguard or wiki=Ring_of_the_Catacombs from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Colossus_Fang from the end boss, enemy=Colossus_Rumblus. The recipe allows you to craft wiki=Colossus_Fang which gives a slightly better gold return for your tokens.

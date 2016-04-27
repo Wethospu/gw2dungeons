@@ -5,7 +5,7 @@
 ##################################################################
 # Bosses and summons.                                            #
 ##################################################################
-
+# TODO: Health value was increased.
 name=Weapon Testing Core
 alt=Core|Crushers
 scaling=constant
@@ -70,7 +70,7 @@ attack=May target lit bonfires
 
 attack=Wind Gust
 cooldown=5
-animation=when blue shards appear|instant
+animation=orange circle when blue shards appear|instant
 additional=can't be blocked
 effect=piercing projectile
 subeffect=damage:1705326
@@ -741,7 +741,7 @@ effect=buff
 subeffect=regeneration
 
 ##################################################################
-
+# TODO: Health was increased.
 Name=Arrow Cart
 alt=Arrow Carts
 scaling=constant
@@ -756,7 +756,7 @@ count=?
 subeffect=damage:?
 
 ##################################################################
-
+# TODO: Health was increased.
 Name=Arrow Cart (Strong)
 alt=Arrow Carts (Strong)
 scaling=constant
@@ -771,7 +771,7 @@ count=?
 subeffect=damage:?
 
 ##################################################################
-
+# TODO: Health was increased.
 Name=Ballista
 alt=Ballistas
 scaling=constant
@@ -788,7 +788,7 @@ subeffect=damage:?
 subeffect=knockback:1.5
 
 ##################################################################
-
+# TODO: Health was increased.
 Name=Ballista (Rapid)
 alt=Ballistas (Rapid)
 scaling=constant
@@ -807,7 +807,7 @@ subeffect=damage:?
 subeffect=knockback:1.5
 
 ##################################################################
-
+# TODO: Health was increased.
 Name=Burning Oil
 alt=Burning Oils
 scaling=constant
@@ -1147,10 +1147,12 @@ health=0.58569
 Path=Volc
 
 attack=buff:invulnerability
+effect=Can't be targeted.
 
-attack=Leaves a fiery trail
+attack=Fire Trail
+effect=Leaves a fiery trail.
 
-attack=Touch
+attack=Crush
 effect=melee
 subeffect=damage:213700000
 
@@ -1462,6 +1464,7 @@ subeffect=resurrect dead allies and teleport them to your location
 ##################################################################
 
 name=Cultist Hammer
+alt=Hammer
 rank=bundle
 path=Cliff
 condition=3
@@ -1678,7 +1681,7 @@ attack=Takes no damage from normal attacks
 #note=Use Hammer skill 4.
 
 ################################################################## 
-
+# TODO: Health was increased.
 Name=Unstable portal
 alt=Unstable portals|portal|portals
 rank=structure
@@ -1692,7 +1695,7 @@ subeffect=damage:14959
 subeffect=pull:1.5
 
 ##################################################################
-
+# TODO: Health was increased.
 Name=Power Generator
 alt=Generator
 rank=structure

@@ -865,9 +865,6 @@ ID=10161
 image=http://wiki.guildwars2.com/images/6/6a/Flame_Legion_Effigy.jpg
 Path=CoFS
 
-attack=Immune to knockdown, Pull, Knockback and launch
-#note=Stun and daze probably work
-
 attack=Fireball
 ID=1911
 cooldown=4
@@ -893,7 +890,7 @@ subeffect=Burning:1
 
 
 #############################
-
+# TODO: Defiance bar was increased.
 copy=10161
 Name=Molten Effigy
 ID=12894

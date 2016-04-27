@@ -79,7 +79,6 @@ Crystals can absorb unlimited amount of attacks so don't throw it away if you ne
 When you have killed all Colossi (keep an eye at the progress bar to prepare properly), the Maw becomes enemy=Enraged:legendary. Again you get 10 seconds of agony and Tentacles appear (this time they respawn though).
 Now Maw will attack much more often which allows you to kill it faster.
 When Maw is at ~10% all Tentacles will disappear and leave a Crystal. Maws final attack will hit entire area defeating any player who doesn't have a Crystal. Make sure you have a Crystal ready.
-Don't leave after looting the first chest (unless you are certain you won't get daily chest). It takes some time but every day you will get one special chest at each tier.
 tactic=coordinated
 Melee everything by coordinating blocks, blinds, interrupts, and projectile defense (if at level 50).
 tactic=exploit

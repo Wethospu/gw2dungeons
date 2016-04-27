@@ -78,7 +78,7 @@ path=CM1
 name=Caudecus's Manor Path 1: Help the visiting Asura
 tactic=normal
 Level: 45.
-Reward: 0.61 g + 60 tokens.
+Reward: 0.61 g + 100 tokens.
 Average length: 13 minutes.
 Difficulty: Medium.
 Enemies: Outlaw.
@@ -89,7 +89,7 @@ Current record: record=6.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
 tactic=rewards
-First run per day gives 61 silvers and 60 tokens, wiki=Seal_of_Beetletun|Seals_of_Beetletun. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 61 silvers and 100 tokens, wiki=Seal_of_Beetletun|Seals_of_Beetletun. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Bandit_Spineguard, wiki=Beetlestone's_Band or wiki=Caudecus's_Journal from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Spineguard_of_the_North from the end boss, enemy=Frost. It's account bound so it's not valuable.
@@ -195,7 +195,7 @@ path=CM2
 name=Caudecus's Manor Path 2: Look for the Seraph
 tactic=normal
 Level: 45.
-Reward: 0.61 g + 60 tokens.
+Reward: 0.61 g + 100 tokens.
 Average length: 13 minutes.
 Difficulty: Medium.
 Enemies: Outlaw.
@@ -206,7 +206,7 @@ Current record: record=7.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
 tactic=rewards
-First run per day gives 61 silvers and 60 tokens, wiki=Seal_of_Beetletun|Seals_of_Beetletun. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 61 silvers and 100 tokens, wiki=Seal_of_Beetletun|Seals_of_Beetletun. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Bandit_Spineguard, wiki=Beetlestone's_Band or wiki=Caudecus's_Journal from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Plague from the end boss, enemy=Turmaine. The recipe allows you to craft wiki=Plague_(ring)|Plague which gives a sligthly better gold return for your tokens.
@@ -343,7 +343,7 @@ path=CM3
 name=Caudecus's Manor Path 3: Find the missing butler
 tactic=normal
 Level: 45.
-Reward: 0.61 g + 60 tokens.
+Reward: 0.61 g + 100 tokens.
 Average length: 11 minutes.
 Difficulty: Medium.
 Enemies: Outlaw.
@@ -354,7 +354,7 @@ Current record: record=8.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
 tactic=rewards
-First run per day gives 61 silvers and 60 tokens, wiki=Seal_of_Beetletun|Seals_of_Beetletun. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 61 silvers and 100 tokens, wiki=Seal_of_Beetletun|Seals_of_Beetletun. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Bandit_Spineguard, wiki=Beetlestone's_Band or wiki=Caudecus's_Journal from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Vallog's_Demise from the end boss, enemy=Vallog. The recipe allows you to craft wiki=Vallog's_Demise which gives a much better gold return for your tokens.

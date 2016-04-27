@@ -146,7 +146,7 @@ path=SE1
 name=Sorrow's Embrace Path 1: Clear out the remaining Inquest
 tactic=normal
 Level: 65.
-Reward: 0.61 g + 60 tokens.
+Reward: 0.61 g + 100 tokens.
 Average length: 9 minutes.
 Difficulty: Easy.
 Enemies: Inquest.
@@ -157,7 +157,7 @@ Current record: record=15.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Force.
 tactic=rewards
-First run per day gives 61 silvers and 60 tokens, wiki=Manifesto_of_the_Moletariate|Manifestos_of_the_Moletariate. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 61 silvers and 100 tokens, wiki=Manifesto_of_the_Moletariate|Manifestos_of_the_Moletariate. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Band_of_the_Moliarchy, wiki=Dissonance_Amplifier or wiki=Revolutionary_Flyers from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_The_Replicator from the last boss, enemy=Tazza, if you kill enemy=Kaeyi first. The recipe allows you to craft wiki=The_Replicator which gives a much better gold return for your tokens.
@@ -290,7 +290,7 @@ path=SE2
 name=Sorrow's Embrace Path 2: Free the oppressed workers
 tactic=normal
 Level: 65.
-Reward: 0.61 g + 60 tokens.
+Reward: 0.61 g + 100 tokens.
 Average length: 42 minutes.
 Difficulty: Medium.
 Enemies: Dredge.
@@ -301,7 +301,7 @@ tactic=coordinated
 Use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Force.
 Against end bosses, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists.
 tactic=rewards
-First run per day gives 61 silvers and 60 tokens, wiki=Manifesto_of_the_Moletariate|Manifestos_of_the_Moletariate. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 61 silvers and 100 tokens, wiki=Manifesto_of_the_Moletariate|Manifestos_of_the_Moletariate. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Band_of_the_Moliarchy, wiki=Dissonance_Amplifier or wiki=Revolutionary_Flyers from enemies and chests. All can be traded but aren't valuable.
 It may be possible to get an account bound wiki=Recipe:_Shukov's_Launch_Codes from somewhere in the dungeon. The recipe allows you to craft wiki=Shukov's_Launch_Codes which would give an extremely high return for your tokens.
@@ -378,7 +378,7 @@ path=SE3
 name=Sorrow's Embrace Path 3: Overthrow the military
 tactic=normal
 Level: 65.
-Reward: 0.61 g + 60 tokens.
+Reward: 0.61 g + 100 tokens.
 Average length: 12 minutes.
 Difficulty: Easy.
 Enemies: Dredge.
@@ -390,7 +390,7 @@ tactic=coordinated
 Use wiki=Superior_Sigil_of_Sorrow|Sigil_of_Sorrow instead of Force.
 Against the end bosses, use wiki=Powerful_Potion_of_Destroyer_Slaying|Potion_of_Destroyer_Slaying, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Destroyer_Slaying|Sigil_of_Destroyer_Slaying.
 tactic=rewards
-First run per day gives 61 silvers and 60 tokens, wiki=Manifesto_of_the_Moletariate|Manifestos_of_the_Moletariate. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
+First run per day gives 61 silvers and 100 tokens, wiki=Manifesto_of_the_Moletariate|Manifestos_of_the_Moletariate. Next runs give only 26 silvers and 20 tokens. Tokens can be link=https://gw2efficiency.com/currencies/dungeon-tokens|converted_to_gold.
 Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Fragments.
 There is a high chance to get wiki=Band_of_the_Moliarchy, wiki=Dissonance_Amplifier or wiki=Revolutionary_Flyers from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Husk_of_the_Destroyer from the end boss, enemy=Destroyer_of_the_Worlds. The recipe allows you to craft wiki=Husk_of_the_Destroyer which gives no extra return for your tokens.

@@ -984,6 +984,7 @@ additional=maximum amount of 3
 effect=summon 3 enemy=Ice_Elementals_(Melee):veteran
 effect=channeled heal
 subeffect=Healing:0
+subeffect=removes conditions
 #note=interrupt (if "Superheated" damage automatically interrupts)
 #note=can be interrupted with Knockback or launch
 

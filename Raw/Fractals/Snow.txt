@@ -120,6 +120,7 @@ The first strategy is to suicide rush the first 50% of the source, stacking migh
 The second strategy is to do things as per the normal strategy for the first 50%, and then go all-in for the last 50% (the same as is done in the first strategy).
 tactic=exploit
 A Necromancer can use Epidemic to inflict the swirler with conditions, and eventually kill it. This may not be an exploit; the hitbox for the source was shifted (along with every other structure hitbox in the entire game, to some degree) in a patch. Prior to this patch, the source could be killed in many different ways, which may have been an exploit or may have been intended.
+Blind works against Elemental Source which helps avoiding its attacks.
 tactic=optional
 To complete the achievement "If We Only Had Marshmallows" remember to lit up every bonfire after Source is destroyed.
 tactic=mesmer
