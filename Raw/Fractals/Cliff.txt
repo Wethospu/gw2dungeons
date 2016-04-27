@@ -76,9 +76,9 @@ On levels 1-9 you will have an easy route with no enemies. On level 10 and above
 
 name=First enemy=Seal:structure set / Ankle Seals
 tactic=normal
-Initially there are 4 enemy=Novices_(Dagger):normal. There's no point trying to kill them fast because you need to charge the Hammer (more will spawn though). Try to only kill the Novice that the person with the hammer is attacking, while avoiding damaging the others.
-When they are dead enemy=Novice_(Dagger):veteran and 2 enemy=Novices_(Dagger):normal spawn.
-When they are dead enemy=Novice_(Dagger):veteran and enemy=Novice_(Dagger):normal spawn. They keep respawning when both are dead.
+Initially there are 4 enemy=Fanatics_(Dagger):normal. There's no point trying to kill them fast because you need to charge the Hammer (more will spawn though). Try to only kill the Fanatic that the person with the hammer is attacking, while avoiding damaging the others.
+When they are dead enemy=Fanatic_(Dagger):veteran and 2 enemy=Fanatics_(Dagger):normal spawn.
+When they are dead enemy=Fanatic_(Dagger):veteran and enemy=Fanatic_(Dagger):normal spawn. They keep respawning when both are dead.
 Destroy both Seals to proceed. Charge the hammer and hit them on front with skill 4. Remember to take the hammer with you.
 
 name=Way to second enemy=Seal:structure / Chest Seal
@@ -99,7 +99,7 @@ Use wiki=Necrotic_Traversal to skip some of it (straight line).
 name=Second enemy=seal:structure / Chest Seal
 tactic=normal
 On the second Seal there are ticking AoEs which deal damage and inflict burning. Don't stand in fire. There are safe-spots between AoEs where you can stack.
-Initially there are 3 enemy=Novices_(Dagger):veteran and 2 enemy=Novices_(Shortbow):normal. When they are dead 2 enemy=Novices_(Dagger):veteran, 5 enemy=Novices_(Dagger):normal and enemy=Novice_(Shortbow):normal start respawning.
+Initially there are 3 enemy=Fanatics_(Dagger):veteran and 2 enemy=Fanatics_(Shortbow):normal. When they are dead 2 enemy=Fanatics_(Dagger):veteran, 5 enemy=Fanatics_(Dagger):normal and enemy=Fanatic_(Shortbow):normal start respawning.
 Try to make each kill yield a hammer charge in order to avoid fighting against constantly respawning enemies. Of course survivability comes first so kill enemies to reduce pressure if needed.
 tactic=struggling
 If your team is struggling, you can run or ideally stealth past the seal and stack behind the brazier on the far side. From there, enemies can be strategically pulled in order to gain hammer charges. Since the first group of enemies is often the hardest, you should consider stacking near the seal after they are defeated, as this will speed up the encounter considerably.
@@ -107,7 +107,7 @@ tactic=warrior
 wiki=Endure_Pain is useful for hit&run when your team is struggling.
 tactic=mesmer
 wiki=Portal and wiki=Mass_Invisibility are useful for hit&run when your team is struggling.
-Use: wiki=Temporal_Curtain (traited) , wiki=Illusionary_Warden and wiki=Feedback against Novices with Shortbow. You can also use Temporal Curtain to pull enemies in.
+Use: wiki=Temporal_Curtain (traited) , wiki=Illusionary_Warden and wiki=Feedback against Fanatics with Shortbow. You can also use Temporal Curtain to pull enemies in.
 tactic=necromancer
 wiki=Spectral_Walk is useful for hit&run when your team is struggling.
 tactic=necromancer
@@ -115,7 +115,7 @@ Use Spectral Grasp to pull an enemy.
 tactic=guardian
 Use wiki=Binding_Blade to pull enemies.
 tactic=guardian
-Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against Novices with Shortbow.
+Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger against Fanatics with Shortbow.
 tactic=thief
 wiki=Scorpion_Wire can pull enemies that are not immediately coming to your team when stacked.
 wiki=Smoke_Screen can provide blinds asgainst melee enemies, and projectile defense against ranged enemies.
@@ -197,26 +197,20 @@ Use wiki="Stand_Your_Ground!" to protect everyone.
 
 name=Archdiviner
 tactic=normal
-FIGHT HAS BEEN REWORKED, THIS IS NO LONGER TRUE!
-At the start both enemy=Archdiviner_(Phase_1):legendary and Seal are invulnerable. You should pull 4 enemy=Chanters:normal behind one of the platform with torches (near the boss) and burst them down fast
-During the first phase he will use wells just like the first archdiviner. His only other attack in this phase is just basic melee with high damage and Knockback (again melee players should try to stay at max melee-range as well as behind his back if not targeted).
-At 75% Archdiviner will drop his Hammer, get invulnerability and become permanently stunned. The Seal goes vulnerable and 4 enemy=Chanters:normal spawn around the seal. After some time, 4 enemy=Fanatics:normal start to respawn.
+FIGHT HAS BEEN REWORKED, I JUST MADE UP SOMETHING REAL QUICK FROM PATCH NOTES!
+At the start both enemy=Archdiviner:legendary and Seal are invulnerable. You should pull 4 enemy=Chanters:normal behind one of the platform with torches (near the boss) and burst them down fast.
+His basic melee attack does high damage and knockback so try to stay behind his back. Occasionally he shoots 3 projectiles which pull. These deal lots of damage so try to dodge them. He is immune to control except during special attacks. These attacks are a conic smash and a Corrupted Ground area effect. The window time gets shorter at higher scales. At lower scales you can easily interrupt him but ready to dodge at higher scales.
+After scale 25 he teleports to ranged players. It's suggested to stay at melee range to prevent him teleporting all the time so you can kill him at some point. If you are at range for some reason dodge immediately when he teleports to you. If you don't you will take lots of damage.
+His AoE attacks teleports you to a cage so dodge it. Getting caged is bad because you will waste of damage getting out and if he teleports to you it's hard to get away. Cages also deal torment.
+Projectile attacks also don't that well because of his projectile-blocking wall. After scale 51 the wall reflects so projectile attacks become really dangerous to your team.
+After 75% health Archdiviner drops his Hammer, turns invulnerable and is permanently stunned. The Seal goes vulnerable and 4 enemy=Chanters:normal spawn around the seal. After some time, 4 enemy=Fanatics:normal start to respawn.
 At lower levels, enemies disappear when you hit the Seal so just focus one enemy and hit the Seal. At higher levels, enemies stay so try to kill as many as possible before hitting the Seal (if you are slow and Fanatics start to spawn then hit Seal immediately, otherwise you might get overrun).
-For easier killing you can stack behind one of the platforms or pull the chanters to the middle with wiki=Binding_Blade or wiki=Into_the_Void.
-When the Seal is hit it gets invulnerability, Archdiviner wakes up, the Hammer disappears and you get unavoidable and unbreakable stun. Archdiviner starts attacking while you are stunned if no-one is near him, so have someone stand in melee range of him.
-At 50% same thing happens as at 75%. However, next time he wakes up you will be facing enemy=Archdiviner_(Phase_2):legendary.
-He won't be using wells any more but the melee auto-attack stays the same.
-At this point, he points at one person which shortly after teleports him to a enemy=Cage:structure and summons 2 enemy=Bone_Fiends:normal. Destroy the cage to get out and try cleave/AoE Bone Fiends.
-His most dangerous attack is when he sends 3 pulling projectiles. After that he reflects projectiles (Protection-icon) and casts huge while flash which causes agony. Stop using projectiles and dodge the agony attack.
-On top of this, he starts to use Backbreaker similarly to the first fight.
-At 25% the same thing happens. At 0% the same thing happens except you have to hit the seal twice.
+After 50% health Archdiviner drops his Hammer again so you need to hit the seal. Once he wakes up he gets a permanent protection. Also if the scale is 51 or higher his basic attack gets replaced with Backbreaker which knows down and deals agony.
+After 50% health Archdiviner drops his Hammer again so you need to hit the seal. Once he wakes up he gets a permanent swiftness. Also if the scale is 76 or higher he enters Demon Form which probably does something nasty.
 tactic=coordinated
 Whenever the seal is damaged, Archdiviner gets stunned based on players within 240 range and amount of players in the instance with formula 2 * nearby players * players in instance. Stunning him prevents him from attacking you while you are stunned but prevents you from taking advantage of wiki=Exposed.
 In an organized group, you can use Earth Elementals or a Guardian (who has some Knight's gear equipped, thus giving them higher toughness than the rest of the party) to take aggro, thus allowing the rest of the team to safely melee the boss from behind.
 When beginning the encounter, the use of group stability along with someone running to the archdiviner will prevent any stun from occurring. If you don't want to use group stability, someone can teleport to the archdiviner, thus stunning him at the same time as the whole party is stunned.
-tactic=exploit
-You can leave a player outside of the room and the boss won't reset if you wipe.
-If you are only player alive after 50% you can get out of combat. When he puts you into a cage wait until he loses aggro and then quickly break the cage and run back to the entrance. If you are fast enough only Bone Fiends will follow you. Kill them and your team can resurrect at the checkpoint (Archdiviner or Seal won't reset).
 tactic=optional
 At the end use /bow at the Colossus when the Colossus media=8DmBbCk.png|bows at you to get an achievement.
 tactic=mesmer

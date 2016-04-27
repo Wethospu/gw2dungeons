@@ -850,7 +850,7 @@ subeffect=pull:0
 #note=evade
 
 attack=Teleport
-additional=Used after scale 25.
+additional=Used after scale 24.
 effect=Teleport to target
 
 attack=Wall
@@ -873,17 +873,17 @@ effect=summon 2 enemy=Bone_Fiends:normal
 #note=break cage to get free, help other players if they need help
 
 attack=Protection
-subeffect=Activates when below 50%.
+additional=Activates when below 50%.
 effect=aura
 subeffect=protection:?
 
 attack=Swiftness
-subeffect=Activates when below 25%.
+additional=Activates when below 25%.
 effect=aura
 subeffect=swiftness:?
 
 attack=Transform
-subeffect=Activates after scale 75 when below 25%.
+additional=Activates after scale 75 when below 25%.
 effect=demon form
 
 ##################################################################
@@ -988,10 +988,10 @@ subeffect=vulnerability:0:2|33%
 
 ##################################################################
 
-name=Novice (Dagger)
+name=Fanatic (Dagger)
 ID=11290|11289
-alt=Novices (Dagger)
-image=http://wiki.guildwars2.com/images/9/91/Novice.jpg
+alt=Fanatics (Dagger)
+image=http://wiki.guildwars2.com/images/9/91/Fanatic.jpg
 path=Cliff
 scaling=normal
 
@@ -1033,9 +1033,9 @@ ID=11282|11281
 
 ##################################################################
 
-name=Novice (Shortbow)
+name=Fanatic (Shortbow)
 ID=11291
-alt=Novices (Shortbow)
+alt=Fanatics (Shortbow)
 path=Cliff
 scaling=normal
 
