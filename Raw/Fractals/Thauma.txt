@@ -36,7 +36,7 @@ wiki=Mistlock_Instability:_Afflicted|Afflicted: Enemies apply random damaging co
 If you have trouble, take more condition removal.
 tactic=normal|71-90
 wiki=Mistlock_Instability:_Lethargic|Lethargic: Reduces base endurance regeneration by 50%.
-Take more wiki=Vigor or active defenses so you can avoid all bit hits.
+Take more wiki=Vigor or active defenses so you can avoid all big hits.
 tactic=normal|81-100
 wiki=Mistlock_Instability:_Boon_Thieves|Boon_Thieves: Enemies steal 5 boons when they hit you (20 s cooldown).
 Keep normal enemies disabled so they can't steal your boons. Don't use retaliation or you will get everyone killed. Avoid using swiftness to make bosses easier to handle. Be careful when using quickness or resistance.

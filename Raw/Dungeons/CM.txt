@@ -21,56 +21,140 @@ tactic=rewards
 First run per character gives a level 40 rare head armor.
 First run per day gives 26 silvers.
 
-name=Start
+name=The party
 tactic=normal
-Talk to NPCs and choose right option to fill progress bar. You can choose randomly but try to pick right option (always same) to fill bar faster.
-enemy=Prototype_Golem:champion appears once you are done.
+Talk to the party guests to fill the progress bar. Try to choose the correct option to fill the progress bar faster. There is no penalty for choosing the wrong option because you can retry in 15 seconds. Talk to other guests while waiting.
+When the event is done, talk to Logan. enemy=Prototype_Golem:champion appears after some dialogue so be ready.
+tactic=coordinated
+The correct options never change so you can memorize them. Choose the listed option for quickest progress:
+# TODO: Text of the correct option (helps with remembering).
+Zojja: 2nd option.
+Phlunt: 2nd option.
+Mia: 1st option.
+Sigfast: 3rd option.
+Servant (west): 3rd option.
+Dagonet: 3rd option.
+Servant(adjacent to Dagonet): 3rd option.
+Servant(east) 1st option.
 
 name=enemy=Prototype_Golem:champion
-tactic=melee|ranged
-Interrupts work inconsistently so don't rely on them. His laser attack will shoot very dangerous rockets which can kill multiple people. Also you can just run behind a structure or simply evade the rockets (can't be blocked).
-tactic=ranged
-You should keep some distance so you won't get hit by his close range attack. zig zag if he aims at you to avoid his ranged attack (or just zig zag all the time). Getting hit pulls you to him so just run back then.
+tactic=normal
+Try to break his defiance for a damage boost but don't rely on it too much because control works inconsistently. He has 3 main attacks; Laser, Pull and Fire Spin. Sometimes he also uses Dual Rockets for a massive damage.
+Laser is used when he moves his arms behind his back. He will shoot a beam at one target for about 3 seconds. It only causes vulnerability so don't panic when you get targeted. Be ready to dodge when it ends because he will shoot a rocket which deals high area damage. Alternatively you can seek cover behind obstacles but keep the blast radius in mind.
+Pull is used when he points his right arm at you. He will shoot a fast projectile at one target which pulls the target towards him. This is not dangerous because he doesn't have any follow up attacks. However you will lose damage output by getting briefly disabled so try to dodge it. He has a poor aim so instead of dodging you can easily avoid the attack by zig-zagging. This works even at close range.
+Fire Spin is used when he spreads his arms. He will spin in place and shoot flames around him in short range. The attack deals moderate damage so watch out if you aren't tanky. Try to break the defiance to stop the attack.
+Dual Rockets are used when he moves his right arm behind his back. The animation can be hard to see so focus on looking at rockets. Be ready to dodge if you suddenly see two rockets in the air. He doesn't use this attack often so try to kill him quickly.
 tactic=melee
-Try stay behind his back so you can see more clearly if he is going to attack you. You can avoid his ranged attack with zig zagging, even at melee range. Occasionally he will spread arms and start spinning. It will do some damage so you may have to run a bit back. You can also interrupt it.
+Try to stay behind his back at all times. Be ready to dodge when he turns towards you because he will probably attack you next.
+Run a bit away from him if you have low health and he is using Laser on you. This gives you more time to dodge the rocket.
+tactic=ranged
+Stay at range so you don't have care about Fire Spin. Move away from him if you get pulled in.
+Try to spread a bit so it's easier see when he is attacking you and to avoid area damage from rockets.
+tactic=coordinated
+Stack might and fury while waiting for him to appear. Break the defiance immediately (some control skills don't work?) to burst him down.
+It doesn't matter much if you fail to burst him because he isn't very dangerous.
+
+name=Way to enemy=Door_Guard:champion
+Get inside the house and follow the shining path. Door Guard turns aggressive about 7 seconds after enemy=Logan reaches him so be ready.
 
 name=enemy=Door_Guard:champion
-tactic=melee|ranged
-Get inside the house and follow the shining path. Wait until the Guard wakes up. He has only melee attacks.
-tactic=ranged
-You should keep some distance.
-Kill Door Guard. He has just melee attacks which makes him really easy to range.
+tactic=normal
+Door Guard has 2 high damage melee attacks; Slash and Spin. Both attacks have a surprisingly high range so watch out.
+Slash is his basic melee attack which deals moderage damage. It also sometimes deals bleeding.
+Spin is used when he glows. He will stand still and hit multiple times over several seconds for a high damage. He will rotate towards his main target during the attack. If he is facing you then dodge directly away from him and wait until the attack ends. Don't move around so you don't turn him towards other players. If he is not facing you then just dodge behind his back and keep attacking him.
 tactic=melee
-| Melee users may have to stay at max melee range to prevent him from attacking.
+You can't melee him safely because his attacks have a 260 range. Try to stay behind his back to avoid most hits. If you being targeted then stay still and only dodge directly away from him.
+tactic=ranged
+Keep some distance at all times so he can't hit you. Jump over some furniture if you get in bad spot.
+tactic=coordinated
+Stack might and fury while waiting for him to turn aggressive. Break the defiance immediately to burst him down.
+tactic=exploit
+You can stand on the statue to his left (next to the curved stairs case) and use range attacks from safety, without making him reset.
+If you fail to burst him down then be ready to dodge when he uses Spin.
 
 name=Ambush
 tactic=normal
-Ambush on next room. One player should enter and immediately fall back when hearing dialogue.
-Stand behind corner and kill incoming enemies.
+Don't rush in to the next room after enemy=Door_Guard:champion because you will get ambushed by lots of enemies. They are much easier to kill if you ambush them instead. The idea is to enter the room, trigger the ambush and then run back so the enemies have to come to you.
+The best way to do this is to stack near the doorway or behind the door?. One player should enter and immediately fall back when hearing dialogue. Melee and area attacks can hit enemies through walls so position yourself properly and keep attacking the air until all enemies are dead. Use blind and projectile defenses to reduce damage taken.
+If you don't wish to stack you can also just enter the room together because the enemies aren't that dangerous.
+tactic=coordinated
+Quickly stack might and fury if needed. Enter the room together and focus elite enemies with area attacks to also kill normal enemies. Use blind and reflects to reduce damage taken and kill enemy=Snipers.
+tactic=bug
+The 3 elites can be pulled out of the room with a long range attack without triggering the ambush. However they will respawn when the ambush is triggered.
+tactic=exploit
+The 3 elites can be pulled out of the room with a long range attack without triggering the ambush. To prevent them from respawning, the ambush must be triggered before they die so try to damage them evenly. Trigger the ambush when elite enemies have about 20% health left.
 
 name=Cellar
 tactic=normal
-Multiple enemies around. Don't over aggro.
-Champion and some enemies.
+The first room has a enemy=bomber:elite, 2 enemy=fighters:elite and a enemy=Sniper:elite. Hug the right side of the opening leading to them and attack them as they turn the corner. Use projectile defenses to block the sniper and bomber. Try to keep blinds on the fighters.
+The second hoom has a enemy=Separatist_Fighter:Champion and 2 enemy=Fighters:elite. They will turn hostile about 6 seconds after the dialogue starts. All 3 enemies can kick for a knockback which has a higher range than their normal attack. They may also cripple with their daggers. Stay at range to avoid most damage.
+tactic=skip
+Go down the stairs, turn left and hug the furthest walls from the elites as you move towards enemy=Fighter:Champion.
+During the fight dodge towards the walls next to the champion. Otherwise the enemies from the previous room may aggro if you get too close.
+tactic=coordinated
+Stealth at the bottom of the stairs and move straight toward the elites until they begin pathing. Wait until they stop moving and then run to the champion. Alternatively you can just run to the champion and kill following enemies during the dialogue.
+Stack might and fury during the dialogue. Break her defiance and burst her down.
 tactic=bug
 After killing all enemies the event may be stuck at 2/3 separatists killed and you can't push the secret button.
 The champion may be in some other area. Search the initial area where you killed enemy=Prototype_Golem and the basement.
 
+name=enemy=Separatist_Lieutenant_(Sword):champion
+tactic=normal
+Lieutenant will turn hostile when you get within ~1000 range. He has 4 attacks; Slash, Ambush, Cyclone Axe and Envenom.
+Slash is his basic melee attack chain which deals low damage so you don't have to care about it.
+Ambush is used when he glows and leans back. After few seconds he will leap at his target dealing moderate damage. If the leap hits he will do a follow-up attack with multiple hits in a row for a high damage. It's important to evade or block the leap to avoid the follow-up attack.
+Cyclone Axe is used when he holds his glowing right arm behind his back. After few seconds he will spin in place which deals moderate damage to every target around him. You can just move away from him or dodge through him after a second.
+Envenom is used when he raises his arms with a green ball between them. This causes his attacks to deal poison which slightly increases his damage output.
+tactic=melee
+He is easy to melee because his stronger attacks have clear animations. Be ready to dodge when you see him glowing. You can move a bit away from him to give more time to react.
+tactic=ranged
+He has only melee attacks so just keep some distance. Be ready dodge when he is using Ambush.
+tactic=coordinated
+Get closer until he turns hostile and then stack might and fury if needed. Break the defiance to burst him down.
+
 name=Reviving Sigfast
 tactic=normal
-Champion and some enemies.
-After killing initial enemies near Sigfast more will appear. You should run back and pull them.
+The first room has a enemy=Separatist_Lieutenant_(Rifle):champion, a enemy=Sniper:elite and a enemy=Fighter:elite. The second room has a enemy=Separatist_Fighter:champion and 3 enemy=Fighters:elite.
+Champion sniper(can't use snipe), elite sniper and an elite fighter then 3 elite fighters and a lieutenant.
+Champion has fast attacks, use projectile defenses. Keep blinds under the other mobs.
+After killing initial enemies near Sigfast, 3 fighters and a lieutenant(rifle) will spawn in the left tunnel. Pull these together to manage them easier with crowd control and blinds.
+tactic=coordinated
+Place a projectile defense under the champ and use area attacks to clear other enemies. Break2 line of sight the mobs that spawn behind the staircase or the platform behind sigfast.
+tactic=exploit
+Pull the champion and 2 elites into the previous tunnel to avoid having 2 of the extra elites chase you.
+tactic=bug
+If you approach the gate to the next area the 3 fighters beyond the gate will teleport to you.
 
 name=Outside area
 tactic=normal
-Two patrols with enemy=Hunting_Dogs:elite, lots of enemies and enemy=Snipers:elite near trees.
-Kill patrols before getting close. Bring anti-CC against dogs.
-Stay behind trees to avoid Snipers. Kill enemies.
-Go finish off Snipers.
+Kill the champion and 2 elites outside the tunnel(identical to the 3 fighters in the basement next to the switch).
+Two patrols with enemy=Hunting_Dogs:elite, lots of enemies and 3 enemy=Snipers:elite in the tree.
+Kill patrols before getting close. Bring anti-CC or instant condition cleanse against the dogs' fear.
+Stay behind trees/under the stairs to avoid Riflemen. Kill enemies.
+Go finish off Riflemen.
+tactic=normal
+Draw the first pack of hounds towards the tunnels to avoid triggering the treehouse mobs, using blinds, evades, stun breaks or condition cleanse to avoid chain fear.
+Hide under the lowest sniper and clear out the mobs, kill the remaining 2 snipers after.
+If the snipers are aggroed you can stealth in or use the left tree to block their line of sight.
+tactic=skip
+After killing the 3 fighters, wait for the first pack of dogs to walk away, run past them and hide under the first sniper. Pull all the mobs in and AoE, clear the remaining snipers after.
+Run along the rocks and go past the second group of hounds to the boss.
+tactic=coordinated
+Stealth after the Sigfast mobs, path the 3 fighters and skip the first hounds.
+Stand on the riflemen and AoE with blinds and projectile defenses underneath you.
+Jump over the rocks or stealth to skip the second group of hounds.
+tactic=exploit
+The riflemen will not move allowing you to place AoEs under them without being attacked.
 
 name=enemy=Separatist_Captain_DeLana:champion
 tactic=normal
 Kill Elite enemies first. Finish off boss.
+tactic=coordinated
+Stack fury/might(7 seconds until aggressive), place a projectile defense under yourself and AoE the mobs.
+tactic=exploit
+The champion can aggro onto Queen Jennah, allowing you to kill her without being hit.
+You can hide behind the tree next to her, or the rock just past her to heal as she can't move.
+Queen Jennah has a reflective shield on her, stand behind her to avoid getting hit by the boss.
 
 ##################################################################
 
@@ -127,62 +211,69 @@ tactic=melee|ranged
 After cutscene 2 enemy=Riflemen:elite and 10 enemy=Riflemen:normal appear on the second floor. If you skip the cinematic you can run up to get near them before they appear (someone has to watch it).
 Stick to left side to be covered against enemies. Get up and kill them. Then kill Morgan.
 tactic=ranged
-Keep some distance. If he attacks you then just move left or right to avoid his slow grenades.
+Keep some distance. If he attacks you then just move left or right to avoid his slow grenades. Dodge towards him when he spins to throw a barrage of grenades.
 tactic=melee
 At close range he is quite dangerous. On top of his normal attack he may kick you (hard to avoid) or spin and throw lots of grenades. Anti-projectile skills are very useful.
-At range he is very easy because you can just move left and right and avoid his slow grenades. At close range you have to block/dodge them.
-Melee is dangerous without anti-projectile skills because he occasionally spins and throws lots of grenades. Also you need to try predict his kick, or if there is a Guardian in the party and anti-projectile skills are up, Aegis can be maintained to deal with the kick.
+At close range you have to block/dodge them(the animation doesn't match the throw, you need to start a dodge before he throws at melee range).
 tactic=exploit
-Go up and stand near edge and stay at max melee range. With proper media=cm1_morgan.jpg|positioning his grenades will miss.
+You can stand under the landing of the staircase in the corner opposite the stairs to attack Morgan with range and no aggro(phantasms and pets will not be attacked).
+You can also stand on the top level to the left of the corner and attack Morgan with a ranged weapon and no aggro(requires you to clear riflemen).
 tactic=coordinated|exploit
-One party member can blink inside the barn, blinking past the cutscene trigger point. This player can then stand on Morgan and watch the cutscene.
+One party member can blink inside the barn, blinking past the cutscene trigger point(second torch on the left wall). This player can then stand on Morgan and watch the cutscene.
 tactic=coordinated
-Run in (one player before the others, to avoid issues with multiple cutscenes triggering), have the player who is already on Morgan watch the cutscene. Stack might, and then have them skip. Maintain projectile defense, and melee Morgan. It is ideal to skip the Chest (until the end of the dungeon, when you can come back for it), due to problems with getting in combat or dying to the riflemen.
+Run in (one player before the others to avoid issues with multiple cutscenes triggering) to watch the cutscene. Stack might, and then have them skip. Maintain projectile defense, and melee Morgan. It is ideal to skip the Chest (until the end of the dungeon, when you can come back for it), due to problems with getting in combat or dying to the riflemen.
 
 name=Way to Victoria
 tactic=normal|skip
 First enemy group consists of a enemy=Saboteur:elite, a enemy=Thug:elite, an enemy=Archer:normal, an enemy=Enforcer_(Sniper):normal and a enemy=Cutpurse:normal. Second group consists of 3 enemy=Riflemen:elite, a enemy=Bomber:elite, a enemy=Net_Turret:structure, a enemy=Rifle_Turret:structure and a enemy=Flame_Turret:structure.
 tactic=normal
-Pull first group behind rock for AoE damage. Focus on Thug and try to keep him interrupted so he can't heal and buff others. Dodge explosion or run out of range when Saboteur throws a keg (big red circle). Use anti projectile skills against second group. Try to block/dodge Riflemen's shots when getting closer. Also avoid unnecessary movement to reduce damage. Focus Bomber if you go melee because of her AoE damage.
+Pull first group around the rock for AoE damage. Focus on Thug and try to keep him interrupted so he can't heal and buff others. Dodge explosion or run out of range when Saboteur throws a keg (big red circle). Use anti projectile skills against second group. Try to block/dodge Riflemen's shots when getting closer. Also avoid unnecessary movement to reduce damage. Focus Bomber if you go melee because of her AoE damage.
 tactic=skip
-First group will aggro when you get closer but they won't catch you if you move fast. If you are bit behind be ready to dodge Thug's dash. Keep evading and blocking when going through second group because Riflemen can kill you very easily when you are moving.
+First group will aggro when you get closer but they won't catch you if you move fast. If you are bit behind be ready to dodge Thug's Shield Bash. Keep evading and blocking when going through second group because Riflemen can kill you very easily when you are moving.
 tactic=coordinated
 Stealth. Path the first group, either in an SR (conservative), or in additional blasted stealth (difficult). The second group does not need to be pathed.
 
 name=enemy=Bloody_Victoria:legendary
 tactic=melee|ranged
-She has only melee attacks so you can easily run away or even jump down from upper platform to avoid dying. While many groups will lure her to the upper platform, there is little combat advantage in doing so, and it typically only prolongs the encounter--it is superior to simply fight on top of where the boss spawns.
+She has only melee attacks so you can easily run away or even jump down from upper platform to avoid dying. While many groups will lure her to the upper platform, there is no combat advantage in doing so, and it typically only prolongs the encounter--it is superior to simply fight on top of where the boss spawns.
 tactic=ranged
-| Keep some distance so you don't unnecessarily take damage from her attacks.
+| Keep some distance so you don't unnecessarily take damage from her attacks. When she appears from stealth, dodge immediately then attack her.
 tactic=melee
 | She won't hit very hard but if you aren't durable you can try to stay at max melee range. She often alternates between her faster and slower attack. The latter can be avoided by just moving away from her.
 tactic=melee|ranged
 Occasionally she will stealth and either stun with Backstab or jump over her target with Death Blossom. To reduce her time in stealth don't run away if you can afford getting hit (pretty much all the time unless you are only one alive). You can still see her on mini map and attack her with untargeted attacks.
-Stun will hit through block so the only way to avoid getting one shot is to have a stun break, stability or Aegis. Take as many as you may need unless you can rely on your team. If people get hit and go down, ressurecting them should be your first priority.
+Stun will hit through block so the only way to avoid getting one shot is to have a stun break, stability or Aegis. Take as many as you may need unless you can rely on your team. Keep her defiance low to interrupt Backstab. If people get hit and go down, ressurecting them should be your first priority.
 If she uses Death Blossom you should dodge immediately to prevent most of the damage. Remove bleeding if someone gets 6 stacks.
 tactic=warrior
 Take wiki="Shake_It_Off!" for a low cooldown stun break and condition removal. Consider taking wiki=Stomp for a backup and an interrupt.
+Use wiki=Tremor as a high damage interrupt.
 tactic=coordinated
-Take only 0-1 stun breaks. Stun her only to interrupt Backstab unless you have Guardians for Aegis.
+Break her defiance and burst her down before she is able to do anything.
 
 name=Big area with lots of enemies
 tactic=fight
 There are two big groups of Elite/Normal-Bandits. There are a small group of elite Bandits and 2 enemy=Riflemen:elite in the next room. Once you approach those Riflemen, 4 more Riflemen will spawn behind you.
 Killing all the enemies will be very tough and take lots of time. Instead, you should sneak through.
-One player should hug left wall to get past without aggro. Then he pulls small a enemy group back to rest of the party. Fighting between big groups and Riflemen is very risky.
-Run to 2 Riflemen and go immediately right inside the room. This forces all 6 Riflemen to come into melee range.
+One player should hug left wall to get past without aggro. Then he pulls a small enemy group back to rest of the party. Fighting between big groups and Riflemen is very risky.
+Run to 2 Riflemen and go immediately right under the platform. This forces all 6 Riflemen to come into melee range.
 tactic=skip
 Just run through all the mobs.
-You can also stick to right and run through the big enemy groups. Get up on the platform and jump down to break aggro.
+You can also stick to right and run past the big enemy groups. Get up on the platform and jump down to break aggro.
+Clear riflemen or wait for cooldowns to finish then continue.
 tactic=coordinated
-Stealth through. You can hug the left, stealth, and run through, blasting more stealth as necessary.
+Stealth to the left under the scaffolding, run straight towards the 2 aggressive riflemen on the boards. Either quickly blast before them or use a non-field stealth to path the mobs following you.
+Continue running past the next groups of mobs, reapply stealth at the boulder before the cave opens up to path the mobs or run past the last 3 and go into the back corner in the shallow water near the gate to break aggro.
 
 name=enemy=Frost:legendary
-tactic=fight
+tactic=ranged
 Frost inflicts chilled and deals very high damage. Run around/kite to reduce the damage taken.
 First focus all turrets to reduce pressure. Focus golems when they wake up.
 Bring condition-removal against long chill.
+tactic=melee
+Clear turrets or use projectile defenses.
+Spread around the boss to avoid having multiple people hit by his cone. Bring a condition cleanse for when his frost aura runs out.
 tactic=coordinated
+One player can hold the cutscene allowing other to prepare, use a teleport or movement skill to stand near Frost while holding the cutscene to benefit from pre-stacking.
 Fight on top of Frost. Use anti-projectile skills to avoid having to kill the rockets, and burst Frost down.
 tactic=exploit
 Frost's chill-cone attack can only hit horizontally. There are numerous areas where you can jump up and avoid being hit by this attack; most of these areas will also protect you from the rockets and golems.
@@ -218,9 +309,9 @@ The first room on right has two enemy=Rifle_Turrets:structure, two enemy=Net_Tur
 tactic=normal
 Focus the turrets down first. Net Turrets can permanently immobilize you so try to dodge their attack if you want to get close and take condition removal as a backup.
 tactic=skip
-Cutpurses can't be skipped easily because they will follow you into the room. Turrets can be skipped because they can't rotate. Just run to back of the room while dodging to prevent getting immobilized by the Net Turrets.
+Cutpurses can't be skipped easily because they will follow you into the room. Net turrets can be skipped because they can't rotate. Just run to back of the room while dodging to prevent getting immobilized by the Net Turrets.
 tactic=normal|skip
-Taylor is very easy to kill because of her low damage ouput. Dodge when she shoots rapidly to avoid her burst. Antiprojectile skills are very useful.
+Taylor is very easy to kill because of her low damage ouput. Dodge when she shoots rapidly to avoid her burst. Anti-projectile skills are very useful.
 tactic=coordinated
 Pull the Cutpurses to Taylor and kill them all at the same time.
 tactic=exploit
@@ -229,23 +320,27 @@ Also if you cleared turrets and cutpurses you can run out of the room to get out
 
 name=Second room
 tactic=normal
-Once enemy=Taylor:champion is dead push button at the back of the room and go back into the corridor. The second room on the left side has two enemy=Flame_Turrets:structure and two enemy=Riflemen:elite.
+Once enemy=Taylor:champion is dead push button at the back of the room and go back into the corridor. The second room on the left side has four enemy=Flame_Turrets:structure and two enemy=Riflemen:elite.
 Focus down the Riflemen as they deal high damage. Avoid unnecessary movement because that makes them deal more damage. Reflects and blinds are very useful here.
 Once the enemies are dead push the button and go back to the corridor. The last room on the right side has enemy=Medic_Rosina:ally. Talk to her to proceed. Once she is done front door closes but you can still get in through a corridor on south of the building.
+tactic=exploit
+The turrets and riflemen will spawn after path selection, using ground targetted attacks on the second floor, above the doorway west of Talie, will kill them.
 
 name=Curing enemy=Rosina:ally
 tactic=normal
-To cure Rosina you have to get her satchel from the spike room. Go back to the stairs where lots of enemies have appeared. In the main room there are enemy=Marius, a enemy=Cutpurse:elite, a enemy=Scatter_Shot:elite and a enemy=Hooligan:elite. On the opposing stairs there are two enemy=Riflemen:elite, a enemy=Bomber:elite and two enemy=Net_Turrets:structure.
+To cure Rosina you have to get her satchel from the spike room. Go back to the stairs where 7 enemies have appeared. In the main room there is enemy=Marius, a enemy=Cutpurse:elite, a enemy=Scatter_Shot:elite and a enemy=Hooligan:elite. On the opposing stairs there are two enemy=Riflemen:elite, a enemy=Bomber:elite and two enemy=Net_Turrets:structure.
 Keep in mind that Riflemen have very high attack range so they will shoot you if you fight the first group in the open. You should pull the first group behind any corner to break line of sight on Riflemen. Focus down Cutpurse and Scatter_Shot because of their high damage output. Reflects are very strong against Scatter Shots.
 When approaching the second group you should have an immunity skill or anti projectile skills to prevent getting immobilized and shot to death. Use area attacks to quickly clear out the enemies.
 tactic=warrior
 Use wiki=Shield_Stance while approaching the second group to tank attacks. You can swap shield to some other weapon during the channel.
 tactic=skip
-Enemies can't be skipped because Rosina won't accept her satchel until they are killed.
+The bomber and 2 riflemen can't be skipped because Rosina won't accept her satchel (or move from the room) until they are killed.
+Marius and the elites will aggro to you from the room due to the small distance between the mobs.
 tactic=coordinated
 Run accross the stairs to the second group of enemies, and kill all the mobs while using projectile defense and stability. This is easily accomplished by stealthing across, however it can also be accomplished by running across and dodging.
 tactic=exploit
 Second group can't move so you can run through them and hide behind a corner while waiting for skills to recharge.
+You can turn right immediately after the 3 elites at the top of the stairs and attack them with AoEs/melee attacks while standing behind the corner.
 
 name=Spike room
 tactic=normal|skip
@@ -253,12 +348,13 @@ Don't rush into the next room. Uncovered areas of the floor have spike traps on 
 tactic=normal
 Jump over the small gap to the first carpet. Use ranged attacks to kill the enemies (run back if you need health). Once they are dead, throw pillows on the floor and jump over. Go forward and remember to jump over small gaps. Grab the medical kit and take it to enemy=Rosina:ally.
 tactic=skip
-Jump over the small gap to the first carpet. Use stability and immunity to tank hits from the enemies. Use a leap or a teleport (target enemy if needed) to get over the floor. Jump over small gaps, grab the medical kit and take it to enemy=Rosina:ally.
+Jump over the small gap to the first carpet. Use stability and immunity to tank hits from the enemies. Use a leap or a teleport (target enemy if needed) to get over the floor. Jump over small gaps, grab the medical kit from the chest and take it to enemy=Rosina:ally.
 
 For any class with a blink, you can enter the room below where the medical kit is located and blink through the floor. This is much more efficient than moving through the spike room.
 tactic=coordinated
 One player gets the medical kit (using Skip tactic). Everyone else goes back to the starting waypoint after suiciding on the spike traps.
 tactic=skip|coordinated
+Jump along the trim of the wall to avoid touching the floor. Party members can use blinds, projectile defenses, blocks, or drawing aggro to allow a player to safely reach the chest.
 tactic=warrior
 Use wiki=Savage_Leap to jump over the gap.
 tactic=warrior
@@ -276,29 +372,35 @@ name=Way to Bridgette
 tactic=normal|skip
 Once the NPC has the medical kit the front door will open. Go back to the start.
 tactic=normal
-| Proceed slowly when approaching the waypoint. You will get ambushed by a few enemy=Scouts:elite. Pull them a bit back because at low health they will run away and alert other enemies.
+| Proceed slowly when approaching the waypoint. You will get ambushed by 4 enemy=Scouts:elite. Pull them a bit back because at low health they will run away and alert the rifleman and 2 other enemies near the stable.
 Pull next enemy group behind a corner to force them to melee. Be careful when approaching because the enemy=Rifleman:elite will start shooting.
 tactic=skip
-Keep running forward past the waypoint. Turn left when reaching wall and forward until you are in a corner. Kill following enemies.
+Keep running forward past the waypoint. Hide behind a wall after aggroing all mobs, kill all 7 before continuing.
 tactic=coordinated
-Stealth through and path enemies.
+Run past the 4 cutpurses to the 3 ranged enemies, use blinds/projectile defenses and kill all 7.
+Stealth through and path the 4 cutpurses. Run past the other 3.
 
 name=enemy=Bridgette:legendary
 tactic=melee|ranged
-Kill normal enemies first and then focus Bridgette. She will stand still at melee on her Symbols which give either Retalation or regeneration. You should run behind a tree to make her come out of them (no need to try if you know she isn't aggroed on you).
+Kill normal enemies first and then focus Bridgette. She will stand still on her Symbols which give either retalation, regeneration or causing nearby allies to inflict burning on attacks. You should run behind a tree to make her come out of them (no need to try if you know she isn't aggroed on you).
 tactic=ranged
 Stay at range so she won't attack you.
 tactic=melee
-Stay at max melee range so she won't attack you. You are forced to take damage if she is standing on her symbol so watch out.
+Stay at max melee range so she won't attack you. You are forced to take damage if she is standing on her symbol so watch out. Absolute max melee will not be hit by her symbols, however you want to bring her out of retaliation symbols be breaking line of sight.
 tactic=melee|ranged
 | If you get to low health, stop attacking so you don't get killed by retaliation. Ignore her summoned Sword unless it starts attacking.
 tactic=coordinated
 Focus Bridgette and cleave normal enemies. Keep her out of her symbols by breaking line of sight behind trees. You may also use control for same effect. Stay at max melee range so she won't attack.
+tactic=solo
+Use long range attacks to draw the mobs in and clear them, or pull Bridgette and kill any other mobs. Stand at the edge of her symbol and face 90 degrees from her, melee her and her swords, stop attacking during retaliation symbols.
+You can draw her to the staircase of the building next to you, while standing on the edge of the landing, the swords may spawn beneath you and fail to connect with their strikes. She can only have 1 sword summoned at a time if you leave it alive.
+tactic=exploit
+You can draw her out of the small clearing and stand on the stable to range her without fear of her swords.
 
 name=To closed gate
 tactic=normal
-Ther are two ways to proceed. Stick to right and fight a enemy=Hound:legendary + some Elites. Or go to the left side and fight bit more Elites.
-You should go to left because some enemies from left side will shoot when you are trying to blow up the gate. So you may have to kill them while also fighting enemies at door. Additionally, the Hound is a long and moderately difficult fight.
+Ther are two ways to proceed. Stick to right and fight a enemy=Hound:legendary + some Elites. Or go to the left side and fight a bit more Elites.
+You should go to left because the ranged enemies from left side will shoot when you are trying to pick up powder kegs. So you may have to kill them while also fighting enemies at door. Additionally, the Hound is a long and moderately difficult fight.
 tactic=coordinated
 Stealth and run past the hound. Re-stealth before you pick up any kegs to avoid being shot at by the other Elites.
 
@@ -310,27 +412,31 @@ tactic=warrior
 Consider using wiki="Fear_Me!" or/and wiki=Stomp to protect kegs.
 tactic=coordinated
 Coordinate keg-drop (needs stealth or voice communication). Everyone grabs a keg and runs to their own circle. Then drop the kegs at the same time.
+After destroying the gate, run through it and turn right, hiding behind one of the wall supports to clear the mobs.
+Before dropping the kegs reapply stealth using a non-field skill, turn left immediately after the gate and run through the gauntlet before stealth runs out.
 tactic=exploit
-Put a keg inside of a house on a table (or any other unreachable place), or on top of a rock that is unreachable without jumping. All the enemies run to it and try to grab it (but they can't reach it). Then just coordinate keg-drop (enemies will reappear after first keg has been dropped).
+Put a keg inside of a house on a table (or any other unreachable place), or on top of a rock that is unreachable without jumping. All the enemies run to it and try to grab it (but they can't reach it). Then just coordinate keg-drop, the enemies will run towards you but stop part way and go back to the first keg.
 
 name=Big group with cannons
-tactic=fight
+tactic=normal
 All enemies are stationary ranged attackers. If you attack at range you can reduce amount of enemies attacking you.
 First group shouldn't give much problems. After that wait for Champion to come close and pull it away from big group.
 Then focus enemies from big group one by one.
-tactic=normal
+tactic=melee
+Use projectile defenses on top of each group to fight from safetey, use trees to hide from other groups while waiting on cooldowns, or retreat towards the gate to break aggro.
+tactic=skip
 Just run through everything.
 tactic=coordinated
 Stealth and run through everything.
 
 name=enemy=Turmaine:legendary
 tactic=normal
-He is very easy to kill as long as people can stay out of his wells. They appear all over the area and inflicts various Conditions so pay attention and equip some Condition removal. Avoid getting downed at all costs because reviving is very difficult.
+He is very easy to kill as long as people can stay out of his wells. They appear all over the area and inflicts chill then poison, so pay attention and equip some Condition removal. Avoid getting downed at all costs because reviving is very difficult.
 Occasionally he turns invulnerable and start chasing people. Keep running away and dodge when he is close.
 tactic=coordinated
 Bait out his invulnerability, and when it ends quickly burst him down. CC him if you expect he will soon go invulnerable again.
 tactic=exploit
-He can be bugged in the treehouse (lure him up and jump down) or on a rock (attack him and run over it). This allows him to be AFK ranged without worrying about any of his attacks.
+He can be bugged in the treehouse (lure him up and jump down) or on a rock (attack him and run over it). This allows him to be ranged without worrying about his plague form.
 tactic=warrior
 Take wiki=Signet_of_Stamina to clear lots of conditions at the same time.
 Use wiki=Rush or/and wiki=Whirlwind_Attack to get away from him during plague form.
@@ -382,10 +488,12 @@ tactic=normal|skip
 | Stick to the left side and push secret button like in story mode.
 tactic=coordinated
 Stealth through and press the button.
+tactic=exploit
+You can attack 2 of the 3 elites at the end of the hallway through the wall next to the flame turrets in the second room.
 
 name=Rockets Turrets and Air Guns
 tactic=normal
-Everyone should pick an Air Gun. All of the skills will reflect turret rockets back. Be careful because few rockets will kill you. You should proceed slowly to reduce the risk. Dodge back if your skills are on cooldown.
+Everyone should pick an Air Gun. All of the skills will reflect turret rockets back. Be careful because a few rockets will kill you. You should proceed slowly to reduce the risk. Dodge back if your skills are on cooldown.
 You can't reflect rockets or hit turrets with any other skill. Door will open once every Turret is destroyed.
 tactic=coordinated
 Stack might and drop a Shadow Refuge before pressing the button and picking up air guns. This is the only place in the game where increasing your power will cause your reflected projectiles to hit for more damage. Run into the middle of the turrets while stealthed, and drop a reflect before stealth runs out, as it will project you from any rockets you don't reflect with your guns (although it will not deal damage). Use the guns to reflect rockets and kill the rocket turrets. Use additional antiprojectile skills if necessary.
@@ -396,6 +504,7 @@ Pull Wahlen and the bandits outside the room behind the door, or inside the room
 Wahlen is easy at range because you can just walk left/right or dodge. At close range he will spin and throw lots of bombs.
 tactic=coordinated
 Fight on top of Wahlen. Pull enemies in with Temporal Curtain or Binding Blades.
+Provide a projectile defence as well as aegis/stability if the boss is not CCed to avoid being kicked back.
 tactic=exploit
 1-2 players can use Air Guns to reflect all his attacks back for massive damage.
 
@@ -403,14 +512,14 @@ name=Spike corridor
 tactic=normal
 There are multiple enemy=Spike_Traps:trap in the corridor. 2 enemy=Riflemen:elite and a enemy=Bomber:elite at end. Traps get disabled when someone gets through the door.
 You should look for an opening and then go together because the Riflemen can easily shoot down a lone target. Use mobility, leaps, stealth and teleports to get through more easily.
-tactic=exploit|coordinated
+tactic=exploit
 The traps won't activate until enemy=Wahlen:legendary dies. You can run to end of the corridor right before he dies to easily disable the traps.
 
 name=Big room with lots of enemies.
 tactic=normal
 You can kill first two big groups. But it will take a long time and is risky. Instead you should run through.
 Stick to right side to avoid aggro. Run along the platform and simply jump down (this also breaks aggro).
-Keep running on right side until the end and jump down. Once you aggro 2 enemy=Riflemen:elite 4 more will appear. Quickly run to room behind to force them to melee range.
+Keep running on right side until the end and jump down. Once you aggro 2 enemy=Riflemen:elite 4 more will appear. Quickly run underneath platform and around the corner to force them into melee range.
 tactic=skip
 Just run through everything straight to the end boss.
 tactic=coordinated
@@ -430,7 +539,9 @@ Kill the enemy=Bandit_Riflemen:elite. You can cleave the farthest two by standin
 tactic=ranged
 Keep distance so you won't get hit by his melee attack. Watch out for wind effect because it will reflect your projectiles. Either stop attacking or do not use reflectable attacks. Dodge if he shoots fireball at you.
 tactic=melee
-Watch out for his animations. When he hops around be ready to dodge because he will hit all around him. If he is facing you with fiery effect dodge his ranged attack. You can probably ignore wind effect because it only reflects projectiles, but be aware if you have any melee attacks that involve projectiles (Such as Whirling Wrath for Guardians).
+Watch out for his animations. Dodge when he hops left because he will hit everything around him. If he is facing you with fiery effect dodge his ranged attack. You can probably ignore wind effect because it only reflects projectiles, but be aware if you have any melee attacks that involve projectiles (Such as Whirling Wrath for Guardians).
+tactic=coordinated
+Place a projectile defense on top of the boss, provide aegis/stability to the group when he steps left and interrupt his swirling winds.
 tactic=rewards
 There is a very low chance to get an account bound wiki=Recipe:_Vallog's_Demise from enemy=Vallog. The recipe allows you to craft wiki=Vallog's_Demise which gives much better gold return for your tokens.
 

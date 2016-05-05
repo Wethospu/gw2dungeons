@@ -1322,7 +1322,7 @@ subeffect=After 21.4 s\: ?????
 # 6:15-6:14
 attack=Summon
 animation=Says a one liner, raises arms briefly, lowers head and digs the ground.|2.25
-effect=Summon 2? enemy=Enraged_Spirits and 2? enemy=Angered_Spirits
+effect=Summon 2? enemy=Enraged_Spirits:veteran and 2? enemy=Angered_Spirits:veteran
 
 # 5:55-5:54
 attack=World Eater

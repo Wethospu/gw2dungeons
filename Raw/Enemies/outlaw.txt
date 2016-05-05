@@ -26,7 +26,7 @@ subeffect=damage:-
 ##################################################################
 
 Name=Separatist Fighter
-alt=Fighter
+alt=Separatist Fighters|Fighter|Fighters
 ID=11016
 Path=CMS
 
@@ -53,10 +53,15 @@ subeffect=Damage:-
 subeffect=knockback:1.5
 #note=try to predict
 
+#############################
+
+copy=11016
+ID=3220
+
 ##################################################################
 
-Name=Separatist Lieutenant
-alt=Lieutenant
+Name=Separatist Lieutenant (Sword)
+alt=Lieutenant (Sword)
 ID=6088
 Path=CMS
 
@@ -96,6 +101,29 @@ animation=raises both arms with a green ball between them
 image=http://giant.gfycat.com/SeparateEducatedAxisdeer.gif
 effect=buff, hits cause
 subeffect=poison:0
+
+##################################################################
+
+Name=Separatist Lieutenant (Rifle)
+alt=Lieutenant (Rifle)
+ID=3213
+Path=CMS
+
+attack=Shoot
+ID=4474
+effect=fast projectile
+subeffect=damage:-
+
+attack=Reckless Volley
+ID=15063
+effect=fast projectiles
+count=?
+subeffect=damage:-
+
+attack=Kick
+ID=4450
+effect=melee
+subeffect=damage:-
 
 ##################################################################
 
