@@ -71,7 +71,7 @@
 		$sql5 = $conn->prepare('SELECT groupID FROM RecordGroups WHERE record=?;');
 		$sql6 = $conn->prepare('SELECT name, tag, website FROM Groups WHERE ID=? LIMIT 1;');
 		// Find game build.
-		$sql7 = $conn->prepare('SELECT build FROM GameBuilds WHERE date < ? ORDER BY Build DESC LIMIT 1;');
+		$sql7 = $conn->prepare('SELECT build FROM GameBuilds WHERE date <= ? ORDER BY Build DESC LIMIT 1;');
 		// Replace category id with category text.
 		$sql8 = $conn->prepare('SELECT name FROM Categories WHERE ID=?;');
 		foreach($paths as $row) {
