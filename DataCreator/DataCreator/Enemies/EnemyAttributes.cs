@@ -15,7 +15,7 @@ namespace DataCreator
       Name = "";
       Occurrences = null;
       Description = "";
-      Rank = "";
+      rank = "";
       Flag = 0;
       Multipliers = new Multipliers();
       Gender = "";

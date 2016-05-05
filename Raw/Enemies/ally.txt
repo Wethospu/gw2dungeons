@@ -8,28 +8,28 @@
 
 Name=Agent Rhiannon
 ID=7078
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
 
 name=Agent Spire
 ID=7610
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/5/51/Agent_Spire.jpg
 path=CoE1|CoE2|CoE3
 
 ##################################################################
 
 Name=Albert the Butler
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/4/47/Albert_the_Butler.jpg
 Path=CMS|CM1|CM2|CM3
 
 ##################################################################
 
 name=Braham
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/b/b8/Braham_Eirsson.jpg
 # Scaling not verified.
 scaling=constant
@@ -40,7 +40,7 @@ path=Furn|Molten
 
 Name=Caithe
 ID=3580
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/3/3e/Caithe.jpg
 Path=SES
 
@@ -48,7 +48,7 @@ Path=SES
 
 Name=Caithe
 ID=6975
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/3/3e/Caithe.jpg
 Path=TAS|TAU|TAF|TAAE|HotWS
 
@@ -56,28 +56,28 @@ Path=TAS|TAU|TAF|TAAE|HotWS
 
 Name=Commander Suma
 ID=7079
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
 
 Name=Crea Irontooth
 ID=7383
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
 
 Name=Crusader Ferrah
 ID=7076
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
 
 Name=Dagonet
 ID=5876
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/1/12/Dagonet.jpg
 Path=CMS
 
@@ -85,7 +85,7 @@ Path=CMS
 
 Name=Deputy Turman
 ID=12140
-rank=ally
+ally=true
 level=80
 Path=TAU|TAF|TAAE
 
@@ -93,7 +93,7 @@ Path=TAU|TAF|TAAE
 
 name=Detha Tremblebones
 ID=5852
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/a/a4/Detha_NPC.jpg
 Path=AC2
 
@@ -124,14 +124,14 @@ Name=Eir Stegalkin
 ID=1697
 alt=Eir
 image=http://wiki.guildwars2.com/images/4/47/Eir_Stegalkin.jpg
-rank=ally
+ally=true
 Path=SES
 
 ##################################################################
 
 Name=Eir Stegalkin
 ID=6976
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/4/47/Eir_Stegalkin.jpg
 Path=ACS|HotWS
 
@@ -157,7 +157,7 @@ effect=ranged
 ##################################################################
 
 Name=Ellen Kiel
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/0/05/Captain_Ellen_Kiel.jpg
 Path=Aether|Mai
 
@@ -166,21 +166,21 @@ Path=Aether|Mai
 Name=Exemplar Talie
 ID=6075
 Alt=Talie
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/f/f1/Exemplar_Talie.jpg
 Path=CM1|CM2|CM3
 
 ##################################################################
 
 Name=Fergg
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/7/7b/Fergg.jpg
 Path=SE1|SE2|SE3
 
 ##################################################################
 
 name=Frostbite
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/9/9d/Frostbite.jpg
 # Scaling not verified.
 scaling=constant
@@ -192,7 +192,7 @@ path=Furn|Molten
 Name=Garm
 ID=5834
 Path=ACS|SES
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/a/a5/Garm.jpg
 
 attack=Bite
@@ -216,7 +216,7 @@ subeffect=damage:-
 
 Name=Hodgins
 ID=5766
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/f/ff/Hodgins_Scepter.jpg
 Path=AC1|AC2|AC3
 
@@ -237,7 +237,7 @@ subeffect=lose a condition
 Name=Hologram of Kudu
 # VERIFY 10720
 ID=9780
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
@@ -245,28 +245,28 @@ Path=CoES
 name=Honor's Claw
 ID=3909
 level=80
-rank=ally
+ally=true
 path=HotWS|HotW1|HotW2|HotW3
 
 ##################################################################
 
 Name=Koptev
 ID=3583
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/8/81/Elite_Koptev.jpg
 Path=SE1|SE2|SE3
 
 ##################################################################
 
 Name=Lieutentant Marma
-rank=ally
+ally=true
 Path=CoFS
 
 ##################################################################
 
 Name=Logan Thackeray
 ID=3611
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/d/d3/Captain_Logan_Thackeray.jpg
 Path=CMS
 
@@ -274,7 +274,7 @@ Path=CMS
 
 Name=Logan Thackeray
 ID=6977
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/d/d3/Captain_Logan_Thackeray.jpg
 Path=TAS|CoFS|CoES
 
@@ -282,7 +282,7 @@ Path=TAS|CoFS|CoES
 
 Name=Magg
 ID=7077
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
@@ -290,14 +290,14 @@ Path=CoF1|CoF2|CoF3
 Name=Medic Rosina
 ID=5650
 Alt=Rosina
-rank=ally
+ally=true
 Path=CM2
 
 ##################################################################
 
 Name=Mia Kindleshot
 ID=5874
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/9/97/Mia_Kindleshot.png
 Path=CMS
 
@@ -305,7 +305,7 @@ Path=CMS
 
 Name=Minister Caudecus
 ID=5877
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/0/0c/Minister_Caudecus_new.jpg
 Path=CMS
 
@@ -313,7 +313,7 @@ Path=CMS
 
 Name=Monique DeLana
 ID=8011
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/d/df/Monique_DeLana.jpg
 Path=CMS
 
@@ -321,7 +321,7 @@ Path=CMS
 
 Name=Morrigu
 ID=1495
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/7/73/Morrigu.jpg
 Path=TAU|TAF
 
@@ -330,7 +330,7 @@ Path=TAU|TAF
 name=Mr. Sparkles
 ID=7463
 level=77
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/c/cf/Mr._Sparkles.jpg
 path=CoES
 
@@ -338,7 +338,7 @@ path=CoES
 
 Name=Odgen Stonehealer
 ID=4648
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/e/e3/Ogden_Stonehealer.jpg
 Path=Arah1|Arah2|Arah3|Arah4
 
@@ -346,7 +346,7 @@ Path=Arah1|Arah2|Arah3|Arah4
 
 Name=Phlunt
 ID=3123
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/f/f1/Phlunt.jpg
 Path=CMS
 
@@ -354,7 +354,7 @@ Path=CMS
 
 Name=Pygmy Moa
 ID=9056
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/c/ca/Pygmy_Moa.jpg
 Path=CMS
 
@@ -362,7 +362,7 @@ Path=CMS
 
 Name=Queen Jennah
 ID=5879
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/4/43/Queen_Jennah.jpg
 Path=CMS
 
@@ -370,7 +370,7 @@ Path=CMS
 
 Name=Randall Greyston
 ID=8339
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/8/8e/Randall_Greyston.jpg
 Path=Arah4
 
@@ -382,14 +382,14 @@ subeffect=damage:-
 ##################################################################
 
 Name=Rasolov
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/a/a9/Rasolov.jpg
 Path=SE1|SE2|SE3
 
 ##################################################################
 
 name=Rox
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/5/5b/Rox.jpg
 # Scaling not verified.
 scaling=constant
@@ -400,7 +400,7 @@ path=Furn|Molten
 
 Name=Rytlock Brimstone
 ID=6978
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/6/67/Rytlock_Brimstone.jpg
 Path=ACS|TAS|CoFS|CoES
 
@@ -439,14 +439,14 @@ subeffect=damage:-
 Name=Scarlet Briar
 # VERIFY 12731 (big)
 ID=12730
-rank=ally
+ally=true
 Path=TAAE
 
 ##################################################################
 
 Name=Scholar Yissa
 ID=8336
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/7/71/Scholar_Yissa.jpg
 Path=Arah2
 
@@ -459,20 +459,20 @@ subeffect=damage:-
 
 Name=Scout Roshan
 ID=7120
-rank=ally
+ally=true
 Path=CoF1
 
 ##################################################################
 
 Name=Sergeant Gunther
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/e/ec/Sergeant_Gunther.jpg
 Path=CM2
 
 ##################################################################
 
 Name=Shrill Sunderbark
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/4/43/Shrill_Sunderbark.jpg
 Path=AC1|AC2|AC3
 
@@ -480,7 +480,7 @@ Path=AC1|AC2|AC3
 
 Name=Sigfast
 ID=5875
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/e/ef/Sigfast.jpg
 Path=CMS
 
@@ -488,7 +488,7 @@ Path=CMS
 
 Name=Surratt, Whispers Agent
 ID=10497
-rank=ally
+ally=true
 Path=Arah4
 
 attack=Slash
@@ -512,21 +512,21 @@ subeffect=damage:-
 Name=Tarleov
 # VERIFY
 ID=3582
-rank=ally
+ally=true
 Path=SE1|SE2|SE3
 
 ##################################################################
 
 Name=Traffa
 ID=5671
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/1/1f/Traffa.png
 Path=CM1
 
 ##################################################################
 
 Name=Tzark
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/7/7d/Tzark_NPC.jpg
 Path=AC1|AC2|AC3
 
@@ -534,14 +534,14 @@ Path=AC1|AC2|AC3
 
 Name=Uzolan
 ID=3085
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/1/13/Uzolan_the_Artist.jpg
 Path=CMS
 
 ##################################################################
 
 Name=Vambery
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/3/32/Molten_Excavator.jpg
 Path=SE1|SE2|SE3
 
@@ -549,7 +549,7 @@ Path=SE1|SE2|SE3
 
 Name=Varra Skylark
 ID=8338
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/5/5c/Varra_Skylark.jpg
 Path=Arah1
 
@@ -562,7 +562,7 @@ subeffect=damage:-
 
 Name=Warden Illyra
 ID=8337
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/5/50/Warden_Illyra.jpg
 Path=Arah3
 
@@ -576,7 +576,7 @@ subeffect=damage:-
 Name=Warmaster Grast
 ID=1703
 image=7fr2Zc1.jpg
-rank=ally
+ally=true
 Path=AC3
 
 attack=Shield
@@ -592,7 +592,7 @@ subeffect=damage:-
 
 name=Zojja
 ID=3581
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/2/29/Zojja.jpg
 path=CMS|SES
 
@@ -600,7 +600,7 @@ path=CMS|SES
 
 name=Zojja
 ID=6979
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/2/29/Zojja.jpg
 path=CoES
 
@@ -610,21 +610,21 @@ path=CoES
 
 Name=Banker
 ID=6039
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
 
 Name=Brawler
 ID=6373
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
 
 Name=Captive
 ID=4120
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
@@ -632,7 +632,7 @@ Path=CoES
 Name=Chicken
 ID=1195
 level=1
-rank=ally
+ally=true
 Path=Arah3
 
 ##################################################################
@@ -640,28 +640,28 @@ Path=Arah3
 Name=Durmand Priory Explorer
 # VERIFY: 5902, 5903
 ID=5902
-rank=ally
+ally=true
 Path=AC1|AC2|AC3
 
 ##################################################################
 
 Name=Durmand Priory Researcher
 ID=8359|8358
-rank=ally
+ally=true
 Path=Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
 
 Name=Durmand Priory Scholar
 ID=8395
-rank=ally
+ally=true
 Path=Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
 
 Name=Dredge Disaggregator
 ID=5043
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/1/18/Dredge_Disaggregator.jpg
 Path=SE1|SE2|SE3
 
@@ -669,27 +669,27 @@ Path=SE1|SE2|SE3
 
 Name=Dredge Excavator
 ID=8630
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/a/ae/Dredge_Excavator.jpg
 Path=SE1|SE2|SE3
 
 ##################################################################
 
 Name=Dredge Miner
-rank=ally
+ally=true
 Path=SE1|SE2|SE3
 
 ##################################################################
 
 Name=Estate Worker
-rank=ally
+ally=true
 Path=CM1|CM2|CM3
 
 ##################################################################
 
 Name=Farmer
 ID=3975|3973
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/5/5b/Farmer.jpg
 Path=TAAE
 
@@ -698,7 +698,7 @@ Path=TAAE
 Name=Farmer
 # VERIFY 2541, 2705 | 2540, 2609
 ID=2541|2540
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/5/5b/Farmer.jpg
 Path=CoES
 
@@ -707,7 +707,7 @@ Path=CoES
 name=Farmer
 alt=Farmers|Villager|Villagers
 image=http://wiki.guildwars2.com/images/5/5b/Farmer.jpg
-rank=ally
+ally=true
 path=AquaDolphin|AquaDark
 scaling=constant
 
@@ -715,21 +715,21 @@ scaling=constant
 
 Name=Fisher
 ID=2544
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
 
 Name=Guard
 ID=1494|1485
-rank=ally
+ally=true
 Path=TAU|TAF
 
 ##################################################################
 
 Name=Inquest Power Suit
 ID=6448
-rank=ally
+ally=true
 Path=Arah2
 
 ##################################################################
@@ -737,21 +737,21 @@ Path=Arah2
 Name=Intercom Voice
 ID=7583
 level=80
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
 
 Name=Intercom Voice
 ID=7660
-rank=ally
+ally=true
 Path=CoE1|CoE2|CoE3
 
 ##################################################################
 
 Name=Iron Legion Soldier
 ID=1669
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
@@ -759,27 +759,27 @@ Path=CoF1|CoF2|CoF3
 name=Kodan Horn
 # VERIFY 4154, 4162
 ID=4162
-rank=ally
+ally=true
 path=HotWS
 
 ##################################################################
 
 name=Kodan Horn
 ID=3898
-rank=ally
+ally=true
 path=HotW1|HotW2|HotW3
 
 ##################################################################
 
 name=Kodan Icehammer
-rank=ally
+ally=true
 path=HotW1|HotW2|HotW3
 health=0.8
 
 ##################################################################
 
 name=Kodan Snowcaller
-rank=ally
+ally=true
 path=HotW1|HotW2|HotW3
 health=0.8
 
@@ -787,7 +787,7 @@ health=0.8
 
 Name=Krewe Apprentice
 ID=5267|5266
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/f/fe/Krewe_Apprentice.jpg
 Path=SE1|SE2|SE3
 
@@ -795,7 +795,7 @@ Path=SE1|SE2|SE3
 
 Name=Krewe Researcher
 ID=5271
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/0/0f/Krewe_Researcher.jpg
 Path=SE1|SE2|SE3
 
@@ -805,42 +805,42 @@ Name=Lion Guard
 # VERIFY 1561, 2552, 3980, 5273, 5371, 5379 | 2551, 3976, 3979, 4406, 5381
 ID=1561|2551
 level=80
-rank=ally
+ally=true
 Path=TAU|TAF|TAAE
 
 ##################################################################
 
 Name=Local
 ID=12748|12747
-rank=ally
+ally=true
 Path=TAAE
 
 ##################################################################
 
 Name=Local
 ID=2605
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
 
 Name=Medic
 ID=7991|7992
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
 
 Name=Merchant
 ID=2601
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
 
 Name=Noble
 ID=5868|5654
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/f/fe/Noble.jpg
 Path=CMS
 
@@ -849,7 +849,7 @@ Path=CMS
 Name=Orrian Chicken
 ID=8321
 level=10
-rank=ally
+ally=true
 Path=Arah3
 
 ##################################################################
@@ -858,7 +858,7 @@ Name=Priory Arcanist
 # VERIFY AC: 5336,5355, 5368 | 5335, 5361, 5366
 # VERIFY COF: | 5335, 5354, 5361, 5366
 ID=5336|5335
-rank=ally
+ally=true
 Path=AC1|AC2|AC3|CoF1|CoF2|CoF3
 
 ##################################################################
@@ -867,7 +867,7 @@ Name=Priory Explorer
 # VERIFY AC: 4787, 5350
 # VERIFY COF/ARAH: 4788, 5334 | 5349, 5360
 ID=4787|5333
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/c/cb/Priory_Explorer.jpg
 Path=AC1|AC2|AC3|CoFS|CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 
@@ -876,7 +876,7 @@ Path=AC1|AC2|AC3|CoFS|CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 Name=Priory Historian
 # VERIFY 5353, 8655 | 5352
 ID=5353|5352
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
@@ -885,41 +885,41 @@ Name=Priory Scholar
 # VERIFY AC/COF: 1587, 5341, 1591 | 1584
 # VERIFY ARAH: 1592| 1586, 1590, 1593
 ID=1592|1586
-rank=ally
+ally=true
 Path=AC1|AC2|AC3|CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
 
 Name=Priory Researcher
 ID=5329
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
 
 Name=Rancher
 ID=5302|5301
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
 
 Name=Refugee
-rank=ally
+ally=true
 Path=TAU|TAF
 
 ##################################################################
 
 Name=Researcher
 ID=5389|5279
-rank=ally
+ally=true
 Path=Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
 
 Name=Seraph Soldier
 ID=6787|5649
-rank=ally
+ally=true
 Path=CM1|CM2|CM3
 
 ##################################################################
@@ -927,7 +927,7 @@ Path=CM1|CM2|CM3
 Name=Servant
 # VERIFY 5651, 9398 | 5869
 ID=5651|5869
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/0/0e/Servant.jpg
 Path=CMS|CM1|CM2|CM3
 
@@ -935,7 +935,7 @@ Path=CMS|CM1|CM2|CM3
 
 Name=Shining Blade
 ID=6074|6076
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/4/49/Shining_Blade_%28NPC%29.jpg
 Path=CM1|CM2|CM3
 
@@ -943,14 +943,14 @@ Path=CM1|CM2|CM3
 
 Name=Storage Room Clerk
 ID=7591
-rank=ally
+ally=true
 Path=CoES
 
 ##################################################################
 
 Name=Sylvan Hound
 ID=9158
-rank=ally
+ally=true
 Path=AC1|AC2|AC3|CoF1|CoF2|CoF3|Vale
 
 ##################################################################
@@ -959,13 +959,13 @@ Name=Sylvari Prisoner
 ID=1979|1978
 alt=Sylvari Prisoners
 image=http://wiki.guildwars2.com/images/3/37/Prisoner.jpg
-rank=ally
+ally=true
 Path=TAS|TAU|TAF
 
 ##################################################################
 
 Name=Sylvari Warden
-rank=ally
+ally=true
 Path=TAU|TAF
 
 ##################################################################
@@ -974,7 +974,7 @@ Name=Vigil Crusader
 # VERIFY COF: 1272, 8055 9956 | 1271, 1568
 # VERIFY ARAH: 1567, 8055, 9940 | 1250, 1565
 ID=1567|1250
-rank=ally
+ally=true
 Path=CoFS|CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
@@ -983,14 +983,14 @@ Name=Vigil Marksman
 # VERIFY COF: 9239 | 9240
 # VERIFY ARAH: 9235, 9237, 9241 | 9238, 9240
 ID=9233|9232
-rank=ally
+ally=true
 Path=CoFS|CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
 
 Name=Vigil Recruit
 ID=9905
-rank=ally
+ally=true
 Path=Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
@@ -999,7 +999,7 @@ Name=Vigil Tactician
 # VERIFY COF: 9916
 # VERIFY ARAH: 9909, 9917 | 9913
 ID=9909|9913
-rank=ally
+ally=true
 Path=CoFS|CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
@@ -1008,7 +1008,7 @@ Name=Vigil Warmaster
 # VERIFY COF: 4405, 5595, 9922 | 10162
 # VERIFY ARAH: 4404
 ID=4404|10162
-rank=ally
+ally=true
 Path=CoFS|CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
@@ -1017,7 +1017,7 @@ Name=Whispers Agent
 # VERIFY COF: 1577, 3415, 3506 | 1576, 1582
 # VERIFY ARAH: 1583, 4490 | 1576, 3384, 3511
 ID=1583|1576
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
@@ -1026,21 +1026,21 @@ Name=Whispers Creator
 # VERIFY COF: 5421
 # VERIFY ARAH: | 5426
 ID=5421|5426
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
 
 Name=Whispers Designer
 ID=3438
-rank=ally
+ally=true
 Path=Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
 
 Name=Whispers Initiate
 ID=10043
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
@@ -1048,7 +1048,7 @@ Path=CoF1|CoF2|CoF3
 Name=Whispers Keeper
 # VERIFY 3457, 3468, 10069
 ID=3457
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
@@ -1057,21 +1057,21 @@ Name=Whispers Lightbringer
 # VERIFY COF: 1239
 # VERIFY ARAH: | 3426, 3461, 10051
 ID=1239|3426
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3|Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
 
 Name=Whispers Slayer
 ID=3467
-rank=ally
+ally=true
 Path=CoF1|CoF2|CoF3
 
 ##################################################################
 
 Name=Wounded Seraph Soldier
 ID=3131|3128
-rank=ally
+ally=true
 Path=Arah1|Arah2|Arah3|Arah4
 
 ##################################################################
@@ -1079,7 +1079,7 @@ Path=Arah1|Arah2|Arah3|Arah4
 Name=Worker
 # VERIFY 5679, 5680, 5681, 5682, 5683, 5684, 5685, 5686.
 ID=5679
-rank=ally
+ally=true
 image=http://wiki.guildwars2.com/images/e/e9/Worker.jpg
 Path=CM1|CM2|CM3
 
@@ -1088,7 +1088,7 @@ Path=CM1|CM2|CM3
 Name=Worker
 ID=4391|4390
 level=20
-rank=ally
+ally=true
 Path=TAAE
 
 ##################################################################
@@ -1098,14 +1098,14 @@ Path=TAAE
 
 Name=Squad Leader Falgeir
 ID=15054
-rank=ally
+ally=true
 Path=vale
 
 ##################################################################
 
 Name=Priory Explorer
 ID=15081
-rank=ally
+ally=true
 Path=vale
 
 ##################################################################
@@ -1113,42 +1113,42 @@ Path=vale
 # Sells rewards for Magnetite Shards.
 Name=Priory Scholar
 ID=15014
-rank=ally
+ally=true
 Path=vale
 
 ##################################################################
 
 Name=Veteran Vigil Medic
 ID=14520
-rank=ally
+ally=true
 Path=vale
 
 ##################################################################
 
 Name=Vigil Crusader
 ID=15007|15026
-rank=ally
+ally=true
 Path=vale
 
 ##################################################################
 
 Name=Vigil Recruit
 ID=15136|15124
-rank=ally
+ally=true
 Path=vale
 
 ##################################################################
 
 Name=Vigil Warmaster
 ID=14683
-rank=ally
+ally=true
 Path=vale
 
 ##################################################################
 
 Name=Whispers Agent
 ID=15087
-rank=ally
+ally=true
 Path=vale
 
 

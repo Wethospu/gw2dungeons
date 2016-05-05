@@ -1190,7 +1190,7 @@ Path=CMS
 
 attack=Resistant to interrupts
 effect=Daze and stun have no effect
-effect=Knockback, knockdown and launch sometimes work (even though defiance)
+effect=Knockback, knockdown and launch sometimes work.
 
 Attack=Laser (1)
 ID=4929

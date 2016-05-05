@@ -65,7 +65,7 @@ namespace DataCreator.Utility
       {
         if (rank.Length > 0)
         {
-          if (!enemy.Attributes.Rank.ToLower().Equals(rank))
+          if (!enemy.Rank.ToLower().Equals(rank))
             continue;
         }
         if (paths.Any(str => !enemy.Paths.Contains(str)))

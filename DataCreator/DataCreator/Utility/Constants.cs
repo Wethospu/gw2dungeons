@@ -151,7 +151,7 @@ namespace DataCreator.Utility
       "vigor", "control", "daze", "float", "knockback", "knockdown", "launch", "pull", "displacement", "sink", "stun", "taunt", "agony", "invulnerability", "revealed", "stealth", "buff",
       "damage", "fixed damage", "healing", "percent damage"  };
 
-    public static readonly SortedSet<string> AvailableRanks = new SortedSet<string>(){ "normal", "veteran", "elite", "champion", "legendary", "structure", "trap", "skill", "ally", "bundle" };
+    public static readonly SortedSet<string> AvailableRanks = new SortedSet<string>(){ "normal", "veteran", "elite", "champion", "legendary", "structure", "trap", "skill", "bundle" };
 
 
     // Dynamic include for js and css based on the release mode.

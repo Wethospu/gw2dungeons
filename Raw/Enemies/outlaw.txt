@@ -26,6 +26,7 @@ subeffect=damage:-
 ##################################################################
 
 Name=Separatist Fighter
+alt=Fighter
 ID=11016
 Path=CMS
 
@@ -55,22 +56,24 @@ subeffect=knockback:1.5
 ##################################################################
 
 Name=Separatist Lieutenant
+alt=Lieutenant
 ID=6088
 Path=CMS
 
 attack=Slash (1)
 ID=4458
+animation=moves left arm from right
 image=http://giant.gfycat.com/DiscreteWhirlwindAdeliepenguin.gif
 effect=melee
 subeffect=damage:-
 
 attack=Slash (2)
 ID=4459
-image=http://giant.gfycat.com/DiscreteWhirlwindAdeliepenguin.gif
 effect=melee
 subeffect=damage:-
 
 attack=Ambush (1)
+animation=glows and leans back
 ID=4461
 image=http://giant.gfycat.com/FrighteningPastelAstrangiacoral.gif
 effect=leap
@@ -82,12 +85,14 @@ subeffect=damage:?
 
 attack=Cyclone Attack
 ID=4460
+animation=holds a glowing right arm behind his back
 image=http://giant.gfycat.com/OfficialOblongAmericanblackvulture.gif
 effect=PBAoE
 subeffect=damage:-
 
 attack=Envenom
 ID=4456
+animation=raises both arms with a green ball between them
 image=http://giant.gfycat.com/SeparateEducatedAxisdeer.gif
 effect=buff, hits cause
 subeffect=poison:0
@@ -534,7 +539,7 @@ ID=8883
 Name=Bandit Bomber
 ID=9026
 alt=Bandit Bombers|Bomber|Bombers
-Path=CM1|CM2|CM3
+Path=CMS|CM1|CM2|CM3
 
 Attack=Throw Bomb
 ID=4448

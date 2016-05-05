@@ -125,7 +125,9 @@ namespace DataCreator.Enemies
         else if (line.Tag.Equals("path"))
           currentEnemy.Paths = new List<string>(line.Data.ToLower().Split('|'));
         else if (line.Tag.Equals("rank"))
-          currentEnemy.Attributes.Rank = line.Data.ToLower();
+          currentEnemy.Rank = line.Data.ToLower();
+        else if (line.Tag.Equals("ally"))
+          currentEnemy.Allied = true;
         else if (line.Tag.Equals("alt"))
           HandleAlternativeNames(line.Data, currentEnemy);
         else if (line.Tag.Equals("image"))
@@ -167,7 +169,7 @@ namespace DataCreator.Enemies
         return;
       if (currentEnemy.Paths.Count == 0)
         ErrorHandler.ShowWarning("Path not set for previous enemy " + currentEnemy.Name + ".");
-      if (currentEnemy.Attributes.Rank.Length == 0)
+      if (currentEnemy.Rank.Length == 0)
         ErrorHandler.ShowWarning("Rank not set for previous enemy " + currentEnemy.Name + ".");
     }
 
@@ -207,6 +209,7 @@ namespace DataCreator.Enemies
         currentEnemy.InternalIds.Add(Helper.ParseI(id));
         if (enemyAttributes.ContainsKey(id))
         {
+          // Different enemies may share attributes (for exampled allied enemies).
           currentEnemy.Attributes = enemyAttributes[id];
           if (oldGenders.Length > 0)
           {
@@ -614,7 +617,7 @@ namespace DataCreator.Enemies
         if (dungeonData != null)
         {
           dungeonData.AddRace(enemies[i].Attributes.Family.GetDisplay());
-          dungeonData.AddRank(enemies[i].Attributes.Rank);
+          dungeonData.AddRank(enemies[i].Rank);
           foreach (var tag in enemies[i].Tags)
             dungeonData.AddTag(tag);
         }

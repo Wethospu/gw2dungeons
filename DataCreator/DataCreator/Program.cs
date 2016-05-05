@@ -269,7 +269,7 @@ namespace DataCreator
       foreach (var enemy in enemies)
       {
         // TODO: Previous enemy name was used to find the enemy info. Now Index seems to be used so remove the name.
-        indexFile.Append(enemy.Name).Append("|").Append(Helper.Simplify(enemy.Name)).Append("|").Append(enemy.Attributes.Rank);
+        indexFile.Append(enemy.Name).Append("|").Append(Helper.Simplify(enemy.Name)).Append("|").Append(enemy.Rank);
         indexFile.Append("|").Append(enemy.Attributes.Family.GetInternal()).Append("|").Append(string.Join(":", enemy.Paths));
         indexFile.Append("|").Append(enemy.Index);
         // Compact tags take less space (especially important for search URLs).

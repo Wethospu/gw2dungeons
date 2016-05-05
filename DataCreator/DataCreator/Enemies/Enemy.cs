@@ -42,6 +42,24 @@ namespace DataCreator.Enemies
     /// In-game level of the enemy. By default path specific values is used automatically. This allows explicitly setting it.
     /// </summary>
     public int Level = 0;
+    /// <summary>
+    /// Whether the enemy is allied towards playerds. Overrides any rank with an ally rank.
+    /// </summary>
+    public bool Allied = false;
+
+    public string Rank
+    {
+      get
+      {
+        if (Allied)
+          return "ally";
+        return Attributes.Rank;
+      }
+      set
+      {
+        Attributes.Rank = value;
+      }
+    }
 
     public readonly List<Attack> Attacks = new List<Attack>();
     /// <summary>
@@ -79,7 +97,7 @@ namespace DataCreator.Enemies
       var result = string.Compare(Name, toCompare.Name);
       if (result != 0)
         return result;
-      result = RankToInt(Attributes.Rank) - RankToInt(toCompare.Attributes.Rank);
+      result = RankToInt(Rank) - RankToInt(toCompare.Rank);
       if (result != 0)
         return result;
       result = Level - toCompare.Level;
@@ -105,7 +123,9 @@ namespace DataCreator.Enemies
         return 4;
       if (rank.ToLower().Equals("legendary"))
         return 5;
-      return 6;
+      if (rank.ToLower().Equals("ally"))
+        return 6;
+      return 7;
     }
 
     /// <summary>
@@ -163,7 +183,7 @@ namespace DataCreator.Enemies
       foreach (var altName in AltNames)
         htmlBuilder.Append(" ").Append(Helper.Simplify(altName));
       htmlBuilder.Append("\"");
-      htmlBuilder.Append(" data-rank=\"").Append(Helper.Simplify(Attributes.Rank)).Append("\"");
+      htmlBuilder.Append(" data-rank=\"").Append(Helper.Simplify(Rank)).Append("\"");
       htmlBuilder.Append(" data-path=\"").Append(Helper.Simplify(string.Join("|", Paths))).Append("\"");
       // Only add non-default path info to allow scaling it on the website.
       if (Level > 0)
@@ -185,8 +205,8 @@ namespace DataCreator.Enemies
       var htmlBuilder = new StringBuilder();
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("<div class=\"in-line\">").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent + 1)).Append("<span class=\"enemy-name\">").Append(Helper.ConvertSpecial(Helper.ToUpperAll(Name.Replace(" ", Constants.Space)))).Append("</span>").Append(Constants.LineEnding);
-      if (!Attributes.Rank.Equals(""))
-        htmlBuilder.Append(Gw2Helper.AddTab(baseIndent + 1)).Append("<span class=\"rank-unit\">").Append(Helper.ToUpper(Helper.ConvertSpecial(Attributes.Rank)).Replace(" ", Constants.Space)).Append(Constants.Space).Append("</span>").Append(Constants.LineEnding);
+      if (!Rank.Equals(""))
+        htmlBuilder.Append(Gw2Helper.AddTab(baseIndent + 1)).Append("<span class=\"rank-unit\">").Append(Helper.ToUpper(Helper.ConvertSpecial(Rank)).Replace(" ", Constants.Space)).Append(Constants.Space).Append("</span>").Append(Constants.LineEnding);
       var family = Attributes.Family.GetDisplay();
       if (!family.Equals(""))
         htmlBuilder.Append(Gw2Helper.AddTab(baseIndent + 1)).Append("<span class=\"race-unit\">").Append(family).Append(" </span>").Append(Constants.LineEnding);

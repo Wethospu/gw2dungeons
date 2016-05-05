@@ -80,7 +80,7 @@ namespace DataCreator.Shared
       for (var index = 0; index < str.Length; index++)
       {
         var link = FindNextLink(str, ref index);
-        if (link == null && !link[0].ToLower().Equals(Constants.LinkEnemy))
+        if (link == null || !link[0].ToLower().Equals(Constants.LinkEnemy))
           continue;
         var foundEnemies = GetEnemiesFromLink(link[1], paths, enemyData);
         foreach (var enemy in foundEnemies)
@@ -150,7 +150,7 @@ namespace DataCreator.Shared
       for (var index = 0; index < str.Length; index++)
       {
         var link = FindNextLink(str, ref index);
-        if (link == null)
+        if (link == null || link[0] == "")
           continue;
         var shownText = "";
         if (!Constants.LinkTypes.Contains(link[0]))
@@ -214,7 +214,7 @@ namespace DataCreator.Shared
       // Syntax:
       // <span class="'main rank' enemy-button" data-name="'enemy names'" data-rank="'enemy categories" data-level="'enemy levels'" data-path="'path'" data-level"'level'">'shown text'</span>
       var link = new StringBuilder();
-      link.Append("<span class=\"").Append(enemiesToLink[0].Attributes.Rank).Append(" enemy-button\" data-index=\"");
+      link.Append("<span class=\"").Append(enemiesToLink[0].Rank).Append(" enemy-button\" data-index=\"");
       for (var index = 0; index < enemiesToLink.Count; index++)
       {
         link.Append(enemiesToLink[index].Index);
@@ -287,7 +287,7 @@ namespace DataCreator.Shared
       var valueEnd = str.IndexOf(' ', linkIndex + 1);
       if (valueEnd < 0)
         valueEnd = str.Length;
-      if (str[valueEnd - 1] == '.' || str[valueEnd - 1] == ',' || str[valueEnd - 1] == ':' || str[valueEnd - 1] == ')')
+      while (str[valueEnd - 1] == '.' || str[valueEnd - 1] == ';' || str[valueEnd - 1] == ',' || str[valueEnd - 1] == ':' || str[valueEnd - 1] == ')')
         valueEnd--;
       var value = str.Substring(linkIndex + 1, valueEnd - linkIndex - 1);
       startIndex = valueEnd;
