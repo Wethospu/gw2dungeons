@@ -100,7 +100,7 @@ namespace DataCreator.Encounters
       htmlBuilder.Append("<td id=\"").Append(orderNumber).Append("\" class=\"encounter-main\">");
       // Add relevant information to start of the encounter so it can be easily found by the website.
       // TODO: Not sure are these truly needed anymore. 
-      htmlBuilder.Append("<div data-name=\"").Append(Helper.Simplify(Name)).Append("\" ");
+      htmlBuilder.Append("<div data-name=\"").Append(DataName).Append("\" ");
       htmlBuilder.Append("data-path=\"").Append(Helper.Simplify(string.Join("|", Paths))).Append("\">").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(1)).Append("<div class=\"in-line\">");
       htmlBuilder.Append(Gw2Helper.AddTab(2)).Append(orderNumber == 0 ? "<h1>" : "<h2>");

@@ -59,13 +59,13 @@ namespace DataCreator.Enemies
       // Replace end dot with a double dot if the effect has sub effects (visually looks better).
       if (Type[Type.Length - 1] == '.' && SubEffects.Count > 0)
         Type = Type.Substring(0, Type.Length - 1) + ':';
-      htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("<p>").Append(Type).Append("</p>").Append(Constants.LineEnding);
+      htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("<p>").Append(Helper.ToUpper(Type)).Append("</p>").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("<ul>").Append(Constants.LineEnding);
       foreach (var subEffect in SubEffects)
       {
         htmlBuilder.Append(Gw2Helper.AddTab(baseIndent + 1)).Append("<li>");
         var str = EffectHandler.HandleEffect(subEffect, this, owner, attackOwner);
-        htmlBuilder.Append(str.Replace("\\:", ":"));
+        htmlBuilder.Append(Helper.ToUpper(str.Replace("\\:", ":")));
         htmlBuilder.Append("</li>").Append(Constants.LineEnding);
       }
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("</ul>").Append(Constants.LineEnding);

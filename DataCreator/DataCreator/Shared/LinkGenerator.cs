@@ -212,7 +212,7 @@ namespace DataCreator.Shared
         return shownText;
       // Linkable enemies found. Start building the link.
       // Syntax:
-      // <span class="'main rank' enemy-button" data-name="'enemy names'" data-rank="'enemy categories" data-level="'enemy levels'" data-path="'path'" data-level"'level'">'shown text'</span>
+      // <span class="'main rank' enemy-button" data-index="'unique ID'" data-path="'path'" data-level"'level'">'shown text'</span>
       var link = new StringBuilder();
       link.Append("<span class=\"").Append(enemiesToLink[0].Rank).Append(" enemy-button\" data-index=\"");
       for (var index = 0; index < enemiesToLink.Count; index++)

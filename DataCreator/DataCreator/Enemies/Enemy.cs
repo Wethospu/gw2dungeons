@@ -179,7 +179,7 @@ namespace DataCreator.Enemies
     private StringBuilder AddIdentifiers()
     {
       var htmlBuilder = new StringBuilder();
-      htmlBuilder.Append(" data-name=\"").Append(Helper.Simplify(Name));
+      htmlBuilder.Append(" data-name=\"").Append(DataName);
       foreach (var altName in AltNames)
         htmlBuilder.Append(" ").Append(Helper.Simplify(altName));
       htmlBuilder.Append("\"");

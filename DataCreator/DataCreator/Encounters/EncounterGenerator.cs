@@ -67,6 +67,7 @@ namespace DataCreator.Encounters
         encounters.Add(new Encounter());
         currentEncounter = encounters[encounters.Count - 1];
         currentEncounter.Name = text.Data;
+        currentEncounter.DataName = Helper.Simplify(LinkGenerator.RemoveLinks(text.Data));
         currentEncounter.Paths = new List<string>(_currentPath.Split('|'));
       }
       else
@@ -188,17 +189,18 @@ namespace DataCreator.Encounters
       {
         // All fractal paths are mixed together so they require a different implementation.
         // There are 100 paths so obviously not everything can be included in the small navigation bar.
+        // NOTE: relatedPaths indexing starts from 0 while scales start from 1.
         var startingScale = currentPath.FractalScale - Constants.FractalNavPathCount / 2;
         if (startingScale + Constants.FractalNavPathCount >= relatedPaths.Count)
           startingScale = relatedPaths.Count - Constants.FractalNavPathCount;
         if (startingScale < 1)
           startingScale = 1;
-        for (var scale = startingScale; scale < startingScale + Constants.FractalNavPathCount; scale++)
+        for (var index = startingScale - 1; index < startingScale + Constants.FractalNavPathCount; index++)
         {
-          if (currentPath.FractalScale == scale || scale >= relatedPaths.Count)
+          if (currentPath.FractalScale == index + 1 || index >= relatedPaths.Count)
             continue;
-          names.Add("Scale " + relatedPaths[scale].FractalScale + ": " + relatedPaths[scale].NavigationName);
-          links.Add(relatedPaths[scale].Filename);
+          names.Add("Scale " + relatedPaths[index].FractalScale + ": " + relatedPaths[index].NavigationName);
+          links.Add(relatedPaths[index].Filename);
         }
       }
       return string.Join("|", names) + Constants.ForcedLineEnding + string.Join("|", links) + Constants.ForcedLineEnding;

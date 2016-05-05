@@ -112,6 +112,7 @@ namespace DataCreator.Enemies
           currentEnemy = enemies.Last();
         }
         currentEnemy.Name = line.Data;
+        currentEnemy.DataName = Helper.Simplify(LinkGenerator.RemoveLinks(line.Data));
       }
       else
       {

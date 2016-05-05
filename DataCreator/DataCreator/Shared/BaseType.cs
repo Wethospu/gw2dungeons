@@ -11,6 +11,10 @@ namespace DataCreator.Shared
   /// </summary>
   public class BaseType
   {
+    /// <summary>
+    /// Name is not guaranteed to remain as a plain text so an additional variable is needed for html data attributes.
+    /// </summary>
+    public string DataName;
     private string name;
     public string Name
     {
