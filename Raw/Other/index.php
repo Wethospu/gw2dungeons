@@ -10,7 +10,7 @@ if(isset($_POST['search'])) {
 }
 // Title is automated except for guides, see guide.php.
 // This is the last part of the title
-$title = array('GW2 Dungeon Guide');
+$title = array('gw2dungeons');
 
 // classes added to html
 $class = array('no-js');
@@ -64,7 +64,7 @@ if($content == false) {
     $title[] = 'Error';
     $content = file_get_contents(sprintf('./pages/%s.htm', 'error'));
 } else {
-    if (substr($content, 0, 6) == 'GUIDE:') {
+    if (substr($content, 0, 5) == 'GUIDE') {
         $class[] = 'guide';
         include('guide.php');
 	} else {
@@ -123,7 +123,7 @@ ID_JS
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./">GW2Dungeons.net</a>
+            <a class="navbar-brand" href="./">gw2dungeons.net</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">

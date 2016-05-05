@@ -115,7 +115,7 @@ namespace DataCreator.Utility
     public static string LinkWiki { get { return "wiki"; } }
     public static string LinkEnemy { get { return "enemy"; } }
     public static string LinkRecord { get { return "record"; } }
-    public static readonly string[] LinkTypes = { LinkMedia, LinkLocal, LinkYoutube, LinkLink, LinkWiki, LinkEnemy, LinkRecord };
+    public static readonly SortedSet<string> LinkTypes = new SortedSet<string>(){ LinkMedia, LinkLocal, LinkYoutube, LinkLink, LinkWiki, LinkEnemy, LinkRecord };
 
     /// <summary>
     /// Use a pre-defined tactics to catch typing mistakes.
@@ -144,12 +144,15 @@ namespace DataCreator.Utility
     // Tags which are recognized by this program.
     // These can be used to filter enemies in the website's search.
     public static readonly SortedSet<string> AttackTypeTags = new SortedSet<string>(){ "pbaoe", "melee", "ranged", "projectile", "homing", "bouncing", "aoe", "dash", "leap",  "delayed", "field",
-      "summon", "aura", "ticking", "cone", "piercing", "evade", "buff", "trap" };
+      "summon", "aura", "ticking", "cone", "piercing", "evade", "buff", "trap", "defiant", "resistant" };
 
     public static readonly SortedSet<string> EffectTags = new SortedSet<string>(){ "alacrity", "condition", "bleeding", "blind", "burning", "chilled", "confusion", "crippled", "fear", "immobilized",
       "poison", "slow", "torment", "vulnerability", "weakness", "boon", "aegis", "fury", "defiance", "might", "protection", "regeneration", "resistance", "retaliation", "stability", "swiftness", "quickness",
       "vigor", "control", "daze", "float", "knockback", "knockdown", "launch", "pull", "displacement", "sink", "stun", "taunt", "agony", "invulnerability", "revealed", "stealth", "buff",
       "damage", "fixed damage", "healing", "percent damage"  };
+
+    public static readonly SortedSet<string> AvailableRanks = new SortedSet<string>(){ "normal", "veteran", "elite", "champion", "legendary", "structure", "trap", "skill", "ally", "bundle" };
+
 
     // Dynamic include for js and css based on the release mode.
     public static string JSFiles { get; set; }

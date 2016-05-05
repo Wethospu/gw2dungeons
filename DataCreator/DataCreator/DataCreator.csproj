@@ -55,12 +55,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Encounters\EncounterData.cs" />
+    <Compile Include="Encounters\InstanceData.cs" />
     <Compile Include="Enemies\Attack.cs" />
     <Compile Include="Enemies\EffectHandler.cs" />
     <Compile Include="Enemies\SubEffect.cs" />
     <Compile Include="Enemies\EnemyAttributes.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="Shared\BaseType.cs" />
     <Compile Include="Shared\DataCollector.cs" />
     <Compile Include="Shared\Instability.cs" />
     <Compile Include="Shared\TacticList.cs" />

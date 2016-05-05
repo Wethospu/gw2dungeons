@@ -188,11 +188,13 @@ function loadPage() {
 	$('#detail-container, #main-container, #data-overlay').on( "click", "span.fractal-level-minus", function() {
 		// Reset enemy level to let it scale normally. / 2015-09-30 / Wethospu
 		$($(this).parents('.enemy')[0]).attr("data-level", '');
-		levelMinus(this, 'fractal-level', 0);
+		var newScale = levelMinus(this, 'fractal-level', 0);
+		saveSetting("currentScale", newScale);
 	});
 	$('#detail-container, #main-container, #data-overlay').on( "click", "span.fractal-level-plus", function() {
 		$($(this).parents('.enemy')[0]).attr("data-level", '');
-		levelPlus(this, 'fractal-level', 100);
+		var newScale = levelPlus(this, 'fractal-level', 100);
+		saveSetting("currentScale", newScale);
 	});
 	$('#detail-container, #main-container, #data-overlay').on( "click", "span.path-button", function() {
 		var enemy = $($(this).parents('.enemy')[0]);
@@ -237,6 +239,7 @@ function levelMinus(element, target, minLevel) {
 		level = minLevel;
 	$(enemy).attr("data-" + target, level);
 	handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "over");
+	return level;
 }
 
 function levelPlus(element, target, maxLevel) {
@@ -250,6 +253,7 @@ function levelPlus(element, target, maxLevel) {
 		level = maxLevel;
 	$(enemy).attr("data-" + target, level);
 	handleEnemy(enemy, $(enemy).parent().attr('id') == "detail-container" ? "side" : "over");
+	return level;
 }
 
 
@@ -447,7 +451,7 @@ function openEnemyOverlayForce() {
 function openEnemyOverlaySub(enemy, useOverlay) {
     var enemyNumbers = String($(enemy).attr("data-index")).split(":");
 	var enemyLevels = String($(enemy).attr("data-level")).split(":");
-	var enemyScale = $(enemy).attr("data-scale");
+	var enemyScale = getSetting("currentScale");
 	if (useOverlay) {
 		if (!$("#data-overlay").hasClass("in")) {
 			$('#data-overlay').modal();

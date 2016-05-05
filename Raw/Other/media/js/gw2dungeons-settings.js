@@ -34,6 +34,7 @@ var settings = {
     healthMultiplier: null,       //
     ////////////////////////////////
 	fractal: 10,
+	currentScale: 10,
 	profession: "warrior",
     potionStrength: "10",
     potionUsage: "none",

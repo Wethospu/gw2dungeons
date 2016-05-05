@@ -58,19 +58,6 @@ namespace DataCreator.Utility
       return str;
     }
 
-
-    /***********************************************************************************************
-     * ToUpperAll / 2014-07-22 / Wethospu                                                          * 
-     *                                                                                             * 
-     * Changes first character of every word to uppercase.                                         *
-     * Fillers word like of, the, or, and or the are ignored.                                      *
-     * Characters '(', '*' and '[' are considered as spaces. For example (ball) -> (Ball).         *
-     *                                                                                             * 
-     * Returns modified string.                                                                    *
-     * str: String to edit.                                                                        *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
     /// <summary>
     /// Changes the first character of every word to upper case. Ignores filler words.
     /// </summary>
@@ -343,6 +330,23 @@ namespace DataCreator.Utility
         return File.ReadAllLines(fileName, Constants.Encoding);
       ErrorHandler.ShowWarningMessage("File " + fileName + " doesn't exist!");
       return null;
+    }
+
+    /// <summary>
+    /// Checks some common line errors and returns whether the line should be processed.
+    /// </summary>
+    public static bool CheckLineValidity(string line)
+    {
+      if (line == "" || line[0] == '#')
+        return false;
+      if (string.IsNullOrWhiteSpace(line))
+      {
+        ErrorHandler.ShowWarning("Line contains only whitespace (ignored). Please remove!");
+        return false;
+      }
+      if (line[0] == ' ')
+        ErrorHandler.ShowWarning("Extra space detected. Please remove!");
+      return true;
     }
   }
 }

@@ -168,10 +168,10 @@ namespace DataCreator
       {
         var encounterData = GenerateInstance(InstanceType.dungeon, dungeon, instanceData, enemies);
         if (encounterData != null)
-          EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, enemies, encounterData.Paths);
+          EncounterGenerator.CreateFiles(encounterData, enemies, encounterData.Paths);
       }
       // Gather fractals to merge their path information.
-      var fractals = new List<EncounterData>();
+      var fractals = new List<InstanceData>();
       foreach (var fractal in Directory.EnumerateFiles(Constants.DataFractalsRaw).Select(Path.GetFileNameWithoutExtension))
       {
         var encounterData = GenerateInstance(InstanceType.fractal, fractal, instanceData, enemies);
@@ -179,14 +179,14 @@ namespace DataCreator
           fractals.Add(encounterData);
       }
       foreach (var fractal in fractals)
-        EncounterGenerator.GenerateFiles(fractal.Paths, fractal.Encounters, enemies, instanceData.FractalPaths);
+        EncounterGenerator.CreateFiles(fractal, enemies, instanceData.FractalPaths);
       foreach (var raid in Directory.EnumerateFiles(Constants.DataRaidsRaw).Select(Path.GetFileNameWithoutExtension))
       {
         var encounterData = GenerateInstance(InstanceType.raid, raid, instanceData, enemies);
         if (encounterData != null)
-          EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, enemies, encounterData.Paths);
+          EncounterGenerator.CreateFiles(encounterData, enemies, encounterData.Paths);
       }
-      EnemyGenerator.GenerateFile(enemies, instanceData);
+      EnemyGenerator.CreateFiles(enemies, instanceData);
       GenerateSearchIndex(instanceData, enemies);
       OtherGenerator.GenerateOthers(instanceData);
       Console.WriteLine("");
@@ -215,7 +215,7 @@ namespace DataCreator
     /// <summary>
     /// Generates a single instance.
     /// </summary>
-    private static EncounterData GenerateInstance(InstanceType type, string file, DataCollector dungeonData, List<Enemy> enemyData)
+    private static InstanceData GenerateInstance(InstanceType type, string file, DataCollector dungeonData, List<Enemy> enemyData)
     {
       Console.WriteLine("File " + file);
       LinkGenerator.CurrentDungeon = file;
@@ -252,7 +252,7 @@ namespace DataCreator
       var encounterData = EncounterGenerator.ReadInstance(Constants.DataGuidesRaw, dungeon, null);
       if (encounterData == null)
         return;
-      EncounterGenerator.GenerateFiles(encounterData.Paths, encounterData.Encounters, null, encounterData.Paths);
+      EncounterGenerator.CreateFiles(encounterData, null, encounterData.Paths);
       if (encounterData.Paths == null)
         return;
     }
@@ -269,7 +269,7 @@ namespace DataCreator
       foreach (var enemy in enemies)
       {
         // TODO: Previous enemy name was used to find the enemy info. Now Index seems to be used so remove the name.
-        indexFile.Append(enemy.Name).Append("|").Append(Helper.Simplify(enemy.Name)).Append("|").Append(enemy.Rank);
+        indexFile.Append(enemy.Name).Append("|").Append(Helper.Simplify(enemy.Name)).Append("|").Append(enemy.Attributes.Rank);
         indexFile.Append("|").Append(enemy.Attributes.Family.GetInternal()).Append("|").Append(string.Join(":", enemy.Paths));
         indexFile.Append("|").Append(enemy.Index);
         // Compact tags take less space (especially important for search URLs).

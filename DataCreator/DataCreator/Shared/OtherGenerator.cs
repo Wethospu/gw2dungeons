@@ -91,15 +91,9 @@ namespace DataCreator.Shared
       File.WriteAllText(target, toSave.ToString());
     }
 
-    /***********************************************************************************************
-     * ApplyDate / 2015-07-02 / Wethospu                                                           *
-     *                                                                                             *
-     * Replaces ID_DATE with the current date.                                                     *
-     *                                                                                             *
-     * file: File to process.                                                                      *
-     *                                                                                             *
-     ***********************************************************************************************/
-
+    /// <summary>
+    /// Replaces string ID_DATE with the current date for a given file.
+    /// </summary>
     private static void ApplyDate(string file)
     {
       var fileName = Constants.DataOutput + file.Replace(Constants.DataOtherRaw, "");
@@ -115,14 +109,14 @@ namespace DataCreator.Shared
         var line = lines[row];
         if (Constants.IsRelease)
           line = line.Trim(new char[] { '\t', ' ' });
-        // Ignore comments on release mode. / 2015-10-10 / Wethospu
+        // Ignore comments on release mode to reduce file size.
         if (Constants.IsRelease && line.StartsWith("//"))
           continue;
-        // Ignore empty lines.
+        // Ignore empty lines to reduce file size.
         if (line == "")
           continue;
         ErrorHandler.InitializeWarningSystem(row + 1, line);
-        // Ignore whitespace.
+        // Ignore whitespace to reduce file size.
         if (string.IsNullOrWhiteSpace(line))
           continue;
         // Apply dictionary.
@@ -133,13 +127,9 @@ namespace DataCreator.Shared
       File.WriteAllText(fileName, toSave.ToString());
     }
 
-    /***********************************************************************************************
-     * ApplyData / 2015-08-14 / Wethospu                                                           *
-     *                                                                                             *
-     * Replaces ID_CATEGORIES, ID_PATHS, ID_TAGS and ID_RACES with relevant html.                  *
-     *                                                                                             *
-     ***********************************************************************************************/
-
+    /// <summary>
+    /// Replaces strings ID_CATEGORIES, ID_PATHS, ID_TAGS and ID_RACES with relevant html.
+    /// </summary>
     private static void ApplyData(string file, DataCollector dungeonData)
     {
       var fileName = Constants.DataOutput + file.Replace(Constants.DataOtherRaw, "");
@@ -155,14 +145,14 @@ namespace DataCreator.Shared
         var line = lines[row];
         if (Constants.IsRelease)
           line = line.Trim(new char[] { '\t', ' ' });
-        // Ignore comments on release mode. / 2015-10-10 / Wethospu
+        // Ignore comments on release mode to reduce file size.
         if (Constants.IsRelease && line.StartsWith("//"))
           continue;
-        // Ignore empty lines.
+        // Ignore empty lines to reduce file size.
         if (line == "")
           continue;
         ErrorHandler.InitializeWarningSystem(row + 1, line);
-        // Ignore whitespace.
+        // Ignore whitespace to reduce file size.
         if (string.IsNullOrWhiteSpace(line))
           continue;
         line = line.Replace("ID_PATHS", dungeonData.GenerateInstanceHtml());
@@ -180,19 +170,15 @@ namespace DataCreator.Shared
       File.WriteAllText(fileName, toSave.ToString());
     }
 
-    /***********************************************************************************************
-    * MergeFiles / 2015-09-25 / Wethospu                                                           *
-    *                                                                                              *
-    * Copies data files to the output folder while merging some files together.                    *
-    *                                                                                              *
-    ***********************************************************************************************/
-
+    /// <summary>
+    /// Copies data files to the output folder while merging some files.
+    /// </summary>
     private static void MergeFiles()
     {
       var files = Directory.GetFiles(Constants.DataOtherRaw, "*", SearchOption.AllDirectories);
       var jsBuilder = new StringBuilder();
       var cssBuilder = new StringBuilder();
-      // Check which file has modified last and use it for the merged file. / 2015-10-19 / Wethospu
+      // Check which file has been modified last and use it for the merged file.
       var jsLastTime = 0L;
       var cssLastTime = 0L;
       foreach (var file in files)
@@ -260,22 +246,15 @@ namespace DataCreator.Shared
       }
     }
 
-    /***********************************************************************************************
-    * ApplyIncludes / 2015-09-25 / Wethospu                                                        *
-    *                                                                                              *
-    * Replaces ID_JS AND ID_CSS with the correct includes.                                         *
-    *                                                                                              *
-    * file: File to process.                                                                       *
-    *                                                                                              *
-    ***********************************************************************************************/
-
+    /// <summary>
+    /// Replaces ID_JS and ID_CSS with the correct includes. Includes depend on the release mode.
+    /// </summary>
     private static void ApplyIncludes(string file)
     {
       var fileName = Constants.DataOutput + file.Replace(Constants.DataOtherRaw, "");
       var dirName = Path.GetDirectoryName(fileName);
       if (dirName != null)
         Directory.CreateDirectory(dirName);
-      // Save file.
       File.WriteAllText(fileName, File.ReadAllText(file, Constants.Encoding).Replace("ID_JS", Constants.JSFiles).Replace("ID_CSS", Constants.CSSFiles));
     }
   }

@@ -9,20 +9,14 @@ namespace DataCreator.Encounters
   /// <summary>
   /// An object for a single encounter. Contains related tactics and media files.
   /// </summary>
-  public class Encounter
+  public class Encounter : BaseType
   {
-    public string Name = "";
-    public string Path = "";
-    public int Index = 0;
-    public List<Media> Medias = new List<Media>();
-    public TacticList Tactics = new TacticList();
-
     /// <summary>
     /// Copies this tactic to fitting enemy tactics. This is needed to share boss tactics between encounters and the boss's page.
     /// </summary>
     public void CopyToEnemyTactics(List<Enemy> enemies)
     {
-      var enemiesToUpdate = LinkGenerator.GetEnemiesFromLinks(Name, Path, enemies);
+      var enemiesToUpdate = LinkGenerator.GetEnemiesFromLinks(Name, Paths, enemies);
       var nameWithoutLinks = LinkGenerator.RemoveLinks(Name);
       foreach (var enemy in enemiesToUpdate)
       {
@@ -39,13 +33,12 @@ namespace DataCreator.Encounters
     /// <summary>
     /// Returns HTML representation for this encounter.
     /// </summary>
-    public string ToHtml(int orderNumber, IEnumerable<Encounter> encounters, List<Enemy> enemies, int fractalScale, string mapFile)
+    public string ToHtml(int orderNumber, IEnumerable<Encounter> encounters, int fractalScale, string mapFile)
     {
-      CopyToEnemyTactics(enemies);
       var htmlBuilder = new StringBuilder();
       htmlBuilder.Append("<table class=\"encounter\"><tr>");
       htmlBuilder.Append(GenerateLeftSide(orderNumber, encounters));
-      htmlBuilder.Append(GenerateContent(orderNumber, enemies, fractalScale, mapFile));
+      htmlBuilder.Append(GenerateContent(orderNumber, fractalScale, mapFile));
       htmlBuilder.Append("<td class=\"encounter-right\">").Append(Constants.LineEnding);
       htmlBuilder.Append("</td>");
       htmlBuilder.Append("</tr></table>").Append(Constants.LineEnding).Append("<br/>").Append(Constants.LineEnding);
@@ -101,24 +94,24 @@ namespace DataCreator.Encounters
     /// <summary>
     /// Generates HTML for the encounters.
     /// </summary>
-    private StringBuilder GenerateContent(int orderNumber, List<Enemy> enemies, int fractalScale, string mapFile)
+    private StringBuilder GenerateContent(int orderNumber, int fractalScale, string mapFile)
     {
       var htmlBuilder = new StringBuilder();
       htmlBuilder.Append("<td id=\"").Append(orderNumber).Append("\" class=\"encounter-main\">");
       // Add relevant information to start of the encounter so it can be easily found by the website.
       // TODO: Not sure are these truly needed anymore. 
       htmlBuilder.Append("<div data-name=\"").Append(Helper.Simplify(Name)).Append("\" ");
-      htmlBuilder.Append("data-path=\"").Append(Helper.Simplify(Path)).Append("\">").Append(Constants.LineEnding);
+      htmlBuilder.Append("data-path=\"").Append(Helper.Simplify(string.Join("|", Paths))).Append("\">").Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(1)).Append("<div class=\"in-line\">");
       htmlBuilder.Append(Gw2Helper.AddTab(2)).Append(orderNumber == 0 ? "<h1>" : "<h2>");
       // Because of the index file, links have to be added this late to the encounter name.
-      htmlBuilder.Append(Helper.ConvertSpecial(LinkGenerator.CreateEnemyLinks(LinkGenerator.CreatePageLinks(Name), Path, enemies, fractalScale)));
+      htmlBuilder.Append(Helper.ConvertSpecial(Name));
       htmlBuilder.Append(orderNumber == 0 ? "</h1>" : "</h2>");
       if (mapFile.Length > 0)
         htmlBuilder.Append(Constants.Space).Append(Constants.Space).Append("<a class=\"overlay-link\" href=\"").Append(mapFile).Append("\"><span class=\"glyphicon glyphicon-picture\"></span></a>");
       htmlBuilder.Append(Constants.LineEnding);
       htmlBuilder.Append(Gw2Helper.AddTab(1)).Append("</div>");
-      htmlBuilder.Append(Tactics.ToHtml(Index, Path, fractalScale, enemies, 1));
+      htmlBuilder.Append(Tactics.ToHtml(Index, 1, fractalScale));
       htmlBuilder.Append("</div></td>");
       return htmlBuilder;
     }

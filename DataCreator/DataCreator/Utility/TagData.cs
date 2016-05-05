@@ -16,14 +16,27 @@ namespace DataCreator.Utility
     }
 
     /// <summary>
-    /// Constructs TagData from a line with format "tag separator data".
+    /// Constructs TagData from a line with format "tag separator data". Avoids enemy links.
     /// </summary>
-    public static TagData FromLine(string line, char separator)
+    public TagData(string line, char separator)
     {
       var separatorIndex = line.IndexOf(separator);
+      Tag = "";
       if (separatorIndex < 0)
-        return new TagData("", line);
-      return new TagData(line.Substring(0, separatorIndex), line.Substring(separatorIndex + 1));
+        Data = line;
+      else
+      {
+        Tag = line.Substring(0, separatorIndex).ToLower();
+        // Unfortunately same separator is used in multiple things so this will catch stuff like enemy links.
+        // TODO: Also catches other links so a better fix is needed.
+        if (Tag.Contains(" ") || Tag.Equals("enemy"))
+        {
+          Tag = "";
+          Data = line;
+        }
+        else
+          Data = line.Substring(separatorIndex + 1);
+      }
     }
 
     /// <summary>

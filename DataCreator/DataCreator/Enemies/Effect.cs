@@ -40,13 +40,23 @@ namespace DataCreator.Enemies
     }
 
     /// <summary>
+    /// Replaces enemy and other link tags with html.
+    /// </summary>
+    public void CreateLinks(List<string> paths, List<Enemy> enemies)
+    {
+      Type = LinkGenerator.CreateLinks(Type, paths, enemies);
+      for (var i = 0; i < SubEffects.Count; i++)
+        SubEffects[i] = LinkGenerator.CreateLinks(SubEffects[i], paths, enemies);
+    }
+
+    /// <summary>
     /// Generates the HTML representation.
     /// </summary>
-    public string ToHtml(string path, Attack owner, List<Enemy> enemies, Enemy attackOwner, int baseIndent)
+    public string ToHtml(Attack owner, Enemy attackOwner, int baseIndent)
     {
       var htmlBuilder = new StringBuilder();
-      Type = LinkGenerator.CreateEnemyLinks(EffectHandler.HandleEffect(Type, this, owner, attackOwner), path, enemies);
-      // Replace end dot with double dot if the effect has sub effects (visually looks better). / 2015-10-01 / Wethospu
+      Type = EffectHandler.HandleEffect(Type, this, owner, attackOwner);
+      // Replace end dot with a double dot if the effect has sub effects (visually looks better).
       if (Type[Type.Length - 1] == '.' && SubEffects.Count > 0)
         Type = Type.Substring(0, Type.Length - 1) + ':';
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("<p>").Append(Type).Append("</p>").Append(Constants.LineEnding);
@@ -54,8 +64,7 @@ namespace DataCreator.Enemies
       foreach (var subEffect in SubEffects)
       {
         htmlBuilder.Append(Gw2Helper.AddTab(baseIndent + 1)).Append("<li>");
-        var str = LinkGenerator.CreateEnemyLinks(EffectHandler.HandleEffect(subEffect, this, owner, attackOwner), path, enemies);
-        // Replace special characters with normal ones. / 2016-01-22 / Wethospu
+        var str = EffectHandler.HandleEffect(subEffect, this, owner, attackOwner);
         htmlBuilder.Append(str.Replace("\\:", ":"));
         htmlBuilder.Append("</li>").Append(Constants.LineEnding);
       }

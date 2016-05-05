@@ -1,11 +1,13 @@
-﻿using DataCreator.Enemies;
-using DataCreator.Utility;
+﻿using DataCreator.Utility;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DataCreator
 {
+  /// <summary>
+  /// An object for datamined enemy information.
+  /// </summary>
   public class EnemyAttributes
   {
     public EnemyAttributes()
@@ -32,23 +34,29 @@ namespace DataCreator
     [JsonProperty("occurrences")]
     public Occurrence[] Occurrences { get; set; }
 
+    private string rank;
     [JsonProperty("rank")]
-    public string Rank { get; set; }
-
-    public string GetRank()
+    public string Rank
     {
-      if (Rank.Equals("rank_none"))
-        return "normal";
-      if (Rank.Equals("rank_veteran"))
-        return "veteran";
-      if (Rank.Equals("rank_elite"))
-        return "elite";
-      if (Rank.Equals("rank_champion"))
-        return "champion";
-      if (Rank.Equals("rank_legendary"))
-        return "legendary";
-      ErrorHandler.ShowWarning("Rank " + Rank + " not recognized.");
-      return "normal";
+      get
+      {
+        return rank;
+      }
+
+     set
+      {
+        if (value.StartsWith("rank_"))
+          rank = value.Substring(5);
+        else
+          rank = value;
+        if (rank.Equals("none"))
+          rank = "normal";
+        if (rank.Length == 0)
+          ErrorHandler.ShowWarning("Missing info. Use \"rank='rank'\"!");
+        if (!Constants.AvailableRanks.Contains(rank))
+          ErrorHandler.ShowWarning("Rank " + rank + " not recognized.");
+
+      }
     }
 
     [JsonProperty("flag")]
@@ -60,6 +68,9 @@ namespace DataCreator
     [JsonProperty("sex")]
     public string Gender { get; set; }
 
+    /// <summary>
+    /// Relative size of the enemy. Unsure if this is based on some universal base size or model base size.
+    /// </summary>
     [JsonProperty("size")]
     public double Size { get; set; }
 
@@ -83,6 +94,9 @@ namespace DataCreator
     }
   }
 
+  /// <summary>
+  /// An object for enemy attribute scaling.
+  /// </summary>
   public class Multipliers
   {
     public Multipliers()
@@ -144,16 +158,26 @@ namespace DataCreator
     }
   }
 
+  /// <summary>
+  /// An object for enemy position in-game. This data has been collected manually with an automatic tool.
+  /// </summary>
   public class Occurrence
   {
-
+    /// <summary>
+    /// Instance/map name where the enemy was found.
+    /// </summary>
     [JsonProperty("location")]
     public string Location { get; set; }
-
+    /// <summary>
+    /// Level of the enemy in found location.
+    /// </summary>
     [JsonProperty("level")]
     public int Level { get; set; }
   }
 
+  /// <summary>
+  /// An object for enemy race.
+  /// </summary>
   public class Family
   {
     public Family()
@@ -162,15 +186,31 @@ namespace DataCreator
       Guid = "";
     }
 
+    /// <summary>
+    /// Name for the race. This is often badly formatted or completely missing.
+    /// </summary>
     [JsonProperty("name")]
     public string Name { get; set; }
 
+    public void SetName(string name)
+    {
+      if (name.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"race='value'.");
+      Name = name;
+    }
+    /// <summary>
+    /// Id for the race. This is used to generate proper race names.
+    /// </summary>
     [JsonProperty("guid")]
     public string Guid { get; set; }
 
-    private string ProcessRace()
+    /// <summary>
+    /// Creates a properly formatted name.
+    /// </summary>
+    private string GetProperName()
     {
       string display = Helper.ToUpperAll(Name.Replace('_', ' '));
+      // No idea if Ghost slaying also works against these. Separated just in case.
       if (display.Equals("Ghost"))
         display = "Spectre";
       if (display.Equals("Ascalonian Ghost"))
@@ -189,6 +229,7 @@ namespace DataCreator
         display = "Twisted Watchwork";
       if (display.Equals("") && !Guid.Equals(""))
       {
+        // These have been figured out manually.
         if (Guid.Equals("e36b4acd-94fc-4710-94d7-b5b7176a5925"))
           display = "Ambient";
         else if (Guid.Equals("2dbe609b-56fd-4cae-9f9a-ba44430713b9"))
@@ -205,17 +246,27 @@ namespace DataCreator
       return display;
     }
 
+    /// <summary>
+    /// Gets race with HTML ID formatting.
+    /// </summary>
     public string GetInternal()
     {
-      return ProcessRace().ToLower().Replace(' ', '_');
+      return GetProperName().ToLower().Replace(' ', '_');
     }
 
+    /// <summary>
+    /// Gets race with display formatting.
+    /// </summary>
+    /// <returns></returns>
     public string GetDisplay()
     {
-      return ProcessRace().Replace(" ", Constants.Space);
+      return GetProperName().Replace(" ", Constants.Space);
     }
   }
 
+  /// <summary>
+  /// An object for passive effects. No practical use so far (needs research).
+  /// </summary>
   public class Passive
   {
 
@@ -226,6 +277,9 @@ namespace DataCreator
     public int id { get; set; }
   }
 
+  /// <summary>
+  /// An object for enemy's weapons.
+  /// </summary>
   public class Weapons
   {
 
@@ -238,7 +292,10 @@ namespace DataCreator
     [JsonProperty("underwater")]
     public Weapon Underwater { get; set; }
 
-    public string ToHtml()
+    /// <summary>
+    /// Returns HTML for enemy's weapons.
+    /// </summary>
+    public StringBuilder ToHtml()
     {
       var htmlBuilder = new StringBuilder();
       if (Main != null)
@@ -247,41 +304,68 @@ namespace DataCreator
         htmlBuilder.Append(Offhand.ToHtml("off"));
       if (Underwater != null)
         htmlBuilder.Append(Underwater.ToHtml("water"));
-      return htmlBuilder.ToString();
+      return htmlBuilder;
     }
   }
 
+  /// <summary>
+  /// An object for one weapon.
+  /// </summary>
   public class Weapon
   {
-
+    /// <summary>
+    /// Id for this specific weapon and skills. Not in use.
+    /// </summary>
     [JsonProperty("id")]
     public int id { get; set; }
 
+    /// <summary>
+    /// Enemy level's effect on weapon strength.
+    /// </summary>
     [JsonProperty("scale")]
     public int Scale { get; set; }
 
+    /// <summary>
+    /// Weapon type (axe, dagger, rifle, etc.). Affects weapon strength range.
+    /// </summary>
     [JsonProperty("type")]
     public string Type { get; set; }
 
+    /// <summary>
+    /// Rarity affects weapon strength.
+    /// </summary>
     [JsonProperty("rarity")]
     public string Rarity { get; set; }
 
+    /// <summary>
+    /// This also affects weapon strength.
+    /// </summary>
     [JsonProperty("internalLevel")]
     public int InternalLevel { get; set; }
 
+    /// <summary>
+    /// Skills available for this weapon id.
+    /// </summary>
     [JsonProperty("skill_palette")]
     public List<SkillPalette> Skills { get; set; }
 
-    public string ToHtml(string prefix)
+    /// <summary>
+    /// Returns HTML For a weapon.
+    /// </summary>
+    public StringBuilder ToHtml(string weaponSlot)
     {
       var htmlBuilder = new StringBuilder();
-      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-scale =\"").Append(Scale).Append("\"");
-      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-type=\"").Append(TypeToInt()).Append("\"");
-      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-rarity=\"").Append(RarityToInt()).Append("\"");
-      htmlBuilder.Append(" data-weapon-").Append(prefix).Append("-level=\"").Append(InternalLevel).Append("\"");
-      return htmlBuilder.ToString();
+      htmlBuilder.Append(" data-weapon-").Append(weaponSlot).Append("-scale =\"").Append(Scale).Append("\"");
+      htmlBuilder.Append(" data-weapon-").Append(weaponSlot).Append("-type=\"").Append(TypeToInt()).Append("\"");
+      htmlBuilder.Append(" data-weapon-").Append(weaponSlot).Append("-rarity=\"").Append(RarityToInt()).Append("\"");
+      htmlBuilder.Append(" data-weapon-").Append(weaponSlot).Append("-level=\"").Append(InternalLevel).Append("\"");
+      return htmlBuilder;
     }
 
+    /// <summary>
+    /// Returns numerical value for rarity. Saves some space and is used like this on the weapon strength calculation.
+    /// </summary>
+    /// <returns></returns>
     private int RarityToInt()
     {
       if (Rarity.Equals("basic"))
@@ -299,6 +383,9 @@ namespace DataCreator
       return 0;
     }
 
+    /// <summary>
+    /// Available weapon types.
+    /// </summary>
     private List<string> WeaponTypes = new List<string>() {
       "sword", "hammer", "longbow", "shortbow", "axe", "dagger", "greatsword", "mace",
       "pistol", "polearm", "rifle", "scepter", "staff", "focus", "torch", "warhorn",
@@ -306,6 +393,10 @@ namespace DataCreator
       "toyvisual", "maxitemweapontype"
     };
 
+    /// <summary>
+    /// Returns numerical value for weapon type. Saves some space and also used for weapon strength calculation.
+    /// </summary>
+    /// <returns></returns>
     private int TypeToInt()
     {
       var index = WeaponTypes.IndexOf(Type);
@@ -317,6 +408,9 @@ namespace DataCreator
 
   }
 
+  /// <summary>
+  /// An object for one skill.
+  /// </summary>
   public class SkillPalette
   {
 
@@ -326,28 +420,52 @@ namespace DataCreator
     [JsonProperty("id")]
     public int id { get; set; }
 
+    /// <summary>
+    /// Buff which is required to use this skill. Unsure if any real use.
+    /// </summary>
     [JsonProperty("requiredBuff")]
     public Buff BuffRequirement { get; set; }
 
+    /// <summary>
+    /// Level requirement to use this skill. No idea if this has any effect.
+    /// </summary>
     [JsonProperty("requiredLevel")]
     public int LevelRequirement { get; set; }
 
+    /// <summary>
+    /// Cooldown for this skill. This doesn't include casting time and other delays so not same as total recharge.
+    /// </summary>
     [JsonProperty("cooldown")]
     public int Cooldown { get; set; }
 
+    /// <summary>
+    /// Casting time for this skill. Seems to NOT be reliable.
+    /// </summary>
     [JsonProperty("casting_time")]
     public int CastTime { get; set; }
 
+    /// <summary>
+    /// Minimum range when AI attempts to use this skill.
+    /// </summary>
     [JsonProperty("min_range")]
     public double MinimumRange { get; set; }
 
+    /// <summary>
+    /// Maximum range when AI attempts to use this skill.
+    /// </summary>
     [JsonProperty("max_range")]
     public double MaxRange { get; set; }
 
+    /// <summary>
+    /// Any extra information on this skill.
+    /// </summary>
     [JsonProperty("tags")]
     public Tags Tags { get; set; }
   }
 
+  /// <summary>
+  /// In-game pretty much everything is based on hidden buffs. This is currently pretty mysterious so no practical use for this.
+  /// </summary>
   public class Buff
   {
     [JsonProperty("name")]
@@ -357,6 +475,9 @@ namespace DataCreator
     public int id { get; set; }
   }
 
+  /// <summary>
+  /// Some special values for skills. No practical use so far (needs research).
+  /// </summary>
   public class Tags
   {
     [JsonProperty("Damage Multiplier")]

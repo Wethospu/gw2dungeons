@@ -3,36 +3,46 @@ using DataCreator.Utility;
 
 namespace DataCreator.Encounters
 {
-
-  /***********************************************************************************************
-   * PathData / 2014-08-01 / Wethospu                                                            *
-   *                                                                                             *
-   * Object for one path.                                                                        *
-   *                                                                                             *
-   ***********************************************************************************************/
-
+  /// <summary>
+  /// An object for one path in an instance.
+  /// </summary>
   public class PathData
   {
+    /// <summary>
+    /// Short version for the path name. Used to connect things like enemies to this path.
+    /// </summary>
     public string Tag = "";
+    /// <summary>
+    /// Name of the base instance.
+    /// </summary>
     public string InstanceName = "";
-    public string NameLong = "";
+    /// <summary>
+    /// Name for this path. Used for the main page path list and browser title.
+    /// </summary>
     public string Name = "";
+    /// <summary>
+    /// Name for the path in the navigation bar.
+    /// </summary>
+    // TODO: Figure out is this really needed or could tag be used instead (so many different names).
+    public string NavigationName = "";
+    /// <summary>
+    /// File name for the map image file.
+    /// </summary>
     public string Map = "";
+    /// <summary>
+    /// File name for the generated path. Commonly same as the tag except for fractals which have their scale.
+    /// </summary>
     public string Filename = "";
-    public int Scale = 0;
+    /// <summary>
+    /// Scale of the fractal.
+    /// </summary>
+    public int FractalScale = 0;
 
 
     public PathData(string str, string instance)
     {
       Load(str, instance);
     }
-
-    /***********************************************************************************************
-     * Load / 2014-08-01 / Wethospu                                                                *
-     *                                                                                             *
-     * Loads info from a string.                                                                   *
-     *                                                                                             *
-     ***********************************************************************************************/
 
     private void Load(string str, string instance)
     {
@@ -46,16 +56,16 @@ namespace DataCreator.Encounters
         if (elements.Length > 1)
           InstanceName = elements[1];
         if (elements.Length > 2)
-          NameLong = elements[2];
+          Name = elements[2];
         if (elements.Length > 3)
-          Name = elements[3];
+          NavigationName = elements[3];
         Filename = Tag;
         if (elements.Length > 4)
         {
-          Scale = Helper.ParseI(elements[4]);
-          Filename = "f" + Scale;
+          FractalScale = Helper.ParseI(elements[4]);
+          Filename = "f" + FractalScale;
         }
-          
+
       }
       else if (str.IndexOf(Constants.TagSeparator) > -1)
       {
@@ -67,13 +77,10 @@ namespace DataCreator.Encounters
       CheckPathMap(instance);
     }
 
-    /***********************************************************************************************
-     * CheckPathMap / 2015-02-14 / Wethospu                                                        *
-     *                                                                                             *
-     * Checks whether the path has a map available.                                                *
-     *                                                                                             *
-     ***********************************************************************************************/
-
+    /// <summary>
+    /// Sets the map file name if a map is available.
+    /// </summary>
+    // TODO: Remove hardcoding.
     private void CheckPathMap(string instance)
     {
       string fileName = Constants.LocalMediaFolder + instance + "\\" + Tag.ToLower() + "_map.jpg";

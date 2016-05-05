@@ -381,6 +381,7 @@ subeffect=damage:?
 ##################################################################
 
 name=NightmareCourtArcherBase
+path=none
 rank=elite
 
 attack=Poison Volley

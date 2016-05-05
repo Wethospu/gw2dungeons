@@ -154,20 +154,29 @@ namespace DataCreator.Enemies
     }
 
     /// <summary>
+    /// Replaces enemy and other link tags with html.
+    /// </summary>
+    public void CreateLinks(List<string> paths, List<Enemy> enemies)
+    {
+      foreach (var effect in Effects)
+        effect.CreateLinks(paths, enemies);
+    }
+
+    /// <summary>
     /// Generates the HTML representation.
     /// </summary>
-    public string ToHTML(string path, List<Enemy> enemies, Enemy attackOwner, int baseIndent)
+    public string ToHTML(Enemy attackOwner, int baseIndent)
     {
       if (Name.Equals(""))
         ErrorHandler.ShowWarningMessage("Enemy " + attackOwner.Name + " has no attack name.");
       var htmlBuilder = new StringBuilder();
       // Add attack name.
-      htmlBuilder.Append(Gw2Helper.AddTab(baseIndent + 1)).Append("<p class=\"enemy-attack\"><span class=\"enemy-attack-name\">").Append(Helper.ConvertSpecial(Helper.ToUpperAll(LinkGenerator.CreateEnemyLinks(Name, path, enemies))));
+      htmlBuilder.Append(Gw2Helper.AddTab(baseIndent + 1)).Append("<p class=\"enemy-attack\"><span class=\"enemy-attack-name\">").Append(Helper.ConvertSpecial(Helper.ToUpperAll(Name)));
 
       htmlBuilder.Append("</span>").Append(" ");
       // Add other data.
       if (!Animation.Equals(""))
-        htmlBuilder.Append("<span class=\"animation-unit\"><i>").Append(Helper.ConvertSpecial(Helper.ToUpper(LinkGenerator.CreateEnemyLinks(Animation, path, enemies)))).Append("</i>. </span>");
+        htmlBuilder.Append("<span class=\"animation-unit\"><i>").Append(Helper.ConvertSpecial(Helper.ToUpper(Animation))).Append("</i>. </span>");
       if (Cooldown > -1 || InternalCooldown > -1)
       {
         htmlBuilder.Append("<span class=\"cooldown-unit\" title=\"Skill cooldown\"><span class=\"cooldown\"");
@@ -187,7 +196,7 @@ namespace DataCreator.Enemies
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent + 1)).Append("<div class=\"enemy-attack-effect\">").Append(Constants.LineEnding);
       // Add effects.
       foreach (var effect in Effects)
-        htmlBuilder.Append(effect.ToHtml(path, this, enemies, attackOwner, baseIndent + 2));
+        htmlBuilder.Append(effect.ToHtml(this, attackOwner, baseIndent + 2));
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent + 1)).Append("</div>").Append(Constants.LineEnding);
       
       return htmlBuilder.ToString();

@@ -17,12 +17,12 @@ namespace DataCreator.Encounters
     /// <summary>
     /// Converts raw encounter data to objects.
     /// </summary>
-    public static EncounterData ReadInstance(string location, string instance, List<Enemy> enemies)
+    public static InstanceData ReadInstance(string location, string instance, List<Enemy> enemies)
     {
       string[] lines = Helper.ReadFile(location + instance + ".txt");
       if (lines == null)
         return null;
-      var encounterData = new EncounterData();
+      var encounterData = new InstanceData();
       for (var row = 0; row < lines.Length; row++)
       {
         ErrorHandler.InitializeWarningSystem(row + 1, lines[row]);
@@ -48,24 +48,16 @@ namespace DataCreator.Encounters
       Encounter currentEncounter = null;
       if (encounters.Count > 0)
         currentEncounter = encounters[encounters.Count - 1];
-      if (line == "" || line[0] == '#')
+      if (!Helper.CheckLineValidity(line))
         return;
-      if (string.IsNullOrWhiteSpace(line))
-      {
-        ErrorHandler.ShowWarning("Line contains only whitespace (ignored). Please remove!");
-        return;
-      }
       // Check for weird characters but allow "|" to skip next line.
       if (!char.IsLetterOrDigit(line[0]) && line[0] != '|' && line[0] != '~')
       {
         ErrorHandler.ShowWarning("Line starts with a weird character. Please remove!");
         return;
       }
-      if (line[0] == ' ')
-        ErrorHandler.ShowWarning("Extra space detected. Please remove!");
 
-      TagData text = TagData.FromLine(line, Constants.TagSeparator);
-      text.Tag = text.Tag.ToLower();
+      var text = new TagData(line, Constants.TagSeparator);
       if (text.Tag.Equals("init"))
         paths.Add(new PathData(line, instance));
       else if (text.Tag.Equals("path"))
@@ -74,7 +66,8 @@ namespace DataCreator.Encounters
       {
         encounters.Add(new Encounter());
         currentEncounter = encounters[encounters.Count - 1];
-        HandleName(text.Data, currentEncounter);
+        currentEncounter.Name = text.Data;
+        currentEncounter.Paths = new List<string>(_currentPath.Split('|'));
       }
       else
       {
@@ -84,35 +77,19 @@ namespace DataCreator.Encounters
           return;
         }
         if (text.Tag.Equals("image"))
-          HandleMedia(text.Data, currentEncounter, instance);
+          currentEncounter.HandleMedia(text.Data, instance);
         else if (text.Tag.Equals("tactic"))
-          HandleTactic(text.Data, currentEncounter, paths);
+          currentEncounter.HandleTactic(text.Data, paths);
         else
           HandleNormalLine(line, currentEncounter, paths);
       }
     }
-
-    /// <summary>
-    /// Sets encounter's name. This is used to initialize the encounter so path information is also set.
-    /// </summary>
-    private static void HandleName(string data, Encounter encounter)
-    {
-      if (data.Length > 0)
-      {
-        data = LinkGenerator.CheckLinkSyntax(data);
-        encounter.Name = data;
-        encounter.Path = _currentPath;
-      }
-      else
-        ErrorHandler.ShowWarning("Missing info. Use \"name='name'\"!");
-    }
-
     private static string _currentPath = "";
     /// <summary>
     /// Sets the active path. This DOESN'T affect the current encounter.
     /// </summary>
     // TODO: Try to figure out better raw data logic so path info would work same as everything else.
-    // TODO: Initial idea was to group up enemies with the same path so the path would have to be given only once.
+    // TODO: Initial idea was to group up enemies/enemies with the same path so the path would have to be given only once.
     // TODO: Perhaps making it a normal value would be more logical.
     private static void HandlePath(string data)
     {
@@ -130,81 +107,49 @@ namespace DataCreator.Encounters
     }
 
     /// <summary>
-    /// Adds media data to a given encounter.
-    /// </summary>
-    private static void HandleMedia(string data, Encounter encounter, string instance)
-    {
-      if (data.Length > 0)
-      {
-        if (!data.StartsWith("http://"))
-          data = Constants.WebsiteMediaLocation + instance + "/" + data;
-        encounter.Medias.Add(new Media(data));
-      }
-      else
-        ErrorHandler.ShowWarning("Missing info. Use \"image='image'\"!");
-    }
-
-    /// <summary>
-    /// Activates matching encounter's tactics. Also creates any missing tactics.
-    /// </summary>
-    private static void HandleTactic(string data, Encounter encounter, List<PathData> paths)
-    {
-      if (data.Length > 0)
-      {
-        var split = new List<string>(data.Split('|'));
-        var scales = "";
-        // Tactics may have information about their fractal scale.
-        var useless = 0;
-        var subSplit = split[split.Count - 1].Split('-');
-        if (int.TryParse(subSplit[0], out useless) && (subSplit.Length == 1 || int.TryParse(subSplit[1], out useless)))
-        {
-          scales = split[split.Count - 1];
-          split.RemoveAt(split.Count - 1);
-        }
-        var name = string.Join("|", split);
-        encounter.Tactics.AddTactics(name, scales, paths);
-      }
-
-      else
-        ErrorHandler.ShowWarning("Missing info. Use \"tactic='tactic1'|'tactic2'|'tacticN'\"!");
-    }
-
-    /// <summary>
     /// Adds a line to encounter's active tactics.
     /// </summary>
     private static void HandleNormalLine(string data, Encounter encounter, List<PathData> paths)
     {
       // Preprocess the line to avoid doing same stuff 25+ times.
-      data = LinkGenerator.CreatePageLinks(LinkGenerator.CheckLinkSyntax(data));
+      data = LinkGenerator.CheckLinkSyntax(data);
       if (encounter.Tactics.Count == 0)
         encounter.Tactics.AddTactics("normal", "", paths);
       encounter.Tactics.AddLine(data);
     }
 
-    /***********************************************************************************************
-     * GenerateFiles / 2014-08-01 / Wethospu                                                       *
-     *                                                                                             *
-     * Creates html data files from gathered info.                                                 *
-     *                                                                                             *
-     * paths: Information about generated paths.                                                   *
-     * encounters: Generated encounters.                                                           *
-     * enemies: List of enemies. Needed for enemy links.                                           *
-     * navPaths: Path information for navigation bar.                                              *
-     *                                                                                             *
-     ***********************************************************************************************/
-    public static void GenerateFiles(List<PathData> instance, List<Encounter> encounters, List<Enemy> enemies, List<PathData> allInstances)
+    /// <summary>
+    /// Replaces enemy and other link tags with html.
+    /// </summary>
+    public static InstanceData CreateLinks(InstanceData instance, List<Enemy> enemies)
     {
-      foreach (var path in instance)
+      foreach (var encounter in instance.Encounters)
+        encounter.CreateLinks(encounter.Paths, enemies);
+      return instance;
+    }
+
+    /// <summary>
+    /// Creates output files. Some final generation still happens here so extra data is needed.
+    /// </summary>
+    /// <param name="instance"></param>
+    /// <param name="enemies">Needed to create enemy links.</param>
+    /// <param name="relatedPaths">Needed to create the navigation bar.</param>
+    public static void CreateFiles(InstanceData instance, List<Enemy> enemies, List<PathData> relatedPaths)
+    {
+      instance = CreateLinks(instance, enemies);
+      foreach (var path in instance.Paths)
       {
         var encounterCounter = 0;
         var encounterFile = new StringBuilder();
-        encounterFile.Append("GUIDE:").Append(Helper.ConvertSpecial(path.InstanceName)).Append(Constants.Delimiter).Append(Helper.ConvertSpecial(path.Name)).Append(Constants.ForcedLineEnding);
-        encounterFile.Append(GenerateNavigationInfo(path, allInstances));
+        encounterFile.Append("GUIDE").Append(Constants.Delimiter).Append(path.FractalScale).Append(Constants.ForcedLineEnding);
+        encounterFile.Append(Helper.ConvertSpecial(path.InstanceName)).Append(Constants.Delimiter).Append(Helper.ConvertSpecial(path.NavigationName)).Append(Constants.ForcedLineEnding);
+        encounterFile.Append(GenerateNavigationInfo(path, relatedPaths));
         encounterFile.Append(Constants.InitialdataHtml);
-        var filtered = encounters.Where(encounter => encounter.Path.Contains(path.Tag.ToLower()) && encounter.Tactics.IsAvailableForScale(path.Scale));
-        foreach (var encounter in filtered)
+        var pathEncounters = instance.Encounters.Where(encounter => encounter.Paths.Contains(path.Tag.ToLower()) && encounter.Tactics.IsAvailableForScale(path.FractalScale));
+        foreach (var encounter in pathEncounters)
         {
-          encounterFile.Append(encounter.ToHtml(encounterCounter, filtered, enemies, path.Scale, path.Map));
+          encounter.CopyToEnemyTactics(enemies);
+          encounterFile.Append(encounter.ToHtml(encounterCounter, pathEncounters, path.FractalScale, path.Map));
           encounterCounter++;
         }
         var fileName = Constants.DataOutput + Constants.DataEncounterResult + path.Filename.ToLower() + ".htm";
@@ -225,17 +170,17 @@ namespace DataCreator.Encounters
     /// <summary>
     /// Returns HTML for the navigation bar.
     /// </summary>
-    private static string GenerateNavigationInfo(PathData currentPath, List<PathData> paths)
+    private static string GenerateNavigationInfo(PathData currentPath, List<PathData> relatedPaths)
     {
       var names = new List<string>();
       var links = new List<string>();
-      if (currentPath.Scale == 0)
+      if (currentPath.FractalScale == 0)
       {
         // Dungeon and raid instances have their paths separated from each other.
         // So paths have data only for one instance.
-        foreach (var path in paths)
+        foreach (var path in relatedPaths)
         {
-          names.Add(path.Name);
+          names.Add(path.NavigationName);
           links.Add(path.Filename);
         }
       }
@@ -243,17 +188,17 @@ namespace DataCreator.Encounters
       {
         // All fractal paths are mixed together so they require a different implementation.
         // There are 100 paths so obviously not everything can be included in the small navigation bar.
-        var startingScale = currentPath.Scale - Constants.FractalNavPathCount / 2;
-        if (startingScale + Constants.FractalNavPathCount >= paths.Count)
-          startingScale = paths.Count - Constants.FractalNavPathCount;
+        var startingScale = currentPath.FractalScale - Constants.FractalNavPathCount / 2;
+        if (startingScale + Constants.FractalNavPathCount >= relatedPaths.Count)
+          startingScale = relatedPaths.Count - Constants.FractalNavPathCount;
         if (startingScale < 1)
           startingScale = 1;
         for (var scale = startingScale; scale < startingScale + Constants.FractalNavPathCount; scale++)
         {
-          if (currentPath.Scale == scale || scale >= paths.Count)
+          if (currentPath.FractalScale == scale || scale >= relatedPaths.Count)
             continue;
-          names.Add("Scale " + paths[scale].Scale + ": " + paths[scale].Name);
-          links.Add(paths[scale].Filename);
+          names.Add("Scale " + relatedPaths[scale].FractalScale + ": " + relatedPaths[scale].NavigationName);
+          links.Add(relatedPaths[scale].Filename);
         }
       }
       return string.Join("|", names) + Constants.ForcedLineEnding + string.Join("|", links) + Constants.ForcedLineEnding;

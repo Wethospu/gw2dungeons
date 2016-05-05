@@ -74,7 +74,7 @@ namespace DataCreator.Shared
       // Fractal paths aren't ordered by instance so they can't be added directly.
       foreach (PathData path in paths)
       {
-        var index = path.Scale - 1;
+        var index = path.FractalScale - 1;
         while (FractalPaths.Count <= index)
           FractalPaths.Add(null);
         if (index == -1)
@@ -185,7 +185,7 @@ namespace DataCreator.Shared
         entry.Append(Gw2Helper.AddTab(3)).Append("<ul class=\"nav nav-stacked\">").Append(Constants.LineEnding);
         foreach (var path in DungeonPaths[dungeon])
         {
-          entry.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./").Append(path.Tag).Append("\">").Append(path.NameLong).Append("</a>");
+          entry.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./").Append(path.Tag).Append("\">").Append(path.Name).Append("</a>");
           entry.Append("</li>").Append(Constants.LineEnding);
         }
         entry.Append(Gw2Helper.AddTab(3)).Append("</ul>").Append(Constants.LineEnding);
@@ -216,10 +216,10 @@ namespace DataCreator.Shared
           ErrorHandler.ShowWarningMessage("Fractal F" + (i + 1) + " had no path data!");
           continue;
         }
-        fractalData.Append("<li><a href=\"./F").Append(path.Scale).Append("\" data-scale=\"").Append(path.Scale).Append("\"><span class=\"list-icon\">");
+        fractalData.Append("<li><a href=\"./F").Append(path.FractalScale).Append("\" data-scale=\"").Append(path.FractalScale).Append("\"><span class=\"list-icon\">");
         fractalData.Append(Gw2Helper.RecommendedAgonyResist[i + 1]).Append(" <span class=").Append(Constants.IconClass).Append(" data-src=\"ar\" title=\"Agony Resistance\">AR</span>");
-        fractalData.Append("</span>").Append(path.Scale).Append(". ").Append(path.NameLong).Append("<br>");
-        if (path.Scale > 19)
+        fractalData.Append("</span>").Append(path.FractalScale).Append(". ").Append(path.Name).Append("<br>");
+        if (path.FractalScale > 19)
         {
           // Dynamic agony resistance value.
           fractalData.Append("<span class=\"list-sub list-sub-agony\"");
@@ -235,7 +235,7 @@ namespace DataCreator.Shared
         {
           fractalData.Append(Constants.Space);
         }
-        fractalData.Append(GenerateInstabilities(path.Scale));
+        fractalData.Append(GenerateInstabilities(path.FractalScale));
         // Dynamic achievement information.
         fractalData.Append("<span class=\"list-sub list-sub-daily-fractal\"></span>");
         fractalData.Append("</a></li>");
@@ -309,7 +309,7 @@ namespace DataCreator.Shared
         entry.Append(Gw2Helper.AddTab(3)).Append("<ul class=\"nav nav-stacked\">").Append(Constants.LineEnding);
         foreach (var path in RaidPaths[raid])
         {
-          entry.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./").Append(path.Tag).Append("\">").Append(path.NameLong).Append("</a>");
+          entry.Append(Gw2Helper.AddTab(4)).Append("<li><a href=\"./").Append(path.Tag).Append("\">").Append(path.Name).Append("</a>");
           entry.Append("</li>").Append(Constants.LineEnding);
         }
         entry.Append(Gw2Helper.AddTab(3)).Append("</ul>").Append(Constants.LineEnding);

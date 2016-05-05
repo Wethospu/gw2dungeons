@@ -44,7 +44,7 @@ namespace DataCreator.Utility
     /// Find enemies based on given requirements. Empty requirements are excluded.
     /// </summary>
     // Needed to generate enemy links.
-    public static List<Enemy> FindEnemies(List<Enemy> enemies, string name, string rank, string path)
+    public static List<Enemy> FindEnemies(List<Enemy> enemies, string name, string rank, List<string> paths)
     {
       if (enemies == null)
       {
@@ -55,8 +55,6 @@ namespace DataCreator.Utility
       // Name should also be simplified because javascript can't handle special characters.
       name = Helper.Simplify(name);
       rank = rank.ToLower();
-      path = path.ToLower();
-      var paths = path.Split('|');
       // Name matches have a different priority.
       // This is needed to allow partial matches without them interfering with perfect matches.
       var nameMatches = new List<Enemy>();
@@ -67,15 +65,11 @@ namespace DataCreator.Utility
       {
         if (rank.Length > 0)
         {
-          if (!enemy.Rank.ToLower().Equals(rank))
+          if (!enemy.Attributes.Rank.ToLower().Equals(rank))
             continue;
         }
-        if (path.Length > 0)
-        {
-          var fail = paths.Any(str => !enemy.Paths.Contains(str));
-          if (fail)
-            continue;
-        }
+        if (paths.Any(str => !enemy.Paths.Contains(str)))
+          continue;
         var match = -1;
         if (name.Length > 0)
         {

@@ -1051,9 +1051,10 @@ ID=4955|9417
 
 copy=9420
 # TODO: Get ID.
-ID=9420
-scaling=normal
+#ID=9420
+Name=Lashtail Devourer
 rank=veteran
+scaling=normal
 Path=Furn
 
 ##################################################################

@@ -23,25 +23,18 @@ namespace DataCreator.Enemies
   }
 
   /// <summary>
-  /// Functions for constructing an attack subeffect.
+  /// Functions for constructing an attack subeffect. Note: Messy implementation.
   /// </summary>
   class EffectHandler
   {
-
-    /***********************************************************************************************
-    * HandleEffect / 2015-04-02 / Wethospu                                                         *
-    *                                                                                              *
-    * Converts raw effect data to final html output.                                               *
-    * Returns the converted output.                                                                * 
-    *                                                                                              *
-    * effectStr: Raw effect data.                                                                  *
-    * weapon: Weapon slot for this skill.                                                          *
-    * hitCount: How many times the attack part hits.                                               *
-    * hitLength: How long it takes for all hits to hit.                                            *
-    * hitFrequency: How often the effect tics. Only relevant for auras.                            *
-    * baseEnemy: Enemy which owns this effect. Needed to add tags to the enemy.                    *
-    *                                                                                              *
-    ***********************************************************************************************/
+    /// <summary>
+    /// Converts raw effect data to html outpout.
+    /// </summary>
+    /// <param name="effectStr">Effect information-</param>
+    /// <param name="baseEffect">Base effect.</param>
+    /// <param name="baseAttack">Base attack for the base effect.</param>
+    /// <param name="baseEnemy">Base enemy for the base attack.</param>
+    /// <returns>Converted data.</returns>
     public static string HandleEffect(string effectStr, Effect baseEffect, Attack baseAttack, Enemy baseEnemy)
     {
       /* What is wanted:
@@ -60,7 +53,6 @@ namespace DataCreator.Enemies
       information.hitLength = baseEffect.HitLength;
       information.hitFrequency = baseEffect.HitFrequency;
       information.variableHitCount = false;
-      effectStr = Helper.ToUpper(LinkGenerator.CreatePageLinks(effectStr));
       var split = effectStr.Split('|');
       effectStr = split[0];
       // Some effects get applied randomly. Don't add total damage/effect in those cases. Refactor this if possible.
@@ -74,9 +66,8 @@ namespace DataCreator.Enemies
         information.variableHitCount = true;
         information.hitCount = 1;
       }
-      // First effect type determines the icon. / 2015-09-05 / Wethospu
+      // First effect type determines the icon.
       var firstType = "";
-      // The icon gets stack numbers. / 2015-09-05 / Wethospu
       var firstStacks = 0;
       var startIcon = "";
       var index = 0;
@@ -85,7 +76,7 @@ namespace DataCreator.Enemies
         TagData text = TagData.FromString(effectStr, ':', ref index, new[] { ' ', '|', '(' }, new[] { ' ', '|', ')' });
         if (text == null)
           break;
-        // Ignore other stuff like enemies. / 2015-08-09 / Wethospu
+        // Ignore other stuff like enemies.
         if (text.Tag.Contains("="))
           continue;
         if (text.Tag.Length == 0 || text.Data.Length == 0)
@@ -101,7 +92,7 @@ namespace DataCreator.Enemies
         }
         var subEffect = SubEffect.EffectTypes[text.Tag.ToLower()];
         var effectType = subEffect.Name;
-        // Effect info format varies based on tag (separated by :). / 2015-08-09 / Wethospu
+        // Effect info format varies based on tag (separated by :).
         information = ExtractInformation(information, subEffect, text, baseAttack, baseEnemy);
         var tag = SubEffect.GetTag(effectType);
         if (tag.Length > 0)
@@ -111,7 +102,7 @@ namespace DataCreator.Enemies
         var toReplace = text.Tag + ":" + text.Data;
         effectStr = effectStr.Replace(toReplace, replace.ToString());
         index = index - toReplace.Length + replace.Length;
-        // Get the first subeffect type to display an icon. / 2015-09-09 / Wethospu
+        // Get the first subeffect type to display an icon.
         if (firstType.Equals(""))
         {
           if (information.icon.Equals("-") && effectType == EffectType.Buff)
@@ -243,11 +234,11 @@ namespace DataCreator.Enemies
       // Syntax: <span class="TAGValue">VALUE</span>
       var replace = new StringBuilder();
       var HTMLClass = SubEffect.GetHTMLClass(subEffect.Name);
-      //// Put both total and damage per hit. / 2015-09-08 / Wethospu
+      //// Put both total and damage per hit.
       if (effect.amount > -1)
       {
-        // All amounts need clientside formatting. / 2015-09-27 / Wethospu
-        // Add information as data values so it can be recalculated in the browser when enemy level changes. / 2015 - 09 - 27 / Wethospu
+        // All amounts need clientside formatting.
+        // Add information as data values so it can be recalculated in the browser when enemy level changes.
         replace.Append("<span class=\"").Append(HTMLClass).Append("\" data-effect=\"").Append(effect.name);
         if (effect.name.Equals("confusion"))
           replace.Append("1");
@@ -265,12 +256,10 @@ namespace DataCreator.Enemies
       replace.Append(HitLengthStr(effect.totalLength));
       if (effect.hitCount > 1 && (effect.amount > -1 || effect.duration > 0))
       {
-        // Same as above but for a single hit. / 2015-09-27 / Wethospu
+        // Same as above but for a single hit.
         replace.Append("<span class=\"secondary-info\"> (");
         if (effect.amount > -1)
         {
-          // All amounts need clientside formatting. / 2015-09-27 / Wethospu
-          // Add information as data values so it can be recalculated in the browser when enemy level changes. / 2015 - 09 - 27 / Wethospu
           replace.Append("<span class=\"").Append(HTMLClass).Append("\" data-effect=\"").Append(effect.name);
           if (effect.name.Equals("confusion"))
             replace.Append("1");
@@ -328,7 +317,7 @@ namespace DataCreator.Enemies
           replace.Append(" per hit)</span>");
         }
       }
-      // Some effects can have variable or unknown hit count. Just add " per hit" in those cases. / 2015-09-29 / Wethospu
+      // Some effects can have variable or unknown hit count. Just add " per hit" in those cases.
       if (effect.variableHitCount)
         replace.Append(" per hit");
       if (effect.hitFrequency > 0.01)
@@ -339,7 +328,7 @@ namespace DataCreator.Enemies
       }
       if (subEffect.Name == EffectType.Buff)
       {
-        // Add the buff name (people probably won't recognize all icons). / 2015-09-23 / Wethospu
+        // Add the buff name because people probably don't recognize all icons.
         replace.Append(" (").Append(effect.buff.Replace('_', ' ')).Append(")");
       }
       return replace;

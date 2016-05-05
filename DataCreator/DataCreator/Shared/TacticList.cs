@@ -19,15 +19,9 @@ namespace DataCreator.Shared
     {
     }
 
-    /***********************************************************************************************
-     * AddTactics / 2014-08-01 / Wethospu                                                          *
-     *                                                                                             *
-     * Enables tactics for this encounter.                                                         *
-     *                                                                                             *
-     * types: Tactic types to enable.                                                              *
-     *                                                                                             *
-     ***********************************************************************************************/
-
+    /// <summary>
+    /// Enables tactics so they can receive text data.
+    /// </summary>
     public void AddTactics(string types, string scale, List<PathData> paths)
     {
       if (types.Contains(':'))
@@ -38,7 +32,6 @@ namespace DataCreator.Shared
       {
         if (!Constants.AvailableTactics.Contains(str.ToLower()) && !Constants.AvailableTips.Contains(str.ToLower()))
           ErrorHandler.ShowWarning("Tactic or tip " + str + " wasn't found!. Either fix or add to AvailableTactics.txt or AvailableTips.txt!");
-        // Check whether that tactic should be added. / 2015-06-28 / Wethospu
         var found = false;
         foreach (var tactic in Tactics)
         {
@@ -51,20 +44,17 @@ namespace DataCreator.Shared
         if (!found)
         {
           Tactics.Add(new Tactic(str));
-          // Add a tactic for every fractal scale. / 2015-10-29 / Wethospu
+          // Add a tactic for every fractal scale because all should get data.
           if (paths != null)
           {
             foreach (var path in paths)
             {
-              if (path.Scale > 0)
-                Tactics.Add(new Tactic(str, path.Scale));
+              if (path.FractalScale > 0)
+                Tactics.Add(new Tactic(str, path.FractalScale));
             }
-              
           }
-          
         }    
       }
-      // Check scale limits. / 2015-29-10 / Wethospu
       var minScale = 0;
       var maxScale = 100;
       if (scale.Length > 0)
@@ -78,15 +68,9 @@ namespace DataCreator.Shared
         tactic.Activate(types, minScale, maxScale);
     }
 
-    /***********************************************************************************************
-     * AddLine / 2015-08-09    / Wethospu                                                          *
-     *                                                                                             *
-     * Adds a line to active encounters.                                                           *
-     *                                                                                             *
-     * line: Line to add.                                                                          *
-     *                                                                                             *
-     ***********************************************************************************************/
-
+    /// <summary>
+    /// Adds a line to enabled tactics.
+    /// </summary>
     public void AddLine(string line)
     {
       bool isAnythingActive = false;
@@ -111,9 +95,23 @@ namespace DataCreator.Shared
     }
 
     /// <summary>
+    /// Replaces enemy and other link tags with html.
+    /// </summary>
+    public void CreateLinks(List<string> paths, List<Enemy> enemies)
+    {
+      foreach (var tactic in Tactics)
+      {
+        for (var i = 0; i < tactic.Lines.Count; i++)
+        {
+          tactic.Lines[i] = LinkGenerator.CreateLinks(tactic.Lines[i], paths, enemies);
+        }
+      }
+    }
+
+    /// <summary>
     /// Returns HTML representation for available tactics.
     /// </summary>
-    public string ToHtml(int orderNumber, string path, int fractalScale, List<Enemy> enemies, int baseIndent)
+    public string ToHtml(int orderNumber, int baseIndent, int fractalScale = 0)
     {
       /* Format:
       <div class="tactics">
@@ -130,39 +128,39 @@ namespace DataCreator.Shared
        */
       var htmlBuilder = new StringBuilder();
       
-      htmlBuilder.Append(GenerateTactics(orderNumber, path, fractalScale, enemies, baseIndent));
-      htmlBuilder.Append(GenerateTips(orderNumber, path, fractalScale, enemies, baseIndent));
+      htmlBuilder.Append(GenerateTactics(orderNumber, baseIndent, fractalScale));
+      htmlBuilder.Append(GenerateTips(orderNumber, baseIndent, fractalScale));
       return htmlBuilder.ToString();
     }
 
-    private StringBuilder GenerateTactics(int index, string path, int scale, List<Enemy> enemies, int baseIndent)
+    private StringBuilder GenerateTactics(int index, int baseIndent, int fractalScale)
     {
       var htmlBuilder = new StringBuilder();
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("<div class=\"tactics\">").Append(Constants.LineEnding);
 
-      var availableTactics = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTactics.Contains(tactic.Name) && tactic.FractalScale == scale));
+      var availableTactics = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTactics.Contains(tactic.Name) && tactic.FractalScale == fractalScale));
       if (availableTactics.Count > 0 && availableTactics[0].Lines.Count == 0)
       {
         throw new System.Exception("GenerateTactics: Encounter has no available tactics. This should be checked earlier in the code.");
       }
       htmlBuilder.Append(GenerateNavigation(index, baseIndent + 1, availableTactics, false));
-      htmlBuilder.Append(GenerateStuff(index, path, scale, enemies, baseIndent + 1, availableTactics));
+      htmlBuilder.Append(GenerateStuff(index, baseIndent + 1, availableTactics));
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("</div>").Append(Constants.LineEnding);
       //// End of tactics.
       return htmlBuilder;
     }
 
-    private StringBuilder GenerateTips(int index, string path, int scale, List<Enemy> enemies, int baseIndent)
+    private StringBuilder GenerateTips(int index, int baseIndent, int fractalScale)
     {
       var htmlBuilder = new StringBuilder();
-      var availableTips = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTips.Contains(tactic.Name) && tactic.FractalScale == scale));
+      var availableTips = new List<Tactic>(Tactics.Where(tactic => Constants.AvailableTips.Contains(tactic.Name) && tactic.FractalScale == fractalScale));
       if (availableTips.Count == 0)
         return htmlBuilder;
 
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("<div class=\"tips\">").Append(Constants.LineEnding);
 
       htmlBuilder.Append(GenerateNavigation(index, baseIndent + 1, availableTips, true));
-      htmlBuilder.Append(GenerateStuff(index, path, scale, enemies, baseIndent + 1, availableTips));
+      htmlBuilder.Append(GenerateStuff(index, baseIndent + 1, availableTips));
       htmlBuilder.Append(Gw2Helper.AddTab(baseIndent)).Append("</div>").Append(Constants.LineEnding);
       return htmlBuilder;
     }
@@ -184,7 +182,7 @@ namespace DataCreator.Shared
       return htmlBuilder;
     }
 
-    private StringBuilder GenerateStuff(int index, string path, int scale, List<Enemy> enemies, int indent, List<Tactic> availableTactics)
+    private StringBuilder GenerateStuff(int index, int indent, List<Tactic> availableTactics)
     {
       var htmlBuilder = new StringBuilder();
       htmlBuilder.Append(Gw2Helper.AddTab(indent)).Append("<div class=\"tab-content\">").Append(Constants.LineEnding);
@@ -194,11 +192,10 @@ namespace DataCreator.Shared
         foreach (var line in tactic.Lines)
         {
           var str = line;
-          str = LinkGenerator.CreateEnemyLinks(str, path, enemies, scale);
           if (str.EndsWith(".."))
             ErrorHandler.ShowWarningMessage("Extra dot detected at end of '" + str + "'. Remove it.");
-          if (char.IsLower(str[0]))
-            ErrorHandler.ShowWarningMessage("Line '" + str + "' starts with a lower character. Fix it.");
+          //if (char.IsLower(str[0]))
+          //  ErrorHandler.ShowWarningMessage("Line '" + str + "' starts with a lower character. Fix it.");
           if (!str.EndsWith(".") && !str.EndsWith(":") && !str.EndsWith("!") && !str.EndsWith("\"") && !str.EndsWith("?"))
             ErrorHandler.ShowWarningMessage("No '.', ':', '!', '?' or '\"' at the end of line '" + str + "'. Add it.");
           htmlBuilder.Append(Gw2Helper.AddTab(1));

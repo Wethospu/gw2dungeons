@@ -2049,7 +2049,9 @@ subeffect=damage:?
 ##################################################################
 
 Name=Bandit Sniper
-ID=16021
+# TODO GET THIS ID.
+#ID=16021
+rank=veteran
 alt=Bandit Snipers|Sniper|Snipers
 Path=vale4
 

@@ -8,31 +8,15 @@ using DataCreator.Shared;
 
 namespace DataCreator.Enemies
 {
-
-  /***********************************************************************************************
-   * EnemyGenerator / 2014-08-01 / Wethospu                                                      *
-   *                                                                                             *
-   * Generates enemies. Checks for syntax / content errors.                                      *
-   *                                                                                             *
-   ***********************************************************************************************/
-
+  /// <summary>
+  /// Used to load enemy data and generate html output for them.
+  /// </summary>
   public static class EnemyGenerator
   {
-    // Variables to keep track of the internal state.
-    private static Enemy _currentEnemy;
-    private static Attack _currentAttack;
-    private static Effect _currentEffect;
-
-    /***********************************************************************************************
-    * GenerateEnemies / 2014-08-01 / Wethospu                                                      *
-    *                                                                                              *
-    * Generates enemies for one dungeon.                                                           *
-    *                                                                                              *
-    * Returns list of generated enemies.                                                           *
-    * enemyAttributes: Datamined enemy attributes and other info.                                  *
-    *                                                                                              *
-    ***********************************************************************************************/
-
+    /// <summary>
+    /// Generates all enenies.
+    /// </summary>
+    // Some enemies are shared between different instances so this can't be done instance by instance.
     public static List<Enemy> GenerateEnemies(Dictionary<string, EnemyAttributes> enemyAttributes)
     {
       var enemyData = new List<Enemy>();
@@ -61,76 +45,38 @@ namespace DataCreator.Enemies
           HandleLine(lines[row], enemyData, enemyAttributes);
         }
       }
-      // Add the last enemy.
-      if (_currentEffect != null && _currentAttack != null)
-        _currentAttack.Effects.Add(_currentEffect);
-      if (_currentAttack != null && _currentEnemy != null)
-        _currentEnemy.Attacks.Add(_currentAttack);
-      if (_currentEnemy != null)
-        enemyData.Add(_currentEnemy);
       // Reset internal state.
       ErrorHandler.InitializeWarningSystem(-1, "");
-      _currentEnemy = null;
-      _currentAttack = null;
-      _currentEffect = null;
-      // Sort for consistency (also allows see enemies without proper ids). / 2015-10-05 / Wethospu
+      // Sort for consistency (also allows see enemies without proper ids).
       enemyData.Sort();
-      // Set up internal indexes. / 2015-10-05 / Wethospu
+      // Set up internal indexes to allow faster searching in the website.
       for (var i = 0; i < enemyData.Count; i++)
         enemyData[i].Index = i;
       return enemyData;
     }
 
-    /***********************************************************************************************
-     * HandleLine / 2014-08-01 / Wethospu                                                          *
-     *                                                                                             *
-     * Processes one line of base data.                                                            *
-     *                                                                                             *
-     * line: Line to process.                                                                      *
-     * enemies: Output. List of processed enemies.                                                 *
-     *                                                                                             *
-     ***********************************************************************************************/
-
-    // 0 = main loop, 1 = attack loop, 2 = effect loop.
+    /// <summary>
+    /// Enemy data file has 3 different "levels". 0 = main loop, 1 = attack loop, 2 = effect loop.
+    /// </summary>
     private static int _mode;
+    /// <summary>
+    /// Processes one line of data.
+    /// </summary>
+    /// <param name="enemies">Current list of added enemies.</param>
+    /// <param name="enemyAttributes">Datamined enemy information-</param>
     private static void HandleLine(string line, List<Enemy> enemies, Dictionary<string, EnemyAttributes> enemyAttributes)
     {
-      // Empty line or comment: continue
-      if (line == "" || line[0] == '#')
+      if (!Helper.CheckLineValidity(line))
         return;
-      if (string.IsNullOrWhiteSpace(line))
-      {
-        ErrorHandler.ShowWarning("Line contains only whitespace (ignored). Please remove!");
-        return;
-      }
-      if (line[0] == ' ')
-        ErrorHandler.ShowWarning("Extra space detected. Please remove!");
 
-      //// Split row to tag and data.
-      var tagIndex = line.IndexOf(Constants.TagSeparator);
-      // Note: TagSeparator won't be found if there is pure content. But it may also be an error. / 2015-08-09 / Wethospu
-      var tag = "";
-      if (tagIndex >= 0)
-        tag = line.Substring(0, tagIndex).ToLower();
-      // If tag has a space then it's actually pure content. / 2015-08-09 / Wethospu
-      if (tag.Contains(" "))
-      {
-        tag = "";
-        tagIndex = -1;
-      }
-      var data = "";
-      if (tagIndex < line.Length)
-        data = line.Substring(tagIndex + 1);
-      //// Tag and data separated.
-
-      // Analyze the tag and handle the data.
+      var tagData = new TagData(line, Constants.TagSeparator);
       var returnValue = 0;
       if (_mode == 0)
-        returnValue = EnemyLoop(tag, data, enemies, enemyAttributes);
+        returnValue = EnemyLoop(tagData, enemies, enemyAttributes);
       else if (_mode == 1)
-        returnValue = AttackLoop(tag, data);
+        returnValue = AttackLoop(tagData, enemies);
       else if (_mode == 2)
-        returnValue = EffectLoop(tag, data);
+        returnValue = EffectLoop(tagData, enemies);
       _mode += returnValue;
       // Moving between loop modes only happen when detecting stuff from other loops.
       if (returnValue != 0)
@@ -140,495 +86,444 @@ namespace DataCreator.Enemies
       }
     }
 
-    /***********************************************************************************************
-     * EnemyLoop / 2014-08-01 / Wethospu                                                           *
-     *                                                                                             *
-     * Main process loop for enemies.                                                              *
-     *                                                                                             *
-     * tag: Tag of the line.                                                                       *
-     * data: Data of the line.                                                                     *
-     * enemies: Output. List of processed enemies.                                                 *
-     *                                                                                             *
-     ***********************************************************************************************/
-
-    private static int EnemyLoop(string tag, string data, List<Enemy> enemies, Dictionary<string, EnemyAttributes> enemyAttributes)
+    /// <summary>
+    /// Main loop for loading general enemy information.
+    /// </summary>
+    private static int EnemyLoop(TagData line, List<Enemy> enemies, Dictionary<string, EnemyAttributes> enemyAttributes)
     {
-      if (!tag.Equals("name") && !tag.Equals("id") && _currentEnemy != null & _currentEnemy.IsNameCopied)
+      Enemy currentEnemy = null;
+      if (enemies.Count > 0)
+        currentEnemy = enemies.Last();
+      if (!line.Tag.Equals("name") && !line.Tag.Equals("id") && currentEnemy != null & currentEnemy.IsNameCopied)
         ErrorHandler.ShowWarning("ID or name not explicitly set for a copied enemy.");
-      if (tag.Equals("copy"))
+      if (line.Tag.Equals("copy"))
       {
-        if (_currentEnemy != null)
-          enemies.Add(_currentEnemy);
-        var found = FindEnemy(data, enemies);
-        if (found != null)
+        VerifyEnemy(currentEnemy);
+        var found = FindEnemy(line.Data, enemies);
+        enemies.Add(HandleCopy(found));
+        currentEnemy = enemies.Last();
+      }
+      else if (line.Tag.Equals("name"))
+      {
+        if (currentEnemy == null || !currentEnemy.IsNameCopied)
         {
-          _currentEnemy = Helper.CloneJson(found);
-          _currentEnemy.IsNameCopied = true;
-          _currentEnemy.AreAnimationsCopied = true;
+          VerifyEnemy(currentEnemy);
+          enemies.Add(new Enemy());
+          currentEnemy = enemies.Last();
         }
-        else
-          ErrorHandler.ShowWarning("Copying failed. Enemy not found!");
+        currentEnemy.Name = line.Data;
       }
-      else if (tag.Equals("name"))
-      {
-        if (data.Length > 0)
-        {
-          if (_currentEnemy != null && !_currentEnemy.IsNameCopied)
-          {
-            enemies.Add(_currentEnemy);
-            if (_currentEnemy.Paths.Count == 0)
-              ErrorHandler.ShowWarning("Path not set for enemy " + _currentEnemy.Name);
-          }
-          if (data.Contains('_'))
-            ErrorHandler.ShowWarning("Enemy name " + data + "  containts '_'. Replace them with ' '!");
-          // For copies only set the name. / 2015-10-05 / Wethospu
-          if (_currentEnemy != null && _currentEnemy.IsNameCopied)
-            _currentEnemy.Name = data;
-          else
-            _currentEnemy = new Enemy(data);
-          _currentEnemy.IsNameCopied = false;
-          _currentAttack = null;
-          _currentEffect = null;
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"name='name'\"!");
-      }
-      else if (tag.Equals("id"))
-      {
-        if (_currentEnemy == null)
-          ErrorHandler.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-        {
-          _currentEnemy.IsNameCopied = false;
-          var ids = data.Split('|');
-          // Enemies can have multiple genders if there are model variations. / 2015 - 09 - 28 / Wethospu
-          // Each model has a different id so store old ones to get all added. / 2015-09-28 / Wethospu
-          var oldGenders = "";
-          foreach (var id in ids)
-          {
-            _currentEnemy.InternalIds.Add(Helper.ParseI(id));
-            if (enemyAttributes.ContainsKey(id))
-            {
-              _currentEnemy.Attributes = enemyAttributes[id];
-              if (oldGenders.Length > 0)
-              {
-                var genders = oldGenders.Split('|');
-                // If the sex is already there it can be ignored. / 2015-09-28 / Wethospu
-                if (genders.Contains(_currentEnemy.Attributes.Gender))
-                  _currentEnemy.Attributes.Gender = oldGenders;
-                else
-                  _currentEnemy.Attributes.Gender = oldGenders + "|" + _currentEnemy.Attributes.Gender;
-              }
-              _currentEnemy.Rank = _currentEnemy.Attributes.GetRank();
-              oldGenders = _currentEnemy.Attributes.Gender;
-            }
-            else
-              ErrorHandler.ShowWarning("Id " + data + " not found in enemy attributes.");
-          }
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"id='id'\"!");
-      }
-      else if (tag.Equals("path"))
-      {
-        if (data.Length == 0)
-          ErrorHandler.ShowWarning("Missing info. Use \"path='path1'|'path2'|'pathN'\"!");
-        if (data.Contains(" "))
-        {
-          ErrorHandler.ShowWarning("' ' found. Use syntax \"path='path1'|'path2'|'pathN'\"");
-          data = data.Replace(' ', '|');
-        }
-        if (_currentEnemy == null)
-          ErrorHandler.ShowWarning("Enemy not initialized with name.");
-        else
-          _currentEnemy.Paths = new List<string>(data.ToLower().Split('|'));
-      }
-      else if (tag.Equals("rank"))
-      {
-        if (_currentEnemy == null)
-          ErrorHandler.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-        {
-          _currentEnemy.Rank = data.ToLower();
-          if (!LinkGenerator.EnemyCategories.Contains(_currentEnemy.Rank))
-            ErrorHandler.ShowWarning("Rank " + _currentEnemy.Rank + " not recognized. Check syntax for correct categories.");
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"rank='rank'\"!");
-      }
-      else if (tag.Equals("alt"))
-      {
-        if (_currentEnemy == null)
-          ErrorHandler.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-        {
-          if (data.Contains('_'))
-            ErrorHandler.ShowWarning("Alt names " + data + "  containts '_'. Replace them with ' '!");
-          var altNames = data.Split('|');
-          _currentEnemy.AltNames.Clear();
-          foreach (var altName in altNames)
-            _currentEnemy.AddAlt(altName);
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"alt='alt1'|'alt2'|'altN'\"!");
-      }
-      else if (tag.Equals("image"))
-      {
-        if (_currentEnemy == null)
-          ErrorHandler.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-        {
-          if (_currentEnemy.AreAnimationsCopied)
-          {
-            _currentEnemy.Medias.Clear();
-            _currentEnemy.AreAnimationsCopied = false;
-          }
-          if (!data.StartsWith("http"))
-            data = Constants.WebsiteMediaLocation + Constants.EnemyMediaFolder + "/" + data;
-          _currentEnemy.Medias.Add(new Media(data));
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"image='imagelink'\"!");
-      }
-      else if (tag.Equals("level"))
-      {
-        if (_currentEnemy == null)
-          ErrorHandler.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-        {
-          _currentEnemy.Level = Helper.ParseI(data);
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"level='amount'\"");
-      }
-      else if (tag.Equals("scaling"))
-      {
-        if (_currentEnemy == null)
-          ErrorHandler.ShowWarning("Enemy not initialized with name.");
-        else if (data.Length > 0)
-        {
-          var scalingSplit = data.Split('|');
-          _currentEnemy.ScalingType = scalingSplit[0];
-          if (scalingSplit.Length > 1)
-          {
-            int result;
-            if (int.TryParse(scalingSplit[1], out result))
-              _currentEnemy.ScalingFractal = result;
-            else
-              ErrorHandler.ShowWarning("Fractal scale " + scalingSplit[1] + " is not an integer!");
-            if (scalingSplit.Length > 2)
-            {
-              if (int.TryParse(scalingSplit[2], out result))
-                _currentEnemy.ScalingLevel = result;
-              else
-                ErrorHandler.ShowWarning("Enemy level " + scalingSplit[2] + " is not an integer!");
-
-            }
-          }
-        }
-
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"scaling='type'|'fractal scale'|'enemy level'\"!");
-      }
-      else if (tag.Equals("attack"))
-      {
-        if (_currentEnemy == null)
-          ErrorHandler.ShowWarning("Enemy not initialized with name.");
-        else if (_currentEnemy.Rank.Length == 0)
-          ErrorHandler.ShowWarningMessage("Rank not set for enemy " + _currentEnemy.Name + ". Please fix!");
-        return 1;
-      }
-      else if (tag.Equals("tactic"))
-      {
-        // Set validity to over max so custom tactics never get overridden. / 2015-08-09 / Wethospu
-        _currentEnemy.TacticValidity = 2.0;
-        if (data.Length > 0)
-          _currentEnemy.Tactics.AddTactics(data, "", null);
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"tactic='tactic1'|'tactic2'|'tacticN'\".");
-      }
-      else if (tag.Equals("health"))
-      {
-        if (data.Length > 0)
-        {
-          _currentEnemy.Attributes.Multipliers.HealthMultiplier = Helper.ParseD(data);
-          // If vitality is not set, initialize it with something sensible so the page can calculate something. / 2015-09-10 / Wethospu
-          if (_currentEnemy.Attributes.Multipliers.Vitality < 0.1)
-            _currentEnemy.Attributes.Multipliers.Vitality = 1;
-          if (Helper.ParseD(data) > 1000)
-            ErrorHandler.ShowWarning("Health values should be multipliers. Calculate the multiplier.");
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"health='amount'.");
-      }
-      else if (tag.Equals("toughness"))
-      {
-        if (data.Length > 0)
-        {
-          _currentEnemy.Attributes.Multipliers.Toughness = Helper.ParseD(data);
-          if (Helper.ParseD(data) > 100)
-            ErrorHandler.ShowWarning("Toughness values should be multipliers. Calculate the multiplier.");
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"toughness='amount'.");
-      }
-      else if (tag.Equals("armor"))
-      {
-        ErrorHandler.ShowWarning("Armor values shouldn't be used. Calculate the toughness multiplier.");
-      }
-      else if (tag.Equals("condition"))
-      {
-        if (data.Length > 0)
-        {
-          _currentEnemy.Attributes.Multipliers.ConditionDamage = Helper.ParseD(data);
-          if (Helper.ParseD(data) > 100)
-            ErrorHandler.ShowWarning("Condition damage values should be multipliers. Calculate the multiplier.");
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"condition='amount'.");
-      }
-      else if (tag.Equals("race"))
-      {
-        if (data.Length > 0)
-        {
-          _currentEnemy.Attributes.Family.Name = data;
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"race='value'.");
-      }
-      else if (tag.Equals("tag"))
-      {
-        if (data.Length > 0)
-        {
-          var split = data.Split('|');
-          foreach (var str in split)
-            _currentEnemy.Tags.Add(str.ToLower());
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"tag='tactic1'|'tactic2'|'tacticN'\"!");
-      }
-      // Normal content.
-      else if (tag.Equals(""))
-      {
-        // Preprocess the line to avoid doing same stuff 25+ times.
-        _currentEnemy.Tactics.AddLine(LinkGenerator.CreatePageLinks(LinkGenerator.CheckLinkSyntax(data)));
-      }
-      else if (tag.Equals("type") || tag.Equals("effect") || tag.Equals("cooldown") || tag.Equals("additional") || tag.Equals("animation"))
-        ErrorHandler.ShowWarning("Missing attack name (\"attack='name'\")!");
       else
-        ErrorHandler.ShowWarning("Unrecognized tag: " + tag);
+      {
+        if (currentEnemy == null)
+        {
+          ErrorHandler.ShowWarning("Ignoring the line because there is no active enemy");
+          return 0;
+        }
+        if (line.Tag.Equals("id"))
+          HandleId(line.Data, currentEnemy, enemyAttributes);
+        else if (line.Tag.Equals("path"))
+          currentEnemy.Paths = new List<string>(line.Data.ToLower().Split('|'));
+        else if (line.Tag.Equals("rank"))
+          currentEnemy.Attributes.Rank = line.Data.ToLower();
+        else if (line.Tag.Equals("alt"))
+          HandleAlternativeNames(line.Data, currentEnemy);
+        else if (line.Tag.Equals("image"))
+          HandleMedia(line.Data, currentEnemy);
+        else if (line.Tag.Equals("level"))
+          HandleLevel(line.Data, currentEnemy);
+        else if (line.Tag.Equals("scaling"))
+          HandleScaling(line.Data, currentEnemy);
+        else if (line.Tag.Equals("attack"))
+          return 1;
+        else if (line.Tag.Equals("tactic"))
+          HandleTactic(line.Data, currentEnemy);
+        else if (line.Tag.Equals("health"))
+          HandleHealth(line.Data, currentEnemy);
+        else if (line.Tag.Equals("toughness"))
+          HandleToughness(line.Data, currentEnemy);
+        else if (line.Tag.Equals("condition"))
+          HandleCondition(line.Data, currentEnemy);
+        else if (line.Tag.Equals("race"))
+          currentEnemy.Attributes.Family.SetName(line.Data);
+        else if (line.Tag.Equals("tag"))
+          HandleTag(line.Data, currentEnemy);
+        // Normal content.
+        else if (line.Tag.Equals(""))
+        {
+          currentEnemy.Tactics.AddLine(LinkGenerator.CheckLinkSyntax(line.Data));
+        }
+        else if (line.Tag.Equals("type") || line.Tag.Equals("effect") || line.Tag.Equals("cooldown") || line.Tag.Equals("additional") || line.Tag.Equals("animation"))
+          ErrorHandler.ShowWarning("Missing attack name (\"attack='name'\")!");
+        else
+          ErrorHandler.ShowWarning("Unrecognized tag: " + line.Tag);
+      }
       return 0;
     }
 
-
-    /***********************************************************************************************
-     * AttackLoop / 2014-08-01 / Wethospu                                                          *
-     *                                                                                             *
-     * Sub process loop for enemy attacks.                                                         *
-     *                                                                                             *
-     * tag: Tag of the line.                                                                       *
-     * data: Data of the line.                                                                     *
-     *                                                                                             *
-     ***********************************************************************************************/
-
-    public static int AttackLoop(string tag, string data)
+    private static void VerifyEnemy(Enemy currentEnemy)
     {
-      // Add old attack and start a new one.
-      if (tag.Equals("attack"))
-      {
-        if (data.Length == 0)
-          ErrorHandler.ShowWarning("Missing info. Use \"attack='name'\"!");
+      if (currentEnemy == null)
+        return;
+      if (currentEnemy.Paths.Count == 0)
+        ErrorHandler.ShowWarning("Path not set for previous enemy " + currentEnemy.Name + ".");
+      if (currentEnemy.Attributes.Rank.Length == 0)
+        ErrorHandler.ShowWarning("Rank not set for previous enemy " + currentEnemy.Name + ".");
+    }
 
-        if (_currentAttack != null)
-          _currentEnemy.Attacks.Add(_currentAttack);
-        _currentAttack = new Attack(LinkGenerator.CreatePageLinks(LinkGenerator.CheckLinkSyntax(data)));
-        _currentEffect = null;
+    /// <summary>
+    /// Copies an enemy to a given enemy.
+    /// </summary>
+    private static Enemy HandleCopy(Enemy foundEnemy)
+    {
+      if (foundEnemy == null)
+      {
+        ErrorHandler.ShowWarning("Copying failed. Enemy not found!");
+        return null;
+      }
+      var currentEnemy = Helper.CloneJson(foundEnemy);
+      currentEnemy.IsNameCopied = true;
+      currentEnemy.AreAnimationsCopied = true;
+      return currentEnemy;
+    }
+
+    /// <summary>
+    /// Sets datamined id to a given enemy. Automatically loads datamined data.
+    /// </summary>
+    private static void HandleId(string data, Enemy currentEnemy, Dictionary<string, EnemyAttributes> enemyAttributes)
+    {
+      if (data.Length == 0)
+      {
+        ErrorHandler.ShowWarning("Missing info. Use \"id='id'\"!");
+        return;
+      }
+      currentEnemy.IsNameCopied = false;
+      var ids = data.Split('|');
+      // Enemies can have multiple genders if there are model variations.
+      // Each model has a different id so store old ones to get all added.
+      var oldGenders = "";
+      foreach (var id in ids)
+      {
+        currentEnemy.InternalIds.Add(Helper.ParseI(id));
+        if (enemyAttributes.ContainsKey(id))
+        {
+          currentEnemy.Attributes = enemyAttributes[id];
+          if (oldGenders.Length > 0)
+          {
+            var genders = oldGenders.Split('|');
+            if (genders.Contains(currentEnemy.Attributes.Gender))
+              currentEnemy.Attributes.Gender = oldGenders;
+            else
+              currentEnemy.Attributes.Gender = oldGenders + "|" + currentEnemy.Attributes.Gender;
+          }
+        }
+        else
+          ErrorHandler.ShowWarning("Id " + data + " not found in enemy attributes.");
+      }
+    }
+
+    /// <summary>
+    /// Adds alternative names to a given enemy. These are used for the site search and enemy linking.
+    /// </summary>
+    private static void HandleAlternativeNames(string data, Enemy currentEnemy)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"alt='alt1'|'alt2'|'altN'\"!");
+      if (data.Contains('_'))
+        ErrorHandler.ShowWarning("Alt names " + data + "  containts '_'. Replace them with ' '!");
+      var altNames = data.Split('|');
+      currentEnemy.AltNames.Clear();
+      foreach (var altName in altNames)
+        currentEnemy.AddAlternativeName(altName);
+    }
+
+    /// <summary>
+    /// Adds a media file to a given enemy.
+    /// </summary>
+    private static void HandleMedia(string data, Enemy currentEnemy)
+    {
+      if (currentEnemy.AreAnimationsCopied)
+      {
+        currentEnemy.Medias.Clear();
+        currentEnemy.AreAnimationsCopied = false;
+      }
+      currentEnemy.HandleMedia(data, Constants.EnemyMediaFolder);
+    }
+
+    /// <summary>
+    /// Sets a custom level for a given enemy. By default, this is calculated from the path base level.
+    /// </summary>
+    private static void HandleLevel(string data, Enemy currentEnemy)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"level='amount'\"");
+      currentEnemy.Level = Helper.ParseI(data);
+    }
+
+    /// <summary>
+    /// Sets fractal scaling type for a given enemy. See GW2Helper.ScalingTypeToString for accepted values.
+    /// </summary>
+    private static void HandleScaling(string data, Enemy currentEnemy)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"scaling='type'!");
+      currentEnemy.ScalingType = data;
+    }
+
+    /// <summary>
+    /// Similar to encounter tactics. Activates tactics for a given enemy. Activated tactics are able to receive content lines.
+    /// </summary>
+    private static void HandleTactic(string data, Enemy currentEnemy)
+    {
+      // Set validity to over max so custom tactics never get overridden by encounter tactics.
+      currentEnemy.TacticValidity = 2.0;
+      currentEnemy.HandleTactic(data, null);
+    }
+
+    /// <summary>
+    /// Adds custom search tags to a given enemy. Not really in use because most tags are handled automatically.
+    /// </summary>
+    private static void HandleTag(string data, Enemy currentEnemy)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"tag='tag1'|'tag2'|'tag3'\"!");
+      var split = data.Split('|');
+      foreach (var str in split)
+        currentEnemy.Tags.Add(str.ToLower());
+    }
+
+    /// <summary>
+    /// Most health values are acquired automatically from datamined data. This is used for special cases.
+    /// </summary>
+    private static void HandleHealth(string data, Enemy currentEnemy)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"health='amount'.");
+      currentEnemy.Attributes.Multipliers.HealthMultiplier = Helper.ParseD(data);
+      // If vitality is not set, initialize it with something sensible so the page can calculate something.
+      if (currentEnemy.Attributes.Multipliers.Vitality < 0.0001)
+        currentEnemy.Attributes.Multipliers.Vitality = 1;
+      if (currentEnemy.Attributes.Multipliers.HealthMultiplier > 1000)
+        ErrorHandler.ShowWarning("Health values should be multipliers. Calculate the multiplier.");
+    }
+
+    /// <summary>
+    /// Most toughness values are acquired automatically from datamined data. This is used for special cases.
+    /// </summary>
+    private static void HandleToughness(string data, Enemy currentEnemy)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"toughness='amount'.");
+      currentEnemy.Attributes.Multipliers.Toughness = Helper.ParseD(data);
+      if (currentEnemy.Attributes.Multipliers.Toughness > 100)
+        ErrorHandler.ShowWarning("Toughness values should be multipliers. Calculate the multiplier.");
+    }
+
+    /// <summary>
+    /// Most condition damage values are acquired automatically from datamined data. This is used for special cases.
+    /// </summary>
+    private static void HandleCondition(string data, Enemy currentEnemy)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"condition='amount'.");
+      currentEnemy.Attributes.Multipliers.ConditionDamage = Helper.ParseD(data);
+      if (currentEnemy.Attributes.Multipliers.ConditionDamage > 100)
+        ErrorHandler.ShowWarning("Condition damage values should be multipliers. Calculate the multiplier.");
+    }
+
+    /// <summary>
+    /// Sub-loop for loading enemy attack information.
+    /// </summary>
+    public static int AttackLoop(TagData line, List<Enemy> enemies)
+    {
+      Enemy currentEnemy = null;
+      if (enemies.Count > 0)
+        currentEnemy = enemies.Last();
+      Attack currentAttack = null;
+      if (currentEnemy != null && currentEnemy.Attacks.Count > 0)
+        currentAttack = currentEnemy.Attacks.Last();
+
+      // Add old attack and start a new one.
+      if (line.Tag.Equals("attack"))
+      {
+        if (line.Data.Length == 0)
+          ErrorHandler.ShowWarning("Missing info. Use \"attack='name'\"!");
+        currentEnemy.Attacks.Add(new Attack(LinkGenerator.CheckLinkSyntax(line.Data)));
+        currentAttack = currentEnemy.Attacks.Last();
       }
       // Tags from main loop. Save attack and exit this loop.
-      else if (tag.Equals("name") || tag.Equals("copy") || tag.Equals("potion"))
-      {
-        if (_currentAttack != null)
-          _currentEnemy.Attacks.Add(_currentAttack);
-        _currentAttack = null;
-        _currentEffect = null;
+      else if (line.Tag.Equals("name") || line.Tag.Equals("copy") || line.Tag.Equals("potion"))
         return -1;
-      }
-      else if (tag.Equals("id"))
-      {
-        if (data.Length > 0)
-        {
-          _currentAttack.LoadAttributes(Helper.ParseI(data), _currentEnemy.Attributes);
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"id=number\".");
-      }
+      else if (line.Tag.Equals("id"))
+        HandleAttackId(line.Data, currentAttack, currentEnemy);
       // Tags from effect loop. Exit immediately.
-      else if (tag.Equals("effect"))
+      else if (line.Tag.Equals("effect"))
       {
         return 1;
       }
-      else if (tag.Equals("cooldown"))
-      {
-        if (data.Length > 0)
-          _currentAttack.Cooldown = Helper.ParseD(data);
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"cooldown='number'\".");
-      }
-      else if (tag.Equals("additional"))
-      {
-        // Treat additional as an effect. / 2015-09-22 / Wethospu
-        if (data.Length == 0)
-          ErrorHandler.ShowWarning("Missing info. Use \"additional='text'\".");
-        if (_currentEffect != null)
-          _currentAttack.Effects.Add(_currentEffect);
-        var lower = data.ToLower();
-        // Check for interesting tags. / 2015-09-22 / Wethospu
-        if (lower.Contains("can't be blocked") || lower.Contains("can't block"))
-          _currentEnemy.Tags.Add("can't block");
-        if (lower.Contains("can't be evaded") || lower.Contains("can't evade"))
-          _currentEnemy.Tags.Add("can't evade");
-        _currentEffect = new Effect(LinkGenerator.CreatePageLinks(LinkGenerator.CheckLinkSyntax(data)));
-      }
-      else if (tag.Equals("animation"))
-      {
-        if (data.Length > 0)
-        {
-          if (data.Contains(':') && !data.Contains('='))
-            ErrorHandler.ShowWarning("Potentially use of wrong syntax. Use \"animation='pre cast'|'time'|'after cast'\" !");
-          _currentAttack.Animation = data;
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"animation='pre cast'|'time'|'after cast'\" !");
-      }
-      else if (tag.Equals("image"))
-      {
-        if (data.Length > 0)
-        {
-          if (!data.StartsWith("http"))
-            data = Constants.WebsiteMediaLocation + Constants.EnemyMediaFolder + "/" + data;
-          _currentAttack.Medias.Add(new Media(data));
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"image='imagelink'\"!");
-      }
-      else if (tag.Equals("subeffect"))
+      else if (line.Tag.Equals("cooldown"))
+        HandleCooldown(line.Data, currentAttack);
+      else if (line.Tag.Equals("additional"))
+        HandleAdditional(line.Data, currentAttack, currentEnemy);
+      else if (line.Tag.Equals("animation"))
+        HandleAnimation(line.Data, currentAttack);
+      else if (line.Tag.Equals("image"))
+        HandleAttackMedia(line.Data, currentAttack);
+      else if (line.Tag.Equals("subeffect"))
         ErrorHandler.ShowWarning("Missing attack effect (\"effect='type'\")!");
-      else if (tag.Equals(""))
-        ErrorHandler.ShowWarning("Something wrong with line " + data + ".");
+      else if (line.Tag.Equals(""))
+        ErrorHandler.ShowWarning("Something wrong with line " + line.Data + ".");
       else
-        ErrorHandler.ShowWarning("Unrecognized tag: " + tag);
+        ErrorHandler.ShowWarning("Unrecognized tag: " + line.Tag);
 
       return 0;
     }
 
-
-    /***********************************************************************************************
-     * EffectLoop / 2014-08-01 / Wethospu                                                          *
-     *                                                                                             *
-     * Sub process loop for attack effects.                                                        *
-     *                                                                                             *
-     * tag: Tag of the line.                                                                       *
-     * data: Data of the line.                                                                     *
-     *                                                                                             *
-     ***********************************************************************************************/
-
-    private static int EffectLoop(string tag, string data)
+    private static void HandleAttackId(string data, Attack currentAttack, Enemy currentEnemy)
     {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"id=number\".");
+      currentAttack.LoadAttributes(Helper.ParseI(data), currentEnemy.Attributes);
+    }
+
+    private static void HandleCooldown(string data, Attack currentAttack)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"cooldown='number'\".");
+      currentAttack.Cooldown = Helper.ParseD(data);
+    }
+
+    private static void HandleAdditional(string data, Attack currentAttack, Enemy currentEnemy)
+    {
+      // Treat additional information as an effect for a simpler UI.
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"additional='text'\".");
+      var lower = data.ToLower();
+      if (lower.Contains("can't be blocked") || lower.Contains("can't block"))
+        currentEnemy.Tags.Add("can't block");
+      if (lower.Contains("can't be evaded") || lower.Contains("can't evade"))
+        currentEnemy.Tags.Add("can't evade");
+      currentAttack.Effects.Add(new Effect(LinkGenerator.CheckLinkSyntax(data)));
+    }
+
+    private static void HandleAnimation(string data, Attack currentAttack)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"animation='pre cast'|'time'|'after cast'\" !");
+      if (data.Contains(':') && !data.Contains('='))
+        ErrorHandler.ShowWarning("Potentially use of wrong syntax. Use \"animation='pre cast'|'time'|'after cast'\" !");
+      currentAttack.Animation = data;
+    }
+
+    private static void HandleAttackMedia(string data, Attack currentAttack)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"image='imagelink'\"!");
+      currentAttack.Medias.Add(new Media(data));
+    }
+
+
+    /// <summary>
+    /// Sub-sub-loop for loading enemy attack effect information.
+    /// </summary>
+    private static int EffectLoop(TagData line, List<Enemy> enemies)
+    {
+      Enemy currentEnemy = null;
+      if (enemies.Count > 0)
+        currentEnemy = enemies.Last();
+      Attack currentAttack = null;
+      if (currentEnemy != null && currentEnemy.Attacks.Count > 0)
+        currentAttack = currentEnemy.Attacks.Last();
+      Effect currentEffect = null;
+      if (currentAttack != null && currentAttack.Effects.Count > 0)
+        currentEffect = currentAttack.Effects.Last();
       // Add old effect and start a new one.
-      if (tag.Equals("effect"))
+      if (line.Tag.Equals(""))
+        ErrorHandler.ShowWarning("No tag for line " + line.Data + ".");
+      else if (line.Tag.Equals("effect"))
       {
-        if (data.Length == 0)
+        if (line.Data.Length == 0)
           ErrorHandler.ShowWarning("Missing info. Use \"effect='type'\"!");
-        if (_currentEffect != null)
-          _currentAttack.Effects.Add(_currentEffect);
-        var type = data.ToLower();
+        if (currentAttack == null)
+        {
+          ErrorHandler.ShowWarning("Ignoring line. No active attack.");
+        }
+        currentAttack.Effects.Add(new Effect(LinkGenerator.CheckLinkSyntax(line.Data)));
+        var type = line.Data.ToLower();
         foreach (var enemyTag in Constants.AttackTypeTags)
         {
           if (type.Contains(enemyTag))
-            _currentEnemy.Tags.Add(enemyTag);
+            currentEnemy.Tags.Add(enemyTag);
         }
-        _currentEffect = new Effect(LinkGenerator.CreatePageLinks(LinkGenerator.CheckLinkSyntax(data)));
+        currentEffect = currentAttack.Effects.Last();
       }
       // Tag from attack loop. Save effect and exit this loop.
-      else if (tag.Equals("attack"))
+      else if (line.Tag.Equals("attack"))
       {
-        if (_currentEffect != null)
-          _currentAttack.Effects.Add(_currentEffect);
-        _currentEffect = null;
         return -1;
       }
       // Tag from main loop. Save both effect and attack and then exit this loop.
-      else if (tag.Equals("name") || tag.Equals("potion") || tag.Equals("copy"))
+      else if (line.Tag.Equals("name") || line.Tag.Equals("potion") || line.Tag.Equals("copy"))
       {
-        if (_currentEffect != null)
-        {
-          _currentAttack.Effects.Add(_currentEffect);
-          _currentEnemy.Attacks.Add(_currentAttack);
-        }
-        _currentEffect = null;
-        _currentAttack = null;
         return -2;
       }
-      else if (tag.Equals("count"))
-      {
-        if (data.Length > 0)
-        {
-          if (data.Equals("?"))
-            _currentEffect.HitCount = -1;
-          else
-            _currentEffect.HitCount = Helper.ParseI(data);
-          if (_currentEffect.HitCount == 0)
-            ErrorHandler.ShowWarning("Hit count can't be zero.");
-        }
-         
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"count='number'\"");
-      }
-      else if (tag.Equals("length"))
-      {
-        if (data.Length > 0)
-          _currentEffect.HitLength = Helper.ParseD(data);
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"length='number'\"");
-      }
-      else if (tag.Equals("frequency"))
-      {
-        if (data.Length > 0)
-          _currentEffect.HitFrequency = Helper.ParseD(data);
-        else
-          ErrorHandler.ShowWarning("Missing info. Use \"frequency='number'\"");
-      }
-      // Add subeffects to the effect.
-      else if (tag.Equals("subeffect"))
-      {
-        if (data.Length > 0)
-        {
-          data = LinkGenerator.CheckLinkSyntax(data);
-          _currentEffect.SubEffects.Add(data);
-        }
-        else
-          ErrorHandler.ShowWarning("Missing info. Use TODO!");
-      }
       // Error handling for wrongly placed tags.
-      else if (tag.Equals("additional") || tag.Equals("cooldown") || tag.Equals("animation"))
-        ErrorHandler.ShowWarning("Wrong position for tag " + tag + ". Move above any type-tags.");
-      else if (tag.Equals(""))
-        ErrorHandler.ShowWarning("Something wrong with line " + data + ".");
+      else if (line.Tag.Equals("additional") || line.Tag.Equals("cooldown") || line.Tag.Equals("animation"))
+        ErrorHandler.ShowWarning("Wrong position for tag " + line.Tag + ". Move above any type-tags.");
+      else if (currentEffect == null)
+      {
+        ErrorHandler.ShowWarning("Ignoring line. No active effect.");
+        return 0;
+      }
+      else if (line.Tag.Equals("count"))
+        HandleCount(line.Data, currentEffect);
+      else if (line.Tag.Equals("length"))
+        HandleLength(line.Data, currentEffect);
+      else if (line.Tag.Equals("frequency"))
+        HandleFrequency(line.Data, currentEffect);
+      else if (line.Tag.Equals("subeffect"))
+        HandleSubeffect(line.Data, currentEffect);
       else
-        ErrorHandler.ShowWarning("Unrecognized tag: " + tag);
+        ErrorHandler.ShowWarning("Unrecognized tag: " + line.Tag);
       return 0;
     }
 
-    /***********************************************************************************************
-     * FindEnemy / 2014-08-01 / Wethospu                                                           *
-     *                                                                                             *
-     * Finds and returns a previously introduced enemy which matches search data.                  *
-     *                                                                                             *
-     * data: Search string.                                                                        *
-     * enemies: List of enemies to search from.                                                    *
-     *                                                                                             *
-     ***********************************************************************************************/
+    private static void HandleCount(string data, Effect currentEffect)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"count='number'\"");
+      if (data.Equals("?"))
+        currentEffect.HitCount = -1;
+      else
+        currentEffect.HitCount = Helper.ParseI(data);
+      if (currentEffect.HitCount == 0)
+        ErrorHandler.ShowWarning("Hit count can't be zero.");
+    }
 
+    private static void HandleLength(string data, Effect currentEffect)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"length='number'\"");
+      currentEffect.HitLength = Helper.ParseD(data);
+    }
+
+    private static void HandleFrequency(string data, Effect currentEffect)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"frequency='number'\"");
+      currentEffect.HitFrequency = Helper.ParseD(data);
+    }
+
+    private static void HandleSubeffect(string data, Effect currentEffect)
+    {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use TODO!");
+      currentEffect.SubEffects.Add(LinkGenerator.CheckLinkSyntax(data));
+    }
+
+    /// <summary>
+    /// Finds an enemy based on a given data. Used to find the base enemy for copying.
+    /// </summary>
     private static Enemy FindEnemy(string data, List<Enemy> enemies)
     {
       if (data.Length == 0)
@@ -636,9 +531,9 @@ namespace DataCreator.Enemies
         ErrorHandler.ShowWarning("Missing info. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
         return null;
       }
-      // Check whether copy by id is used. / 2015-10-02 / Wethospu
       try
       {
+        // Try first "copy by id" because it's faster to check.
         var id = int.Parse(data);
         foreach (var enemy in enemies)
         {
@@ -654,16 +549,16 @@ namespace DataCreator.Enemies
       var dataSplit = data.Split('|');
       var name = dataSplit[0];
       var rank = "";
-      var path = "";
+      var paths = new List<string>();
       if (dataSplit.Length > 1)
         rank = dataSplit[1];
       if (dataSplit.Length > 2)
       {
         if (dataSplit[2].Contains(' '))
           ErrorHandler.ShowWarning("' ' found. Use syntax \"copy" + Constants.TagSeparator + "'name'|'rank'|'path1':'path2':'pathN'\"");
-        path = dataSplit[2].Replace(':', '|');
+        paths = new List<string>(dataSplit[2].Split(':'));
       }
-      var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, path);
+      var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, paths);
       if (foundEnemies.Count == 0)
       {
         ErrorHandler.ShowWarning("No enemy found for copy. Change parameters, add missing enemy, change order of enemies or check syntax file.");
@@ -674,27 +569,27 @@ namespace DataCreator.Enemies
       return foundEnemies[0];
     }
 
-   
-
-    /***********************************************************************************************
-     * GenerateFile / 2015-10-05 / Wethospu                                                        *
-     *                                                                                             *
-     * Creates html data file from gathered info.                                                  *
-     *                                                                                             *
-     * enemies: List of enemies.                                                                   *
-     * indexFile: Output. Enemies get indexed for faster search.                                   *
-     * dungeonData: Output. Collected data from the enemies.                                       *
-     *                                                                                             *
-     ***********************************************************************************************/
-
-    public static void GenerateFile(List<Enemy> enemies, DataCollector dungeonData)
+    public static List<Enemy> CreateLinks(List<Enemy> enemies)
     {
-      // Separate enemies (100 enemies per file) to reduce the initial loading time. / 2015-10-08 / Wethospu
+      foreach (var enemy in enemies)
+        enemy.CreateLinks(enemy.Paths, enemies);
+      return enemies;
+    }
+
+
+
+    /// <summary>
+    /// Generates html files for the enemies.
+    /// </summary>
+    public static void CreateFiles(List<Enemy> enemies, DataCollector dungeonData)
+    {
+      enemies = CreateLinks(enemies);
+      // Separate enemies (100 enemies per file) to reduce the initial loading time on the website.
       var enemyFile = new StringBuilder();
       enemyFile.Append(Constants.InitialdataHtml).Append(Constants.LineEnding);
       for (var i = 0; i < enemies.Count; i++)
       {
-        enemyFile.Append(enemies[i].ToHtml(enemies));
+        enemyFile.Append(enemies[i].ToHtml());
         if ((i + 1) % 100 == 0 || i == enemies.Count - 1)
         {
           var fileName = Constants.DataOutput + Constants.DataEnemyResult + "enemies" + (i/100) + ".htm";
@@ -715,11 +610,11 @@ namespace DataCreator.Enemies
       }
       for (var i = 0; i < enemies.Count; i++)
       {
-        // Add enemy info to the data collector. / 2015-08-17 / Wethospu
+        // Add enemy info to the data collector for an advanced search capablities.
         if (dungeonData != null)
         {
           dungeonData.AddRace(enemies[i].Attributes.Family.GetDisplay());
-          dungeonData.AddRank(enemies[i].Rank);
+          dungeonData.AddRank(enemies[i].Attributes.Rank);
           foreach (var tag in enemies[i].Tags)
             dungeonData.AddTag(tag);
         }

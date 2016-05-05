@@ -11,21 +11,15 @@ using System.Drawing.Drawing2D;
 
 namespace DataCreator.Shared
 {
-
-  /***********************************************************************************************
-   * LinkGenerator / 2014-08-01 / Wethospu                                                       *
-   *                                                                                             *
-   * Functions to generate enemy and other links for encounters and enemies.                     *
-   *                                                                                             *
-   ***********************************************************************************************/
-
+  /// <summary>
+  /// Contains functions to generate internal enemy links and external page links.
+  /// </summary>
   class LinkGenerator
   {
-    public static string[] EnemyCategories = { "normal", "veteran", "elite", "champion", "legendary", "structure", "trap", "skill", "ally", "bundle" };
-
-    private static HashSet<string> downloadData = new HashSet<string>();
-
     private static string _currentDungeon = "";
+    /// <summary>
+    /// Helper variable to keep track of current instance. Bad design so try get rid of this.
+    /// </summary>
     public static string CurrentDungeon
     {
       get
@@ -40,212 +34,152 @@ namespace DataCreator.Shared
       }
     }
 
-
-    /***********************************************************************************************
-     * CreateEnemyLinks / 2014-07-24 / Wethospu                                                    * 
-     *                                                                                             * 
-     * Creates enemy links. Verifies that linked enemy exists and fills missing info.              *
-     *                                                                                             *
-     * Returns processed string.                                                                   *
-     * str: String to edit.                                                                        *
-     * path: Information about the enemy link origin.                                              *
-     * scale: Fractal scale.                                                                       *
-     * enemyData: List of enemies.                                                                 *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
-    public static string CreateEnemyLinks(string str, string path, List<Enemy> enemyData, int scale = 0)
+    /// <summary>
+    /// Creates both internal enemy and external page links to a given string.
+    /// </summary>
+    /// <param name="str">String to process.</param>
+    /// <param name="paths">Path information to find correct the enemies.</param>
+    /// <param name="enemyData">Enemy information for enemy links.</param>
+    /// <returns>Processed string.</returns>
+    public static string CreateLinks(string str, List<string> paths, List<Enemy> enemyData)
     {
-      // Iterator over the string and look for links.
-      for (var iterator = 0; iterator < str.Length; iterator++)
+      return CreatePageLinks(CreateEnemyLinks(str, paths, enemyData));
+    }
+
+    /// <summary>
+    /// Creates internal enemy links to a given string. Links use unique index numbers for a good client performance.
+    /// </summary>
+    /// <param name="str">String to process.</param>
+    /// <param name="paths">Path information to find the correct enemies.</param>
+    /// <param name="enemyData">Enemy information to make the connection.</param>
+    /// <returns>Processed string.</returns>
+    private static string CreateEnemyLinks(string str, List<string> paths, List<Enemy> enemyData)
+    {
+      // Keep track of the progress for a better performance (O(n) vs O(n^2)).
+      for (var index = 0; index < str.Length; index++)
       {
-        var link = FindNextLink(str, ref iterator);
-        if (link == null)
-          continue;
-        // Only accept enemy links.
-        if (!link[0].ToLower().Equals(Constants.LinkEnemy))
+        var link = FindNextLink(str, ref index);
+        if (link == null || !link[0].Equals(Constants.LinkEnemy))
           continue;
 
-        var replaceWith = CreateEnemyLink(link[1], path, scale, enemyData);
+        var replaceWith = CreateEnemyLink(link[1], paths, enemyData);
         var toReplace = link[0] + Constants.LinkChar + link[1];
         // Replace all doesn't work because some links are found partially in other links.
         str = Helper.ReplaceFirst(str, toReplace, replaceWith);
-        // Move iterator based on string lengths.
-        iterator = iterator - toReplace.Length + replaceWith.Length;
+        index = index - toReplace.Length + replaceWith.Length;
       }
       return str;
     }
 
-    /***********************************************************************************************
-     * GetEnemiesFromLinks / 2015-08-09 / Wethospu                                                 * 
-     *                                                                                             * 
-     * Same implementation as above, but returns found enemies instead of links.                   *
-     *                                                                                             *
-     * Returns processed string.                                                                   *
-     * str: String to edit.                                                                        *
-     * path: Needed for enemy links.                                                               *
-     * enemyData: List of enemies.                                                                 *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
-    public static List<Enemy> GetEnemiesFromLinks(string str, string path, List<Enemy> enemyData)
+    /// <summary>
+    /// Similar implementation as CreateEnemyLinks but instead returns found enemies from all links.
+    /// </summary>
+    public static List<Enemy> GetEnemiesFromLinks(string str, List<string> paths, List<Enemy> enemyData)
     {
       var enemies = new List<Enemy>();
-      // Iterator over the string and look for links.
-      for (var iterator = 0; iterator < str.Length; iterator++)
+      for (var index = 0; index < str.Length; index++)
       {
-        var link = FindNextLink(str, ref iterator);
-        if (link == null)
+        var link = FindNextLink(str, ref index);
+        if (link == null && !link[0].ToLower().Equals(Constants.LinkEnemy))
           continue;
-        // Only accept enemy links.
-        if (!link[0].ToLower().Equals(Constants.LinkEnemy))
-          continue;
-
-        var foundEnemies = GetEnemiesFromLink(link[1], path, enemyData);
+        var foundEnemies = GetEnemiesFromLink(link[1], paths, enemyData);
         foreach (var enemy in foundEnemies)
           enemies.Add(enemy);
       }
       return enemies;
     }
 
-
-    /***********************************************************************************************
-     * CreateLinks / 2014-07-24 / Wethospu                                                         * 
-     *                                                                                             * 
-     * Creates page links. Enemy links have to created separately when enemie have been loaded.    *
-     *                                                                                             *
-     * Returns processed string.                                                                   *
-     * str: String to edit.                                                                        *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
-    public static string CreatePageLinks(string str)
+    /// <summary>
+    /// Creates external page links to a given string.
+    /// </summary>
+    /// <param name="str">String to process.</param>
+    /// <returns>Processed string.</returns>
+    private static string CreatePageLinks(string str)
     {
-      // Iterator over the string and look for links.
-      for (var iterator = 0; iterator < str.Length; iterator++)
+      for (var index = 0; index < str.Length; index++)
       {
-        var link = FindNextLink(str, ref iterator);
-        if (link == null)
-          break;
-        // Ignore enemy links (have to be built later).
-        if (link[0].ToLower().Equals(Constants.LinkEnemy))
+        var link = FindNextLink(str, ref index);
+        if (link == null || link[0].Equals(Constants.LinkEnemy))
           continue;
 
-        // Check that link type is an actualy link (for example not a html tag).
-        var index = Array.IndexOf(Constants.LinkTypes, link[0].ToLower());
-        if (index < 0 || index >= Constants.LinkTypes.Length)
+        // Check that link type is an actual link (not for example a html tag).
+        if (!Constants.LinkTypes.Contains(link[0]))
           continue;
-
         var toReplace = link[0] + Constants.LinkChar + link[1];
         var replaceWith = CreatePageLink(link[0], link[1]);
         // Replace all doesn't work because some links are found partially in other links.
         str = Helper.ReplaceFirst(str, toReplace, replaceWith);
-        // Move iterator based on string lengths.
-        iterator = iterator - toReplace.Length + replaceWith.Length;
+        index = index - toReplace.Length + replaceWith.Length;
       }
       return str;
     }
 
-    /***********************************************************************************************
-     * RemoveLinks / 2014-07-24 / Wethospu                                                         * 
-     *                                                                                             * 
-     * Removes all links and replaces them with shown text.                                        *
-     * This is needed for encounter names when they are added to the index file.                   *
-     *                                                                                             *
-     * Returns processed string.                                                                   *
-     * str: String to edit.                                                                        *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
+    /// <summary>
+    /// Removes all links from a given string. Used to simplify encounter names.
+    /// </summary>
+    /// <param name="str">String to process.</param>
+    /// <returns>Processed string.</returns>
     public static string RemoveLinks(string str)
     {
       // Iterator over the string and look for links.
-      for (var iterator = 0; iterator < str.Length; iterator++)
+      for (var index = 0; index < str.Length; index++)
       {
-        var link = FindNextLink(str, ref iterator);
+        var link = FindNextLink(str, ref index);
         if (link == null)
           continue;
 
         string shownText;
-        // Enemy links have different syntax.
-        if (link[0].ToLower().Equals(Constants.LinkEnemy))
-          shownText = CreateEnemyLinkText(link[1]);
-        else if (link[0].ToLower().Equals(Constants.LinkWiki))
-          shownText = CreateLinkText(link[1], true, false);
+        if (link[0].Equals(Constants.LinkEnemy))
+          shownText = CreateEnemyLinkShownText(link[1]);
+        else if (link[0].Equals(Constants.LinkWiki))
+          shownText = CreateLinkShownText(link[1], true, false);
         else
-          shownText = CreateLinkText(link[1], false, false);
-
+          shownText = CreateLinkShownText(link[1], false, false);
         var toRemove = link[0] + Constants.LinkChar + link[1];
         str = str.Replace(toRemove, shownText);
-        // Move iterator based on string lengths.
-        iterator = iterator - toRemove.Length + shownText.Length;
+        index = index - toRemove.Length + shownText.Length;
       }
       return str;
     }
-    /***********************************************************************************************
-     * CheckLinkSyntax / 2014-07-24 / Wethospu                                                     * 
-     *                                                                                             * 
-     * Checks syntax of links. Prints errors and removes problematic links.                        *
-     *                                                                                             *
-     * Returns cleaned string.                                                                     *
-     * str: String to check.                                                                       *
-     *                                                                                             * 
-     ***********************************************************************************************/
 
+    /// <summary>
+    /// Checks syntax of links and removes problematic links.
+    /// </summary>
     public static string CheckLinkSyntax(string str)
     {
-      // Iterator over the string and look for links.
-      for (var iterator = 0; iterator < str.Length; iterator++)
+      for (var index = 0; index < str.Length; index++)
       {
-        var link = FindNextLink(str, ref iterator);
-        if (link == null || link[0].Length == 0)
+        var link = FindNextLink(str, ref index);
+        if (link == null)
           continue;
-
         var shownText = "";
-
-        // Check that type exists.
-        var index = Array.IndexOf(Constants.LinkTypes, link[0].ToLower());
-        if (index < 0 || index >= Constants.LinkTypes.Length)
-        {
+        if (!Constants.LinkTypes.Contains(link[0]))
           ErrorHandler.ShowWarning("Link type " + link[0] + " not recognized. Please fix!");
-        }
         else
         {
-          // Enemy links have different syntax.
-          if (link[0].ToLower().Equals(Constants.LinkEnemy))
-            shownText = CreateEnemyLinkText(link[1], true);
-          else if (link[0].ToLower().Equals(Constants.LinkWiki))
-            shownText = CreateLinkText(link[1], true, true);
+          if (link[0].Equals(Constants.LinkEnemy))
+            shownText = CreateEnemyLinkShownText(link[1], true);
+          else if (link[0].Equals(Constants.LinkWiki))
+            shownText = CreateLinkShownText(link[1], true, true);
           else
-            shownText = CreateLinkText(link[1], false, true);
+            shownText = CreateLinkShownText(link[1], false, true);
         }
-
-        // No shown text means an error so remove broken link.
+        // No shown text means an error so remove the broken link.
         if (shownText.Equals(""))
           str = str.Replace(link[0] + Constants.LinkChar + link[1], shownText);
       }
       return str;
     }
 
-
-    /***********************************************************************************************
-     * CreateEnemyLink / 2014-07-24 / Wethospu                                                     * 
-     *                                                                                             * 
-     * Creates an enemy link from link data. Finds it from list of enemies to fill missing data.   *
-     *                                                                                             *
-     * Returns created link.                                                                       *
-     * linkData: Data for the link.                                                                *
-     * enemies: List of enemies to verify links and filling missing data.                          *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
-    private static string CreateEnemyLink(string linkData, string path, int scale, List<Enemy> enemies)
+    /// <summary>
+    /// Creates an enemy link from a given link value.
+    /// </summary>
+    private static string CreateEnemyLink(string linkData, List<string> paths, List<Enemy> enemies)
     {
-      var shownText = CreateEnemyLinkText(linkData);
+      var shownText = CreateEnemyLinkShownText(linkData);
 
       var enemiesToLink = new List<Enemy>();
       var enemyLevels = new List<int>();
-      // Get linked enemy data.
       var enemySplit = linkData.Split('|');
       foreach (var enemyStr in enemySplit)
       {
@@ -253,27 +187,25 @@ namespace DataCreator.Shared
         var name = subSplit[0].ToLower();
         var rank = "";
         var level = 0;
-        // Ignore shown texts.
+        // Ignore shown text customization because it doesn't contain an enemy.
         if (name.Equals("text"))
           continue;
-        // Get enemy data.
+        // Extract enemy information so it can be searched.
         if (subSplit.Length > 1)
           rank = subSplit[1].ToLower();
         if (subSplit.Length > 2)
           level = Helper.ParseI(subSplit[2].ToLower());
         enemyLevels.Add(level);
-        // Find enemy.
-        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, path);
+        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, paths);
         if (foundEnemies.Count == 0)
         {
-          ErrorHandler.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + path + ". Change parameters, add missing enemy or check syntax file.");
+          ErrorHandler.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + string.Join("|", paths) + ". Change parameters, add missing enemy or check syntax file.");
           continue;
         }
         if (foundEnemies.Count > 1)
-          ErrorHandler.ShowWarningMessage("Multiple enemies found for enemy " + name + " with link " + linkData + " and path " + path + ". Add more parameters or check syntax file.");
-        // Use data from the first enemy.
-        // Note: While this could be used to for example link every elite enemy, it would be extremely inefficient.
-        // Instead, new link type should be added and link loading function in javascript should be expanded to allow jokers.
+          ErrorHandler.ShowWarningMessage("Multiple enemies found for enemy " + name + " with link " + linkData + " and path " + string.Join("|", paths) + ". Add more parameters or check syntax file.");
+        // Note: This could be used to link multiple enemies (for example every elite enemy).
+        // However it would be extremely inefficient because each enemy would be searched individually.
         enemiesToLink.Add(foundEnemies[0]);
       }
       if (enemiesToLink.Count == 0)
@@ -282,17 +214,15 @@ namespace DataCreator.Shared
       // Syntax:
       // <span class="'main rank' enemy-button" data-name="'enemy names'" data-rank="'enemy categories" data-level="'enemy levels'" data-path="'path'" data-level"'level'">'shown text'</span>
       var link = new StringBuilder();
-      link.Append("<span class=\"").Append(enemiesToLink[0].Rank).Append(" enemy-button\" data-index=\"");
-      // Add enemy names.
+      link.Append("<span class=\"").Append(enemiesToLink[0].Attributes.Rank).Append(" enemy-button\" data-index=\"");
       for (var index = 0; index < enemiesToLink.Count; index++)
       {
         link.Append(enemiesToLink[index].Index);
         if (index + 1 < enemiesToLink.Count)
           link.Append(':');
       }
-      // Add the path to load correct map. / 2015-10-08 / Wethospu
-      link.Append("\" data-path=\"").Append(path).Append("\"");
-      // Add enemy levels to allow changing enemy level dynamically. / 2015-09-28 / Wethospu
+      // Add extra information to pre-select enemy customization options in the website.
+      link.Append("\" data-path=\"").Append(string.Join("|", paths)).Append("\"");
       link.Append(" data-level=\"");
       for (var index = 0; index < enemyLevels.Count; index++)
       {
@@ -300,105 +230,68 @@ namespace DataCreator.Shared
         if (index + 1 < enemiesToLink.Count)
           link.Append(':');
       }
-      if (scale > 0)
-        link.Append("\" data-scale=\"").Append(scale);
       link.Append("\"> ");
       // Add shown text.
       link.Append(shownText).Append("</span>");
       return link.ToString();
     }
-
-    /***********************************************************************************************
-    * GetEnemiesFromLink / 2015-08-09 / Wethospu                                                  * 
-    *                                                                                             * 
-    * Same as above but returns found enemies instead of creating links.                          *
-    *                                                                                             *
-    * Returns found enemies.                                                                      *
-    * linkData: Data for the link.                                                                *
-    * path: Dungeon path. Needed to separate some enemies.                                        *
-    * enemies: List of enemies to verify links and filling missing data.                          *
-    *                                                                                             * 
-    ***********************************************************************************************/
-
-    private static List<Enemy> GetEnemiesFromLink(string linkData, string path, List<Enemy> enemies)
+    // Works same as above.
+    /// <summary>
+    /// Returns enemies found from a given link. This doesn't generate anything.
+    /// </summary>
+    private static List<Enemy> GetEnemiesFromLink(string linkData, List<string> paths, List<Enemy> enemies)
     {
       var enemiesToLink = new List<Enemy>();
-      // Get linked enemy data.
       var enemySplit = linkData.Split('|');
       foreach (var enemyStr in enemySplit)
       {
         var subSplit = enemyStr.Split(':');
         var name = subSplit[0].ToLower();
         var rank = "";
-        // Ignore shown texts.
         if (name.Equals("text"))
           continue;
-        // Get enemy data.
         if (subSplit.Length > 1)
           rank = subSplit[1].ToLower();
-        // Find enemy.
-        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, path);
+        var foundEnemies = Gw2Helper.FindEnemies(enemies, name, rank, paths);
         if (foundEnemies.Count == 0)
         {
-          ErrorHandler.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + path + ". Change parameters, add missing enemy or check syntax file.");
+          ErrorHandler.ShowWarningMessage("No enemy found for enemy " + name + " with link " + linkData + " and path " + string.Join("|", paths) + ". Change parameters, add missing enemy or check syntax file.");
           continue;
         }
         if (foundEnemies.Count > 1)
-          ErrorHandler.ShowWarningMessage("Multiple enemies found for enemy " + name + " with link " + linkData + " and path " + path + ". Add more parameters or check syntax file.");
-        // Use data from the first enemy.
-        // Note: While this could be used to for example link every elite enemy, it would be extremely inefficient.
-        // Instead, new link type should be added and link loading function in javascript should be expanded to allow jokers.
+          ErrorHandler.ShowWarningMessage("Multiple enemies found for enemy " + name + " with link " + linkData + " and path " + string.Join("|", paths) + ". Add more parameters or check syntax file.");
         enemiesToLink.Add(foundEnemies[0]);
       }
       return enemiesToLink;
     }
 
-
-    /***********************************************************************************************
-     * FindNextLink / 2014-07-24 / Wethospu                                                        * 
-     *                                                                                             * 
-     * Finds next enemy rank from the string.                                                      *
-     *                                                                                             *
-     * Returns found link type and data. Returns null if nothing good was found.                   *
-     * str: String to search from.                                                                 *
-     * startIndex: In/Out. Index to start search -> end index of found rank.                       *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
+    /// <summary>
+    /// Returns next link (type and value) from a given string.
+    /// </summary>
+    /// <param name="str">String to check.</param>
+    /// <param name="startIndex">Input: Starting index. Output: End of found link type.</param>
+    /// <returns>Array with link type and link value. Null if nothing was found.</returns>
     private static string[] FindNextLink(string str, ref int startIndex)
     {
       var linkIndex = str.IndexOf(Constants.LinkChar, startIndex);
       if (linkIndex < 0 || linkIndex >= str.Length)
       {
-        // Nothing was found.
         startIndex = str.Length;
         return null;
       }
-      // Backward search to get link type.
-      var typeIndex = 1 + Helper.LastIndexOf(str, new[] { ' ', '(', '[' }, linkIndex);
-      var type = str.Substring(typeIndex, linkIndex - typeIndex);
-      //// Forward search to get link data.
-      // Get end of the sentence (link will end before it).
-      var sentenceEnd = str.IndexOf(' ', linkIndex + 1);
-      if (sentenceEnd < 0)
-        sentenceEnd = str.Length;
-      var separator = Helper.LastIndexOf(str, new[] { ':', '|' }, sentenceEnd - 1);
-      // Points to the character after the link.
-      int dataEndIndex;
-      if (separator > 0 && separator < sentenceEnd && separator > linkIndex)
-        // With proper separator just search end for shown text.
-        dataEndIndex = Helper.FirstIndexOf(str, new[] { '.', ',', ';', ' ', ')', ']' }, separator + 1);
-      else
-      {
-        // With just link, '.', ':', ';' or ',' at end shouldn't be included.
-        dataEndIndex = sentenceEnd;
-        if (str[dataEndIndex - 1] == '.' || str[dataEndIndex - 1] == ':' || str[dataEndIndex - 1] == ',' || str[dataEndIndex - 1] == ';')
-          dataEndIndex--;
-      }
-      var data = str.Substring(linkIndex + 1, dataEndIndex - linkIndex - 1);
-
-      startIndex = dataEndIndex;
-      return new[] { type, data };
+      // Parse link type (before separator) and link value (after separator) from the string.
+      var typeStart = 1 + Helper.LastIndexOf(str, new[] { ' ', '(', '[', '>' }, linkIndex);
+      var type = str.Substring(typeStart, linkIndex - typeStart).ToLower();
+      // Value is hard to get because some characters ('.', ',', ':', ')') can end the link but also be part of it!
+      // Character ' ' is reliable because '_' is used in values.
+      var valueEnd = str.IndexOf(' ', linkIndex + 1);
+      if (valueEnd < 0)
+        valueEnd = str.Length;
+      if (str[valueEnd - 1] == '.' || str[valueEnd - 1] == ',' || str[valueEnd - 1] == ':' || str[valueEnd - 1] == ')')
+        valueEnd--;
+      var value = str.Substring(linkIndex + 1, valueEnd - linkIndex - 1);
+      startIndex = valueEnd;
+      return new[] { type, value };
     }
 
 
@@ -409,16 +302,10 @@ namespace DataCreator.Shared
     private static string RecordStart { get { return "<span class=\"record-run\">";  } }
     private static string RecordEnd { get { return "</span>"; } }
 
-    /***********************************************************************************************
-     * CreatePageLink / 2014-07-24 / Wethospu                                                      * 
-     *                                                                                             * 
-     * Creates a page link from link type and data.                                                *
-     *                                                                                             *
-     * Returns processed string.                                                                   *
-     * str: String to edit.                                                                        *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
+    /// <summary>
+    /// Generates a page link from a given data.
+    /// </summary>
+    /// <param name="linkType">Type of the link. Used to make the url have a correct format.</param>
     private static string CreatePageLink(string linkType, string linkData)
     {
       linkType = linkType.ToLower();
@@ -428,19 +315,13 @@ namespace DataCreator.Shared
         return "";
       }
 
-      // Get shown text for the link.
-      var shownText = CreateLinkText(linkData, linkType.Equals(Constants.LinkWiki), false);
-      // Get link base URL.
+      var shownText = CreateLinkShownText(linkData, linkType.Equals(Constants.LinkWiki), false);
       var url = linkData.Split('|')[0];
-      // Build link to a proper one based on link type.
+      // Verify and build the correct link format based on the link type.
       if (linkType.Equals(Constants.LinkMedia))
         url = Constants.WebsiteMediaLocation + CurrentDungeon + "/" + url;
       else if (linkType.Equals(Constants.LinkYoutube))
       {
-        // Check what url contains. Three cases:
-        // 1: Full link (http and youtube tag) -> nothing has to be added.
-        // 2: Partial link (only youtube tag) -> add HTTP.
-        // 3: Minimal link (no youtube or http) -> add both.
         if (!url.Contains("youtu"))
           url = Http + Youtube + url;
         else if (!url.StartsWith(Http) && !url.StartsWith(Https))
@@ -448,10 +329,6 @@ namespace DataCreator.Shared
       }
       else if (linkType.Equals(Constants.LinkWiki))
       {
-        // Check what url contains. Three cases:
-        // 1: Full link (http and wiki tag) -> nothing has to be added.
-        // 2: Partial link (only wiki tag) -> add HTTP.
-        // 3: Minimal link (no wiki or http) -> add both.
         if (!url.Contains(Constants.Gw2Wiki))
           url = Http + Constants.Gw2Wiki + url;
         else if (!url.StartsWith(Http) && !url.StartsWith(Https))
@@ -486,59 +363,42 @@ namespace DataCreator.Shared
       return link.ToString();
     }
 
-
-
-    /***********************************************************************************************
-     * BuildEnemyLinkText / 2014-07-24 / Wethospu                                                  * 
-     *                                                                                             * 
-     * Checks enemies from link data for optional texts. Three cases:                              *
-     * 1: No optional text found -> use name of the first enemy.                                   *
-     * 2: One optional text found -> use it.                                                       *
-     * 3: Multiple optional texts found -> give error.                                             *
-     *                                                                                             *
-     * Returns shown text.                                                                         *
-     * data: Link data.                                                                            *
-     * checkErrors: Whether to check and print error messages.                                     *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
-    private static string CreateEnemyLinkText(string data, bool checkErrors = false)
+    /// <summary>
+    /// Generates shown text for an enemy link from a given data.
+    /// </summary>
+    /// <param name="data">Link data.</param>
+    /// <param name="checkErrors">Whether to print warnings. Used to suppress additional warnings.</param>
+    /// <returns>Generated shown text.</returns>
+    private static string CreateEnemyLinkShownText(string data, bool checkErrors = false)
     {
       var shownText = "";
       var mainSplit = data.Split('|');
-      // Check if using optional shown text.
+      // Shown text can be customized so check it first.
       foreach (var enemy in mainSplit)
       {
         var subSplit = enemy.Split(':');
         if (subSplit[0].ToLower().Equals("text") && subSplit.Length > 1)
         {
+          // Multiple customizations just override each other.
           if (checkErrors && !shownText.Equals(""))
             ErrorHandler.ShowWarning("Multiple \"text\" tags on enemy link data. Remove extra ones!");
           shownText = subSplit[1];
         }
       }
-      // If no text, use text of first enemy.
+      // By default, use the name of the first enemy.
       if (shownText.Equals(""))
         shownText = mainSplit[0].Split(':')[0];
       return Helper.ToUpperAll(shownText.Replace('_', ' '));
     }
 
-    /***********************************************************************************************
-     * CreateLinkText / 2014-07-24 / Wethospu                                                      * 
-     *                                                                                             * 
-     * Creates shown link text from link data. Three possible cases:                               *
-     * 1: Same text as on the link.                                                                *
-     * 2: Optional text specified -> use it instead.                                               *
-     * 3: Optional text starts with '(' -> append it to link text.                                 *
-     *                                                                                             *
-     * Returns shown text.                                                                         *
-     * data: Link data.                                                                            *
-     * upperCase: Whether to upper case start of each word.                                        *
-     * checkErrors: Whether to check and print error messages.                                     *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
-    private static string CreateLinkText(string data, bool upperCase, bool checkErrors)
+    /// <summary>
+    /// Generates the shown text for page links from a given data.
+    /// </summary>
+    /// <param name="data">Link data.</param>
+    /// <param name="upperCase">Whether to upper case the start of each word.</param>
+    /// <param name="checkErrors">>Whether to print warnings. Used to suppress additional warnings.</param>
+    /// <returns>Generated shown text.</returns>
+    private static string CreateLinkShownText(string data, bool upperCase, bool checkErrors)
     {
       var subSplit = data.Split('|');
       var linkText = subSplit[0];
@@ -547,11 +407,12 @@ namespace DataCreator.Shared
         ErrorHandler.ShowWarning("Link is empty. Please fix!");
         return "";
       }
+      // Check for a customized text.
       if (subSplit.Length > 1)
       {
         if (checkErrors && subSplit[1].Length == 0)
           ErrorHandler.ShowWarning("Extra link text is empty. Please fix!");
-
+        // "(" is a special case which appends the customization to the link name. Not sure if in use anymore.
         if (subSplit[1][0] == '(')
           linkText += "_" + subSplit[1];
         else
@@ -562,52 +423,43 @@ namespace DataCreator.Shared
       return Helper.ToUpperAll(linkText.Replace("_", Constants.Space));
     }
 
-    /***********************************************************************************************
-     * VerifyLink / 2014-07-24 / Wethospu                                                          * 
-     *                                                                                             * 
-     * Checks that link exists and gives an error message if needed.                               *
-     *                                                                                             *
-     * Returns nothing. Only checks.                                                               *
-     * url: Url to verify.                                                                         *
-     *                                                                                             * 
-     ***********************************************************************************************/
-
+    /// <summary>
+    /// Checks that a given page link exists. Shows a warning if needed.
+    /// </summary>
+    /// <param name="url"></param>
     public static void VerifyLink(string url)
     {
       if (!Constants.ValidateUrls)
         return;
-      // Check whether the url has already been verified.
+      // Use a cache because this a very slow operation.
       if (Constants.ValidatedUrls.Contains(url))
         return;
-
       var valid = Helper.IsValidUrl(url);
       if (valid)
-      {
         Constants.ValidatedUrls.Add(url);
-        return;
-      }
-      ErrorHandler.ShowWarningMessage("Link \"" + url + "\" can't be reached.");
+      else
+        ErrorHandler.ShowWarningMessage("Link \"" + url + "\" can't be reached.");
     }
-
-    /***********************************************************************************************
-    * BackupAndUpdateSize / 2015-05-24 / Wethospu                                                 * 
-    *                                                                                             * 
-    * Downloads a backup of given media. Also updates media size file.                            *
-    *                                                                                             *
-    * url: Url to download.                                                                       *
-    *                                                                                             * 
-    ***********************************************************************************************/
-
+    /// <summary>
+    /// Remember checked files to avoid doing slow operations.
+    /// </summary>
+    private static HashSet<string> downloadedFileNames = new HashSet<string>();
+    /// <summary>
+    /// Downloads a back of a given media link. Also updates its size information so it can be loaded properly in the website.
+    /// </summary>
+    /// <param name="url"></param>
     public static void BackupAndUpdateSize(string url)
     {
       if (!Constants.DownloadData)
         return;
-      // Use the last part of url as the file name.
+      // Use the last part of url to get a cleaner file name. May cause issues in the future but unlikely.
       var split = url.Split('/');
       var fileName = split[split.Length - 1];
+      // Remove illegal characters to avoid problems with filesystems.
       fileName = fileName.Replace("\\", "").Replace("\"", "");
       if (Path.GetExtension(fileName).Equals(".gif"))
       {
+        // Separate gifs based on source to get a nicer structure (no real advantage).
         if (url.Contains("gfycat"))
           fileName = Constants.BackupLocation + "gfycat\\" + fileName;
         else if(url.Contains("imgur"))
@@ -615,24 +467,22 @@ namespace DataCreator.Shared
         else
           fileName = Constants.BackupLocation + fileName;
       }
-        
       else
         fileName = Constants.DataOtherRaw + Constants.LocalMediaFolder + CurrentDungeon + "\\" + fileName;
-      // Check whether to download the file.
+      // Function gets called for all kinds of links. Obviously all media files have a file extension.
       if (Path.GetExtension(fileName).Length == 0)
         return;
-      // Check whether the file has already been downloaded and checked.
-      if (downloadData.Contains(url))
+      if (downloadedFileNames.Contains(url))
         return;
 
-      downloadData.Add(url);
-      // Create directory if needed.
+      downloadedFileNames.Add(url);
       var dirName = Path.GetDirectoryName(fileName);
       if (dirName != null)
         Directory.CreateDirectory(dirName);
-      // Download the file if it doesn't exist.
+      // Don't download already existing files to make this much faster. This means that the backup must be deleted manually if content changes.
       if (!File.Exists(fileName))
       {
+        // Use a custom timeout to make this work much faster.
         var timeOut = 10000;
         if (Path.GetExtension(fileName).Equals(".gif"))
           timeOut = 30000;
@@ -652,9 +502,18 @@ namespace DataCreator.Shared
           }
         }
       }
-      // If file exists, update its size data.
       if (!File.Exists(fileName))
         return;
+      UpdateSizeInformation(fileName, url);
+      
+    }
+
+    /// <summary>
+    /// Updates the size information for a given url from a given file. Needed to show media properly in the website.
+    /// </summary>
+    /// <param name="fileName">File which is used to get the size information.</param>
+    private static void UpdateSizeInformation(string fileName, string url)
+    {
       int width = 0;
       int height = 0;
       if (Path.GetExtension(fileName).Equals(".jpg") || Path.GetExtension(fileName).Equals(".png") || Path.GetExtension(fileName).Equals(".bmp"))
@@ -672,17 +531,19 @@ namespace DataCreator.Shared
         byte[] bytes = new byte[10];
         using (FileStream fs = File.OpenRead(fileName))
         {
-          fs.Read(bytes, 0, 10); // type (3 bytes), version (3 bytes), width (2 bytes), height (2 bytes)
+          // Type (3 bytes), version (3 bytes), width (2 bytes), height (2 bytes).
+          fs.Read(bytes, 0, 10);
         }
-        width = bytes[6] | bytes[7] << 8; // byte 6 and 7 contain the width but in network byte order so byte 7 has to be left-shifted 8 places and bit-masked to byte 6
-        height = bytes[8] | bytes[9] << 8; // same for height
+        // Byte 6 and 7 contain the width but in network byte order so byte 7 has to be left-shifted 8 places and bit-masked to byte 6.
+        width = bytes[6] | bytes[7] << 8;
+        height = bytes[8] | bytes[9] << 8;
         GenerateThumbs(fileName, url, Constants.ThumbWidth, Constants.ThumbHeight);
         GenerateThumbs(fileName, url, Constants.ThumbWidthSmall, Constants.ThumbHeightSmall);
       }
       if (Path.GetExtension(fileName).Equals(".webm"))
       {
         var ffMpeg = new NReco.VideoConverter.FFMpegConverter();
-        var jpgFileName = Directory.GetCurrentDirectory() + "\\" + Path.GetDirectoryName(fileName) + "\\" +  Path.GetFileNameWithoutExtension(fileName) + ".jpg";
+        var jpgFileName = Directory.GetCurrentDirectory() + "\\" + Path.GetDirectoryName(fileName) + "\\" + Path.GetFileNameWithoutExtension(fileName) + ".jpg";
         ffMpeg.GetVideoThumbnail(Directory.GetCurrentDirectory() + "\\" + fileName, jpgFileName);
         Image image = Image.FromFile(jpgFileName);
         width = image.Width;
@@ -696,33 +557,28 @@ namespace DataCreator.Shared
         Constants.MediaSizes.Add(url, new int[] { width, height });
     }
 
-    /***********************************************************************************************
-    * GenerateThumbs / 2015-07-15 / Wethospu                                                      * 
-    *                                                                                             * 
-    * Generates a smaller thumb image for the given file.                                         *
-    *                                                                                             *
-    * filename: File to convert.                                                                  *
-    *                                                                                             * 
-    ***********************************************************************************************/
-
+    /// <summary>
+    /// Creates a jpg-thumbnail for a given file. Needed for preview images in the website.
+    /// </summary>
+    /// <param name="filename">Filename of the local base file.</param>
+    /// <param name="baseUrl">URL of the source location to create subfolders.</param>
     public static void GenerateThumbs(string filename, string baseUrl, int maxWidth, int maxHeight)
     {
       var OutputFile = Constants.DataOutput + Constants.DataThumbsResult + "_" + maxWidth + "px\\";
       var folder = "";
+      // Split thumbnails based on source to get a nicer structure and to reduce files per folder.
       if (baseUrl.Contains("wiki"))
         folder = "wiki\\";
       else if (baseUrl.Contains("gfycat"))
         folder = "gfycat\\";
       OutputFile += folder + Path.GetFileNameWithoutExtension(filename) + ".jpg";
-      // Replace common html special characters. / 2015-07-21 / Wethospu
+      // Replace common html special characters to get cleaner file names.
       OutputFile = OutputFile.Replace("%20", " ");
       OutputFile = OutputFile.Replace("%27", "'");
       OutputFile = OutputFile.Replace("%28", "(");
       OutputFile = OutputFile.Replace("%29", ")");
-      // Check if a thumb already exists. / 2015-07-15 / Wethospu
       if (File.Exists(OutputFile))
         return;
-      // Create directory if needed.
       var dirName = Path.GetDirectoryName(OutputFile);
       if (dirName != null)
         Directory.CreateDirectory(dirName);
@@ -759,7 +615,7 @@ namespace DataCreator.Shared
           graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
         }
       }
-      // Some copypaste encoder stuff for 90% quality. / 2015-07-15 / Wethospu
+      // Some copypaste encoder stuff for a 90% quality.
       ImageCodecInfo jpgEncoder = GetEncoder(ImageFormat.Jpeg);
       System.Drawing.Imaging.Encoder myEncoder = System.Drawing.Imaging.Encoder.Quality;
       EncoderParameters myEncoderParameters = new EncoderParameters(1);
@@ -770,13 +626,9 @@ namespace DataCreator.Shared
       Helper.ClearConsoleLine(row);
     }
 
-
-    /***********************************************************************************************
-    * ImageCodecInfo / 2015-07-15 / Wethospu                                                      * 
-    *                                                                                             * 
-    * Helper function to get encoder.                                                             *
-    *                                                                                             * 
-    ***********************************************************************************************/
+    /// <summary>
+    /// Helper function to get a proper encoder for thumbnail generation.
+    /// </summary>
     private static ImageCodecInfo GetEncoder(ImageFormat format)
     {
       ImageCodecInfo[] codecs = ImageCodecInfo.GetImageDecoders();
@@ -788,12 +640,9 @@ namespace DataCreator.Shared
       return null;
     }
 
-   /***********************************************************************************************
-   * ScaleImageSize / 2015-07-15 / Wethospu                                                      * 
-   *                                                                                             * 
-   * Scales width and height so that they keep the image ratio same.                             *
-   *                                                                                             * 
-   ***********************************************************************************************/
+    /// <summary>
+    /// Helper function to scale width and height so that the aspect ratio is maintained.
+    /// </summary>
     private static void ScaleImageSize(ref int width, ref int height, int originalWidth, int originalHeight)
     {
       double widthRatio = (double)width / originalWidth;

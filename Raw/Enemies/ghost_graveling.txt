@@ -1351,6 +1351,13 @@ Path=vale2|vale3
 #############################
 
 copy=15419
+#TODO get id:
+name=Deranged Spirit
+rank=veteran
+
+#############################
+
+copy=15419
 ID=15390|15425
 
 ##################################################################
@@ -1378,7 +1385,10 @@ subeffect=knockback:0
 #############################
 
 copy=15416
-ID=16024
+# TODO GET THIS ID
+#ID=16024
+name=Enraged Spirit
+rank=veteran
 
 #############################
 
@@ -1401,7 +1411,10 @@ subeffect=damage:?
 #############################
 
 copy=15377
-ID=16005
+# TODO GET THIS ID
+#ID=16005
+name=Angered Spirit
+rank=veteran
 
 #############################
 
@@ -1411,7 +1424,9 @@ ID=15389
 ##################################################################
 
 name=Charged Soul
-ID=15434
+# TODO GET THIS ID
+#ID=15434
+rank=elite
 alt=Charged Souls
 Path=vale3
 

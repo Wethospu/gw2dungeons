@@ -37,6 +37,8 @@ namespace DataCreator.Utility
 
     public Media(string data)
     {
+      if (data.Length == 0)
+        ErrorHandler.ShowWarning("Missing info. Use \"image='image'\"!");
       Link = data;
       LinkGenerator.VerifyLink(Link);
       LinkGenerator.BackupAndUpdateSize(Link);
