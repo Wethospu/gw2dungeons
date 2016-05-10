@@ -14,7 +14,7 @@ Enemies: Krait and fish.
 Time: Day.
 Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 Remember that your wiki=Agony_Resistance will drop up to 15 points from a lack of helmet or land weapons.
-youtube=yCdPsGmc3hU|Video_guide [KING].
+youtube=KkbxoP94SX8|Video_guide [KING].
 Current record (Dolphin): record=36.
 Current record (Ruins): record=37.
 tactic=coordinated

@@ -16,7 +16,7 @@ tactic=normal
 Enemies: Bandits.
 Time: Day.
 Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
-youtube=SnoSr_nWdPo|Video_guide [KING].
+youtube=_DerjcKcXyQ|Video_guide [KING].
 Current record: record=38.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.

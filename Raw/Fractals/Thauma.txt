@@ -14,7 +14,7 @@ tactic=normal
 Enemies: A human, an ooze and various others.
 Time: Day.
 Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
-youtube=I8vs4-GRP6o|Video_guide [KING].
+youtube=pSO2lzBBgBo|Video_guide [KING].
 Current record: record=46.
 
 # Note: Any changes should be copypasted to every fractal (as long as there are no fractal specific changes).

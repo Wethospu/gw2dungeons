@@ -14,7 +14,7 @@ tactic=normal
 Enemies: Wind riders and elementals.
 Time: Night.
 Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
-youtube=CDT49vw-v9w|Video_guide [KING].
+youtube=EjGVvg4zZes|Video_guide [KING].
 Current record: record=43.
 
 # Note: Any changes should be copypasted to every fractal (as long as there are no fractal specific changes).

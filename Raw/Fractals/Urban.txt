@@ -14,7 +14,7 @@ tactic=normal
 Enemies: Humans.
 Time: Day.
 Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
-youtube=e1SsHG-7x60|Video_guide [KING].
+youtube=uVz4aiwzKko|Video_guide [KING].
 Current record: record=50.
 tactic=guardian
 Use wiki=Line_of_Warding or wiki=Ring_of_Warding when hiding behind corners.

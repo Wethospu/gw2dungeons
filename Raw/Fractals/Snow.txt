@@ -14,7 +14,7 @@ tactic=normal
 Enemies: Sons of Svanir and some elementals.
 Time: Night.
 Use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying,  wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
-youtube=0TgNvK_HYi4|Video_guide by [KING].
+youtube=A-cfa4p9NGo|Video_guide by [KING].
 Current record: record=42.
 tactic=coordinated
 Against enemy=Shaman_Lornarr_Dragonseeker, use wiki=Powerful_Potion_of_Sons_of_Svanir_Slaying|Potion_of_Sons_of_Svanir_Slaying and wiki=Superior_Sigil_of_Wrath|Sigil_of_Wrath instead of Force.
