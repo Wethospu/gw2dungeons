@@ -342,8 +342,8 @@ scaling=legendary
 image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
 path=UnderGun|UnderBomb
 
-attack=15955
-ID=1437
+attack=Slash
+ID=15955
 animation=pulls right arm back
 effect=2 wide melee hits
 count=2
@@ -1058,5 +1058,13 @@ subeffect=burning:1
 attack="Shielded"
 effect=buff
 subeffect=take no damage
+
+##################################################################
+name=Dredge Security Contractor
+alt=Dredge Security Contractors|Security Contractor|Security Contractors
+ID=13630
+scaling=normal
+image=http://wiki.guildwars2.com/images/c/c7/Dredge_Mining_Suit.jpg
+path=UnderGun|UnderBomb
 
 
