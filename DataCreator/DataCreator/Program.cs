@@ -29,7 +29,7 @@ namespace DataCreator
       while (true)
       {
         Console.Clear();
-        ErrorHandler.WarningCounter = 0;
+        ErrorHandler.Clear();
         RemoveOldFiles();
         if (!AskUserInput())
           break;

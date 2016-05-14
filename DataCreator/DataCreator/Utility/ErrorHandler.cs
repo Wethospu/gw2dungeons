@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace DataCreator.Utility
@@ -16,6 +17,19 @@ namespace DataCreator.Utility
     public static string CurrentFile = "";
     // Count warnings to give a total amount at the end.
     public static int WarningCounter;
+    /// <summary>
+    /// Store shown messages to avoid repeating them.
+    /// </summary>
+    private static HashSet<string> _shownMessages = new HashSet<string>();
+
+    /// <summary>
+    /// Resets the warning system to the initial state.
+    /// </summary>
+    public static void Clear()
+    {
+      _shownMessages.Clear();
+      WarningCounter = 0;
+    }
 
     /// <summary>
     /// Sets up the warning system so it can show correct warning messages.
@@ -51,9 +65,12 @@ namespace DataCreator.Utility
     /// </summary>
     public static void ShowWarningMessage(string message)
     {
-      WarningCounter++;
       if (message.Length == 0)
         Console.Error.WriteLine("Critical program error.");
+      if (_shownMessages.Contains(message))
+        return;
+      _shownMessages.Add(message);
+      WarningCounter++;
       Console.Error.WriteLine(message);
       Console.Error.WriteLine("");
     }
