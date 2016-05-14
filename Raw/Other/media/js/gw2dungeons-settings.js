@@ -535,9 +535,9 @@ function handleEnemy(enemy, setting) {
 		else
 			insertDamage(this, damage, damageView, playerLevel);
     });
-	var resist = getSetting("agonyResistance");
+	var resist = getSetting("agonyResist");
 	if (currentPath == "aqua")
-		resist = getSetting("agonyResistanceAqua");
+		resist = getSetting("agonyResistAqua");
     $(enemy).find(".agony-value").each(function () {
         var second = (Number)($(this).attr("data-amount"));
         insertDamage(this, getAgonyDamage(second, fractalLevel, resist), damageView, playerLevel);
