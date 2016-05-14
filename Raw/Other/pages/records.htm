@@ -670,9 +670,9 @@
 			for (var i = 0; i < this.characters.length; i++) {
 				var index = playersRanks.map(function(e) { return e.id; }).indexOf(this.characters[i].player);
 				if (index == -1)
-					playersRanks.push({ id: this.characters[i].player, points: this.characters.length / this.groups.length });
+					playersRanks.push({ id: this.characters[i].player, points: 1 });
 				else
-					playersRanks[index].points += this.characters.length / this.groups.length;	
+					playersRanks[index].points += 1;	
 			}	
 		});
 		// Sort by points.
