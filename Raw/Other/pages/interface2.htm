@@ -512,12 +512,12 @@
 		}
 		$("#record-instance option").each(function() {
 			if($(this).text() == data[0]) {
-				$(this).attr('selected', 'selected').change();            
+				$(this).prop('selected', true).change();          
 			}                        
 		});
 		$("#record-path option").each(function() {
 			if($(this).text() == data[1]) {
-				$(this).attr('selected', 'selected');           
+				$(this).prop('selected', true).change();        
 			}                        
 		});
 		$("#record-date").val(data[2]).change();
@@ -543,12 +543,25 @@
 		// Update groups.
 		for (var i = 0; i < 5; i++) {
 			var group = "None";
+			var tagSearch = false;
 			if (groups.length > i && groups[i].length > 0)
+			{
+				tagSearch = true;
 				group = groups[i];
+			}	
 			$("#record-group" + (i + 1) + " option").each(function() {
-				if($(this).text().indexOf(group) > -1) {
-					$(this).attr('selected', 'selected');           
-				}                        
+				// Returned groups have only guild tags. Dropdown options have "name + tag" so an exact match won't work. Tags must be unique so indexOf can be used.
+				if (tagSearch) {
+					if($(this).text().indexOf(group) > -1) {
+						$(this).prop('selected', true).change();          
+					}  
+				}
+				// Exact match must be used because a guild name may have "None" on it.
+				else {
+					if($(this).text() == group) {
+						$(this).prop('selected', true).change();          
+					}  
+				}            
 			});
 		}
 		// Update characters.
@@ -558,7 +571,7 @@
 				character = "None";
 			$("#record-character" + (i + 1) + " option").each(function() {
 				if($(this).text() == character) {
-					$(this).attr('selected', 'selected');           
+					$(this).prop('selected', true).change();          
 				}                        
 			});
 		}
