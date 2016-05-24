@@ -282,7 +282,7 @@ namespace DataCreator
 
       var directory = Constants.DataOutput + Constants.DataEnemyResult;
       if (Directory.Exists(directory))
-        File.WriteAllText(directory + "indexfile.html", indexFile.ToString());
+        File.WriteAllText(directory + "indexfile.htm", indexFile.ToString());
       else
         ErrorHandler.ShowWarning("Directory " + directory + " doesn't exist.");
     }
