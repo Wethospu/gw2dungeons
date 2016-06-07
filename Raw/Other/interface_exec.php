@@ -289,7 +289,7 @@ function readInstances(PDO $conn) {
 }
 
 function readInstanceTypes(PDO $conn) {
-    $sql = $conn->prepare('SELECT ID, name FROM InstanceTypes ORDER BY ID');
+    $sql = $conn->prepare('SELECT ID, name FROM InstanceTypes ORDER BY ordering');
     $sql->execute();
     return $sql->fetchAll();
 }

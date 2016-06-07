@@ -194,7 +194,7 @@
 	}
 	
 	function updateInstanceTypeSelect(instanceTypes) {
-		var content = '<option value="0">Both</option>';
+		var content = '<option value="0">All</option>';
 		$.each(instanceTypes, function() {
 			content += "<option value=\"" + this.ID + "\">" + this.name + "</option>";
 		});
@@ -333,6 +333,23 @@
 				return;
 			if (instanceFilter > 0 && this.ID != instanceFilter)
 				return;
+			var instanceID = this.ID;
+			var pathFilter = $("#record-path").val();
+			// Don't show empty instances because it looks silly.
+			var emptyInstance = true;
+			$.each(paths, function() {
+				if (this.instance != instanceID)
+					return;
+				if (pathFilter > 0 && this.ID != pathFilter)
+					return;
+				if (this.minPlayers > maxPlayers)
+					return;
+				if (validity == 1 && this.validity == 0)
+					return;
+				emptyInstance = false;
+			});
+			if (emptyInstance)
+				return;
 			// Add a new row if needed.
 			if (columns == 1)
 			{
@@ -350,9 +367,6 @@
 			content += this.name + '</h2></div>';
 			// Add paths.
             content += header;
-			
-			var instanceID = this.ID;
-			var pathFilter = $("#record-path").val();
 			$.each(paths, function() {
 				if (this.instance != instanceID)
 					return;
@@ -414,6 +428,8 @@
 		// End partial row.
 		if (columns < columnsMax)
 			content += '</div>';
+		if (content == "")
+			content = "No valid paths. Please check the filters.";
 		$("#record-table").html(content);
 		resizeTables();
 	}
