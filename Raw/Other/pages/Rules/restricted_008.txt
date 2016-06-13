@@ -1,0 +1,81 @@
+<p>Date: 5th June 2016</p>
+
+<p>These rules are used for trio, quartet, full party, sextet, septet, octet, nonet and full squad runs. Ruleset is to showcase excellent gameplay and achieve the best times possible while completing dungeon, fractal and raid content.</p>
+
+<h2>Timer</h2>
+<ol>
+  <li>Timer starts when any party member moves their model or begins activating a skill. Using emotes will not result in the timer starting.
+  	<ol type="a">
+		<li>This excludes raid events and bosses which have in-game timers. In those cases the in-game timer is used instead. </li>
+	</ol>
+  </li>
+  <li>Once the timer starts, switching characters or re-entering the instance is banned.</li>
+  <li>Full raid clears and dungeons: timer stops when the final boss has been killed.</li>
+  <li>Fractals: timer stops when the shard reward chest appears.</li>
+  <li>Videos may not be sped up or slowed down, and must be captured in normal time.</li>
+</ol>
+
+<h2>General</h2>
+<ol>
+  <li>Record must have video evidence.</li>
+  <li>Path completion must trigger.</li>
+  <li>Game Build must be displayed at some point in the video.</li>
+  <li>There must be at least one point of view that shows what's going on within the dungeon, from start to finish. If at any point there is no video evidence of activities within the run, it will be rejected.</li>
+  <li>Timer must be faster than current record displayed.</li>
+  <li>No use of hacks or 3rd party software that allows players to perform acts that would be impossible without said means. This includes but is not limited to speed hacks, fly hacks, no-clip, teleporting, dps meters and boss hp monitors.</li>
+  <li>Costume brawl items, special event items, and gem store items are banned.</li>
+  <li>The record system is founded on trust.</li>
+  <li>Any disputes will be handled by approvers. Staff decisions are final.</li>
+  <li>Records utilizing gamebreaking bugs will be disapproved. Determination of gamebreaking bugs will be put up to the voting system.</li>
+  <li>1 approver per guild is allowed. Approvers cannot approve their own guild’s records.</li>
+  <li>Meta Record resets will occur upon major updates to Guild Wars 2.</li>
+</ol>
+
+<h2>Gameplay</h2>
+<ol>
+  <li>Nourishment and Primers are the only consumables allowed. Other consumable items are banned.</li>
+  <li>Compression of AoE hitboxes by moving, blinking and/or dodging is banned.</li>
+  <li>Trait swapping to reset skill cooldowns is banned.</li>
+  <li>Racial skills are banned.</li>
+  <li>Progress blocking bosses must be completed.</li>
+  <li>Going out of bounds is banned.
+	<ol type="a">
+		<li>Out of bounds is defined as an area that can only be reached by utilizing unconventional means (everything aside from running, normal/dodge jumping, and waypointing) to reach an area.</li>
+		<li>Out of bounds is getting inside solid or non-solid map geometry. This includes but is not limited to any wall, roof or floor.</li>
+	</ol>
+  </li>
+  <li>Bypassing closed doors when they are closed is banned.</li>
+  <li>Attacking hostile, inactive enemies is banned.
+	<ol type="a">
+		<li>Hostile, inactive means that the enemy is damageable and takes no actions permanently.</li>
+		<li>If you can walk up to an enemy and he does nothing then this is considered inactive.</li>
+		<li>Examples of this would be first Alpha in CoE prior to activating path or Arah P4 bosses that bug out.</li>
+		<li>Subject 6, Fimbul, and Shoggorath are attempting to move which requires action on the part of the team to prevent them from getting to a specific spot. These examples are not inactive.</li>
+	</ol>
+  </li>
+  <li>Fractal records must be at the highest possible scale.</li>
+</ol>
+
+<h2>Path specific rules</h2>
+
+<h3>Caudecus' Manor</h3>
+<ul>
+	<li>Path 2: When blowing the door putting a keg to an unreachable place is banned.</li>
+	<li>Path 3: Using the air guns against bosses is banned.</li>
+</ul>
+
+<h3>The Ruined City of Arah</h3>
+<ul>
+	<li>All paths: Using reflects on Lupicus' wall in phase 2 is banned.</li>
+	<li>Path 2: Making Belka stationary by running back is banned.</li>
+</ul>
+
+<h3>Thaumanova Reactor</h3>
+<ul>
+	<li>Timer starts when a party member begins activating a skill or moves their model. Dialogue is allowed to finish prior to timer start.</li>
+</ul>
+
+<h3>Snowblind</h3>
+<ul>
+	<li>Players are allowed to wait at first fire to prevent mass death. Timer will activate when any party member begins activating a skill or moves their model following moving to fire.</li>
+</ul>

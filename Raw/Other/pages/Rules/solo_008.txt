@@ -1,0 +1,25 @@
+<p>Date: 5th June 2016</p>
+
+<p>These rules are used for solo and duo runs. Ruleset is to showcase excellent gameplay and achieve the best times possible while completing dungeon or fractal content.</p>
+
+<h2>Changes</h2>
+<ol>
+  <li>You are allowed to use any consumable or item except gem store booster/items.</li>
+</ol>
+
+<h2>Path specific rules</h2>
+
+<h3>The Ruined City of Arah</h3>
+<ul>
+	<li>All paths: Using reflects on Lupicus' wall in phase 2 is banned.</li>
+</ul>
+
+<h3>Thaumanova Reactor</h3>
+<ul>
+	<li>Timer starts when a party member activates a skill or moves their model. Dialogue is allowed to finish prior to timer start.</li>
+</ul>
+
+<h3>Snowblind</h3>
+<ul>
+	<li>Players are allowed to wait at first fire to prevent mass death. Timer will activate when any party member activates a skill or moves their model following moving to fire.</li>
+</ul>
