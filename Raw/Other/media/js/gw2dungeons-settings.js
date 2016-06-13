@@ -50,7 +50,7 @@ var settings = {
     comments: true,
 	useSidebar: false,
     adSetting: "big",
-	defaultFilters: "18EvyA4",
+	defaultFilters: "28EvyA4",
 	fontSize: 100,
 	mainShowIcons: true,
     // Tab settings.

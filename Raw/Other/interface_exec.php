@@ -301,7 +301,7 @@ function readPaths(PDO $conn) {
 }
 
 function readCategories(PDO $conn) {
-    $sql = $conn->prepare('SELECT ID, name FROM Categories ORDER BY ID');
+    $sql = $conn->prepare('SELECT ID, name FROM Categories ORDER BY ordering');
     $sql->execute();
     return $sql->fetchAll();
 }

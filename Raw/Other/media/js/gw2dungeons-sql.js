@@ -172,22 +172,21 @@ function setHash(filter, index) {
 
 
 	// Filter encoding.
-	// Version 1: first value
-	// Type: 4
+	// Version: 1
+	// Type: 5
 	// Instance: 9
 	// Path: 18
 	// Profession: 9
-	// Category: 6
+	// Category: 11
 	// Validity: 2
 	// After date: 12 + 32 + 10
 	// Before date: 12 + 32 + 10
-	// Players : 5
 	// columns: 2 + 2 + 2 + 2 + 2
 	function storeFilters() {
 		var values = [];
 		var maxValues = [];
 		values.push(document.getElementById("record-instance-type").selectedIndex);
-		maxValues.push(4);
+		maxValues.push(5);
 		values.push(document.getElementById("record-instance").selectedIndex);
 		maxValues.push(9);
 		values.push(document.getElementById("record-path").selectedIndex);
@@ -195,7 +194,7 @@ function setHash(filter, index) {
 		values.push(document.getElementById("record-profession").selectedIndex);
 		maxValues.push(9);
 		values.push(document.getElementById("record-category").selectedIndex);
-		maxValues.push(6);
+		maxValues.push(11);
 		values.push(document.getElementById("record-validity").selectedIndex);
 		maxValues.push(2);
 		// Date can be any string so check its validity.
@@ -250,7 +249,7 @@ function setHash(filter, index) {
 		values.push($("#column-category").hasClass('active') ? 1 : 0);
 		maxValues.push(2);
 		// Add version number.
-		setHash("1" + storeValuesToString(values, maxValues), 0);
+		setHash("2" + storeValuesToString(values, maxValues), 0);
 	}
 
 	function storeValuesToString(values, maxValues) {
@@ -310,11 +309,16 @@ function setHash(filter, index) {
 		var string = string.substr(1);
 		// Set max values.
 		var maxValues = [];
-		maxValues.push(4);
+		if (version > 1)
+			maxValues.push(5);
+		else
+			maxValues.push(4);
 		maxValues.push(9);
 		maxValues.push(18);
 		maxValues.push(9);
-		if (version > 0)
+		if (version > 1)
+			maxValues.push(11);
+		else if (version > 0)
 			maxValues.push(6);
 		else
 			maxValues.push(3);

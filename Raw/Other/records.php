@@ -74,6 +74,7 @@
 		$sql7 = $conn->prepare('SELECT build FROM GameBuilds WHERE date <= ? ORDER BY Build DESC LIMIT 1;');
 		// Replace category id with category text.
 		$sql8 = $conn->prepare('SELECT name FROM Categories WHERE ID=?;');
+		$maxPlayers = categoryToPlayerCount($_POST['category']);
 		foreach($paths as $row) {
 			$sql->execute(array($row));
 			// Use while(true) with limits.
@@ -83,19 +84,17 @@
 				// Check that next record exists.
 				if (!$record)
 					break;
-				// Check that category is correct.
-				// Accept trio and quadro for full party.
-				if ($_POST['category'] == 1 && $record['category'] != 1 && $record['category'] != 6 && $record['category'] != 5)
+				$recordPlayers = categoryToPlayerCount($record['category']);
+				// Unrestricted only gets itself since the ruleset isn't comparable with anything.
+				if ($maxPlayers == 0 && $maxPlayers != $recordPlayers)
 					continue;
-				if ($_POST['category'] == 3 && $record['category'] != 3)
+				// Solo and duo share a same rule set.
+				if ($maxPlayers == 1 && $maxPlayers != $recordPlayers)
 					continue;
-				// Accept solo for duo.
-				if ($_POST['category'] == 4 && $record['category'] != 3 && $record['category'] != 4)
+				if ($maxPlayers == 2 && ($maxPlayers < $recordPlayers || $recordPlayers == 0) )
 					continue;
-				if ($_POST['category'] == 5 && $record['category'] != 5)
-					continue;
-				// Accept trio for quadro.
-				if ($_POST['category'] == 6 && $record['category'] != 5 && $record['category'] != 6)
+				// Everything else has a same rule set.
+				if ($maxPlayers > 2 && ($maxPlayers < $recordPlayers || $recordPlayers < 3))
 					continue;
 				// Get characters and videos.
 				$sql2->execute(array($record['ID']));
@@ -148,6 +147,17 @@
 		return $records;
 	}
 
+	// Converts category to a player count. Hardcoded based on category ids so not a very robust solution.
+	function categoryToPlayerCount($category) {
+		if ($category == 1)
+			return 5;
+		if ($category == 2)
+			return 0;
+		if ($category < 7)
+			return $category - 2;
+		return 17 - $category;
+	}
+	
 	function readRecordsByDate(PDO $conn) {
 		$records = array();
 		$counter = $_POST['amount'];
@@ -314,7 +324,7 @@
 	}
 
 	function readCategories(PDO $conn) {
-		$sql = $conn->prepare('SELECT ID, name FROM Categories ORDER BY ID');
+		$sql = $conn->prepare('SELECT ID, name FROM Categories ORDER BY ordering');
 		$sql->execute();
 		return $sql->fetchAll();
 	}
