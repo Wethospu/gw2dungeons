@@ -203,7 +203,7 @@ namespace DataCreator.Shared
       for (var i = 0; i < FractalPaths.Count; i++)
       {
         // Note: Tabs or linebrakes CAN'T be used to prevent a space between fractal tables.
-        if (i%20 == 0)
+        if (i%25 == 0)
           fractalData.Append("<li><ul class=\"nav nav-stacked\">").Append(Constants.LineEnding);
         var path = FractalPaths[i];
         // Format:
@@ -217,11 +217,10 @@ namespace DataCreator.Shared
           continue;
         }
         fractalData.Append("<li><a href=\"./F").Append(path.FractalScale).Append("\" data-scale=\"").Append(path.FractalScale).Append("\"><span class=\"list-icon\">");
-        fractalData.Append(Gw2Helper.RecommendedAgonyResist[i + 1]).Append(" <span class=").Append(Constants.IconClass).Append(" data-src=\"ar\" title=\"Agony Resistance\">AR</span>");
-        fractalData.Append("</span>").Append(path.FractalScale).Append(". ").Append(path.Name).Append("<br>");
+        // Fractral informarmation (instablities, agony damage, recommended agony resist).
+        fractalData.Append(GenerateInstabilities(path.FractalScale));
         if (path.FractalScale > 19)
         {
-          // Dynamic agony resistance value.
           fractalData.Append("<span class=\"list-sub list-sub-agony\"");
           if (path.Tag.ToLower().StartsWith("aqua"))
             fractalData.Append(" data-type=\"1\"");
@@ -231,15 +230,16 @@ namespace DataCreator.Shared
             fractalData.Append(" data-type=\"0\"");
           fractalData.Append("></span>").Append(Gw2Helper.GenerateHelpIcon(Constants.WebsiteIconLocation + "agony.png", "Agony damage based on your maximum health"));
         }
-        else
-        {
-          fractalData.Append(Constants.Space);
-        }
-        fractalData.Append(GenerateInstabilities(path.FractalScale));
-        // Dynamic achievement information.
-        fractalData.Append("<span class=\"list-sub list-sub-daily-fractal\"></span>");
-        fractalData.Append("</a></li>");
-        if ((i+1)%20 == 0)
+        fractalData.Append("<span class=\"list-sub-ar\">").Append(Gw2Helper.RecommendedAgonyResist[i + 1]).Append("</span> ").Append(Gw2Helper.GenerateHelpIcon(Constants.WebsiteIconLocation + "ar.png", "Recommended agony reistance."));
+        fractalData.Append("</span>").Append(path.FractalScale).Append(". ").Append(path.Name).Append("<br>").Append(Constants.Space);
+        // Fractal reward information (daily fractals).
+        fractalData.Append("<span class=\"list-icon\">");
+        fractalData.Append("<span class=\"list-sub-fractal-karma\"></span>").Append(Gw2Helper.GenerateHelpIcon("http://wiki.guildwars2.com/images/a/af/Karma.png", "")); ;
+        fractalData.Append("<span class=\"list-sub-fractal-relics\"></span>").Append(Gw2Helper.GenerateHelpIcon("https://wiki.guildwars2.com/images/5/57/Fractal_Relic.png", "")); ;
+        fractalData.Append("<span class=\"list-sub-daily-recommended-fractal\"></span>");
+        fractalData.Append("<span class=\"list-sub-daily-fractal\"></span>");
+        fractalData.Append("</span></a></li>");
+        if ((i+1)%25 == 0)
           fractalData.Append(Gw2Helper.AddTab(3)).Append("</ul></li>");
       }
       instanceData.Add("ID_FRACTAL", fractalData.ToString());

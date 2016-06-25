@@ -6,6 +6,7 @@
 		loadDailyDungeonPaths();
 		loadIcons("main");
 		loadAgonyDamage();
+		loadRewards();
 		loadDailyFractals();
 		setDailyTimer();
 		var page = getSetting('homePage');
@@ -18,7 +19,7 @@
 	// Agony damage is based on character's agony resist so actual values have to be calculated dynamically.
 	function loadAgonyDamage() {
 		$('.list-sub-agony').each(function(){
-			var parent = $(this).parent();
+			var parent = $(this).parent().parent();
 			var scale = $(parent).attr("data-scale");
 			var type = $(this).attr("data-type");
 			var resist = getSetting('agonyResist');
@@ -59,38 +60,70 @@
 			}
 		});
 	}
+	
+	function loadRewards() {
+		$('.list-sub-fractal-karma').each(function(){
+			var scale = $(this).parent().parent().attr("data-scale");
+			var personalScale = getSetting('fractal');
+			var delta = Math.max(0, Math.min(10, personalScale - scale));
+			$(this).html((160 + 2 * scale) * delta);
+		});
+		$('.list-sub-fractal-relics').each(function(){
+			var rewardScale = Math.min($(this).parent().parent().attr("data-scale"), getSetting('fractal'));
+			var high = Math.max(0, rewardScale - 50);
+			var low = rewardScale - high;
+			$(this).html(4 + Math.ceil(low / 5.0) + Math.ceil(high / 10.0));
+		});
+	}
+	
 	// Keep track of the last daily to detect when a new information is received.
 	// NOTE: No idea whether the daily is guaranteed to change. Fail-safe below.
 	var lastDaily = 0;
 	var dailyRecursionLevel = 0;
 	function loadDailyFractals() {
-		$.get("https://api.guildwars2.com/v2/achievements?ids=2238,2189", function( data ) {
-			var dailyScales = [ data[0].name.split(" ").pop(), data[1].name.split(" ").pop()];
-			$('.list-sub-daily-fractal').each(function() {
-				if (dailyScales.indexOf($(this).parent().attr("data-scale")) > -1) {
-					$(this).parent().addClass('daily-fractal');
-					$(this).html("Daily!");
+		$.get("https://api.guildwars2.com/v2/achievements/categories/88", function( data ) {
+			$.get("https://api.guildwars2.com/v2/achievements?ids=" + data.achievements, function( data ) {
+				var dailyRecommendedScales = [ data[0].name.split(" ").pop(), data[1].name.split(" ").pop()];
+				$('.list-sub-daily-recommended-fractal').each(function() {
+					if (dailyRecommendedScales.indexOf($(this).parent().parent().attr("data-scale")) > -1) {
+						$(this).html('<img class="icon-help" src="https://wiki.guildwars2.com/images/9/93/Fractal_Research_Page.png" title="Daily recommended fractal.">');
+					}
+					else {
+						$(this).html("");
+					}	
+				});
+				var dailyRecommendedMaps = data.splice(2);
+				var dailyScales = [];
+				for (var i = 0; i < dailyRecommendedMaps.length; i++) {
+					var tierMaps = dailyRecommendedMaps[i].bits;
+					for (var j = 0; j < tierMaps.length; j++) {
+						dailyScales.push(tierMaps[j].text.split(" ").pop());
+					}
 				}
-				else {
-					$(this).parent().removeClass('daily-fractal');
-					$(this).html("");
-				}	
+				$('.list-sub-daily-fractal').each(function() {
+					if (dailyScales.indexOf($(this).parent().parent().attr("data-scale")) > -1) {
+						$(this).html('<img class="icon-help" src="https://wiki.guildwars2.com/images/2/22/Daily_achievement_chest.png" title="Daily recommended fractal.">');
+					}
+					else {
+						$(this).html("");
+					}	
+				});
+				if (dailyRecommendedScales[0] == lastDaily) {
+					// Fail-safe: Same daily. Can't be sure that a new info was actually received. Load dailies multiple times, just in case.
+					dailyRecursionLevel++;
+					if (dailyRecursionLevel == 1)
+						setTimeout(loadDailyFractals, 5000);
+					else if (dailyRecursionLevel == 2)
+						setTimeout(loadDailyFractals, 60000);
+					else if (dailyRecursionLevel == 3)
+						setTimeout(loadDailyFractals, 120000);
+					else if (dailyRecursionLevel == 4)
+						setTimeout(loadDailyFractals, 300000);
+					else if (dailyRecursionLevel == 5)
+						setTimeout(loadDailyFractals, 600000);
+				}
+				lastDaily = dailyRecommendedScales[0];
 			});
-			if (dailyScales[0] == lastDaily) {
-				// Fail-safe: Same daily. Can't be sure that a new info was actually received. Load dailies multiple times, just in case.
-				dailyRecursionLevel++;
-				if (dailyRecursionLevel == 1)
-					setTimeout(loadDailyFractals, 5000);
-				else if (dailyRecursionLevel == 2)
-					setTimeout(loadDailyFractals, 60000);
-				else if (dailyRecursionLevel == 3)
-					setTimeout(loadDailyFractals, 120000);
-				else if (dailyRecursionLevel == 4)
-					setTimeout(loadDailyFractals, 300000);
-				else if (dailyRecursionLevel == 5)
-					setTimeout(loadDailyFractals, 600000);
-			}
-			lastDaily = dailyScales[0];
 		});
 	}
 	
@@ -154,7 +187,7 @@
 		});
 	}
 </script>
-<div>
+<div style="margin-top: -20px;">
     <ul class="nav nav-tabs">
 		<li><a href="#tab-fractals" data-toggle="tab">Fractals</a></li>
         <li><a href="#tab-raids" data-toggle="tab">Raids</a></li>

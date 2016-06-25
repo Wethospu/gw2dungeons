@@ -165,7 +165,7 @@ p, p *, h1, h1 *, h2, h2 *, h3, td, td *, ol *, .allow * {
     height: auto;
     margin-bottom: 1.65em;
     vertical-align: top;
-    width: 300px;
+    width: 380px;
 	border-style: groove;
 	border-width: 1px;
     -webkit-box-sizing: border-box;
@@ -178,15 +178,15 @@ p, p *, h1, h1 *, h2, h2 *, h3, td, td *, ol *, .allow * {
 }
 
 .fractal-list > li > ul > li > a {
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	padding-left: 10px;
 	padding-right: 5px;
 	color: black;
 }
 
 .fractal-list {
-	font-size: 0.9em;
+	font-size: 0.75em;
 }
 
 .list-icon {
@@ -195,13 +195,29 @@ p, p *, h1, h1 *, h2, h2 *, h3, td, td *, ol *, .allow * {
 }
 
 .list-sub {
-	font-size: 0.9em;
 	color: black;
 	margin-left: 10px;
 	display: inline-block;
 	min-width: 40px;
 	text-align: right;
 }
+
+.list-sub-ar {
+	width: 25px;
+	display: inline-block;
+	text-align: end;
+}
+
+.list-sub-daily-fractal, .list-sub-daily-recommended-fractal, .list-sub-fractal-relics  {
+	width: 16px;
+	display: inline-block;
+	text-align: end;
+}
+
+.list-sub-daily-recommended-fractal {
+	margin-left: 78px;
+}
+
 .dungeon-image {
     height:125px;
     opacity:0.75;
@@ -591,6 +607,7 @@ div.ally {
     text-indent: -9999px;
     width: 16px;
 	cursor: help;
+	vertical-align: text-top;
 }
 
 #detail-container {
@@ -621,7 +638,4 @@ div.ally {
 }
 .agony-6 {
 	background-color: #FF6666;
-}
-.daily-fractal {
-	background-color: #9999ff;
 }
