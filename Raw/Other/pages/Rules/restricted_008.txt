@@ -4,14 +4,12 @@
 
 <h2>Timer</h2>
 <ol>
-  <li>Timer starts when any party member moves their model or begins activating a skill. Using emotes will not result in the timer starting.
-  	<ol type="a">
-		<li>This excludes raid events and bosses which have in-game timers. In those cases the in-game timer is used instead. </li>
-	</ol>
-  </li>
+  <li>Full raid clears, fractals and dungeons: timer starts when any party member moves their model or begins activating a skill.</li>
+  <li>Raid bosses and events: timer starts based on the in-game timer. If there is no in-game timer, then the timer starts on the first hit.</li>
   <li>Once the timer starts, switching characters or re-entering the instance is banned.</li>
   <li>Full raid clears and dungeons: timer stops when the final boss has been killed.</li>
   <li>Fractals: timer stops when the shard reward chest appears.</li>
+  <li>Raid bosses and events: timer stops based on the in-game timer. If there is no in-game timer, then the timer stops when the event ends.</li>
   <li>Videos may not be sped up or slowed down, and must be captured in normal time.</li>
 </ol>
 

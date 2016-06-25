@@ -179,7 +179,7 @@
 	function updateProfessionSelect(professions) {
 		var content = "<option value=0>Any</option>";
 		$.each(professions, function() {
-			content += "<option value=\"" + this.ID + "\">" + this.name + "</option>";
+			content += "<option value=\"" + this.ID + "\">" + this.name.charAt(0).toUpperCase() + this.name.slice(1) + "</option>";
 		});
 		$("#record-profession").html(content);
 	}
@@ -322,9 +322,7 @@
 		var instanceFilter = $("#record-instance").val();
 		var category = $("#record-category").val();
 		// Don't show paths with too many minimum players.
-		var maxPlayers = 5;
-		if (category > 2)
-			maxPlayers = category - 2;
+		var maxPlayers = categoryToPlayers(category);
 		$.each(instances, function() {
 			// Don't show empty stuff with guilds or players.
 			if (!records || ((page == "Guilds" || page == "Players") && records.length == 0))
@@ -448,9 +446,7 @@
 		var typeID = $("#record-instance-type").val();
 		var instanceFilter = $("#record-instance").val();
 		var category = $("#record-category").val();
-		var maxPlayers = 5;
-		if (category > 2)
-			maxPlayers = category - 2;
+		var maxPlayers = categoryToPlayers(category);
 		$.each(instances, function() {
 			if (typeID > 0 && this.type != typeID)
 				return;
@@ -562,6 +558,16 @@
 		});
 		content +='</tbody></table></div>';
 		$("#record-table").html(content);
+	}
+	
+	function categoryToPlayers(category) {
+		if (category == 1)
+			return 5;
+		if (category == 2)
+			return 0;
+		if (category < 7)
+			return category - 2;
+		return 17 - category;
 	}
 	
 	function updateGroupTable(players) {

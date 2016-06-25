@@ -1,5 +1,6 @@
 <script type="text/javascript">
 	"use strict";
+	var MAX_PLAYERS = 10;
 	
 	var paths;
 	var players;
@@ -43,7 +44,7 @@
 
 	function addPlayer() {
 		var groups = [];
-		for (var i = 1; i < 6; i++) {
+		for (var i = 1; i <= MAX_PLAYERS; i++) {
 			// Only different groups.
 			var group = $("#player-group" + i).val();
 			if (group > 0 && groups.indexOf(group) == -1)
@@ -59,7 +60,7 @@
 
 	function editPlayer() {
 		var groups = [];
-		for (var i = 1; i < 6; i++) {
+		for (var i = 1; i <= MAX_PLAYERS; i++) {
 			// Only different groups.
 			var group = $("#player-group" + i).val();
 			if (group > 0 && groups.indexOf(group) == -1)
@@ -90,7 +91,7 @@
 		var characters = [];
 		var videos = [];
 		var groups = [];
-		for (var i = 1; i < 6; i++) {
+		for (var i = 1; i <= MAX_PLAYERS; i++) {
 			characters.push($("#record-character" + i).val());
 			videos.push($("#record-video" + i).val());
 			groups.push($("#record-group" + i).val());
@@ -134,7 +135,7 @@
 		var characters = [];
 		var videos = [];
 		var groups = [];
-		for (var i = 1; i < 6; i++) {
+		for (var i = 1; i <= MAX_PLAYERS; i++) {
 			characters.push($("#record-character" + i).val());
 			videos.push($("#record-video" + i).val());
 			groups.push($("#record-group" + i).val());
@@ -380,7 +381,7 @@
 		// Split groups.
 		var groups = data[2].split(", ");
 		// Update groups.
-		for (var i = 0; i < 5; i++) {
+		for (var i = 0; i < MAX_PLAYERS; i++) {
 			var group = "None";
 			if (groups.length > i && groups[i].length > 0)
 				group = groups[i];
@@ -457,11 +458,21 @@
 		content += "<td>Character 3</td>";
 		content += "<td>Character 4</td>";
 		content += "<td>Character 5</td>";
+		content += "<td>Character 6</td>";
+		content += "<td>Character 7</td>";
+		content += "<td>Character 8</td>";
+		content += "<td>Character 9</td>";
+		content += "<td>Character 10</td>";
 		content += "<td>Video 1</td>";
 		content += "<td>Video 2</td>";
 		content += "<td>Video 3</td>";
 		content += "<td>Video 4</td>";
 		content += "<td>Video 5</td>";
+		content += "<td>Video 6</td>";
+		content += "<td>Video 7</td>";
+		content += "<td>Video 8</td>";
+		content += "<td>Video 9</td>";
+		content += "<td>Video 10</td>";
 		content += "<td>ID</td>";
 		content += "</tr></thead><tbody>";
 		$.each(records, function() {
@@ -485,11 +496,21 @@
 			content += "<td>" + this.character3 + "</td>";
 			content += "<td>" + this.character4 + "</td>";
 			content += "<td>" + this.character5 + "</td>";
+			content += "<td>" + this.character6 + "</td>";
+			content += "<td>" + this.character7 + "</td>";
+			content += "<td>" + this.character8 + "</td>";
+			content += "<td>" + this.character9 + "</td>";
+			content += "<td>" + this.character10 + "</td>";
 			content += "<td>" + this.video1 + "</td>";
 			content += "<td>" + this.video2 + "</td>";
 			content += "<td>" + this.video3 + "</td>";
 			content += "<td>" + this.video4 + "</td>";
 			content += "<td>" + this.video5 + "</td>";
+			content += "<td>" + this.video6 + "</td>";
+			content += "<td>" + this.video7 + "</td>";
+			content += "<td>" + this.video8 + "</td>";
+			content += "<td>" + this.video9 + "</td>";
+			content += "<td>" + this.video10 + "</td>";
 			content += "<td>" + this.ID + "</td>";
 			content += "</tr>";
 		});
@@ -505,7 +526,7 @@
 		data = data.substring(4, data.length - 5);
 		// Split to pieces.
 		data = data.split("</td><td>");
-		if (data.length != 19) {
+		if (data.length != 9 + 2 * MAX_PLAYERS) {
 			console.log("Internal error.")
 			console.log(data)
 			return;
@@ -541,7 +562,7 @@
 		// Split groups.
 		var groups = data[7].split(", ");
 		// Update groups.
-		for (var i = 0; i < 5; i++) {
+		for (var i = 0; i < MAX_PLAYERS; i++) {
 			var group = "None";
 			var tagSearch = false;
 			if (groups.length > i && groups[i].length > 0)
@@ -565,7 +586,7 @@
 			});
 		}
 		// Update characters.
-		for (var i = 0; i < 5; i++) {
+		for (var i = 0; i < MAX_PLAYERS; i++) {
 			var character = data[8 + i];
 			if (character == "")
 				character = "None";
@@ -576,10 +597,10 @@
 			});
 		}
 		// Update videos.
-		for (var i = 0; i < 5; i++) {
-			$("#record-video" + (i + 1)).val(data[13 + i]);
+		for (var i = 0; i < MAX_PLAYERS; i++) {
+			$("#record-video" + (i + 1)).val(data[8 + MAX_PLAYERS + i]);
 		}
-		$("#record-id").val(data[18]);
+		$("#record-id").val(data[8 + 2 * MAX_PLAYERS]);
 	}
 	
 	function updateGameBuildTable(gameBuilds) {
@@ -623,7 +644,7 @@
 		// Empty value to ensure proper indexing.
 		var valuesP = [0];
 		var valuesR = [0];
-		for (var i = 1; i < 6; i++) {
+		for (var i = 1; i <= MAX_PLAYERS; i++) {
 			valuesP.push($("#player-group" + i).val());
 			valuesR.push($("#record-group" + i).val());
 		}
@@ -631,7 +652,7 @@
 		$.each(groups, function() {
 			content += '<option value="' + this.ID + '">' + this.name + " " + this.tag + '</option>';
 		});
-		for (var i = 1; i < 6; i++) {
+		for (var i = 1; i <= MAX_PLAYERS; i++) {
 			$("#player-group" + i).html(content);
 			// Remember old value.
 			if (valuesP[i])
@@ -664,14 +685,14 @@
 	function updateCharacterSelect(characters) {
 		// Empty value to ensure proper indexing.
 		var values = [0];
-		for (var i = 1; i < 6; i++) {
+		for (var i = 1; i <= MAX_PLAYERS; i++) {
 			values.push($("#record-character" + i).val());
 		}
 		var content = "<option value=\"0\">None</option>";
 		$.each(characters, function() {
 			content += "<option value=\"" + this.ID + "\">" + this.name + "</option>";
 		});
-		for (var i = 1; i < 6; i++) {
+		for (var i = 1; i <= MAX_PLAYERS; i++) {
 			$("#record-character" + i).html(content);
 			if (values[i])
 				$("#record-character" + i).val(values[i]);
@@ -798,48 +819,93 @@
 	<select id="record-category">
 	</select>
 	<br>
-	<label for="record-character1">Character 1 :</label>
-	<select class="record-character" id="record-character1">
-	</select>
-	<label for="record-character2">Character 2 :</label>
-	<select class="record-character" id="record-character2">
-	</select>
-	<label for="record-character3">Character 3 :</label>
-	<select class="record-character" id="record-character3">
-	</select>
-	<label for="record-character4">Character 4 :</label>
-	<select class="record-character" id="record-character4">
-	</select>
-	<label for="record-character5">Character 5 :</label>
-	<select class="record-character" id="record-character5">
-	</select>
-	<br>
-	<label for="record-video1">Video link 1 :</label>
-	<input id="record-video1" type="text">
-	<label for="record-video2">Video link 2 :</label>
-	<input id="record-video2" type="text">
-	<label for="record-video3">Video link 3 :</label>
-	<input id="record-video3" type="text">
-	<label for="record-video4">Video link 4 :</label>
-	<input id="record-video4" type="text">
-	<label for="record-video5">Video link 5 :</label>
-	<input id="record-video5" type="text">
-	<br>
-	<label for="record-group1">Group 1 :</label>
-	<select id="record-group1">
-	</select>
-	<label for="record-group2">Group 2 :</label>
-	<select id="record-group2">
-	</select>
-	<label for="record-group3">Group 3 :</label>
-	<select id="record-group3">
-	</select>
-	<label for="record-group4">Group 4 :</label>
-	<select id="record-group4">
-	</select>
-	<label for="record-group5">Group 5 :</label>
-	<select id="record-group5">
-	</select>
+	<table id="record-players"><tr>
+	<td><label>Player 1 :</label></td>
+	<td><select class="record-character" id="record-character1">
+		</select></td>
+	<td><label>Player 2 :</label></td>
+	<td><select class="record-character" id="record-character2">
+		</select></td>
+	<td><label>Player 3 :</label></td>
+	<td><select class="record-character" id="record-character3">
+		</select></td>
+	<td><label>Player 4 :</label></td>
+	<td><select class="record-character" id="record-character4">
+		</select></td>
+	<td><label>Player 5 :</label></td>
+	<td><select class="record-character" id="record-character5">
+		</select></td>
+	</tr><tr>
+	<td></td>
+	<td><input id="record-video1" type="text" placeholder="Video link 1"></td>
+	<td></td>
+	<td><input id="record-video2" type="text" placeholder="Video link 2"></td>
+	<td></td>
+	<td><input id="record-video3" type="text" placeholder="Video link 3"></td>
+	<td></td>
+	<td><input id="record-video4" type="text" placeholder="Video link 4"></td>
+	<td></td>
+	<td><input id="record-video5" type="text" placeholder="Video link 5"></td>
+	</tr><tr>
+	<td></td>
+	<td><select id="record-group1">
+		</select></td>
+	<td></td>
+	<td><select id="record-group2">
+		</select></td>
+	<td></td>
+	<td><select id="record-group3">
+		</select></td>
+	<td></td>
+	<td><select id="record-group4">
+		</select></td>
+	<td></td>
+	<td><select id="record-group5">
+		</select></td>
+	</tr><tr>
+	<td><label>Player 6 :</label></td>
+	<td><select class="record-character" id="record-character6">
+		</select></td>
+	<td><label>Player 7 :</label></td>
+	<td><select class="record-character" id="record-character7">
+		</select></td>
+	<td><label>Player 8 :</label></td>
+	<td><select class="record-character" id="record-character8">
+		</select></td>
+	<td><label>Player 9 :</label></td>
+	<td><select class="record-character" id="record-character9">
+		</select></td>
+	<td><label>Player 10 :</label></td>
+	<td><select class="record-character" id="record-character10">
+		</select></td>
+	</tr><tr>
+	<td></td>
+	<td><input id="record-video6" type="text" placeholder="Video link 6"></td>
+	<td></td>
+	<td><input id="record-video7" type="text" placeholder="Video link 7"></td>
+	<td></td>
+	<td><input id="record-video8" type="text" placeholder="Video link 8"></td>
+	<td></td>
+	<td><input id="record-video9" type="text" placeholder="Video link 9"></td>
+	<td></td>
+	<td><input id="record-video10" type="text" placeholder="Video link 10"></td>
+	</tr><tr>
+	<td></td>
+	<td><select id="record-group6">
+		</select></td>
+	<td></td>
+	<td><select id="record-group7">
+		</select></td>
+	<td></td>
+	<td><select id="record-group8">
+		</select></td>
+	<td></td>
+	<td><select id="record-group9">
+		</select></td>
+	<td></td>
+	<td><select id="record-group10">
+		</select></td>
+	</tr></table>
 	<br>
 	<button type="button" onclick="addRecord()">Add</button>
 	<br>

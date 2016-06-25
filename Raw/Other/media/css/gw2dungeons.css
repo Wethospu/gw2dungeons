@@ -26,6 +26,12 @@ html, body {
 	margin: 10px;
 }
 
+#record-players > tbody > tr > td > select, #record-players > tbody > tr > td > input {
+	width: 250px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
 
 .overlay-close {
 	float: right;

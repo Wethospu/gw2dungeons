@@ -249,7 +249,7 @@ function readRecords(PDO $conn) {
         }
         // Initialize remaining players with empty stuff.
         // TODO: Store characters as an array to allow any amount of them.
-        for(; $k < 6; $k++) {
+        for(; $k < 11; $k++) {
             $records[$i]['character'.$k] = '';
             $records[$i]['video'.$k] = '';
         }
