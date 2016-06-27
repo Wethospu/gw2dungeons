@@ -20,6 +20,10 @@ namespace DataCreator.Enemies
     /// </summary>
     public List<Effect> Effects = new List<Effect>();
     /// <summary>
+    /// Whether the attack can't be blocked. Used to detect "Can't reflect" tags.
+    /// </summary>
+    public bool CantBeBlocked = false;
+    /// <summary>
     /// Datamined value. Minimum distance needed for the enemy to use this attack.
     /// </summary>
     public double MinimumRange = -1;

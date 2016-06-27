@@ -404,7 +404,10 @@ namespace DataCreator.Enemies
         ErrorHandler.ShowWarning("Missing info. Use \"additional='text'\".");
       var lower = data.ToLower();
       if (lower.Contains("can't be blocked") || lower.Contains("can't block"))
+      {
         currentEnemy.Tags.Add("can't block");
+        currentAttack.CantBeBlocked = true;
+      }
       if (lower.Contains("can't be evaded") || lower.Contains("can't evade"))
         currentEnemy.Tags.Add("can't evade");
       currentAttack.Effects.Add(new Effect(LinkGenerator.CheckLinkSyntax(data)));
@@ -457,7 +460,12 @@ namespace DataCreator.Enemies
         foreach (var enemyTag in Constants.AttackTypeTags)
         {
           if (type.Contains(enemyTag))
+          {
             currentEnemy.Tags.Add(enemyTag);
+            if (currentAttack.CantBeBlocked && enemyTag.Equals("projectile"))
+              currentEnemy.Tags.Add("can't reflect");
+          }
+            
         }
         currentEffect = currentAttack.Effects.Last();
       }
