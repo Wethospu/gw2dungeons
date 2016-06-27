@@ -189,16 +189,18 @@ p, p *, h1, h1 *, h2, h2 *, h3, td, td *, ol *, .allow * {
 	font-size: 0.75em;
 }
 
+.fractal-list-simple {
+	font-size: 1.05em;
+}
 .list-icon {
 	float: right;
 	color: black;
 }
 
-.list-sub {
+.list-sub-agony {
 	color: black;
-	margin-left: 10px;
 	display: inline-block;
-	min-width: 40px;
+	width: 2.6em;
 	text-align: right;
 }
 
@@ -214,8 +216,14 @@ p, p *, h1, h1 *, h2, h2 *, h3, td, td *, ol *, .allow * {
 	text-align: end;
 }
 
-.list-sub-daily-recommended-fractal {
-	margin-left: 78px;
+.list-sub-filler {
+	width: 78px;
+	display: inline-block;
+}
+
+.list-sub-filler-small {
+	width: 14px;
+	display: inline-block;
 }
 
 .dungeon-image {
@@ -607,7 +615,6 @@ div.ally {
     text-indent: -9999px;
     width: 16px;
 	cursor: help;
-	vertical-align: text-top;
 }
 
 #detail-container {
