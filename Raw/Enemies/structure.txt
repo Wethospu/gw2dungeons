@@ -675,7 +675,7 @@ subeffect=knockdown:3
 ##################################################################
 
 Name=Svanir Ballista
-alt=Svanir Ballistas
+alt=Svanir ballistae
 rank=structure
 Path=HotW1
 
@@ -773,7 +773,7 @@ subeffect=damage:?
 ##################################################################
 # TODO: Health was increased.
 Name=Ballista
-alt=Ballistas
+alt=ballistae
 scaling=constant
 health=0.7598
 toughness=0.67
@@ -790,7 +790,7 @@ subeffect=knockback:1.5
 ##################################################################
 # TODO: Health was increased.
 Name=Ballista (Rapid)
-alt=Ballistas (Rapid)
+alt=ballistae (Rapid)
 scaling=constant
 toughness=0.67
 health=0.7598

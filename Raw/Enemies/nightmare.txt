@@ -953,11 +953,10 @@ attack=Cannot be moved
 attack=Poison Cloud
 ID=4726
 image=http://giant.gfycat.com/DizzyKindAustraliankestrel.gif
-additional=channeled. Only used at distant targets.
+additional=channeled. Only used at distant targets. Can't be blocked.
 effect=multiple projectiles with small ticking AoEs (lasts about 3 s)
 subeffect=damage:-
 #note=circles may overlap which might result in extreme damage
-#note=only projectiles absorption skills work
 #note=stack on close range to prevent usage
 #note=seems to favour targets at high range. This allows ranged users to take pressure from melee users when there are multiple Vines
 
