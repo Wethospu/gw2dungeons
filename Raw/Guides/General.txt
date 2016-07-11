@@ -286,7 +286,7 @@ name=Thief
 For healing take wiki=Hide_in_Shadows or wiki=Withdraw. For utilities take wiki=Smoke_Screen, wiki=Blinding_Powder and wiki=Shadow_Refuge.
 Equip a shortbow, a sword and a pistol. Use wiki=Black_Powder if you expect your party to help with stacking stealth. Otherwise use wiki=Smoke_Screen, wiki=Blinding_Powder and wiki=Cluster_Bomb to stack stealth on your own.
 While skipping call and use wiki=Shadow_Refuge when stealth is about to run out. Stand inside it whole duration or you get revealed. Use wiki=Infiltrator's_Arrow to move faster during the skip.
-For harder skips you can quickly retrait to (00333) to get toughness, vitality, wiki=Last_Refuge, wiki=Meld_with_Shadows, wiki=Expeditious_Dodger, wiki=Feline_Grace and wiki=Preparedness.
+For harder skips you can quickly retrait to (00333) to get wiki=Last_Refuge, wiki=Meld_with_Shadows, wiki=Expeditious_Dodger, wiki=Feline_Grace and wiki=Preparedness.
 If you expect to die you should retrait to (00644) to additionally get wiki=Master_of_Deception, wiki=Patience, wiki=Fleet_Shadow, wiki=Fleet_of_Foot, wiki=Merciful_Ambush and wiki=Instinctual_Response.
 
 name=Warrior
@@ -294,7 +294,7 @@ For healing take wiki=Defiant_Stance, For utilities take wiki="Shake_It_Off!"|(u
 Equip a greatsword, a sword and a warhorn. Use wiki=Charge_(warrior_skill)|Charge for area swiftness. If your party already has lots of swiftness you can save it later to remove conditions. If you see a smoke or a lighting field, blast it with wiki=Call_to_Arms then quickly equip longbow and blast again with wiki=Arcing_Arrow.
 For harder skips take shield instead of warhorn. Use wiki=Shield_Stance before you get hit and equip sword during the channel. Then use wiki=Riposte before you get hit and equip warhorn during the channel. This allows you to block damage for over 5 seconds.
 While skipping use wiki=Savage_Leap, wiki=Rush, wiki=Whirlwind_Attack and wiki=Bull's_Charge to quickly pass any enemies. If you take heavy damage use wiki=Defiant_Stance to instantly heal back to full health.
-If you expect to die you should retrait to (20633) to get toughness, vitality, wiki=Restorative_Strength, wiki=Thick_Skin, wiki=Dogged_March, wiki=Last_Stand, wiki=Defy_Pain, wiki=Lung_Capacity and wiki=Fast_Hands.
+If you expect to die you should retrait to (20633) to get wiki=Restorative_Strength, wiki=Thick_Skin, wiki=Dogged_March, wiki=Last_Stand, wiki=Defy_Pain, wiki=Lung_Capacity and wiki=Fast_Hands.
 
 ####################################################################################################################################################################################
 

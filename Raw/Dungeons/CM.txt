@@ -114,47 +114,42 @@ Get closer until he turns hostile and then stack might and fury if needed. Break
 
 name=Reviving Sigfast
 tactic=normal
-The first room has a enemy=Separatist_Lieutenant_(Rifle):champion, a enemy=Sniper:elite and a enemy=Fighter:elite. The second room has a enemy=Separatist_Fighter:champion and 3 enemy=Fighters:elite.
-Champion sniper(can't use snipe), elite sniper and an elite fighter then 3 elite fighters and a lieutenant.
-Champion has fast attacks, use projectile defenses. Keep blinds under the other mobs.
-After killing initial enemies near Sigfast, 3 fighters and a lieutenant(rifle) will spawn in the left tunnel. Pull these together to manage them easier with crowd control and blinds.
+The first room has a enemy=Separatist_Lieutenant_(Rifle):champion, a enemy=Sniper:elite and a enemy=Fighter:elite. Lieutenant shoots fast projectiles so use projectile defense if you have any. Use area attacks to take down elite enemies while focusing the lieutenant. Use blind against elite enemies to reduce pressure.
+The second room has a enemy=Separatist_Fighter:champion, 3 enemy=Fighters:elite and a sleeping enemy=Sigfast. Use blind to reduce pressure.
+Once enemies are dead, 3 enemy=fighters:elite and a enemy=Separasit_Lieutenant_(Rifle) spawns in the left tunnel. Break the line of sight to pull them together for more effective area damage and control.
 tactic=coordinated
-Place a projectile defense under the champ and use area attacks to clear other enemies. Break2 line of sight the mobs that spawn behind the staircase or the platform behind sigfast.
-tactic=exploit
-Pull the champion and 2 elites into the previous tunnel to avoid having 2 of the extra elites chase you.
+Stack might and fury if needed. Don't bother pulling enemies. Just break the defiance and burst enemies down.
 tactic=bug
-If you approach the gate to the next area the 3 fighters beyond the gate will teleport to you.
+If you approach the gate to the next area the enemy=Fighter:champion and 2 enemy=Fighters:elite beyond the gate will teleport to you.
 
 name=Outside area
 tactic=normal
-Kill the champion and 2 elites outside the tunnel(identical to the 3 fighters in the basement next to the switch).
-Two patrols with enemy=Hunting_Dogs:elite, lots of enemies and 3 enemy=Snipers:elite in the tree.
-Kill patrols before getting close. Bring anti-CC or instant condition cleanse against the dogs' fear.
-Stay behind trees/under the stairs to avoid Riflemen. Kill enemies.
-Go finish off Riflemen.
-tactic=normal
-Draw the first pack of hounds towards the tunnels to avoid triggering the treehouse mobs, using blinds, evades, stun breaks or condition cleanse to avoid chain fear.
-Hide under the lowest sniper and clear out the mobs, kill the remaining 2 snipers after.
-If the snipers are aggroed you can stealth in or use the left tree to block their line of sight.
+There are lots of enemies so don't rush in. After the gate there are a enemy=Figther:champion and 2 enemy=Fighters:elite. Try to pull them inside to avoid aggroing patrolling enemies.
+Two groups of enemy=Huntings_Dogs:elite are patrolling the road. About halfway of the road there are treehouses with 3 enemy=Snipers:elite and lots of other enemies.
+It's safer to wait for patrols to get closer because snipers have a surprisingly high range. If you go too far they will start shooting at making the fight much harder unless you have projectile defenses.
+Hunting dogs inflict a long lasting fear with their Howl. Take lots of stability, stun breaks or instant condition cleanse to prevent getting disabled for a very long time.
+Once patrols are killed take a look at where snipers are located. Snipers can't move so you can use terrain against them. Rush towards the first tree and stay behind it or stairs while you kill the other enemies.
+Keep in mind that this part can be really chaotic. If you are struggling call targets and try get at least one enemy down befoure you get defeated. With a good team just focus the champion.
 tactic=skip
-After killing the 3 fighters, wait for the first pack of dogs to walk away, run past them and hide under the first sniper. Pull all the mobs in and AoE, clear the remaining snipers after.
-Run along the rocks and go past the second group of hounds to the boss.
+Skipping all enemies is very difficulty, especially without stealth. Kill the enemies after the gate to give you more space.
+If you have stealth you can use it to avoid patrols. If not, wait until they move away. Hug left wall until you get to the trees. Run below the first sniper and use area attacks to clear all enemies. Then finish remaining snipers.
+Run along the rocks and go past the second group of dogs. Keep dodging while you go through them to avoid damage and fear?. Run until they stop following.
 tactic=coordinated
-Stealth after the Sigfast mobs, path the 3 fighters and skip the first hounds.
-Stand on the riflemen and AoE with blinds and projectile defenses underneath you.
-Jump over the rocks or stealth to skip the second group of hounds.
+Stealth immediately once enemy=Sigfast is saved because the first enemy group will rush in. Wait until they reach you so they stop pathing. Keep stealth up to skip patrols safely.
+Focus snipers down one by one with area attacks to also clear other enemies. Use projectile defenses to reduce pressure.
+Jump over the rocks or stealth to skip the second patrol.
 tactic=exploit
-The riflemen will not move allowing you to place AoEs under them without being attacked.
+The snipers can't move which allows you to place AoEs under them without being attacked.
 
 name=enemy=Separatist_Captain_DeLana:champion
 tactic=normal
-Kill Elite enemies first. Finish off boss.
+DeLana and other enemies are initially friendly. When you reach enemy=Queen_Jennah they will turn hostile in about 7 seconds.
+Use area attacks and projectile defenses.
 tactic=coordinated
-Stack fury/might(7 seconds until aggressive), place a projectile defense under yourself and AoE the mobs.
+Stack might and fury during the dialogue. Break the defiance to burst enemy=Separatist_Captain_DeLana:champion down.
 tactic=exploit
-The champion can aggro onto Queen Jennah, allowing you to kill her without being hit.
-You can hide behind the tree next to her, or the rock just past her to heal as she can't move.
-Queen Jennah has a reflective shield on her, stand behind her to avoid getting hit by the boss.
+enemy=Separatist_Captain_DeLana:champion has only projectile attacks and enemy=Queen_Jennah has a permanent reflective shield. You can simply stand inside the shield to stay unharmed. You don't even have to participate in the battle because DeLana will eventually die to her own attacks.
+Also DeLana can't move so you can easily abuse nearby terrain to heal up if needed.
 
 ##################################################################
 
@@ -179,36 +174,54 @@ There is a high chance to get wiki=Bandit_Spineguard, wiki=Beetlestone's_Band or
 There is a very low chance to get an account bound wiki=Spineguard_of_the_North from the end boss, enemy=Frost. It's account bound so it's not valuable.
 
 name=Destroying parts
-tactic=normal|skip|coordinated
-Interact with parts to make Asura destroy them. Go to media=cm1_parts.jpg|cellar (as in story). There are 13 enemy=Cutpurses:elite or enemy=Riflemen:elite. Clear 4 parts from east side first.
-tactic=fight
-You should pull every group behind corner. This will force Riflemen to come close range and prevent aggroing additional enemies (Riflemen aggro very easily because of their high range).
 tactic=normal
-Asura follows you pretty quickly so you can just run around with her and destroy parts. This can be done fairly easily alone by a thief, a mesmer or a warrior. Everyone else can either wait at the beginning or use Coordinated tactic. However, it is safer to run together.
-Hug right wall, enter the room near part 1 and trigger it through the wall. Run next parts while evading and blocking (especially if Rifleman marks you). Once done, run to the west side.
+Interact with parts to make enemy=Traffa destroy them. Go to media=cm1_parts.jpg|cellar (as in story) after clearing the first part. The cellar is split to a west wing, a center and a right wing. Whole cellar includes 9 parts and 27 enemies.
+Enemies are often skipped because there are so many of them. Keep in mind that some parties expect Thieves to do this alone. Consider practising this alone few times if you want to join experience groups. However all professions can do it alone and it's much faster when done by two players.
+The exact order of parts doesn't matter but you want to leave the west wing last because that has an exit from the cellar. After stairs there is a room immediately on the right side containing 3 enemy=Cutpurses:elite, 2 enemy=Riflemen:elite and a part (number 4 in the picture).
+Riflemen shoot fast projectiles dealing high damage to moving targets so either pull enemies behind a corner or use projectile reflection. Riflemen also have a high range so they may shoot you from other rooms. Cutpurses have quick melee attacks and occasionally jump over you dealing 24 stacks of bleeding so take condition removal. Blind is useful to reduce pressure.
+Go to south-east after destroying the part 4. The next room has a random mix of 3 enemy=Cutpurses:elite and enemy=Riflemen:elite. You can use a similar tactic as before or just kill them since there are only 3 enemies. A enemy=Cutpurse:elite may join the figth from the next room but it's nothing to worry about. Destroy the part number 3 and then the part number 1 from the next room.
+Go to south-west to the east wing. The room at the end has a random mix of 4 enemy=Curpurses:elite and enemy=Riflemen:elite. Watch out for riflemen when you are getting close. Use the same tactic as before.
+Once the part 2 is destroyed the progress should show 4/9. Go back hugging the left wall all way to the west wing. The west wing has a corridor with 2 rooms next to it and 1 room at the end. There are 2 enemy=Riflemen:elite and a enemy=Bomber:elite in the corridor who will attack when you move past the corner. Don't rush towards them or you will aggro enemies from all rooms and probably get defeated.
+Instead dodge twice to the first room with 2 enemy=Flame_Turrets and 2 parts. Turrets can't rotate so you can freely destroy them from behind. After destroying the 2 parts you have two options. Either use ranged attacks and reflects to take down enemies at corridor from distance or rush to the next room. Taking down the enemies at the corridor is suggested because it's less chaotic and easier to handle. Rushing to the next room requires everyone following the tactic.
+The second room has 2 enemy=Flame_Turrets, a enemy=Cutpurse:elite and 3 enemy=Archers:elite. Archers won't deal much damage but they are hard to kill because they often evade attacks and also apply blind. When killing them make sure you move behind turrets so they won't hit you.
+The last room has enemy=Sure_Shot_Seamus:legendary, 2 enemy=Rifle_Turrets and 2 enemy=Net_Turrets. Seamus will turn friendly at 25% health so trying to kill him is pointless because you get no experience or loot. Check the optional tactic if you wish to kill him. Just destroy the 2 Net Turrets so no one gets stuck and then the last 2 parts. Remove immobilize from the party and then exit the cellar from the opened gate.
+tactic=optional
+enemy=Sure_Shot_Seamus:legendary is considered optional because he turns friendly at 25% health. He can be killed in the path 3.
+Focus down the 2 enemy=Net_Turrets and 2 enemy=_Rifle_Turrets to reduce pressure. Avoid attacking Seamus because he turns much more dangerous at 95% health.
+Seamus starts with pistols and has 2 attacks; Shoot and Chain Shot. Shoot is his basic ranged attack which deals moderate damage. Chain Shot is used when he glows. He will shoot lots of fast projectiles for a high damage. If you see him shooting at you then just dodge.
+The fight actually starts when Seamus has lost 5% of his health and he switches to a shotgun. He has only one attack, Shrapnel Blast. It's a short-range cone which deals moderate damage, bleeds and knocks back. Keep in mind that he will attack again before the disable ends. This lets him hit you multiple times before you get knocked out of his range. Don't rely on anti projectile skills because the attack isn't a projectile.
+The real problem is when you get stuck in a terrain and will never move out of his range. This means you will get permanently disabled unless someone else gets aggro or you have a stun break. However because of the small room this will happen very easily so you either need lots of stun breaks or have to know what you are doing.
+With a decent party you can just break his defiance, burst him down and then use area stability for the remaining health. With a weaker party the simplest tactic is to have 1 player at melee and rest at range. The player who has the aggro must melee. This is quite easy to do because you can avoid all his attacks by just circling around him when you have the aggro. Everyone else should be ready to support if the melee player does a mistake.
+If the player who has aggro is very good he can control the direction of Seamus's attacks. This allows everyone else safely melee him behind his back and kill him much faster.
+tactic=skip
+The enemies are often skipped because there is so many them and they also deal lots of damage. The easiest way is to run together which reduces pressure and ensures that at least someone gets through. Splitting up is not suggested unless you know what you are doing because you need enemy=Traffa with you to get a part destroyed.
+Running together is usually quite chaotic when people may drag enemies with them so be prepared. Take lots of survivability including condition removal. If you are confident about your own skills just let other players be the cannon fodder.
+The whole thing can be done easily alone with some practice. Experienced parties often ask thieves to do it. If you want to join experienced parties as a thief consider practising this a few times.
+This media=cm1_parts.jpg|map has a layout of the cellar and suggested order of the parts. Turn left right after the stairs. Then hug the right wall so you don't aggro a nearby enemy=Cutpurse:elite. Enter the first room along the corridor and trigger the part through the wall.
+Use stealth, evades, blocks and immunity to avoid shots from enemy=Riflemen:elite when getting the part 2 from the east wing. Once it's destroyed go back the same way. Remember hug the left wall so you avoid that Cutpurse.
+Using the same tactic trigger both parts 3 and 4. Then run to the first room on the west wing to lose aggro. If you got hit by those 2 enemy=Flame_Turret at the doorway then destroy them to get out of combat. Don't bother entering the second room. Get the part at end of corridor while avoiding shots from Riflemen and nets from enemy=Net_Turrets. Be ready to remove immobilized if you get hit by a net.
+After the part 7 immediately turn right so you don't aggro enemy=Sure_Shot_Seamus and trigger the part on the second room through the wall. You can run to the closed gate if you need to wait for cooldowns. Turrets can't hit you if you stand at the correct spot. Get the last part while avoiding the nets and then escape through the gate. If you are alone you can also use ranged attacks to destroy turrets when you are at the gate but it's much slower than just getting the part and then dying.
 tactic=mesmer
 youtube=UUPb-fGfZ1M|Video of a solo.
 tactic=warrior
 youtube=sUW3EWot7jw|Video of a solo.
+tactic=thief
+Thief is the best professions because you can stay permanently stealthed with wiki=Smoke_Screen, wiki=Blinding_Powder, wiki=Shadow_Refuge, wiki=Hide_in_Shadows, wiki=Black_Powder and wiki=Cluster_Bomb. Also switch to initiative, stealth and mobility related traits when practising. wiki=Withdraw and wiki=Signet_of_Shadows can be taken when you are experience for more speed.
 tactic=coordinated
-Split around the area. 3 players go to west without aggroing or triggering any parts. One player waits near 3rd part.
-Last player hugs wall on right, enters the room near first part and triggers it through wall. Then he opens waypoint dialog (but doesn't teleport), runs and triggers 2nd part without getting hit and immediately teleports to waypoint. Enemies may teleport with you so be ready to run.
-Once 2 parts are done that one player opens waypoint dialog, triggers 3rd part and teleports away. Last 3 players trigger 4th part from west without getting aggro.
-
-name=Corridor of enemy=riflemen:elite & enemy=Sure-Shot_Seamus:legendary
-tactic=fight|normal|coordinated
-2 enemy=Riflemen:elite and a enemy=Bomber:elite at end of the corridor. 2 enemy=Rifle_Turrets:structure, 2 enemy=Net_Turrets:structure and Seamus at room. Two rooms along the corridor, first has 2 enemy=Flame_Turrets:structure and second has 3 enemy=Archers:elite, a enemy=Cutpurse:elite and 2 enemy=Flame_Turrets:structure.
-Run to the first room and destroy Flame Turrets from behind. Activate 2 parts in that room.
-tactic=fight
-| Then kill those 2 Riflemen and a Bomber. Ranging allows you to kill them easily because you can run back to the room. Melee is possible but you will take lots of damage without good team. Kill rest of the enemies.
-Seamus can be tough to kill because of small space (also he turns friendly at 25% so you won't get any reward). Focus Turrets before attacking him because at 95% health he will switch to Shotgun and become much more dangerous.
-With Shotgun he will knocklock which can easily kill you. Take stability or stun breaks as a fail safe. His big weakness is that he has to stop briefly before shooting. At melee range you can keep circling and he won't be able to hit you. Once you get good at it you should try to direct his shots away from other people.
-tactic=normal|coordinated
-| Then run through all the enemies to the door (safe spot). Trigger part on left side and then stick to the right side so you won't aggro Seamus. Trigger part on second room through wall and then trigger last part. If you have problems (like when alone) you can destroy Turrets first.
+Split around the area. With 2 players, one player goes to the part 5 in the west wing without triggering it. Other player collects parts with order 4, 3, 1 and 2. When that's done the other player gets parts from the west wing. The first player can just die when he is done but running is also an option. The cleanest way is if he manages to stay out of combat in the east wing. Then he can waypoint out of the cellar to rest of the party. Keep in mind that some enemies may teleport with you.
+With more players, the parts 1, 2, 3 and 4 are split to 2 players. Any additional players should go to the part 5 to make that part easier. Start with parts 1 and 2. The first player should open the waypoint dialog when the part 1 is done so he can teleport out much faster.
 
 name=enemy=Gunpowder_Morgan:legendary
+tactic=normal
+A cutscene triggers when you approach Morgan at the barn. When it ends, 2 enemy=Riflemen:elite and 10 enemy=Riflemen:normal appear on the second floor and start shooting at you. Anti projectile skills are extremely valuable against them and Morgan. Focus on Riflemen first and take cover behind terrain if needed. Blind is very effective against Riflemen because they attack slowly.
+Morgan has 3 attacks; Throw Bomb, Throw Bomb and Kick. The first Throw Bomb is his basic ranged attack which makes him shoot a ballistic projectile with a moderate area damage and vulnerability. With some sustain this can be easily tanked.
+The second Throw Bomb is used when he spins. This happens instantly so it's very hard to dodge. The attack causes him to throw lots of his basic attacks around him. You can easily get hit multiple times downing you instantly. The best way to counter this is to have a projectile reflect up so he takes that massive damage instead.
+Kick is used when he jumps. This happens very quickly so it's very hard to dodge. The attack causes moderate damage and a knockback.
+tactic=exploit
+If you skip the cinematic you can run up to get near Riflemen them before they appear. Someone must watch the cinematic so communicate with your party.
+
 tactic=melee|ranged
-After cutscene 2 enemy=Riflemen:elite and 10 enemy=Riflemen:normal appear on the second floor. If you skip the cinematic you can run up to get near them before they appear (someone has to watch it).
+After cutscene 2 enemy=Riflemen:elite and 10 enemy=Riflemen:normal appear on the second floor. If you skip the cinematic you can run up to get near them before they appear. Someone must watch the cinematic so communicate with your party.
 Stick to left side to be covered against enemies. Get up and kill them. Then kill Morgan.
 tactic=ranged
 Keep some distance. If he attacks you then just move left or right to avoid his slow grenades. Dodge towards him when he spins to throw a barrage of grenades.

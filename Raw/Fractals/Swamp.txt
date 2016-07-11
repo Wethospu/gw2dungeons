@@ -48,38 +48,38 @@ Don't stack as a full group. 4 stacks of agony kills you in 25 seconds even with
 
 name=Start
 tactic=normal
-Whole starting area is filled with all kind of traps crippling, immobilizing or knocking you down. There are also 10 passages which will open and close randomly. At all times 3 of them will be closed. Closed ones rotate every 50 seconds. Mossman may also appear for 20 seconds at some spots.
-Walk to marked spot on map to release 3 wisps. They will get randomly put to 6 pre-defined locations on the map. Once someone grabs one, you have 33 seconds to bring them all back. When carrying a wisp, some passages will always close when you get near (scales with level). To counter this, you can jump over walls at many points (only way to reliably do it). Remember to drop off from walls instead of jumping to prevent getting in combat.
-If anyone drops his/her wisp (weapon swap, downed or transformation) or the timer runs out then every wisp will disappear and get placed at new locations. This can be abused by dropping them until you get favorable locations). To maximise your time you should coordinate the start. Wait until there is someone near every wisp and then either just say "go!" or count "3, 2, 1, go!".
-If you are running the wisp you should stack swiftness and use mobility skills. Also take condition removal, stability and stun breaks if you get hit by traps. Remaining 2 players should be supporting others. Give them swiftness, clear conditions and control following enemies.
-Try to memorize location of the traps. Jump over tripwires while avoiding beartraps and red circles. There are lots of ways to jump over walls even if entrances get blocked. This is something you can and should practice alone.
+The starting area is like a maze with walls separating different sections. There are 10 passages which allow you move between different sections. However passages open and close randomly every 50 seconds. At all times 3 passages are closed so you are able to move quite freely. Also there are multiple spots where you can just jump over the wall. Learning these spots is important so you don't have to rely on luck. 
+To make things worse, the area is filled with enemies, neutral animals and traps. All enemies respawn do don't bother attacking them. There are 3 types of traps which cause either cripple, immobilize or knock down. Traps can be difficult to see unless you know what you are looking for. There are also 2 spots which cause enemy=Mossman_(Stalk) to appear for 20 seconds. He is quite harmless as long as you keep some distance.
+This all can be bit overwhelming for a new player so observe the area carefully before you make any moves. It's easy to get killed if you constantly trigger traps when being chased by multiple enemies. All traps can be jumped over so the simplest way to move around is to keep jumping. You may still hit some traps so take stunbreaks and condition removal.
+Go to the marked spot on the map to release 3 wisps. They will get randomly put to 6 pre-defined locations on the area. Your goal is to bring all 3 wisps back to nearby tree stumps before the timer runs out. The timer starts after someone grabs a wisp so you don't have to panic. The event resets if the timer runs out or someone drops his wisp on purpose. This puts all wisps to rerolled starting locations. Dropping a wisp on purpose can be used to roll better starting locations if you have problems.
+When carrying a wisp, your weapon skills disappear and some passages will always close when you get near (scales with level). To counter this, you can jump over walls at many points (only way to reliably do it). Remember to drop off from walls instead of jumping to prevent getting in combat.
+
+name=Running the wisps
+Determine which 3 players run the wisps. This is usually done by just running towards a wisp. Don't be surprised if everyone else just stands still because lots of people are either insecure about their running skills or just lazy. Remind them about the objective if needed. It's recommended to practice wisp running whenever you can because it gets much harder on higher scales. Start with closer wisps and then on harder one when you get more experienced.
+Take mobility, condition removal, healing and stun breaks if you are going to run a wisp. You will lose your weapon skills when grabbing a wisp so the weapon can only be used for prebuffing swiftness and other boons. Don't swap weapons, drop bundles, use any transformations or get downed so you don't lose your wisp.
+Don't take your wisp until other runners are near their wisps to give them more time. Keep an eye on the timer in case someone starts it early. This usually happens on lower scales because there is so much extra time. On higher scales you have much less time so ask that everyone is ready and then say "go". It's recommended to let the player who has the farthest wisp to start the timer so he has bit more time.
+Remaining 2 players should be polite and assist runners if needed. This is done by removing their conditions, giving them boons and even pulling enemies away. Assisting isn't usually done because people are lazy and also because it's not needed if the runners are experienced. When playing with random people it's recommended to stand near middle so you can quickly move in if it looks a like a runner needs help. Of course if people fail then you should assist them the whole time.
 tactic=warrior
-Use wiki=Mending for extra condition removal.
-tactic=warrior
-Use wiki=Balanced_Stance while running if you expect to hit a trap.
+Use wiki=Charge_(warrior_skill)|Charge right before taking a wisp for swiftness. Don't use wiki=Call_to_Arms because you may hit something and enter combat.
+Take wiki=Mending, wiki=Balanced_Stance, wiki="Shake_It_Off", wiki=Bull's_Charge and wiki=Signet_of_Rage for mobility, condition removal and stun breaks.
 tactic=mesmer
-Use wiki=Portal for group wide mobility.
-tactic=mesmer
+Use wiki=Portal_Entre for a group wide mobility.
 Use wiki=Mantra_of_Resolve or wiki=Mantra_of_Recovery (if Mender's Purity-trait) to remove conditions.
-tactic=mesmer
 Use wiki=Mantra_of_Concentration for stability and stun breaks.
 tactic=guardian
 Use wiki="Stand_Your_Ground!", wiki="Save_Yourselves!" and wiki="Retreat!" with Pure of Voice-trait or Soldier-runes for swiftness, stun breaks and condition removal.
+Use wiki=Judge's_Intervention on a critter (to not get in combat) when running a Wisp.
 tactic=necromancer
 Use wiki=Spectral_Walk / wiki=Summon_Flesh_Wurm to skip most of the obstacles.
-tactic=necromancer
 Use wiki=Well_of_Power (works on caster even when not standing inside) and wiki=Consume_Conditions to clear conditions.
 tactic=thief
 Use wiki=Shadowstep and wiki=Steal on a critter (to not get in combat) when running a Wisp.
-tactic=thief
 Set a wiki=Shadow_Trap and use it to teleport back after grabbing the wisp.
-tactic=guardian
-Use wiki=Judge's_Intervention on a critter (to not get in combat) when running a Wisp.
 tactic=engineer
 Use wiki=Super_Speed and wiki=Rocket_Boots for mobility.
 tactic=north-west
-media=swamp_1.jpg|Map. The wisp is guarded by enemy=Skelks:normal. Stand on any nearby rock while waiting so they can't reach you. You should jump over trees because otherwise you may have to run a very long way.
-Practice the first jump couple of times (tell your team wait a bit if needed). After the jump just run forward and pay attention to the ground as there are multiple traps. If the next passage is open just go through. If not, stay calm and jump over. Don't try to run around because other nearby passages will just close before you.
+media=swamp_1.jpg|Map. The wisp is guarded by enemy=Skelks:normal. Stand on any nearby rock while waiting so they can't reach you. You should jump over trees because otherwise you may have to run a very long way which won't work on higher scales.
+Practice the first jump couple of times (tell your team wait a bit if needed). Don't jump down so you don't enter combat. After the jump just run forward and pay attention to the ground as there are multiple traps. If the next passage is open just go through. If not, stay calm and jump over. Don't try to run around because other nearby passages will just close before you.
 tactic=north
 media=swamp_2.jpg|Map. Once you pick the wisp you get attacked by 20 enemy=Marsh_Mosquitos:normal. They won't deal much damage but if they hit you will get in combat which slows you down.
 If the closest passage is closed you should jump over it. Practice couple of times if needed. Alternatively you can ask your team to wait (keep in mind that passages change every 50 seconds). Mossman will probably spawn after the passage. If he does and the next one is closed you should run around (either way is fine) unless you have practiced the jump. After the second passage either turn right or jump over the wall (passages will close).
