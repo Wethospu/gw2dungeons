@@ -74,7 +74,6 @@
 		$sql7 = $conn->prepare('SELECT build FROM GameBuilds WHERE date <= ? ORDER BY Build DESC LIMIT 1;');
 		// Replace category id with category text.
 		$sql8 = $conn->prepare('SELECT name FROM Categories WHERE ID=?;');
-		$maxPlayers = categoryToPlayerCount($_POST['category']);
 		foreach($paths as $row) {
 			$sql->execute(array($row));
 			// Use while(true) with limits.
@@ -84,17 +83,7 @@
 				// Check that next record exists.
 				if (!$record)
 					break;
-				$recordPlayers = categoryToPlayerCount($record['category']);
-				// Unrestricted only gets itself since the ruleset isn't comparable with anything.
-				if ($maxPlayers == 0 && $maxPlayers != $recordPlayers)
-					continue;
-				// Solo and duo share a same rule set.
-				if ($maxPlayers == 1 && $maxPlayers != $recordPlayers)
-					continue;
-				if ($maxPlayers == 2 && ($maxPlayers < $recordPlayers || $recordPlayers == 0) )
-					continue;
-				// Everything else has a same rule set.
-				if ($maxPlayers > 2 && ($maxPlayers < $recordPlayers || $recordPlayers < 3))
+				if (!recordHasValidCategory($_POST['category'], $record['category']))
 					continue;
 				// Get characters and videos.
 				$sql2->execute(array($record['ID']));
@@ -147,15 +136,26 @@
 		return $records;
 	}
 
-	// Converts category to a player count. Hardcoded based on category ids so not a very robust solution.
-	function categoryToPlayerCount($category) {
-		if ($category == 1)
-			return 5;
-		if ($category == 2)
-			return 0;
-		if ($category < 7)
-			return $category - 2;
-		return 17 - $category;
+	// Most categories also include records from some other category. For example 5 player category also includes 3 and 4 players but not 1 and 2 players because of different rule set.
+	// Category ids are mixed up so simply use a hardcoded conversion function to solve the mess.
+	function recordHasValidCategory($wantedCategory, $recordCategory) {
+		//// Categories (indexing from 1): Full party, unrestricted, 1, 2, 3, 4, 10, 9, 8, 7, 6, any.
+		// Trivial case to simplify code (unrestricted, trio and solo).
+		if ($wantedCategory == $recordCategory)
+			return true;
+		// Any category skips unrestricted because it's not supported anymore (and is kind of dirty).
+		if ($wantedCategory >= 12)
+			return $recordCategory != 2;
+		// >= can be used because records shouldn't have "any" category.
+		if ($wantedCategory >= 7)
+			return $recordCategory == 1 || $recordCategory == 5 ||  $recordCategory == 6 ||  $recordCategory >= $wantedCategory;
+		if ($wantedCategory == 1)
+			return $recordCategory == 5 ||  $recordCategory == 6;
+		if ($wantedCategory == 6)
+			return $recordCategory == 5;
+		if ($wantedCategory == 4)
+			return $recordCategory == 3;
+		return false;
 	}
 	
 	function readRecordsByDate(PDO $conn) {

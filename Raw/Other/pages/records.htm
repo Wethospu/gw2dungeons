@@ -560,13 +560,19 @@
 		$("#record-table").html(content);
 	}
 	
+	// Converts record category to player count. This is needed to filter instances which require too many players.
+	// Hardcoded based on category ids.
 	function categoryToPlayers(category) {
-		if (category == 1)
+		// Full party and unrestricted (also full party).
+		if (category == 1 || category == 2)
 			return 5;
-		if (category == 2)
-			return 0;
+		// Less than 5 players.
 		if (category < 7)
 			return category - 2;
+		// Any category (so max players).
+		if (category == 12)
+			return 10;
+		// Everything else.
 		return 17 - category;
 	}
 	

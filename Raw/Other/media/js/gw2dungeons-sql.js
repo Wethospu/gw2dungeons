@@ -177,7 +177,7 @@ function setHash(filter, index) {
 	// Instance: 9
 	// Path: 18
 	// Profession: 9
-	// Category: 11
+	// Category: 12
 	// Validity: 2
 	// After date: 12 + 32 + 10
 	// Before date: 12 + 32 + 10
@@ -194,7 +194,7 @@ function setHash(filter, index) {
 		values.push(document.getElementById("record-profession").selectedIndex);
 		maxValues.push(9);
 		values.push(document.getElementById("record-category").selectedIndex);
-		maxValues.push(11);
+		maxValues.push(12);
 		values.push(document.getElementById("record-validity").selectedIndex);
 		maxValues.push(2);
 		// Date can be any string so check its validity.
@@ -317,7 +317,7 @@ function setHash(filter, index) {
 		maxValues.push(18);
 		maxValues.push(9);
 		if (version > 1)
-			maxValues.push(11);
+			maxValues.push(12);
 		else if (version > 0)
 			maxValues.push(6);
 		else
