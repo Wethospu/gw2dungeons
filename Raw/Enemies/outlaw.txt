@@ -156,7 +156,7 @@ subeffect=blind:0
 
 ##################################################################
 
-Name=Sure-Shot Seamus
+Name=Sure Shot Seamus
 ID=8888
 image=http://wiki.guildwars2.com/images/7/7e/Sure-shot_Seamus.jpg
 Path=CM1|CM3

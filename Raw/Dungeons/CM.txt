@@ -116,7 +116,7 @@ name=Reviving Sigfast
 tactic=normal
 The first room has a enemy=Separatist_Lieutenant_(Rifle):champion, a enemy=Sniper:elite and a enemy=Fighter:elite. Lieutenant shoots fast projectiles so use projectile defense if you have any. Use area attacks to take down elite enemies while focusing the lieutenant. Use blind against elite enemies to reduce pressure.
 The second room has a enemy=Separatist_Fighter:champion, 3 enemy=Fighters:elite and a sleeping enemy=Sigfast. Use blind to reduce pressure.
-Once enemies are dead, 3 enemy=fighters:elite and a enemy=Separasit_Lieutenant_(Rifle) spawns in the left tunnel. Break the line of sight to pull them together for more effective area damage and control.
+Once enemies are dead, 3 enemy=fighters:elite and a enemy=Separatist_Lieutenant_(Rifle) spawns in the left tunnel. Break the line of sight to pull them together for more effective area damage and control.
 tactic=coordinated
 Stack might and fury if needed. Don't bother pulling enemies. Just break the defiance and burst enemies down.
 tactic=bug
@@ -124,8 +124,8 @@ If you approach the gate to the next area the enemy=Fighter:champion and 2 enemy
 
 name=Outside area
 tactic=normal
-There are lots of enemies so don't rush in. After the gate there are a enemy=Figther:champion and 2 enemy=Fighters:elite. Try to pull them inside to avoid aggroing patrolling enemies.
-Two groups of enemy=Huntings_Dogs:elite are patrolling the road. About halfway of the road there are treehouses with 3 enemy=Snipers:elite and lots of other enemies.
+There are lots of enemies so don't rush in. After the gate there are a enemy=Fighter:champion and 2 enemy=Fighters:elite. Try to pull them inside to avoid aggroing patrolling enemies.
+Two groups of enemy=Hunting_Dogs:elite are patrolling the road. About halfway of the road there are treehouses with 3 enemy=Snipers:elite and lots of other enemies.
 It's safer to wait for patrols to get closer because snipers have a surprisingly high range. If you go too far they will start shooting at making the fight much harder unless you have projectile defenses.
 Hunting dogs inflict a long lasting fear with their Howl. Take lots of stability, stun breaks or instant condition cleanse to prevent getting disabled for a very long time.
 Once patrols are killed take a look at where snipers are located. Snipers can't move so you can use terrain against them. Rush towards the first tree and stay behind it or stairs while you kill the other enemies.
@@ -180,14 +180,14 @@ Enemies are often skipped because there are so many of them. Keep in mind that s
 The exact order of parts doesn't matter but you want to leave the west wing last because that has an exit from the cellar. After stairs there is a room immediately on the right side containing 3 enemy=Cutpurses:elite, 2 enemy=Riflemen:elite and a part (number 4 in the picture).
 Riflemen shoot fast projectiles dealing high damage to moving targets so either pull enemies behind a corner or use projectile reflection. Riflemen also have a high range so they may shoot you from other rooms. Cutpurses have quick melee attacks and occasionally jump over you dealing 24 stacks of bleeding so take condition removal. Blind is useful to reduce pressure.
 Go to south-east after destroying the part 4. The next room has a random mix of 3 enemy=Cutpurses:elite and enemy=Riflemen:elite. You can use a similar tactic as before or just kill them since there are only 3 enemies. A enemy=Cutpurse:elite may join the figth from the next room but it's nothing to worry about. Destroy the part number 3 and then the part number 1 from the next room.
-Go to south-west to the east wing. The room at the end has a random mix of 4 enemy=Curpurses:elite and enemy=Riflemen:elite. Watch out for riflemen when you are getting close. Use the same tactic as before.
+Go to south-west to the east wing. The room at the end has a random mix of 4 enemy=Cutpurses:elite and enemy=Riflemen:elite. Watch out for riflemen when you are getting close. Use the same tactic as before.
 Once the part 2 is destroyed the progress should show 4/9. Go back hugging the left wall all way to the west wing. The west wing has a corridor with 2 rooms next to it and 1 room at the end. There are 2 enemy=Riflemen:elite and a enemy=Bomber:elite in the corridor who will attack when you move past the corner. Don't rush towards them or you will aggro enemies from all rooms and probably get defeated.
 Instead dodge twice to the first room with 2 enemy=Flame_Turrets and 2 parts. Turrets can't rotate so you can freely destroy them from behind. After destroying the 2 parts you have two options. Either use ranged attacks and reflects to take down enemies at corridor from distance or rush to the next room. Taking down the enemies at the corridor is suggested because it's less chaotic and easier to handle. Rushing to the next room requires everyone following the tactic.
 The second room has 2 enemy=Flame_Turrets, a enemy=Cutpurse:elite and 3 enemy=Archers:elite. Archers won't deal much damage but they are hard to kill because they often evade attacks and also apply blind. When killing them make sure you move behind turrets so they won't hit you.
 The last room has enemy=Sure_Shot_Seamus:legendary, 2 enemy=Rifle_Turrets and 2 enemy=Net_Turrets. Seamus will turn friendly at 25% health so trying to kill him is pointless because you get no experience or loot. Check the optional tactic if you wish to kill him. Just destroy the 2 Net Turrets so no one gets stuck and then the last 2 parts. Remove immobilize from the party and then exit the cellar from the opened gate.
 tactic=optional
 enemy=Sure_Shot_Seamus:legendary is considered optional because he turns friendly at 25% health. He can be killed in the path 3.
-Focus down the 2 enemy=Net_Turrets and 2 enemy=_Rifle_Turrets to reduce pressure. Avoid attacking Seamus because he turns much more dangerous at 95% health.
+Focus down the 2 enemy=Net_Turrets and 2 enemy=Rifle_Turrets to reduce pressure. Avoid attacking Seamus because he becomes much more dangerous at 95% health.
 Seamus starts with pistols and has 2 attacks; Shoot and Chain Shot. Shoot is his basic ranged attack which deals moderate damage. Chain Shot is used when he glows. He will shoot lots of fast projectiles for a high damage. If you see him shooting at you then just dodge.
 The fight actually starts when Seamus has lost 5% of his health and he switches to a shotgun. He has only one attack, Shrapnel Blast. It's a short-range cone which deals moderate damage, bleeds and knocks back. Keep in mind that he will attack again before the disable ends. This lets him hit you multiple times before you get knocked out of his range. Don't rely on anti projectile skills because the attack isn't a projectile.
 The real problem is when you get stuck in a terrain and will never move out of his range. This means you will get permanently disabled unless someone else gets aggro or you have a stun break. However because of the small room this will happen very easily so you either need lots of stun breaks or have to know what you are doing.
@@ -205,6 +205,8 @@ tactic=mesmer
 youtube=UUPb-fGfZ1M|Video of a solo.
 tactic=warrior
 youtube=sUW3EWot7jw|Video of a solo.
+tactic=elementalist
+youtube=UpnUzokiHDA|Video of a solo.
 tactic=thief
 Thief is the best professions because you can stay permanently stealthed with wiki=Smoke_Screen, wiki=Blinding_Powder, wiki=Shadow_Refuge, wiki=Hide_in_Shadows, wiki=Black_Powder and wiki=Cluster_Bomb. Also switch to initiative, stealth and mobility related traits when practising. wiki=Withdraw and wiki=Signet_of_Shadows can be taken when you are experience for more speed.
 tactic=coordinated
@@ -290,6 +292,7 @@ One player can hold the cutscene allowing other to prepare, use a teleport or mo
 Fight on top of Frost. Use anti-projectile skills to avoid having to kill the rockets, and burst Frost down.
 tactic=exploit
 Frost's chill-cone attack can only hit horizontally. There are numerous areas where you can jump up and avoid being hit by this attack; most of these areas will also protect you from the rockets and golems.
+You can pull Frost on the area left side of him. This prevents turrets shooting at you reducing pressure.
 tactic=rewards
 There is a very low chance to get an account bound wiki=Spineguard_of_the_North from enemy=Frost. It's account bound so it's not valuable.
 
@@ -478,10 +481,10 @@ Every run gives 23% experience towards your next level and 30 wiki=Empyreal_Frag
 There is a high chance to get wiki=Bandit_Spineguard, wiki=Beetlestone's_Band or wiki=Caudecus's_Journal from enemies and chests. All can be traded but aren't valuable.
 There is a very low chance to get an account bound wiki=Recipe:_Vallog's_Demise from the end boss, enemy=Vallog. The recipe allows you to craft wiki=Vallog's_Demise which gives a much better gold return for your tokens.
 
-name=enemy=Sure-Shot_Seamus:legendary
+name=enemy=Sure_Shot_Seamus:legendary
 tactic=melee|ranged
-Focus 3 enemy=Enforcers:elite before attacking him because at 95% health he will switch from Pistols to a Shotgun and become much more dangerous. You can run around the building if needed.
-With Shotgun he will knocklock which can easily kill you. Take stability or stun breaks as a fail safe. His big weakness is that he has to stop briefly before shooting, thus allowing a player to simply sidestep his attack.
+Focus 3 enemy=Enforcers:elite before attacking him because at 95% health he will switch from pistols to a shotgun which makes him much more dangerous. You can run around the building if needed.
+With a shotgun he will knocklock which can easily kill you. Take stability or stun breaks as a fail safe. His big weakness is that he has to stop briefly before shooting, thus allowing a player to simply sidestep his attack.
 tactic=ranged
 | He can't hit you at 900+ range so stay away from him. If he aggroes on you, you can either keep running or go to melee range.
 tactic=ranged|melee
