@@ -181,6 +181,11 @@ namespace DataCreator.Encounters
         // So paths have data only for one instance.
         foreach (var path in relatedPaths)
         {
+          if (path == null)
+          {
+            ErrorHandler.ShowWarningMessage("A path is not defined.");
+            continue;
+          }
           names.Add(path.NavigationName);
           links.Add(path.Filename);
         }
@@ -199,6 +204,11 @@ namespace DataCreator.Encounters
         {
           if (currentPath.FractalScale == index + 1 || index >= relatedPaths.Count)
             continue;
+          if (relatedPaths[index] == null)
+          {
+            ErrorHandler.ShowWarningMessage("Scale " + index + 1 + " is not defined.");
+            continue;
+          }
           names.Add("Scale " + relatedPaths[index].FractalScale + ": " + relatedPaths[index].NavigationName);
           links.Add(relatedPaths[index].Filename);
         }

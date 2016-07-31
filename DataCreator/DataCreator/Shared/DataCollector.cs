@@ -79,7 +79,7 @@ namespace DataCreator.Shared
           FractalPaths.Add(null);
         if (index == -1)
         {
-          ErrorHandler.ShowWarningMessage("Trying to add a fractal scale 0. Something is wrong.");
+          ErrorHandler.ShowWarningMessage("Trying to add a fractal scale 0. Is something wrong with init data?");
           continue;
         }
         if (FractalPaths[index] != null)
@@ -381,7 +381,11 @@ namespace DataCreator.Shared
       // Sorting has no practical purpose but looks better.
       var FractalTags = new SortedSet<string>();
       foreach (var fractal in FractalPaths)
+      {
+        if (fractal == null)
+          continue;
         FractalTags.Add(fractal.Tag.ToLower());
+      }
       builder.Append(Gw2Helper.AddTab(3)).Append("<option value=\"");
       foreach (var tag in FractalTags)
         builder.Append(tag).Append("|");
