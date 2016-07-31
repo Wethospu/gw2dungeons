@@ -414,7 +414,7 @@ subeffect=chilled:0.5
 
 Name=Bloomhunger
 ID=11265
-path=SwampBloom|SwampMoss
+path=Swamp
 image=http://wiki.guildwars2.com/images/1/16/Veteran_Willowheart.jpg
 scaling=legendary
 
@@ -474,7 +474,7 @@ effect=summon a enemy=Sun_Spirit:normal, a enemy=Spirit_of_Frost:normal and a en
 Name=Sun Spirit
 ID=11266
 scaling=constant
-path=SwampBloom|SwampMoss
+path=Swamp
 
 attack=Sun Spirit Aura
 effect=channeled ranged
@@ -491,7 +491,7 @@ subeffect=burning:5 caused by Entangle.
 Name=Spirit of Frost
 ID=11269
 scaling=constant
-path=SwampBloom|SwampMoss
+path=Swamp
 
 attack=Frost Spirit Aura
 effect=channeled ranged
@@ -509,7 +509,7 @@ subeffect=chilled:5 caused by poison Rain.
 Name=Storm Spirit
 ID=11267
 scaling=constant
-path=SwampBloom|SwampMoss
+path=Swamp
 
 attack=Storm Spirit Aura
 effect=channeled ranged

@@ -15,7 +15,7 @@ Enemies: Molten and others.
 Time: Day.
 Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=hzYS_Dy6Pk4|Video_guide [KING].
-Current record: record=39.
+Current record: record=56.
 tactic=coordinated
 If you want to be optimal against enemy=Earth_Elementals, enemy=Embers or enemy=Tar_Elementals, use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying and wiki=Superior_Sigil_of_Elemental_Slaying|Sigil_of_Elemental_Slaying instead of Frailty.
 

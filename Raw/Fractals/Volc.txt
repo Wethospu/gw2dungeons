@@ -3,7 +3,6 @@ init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|19
 init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|28
 init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|46
 init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|52
-init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|63
 init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|72
 init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|87
 init=Volc|Fractals of the Mists|Volcanic (Grawl)|Volcanic|92

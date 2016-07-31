@@ -1324,7 +1324,7 @@ effect=enemy=Toxic_Ooze:veteran
 Name=Environment
 alt=traps
 rank=trap
-path=SwampBloom|SwampMoss
+path=Swamp
 condition=3
 
 attack=Tripwire

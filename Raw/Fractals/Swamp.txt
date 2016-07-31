@@ -1,23 +1,23 @@
-init=SwampBloom|Fractals of the Mists|Swampland [Bloom]|Swamp|2
-init=SwampMoss|Fractals of the Mists|Swampland [Moss]|Swamp|21
-init=SwampBloom|Fractals of the Mists|Swampland [Bloom]|Swamp|32
-init=SwampMoss|Fractals of the Mists|Swampland [Moss]|Swamp|41
-init=SwampBloom|Fractals of the Mists|Swampland [Bloom]|Swamp|56
-init=SwampMoss|Fractals of the Mists|Swampland [Moss]|Swamp|67
-init=SwampBloom|Fractals of the Mists|Swampland [Bloom]|Swamp|77
-init=SwampMoss|Fractals of the Mists|Swampland [Moss]|Swamp|89
+init=Swamp|Fractals of the Mists|Swampland|Swamp|2
+init=Swamp|Fractals of the Mists|Swampland|Swamp|21
+init=Swamp|Fractals of the Mists|Swampland|Swamp|32
+init=Swamp|Fractals of the Mists|Swampland|Swamp|41
+init=Swamp|Fractals of the Mists|Swampland|Swamp|56
+init=Swamp|Fractals of the Mists|Swampland|Swamp|67
+init=Swamp|Fractals of the Mists|Swampland|Swamp|77
+init=Swamp|Fractals of the Mists|Swampland|Swamp|89
 
 #########################################################################
 
-path=SwampBloom|SwampMoss
+path=Swamp
 name=Swampland
 tactic=normal
+Not updated after patch. Work in progress.
 Enemies: A plant, a norn and various others.
 Time: Night.
 Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=86t7arNEkkE|Video_guide [KING].
-Current record (Bloomhunger): record=44.
-Current record (Mossman): record=45.
+Current record: record=86.
 
 # Note: Any changes should be copypasted to every fractal (as long as there are no fractal specific changes).
 name=Instability
@@ -48,7 +48,7 @@ Don't stack as a full group. 4 stacks of agony kills you in 25 seconds even with
 
 name=Start
 tactic=normal
-The starting area is like a maze with walls separating different sections. There are 10 passages which allow you move between different sections. However passages open and close randomly every 50 seconds. At all times 3 passages are closed so you are able to move quite freely. Also there are multiple spots where you can just jump over the wall. Learning these spots is important so you don't have to rely on luck. 
+The starting area is like a maze with walls separating different sections. There are 10 passages which allow you move between different sections. However passages open and close randomly every 50 seconds. At all times 3 passages are closed so you are able to move quite freely. Also there are multiple spots where you can just jump over the wall. Learning these spots is important so you don't have to rely on luck.
 To make things worse, the area is filled with enemies, neutral animals and traps. All enemies respawn do don't bother attacking them. There are 3 types of traps which cause either cripple, immobilize or knock down. Traps can be difficult to see unless you know what you are looking for. There are also 2 spots which cause enemy=Mossman_(Stalk) to appear for 20 seconds. He is quite harmless as long as you keep some distance.
 This all can be bit overwhelming for a new player so observe the area carefully before you make any moves. It's easy to get killed if you constantly trigger traps when being chased by multiple enemies. All traps can be jumped over so the simplest way to move around is to keep jumping. You may still hit some traps so take stunbreaks and condition removal.
 Go to the marked spot on the map to release 3 wisps. They will get randomly put to 6 pre-defined locations on the area. Your goal is to bring all 3 wisps back to nearby tree stumps before the timer runs out. The timer starts after someone grabs a wisp so you don't have to panic. The event resets if the timer runs out or someone drops his wisp on purpose. This puts all wisps to rerolled starting locations. Dropping a wisp on purpose can be used to roll better starting locations if you have problems.
@@ -96,7 +96,6 @@ tactic=south-east
 media=swamp_6.jpg|Map. Be careful when approaching the wisp as there are multiple spider eggs on the ground. When touched they break and 2-3 enemy=Spider_Hatchlings:normal appear. If you break lots of them you will get killed. You can safely get through if you jump on rocks. You can also wait bit further way and rush in once the countdown starts.
 Once you grab the wisp, 7 enemy=Marsh_Spiders:normal appear. Just ignore them and keep moving. It doesn't really matter if you break eggs at this point (but you can jump on the rocks!). If both the first and the second passage are closed then just keep going and jump over the wall near the next passage.
 
-path=SwampMoss
 name=enemy=The_Mossman:legendary
 tactic=normal
 He aggros immediately when you land from the water. If you get back and try to attack him in the water invulnerable enemy=Skelk:normal appear. However, if you pull him far enough out in the water tunnel, the skelk will not be there.
@@ -131,7 +130,6 @@ Use marks around the area when he stealths to see him more easily.
 tactic=mesmer
 Use wiki=Feedback and wiki=Temporal_Curtain (traited) to reflect projectiles.
 
-path=SwampBloom
 name=enemy=Bloomhunger:legendary
 tactic=normal
 Much easier than Mossman. All attacks can be easily avoided. He summons spirits but you usually don't have to care about them. If retaliation causes too much damage then kill enemy=Storm_Spirit:normal.

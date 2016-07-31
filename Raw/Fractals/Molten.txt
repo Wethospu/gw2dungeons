@@ -2,7 +2,6 @@ init=Molten|Fractals of the Mists|Molten Boss|Molten Boss|10
 init=Molten|Fractals of the Mists|Molten Boss|Molten Boss|40
 init=Molten|Fractals of the Mists|Molten Boss|Molten Boss|70
 init=Molten|Fractals of the Mists|Molten Boss|Molten Boss|90
-init=Molten|Fractals of the Mists|Molten Boss|Molten Boss|99
 
 #########################################################################
 
@@ -13,7 +12,7 @@ Enemies: Molten.
 Time: Day.
 Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=Y4eSPRt9zZQ|Video_guide [KING].
-Current record: record=41.
+Current record: record=58.
 
 # Note: Any changes should be copypasted to every fractal (as long as there are no fractal specific changes).
 name=Instability

@@ -15,7 +15,7 @@ Enemies: Inquest, a flame legion, an ogre and harpies.
 Time: Day.
 Use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=2yTVR1dCOk8|Video_guide [KING].
-Current record: record=47.
+Current record: record=64.
 tactic=coordinated
 Against enemy=Flame_Legion_Fire_Shaman, use wiki=Powerful_Potion_of_Flame_Legion_Slaying|Potion_of_Flame_Legion_Slaying.
 Against Inquest, use wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Force.

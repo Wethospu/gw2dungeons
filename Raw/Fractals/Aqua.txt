@@ -15,8 +15,8 @@ Time: Day.
 Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 Remember that your wiki=Agony_Resistance will drop up to 15 points from a lack of helmet or land weapons.
 youtube=KkbxoP94SX8|Video_guide [KING].
-Current record (Dolphin): record=36.
-Current record (Ruins): record=37.
+Current record (Dolphin): record=53.
+Current record (Dark): record=54.
 tactic=coordinated
 Against the krait, use wiki=Powerful_Potion_of_Krait_Slaying|Potion_of_Krait_Slaying or wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies and wiki=Superior_Sigil_of_Serpent_Slaying|Sigil_Of_Serpent_Slaying.
 

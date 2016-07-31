@@ -1123,7 +1123,7 @@ subeffect=agony:2
 Name=The Mossman
 ID=11264
 alt=Mossman
-path=SwampBloom|SwampMoss
+path=Swamp
 image=http://wiki.guildwars2.com/images/e/ef/The_Mossman.jpg
 scaling=legendary
 
@@ -1201,7 +1201,7 @@ effect=transform to enemy=The_Mossman_(Animal):legendary
 Name=The Mossman (Animal)
 ID=11264
 alt=animal forms
-path=SwampBloom|SwampMoss
+path=Swamp
 scaling=legendary
 
 attack=Bear Form

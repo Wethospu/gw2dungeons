@@ -1,10 +1,8 @@
 init=Aether|Fractals of the Mists|Aetherblade|Aether|14
 init=Aether|Fractals of the Mists|Aetherblade|Aether|24
 init=Aether|Fractals of the Mists|Aetherblade|Aether|49
-init=Aether|Fractals of the Mists|Aetherblade|Aether|54
 init=Aether|Fractals of the Mists|Aetherblade|Aether|65
 init=Aether|Fractals of the Mists|Aetherblade|Aether|71
-init=Aether|Fractals of the Mists|Aetherblade|Aether|88
 init=Aether|Fractals of the Mists|Aetherblade|Aether|96
 
 ###########################################################
@@ -16,7 +14,7 @@ Enemies: Aetherblade and Inquest.
 Time: Day.
 Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=CBMmUfuRIHw|Video_guide [KING].
-Current record: record=35.
+Current record: record=52.
 tactic=coordinated
 To be optimal, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty against the final enemy=Aetherblade_Golems.
 

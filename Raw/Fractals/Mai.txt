@@ -12,7 +12,7 @@ Enemies: Aetherblade and few Inquest.
 Time: Day.
 Use wiki=Powerful_Potion_of_Slaying_Scarlet's_Armies|Potion_of_Slaying_Scarlet's_Armies, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=74PM2Cw2vIY|Video_guide [KING].
-Current record: record=40.
+Current record: record=57.
 tactic=coordinated
 Against enemy=Inquest_Technician:champion, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty.
 

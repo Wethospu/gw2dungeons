@@ -1,7 +1,6 @@
 init=UnderGun|Fractals of the Mists|Underground Facility [Gun]|Underground|8
 init=UnderBomb|Fractals of the Mists|Underground Facility [Bomb]|Underground|17
 init=UnderBomb|Fractals of the Mists|Underground Facility [Bomb]|Underground|29
-init=UnderGun|Fractals of the Mists|Underground Facility [Gun]|Underground|38
 init=UnderGun|Fractals of the Mists|Underground Facility [Gun]|Underground|43
 init=UnderBomb|Fractals of the Mists|Underground Facility [Bomb]|Underground|53
 init=UnderBomb|Fractals of the Mists|Underground Facility [Bomb]|Underground|68

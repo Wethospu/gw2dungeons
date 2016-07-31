@@ -15,7 +15,7 @@ Enemies: A human, an ooze and various others.
 Time: Day.
 Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=pSO2lzBBgBo|Video_guide [KING].
-Current record: record=46.
+Current record: record=63.
 
 # Note: Any changes should be copypasted to every fractal (as long as there are no fractal specific changes).
 name=Instability

@@ -1,5 +1,4 @@
 init=Cliff|Fractals of the Mists|Cliffside|Cliff|7
-init=Cliff|Fractals of the Mists|Cliffside|Cliff|13
 init=Cliff|Fractals of the Mists|Cliffside|Cliff|22
 init=Cliff|Fractals of the Mists|Cliffside|Cliff|33
 init=Cliff|Fractals of the Mists|Cliffside|Cliff|47
@@ -17,7 +16,7 @@ Enemies: Bandits.
 Time: Day.
 Use wiki=Powerful_Potion_of_Outlaw_Slaying|Potion_of_Outlaw_Slaying, wiki=Superior_Sigil_of_Force|Sigil_of_Force and wiki=Superior_Sigil_of_Frailty|Sigil_of_Frailty.
 youtube=_DerjcKcXyQ|Video_guide [KING].
-Current record: record=38.
+Current record: record=55.
 tactic=coordinated
 Use wiki=Superior_Sigil_of_Justice|Sigil_of_Justice instead of Frailty.
 tactic=warrior

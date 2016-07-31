@@ -1,5 +1,4 @@
 init=Solid|Fractals of the Mists|Solid Ocean|Solid|20
-init=Solid|Fractals of the Mists|Solid Ocean|Solid|30
 init=Solid|Fractals of the Mists|Solid Ocean|Solid|35
 init=Solid|Fractals of the Mists|Solid Ocean|Solid|45
 init=Solid|Fractals of the Mists|Solid Ocean|Solid|60
@@ -15,7 +14,7 @@ Enemies: Wind riders and elementals.
 Time: Night.
 Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=EjGVvg4zZes|Video_guide [KING].
-Current record: record=43.
+Current record: record=60.
 
 # Note: Any changes should be copypasted to every fractal (as long as there are no fractal specific changes).
 name=Instability

@@ -150,7 +150,7 @@ Name=Jungle Spider
 ID=5092
 alt=Jungle Spiders
 image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
-path=SwampBloom|SwampMoss
+path=Swamp
 
 #############################
 
@@ -159,7 +159,7 @@ Name=Marsh Spider
 ID=11272
 alt=Marsh Spiders
 image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
-path=SwampBloom|SwampMoss
+path=Swamp
 
 #############################
 
@@ -168,7 +168,7 @@ Name=Marsh Spider Hatchling
 ID=11273
 alt=Marsh Spider Hatchlings|Spider Hatchling|Spider Hatchlings
 image=http://wiki.guildwars2.com/images/b/ba/Jungle_Spider.jpg
-path=SwampBloom|SwampMoss
+path=Swamp
 
 ##################################################################
 
@@ -531,7 +531,7 @@ ID=11279
 alt=Wolves
 image=http://wiki.guildwars2.com/images/9/97/Wolf.jpg
 scaling=constant
-path=SwampBloom|SwampMoss
+path=Swamp
 
 attack=Bite
 ID=2973
@@ -553,7 +553,7 @@ ID=4800
 alt=Wolves
 image=http://wiki.guildwars2.com/images/9/97/Wolf.jpg
 scaling=constant
-path=SwampBloom|SwampMoss
+path=Swamp
 
 attack=Bite
 ID=2973
@@ -1066,7 +1066,7 @@ Name=Marsh Drake
 ID=11276
 scaling=constant
 image=http://wiki.guildwars2.com/images/3/30/Marsh_Drake.jpg
-path=SwampBloom|SwampMoss
+path=Swamp
 
 attack=bite
 ID=3030
@@ -1091,7 +1091,7 @@ ID=11274
 alt=Marsh Drake Hatchlings|Drake Hatchling|Drake Hatchlings
 image=http://wiki.guildwars2.com/images/3/30/Marsh_Drake.jpg
 scaling=normal
-path=SwampBloom|SwampMoss
+path=Swamp
 
 attack=bite
 ID=3031
@@ -1346,7 +1346,7 @@ Name=Firefly
 ID=5072
 alt=Fireflies
 image=http://wiki.guildwars2.com/images/f/f2/Firefly.jpg
-path=SwampBloom|SwampMoss
+path=Swamp
 
 attack=Neutral
 
@@ -1394,7 +1394,7 @@ ID=4359
 alt=Jungle Skelks|Skelk|Skelks
 image=http://wiki.guildwars2.com/images/e/e6/Jungle_Skelk_Lurker.jpg
 scaling=normal
-path=SwampBloom|SwampMoss
+path=Swamp
 
 attack=Slash
 ID=2397
@@ -1435,7 +1435,7 @@ Name=Siamoth
 ID=5083
 scaling=normal
 image=http://wiki.guildwars2.com/images/4/4c/Siamoth.jpg
-path=SwampBloom|SwampMoss
+path=Swamp
 
 attack=Neutral
 
