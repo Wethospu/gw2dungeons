@@ -145,7 +145,6 @@ ID_JS
 					<input type="hidden" name="hosted_button_id" value="Y6ESU27U7V3J4">
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
 				</div>
-				<p class="navbar-text navbar-right" style="font-size:smaller;margin-bottom:0;margin-top:0;">Site by Wethospu<br>Hosted by Dulfy.net</p>
 			</form>
         </div>
 		<!-- Subnavigation generated dynamically when needed. -->

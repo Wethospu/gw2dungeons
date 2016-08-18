@@ -45,10 +45,10 @@ namespace DataCreator.Utility
 
     public static string LocalMediaFolder { get { return "media\\images\\"; } }
     public static string LocalIconFolder { get { return "media\\icons\\"; } }
-    public static string WebsiteMediaLocation { get { return "http://gw2dungeons.net/media/images/"; } }
-    public static string WebsiteThumbBigLocation { get { return "http://gw2dungeons.net/media/thumbs_" + ThumbWidth + "px/"; } }
-    public static string WebsiteThumbSmallLocation { get { return "http://gw2dungeons.net/media/thumbs_" + ThumbWidthSmall + "px/"; } }
-    public static string WebsiteIconLocation { get { return "http://gw2dungeons.net/media/icons/"; } }
+    public static string WebsiteMediaLocation { get { return "/media/images/"; } }
+    public static string WebsiteThumbBigLocation { get { return "/media/thumbs_" + ThumbWidth + "px/"; } }
+    public static string WebsiteThumbSmallLocation { get { return "/media/thumbs_" + ThumbWidthSmall + "px/"; } }
+    public static string WebsiteIconLocation { get { return "/media/icons/"; } }
 
     // This site is used to verify internet connection.
     // Google was chosen because of reliability.
