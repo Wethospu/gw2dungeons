@@ -12,10 +12,9 @@ init=Swamp|Fractals of the Mists|Swampland|Swamp|89
 path=Swamp
 name=Swampland
 tactic=normal
-Not updated after patch. Work in progress.
 Enemies: A plant, a norn and various others.
 Time: Night.
-Use Oils or wiki=Skale_Venom_(consumable)|Skale_Venom, wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+Use wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=86t7arNEkkE|Video_guide [KING].
 Current record: record=86.
 
@@ -48,17 +47,28 @@ Don't stack as a full group. 4 stacks of agony kills you in 25 seconds even with
 
 name=Start
 tactic=normal
-The starting area is like a maze with walls separating different sections. There are 10 passages which allow you move between different sections. However passages open and close randomly every 50 seconds. At all times 3 passages are closed so you are able to move quite freely. Also there are multiple spots where you can just jump over the wall. Learning these spots is important so you don't have to rely on luck.
-To make things worse, the area is filled with enemies, neutral animals and traps. All enemies respawn do don't bother attacking them. There are 3 types of traps which cause either cripple, immobilize or knock down. Traps can be difficult to see unless you know what you are looking for. There are also 2 spots which cause enemy=Mossman_(Stalk) to appear for 20 seconds. He is quite harmless as long as you keep some distance.
-This all can be bit overwhelming for a new player so observe the area carefully before you make any moves. It's easy to get killed if you constantly trigger traps when being chased by multiple enemies. All traps can be jumped over so the simplest way to move around is to keep jumping. You may still hit some traps so take stunbreaks and condition removal.
-Go to the marked spot on the map to release 3 wisps. They will get randomly put to 6 pre-defined locations on the area. Your goal is to bring all 3 wisps back to nearby tree stumps before the timer runs out. The timer starts after someone grabs a wisp so you don't have to panic. The event resets if the timer runs out or someone drops his wisp on purpose. This puts all wisps to rerolled starting locations. Dropping a wisp on purpose can be used to roll better starting locations if you have problems.
+The starting area is a dense, swampy forest. There are 10 passages linking all sections together. 3 are closed at all times and they change randomly every 50 seconds. There are multiple spots where you can just jump over the closed passage. Learning these spots is important so you don't have to rely on luck.
+The area is filled with monsters and traps. All enemies respawn so don't bother attacking them. There are 4 types of traps. Dodging doesn't save you from their effects.
+1. Red aoe circles (spike traps) appear next to some of the wisps and will apply cripple if you cross them.
+2. Wire traps appear mostly at the passages and will apply knockdown.
+3. Hunting traps are scattered in various places and will apply immobilize.
+4. Spider eggs appear only at the south-eastern wisp and will apply poison and spawn a spider if you touch them.
+
+There are also 2 spots which cause Mossman (Stalk) to appear for 20 seconds. He is quite harmless as long as you keep some distance.
+Just in front of the middle passage leading to the 3 wisp clefts are lying Invigorator Rifle Prototypes which you can pick up for 3 skills:
+1. Invigorate - Apply swiftness and vigor to yourself and to allies in a cone in front of you. no cooldown.
+2. Inundate - Apply cripple to enemies in a cone in front of you. Will put you in combat. No cooldown.
+3. Panic button - Applies stability and breaks stun and cripple from you and allies in 425 range around you. 10 sec cooldown.
+Observe the area carefully before you make any moves. It's easy to get killed if you constantly trigger traps when being chased by enemies. Wire and hunting traps can be jumped over so the simplest way to move around is to keep jumping. You may still hit some traps so have stunbreaks and condition removal ready.
+Go to the marked spot on the map to release 3 wisps. They will get randomly put to 6 pre-defined locations on the area. Your goal is to bring all 3 wisps back to nearby tree stumps before the timer runs out. The timer starts after someone grabs a wisp. The event resets if the timer runs out or someone drops their wisp. This puts all wisps to rerolled starting locations. Dropping a wisp on purpose can be used to roll better starting locations if you have problems.
+Time allowed for carrying the wisp changes with the level of the fractal, starting at 1:04sec, capping at 0:30 on higher levels.
 When carrying a wisp, your weapon skills disappear and some passages will always close when you get near (scales with level). To counter this, you can jump over walls at many points (only way to reliably do it). Remember to drop off from walls instead of jumping to prevent getting in combat.
 
+
 name=Running the wisps
-Determine which 3 players run the wisps. This is usually done by just running towards a wisp. Don't be surprised if everyone else just stands still because lots of people are either insecure about their running skills or just lazy. Remind them about the objective if needed. It's recommended to practice wisp running whenever you can because it gets much harder on higher scales. Start with closer wisps and then on harder one when you get more experienced.
+Your party needs to designate 3 players to run with the wisps. This is usually done by just running towards a wisp. The remaining players usually wait at the clefts but if you struggle, ask them for help with condition clearing or controling mobs. It's recommended to practice wisp running whenever you can because it gets harder on higher scales. Start with closer wisps and then on harder one when you get more experienced.
 Take mobility, condition removal, healing and stun breaks if you are going to run a wisp. You will lose your weapon skills when grabbing a wisp so the weapon can only be used for prebuffing swiftness and other boons. Don't swap weapons, drop bundles, use any transformations or get downed so you don't lose your wisp.
-Don't take your wisp until other runners are near their wisps to give them more time. Keep an eye on the timer in case someone starts it early. This usually happens on lower scales because there is so much extra time. On higher scales you have much less time so ask that everyone is ready and then say "go". It's recommended to let the player who has the farthest wisp to start the timer so he has bit more time.
-Remaining 2 players should be polite and assist runners if needed. This is done by removing their conditions, giving them boons and even pulling enemies away. Assisting isn't usually done because people are lazy and also because it's not needed if the runners are experienced. When playing with random people it's recommended to stand near middle so you can quickly move in if it looks a like a runner needs help. Of course if people fail then you should assist them the whole time.
+Don't take your wisp until other runners are near their wisps to give them more time. Keep an eye on the timer in case someone starts it early. This usually happens on lower scales because there is so much extra time. On higher scales you have much less time so ask that everyone is ready and then say "go". It's recommended to let the player at the furthest wisp start the timer so he/she has a bit more time.
 tactic=warrior
 Use wiki=Charge_(warrior_skill)|Charge right before taking a wisp for swiftness. Don't use wiki=Call_to_Arms because you may hit something and enter combat.
 Take wiki=Mending, wiki=Balanced_Stance, wiki="Shake_It_Off", wiki=Bull's_Charge and wiki=Signet_of_Rage for mobility, condition removal and stun breaks.
@@ -96,57 +106,47 @@ tactic=south-east
 media=swamp_6.jpg|Map. Be careful when approaching the wisp as there are multiple spider eggs on the ground. When touched they break and 2-3 enemy=Spider_Hatchlings:normal appear. If you break lots of them you will get killed. You can safely get through if you jump on rocks. You can also wait bit further way and rush in once the countdown starts.
 Once you grab the wisp, 7 enemy=Marsh_Spiders:normal appear. Just ignore them and keep moving. It doesn't really matter if you break eggs at this point (but you can jump on the rocks!). If both the first and the second passage are closed then just keep going and jump over the wall near the next passage.
 
-name=enemy=The_Mossman:legendary
+name=Path to Bloomhunger
 tactic=normal
-He aggros immediately when you land from the water. If you get back and try to attack him in the water invulnerable enemy=Skelk:normal appear. However, if you pull him far enough out in the water tunnel, the skelk will not be there.
-Mossman is a very dangerous enemy because of his stealth and high damage attacks. The most important thing is to remember to rally from enemy=Wolves:normal.
-His normal melee attack does lots of damage and has high range. The high range causes him to often kill unaware secondary targets. Keep him crippled and/or chilled and kite at least at max melee range to prevent him from using it.
-His ranged attack bounces few times and causes agony (you may get double agony). If you get hit you can easily get other people killed so do what you can to counter it (block, dodge, anti projectile skills).
-Once in a while he stealths which makes his attacks hard to avoid because you can't see him or his animations. Keep looking at mini-map to get some idea about his location. He also summons a Wolf.
-In a less coordinated group, the most important thing is to not kill the Wolf. There's a high chance that someone will become downed, and that Wolf could be used to rally off of. Everyone should tag Wolves with low damage attacks if possible (don't kill it). In a more coordinated group that is relying on Aegis or other blocks to mitigate some of Mossman's attacks, you should seek to kill wolves quickly, so they do not eat blocks.
-There are two ways to end his stealth. Wait until it expires or get hit. If you keep kiting and waiting until it expires he will spend lots of time stealthed. It's safer but makes the fight last longer.
-If you can afford it get hit. Mossman always attempts to focus one target (the person he is following and trying to melee). If he is following you, tag the Wolf, stand still and let him hit you. Even if you get downed you can kill the Wolf to rally. Pets/clones can also be used to do this to some extent.
-After 75% he will start to throw his axe which also inflicts agony. Then he will spawn 2 Wolves, start chasing his primary target, teleport to him when close enough and do his lethal dual melee attack. The Melee attack again has huge range, so dodge away from him to avoid him from turning and potentially killing other players.
-He literally won't do any other attacks when chasing his target, which allows other players to attack him freely. However after ~10 seconds he will stealth which makes it much harder to avoid his lethal attack. Also it will cause him to be stealthed pretty much all the time because he still has his normal stealth.
-After 25% he may transform (rare) to different enemy=animal_forms:legendary with very dangerous leaps and melee attacks. He won't stealth or use ranged attacks though.
-tactic=coordinated
-Stack might and stealth before getting aggro, and then fight directly on top of Mossman. Chain anti-projectile skills and CC, make use of Aegis if you have it, and stay behind Mossman unless he is aggroed on you. In a coordinated group, Mossman's aggro can be manipulated by a combination of first hit and higher toughness than the rest of the group; it's ideal to let a Guardian or an Earth Elemental take the aggro.
-tactic=exploit
-Mossman has a maximum number of wolves that he can spawn, and the wolves have a limited aggro radius. As such, it is possible to spawn out all of the wolves on one side of the arena, die, and then fight Mossman on the other side of the arena without any wolves being spawned. Because it takes a lot of time to spawn the wolves, this method is only helpful if you are looking for a speed kill (timed from first hit until death), or don't think you can defeat Mossman along with the adds he spawns.
-tactic=bug
-Sometimes, Mossman's stealth does not expire based on its time limit as it should, and you must take a hit in order to have it expire. This can be extremely problematic in solo/duo situations.
-tactic=guardian
-Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to negate agony projectile. Use wiki="Retreat!" and Virtue of Courage to keep Aegis up.
-tactic=thief
-Use wiki=Smoke_Screen to block his projectiles.
-tactic=thief
-In unorganized groups, you can use sword/pistol to greatly increase your survivability via wiki=Pistol_Whip .
-tactic=elementalist
-Use an Earth Elemental to partially take his aggro, giving your team some additional safety.
-tactic=elementalist
-Use wiki=Swirling_Winds to block projectiles.
-tactic=necromancer
-Use marks around the area when he stealths to see him more easily.
-tactic=mesmer
-Use wiki=Feedback and wiki=Temporal_Curtain (traited) to reflect projectiles.
+Right after doing the wisp event, a passage to the main boss will open. Halfway through there is a tripwire following with a warm-up encounter - The Mossman. He has a small amount of hp so you can get rid of him quickly. If you get downed, kill one of the wolves he summons. At 50% he will use a norn transformation, making him more dangerous but at this point he should be almost dead.
+tactic=melee
+Try to predict Mossman's attacks and dodge them. Don't let double-axe charged attack hit you. Make sure projectile defense is active, or he will throw his axe at you in melee range, making it harder to dodge. Be extra careful when fighting norn transformation – it's fast, causes crowd control and damage a lot. As for the wolves, ignore them, they will die to aoe and cleave.
+tactic=ranged
+Beware of Mossman teleporting to you to cause a charged double axe attack – it hits hard. If a wolf is chasing you, consider walking to melee range for a while to cleave them down with the rest of the group.
+
 
 name=enemy=Bloomhunger:legendary
-tactic=normal
-Much easier than Mossman. All attacks can be easily avoided. He summons spirits but you usually don't have to care about them. If retaliation causes too much damage then kill enemy=Storm_Spirit:normal.
-His normal attack shoots 3 projectiles. Each will leave a poison cloud unless blocked or absorbed/reflected by an antiprojectile skill. Poison clouds quickly stack up at melee-range so prevent them from appearing.
-When he smashes ground he will shoot 6 projectiles around him. They deal high damage and cause Binding Roots (attack to destroy). Melee players can stay inside Bloomhunger and they won't get hit.
-His most dangerous attack is when he shakes leaves and shoots multiple ballistic projectiles. Landing spots get marked with red rings so stay out of them and dodge if needed. Each hit deals high damage and agony.
-tactic=coordinated
-Chain anti-projectile skills and assign a player to kill the Storm Spirit as soon as it spawns.
-tactic=normal|coordinated
-tactic=guardian
-Use wiki=Wall_of_Reflection and wiki=Shield_of_the_Avenger to reflect and negate all his attacks. Use wiki="Retreat!" and Virtue of Courage to keep Aegis up if people are out of anti projectile skills.
-tactic=mesmer
-Use wiki=Feedback to reflect all his attacks.
-tactic=mesmer
-Use wiki=Temporal_Curtain (traited) to reflect some of his attacks.
-Use wiki=Illusionary_Warden to block or reflect his attacks.
-tactic=necromancer
-Use wiki=Well_of_Power to remove conditions (if you team gets hit a lot).
+The first thing you're going to see is a firefly with the Spirit Ward buff. Spirit Ward grants immunity to all sources of damage and control.
+If you approach it, the firefly will fly to an active wisp cleft and die, which hints at the main mechanic of the fight.
+You activate the encounter by interacting with the wisp cleft and placing the wisp in an empty cleft. Then it will automatically move through the other clefts placed in the area (4 clefts encircling the boss spawn point).
+When a wisp cleft is activated you get Wisp Vigor (100% endurance regeneration) in it's area, and any monster inside the area will become vulnerable for damage. Outside of an activated wisp cleft, monsters get Spirit Ward and you can't harm them.
+When the wisp is about to move on to another cleft, the green aoe indicating an activated cleft will start to pulse and gradually reduce in size. This is the sign to move to the next cleft.
+There is a "Spirit Onslaught" phase when boss is at 75% and 50% hp respectively. During that phase Bloomhunger will get a Spirit Ward, cast Poison Rain continously and a lot of trash mobs will be summoned. Remember to rotate the wisp clefts as the bonus mobs get Spirit Ward too. You have to survive the onslaught for 60 seconds.
+At higher levels, Bloomhunger will summon oakhearts - you need to make sure to use crowd control to break their breakbar or they will ensnare you and that's the last thing you need near Bloomhunger's furious attacks. Fortunately, breaking oakhearts puts them in a long stun (10 s). Remember to focus damage on boss, not the oakhearts.
+At 50% of Bloomhunger's health, Poison Blooms will spawn around the clefts. Much like in Twilight Arbor dungeon, these flowers spread poison around them so make sure to destroy them before you step in.
+At 25% hp, Bloomhunger will get a Spirit Ward and focus on a power attack. At the same time there will be no active spirit cleft and you need to split the party to quickly get newly spawned wisps at the far end of the room (behind each main cleft). If you fail, Bloomhunger will use the power attack and if you survive, will continue to focus on another one. On higher levels surviving that power attack is not really possible so run the wisps fast (just remember to clear the Poison Blooms first).
+When all wisps are put to their main clefts, Bloomhunger will be broken and exposed for damage. Now all that's left is to finish him (no need to move to clefts anymore).
+As for Bloomhunger by itself, it's a very dangerous foe. It's fast and most of it's attacks will knockback or knockdown you.
+Poison Rain - Bloomhunger get's a breakbar and shakes it's body, causing a lot of poison aoe projectiles. Watch out for orange circles or use projectile defense.
+Poison Attack - Small version of Poison Rain - the boss will do a shout animation and shoot some poison aoes in front of it.
+Smash - Strong punch into the ground, will knock you back. Use stability or dodge.
+Punch - Quick and frontal version of smash.
+Quick Attacks - Bloomhunger continously hits the ground with it's fists, causing a lot of hits around it (watch out for the orange aoe). After some time the orange aoe changes to circles with gaps in between.
+Power Attack - happens only at 25% hp phase when you fail to put all 4 wisps to the clefts. Has a long casting time but it will obliterate you so it's best to not let it do it.
+Pushback AoE - Bloom will raise it's hand to strike the ground, and the orange circle will tell you when to dodge.
+Leap - Bloomhunger leaps to a distant target, causing a knockdown. Watch out for orange circle.
+Charge - Used on distant targets as well, knocks back.
+
 tactic=elementalist
-wiki=Swirling_Winds can absorb all of his attacks.
+Consider using unbound in case your party fails the 25% phase.
+tactic=necromancer
+Use epidemic to quickly kill trash mobs.
+If there's another necro in your party, do a trick called epidemic bouncing – one of you will use epidemic on boss, the other one on a mob (like the champion oakhearts) so the conditions multiply on the boss.
+tactic=thief
+Your staff skill 5 is a dodge, make sure you use it offensively AND defensively.
+tactic=ranger
+You can equip a staff if your party is struggling, so you have a 1200 travel skill ready for the 25% phase or moving between clefts.
+tactic=mesmer
+You can save your teammates from being hit by sharing distortion with them through signet usage (needs a trait).
+tactic=revenant
+Upkeep Facet of Chaos for protection.

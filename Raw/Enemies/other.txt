@@ -418,36 +418,56 @@ path=Swamp
 image=http://wiki.guildwars2.com/images/1/16/Veteran_Willowheart.jpg
 scaling=legendary
 
-attack=cant be moved
-#note=easy to get out of combat
+attack=Leap
+image=http://giant.gfycat.com/BlankGrimyBluetickcoonhound.gif
+effect=Leap with PBAoE
+subeffect=damage:?
 
-attack=Shoot
-ID=16145
-cooldown=0
-image=http://giant.gfycat.com/WarpedHilariousBlackbuck.gif
-animation=swings left/right arm|0.75|green gas
-effect=3 projectiles (cone) with ticking AoE (4 hits in 3 s)
-count=4
-length=3
-subeffect=damage:0.1
-subeffect=poison:6
-#note=AoEs only start ticking if not blocked/evaded. Visually they still stay so try stay out if possible to be on safe side.
+attack=Pushback AoE
+image=http://giant.gfycat.com/UntriedKlutzyBrownbear.gif
+effect=PBAoE
+subeffect=damage:?
+subeffect=knockback:?
 
-attack=Entangle
-ID=16149
-image=http://giant.gfycat.com/GlitteringThreadbareDragonfly.gif
-animation=smashes ground with left/right hand|1
-additional=minimum-range (stack)
-effect=3 projectiles (cone)
-subeffect=damage:-
-subeffect=immobilized:3
-subeffect=Summon "Binding Roots" (2.5 s)
-#note=block/evade if at range. Stay inside him if at melee.
-#note=can be reflected for great damage
+attack=Poison Attack
+image=http://giant.gfycat.com/ElegantShamefulFoxhound.gif
+effect=5 ballistic projectiles with AoE in a frontal cone
+
+attack=Power Attack
+image=http://giant.gfycat.com/GiganticElectricHuia.gif
+effect=huge PBAoE
+subeffect=damage:?
+subeffect=launch:?
+subeffect=vulnerability:?
+subeffect=weakness:?
+subeffect=blind:?
+subeffect=torment:?
+subeffect=bleeding:?
+
+attack=Punch
+image=http://giant.gfycat.com/ScholarlyDeepIberianmidwifetoad.gif
+effect=melee
+subeffect=damage:?
+
+attack=Quick Attacks
+image=http://giant.gfycat.com/BronzeBelovedFinwhale.gif
+effect=Multiple PBAoEs over time
+subeffect=damage:?
+
+attack=Dash
+image=http://giant.gfycat.com/NaiveColdKingbird.gif
+effect=Dash
+subeffect=damage:?
+
+attack=Smash
+image=http://giant.gfycat.com/ShockingArcticAnemonecrab.gif
+effect=melee
+subeffect=damage:?
+subeffect=knockback:?
 
 attack=Poison Rain
 ID=16146
-image=http://giant.gfycat.com/WeepyBewitchedBison.gif
+image=http://giant.gfycat.com/FluidDamagedArabianwildcat.gif
 animation=shakes leaves|0.75
 effect=~20 ballistic projectiles with AoE in 4 s
 count=?
@@ -461,67 +481,6 @@ subeffect=agony:3
 #note=use area anti projectile skills (you have stand inside them).
 #note=At lower range projectiles land fast so you have to react faster
 #note=At higher range projectiles land slower so you have to remember where circles were
-
-attack=Summon Spirits
-image=http://giant.gfycat.com/TalkativeWavyFossa.gif
-additional=maximum amount of 3
-effect=summon a enemy=Sun_Spirit:normal, a enemy=Spirit_of_Frost:normal and a enemy=Storm_Spirit:normal
-#note=Storm Spirit causes quite strong retaliation so destroy it if needed.
-#note=Because of the spawning order, Storm Spirit won't spawn if any other Spirit is still alive
-
-##################################################################
-
-Name=Sun Spirit
-ID=11266
-scaling=constant
-path=Swamp
-
-attack=Sun Spirit Aura
-effect=channeled ranged
-frequency=5
-subeffect=might:5
-subeffect=buff:Sun_Spirit's_Essence:5:1:sun_spirit
-
-attack="Sun Spirit's Essence"
-effect=buff
-subeffect=burning:5 caused by Entangle.
-
-##################################################################
-
-Name=Spirit of Frost
-ID=11269
-scaling=constant
-path=Swamp
-
-attack=Frost Spirit Aura
-effect=channeled ranged
-frequency=5
-subeffect=fury:5
-subeffect=buff:Frost_Spirit's_Essence:5:1:frost_spirit
-
-attack="Frost  Spirit's Essence"
-animation=white projectiles
-effect=buff
-subeffect=chilled:5 caused by poison Rain.
-
-##################################################################
-
-Name=Storm Spirit
-ID=11267
-scaling=constant
-path=Swamp
-
-attack=Storm Spirit Aura
-effect=channeled ranged
-frequency=5
-subeffect=retaliation:5
-subeffect=buff:Storm_Spirit's_Essence:5:1:storm_spirit
-
-attack="Storm Spirit's Essence"
-animation=lightning circle
-effect=buff
-subeffect=daze:5 caused by Shoot
-#note=doesn't seem to have any effect
 
 ################################################################## 
 

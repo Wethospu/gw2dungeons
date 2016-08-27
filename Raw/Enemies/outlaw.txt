@@ -854,7 +854,7 @@ ID=5982
 
 ##################################################################
 
-name=Archdiviner (Phase 1)
+name=Archdiviner
 ID=11296
 image=http://wiki.guildwars2.com/images/e/e8/Legendary_Archdiviner.jpg
 scaling=legendary
@@ -862,12 +862,20 @@ path=Cliff
 
 attack=Swing
 ID=16197
+image=http://giant.gfycat.com/DapperVacantHarvestmouse.gif
 cooldown=0
 effect=melee
 subeffect=damage:-
-subeffect=knockback:0
+subeffect=knockback:?
+
+attack=Upwards Swing
+image=http://giant.gfycat.com/WebbedShyBobolink.gif
+effect=melee
+subeffect=damage:?
+subeffect=launch:?
 
 attack=Backbreaker
+image=http://giant.gfycat.com/DentalSaneBaboon.gif
 additional=Replaces Swing when below 50%.
 effect=single target melee
 subeffect=damage:0.5
@@ -882,26 +890,36 @@ subeffect=damage:-
 subeffect=pull:0
 #note=evade
 
-attack=Teleport
-additional=Used after scale 24.
+attack=Phase Slam
+image=http://giant.gfycat.com/IllustriousEllipticalIlsamochadegu.gif
+additional=Used on scale 25+.
 effect=Teleport to target
 
 attack=Wall
-additional=Reflects after scale 50.
+additional=Reflects on scale 50+.
 effect=AoE line
 subeffect=Destroys projectiles.
 
 attack=Conic Smash
+image=http://giant.gfycat.com/SmugAnyAfricanclawedfrog.gif
 additional=Window time reduced at higher scales.
 effect=defiance
+effect=cone
+subeffect=damage:?
+subeffect=knockback:?
 
 attack=Corrupted Ground
-additional=Window time reduced at higher scales.
+cooldown=8
+image=http://giant.gfycat.com/PessimisticBlondBorderterrier.gif
+additional=Used when above 50% health. Window time reduced at higher scales.
 effect=defiance
+effect=spawns multiple delayed AoEs
+subeffect=conditions
 
 attack=Summon & Cage
-effect=AoE
-subeffect=teleport target to a enemy=Cage:structure
+image=http://giant.gfycat.com/FlimsyForthrightFieldmouse.gif
+effect=delayed PBAoE
+subeffect=teleport targets to enemy=Cages:structure
 effect=summon 2 enemy=Bone_Fiends:normal
 #note=break cage to get free, help other players if they need help
 
@@ -916,7 +934,7 @@ effect=aura
 subeffect=swiftness:?
 
 attack=Transform
-additional=Activates after scale 75 when below 25%.
+additional=Activates on scale 75+ when below 25%.
 effect=demon form
 
 ##################################################################
