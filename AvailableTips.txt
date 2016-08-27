@@ -5,7 +5,7 @@ engineer
 mesmer
 necromancer
 ranger
-renevant
+revenant
 thief
 warrior
 consumable

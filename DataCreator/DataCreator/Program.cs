@@ -186,6 +186,7 @@ namespace DataCreator
         if (encounterData != null)
           EncounterGenerator.CreateFiles(encounterData, enemies, encounterData.Paths);
       }
+      ErrorHandler.InitializeWarningSystem(-1, "");
       EnemyGenerator.CreateFiles(enemies, instanceData);
       GenerateSearchIndex(instanceData, enemies);
       OtherGenerator.GenerateOthers(instanceData);

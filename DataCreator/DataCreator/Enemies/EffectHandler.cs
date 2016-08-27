@@ -180,7 +180,10 @@ namespace DataCreator.Enemies
       }
       if (effectType == EffectType.Control)
       {
-        effect.duration = Helper.ParseD(effectData[0]);
+        if (effectData[0].Equals("?"))
+          effect.duration = 0;
+        else
+          effect.duration = Helper.ParseD(effectData[0]);
         if (effectData.Length > 1)
           effect.stacks = Helper.ParseI(effectData[1]);
       }
