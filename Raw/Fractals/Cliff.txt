@@ -62,9 +62,6 @@ You need teamwork to move the Hammer efficiently. Pay attention to the player ca
 Also pay attention to who has the hammer, corruption stacks, and health when assaulting Seals. Picking up the Hammer during a fight is risky because you lose lots of health and may die before being able to hit a Seal. If you have full health and little Corruption it's your job to pick it up. Also make sure to help and protect the player with the Hammer, since it does poor damage and makes surviving harder.
 The biggest priority is to not die with the Hammer. If you die during a fight the Hammer will be on your body which makes it very hard to be picked up. Also people may accidentally pick it up when trying to revive you, so pay attention to your stacks and don't pick it up if you can't make it.
 If you somehow lose the hammer, talk with Displaced Agents to get it back. They appear on slopes you climb as you continue the fractal.
-tactic=exploit
-The wiki=Hammer_Corruption stacks last just long enough to get to 40 stacks. If you need to carry the hammer though you're at high stacks drop it for a few seconds then pick it up again. The old stacks will disappear while the new ones are applied and the number will stay fixed.
-Warning: This will give you very little time to react once your time is about to run out again, and does a lot of damage when you pick it up a second time. Consider bringing condition removal.
 tactic=bug
 If you use a skill that grants you other skills (such as an engineer kit) while wielding the hammer, it may disappear entirely and not reappear during a death reset. Similarly, using consumables which grant you additional skills may have the same effect.
 
