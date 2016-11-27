@@ -1,6 +1,8 @@
-﻿using DataCreator.Enemies;
+﻿using DataCreator.Encounters;
+using DataCreator.Enemies;
 using DataCreator.Utility;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
@@ -191,6 +193,102 @@ namespace DataCreator
           ErrorHandler.ShowWarningMessage("File ValidatedUrls.txt in use.");
         }
       }
+    }
+
+    /// <summary>
+    /// Reads a list of instabilities.
+    /// </summary>
+    public static void ReadInstabilities()
+    {
+      Constants.Instabilities.Clear();
+      for (var i = 0; i < 100; i++)
+        Constants.Instabilities.Add(new SortedSet<Instability>());
+      string[] lines;
+      try
+      {
+        Console.WriteLine("Reading instabilities.");
+        lines = File.ReadAllLines(@"Instabilities.txt", Encoding.GetEncoding(1252));
+      }
+      catch (FileNotFoundException)
+      {
+        ErrorHandler.ShowWarningMessage("File 'Instabilities.txt' not found!");
+        return;
+      }
+      Instability currentInstability = null;
+      HashSet<int> scales = null;
+      foreach (var line in lines)
+      {
+        if (line == "" || line[0] == '#')
+          continue;
+        var text = new TagData(line, Constants.TagSeparator);
+        if (text.Tag.Equals("name"))
+        {
+          if (currentInstability != null && scales != null)
+          {
+            foreach (var scale in scales)
+              Constants.Instabilities[scale - 1].Add(currentInstability);
+          }
+          currentInstability = new Instability();
+          currentInstability.Name = text.Data;
+          scales = null;
+        }
+        else if (text.Tag.Equals("description"))
+        {
+          if (currentInstability == null)
+          {
+            ErrorHandler.ShowWarningMessage("No active instability.");
+            continue;
+          }
+          currentInstability.Description = text.Data;
+        }
+        else if (text.Tag.Equals("image"))
+        {
+          if (currentInstability == null)
+          {
+            ErrorHandler.ShowWarningMessage("No active instability.");
+            continue;
+          }
+          currentInstability.Image = text.Data;
+        }
+        else if (text.Tag.Equals("scale"))
+        {
+          scales = GetScales(text.Data);
+        }
+        else
+        {
+          if (currentInstability == null)
+          {
+            ErrorHandler.ShowWarningMessage("No active instability.");
+            continue;
+          }
+          currentInstability.Text.Add(line);
+        }
+      }
+      if (currentInstability != null && scales != null)
+      {
+        foreach (var scale in scales)
+          Constants.Instabilities[scale - 1].Add(currentInstability);
+      }
+    }
+
+    /// <summary>
+    /// Converts a string of scales to a set.
+    /// </summary>
+    public static HashSet<int> GetScales(string scaleStr)
+    {
+      var scales = new HashSet<int>();
+      if (scaleStr == "")
+        return scales;
+      var split = scaleStr.Split(',');
+      foreach (var scale in split)
+      {
+        var split2 = scale.Split('-');
+        var minScale = Helper.ParseI(split2[0]);
+        var maxScale = Helper.ParseI(split2[split2.Length - 1]);
+        for (var i = minScale; i <= maxScale; i++)
+          scales.Add(i);
+      }
+      return scales;
     }
   }
 }

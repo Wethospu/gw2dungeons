@@ -36,6 +36,7 @@ namespace DataCreator
         CheckInternetSettings();
         Settings.ReadSettings();
         Settings.ReadCacheFiles();
+        Settings.ReadInstabilities();
         Build();
         var builder = new StringBuilder();
         builder.Append("Generating completed");
@@ -162,7 +163,13 @@ namespace DataCreator
       GeneratePage("General");
       LinkGenerator.CurrentDungeon = Constants.EnemyMediaFolder;
       var enemies = EnemyGenerator.GenerateEnemies(enemyData);
-      
+      foreach (var scale in Constants.Instabilities)
+      {
+        foreach (var instability in scale)
+        {
+          instability.GenerateHtml(enemies);
+        }
+      }
       var instanceData = new DataCollector();
       foreach (var dungeon in Directory.EnumerateFiles(Constants.DataDungeonsRaw).Select(Path.GetFileNameWithoutExtension))
       {

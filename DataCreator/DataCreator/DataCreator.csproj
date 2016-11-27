@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encounters\Instability.cs" />
     <Compile Include="Encounters\InstanceData.cs" />
     <Compile Include="Enemies\Attack.cs" />
     <Compile Include="Enemies\EffectHandler.cs" />

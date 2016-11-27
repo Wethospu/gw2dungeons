@@ -16,32 +16,9 @@ Current record: record=57.
 tactic=coordinated
 Against enemy=Inquest_Technician:champion, use wiki=Powerful_Potion_of_Inquest_Slaying|Potion_of_Inquest_Slaying and wiki=Superior_Sigil_of_Mad_Scientists|Sigil_of_Mad_Scientists instead of Frailty.
 
-# Note: Any changes should be copypasted to every fractal (as long as there are no fractal specific changes).
-name=Instability
-tactic=normal|31-40
-wiki=Mistlock_Instability:_Lethargic|Lethargic: Reduces base endurance regeneration by 50%.
-This shouldn't make a big difference because enemies don't deal that much damage. If you have trouble, take more wiki=Vigor or active defenses.
-tactic=normal|41-50
-wiki=Mistlock_Instability:_No_Pain,_No_Gain|No_Pain,_No_Gain: Enemies receive wiki=Protection, 10 stacks of wiki=Might or 3 stacks of wiki=Stability when you hit them for critical damage (20 s cooldown).
-Take some boon removal so you can remove applied boons every 20 secods.
-tactic=normal|51-60
-wiki=Mistlock_Instability:_Last_Laugh|Last_Laugh: Enemies explode when killed.
-Dodge?
-tactic=normal|61-70
-wiki=Mistlock_Instability:_Sluggish|Sluggish: The recharge time of skills you use is increased if you have a condition on you.
-You will pretty much always have a condition on you so your skills recharge slower all the time. This will mess up any rotations so to stay effective make sure you know which skills are important to use on cooldown.
-tactic=normal|61-80
-wiki=Mistlock_Instability:_Afflicted|Afflicted: Enemies apply random damaging conditions.
-If you have trouble, take more condition removal.
-tactic=normal|71-90
-wiki=Mistlock_Instability:_Lethargic|Lethargic: Reduces base endurance regeneration by 50%.
-Take more wiki=Vigor or active defenses so you can avoid all big hits.
-tactic=normal|81-100
-wiki=Mistlock_Instability:_Boon_Thieves|Boon_Thieves: Enemies steal 5 boons when they hit you (20 s cooldown).
-Keep normal enemies disabled so they can't steal your boons. Don't use retaliation or you will get everyone killed. Avoid using swiftness to make bosses easier to handle. Be careful when using quickness or resistance.
-tactic=normal|91-100
-wiki=Mistlock_Instability:_Social_Awkwardness|Social_Awkwardness: Nearby allies receive agony when in combat.
-Don't stack as a full group. 4 stacks of agony kills you in 25 seconds even with a max agony resist. If you don't have max agony resist stay away from everyone else.
+name=Instabilities
+tactic=normal
+INSTABILITIES
 
 name=Start
 tactic=normal

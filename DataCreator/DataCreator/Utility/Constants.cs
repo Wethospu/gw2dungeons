@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataCreator.Encounters;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -161,6 +162,9 @@ namespace DataCreator.Utility
     // Program can generate the pages as optimized release or more informative developer version.
     // Release removes some useless characters and also merges js/css files.
     public static bool IsRelease { get; private set; }
+
+    public static List<SortedSet<Instability>> Instabilities = new List<SortedSet<Instability> >();
+    public static string InstabilityEncounter { get { return "INSTABILITIES"; } }
 
     /// <summary>
     /// Set up values based on relese mode.

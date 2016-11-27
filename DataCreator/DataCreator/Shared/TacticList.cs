@@ -189,9 +189,19 @@ namespace DataCreator.Shared
       foreach (var tactic in availableTactics)
       {
         htmlBuilder.Append(Gw2Helper.AddTab(indent + 1)).Append("<div class=\"tab-pane\" id=\"t").Append(index).Append(Helper.Simplify(tactic.Name)).Append("\">").Append(Constants.LineEnding);
+        // Only check the first line (better performance).
+        bool first = true;
         foreach (var line in tactic.Lines)
         {
           var str = line;
+          if (first && str.Equals(Constants.InstabilityEncounter))
+          {
+            foreach (var instability in Constants.Instabilities[tactic.FractalScale - 1])
+              htmlBuilder.Append(instability.GetHtml());
+            first = false;
+            continue;
+          }
+          first = false;
           if (str.EndsWith(".."))
             ErrorHandler.ShowWarningMessage("Extra dot detected at end of '" + str + "'. Remove it.");
           //if (char.IsLower(str[0]))

@@ -1,0 +1,74 @@
+name=No Pain, No Gain
+description=Enemies receive wiki=Protection, wiki=Might and Fury when you hit them.
+image=https://wiki.guildwars2.com/images/thumb/2/2c/Arcane_Fury.png/25px-Arcane_Fury.png
+scale=26-29,31,21,61
+Enemies get 10 might stacks. Effect has 20 s cooldown.
+Take some boon removal so you can remove applied boons every 20 secods.
+
+name=Last Laugh
+description=Enemies explode when killed.
+image=https://wiki.guildwars2.com/images/thumb/8/82/Impact_Savant.png/25px-Impact_Savant.png
+scale=35,60,62-66,68,70,98 
+Killed enemies explode after ~1 s causing 180 radius PBAoE which deals about 1.5k damage and a launch.
+
+name=Afflicted
+description=Enemies apply random damaging conditions.
+image=https://wiki.guildwars2.com/images/thumb/5/5c/Lotus_Poison.png/25px-Lotus_Poison.png
+scale=33,34,36,38,39,51-59,61,67,76-84,86-88,90
+If you have trouble, take more condition removal.
+
+name=Social Awkwardness
+description=Nearby allies receive agony while you are fighting opponents.
+image=https://wiki.guildwars2.com/images/thumb/7/73/Driven_Fortitude.png/25px-Driven_Fortitude.png
+scale=37,51-60,78,82,85,87,89,91-100
+Don't stack as a full group. 4 stacks of agony kills you in 25 seconds even with a max agony resist. If you don't have max agony resist stay away from everyone else. Reviving also doesn't work very well.
+
+name=Toxic Trail
+description=Enemies leave a trail of toxic sludge behind them as they move around.
+image=https://wiki.guildwars2.com/images/1/1b/Blackvein_Poison.png
+scale=40,79-81,83-86,88,92
+Enemies create green AoE circles beneath them which deal direct damage.
+
+name=Flux Bomb
+description=You are periodically afflicted by the Anomaly's flux bombs.
+image=https://wiki.guildwars2.com/images/9/91/Time_Bomb.png
+scale=45,50,62-75,78,84,87,89,91,93,94,98
+While in combat, players get randomly marked with flux bombs leaving a damaging AoE behind.
+
+name=Adrenaline Rush
+description=Enemies become enraged for a time when they're low on health.
+image=https://wiki.guildwars2.com/images/7/78/Vengeance_%28Mordrem%29.png
+scale=30,41-44,46-49,71-74,77,89-91,93-97,100
+Enemies get wiki=Enraged_(Adrenaline_Rush)|Enraged buff when below 10% health. The buff increases damage by 200% making most attacks dangerous.
+Finish off any low health targets quickly so you don't get bursted down. Consider playing bit more passively against bosses.
+
+name=Mists Convergence
+description=The Fractals of the Mists are blurring together…
+image=https://wiki.guildwars2.com/images/7/7c/Disoriented.png
+scale=77,79-83,85,86,88,90,92,95-97,99,100
+Causes random effects near the players. Effects include the Mossman, Champion Rabbit, Veteran Jade Maw Tentacle, an air strike from Skyhammer and a cannon assault from Mai Trin.
+
+# Old ones.
+
+name=Lethargic
+description=Reduces base endurance regeneration by 50%.
+scale=
+This shouldn't make a big difference because enemies don't deal that much damage. If you have trouble, take more wiki=Vigor or active defenses
+
+name=Sluggish
+description=The recharge time of skills you use is increased if you have a condition on you.
+image=https://wiki.guildwars2.com/images/thumb/4/47/Alpha_Training.png/25px-Alpha_Training.png
+scale=
+You will pretty much always have a condition on you so your skills recharge slower all the time. This will mess up any rotations so to stay effective make sure you know which skills are important to use on cooldown.
+
+name=Boon Thieves
+description=Enemies steal 5 boons when they hit you (20 s cooldown).
+image=https://wiki.guildwars2.com/images/thumb/d/d5/Master_of_Misdirection.png/25px-Master_of_Misdirection.png
+scale=
+Keep normal enemies disabled so they can't steal your boons. Don't use retaliation or you will get everyone killed. Avoid using swiftness to make bosses easier to handle. Be careful when using quickness or resistance.
+
+name=Boon Fumbler
+description=When you dodge roll, you lose all your boons.
+image=https://wiki.guildwars2.com/images/thumb/7/7a/Zephyr%27s_Speed_%28elementalist%29.png/25px-Zephyr%27s_Speed_%28elementalist%29.png
+scale=
+Keep normal enemies disabled so they can't steal your boons. Don't use retaliation or you will get everyone killed. Avoid using swiftness to make bosses easier to handle. Be careful when using quickness or resistance.
