@@ -1,7 +1,5 @@
 init=AquaDark|Fractals of the Mists|Aquatic Ruins [Dark]|Aquatic|3
-init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dolphin]|Aquatic|18
 init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dolphin]|Aquatic|26
-init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dolphin]|Aquatic|42
 init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dark]|Aquatic|61
 init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dolphin]|Aquatic|76
 

@@ -3,7 +3,6 @@ init=Solid|Fractals of the Mists|Solid Ocean|Solid|35
 init=Solid|Fractals of the Mists|Solid Ocean|Solid|45
 init=Solid|Fractals of the Mists|Solid Ocean|Solid|60
 init=Solid|Fractals of the Mists|Solid Ocean|Solid|80
-init=Solid|Fractals of the Mists|Solid Ocean|Solid|98
 
 #########################################################################
 

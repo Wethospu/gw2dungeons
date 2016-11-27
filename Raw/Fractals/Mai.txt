@@ -1,12 +1,12 @@
-init=Mai|Fractals of the Mists|Aetherblade Retreat Boss|Mai Trin|25
-init=Mai|Fractals of the Mists|Aetherblade Retreat Boss|Mai Trin|50
-init=Mai|Fractals of the Mists|Aetherblade Retreat Boss|Mai Trin|75
-init=Mai|Fractals of the Mists|Aetherblade Retreat Boss|Mai Trin|100
+init=Mai|Fractals of the Mists|Captain Mai Trin Boss|Mai Trin|18
+init=Mai|Fractals of the Mists|Captain Mai Trin Boss|Mai Trin|42
+init=Mai|Fractals of the Mists|Captain Mai Trin Boss|Mai Trin|73
+init=Mai|Fractals of the Mists|Captain Mai Trin Boss|Mai Trin|98
 
 #########################################################################
 
 path=Mai
-name=Captain Mai Trin
+name=Captain Mai Trin Boss
 tactic=normal
 Enemies: Aetherblade and few Inquest.
 Time: Day.

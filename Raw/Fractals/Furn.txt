@@ -1,10 +1,8 @@
-init=Furn|Fractals of the Mists|Molten Facility|Molten|9
-init=Furn|Fractals of the Mists|Molten Facility|Molten|23
-init=Furn|Fractals of the Mists|Molten Facility|Molten|39
-init=Furn|Fractals of the Mists|Molten Facility|Molten|58
-init=Furn|Fractals of the Mists|Molten Facility|Molten|73
-init=Furn|Fractals of the Mists|Molten Facility|Molten|83
-init=Furn|Fractals of the Mists|Molten Facility|Molten|93
+init=Furn|Fractals of the Mists|Molten Furnace|Furn|9
+init=Furn|Fractals of the Mists|Molten Furnace|Furn|23
+init=Furn|Fractals of the Mists|Molten Furnace|Furn|39
+init=Furn|Fractals of the Mists|Molten Furnace|Furn|58
+init=Furn|Fractals of the Mists|Molten Furnace|Furn|83
 
 #########################################################################
 

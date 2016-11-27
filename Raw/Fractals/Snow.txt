@@ -5,6 +5,7 @@ init=Snow|Fractals of the Mists|Snowblind|Snow|37
 init=Snow|Fractals of the Mists|Snowblind|Snow|51
 init=Snow|Fractals of the Mists|Snowblind|Snow|74
 init=Snow|Fractals of the Mists|Snowblind|Snow|86
+init=Snow|Fractals of the Mists|Snowblind|Snow|93
 
 #########################################################################
 
