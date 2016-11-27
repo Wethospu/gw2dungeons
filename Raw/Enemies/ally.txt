@@ -708,7 +708,7 @@ name=Farmer
 alt=Farmers|Villager|Villagers
 image=http://wiki.guildwars2.com/images/5/5b/Farmer.jpg
 ally=true
-path=AquaDolphin|AquaDark
+path=Aqua
 scaling=constant
 
 ##################################################################

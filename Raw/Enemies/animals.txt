@@ -686,7 +686,7 @@ name=Jellyfish Beast
 ID=11402
 image=http://wiki.guildwars2.com/images/b/bd/Jellyfish.jpg
 scaling=legendary
-path=AquaDolphin|AquaDark
+path=Aqua
 
 attack=Slash
 ID=16295
@@ -742,7 +742,7 @@ ID=11407
 image=http://wiki.guildwars2.com/images/b/bd/Jellyfish.jpg
 alt=Jellyfishes
 scaling=normal
-path=AquaDolphin|AquaDark
+path=Aqua
 
 attack=Tentacle Slash
 ID=16316
@@ -762,7 +762,7 @@ ID=9064
 alt=Krait Damosses|Damoss|Damosses
 image=http://wiki.guildwars2.com/images/3/37/Damoss_Water.jpg
 scaling=champion
-path=AquaDolphin|AquaDark
+path=Aqua
 
 attack=Lunge
 ID=1600
@@ -820,7 +820,7 @@ ID=5190
 alt=Krait Hypnosses|Hypnoss|Hypnosses
 image=http://wiki.guildwars2.com/images/0/03/Hypnoss_Water.jpg
 scaling=normal
-path=AquaDolphin|AquaDark
+path=Aqua
 
 attack=Putrid Grasp
 ID=2065
@@ -854,7 +854,7 @@ ID=1173
 alt=Krait Nimrosses|Nimross|Nimrosses
 image=http://wiki.guildwars2.com/images/c/ca/Nimross_Water.jpg
 scaling=normal
-path=AquaDolphin|AquaDark
+path=Aqua
 
 attack=Slash
 ID=1597
@@ -895,7 +895,7 @@ name=Krait Slaver
 ID=11401
 alt=Krait Slavers
 scaling=normal
-path=AquaDolphin|AquaDark
+path=Aqua
 
 attack=Heavy Weight (1)
 animation=spins
@@ -996,7 +996,7 @@ subeffect=damage:-
 copy=6999
 name=Young Barracuda
 ID=5981
-path=AquaDolphin|AquaDark
+path=Aqua
 
 attack=Passive
 effect=On hit

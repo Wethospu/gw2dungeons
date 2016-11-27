@@ -1,11 +1,11 @@
-init=AquaDark|Fractals of the Mists|Aquatic Ruins [Dark]|Aquatic|3
-init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dolphin]|Aquatic|26
-init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dark]|Aquatic|61
-init=AquaDolphin|Fractals of the Mists|Aquatic Ruins [Dolphin]|Aquatic|76
+init=Aqua|Fractals of the Mists|Aquatic Ruins|Aquatic|3
+init=Aqua|Fractals of the Mists|Aquatic Ruins|Aquatic|26
+init=Aqua|Fractals of the Mists|Aquatic Ruins|Aquatic|61
+init=Aqua|Fractals of the Mists|Aquatic Ruins|Aquatic|76
 
 ###########################################################
 
-path=AquaDark|AquaDolphin
+path=Aqua
 name=Aquatic Ruins
 tactic=normal
 Enemies: Krait and fish.
@@ -58,8 +58,7 @@ Use wiki=Vortex to pull Krait together and wiki=Feigned_Surge into a statue to d
 tactic=elementalist
 Use wiki=Tidal_Wave into a statue to deal high damage.
 
-path=AquaDark
-name=Darkness
+name=1) Darkness
 tactic=normal
 Staying in darkness quickly kills you. Carry a link=http://wiki.guildwars2.com/images/0/01/Luminous_Plant.jpg|Luminous_Plant to protect you and nearby players.
 The plant doesn't last very long so start moving once you pick it up. You can drop a plant early to pick up a new one and refresh your timer.
@@ -68,8 +67,7 @@ tactic=skip
 After the descent take a left between the stalactites and stalagmites and cross through the center of the room.
 Have one person run through solo and the rest of the party res at the checkpoint.
 
-path=AquaDolphin
-name=Dolphin
+name=2) Dolphin
 tactic=normal
 Unequip your all armor (including Breather) to prevent repair costs. Armor has no effect and you die pretty easily. Buffs will stay after transformation so stack swiftness and aegis before starting.
 The area is filled with Krait (most hidden) which can easily kill a lone Dolphin. Surviving is easier if you go as a group (wait for slower people when possible).
@@ -85,7 +83,6 @@ tactic=normal|coordinated
 tactic=warrior
 Use a banner so all your party members can use wiki=Inspire.
 
-path=AquaDark|AquaDolphin
 name=enemy=Jellyfish_Beast:legendary
 tactic=ranged
 Stay at range at all times to avoid Beast's melee attacks, especially his agony attack. Keep up swiftness if you can for a better mobility and dodge away from him if he gets close.

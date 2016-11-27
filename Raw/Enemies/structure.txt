@@ -207,7 +207,7 @@ toughness=0.67
 name=Blood Idol
 rank=structure
 image=http://giant.gfycat.com/UnimportantFavoriteKouprey.gif
-path=AquaDolphin|AquaDark
+path=Aqua
 
 attack=Aura
 effect=aura
@@ -1422,7 +1422,7 @@ Path=CoES
 
 Name=Dolphin
 rank=Bundle
-path=AquaDolphin|AquaDark
+path=Aqua
 
 Attack=Echo
 effect=PBAoE
