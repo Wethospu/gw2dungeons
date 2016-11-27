@@ -71,8 +71,8 @@ Boulders will break at a certain point. If in a less coordinated group, wait for
 name=Breaking the Bubble
 image=volc_throne.jpg
 tactic=normal
-You need to throw eight "Infused Stones" at the bubble around the enemy=Shaman:champion to break it. Stones will appear on rockfalls. Either wait until the rockfall ends or dodge in to grab the stone. enemy=Grawl_Shamans:veteran constantly spawn on the other side of the area. They attempt to reach any of the 4 villagers near the ledge in order to push them over the side. If they succeed in pushing over all of the villagers, your team will wipe and you have to try again. If you manage to save every villager you will get a bonus chest.
-The shamans won't attack you so bring lots of damage and control skills. The whole team should focus on killing and slowing shamans down with conditions and control. When stones appear anyone can throw them at the bubble. When throwing stones stay at middle of the area to prevent hitting the sides of the throne.
+You need to throw eight "Infused Stones" at the bubble protecting the enemy=Shaman:champion to break it. Stones will appear on rockfalls. Either wait until the rockfall ends or dodge in to grab the stone. enemy=Grawl_Shamans:veteran constantly spawn on the other side of the area. They attempt to reach any of the 4 villagers near the ledge in order to push them over the side. If they succeed in pushing over all of the villagers, your team will wipe and you have to try again. If you manage to save every villager you will get a bonus chest.
+The shamans won't attack you so bring lots of damage and control skills. The whole team should focus on killing and slowing shamans down with conditions and control. When stones appear anyone can throw them at the bubble. When throwing stones stay at middle of the area to prevent hitting the sides of the throne. It's also recommended to take a look at the out of range indicator below the skill to see how far you can throw them.
 When the bubble breaks all remaining shamans will attack you. Run to the back of the area and kill remaining shamans. Wait until you get out of combat to heal up and change skills, or engage the champion immediately depending on group preference.
 tactic=coordinated
 Kill shamans together. Focus on breaking the bubble because shamans won't be a threat with good damage. When the bubble breaks focus down remaining shamans and engage the boss immediately.
@@ -157,14 +157,12 @@ tactic=ranged
 The Imbued Shaman has melee only attacks so don't be surprised if he does different moves when someone melees him. You generally don't have to worry about these attacks but stay alert if you have to go near him.
 tactic=ranged|melee
 Imbued Shaman casts peridiocally a ticking AoE, Firestorm, which deals lots of damage if you stay on it. Stay mobile at all times so you only get hit once or twice before moving out of it. Dodge if you have low health or full endurance. It's often used at the same target so stay away from others if you are the target. It has no cast time so it can be freely used while using other attacks. Try to learn its recharge so you can dodge right before it gets used.
-The real difficulty starts when Imbued Shaman reaches 75%, 50%, and 25% health. This gives him a bubble which blocks attacks until 40 skills have been used on him. He stops attacking and starts slowly moving towards a random villager who cries in fear. If he reaches his target he will heal ~20% of his maximum health which means he can't be killed unless you can break the bubble on time. Additionally 10-30 enemy=Lava_Elementals:normal spawn which can easily wipe the entire team.
+The real difficulty starts when Imbued Shaman reaches 75%, 50%, and 25% health. This gives him a bubble which blocks attacks until 40 offensive skills have been used while having him targeted. Hitting him is not required and multihitting skills don't help. He stops attacking and starts slowly moving towards a random villager who cries in fear. If he reaches his target he will heal ~20% of his maximum health which means he can't be killed unless you can break the bubble on time. Additionally 10-30 enemy=Lava_Elementals:normal spawn which can easily wipe the entire team.
 The goal is to kill as many elementals as possible while breaking the bubble on time. Chain area reflections and absorptions to defend your team against the elementals and to make them kill themselves. Use cleave and area attacks on the Imbued Shaman to reduce stacks and to kill elementals. You can use unblockable attacks to slow him down which buys you more time. If he is far away from his target don't break the bubble until most elementals have been killed. Once the bubble breaks he enrages for several seconds and deals more damage. If most elementals are alive this will get you killed.
 Keep in mind that multi-hitting skills only remove one bubble stack so if you need to break the bubble fast use quick single skills. Also don't enter the bubble phase until your team is in a good shape. Keep the Shaman's health bit above the limit until the whole team is alive with most of their health and skills recharged. Remember to save your reflections for the bubble phase and don't waste them against arrows unless absolutely needed.
 Try to keep the Shaman in the middle of the area so you have time to break the bubble regardless of his choice. However if you have trouble breaking the bubble on time pull him to one corner and hope you get lucky.
 tactic=coordinated
 Coordinated groups will full melee the shaman. When a bubble phase approaches, they will have a standard order for reflects, they will have a player or players assigned to ensure the shaman is chilled, crippled, or immobilized, and they will attempt to group the elementals together to cleave them down more rapidly. Coordinated groups often frequently blind the elementals, to further reduce their potential threat level. Coordinated groups will not trigger a new bubble phase unless all group members have the important skills up, which need to be up to ensure the next bubble phase goes smoothly and without any issues.
-tactic=coordinated|exploit
-The bubble phase has a cooldown. If you keep the Imbued Shaman chilled and do a huge amount of damage you can skip bubble phases.
 tactic=optional
 To complete the "The Floor Is Lava. Don't Step In It" achievement be extra careful. Lava pools in middle of the area also count and they may harm you even when not lit. Play safe and stay out of them at all times. Use ranged attacks instead of melee.
 If you have trouble getting this and have a friendly party you can ask them if you can stay out of the fight. However most teams will struggle with this fight so doing this may result you getting kicked.
@@ -181,8 +179,6 @@ tactic=mesmer
 wiki=Feedback is excellent against Elementals.
 tactic=mesmer
 Use wiki=Null_Field to remove immobilized from the team.
-tactic=mesmer
-wiki=Temporal_Curtain can be used to cripple Shaman during the bubble phase.
 tactic=elementalist
 wiki=Swirling_Winds is very effective against Elementals. But only use it after reflections.
 tactic=elementalist

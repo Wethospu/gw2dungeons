@@ -66,57 +66,37 @@ scaling=constant
 health=13.8671
 toughness=0.67
 
-attack=May target lit bonfires
-
-attack=Wind Gust
+attack=Frost Bloom
+animation=blue shards rotate
 cooldown=5
-animation=orange circle when blue shards appear|instant
-additional=can't be blocked
-effect=piercing projectile
-subeffect=damage:1705326
-subeffect=launch:2
-effect=with 2 AoE hits
-count=2
-subeffect=damage:1705326
-#note=Use stability (especially when meleeing)
-#note=evade,
-#note=if you want to melee stay at max melee range to maximise reaction time and dodge when blue shards appear
+effect=projectile in every direction
+subeffect=damage:2546428
+subeffect=chilled:2
+subeffect=buff:hypothermia
 
 attack=Lightning Strike
-effect=ticking AoE (5 hits in 4 s)
-count=4
-length=3
-subeffect=damage:14959
-subeffect=crippled:1
-effect=last hit
-subeffect=damage:121809
-subeffect=launch:4
-#note=get out or evade the last hit
-#note=Use ground targeted (and some other specific skills) to destroy the top part
+animation=instant
+effect=5 delayed (2 s) AoEs over 2.25 s
+count=?
+subeffect=damage:190032
+subeffect=buff:hypothermia
 
-attack=Snowstorm (1)
-animation=white mist appears|3
+attack=Icible Bolt
+effect=projectiles spinning around on the outer area
+subeffect=damage:123521
+subeffect=chilled:5
+subeffect=buff:hypothermia
+
+attack=Wind Gust (1)
+animation=red circles at bonfires|3
 additional=used at 75%/50%/25%
-effect=teleport ~2 players away. Reduce visibility
-#note=if you get teleported, use side of the arena to get to your party (don't go middle and aggro everything)
+effect=piercing projectile with AoE at every bonfire
+subeffect=damage:?
+subeffect=launch
+subeffect=Bonfires lose 25% health.
 
 attack=summon (2)
-additional=maximum amount of 5
-effect=summon 5 enemy=Ice_Elementals:veteran
-#note=avoid aggroing (they just get replaced next time)
-#note=focus down necessary amount to reduce pressure
-
-##################################################################
-# Can't be attacked any more so doesn't "exist" anymore.
-
-#name=Elemental Source (Top)
-#rank=structure
-#path=Snow
-#scaling=constant
-#health=0.3799
-#toughness=0.67
-
-#attack=May target lit bonfires
+effect=summon 2/3/4 random enemy=text:Svanir|Son_of_Svanir_(bow):veteran|Son_of_Svanir_Berserker:veteran|Son_of_Svanir_Mauler:veteran|Son_of_Svanir_(greatsword):normal|Son_of_Svanir_(axe):normal
 
 ##################################################################
 

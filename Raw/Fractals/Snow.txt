@@ -11,13 +11,13 @@ init=Snow|Fractals of the Mists|Snowblind|Snow|86
 path=Snow
 name=Snowblind
 tactic=normal
-Enemies: Sons of Svanir and some elementals.
+Enemies: Sons of Svanir and icebrood.
 Time: Night.
-Use wiki=Powerful_Potion_of_Elemental_Slaying|Potion_of_Elemental_Slaying,  wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
+Use wiki=Powerful_Potion_of_Sons_of_Svanir_Slaying|Potion_of_Sons_of_Svanir_Slaying,  wiki=Superior_Sigil_of_the_Night|Sigil_of_the_Night and wiki=Superior_Sigil_of_Force|Sigil_of_Force.
 youtube=A-cfa4p9NGo|Video_guide by [KING].
 Current record: record=59.
 tactic=coordinated
-Against enemy=Shaman_Lornarr_Dragonseeker, use wiki=Powerful_Potion_of_Sons_of_Svanir_Slaying|Potion_of_Sons_of_Svanir_Slaying and wiki=Superior_Sigil_of_Wrath|Sigil_of_Wrath instead of Force.
+Against enemy=Shaman_Lornarr_Dragonseeker, use wiki=Superior_Sigil_of_Wrath|Sigil_of_Wrath instead of Force.
 
 # Note: Any changes should be copypasted to every fractal (as long as there are no fractal specific changes).
 name=Instability
@@ -46,103 +46,35 @@ tactic=normal|91-100
 wiki=Mistlock_Instability:_Social_Awkwardness|Social_Awkwardness: Nearby allies receive agony when in combat.
 Don't stack as a full group. 4 stacks of agony kills you in 25 seconds even with a max agony resist. If you don't have max agony resist stay away from everyone else.
 
-name=Start
-tactic=normal|skip
-As soon as you spawn you start getting stacks of Frostbite. It deals some damage every second per stack and becomes quite deadly at a high number of stacks. Staying near a heat source removes all stacks and grants a short immunity against being inflicted with additional Frostbite stacks.
+name=Ice wall
 tactic=normal
-Run along the road and use wiki=Stab_(Rusty_Old_Torch) to lit up bonfires. Be careful to not fall down.
-tactic=skip
-The safest way to get down fast is to follow the road to right and then fall down when it turns left.
-The fastest way to get down is to just move forward from the beginning and get down using a structure made of wooden planks. It takes some practice so you should practice it alone.
-tactic=optional
-To complete the achievement "If We Only Had Marshmallows" remember to lit up every bonfire.
-tactic=warrior
-Use wiki=Death_from_Above to improve your chances with the fastest way.
-tactic=guardian
-Use wiki=Protector's_Impact to improve your chances with the fastest way.
-tactic=elementalist
-Use wiki=Arcane_Abatement to improve your chances with the fastest way.
-tactic=engineer
-Use wiki=Explosive_Descent to improve your chances with the fastest way.
-tactic=ranger
-Use wiki=Soften_the_Fall to improve your chances with the fastest way.
-tactic=thief
-Use wiki=Descent_of_Shadows to improve your chances with the fastest way.
-tactic=mesmer
-Use wiki=Descent_into_Madness to improve your chances with the fastest way.
-tactic=necromancer
-Use wiki=Toxic_Landing to improve your chances with the fastest way.
-
-name=Ice Wall
-tactic=normal|skip
-At the bottom there are 6 bonfires next to each other which you have to keep lit to melt the nearby ice wall. Fires only stay up for 10 seconds and you need to light them up 4 times (if done normally) to melt the wall. As soon as you get there 2 enemy=Sons_of_Svanir_(Axe):veteran and 4 enemy=Sons_of_Svanir_(Greatsword):veteran start respawning.
-tactic=normal
-At lower levels (see Skip for harder levels) you can simply keep killing enemies while keeping the fires up. Once the wall melts, kill remaining enemies and proceed. Enemies will keep respawning so don't stay there too long.
-tactic=normal|skip
-Camp fires will remove Frostbite when you enter their range even when not lit. You can use this to get out of combat to allow people respawn or to change skills and traits. Keep in mind that the immunity won't automatically reapply in the area so if you want to stay there longer you have to manually re-enter the area. Don't get too close so you don't aggro enemies.
-Keep this in mind while fighting enemy=Elemental_Source:structure if you are getting overrun by enemy=Ice_Elementals:veteran.
-tactic=coordinated
-1-2 players can keep the enemies busy while rest of the team spams wiki=Stab_(Rusty_Old_Torch) on the bonfires. Repeatedly stabbing the fires speeds up progress, as does having high might when stabbing the fires (pre-stack before you start stabbing them), as does quickness.
-Alternatively a thief can stealth the entire team, although this is generally slower than the above method.
-tactic=guardian
-Use wiki=Line_of_Warding at front of enemies when they spawn. Tag them with Staff. Use wiki=Ring_of_Warding and wiki=Zealot's_Embrace and keep kiting them while others keep fire up.
-tactic=guardian
-Use wiki=Wall_of_Reflection to protect team.
-tactic=mesmer
-Use wiki=Feedback to protect your team.
-tactic=mesmer
-Use wiki=Temporal_Curtain and wiki=Illusionary_Wave to control enemies.
-tactic=necromancer
-Use wiki=Spectral_Wall, wiki=Well_of_Darkness, wiki=Plague and wiki=Reaper's_Mark to control and blind enemies.
-tactic=necromancer
-Use wiki=Grasping_Dead, wiki=Unholy_Feast, wiki=Chilblains and/or wiki=Tainted_Shackles to slow down enemies.
-tactic=skip
-The easiest way is to use hit and run tactic. Go in with defensive skills, light up fires and run far away so the enemies stop following. Other people can help and pull enemies away first. Once the wall melts just leave dead players behind and proceed until enemies stop following. When they stop following you should run back to the bonfires.
-tactic=warrior
-Use wiki=Defiant_Stance and wiki=Endure_Pain to tank hits while litting up fires.
-tactic=warrior
-Use wiki="Fear_Me!" for long control to protect you and your team.
-tactic=thief
-Use wiki=Smoke_Screen with wiki=Cluster_Bomb and wiki=Shadow_Refuge to easily solo it while stealthed.
+You start in a cave with a lit bonfire. Lit bonfires provide Warmth which removes and gives immunity against Hypothermia. Without Warmth, a stack of Hypothermia is inflicted every 5 seconds. Each stack deals 54 damage per second so it's only dangerous when you reach about 10 stacks. Keep an eye on your stacks and get near a bonfire once in a while.
+After exiting the cave, there is a big bonfire and an ice wall behind it. There are also two respawning groups of a enemy=Wolf:veteran and 3 enemy=Wolves:normal which should be ignored. Your objective is to keep the bonfire lit so that it can melt the ice wall. The bonfire has a health bar which represents how much firewood it has left. Initially the bonfire has 50% health.
+Start the event by litting the bonfire with your special action key. This causes 2 things. Both the icewall and the bonfire start slowly losing health immediately. After a few seconds, firewood and enemies start spawning all over the area. You must keep up the fire by collecting firewood to the bonfire. Firewood can be either put with interaction key (F) or thrown with the first skill. Second skill should be used on cooldown to give you swiftness.
+Enemies consist of previouly mentioned wolves, 2 groups of Svanir and an occasional a enemy=Icebrood_Elemental:normal. One group has a enemy=son_of_svanir_(bow):veteran and 3 random enemy=text:Svanirs|son_of_svanir_(axe):normal|son_of_svanir_(bow):normal|son_of_svanir_(greatsword):normal|son_of_svanir_(hammer):normal and the other group has a enemy=son_of_svanir_(greatsword):veteran and 3 random enemy=text:Svanirs|son_of_svanir_(axe):normal|son_of_svanir_(bow):normal|son_of_svanir_(greatsword):normal|son_of_svanir_(hammer):normal. Group respawns about 45 s after being fully defeated excluding igniting the bonfire which respawns missing enemies for one group. This means you can keep veterans alive to prevent normal Svanir from appearing but on the other hand, killing them gives some loot.
+Whenever the ice wall has lost about 20% health, an Icebrood Elemental appears. It will slowly move towards the bonfire and remove about 15% of its health unless you kill it before it gets there. Focus on keeping the fire up by killing Elementals and gathering firewood. Consider taking some defensive skills to survive better.
+This all may sound like a lots of pressure but there is really no rush. If the bonfire goes down you just gather some wood and lit it up again without resetting the progress. You can always run back to to the first bonfire or even wipe if things get too cold.
+Once the wall melts all enemies disappear and you should regroup at the bonfire to remove Hypothermia.
 
 name=enemy=Elemental_Source:structure
 tactic=normal
-Stick together and try to stay near the entrance. There will be lots of pressure so you need to support each other and revive people fast. Consider marking the spot on the minimap. Keep in mind that Source won't reset so you can at any time run back to the previous area with bonfires or even wipe.
-There are 5 bonfires scattered around the area which stay lit for 10 seconds. On top of helping with Frostbite they also draw aggro from Source. Try to keep one lit at all times.
-The Source won't deal much damage on its own. Its basic projectile attack launches while its area attack cripples and launches at the end. The Source can stunlock you for a while so take at least one stun break or better yet bring party-wide stability.
-At 75%, 50% and 25% health the Source will cause a snowstorm which reduces visibility, teleports ~2 players away and summons 5 enemy=Ice_Elementals:veteran around the area. This is the hardest part of the fight so ensure you have no Frostbite before it happens.
-The most important thing is to avoid aggroing every Ice Elemental. Look at your position on the minimap, move on sides of the area and meet near the entrance. Focus on surviving and stick together until the snowstorm ends. Try to light up the fire as soon as possible although you can survive the whole duration without it under optimal conditions.
-Once the situation is clear you should focus down Ice Elementals. You can run back to the tent to pull them closer, or you can group them using Binding Blades or Into The Void. They hit quite hard so stay out of red circles and dodge their all attacks. Anti projectile skills are useful against their basic projectile attack.
-When Source dies the blizzard ends and you no longer gain Frostbite stacks. However current stacks won't disappear so remember to visit a bonfire before proceeding.
-tactic=coordinated
-Coordinated groups have two different strategies which can be employed.
-The first strategy is to suicide rush the first 50% of the source, stacking might before going in, and after the snowstorm continuing to kill the source. After everyone wipes (after the second snowstorm), the party repeats this strategy.
-The second strategy is to do things as per the normal strategy for the first 50%, and then go all-in for the last 50% (the same as is done in the first strategy).
-tactic=exploit
-A Necromancer can use Epidemic to inflict the swirler with conditions, and eventually kill it. This may not be an exploit; the hitbox for the source was shifted (along with every other structure hitbox in the entire game, to some degree) in a patch. Prior to this patch, the source could be killed in many different ways, which may have been an exploit or may have been intended.
-Blind works against Elemental Source which helps avoiding its attacks.
-tactic=optional
-To complete the achievement "If We Only Had Marshmallows" remember to lit up every bonfire after Source is destroyed.
-tactic=mesmer
-Use Focus with wiki=Warden's_Feedback. Use wiki=Temporal_Curtain to pull Elementals together or as a projectile reflection.
-tactic=guardian
-Use wiki=Binding_Blade to pull Elementals together. Use wiki=Wall_of_Reflection against their basic attack.
-tactic=guardian
-Use wiki="Stand_Your_Ground!" and wiki=Hallowed_Ground to protect team from Sources attacks.
-tactic=necromancer
-wiki=Lich_Form is really good to destroy Elementals fast.
-tactic=necromancer
-Use wiki=Spectral_Walk right before getting teleported to get instantly back.
-tactic=mesmer
-Use wiki=Portal right before getting teleported to get instantly back.
-tactic=mesmer
-Use wiki=Mantra_of_Concentration to prevent control (especially useful when reviving).
+After crossing the bridge you will get to a round area with 5 small bonfires and a big Elemental Source on the middle. Source will start a snowstorm which severely reduces your vision. Take a look at the minimap because if you get lost it's the best way to get anywhere.
+Elemental Source has 10 stacks of Rime Shield. Each stack reduces damage taken by 10% so initially he won't take any damage. Litting a bonfire removes 2 stacks and increases your vision so you want to keep them all up. Bonfires slowly lose health when lit and also about 25% whenever the boss loses 25% health.
+If all bonfires go down you will get teleported to a random nearby location with your vision severely reduced. However the bonfires reset to 50% health. This gives you two tactics, either you keep them up at all times with firewood or just let them expire.
+Keeping bonfires up is recommended because it's less pressure for the party. Designate a fast character to do this so others can just focus on the boss. Runner should keep in mind that one firefood gives 50% health so if all bonfires are in a good shape he can also attack the boss.
+Expiring is potentially faster because you will have the whole party attacking the boss most of the time. But you must be able to navigate with the minimap. Bonfires often expire when boss loses 25% health so pay attention to his health.
+Elemental Source has 4 attacks; Frost Bloom, Wind Gust, Icible Bolt and Lightning Strike.
+Frost Bloom is his basic attack which he uses all the time. The attack shoots a projectile in every direction dealing some damage, 2 s of chilled and Hypothermia. The projectiles always spawn at the same location and don't hit at melee range so you can completely avoid them by a proper positioning.
+Lightning Strike has no animation and causes ~5 delayed AoEs. Each explosion deals very low damage and Hypothermia so only dodge if you don't have Warmth and multiple AoEs are overlapping on you.
+Icible Bolt is a passive effect which causes ice shards spin around the outer area. Bolts deal very low damage but cause 5 s of chilled so stay near middle to avoid a very long duration of chilled.
+Wind Gust is used whenever he has lost 25% health. The attack causes a delayed AoE on each bonfire causing low damage and launch so dodge out. The attack also removes 25% of bonfires' health and spawns 3/4/5 random Svanir enemies (normal or veteran). You should ignore them unless you start taking too much damage.
+Pretty much the only way to wipe is at every 25% health if all bonfires go down while players have lots of Hypothermia and start panicking.  Keep in mind that you can always fallback to the previous bonfire without the boss reseting. However he will reset if you wipe.
 tactic=thief
-Use wiki=Smoke_Screen to block projectiles and also to blind other attacks.
+Use wiki=Smoke_Screen to block ranged attacks from Svanir.
 tactic=elementalist
-wiki=Firestorm and wiki=Ice_Storm do massive damage to Source.
-tactic=warrior
-wiki=Healing_Signet is very useful to counter Frostbite.
+Use wiki=Meteor_Shower, wiki=Firestorm or wiki=Ice_Storm to do lots of damage.
+tactic=mesmer
+Use wiki=Into_the_Void to pull Svanir enemies to Source so you can kill them with area attacks.
 
 name=Forest
 tactic=fight|skip
@@ -156,32 +88,25 @@ tactic=fight|skip
 It's possible to get stuck when the way gets blocked so one player should enter while rest of the team uses the totem to get in.
 
 name=enemy=Shaman_Lornarr_Dragonseeker:legendary
-tactic=ranged|melee
-His attacks inflict Frostbite stacks but they only last 15 seconds. At 10 stacks you get turned into an enemy=Ice:structure but lose all the stacks. If you get 8-9 stacks consider reaching 10 stacks on purpose to prevent lots of damage.
-His most dangerous attack is Icy Breath which deals lots of damage and Frostbite in 10 cones. At all times be ready to dodge straight away from him if you get targeted. If you panic and run around you may get everyone killed.
-tactic=melee
-| If someone else gets targeted try to stay behind Lornarr's back so you don't get hit.
-tactic=ranged
-At all times keep some distance so you don't get hit by his basic melee hits.
-tactic=melee
-He also has a 3-hit melee chain. All hits inflict Frosbite and the third attack hits pretty hard. Stay behind his back if someone else has the aggro. If you have the aggro try to kite him at max melee range.
-tactic=ranged|melee
-Occasionally he kneels and turns into an ice shard. This causes Ice Spikes appear around the area and allows him to heal so focus it down fast. Ice Spikes hit after 2 seconds so you can just walk out of any red circles. Each Spike deals extreme damage and agony.
-Every 50 seconds Lornarr teleports away to the cliff above which prevents you from attacking him. He casts multiple waves of Ice Spikes on the area. They appear first on the middle and then on the sides so move accordingly. They are quite easy to avoid as long as you keep your head cool. If you get in a bad spot just dodge or use a mobility skill.
-After waves end you have a few seconds before Lornarr appears again. Use this time to heal, apply buffs and stack might.
-If Lornarr dies to conditions while away use AoE looting to loot his corpse.
-tactic=exploit
-Not fully sure whether and how this works. Feel free to report if you have any success.
-You need a mesmer with wiki=Portal. Team doesn't go in but instead jump onto the flag and then on the cliff on left. The mesmer places a portal where the team is standing, goes in solo and waits until Lornarr teleports up. Right before he comes back the mesmer places the portal end end and teleports back in time.
-If done properly Lornarr should teleport to the team and just stand still without attacking. Lornarr may wake up and teleport back down. If that happens the mesmer just places another portal and repeats above.
-Success of this may be based on portal placement and timing. Also team may be able to go attack him normally at start if everyone takes the portal. Also Lornarr may reset if mesmer doesn't get down fast enough.
-tactic=guardian
-You can drop wiki=Purging_Flames before the boss teleports back down so your team can stack might.
-tactic=guardian
-Provide Aegis against the autoattacks of the boss.
-tactic=mesmer
-Each Ice Spike count as a skill usage so try to apply lots of confusion before he teleports away.
-tactic=mesmer
-Ice Spikes won't hit clones so you can summon wiki=Phantasmal_Duelist on corners for 100% uptime.
-tactic=elementalist
-You can keep damaging him with wiki=Dragon's_Tooth even when he is away.
+On higher scales, Lornarr starts with 10 stacks of Rime Shield. There are also 3 Corrupted Ice Crystals which shoot projectiles causing low damage and chilled. Stacks are removed by either killing Crystals or Icebrood enemies who fight with him. Focus on killing enemies to get rid of the stacks. On lower scales (4 & 15), Lornarr has no Rime Shield and there are only enemy=Icebrood_Berserker:veteran and enemy=Icebrood_Mauler:veteran with him.
+Lornarr has 7 attacks; Strike, Sword Throw, Greatsword Spin, Icy Breath, Ice Spike, Teleport and Bear form.
+Strike is his basic melee attack which deals some damage. His other attacks are much more dangerous so don't bother avoiding it.
+Greatsword Spin makes him spin in place hitting 6 times around him. Each hit deals 1 x Strike damage so you just move a bit away from him to avoid lots of damage. Keep in mind that if you stand sideways you can hit him with melee attacks while he is spinning without getting hit.
+Icy Breath is used when he puts a target marker on someone. He will start breathing ice on a cone hitting 10 times during several seconds. Each hit deals 1 x Strike damage and inflicts Creeping Ice. Creeping Ice is similar to Hypothermia but deals 87 damage per stack and at 10 stacks you will turn into an ice shard which disables you for 10 seconds. This consumes all stacks which can be helpful because the ice shard can be broken easily by your party. Shaman is able to rotate while channeling this so it's important that you dodge directly away from him to prevent all of your party getting hit.
+Sword Throw is used on distant targets and makes him throw his sword as a piercing and returning projectile. Each hit deals 2 x Strike damage and inflicts 5 seconds of crippled and chilled. If you stay at range (or when avoiding Icy Breath), be ready dodge this to prevent lots of damage.
+Ice Spike is only used on higher scales. He will raise his sword to spawn delayed AoEs around him which deal high damage so dodge out of any red circles.
+Teleport is used at 75% health (only higher scales) and at 50% health. He teleports away, turns invulnerable, summons an enemy=Icebrood_Effigy and starts casting Ice Spikes all around the area in specific patterns. Avoiding them on their own is trivial because you can easily just move out of the AoEs.
+Effigy has a basic melee attack and a special PBAoE Glacial Slam attack which turns everyone into an ice shard. Failing to dodge that will make you an easy target for Ice Spikes.
+
+name=enemy=Shaman_Lornarr_Dragonseeker_(bear):legendary
+At 25% health, Lornarr transforms into a bear form, gains 7 stacks of Rime Shield and summons an enemy=Icebrood_Effigy. Killing the effigy removes the shield so focus the effigy first.
+Bear form may feel more intimidating but overall the melee pressure should be about same. His basic melee attack is about 100% stronger but he lacks any special attacks. The only difference is that if you plan to run away from him you must dodge his gap closers or you will get killed.
+Lornarr has 3-4 attacks; Swipe, Heavy Swipe, Leaping Maul and maybe also Maul on higher scales.
+Swipe is a basic melee attack which deals 1.8 x Strike damage and inflicts 5 s of bleeding. With some sustain you should be able to tank it.
+Heavy Swipe is used when he rushes towards his target. At the end of the rush, he deals 3.5 x Strike damage and 3 s knockdown. Be ready to dodge this because at higher scales you will get downed from the follow-up attacks.
+Leaping Maul is used when he jumps in the air. The attack deals 2 x Strike damage, 0.5 s daze and 6 s bleeding. Dodge also this if you can but Heavy Swipe is the biggest priority.
+
+
+
+
+

@@ -817,11 +817,18 @@ path=HotW1
 #############################
 
 copy=9888
+Name=Son of Svanir Berserker
+rank=veteran
+path=Snow
+
+#############################
+
+copy=9888
 Name=Son of Svanir (Axe)
 ID=4653
 alt=Sons of Svanir (axe)
 image=http://wiki.guildwars2.com/images/d/db/Son_of_Svanir_axes.jpg
-Path=HotWS|HotW3
+Path=HotWS|HotW3|Snow
 
 ##################################################################
 
@@ -902,7 +909,7 @@ path=HotW1
 
 copy=9895
 ID=4655
-Path=HotWS|HotW3
+Path=HotWS|HotW3|Snow
 
 #############################
 
@@ -1016,7 +1023,7 @@ copy=9889
 Name=Son of Svanir (Bow)
 ID=4654
 alt=Sons of Svanir (Bow)
-Path=HotWS|HotW1|HotW3
+Path=HotWS|HotW1|HotW3|Snow
 
 #############################
 
@@ -1024,7 +1031,7 @@ copy=9889
 Name=Son of Svanir (Bow)
 ID=9894
 alt=Sons of Svanir (Bow)
-Path=HotW1
+Path=HotW1|Snow
 
 #############################
 
@@ -1114,6 +1121,20 @@ effect=Uses Ice Leap instead Leap.
 #############################
 
 copy=9891
+Name=Icebrood Mauler
+rank=veteran
+Path=Snow
+
+#############################
+
+copy=9891
+Name=Son of Svanir Mauler
+rank=veteran
+Path=Snow
+
+#############################
+
+copy=9891
 Name=Son of Svanir (Hammer)
 ID=9896
 alt=Sons of Svanir (Hammer)
@@ -1129,6 +1150,13 @@ Path=HotWS|HotW1
 
 copy=9896
 ID=11337
+Path=Snow
+
+#############################
+
+copy=9896
+Name=Son of Svanir (Hammer)
+rank=normal
 Path=Snow
 
 ##################################################################
@@ -1200,72 +1228,125 @@ image=http://wiki.guildwars2.com/images/a/a6/Hafdan_the_Black.jpg
 path=Snow
 scaling=legendary
 
-attack=Strike (1)
+attack=Strike
 ID=16263
-animation=swings sword from right overhead|0.4
-cooldown=0
+image=https://giant.gfycat.com/FabulousInbornAnura.gif
+animation=swings sword from right overhead|0.5
+cooldown=1.25
 effect=melee
 subeffect=damage:-
-subeffect=buff:Frostbite:15
-
-attack=Strike (2)
-ID=16264
-animation=waits and swings sword from right|1.4
-effect=melee
-subeffect=damage:-
-subeffect=buff:Frostbite:15
-
-attack=Strike (3)
-ID=16265
-animation=waits and thrusts sword forward|1.7
-effect=melee
-subeffect=damage:-
-subeffect=buff:Frostbite:15:2
-#note=deals about same damage as previous hits so don't tank it
-#note=block/evade
 
 attack=Icy Breath
 ID=16270
-cooldown=14
+image=https://giant.gfycat.com/ImpishVelvetyBustard.gif
+cooldown=24
 animation=lowers sword, leans back and leans forward|0.5|sprays ice
 additional=able to rotate
 effect=10 cones in 4.5 s
 count=10
 length=4.5
 subeffect=damage:-
-subeffect=buff:Frostbite:15
+subeffect=buff:Creeping_Ice:15
 #note=evade back to direct away from your party
 #note=usually targets the same player
 
-attack=Heal
-ID=16271
-animation=kneels
-additional=can be destroyed
-effect=covered by enemy=Ice:structure
-subeffect=invulnerability, heal and Ice Spikes around the area
+attack=Greatsword Spin
+image=https://giant.gfycat.com/PitifulHappygoluckyEidolonhelvum.gif
+animation=spins anti-clockwise|1|spins in place
+cooldown=24
+effect=7 small PBAoEs in 1.25 s
+length=1.25
+count=?
+subeffect=damage:?
+
+attack=Sword Throw
+animation=leans back
+effect=piercing and returning projectile
+count=2
+subeffect=damage:?
+subeffect=crippled:5
+subeffect=chilled:5
 
 attack=Ice Spike
+image=https://giant.gfycat.com/HastyEvilJabiru.gif
 effect=delayed (2 s) AoE
 subeffect=damage:0.8
 subeffect=agony:3
 
 attack=Ice Spikes
-cooldown=50
-animation=instant||teleports away and rambles about power of dragon
+animation=instant
+additional=Used at 75% (only high scales) and 50% health
 effect=leaves the arena
-effect=multiple delayed (2 s) AoEs in line (lasts about 20 s)
-count=?
-subeffect=damage:0.8
-subeffect=agony:3
-#note=used on cooldown (even cancels other skills)
+effect=multiple Ice Spikes over time
+effect=Summon enemy=icebrood_effigy
 
-attack="Frostbite"
+attack=Bear form
+additional=Used at 25%
+effect=Transform into enemy=Shaman_Lornarr_Dragonseeker_(Bear)
+
+attack="Creeping Ice"
 additional=stacks up to 10 times
 effect=debuff
 frequency=1
-subeffect=damage-constant:90.5
+subeffect=damage-constant:87.5
 effect=at 10 stacks
-subeffect=lose all "Frostbite" and get enemy=Ice_Shard:structure.
+subeffect=lose all "Creeping Ice" and get enemy=Ice_Shard:structure for 10 seconds.
+
+##################################################################
+
+name=Shaman Lornarr Dragonseeker (Bear)
+ID=11333
+image=http://wiki.guildwars2.com/images/a/a6/Hafdan_the_Black.jpg
+path=Snow
+scaling=legendary
+
+attack=Swipe
+image=https://giant.gfycat.com/DistantOffensiveHog.gif
+cooldown=1.25
+effect=melee
+subeffect=damage:?
+subeffect=bleeding:5
+
+attack=Maul
+image=https://giant.gfycat.com/FrighteningFrailFerret.gif
+
+attack=Leaping Maul
+image=https://giant.gfycat.com/TalkativeAgreeableAnkolewatusi.gif
+animation=Leaps in air
+cooldown=16
+effect=leap
+subeffect=damage:?
+subeffect=daze:0.5
+subeffect=bleeding:6
+
+attack=Heavy Swipe
+image=https://giant.gfycat.com/NastyDistortedKingsnake.gif
+effect=dash
+subeffect=damage:?
+subeffect=knockdown:3
+
+##################################################################
+
+Name=Icebrood Effigy
+image=http://wiki.guildwars2.com/images/9/9d/Icebrood_Goliath.jpg
+rank=elite
+Path=Snow
+
+attack=Stab
+effect=melee
+subeffect=damage:?
+
+attack=Sweep
+effect=melee
+subeffect=damage:?
+subeffect=knockback:1.5
+
+attack=Glacial Slam
+image=https://giant.gfycat.com/GlamorousSecondhandGopher.gif
+animation=leaps in air
+effect=huge PBAoE
+subeffect=damage:?
+subeffect=chilled
 
 ##################################################################
 
