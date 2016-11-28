@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using DataCreator.Utility;
 using System.Drawing.Drawing2D;
+using System.Linq;
 
 namespace DataCreator.Shared
 {
@@ -290,6 +291,11 @@ namespace DataCreator.Shared
       while (str[valueEnd - 1] == '.' || str[valueEnd - 1] == ';' || str[valueEnd - 1] == ',' || str[valueEnd - 1] == ':' || str[valueEnd - 1] == ')')
         valueEnd--;
       var value = str.Substring(linkIndex + 1, valueEnd - linkIndex - 1);
+      // Character ')' may be part of the link so add it back if it was previously removed.
+      var startBrackets = value.Count(f => f == '(');
+      var endBrackets = value.Count(f => f == ')');
+      for(; startBrackets > endBrackets; endBrackets++)
+        value += ")";
       startIndex = valueEnd;
       return new[] { type, value };
     }
@@ -349,6 +355,8 @@ namespace DataCreator.Shared
       var fullUrl = url;
       if (linkType.Equals(Constants.LinkYoutube))
         fullUrl = "http://www.youtube.com/embed/" + linkData.Split('|')[0];
+      if (linkType.Equals(Constants.LinkMedia))
+        fullUrl = Constants.WebsiteURL + fullUrl;
       VerifyLink(fullUrl);
       BackupAndUpdateSize(fullUrl);
       

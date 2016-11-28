@@ -186,7 +186,10 @@ namespace DataCreator
           fractals.Add(encounterData);
       }
       foreach (var fractal in fractals)
+      {
+        LinkGenerator.CurrentDungeon = fractal.Paths[0].Tag;
         EncounterGenerator.CreateFiles(fractal, enemies, instanceData.FractalPaths);
+      }
       foreach (var raid in Directory.EnumerateFiles(Constants.DataRaidsRaw).Select(Path.GetFileNameWithoutExtension))
       {
         var encounterData = GenerateInstance(InstanceType.raid, raid, instanceData, enemies);

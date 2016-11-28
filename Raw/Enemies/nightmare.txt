@@ -269,7 +269,7 @@ subeffect=vulnerability:5
 
 name=Leurent
 ID=3195
-image=http://gw2dungeons.net/media/dungeonimages/ta_leurent.jpg
+image=ta_leurent.jpg
 path=TAF
 
 attack=Healing Signet

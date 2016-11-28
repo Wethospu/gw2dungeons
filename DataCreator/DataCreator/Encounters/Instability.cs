@@ -40,7 +40,7 @@ namespace DataCreator.Encounters
         return;
       var nameWithoutSpaces = Name.Replace(' ', '_');
       CachedHtml = new StringBuilder();
-      string link = "wiki=Mistlock_Instability):_" + nameWithoutSpaces + "|" + nameWithoutSpaces;
+      string link = "wiki=Mistlock_Instability:_" + nameWithoutSpaces + "|" + nameWithoutSpaces;
       CachedHtml.Append("<p>").Append(LinkGenerator.CreateLinks(link, new List<string>(), enemyData)).Append(": ").Append(LinkGenerator.CreateLinks(Description, new List<string>(), enemyData)).Append("</p>").Append(Constants.ForcedLineEnding);
       foreach (var line in Text)
         CachedHtml.Append("<p>").Append(LinkGenerator.CreateLinks(line, new List<string>(), enemyData)).Append(" </p>").Append(Constants.ForcedLineEnding);

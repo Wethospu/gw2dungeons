@@ -48,7 +48,7 @@ Take mobility, condition removal, healing and stun breaks if you are going to ru
 Don't take your wisp until other runners are near their wisps to give them more time. Keep an eye on the timer in case someone starts it early. This usually happens on lower scales because there is so much extra time. On higher scales you have much less time so ask that everyone is ready and then say "go". It's recommended to let the player at the furthest wisp start the timer so he/she has a bit more time.
 tactic=warrior
 Use wiki=Charge_(warrior_skill)|Charge right before taking a wisp for swiftness. Don't use wiki=Call_to_Arms because you may hit something and enter combat.
-Take wiki=Mending, wiki=Balanced_Stance, wiki="Shake_It_Off", wiki=Bull's_Charge and wiki=Signet_of_Rage for mobility, condition removal and stun breaks.
+Take wiki=Mending, wiki=Balanced_Stance, wiki="Shake_It_Off!", wiki=Bull's_Charge and wiki=Signet_of_Rage for mobility, condition removal and stun breaks.
 tactic=mesmer
 Use wiki=Portal_Entre for a group wide mobility.
 Use wiki=Mantra_of_Resolve or wiki=Mantra_of_Recovery (if Mender's Purity-trait) to remove conditions.

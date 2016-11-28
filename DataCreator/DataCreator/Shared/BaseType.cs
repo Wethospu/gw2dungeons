@@ -73,7 +73,7 @@ namespace DataCreator.Shared
     {
       if (data.Length > 0)
       {
-        if (!data.StartsWith("http://"))
+        if (!data.StartsWith("http://") && !data.StartsWith("https://"))
           data = Constants.WebsiteMediaLocation + instance + "/" + data;
         Medias.Add(new Media(data));
       }

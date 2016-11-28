@@ -40,12 +40,15 @@ namespace DataCreator.Utility
       if (data.Length == 0)
         ErrorHandler.ShowWarning("Missing info. Use \"image='image'\"!");
       Link = data;
-      LinkGenerator.VerifyLink(Link);
-      LinkGenerator.BackupAndUpdateSize(Link);
-      if (Constants.MediaSizes.ContainsKey(Link))
+      var fullUrl = data;
+      if (fullUrl.StartsWith(Constants.WebsiteMediaLocation))
+        fullUrl = Constants.WebsiteURL + fullUrl;
+      LinkGenerator.VerifyLink(fullUrl);
+      LinkGenerator.BackupAndUpdateSize(fullUrl);
+      if (Constants.MediaSizes.ContainsKey(fullUrl))
       {
-        Width = Constants.MediaSizes[Link][0];
-        Height = Constants.MediaSizes[Link][1];
+        Width = Constants.MediaSizes[fullUrl][0];
+        Height = Constants.MediaSizes[fullUrl][1];
       }
       // Gifs have to be in .gif format so that they can be directly downloaded.
       // However there are more efficient formats available depending on the site.

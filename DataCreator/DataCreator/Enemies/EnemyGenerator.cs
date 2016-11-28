@@ -426,6 +426,8 @@ namespace DataCreator.Enemies
     {
       if (data.Length == 0)
         ErrorHandler.ShowWarning("Missing info. Use \"image='imagelink'\"!");
+      if (!data.StartsWith("http://") && !data.StartsWith("https://"))
+        data = Constants.WebsiteMediaLocation + "Enemies" + "/" + data;
       currentAttack.Medias.Add(new Media(data));
     }
 

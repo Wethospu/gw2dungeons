@@ -50,6 +50,7 @@ namespace DataCreator.Utility
     public static string WebsiteThumbBigLocation { get { return "/media/thumbs_" + ThumbWidth + "px/"; } }
     public static string WebsiteThumbSmallLocation { get { return "/media/thumbs_" + ThumbWidthSmall + "px/"; } }
     public static string WebsiteIconLocation { get { return "/media/icons/"; } }
+    public static string WebsiteURL { get { return "http://gw2dungeons.net/"; } }
 
     // This site is used to verify internet connection.
     // Google was chosen because of reliability.
