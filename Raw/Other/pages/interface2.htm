@@ -1,6 +1,7 @@
 <script type="text/javascript">
 	"use strict";
 	var MAX_PLAYERS = 10;
+	var MAX_GROUPS = 5;
 	
 	var paths;
 	var players;
@@ -381,14 +382,13 @@
 		// Split groups.
 		var groups = data[2].split(", ");
 		// Update groups.
-		for (var i = 0; i < MAX_PLAYERS; i++) {
+		for (var i = 0; i < MAX_GROUPS; i++) {
 			var group = "None";
 			if (groups.length > i && groups[i].length > 0)
 				group = groups[i];
 			$("#player-group" + (i + 1) + " option").each(function() {
-				if($(this).text() == group) {
-					$(this).attr('selected', 'selected');           
-				}                 
+				if($(this).text() == group)
+					$(this).prop('selected', true).change(); 
 			});
 		}
 		$("#player-id").val(data[4]);
@@ -430,15 +430,13 @@
 		}
 		$("#character-name").val(data[0]);	
 		$("#character-player option").each(function() {
-			if($(this).text() == data[1]) {
-				$(this).attr('selected', 'selected');            
-			}                        
+			if($(this).text() == data[1])
+				$(this).prop('selected', true).change();
 		});
 		// data[2] has player account which is not needed.
 		$("#character-profession option").each(function() {
-			if($(this).text() == data[3]) {
-				$(this).attr('selected', 'selected');           
-			}                        
+			if($(this).text() == data[3])
+				$(this).prop('selected', true).change();
 		});
 		$("#character-id").val(data[4]);
 	}
@@ -532,14 +530,12 @@
 			return;
 		}
 		$("#record-instance option").each(function() {
-			if($(this).text() == data[0]) {
-				$(this).prop('selected', true).change();          
-			}                        
+			if($(this).text() == data[0])
+				$(this).prop('selected', true).change();
 		});
 		$("#record-path option").each(function() {
-			if($(this).text() == data[1]) {
-				$(this).prop('selected', true).change();        
-			}                        
+			if($(this).text() == data[1])
+				$(this).prop('selected', true).change();
 		});
 		$("#record-date").val(data[2]).change();
 		// Reset time.
@@ -573,15 +569,13 @@
 			$("#record-group" + (i + 1) + " option").each(function() {
 				// Returned groups have only guild tags. Dropdown options have "name + tag" so an exact match won't work. Tags must be unique so indexOf can be used.
 				if (tagSearch) {
-					if($(this).text().indexOf(group) > -1) {
+					if($(this).text().indexOf(group) > -1)
 						$(this).prop('selected', true).change();          
-					}  
 				}
 				// Exact match must be used because a guild name may have "None" on it.
 				else {
-					if($(this).text() == group) {
-						$(this).prop('selected', true).change();          
-					}  
+					if($(this).text() == group)
+						$(this).prop('selected', true).change();
 				}            
 			});
 		}
@@ -592,8 +586,8 @@
 				character = "None";
 			$("#record-character" + (i + 1) + " option").each(function() {
 				if($(this).text() == character) {
-					$(this).prop('selected', true).change();          
-				}                        
+					$(this).prop('selected', true).change();
+				}
 			});
 		}
 		// Update videos.
