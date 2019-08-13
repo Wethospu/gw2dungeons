@@ -16,7 +16,7 @@ $title = array('gw2dungeons');
 $class = array('no-js');
 
 // make sure people can't access stuff outside pages/ and default to home
-$page = str_replace(array('.', '..', '/'), '', $_SERVER['QUERY_STRING']);
+$page = substr(str_replace(array('.', '..', '/'), '', $_SERVER['QUERY_STRING']), 4);
 if (empty($page)) {
     $page = 'home';
 }
@@ -91,23 +91,17 @@ $class = strtolower($class);
     <meta name="author" content="Jere Kuusela">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 ID_CSS
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 ID_JS
     <!--[if lt IE 9]>
         <script src="/media/html5shiv.js"></script>
     <![endif]-->
-	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
-	<script type="text/javascript">
-		window.cookieconsent_options = {"message":"This website uses cookies to store your preferences and to personalize advertising. If you don't like that please exit the site immediately.","dismiss":"Ok","learnMore":"More info","link":null,"theme":"dark-top"};
-	</script>
-	
 	</head>
 <body>
     <!--[if lt IE 7]>
@@ -139,13 +133,6 @@ ID_JS
                 </div>
                 <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
             </form>
-			<form class="navbar-form navbar-right" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-				<div class="form-group">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="Y6ESU27U7V3J4">
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
-				</div>
-			</form>
         </div>
 		<!-- Subnavigation generated dynamically when needed. -->
 		<div id="sub-navigation"class="navbar-collapse collapse">
@@ -173,13 +160,5 @@ ID_JS
 			</div>
 		</div>
 	</div>
-	<script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-			e.src='//www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-59645523-1');ga('send','pageview');
-	</script>
 </body>
 </html>

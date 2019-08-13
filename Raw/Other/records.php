@@ -3,7 +3,7 @@
 	$success = true;
 	$message = '';
 	try {
-        $conn = new PDO('mysql:host=localhost;dbname=RecordDB', 'Watcher', 'FFDgTJ_(omf[');
+        $conn = new PDO("sqlsrv:server = tcp:gw2dungeons.database.windows.net,1433; Database = gw2dungeons", "sa-admin", "4VGZJigXHHyBcvuqQbHz6PCfAH97Ec");
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         if ($_POST['type'] == 'records') {
@@ -15,7 +15,6 @@
 				$return['players'] = readPlayersByGroup($conn, $_POST['group']);
 			else if ($_POST['player'] > 0) {
 				$return['characters'] = readCharactersByPlayer($conn, $_POST['player']);
-				$return['groups'] = readGroupsByPlayer($conn, $_POST['player']);
 			}
 		}
 		else if ($_POST['type'] == 'readData') {
@@ -24,9 +23,9 @@
 			$return['paths'] = readPaths($conn);
 			$return['professions'] = readProfessions($conn);
 			$return['categories'] = readCategories($conn);
-			if ($_POST['page'] == 'Guilds')
+			if ($_POST['page'] == 'Guilds' || $_POST['page'] == 'Players')
 				$return['groups'] = readGroups($conn);
-			else if ($_POST['page'] == 'Players')
+			if ($_POST['page'] == 'Players')
 				$return['players'] = readPlayers($conn);
 		}
 		else if ($_POST['type'] == 'readProfessions') {
@@ -65,13 +64,11 @@
 		$string = $string.'ORDER BY time ASC;';
 		$sql = $conn->prepare($string);
 		// Read characters and videos.
-		$sql2 = $conn->prepare('SELECT characterID, link FROM Videos WHERE record=?;');
-		$sql3 = $conn->prepare('SELECT name, profession, player FROM Characters WHERE ID=? LIMIT 1;');
+		$sql2 = $conn->prepare('SELECT v.characterID, v.link, c.name, c.profession, c.player FROM Videos v JOIN Characters c ON c.ID = v.characterID WHERE v.record=?;');
 		// Read groups.
-		$sql5 = $conn->prepare('SELECT groupID FROM RecordGroups WHERE record=?;');
-		$sql6 = $conn->prepare('SELECT name, tag, website FROM Groups WHERE ID=? LIMIT 1;');
+		$sql5 = $conn->prepare('SELECT rg.groupID, g.name, g.tag, g.website FROM RecordGroups rg JOIN Groups g on g.ID = rg.groupID WHERE rg.record=?;');
 		// Find game build.
-		$sql7 = $conn->prepare('SELECT build FROM GameBuilds WHERE date <= ? ORDER BY Build DESC LIMIT 1;');
+		$sql7 = $conn->prepare('SELECT TOP 1 build FROM GameBuilds WHERE date <= ? ORDER BY Build DESC;');
 		// Replace category id with category text.
 		$sql8 = $conn->prepare('SELECT name FROM Categories WHERE ID=?;');
 		foreach($paths as $row) {
@@ -92,11 +89,6 @@
 				$playersMatch = $_POST['player'] == 0;
 				// Transform character id to character data.
 				for ($i = 0; $i < count($record['characters']); $i++) {
-					$sql3->execute(array($record['characters'][$i]['characterID']));
-					$character = $sql3->fetch();
-					$record['characters'][$i]['profession'] = $character['profession'];
-					$record['characters'][$i]['name'] = $character['name'];
-					$record['characters'][$i]['player'] = $character['player'];
 					if ($_POST['player'] == $character['player'])
 						$playersMatch = true;
 				}
@@ -117,9 +109,7 @@
 				// Transform group id to group data.
 				for ($i = 0; $i < count($record['groups']); $i++) {
 					if ($_POST['group'] == $record['groups'][$i]['groupID'])
-						$groupsMatch = true;
-					$sql6->execute(array($record['groups'][$i]['groupID']));
-					$record['groups'][$i] = $sql6->fetch();			
+						$groupsMatch = true;		
 				}
 				if (!$groupsMatch)
 					continue;
@@ -164,30 +154,28 @@
 		if ($counter < 1)
 			return $records;
 		// Read X last records with given filters.
-		$string = 'SELECT ID, time, date, path, validity, topiclink, category FROM Records WHERE TRUE ';
+		$string = 'SELECT r.ID, r.time, r.date, r.path, r.validity, r.topiclink, c.name AS category FROM Records r JOIN Categories c ON c.ID = r.category WHERE TRUE ';
 		// Only validity should filter.
 		if ($_POST['validity'] == 1)
-			$string = $string.'AND validity=1 ';
+			$string = $string.'AND r.validity=1 ';
 		if ($_POST['date1'] != '')
-			$string = $string.'AND date>=\''.$_POST['date1'].'\' ';
+			$string = $string.'AND r.date>=\''.$_POST['date1'].'\' ';
 		if ($_POST['date2'] != '')
-			$string = $string.'AND date<=\''.$_POST['date2'].'\' ';
+			$string = $string.'AND r.date<=\''.$_POST['date2'].'\' ';
 		if ($_POST['path'] > 0 )
-			$string = $string.'AND path=\''.$_POST['path'].'\' ';
+			$string = $string.'AND r.path=\''.$_POST['path'].'\' ';
 		$string = $string.'ORDER BY date DESC;';
 		$sql = $conn->prepare($string);
 		// Check that instance is correct.
-		$sql4 = $conn->prepare('SELECT instance, (SELECT type FROM Instances WHERE ID=instance) AS type FROM Paths WHERE ID=? LIMIT 1;');
+		$sql4 = $conn->prepare('SELECT TOP 1 instance, (SELECT type FROM Instances WHERE ID=instance) AS type FROM Paths WHERE ID=?;');
 		// Read characters and videos.
 		$sql2 = $conn->prepare('SELECT characterID, link FROM Videos WHERE record=?;');
-		$sql3 = $conn->prepare('SELECT name, profession, player FROM Characters WHERE ID=? LIMIT 1;');
+		$sql3 = $conn->prepare('SELECT TOP 1 name, profession, player FROM Characters WHERE ID=?;');
 		// Read groups.
 		$sql5 = $conn->prepare('SELECT groupID FROM RecordGroups WHERE record=?;');
-		$sql6 = $conn->prepare('SELECT name, tag, website FROM Groups WHERE ID=? LIMIT 1;');
+		$sql6 = $conn->prepare('SELECT TOP 1 name, tag, website FROM Groups WHERE ID=?;');
 		// Find game build.
-		$sql7 = $conn->prepare('SELECT build FROM GameBuilds WHERE date < ? ORDER BY Build DESC LIMIT 1;');
-		// Replace category id with category text.
-		$sql8 = $conn->prepare('SELECT name FROM Categories WHERE ID=?;');
+		$sql7 = $conn->prepare('SELECT TOP 1 build FROM GameBuilds WHERE date < ? ORDER BY Build DESC;');
 		$sql->execute();
 		// Use while(true) with limits.
 		for ($tries = 0; $tries < 1000; $tries++) {
@@ -260,8 +248,6 @@
 				continue;
 			$sql7->execute(array($record['date']));
 			$record['build'] = $sql7->fetch()['build'];
-			$sql8->execute(array($record['category']));
-			$record['category'] = $sql8->fetch()['name'];
 			$records[] = $record;
 			$counter--;
 			if ($counter == 0)
@@ -277,17 +263,13 @@
 	}
 
 	function readPlayers(PDO $conn) {
-		$sql = $conn->prepare('SELECT ID, name FROM Players ORDER BY name');
+		$sql = $conn->prepare("SELECT p.ID, p.name, (SELECT STRING_AGG(groupID, ',') FROM PlayerGroups WHERE player = p.ID) AS groups FROM Players p ORDER BY p.name");
 		$sql->execute();
-		$players = $sql->fetchAll();
-		// Read groups for the players.
-		for ($i = 0; $i < count($players); $i++)
-			$players[$i]['groups'] = readGroupsByPlayer($conn, $players[$i]['ID']);
-		return $players;
+		return $sql->fetchAll();
 	}
 	
 	function readPlayersByGroup(PDO $conn, $group) {
-		$sql = $conn->prepare('SELECT player, (SELECT name FROM Players WHERE ID = player) AS name FROM PlayerGroups WHERE groupID=?;');
+		$sql = $conn->prepare('SELECT pg.player AS player, p.name AS name FROM PlayerGroups pg JOIN Players p ON p.ID = pg.player WHERE pg.groupID=?;');
 		$sql->execute(array($group));
 		$players = $sql->fetchAll();
 		// Read characters for the players.
@@ -334,19 +316,5 @@
 		$sql = $conn->prepare('SELECT name, profession FROM Characters WHERE player=?;');
 		$sql->execute(array($player));
 		return $sql->fetchAll();
-	}
-
-	function readGroupsByPlayer(PDO $conn, $player) {
-		// Get group ids.
-		$sql = $conn->prepare('SELECT groupID FROM PlayerGroups WHERE player=? LIMIT 5;');
-		$sql->execute(array($player));
-		$groups = $sql->fetchAll();
-		// Get group name.
-		$sql = $conn->prepare('SELECT name, tag FROM Groups WHERE ID=? LIMIT 1;');
-		for($i = 0; $i < count($groups); $i++) {
-			$sql->execute(array($groups[$i]['groupID']));
-			$groups[$i] = $sql->fetch();
-		}
-		return $groups;
 	}
 	

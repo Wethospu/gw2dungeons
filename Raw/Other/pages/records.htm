@@ -163,7 +163,7 @@
 						if (page == "Guilds")
 							updateGroupTable(data.players);
 						else if (page == "Players")
-							updatePlayerTable(data.characters, data.groups);
+							updatePlayerTable(data.characters);
 					}			
 				}				
 			}
@@ -171,8 +171,7 @@
 				console.log(data.message);
 		});
 		request.fail(function (data){
-			data = JSON.parse(data);
-			console.log(data.message);
+			console.log(data);
 		});
 	}
 	
@@ -615,7 +614,7 @@
 		setHash(parts[parts.length - 1], 1);
 	}
 	
-	function updatePlayerTable(characters, groups) {
+	function updatePlayerTable(characters) {
 		// Basic player info.
 		// Find the player.
 		var playerID = $("#record-player").val();
@@ -639,11 +638,12 @@
 			});
 			content += "</tbody></table>";
 		}
+		var groupsData = players[playerID].groups ? players[playerID].groups.split(',').map(function(e) { return groups[Number(e)]; }) : [];
 		// Guild data.
-		if (groups.length > 0) {
+		if (groupsData.length > 0) {
 			content += '<h3>Guilds</h3>';
 			content += '<table class=\"table table-striped\"><tbody>';
-			$.each(groups, function() {
+			$.each(groupsData, function() {
 				content += "<tr>";
 				content += '<td><a href="Guilds#' + getHash(0) + '#' + this.tag + '">' + this.name + ' ' + this.tag + '</a></td>';
 				content += "</tr>";
@@ -717,7 +717,8 @@
 			// Find the player name (player data already acquired for the player dropdown).
 			var index = players.map(function(e) { return e.ID; }).indexOf(playersRanks[i].id);
 			content += '<td>' + players[index].name + '</td>';
-			content += '<td>' + buildGroupStr(players[index].groups) + '</td>';
+			var groupsData = players[index].groups ? players[index].groups.split(',').map(function(e) { return groups[Number(e)]; }) : [];
+			content += '<td>' + buildGroupStr(groupsData) + '</td>';
 			content += '<td>' + playersRanks[i].points + '</td>';
 			content += '</tr>';	
 		}

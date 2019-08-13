@@ -1,17 +1,17 @@
 <?php
 	// By default, use Watcher info so details don't have to be revealed in client side js files.
-    $username = 'Watcher';
+    $username = 'sa-admin';
 	if (!empty($_POST['username']))
 		$username = $_POST['username'];
-	$password = 'FFDgTJ_(omf[';
+	$password = '4VGZJigXHHyBcvuqQbHz6PCfAH97Ec';
 	if (!empty($_POST['password']))
 		$password = $_POST['password'];
-	$database = 'RecordDB';
+	$database = 'gw2dungeons';
 	if (isset($_POST['database']))
 		$database = $_POST['database'];
 
 	$type = $_POST['type'];
-$servername = "localhost";
+$servername = "tcp:gw2dungeons.database.windows.net,1433";
 $message = '';
 $groups = array();
 $players = array();
@@ -27,7 +27,7 @@ $instanceTypes = array();
 $success = true;
 
     try {
-        $conn = new PDO('mysql:host='.$servername.';dbname='.$database, $username, $password);
+        $conn = new PDO('sqlsrv:server='.$servername.'; Database = '.$database, $username, $password);
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         if ($type == "login") {

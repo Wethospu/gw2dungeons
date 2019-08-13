@@ -25,40 +25,6 @@ function loadCommentBox() {
 		$("#comment-section").html('<div id="HCB_comment_box"></div><link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/shady/skin.css" /><script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=(hcb_user.PAGE || ""+window.location), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24KgqanRakyO80BQlb3L2as1"+"&opts=22&num=50");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); hcb_user.submit="";/*-->*/ </script>');
 }
 
-function loadAd(side) {
-	// Load ads based on ad setting and margin size. / 2015-07-31 / Wethospu
-	var ads = getSetting("adSetting");
-	var size = $('#' + side + '-ad').width();
-	if (ads == "big" && size >= 300) {
-		$('#' + side + '-ad').html('<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\
-							<!-- gw2dungeons-main-big -->\
-							<ins class="adsbygoogle"\
-							style="display:inline-block;width:300px;height:600px;float:' + side + '"\
-							data-ad-client="ca-pub-6596049380548180"\
-							data-ad-slot="4729718557"></ins>\
-							<script>\
-							(adsbygoogle = window.adsbygoogle || []).push({});\
-							</script>');
-	}
-	else if ((ads == "small" || ads == "big") && size >= 160) {
-		$('#' + side + '-ad').html('<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\
-							<!-- gw2dungeons-main -->\
-							<ins class="adsbygoogle"\
-							style="display:inline-block;width:160px;height:600px;float:' + side + '"\
-							data-ad-client="ca-pub-6596049380548180"\
-							data-ad-slot="6582248550"></ins>\
-							<script>\
-							(adsbygoogle = window.adsbygoogle || []).push({});\
-							</script>');
-	}
-	else
-		$('#' + side + '-ad').html("");
-	// In encounters varying path bar length puts ad in wrong position. / 2015-10-12 / Wethospu
-	var position = $(".my-bar").offset();
-	if (position)
-		$('#' + side + '-ad').css("top", "" + (position.top + $(".my-bar").outerHeight(false)) + "px");
-}
-
 function loadThumbs() {
 	// Note: This forces page generation which may stall the page for a while. / 2015-08-13 / Wethospu
 	var width = $(window).width();
@@ -82,8 +48,6 @@ function loadThumbs() {
 function initScreenResize() {
 	// Run the functions with the current window width. / 2015-07-31 / Wethospu
 	loadThumbs();
-	loadAd("left");
-	loadAd("right");
 	resizeSidebar();
 	// Window width isn't reliable because javascript handles it differently than css. / 2015-07-31 / Wethospu
 	// So just check when css properties change and do stuff then! / 2015-07-31 / Wethospu
@@ -97,11 +61,9 @@ function initScreenResize() {
 			thumbWidth = $(".encounter-left").css("min-width");
 		}
 		if (leftAdWidth != $("#left-ad").css("width")) {
-			loadAd("left");
 			leftAdWidth = $("#left-ad").css("width");
 		}
 		if (rightAdWidth != $("#right-ad").css("width")) {
-			loadAd("right");
 			rightAdWidth = $("#right-ad").css("width");
 		}
 		// Scale overlay if on. / 2015-07-31 / Wethospu

@@ -92,28 +92,6 @@ p, p *, h1, h1 *, h2, h2 *, h3, td, td *, ol *, .allow * {
 	top: 2px;
 }
 
-/* Position side ad correctly. */
-.side-ad {
-    color:#222;
-    font-size:1.1em;
-    margin: 0;
-    padding:0;
-	top: 122px;
-	width: 0;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-	position: fixed;
-}
-
-#left-ad {
-  left: 0;
-}
-
-#right-ad {
-  right: 0;
-}
-
 /* default page content */
 #screen {
     color:#222;
