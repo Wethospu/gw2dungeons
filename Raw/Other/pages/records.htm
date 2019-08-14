@@ -614,6 +614,12 @@
 		setHash(parts[parts.length - 1], 1);
 	}
 	
+	function groupByID(id) {
+		return groups.find(function(group) {
+			return Number(group.ID) === Number(id);
+		});
+	}
+	
 	function updatePlayerTable(characters) {
 		// Basic player info.
 		// Find the player.
@@ -638,7 +644,7 @@
 			});
 			content += "</tbody></table>";
 		}
-		var groupsData = players[playerID].groups ? players[playerID].groups.split(',').map(function(e) { return groups[Number(e)]; }) : [];
+		var groupsData = players[playerID].groups ? players[playerID].groups.split(',').map(groupByID) : [];
 		// Guild data.
 		if (groupsData.length > 0) {
 			content += '<h3>Guilds</h3>';

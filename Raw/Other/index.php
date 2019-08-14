@@ -16,7 +16,7 @@ $title = array('gw2dungeons');
 $class = array('no-js');
 
 // make sure people can't access stuff outside pages/ and default to home
-$page = substr(str_replace(array('.', '..', '/'), '', $_SERVER['QUERY_STRING']), 4);
+$page = str_replace(array('.', '..', '/'), '', $_SERVER['QUERY_STRING']);
 if (empty($page)) {
     $page = 'home';
 }

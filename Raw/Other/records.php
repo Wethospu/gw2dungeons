@@ -3,7 +3,7 @@
 	$success = true;
 	$message = '';
 	try {
-        $conn = new PDO("sqlsrv:server = tcp:gw2dungeons.database.windows.net,1433; Database = gw2dungeons", "sa-admin", "4VGZJigXHHyBcvuqQbHz6PCfAH97Ec");
+        $conn = new PDO("mysql:host=localhost;dbname=RecordDB", "Watcher", "FFDgTJ_(omf[");
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         if ($_POST['type'] == 'records') {
@@ -68,7 +68,7 @@
 		// Read groups.
 		$sql5 = $conn->prepare('SELECT rg.groupID, g.name, g.tag, g.website FROM RecordGroups rg JOIN Groups g on g.ID = rg.groupID WHERE rg.record=?;');
 		// Find game build.
-		$sql7 = $conn->prepare('SELECT TOP 1 build FROM GameBuilds WHERE date <= ? ORDER BY Build DESC;');
+		$sql7 = $conn->prepare('SELECT build FROM GameBuilds WHERE date <= ? ORDER BY Build DESC LIMIT 1;');
 		// Replace category id with category text.
 		$sql8 = $conn->prepare('SELECT name FROM Categories WHERE ID=?;');
 		foreach($paths as $row) {
@@ -167,15 +167,15 @@
 		$string = $string.'ORDER BY date DESC;';
 		$sql = $conn->prepare($string);
 		// Check that instance is correct.
-		$sql4 = $conn->prepare('SELECT TOP 1 instance, (SELECT type FROM Instances WHERE ID=instance) AS type FROM Paths WHERE ID=?;');
+		$sql4 = $conn->prepare('SELECT instance, (SELECT type FROM Instances WHERE ID=instance) AS type FROM Paths WHERE ID=? LIMIT 1;');
 		// Read characters and videos.
 		$sql2 = $conn->prepare('SELECT characterID, link FROM Videos WHERE record=?;');
-		$sql3 = $conn->prepare('SELECT TOP 1 name, profession, player FROM Characters WHERE ID=?;');
+		$sql3 = $conn->prepare('SELECT name, profession, player FROM Characters WHERE ID=? LIMIT 1;');
 		// Read groups.
 		$sql5 = $conn->prepare('SELECT groupID FROM RecordGroups WHERE record=?;');
-		$sql6 = $conn->prepare('SELECT TOP 1 name, tag, website FROM Groups WHERE ID=?;');
+		$sql6 = $conn->prepare('SELECT name, tag, website FROM Groups WHERE ID=? LIMIT 1;');
 		// Find game build.
-		$sql7 = $conn->prepare('SELECT TOP 1 build FROM GameBuilds WHERE date < ? ORDER BY Build DESC;');
+		$sql7 = $conn->prepare('SELECT build FROM GameBuilds WHERE date < ? ORDER BY Build DESC LIMIT 1;');
 		$sql->execute();
 		// Use while(true) with limits.
 		for ($tries = 0; $tries < 1000; $tries++) {
@@ -263,7 +263,7 @@
 	}
 
 	function readPlayers(PDO $conn) {
-		$sql = $conn->prepare("SELECT p.ID, p.name, (SELECT STRING_AGG(groupID, ',') FROM PlayerGroups WHERE player = p.ID) AS groups FROM Players p ORDER BY p.name");
+		$sql = $conn->prepare("SELECT p.ID, p.name, (SELECT GROUP_CONCAT(groupID SEPARATOR ',') FROM PlayerGroups WHERE player = p.ID) AS groups FROM Players p ORDER BY p.name");
 		$sql->execute();
 		return $sql->fetchAll();
 	}

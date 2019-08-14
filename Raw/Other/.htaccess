@@ -1,8 +1,5 @@
 
 RewriteEngine on
-# This redirects www to non-www.
-RewriteCond %{HTTP_HOST} !^gw2dungeons\.net$ [NC]
-RewriteRule ^(.*)$ http://gw2dungeons\.net/$1 [R=301,L]
 # These allow syntax without ? in the beginning.
 RewriteRule ^(\w+)$  ?$1
 RewriteRule ^dev/(\w+)$  dev/?$1
